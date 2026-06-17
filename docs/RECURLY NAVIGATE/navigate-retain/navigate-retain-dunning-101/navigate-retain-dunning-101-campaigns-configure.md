@@ -269,14 +269,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">2</div>
           <div class="rc-step-content">
             <h4>Set the window length and email schedule</h4>
-            <p>Configure the window to match the billing frequency — <strong>27 days for monthly, 60 days for annual</strong>. Then build out the email sequence with appropriate spacing: 4–5 days apart for monthly, 8–10 days apart for annual. Each email needs distinct copy — reusing templates reduces effectiveness across the sequence.</p>
+            <p>Configure the window to match the billing frequency — <strong>28 days for monthly, 60 days for annual</strong>. Then build out the email sequence with appropriate spacing: 4–5 days apart for monthly, 8–10 days apart for annual. Each email needs distinct copy — reusing templates reduces effectiveness across the sequence.</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
           <div class="rc-step-content">
             <h4>Audit and assign every plan</h4>
-            <p>Navigate to <strong>Plans</strong> and open each plan in your catalog. Find the dunning campaign assignment field and point it to the correct campaign. <strong>Plans not manually assigned fall back to your default campaign</strong> — which means an annual plan on a 27-day window if you haven't updated the default. Check every plan without exception.</p>
+            <p>Navigate to <strong>Plans</strong> and open each plan in your catalog. Find the dunning campaign assignment field and point it to the correct campaign. <strong>Plans not manually assigned fall back to your default campaign</strong> — which means an annual plan on a 28-day window if you haven't updated the default. Check every plan without exception.</p>
           </div>
         </div>
         <div class="rc-step">
@@ -300,7 +300,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
           <strong>Name campaigns clearly from the start</strong>
-          <p>Campaign names appear throughout your dunning reports and plan settings. Descriptive names like "Monthly — consumer 27d" and "Annual — 60d" make it immediately obvious which campaign is which when you're reviewing performance or assigning new plans months later.</p>
+          <p>Campaign names appear throughout your dunning reports and plan settings. Descriptive names like "Monthly — consumer 28d" and "Annual — 60d" make it immediately obvious which campaign is which when you're reviewing performance or assigning new plans months later.</p>
         </div>
       </div>
     </div>
