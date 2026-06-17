@@ -260,13 +260,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- WHAT TO SEGMENT -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-layer-group rc-fa-section"></i> What to segment — and why</h2>
-      <p>At minimum, create two campaigns: one for monthly plans and one for annual. From there, additional segmentation by subscriber type or value tier adds meaningful gains. Each segment benefits from a tailored window length, email cadence, and tone.</p>
+      <p>At minimum, create two campaigns to A/B test. A great starting point is one for monthly and one for annual (if you offer both). You can also set up unique campaigns for different monthly plans. From there, additional segmentation by subscriber type or value tier adds meaningful gains. Each segment benefits from a tailored window length, email cadence, and tone.</p>
 
       <div class="rc-card-grid">
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-calendar"></i></div>
           <h4>Monthly subscribers</h4>
-          <p>27-day window, 4–5 emails spaced 4–5 days apart. Friendly, concise tone — most monthly failures are soft declines that resolve quickly with a timely prompt.</p>
+          <p>28-day window, 4–5 emails spaced 4–5 days apart. Friendly, concise tone — most monthly failures are soft declines that resolve quickly with a timely prompt.</p>
           <span class="rc-feature-tag">Start here</span>
         </div>
         <div class="rc-feature-card">
