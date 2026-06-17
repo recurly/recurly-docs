@@ -171,10 +171,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-gw-table tr:last-child  td:last-child  { border-bottom-right-radius: 9px; }
 .rc-gw-table strong { color: #0D0D0B; }
 .rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-gw-table a { color: #FF9D88 !important; border-bottom: 0 !important; }
-
-.rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-gw-table a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
+.rc-guide .rc-gw-table a { color: #FF8200 !important; border-bottom: 0 !important; }
 
 
 /* ── CALLOUTS ── */
