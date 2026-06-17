@@ -215,7 +215,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="rc-callout-body"><strong>EU merchants: verify 3DS before launch</strong><p>If you haven't confirmed your 3D Secure setup and you process EU payments, you may see declined transactions at renewal. Not sure if this applies to you? <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2”>Learn more here</a>.</p></div>
       </div>
-          </div></div>
+        
 
 
       <div class="rc-checklist">
