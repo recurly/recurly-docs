@@ -447,7 +447,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
  <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-book-atlas"></i></div>
           <h4>Navigate resource library</h4>
-          <p>A one-stop location for all links to Recurly support offerings, documentation, updates, events, and more.<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-resource-library" target="_blank" rel="noopener noreferrer">Go to the Resource library</a></p>
+          <p>A one-stop location for all links to Recurly support offerings, documentation, updates, events, and more. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-resource-library" target="_blank" rel="noopener noreferrer">Go to the Resource library</a></p>
         </div>
         
 
