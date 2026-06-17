@@ -321,7 +321,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-overview" class="rc-btn-prev">← Why one campaign isn't enough</a>
-      <span class="rc-lp-nav-indicator">2 of 2</span>
+      <span class="rc-lp-nav-indicator">7 of 9</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-btn-path">Continue to Measuring performance →</a>
     </div>
 
