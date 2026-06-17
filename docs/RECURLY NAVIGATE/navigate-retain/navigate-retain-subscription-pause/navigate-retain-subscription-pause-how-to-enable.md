@@ -455,7 +455,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
-          <strong>Recurly Engage can automate pause-triggered outreach</strong>
+          <strong>Recurly Engage offers "one-click Pause" and can automate pause-triggered outreach</strong>
           <p>If you use Recurly Engage, the Recurly connector syncs subscription data nightly and supports pause and resume as prompt-triggerable actions. You can build automated journeys that fire on pause events — confirmation messages, mid-pause re-engagement, and resume win-back sequences — without custom webhook infrastructure. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-integration" target="_blank" rel="noopener noreferrer">Recurly Engage: Recurly integration</a> for setup details.</p>
         </div>
       </div>
