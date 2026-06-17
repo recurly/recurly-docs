@@ -322,9 +322,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <span class="rc-feature-tag">Start here</span>
         </div>
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-          <h4>Student or low-value plans</h4>
-          <p>Shorter window, lighter cadence. Friendly tone — these subscribers are price-sensitive. Consider messaging that emphasizes a pause option or discount rather than urgent payment recovery.</p>
+          <div class="rc-feature-icon"><i class="fa-solid fa-gem"></i></div>
+          <h4>Low-value or price-sensitive plans</h4>
+          <p>Shorter window, lighter cadence. For lower-priced plans where the revenue at stake is small relative to retry costs, a shorter dunning window and fewer emails is the right trade-off. Consider messaging that emphasizes a pause option or a discount to retain the subscriber rather than urgent payment recovery language — the goal is keeping them engaged, not pressuring them.</p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-building"></i></div>
