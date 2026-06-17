@@ -271,28 +271,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- WHY IT MATTERS — STATS -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> The impact of branding on recovery</h2>
-      <p>Recurly data shows that merchants who apply full branding — logo, colors, personalization, and a clear CTA — consistently outperform those running generic templates. These aren't marginal gains.</p>
-
-      <div class="rc-stat-strip">
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">+12%</div>
-          <div class="rc-stat-tile-label">Recovery rate uplift</div>
-          <div class="rc-stat-tile-context">From adding branded headers, updated window length, and optimized email frequency — one of the highest single-change gains in the dataset.</div>
-        </div>
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">~60%</div>
-          <div class="rc-stat-tile-label">Higher click-through rate</div>
-          <div class="rc-stat-tile-context">Branded emails with a clear CTA see significantly higher click-through than plain-text templates — subscribers trust what they recognize.</div>
-        </div>
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">+279%</div>
-          <div class="rc-stat-tile-label">Recovery revenue in month 1</div>
-          <div class="rc-stat-tile-context">My Music Workshop implemented all dunning best practices from scratch, including full branding, and saw this result in their first month.</div>
-        </div>
-      </div>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
