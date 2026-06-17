@@ -87,14 +87,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
 .rc-lp-section > p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
-/* VIDEO CARD */
-.rc-video-card { border: 1px solid #CCC9B8; border-radius: 14px; overflow: hidden; margin: 0 0 32px; }
-.rc-video-header { background: #0D0D0B; padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
-.rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: #FFD706; margin: 0; }
-.rc-video-header span { font-size: .78rem; color: #CCC9B8; margin-left: auto; }
-.rc-video-embed { position: relative; overflow: hidden; aspect-ratio: 16/9; background: #0D0D0B; }
-.rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
-.rc-video-caption { padding: 12px 22px; font-size: .83rem; color: #807D73; background: #F1EFE3; border-top: 1px solid #CCC9B8; line-height: 1.5; }
+
 
 /* NUMBERED STEPS */
 .rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
@@ -249,17 +242,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-gear rc-fa-section"></i> How to configure your email templates</h2>
       <p>Head to <strong>Configuration → Email Templates → Dunning</strong> in your Recurly dashboard. You'll see one template per email in your dunning sequence. Edit each one to apply your branding and personalization before enabling your campaign.</p>
-
-      <div class="rc-video-card">
-        <div class="rc-video-header">
-          <h4>Trail guide: configuring dunning email templates</h4>
-          <span>~3 min</span>
-        </div>
-        <div class="rc-video-embed">
-          <iframe src="https://share.synthesia.io/embeds/videos/7f58d816-a65c-42f4-950d-59b11953d1aa" loading="lazy" title="Dunning email template configuration walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
-        </div>
-        <div class="rc-video-caption">A walkthrough of the email template editor — applying branding, adding dynamic variables, and sending a test.</div>
-      </div>
 
       <div class="rc-steps">
         <div class="rc-step">
