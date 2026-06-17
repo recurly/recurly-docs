@@ -14,67 +14,301 @@ next:
   description: ''
 ---
 <div class="rp-page">
-  <div class="rp-overview">Recurly's Hosted Pages are ready-to-deploy solutions that give your customers a polished subscription sign-up experience, purchase flow, and account management portal — without heavy development investment. Choose from Checkout, Hosted Payment Pages, and Hosted Account Management depending on how much control and flexibility your integration requires.</div>
+  <div class="rp-overview">Recurly Checkout is a flexible, PCI-compliant checkout experience that sits between a full API/Recurly.js integration and a standard Hosted Payment Page. Configure hostnames, styles, and cart contents — then direct customers to a checkout that matches your brand, your products, and your promotion strategy.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
     <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
     <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#configure-checkout"><span class="rp-toc-num">4</span>Configure Checkout</a>
+    <a class="rp-toc-pill" href="#preview-checkout"><span class="rp-toc-num">5</span>Preview Checkout</a>
+    <a class="rp-toc-pill" href="#analytics"><span class="rp-toc-num">6</span>Analytics</a>
+    <a class="rp-toc-pill" href="#checkout-vs-hosted-payment-pages"><span class="rp-toc-num">7</span>Checkout vs. Hosted Payment Pages</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">8</span>FAQs</a>
   </div>
 </div>
 
+### Limitations
+
+<ul class="rp-list">
+  <li>Out-of-the-box tax previews are supported on Checkout. Tax previews are not available for Avalara or Vertex</li>
+</ul>
+
 # Definition
 
-<div class="rp-definition">Hosted Pages are a suite of out-of-the-box solutions designed for quick deployment with minimal development overhead. Checkout, Hosted Payment Pages, and Hosted Account Management work together to cover the full subscriber lifecycle — from initial sign-up and purchase through ongoing account and billing management — all within a secure, PCI-compliant environment.</div>
-
-All dates and times displayed on Hosted Pages are automatically converted from UTC (Recurly's underlying billing timezone) to the local time configured in your site settings.
+<div class="rp-definition">Recurly Checkout delivers a seamless consumer checkout experience that adapts to your customers' needs. It provides additional flexibility in how you manage the customer and developer experience — an option between a full API/Recurly.js integration and a standard Hosted Payment Page — within a secure, PCI-compliant environment.</div>
 
 # Key benefits
 
 <div class="rp-benefits">
   <div class="rp-benefit">
-    <div class="rp-benefit-icon"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div>
-    <strong>Rapid deployment</strong>
-    <span>Launch subscription flows without waiting on development resources — Hosted Pages are ready to go with minimal setup.</span>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+    <strong>Quick setup and deployment</strong>
+    <span>Activate and deploy quickly, without long development cycles — Checkout is ready to go with minimal configuration.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+    <strong>Rich customizable features</strong>
+    <span>Extensive customization options let you maintain brand consistency and tailor the checkout experience to your customers.</span>
   </div>
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-credit-card" aria-hidden="true"></i></div>
-    <strong>Broad payment support</strong>
-    <span>Accept credit cards, bank accounts, PayPal, Amazon, and 3D Secure — covering the payment methods your customers already use.</span>
-  </div>
-  <div class="rp-benefit">
-    <div class="rp-benefit-icon"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></div>
-    <strong>Self-service account management</strong>
-    <span>Give subscribers a complete portal to view invoices and credits, update billing details, and manage their own accounts.</span>
+    <strong>Flexible payment options</strong>
+    <span>Support cards, direct debits, and wallets — adapting to what your customers actually use and where they are in the world.</span>
   </div>
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
-    <strong>Built-in PCI compliance</strong>
-    <span>All Hosted Pages meet high PCI compliance standards, so payment data is handled securely without additional engineering work on your end.</span>
-  </div>
-  <div class="rp-benefit">
-    <div class="rp-benefit-icon"><i class="fa-solid fa-earth-americas" aria-hidden="true"></i></div>
-    <strong>Multi-language support</strong>
-    <span>Serve a global subscriber base with localization built in — Hosted Pages adapt to the languages your customers speak.</span>
+    <strong>Highly secure and PCI-compliant</strong>
+    <span>Checkout meets high PCI compliance standards, protecting sensitive customer payment data without additional engineering overhead.</span>
   </div>
 </div>
 
 # Key details
 
-<div class="rp-nav-grid">
+## Checkout sessions
 
-<Cards>
-  <Card title="Checkout" href="https://docs.recurly.com/docs/checkout" target="_blank">
-    A fluid checkout experience that balances the flexibility of a full API/Recurly.js integration with the simplicity of a hosted page. Ideal when you want a fast, secure, PCI-compliant checkout without building from scratch.
-  </Card>
-  <Card title="Hosted Payment Pages" href="https://docs.recurly.com/docs/hosted-payment-pages" target="_blank">
-    A specialized platform for initiating new subscriptions. Works alongside Hosted Account Management to deliver a complete, secure sign-up experience within a PCI-compliant environment.
-  </Card>
-  <Card title="Hosted Account Management" href="https://docs.recurly.com/docs/hosted-account-management" target="_blank">
-    A self-service portal where existing subscribers can view active plans, past invoices, and account credits. Supports both Guest View (link-only access) and Account Login (full secure login) modes.
-  </Card>
-</Cards>
+When a customer accesses your Checkout, they enter a Checkout session — a dynamically scoped experience that encompasses the visual design, cart parameters, and contents. The session adapts in real time as the customer makes changes, such as modifying quantities or switching currency.
 
+A Checkout session is composed of three core components: Checkout Styles, Hostnames, and Configurations.
+
+## Checkout styles
+
+Checkout Styles define the visual theme of your Checkout. You can create multiple styles that reflect your brand identity, including your logo and brand colors. A default starter style is available for immediate use.
+
+## Checkout hostnames
+
+Hostnames control which domains your Checkout is served from, keeping customers within your online ecosystem. A default hostname is ready out of the box at `YOUR_SITE_SUBDOMAIN.recurlycheckout.com`, or you can set up a custom hostname.
+
+## Checkout configurations
+
+Checkout Configurations act as blueprints that determine the structure of your Checkout session — including cart contents and available currencies. You start with one default configuration and can create additional ones as needed.
+
+## Directing customers to Checkout
+
+Choose how customers enter a checkout session based on your use case:
+
+- **Default hostname** — Direct customers to `https://YOUR_SITE_SUBDOMAIN.recurlycheckout.com`. The session automatically uses the Checkout Configuration associated with that URL.
+- **Custom hostname** — Direct customers to `https://YOUR_CHECKOUT_HOSTNAME` for a more branded experience. The session uses the Checkout Configuration assigned to that domain.
+- **Specific configuration** — For targeted promotions or customer segments, use `https://YOUR_CHECKOUT_HOSTNAME/c/YOUR_CHECKOUT_CONFIGURATION_ID` to route customers to a precise checkout configuration.
+
+## Localization and payment methods
+
+Checkout automatically detects the customer's location and adjusts the language and recommended payment method accordingly.
+
+<Accordion title="Supported languages">
+Checkout supports the following languages, applied automatically based on the customer's browser language preference:
+
+1. English
+2. Danish
+3. German
+4. Spanish
+5. French
+6. Hindi
+7. Japanese
+8. Dutch
+9. Portuguese
+10. Russian
+11. Turkish
+12. Chinese (Simplified)
+13. Swedish
+14. Polish
+</Accordion>
+
+**Payment methods** available based on customer location:
+
+- **Cards** — Credit and debit
+- **Direct Debits** — ACH, SEPA, BECS, Bacs
+- **Wallets** — Apple Pay, Amazon Pay V1, Amazon Pay V2
+
+Checkout also detects the device type and adjusts the layout automatically for the optimal display.
+
+# Configure Checkout
+
+To access Checkout configuration, navigate to **Configuration → Checkout** in the Recurly Admin UI.
+
+
+<Image src="https://files.readme.io/48e3c6088219a15700b9943ea518f755c87844784511d3996c4ff992dd1b0eb7-checkoutHome.png" align="center" width="75%" border={true} />
+
+
+The configuration page has three main areas: Hostnames, Configurations, and Styles. You can mix and match these to create different checkout experiences for different customer segments, promotions, or product lines.
+
+## Hostname
+
+
+<Image src="https://files.readme.io/abfd9979ab0f87762e21aa66a811d721ab9899ec019be8d06ba5894e46d4e956-hostname2.png" align="center" width="75%" border={true} />
+
+
+Hostnames specify where customers complete their purchases. Recurly supports two hostname types.
+
+### Recurly-hosted domain
+
+The default hostname, set up automatically. Your Checkout is available at `YOUR_SITE_SUBDOMAIN.recurlycheckout.com` out of the box.
+
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Subdomain changes</strong>If your site subdomain is changed, existing Checkout URLs will continue pointing to the original subdomain and will not update automatically. Contact <a href="https://recurly.com/support" target="_blank">Support</a> to update your Checkout pages.</div>
 </div>
+
+### Custom Checkout domain
+
+A custom domain lets you run Checkout on your own domain. Setup requires DNS configuration outside of Recurly. There is no limit to the number of hostnames on production sites; sandbox sites support up to five.
+
+To create a new hostname, select **Create new Hostname**.
+
+
+<Image src="https://files.readme.io/71b0fb5650a90df387b74e8d90eac8a55c5c9d80621520a87121ddb10bb420df-hostname.png" align="center" width="75%" border={true} />
+
+
+**Requirements to use a custom domain:**
+
+- You must own the domain
+- You must be able to manage the DNS settings for the domain
+
+Before saving a custom hostname in Recurly, configure a CNAME record with your DNS provider pointing to the appropriate Recurly value for your data center:
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Data center</td><td>CNAME value</td></tr>
+  <tr><td>United States (US)</td><td><code>checkout.recurlycheckout.com</code></td></tr>
+  <tr><td>Europe (EU)</td><td><code>checkout.recurlycheckouteu.com</code></td></tr>
+</table>
+
+For guidance on setting a CNAME record, see your DNS provider's documentation: <a href="https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/" target="_blank">Cloudflare</a>, <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9646/2237/how-to-create-a-cname-record-for-your-domain/" target="_blank">Namecheap</a>, <a href="https://www.godaddy.com/help/add-a-subdomain-record-19236" target="_blank">GoDaddy</a>.
+
+Once you enter the hostname and exit the field, Recurly validates the CNAME entry automatically. A valid entry shows a confirmation message; an invalid entry shows an error. You can still save a hostname that fails validation, but Checkout will not function until the DNS is correct.
+
+Recurly provisions an SSL certificate for your custom domain automatically. Provisioning typically completes within 30 minutes but may take several hours. The hostname displays a yellow status dot while the certificate is pending; it turns green once provisioning is complete. You'll also receive an email notification when it's ready.
+
+**Hostname settings:**
+
+- **Access** — Enabled by default. Set to disabled to discontinue access to that specific hostname.
+- **Default Checkout Configuration** — Defaults to the standard configuration. Can be updated to any existing configuration.
+
+## Configurations
+
+
+<Image src="https://files.readme.io/215cf0c29ad49d10876d11887c91cf67cd28f64d4ac169b2ece4f1c90d7f790c-aboutThisConfig.png" align="center" width="75%" border={true} />
+
+
+Configurations define the products available at checkout and control additional checkout behaviors. A starter configuration is enabled by default. There is no limit to the number of configurations you can create.
+
+The **name** and **description** fields are for internal use — use them to identify what products or segments the configuration targets.
+
+### Appearance and behaviors
+
+
+<Image src="https://files.readme.io/e6debf576d86113b5772285cf3a0d74eea19d41ab137150f509ea4f974c4070e-appearanceBehaviors.png" align="center" width="75%" border={true} />
+
+
+Choose a style to apply to this configuration (one style per configuration). Additional behavior settings:
+
+- **Cancellation URL** — Adds a back button to Checkout that redirects users to this URL if they exit without purchasing.
+- **Finish URL** — Adds a link at the bottom of the order confirmation page, directing customers to this URL after purchase.
+- **Confirmation URL** — Redirects customers to this URL after a completed purchase. If left blank, the standard Recurly confirmation page is shown.
+- **Accept coupons** — Adds an optional coupon/gift card field to the Order Summary. Coupons must be configured in Recurly's coupon settings.
+- **Accept shipping address** — Adds required shipping address fields to the checkout form.
+- **Treat multiple subscriptions as choices** — When the configuration includes more than one subscription, this setting lets customers choose one rather than purchasing all.
+- **Display subscription details and require acceptance of recurring charges** — Displays a detailed summary of recurring charges and requires customers to select "Agree & Continue" before entering billing information.
+- **Additional fields** — Company name, Phone number, and VAT number / Tax identifier can each be enabled as optional fields.
+
+### Agreements
+
+
+<Image src="https://files.readme.io/76381dd290b6315e5bb35de3519a754a4ddcfef6ae8a47bd03428068bca7813b-agreements.png" align="center" width="75%" border={true} />
+
+
+Agreement URLs let you surface self-service resources to subscribers directly from the checkout confirmation experience. If you use a custom account management site, provide its URL here; otherwise, Recurly's Hosted Account Management page generates a unique URL per account automatically.
+
+- **Account Management URL** — Adds a link in checkout confirmation emails so customers can view and manage their account.
+- **Support URL** — Displays a support link on the Checkout page.
+- **Privacy Policy URL** — Displays a Privacy Policy link on the Checkout page.
+- **Terms of Service URL** — Adds a Terms of Service link at the bottom of Checkout; customers must accept it to complete a purchase.
+
+### Cart
+
+
+<Image src="https://files.readme.io/d0f83848bb668fead95b017fa08cd867a818b144aed5b25a38e7fc813d74f677-cart.png" align="center" width="75%" border={true} />
+
+
+#### Currencies
+
+Select which currencies are available in this configuration.
+
+- Only plans that match the selected currencies appear in the Add Subscription dropdown
+- Your default site currency is added automatically; if all currencies are removed, it falls back to the site default
+- Setting a single currency locks the display currency for customers, preventing cross-currency price comparison
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>All currencies enabled on your site are available here. Price segments are not supported.</div>
+</div>
+
+#### Products
+
+Configure the plans, add-ons, and one-time purchases available in this checkout configuration.
+
+- Add one or more subscription plans. Multiple subscriptions can be bundled together, or presented as choices when **Treat multiple subscriptions as choices** is enabled
+- Set quantities for each plan and optionally allow customers to edit the quantity at checkout
+- Plans with add-ons can have those add-ons configured for sale at sign-up — specify quantities or allow customer editing. Add-ons can be plan-based or item-based
+- Add one-time purchases from the item catalog, either alongside a subscription or as standalone products
+
+## Styles
+
+
+<Image src="https://files.readme.io/f8ab4b4661c1f7e545519641681867e827b7b2095c763d9f6406cb21d4bbdfe8-style.png" align="center" width="75%" border={true} />
+
+
+Styles control the visual appearance of your Checkout pages. To get started, select Edit on the starter style, or select New style to create your own.
+
+- **Brand color** — Select a color in Hex, RGB, or HSL format, or use the browser color picker. This updates interactive elements including links and buttons.
+- **Logo** — Displays in the Checkout header. Maximum file size is 256 KB; the logo scales automatically based on the device viewport.
+- **Icon** — Displays as the browser favicon.
+- One style can be applied per configuration. Enable as many styles as needed to match each configuration.
+
+# Preview Checkout
+
+The Checkout preview lets you verify how a configuration looks in real time before customers see it.
+
+
+<Image src="https://files.readme.io/20ed25317da24f07409a5f7bc92887726bf511d3c5f59ce39671ae2cdf3a816b-checkoutPreview.png" align="center" width="40%" border={true} />
+
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Select a hostname and configuration</h4><p>Choose a hostname and a configuration from the dropdowns, then select View Checkout to open a live preview of your Checkout page.</p></div>
+  </div>
+</div>
+
+# Analytics
+
+Checkout includes a built-in analytics dashboard for tracking cart conversion, subscriber acquisition, and product performance.
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Checkout analytics</strong>See the <a href="https://docs.recurly.com/docs/checkout-dashboard" target="_blank">Checkout analytics dashboard</a> documentation for a full walkthrough of available metrics and reports.</div>
+</div>
+
+# Checkout vs. Hosted Payment Pages
+
+The table below outlines the capabilities available in Checkout that were not available on Hosted Payment Pages (HPP).
+
+
+<Image src="https://files.readme.io/46165ffb350940c995d866e523e27fd69a6c239c3b1774cd658ca9b97040e0f8-Screenshot_2024-10-30_at_8.24.29_PM.png" align="center" width="75%" border={true} />
+
+
+# FAQs
+
+<Accordion title="How do I get access to Checkout?">
+All sites created after May 2024 have Checkout enabled automatically. If your site was created before that date and Checkout is not enabled, contact Support to have it activated. Once enabled, Checkout is available under Configuration → Checkout in the Recurly Admin UI.
+</Accordion>
+
+<Accordion title="What are the minimum requirements to use Checkout?">
+You need at least one plan set up in Recurly, with a default currency configured. If you plan to accept coupons, those must be configured as well. Required or optional add-ons can be set up as needed.
+</Accordion>
+
+<Accordion title="What is the minimum Checkout configuration needed?">
+At minimum, you need one hostname (the default works), one configuration, and one style (the default starter style works). All three are provided out of the box.
+</Accordion>
+
+<Accordion title="How do I test Checkout with payment methods?">
+Use your sandbox site and refer to the <a href="https://docs.recurly.com/docs/test" target="_blank">Recurly test gateway documentation</a> for test card numbers and testing instructions. For Dev Mode or Production, use your gateway's own test cards.
+</Accordion>
 
 <br />
