@@ -331,7 +331,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
           <strong>Pause vs. postpone — know the difference</strong>
-          <p>Pause suspends billing for a set number of billing cycles and stops MRR contribution during that window. Postpone shifts the next billing date forward without a formal pause state — useful for one-off date adjustments but it does not stop MRR tracking. Use pause when the intent is a deliberate break; use postpone for minor date corrections.</p>
+          <p>Pause suspends billing for a set number of billing cycles and stops MRR contribution during that window. Postpone shifts the next billing date forward without a formal pause state — useful for one-off date adjustments but it does not stop MRR tracking. Use pause when the intent is a deliberate break; use postpone for minor date corrections.<br><br>
+            <strong>Learn more</strong> about <a href="https://docs.recurly.com/recurly-subscriptions/docs/postpone-subscription">how to postpone a subscription.</a></p>
         </div>
       </div>
     </div>
