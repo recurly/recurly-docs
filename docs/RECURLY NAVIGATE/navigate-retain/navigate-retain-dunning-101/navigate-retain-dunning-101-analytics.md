@@ -200,7 +200,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
 .rc-stat-strip { display: grid; grid-template-columns: repeat(2, 1fr); background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; overflow: hidden; margin: 0 0 28px; }
 .rc-stat-tile { padding: 24px 20px; text-align: center; }
 .rc-stat-tile + .rc-stat-tile { border-left: 1px solid #CCC9B8; }
-.rc-stat-tile-num { font-size: 12rem; font-weight: 800; color: #FF9D88; line-height: 1; margin-bottom: 4px; }
+.rc-stat-tile-num { font-size: 2.5rem; font-weight: 800; color: #FF9D88; line-height: 1; margin-bottom: 4px; }
 .rc-stat-tile-label { font-size: .7rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: #807D73; margin-bottom: 10px; }
   .rc-stat-tile-context { font-size: .88rem; color: #32312D; line-height: 1.55; padding-top: 10px; border-top: 1px solid #F1EFE3; }
   
