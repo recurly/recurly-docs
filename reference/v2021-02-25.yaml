@@ -692,7 +692,7 @@ paths:
             end
         - lang: Java
           source: |
-            QueryParams params = new QueryParams();
+            ListSitesParams params = new ListSitesParams();
             params.setLimit(200); // Pull 200 records at a time
             final Pager<Site> sites = client.listSites(params);
 
@@ -905,7 +905,7 @@ paths:
             end
         - lang: Java
           source: |
-            QueryParams params = new QueryParams();
+            ListAccountsParams params = new ListAccountsParams();
             params.setLimit(200); // Pull 200 records at a time
             Pager<Account> accounts = client.listAccounts(params);
 
@@ -1444,6 +1444,16 @@ paths:
         active until the end of the current billing cycle before expiring). We
         recommend closing accounts only when all business is concluded with a
         customer.
+      parameters:
+        - in: query
+          name: redact
+          schema:
+            type: boolean
+          description: >-
+            Permanently removes all personally identifiable information (PII)
+            from this account after it has been deactivated, to fulfill a data
+            subject's right to erasure under GDPR and similar privacy
+            regulations (e.g. CCPA). Cannot be undone.
       responses:
         '200':
           description: An account.
@@ -3165,9 +3175,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
-
-            params.setLimit(200); // Pull 200 records at a time
+            ListAccountCouponRedemptionsParams params = new
+            ListAccountCouponRedemptionsParams();
 
             final Pager<CouponRedemption> redemptions =
             client.listAccountCouponRedemptions(accountId, params);
@@ -3679,7 +3688,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListAccountCreditPaymentsParams params = new
+            ListAccountCreditPaymentsParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -4028,7 +4038,7 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListAccountInvoicesParams params = new ListAccountInvoicesParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -4469,7 +4479,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListAccountLineItemsParams params = new
+            ListAccountLineItemsParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -4732,9 +4743,7 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
-
-            params.setLimit(200); // Pull 200 records at a time
+            ListAccountNotesParams params = new ListAccountNotesParams();
 
             final Pager<AccountNote> notes = client.listAccountNotes(accountId,
             params);
@@ -5017,7 +5026,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListShippingAddressesParams params = new
+            ListShippingAddressesParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -5690,7 +5700,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListAccountSubscriptionsParams params = new
+            ListAccountSubscriptionsParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -5802,7 +5813,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListAccountTransactionsParams params = new
+            ListAccountTransactionsParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -5989,7 +6001,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListAccountAcquisitionParams params = new
+            ListAccountAcquisitionParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -6091,7 +6104,7 @@ paths:
             end
         - lang: Java
           source: |
-            QueryParams params = new QueryParams();
+            ListCouponsParams params = new ListCouponsParams();
             params.setLimit(200); // Pull 200 records at a time
             final Pager<Coupon> coupons = client.listCoupons(params);
 
@@ -6924,7 +6937,7 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListCreditPaymentsParams params = new ListCreditPaymentsParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -7073,7 +7086,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListCustomFieldDefinitionsParams params = new
+            ListCustomFieldDefinitionsParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -7482,7 +7496,7 @@ paths:
             end
         - lang: Java
           source: |
-            QueryParams params = new QueryParams();
+            ListItemsParams params = new ListItemsParams();
             params.setLimit(200); // Pull 200 records at a time
             Pager<Item> items = client.listItems(params);
 
@@ -8962,7 +8976,7 @@ paths:
             end
         - lang: Java
           source: |
-            QueryParams params = new QueryParams();
+            ListInvoicesParams params = new ListInvoicesParams();
             params.setLimit(200); // Pull 200 records at a time
             final Pager<Invoice> invoices = client.listInvoices(params);
 
@@ -10259,7 +10273,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListInvoiceLineItemsParams params = new
+            ListInvoiceLineItemsParams();
 
             params.setLimit(200);
 
@@ -10364,9 +10379,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
-
-            params.setLimit(200); // Pull 200 records at a time
+            ListInvoiceCouponRedemptionsParams params = new
+            ListInvoiceCouponRedemptionsParams();
 
             final Pager<CouponRedemption> redemptions =
             client.listInvoiceCouponRedemptions(invoiceId, params);
@@ -10783,7 +10797,7 @@ paths:
             end
         - lang: Java
           source: |
-            QueryParams params = new QueryParams();
+            ListLineItemsParams params = new ListLineItemsParams();
             params.setLimit(200); // Pull 200 records at a time
             final Pager<LineItem> lineItems = client.listLineItems(params);
 
@@ -11107,7 +11121,7 @@ paths:
             end
         - lang: Java
           source: |
-            QueryParams params = new QueryParams();
+            ListPlansParams params = new ListPlansParams();
             params.setLimit(200); // Pull 200 records at a time
             final Pager<Plan> plans = client.listPlans(params);
 
@@ -11753,7 +11767,7 @@ paths:
             end
         - lang: Java
           source: |
-            QueryParams params = new QueryParams();
+            ListPlanAddOnsParams params = new ListPlanAddOnsParams();
             params.setLimit(200); // Pull 200 records at a time
             final Pager<AddOn> addOns = client.listPlanAddOns(planId, params);
 
@@ -12477,7 +12491,7 @@ paths:
             end
         - lang: Java
           source: |
-            QueryParams params = new QueryParams();
+            ListAddOnsParams params = new ListAddOnsParams();
             params.setLimit(200); // Pull 200 records at a time
             final Pager<AddOn> addOns = client.listAddOns(params);
 
@@ -12690,7 +12704,7 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListShippingMethodsParams params = new ListShippingMethodsParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -12941,7 +12955,7 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListSubscriptionsParams params = new ListSubscriptionsParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -13537,7 +13551,7 @@ paths:
         - lang: Java
           source: |
             try {
-                QueryParams queryParams = new QueryParams();
+                TerminateSubscriptionParams queryParams = new TerminateSubscriptionParams();
                 queryParams.setRefund(Constants.RefundType.NONE); // "full" for a full refund, "partial" for prorated refund
                 client.terminateSubscription(subscriptionId, queryParams);
                 System.out.println("Terminated Subscription: " + subscriptionId);
@@ -14830,7 +14844,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListSubscriptionInvoicesParams params = new
+            ListSubscriptionInvoicesParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -14946,7 +14961,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListSubscriptionLineItemsParams params = new
+            ListSubscriptionLineItemsParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -15052,9 +15068,8 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
-
-            params.setLimit(200); // Pull 200 records at a time
+            ListSubscriptionCouponRedemptionsParams params = new
+            ListSubscriptionCouponRedemptionsParams();
 
             final Pager<CouponRedemption> redemptions =
             client.listSubscriptionCouponRedemptions(subscriptionId, params);
@@ -15428,7 +15443,7 @@ paths:
             end
         - lang: Java
           source: >
-            QueryParams params = new QueryParams();
+            ListTransactionsParams params = new ListTransactionsParams();
 
             params.setLimit(200); // Pull 200 records at a time
 
@@ -17069,7 +17084,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Entitlements'
+                $ref: '#/components/schemas/EntitlementList'
         '404':
           description: Incorrect site or account ID.
           content:
@@ -28407,7 +28422,7 @@ components:
           maxItems: 200
           items:
             $ref: '#/components/schemas/Plan'
-    Entitlements:
+    EntitlementList:
       type: object
       description: >-
         A list of privileges granted to a customer through the purchase of a
