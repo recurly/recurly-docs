@@ -60,12 +60,15 @@ Outside of complying with individual network requirements, it is an industry bes
 - CVV Code when your customer is in session, whether or not they are return customers.
 - PO Numbers for better interchange rates
 
-## Broad Card Compliance Guides
+## General Card Compliance Guides
 
 Please see each individual page below that goes over additional use cases
 
-- [Level 2 and 3 Guide](https://docs.recurly.com/recurly-subscriptions/docs/level-2-and-level-3-cedp-guide)
--
+- [PCI Compliance](https://docs.recurly.com/recurly-subscriptions/docs/pci-dss-compliance#/)
+
+* [Level 2 and 3 Guide](https://docs.recurly.com/recurly-subscriptions/docs/level-2-and-level-3-cedp-guide)
+* [Card on File](https://docs.recurly.com/recurly-subscriptions/docs/card-on-file)
+* [RBI Regulations](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update) (Processing Cards in India)
 
 **&#x20;**
 
