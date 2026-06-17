@@ -174,7 +174,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide .rc-gw-table a { color: #FF9D88 !important; border-bottom: 0 !important; }
 
 .rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-gw-table a:hover { text-decoration: underline !important; text-decoration-color: #FF9D88 !important; text-underline-offset: 2px !important; }
+.rc-guide .rc-gw-table a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
 
 
 /* ── CALLOUTS ── */
