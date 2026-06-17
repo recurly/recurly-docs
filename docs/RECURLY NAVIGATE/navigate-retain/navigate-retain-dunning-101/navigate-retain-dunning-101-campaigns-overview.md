@@ -95,14 +95,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; }
 .rc-feature-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; border-radius: 20px; font-size: .7rem; font-weight: 700; letter-spacing: .5px; background: #0D0D0B; color: #FFD706; width: fit-content; }
 
-/* TABLE */
-.rc-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin: 0 0 24px; border-radius: 10px; overflow: hidden; border: 1px solid #CCC9B8; }
-.rc-table thead { background: #0D0D0B; color: #FFFDF2; }
-.rc-table thead th { padding: 12px 16px; text-align: left; font-size: .75rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; }
-.rc-table tbody tr:nth-child(even) { background: #F1EFE3; }
-.rc-table tbody tr:nth-child(odd) { background: #FFFDF2; }
-.rc-table tbody td { padding: 12px 16px; color: #32312D; border-bottom: 1px solid #CCC9B8; vertical-align: top; }
-.rc-table tbody td strong { color: #0D0D0B; }
+.rc-table { 
+  display: table !important; /* Forces columns to stretch and fill the white space */
+  width: 100%; 
+  border-collapse: separate; /* Allows border-radius to work on the table */
+  border-spacing: 0; 
+  font-size: .88rem; 
+  margin: 0 0 24px; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  border: 1px solid #CCC9B8; 
+}
 
 /* CALLOUTS */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 0 0 16px; display: flex; gap: 14px; align-items: flex-start; }
