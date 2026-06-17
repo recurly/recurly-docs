@@ -251,7 +251,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-sticky-link">
-          Dunning 101 overview
+          Path overview
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-sticky-link">
@@ -470,7 +470,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
 
         <div class="rc-footer-section">
           <span class="rc-footer-label">Dunning 101</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-footer-link">Dunning 101 overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-footer-link">Path overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-footer-link">Dunning window length</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configure" class="rc-footer-link">Configuring your window</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-overview" class="rc-footer-link">Branding dunning emails</a>
