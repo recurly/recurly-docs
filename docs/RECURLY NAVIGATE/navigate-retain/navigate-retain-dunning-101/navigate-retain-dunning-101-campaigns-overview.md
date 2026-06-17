@@ -252,7 +252,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
         <div class="rc-callout-body">
           <strong>A single 10-day window on all plans is one of the most expensive dunning mistakes</strong>
-          <p>Annual subscribers represent your highest LTV — yet the default setup gives them the same short window as a monthly subscriber. If an annual renewal fails and expires after 10 days, that's potentially a full year of revenue lost from a subscriber who may have resolved their card issue within days or weeks. Adjusting your dunning window according to unique plans ensures all subscriptions have ample time for recovery.</p>
+          <p>Annual subscribers represent your highest LTV — yet the default setup gives them the same short window as a monthly subscriber. Annual renewals are statistically harder to recover than monthly ones. Cards expire over the year-long gap, amounts are larger (triggering insufficient-funds declines), and subscribers may have forgotten to update billing info. A short dunning window dramatically reduces your odds of recovery. Adjusting your dunning window according to unique plans ensures all subscriptions have ample time for recovery.</p>
         </div>
       </div>
     </div>
@@ -260,7 +260,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- WHAT TO SEGMENT -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-layer-group rc-fa-section"></i> What to segment — and why</h2>
-      <p>At minimum, create two campaigns to A/B test. A great starting point is one for monthly and one for annual (if you offer both). You can also set up unique campaigns for different monthly plans. From there, additional segmentation by subscriber type or value tier adds meaningful gains. Each segment benefits from a tailored window length, email cadence, and tone.</p>
+      <p>At minimum, create two campaigns. A great starting point is one for monthly and one for annual (if you offer both). You can also set up unique campaigns for different monthly plans. From there, additional segmentation by subscriber type or value tier adds meaningful gains. Each segment benefits from a tailored window length, email cadence, and tone.</p>
 
       <div class="rc-card-grid">
         <div class="rc-feature-card">
