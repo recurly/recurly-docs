@@ -294,7 +294,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">2</div>
           <div class="rc-toc-body">
             <h4>Configuring your window</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <p>Learn how to update dunning window lengths, adjust email schedules, and properly assign campaigns to your monthly and annual plans.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
