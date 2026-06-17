@@ -48,6 +48,24 @@ For MasterCard and Elo, you must provide **at least one** of the following:
 
 Additionally, Mastercard also require either the **billing** or shipping address to be provided. The cardholder name should contain only English characters, without accents (especially in LATAM regions).
 
+## Broad Card Best Practices
+
+Outside of complying with individual network requirements, it is an industry best practice for processing payments to ensure you are capturing the following data on any network:&#x20;
+
+- First and Last Name
+- Full Billing Address
+- Full Shipping Address when purchases include a shipped physical product&#x20;
+- Email Address and/or Phone Number
+- IP Address (collected automatically when using Recurly.js)
+- CVV Code when your customer is in session, whether or not they are return customers.
+- PO Numbers for better interchange rates
+
+## Broad Card Compliance Guides
+
+Please see each individual page below that goes over additional use cases
+
+- [Level 2 and 3 Guide](https://docs.recurly.com/recurly-subscriptions/docs/level-2-and-level-3-cedp-guide)
+
 **&#x20;**
 
 <br />
