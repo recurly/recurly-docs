@@ -95,18 +95,61 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; }
 .rc-feature-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; border-radius: 20px; font-size: .7rem; font-weight: 700; letter-spacing: .5px; background: #0D0D0B; color: #FFD706; width: fit-content; }
 
+/* TABLE */
 .rc-table { 
-  display: table !important; /* Forces columns to stretch and fill the white space */
-  width: 100%; 
-  border-collapse: separate; /* Allows border-radius to work on the table */
-  border-spacing: 0; 
-  font-size: .88rem; 
-  margin: 0 0 24px; 
-  border-radius: 10px; 
-  overflow: hidden; 
-  border: 1px solid #CCC9B8; 
+  display: table !important; 
+  width: 100% !important; 
+  border-collapse: separate !important; 
+  border-spacing: 0 !important; 
+  font-size: .88rem !important; 
+  margin: 0 0 24px !important; 
+  border-radius: 10px !important; 
+  overflow: hidden !important; 
+  border: 1px solid #CCC9B8 !important; 
 }
 
+/* Force the bold black header */
+.rc-table thead, .rc-table thead tr, .rc-table thead th { 
+  background-color: #0D0D0B !important; 
+  color: #FFFDF2 !important; 
+}
+.rc-table thead th { 
+  padding: 14px 16px !important; 
+  text-align: left !important; 
+  font-size: .75rem !important; 
+  font-weight: 700 !important; 
+  letter-spacing: .5px !important; 
+  text-transform: uppercase !important; 
+  border: none !important; 
+}
+
+/* Alternating row colors targeted directly at the cells */
+.rc-table tbody tr:nth-child(even), .rc-table tbody tr:nth-child(even) td { 
+  background-color: #F1EFE3 !important; 
+}
+.rc-table tbody tr:nth-child(odd), .rc-table tbody tr:nth-child(odd) td { 
+  background-color: #FFFDF2 !important; 
+}
+
+/* Cell padding and borders */
+.rc-table tbody td { 
+  padding: 14px 16px !important; 
+  color: #32312D !important; 
+  border-top: none !important; 
+  border-left: none !important; 
+  border-right: none !important; 
+  border-bottom: 1px solid #CCC9B8 !important; 
+  vertical-align: top !important; 
+}
+
+/* Remove the inner bottom border on the last row so it doesn't double up with the rounded container */
+.rc-table tbody tr:last-child td { 
+  border-bottom: none !important; 
+}
+
+.rc-table tbody td strong { 
+  color: #0D0D0B !important; 
+}
 /* CALLOUTS */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 0 0 16px; display: flex; gap: 14px; align-items: flex-start; }
 .rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
