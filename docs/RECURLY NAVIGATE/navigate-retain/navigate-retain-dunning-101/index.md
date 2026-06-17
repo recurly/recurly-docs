@@ -283,17 +283,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-list-check rc-fa-section"></i> What's in this path</h2>
       <div class="rc-toc-list">
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-toc-card">
-          <div class="rc-toc-num">1</div>
-          <div class="rc-toc-body">
-            <h4>Navigate Home</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-toc-card">
-          <div class="rc-toc-num">2</div>
+          <div class="rc-toc-num">1</div>
           <div class="rc-toc-body">
             <h4>Dunning window length</h4>
             <p>Understand why the dunning window is your most important configuration setting — and set it to the recommended benchmarks for your billing frequencies.</p>
@@ -302,7 +293,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configure" class="rc-toc-card">
-          <div class="rc-toc-num">3</div>
+          <div class="rc-toc-num">2</div>
           <div class="rc-toc-body">
             <h4>Configuring your window</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
@@ -311,7 +302,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-overview" class="rc-toc-card">
-          <div class="rc-toc-num">4</div>
+          <div class="rc-toc-num">3</div>
           <div class="rc-toc-body">
             <h4>Branding dunning emails</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
@@ -320,7 +311,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-configure" class="rc-toc-card">
-          <div class="rc-toc-num">5</div>
+          <div class="rc-toc-num">4</div>
           <div class="rc-toc-body">
             <h4>Configuring email templates</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
@@ -329,7 +320,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-strategy" class="rc-toc-card">
-          <div class="rc-toc-num">6</div>
+          <div class="rc-toc-num">5</div>
           <div class="rc-toc-body">
             <h4>Branding &amp; CTAs</h4>
             <p>Learn how to turn your dunning emails into branded, action-oriented communications — with the right message arc, subject lines, and CTAs to drive subscriber action.</p>
@@ -338,7 +329,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-overview" class="rc-toc-card">
-          <div class="rc-toc-num">7</div>
+          <div class="rc-toc-num">6</div>
           <div class="rc-toc-body">
             <h4>Multiple campaigns</h4>
             <p>Move beyond the default single campaign by segmenting dunning by plan type and billing frequency — so each subscriber gets a recovery sequence matched to their situation.</p>
@@ -347,7 +338,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-toc-card">
-          <div class="rc-toc-num">8</div>
+          <div class="rc-toc-num">7</div>
           <div class="rc-toc-body">
             <h4>Building &amp; assigning campaigns</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
@@ -356,7 +347,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-toc-card">
-          <div class="rc-toc-num">9</div>
+          <div class="rc-toc-num">8</div>
           <div class="rc-toc-body">
             <h4>Measuring performance</h4>
             <p>Know where to find your dunning analytics, what metrics to track, and how to establish a review cadence so your setup keeps improving over time.</p>
@@ -365,7 +356,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-toc-card">
-          <div class="rc-toc-num">10</div>
+          <div class="rc-toc-num">9</div>
           <div class="rc-toc-body">
             <h4>Review &amp; resources</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
