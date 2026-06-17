@@ -268,7 +268,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
+        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain • Pause Subscriptions
       </div>
       <div class="rc-lp-hero-title">
         <h1>Review &amp; resources</h1>
