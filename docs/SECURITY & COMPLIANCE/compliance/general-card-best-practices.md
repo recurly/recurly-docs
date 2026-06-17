@@ -35,6 +35,7 @@ Visa best practices include providing the customers First and Last name, Billing
 Ensure you are making use of Recurly fields that allow for sending and storing this data for future purchases, and renewals. If you would like to qualify for additional interchange improvements, follow our CEDP Level 2/3 Guidelines. If you are not using the API, ensure you are filling out your subscription plan and line item catalog fields to the fullest extent.
 
 - [Level 2/3 API Guide](https://docs.recurly.com/recurly-subscriptions/docs/level-2-and-level-3-cedp-guide)&#x20;
+- [Line Items Best Practices](https://docs.recurly.com/recurly-subscriptions/docs/line-items)
 
 ## MasterCard and Elo
 
