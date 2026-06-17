@@ -340,7 +340,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <tbody>
           <tr><td><strong>Monthly consumer</strong></td><td>28 days</td><td>4–5 emails</td><td>Friendly, concise</td></tr>
           <tr><td><strong>Annual</strong></td><td>60 days</td><td>8–10 emails</td><td>Higher-touch, value-focused</td></tr>
-          <tr><td><strong>Student / low-value</strong></td><td>14–21 days</td><td>3–4 emails</td><td>Casual, option-forward</td></tr>
+          <tr><td><strong>Low-value / price-sensitive</strong></td><td>14–21 days</td><td>3–4 emails</td><td>Casual, option-forward</td></tr>
           <tr><td><strong>Enterprise / team</strong></td><td>60+ days</td><td>8–12 emails</td><td>Formal, consequence-aware</td></tr>
         </tbody>
       </table>
