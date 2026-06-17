@@ -307,7 +307,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">+279%</div>
           <div class="rc-stat-tile-label">Recovered revenue in 30 days</div>
-          <div class="rc-stat-tile-context"><strong>My Music Workshop</strong> implemented dunning best practices from scratch — separate cycles for trials, monthly, and annual plans, plus full branding — and saw this result in their first month after switching to Recurly.<br><br><strong><a href="https://recurly.com/resources/case-study/my-music-workshop/" target="blank" rel="noopener noreferrer">Check out their story</a> for more details.</strong></div>
+          <div class="rc-stat-tile-context"><strong>My Music Workshop</strong> implemented dunning best practices from scratch through a Recurly Navigate session — setting up separate cycles for trials, monthly, and annual plans — and saw this result in their first month.<br><br><strong><a href="https://recurly.com/resources/case-study/my-music-workshop/" target="blank" rel="noopener noreferrer">Check out their story</a> for more details.</strong></div>
         </div>
       </div>
 
@@ -325,7 +325,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
           <h4>Dunning Summary</h4>
-          <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Summary</strong>. Shows total recovered revenue broken down by recovery method — intelligent retries, Account Updater, customer updates, and manual collection. Use this to understand how your revenue is being recovered, not which campaign is driving it. For per-campaign recovery rates, use the Dunning Effectiveness dashboards instead.</p>
+          <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Summary</strong>. Shows total recovered revenue broken down by recovery method — intelligent retries, Account Updater, customer updates, and manual collection. Use this to understand how your revenue is being recovered.</p>
         </div>
           <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
