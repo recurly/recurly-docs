@@ -202,7 +202,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
 .rc-stat-tile + .rc-stat-tile { border-left: 1px solid #CCC9B8; }
 .rc-stat-tile-num { font-size: 2rem; font-weight: 800; color: #FF9D88; line-height: 1; margin-bottom: 4px; }
 .rc-stat-tile-label { font-size: .7rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: #807D73; margin-bottom: 10px; }
-  .rc-stat-tile-context { font-size: .88rem; color: #807D73; line-height: 1.55; padding-top: 10px; border-top: 1px solid #F1EFE3; }
+  .rc-stat-tile-context { font-size: .88rem; color: #32312D; line-height: 1.55; padding-top: 10px; border-top: 1px solid #F1EFE3; }
   
 .rm-Markdown.markdown-body .rc-stat-strip a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-stat-strip a { color: #FF9D88 !important; border-bottom: 0 !important; }
@@ -302,12 +302,12 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">+12%</div>
           <div class="rc-stat-tile-label">Revenue lift in 3 months</div>
-          <div class="rc-stat-tile-context"><strong>Across a group of 20 merchants who worked with Recurly's Customer Success team to overhaul their dunning setup — including branding, window length, and email frequency — revenue lifted 12% within three months of launch. <br><br>Read the <a href="https://recurly.com/content/subscription-case-study-dunning-workshop-to-reduce-customer-churn/" target="_blank" rel="noopener noreferrer">case study</a> to learn more.</strong></div>
+          <div class="rc-stat-tile-context">Across <strong>a group of 20 merchants</strong> who worked with Recurly's Customer Success team to overhaul their dunning setup — including branding, window length, and email frequency — revenue lifted 12% within three months of launch. <br><br><stong>Read the <a href="https://recurly.com/content/subscription-case-study-dunning-workshop-to-reduce-customer-churn/" target="_blank" rel="noopener noreferrer">case study</a> to learn more.</strong></div>
         </div>
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">+279%</div>
           <div class="rc-stat-tile-label">Recovered revenue in 30 days</div>
-          <div class="rc-stat-tile-context"><strong>My Music Workshop implemented dunning best practices from scratch — separate cycles for trials, monthly, and annual plans, plus full branding — and saw this result in their first month after switching to Recurly.<br><br> <a href="https://recurly.com/resources/case-study/my-music-workshop/" target="blank" rel="noopener noreferrer">Check out their story</a> for more details.</strong></div>
+          <div class="rc-stat-tile-context"><strong>My Music Workshop</strong> implemented dunning best practices from scratch — separate cycles for trials, monthly, and annual plans, plus full branding — and saw this result in their first month after switching to Recurly.<br><br><strong><a href="https://recurly.com/resources/case-study/my-music-workshop/" target="blank" rel="noopener noreferrer">Check out their story</a> for more details.</strong></div>
         </div>
       </div>
 
