@@ -205,10 +205,10 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
   .rc-stat-tile-context { font-size: .88rem; color: #32312D; line-height: 1.55; padding-top: 10px; border-top: 1px solid #F1EFE3; }
   
 .rm-Markdown.markdown-body .rc-stat-strip a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-stat-strip a { color: #FF9D88 !important; border-bottom: 0 !important; }
+.rc-stat-strip a { color: #FF8200 !important; border-bottom: 0 !important; }
 
 .rm-Markdown.markdown-body .rc-stat-strip a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-stat-strip a:hover { text-decoration: underline !important; text-decoration-color: #FF9D88 !important; text-underline-offset: 2px !important; }
+.rc-stat-strip a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
 
 
 
