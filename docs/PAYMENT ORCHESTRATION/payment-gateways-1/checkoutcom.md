@@ -132,7 +132,7 @@ Recurly uses webhooks from Checkout.com to receive payment and dispute event not
   </div>
   <div class="rp-step">
     <div class="rp-step-num">3</div>
-    <div><h4>Enter the webhook destination URL</h4><p>In the URL field, enter the Recurly callback URL below, replacing <code>&lt;MERCHANT_SUBDOMAIN&gt;</code> with your Recurly site's actual subdomain.</p></div>
+    <div><h4>Enter the webhook destination URL</h4><p>In the URL field, enter the Recurly callback URL below, replacing <code>&lt;MERCHANT_SUBDOMAIN&gt;</code> with your Recurly site's actual subdomain. If you cannot find your merchant subdomain, please reach out to Recurly support.</p></div>
   </div>
 </div>
 
@@ -153,7 +153,7 @@ https://callbacks.recurly.com/checkout/mywebsite
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">4</div>
-    <div><h4>Select event types</h4><p>To future-proof your setup, select all event types. At minimum, ensure <strong>payment events</strong> and <strong>dispute events</strong> are included.</p></div>
+    <div><h4>Select event types</h4><p>To future-proof your setup, select all event types. At minimum, ensure <strong>payment events</strong> and <strong>dispute events</strong> are included. Within Checkout.com settings, payment events in the list of webhook events fall under the "Gateway" section, not either of the two "Payment" sections.</p></div>
   </div>
   <div class="rp-step">
     <div class="rp-step-num">5</div>
