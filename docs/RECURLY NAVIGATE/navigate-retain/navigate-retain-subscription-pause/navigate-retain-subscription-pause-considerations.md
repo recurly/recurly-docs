@@ -355,7 +355,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </tr>
         <tr>
           <td>Recommended approach</td>
-          <td>Use the <strong><a href="https://docs.recurly.com/recurly-subscriptions/docs/postpone-subscription">pause_subscription API endpoint directly</a></strong></td>
+          <td>Use the <strong><a href="https://docs.recurly.com/recurly-subscriptions/docs/postpone-subscription"target="_blank" rel="noopener noreferrer">pause_subscription API endpoint directly</a></strong></td>
           <td>Use the <strong>update_subscription</strong> API to postpone the <strong>next_bill_date</strong> instead</td>
         </tr>
         <tr>
