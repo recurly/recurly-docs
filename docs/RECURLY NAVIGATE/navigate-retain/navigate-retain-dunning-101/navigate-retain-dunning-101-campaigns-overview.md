@@ -111,14 +111,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* Force the bold black header */
 .rc-table thead, .rc-table thead tr, .rc-table thead th { 
   background-color: #0D0D0B !important; 
-  color: #FFFDF2 !important; 
+  color: #FFD706 !important; 
 }
 .rc-table thead th { 
   padding: 14px 16px !important; 
   text-align: left !important; 
   font-size: .75rem !important; 
   font-weight: 700 !important; 
-	font-color: #ffd706 !important;
   letter-spacing: .5px !important; 
   text-transform: uppercase !important; 
   border: none !important; 
