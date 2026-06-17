@@ -279,7 +279,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <p>Use Recurly's dynamic variables to include the subscriber's name, the amount owed, the last four digits of their card, and the days remaining in the dunning window. A personalized email feels like it was written for that subscriber specifically — which drives action far more effectively than a generic one.</p>
         </div>
       </div>
-  </div></div>
+
 
 
     <div class="rc-lp-nav">
