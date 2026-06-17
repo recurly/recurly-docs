@@ -273,9 +273,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- INTRO -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-shield-halved rc-fa-section"></i> About this path</h2>
-      <p>Dunning is Recurly's automated system for recovering failed subscription payments. When a renewal charge doesn't go through, dunning kicks in — retrying the payment and reaching out to the subscriber so they can update their billing information before their subscription lapses.</p>
-      <p>Most merchants have dunning turned on, but running on defaults. This path covers the three configuration changes that consistently produce the highest recovery gains — window length, email branding and CTAs, and campaign segmentation — followed by a dedicated section on reading your dunning analytics so you can verify the impact of every change you make.</p>
-      <p>Work through the Micro-Paths in order for the full picture, or jump directly to the topic most relevant to your current setup.</p>
+      <p>Dunning is Recurly's automated system for recovering failed subscription payments by retrying charges and contacting subscribers. While most merchants rely on defaults, this path covers three configuration changes that drive the highest recovery: window length, email branding/CTAs, and campaign segmentation. You'll also learn to read analytics to verify your impact. Work sequentially or jump to the topic you need.</p>
     </div>
 
 <!-- TABLE OF CONTENTS -->
