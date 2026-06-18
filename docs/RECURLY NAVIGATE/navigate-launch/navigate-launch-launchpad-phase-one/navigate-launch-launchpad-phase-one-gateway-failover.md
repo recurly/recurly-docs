@@ -205,7 +205,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
-          <div class="rc-step-content"><h4>Add a backup gateway</h4><p>Confirm you have at least two gateways configured in <strong>Configuration → Payment Gateways</strong>. Both gateways should support the same currencies and card types. <a href:"https://docs.recurly.com/recurly-subscriptions/docs/gateway-configuration" target="_blank">Recurly Docs: Multiple Gateway Configuration<a/>.</p></div>
+          <div class="rc-step-content"><h4>Add a backup gateway</h4><p>Confirm you have at least two gateways configured in <strong>Configuration → Payment Gateways</strong>. Both gateways should support the same currencies and card types. <a href:"https://docs.recurly.com/recurly-subscriptions/docs/gateway-configuration" target="_blank">Recurly Docs: Multiple Gateway Configuration<a></a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
@@ -244,9 +244,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/docs/gateway-failover" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Gateway Failover</a>
-        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
-      </div>
+<a href="https://docs.recurly.com/docs/gateway-failover" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Gateway Failover</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/gateway-configuration" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Multiple Gateway Configuration</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/gateway-failover" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Gateway Failover</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-calendar"></i> Join Global Office Hours</a>
+        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>  </div>
     </div>
 
     <div class="rc-footer-nav">
