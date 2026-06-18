@@ -203,20 +203,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         </div>
         <div class="rc-step">
           <div class="rc-step-num">5</div>
-          <div class="rc-step-content"><h4>Verify PSD2 / 3DS (EU merchants only)</h4><p>If you process payments from EU subscribers, trigger a transaction that should require 3D Secure authentication. Confirm the challenge flow appears, completes, and the payment succeeds.<br><br><i class=fa-solid fa-books"> <strong>Learn more</strong> about PSD2 and 3DS compliance in <a href=”https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2” target="_blank" rel="noopener noreferrer">Recurly Documentation.</a></p></div>
+          <div class="rc-step-content"><h4>Verify PSD2 / 3DS (EU merchants only)</h4><p>If you process payments from EU subscribers, trigger a transaction that should require 3D Secure authentication. Confirm the challenge flow appears, completes, and the payment succeeds.</a></p></div>
         </div>
+      </div>
+  <div class="rc-callout rc-callout-caution">
+        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="rc-callout-body"><strong>Learn more about PSD2 and 3DS compliance in <a href=”https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2” target="_blank" rel="noopener noreferrer">Recurly Documentation.</a></p></div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body"><strong>Run the test on mobile</strong><p>Many checkout issues are device-specific. Use a mobile device and a different browser than your admin setup — this is where subscribers are most likely to encounter friction.</p></div>
       </div>
-
-      <div class="rc-callout rc-callout-caution">
-        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-        <div class="rc-callout-body"><strong>Learn more about PSD2 and 3DS compliance in <a href=”https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2” target="_blank" rel="noopener noreferrer">Recurly Documentation.</a></p></div>
-      </div>
-
+    
       <div class="rc-checklist">
         <div class="rc-checklist-header"><i class="fa-solid fa-list-check" style="color:var(--yellow);font-size:1rem;"></i><h4>Production testing checklist</h4></div>
         <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Completed a live test transaction</strong><span>Use your cheapest plan — refund immediately after.</span></div></label>
