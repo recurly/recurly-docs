@@ -233,7 +233,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Completed a live test transaction</strong><span>Use your cheapest plan — refund immediately after.</span></div></label>
         <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Confirmed the transaction in Recurly</strong><span>Invoice and subscription status show as successful.</span></div></label>
         <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Refunded the test transaction</strong><span>Confirmed the refund processed in Recurly.</span></div></label>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Verified PSD2 / 3DS authentication</strong><span>EU merchants only. Read <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank"><strong>Recurly Docs</strong></a> for more details.</span></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Verified PSD2 / 3DS authentication</strong><span>EU merchants only. Read <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank">Recurly Docs</a> for more details.</span></div></label>
         <div class="rc-checklist-footer">Tap each item to mark it complete</div>
       </div>
     </div>
