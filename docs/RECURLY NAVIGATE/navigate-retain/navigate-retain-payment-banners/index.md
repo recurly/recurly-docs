@@ -246,7 +246,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Payment banners meet subscribers where they already are: inside your product, engaged, and more likely to act than in any other channel.</p>
     </div>
 
-    <!-- Nav: non-sticky, open. Active: Overview. 5-page structure. -->
+    <!-- Nav: non-sticky, open. Active: Path Overview. 5-page structure. -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
