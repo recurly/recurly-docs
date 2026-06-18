@@ -288,12 +288,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-arrow-pointer"></i></div>
           <h4>Banner click-through rate (CTR)</h4>
-          <p>The percentage of subscribers who saw the banner and clicked your CTA. Low CTR is almost always a messaging problem — the copy is too generic or the urgency isn't clear. Typical range for in-app payment prompts: 15–35% depending on scenario and urgency.</p>
+          <p>The percentage of subscribers who saw the banner and clicked your CTA. Low CTR is almost always a messaging problem — the copy is too generic or the urgency isn't clear. </p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-check-double"></i></div>
           <h4>Conversion rate</h4>
-          <p>Of the subscribers who clicked through, what percentage successfully updated their billing information? Low conversion rate signals friction after the click — usually a redirect that requires too many steps. Typical range: 60–70% of clicks. In Recurly Engage, this is labeled "Conversion Rate" in the guide dashboard.</p>
+          <p>Of the subscribers who clicked through, what percentage successfully updated their billing information? Low conversion rate signals friction after the click — usually a redirect that requires too many steps. </p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
