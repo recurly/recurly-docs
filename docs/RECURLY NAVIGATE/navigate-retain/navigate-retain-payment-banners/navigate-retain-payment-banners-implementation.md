@@ -310,7 +310,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </ul>
         </div>
         <div class="rc-accent-card rc-accent-retain">
-          <h4>Recurly Engage — no-code, faster</h4>
+          <h4>Recurly Engage — low-code, faster</h4>
           <ul>
             <li><strong>No engineering bandwidth</strong> available right now</li>
             <li><strong>Speed to value matters</strong> — Engage can be live the same day</li>
@@ -366,7 +366,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-path-card-block">
           <div class="rc-path-card-header">
             <h3><i class="fa-solid fa-circle-play" style="margin-right:8px;"></i>Recurly Engage</h3>
-            <p>No-code — can be live the same day</p>
+            <p>Low-code — can be live the same day</p>
           </div>
           <div class="rc-path-card-body">
             <div class="rc-path-detail">
