@@ -334,62 +334,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <p>Phase 2 builds on that foundation. You'll measure performance through Recurly Analytics, learn to read your six core KPIs, and start using data to make informed decisions about your subscription business.</p>
     </div>
-
-
-
-    <!-- Section: Your 6 core metrics -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Your 7 core benchmark metrics</h2>
-      <p>These are the metrics that drive subscription growth. They show how well you're acquiring subscribers, how much revenue you're keeping, and how effectively your recovery systems are working.</p>
-
-      <div class="rc-metric-grid">
-        <div class="rc-metric-card">
-          <div class="rc-metric-card-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
-          <h4>Acquisition rate</h4>
-          <p>New subscribers / active subscribers at start of period</p>
-        </div>
-        <div class="rc-metric-card">
-          <div class="rc-metric-card-icon"><i class="fa-solid fa-bolt"></i></div>
-          <h4>Sign-up decline rate</h4>
-          <p>Failed sign-up attempts / total sign-up attempts</p>
-        </div>
-        <div class="rc-metric-card">
-          <div class="rc-metric-card-icon"><i class="fa-solid fa-right-from-bracket"></i></div>
-          <h4>Voluntary churn rate</h4>
-          <p>Subscribers who chose to cancel</p>
-        </div>
-        <div class="rc-metric-card">
-          <div class="rc-metric-card-icon"><i class="fa-solid fa-credit-card"></i></div>
-          <h4>Involuntary churn rate</h4>
-          <p>Subscribers lost to dunning expiration</p>
-        </div>
-        <div class="rc-metric-card">
-          <div class="rc-metric-card-icon"><i class="fa-solid fa-circle-check"></i></div>
-          <h4>Renewal invoice paid rate</h4>
-          <p>Percentage of renewals collected successfully</p>
-        </div>
-        <div class="rc-metric-card">
-          <div class="rc-metric-card-icon"><i class="fa-solid fa-rotate"></i></div>
-          <h4>Dunning recovery rate</h4>
-          <p>Invoices paid / total invoices entering dunning</p>
-        </div>
-        <div class="rc-metric-card">
-          <div class="rc-metric-card-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
-          <h4>Decline rate at renewal</h4>
-          <p>Percentage of failed renewal attempts</p>
-        </div>
-      </div>
-
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
-        <div class="rc-callout-body">
-          <strong>Download the Metrics Cheatsheet</strong>
-          <p>Before diving in, grab the <a href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer">Launchpad Metrics Cheatsheet</a>. It lists every KPI definition, calculation formula, and which direction you want each metric to move.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section: What's in this course -->
+    
+    
+  <!-- Section: What's in this course -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-list-check rc-fa-section"></i> What's in this course</h2>
       <p>Each module covers one metric area from definition to action. Work through them in order for the full picture, or jump to whichever topic is most relevant right now.</p>
@@ -446,6 +393,64 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
+
+
+
+
+
+    <!-- Section: Your 6 core metrics -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Your 7 core benchmark metrics</h2>
+      <p>These are the metrics that drive subscription growth. They show how well you're acquiring subscribers, how much revenue you're keeping, and how effectively your recovery systems are working.</p>
+
+      <div class="rc-metric-grid">
+        <div class="rc-metric-card">
+          <div class="rc-metric-card-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+          <h4>Acquisition rate</h4>
+          <p>New subscribers / active subscribers at start of period</p>
+        </div>
+        <div class="rc-metric-card">
+          <div class="rc-metric-card-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h4>Sign-up decline rate</h4>
+          <p>Failed sign-up attempts / total sign-up attempts</p>
+        </div>
+        <div class="rc-metric-card">
+          <div class="rc-metric-card-icon"><i class="fa-solid fa-right-from-bracket"></i></div>
+          <h4>Voluntary churn rate</h4>
+          <p>Subscribers who chose to cancel</p>
+        </div>
+        <div class="rc-metric-card">
+          <div class="rc-metric-card-icon"><i class="fa-solid fa-credit-card"></i></div>
+          <h4>Involuntary churn rate</h4>
+          <p>Subscribers lost to dunning expiration</p>
+        </div>
+        <div class="rc-metric-card">
+          <div class="rc-metric-card-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h4>Renewal invoice paid rate</h4>
+          <p>Percentage of renewals collected successfully</p>
+        </div>
+        <div class="rc-metric-card">
+          <div class="rc-metric-card-icon"><i class="fa-solid fa-rotate"></i></div>
+          <h4>Dunning recovery rate</h4>
+          <p>Invoices paid / total invoices entering dunning</p>
+        </div>
+        <div class="rc-metric-card">
+          <div class="rc-metric-card-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+          <h4>Decline rate at renewal</h4>
+          <p>Percentage of failed renewal attempts</p>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+        <div class="rc-callout-body">
+          <strong>Download the Metrics Cheatsheet</strong>
+          <p>Before diving in, grab the <a href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer">Launchpad Metrics Cheatsheet</a>. It lists every KPI definition, calculation formula, and which direction you want each metric to move.</p>
+        </div>
+      </div>
+    </div>
+
+  
     <!-- Section: Your Monthly Metrics Scorecard -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-clipboard-list rc-fa-section"></i> What you're working toward</h2>
