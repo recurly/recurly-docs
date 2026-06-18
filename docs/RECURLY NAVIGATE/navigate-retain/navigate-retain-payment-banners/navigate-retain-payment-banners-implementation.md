@@ -375,7 +375,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </div>
             <div class="rc-path-detail">
               <i class="fa-solid fa-sliders rc-path-detail-icon"></i>
-              <p><strong>Prompt types available:</strong> Bottom banners, corner notifications, pop-up modals, interstitials, video prompts, and inline banners. Cancellation save flows use a CSS selector on your cancel button.</p>
+              <p><strong>Prompt types available:</strong> Bottom banners, corner notifications, pop-up modals, interstitials, video prompts, and inline banners. </p>
             </div>
             <div class="rc-path-detail">
               <i class="fa-solid fa-triangle-exclamation rc-path-detail-icon orange"></i>
