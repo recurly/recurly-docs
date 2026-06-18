@@ -320,7 +320,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-recap-row">
         <div class="rc-recap-card">
           <h4><i class="fa-solid fa-flask rc-fa-section"></i> Final production testing</h4>
-          <p>You validated the full subscriber checkout experience, confirmed payment processing, and checked PSD2 compliance — catching issues before real subscribers ever saw them.</p>
+          <p>You validated the full subscriber checkout experience, confirmed payment processing, and checked PSD2 and 3DS compliance — catching issues before real subscribers ever saw them.</p>
           <a class="rc-recap-res" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing">← Review this step</a>
         </div>
         <div class="rc-recap-card">
