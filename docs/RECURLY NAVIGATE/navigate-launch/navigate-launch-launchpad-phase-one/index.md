@@ -479,12 +479,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-footer-section">
           <span class="rc-footer-label">Launchpad</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-footer-link">Production testing</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-footer-link">Dunning optimization</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater" class="rc-footer-link">Account Updater</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding" class="rc-footer-link">Branding your emails &amp; invoices</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-footer-link">Gateway failover</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review" class="rc-footer-link">Review &amp; resources</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-footer-link">1. Production testing</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-footer-link">2. Dunning optimization</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater" class="rc-footer-link">3. Account Updater</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding" class="rc-footer-link">4. Branding your emails &amp; invoices</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-footer-link">5. Gateway failover</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review" class="rc-footer-link">6. Review &amp; resources</a>
         </div>
 
         <div class="rc-footer-utility">
