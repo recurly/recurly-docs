@@ -203,10 +203,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-hero">
       
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale
+        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale • Benchmarks 101
       </div>
-      <h1>Recurly Benchmarks 101</h1>
-      <p>Recurly benchmarks 8 key metrics across your subscription lifecycle — pulled from 2,200+ merchants. This course shows you where to find them, how to read them, and what to do with what you find.</p>
+      <h1>Benchmarks 101</h1>
+      <p>Recurly benchmarks 8 key metrics across your subscription lifecycle — pulled from 2,200+ merchants. This path shows you where to find them, how to read them, and what to do with what you find.</p>
     </div>
 
     <!-- NAV — Course Overview active, non-sticky, open -->
@@ -219,24 +219,22 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <img src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" alt=""> Navigate Home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Overview
+          <img src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Path Overview
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-reading" class="rc-sticky-link"><span class="rc-step-badge">1</span> Reading benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-subscriber" class="rc-sticky-link"><span class="rc-step-badge">2</span> Subscriber benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-churn" class="rc-sticky-link"><span class="rc-step-badge">3</span> Churn benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-renewal-dunning" class="rc-sticky-link"><span class="rc-step-badge">4</span> Renewal &amp; dunning benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
-        </a>
+        
       </div></div></div>
     </details>
 
     <!-- CONTENT -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-chart-bar rc-fa-section"></i> What this course covers</h2>
-      <p>Recurly's built-in benchmarks compare your subscription metrics against thousands of similar businesses in your industry — in real time, without leaving your dashboard. This course walks you through all 8 benchmarked KPIs across 4 Analytics dashboards, so you can spot gaps, confirm strengths, and know exactly where to focus.</p>
-      <p>Before you start: confirm your industry is set correctly under <strong>Analytics → Settings</strong>. An incorrect classification skews every comparison in this course. Changes take up to 24 hours to reflect.</p>
+      <h2><i class="fa-solid fa-chart-bar rc-fa-section"></i> What this path covers</h2>
+      <p>Recurly's built-in benchmarks compare your subscription metrics against thousands of similar businesses in your industry — in real time, without leaving your dashboard. This path walks you through all 8 benchmarked KPIs across 4 Analytics dashboards, so you can spot gaps, confirm strengths, and know exactly where to focus.</p>
+      <p>Before you start: confirm your industry is set correctly under <strong>Analytics → Settings</strong>. An incorrect classification skews every comparison in this path. Changes take up to 24 hours to reflect.</p>
 
       <!-- TOC CARDS -->
       <div class="rc-toc-list">
@@ -281,7 +279,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">5</div>
           <div class="rc-toc-body">
             <h4>Review &amp; resources</h4>
-            <p>Check your understanding and access all course resources in one place.</p>
+            <p>Check your understanding and access all path resources in one place.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
@@ -313,7 +311,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
         <div class="rc-footer-section">
           <span class="rc-footer-label">Recurly Benchmarks 101</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-footer-link">Path Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-reading" class="rc-footer-link">1. Reading benchmarks</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-subscriber" class="rc-footer-link">2. Subscriber benchmarks</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-churn" class="rc-footer-link">3. Churn benchmarks</a>
