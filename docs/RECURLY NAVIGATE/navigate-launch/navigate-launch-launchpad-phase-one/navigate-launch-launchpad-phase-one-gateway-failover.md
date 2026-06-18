@@ -173,7 +173,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-shield-halved rc-fa-section"></i> How failover works</h2>
-      <p>Gateway Failover monitors your primary gateway for communication errors. When error volume hits a defined threshold in a short window, Recurly automatically routes traffic to your backup gateway. Once the primary gateway recovers, traffic shifts back. Failover works only for cards stored in Recurly's vault — gateway-only tokens (like Stripe-only tokens) cannot be rerouted to another provider.</p>
+      <p>Gateway Failover automatically routes traffic to a backup gateway when your primary gateway experiences elevated communication errors. First-time signups are actively rerouted to the backup during an outage. Recurring renewals are paused and queued, then released to the primary once it recovers.</p>
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
