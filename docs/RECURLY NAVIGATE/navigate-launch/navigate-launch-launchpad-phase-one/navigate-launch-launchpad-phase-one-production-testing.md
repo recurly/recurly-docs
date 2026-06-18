@@ -195,7 +195,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
-          <div class="rc-step-content"><h4>Check your confirmation email</h4><p>Verify the post-signup email arrives promptly, displays your plan name and pricing correctly, and links to your subscriber portal.</p></div>
+          <div class="rc-step-content"><h4>Check your confirmation email</h4><p>Verify the post-signup email arrives promptly, displays your plan name, branding, and pricing correctly, and links to your subscriber portal.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">4</div>
