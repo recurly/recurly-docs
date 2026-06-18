@@ -284,7 +284,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">7.2%</div>
-          <div class="rc-stat-tile-label">At risk each billing cycle</div>
+          <div class="rc-stat-tile-label">Are at risk each billing cycle</div>
           <div class="rc-stat-tile-context">At any given moment, roughly 1 in 14 subscribers has a payment issue waiting to surface.</div>
         </div>
         <div class="rc-stat-tile">
