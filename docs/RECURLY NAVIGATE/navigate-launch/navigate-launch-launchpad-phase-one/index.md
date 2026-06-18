@@ -300,7 +300,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-map-location-dot rc-fa-section"></i> You're live — now let's optimize</h2>
       <p>Going live is just the beginning. Launchpad is your guided program to make sure Recurly is working as hard as possible for your business from day one.</p>
-      <p>Navigate Launchpad is Recurly's self-paced optimization program for new merchants. It's designed to be completed after going live in production — walking you through the most impactful configurations, best practices, and data insights one step at a time. You don't need to rush. Each path module builds on the last — work through them at your own pace and come back anytime. If you're stuck or have any questions, join <a href="https://navigate.recurly.com/global-office-hours/">Customer Success Office Hours</a> for live support from a CSM.</p>
+      <p>Navigate Launchpad is Recurly's self-paced optimization program for new merchants. It's designed to be completed after going live in production — walking you through the most impactful configurations, best practices, and data insights one step at a time. You don't need to rush. Each path module builds on the last — work through them at your own pace and come back anytime.</p>
+<p>If you're stuck or have any questions, join <a href="https://navigate.recurly.com/global-office-hours/">Customer Success Office Hours</a> for live support from a CSM.</p>
     </div>
 
     <!-- Trail guide video -->
