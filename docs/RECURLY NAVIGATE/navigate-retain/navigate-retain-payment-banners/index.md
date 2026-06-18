@@ -270,12 +270,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Brief intro — unchanged -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-bell rc-fa-section"></i> What are payment banners?</h2>
-      <p>Payment banners are in-session notifications that appear inside your product when a subscriber's payment is at risk or they've started a cancellation. They reach subscribers at the moment they're most likely to act: while they're already using what they're paying for. Recurly supports both a custom webhook-based implementation and a no-code option via Recurly Engage, both covered in this course.</p>
+      <p>Payment banners are in-session notifications that appear inside your product when a subscriber's payment is at risk or they've started a cancellation. They reach subscribers at the moment they're most likely to act: while they're already using what they're paying for. Recurly supports both a custom webhook-based implementation and a no-code option via Recurly Engage, both covered in this path.</p>
     </div>
 
     <!-- TOC — updated to 5-page structure -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-list rc-fa-section"></i> What's in this course</h2>
+      <h2><i class="fa-solid fa-list rc-fa-section"></i> What's in this path</h2>
       <div class="rc-toc-list">
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-toc-card">
@@ -318,7 +318,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">5</div>
           <div class="rc-toc-body">
             <h4>Review &amp; resources</h4>
-            <p>Course recap with links back to each page, and the full resource library for everything covered in this course.</p>
+            <p>Path recap with links back to each page, and the full resource library for everything covered in this path.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
