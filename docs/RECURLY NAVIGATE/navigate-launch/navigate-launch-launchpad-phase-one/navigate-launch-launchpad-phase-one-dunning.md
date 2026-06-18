@@ -195,7 +195,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
       </div>
 
       <h2><i class="fa-solid fa-gear rc-fa-section"></i> Configure your dunning campaign</h2>
-      <p>Every Recurly account has a default dunning campaign. These steps walk you through optimizing it.</p>
+      <p>Every Recurly account has a default dunning campaign. These steps walk you through optimizing it. You can find more technical details for each step in <a href:"https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank">Recurly Docs: Dunning management</a>.</p>
 
       <div class="rc-steps">
         <div class="rc-step">
