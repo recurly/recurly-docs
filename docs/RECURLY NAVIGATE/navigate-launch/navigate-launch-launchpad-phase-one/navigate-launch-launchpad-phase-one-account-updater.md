@@ -173,7 +173,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> How Account Updater works</h2>
-      <p>Account Updater queries Visa, Mastercard, Discover, and Amex card network files to catch changes in card numbers or expiry dates before your next renewal attempt. For most gateways, checks run days before billing. Stripe and Adyen support real-time updates during the transaction itself. Subscribers never notice — their renewal just succeeds.</p>
+      <p>Account Updater queries Visa, Mastercard, Discover, and Amex card network files to catch changes in card numbers or expiry dates before your next renewal attempt. For most gateways, checks run days before billing. Stripe and Adyen support real-time updates during the transaction itself. Subscribers don't have to take action — their renewal just succeeds.</p>
       <p>Account Updater and dunning are complementary: Account Updater reduces the number of payments that fail; dunning recovers the ones that still do (like NSF or lost cards).</p>
 
       <div class="rc-video-card">
