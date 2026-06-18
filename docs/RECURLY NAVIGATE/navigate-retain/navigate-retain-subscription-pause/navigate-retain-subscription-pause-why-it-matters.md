@@ -293,13 +293,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-stat-strip">
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">38%</div>
-          <div class="rc-stat-tile-label">Prefer pause over 
-cancel</div>
+          <div class="rc-stat-tile-label">Prefer pause over cancel</div>
           <div class="rc-stat-tile-context">More than a third of consumers would rather pause than cancel when they need a break — if the option is available. (2026 State of Subscriptions)</div>
         </div>
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">65%</div>
-          <div class="rc-stat-tile-label">Reactivate within 3 months</div>
+          <div class="rc-stat-tile-label">Return within 3 months</div>
           <div class="rc-stat-tile-context">Nearly two-thirds of subscribers who pause return and resume billing within 90 days — well within a standard retention window.</div>
         </div>
         <div class="rc-stat-tile">
