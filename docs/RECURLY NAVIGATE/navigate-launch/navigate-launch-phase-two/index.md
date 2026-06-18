@@ -160,7 +160,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-handoff-item i { color: #FFD706 !important; font-size: .9rem; flex-shrink: 0; }
 
 /* METRIC CARDS (3-col grid) */
-.rc-metric-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 0 0 32px; }
+.rc-metric-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; margin: 0 0 32px; }
 .rc-metric-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 18px 20px; }
 .rc-metric-card-icon { font-size: 1.2rem; color: #FF8200; margin-bottom: 10px; line-height: 1; }
 .rc-metric-card h4 { font-size: .92rem; font-weight: 800; color: #0D0D0B; margin: 0 0 4px; }
