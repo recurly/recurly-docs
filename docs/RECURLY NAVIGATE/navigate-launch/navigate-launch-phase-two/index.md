@@ -338,7 +338,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     
   <!-- Section: What's in this course -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-list-check rc-fa-section"></i> What's in this course</h2>
+      <h2><i class="fa-solid fa-list-check rc-fa-section"></i> What's in this path</h2>
       <p>Each module covers one metric area from definition to action. Work through them in order for the full picture, or jump to whichever topic is most relevant right now.</p>
 
       <div class="rc-toc-list">
@@ -378,7 +378,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">5</div>
           <div class="rc-toc-body">
             <h4>Review &amp; resources</h4>
-            <p>Check your understanding, explore your monthly scorecard, and access all resources from across the course in one place.</p>
+            <p>Check your understanding, explore your monthly scorecard, and access all resources from across the path in one place.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
