@@ -231,10 +231,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire • Plan price increase
       </div>
       <div class="rc-lp-hero-title"><h1>Review &amp; resources</h1></div>
-      <p>You've completed the Plan price increase course. Reflect, revisit, and reference everything in one place.</p>
+      <p>You've completed the Plan price increase path. Reflect, revisit, and reference everything in one place.</p>
     </div>
 
     <!-- NAV -->
@@ -254,16 +254,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-sticky-link rc-sticky-link-active">
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Review &amp; resources
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
-        </a>
+       
       </div></div></div>
     </details>
 
     <!-- COMPLETION BLOCK -->
     <div class="rc-congrats-block">
       <i class="fa-solid fa-circle-check rc-congrats-icon"></i>
-      <div class="rc-congrats-badge"><i class="fa-solid fa-trophy" style="font-size:.8rem;"></i> Course complete</div>
+      <div class="rc-congrats-badge"><i class="fa-solid fa-trophy" style="font-size:.8rem;"></i> Path complete</div>
       <h2>You've finished Plan price increase</h2>
       <p>You now have a framework for evaluating when to raise prices, how to prepare your subscriber base, communicate the change effectively, and measure whether it worked. Use the cards below to revisit any page, and the resources section to go deeper.</p>
     </div>
@@ -362,7 +360,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-btn-prev">← Tracking your impact</a>
       <span class="rc-lp-nav-indicator">5 of 5</span>
-      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Course complete!</span>
+      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
     </div>
 
     <!-- RESOURCES — grouped -->
@@ -424,7 +422,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Plan price increase</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-footer-link">Path Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-footer-link">1. Use cases</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-footer-link">2. What to consider </a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-footer-link">3. Communicating the change</a>
