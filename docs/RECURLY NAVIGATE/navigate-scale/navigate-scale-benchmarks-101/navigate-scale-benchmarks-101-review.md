@@ -233,10 +233,10 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
     <div class="rc-hero">
      
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale
+        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale • Benchmarks 101
       </div>
       <div class="rc-lp-hero-title"><h1>Review &amp; resources</h1></div>
-      <p>Check your understanding of the 8 benchmark KPIs and access all course resources in one place.</p>
+      <p>Check your understanding of the 8 benchmark KPIs and access all path resources in one place.</p>
     </div>
 
     <!-- NAV — Page 5 active -->
@@ -248,7 +248,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-sticky-link">Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-sticky-link">Path Overview</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-reading" class="rc-sticky-link"><span class="rc-step-badge">1</span> Reading benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-subscriber" class="rc-sticky-link"><span class="rc-step-badge">2</span> Subscriber benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-churn" class="rc-sticky-link"><span class="rc-step-badge">3</span> Churn benchmarks</a>
@@ -256,9 +256,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-review" class="rc-sticky-link rc-sticky-link-active">
           <img src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Review &amp; resources
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
-        </a>
+       
       </div></div></div>
     </details>
 
@@ -308,7 +306,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <div class="rc-reflect-card">
         <span class="rc-reflect-label">Question 2 of 2 · Reflection</span>
         <h4>Which of your 8 benchmark KPIs is furthest from your industry median right now — and what's one configuration change you could make this week to start closing that gap?</h4>
-        <p>Open your benchmark dashboards and compare each KPI against the median marker. Pick the one with the biggest gap and match it to the action steps from this course. You don't need to fix everything at once — one focused change, measured over the next 30 days, is the right place to start.</p>
+        <p>Open your benchmark dashboards and compare each KPI against the median marker. Pick the one with the biggest gap and match it to the action steps from this path. You don't need to fix everything at once — one focused change, measured over the next 30 days, is the right place to start.</p>
       </div>
 
       <!-- CONTINUE YOUR JOURNEY -->
@@ -347,7 +345,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <div class="rc-lp-nav">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-renewal-dunning" class="rc-btn-prev">← Renewal &amp; dunning benchmarks</a>
         <span class="rc-lp-nav-indicator">5 of 5</span>
-        <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Course complete!</span>
+        <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
       </div>
 
     </div>
@@ -390,8 +388,8 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <div class="rc-footer-links">
 
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Recurly Benchmarks 101</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-footer-link">Overview</a>
+          <span class="rc-footer-label">Benchmarks 101</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-footer-link">Path Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-reading" class="rc-footer-link">1. Reading benchmarks</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-subscriber" class="rc-footer-link">2. Subscriber benchmarks</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-churn" class="rc-footer-link">3. Churn benchmarks</a>
