@@ -448,10 +448,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Section: Your Monthly Metrics Scorecard -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-clipboard-list rc-fa-section"></i> What you're working towards</h2>
+      <h2><i class="fa-solid fa-clipboard-list rc-fa-section"></i> What you're working toward</h2>
       <div class="rc-scorecard-card">
         <h3><i class="fa-solid fa-chart-bar" style="color:#FF8200;font-size:1rem;"></i> Monthly Metrics Scorecard</h3>
-        <p>After completing Launchpad, you'll begin receiving your <strong>Monthly Metrics Scorecard</strong> — a complete snapshot of your previous full fiscal month in Recurly. It shows your six core KPIs at a glance so you can track performance and compare against your own benchmarks over time.</p>
+        <p><i class="fa-solid fa-chart-bar" style="color:#FF8200;font-size:1rem;"></i><strong>Your Monthlys Metrics Scorecard</strong>:After completing Launchpad, you'll begin receiving your <strong>Monthly Metrics Scorecard</strong> — a complete snapshot of your previous full fiscal month in Recurly. It shows your six core KPIs at a glance so you can track performance and compare against your own benchmarks over time.</p>
         <p>Scorecards are delivered by email on the first Tuesday of each month, starting 90 days after going live. You'll learn how to read and act on yours at the end of this course.</p>
         <div class="rc-scorecard-preview">
           <div class="rc-scorecard-preview-label"><i class="fa-solid fa-eye" style="font-size:.75rem;"></i> Sneak peek</div>
