@@ -179,12 +179,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rc-scorecard-card p { font-size: .92rem; color: #CCC9B8 !important; line-height: 1.6; margin: 0 0 20px; }
 .rc-scorecard-card strong { color: #ffffff !important; }
-.rc-scorecard-preview { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 10px; padding: 0px 0px; }
+.rc-scorecard-preview { background: rgba(255,255,255,0.04); border: 0px solid rgba(255,255,255,0.10); border-radius: 0px; padding: 0px 0px; }
 .rc-scorecard-preview-label {
   font-size: .75rem; font-weight: 800; text-transform: uppercase; letter-spacing: .8px;
-  color: #FF8200 !important; margin: 0 0 5px; display: flex; align-items: center; gap: 2px;
+  color: #FF8200 !important; margin: 0 0 0px; display: flex; align-items: center; gap: 2px;
 }
-.rc-scorecard-preview-img { width: 100%; border-radius: 2px; display: block; }
+.rc-scorecard-preview-img { width: 100%; border-radius: 0px; display: block; }
 
 /* WEBINAR CLIP CARD */
 .rc-clip-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 14px; padding: 22px 24px; margin: 0 0 32px; }
