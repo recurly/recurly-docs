@@ -199,7 +199,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire • Price plan increase
       </div>
       <div class="rc-lp-hero-title"><h1>Plan price increase</h1></div>
       <p>When to raise prices, how to decide, how to communicate it — and how to know if it worked.</p>
@@ -215,23 +215,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Overview
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Path Overview
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-sticky-link"><span class="rc-step-badge">1</span> Use cases</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> What to consider </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-sticky-link"><span class="rc-step-badge">3</span> Communicating the change</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-sticky-link"><span class="rc-step-badge">4</span> Tracking your impact</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
-        </a>
+        
       </div></div></div>
     </details>
 
     <!-- SECTION: What this course covers -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-arrow-trend-up rc-fa-section"></i> What is a plan price increase?</h2>
-      <p>In Recurly, a <strong>Plan</strong> is the pricing template all subscriptions are built from. Updating a plan's price takes effect for new subscribers immediately — existing subscribers stay at their current price until you explicitly migrate them. This course covers the strategy behind a price increase: when it makes sense, what to decide before you act, how to communicate it, and how to measure whether it worked. The UI steps and API mechanics are in Recurly Docs, linked throughout.</p>
+      <p>In Recurly, a <strong>Plan</strong> is the pricing template all subscriptions are built from. Updating a plan's price takes effect for new subscribers immediately — existing subscribers stay at their current price until you explicitly migrate them. This path covers the strategy behind a price increase: when it makes sense, what to decide before you act, how to communicate it, and how to measure whether it worked. The UI steps and API mechanics are in Recurly Docs, linked throughout.</p>
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
@@ -284,7 +282,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">5</div>
           <div class="rc-toc-body">
             <h4>Review &amp; resources</h4>
-            <p>A summary of what you covered, a reflection question, and all course resources consolidated in one place.</p>
+            <p>A summary of what you covered, a reflection question, and all path resources consolidated in one place.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
@@ -315,7 +313,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Plan price increase</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-footer-link">Path Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-footer-link">1. Use cases</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-footer-link">2. What to consider </a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-footer-link">3. Communicating the change</a>
