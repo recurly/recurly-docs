@@ -300,7 +300,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-hero-title">
         <h1>Pricing &amp; Plans 201</h1>
       </div>
-      <p>You've built the foundation. This course goes deeper — into the pricing architectures that mature subscription businesses use to segment markets, structure enterprise billing, charge for real-world usage, and measure what's actually driving revenue.</p>
+      <p>You've built the foundation. This path goes deeper — into the pricing architectures that mature subscription businesses use to segment markets, structure enterprise billing, charge for real-world usage, and measure what's actually driving revenue.</p>
     </div>
 
     <!-- Nav — Course Overview, active -->
@@ -314,7 +314,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <!-- Overview — active, map pin, no number -->
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Overview
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Path Overview
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation" class="rc-sticky-link"><span class="rc-step-badge">1</span> Price segmentation</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-hierarchy" class="rc-sticky-link"><span class="rc-step-badge">2</span> Account hierarchy</a>
@@ -329,15 +329,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Intro -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-map rc-fa-section"></i> What this course covers</h2>
-      <p>Pricing &amp; Plans 101 covered the core configuration: plans, add-ons, currencies, pricing models, trials, and analytics. This course assumes that foundation is in place and builds on it. Each page focuses on a specific capability that becomes relevant as a subscription business grows — from serving multiple customer segments without duplicating plans, to billing enterprise accounts under a unified structure, to measuring performance beyond the built-in dashboards.</p>
+      <h2><i class="fa-solid fa-map rc-fa-section"></i> What this path covers</h2>
+      <p>Pricing &amp; Plans 101 covered the core configuration: plans, add-ons, currencies, pricing models, trials, and analytics. This path assumes that foundation is in place and builds on it. Each page focuses on a specific capability that becomes relevant as a subscription business grows — from serving multiple customer segments without duplicating plans, to billing enterprise accounts under a unified structure, to measuring performance beyond the built-in dashboards.</p>
       <p>Work through in order for the most complete picture, or go directly to the topic most relevant to your current situation.</p>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
           <strong>Prerequisite: Pricing &amp; Plans 101</strong>
-          <p>This course builds directly on plans, add-ons, pricing models, currencies, and trials. If you haven't covered those yet, start with <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101">Pricing &amp; Plans 101</a> first — the 201 configurations assume those foundations are already in place.</p>
+          <p>This path builds directly on plans, add-ons, pricing models, currencies, and trials. If you haven't covered those yet, start with <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101">Pricing &amp; Plans 101</a> first — the 201 configurations assume those foundations are already in place.</p>
         </div>
       </div>
 
@@ -352,7 +352,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- TOC -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-list-ol rc-fa-section"></i> Course pages</h2>
+      <h2><i class="fa-solid fa-list-ol rc-fa-section"></i> Path pages</h2>
 
       <div class="rc-toc-list">
 
@@ -414,7 +414,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">7</div>
           <div class="rc-toc-body">
             <h4>Review &amp; resources</h4>
-            <p>Reinforce what you've learned with a short set of questions, then access every resource referenced throughout the course in one place.</p>
+            <p>Reinforce what you've learned with a short set of questions, then access every resource referenced throughout the path in one place.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
@@ -448,7 +448,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Pricing &amp; Plans 201</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-footer-link">Path Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation" class="rc-footer-link">1. Price segmentation</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-hierarchy" class="rc-footer-link">2. Account hierarchy</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-usage-billing" class="rc-footer-link">3. Usage billing</a>
