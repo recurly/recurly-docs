@@ -173,7 +173,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-rotate rc-fa-section"></i> What dunning does</h2>
-      <p><strong>Dunning</strong> is the automated process of retrying failed payments and notifying subscribers when a charge doesn't go through. Industry-wide, 5–10% of subscription payments fail on first attempt. Without dunning, each of those is a lost subscriber. Depending on your plan, Recurly automatically runs <strong>Static</strong> or <strong>Intelligent Retries</strong> inside every dunning campaign — your job is to configure the campaign settings and window length.</p>
+      <p><strong>Dunning</strong> is the automated process of retrying failed payments and notifying subscribers when a charge doesn't go through. Industry-wide, 20-40% of churn is involuntary. Dunning helps to combat this with automated communication and retries. Depending on your plan, Recurly runs either  <strong>Static</strong> or <strong>Intelligent Retries</strong> inside every dunning campaign — your job is to configure the campaign settings and window length.</p>
 
       <div class="rc-video-card">
         <div class="rc-video-header"><h4>Trail guide: dunning done right</h4><span>~4 min</span></div>
