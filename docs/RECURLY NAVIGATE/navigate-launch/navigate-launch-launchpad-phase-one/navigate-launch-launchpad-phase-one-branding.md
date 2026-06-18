@@ -205,27 +205,27 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
-          <div class="rc-step-content"><h4>Access email templates</h4><p>Navigate to <strong>Configuration → Email Templates</strong>. You'll see the full list of transactional emails Recurly sends on your behalf.</p></div>
+          <div class="rc-step-content"><h4>Access email templates</h4><p>Navigate to <strong>Configuration → Email Templates</strong>. You'll see the full list of transactional emails Recurly sends on your behalf. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target=_blank">Email templates</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
-          <div class="rc-step-content"><h4>Upload your logo and set brand color</h4><p>Add your logo (PNG or JPG, max 256 KB) and set your primary brand color. These apply across all email templates via the Header/Footer snippets.</p></div>
+          <div class="rc-step-content"><h4>Upload your logo and set brand color</h4><p>Add your logo (PNG or JPG, max 256 KB) and set your primary brand color. These apply across all email templates via the Header/Footer snippets. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/alternate-email-templates#header-and-footer-templates" target="_blank">Header and footer templates</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
-          <div class="rc-step-content"><h4>Set your billing contact email</h4><p>Go to <strong>Configuration → Site Settings</strong> and set your Billing Contact Email. This is the "From" address subscribers see on every communication.</p></div>
+          <div class="rc-step-content"><h4>Set your billing contact email</h4><p>Go to <strong>Configuration → Site Settings</strong> and set your Billing Contact Email. This is the "From" address subscribers see on every communication. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/site-settings#email-settings" target="_blank">Email settings</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">4</div>
-          <div class="rc-step-content"><h4>Customize dunning email copy</h4><p>Edit your failed payment email templates to match your brand voice. Ensure the CTA button links directly to the subscriber's billing portal page — not a generic login.</p></div>
+          <div class="rc-step-content"><h4>Customize dunning email copy</h4><p>Edit your failed payment email templates to match your brand voice. Ensure the CTA button links directly to the subscriber's billing portal page — not a generic login. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target=_blank">Dunning email copy</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">5</div>
-          <div class="rc-step-content"><h4>Customize your invoice template</h4><p>Navigate to <strong>Configuration → Invoice Templates</strong>. Add your logo (max 256 KB), business name, address, and any required compliance footer text.</p></div>
+          <div class="rc-step-content"><h4>Customize your invoice template</h4><p>Navigate to <strong>Configuration → Invoice Templates</strong>. Add your logo (max 256 KB), business name, address, and any required compliance footer text. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-customization" target="_blank">Invoice customization</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">6</div>
-          <div class="rc-step-content"><h4>Send a test email for each template</h4><p>Use Recurly's "Send Test Email" function to preview each template in a real inbox — on both desktop and mobile before marking this complete.</p></div>
+          <div class="rc-step-content"><h4>Send a test email for each template</h4><p>Use Recurly's "Send Test Email" function to preview each template in a real inbox — on both desktop and mobile before marking this complete. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank">Send test mail</a>.</p></div>
         </div>
       </div>
 
