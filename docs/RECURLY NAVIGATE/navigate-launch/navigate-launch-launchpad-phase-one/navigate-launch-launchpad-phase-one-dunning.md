@@ -191,11 +191,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
-          <div class="rc-step-content"><h4>Set your dunning window</h4><p>Set <strong>27 days</strong> for monthly plans — this fits just inside the 30-day billing cycle and prevents a second invoice generating before the first is resolved. Use <strong>60 days</strong> for plans two months or longer.</p></div>
+          <div class="rc-step-content"><h4>Set your dunning window</h4><p>Set <strong>28 days</strong> for monthly plans — this fits just inside the 30-day billing cycle and prevents a second invoice generating before the first is resolved. Use <strong>60 days</strong> for plans two months or longer.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
-          <div class="rc-step-content"><h4>Configure your email sequence</h4><p>For monhtly plans, set up 4-5 dunning emails spaced 4-5 days apart across your 28-window. For annual plans, you'll schedule 8-10 emails spread across 60 days. The first should send immediately on failure; each subsequent email should increase in urgency. Every email must link directly to the subscriber's billing portal so they can update their payment method without contacting support.</p></div>
+          <div class="rc-step-content"><h4>Configure your email sequence</h4><p>For monthly plans, set up 4-5 dunning emails spaced 4-5 days apart across your 28-window. For annual plans, you'll schedule 8-10 emails spread across 60 days. The first should send immediately on failure; each subsequent email should increase in urgency. Every email must link directly to the subscriber's billing portal so they can update their payment method without contacting support.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">4</div>
@@ -218,7 +218,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 
       <div class="rc-checklist">
         <div class="rc-checklist-header"><i class="fa-solid fa-list-check" style="color:var(--yellow);font-size:1rem;"></i><h4>Dunning checklist</h4></div>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Dunning window set to 27 days (monthly) or 60 days (longer plans)</strong></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Dunning window set to 28 days (monthly) or 60 days (longer plans)</strong></div></label>
         <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>2–4 dunning emails configured with escalating urgency</strong><span>Spaced at least 3–4 days apart; each links to subscriber billing portal.</span></div></label>
         <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Expiration behavior set</strong><span>Cancel immediately, or move to past-due grace period.</span></div></label>
         <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Dunning email branding matches your other communications</strong></div></label>
