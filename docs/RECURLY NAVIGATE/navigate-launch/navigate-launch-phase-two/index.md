@@ -417,12 +417,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-metric-card">
           <div class="rc-metric-card-icon"><i class="fa-solid fa-right-from-bracket"></i></div>
           <h4>Voluntary churn rate</h4>
-          <p>Subscribers who chose to cancel</p>
+          <p>Percentage of subscribers who chose to cancel</p>
         </div>
         <div class="rc-metric-card">
           <div class="rc-metric-card-icon"><i class="fa-solid fa-credit-card"></i></div>
           <h4>Involuntary churn rate</h4>
-          <p>Subscribers lost to dunning expiration</p>
+          <p>Percentage of subscribers lost to payment failure</p>
         </div>
         <div class="rc-metric-card">
           <div class="rc-metric-card-icon"><i class="fa-solid fa-circle-check"></i></div>
