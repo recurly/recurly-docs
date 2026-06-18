@@ -195,7 +195,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
-          <div class="rc-step-content"><h4>Configure your email sequence</h4><p>Set up 2–4 dunning emails spaced across your window. Space them at least 3–4 days apart. The first should send immediately on failure; each subsequent email should increase in urgency. Every email must link directly to the subscriber's billing portal so they can update their payment method without contacting support.</p></div>
+          <div class="rc-step-content"><h4>Configure your email sequence</h4><p>For monhtly plans, set up 4-5 dunning emails spaced 4-5 days apart across your 28-window. For annual plans, you'll schedule 8-10 emails spread across 60 days. The first should send immediately on failure; each subsequent email should increase in urgency. Every email must link directly to the subscriber's billing portal so they can update their payment method without contacting support.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">4</div>
