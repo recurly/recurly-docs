@@ -403,7 +403,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Pricing &amp; Plans 201</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-footer-link">Path Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-footer-link">Path overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation" class="rc-footer-link">1. Price segmentation</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-hierarchy" class="rc-footer-link">2. Account hierarchy</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-usage-billing" class="rc-footer-link">3. Usage billing</a>
