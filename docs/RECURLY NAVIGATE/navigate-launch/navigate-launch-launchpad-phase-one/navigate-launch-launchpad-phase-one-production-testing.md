@@ -90,6 +90,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-callout-warning .rc-callout-body>strong{color:var(--darkgray);}
 .rc-callout-caution{background:rgba(255,130,0,0.08);border-left:4px solid var(--orange);}
 .rc-callout-caution .rc-callout-body>strong{color:var(--darkgray);}
+
+.rm-Markdown.markdown-body .rc-callout-caution .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-gw-table a { color: #FF8200 !important; border-bottom: 0 !important; }
+
+.rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide .rc-gw-table a:hover { text-decoration: underline !important; text-decoration-color: #FF9D88 !important; text-underline-offset: 2px !important; }
+
+
+
+
+
+
+
 .rc-checklist{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:12px;overflow:hidden;margin:20px 0 32px;}
 .rc-checklist-header{padding:14px 22px;background:var(--offblack);display:flex;align-items:center;gap:10px;}
 .rc-checklist-header h4{font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--yellow);margin:0;}
@@ -207,8 +220,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         </div>
       </div>
   <div class="rc-callout rc-callout-caution">
-        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-        <div class="rc-callout-body"><strong>Learn more about PSD2 and 3DS compliance in <a href=”https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2” target="_blank" rel="noopener noreferrer">Recurly Documentation.</a></p></div>
+        <div class="rc-callout-icon"><i class="fa-solid fa-books"></i></div>
+        <div class="rc-callout-body"><strong>Learn more</strong> about PSD2 and 3DS compliance in <a href=”https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2” target="_blank" rel="noopener noreferrer">Recurly Documentation.</a></p></div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
