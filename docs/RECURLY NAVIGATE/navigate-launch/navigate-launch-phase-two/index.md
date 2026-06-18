@@ -181,8 +181,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-scorecard-card strong { color: #ffffff !important; }
 .rc-scorecard-preview { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 10px; padding: 18px 20px; }
 .rc-scorecard-preview-label {
-  font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .8px;
-  color: #FF8200 !important; margin: 0 0 5px; display: flex; align-items: center; gap: 6px;
+  font-size: .9rem; font-weight: 800; text-transform: uppercase; letter-spacing: .8px;
+  color: #FF8200 !important; margin: 0 0 5px; display: flex; align-items: center; gap: 2px;
 }
 .rc-scorecard-preview-img { width: 100%; border-radius: 2px; display: block; }
 
