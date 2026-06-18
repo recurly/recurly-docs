@@ -216,15 +216,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
-          <div class="rc-step-content"><h4>Open Payment Settings</h4><p>Navigate to <strong>Configuration → Payment Settings</strong>. Account Updater toggle controls appear at the top of this page.</p></div>
+          <div class="rc-step-content"><h4>Open Payment Settings</h4><p>Navigate to <strong>Configuration → Payment Settings</strong>. Account Updater toggle controls appear at the top of this page. <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-settings" target="_blank">Recurly Docs: Payment Settings</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
-          <div class="rc-step-content"><h4>Enable Visa and Discover</h4><p>Toggle both on directly — no codes required. These two networks cover the majority of most subscriber bases.</p></div>
+          <div class="rc-step-content"><h4>Enable Visa and Discover</h4><p>Toggle both on directly — no codes required. These two networks cover the majority of most subscriber bases. <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank">Recurly Docs: Account Updater</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
-          <div class="rc-step-content"><h4>Enter Mastercard MCC and Amex SE Number</h4><p>Enter your 4-digit MCC for Mastercard. Enter your 10-digit SE Number for Amex if you have a direct Amex account. Skip Amex if you're on Amex OptBlue via your gateway.</p></div>
+          <div class="rc-step-content"><h4>Enter Mastercard MCC and Amex SE Number</h4><p>Enter your 4-digit MCC for Mastercard. Enter your 10-digit SE Number for Amex if you have a direct Amex account. Skip Amex if you're on Amex OptBlue via your gateway. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable" target"_blank">How to enable Account Updater<a/>/</p></div>
         </div>
       </div>
 
@@ -255,7 +255,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
         <a href="https://docs.recurly.com/docs/account-updater" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Account Updater</a>
-        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-settings" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Payment Settings</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Account Updater: How to enable it</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-calendar"></i> Join Global Office Hours</a>
+      <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
     </div>
 
