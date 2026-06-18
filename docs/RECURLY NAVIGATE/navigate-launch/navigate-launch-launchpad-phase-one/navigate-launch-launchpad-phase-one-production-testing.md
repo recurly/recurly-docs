@@ -221,23 +221,23 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
-          <div class="rc-step-content"><h4>Complete a live transaction</h4><p>Use a real payment method to sign up for your cheapest active plan. Complete the full checkout flow as a new subscriber would.</p></div>
+          <div class="rc-step-content"><h4>Complete a live transaction</h4><p>Use a real payment method to sign up for your cheapest active plan. Complete the full checkout flow as a new subscriber would. <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank">Recurly Docs: How to test your gateway</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
-          <div class="rc-step-content"><h4>Verify the payment in Recurly</h4><p>Log in to your Recurly admin and confirm the transaction shows as successful. Check the invoice and subscription status.</p></div>
+          <div class="rc-step-content"><h4>Verify the payment in Recurly</h4><p>Log in to your Recurly admin and confirm the transaction shows as successful. Check the invoice and subscription status. <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-management" target="_blank">Recurly Docs: Invoice management<a/>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
-          <div class="rc-step-content"><h4>Check your confirmation email</h4><p>Verify the post-signup email arrives promptly, displays your plan name, branding, and pricing correctly, and links to your subscriber portal.</p></div>
+          <div class="rc-step-content"><h4>Check your confirmation email</h4><p>Verify the post-signup email arrives promptly, displays your plan name, branding, and pricing correctly, and links to your subscriber portal. <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank">Recurly Docs: Email templates<a/>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">4</div>
-          <div class="rc-step-content"><h4>Refund the test transaction</h4><p>From Recurly, issue and confirm the refund. This keeps your books clean and your test subscriber off your active list.</p></div>
+          <div class="rc-step-content"><h4>Refund the test transaction</h4><p>From Recurly, issue and confirm the refund. This keeps your books clean and your test subscriber off your active list. <a href="https://docs.recurly.com/recurly-subscriptions/docs/refund-transaction" target="_blank">Recurly Docs: Refund<a/>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">5</div>
-          <div class="rc-step-content"><h4>Verify PSD2 / 3DS (EU merchants only)</h4><p>If you process payments from EU subscribers, trigger a transaction that should require 3D Secure authentication. Confirm the challenge flow appears, completes, and the payment succeeds.</a></p></div>
+          <div class="rc-step-content"><h4>Verify PSD2 / 3DS (EU merchants only)</h4><p>If you process payments from EU subscribers, trigger a transaction that should require 3D Secure authentication. Confirm the challenge flow appears, completes, and the payment succeeds.<a href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide" target="_blank">Recurly Docs: 3D Secure 2.0 integration guide</a>.</p></div>
         </div>
       </div>
   <div class="rc-callout rc-callout-caution">
@@ -278,9 +278,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: PSD2 compliance</a>
+       <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: PSD2 compliance</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/test" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Test gateway</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/checkout#configuration-landing-page" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Checkout configuration</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: How to test your gateway</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Invoice management</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/refund-transaction" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Refund</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: 3D Secure 2.0 integration guide</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-calendar"></i> Join Global Office Hours</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
     </div>
