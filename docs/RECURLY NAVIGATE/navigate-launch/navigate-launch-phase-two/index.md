@@ -448,9 +448,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Section: Your Monthly Metrics Scorecard -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-clipboard-list rc-fa-section"></i> Your monthly metrics scorecard</h2>
+      <h2><i class="fa-solid fa-clipboard-list rc-fa-section"></i> What you're working towards</h2>
       <div class="rc-scorecard-card">
-        <h3><i class="fa-solid fa-chart-bar" style="color:#FF8200;font-size:1rem;"></i> What you're working toward</h3>
+        <h3><i class="fa-solid fa-chart-bar" style="color:#FF8200;font-size:1rem;"></i> Monthly Metrics Scorecard</h3>
         <p>After completing Launchpad, you'll begin receiving your <strong>Monthly Metrics Scorecard</strong> — a complete snapshot of your previous full fiscal month in Recurly. It shows your six core KPIs at a glance so you can track performance and compare against your own benchmarks over time.</p>
         <p>Scorecards are delivered by email on the first Tuesday of each month, starting 90 days after going live. You'll learn how to read and act on yours at the end of this course.</p>
         <div class="rc-scorecard-preview">
@@ -471,62 +471,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Section: What's in this course -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-list-check rc-fa-section"></i> What's in this course</h2>
-      <p>Each module covers one metric area from definition to action. Work through them in order for the full picture, or jump to whichever topic is most relevant right now.</p>
-
-      <div class="rc-toc-list">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-toc-card">
-          <div class="rc-toc-num">1</div>
-          <div class="rc-toc-body">
-            <h4>Benchmarks &amp; reporting</h4>
-            <p>Get oriented with Recurly Analytics, the Benchmarks Dashboard, and the Trendalyzer so you know where to find your performance data.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-toc-card">
-          <div class="rc-toc-num">2</div>
-          <div class="rc-toc-body">
-            <h4>Acquisition &amp; decline</h4>
-            <p>Understand your subscriber acquisition rate and sign-up decline rate — and what to do when either moves in the wrong direction.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-toc-card">
-          <div class="rc-toc-num">3</div>
-          <div class="rc-toc-body">
-            <h4>Churn metrics</h4>
-            <p>Learn the difference between voluntary and involuntary churn, how to calculate each, and which Recurly tools address them.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-toc-card">
-          <div class="rc-toc-num">4</div>
-          <div class="rc-toc-body">
-            <h4>Revenue &amp; recovery</h4>
-            <p>Measure your renewal invoice paid rate and dunning recovery rate — the two metrics that show how well your revenue protection is working.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-toc-card">
-          <div class="rc-toc-num">5</div>
-          <div class="rc-toc-body">
-            <h4>Review &amp; resources</h4>
-            <p>Check your understanding, explore your monthly scorecard, and access all resources from across the course in one place.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-      </div>
-
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="rc-callout-body">
-          <strong>How to use this Path</strong>
-          <p>Each module includes definitions, calculation formulas, benchmarks, and guidance on what to do when a metric is off. Use the navigation menu to move between modules — you can return to any step at any time.</p>
-        </div>
-      </div>
-    </div>
 
    <!-- Section: Support and resources -->
     <div class="rc-lp-section">
