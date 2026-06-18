@@ -144,6 +144,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-footer-link:hover{color:#FF8200 !important;}
 .rc-footer-link img{width:14px;height:14px;object-fit:contain;opacity:0.5;}
 .rc-footer-utility{display:flex;flex-wrap:wrap;gap:24px;margin-top:16px;padding-top:24px;border-top:1px solid var(--brightgray);}
+
+/* OFFICE HOURS CTA */
+.rc-oh-cta { background: var(--offblack); border: 2px solid var(--yellow); border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
+.rc-oh-cta h4 { color: var(--yellow); font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; display: block; }
+.rc-oh-cta p { color: var(--lightgray); font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
+.rc-oh-cta p strong { color: var(--offwhite); }
+.rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-oh-btn { background: var(--yellow); color: #0D0D0B !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: var(--yellow) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+
+
+
 </style>
 <div class="rc-guide">
   <div class="rc-top-nav"><a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-back-link">← Back to Launch</a></div>
@@ -223,6 +236,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Noted current involuntary churn rate as a baseline</strong><span>Use this in Phase 2 to measure Account Updater's impact.</span></div></label>
         <div class="rc-checklist-footer">Tap each item to mark it complete</div>
       </div>
+    </div>
+
+  <!-- OH CTA -->
+    <div class="rc-oh-cta">
+      <h4><i class="fa-solid fa-headset rc-fa-dark"></i> Questions about Account Updater?</h4>
+      <p>Our Customer Success team runs weekly <strong>Global Office Hours</strong> sessions where you can bring your real configuration questions — branding, plan structure, dunning setup, migration strategy, pricing model decisions. No agenda required.</p>
+      <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
     <div class="rc-lp-nav">
