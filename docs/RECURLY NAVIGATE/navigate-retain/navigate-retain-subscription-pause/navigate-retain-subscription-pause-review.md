@@ -287,7 +287,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-sticky-link">Overview</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-sticky-link">Path Overview</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-sticky-link"><span class="rc-step-badge">1</span> Why pause reduces churn</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> Things to consider</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-how-to-enable" class="rc-sticky-link"><span class="rc-step-badge">3</span> How to enable pause</a>
@@ -295,9 +295,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-review" class="rc-sticky-link rc-sticky-link-active">
               <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Review &amp; resources
             </a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-sticky-link">
-              <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
-            </a>
+            
           </div>
         </div>
       </div>
@@ -424,7 +422,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-tracking" class="rc-btn-prev">← Tracking your pause impact</a>
       <span class="rc-lp-nav-indicator">5 of 5</span>
-      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Course complete!</span>
+      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
     </div>
 
     <!-- RESOURCES -->
@@ -479,7 +477,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Pause Subscriptions</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-footer-link">Path Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-footer-link">1. Why pause reduces churn</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-footer-link">2. Things to consider</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-how-to-enable" class="rc-footer-link">3. How to enable pause</a>
