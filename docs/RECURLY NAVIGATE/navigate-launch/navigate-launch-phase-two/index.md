@@ -463,7 +463,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
-          <strong>How to use this course</strong>
+          <strong>How to use this Path</strong>
           <p>Each module includes definitions, calculation formulas, benchmarks, and guidance on what to do when a metric is off. Use the navigation menu to move between modules — you can return to any step at any time.</p>
         </div>
       </div>
