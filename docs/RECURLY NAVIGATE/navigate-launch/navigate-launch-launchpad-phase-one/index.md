@@ -322,7 +322,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Section: Two-phase journey -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-calendar-days rc-fa-section"></i> Your two-phase journey</h2>
-      <p>Launchpad is structured in two phases. Phase 1 locks in the configurations that protect your revenue. Phase 2 builds your fluency with the six KPIs that show how your subscription business is performing.</p>
+      <p>Launchpad is structured in two phases. Phase 1 locks in the configurations that protect your revenue. Phase 2 builds your fluency with key KPIs that show how your subscription business is performing.</p>
       <div class="rc-phase-grid">
 
         <div class="rc-phase-card rc-phase-1">
@@ -436,7 +436,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <p>Need technical support? Recurly Support is available. Reach us at <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
         </div>
 <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-comment-question"></i></div>
+          <div class="rc-feature-icon"><i class="fa-solid fa-hand-heart"></i></div>
           <h4>Customer success office hours</h4>
           <p>Have questions as you work through Launchpad? Our CSMs are here to help you live. <a href="https://navigate.recurly.com/global-office-hours/">Choose a session</a> that works for you.</p>
         </div>
