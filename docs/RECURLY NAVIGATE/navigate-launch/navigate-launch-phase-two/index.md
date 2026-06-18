@@ -452,7 +452,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 				<p>After completing Launchpad, you'll begin receiving your <strong>Monthly Metrics Scorecard</strong> — a complete snapshot of your previous full fiscal month in Recurly. It shows your six core KPIs at a glance so you can track performance and compare against your own benchmarks over time.</p>
  <div class="rc-scorecard-preview">
           <div class="rc-scorecard-preview-label"><i class="fa-solid fa-eye" style="font-size:.75rem;"></i> Sneak peek</div>
-          <img class="rc-scorecard-preview-img" src="https://go.recurly.com/rs/439-LSC-903/images/Monthly%20scorecard%20sample.png" alt="Monthly metrics scorecard sample">
+          <img class="rc-scorecard-preview-img" src="https://files.readme.io/8575081b1976d2d698d93166c69ce11a3653bd92b42855547efb96115cdc8c35-Updated_Scorecard_Image.svg" alt="Monthly metrics scorecard sample">
         </div>
       </div>
 
