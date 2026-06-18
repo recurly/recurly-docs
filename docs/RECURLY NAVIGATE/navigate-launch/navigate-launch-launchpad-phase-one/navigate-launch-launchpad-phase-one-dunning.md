@@ -116,7 +116,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-webinar-cta-body{flex:1;}
 .rc-webinar-cta-body p{font-size:.95rem;color:#FFFDF2 !important;line-height:1.6;margin:0 0 18px;}
 .rc-webinar-cta-body p em{font-style:normal;font-weight:700;color:#ffffff !important;}
-.rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-webinar-btn{background:#CCC9B8 !important;color:#0D0D0B !important;text-decoration:none !important;padding:12px 24px;border-radius:10px;font-weight:800;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:2px solid #CCC9B8 !important;border-bottom:2px solid #CCC9B8 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-webinar-btn{background:#FFD706 !important;color:#0D0D0B !important;text-decoration:none !important;padding:12px 24px;border-radius:10px;font-weight:800;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:2px solid #CCC9B8 !important;border-bottom:2px solid #CCC9B8 !important;}
 .rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-webinar-btn:hover{background:transparent !important;color:#CCC9B8 !important;border:2px solid #CCC9B8 !important;border-bottom:2px solid #CCC9B8 !important;}
 @media(max-width:768px){.rc-webinar-cta{flex-direction:column;gap:16px;padding:24px 22px;}}
 .rc-lp-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:40px 0 16px;}
