@@ -242,7 +242,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-rocket"></i></div>
           <h4>Significant product improvements</h4>
-          <p>You've shipped major features or integrations since your current price was set. Subscribers are getting more — the price should reflect it.</p>
+          <p>Since your current pricing was set, you've introduced major features and integrations that have increased the value of your product.</p>
           <span class="rc-feature-tag">Most common</span>
         </div>
         <div class="rc-feature-card">
