@@ -221,7 +221,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
       </div>
   <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-book"></i></div>
-        <div class="rc-callout-body"><p><strong>Learn more</strong> about PSD2 and 3DS compliance in <a href=”https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2” target="_blank" rel="noopener noreferrer">Recurly Documentation.</a></p></div>
+        <div class="rc-callout-body"><p><strong>Learn more</strong> about PSD2 and 3DS compliance in <a href=”https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2” target="_blank" rel="noopener noreferrer"><strong>Recurly Documentation</strong>.</a></p></div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
