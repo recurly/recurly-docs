@@ -293,7 +293,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-stat-strip">
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">38%</div>
-          <div class="rc-stat-tile-label">Prefer pause over cancel</div>
+          <div class="rc-stat-tile-label">Prefer pause over 
+cancel</div>
           <div class="rc-stat-tile-context">More than a third of consumers would rather pause than cancel when they need a break — if the option is available. (2026 State of Subscriptions)</div>
         </div>
         <div class="rc-stat-tile">
