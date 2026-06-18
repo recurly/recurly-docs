@@ -389,6 +389,63 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
+    <!-- Section: What's in this course -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-list-check rc-fa-section"></i> What's in this course</h2>
+      <p>Each module covers one metric area from definition to action. Work through them in order for the full picture, or jump to whichever topic is most relevant right now.</p>
+
+      <div class="rc-toc-list">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-toc-card">
+          <div class="rc-toc-num">1</div>
+          <div class="rc-toc-body">
+            <h4>Benchmarks &amp; reporting</h4>
+            <p>Get oriented with Recurly Analytics, the Benchmarks Dashboard, and the Trendalyzer so you know where to find your performance data.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-toc-card">
+          <div class="rc-toc-num">2</div>
+          <div class="rc-toc-body">
+            <h4>Acquisition &amp; decline</h4>
+            <p>Understand your subscriber acquisition rate and sign-up decline rate — and what to do when either moves in the wrong direction.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-toc-card">
+          <div class="rc-toc-num">3</div>
+          <div class="rc-toc-body">
+            <h4>Churn metrics</h4>
+            <p>Learn the difference between voluntary and involuntary churn, how to calculate each, and which Recurly tools address them.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-toc-card">
+          <div class="rc-toc-num">4</div>
+          <div class="rc-toc-body">
+            <h4>Revenue &amp; recovery</h4>
+            <p>Measure your renewal invoice paid rate and dunning recovery rate — the two metrics that show how well your revenue protection is working.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-toc-card">
+          <div class="rc-toc-num">5</div>
+          <div class="rc-toc-body">
+            <h4>Review &amp; resources</h4>
+            <p>Check your understanding, explore your monthly scorecard, and access all resources from across the course in one place.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+      </div>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-body">
+          <strong>How to use this Path</strong>
+          <p>Each module includes definitions, calculation formulas, benchmarks, and guidance on what to do when a metric is off. Use the navigation menu to move between modules — you can return to any step at any time.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Section: Your Monthly Metrics Scorecard -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-clipboard-list rc-fa-section"></i> Your monthly metrics scorecard</h2>
