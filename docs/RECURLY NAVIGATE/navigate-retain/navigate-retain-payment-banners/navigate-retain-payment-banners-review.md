@@ -293,7 +293,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-flag-checkered rc-fa-section"></i> What you've covered</h2>
 
-      <p>More than half of all subscriber losses are involuntary — payment failures, not intentional cancellations. Payment banners close the gap dunning emails can't reach by meeting subscribers in-session at the exact moment they're most likely to act. This course covered the scenarios worth targeting, how to choose and get started with either implementation path, the strategy principles that determine whether banners perform or get ignored, and a measurement framework to prove the impact.</p>
+      <p>More than half of all subscriber losses are involuntary — payment failures, not intentional cancellations. Payment banners close the gap dunning emails can't reach by meeting subscribers in-session at the exact moment they're most likely to act. This path covered the scenarios worth targeting, how to choose and get started with either implementation path, the strategy principles that determine whether banners perform or get ignored, and a measurement framework to prove the impact.</p>
 
       <!-- Per-page highlight cards -->
       <div class="rc-review-list">
@@ -348,7 +348,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-tracking" class="rc-btn-prev">← Tracking your impact</a>
       <span class="rc-lp-nav-indicator">5 of 5</span>
-      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Course complete!</span>
+      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
     </div>
 
     <!-- Continue your journey -->
@@ -361,7 +361,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-next-card-icon"><i class="fa-solid fa-rotate"></i></div>
           <h4>Account Updater</h4>
           <p>Payment banners handle active subscribers. Account Updater silently recovers card details before a payment ever fails. Together they give you full coverage.</p>
-          <div class="rc-next-card-arrow">Start course →</div>
+          <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-next-card">
@@ -369,7 +369,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-next-card-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
           <h4>Dunning 101</h4>
           <p>Payment banners and dunning work best together. If you haven't yet built out your dunning sequence — or want to optimize what you have — this is the natural next step.</p>
-          <div class="rc-next-card-arrow">Start course →</div>
+          <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
@@ -385,7 +385,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- All course resources — grouped -->
     <div class="rc-resources">
-      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> All course resources</h3>
+      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> All path resources</h3>
 
       <div class="rc-resource-group">
         <span class="rc-resource-group-label">Recurly Engage</span>
