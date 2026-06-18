@@ -260,7 +260,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
     
     <!-- OH CTA -->
     <div class="rc-oh-cta">
-      <h4>🗓️ Questions about branding?</h4>
+      <h4><i class="fa-solid fa-headset rc-fa-dark"></i> Questions about branding?</h4>
       <p>Our Customer Success team runs weekly <strong>Global Office Hours</strong> sessions where you can bring your real configuration questions — branding, plan structure, dunning setup, migration strategy, pricing model decisions. No agenda required.</p>
       <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
