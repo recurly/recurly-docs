@@ -372,8 +372,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <thead>
             <tr>
               <th>Model</th>
-              <th>How the 25-unit charge is calculated</th>
-              <th>Total at $5/1–10, $4/11–20, $3/21+</th>
+              <th>Unit calcuations</th>
+              <th>Totals</th>
             </tr>
           </thead>
           <tbody>
