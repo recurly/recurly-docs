@@ -283,16 +283,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-sticky-link rc-sticky-link-active">
-              <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Overview
+              <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Path Overview
             </a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-sticky-link"><span class="rc-step-badge">1</span> Why pause reduces churn</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> Things to consider</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-how-to-enable" class="rc-sticky-link"><span class="rc-step-badge">3</span> How to enable pause</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-tracking" class="rc-sticky-link"><span class="rc-step-badge">4</span> Tracking your pause impact</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-sticky-link">
-              <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
-            </a>
+            
           </div>
         </div>
       </div>
@@ -339,8 +337,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: WHAT'S IN THIS COURSE -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-map rc-fa-section"></i> What's in this course</h2>
-      <p>This course walks you through everything you need to evaluate, configure, and measure Pause Subscriptions — in about eight minutes.</p>
+      <h2><i class="fa-solid fa-map rc-fa-section"></i> What's in this path</h2>
+      <p>This path walks you through everything you need to evaluate, configure, and measure Pause Subscriptions — in about eight minutes.</p>
 
       <div class="rc-toc-list">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-toc-card">
@@ -379,7 +377,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">5</div>
           <div class="rc-toc-body">
             <h4>Review &amp; resources</h4>
-            <p>A quick knowledge check and all the resources referenced throughout the course in one place.</p>
+            <p>A quick knowledge check and all the resources referenced throughout the path in one place.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
@@ -391,7 +389,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- PATH NAV -->
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
-      <span class="rc-lp-nav-indicator">1 of 5</span>
+      <span class="rc-lp-nav-indicator">Overview</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-btn-path">Next: Why pause reduces churn →</a>
     </div>
 
@@ -411,7 +409,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Pause subscriptions</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-footer-link">Path Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-footer-link">1. Why pause reduces churn</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-footer-link">2. Things to consider</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-how-to-enable" class="rc-footer-link">3. How to enable pause</a>
