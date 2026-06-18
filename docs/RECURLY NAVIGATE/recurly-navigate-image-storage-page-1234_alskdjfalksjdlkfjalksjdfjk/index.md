@@ -50,7 +50,7 @@ metadata:
 
 <br />
 
-![Navigate Monthly Metrics Scorecard](https://files.readme.io/bf0f3ed737a5783fbd0ac153303d2aec540da707789b1225059bdb25a9f3a146-Merchant_Scorecard_Example.png)
+![Navigate Monthly Metrics Scorecard](https://files.readme.io/8575081b1976d2d698d93166c69ce11a3653bd92b42855547efb96115cdc8c35-Updated_Scorecard_Image.svg)
 
 ![](https://files.readme.io/86be4e5dc37de0619629ac620d6cc55f85f0f9bd3110b91ed8bbac8497b2e74d-The_Value_of_Bundles_Thumbnail.png)
 
