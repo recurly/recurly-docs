@@ -211,7 +211,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <div class="rc-lp-hero-title">
         <h1>Review &amp; resources</h1>
       </div>
-      <p>Three questions to reinforce the key decision points from this course, and every resource referenced along the way — organized by topic for easy reference.</p>
+      <p>Three questions to reinforce the key decision points from this path, and every resource referenced along the way — organized by topic for easy reference.</p>
     </div>
 
     <!-- Nav — Page 7 (R&R) active -->
@@ -223,7 +223,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-sticky-link">Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-sticky-link">Path Overview</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation" class="rc-sticky-link"><span class="rc-step-badge">1</span> Price segmentation</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-hierarchy" class="rc-sticky-link"><span class="rc-step-badge">2</span> Account hierarchy</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-usage-billing" class="rc-sticky-link"><span class="rc-step-badge">3</span> Usage billing</a>
@@ -233,9 +233,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-review" class="rc-sticky-link rc-sticky-link-active">
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Review &amp; resources
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
-        </a>
+        
       </div></div></div>
     </details>
 
@@ -314,7 +312,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <!-- Q3 — Reflection -->
       <div class="rc-reflect-card">
         <span class="rc-reflect-label">Question 3 of 3 · Reflection</span>
-        <h4>Look at your current billing setup. Which of the six capabilities covered in this course — segmentation, hierarchy, usage billing, hybrid pricing, advanced currency, or advanced analytics — is most likely to unlock meaningful value for your business in the next 12 months?</h4>
+        <h4>Look at your current billing setup. Which of the six capabilities covered in this path — segmentation, hierarchy, usage billing, hybrid pricing, advanced currency, or advanced analytics — is most likely to unlock meaningful value for your business in the next 12 months?</h4>
         <p>For each one you're considering: what is the specific problem it solves, what is the engineering or operational dependency that would need to be in place first, and who else in your organization would need to be aligned before you could activate it? Bringing concrete answers to these questions to a Global Office Hours session is a good use of 30 minutes with a CSM.</p>
       </div>
     </div>
@@ -323,12 +321,12 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-advanced-analytics" class="rc-btn-prev">← Advanced analytics</a>
       <span class="rc-lp-nav-indicator">7 of 7</span>
-      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Course complete!</span>
+      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
     </div>
 
     <!-- Resources — grouped (8+ links) -->
     <div class="rc-resources">
-      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> All course resources</h3>
+      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> All path resources</h3>
 
       <div class="rc-resource-group">
         <span class="rc-resource-group-label">Price segmentation</span>
@@ -405,7 +403,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Pricing &amp; Plans 201</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-footer-link">Path Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation" class="rc-footer-link">1. Price segmentation</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-hierarchy" class="rc-footer-link">2. Account hierarchy</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-usage-billing" class="rc-footer-link">3. Usage billing</a>
