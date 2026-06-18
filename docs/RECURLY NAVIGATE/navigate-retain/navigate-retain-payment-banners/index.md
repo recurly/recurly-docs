@@ -291,7 +291,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">2</div>
           <div class="rc-toc-body">
             <h4>Choosing your implementation path</h4>
-            <p>How to decide between building with webhooks (engineering-required, full control) or using Recurly Engage (no-code, faster to live) — and what to expect from each before you start.</p>
+            <p>How to decide between building with webhooks (engineering-required, full control) or using Recurly Engage (low-code, faster to live) — and what to expect from each before you start.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
