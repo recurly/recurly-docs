@@ -406,7 +406,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Path navigation -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-btn-prev">← Overview</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-btn-prev">← Path overview</a>
       <span class="rc-lp-nav-indicator">1 of 5</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-btn-path">Next: Acquisition &amp; decline →</a>
     </div>
