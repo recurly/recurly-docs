@@ -333,7 +333,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-map rc-fa-section"></i> What to expect from each path</h2>
 
-      <p>Before you hand this to your team or log into Pulse, here's an honest picture of what each path involves — the effort, the key events or tools, and where to go to get started.</p>
+      <p>Before you hand this to your team, here's an honest picture of what each path involves — the effort, the key events or tools, and where to go to get started.</p>
 
       <div class="rc-path-preview">
 
