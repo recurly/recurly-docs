@@ -303,7 +303,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-accent-card rc-accent-orange">
           <h4>Webhooks — build it yourself</h4>
           <ul>
-            <li><strong>Subscribers are inside your own application</strong> — not Recurly-hosted pages</li>
+            <li><strong>You have a custom application or member portal</strong> where you can surface in-app notifications to subscribers — not Recurly-hosted pages</li>
             <li><strong>You need full brand control</strong> over banner design and placement</li>
             <li><strong>Engineering bandwidth is available</strong> and the build cost is justified</li>
             <li><strong>You want banner state in your own analytics</strong> or CRM</li>
@@ -371,7 +371,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-path-card-body">
             <div class="rc-path-detail">
               <i class="fa-solid fa-circle-dot rc-path-detail-icon"></i>
-              <p><strong>How it works:</strong> Configure payment banners and cancellation save flows from the Pulse console (pulsepp.redfast.com). Engage connects to your Recurly account and automatically creates a Failed Payment subscriber segment — no manual targeting required. Choose a prompt type, write your copy, activate.</p>
+              <p><strong>How it works:</strong> Configure payment banners and cancellation save flows from the Pulse console. Engage connects to your Recurly account and automatically creates a Failed Payment subscriber segment — no manual targeting required. Choose a prompt type, write your copy, activate.</p>
             </div>
             <div class="rc-path-detail">
               <i class="fa-solid fa-sliders rc-path-detail-icon"></i>
