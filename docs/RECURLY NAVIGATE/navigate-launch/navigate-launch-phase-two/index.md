@@ -182,9 +182,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-scorecard-preview { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 10px; padding: 18px 20px; }
 .rc-scorecard-preview-label {
   font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .8px;
-  color: #FFD706 !important; margin: 0 0 10px; display: flex; align-items: center; gap: 6px;
+  color: #FF8200 !important; margin: 0 0 5px; display: flex; align-items: center; gap: 6px;
 }
-.rc-scorecard-preview-img { width: 100%; border-radius: 6px; display: block; }
+.rc-scorecard-preview-img { width: 100%; border-radius: 2px; display: block; }
 
 /* WEBINAR CLIP CARD */
 .rc-clip-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 14px; padding: 22px 24px; margin: 0 0 32px; }
