@@ -170,7 +170,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* SCORECARD PREVIEW CARD */
 .rc-scorecard-card {
   background: #0D0D0B !important;
-  border-radius: 14px; padding: 28px 15px; margin: 0 0 32px;
+  border-radius: 5px; padding: 28px 15px; margin: 0 0 32px;
   border: 1px solid rgba(255,255,255,0.08);
 }
 .rc-scorecard-card h3 {
