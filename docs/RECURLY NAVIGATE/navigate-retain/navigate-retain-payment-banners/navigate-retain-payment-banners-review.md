@@ -311,7 +311,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-review-num">2</div>
           <div class="rc-review-body">
             <h4>Choosing your implementation path</h4>
-            <p>Two paths: webhooks (engineering-required, full brand control, 2–6 week build) or Recurly Engage (no-code, live the same day, separate product). Your choice depends on engineering availability and where your subscribers interact with your product.</p>
+            <p>Two paths: webhooks (engineering-required, full brand control, 2–6 week build) or Recurly Engage (low-code, live the same day, separate product). Your choice depends on engineering availability and where your subscribers interact with your product.</p>
           </div>
           <div class="rc-review-arrow">→</div>
         </a>
