@@ -308,16 +308,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Overview
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Path overview
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-sticky-link"><span class="rc-step-badge">1</span> Benchmarks &amp; reporting</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-sticky-link"><span class="rc-step-badge">2</span> Acquisition &amp; decline</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-sticky-link"><span class="rc-step-badge">3</span> Churn metrics</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-sticky-link"><span class="rc-step-badge">4</span> Revenue &amp; recovery</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
-        </a>
+
       </div></div></div>
     </details>
 
@@ -471,22 +469,30 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Section: Support -->
+   <!-- Section: Support and resources -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-headset rc-fa-section"></i> Support &amp; resources</h2>
       <div class="rc-card-grid">
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-headset"></i></div>
           <h4>Your customer support team</h4>
-          <p>Have questions as you work through the course? Reach Recurly Support at <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
+          <p>Need technical support? Recurly Support is available. Reach us at <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
+        </div>
+<div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <h4>Customer success office hours</h4>
+          <p>Have questions as you work through Launchpad? Our CSMs are here to help you live. <a href="https://navigate.recurly.com/global-office-hours/">Choose a session</a> that works for you.</p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
           <h4>Download your resource guide</h4>
-          <p>All Recurly support links, documentation, and program resources in one place. <a href="https://go.recurly.com/recurly_navigate_resource_guide.html" target="_blank" rel="noopener noreferrer">Navigate Resource Guide ↗</a></p>
+          <p>A quick-reference guide to all Recurly support links, documentation, and program resources. <a href="https://go.recurly.com/recurly_navigate_resource_guide.html" target="_blank" rel="noopener noreferrer">Navigate Resource Guide ↗</a></p>
         </div>
-      </div>
-    </div>
+ <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-book-atlas"></i></div>
+          <h4>Navigate resource library</h4>
+          <p>A one-stop location for all links to Recurly support offerings, documentation, updates, events, and more. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-resource-library" target="_blank" rel="noopener noreferrer">Go to the Resource library</a></p>
+        </div>
 
     <!-- Path navigation -->
     <div class="rc-lp-nav">
@@ -512,7 +518,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
         <div class="rc-footer-section">
           <span class="rc-footer-label">Launchpad Phase 2</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-footer-link">Path overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-footer-link">1. Benchmarks &amp; reporting</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-footer-link">2. Acquisition &amp; decline</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-footer-link">3. Churn metrics</a>
