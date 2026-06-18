@@ -279,7 +279,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-stat-strip">
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">53%</div>
-          <div class="rc-stat-tile-label">Of subscriber losses</div>
+          <div class="rc-stat-tile-label">Of subscriber losses are involuntary</div>
           <div class="rc-stat-tile-context">More than half of all churn is involuntary — payment failures, not intentional cancellations.</div>
         </div>
         <div class="rc-stat-tile">
