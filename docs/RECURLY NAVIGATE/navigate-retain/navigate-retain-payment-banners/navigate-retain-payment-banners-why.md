@@ -187,7 +187,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-btn-path:hover {
   background: transparent !important; color: #0D0D0B !important;
   border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
+  }
+.rc-guide a.rc-btn-prev {
+  background: transparent; color: #0D0D0B !important; text-decoration: none !important;
+  padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem;
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 2px solid #CCC9B8 !important; border-bottom: 2px solid #CCC9B8 !important; transition: all .2s;
 }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
+
 
 /* ── RESOURCES ── */
 .rc-resources { background: var(--brightgray); border-left: 4px solid var(--retain); border-radius: 10px; padding: 20px 24px; margin: 40px 0 0; }
