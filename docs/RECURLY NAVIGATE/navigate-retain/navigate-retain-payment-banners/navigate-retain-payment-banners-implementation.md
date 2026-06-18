@@ -303,7 +303,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-accent-card rc-accent-orange">
           <h4>Webhooks — build it yourself</h4>
           <ul>
-            <li><strong>You have a custom application or member portal</strong> where you can surface in-app notifications to subscribers — not Recurly-hosted pages</li>
+            <li><strong>You have a custom application or member portal</strong> where you can surface in-app notifications to subscribers</li>
             <li><strong>You need full brand control</strong> over banner design and placement</li>
             <li><strong>Engineering bandwidth is available</strong> and the build cost is justified</li>
             <li><strong>You want banner state in your own analytics</strong> or CRM</li>
