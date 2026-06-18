@@ -379,7 +379,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </div>
             <div class="rc-path-detail">
               <i class="fa-solid fa-triangle-exclamation rc-path-detail-icon orange"></i>
-              <p><strong>One thing to know:</strong> Recurly Engage is a separate product — confirm it's included in your contract before getting started. In-Prompt Billing (letting subscribers update their card directly in the banner) also requires a JWT setup with your CSM.</p>
+              <p><strong>One thing to know:</strong> Recurly Engage is a separate product — confirm it's included in your contract before getting started. </p>
             </div>
           </div>
           <div class="rc-path-card-footer">
