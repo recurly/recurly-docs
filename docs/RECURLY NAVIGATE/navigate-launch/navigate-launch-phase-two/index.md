@@ -170,7 +170,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* SCORECARD PREVIEW CARD */
 .rc-scorecard-card {
   background: #0D0D0B !important;
-  border-radius: 14px; padding: 28px 32px; margin: 0 0 32px;
+  border-radius: 14px; padding: 28px 15px; margin: 0 0 32px;
   border: 1px solid rgba(255,255,255,0.08);
 }
 .rc-scorecard-card h3 {
@@ -182,7 +182,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-scorecard-preview { background: rgba(255,255,255,0.04); border: 0px solid rgba(255,255,255,0.10); border-radius: 0px; padding: 0px 0px; }
 .rc-scorecard-preview-label {
   font-size: .75rem; font-weight: 800; text-transform: uppercase; letter-spacing: .8px;
-  color: #FF8200 !important; margin: 0 0 0px; display: flex; align-items: center; gap: 10px;
+  color: #FF8200 !important; margin: 0 0 0px; display: flex; align-items: center; gap: 5px;
 }
 .rc-scorecard-preview-img { width: 100%; border-radius: 0px; display: block; }
 
