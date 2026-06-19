@@ -339,24 +339,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> The case for Account Updater</h2>
       <p>Involuntary churn is a preventable source of subscriber loss. Account Updater acts before a charge occurs — serving as your first line of defense. When a card is reissued, the subscriber rarely thinks to update it. Account Updater catches participating changes silently, preserving both revenue and the relationship.</p>
-
-      <div class="rc-stat-strip">
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">77x</div>
-          <div class="rc-stat-tile-label">Average ROI</div>
-          <div class="rc-stat-tile-context">For every $1 spent on Account Updater, Recurly merchants recover an average of $77 in revenue.</div>
-        </div>
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">18%</div>
-          <div class="rc-stat-tile-label">Of recovered revenue</div>
-          <div class="rc-stat-tile-context">Nearly 1 in 5 dollars recovered across Recurly's network is directly attributed to Account Updater.</div>
-        </div>
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">96M+</div>
-          <div class="rc-stat-tile-label">Card updates in 2025</div>
-          <div class="rc-stat-tile-context">Recurly processed over 96 million card updates in 2025 — each one a prevented churn event.</div>
-        </div>
-      </div>
     </div>
 
     <div class="rc-lp-section">
@@ -430,13 +412,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Account Updater:</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-footer-link">Overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits" class="rc-footer-link">1. Why use it?</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations" class="rc-footer-link">2. Things to consider</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable" class="rc-footer-link">3. How to enable it</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data" class="rc-footer-link">4. Tracking impact</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case" class="rc-footer-link">5. Pitch to leadership</a>
+          <span class="rc-footer-label">Account Updater</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-footer-link">1. Path overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits" class="rc-footer-link">2. Why use it?</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations" class="rc-footer-link">3. Things to consider</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable" class="rc-footer-link">4. How to enable it</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data" class="rc-footer-link">5. Tracking impact</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case" class="rc-footer-link">6. Pitch to leadership</a>
         </div>
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
