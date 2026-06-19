@@ -1,5 +1,5 @@
 ---
-title: 'Welcome to Navigate: Home Page'
+title: Recurly Navigate Home Page
 excerpt: >-
   Explore Recurly Navigate, your Subscription Success Hub. Access expert
   learning paths to launch, acquire, retain, and scale your recurring revenue
