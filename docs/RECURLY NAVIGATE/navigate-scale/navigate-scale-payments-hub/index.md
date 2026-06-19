@@ -151,7 +151,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-sticky-link:hover .rc-step-badge { background: #FFD706; color: #0D0D0B; }
 /* Active item — no persistent background; map pin icon identifies current page */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #ffffff !important; }
+.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0d0d0d !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #ffffff !important; }
 
