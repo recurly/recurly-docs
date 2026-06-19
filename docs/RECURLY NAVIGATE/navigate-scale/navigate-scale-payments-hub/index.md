@@ -476,7 +476,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
-      <span class="rc-lp-nav-indicator">1 of 6</span>
+      <span class="rc-lp-nav-indicator">1 of 7</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-btn-path">Next: Overview →</a>
     </div>
 
