@@ -4,8 +4,6 @@ deprecated: false
 hidden: true
 metadata:
   robots: index
-next:
-  description: 'Use the Navigate button above to continue. '
 ---
 <HTMLBlock>{`
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
