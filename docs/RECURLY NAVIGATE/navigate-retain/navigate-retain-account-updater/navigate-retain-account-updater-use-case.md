@@ -416,7 +416,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- PATH NAV — completion state (last page, 5 of 5) -->
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data" class="rc-btn-prev">← Tracking impact</a>
-      <span class="rc-lp-nav-indicator">5 of 5</span>
+      <span class="rc-lp-nav-indicator">6 of 6</span>
       <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
     </div>
 
