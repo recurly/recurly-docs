@@ -353,7 +353,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">1</div>
           <div class="rc-step-content">
             <h4>Industry</h4>
-            <p>Determines your peer group. If your industry is set incorrectly, every benchmark comparison is misleading. Confirm or update it under <strong>Analytics → Settings → Industry</strong>. Changes take up to 24 hours to reflect.</p>
+            <p>Determines your peer group. If your industry is set incorrectly, every benchmark comparison is misleading. Confirm or update it under <strong>Configuration → Analytics Settings → Benchmarking</strong>. Changes take up to 24 hours to reflect.</p>
           </div>
         </div>
         <div class="rc-step">
@@ -376,7 +376,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation" style="color:#FF8200;"></i></div>
         <div class="rc-callout-body">
           <strong>Check your industry setting first</strong>
-          <p>An incorrect industry classification is the most common reason benchmark comparisons feel off. A software company benchmarked against consumer retail will see misleading results across every dashboard. Verify under <strong>Analytics → Settings</strong> before using any benchmark to make decisions.</p>
+          <p>An incorrect industry classification is the most common reason benchmark comparisons feel off. A software company benchmarked against consumer retail will see misleading results across every dashboard. Verify under <strong>Configuration → Analytics Settings → Benchmarking</strong> before using any benchmark to make decisions.</p>
         </div>
       </div>
 
