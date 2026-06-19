@@ -316,11 +316,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Payments Hub</h1></div>
       <p>Your payment performance data, all in one place. Learn your way around every dashboard — and know what to look for from day one.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">5</div><div class="rc-hero-stat-label">Dashboards covered</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">1</div><div class="rc-hero-stat-label">Unified payment view</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">6</div><div class="rc-hero-stat-label">Steps to full fluency</div></div>
-      </div>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
