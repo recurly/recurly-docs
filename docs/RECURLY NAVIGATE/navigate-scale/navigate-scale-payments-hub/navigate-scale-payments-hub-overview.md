@@ -448,9 +448,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Path navigation -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub"class="rc-btn-prev">Start</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub"class="rc-btn-prev">← Getting started</a>
       <span class="rc-lp-nav-indicator">1 of 7</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-btn-path">Next: Payment processing →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-btn-path">Next: Payment processing dashboard →</a>
     </div>
 
     <!-- Resources -->
