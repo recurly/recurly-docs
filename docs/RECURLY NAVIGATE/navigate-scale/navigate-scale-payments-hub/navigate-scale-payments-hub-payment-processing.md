@@ -288,20 +288,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Payment processing dashboard</h1></div>
       <p>Payment processing is where you find out why payments are failing — broken down by gateway, payment method, card BIN, and decline reason.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">91%</div>
-          <div class="rc-hero-stat-label">Avg authorization rate on Recurly</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">6</div>
-          <div class="rc-hero-stat-label">Dashboard views in Payments Hub</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Real-time</div>
-          <div class="rc-hero-stat-label">Decline reason visibility</div>
-        </div>
-      </div>
+
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
