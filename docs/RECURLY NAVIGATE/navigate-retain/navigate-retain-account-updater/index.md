@@ -294,20 +294,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <h1>Account Updater</h1>
       </div>
       <p>Protect your recurring revenue by automatically keeping card details up to date — before payments ever fail.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">77x</div>
-          <div class="rc-hero-stat-label">Average ROI</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">18%</div>
-          <div class="rc-hero-stat-label">Of recovered revenue</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">96M+</div>
-          <div class="rc-hero-stat-label">Card updates in 2025</div>
-        </div>
-      </div>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
