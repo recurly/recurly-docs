@@ -382,7 +382,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-btn-prev">← Account Updater</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-btn-prev">← Path overview</a>
       <span class="rc-lp-nav-indicator">2 of 6</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations" class="rc-btn-path">Next: Things to consider →</a>
     </div>
