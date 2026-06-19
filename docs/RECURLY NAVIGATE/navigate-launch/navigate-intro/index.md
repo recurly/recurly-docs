@@ -316,7 +316,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <!-- Overview row — active -->
         <div class="rc-agenda-row">
           <div class="rc-agenda-num" style="background:#FFD706;color:#0D0D0B;font-size:.8rem;">
-            <i class="fa-solid fa-map-pin"></i>
+            <i class="fa-solid fa-location-dot"></i>
           </div>
           <div class="rc-agenda-name">
             Overview <span class="rc-here-badge">You are here</span>
