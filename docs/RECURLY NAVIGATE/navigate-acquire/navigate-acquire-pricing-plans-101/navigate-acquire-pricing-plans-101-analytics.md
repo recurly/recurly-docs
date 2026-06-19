@@ -293,7 +293,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Section: Where to find your analytics -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Where to find your analytics</h2>
-      <p>Recurly Analytics is available to all plans and requires the Analytics user role permission. Your plan and pricing data lives across three dashboards — each answers a different question about how your setup is performing.</p>
+      <p>Recurly Analytics is available to all plans and requires the Analytics user role permission. Your plan and pricing data lives across multiple dashboards — each answers a different question about how your setup is performing.</p>
 
       <div class="rc-table-wrap">
         <table class="rc-table">
