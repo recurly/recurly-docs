@@ -480,9 +480,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Path navigation -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-btn-prev">← Payment processing dashboard</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-btn-prev">← Payment processing</a>
       <span class="rc-lp-nav-indicator">4 of 7</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-btn-path">Next: Payment retry recovery dashboard →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-btn-path">Next: Payment retry recovery →</a>
     </div>
 
     <!-- Resources -->
