@@ -234,7 +234,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-chart-bar rc-fa-section"></i> What this path covers</h2>
       <p>Recurly's built-in benchmarks compare your subscription metrics against thousands of similar businesses in your industry — in real time, without leaving your dashboard. This path walks you through all 8 benchmarked KPIs across 4 Analytics dashboards, so you can spot gaps, confirm strengths, and know exactly where to focus.</p>
-      <p>Before you start: confirm your industry is set correctly under <strong>Analytics → Settings</strong>. An incorrect classification skews every comparison in this path. Changes take up to 24 hours to reflect.</p>
+      <p>Before you start: confirm your industry is set correctly under <strong>Configuration → Analytics Settings</strong>. An incorrect classification skews every comparison in this path. Changes take up to 24 hours to reflect.</p>
 
       <!-- TOC CARDS -->
       <div class="rc-toc-list">
