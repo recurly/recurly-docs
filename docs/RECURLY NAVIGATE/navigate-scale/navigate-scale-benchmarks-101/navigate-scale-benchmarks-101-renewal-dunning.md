@@ -386,7 +386,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation" style="color:#FF8200;"></i></div>
         <div class="rc-callout-body">
           <strong>The default 10-day window leaves revenue on the table</strong>
-          <p>Recurly's default dunning window is 10 days. For monthly plans, extending to <strong>27 days</strong> gives the retry engine significantly more time to recover failed invoices — including the opportunity to catch a second pay cycle for subscribers paid biweekly. If you haven't reviewed your dunning window, this is the first place to look.</p>
+          <p>Recurly's default dunning window is 10 days. For monthly plans, extending to <strong>28 days</strong> gives the retry engine significantly more time to recover failed invoices — including the opportunity to catch a second pay cycle for subscribers paid biweekly. If you haven't reviewed your dunning window, this is the first place to look.</p>
         </div>
       </div>
 
@@ -397,7 +397,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">1</div>
           <div class="rc-step-content">
             <h4>Extend your dunning window</h4>
-            <p>Set to <strong>27 days for monthly plans</strong> — this fits inside the 30-day billing cycle and gives Recurly's retry engine maximum time to recover. For annual plans, you can extend up to 60 days. Go to <strong>Configuration → Dunning Management</strong> to update.</p>
+            <p>Set to <strong>28 days for monthly plans</strong> — this fits inside the 30-day billing cycle and gives Recurly's retry engine maximum time to recover. For annual plans, you can extend up to 60 days. Go to <strong>Configuration → Dunning Management</strong> to update.</p>
           </div>
         </div>
         <div class="rc-step">
@@ -411,7 +411,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">3</div>
           <div class="rc-step-content">
             <h4>Review your dunning email cadence</h4>
-            <p>Dunning emails prompt subscribers to update their payment details. A 27-day window supports roughly 10 or more touch points — use this capacity. Spread emails across the window; don't stack them at the start. Configure email timing under <strong>Configuration → Dunning Management → Email settings</strong>.</p>
+            <p>Dunning emails prompt subscribers to update their payment details. A 28-day window supports roughly 5 or more touch points — use this capacity. Spread emails across the window; don't stack them at the start. Configure email timing under <strong>Configuration → Dunning Management → Email settings</strong>.</p>
           </div>
         </div>
       </div>
