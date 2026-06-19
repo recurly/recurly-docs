@@ -305,20 +305,40 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Analytics Dashboard</td>
-              <td><strong>Analytics → Dashboard</strong></td>
-              <td>Top-level health: active subscribers, MRR, churn rate, LTV, and ARPS — all in one view.</td>
+             <tr>
+              <td>Plan KPI</td>
+              <td><strong>Analytics → Plans, Pricing, & Promotions → Plan KPI</strong></td>
+              <td>Acquisition rate, churn rate, ARPU per plan.</td>
             </tr>
             <tr>
-              <td>MRR by Plan</td>
-              <td><strong>Analytics → MRR by Plan</strong></td>
-              <td>How much revenue each plan contributes, net MRR movement, and the growth breakout across new, expansion, contraction, and churn categories.</td>
+              <td>Subscriptions by Plan</td>
+              <td><strong>Analytics → Plans, Pricing &amp; Promotions → Subscriptions by Plan</strong></td>
+              <td>Subscriber distribution across plans.</td>
             </tr>
             <tr>
-              <td>Plans, Pricing &amp; Promotions</td>
-              <td><strong>Analytics → Plans, Pricing &amp; Promotions</strong></td>
-              <td>Per-plan acquisition rate, churn rate, ARPU, subscriber distribution, and trial conversion performance.</td>
+              <td>Churn Trends by Plan</td>
+              <td><strong>Analytics → Plans, Pricing &amp; Promotions → Churn Trends by Plan</strong></td>
+              <td>Churn metrics segmented by plan.</td>
+            </tr>
+            <tr>
+              <td>Retention by Plan</td>
+              <td><strong>Analytics → Plans, Pricing &amp; Promotions → Retention by Plan</strong></td>
+              <td>Subscriber duration and loyalty by plan.</td>
+            </tr>
+            <tr>
+              <td>Trials by Plan</td>
+              <td><strong>Analytics → Plans, Pricing &amp; Promotions → Trials by Plan</strong></td>
+              <td>Trial conversion rates by plan, with growth breakout.</td>
+            </tr>
+            <tr>
+              <td>MMR by Plan</td>
+              <td><strong>Analytics → Plans, Pricing &amp; Promotions → MMR by Plan</strong></td>
+              <td>Monthly recurring revenue per plan, with growth breakout.</td>
+            </tr>
+            <tr>
+              <td>LTV by Plan</td>
+              <td><strong>Analytics → Plans, Pricing &amp; Promotions → LTV by Plan</strong></td>
+              <td>Lifetime value of subscribers per plan.</td>
             </tr>
           </tbody>
         </table>
