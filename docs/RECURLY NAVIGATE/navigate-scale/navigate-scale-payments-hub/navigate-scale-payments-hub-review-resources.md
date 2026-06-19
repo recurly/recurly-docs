@@ -99,30 +99,42 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0; }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #CCC9B8; line-height: 1.6; }
 
-/* ── NAVIGATION MENU — Non-sticky, open (Course page) — Scale pillar ── */
-details.rc-sticky-nav-wrap { position: relative; z-index: 1; background-color: #FF5810; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
+/* ── NAVIGATION — non-sticky + open (Course page) — Scale pillar ── */
+details.rc-sticky-nav-wrap {
+  position: relative; z-index: 1;
+  background-color: #FF5810;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 24px 0 48px 0; border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
+}
 details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
-.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #ffffff; }
-/* Scale pillar: chevron must be white */
-.rc-nav-chevron { font-size: .72rem; color: #ffffff; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
+/* Scale nav: label + chevron must be white */
+.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #0d0d0d; }
+.rc-nav-chevron { font-size: .72rem; color: #0d0d0d; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 .rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
-/* Scale nav: links must be white */
+/* Nav links — Scale: white text + dark hover overlay — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link { color: #ffffff !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-sticky-link {
+  color: #0d0d0d !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px;
+  text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s;
+  white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+}
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #ffffff !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #0d0d0d !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+/* Badge inverts on hover so it stays visible against dark hover overlay */
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover .rc-step-badge,
 .rc-guide a.rc-sticky-link:hover .rc-step-badge { background: #FFD706; color: #0D0D0B; }
-/* Active item — no persistent background (Known Issue #27) */
+/* Active item — no persistent background; map pin icon identifies current page */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #ffffff !important; }
+.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0d0d0d !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #ffffff !important; }
 
