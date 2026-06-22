@@ -368,7 +368,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
           <strong>Key join fields for cross-source analysis</strong>
-          <p>When joining Recurly export data to external sources, the most reliable join keys are <code>account_code</code> (your internal customer identifier), <code>subscription_uuid</code> (Recurly's unique subscription ID), and <code>plan_code</code>. For price segment analysis, <code>price_segment_code</code> is the field to carry into your warehouse — it's present in the subscriptions export and is available in Explore.</p>
+          <p>When joining Recurly export data to external sources, the most reliable join keys are <code>account_code</code> (Recurly's primary customer identifier), <code>uuid</code> ((the subscription identifier in the Subscriptions export — also referred to as  <code>subscription_uuid</code> in related exports like Subscription Add-ons and Subscription History)and <code>plan_code</code>. For price segment analysis, <code>price_segment_code</code> is the field to carry into your warehouse — it's present in the Subscriptions export and is available in Explore (Invoices and Transactions views).</p>
         </div>
       </div>
 
