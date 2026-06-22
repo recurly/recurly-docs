@@ -335,7 +335,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-content">
             <h4>Log usage records via the API</h4>
             <p>Your system sends usage records to Recurly's <a href="https://docs.recurly.com/recurly-subscriptions/docs/usage-based-pricing-guide" target="_blank" rel="noopener noreferrer">Create Usage endpoint</a> throughout the billing period. Each record specifies the subscription, the add-on code, the amount of usage, and an optional timestamp. Records can be logged in real time or batched — Recurly aggregates them at billing time regardless.</p>
-            <p>Usage records can be updated after logging if you need to correct a value. Once the billing period closes and the invoice is generated, usage records for that period are locked.</p>
+            <p>Usage records can be updated after logging if you need to correct a value for tiered or flat models (not for volume or stairstep pricing models). Once the billing period closes and the invoice is generated, usage records for that period are locked.</p>
           </div>
         </div>
         <div class="rc-step">
