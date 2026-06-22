@@ -271,6 +271,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section" id="hybrid-pricing">
       <h2><i class="fa-solid fa-diagram-project rc-fa-section"></i> Hybrid pricing</h2>
       <p>Hybrid pricing lets you combine multiple pricing models — recurring, usage-based, quantity-based, and one-time — within a single purchase transaction. The result is one invoice that reflects a mixed charge structure, rather than separate invoices for each component.</p>
+			<p>Hybrid pricing is available on <strong>all Recurly plans</strong>.</a>
 
       <div class="rc-accent-card rc-accent-yellow">
         <div class="rc-accent-tag">What it is</div>
