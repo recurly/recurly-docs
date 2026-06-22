@@ -358,6 +358,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-tag rc-fa-section"></i> What are price segments?</h2>
       <p>A price segment is a named price point within a plan that you assign to a subscriber at the moment their subscription is created. When Recurly calculates what that subscriber owes each billing period, it uses the price tied to their segment code — not the plan's default price.</p>
       <p>Everything else about the subscription stays the same regardless of segment. Billing interval, add-on configuration, dunning campaign, trial setup — all defined once at the plan level, shared across every segment. <strong>Segments change what a subscriber pays. They don't change how the subscription is structured.</strong></p>
+      <p><strong>Segments are available on all Recurly plans.</strong></p>
 
       <div class="rc-stat-strip">
         <div class="rc-stat-tile">
