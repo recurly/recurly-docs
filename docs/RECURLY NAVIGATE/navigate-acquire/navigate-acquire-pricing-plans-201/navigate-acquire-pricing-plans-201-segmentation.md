@@ -445,7 +445,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-code-branch"></i></div>
         <div class="rc-callout-body">
-          <strong>Segment codes cannot be changed after creation</strong>
+          <strong>Segment codes cannot be changed after creation, but you can add segments to existing plans at any time</strong>
           <p> Plan ahead with a clear, consistent naming convention.</p>
         </div>
       </div>
