@@ -305,7 +305,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <p>A customer pays a lump sum — say $500 — which is credited to their Recurly account balance. Their monthly subscription invoices are automatically applied against that balance. When the balance is depleted, invoices revert to their normal collection method.</p>
         <p>This works well for annual prepay deals, commitment-based pricing where customers receive a discount for paying upfront, or B2B scenarios where procurement prefers to fund an account rather than approve recurring transactions.</p>
         <ul>
-          <li><strong>Prerequisites:</strong> Credit Invoices and Only Bill What Changed must be enabled on your site — contact Recurly Support if these are not active</li>
+          <li><strong>Prerequisites:</strong> Available on all plans. Credit Invoices and Only Bill What Changed must be enabled on your site — contact Recurly Support if these are not active</li>
           <li><strong>Tax treatment:</strong> the prepaid charge itself is tax-exempt; taxes are calculated and applied when actual subscription invoices are settled against the balance</li>
           <li><strong>Balance visibility:</strong> the account balance is visible to subscribers in the Hosted Account Management page alongside their active subscriptions and invoices</li>
         </ul>
