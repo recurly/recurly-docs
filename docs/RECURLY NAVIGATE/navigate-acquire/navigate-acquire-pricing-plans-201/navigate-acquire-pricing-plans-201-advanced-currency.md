@@ -198,6 +198,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
+/* Screenshot */
+.rc-screenshot { width: 100%; border-radius: 14px; border: 1px solid var(--lightgray); margin-bottom: 24px; display: block; }
+
 /* Responsive */
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
@@ -219,8 +222,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-    <!-- Announcement bar (hidden) -->
-    <div class="rc-announce-bar" id="rcAnnounce">
+        <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>Upcoming:</strong> Join our CSMs for a live pricing Q&amp;A — bring your advanced billing questions.
@@ -228,8 +230,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Hero -->
-    <div class="rc-hero">
+        <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 201
       </div>
@@ -239,8 +240,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Multi-currency at scale means more than setting prices in different denominations. It means routing transactions to the right gateway per currency, handling authentication requirements for European markets, and tuning your dunning logic for how payment failures actually behave in each region.</p>
     </div>
 
-    <!-- Nav — Page 5 active -->
-    <details class="rc-sticky-nav-wrap" open>
+        <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
       </summary>
@@ -262,11 +262,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div></div></div>
     </details>
 
-    <!-- Gateway routing -->
-    <div class="rc-lp-section" id="gateway-routing">
+        <div class="rc-lp-section" id="gateway-routing">
       <h2><i class="fa-solid fa-route rc-fa-section"></i> Per-currency gateway routing</h2>
       <p>Recurly does not perform currency conversion. The price you set in a given currency is presented and processed in that currency — your payment gateway handles it. This means your gateway configuration must explicitly support each currency you accept.</p>
       <p>When you have multiple gateways configured, Recurly routes transactions based on the card type and currency of the transaction, then falls back to the first gateway added that matches. You can override this default routing using custom gateway routing — passing a <code>gateway_code</code> on the purchase or subscription API call to direct specific transactions to a specific gateway.</p>
+
+      <img class="rc-screenshot" src="https://files.readme.io/9b95a9bc8a6cca0cb99230a01207b65d60ff6298e92b0b5a32f3d02a336d319f-gemini-svg.svg" alt="Per-currency gateway routing diagram" />
 
       <div class="rc-steps">
         <div class="rc-step">
@@ -308,8 +309,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- 3DS / SCA -->
-    <div class="rc-lp-section" id="3ds-sca">
+        <div class="rc-lp-section" id="3ds-sca">
       <h2><i class="fa-solid fa-shield-halved rc-fa-section"></i> 3DS and SCA for European markets</h2>
       <p>If your business or your payment provider is based in the European Economic Area (EEA) and you have customers there, PSD2 requires Strong Customer Authentication (SCA) for most online transactions. 3D Secure 2.0 (3DS2) is the protocol used to satisfy that requirement.</p>
 
@@ -341,8 +341,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Region-aware dunning -->
-    <div class="rc-lp-section" id="region-dunning">
+        <div class="rc-lp-section" id="region-dunning">
       <h2><i class="fa-solid fa-envelope-circle-check rc-fa-section"></i> Region-aware dunning</h2>
       <p>Payment failure patterns vary significantly by region. Hard declines are more common in some markets; soft declines and insufficient funds patterns look different in others. A single dunning campaign built around US card behavior may underperform in European or APAC markets.</p>
 
@@ -363,22 +362,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- OH CTA -->
-    <div class="rc-oh-cta">
+        <div class="rc-oh-cta">
       <h4><i class="fa-regular fa-calendar-days rc-fa-dark"></i> Expanding into European or global markets?</h4>
       <p>Gateway routing decisions, SCA compliance setup, and dunning configuration for international markets are all areas where our CSMs can provide direct guidance. Bring specific questions to <strong>Global Office Hours</strong> before you configure your international billing stack.</p>
       <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
-    <!-- Path nav -->
-    <div class="rc-lp-nav">
+        <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-advanced-models" class="rc-btn-prev">← Advanced pricing models</a>
       <span class="rc-lp-nav-indicator">5 of 7</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-advanced-analytics" class="rc-btn-path">Next: Advanced analytics →</a>
     </div>
 
-    <!-- Resources -->
-    <div class="rc-resources">
+        <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/currencies" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Currencies</a>
@@ -392,8 +388,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Footer -->
-    <div class="rc-footer-nav">
+        <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Pricing &amp; Plans 201</span>
