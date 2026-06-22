@@ -345,7 +345,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="rc-callout-body">
           <strong>Some features covered here require an Elite plan or engineering integration</strong>
-          <p><strong>Account Hierarchy</strong>, <strong>Invoice Rollup</strong>, and <strong>Analytics Explore</strong> are not available on the Recurly Starter plan. Contact Recurly Sales to confirm eligibility for your plan. <strong>Usage billing</strong> requires an API integration. These are flagged on the relevant pages so you know what to plan for before diving in.</p>
+          <p><strong>Account Hierarchy</strong>, <strong>Invoice Rollup</strong>, and <strong>Analytics Explore</strong> are not available on the Recurly Starter plan. Contact Recurly Sales to confirm eligibility for your plan. <strong>Usage billing</strong> requires an API integration. Invoice Rollup also requires Calendar Billing and must be enabled by Recurly Support. These are flagged on the relevant pages so you know what to plan for before diving in.</p>
         </div>
       </div>
     </div>
