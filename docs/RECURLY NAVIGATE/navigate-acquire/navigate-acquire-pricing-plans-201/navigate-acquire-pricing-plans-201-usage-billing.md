@@ -268,7 +268,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section" id="what-is-usage-billing">
       <h2><i class="fa-solid fa-gauge-high rc-fa-section"></i> How usage billing works in Recurly</h2>
       <p>Usage billing in Recurly works through usage-type add-ons attached to a plan. Your system logs consumption events to Recurly via the API throughout the billing period. When the period closes, Recurly aggregates those records and charges the subscriber based on what was logged — billed in arrears on their next invoice.</p>
-      <p>The base subscription renews on its regular schedule. Usage charges appear as a line item on that same invoice, covering the prior period's consumption. The first invoice a subscriber receives does not include usage charges — there's nothing to bill before any usage has been logged.</p>
+      <p>The base subscription renews on its regular schedule. Usage charges appear as a line item on that same invoice, covering the prior period's consumption. The first invoice does not include usage add-ons at all. From the second billing period onward, a usage line item appears on every invoice — even if usage was zero for that period.</p>
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
