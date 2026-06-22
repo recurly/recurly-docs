@@ -345,7 +345,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="rc-callout-body">
           <strong>Some features covered here require an Elite plan or engineering integration</strong>
-          <p><strong>Account Hierarchy</strong>, <strong>Invoice Rollup</strong>, and <strong>Analytics Explore</strong> are not available on the Recurly Starter plan. Contact Recurly Sales to confirm eligibility for your plan. <strong>Usage billing</strong> requires an API integration. Invoice Rollup also requires Calendar Billing and must be enabled by Recurly Support. These are flagged on the relevant pages so you know what to plan for before diving in.</p>
+          <p><strong>Account Hierarchy</strong>, <strong>Invoice Rollup</strong>, and <strong>Analytics Explore</strong> may not be included in Starter or Pro plans. Contact Recurly Sales to confirm eligibility for your plan. <strong>Usage billing</strong> requires an API integration. Invoice Rollup also requires Calendar Billing and must be enabled by Recurly Support. These are flagged on the relevant pages so you know what to plan for before diving in.</p>
         </div>
       </div>
     </div>
@@ -439,6 +439,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-hierarchy-1" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Account hierarchy</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-analytics-overview" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Analytics overview</a>
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Global Office Hours</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/ah-invoice-rollup" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Invoice Rollup</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-builder" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Analytics Explore Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/usage-based-billing" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Usage-Based Billing</a>
+        <a href="https://recurly.com/pricing/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Pricing Page (current plan tiers)</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
     </div>
