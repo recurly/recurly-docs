@@ -279,7 +279,37 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- How to set up -->
+ 
+
+    <!-- Two aggregation strategies -->
+    <div class="rc-lp-section" id="aggregation">
+      <h2><i class="fa-solid fa-sliders rc-fa-section"></i> Cumulative vs. last recorded</h2>
+      <p>The aggregation strategy determines how Recurly calculates the billable amount from the usage records logged during a period. Choose based on what your usage metric actually represents.</p>
+
+      <div class="rc-compare-grid">
+        <div class="rc-compare-card">
+          <div class="rc-compare-label rc-compare-label-a">Cumulative</div>
+          <h4>Sum of all records in the period</h4>
+          <p>Every usage record logged during the billing period is added together. A subscriber who logs 1 GB/day for 30 days is charged for 30 GB at the end of the period.</p>
+          <p>Use for: API calls, messages sent, transactions processed, data transferred — any metric where each event represents real consumption that should be billed.</p>
+        </div>
+        <div class="rc-compare-card">
+          <div class="rc-compare-label rc-compare-label-b">Last recorded</div>
+          <h4>Most recent record only</h4>
+          <p>Only the final usage record logged before the period closes is used for billing. A subscriber who had 50 seats for most of the month, then reduced to 40 seats, is billed for 40.</p>
+          <p>Use for: seat count, active users, storage level — any metric representing a current state rather than accumulated activity.</p>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-warning">
+        <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
+        <div class="rc-callout-body">
+          <strong>Pricing strategy changes apply to new subscriptions only</strong>
+          <p>If you change a usage add-on's aggregation strategy (cumulative to last recorded, or vice versa), the change applies only to subscriptions created after the switch. To update the strategy on an existing subscription, remove the add-on from that subscription, update the plan, and re-add it.</p>
+        </div>
+      </div>
+    </div>
+     <!-- How to set up -->
     <div class="rc-lp-section" id="setup">
       <h2><i class="fa-solid fa-gear rc-fa-section"></i> Setting up usage billing</h2>
       <p>Usage billing has two parts: the plan and add-on configuration in Recurly, and the API integration that logs usage records from your system. Both must be in place before live billing works correctly.</p>
@@ -326,34 +356,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Two aggregation strategies -->
-    <div class="rc-lp-section" id="aggregation">
-      <h2><i class="fa-solid fa-sliders rc-fa-section"></i> Cumulative vs. last recorded</h2>
-      <p>The aggregation strategy determines how Recurly calculates the billable amount from the usage records logged during a period. Choose based on what your usage metric actually represents.</p>
-
-      <div class="rc-compare-grid">
-        <div class="rc-compare-card">
-          <div class="rc-compare-label rc-compare-label-a">Cumulative</div>
-          <h4>Sum of all records in the period</h4>
-          <p>Every usage record logged during the billing period is added together. A subscriber who logs 1 GB/day for 30 days is charged for 30 GB at the end of the period.</p>
-          <p>Use for: API calls, messages sent, transactions processed, data transferred — any metric where each event represents real consumption that should be billed.</p>
-        </div>
-        <div class="rc-compare-card">
-          <div class="rc-compare-label rc-compare-label-b">Last recorded</div>
-          <h4>Most recent record only</h4>
-          <p>Only the final usage record logged before the period closes is used for billing. A subscriber who had 50 seats for most of the month, then reduced to 40 seats, is billed for 40.</p>
-          <p>Use for: seat count, active users, storage level — any metric representing a current state rather than accumulated activity.</p>
-        </div>
-      </div>
-
-      <div class="rc-callout rc-callout-warning">
-        <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
-        <div class="rc-callout-body">
-          <strong>Pricing strategy changes apply to new subscriptions only</strong>
-          <p>If you change a usage add-on's aggregation strategy (cumulative to last recorded, or vice versa), the change applies only to subscriptions created after the switch. To update the strategy on an existing subscription, remove the add-on from that subscription, update the plan, and re-add it.</p>
-        </div>
-      </div>
-    </div>
 
     <!-- OH CTA -->
     <div class="rc-oh-cta">
