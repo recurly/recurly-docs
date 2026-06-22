@@ -378,7 +378,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">3</div>
           <div class="rc-toc-body">
             <h4>Usage billing</h4>
-            <p>Configure metered billing that charges subscribers for what they actually consume — API calls, messages, storage — logged via the Recurly API and billed in arrears each period.</p>
+            <p>Configure metered billing that charges subscribers for what they actually consume — API calls, messages, storage — logged via the Recurly API and billed in arrears at the end of each billing cycle.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
