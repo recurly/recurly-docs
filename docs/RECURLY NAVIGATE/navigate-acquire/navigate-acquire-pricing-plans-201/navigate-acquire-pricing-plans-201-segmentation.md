@@ -440,6 +440,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <span class="rc-feature-tag">Channel pricing</span>
         </div>
       </div>
+      
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-code-branch"></i></div>
+        <div class="rc-callout-body">
+          <strong>Segment codes cannot be changed after creation</strong>
+          <p> Plan ahead with a clear, consistent naming convention.</p>
+        </div>
+      </div>
+
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
