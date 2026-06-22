@@ -106,7 +106,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-logo-image { height: 28px; display: block; }
 .rc-home-title-block { margin-top: 44px; }
 .rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0 0 24px; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: var(--lightgray); line-height: 1.6; }
+.rc-hero p { font-size: 1rem; opacity: .85 !important; max-width: 640px; margin: 0 auto 32px; color: #CCC9B8 !important; line-height: 1.6; }
 
 /* ── SECTION HEADINGS ── */
 .rc-lp-section { margin-bottom: 48px; }
