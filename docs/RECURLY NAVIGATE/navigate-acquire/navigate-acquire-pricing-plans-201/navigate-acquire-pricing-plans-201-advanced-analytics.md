@@ -321,7 +321,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Analytics Explore -->
     <div class="rc-lp-section" id="explore">
       <h2><i class="fa-solid fa-magnifying-glass-chart rc-fa-section"></i> Analytics Explore</h2>
-      <p>Explore is Recurly's in-platform custom report builder — available on the Elite plan only. It lets you combine dimensions and measures across your Recurly data to build reports that the standard dashboards don't surface.</p>
+      <p>Explore is Recurly's in-platform custom report builder — available on the Elite plan only. It lets you combine dimensions and measures across your Recurly data to build reports that the standard dashboards don't surface. Explore now also includes a Workbook Agent — an AI-assisted feature where users can ask plain-language questions to build queries.</p>
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
