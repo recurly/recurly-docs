@@ -351,7 +351,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">Up to 500</div>
           <div class="rc-stat-tile-label">Default child account limit</div>
-          <div class="rc-stat-tile-context">A parent can have up to 10,000 child accounts in most plans. If you have questions about your plan, reach out to <a href:"mailto:support@recurly.com" target="_blank">support@recurly.com.</a></div>
+          <div class="rc-stat-tile-context">A parent can have up to 10,000 child accounts in most plans. If you have questions about your plan, reach out to <a href:"mailto:support@recurly.com" target="_blank">support@recurly.com</a>.</div>
         </div>
       </div>
 
