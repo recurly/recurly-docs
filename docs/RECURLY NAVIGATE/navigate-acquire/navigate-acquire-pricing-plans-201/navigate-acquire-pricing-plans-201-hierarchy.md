@@ -380,6 +380,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <li>Enables Invoice Rollup — all child charges consolidated on one parent invoice</li>
             <li>Tax is calculated using the parent's taxable address; taxable address used depends on collection method and site settings</li>
             <li>Credits on the parent apply to the consolidated invoice; coupons must be redeemed on the child account to discount parent-billed charges</li>
+						<li>A chilld account billing to a parent account cannot access invoice or pricing information in Hosted Account Management.</li>
           </ul>
         </div>
         <div class="rc-compare-card">
