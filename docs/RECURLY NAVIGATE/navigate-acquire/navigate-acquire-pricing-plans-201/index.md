@@ -405,7 +405,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">6</div>
           <div class="rc-toc-body">
             <h4>Advanced analytics</h4>
-            <p>Move beyond built-in dashboards into subscriptions exports, Analytics Explore (Elite plan), and external BI integrations — and understand how to use your Recurly data to inform pricing decisions.</p>
+            <p>Move beyond built-in dashboards into subscriptions exports, Analytics Explore, and external BI integrations — and understand how to use your Recurly data to inform pricing decisions.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
