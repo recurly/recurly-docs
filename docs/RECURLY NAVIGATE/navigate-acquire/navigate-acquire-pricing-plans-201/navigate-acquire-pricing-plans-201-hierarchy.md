@@ -410,6 +410,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-layer-group rc-fa-section"></i> Invoice Rollup</h2>
       <p>Invoice Rollup consolidates line items from all billed-to-parent child accounts into a single parent invoice — one document, one payment, with full line-item transparency showing which child account each charge originated from.</p>
       <p>Invoice Rollup is powered by Calendar Billing, which aligns all child billing dates to the parent's billing date. Both features must be activated by the Recurly support team — neither is self-serve. Factor this into your implementation timeline, especially for enterprise deals where consolidated billing is a committed feature of the commercial agreement.</p>
+			<p><strong>Note:</strong> Invoice Rollup consolidates billing when eligible conditions are met. Differences in billing timing, shipping addresses, or subscription configuration can result in separate invoices even when Rollup is enabled. Test your setup before go-live.</p>
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
