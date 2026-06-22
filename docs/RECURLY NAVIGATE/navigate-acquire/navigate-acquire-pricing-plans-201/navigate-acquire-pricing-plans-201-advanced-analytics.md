@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Plans 201: Advanced '
+title: 'Pricing & Plans 201: Advanced analytics'
 deprecated: false
 hidden: true
 metadata:
