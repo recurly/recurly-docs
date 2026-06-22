@@ -368,7 +368,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">At creation</div>
           <div class="rc-stat-tile-label">When the code is assigned</div>
-          <div class="rc-stat-tile-context">The segment code is passed when the subscription is created — via your API call or Recurly.js. It can be updated later via the subscription change API.</div>
+          <div class="rc-stat-tile-context">The segment code drives your internal selection logic. When creating the subscription or purchase, your application passes the chosen segment's price via the Recurly API or Recurly.js.</div>
         </div>
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">Per-currency</div>
