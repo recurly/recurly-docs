@@ -267,7 +267,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Data exports -->
     <div class="rc-lp-section" id="exports">
       <h2><i class="fa-solid fa-file-arrow-down rc-fa-section"></i> Data exports</h2>
-      <p>Recurly's data exports are available on all plans and are the primary mechanism for getting your billing data into an external BI tool, data warehouse, or spreadsheet. All exports are accessible from <strong>Analytics → Exports</strong> in the admin console and via the Recurly API for automated pipelines. Exports use your site's configured timezone.</p>
+      <p>Recurly's data exports are available on all plans and are the primary mechanism for getting your billing data into an external BI tool, data warehouse, or spreadsheet. Manual exports are accessible from <strong>Analytics → Exports</strong> in the admin console. Automated export configurations are managed in the Integrations section (requires Integrations role). </p>
+			<p><strong> Note</strong>: Recurly has a native Snowflake integration that pushes data directly into a Snowflake account with hourly or daily refresh — which eliminates the need for custom API pipelines for Snowflake users. Learn more here: <a href="https://docs.recurly.com/recurly-subscriptions/docs/snowflake-integration" target="_blank">Recurly Docs: Snowflake integration</a>.</p>
 
       <p>The exports most relevant to the features covered in this course:</p>
 
