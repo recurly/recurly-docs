@@ -304,7 +304,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-warning">
         <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
         <div class="rc-callout-body">
-          <strong>Pricing strategy changes apply to new subscriptions only</strong>
+          <strong>Calculation method changes apply to new subscriptions only</strong>
           <p>If you change a usage add-on's aggregation strategy (cumulative to last recorded, or vice versa), the change applies only to subscriptions created after the switch. To update the strategy on an existing subscription, remove the add-on from that subscription, update the plan, and re-add it.</p>
         </div>
       </div>
