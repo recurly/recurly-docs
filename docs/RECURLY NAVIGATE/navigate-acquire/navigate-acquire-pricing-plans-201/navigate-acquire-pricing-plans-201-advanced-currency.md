@@ -329,7 +329,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-check-to-slot"></i></div>
           <h4>Gateways that support 3DS on Recurly</h4>
-          <p>Not every gateway supports 3DS through Recurly. Confirm your gateway supports 3DS2 before relying on Recurly's SCA flows. Gateways with documented 3DS support include Adyen, Stripe, Worldpay, Braintree, Cybersource, and others — check the gateway-specific documentation for your processor.</p>
+          <p>Not every gateway supports 3DS through Recurly. Confirm your gateway supports 3DS2 before relying on Recurly's SCA flows. Gateways with documented 3DS support include Adyen, Stripe, Worldpay, Braintree, Cybersource, and others — check your specific gateway's documentation, as some gateways (like Stripe) handle verification automatically.</p>
           <span class="rc-feature-tag">Gateway-dependent</span>
         </div>
         <div class="rc-feature-card">
