@@ -358,8 +358,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="rc-callout-body">
-          <strong>Elite plan required</strong>
-          <p>Account Hierarchy and Invoice Rollup are not included in Starter or Pro plans. Contact Recurly Sales to discuss upgrade options before planning an implementation that depends on these features.</p>
+          <strong>Account Hierarchy and Invoice Rollup are not included in Starter or Pro plans.</strong>
+          <p> Contact Recurly Sales to discuss upgrade options before planning an implementation that depends on these features.</p>
         </div>
       </div>
     </div>
