@@ -5,4 +5,198 @@ hidden: true
 metadata:
   robots: index
 ---
-Add Resource Library Page.&#x20;
+<HTMLBlock>{`
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* ── HOST-THEME BACKGROUND OVERRIDE ── */
+body { background: #ffffff !important; }
+
+/* ── GLOBAL CSS IMMUNITY BLOCK ── */
+.rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
+.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide [class^="fa-"],
+.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands,
+.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+
+/* ── NAVIGATE MASTER ARMOR ── */
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a,
+.rc-guide a:link,
+.rc-guide a:visited,
+.rc-guide a:hover,
+.rc-guide a:active {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+  text-underline-offset: unset !important;
+  border-bottom: 0 !important;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+.rc-guide {
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
+  --lightgray: #CCC9B8;
+  --brightgray:#F1EFE3;
+  --offwhite:  #FFFDF2;
+  color: #32312D !important; 
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
+
+/* ── FONT AWESOME ICON HELPERS ── */
+.rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-section { color: #0D0D0B; font-size: 1rem; }
+
+/* ── LAYOUT & TOP NAV ── */
+.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+/* ── HERO ── */
+.rc-hero {
+  background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
+              url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
+  background-color: var(--offblack); background-size: cover;
+  color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 40px;
+}
+.rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
+.rc-logo-image { height: 28px; display: block; }
+.rc-home-title-block { margin-top: 44px; }
+.rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0 0 24px; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: var(--lightgray); line-height: 1.6; }
+
+/* ── SECTION HEADINGS ── */
+.rc-lp-section { margin-bottom: 48px; }
+.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
+.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
+
+/* ── CARD GRID (3 COL) ── */
+.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
+.rc-card-grid-3col { grid-template-columns: 1fr 1fr 1fr; }
+.rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
+/* Home/Neutral Hover State */
+.rc-feature-card:hover { border-color: #0D0D0B; box-shadow: 0 4px 16px rgba(13,13,11,0.15); transform: translateY(-2px); } 
+.rc-feature-icon { font-size: 1.4rem; line-height: 1; color: var(--offblack); }
+.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0; }
+.rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
+
+/* Feature Card Links */
+.rm-Markdown.markdown-body .rc-guide .rc-feature-card a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-feature-card a { color: #807D73 !important; font-weight: 600; border-bottom: 0 !important; transition: color .2s; }
+.rm-Markdown.markdown-body .rc-guide .rc-feature-card a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide .rc-feature-card a:hover { color: #0D0D0B !important; text-decoration: underline !important; text-decoration-color: #0D0D0B !important; text-underline-offset: 2px !important; }
+
+/* ── FOOTER UTILITY ── */
+.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; padding-top: 24px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-footer-link {
+  color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem;
+  transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
+.rc-footer-link:hover img { opacity: 1; }
+
+/* ── BREAKPOINTS ── */
+@media(max-width:768px){
+  .rc-content-wrap { padding: 0 20px; }
+  .rc-top-nav { padding: 16px 20px; }
+  .rc-hero { padding: 36px 20px 36px; }
+  .rc-home-title-block h1 { font-size: 1.8rem; }
+  .rc-card-grid, .rc-card-grid.rc-card-grid-3col { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="rc-guide">
+  <div class="rc-top-nav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back-link">← Back to Home</a>
+  </div>
+
+  <div class="rc-content-wrap">
+    
+    <div class="rc-hero">
+      <div class="rc-brand-header">
+        <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
+      </div>
+      <div class="rc-home-title-block">
+        <h1>Resource library</h1>
+        <p>A complete collection of guides, webinars, and tools to optimize your Recurly implementation.</p>
+      </div>
+    </div>
+
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-book-open rc-fa-section"></i> Essential resources</h2>
+      <p>Browse our curated materials to help you build and scale.</p>
+      
+      <div class="rc-card-grid rc-card-grid-3col">
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-regular fa-file-lines"></i></div>
+          <h4>Guide title placeholder</h4>
+          <p>A brief, instructional explanation of what this guide covers and how it applies to your setup.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Read the guide ↗</a>
+        </div>
+        
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-circle-play"></i></div>
+          <h4>Webinar title placeholder</h4>
+          <p>A brief summary of the key concepts discussed during this on-demand recording.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Watch on demand ↗</a>
+        </div>
+
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>Data report placeholder</h4>
+          <p>Examine the latest benchmarks to see where your business stands within the industry.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">View data ↗</a>
+        </div>
+        
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>Framework title placeholder</h4>
+          <p>Learn the foundational strategy required to configure this feature successfully.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Read the framework ↗</a>
+        </div>
+
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-list-check"></i></div>
+          <h4>Checklist title placeholder</h4>
+          <p>Use this step-by-step checklist to verify your settings before launching a new plan.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">View checklist ↗</a>
+        </div>
+
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-gear"></i></div>
+          <h4>Setup guide placeholder</h4>
+          <p>Follow along to connect your external tools and map your data fields accurately.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Start setup ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rc-footer-nav">
+      <div class="rc-footer-utility">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
+          <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
+        </a>
+        <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+`}</HTMLBlock>
+
+<br />
