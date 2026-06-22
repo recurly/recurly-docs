@@ -297,7 +297,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Prepaid account balance -->
     <div class="rc-lp-section" id="prepaid-balance">
       <h2><i class="fa-solid fa-wallet rc-fa-section"></i> Prepaid account balance</h2>
-      <p>Prepaid account balance is a separate feature from hybrid pricing. Where hybrid pricing combines charge types on an invoice, prepaid balance changes how a customer pays — they fund an account balance upfront, and future subscription and one-time purchase invoices draw against that balance until it's depleted.</p>
+      <p>Prepaid account balance is a separate feature from hybrid pricing. Where hybrid pricing combines charge types on an invoice, prepaid balance changes how a customer pays — they fund an account balance upfront, and future subscription and one-time purchase invoices draw against that balance until it's depleted. Revenue recognition for account balances must be managed by you, the merchant.</p>
 
       <div class="rc-accent-card rc-accent-orange">
         <div class="rc-accent-tag">What it is</div>
