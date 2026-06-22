@@ -287,7 +287,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">3</div>
           <div class="rc-step-content">
             <h4>Use custom gateway routing for precise control</h4>
-            <p>Custom gateway routing lets you pass a <code>gateway_code</code> on any purchase or subscription API call to send that specific transaction to a designated gateway — regardless of default settings. This is useful for A/B testing gateway performance by currency, routing high-value transactions to a preferred processor, or directing specific payment methods to a gateway with better approval rates for that method.</p>
+            <p>Custom gateway routing lets you pass a <code>gateway_code</code> on any purchase or subscription API call to send that specific transaction to a designated gateway — regardless of default settings. This is useful for A/B testing gateway performance by currency, routing high-value transactions to a preferred processor, or directing specific payment methods to a gateway with better approval rates for that method. Custom gateway routing (passing gateway_code) is<strong> not available on Starter plans</strong> — contact Recurly Sales for plan options.</p>
           </div>
         </div>
         <div class="rc-step">
@@ -302,8 +302,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
-          <strong>Gateway failover is available on Professional plan and above</strong>
-          <p>Gateway failover automatically reroutes transactions to a backup gateway if your primary goes down. To use it, configure a primary and backup gateway for each card type and currency in <strong>Configuration → Payment Gateways</strong>. This is separate from custom gateway routing — failover activates only on gateway errors, not as standard routing logic.</p>
+          <strong>Gateway failover is not available on Starter or Pro plans — contact Recurly Sales to discuss upgrade options.</strong>
+          <p>Gateway failover automatically reroutes transactions to a backup gateway if your primary goes down. This is separate from custom gateway routing — failover activates only on gateway errors, not as standard routing logic.</p>
         </div>
       </div>
     </div>
