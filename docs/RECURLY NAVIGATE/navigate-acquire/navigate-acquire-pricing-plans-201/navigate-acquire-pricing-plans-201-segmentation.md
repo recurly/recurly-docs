@@ -377,15 +377,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
       </div>
 
-      <div class="rc-callout rc-callout-caution">
-        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-        <div class="rc-callout-body">
-          <strong>Segments are available on plans only</strong>
-          <p>Price segments apply to fixed and ramp plan pricing only. They are not available on setup fees, add-ons, items, or Recurly Checkout. Your application or checkout logic must pass the segment code via the Recurly API or Recurly.js — Recurly does not auto-detect or pre-select a segment for the subscriber.</p>
-        </div>
-      </div>
-    </div>
-
+   
     <!-- Plan sprawl -->
     <div class="rc-lp-section" id="plan-sprawl">
       <h2><i class="fa-solid fa-layer-group rc-fa-section"></i> The problem segments solve: plan sprawl</h2>
