@@ -373,7 +373,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">Per-currency</div>
           <div class="rc-stat-tile-label">How prices are set</div>
-          <div class="rc-stat-tile-context">Each segment has its own price per currency. Recurly does not auto-convert — every currency price must be entered manually for each segment.</div>
+          <div class="rc-stat-tile-context">Each segment must have a price set for each of your plan's enabled currencies — Recurly does not auto-convert between currencies.</div>
         </div>
       </div>
 
