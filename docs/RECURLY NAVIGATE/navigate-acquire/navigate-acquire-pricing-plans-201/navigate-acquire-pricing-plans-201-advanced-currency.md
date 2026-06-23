@@ -267,7 +267,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Recurly does not perform currency conversion. The price you set in a given currency is presented and processed in that currency — your payment gateway handles it. This means your gateway configuration must explicitly support each currency you accept.</p>
           <p>When you have multiple gateways configured, Recurly routes transactions based on the card type and currency of the transaction, then falls back to the first gateway added that matches. You can override this default routing using custom gateway routing — passing a <code>gateway_code</code> on the purchase or subscription API call to direct specific transactions to a specific gateway.</p>
           
-<img class="rc-screenshot" src="https://files.readme.io/e0c18d0de8869f5fc5fa87b70739a451f73f39bbe7c8ecc1549d02cf973bea07-Custom_Gateways_1.png" alt="Per-currency gateway routing diagram" />
+<img class="rc-screenshot" src="https://files.readme.io/e4eed6877aa71924cbb98a09eedd405724d697b2935fb964db22fa7a60116121-Custom_Gateways_2.png" alt="Per-currency gateway routing diagram" />
 
 
       <div class="rc-steps">
