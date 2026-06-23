@@ -56,6 +56,6 @@ metadata:
 
 <br />
 
-![](https://files.readme.io/e0c18d0de8869f5fc5fa87b70739a451f73f39bbe7c8ecc1549d02cf973bea07-Custom_Gateways_1.png)
+![](https://files.readme.io/e4eed6877aa71924cbb98a09eedd405724d697b2935fb964db22fa7a60116121-Custom_Gateways_2.png)
 
 <br />
