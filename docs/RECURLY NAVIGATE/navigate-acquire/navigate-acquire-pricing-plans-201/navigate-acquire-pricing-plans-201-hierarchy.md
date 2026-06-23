@@ -372,7 +372,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-compare-grid">
         <div class="rc-compare-card">
           <div class="rc-compare-label rc-compare-label-parent">Bill to parent</div>
-          <h4>Central billing model</h4>
+        
           <ul>
             <li>All invoices and charges belong to the parent account</li>
             <li>The child account's payment method is not used for charges — though one can optionally be stored for future use if the parent relationship is later removed</li>
@@ -385,7 +385,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
         <div class="rc-compare-card">
           <div class="rc-compare-label rc-compare-label-self">Bill to self</div>
-          <h4>Decentralized billing model</h4>
+       
           <ul>
             <li>Child account manages its own billing information, invoices, and payment method</li>
             <li>Behaves like a standard Recurly account — just with a visible parent association</li>
