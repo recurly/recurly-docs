@@ -54,13 +54,18 @@ With any of these methods, it is recommended to display at least the last 4 of t
 
 After you've got a good display of your customer's Card Brand and Last 4, choose the option below and follow steps to collect and send CVV to Recurly for you return customers.&#x20;
 
+**Use Cases:&#x20;**
+
+- Return customer one time purchases (line item purchases, for example)
+- Return customer subscription signups
+
 ### CVV Code in the Clear&#x20;
 
 The Purchases and Subscriptions endpoint both accept CVV in the clear within the `billing_info` object when specifying an account code value. With this method, you'll be building your own form and submitting the input to Recurly in an API parameter. This does not use Recurly.js and is not tokenized.
 
 **POST**: [`https://v3.recurly.com/purchases`](https://v3.recurly.com/purchases "https://v3.recurly.com/purchases")
 
-```text JSON
+```json JSON
 {
     "currency": "USD",
     "account": {
@@ -81,16 +86,55 @@ The Purchases and Subscriptions endpoint both accept CVV in the clear within the
 
 You may not provide a `billing_info_id` when using the clear-text parameter.&#x20;
 
+If you are adding subscriptions instead of line items (one time transactions), you may use the subscriptions array instead of the line items array.&#x20;
+
+```json JSON
+"subscriptions": [
+		{
+			"plan_code": "plancode"
+		}
+	]
+```
+
 ### CVV Code Recurly.js Element
 
 The Purchases and Subscriptions endpoint can accept a token\_id that represents the CVV alone, in much the same manner as passing it in the clear. This method assumes the billing info being used is the primary when using Wallet or the only card on file (non-Wallet) for the specified account.
 
-**Step 1:&#x20;**&#x50;resent the CVV Element from Recurly.js to the consumer so they can enter their CVV. You will receive an R.js token in response to this input.
+**Step 1:&#x20;**&#x50;resent the CVV Element from Recurly.js to the consumer so they can enter their CVV. You will receive an R.js token in response to this input. Please read through our documentation on the <Anchor target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/elements#fn--elementscardcvvelement">CVV Only element in our Recurly.js documentation</Anchor>.
 
-**Step 2:&#x20;**&#x53;ubmit the account code with the token ID to Recurly as documented below.
+**Step 2:&#x20;**&#x53;ubmit the account code with the token ID to Recurly as documented below. The value of the token\_id parameter will be the output of Step 1 after the customer submits their CVV to the Recurly.js element. This keeps the CVV code itself from touching your servers.
 
-**POST**: [`https://v3.recurly.com/purchases`](https://v3.recurly.com/purchases "https://v3.recurly.com/purchases")
+**POST**: [`https://v3.recurly.com/purchases`](https://v3.recurly.com/purchases "https://v3.recurly.com/purchases")​
 
-<br />
+```json JSON
+{
+    "currency": "USD",
+    "account": {
+        "code": "Acount-Code",
+        "billing_info": {
+            "token_id":"FizUj2a1xOKdrUW9J2pPUQ"
+        }
+    },
+	"line_items": [
+		{
+			"unit_amount": "7.50",
+			"quantity": 1,
+			"type": "charge"
+		}
+	]
+}
+```
+
+In this example, the only difference from the CVV "in the clear" is the replacement of the `cvv` field with the  Recurly.js `token_id` field. The value is now an R.js token instead of the raw CVV value.&#x20;
+
+If you are adding subscriptions instead of line items (one time transactions), you may use the subscriptions array instead of the line items array.&#x20;
+
+```json JSON
+"subscriptions": [
+		{
+			"plan_code": "plancode"
+		}
+	]
+```
 
 <br />
