@@ -183,7 +183,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain • Dunning 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Dunning window length</h1></div>
+      <div class="rc-lp-hero-title"><h1>Understanding Dunning windows</h1></div>
       <p>The window length determines the amount of time Recurly has to retry payment information and customers have to input new information. Extend this to the recommended range so that retries and emails have maximum time to work.</p>
       
     </div>
