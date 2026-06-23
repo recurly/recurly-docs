@@ -280,52 +280,52 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-list-check rc-fa-section"></i> What's in this path</h2>
       <div class="rc-toc-list">
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-toc-card">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-toc-card">
           <div class="rc-toc-num">1</div>
           <div class="rc-toc-body">
-            <h4>Dunning window length</h4>
+            <h4>Understanding Dunning windows</h4>
             <p>Understand why the dunning window is your most important configuration setting — and set it to the "best-practice" timeframes for your billing frequencies.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configure" class="rc-toc-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-toc-card">
           <div class="rc-toc-num">2</div>
           <div class="rc-toc-body">
-            <h4>Configuring your window</h4>
+            <h4>Dunning window configuration</h4>
             <p>Learn how to update dunning window lengths, adjust email schedules, and properly assign campaigns to your monthly and annual plans.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-overview" class="rc-toc-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-toc-card">
           <div class="rc-toc-num">3</div>
           <div class="rc-toc-body">
-            <h4>Branding dunning emails</h4>
+            <h4>Email branding</h4>
             <p>Discover how adding your brand's visual identity and voice to dunning emails builds subscriber trust — and drives significantly higher payment recovery and click-through rates.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-configure" class="rc-toc-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-toc-card">
           <div class="rc-toc-num">4</div>
           <div class="rc-toc-body">
-            <h4>Configuring email templates</h4>
+            <h4>Email configuration</h4>
             <p>Learn how to configure your dunning email templates by applying visual branding, adding dynamic personalization variables, writing distinct copy, and verifying links.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-strategy" class="rc-toc-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-toc-card">
           <div class="rc-toc-num">5</div>
           <div class="rc-toc-body">
-            <h4>Branding &amp; CTAs</h4>
+            <h4>Email messaging strategy</h4>
             <p>Learn how to turn your dunning emails into branded, action-oriented communications — with the right message arc, subject lines, and CTAs to drive subscriber action.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-overview" class="rc-toc-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-toc-card">
           <div class="rc-toc-num">6</div>
           <div class="rc-toc-body">
             <h4>Multiple campaigns</h4>
@@ -337,7 +337,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-toc-card">
           <div class="rc-toc-num">7</div>
           <div class="rc-toc-body">
-            <h4>Building &amp; assigning campaigns</h4>
+            <h4>Campaign configuration</h4>
             <p>Learn how to build targeted dunning campaigns, configure window lengths, and properly assign every plan to the correct sequence.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
@@ -346,7 +346,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-toc-card">
           <div class="rc-toc-num">8</div>
           <div class="rc-toc-body">
-            <h4>Measuring performance</h4>
+            <h4>Measuring your performance</h4>
             <p>Know where to find your dunning analytics, what metrics to track, and how to establish a review cadence so your setup keeps improving over time.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
