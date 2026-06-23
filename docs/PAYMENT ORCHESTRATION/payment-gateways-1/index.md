@@ -61,59 +61,59 @@ next:
 <div class="rp-nav-grid">
 
 <Cards>
-<Card title="Adyen" href="https://docs.recurly.com/docs/adyen" target="_blank">
+<Card title="Adyen" href="https://docs.recurly.com/recurly-subscriptions/docs/adyen" target="_blank">
 A global payment company offering seamless payment experiences built for high-volume merchants operating across multiple markets.
 </Card>
-<Card title="Amazon Pay" href="https://docs.recurly.com/docs/amazon-payments" target="_blank">
-Lets customers pay using the billing and shipping information stored in their Amazon account. Supports Amazon Pay V2 — see the <a href="https://docs.recurly.com/docs/amazon-pay-v2" target="_blank">Amazon Pay V2</a> guide to upgrade.
+<Card title="Amazon Pay V2" href="https://docs.recurly.com/recurly-subscriptions/docs/amazon-pay-v2" target="_blank">
+Lets customers pay using the billing and shipping information stored in their Amazon account, with support for recurring billing through the Amazon Pay V2 integration.
 </Card>
-<Card title="Authorize.net" href="https://docs.recurly.com/docs/authorizenet" target="_blank">
+<Card title="Authorize.net" href="https://docs.recurly.com/recurly-subscriptions/docs/authorizenet" target="_blank">
 A widely adopted payment processing service with strong support for card-not-present and recurring billing use cases.
 </Card>
-<Card title="Braintree" href="https://docs.recurly.com/docs/braintree" target="_blank">
+<Card title="Braintree" href="https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd" target="_blank">
 A full-stack payment platform with deep support for mobile payments and a developer-friendly integration experience.
 </Card>
-<Card title="CardConnect" href="https://docs.recurly.com/docs/cardconnect" target="_blank">
-A streamlined processing solution focused on payment security and authorization optimization.
-</Card>
-<Card title="Chase Paymentech Orbital" href="https://docs.recurly.com/docs/additional#chase-paymentech-orbital" target="_blank">
+<Card title="Chase Paymentech Orbital" href="https://docs.recurly.com/recurly-subscriptions/docs/chase-paymentech-orbital" target="_blank">
 One of the longest-standing leaders in payment processing, providing secure and reliable transaction handling at scale.
 </Card>
-<Card title="Check Commerce">
+<Card title="Check Commerce" href="https://docs.recurly.com/recurly-subscriptions/docs/check-commerce" target="_blank">
 Specializes in ACH payment processing, offering an alternative to card-based payment collection.
 </Card>
 <Card title="Checkout.com" href="https://docs.recurly.com/recurly-subscriptions/docs/checkoutcom" target="_blank">
 A global processing gateway tailored for enterprise merchants with high transaction volumes and cross-border payment needs.
 </Card>
-<Card title="Commerce Hub" href="https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub" target="_blank">
+<Card title="Commerce Hub by Fiserv" href="https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub" target="_blank">
 The successor to Payeezy and First Data, specializing in ecommerce and recurring transactions for both card and digital wallet payments (Apple Pay and Google Pay).
 </Card>
-<Card title="Cybersource" href="https://docs.recurly.com/docs/cybersource" target="_blank">
+<Card title="Cybersource" href="https://docs.recurly.com/recurly-subscriptions/docs/cybersource" target="_blank">
 A complete payment management platform delivering safe and seamless transaction processing with advanced fraud management tools.
 </Card>
-<Card title="Ebanx" href="https://docs.recurly.com/docs/ebanx-gateway" target="_blank">
+<Card title="Ebanx (APAC and LATAM)" href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway" target="_blank">
 Specializes in international payment method expansion, with current support for UPI AutoPay in India and Pix Automático and Mercado Pago in LATAM.
 </Card>
-<Card title="FreedomPay" href="https://docs.recurly.com/docs/freedompay" target="_blank">
+<Card title="FreedomPay" href="https://docs.recurly.com/recurly-subscriptions/docs/freedompay" target="_blank">
 An omnichannel gateway that lets customers sign up for subscriptions at a card-present terminal, with renewals processing automatically inside Recurly.
 </Card>
-<Card title="GoCardless" href="https://docs.recurly.com/docs/gocardless" target="_blank">
+<Card title="GoCardless" href="https://docs.recurly.com/recurly-subscriptions/docs/gocardless" target="_blank">
 Streamlines recurring payments through its global bank debit network, making it ideal for businesses collecting subscriptions via direct debit.
 </Card>
 <Card title="Nuvei" href="https://docs.recurly.com/recurly-subscriptions/docs/nuvei" target="_blank">
 Offers seamless global processing with a focus on streamlining subscription renewals at scale across multiple regions and currencies.
 </Card>
-<Card title="PayPal Complete" href="https://docs.recurly.com/docs/paypal-complete" target="_blank">
+<Card title="PayPal Complete" href="https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete" target="_blank">
 Integrates PayPal and credit card payments in a single gateway, giving customers flexible checkout options under one integration.
 </Card>
-<Card title="Stripe" href="https://docs.recurly.com/docs/additional#stripe" target="_blank">
+<Card title="Stripe" href="https://docs.recurly.com/recurly-subscriptions/docs/stripe" target="_blank">
 A developer-first payment platform known for its clean APIs, extensive documentation, and powerful toolset for building payment flows.
 </Card>
-<Card title="TSYS" href="https://docs.recurly.com/docs/additional#tsys" target="_blank">
+<Card title="TSYS" href="https://docs.recurly.com/recurly-subscriptions/docs/tsys" target="_blank">
 Provides reliable payment processing for businesses of all sizes, with a long track record in card-present and card-not-present environments.
 </Card>
-<Card title="Worldpay" href="https://docs.recurly.com/docs/additional#worldpay" target="_blank">
-A global payment processing leader (formerly Vantiv) offering extensive geographic reach and broad currency support for international merchants.
+<Card title="WorldPay US eCommerce (formerly Vantiv)" href="https://docs.recurly.com/recurly-subscriptions/docs/vantiv" target="_blank">
+A US-focused ecommerce processing solution with deep roots in card-present and card-not-present payment environments.
+</Card>
+<Card title="Worldpay – Global e-commerce" href="https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support" target="_blank">
+A global payment processing leader offering extensive geographic reach and broad currency support for international merchants.
 </Card>
 </Cards>
 
