@@ -243,41 +243,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
 
       <!-- Q1 — Multiple choice -->
       <div class="rc-quiz-card">
-        <span class="rc-quiz-label">Question 1 of 3 · Multiple choice</span>
-        <p class="rc-quiz-q">A merchant wants to charge $12/month in the US and €9.99/month in Germany without creating a second plan. They also want to run an A/B price test next quarter. Which Recurly feature handles both use cases — and what must they set up externally before activating it?</p>
-        <div class="rc-quiz-options" id="quiz1">
-          <label class="rc-quiz-option">
-            <input type="radio" name="quiz1" value="a">
-            <div class="rc-radio-dot"></div>
-            <span class="rc-option-text">Coupons — no external setup needed, Recurly tracks coupon performance natively</span>
-          </label>
-          <label class="rc-quiz-option rc-quiz-correct">
-            <input type="radio" name="quiz1" value="b">
-            <div class="rc-radio-dot"></div>
-            <span class="rc-option-text">Price segments — and they must set up external analytics to track segment performance before activating</span>
-          </label>
-          <label class="rc-quiz-option">
-            <input type="radio" name="quiz1" value="c">
-            <div class="rc-radio-dot"></div>
-            <span class="rc-option-text">Separate plans per market — no external setup needed</span>
-          </label>
-          <label class="rc-quiz-option">
-            <input type="radio" name="quiz1" value="d">
-            <div class="rc-radio-dot"></div>
-            <span class="rc-option-text">Price segments — Recurly's built-in dashboards track segment performance automatically</span>
-          </label>
-        </div>
-        <details class="rc-quiz-reveal">
-          <summary>See answer</summary>
-          <div class="rc-quiz-answer">
-            <strong>Price segments, with external analytics set up first.</strong> Segments let a single plan carry multiple price points — per currency, per cohort, per acquisition channel — eliminating the need for duplicate plans. But Recurly's built-in analytics do not filter by segment code. Before running a price test or geographic rollout, the merchant must capture <code>price_segment_code</code> in an external tool or data warehouse. A test you can't measure isn't a test.
-          </div>
-        </details>
-      </div>
-
-      <!-- Q2 — Multiple choice -->
-      <div class="rc-quiz-card">
-        <span class="rc-quiz-label">Question 2 of 3 · Multiple choice</span>
+        <span class="rc-quiz-label">Question 1 of 2 · Multiple choice</span>
         <p class="rc-quiz-q">An enterprise customer has three subsidiaries in different countries. They want one consolidated invoice going to headquarters. Which of the following is a genuine risk to evaluate before activating Invoice Rollup across all three?</p>
         <div class="rc-quiz-options" id="quiz2">
           <label class="rc-quiz-option">
@@ -309,9 +275,9 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
         </details>
       </div>
 
-      <!-- Q3 — Reflection -->
+      <!-- Q2 — Reflection -->
       <div class="rc-reflect-card">
-        <span class="rc-reflect-label">Question 3 of 3 · Reflection</span>
+        <span class="rc-reflect-label">Question 2 of 2 · Reflection</span>
         <h4>Look at your current billing setup. Which of the six capabilities covered in this path — segmentation, hierarchy, usage billing, hybrid pricing, advanced currency, or advanced analytics — is most likely to unlock meaningful value for your business in the next 12 months?</h4>
         <p>For each one you're considering: what is the specific problem it solves, what is the engineering or operational dependency that would need to be in place first, and who else in your organization would need to be aligned before you could activate it? Bringing concrete answers to these questions to a Global Office Hours session is a good use of 30 minutes with a CSM.</p>
       </div>
