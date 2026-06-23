@@ -318,7 +318,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-resource-group">
         <span class="rc-resource-group-label">Videos &amp; webinars</span>
         <div class="rc-resource-links">
-          <a href="https://share.synthesia.io/7f58d816-a65c-42f4-950d-59b11953d1aa" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-circle-play"></i> Trail guide: email template setup</a>
+          <a href="https://share.synthesia.io/aa762aae-0ab6-44f9-9b57-a711992871fc" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-circle-play"></i> Trail guide: Branded for liftoff: emails & invoices</a>
           <a href="https://recurly.ondemand.goldcast.io/on-demand/a65f472f-9876-4736-9209-5b7b669de773" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-circle-play"></i> On-demand webinar: Stop the Leak</a>
         </div>
       </div>
