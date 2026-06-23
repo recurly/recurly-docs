@@ -348,7 +348,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-btn-prev">← Email messaging strategy</a>
       <span class="rc-lp-nav-indicator">6 of 9</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-btn-path">Next: Campaign configuration →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-btn-path">Next: Campaign configuration →</a>
     </div>
 
     <div class="rc-resources">
