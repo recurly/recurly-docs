@@ -394,15 +394,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-footer-section">
           <span class="rc-footer-label">Dunning 101</span>
 <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-footer-link">Path overview</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-footer-link">Understanding Dunning windows</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-footer-link">Dunning window configuration</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-footer-link">Email branding</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-footer-link">Email configuration</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-footer-link">Email messaging strategy</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-footer-link">Multiple campaigns</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-footer-link">Campaign configuration</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-footer-link">Measuring your performance</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-footer-link">Review & resources</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-footer-link">2. Understanding Dunning windows</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-footer-link">3. Dunning window configuration</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-footer-link">4. Email branding</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-footer-link">5. Email configuration</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-footer-link">6. Email messaging strategy</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-footer-link">7. Multiple campaigns</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-footer-link">8. Campaign configuration</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-footer-link">9. Measuring your performance</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-footer-link">10. Review & resources</a>
         </div>
 
         <div class="rc-footer-utility">
