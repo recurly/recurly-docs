@@ -56,6 +56,6 @@ metadata:
 
 <br />
 
-![](https://files.readme.io/9b95a9bc8a6cca0cb99230a01207b65d60ff6298e92b0b5a32f3d02a336d319f-gemini-svg.svg)
+![](https://files.readme.io/e0c18d0de8869f5fc5fa87b70739a451f73f39bbe7c8ecc1549d02cf973bea07-Custom_Gateways_1.png)
 
 <br />
