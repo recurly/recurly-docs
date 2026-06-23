@@ -265,7 +265,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-lp-section" id="gateway-routing">
       <h2><i class="fa-solid fa-route rc-fa-section"></i> Per-currency gateway routing</h2>
       <p>Recurly does not perform currency conversion. The price you set in a given currency is presented and processed in that currency — your payment gateway handles it. This means your gateway configuration must explicitly support each currency you accept.</p>
-      <p>When you have multiple gateways configured, Recurly routes transactions based on the card type and currency of the transaction, then falls back to the first gateway added that matches. You can override this default routing using custom gateway routing — passing a <code>gateway_code</code> on the purchase or subscription API call to direct specific transactions to a specific gateway.</p>
+          <p>When you have multiple gateways configured, Recurly routes transactions based on the card type and currency of the transaction, then falls back to the first gateway added that matches. You can override this default routing using custom gateway routing — passing a <code>gateway_code</code> on the purchase or subscription API call to direct specific transactions to a specific gateway.</p>
+          
+<img class="rc-screenshot" src="https://files.readme.io/9b95a9bc8a6cca0cb99230a01207b65d60ff6298e92b0b5a32f3d02a336d319f-gemini-svg.svg" alt="Per-currency gateway routing diagram" />
+
+
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
