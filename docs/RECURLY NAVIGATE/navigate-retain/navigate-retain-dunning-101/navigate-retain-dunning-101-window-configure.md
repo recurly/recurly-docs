@@ -1,5 +1,5 @@
 ---
-title: 'Dunning 101: Configuring your Dunning windows'
+title: 'Dunning 101: Dunning window configuration'
 deprecated: false
 hidden: true
 metadata:
