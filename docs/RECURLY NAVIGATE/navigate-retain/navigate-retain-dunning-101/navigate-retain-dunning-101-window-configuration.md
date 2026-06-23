@@ -193,7 +193,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain • Dunning 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Configuring your window</h1></div>
+      <div class="rc-lp-hero-title"><h1>Dunning window configuration</h1></div>
       <p>Where to find the setting, what to change, and what to check before you save.</p>
       
     </div>
