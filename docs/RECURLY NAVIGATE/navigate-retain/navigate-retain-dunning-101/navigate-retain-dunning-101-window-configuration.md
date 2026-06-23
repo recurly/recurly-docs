@@ -213,42 +213,41 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           Path overview
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-sticky-link">
-          <span class="rc-step-badge">1</span> Dunning window length
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-sticky-link">
+          <span class="rc-step-badge">1</span> Understanding Dunning windows
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configure" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Configuring your window
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Dunning window configuration
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-overview" class="rc-sticky-link">
-          <span class="rc-step-badge">3</span> Branding dunning emails
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-sticky-link">
+          <span class="rc-step-badge">3</span> Email branding
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-configure" class="rc-sticky-link">
-          <span class="rc-step-badge">4</span> Configuring email templates
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-sticky-link">
+          <span class="rc-step-badge">4</span> Email configuration
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-strategy" class="rc-sticky-link">
-          <span class="rc-step-badge">5</span> Branding &amp; CTAs
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-sticky-link">
+          <span class="rc-step-badge">5</span> Email messaging strategy
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-overview" class="rc-sticky-link">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-sticky-link">
           <span class="rc-step-badge">6</span> Multiple campaigns
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-sticky-link">
-          <span class="rc-step-badge">7</span> Building &amp; assigning campaigns
+          <span class="rc-step-badge">7</span> Campaign configuration
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-sticky-link">
-          <span class="rc-step-badge">8</span> Measuring performance
+          <span class="rc-step-badge">8</span> Measuring your performance
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-sticky-link">
           <span class="rc-step-badge">9</span> Review &amp; resources
         </a>
-
       </div></div></div>
     </details>
 
@@ -327,9 +326,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-btn-prev">← Understanding window length</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-btn-prev">← Understanding Dunning windows</a>
       <span class="rc-lp-nav-indicator">2 of 9</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-overview" class="rc-btn-path">Continue to Branding &amp; CTAs →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-btn-path">Next: Email branding →</a>
     </div>
 
     <div class="rc-resources">
