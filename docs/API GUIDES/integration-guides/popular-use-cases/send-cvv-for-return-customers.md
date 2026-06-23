@@ -66,7 +66,7 @@ The Purchases and Subscriptions endpoint both accept CVV in the clear within the
     "account": {
         "code": "Acount-Code",
         "billing_info": {
-            "cvv": "737"
+            "cvv": "123"
         }
     },
 	"line_items": [
