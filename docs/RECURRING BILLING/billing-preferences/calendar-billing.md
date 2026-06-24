@@ -31,7 +31,8 @@ This feature is only available to customers on the Professional or Elite subscri
 - The Account Bill Date is read-only and cannot be changed directly — adjustments must be made at the subscription level via API
 - Calendar billing and renewal alignment are not supported on annual plans with a 1-year billing period. They are supported if a 1-year plan has its billing period broken into 12 months
 - Subscription-level entity assignment is not available for purchase calls made through Recurly Checkout
-- Payment Methods that are mandate-driven will not be calendar aligned if they do not share a mandate. Shared mandates will only occur of the subscription was created in the same customer session, for example, signing up for multiple subscriptions within a single invoice. Otherwise, these types of subscriptions will be excluded.
+- Payment Methods that are mandate-driven will not be calendar or invoice aligned if they do not share a mandate. Shared mandates will only occur of the subscription was created in the same customer session, for example, signing up for multiple subscriptions within a single invoice. Otherwise, these types of subscriptions will be excluded.&#x20;
+  - Applicable Payment Methods: All Direct Debit, India-based Card Payments on Stripe and Ebanx via UPI, and certain LATAM APMs such as Pix and Mercado Pago.
 
 ***
 
