@@ -69,7 +69,7 @@ The Purchases and Subscriptions endpoint both accept CVV in the clear within the
 {
     "currency": "USD",
     "account": {
-        "code": "Acount-Code",
+        "code": "Account-Code",
         "billing_info": {
             "cvv": "123"
         }
@@ -110,7 +110,7 @@ The Purchases and Subscriptions endpoint can accept a token\_id that represents 
 {
     "currency": "USD",
     "account": {
-        "code": "Acount-Code",
+        "code": "Account-Code",
         "billing_info": {
             "token_id":"FizUj2a1xOKdrUW9J2pPUQ"
         }
