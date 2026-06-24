@@ -20,17 +20,18 @@ This feature is only available to customers on the Professional or Elite subscri
 
 ### Prerequisites
 
-* Calendar Billing must be enabled by Recurly Support before use. Contact [support@recurly.com](mailto:support@recurly.com) to request activation
-* A valid payment method must be on file for subscriptions that will be consolidated into aggregate invoices
+- Calendar Billing must be enabled by Recurly Support before use. Contact [support@recurly.com](mailto:support@recurly.com) to request activation
+- A valid payment method must be on file for subscriptions that will be consolidated into aggregate invoices
 
 ### Limitations
 
-* Aggregate Invoices are only supported for monthly (minimum 30 days), quarterly, or annual billing cycles
-* Subscriptions activated within 24 hours of an aggregate renewal date will be invoiced separately
-* Changing the business entity on a subscription is not available for immediate subscription changes
-* The Account Bill Date is read-only and cannot be changed directly — adjustments must be made at the subscription level via API
-* Calendar billing and renewal alignment are not supported on annual plans with a 1-year billing period. They are supported if a 1-year plan has its billing period broken into 12 months
-* Subscription-level entity assignment is not available for purchase calls made through Recurly Checkout
+- Aggregate Invoices are only supported for monthly (minimum 30 days), quarterly, or annual billing cycles
+- Subscriptions activated within 24 hours of an aggregate renewal date will be invoiced separately
+- Changing the business entity on a subscription is not available for immediate subscription changes
+- The Account Bill Date is read-only and cannot be changed directly — adjustments must be made at the subscription level via API
+- Calendar billing and renewal alignment are not supported on annual plans with a 1-year billing period. They are supported if a 1-year plan has its billing period broken into 12 months
+- Subscription-level entity assignment is not available for purchase calls made through Recurly Checkout
+- Payment Methods that are mandate-driven will not be calendar aligned if they do not share a mandate. Shared mandates will only occur of the subscription was created in the same customer session, for example, signing up for multiple subscriptions within a single invoice. Otherwise, these types of subscriptions will be excluded.
 
 ***
 
@@ -40,16 +41,16 @@ Calendar Billing is a Recurly feature that consolidates multiple subscription in
 
 Recurly offers two approaches depending on your business model:
 
-* **Aggregate Invoices** — merges subscriptions with the same bill date into one invoice, without enforcing proration. Best for physical goods merchants.
-* **Aligning Renewals** — prorates new subscriptions to synchronize with a shared account bill date, so all subscriptions renew together. Best for digital goods and services.
+- **Aggregate Invoices** — merges subscriptions with the same bill date into one invoice, without enforcing proration. Best for physical goods merchants.
+- **Aligning Renewals** — prorates new subscriptions to synchronize with a shared account bill date, so all subscriptions renew together. Best for digital goods and services.
 
 ***
 
 # Key benefits
 
-* **Simplified invoicing:** Reduce the number of invoices generated, making payment management easier for you and your customers.
-* **Enhanced customer experience:** Customers receive one clear, consolidated invoice instead of multiple separate ones.
-* **Flexible options:** Choose Aggregate Invoices, Aligning Renewals, or both — depending on what fits your business model.
+- **Simplified invoicing:** Reduce the number of invoices generated, making payment management easier for you and your customers.
+- **Enhanced customer experience:** Customers receive one clear, consolidated invoice instead of multiple separate ones.
+- **Flexible options:** Choose Aggregate Invoices, Aligning Renewals, or both — depending on what fits your business model.
 
 ***
 
@@ -57,7 +58,9 @@ Recurly offers two approaches depending on your business model:
 >
 > When active coupon redemptions are applied to new charges, Recurly prorates any fixed-amount discounts at the same rate as the charge. For example, if a customer is 50% through their billing cycle and being charged 50% of the plan price, they'll also receive 50% of the fixed discount amount. Percentage discounts are automatically prorated because they're calculated as a percentage of an already-prorated amount.
 >
-> <Image align="center" border={true} width="75%" src="https://files.readme.io/736422361c55f851bdda94ecfb515c19003bad390b37346e06c97ee3bb63316c-image.png" className="border" />
+>
+> <Image src="https://files.readme.io/736422361c55f851bdda94ecfb515c19003bad390b37346e06c97ee3bb63316c-image.png" align="center" width="75%" border={true} />
+>
 >
 > It's not possible to apply a fixed-amount coupon redemption without proration in an immediate change. If you need this, consider using custom credits instead — and contact [Recurly Support](https://support.recurly.com/) to express your interest in this capability.
 
@@ -73,11 +76,11 @@ Aggregate Invoices merges subscriptions that share the same bill date into a sin
 
 For subscriptions to be combined into one renewal invoice, they must:
 
-* **Share the same bill date** — down to the second. The best way to achieve this is by purchasing [multiple subscriptions](doc:multiple-subscriptions) together
-* **Use one payment method** — since the invoice merges all charges, it must be paid with a single method
-* **Use the same collection method** — all subscriptions must be either manual or automatic billing. Subscriptions with different methods will be invoiced separately
-* **Follow a supported billing cadence** — monthly (minimum 30 days), quarterly, or annual
-* **Have the same shipping address** — subscriptions with different shipping addresses result in separate invoices
+- **Share the same bill date** — down to the second. The best way to achieve this is by purchasing [multiple subscriptions](doc:multiple-subscriptions) together
+- **Use one payment method** — since the invoice merges all charges, it must be paid with a single method
+- **Use the same collection method** — all subscriptions must be either manual or automatic billing. Subscriptions with different methods will be invoiced separately
+- **Follow a supported billing cadence** — monthly (minimum 30 days), quarterly, or annual
+- **Have the same shipping address** — subscriptions with different shipping addresses result in separate invoices
 
 > **Note:** Subscriptions activated within 24 hours of an aggregate renewal date will be invoiced separately. Future-start-date subscriptions that activate on the same day as an aggregate renewal will activate simultaneously with other subscriptions and bill together.
 
@@ -111,14 +114,16 @@ Aligning Renewals also consolidates subscriptions into one invoice, but does so 
 
 The account bill date determines when all subscriptions on an account renew together. It's set by the account's first non-trial invoice.
 
-* For existing accounts when the feature is activated, the oldest subscription's bill date becomes the account bill date
-* For new customers, the bill date is set by the first non-trial invoice after activation
-* A $0 invoice still counts as a non-trial invoice
-* If a gift card or promotional credit covers the full cost, that invoice date still sets the bill date
+- For existing accounts when the feature is activated, the oldest subscription's bill date becomes the account bill date
+- For new customers, the bill date is set by the first non-trial invoice after activation
+- A $0 invoice still counts as a non-trial invoice
+- If a gift card or promotional credit covers the full cost, that invoice date still sets the bill date
 
 The bill date is visible on the Accounts page and displays down to the second.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/2bc895e89d3072a1a3a527716dd432bcf813ff9acd0699f170dd75b3b8ad3afa-image.png" className="border" />
+
+<Image src="https://files.readme.io/2bc895e89d3072a1a3a527716dd432bcf813ff9acd0699f170dd75b3b8ad3afa-image.png" align="center" width="75%" border={true} />
+
 
 For subscriptions billed on the last day of the month, if that day doesn't exist in the following month, the last day of that month is used (e.g., January 31st → February 28th).
 
@@ -165,26 +170,26 @@ A new non-trial subscription will either prorate to the account's existing bill 
 
 An existing customer has a monthly Silver plan ($5) billing on the first of each month. They buy a monthly Gold plan ($10) on March 15th.
 
-* Gold's regular billing cycle would be March 15th – April 15th
-* Gold's bill date is adjusted to April 1st to match the account's bill date
-* A prorated Gold invoice of $5 is generated for March 15th – April 1st
-* The April 1st invoice will include both Silver and Gold ($15 total)
+- Gold's regular billing cycle would be March 15th – April 15th
+- Gold's bill date is adjusted to April 1st to match the account's bill date
+- A prorated Gold invoice of $5 is generated for March 15th – April 1st
+- The April 1st invoice will include both Silver and Gold ($15 total)
 
 **Example: Monthly + annual**
 
 An existing customer has a monthly Silver plan billing on the 15th. They buy an annual Gold plan on January 10th, 2017.
 
-* Gold's regular billing cycle would be January 10th, 2017 – January 10th, 2018
-* Gold's bill date is adjusted to December 15th, 2017 to align with the account's bill date
-* Gold prorates for January 10th, 2017 – December 15th, 2017
-* Both subscriptions will appear on the December 15th, 2017 invoice
+- Gold's regular billing cycle would be January 10th, 2017 – January 10th, 2018
+- Gold's bill date is adjusted to December 15th, 2017 to align with the account's bill date
+- Gold prorates for January 10th, 2017 – December 15th, 2017
+- Both subscriptions will appear on the December 15th, 2017 invoice
 
 **Example: Annual + annual**
 
 An existing customer has an annual Gold subscription starting January 10th, 2017.
 
-* If they buy a second annual subscription **before** February 10th, 2017, it will align to the same January 10th, 2018 renewal
-* If they buy a second subscription **after** February 10th, it will renew one year after its own start date and won't align to the existing subscription
+- If they buy a second annual subscription **before** February 10th, 2017, it will align to the same January 10th, 2018 renewal
+- If they buy a second subscription **after** February 10th, it will renew one year after its own start date and won't align to the existing subscription
 
 > **Note:** A new annual subscription only aligns with an existing annual subscription if purchased within one month of the original subscription's start date. To align after that window, use the [postpone](https://docs.recurly.com/docs/postpone-subscription) feature.
 
@@ -196,10 +201,10 @@ When an immediate subscription change includes a billing period change, the subs
 
 An existing customer has monthly Bronze and Silver plans billing on the first of each month. They upgrade Silver to an annual Gold plan on January 15th.
 
-* Gold's regular billing cycle would be January 15th – January 15th of the following year
-* Gold's bill date is adjusted to January 1st to align with the account's bill date
-* A prorated Gold invoice is generated for January 15th – January 1st
-* Both subscriptions will appear on the January 1st invoice
+- Gold's regular billing cycle would be January 15th – January 15th of the following year
+- Gold's bill date is adjusted to January 1st to align with the account's bill date
+- A prorated Gold invoice is generated for January 15th – January 1st
+- Both subscriptions will appear on the January 1st invoice
 
 Immediate changes that don't involve a billing period change won't require proration, since the current billing period and alignment are maintained.
 
@@ -217,8 +222,8 @@ The same logic applies as with Aggregate Invoices. Promotional subscriptions exp
 
 A few important rules apply when trial subscriptions are involved:
 
-* If an account has no bill date (new customer) and they buy a trial subscription, the bill date won't be set until the trial ends and the first non-trial invoice is generated
-* If a new customer buys multiple trial subscriptions of different lengths, the one that ends first sets the account bill date
+- If an account has no bill date (new customer) and they buy a trial subscription, the bill date won't be set until the trial ends and the first non-trial invoice is generated
+- If a new customer buys multiple trial subscriptions of different lengths, the one that ends first sets the account bill date
 
 ### Trial subscription without a bill date
 
@@ -226,9 +231,9 @@ A few important rules apply when trial subscriptions are involved:
 
 A new customer buys a 7-day trial subscription on January 15th.
 
-* The trial ends January 22nd and the subscription enters its regular billing cycle
-* The account bill date is set to January 22nd
-* All subsequent non-trial subscription purchases or activations will align to this date
+- The trial ends January 22nd and the subscription enters its regular billing cycle
+- The account bill date is set to January 22nd
+- All subsequent non-trial subscription purchases or activations will align to this date
 
 ### Trial subscription with an existing bill date
 
@@ -238,11 +243,11 @@ When a customer with an existing bill date purchases a new trial subscription, t
 
 An existing customer has a bill date of the 10th. They buy a monthly Gold plan with a 7-day trial on February 15th.
 
-* The trial ends February 22nd and the first non-trial invoice is generated
-* Gold's regular billing cycle would be February 22nd – March 22nd
-* Gold's bill date is adjusted to March 10th to align with the account's bill date
-* A prorated Gold invoice is generated for February 22nd – March 10th
-* The March 10th invoice will include both subscriptions
+- The trial ends February 22nd and the first non-trial invoice is generated
+- Gold's regular billing cycle would be February 22nd – March 22nd
+- Gold's bill date is adjusted to March 10th to align with the account's bill date
+- A prorated Gold invoice is generated for February 22nd – March 10th
+- The March 10th invoice will include both subscriptions
 
 ***
 
@@ -250,9 +255,9 @@ An existing customer has a bill date of the 10th. They buy a monthly Gold plan w
 
 When automatic email templates are enabled on your site or plans, the following templates support renewal-related emails. Each email is sent once per subscription if the template is enabled at the site level and at least one subscription plan has the automatic email enabled:
 
-* Renewal Reminder
-* Payment Confirmation
-* Invoice Past Due
+- Renewal Reminder
+- Payment Confirmation
+- Invoice Past Due
 
 ***
 
