@@ -1,5 +1,5 @@
 ---
-title: 'Section 2: Dunning Optimization'
+title: 'Section 2: Dunning'
 deprecated: false
 hidden: true
 metadata:
