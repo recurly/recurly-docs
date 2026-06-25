@@ -1,8 +1,27 @@
 ---
-title: 'Launchpad Phase 1: Dunning'
+title: 'Launchpad phase one: Dunning'
+excerpt: >-
+  Don't lose subscribers to failed credit cards. Optimize your revenue retention
+  with Recurly’s automated dunning management guide. Learn to map ideal 28-day
+  and 60-day retry windows, construct escalating email flows, and deploy
+  intelligent retry logic to recover revenue seamlessly.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Stop losing subscribers to failed credit cards. Optimize your revenue
+    retention with Recurly’s automated dunning management guide. Learn to map
+    ideal 28-day and 60-day retry windows, construct escalating email flows, and
+    deploy intelligent retry logic to recover revenue seamlessly.
+  keywords:
+    - dunning management system
+    - involuntary churn recovery
+    - intelligent payment retries
+    - dunning email sequence template
+    - subscription failure grace period
+    - automated revenue recovery
+    - failed payment retry logic
+    - billing optimization strategy
   robots: index
 ---
 <HTMLBlock>{`
@@ -164,7 +183,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
     <div class="rc-announce-bar"><div class="rc-announce-inner"><i class="fa-regular fa-calendar-days"></i><strong>Upcoming:</strong> Join our CSMs live. <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register →</a></div></div>
 
     <div class="rc-hero">
-      <div class="rc-lp-pillar-tag"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase 1</div>
+      <div class="rc-lp-pillar-tag"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase One</div>
       <div class="rc-lp-hero-title"><h1>Dunning</h1></div>
       <p>Configure automated payment retries and subscriber communications to recover failed payments without manual intervention.</p>
     </div>
