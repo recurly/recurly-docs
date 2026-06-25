@@ -1,5 +1,5 @@
 ---
-title: 'Launchpad Phase 1: Review & resources'
+title: 'Launchpad phase one: Review & resources'
 deprecated: false
 hidden: true
 metadata:
@@ -289,7 +289,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase 1
+        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase One
       </div>
       <div class="rc-lp-hero-title"><h1>Phase 1 complete — rewind &amp; review</h1></div>
       <p>You've set the foundation for a resilient, optimized Recurly setup. Here's everything you accomplished — and everything you need to carry it forward.</p>
@@ -306,10 +306,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one" class="rc-sticky-link">Path overview
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-sticky-link"><span class="rc-step-badge">1</span> Production testing</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-sticky-link"><span class="rc-step-badge">2</span> Dunning</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-sticky-link"><span class="rc-step-badge">1</span> Final production testing</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-sticky-link"><span class="rc-step-badge">2</span> Dunning optimization</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater" class="rc-sticky-link"><span class="rc-step-badge">3</span> Account Updater</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding" class="rc-sticky-link"><span class="rc-step-badge">4</span> Branding</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding" class="rc-sticky-link"><span class="rc-step-badge">4</span> Branding emails & invoices</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-sticky-link"><span class="rc-step-badge">5</span> Gateway failover</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review" class="rc-sticky-link rc-sticky-link-active">  <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt="">Review &amp; resources</a>
       </div></div></div>
@@ -337,7 +337,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a class="rc-recap-res" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater">← Review this step</a>
         </div>
         <div class="rc-recap-card">
-          <h4><i class="fa-solid fa-palette rc-fa-section"></i> Branding</h4>
+          <h4><i class="fa-solid fa-palette rc-fa-section"></i> Branding emails & invoices</h4>
           <p>Every email and invoice your subscribers receive is now on-brand — building trust, reducing support confusion, and making your Recurly communications feel native to your product.</p>
           <a class="rc-recap-res" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding">← Review this step</a>
         </div>
@@ -383,9 +383,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
  <!-- SECTION: PHASE TWO CTA -->
 
       <div class="rc-phase2-cta">
-        <h3><i class="fa-solid fa-chart-line rc-fa-light"></i> Ready for Phase 2?</h3>
-        <p>Now that your setup is optimized, it's time to understand the data. Phase 2 teaches you the six core benchmark metrics every subscription business should track — and how to use them to grow smarter.</p>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-phase2-btn">Start Phase 2: Mastering metrics →</a>
+        <h3><i class="fa-solid fa-chart-line rc-fa-light"></i> Ready for phase two?</h3>
+        <p>Now that your setup is optimized, it's time to understand the data. Phase two teaches you the six core benchmark metrics every subscription business should track — and how to use them to grow smarter.</p>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-phase2-btn">Start Launchpad phase two: Mastering metrics →</a>
       </div>
     </div>
 
@@ -411,31 +411,31 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- CONTINUE YOUR JOURNEY — LP R&R page only -->
-    <div class="rc-next-steps"style="display: none;">
+    <div class="rc-next-steps">
       <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid">
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-next-card">
           <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <h4>Launchpad Phase 2: Mastering metrics</h4>
+          <h4>Launchpad phase two: Mastering metrics</h4>
           <p>Phase 1 built your setup. Phase 2 teaches you to read the data — six core benchmark metrics every subscription business should track.</p>
-          <div class="rc-next-card-arrow">Start Phase 2 →</div>
+          <div class="rc-next-card-arrow">Start course →</div>
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-next-card">
-          <div class="rc-next-card-tag">Explore the pillar</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-rocket"></i></div>
-          <h4>All Launch paths</h4>
-          <p>See every learning path in the Launch pillar — from initial setup through advanced configuration and growth metrics.</p>
-          <div class="rc-next-card-arrow">View Launch →</div>
+          <div class="rc-next-card-tag">Fully optimize Dunning</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-email"></i></div>
+          <h4>Dunning 101: The basics</h4>
+          <p>Ready to jump into Dunning? Build a comprehensive strategic understanding of window length, email strategy, and campaign configurations.</p>
+          <div class="rc-next-card-arrow">Begin course →</div>
         </a>
 
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
           <div class="rc-next-card-tag">Live session</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
           <h4>Global Office Hours</h4>
-          <p>Bring your Phase 1 questions to our CSMs live. Sessions run weekly and are open to all Navigate participants.</p>
+          <p>Bring your Launchpad phase one questions to our CSMs live. Sessions run weekly and are open to all Navigate participants.</p>
           <div class="rc-next-card-arrow">Register →</div>
         </a>
 
@@ -454,13 +454,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
 
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Launchpad Phase 1</span>
+          <span class="rc-footer-label">Launchpad Phase One</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-footer-link">1. Production testing</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-footer-link">2. Dunning</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-footer-link">1. Final production testing</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-footer-link">2. Dunning optimization</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater" class="rc-footer-link">3. Account Updater</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding" class="rc-footer-link">4. Branding</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-footer-link">5. Gateway Failover</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding" class="rc-footer-link">4. Branding emails &amp; invoices</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-footer-link">5. Gateway failover</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review" class="rc-footer-link">6. Review &amp; resources</a>
         </div>
 
