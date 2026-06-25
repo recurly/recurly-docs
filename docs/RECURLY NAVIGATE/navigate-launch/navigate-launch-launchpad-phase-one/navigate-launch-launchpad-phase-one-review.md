@@ -412,8 +412,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: RESOURCES -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-book-open rc-fa-section"></i> Phase 1 reference resources</h2>
-      <p>Everything referenced across Phase 1, in one place.</p>
+      <h2><i class="fa-solid fa-book-open rc-fa-section"></i> Phase one reference resources</h2>
+      <p>Everything referenced across Phase one, in one place.</p>
 
       <div class="rc-resources">
         <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
