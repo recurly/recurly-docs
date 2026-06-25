@@ -336,7 +336,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: WHAT YOU BUILT -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-trophy rc-fa-section"></i> What you built in Phase 1</h2>
+      <h2><i class="fa-solid fa-trophy rc-fa-section"></i> What you built in phase one</h2>
       <p>Each step in Phase 1 addresses a specific revenue risk. Together, they form a complete optimization layer around your Recurly setup — working automatically, around the clock, without manual intervention.</p>
 
       <div class="rc-recap-row">
