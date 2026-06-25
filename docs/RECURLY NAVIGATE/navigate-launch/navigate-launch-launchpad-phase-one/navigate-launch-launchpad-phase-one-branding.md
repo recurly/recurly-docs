@@ -1,8 +1,28 @@
 ---
-title: 'Launchpad Phase 1: Branding'
+title: 'Launchpad phase one: Branding emails & invoices'
+excerpt: >-
+  Build subscriber trust and maximize payment recovery rates by personalizing
+  your recurring billing communications. Learn how to configure custom HTML
+  email templates, upload merchant logos, customize automated dunning messages,
+  and brand your B2B subscription invoices within Recurly site settings.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Build subscriber trust and maximize payment recovery rates by personalizing
+    your recurring billing communications. Learn how to configure custom HTML
+    email templates, upload merchant logos, customize automated dunning
+    messages, and brand your B2B subscription invoices within Recurly site
+    settings.
+  keywords:
+    - custom email templates
+    - recurly billing customization
+    - branded dunning emails
+    - subscription invoice templates
+    - transactional email branding
+    - hosted subscriber portal
+    - subscriber trust optimization
+    - b2b invoice compliance
   robots: index
 ---
 <HTMLBlock>{`
