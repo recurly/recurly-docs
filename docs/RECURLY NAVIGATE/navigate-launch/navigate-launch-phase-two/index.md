@@ -292,10 +292,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase 2
+        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase Two
       </div>
       <div class="rc-lp-hero-title"><h1>Mastering metrics</h1></div>
-      <p>Phase 1 locked in the configurations that protect your revenue. Phase 2 builds your fluency with the six KPIs that show how your subscription business is performing.</p>
+      <p>Phase one locked in the configurations that protect your revenue. Phase two builds your fluency with the six KPIs that show how your subscription business is performing.</p>
     </div>
 
     <!-- Nav (non-sticky + open — Course Overview page) -->
@@ -321,9 +321,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Section: Picking up from Phase 1 -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-gear rc-fa-section"></i> Picking up from Phase 1</h2>
+      <h2><i class="fa-solid fa-gear rc-fa-section"></i> Picking up from phase one</h2>
       <div class="rc-handoff-card">
-        <h3><i class="fa-solid fa-circle-check" style="color:#FFD706;font-size:1rem;"></i> Phase 1 complete</h3>
+        <h3><i class="fa-solid fa-circle-check" style="color:#FFD706;font-size:1rem;"></i> Phase one complete</h3>
         <p>You've set up the systems that protect and recover your revenue automatically. Before continuing, confirm these are in place:</p>
         <ul class="rc-handoff-checklist">
           <li class="rc-handoff-item"><i class="fa-solid fa-circle-check"></i> Dunning &amp; Intelligent Retry configured</li>
@@ -332,7 +332,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <li class="rc-handoff-item"><i class="fa-solid fa-circle-check"></i> Gateway Failover in place</li>
         </ul>
       </div>
-      <p>Phase 2 builds on that foundation. You'll measure performance through Recurly Analytics, learn to read your six core KPIs, and start using data to make informed decisions about your subscription business.</p>
+      <p>Phase two builds on that foundation. You'll measure performance through Recurly Analytics, learn to read your six core KPIs, and start using data to make informed decisions about your subscription business.</p>
     </div>
     
     
@@ -400,7 +400,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Section: Your 6 core metrics -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Your 7 core benchmark metrics</h2>
+      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Your seven core benchmark metrics</h2>
       <p>These are the metrics that drive subscription growth. They show how well you're acquiring subscribers, how much revenue you're keeping, and how effectively your recovery systems are working.</p>
 
       <div class="rc-metric-grid">
@@ -523,7 +523,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
 
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Launchpad Phase 2</span>
+          <span class="rc-footer-label">Launchpad phase two</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-footer-link">Path overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-footer-link">1. Benchmarks &amp; reporting</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-footer-link">2. Acquisition &amp; decline</a>
