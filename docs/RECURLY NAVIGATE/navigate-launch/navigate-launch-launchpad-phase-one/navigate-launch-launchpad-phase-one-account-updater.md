@@ -1,5 +1,5 @@
 ---
-title: 'Section 3: Account Updater'
+title: 'Launchpad Phase 1: Account Updater'
 deprecated: false
 hidden: true
 metadata:
