@@ -3,14 +3,23 @@ title: 'Launchpad Phase 1: Optimize'
 deprecated: false
 hidden: true
 metadata:
+  title: 'Launchpad Phase 1: Optimize'
+  description: >-
+    Master your subscription billing lifecycle with Recurly’s Navigate Launchpad
+    Phase 1. Discover how to configure automated dunning retry strategies,
+    enable automatic card account updaters, and set up payment gateway failover
+    routing to eliminate involuntary churn and secure post-launch subscription
+    revenue from day one.
+  keywords:
+    - subscription optimization guide
+    - recurly launchpad onboarding
+    - involuntary churn reduction
+    - payment dunning optimization
+    - automated account updater
+    - payment gateway failover
+    - merchant production testing
+    - revenue retention strategies
   robots: index
-next:
-  description: |
-    Click "Section 1: Final Production Testing" to continue the course. 
-  pages:
-    - slug: final-production-testing
-      title: 'Section 1: Final Production Testing'
-      type: basic
 ---
 <HTMLBlock>{`
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
