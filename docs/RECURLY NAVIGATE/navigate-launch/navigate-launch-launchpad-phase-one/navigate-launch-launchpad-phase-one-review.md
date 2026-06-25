@@ -1,8 +1,27 @@
 ---
 title: 'Launchpad phase one: Review & resources'
+excerpt: >-
+  Review and verify your completed subscription billing setup with Recurly’s
+  Launchpad Phase 1 summary. Ensure your production testing, automated dunning
+  windows, account updater settings, and gateway failover routing are fully
+  configured to secure revenue before moving to Phase 2 metrics.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Review and verify your completed subscription billing setup with Recurly’s
+    Launchpad Phase 1 summary. Ensure your production testing, automated dunning
+    windows, account updater settings, and gateway failover routing are fully
+    configured to secure revenue before moving to Phase 2 metrics.
+  keywords:
+    - recurly optimization checklist
+    - subscription revenue protection
+    - dunning retry strategy
+    - billing configuration review
+    - automatic account updater
+    - payment gateway failover
+    - subscriber trust building
+    - subscription lifecycle tracking
   robots: index
 ---
 <HTMLBlock>{`
