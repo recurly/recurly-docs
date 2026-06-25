@@ -1,5 +1,5 @@
 ---
-title: 'Section 4: Branding'
+title: 'Launchpad Phase 1: Branding'
 deprecated: false
 hidden: true
 metadata:
