@@ -486,7 +486,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-bullhorn"></i></div>
           <h4>Customer success office hours</h4>
-          <p>Have questions as you work through Launchpad? Our CSMs are here to help you live. <a href="https://navigate.recurly.com/global-office-hours/">Choose a session</a> that works for you.</p>
+          <p>Have questions as you work through Launchpad? Our CSMs are here to help you live. <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">Choose a session</a> that works for you.</p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
@@ -502,7 +502,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Path navigation -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review" class="rc-btn-prev">← Phase 1: Review &amp; resources</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review" class="rc-btn-prev">← Phase one: Review &amp; resources</a>
       <span class="rc-lp-nav-indicator">Overview</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-btn-path">Next: Benchmarks &amp; reporting →</a>
     </div>
