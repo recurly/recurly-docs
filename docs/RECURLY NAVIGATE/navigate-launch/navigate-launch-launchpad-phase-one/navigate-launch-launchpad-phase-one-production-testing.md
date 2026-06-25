@@ -1,8 +1,28 @@
 ---
 title: 'Launchpad phase one: Final production testing'
+excerpt: >-
+  Eliminate checkout bugs before your subscribers do. Learn how to safely run
+  live test transactions, verify 3DS and PSD2 compliance routing, minimize
+  mobile browser friction, and manage instant test refunds with Recurly’s
+  production testing guide.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Eliminate checkout bugs before your subscribers do. Learn how to safely run
+    live test transactions, verify 3DS and PSD2 compliance routing, minimize
+    mobile browser friction, and manage instant test refunds with Recurly’s
+    production testing guide.
+  keywords:
+    - live production testing
+    - recurly checkout optimization
+    - subscription payment validation
+    - 3d secure checkout flow
+    - psd2 compliance testing
+    - payment gateway testing
+    - mobile checkout friction
+    - credit card refund management
+    - merchant onboarding checklist
   robots: index
 ---
 <HTMLBlock>{`
