@@ -1,12 +1,18 @@
 ---
 title: 'Launchpad Phase 1: Optimize'
+excerpt: >-
+  Master your subscription billing lifecycle with Launchpad Phase One: Optimize.
+  Discover how to configure automated dunning retry strategies, enable automatic
+  card account updaters, and set up payment gateway failover routing to
+  eliminate involuntary churn and secure post-launch subscription revenue from
+  day one.
 deprecated: false
 hidden: true
 metadata:
   title: 'Launchpad Phase 1: Optimize'
   description: >-
     Master your subscription billing lifecycle with Recurly’s Navigate Launchpad
-    Phase 1. Discover how to configure automated dunning retry strategies,
+    Phase One. Discover how to configure automated dunning retry strategies,
     enable automatic card account updaters, and set up payment gateway failover
     routing to eliminate involuntary churn and secure post-launch subscription
     revenue from day one.
