@@ -15,9 +15,9 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 
 ### Prerequisites & limitations
 
-* Familiarity with Recurly’s V3 API, Webhooks, and basic REST concepts
-* [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
-* An [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) gateway account with [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) is enabled
+- Familiarity with Recurly’s V3 API, Webhooks, and basic REST concepts
+- [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
+- An [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) gateway account with [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) is enabled
 
 ***
 
@@ -27,19 +27,29 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 
 ***
 
-# Creating Purchases
+# Creating Purchases&#x20;
 
-## Step 1: Generate a UPI AutoPay Payment Request
+UPI Supports 3 modes:&#x20;
+
+- VPA (Legacy)&#x20;
+- QR Code&#x20;
+- App Deep Links (Intent)
+
+RBI is moving towards QR Code for Web and App Intent (Deep Links) for mobile usage in the future. It is not recommended to utilize VPA if you are integrating as a new merchant.&#x20;
+
+## Legacy VPA Mode
+
+### Step 1: Generate a UPI AutoPay Payment Request
 
 **Use** a supported client library or our  `payment_gateway_references`  payment object in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `reference_type` enum to `upi_vpa`and ensure you are passing the customer's VPA as the `token` value.
 
-See our <Anchor label="UPI AutoPay documentation" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/">UPI AutoPay documentation</Anchor> for details on all required fields.
+See our <Anchor target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/">UPI AutoPay documentation</Anchor> for details on all required fields.
 
 **Send** a request to the create `purchase` endpoint on Recurly’s API, including:
 
-* **Customer account data** (e.g., code, name, billing info, phone number, email address, VPA)
-* **Subscriptions** (with plan codes)
-* **Customer VPA** (example: customerid@bankname)
+- **Customer account data** (e.g., code, name, billing info, phone number, email address, VPA)
+- **Subscriptions** (with plan codes)
+- **Customer VPA** (example: customerid\@bankname)
 
 Example payload:
 
@@ -54,7 +64,24 @@ Example payload:
 
 ```
 
-<br />
+## QR Code and App Intent Mode
+
+### Step 1: Generate a UPI AutoPay Payment Request
+
+**Use** a supported client library or our  `type`  and `authentication_mode` fields in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `type` enum to `upi_vpa` and ensure you are passing the authentication mode as the `authentication_mode` value.&#x20;
+
+Authentication mode will have to options:&#x20;
+
+- QR Code: `qr-code`&#x20;
+- App Deep Links (Intent): `app-deep-links`
+
+When selecting which mode to use, you will want to identify how your consumer is accessing your checkout page by looking at browser and OS data.&#x20;
+
+- If they are on a mobile device, select App Deep Links
+- If they are on a desktop, choose QR code
+- You will also want to ensure you are aware of which OS the consumer is using, as this will be important when displaying certain App deep links to the user. For example, iOS does not support generic UPI deep links, so those should be omitted for iOS users.
+
+## Code Examples&#x20;
 
 Below are example calls in different languages:
 
@@ -68,7 +95,9 @@ purchase = {
     email: "bdumonde@example.com",
     billing_info: {
       first_name: "Benjamin",
-			last_name: "Du Monde",
+      last_name: "Du Monde",
+      type: "upi-autopay", // Omit for VPA usage 
+      authentication_mode: "qr-code|app-deep-links", // Choose either / or mode and Omit for VPA usage
 			address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
         city: "Bengaluru",
@@ -78,7 +107,7 @@ purchase = {
         phone: "1234679099"
       },
 			gateway_code: "gateway-code",
-      payment_gateway_references: [{
+      payment_gateway_references: [{ // Omit array for QR or App Intents
 				token: "vpa-value",
 				reference_type: "upi_vpa"
 				}]
@@ -221,11 +250,24 @@ var purchaseReq = new PurchaseCreate()
 InvoiceCollection collection = client.CreatePurchase(purchaseReq);
 ```
 
-> **Tip:** Many more parameters are available. See the <Anchor label="Create Purchase" target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
+> **Tip:** Many more parameters are available. See the <Anchor target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
 
 ***
 
-## Step 2: Process the purchase response
+<br />
+
+# Processing the Responses
+
+Using VPA mode will not require any response handling, while QR Code and App Links will require some logic to display the authentication opportunity to the consumer.&#x20;
+
+Depending on what authentication mode you've chosen up front, you'll want to handle the user experience differently.
+
+- For Web For desktop usage, implement a QR code display method with a **copy/paste** option that allows users to interact directly with the code on screen.
+- For Mobile usage, you will need to identify the mobile OS and provide a way for users to select a link (which can be obfuscated by showing an icon or button if you wish) to launch an app from their phone.
+
+## Legacy VPA Mode
+
+### Step 2: Process the purchase response
 
 A successful purchase returns an **InvoiceCollection**, which contains any charge or credit invoices generated by the request. If the purchase fails, you’ll receive an error response indicating what went wrong. **UPI AutoPay** transactions will be in a **Scheduled** state, and the Invoice will be **Pending**.
 
@@ -235,10 +277,69 @@ This initial call will return different behavior in production than in sandbox.
 
 In **Production**: You will receive confirmation of a pending transaction, or an error message if a required field was missing.
 
+## QR Code Authentication
+
+### Step 2: Process the purchase response
+
+A successful purchase returns an **InvoiceCollection**, which contains any charge or credit invoices generated by the request. If the purchase fails, you’ll receive an error response indicating what went wrong. **UPI AutoPay** transactions will be in a **Scheduled** state, and the Invoice will be **Pending**.
+
+Using QR Code authentication mode will return the following JSON object, which you will need to render and create a method to copy.& paste (or download) the link (both is recommended) for the consumer. Consumers may choose to copy/paste or download the QR Code string into their app, or scan the actual QR rendered with their phone camera.&#x20;
+
+The `value` string will be a Base64 QR string. The `type` will display what the string represents -- for QR codes you will see `qr_code`.
+
+```json
+"next_action": {
+	"type": "qr_code",
+	"value": "0004569821...*12345"
+},
+```
+
+Recommendation is to set a timer (\~ 5 minutes) to present some urgency in scanning and finishing their enrollment.&#x20;
+
+Example is below:&#x20;
+
+![](https://files.readme.io/fe3b8dae708ed64d415dba47dfa8f2d9148c8ba084fede4b033f3bdf693db538-UPI-Desktop-Recurly-QR_Code.png)
+
+<br />
+
+## App Intent / Deep Links Authentication
+
+### Step 2: Process the purchase response
+
+A successful purchase returns an **InvoiceCollection**, which contains any charge or credit invoices generated by the request. If the purchase fails, you’ll receive an error response indicating what went wrong. **UPI AutoPay** transactions will be in a **Scheduled** state, and the Invoice will be **Pending**.
+
+Using App Intent with Deep Links authentication mode will return a list of link types for the consumer to choose from. The `next_action` object returns an array of values -- see the following JSON example. You will need to render and create a method to click each link (whether by creating buttons, or selecting based on gateway recommendations (see below).
+
+The `value` string will be an array of app deep links to present to the user. The `type` will display what the string represents -- for App Intent you will see `app_deep_links`.
+
+```json
+"next_action": {
+    "type": "app_deep_links",
+    "values": [
+        "gpay://upi/mandate?pa=merchant%40pspbank&pn=M...INR&mc=621",
+        "phonepe://mandate?pa=merchant%40pspbank&pn=M...INR&mc=621",
+        "paytmmp://mandate?pa=merchant%40pspbank&pn=M...NR&mc=621",
+        "upi://mandate?pa=merchant%40pspbank&pn=M...INR&mc=621"
+    ]
+},
+```
+
+### Gateway Recommendations for deep link display and management:&#x20;
+
+- The **generic** app link (upi://mandate?...) can only be used on **Android**. If your user is on iOS, do not display the generic app link (prefixed by `upi`).
+- **iOS** does not support **generic** UPI links correctly (prefixed by `upi`), so if you identify your user is coming from an iOS device, omit the generic UPI link.
+- Create a modal that appears from the bottom with buttons, example below:&#x20;
+
+
+<Image src="https://files.readme.io/22c21fbbe91f0a3b8856a20b3105e259a088037fdcbedfaf63531f7d7ae133d4-Deep-link-mobile-upi-autocollect-recurly.png" align="left" width="350px" wrap={false} />
+
+
+## For All Authentication Modes. (VPA, QR, and App Intent)
+
 In **Sandbox**: You will need to load the `return_url` value that represent the gateway's simulated UPI Enrollment process with the consumer's App. You may render this in a modal for testing purposes or redirect to your liking.
 
-* Once within the simulator, you can simulate approvals, cancellations, and declines of the enrollment itself.
-* If you choose to simulate an enrollment, ensure you have all proper webhooks set up at Ebanx. See the [Ebanx Gateway](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) setup page for more information.
+- Once within the simulator, you can simulate approvals, cancellations, and declines of the enrollment itself.
+- If you choose to simulate an enrollment, ensure you have all proper webhooks set up at Ebanx. See the [Ebanx Gateway](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) setup page for more information.
 
 ***
 
@@ -254,9 +355,9 @@ After a successful signup, there will be several webhooks you should listen to i
 
 It is recommended that you listen for at least the three webhooks below, and additional context is available on the [Ebanx gateway](https://docs.recurly.com/docs/ebanx-gateway#/) and [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) pages respectively. Since consumers can cancel, pause, and resume subscriptions within the UPI App, it is extremely important to listen for these events.
 
-* [Subscription Cancellation Event](https://recurly.com/developers/reference/webhooks/#canceled-subscription)
-* [Subscription Pause Event](https://recurly.com/developers/reference/webhooks/#paused-subscription)
-* [Subscription Resume Event](https://recurly.com/developers/reference/webhooks/#resumed-subscription)
+- [Subscription Cancellation Event](https://recurly.com/developers/reference/webhooks/#canceled-subscription)
+- [Subscription Pause Event](https://recurly.com/developers/reference/webhooks/#paused-subscription)
+- [Subscription Resume Event](https://recurly.com/developers/reference/webhooks/#resumed-subscription)
 
 # Sandbox behavior
 
@@ -272,14 +373,14 @@ To help with simulating a consumer's bank app, the gateway has provided a simula
 
 When processing with UPI, any amount over 15K INR, a push notification would go to the consumer in a Production environment. In Sandbox, you will need to follow these instructions:
 
-* Search for the Pending Payment in the Ebanx dashboard (Navigate to 'Payments' and choose the Pending Payment), click on the associated payment (or search via the Reference/ Hash), and choose the action you wish to take (Cancel or Confirm).
-  * _Confirming_ the payment will create a Approval in Recurly.
-  * _Cancelling_ will cause the payment to decline and the invoice to enter dunning.
+- Search for the Pending Payment in the Ebanx dashboard (Navigate to 'Payments' and choose the Pending Payment), click on the associated payment (or search via the Reference/ Hash), and choose the action you wish to take (Cancel or Confirm).
+  - _Confirming_ the payment will create a Approval in Recurly.
+  - _Cancelling_ will cause the payment to decline and the invoice to enter dunning.
 
 ***
 
 ## Next steps
 
-Now that you can create new  <Anchor label="subscriptions" target="_blank" href="https://app.recurly.com/go/subscriptions">subscriptions</Anchor>, explore payment method guide to explore other use cases and limitations related to the <Anchor label="UPI AutoPay payment method" target="_blank" href="https://docs.recurly.com/docs/upi-autopay#/">UPI AutoPay payment method</Anchor>.
+Now that you can create new  <Anchor target="_blank" href="https://app.recurly.com/go/subscriptions">subscriptions</Anchor>, explore payment method guide to explore other use cases and limitations related to the <Anchor target="_blank" href="https://docs.recurly.com/docs/upi-autopay#/">UPI AutoPay payment method</Anchor>.
 
 <br />
