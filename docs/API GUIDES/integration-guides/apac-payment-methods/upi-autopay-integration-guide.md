@@ -298,7 +298,9 @@ Recommendation is to set a timer (\~ 5 minutes) to present some urgency in scann
 
 Example is below:&#x20;
 
-![](https://files.readme.io/fe3b8dae708ed64d415dba47dfa8f2d9148c8ba084fede4b033f3bdf693db538-UPI-Desktop-Recurly-QR_Code.png)
+
+<Image src="https://files.readme.io/fe3b8dae708ed64d415dba47dfa8f2d9148c8ba084fede4b033f3bdf693db538-UPI-Desktop-Recurly-QR_Code.png" align="left" width="300px" wrap={false} />
+
 
 <br />
 
