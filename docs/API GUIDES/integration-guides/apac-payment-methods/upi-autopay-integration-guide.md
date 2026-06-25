@@ -96,9 +96,9 @@ purchase = {
     billing_info: {
       first_name: "Benjamin",
       last_name: "Du Monde",
-      type: "upi-autopay", // Omit for VPA usage 
-      authentication_mode: "qr-code|app-deep-links", // Choose either / or mode and Omit for VPA usage
-			address: {
+      type: "upi-autopay", # Omit for VPA usage
+      authentication_mode: "qr-code",  # qr-code or app-deep-links; omit for VPA usage
+      address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
         city: "Bengaluru",
         region: "KA",
@@ -106,33 +106,36 @@ purchase = {
         country: "IN",
         phone: "1234679099"
       },
-			gateway_code: "gateway-code",
-      payment_gateway_references: [{ // Omit array for QR or App Intents
-				token: "vpa-value",
-				reference_type: "upi_vpa"
-				}]
+      gateway_code: "gateway-code",
+      payment_gateway_references: [    # Omit for QR or App Intent flows
+        {
+          token: "vpa-value",
+          reference_type: "upi_vpa"
+        }
+      ]
     }
   },
   subscriptions: [
     { plan_code: "coffee-monthly" }
   ]
 }
+
 invoice_collection = @client.create_purchase(body: purchase)
 ```
 ```javascript
-let purchaseReq = {
-  currency: "BRL",
+const purchaseReq = {
+  currency: "INR",
   account: {
     code: "bdumonde",
     first_name: "Benjamin",
     last_name: "Du Monde",
     email: "bdumonde@example.com",
     billing_info: {
-			first_name: "Benjamin",
+      first_name: "Benjamin",
       last_name: "Du Monde",
       type: "upi-autopay", // Omit for VPA usage
-			authentication_mode: "qr-code|app-deep-links", // Omit for VPA usage
-			address: {
+      authentication_mode: "qr-code", // qr-code or app-deep-links; omit for VPA usage
+      address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
         city: "Bengaluru",
         region: "KA",
@@ -140,18 +143,21 @@ let purchaseReq = {
         country: "IN",
         phone: "1234679099"
       },
-			gateway_code: "gateway-code",
-      payment_gateway_references: [{ // Omit for QR / Intent usage
-				token: "vpa-value",
-				reference_type: "upi_vpa"
-				}]
+      gateway_code: "gateway-code",
+      payment_gateway_references: [   // Omit for QR or App Intent flows
+        {
+          token: "vpa-value",
+          reference_type: "upi_vpa"
+        }
+      ]
     }
   },
   subscriptions: [
     { plan_code: "coffee-monthly" }
   ]
 };
-let invoiceCollection = await client.createPurchase(purchaseReq)
+
+const invoiceCollection = await client.createPurchase(purchaseReq);
 ```
 ```python
 purchase = {
@@ -277,6 +283,74 @@ var purchaseReq = new PurchaseCreate()
 };
 
 InvoiceCollection collection = client.CreatePurchase(purchaseReq);
+```
+```go Go
+street1 := "44/1 Bharat Apartment 4C 5th Main Road"
+city := "Bengaluru"
+region := "KA"
+postalCode := "560041"
+country := "IN"
+phone := "1234679099"
+
+address := recurly.Address{
+    Street1:    &street1,
+    City:       &city,
+    Region:     &region,
+    PostalCode: &postalCode,
+    Country:    &country,
+    Phone:      &phone,
+}
+
+// Omit for QR or App Intent flows
+token := "vpa-value"
+referenceType := "upi_vpa"
+paymentRef := recurly.PaymentGatewayReferenceCreate{
+    Token:         &token,
+    ReferenceType: &referenceType,
+}
+
+firstName := "Benjamin"
+lastName := "Du Monde"
+billingType := "upi-autopay"         // Omit for VPA usage
+authMode := "qr-code"                // qr-code or app-deep-links; omit for VPA usage
+gatewayCode := "gateway-code"
+
+billingInfo := recurly.BillingInfoCreate{
+    FirstName:                &firstName,
+    LastName:                 &lastName,
+    Type:                     &billingType,
+    AuthenticationMode:       &authMode,
+    Address:                  &address,
+    GatewayCode:              &gatewayCode,
+    PaymentGatewayReferences: []recurly.PaymentGatewayReferenceCreate{paymentRef}, // Omit for QR or App Intent flows
+}
+
+accountCode := "bdumonde"
+email := "bdumonde@example.com"
+
+account := recurly.AccountPurchase{
+    Code:        &accountCode,
+    FirstName:   &firstName,
+    LastName:    &lastName,
+    Email:       &email,
+    BillingInfo: &billingInfo,
+}
+
+planCode := "coffee-monthly"
+currency := "INR"
+
+purchaseReq := recurly.PurchaseCreate{
+    Currency: &currency,
+    Account:  &account,
+    Subscriptions: []recurly.SubscriptionPurchase{
+        {PlanCode: &planCode},
+    },
+}
+
+collection, err := client.CreatePurchase(ctx, purchaseReq)
+if err != nil {
+    // handle error
+}
 ```
 
 > **Tip:** Many more parameters are available. See the <Anchor target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
