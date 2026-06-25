@@ -446,7 +446,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-next-card-tag">Jump into retention</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-credit-card"></i></div>
           <h4>Account Updater</h4>
-          <p>Protect your recurring revenue by automatically keeping card details up to date — before payments ever fail.</p>
+          <p>Want to learn more about our behind-the-scenes revenue protection? Understand how Account Updater keeps subscriber card details up to date — before payments ever fail.</p>
           <div class="rc-next-card-arrow">Begin course →</div>
         </a>
 
