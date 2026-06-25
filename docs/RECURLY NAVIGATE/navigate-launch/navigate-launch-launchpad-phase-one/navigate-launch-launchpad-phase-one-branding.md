@@ -1,5 +1,5 @@
 ---
-title: 'Section 4: Branding Emails & Invoices'
+title: 'Section 4: Branding'
 deprecated: false
 hidden: true
 metadata:
