@@ -1,8 +1,27 @@
 ---
 title: 'Launchpad phase two: Mastering metrics'
+excerpt: >-
+  Master the core subscription metrics and KPIs that drive business growth.
+  Learn to navigate Recurly Analytics, track voluntary and involuntary churn,
+  and utilize the Benchmarks Dashboard to protect and optimize your subscription
+  revenue.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Master the core subscription metrics and KPIs that drive business growth.
+    Learn to navigate Recurly Analytics, track voluntary and involuntary churn,
+    and utilize the Benchmarks Dashboard to protect and optimize your
+    subscription revenue.
+  keywords:
+    - subscription metrics
+    - Recurly Analytics
+    - subscription business KPIs
+    - churn rate calculation
+    - dunning recovery rate
+    - Benchmarks Dashboard
+    - subscription performance tracking
+    - involuntary churn
   robots: index
 ---
 <HTMLBlock>{`
