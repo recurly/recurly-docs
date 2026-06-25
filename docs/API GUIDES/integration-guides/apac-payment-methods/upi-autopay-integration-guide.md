@@ -68,7 +68,7 @@ Example payload:
 
 ### Step 1: Generate a UPI AutoPay Payment Request
 
-**Use** a supported client library or our  `type`  and `authentication_mode` fields in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `type` enum to `upi_vpa` and ensure you are passing the authentication mode as the `authentication_mode` value.&#x20;
+**Use** a supported client library or our  `type`  and `authentication_mode` fields in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `type` enum to `upi-autopay` and ensure you are passing the authentication mode as the `authentication_mode` value.&#x20;
 
 Authentication mode will have to options:&#x20;
 
