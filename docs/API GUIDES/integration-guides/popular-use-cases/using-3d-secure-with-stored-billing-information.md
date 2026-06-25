@@ -11,20 +11,21 @@ This guide shows you how to use the Verification Endpoints to reverify card deta
 
 There are several reasons to use customer authentication or reverification flows outside of subscription lifecycle management. You may use this guide as a way to accomplish reverification of consumer card details for items such as:
 
-* Regulatory 3DS requirements when unpausing or resuming a subscription, signing up for a new subscription with stored card information, or making a one time purchase with stored card information.
-* Combat account takeover in scenarios such as stale accounts, suspected fraud, and more.
-* Acquire a new NTID after a card brand change from Account Updater
+- Regulatory 3DS requirements when unpausing or resuming a subscription, signing up for a new subscription with stored card information, or making a one time purchase with stored card information.
+- Combat account takeover in scenarios such as stale accounts, suspected fraud, and more.
+- Acquire a new NTID after a card brand change from Account Updater
 
 <br />
 
 ## Prerequisites & limitations
 
-* Familiarity with Recurly’s API and basic REST concepts including:
-  * Verify without CVV:  [Verify an account's credit card billing info](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info)
-  * Verify with CVV:  [Verify an account's credit card billing cvv](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv)
-* [Completed the Quickstart Guide](https://docs.recurly.com/v1.1/docs/quick-start-guide#/) and [3DS integration guide](https://docs.recurly.com/v1.1/docs/3d-secure-20-integration-guide#/versions)
-* Conditional usage of [Recurly.js](https://docs.recurly.com/v1.2/docs/3d-secure#/re-authenticating-existing-billing-information) depending on your supported gateway:
-  * Cybersource and WorldPay gateways require use of Recurly.js to complete this integration guide
+- Familiarity with Recurly’s API and basic REST concepts including:
+  - Verify without CVV:  [Verify an account's credit card billing info](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info)
+  - Verify with CVV:  [Verify an account's credit card billing cvv](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv)
+  - Purchase Endpoint: [Run a customer initiated transaction via API](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase) (one time or subscriptions)
+- [Completed the Quickstart Guide](https://docs.recurly.com/v1.1/docs/quick-start-guide#/) and [3DS integration guide](https://docs.recurly.com/v1.1/docs/3d-secure-20-integration-guide#/versions)
+- Conditional usage of [Recurly.js](https://docs.recurly.com/v1.2/docs/3d-secure#/re-authenticating-existing-billing-information) depending on your supported gateway:
+  - Cybersource and WorldPay gateways require use of Recurly.js to complete this integration guide
 
 ***
 
@@ -56,8 +57,12 @@ There are several reasons to use customer authentication or reverification flows
 
 You can pre-verify card data in advance of in one of two ways depending on your preference:
 
-* With CVV: [Verify an account's credit card billing cvv](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv)
-* Without CVV: [Verify an account's credit card billing information](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info)
+- With CVV: [Verify an account's credit card billing cvv](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv)
+- Without CVV: [Verify an account's credit card billing information](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info)
+
+You can also run a purchase using tokenized billing info IDs to present 3DS options to the consumer.&#x20;
+
+- [Purchase Endpoint (with or without CVV)](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase)
 
 Once you've done this, if 3DS challenge is required, you will receive a `three_d_secure_action_token_id` as documented in the [3DS integration guide](https://docs.recurly.com/v1.1/docs/3d-secure-20-integration-guide#/versions). From here, follow the flows outlined in the [3DS integration guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure#/) to complete 3DS for re-verification.
 
@@ -67,13 +72,13 @@ Use [Recurly.js](https://docs.recurly.com/v1.2/docs/3d-secure#/re-authenticating
 
 **Note:** If you are using [Cybersource](https://docs.recurly.com/docs/cybersource#/) or [WorldPay](https://docs.recurly.com/docs/worldpaydlocal-latam-support#/), you will want to _start_ this process with Recurly.js and pass in the billing info ID or account code to Recurly.js and pass in a `token_id` to one of the above two endpoints. This is because Cybersource and WorldPay require a data collector to capture consumer information for 3DS to function properly on those platforms.
 
-* For Cybersource and WorldPay, you'll need to configure your risk options to include a `billingInfoId`.
-* If passing the CVV, tokenizing the cvv element will also be required.
+- For Cybersource and WorldPay, you'll need to configure your risk options to include a `billingInfoId`.
+- If passing the CVV, tokenizing the cvv element will also be required.
 
 See more detailed information for supporting known billing infos in Recurly.js  in our development hub.
 
-* [CVV Element Tokenization](https://docs.recurly.com/v1.2/docs/elements)
-* [Billing Info ID Tokenization](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/3d-secure#/)
+- [CVV Element Tokenization](https://docs.recurly.com/v1.2/docs/elements)
+- [Billing Info ID Tokenization](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/3d-secure#/)
 
 Once tokenized, you may pass the Recurly.js token into any API that supports it in order to process new transactions, verify billing info, or let consumer sign up for new subscriptions with their stored data.
 
@@ -103,8 +108,8 @@ For subscription signups, you can use the `/subscription` endpoint, or you may u
 
 Gateways that require Recurly.js to tokenize billing infos are:
 
-* Cybersource
-* WorldPay
+- Cybersource
+- WorldPay
 
 <br />
 
