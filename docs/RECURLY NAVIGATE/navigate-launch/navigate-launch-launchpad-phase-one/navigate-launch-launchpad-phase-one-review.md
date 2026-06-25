@@ -434,24 +434,24 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid">
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-next-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-two" class="rc-next-card">
           <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-chart-line"></i></div>
           <h4>Launchpad phase two: Mastering metrics</h4>
-          <p>Phase 1 built your setup. Phase 2 teaches you to read the data — six core benchmark metrics every subscription business should track.</p>
+          <p>Phase one built your setup. Phase two teaches you to read the data — six core benchmark metrics every subscription business should track.</p>
           <div class="rc-next-card-arrow">Start course →</div>
         </a>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-next-card">
-          <div class="rc-next-card-tag">Fully optimize Dunning</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-email"></i></div>
-          <h4>Dunning 101: The basics</h4>
-          <p>Ready to jump into Dunning? Build a comprehensive strategic understanding of window length, email strategy, and campaign configurations.</p>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-next-card">
+          <div class="rc-next-card-tag">Jump into retention</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-credit-card"></i></div>
+          <h4>Account Updater</h4>
+          <p>Protect your recurring revenue by automatically keeping card details up to date — before payments ever fail.</p>
           <div class="rc-next-card-arrow">Begin course →</div>
         </a>
 
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
-          <div class="rc-next-card-tag">Live session</div>
+          <div class="rc-next-card-tag">Live strategic support</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
           <h4>Global Office Hours</h4>
           <p>Bring your Launchpad phase one questions to our CSMs live. Sessions run weekly and are open to all Navigate participants.</p>
