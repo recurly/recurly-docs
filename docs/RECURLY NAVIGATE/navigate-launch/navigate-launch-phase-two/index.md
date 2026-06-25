@@ -1,5 +1,5 @@
 ---
-title: 'Launchpad Phase 2: Mastering Metrics'
+title: 'Launchpad phase two: Mastering metrics'
 deprecated: false
 hidden: true
 metadata:
