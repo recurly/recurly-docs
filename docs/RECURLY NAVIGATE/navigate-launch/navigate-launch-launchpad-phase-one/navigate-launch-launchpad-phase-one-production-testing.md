@@ -1,5 +1,5 @@
 ---
-title: 'Launchpad Phase 1: Final production testing'
+title: 'Launchpad phase one: Final production testing'
 deprecated: false
 hidden: true
 metadata:
@@ -186,7 +186,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
     <div class="rc-announce-bar"><div class="rc-announce-inner"><i class="fa-regular fa-calendar-days"></i><strong>Upcoming:</strong> Join our CSMs live. <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register →</a></div></div>
 
     <div class="rc-hero">
-      <div class="rc-lp-pillar-tag"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase 1</div>
+      <div class="rc-lp-pillar-tag"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase One</div>
       <div class="rc-lp-hero-title"><h1>Production testing</h1></div>
       <p>Walk through checkout as a real subscriber to catch payment or compliance issues before they affect live revenue.</p>
     </div>
@@ -225,15 +225,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
-          <div class="rc-step-content"><h4>Verify the payment in Recurly</h4><p>Log in to your Recurly admin and confirm the transaction shows as successful. Check the invoice and subscription status. <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-management" target="_blank">Recurly Docs: Invoice management<a/>.</p></div>
+          <div class="rc-step-content"><h4>Verify the payment in Recurly</h4><p>Log in to your Recurly admin and confirm the transaction shows as successful. Check the invoice and subscription status. <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-management" target="_blank">Recurly Docs: Invoice management<a></a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
-          <div class="rc-step-content"><h4>Check your confirmation email</h4><p>Verify the post-signup email arrives promptly, displays your plan name, branding, and pricing correctly, and links to your subscriber portal. <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank">Recurly Docs: Email templates<a/>.</p></div>
+          <div class="rc-step-content"><h4>Check your confirmation email</h4><p>Verify the post-signup email arrives promptly, displays your plan name, branding, and pricing correctly, and links to your subscriber portal. <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank">Recurly Docs: Email templates<a></a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">4</div>
-          <div class="rc-step-content"><h4>Refund the test transaction</h4><p>From Recurly, issue and confirm the refund. This keeps your books clean and your test subscriber off your active list. <a href="https://docs.recurly.com/recurly-subscriptions/docs/refund-transaction" target="_blank">Recurly Docs: Refund<a/>.</p></div>
+          <div class="rc-step-content"><h4>Refund the test transaction</h4><p>From Recurly, issue and confirm the refund. This keeps your books clean and your test subscriber off your active list. <a href="https://docs.recurly.com/recurly-subscriptions/docs/refund-transaction" target="_blank">Recurly Docs: Refund<a></a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">5</div>
