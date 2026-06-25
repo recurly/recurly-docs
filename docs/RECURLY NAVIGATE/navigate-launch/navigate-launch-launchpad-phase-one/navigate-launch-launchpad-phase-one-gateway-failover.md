@@ -1,5 +1,5 @@
 ---
-title: 'Section 5: Gateway Failover'
+title: 'Launchpad Phase 1: Gateway Failover'
 deprecated: false
 hidden: true
 metadata:
