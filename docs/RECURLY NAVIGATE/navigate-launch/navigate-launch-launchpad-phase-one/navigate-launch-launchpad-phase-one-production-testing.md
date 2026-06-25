@@ -1,5 +1,5 @@
 ---
-title: 'Section 1: Final Production Testing'
+title: 'Launchpad Phase 1: Final production testing'
 deprecated: false
 hidden: true
 metadata:
