@@ -68,9 +68,11 @@ Example payload:
 
 ### Step 1: Generate a UPI AutoPay Payment Request
 
-**Use** a supported client library or our  `type`  and `authentication_mode` fields in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `type` enum to `upi-autopay` and ensure you are passing the authentication mode as the `authentication_mode` value.&#x20;
+**Use** a supported client library or our  `type`  and `authentication_method` fields in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `type` enum to `upi-autopay` and ensure you are passing the authentication mode as the `authentication_method` value.&#x20;
 
-Authentication mode will have to options:&#x20;
+Authentication method will have two options:&#x20;
+
+Param: `authentication_method`
 
 - QR Code: `qr-code`&#x20;
 - App Deep Links (Intent): `app-deep-links`
@@ -129,7 +131,7 @@ purchase = {
       first_name: "Benjamin",
       last_name: "Du Monde",
       type: "upi-autopay", # Omit for VPA usage
-      authentication_mode: "qr-code",  # qr-code or app-deep-links; omit for VPA usage
+      authentication_method: "qr-code",  # qr-code or app-deep-links; omit for VPA usage
       address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
         city: "Bengaluru",
@@ -166,7 +168,7 @@ const purchaseReq = {
       first_name: "Benjamin",
       last_name: "Du Monde",
       type: "upi-autopay", // Omit for VPA usage
-      authentication_mode: "qr-code", // qr-code or app-deep-links; omit for VPA usage
+      authentication_method: "qr-code", // qr-code or app-deep-links; omit for VPA usage
       address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
         city: "Bengaluru",
@@ -203,7 +205,7 @@ purchase = {
             "first_name": "Benjamin",
             "last_name": "Du Monde",
             "type": "upi-autopay", # Omit for VPA usage
-            "authentication_mode": "qr-code", # Choose qr-code or app-deep-links; omit for VPA usage
+            "authentication_method": "qr-code", # Choose qr-code or app-deep-links; omit for VPA usage
             "address": {
                 "street1": "44/1 Bharat Apartment 4C 5th Main Road",
                 "city": "Bengaluru",
@@ -248,7 +250,7 @@ BillingInfo billingInfo = new BillingInfo();
 billingInfo.setFirstName("Benjamin");
 billingInfo.setLastName("Du Monde");
 billingInfo.setType("upi-autopay");  // Omit for VPA usage
-billingInfo.setAuthenticationMode("qr-code");  // qr-code or app-deep-links; omit for VPA usage
+billingInfo.setAuthenticationMethod("qr-code");  // qr-code or app-deep-links; omit for VPA usage
 billingInfo.setAddress(address);
 billingInfo.setGatewayCode("gateway-code");
 
@@ -287,7 +289,7 @@ var purchaseReq = new PurchaseCreate()
             FirstName = "Benjamin",
             LastName = "Du Monde",
             Type = "upi-autopay",  // Omit for VPA usage
-            AuthenticationMode = "qr-code",  // qr-code or app-deep-links; omit for VPA usage
+            AuthenticationMethod = "qr-code",  // qr-code or app-deep-links; omit for VPA usage
             Address = new AddressInfo()
             {
                 Street1 = "44/1 Bharat Apartment 4C 5th Main Road",
@@ -343,15 +345,15 @@ paymentRef := recurly.PaymentGatewayReferenceCreate{
 
 firstName := "Benjamin"
 lastName := "Du Monde"
-billingType := "upi-autopay"         // Omit for VPA usage
-authMode := "qr-code"                // qr-code or app-deep-links; omit for VPA usage
+billingType := "upi-autopay" // Omit for VPA usage
+authMethod := "qr-code" // qr-code or app-deep-links; omit for VPA usage
 gatewayCode := "gateway-code"
 
 billingInfo := recurly.BillingInfoCreate{
     FirstName:                &firstName,
     LastName:                 &lastName,
     Type:                     &billingType,
-    AuthenticationMode:       &authMode,
+    AuthenticationMethod:       &authMethod,
     Address:                  &address,
     GatewayCode:              &gatewayCode,
     PaymentGatewayReferences: []recurly.PaymentGatewayReferenceCreate{paymentRef}, // Omit for QR or App Intent flows
