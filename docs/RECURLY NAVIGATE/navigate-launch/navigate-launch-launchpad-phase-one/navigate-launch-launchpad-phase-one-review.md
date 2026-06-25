@@ -378,7 +378,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
  <!-- SECTION: REFLECTION -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-location-question rc-fa-section"></i> Reflect before you move on</h2>
+      <h2><i class="fa-solid fa-question rc-fa-section"></i> Reflect before you move on</h2>
 
       <div class="rc-reflect-card">
         <span class="rc-reflect-label">Question 1 of 3 · Reflection</span>
