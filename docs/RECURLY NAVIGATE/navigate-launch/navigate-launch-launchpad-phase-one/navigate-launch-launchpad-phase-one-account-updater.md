@@ -1,8 +1,27 @@
 ---
 title: 'Launchpad phase one: Account Updater'
+excerpt: >-
+  Eliminate payment credit card declines before renewals occur. Learn how to
+  configure Recurly’s Account Updater, locate your Mastercard MCC and Amex SE
+  numbers, exploit real-time gateway updates, and lower involuntary subscription
+  churn.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Eliminate payment credit card declines before renewals occur. Learn how to
+    configure Recurly’s Account Updater, locate your Mastercard MCC and Amex SE
+    numbers, exploit real-time gateway updates, and lower involuntary
+    subscription churn.
+  keywords:
+    - account updater automation
+    - recurly payment settings
+    - prevent credit card churn
+    - merchant category code setup
+    - american express se number
+    - automatic card refresh
+    - subscription revenue optimization
+    - card brand vault updates
   robots: index
 ---
 <HTMLBlock>{`
