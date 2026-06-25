@@ -1,5 +1,5 @@
 ---
-title: 'Section 6: Phase 1 Review'
+title: 'Launchpad Phase 1: Review & resources'
 deprecated: false
 hidden: true
 metadata:
