@@ -130,6 +130,8 @@ let purchaseReq = {
     billing_info: {
 			first_name: "Benjamin",
       last_name: "Du Monde",
+      type: "upi-autopay", // Omit for VPA usage
+			authentication_mode: "qr-code|app-deep-links", // Omit for VPA usage
 			address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
         city: "Bengaluru",
@@ -139,7 +141,7 @@ let purchaseReq = {
         phone: "1234679099"
       },
 			gateway_code: "gateway-code",
-      payment_gateway_references: [{
+      payment_gateway_references: [{ // Omit for QR / Intent usage
 				token: "vpa-value",
 				reference_type: "upi_vpa"
 				}]
@@ -160,52 +162,75 @@ purchase = {
         "last_name": "Du Monde",
         "email": "bdumonde@example.com",
         "billing_info": {
-            "address":{
-						"street1": "44/1 Bharat Apartment 4C 5th Main Road",
-            "city": "Bengaluru",
-            "region": "KA",
-            "postal_code": "560041",
-            "country": "IN",
-            "phone": "1234679099"
-           },
-          "gateway_code":"gateway-code-value",
-          "payment_gateway_references": [{
-            "token":"customer-vpa-value",
-						"reference_type":"upi_vpa"
-				}]
+            "first_name": "Benjamin",
+            "last_name": "Du Monde",
+            "type": "upi-autopay", # Omit for VPA usage
+            "authentication_mode": "qr-code", # Choose qr-code or app-deep-links; omit for VPA usage
+            "address": {
+                "street1": "44/1 Bharat Apartment 4C 5th Main Road",
+                "city": "Bengaluru",
+                "region": "KA",
+                "postal_code": "560041",
+                "country": "IN",
+                "phone": "1234679099"
+            },
+            "gateway_code": "gateway-code",
+            "payment_gateway_references": [  # Omit list for QR or App Intents
+                {
+                    "token": "vpa-value",
+                    "reference_type": "upi_vpa"
+                }
+            ]
+        }
     },
     "subscriptions": [
         {"plan_code": "coffee-monthly"}
     ]
 }
-invoice_collection = client.create_purchase(purchase)
+
+invoice_collection = client.create_purchase(body=purchase)
 ```
 ```java
-// ... (assuming all other POJO classes like Address, BillingInfo, etc., are defined)
-
-// 1. Create the innermost objects
+// 1. Build Address
 Address address = new Address();
 address.setStreet1("44/1 Bharat Apartment 4C 5th Main Road");
 address.setCity("Bengaluru");
-// ... set all other address fields
+address.setRegion("KA");
+address.setPostalCode("560041");
+address.setCountry("IN");
+address.setPhone("1234679099");
 
+// 2. Build PaymentGatewayReference (omit for QR or App Intent flows)
 PaymentGatewayReference paymentRef = new PaymentGatewayReference();
-paymentRef.setToken("customer-vpa-value");
+paymentRef.setToken("vpa-value");
 paymentRef.setReferenceType("upi_vpa");
 
-// 2. Create the Account
+// 3. Build BillingInfo
+BillingInfo billingInfo = new BillingInfo();
+billingInfo.setFirstName("Benjamin");
+billingInfo.setLastName("Du Monde");
+billingInfo.setType("upi-autopay");  // Omit for VPA usage
+billingInfo.setAuthenticationMode("qr-code");  // qr-code or app-deep-links; omit for VPA usage
+billingInfo.setAddress(address);
+billingInfo.setGatewayCode("gateway-code");
+
+// 4. Build Account
 Account account = new Account();
 account.setCode("bdumonde");
 account.setFirstName("Benjamin");
 account.setLastName("Du Monde");
 account.setEmail("bdumonde@example.com");
-// ... etc.
+account.setBillingInfo(billingInfo);
 
-// 3. Create the final Purchase
+// 5. Build Subscription
+SubscriptionPurchase subscription = new SubscriptionPurchase();
+subscription.setPlanCode("coffee-monthly");
+
+// 6. Build and submit Purchase
 Purchase purchase = new Purchase();
 purchase.setCurrency("INR");
 purchase.setAccount(account);
-purchase.setSubscriptions(List.of(new Subscription(...)));
+purchase.setSubscriptions(List.of(subscription));
 
 InvoiceCollection collection = client.createPurchase(purchase);
 ```
@@ -216,27 +241,31 @@ var purchaseReq = new PurchaseCreate()
     Account = new AccountPurchase()
     {
         Code = "bdumonde",
+        FirstName = "Benjamin",
+        LastName = "Du Monde",
         Email = "bdumonde@example.com",
         BillingInfo = new BillingInfoCreate()
         {
             FirstName = "Benjamin",
             LastName = "Du Monde",
+            Type = "upi-autopay",  // Omit for VPA usage
+            AuthenticationMode = "qr-code",  // qr-code or app-deep-links; omit for VPA usage
             Address = new AddressInfo()
             {
-                Phone = "1234679099",
                 Street1 = "44/1 Bharat Apartment 4C 5th Main Road",
                 City = "Bengaluru",
-                PostalCode = "400008",
                 Region = "KA",
-                Country = "1234679099"
+                PostalCode = "560041",
+                Country = "IN",
+                Phone = "1234679099"
             },
-            GatewayCode = "gateway-code-here",
-            PaymentGatewayReferences = new List<PaymentGatewayReferenceInfo>()
+            GatewayCode = "gateway-code",
+            PaymentGatewayReferences = new List<PaymentGatewayReferenceInfo>() // Omit for QR or App Intent flows
             {
-                new PaymentGatewayReferenceInfo() 
-                { 
-                    Token = "vpa@bankname", 
-                    ReferenceType = "upi_vpa" 
+                new PaymentGatewayReferenceInfo()
+                {
+                    Token = "vpa-value",
+                    ReferenceType = "upi_vpa"
                 }
             }
         }
