@@ -438,7 +438,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-bullhorn"></i></div>
           <h4>Customer success office hours</h4>
-          <p>Have questions as you work through Launchpad? Our CSMs are here to help you live. <a href="https://navigate.recurly.com/global-office-hours/">Choose a session</a> that works for you.</p>
+          <p>Have questions as you work through Launchpad? Our CSMs are here to help you live. <a href="https://navigate.recurly.com/global-office-hours/" target="_blank">Choose a session</a> that works for you.</p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
