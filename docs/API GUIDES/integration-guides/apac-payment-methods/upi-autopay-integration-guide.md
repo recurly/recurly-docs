@@ -81,6 +81,38 @@ When selecting which mode to use, you will want to identify how your consumer is
 - If they are on a desktop, choose QR code
 - You will also want to ensure you are aware of which OS the consumer is using, as this will be important when displaying certain App deep links to the user. For example, iOS does not support generic UPI deep links, so those should be omitted for iOS users.
 
+**Example JSON Payload using QR Code authentication**
+
+```json JSON
+{
+  "currency": "INR",
+  "account": {
+    "code": "bdumonde",
+    "first_name": "Benjamin",
+    "last_name": "Du Monde",
+    "email": "bdumonde@example.com",
+    "billing_info": {
+      "first_name": "Benjamin",
+      "last_name": "Du Monde",
+      "type": "upi-autopay",
+      "authentication_method": "qr-code",
+      "address": {
+        "street1": "44/1 Bharat Apartment 4C 5th Main Road",
+        "city": "Bengaluru",
+        "region": "KA",
+        "postal_code": "560041",
+        "country": "IN",
+        "phone": "1234679099"
+      },
+      "gateway_code": "gateway-code"
+    }
+  },
+  "subscriptions": [
+    { "plan_code": "coffee-monthly" }
+  ]
+}
+```
+
 ## Code Examples&#x20;
 
 Below are example calls in different languages:
