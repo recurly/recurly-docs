@@ -1,5 +1,5 @@
 ---
-title: 'Launchpad Phase 1: Optimize'
+title: 'Launchpad phase one: Optimize'
 excerpt: >-
   Master your subscription billing lifecycle with Launchpad Phase One: Optimize.
   Discover how to configure automated dunning retry strategies, enable automatic
