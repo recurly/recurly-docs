@@ -310,7 +310,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase One
       </div>
-      <div class="rc-lp-hero-title"><h1>Phase 1 complete — rewind &amp; review</h1></div>
+      <div class="rc-lp-hero-title"><h1>Review & resources</h1></div>
       <p>You've set the foundation for a resilient, optimized Recurly setup. Here's everything you accomplished — and everything you need to carry it forward.</p>
     </div>
 
