@@ -333,7 +333,7 @@ Billing period coupons let you define duration in terms of exact billing cycles 
   <ul>
     <li>Once redeemed, the coupon applies to the current billing period and discounts any subscription change events within it.</li>
     <li>A coupon set to <strong>1 billing period</strong> applies to the current period only and does not carry to the next renewal.</li>
-    <li>A coupon set to <strong>2 billing periods</strong> applies to the current period and the immediate renewal, including any subscription change events during both periods.</li>
+    <li>A coupon set to <strong>2 or more billing periods</strong> applies to the current period and the immediate renewal or renewals, including any subscription change events.</li>
     <li>Can be used with a single code or bulk unique codes.</li>
     <li>Compatible with fixed amount, percentage, and free trial discount types.</li>
     <li>Subscription level only.</li>
