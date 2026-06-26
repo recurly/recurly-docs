@@ -1,5 +1,5 @@
 ---
-title: 'Plan Price Increase: What to consider'
+title: 'Plan price increase: What to consider'
 excerpt: >-
   Master the operational decisions behind a Recurly plan price increase before
   modifying your billing UI. Learn how to segment subscribers, establish notice
