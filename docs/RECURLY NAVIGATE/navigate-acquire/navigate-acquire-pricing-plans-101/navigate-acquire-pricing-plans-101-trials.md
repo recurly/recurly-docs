@@ -1,8 +1,27 @@
 ---
-title: 'Pricing & Plans 101: Trials'
+title: 'Pricing & plans 101: Trials'
+excerpt: >-
+  Optimize your subscription conversion funnel with Recurly's free trial
+  management. Learn to configure automatic trial-to-paid conversion, implement
+  pre-expiration notifications, and navigate the strategic business decision
+  between card-required and cardless trials.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize your subscription conversion funnel with Recurly's free trial
+    management. Learn to configure automatic trial-to-paid conversion, implement
+    pre-expiration notifications, and navigate the strategic business decision
+    between card-required and cardless trials.
+  keywords:
+    - Recurly free trials
+    - trial-to-paid conversion rate
+    - cardless trial strategy
+    - card-required trial signup
+    - subscription funnel optimization
+    - free trial management Recurly
+    - pre-expiration notification billing
+    - subscription activation timeline
   robots: index
 ---
 <HTMLBlock>{`
