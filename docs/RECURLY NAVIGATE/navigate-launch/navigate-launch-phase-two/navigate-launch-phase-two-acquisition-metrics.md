@@ -185,8 +185,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-feature-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
 .rc-callout-feature-body { flex: 1; }
 .rc-callout-feature-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
-.rc-callout-feature-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #ffef9c; }
-.rc-callout-feature-tip { background: #FFD706; border-left: 4px solid #0D0D0B; }
+.rc-callout-feature-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #0d0d0d; }
+.rc-callout-feature-tip { background: #ff3f9c; border-left: 4px solid #0D0D0B; }
 .rc-callout-feature-tip .rc-callout-feature-body > strong { color: #0D0D0B; }
 
 
@@ -386,7 +386,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
  <div class="rc-callout-feature rc-callout-feature-tip">
         <div class="rc-callout-feature-icon"><i class="fa-solid fa-wallet"></i></div>
         <div class="rc-callout-feature-body">
-          <strong>Have you considered Recurly Wallet</strong>
+          <strong>Have you considered Recurly Wallet?</strong>
           <p>Wallet automatically retries a failed charge on a designated backup payment method — no subscriber action required. It's one of the most direct ways to recover sign-up and renewal declines that would otherwise be lost. Note that Wallet requires enablement and has additional fees. Learn more about it <a href="https://docs.recurly.com/recurly-subscriptions/docs/backup-payment-method" target="_blank">here<a/>.</p>
         </div>
       </div>
