@@ -1,8 +1,25 @@
 ---
 title: 'Pricing & Plans 201: Advanced pricing models'
+excerpt: >-
+  Master advanced subscription billing with Recurly. Learn to configure hybrid
+  pricing structures using the Purchases API and manage prepaid account balances
+  for upfront B2B payments.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Master advanced subscription billing with Recurly. Learn to configure hybrid
+    pricing structures using the Purchases API and manage prepaid account
+    balances for upfront B2B payments.
+  keywords:
+    - Recurly hybrid pricing
+    - prepaid account balance
+    - subscription billing models
+    - Recurly Purchases API
+    - mixed invoice charges
+    - upfront contract billing
+    - credit invoices
+    - B2B subscription strategy
   robots: index
 ---
 <HTMLBlock>{`
