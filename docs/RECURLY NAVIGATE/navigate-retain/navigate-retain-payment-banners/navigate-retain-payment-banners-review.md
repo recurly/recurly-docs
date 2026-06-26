@@ -384,7 +384,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-next-card">
-          <div class="rc-next-card-tag">Recommended next</div>
+          <div class="rc-next-card-tag">Stronger retention</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
           <h4>Dunning 101</h4>
           <p>Payment banners and dunning work best together. If you haven't yet built out your dunning sequence — or want to optimize what you have — this is the natural next step.</p>
