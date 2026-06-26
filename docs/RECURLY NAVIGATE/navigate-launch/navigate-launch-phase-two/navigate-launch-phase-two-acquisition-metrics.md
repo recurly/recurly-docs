@@ -360,6 +360,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <h4>Review 3DS and checkout UX</h4>
           <p>Confusing 3DS authentication flows often lead to abandonment, which registers as a failed attempt. Always test your checkout UX from a subscriber's mobile perspective.</p>
         </div>
+  <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-scale-unbalanced"></i></div>
+          <h4>Check chargeback & fraud ratios</h4>
+          <p>Merchants experiencing high chargebacks may have higher controls put in place at the issuer level, resulting in more declines.</p>
+        </div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
