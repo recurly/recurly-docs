@@ -1,8 +1,28 @@
 ---
 title: 'Pricing & plans 101: The basics'
+excerpt: >-
+  Optimize your subscription management strategy with Recurly’s Pricing & Plans
+  101 course. Learn to configure foundation plans, add-ons, localized
+  multi-currency billing, and trial structures while tracking critical revenue
+  metrics like MRR, ARPU, and subscriber churn.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize your subscription management strategy with Recurly’s Pricing &
+    Plans 101 course. Learn to configure foundation plans, add-ons, localized
+    multi-currency billing, and trial structures while tracking critical revenue
+    metrics like MRR, ARPU, and subscriber churn.
+  keywords:
+    - subscription pricing strategy
+    - Recurly plans and add-ons
+    - multi-currency billing
+    - subscription pricing models
+    - free trial configuration
+    - SaaS growth metrics
+    - MRR and churn management
+    - subscription billing cycles
+    - subscription lifecycle management
   robots: index
 ---
 <HTMLBlock>{`
