@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Plans 201: Usage billing'
+title: 'Pricing & plans 201: Usage billing'
 excerpt: >-
   Implement metered and consumption-based usage billing in Recurly. Learn how to
   configure usage-type add-ons, log records via the API, select aggregation
