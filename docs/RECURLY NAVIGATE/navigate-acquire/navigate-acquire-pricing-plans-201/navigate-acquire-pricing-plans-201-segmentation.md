@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Plans 201: Price segmentation'
+title: 'Pricing & plans 201: Price segmentation'
 excerpt: >-
   Prevent plan sprawl using Recurly price segments. Learn how to configure
   geographic pricing, run A/B price tests, and manage grandfathered subscriber
