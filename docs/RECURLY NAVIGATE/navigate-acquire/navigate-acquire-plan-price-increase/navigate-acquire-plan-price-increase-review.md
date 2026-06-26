@@ -345,15 +345,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- CONTINUE YOUR JOURNEY -->
-    <div class="rc-next-steps"style="display: none;">
+    <div class="rc-next-steps">
       <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid">
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-subscription-upgrades-downgrades" class="rc-next-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-next-card">
           <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-arrow-up-right-dots"></i></div>
-          <h4>Subscription upgrades &amp; downgrades</h4>
-          <p>Price changes often prompt subscribers to reconsider their plan tier. Learn how to configure mid-cycle plan changes so you're ready for the movement that follows.</p>
+          <h4>Pricing & Plans 101: The basics </h4>
+          <p>How you structure your pricing directly influences whether a subscriber converts, which tier they choose, and whether they stay. This course covers the six core areas of Recurly's pricing and packaging.</p>
           <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
