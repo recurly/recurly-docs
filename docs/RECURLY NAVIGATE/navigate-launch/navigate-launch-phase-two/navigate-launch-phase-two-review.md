@@ -486,7 +486,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-bullseye"></i></div>
           <h4>Benchmarks 101</h4>
-          <p>Ready for a deep dive in benchmarks? This path walks you through all 8 benchmarked KPIs across 4 Analytics dashboards, so you can spot gaps, confirm strengths, and know exactly where to focus.</p>
+          <p>Ready for a Benchmarks deep dive? Learn to spot KPI gaps, confirm strengths, and know exactly where to focus.</p>
           <div class="rc-next-card-arrow">Explore Acquire →</div>
         </a>
 
@@ -502,7 +502,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-next-card-tag">Live session</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
           <h4>Global Office Hours</h4>
-          <p>Bring your questions to our CSMs live. Sessions run weekly.</p>
+          <p>Customer Success Office Hours opens the room to you. Pick a date that woks for you, and bring your questions to a live Recurly expert.</p>
           <div class="rc-next-card-arrow">Register →</div>
         </a>
 
