@@ -491,7 +491,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-next-card">
-          <div class="rc-next-card-tag">Explore payments dashboards</div>
+          <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-rocket"></i></div>
           <h4>Payments hub</h4>
           <p>Your payment performance data, all in one place. Learn your way around every dashboard — and know what to look for from day one.</p>
