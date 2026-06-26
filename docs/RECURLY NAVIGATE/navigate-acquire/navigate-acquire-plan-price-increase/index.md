@@ -1,5 +1,5 @@
 ---
-title: Plan Price Increase
+title: Plan price increase
 excerpt: >-
   Learn how to strategically plan and execute a subscription plan price increase
   in Recurly. This comprehensive path overview covers pricing template changes,
