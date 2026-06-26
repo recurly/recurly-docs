@@ -1,8 +1,29 @@
 ---
 title: Payment Banners
+excerpt: >-
+  Discover how Recurly payment banners prevent subscriber churn by delivering
+  targeted, in-session notifications. Learn best practices for configuring
+  low-code Recurly Engage or custom webhook implementations to immediately
+  recover failed billing attempts and track long-term subscription revenue
+  impact.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Discover how Recurly payment banners prevent subscriber churn by delivering
+    targeted, in-session notifications. Learn best practices for configuring
+    low-code Recurly Engage or custom webhook implementations to immediately
+    recover failed billing attempts and track long-term subscription revenue
+    impact.
+  keywords:
+    - payment banners
+    - Recurly Engage
+    - subscriber retention
+    - failed payment recovery
+    - in-session notifications
+    - subscription churn reduction
+    - webhook integrations
+    - dunning management strategies
   robots: index
 ---
 <HTMLBlock>{`
