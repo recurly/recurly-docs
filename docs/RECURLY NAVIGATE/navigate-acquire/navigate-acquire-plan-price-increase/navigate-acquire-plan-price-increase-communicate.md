@@ -296,7 +296,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-email-body">
           <p><strong>Subject:</strong> An update to your <code>{{company_name}}</code> subscription pricing</p>
           <p>Hi <code>{{account_first_name}}</code>,</p>
-          <p>We're writing to let you know that the price of your <strong><code>{{subscription_plan_name}}</code></strong> subscription will increase from <strong>[manually enter current price]</strong> to <strong>manually enter new price]</strong>, effective {{subscription_current_period_ends_at}}.</p>
+          <p>We're writing to let you know that the price of your <strong><code>{{subscription_plan_name}}</code></strong> subscription will increase from <strong>[manually enter current price]</strong> to <strong>[manually enter new price]</strong>, effective {{subscription_current_period_ends_at}}.</p>
           <p>Since you joined, we've shipped a lot — including:</p>
           <p>— [manually enter specific feature or improvement 1]<br>— [manually enter specific feature or improvement 2]<br>— [manually enter specific feature or improvement 3]</p>
           <p>This update reflects the continued investment we're making in {{company_name}}. Your subscription will renew at the new price starting <strong><code>{{subscription_current_period_ends_at}}</code></strong> — no action is required on your end.</p>
