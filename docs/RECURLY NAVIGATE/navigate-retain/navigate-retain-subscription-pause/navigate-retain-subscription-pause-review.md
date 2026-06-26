@@ -406,7 +406,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
     </div>
 
     <!-- CONTINUE YOUR JOURNEY -->
-    <div class="rc-next-steps"style="display: none;">
+    <div class="rc-next-steps">
       <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid">
 
