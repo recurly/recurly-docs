@@ -365,6 +365,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <h4>Check chargeback & fraud ratios</h4>
           <p>Merchants experiencing high chargebacks may have higher controls put in place at the issuer level, resulting in more declines.</p>
         </div>
+  <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-scale-unbalanced"></i></div>
+          <h4>Consider multi-currency or localized processing</h4>
+          <p>If you operate in multiple countries, using gateways with local acquiring relationships and accepting local currencies can reduce declines significantly. Even adding local currency support alone has been shown to decrease decline rates by 5–10%.</p>
+        </div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
