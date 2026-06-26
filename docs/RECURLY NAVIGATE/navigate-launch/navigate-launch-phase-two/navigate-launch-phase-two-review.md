@@ -1,8 +1,29 @@
 ---
 title: 'Launchpad phase two: Review & resources'
+excerpt: >-
+  Review your subscription optimization progress and access essential growth
+  resources. Recap core subscription metrics, utilize your KPI quick reference
+  guide, and prepare for your Monthly Metrics Scorecard to track long-term
+  revenue recovery and business health.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Review your subscription optimization progress and access essential growth
+    resources. Recap core subscription metrics, utilize your KPI quick reference
+    guide, and prepare for your Monthly Metrics Scorecard to track long-term
+    revenue recovery and business health.
+  keywords:
+    - Recurly Launchpad review
+    - subscription KPI quick reference
+    - subscription billing optimization
+    - revenue recovery summary
+    - subscription churn metrics recap
+    - Monthly Metrics Scorecard
+    - subscription growth resources
+    - subscriber retention checklist
+    - Recurly Compass AI
+    - subscription lifecycle metrics
   robots: index
 ---
 <HTMLBlock>{`
