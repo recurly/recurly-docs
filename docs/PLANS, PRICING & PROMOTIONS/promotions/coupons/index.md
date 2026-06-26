@@ -140,6 +140,8 @@ Before building a coupon, here's what each field in the creation form does.
   </tbody>
 </table>
 
+dfjkngdkfjngdg
+
 ## Step-by-step: create a new coupon
 
 <div class="rp-steps">
