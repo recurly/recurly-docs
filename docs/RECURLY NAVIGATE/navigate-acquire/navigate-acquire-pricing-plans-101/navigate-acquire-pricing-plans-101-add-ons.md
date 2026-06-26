@@ -1,8 +1,28 @@
 ---
 title: 'Pricing & plans 101: Add-ons'
+excerpt: >-
+  Master Recurly add-ons to maximize subscription expansion revenue. Learn to
+  structure optional, required, and usage-based add-ons, utilize the item
+  catalog for multi-plan consistency, and manage critical properties like
+  billing timing, accounting codes, and pricing models.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Master Recurly add-ons to maximize subscription expansion revenue. Learn to
+    structure optional, required, and usage-based add-ons, utilize the item
+    catalog for multi-plan consistency, and manage critical properties like
+    billing timing, accounting codes, and pricing models.
+  keywords:
+    - Recurly add-ons
+    - subscription upsell strategy
+    - item catalog recurring billing
+    - usage-based add-ons
+    - subscription expansion revenue
+    - optional vs required add-ons
+    - subscription packaging configuration
+    - editable quantity billing
+    - billing in arrears
   robots: index
 ---
 <HTMLBlock>{`
