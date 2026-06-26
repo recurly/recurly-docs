@@ -1,8 +1,29 @@
 ---
-title: Pause Subscriptions
+title: Pause subscriptions
+excerpt: >-
+  Explore the comprehensive guide to configuring pause subscriptions, allowing
+  merchants to temporarily suspend billing and service delivery without losing
+  subscribers. Learn how to set duration parameters, maintain user account
+  history, reduce voluntary churn, and understand the critical differences
+  between pausing and postponing subscriptions.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Explore the comprehensive guide to configuring pause subscriptions, allowing
+    merchants to temporarily suspend billing and service delivery without losing
+    subscribers. Learn how to set duration parameters, maintain user account
+    history, reduce voluntary churn, and understand the critical differences
+    between pausing and postponing subscriptions.
+  keywords:
+    - pause subscriptions
+    - reduce voluntary churn
+    - subscription pause vs postpone
+    - Recurly subscription management
+    - customer retention path
+    - temporary billing suspension
+    - subscription lifespan optimization
+    - automated reactivation friction.
   robots: index
 ---
 <HTMLBlock>{`
