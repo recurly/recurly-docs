@@ -1,8 +1,27 @@
 ---
-title: 'Pricing & Plans 101: Currency'
+title: 'Pricing & plans 101: Currency'
+excerpt: >-
+  Configure multi-currency billing in Recurly to seamlessly scale your
+  subscription business globally. Learn how to manage independent local pricing
+  across 140+ currencies, verify payment gateway compatibility, set up localized
+  coupons, and execute strategic market pricing models.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Configure multi-currency billing in Recurly to seamlessly scale your
+    subscription business globally. Learn how to manage independent local
+    pricing across 140+ currencies, verify payment gateway compatibility, set up
+    localized coupons, and execute strategic market pricing models.
+  keywords:
+    - Recurly multi-currency billing
+    - global subscription pricing
+    - payment gateway currency compatibility
+    - local market pricing strategy
+    - exchange rate parity subscription
+    - international recurring billing
+    - multi-currency coupons Recurly
+    - localized checkout experience
   robots: index
 ---
 <HTMLBlock>{`
