@@ -1,8 +1,27 @@
 ---
-title: 'Payment Banners: Tracking your impact'
+title: 'Payment banners: Tracking your impact'
+excerpt: >-
+  Track and optimize your payment banner performance with Recurly's 90-day
+  measurement framework. Learn to analyze click-through rates, revenue saved,
+  and involuntary churn deltas while troubleshooting underperforming dunning
+  campaigns.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Track and optimize your payment banner performance with Recurly's 90-day
+    measurement framework. Learn to analyze click-through rates, revenue saved,
+    and involuntary churn deltas while troubleshooting underperforming dunning
+    campaigns.
+  keywords:
+    - churn management analytics
+    - click-through rate
+    - revenue saved calculation
+    - 90-day measurement framework
+    - banner conversion rates
+    - troubleshooting dunning campaigns
+    - Recurly analytics dashboard
+    - involuntary churn delta
   robots: index
 ---
 <HTMLBlock>{`
