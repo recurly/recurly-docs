@@ -1,5 +1,5 @@
 ---
-title: 'Plan Price Increase: Tracking your impact'
+title: 'Plan price increase: Tracking your impact'
 excerpt: >-
   Track and analyze the financial impact of a subscription price change using
   Recurly Analytics. Learn how to establish a pre-change MRR baseline, interpret
