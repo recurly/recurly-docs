@@ -182,12 +182,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   
 /* Feature CALLOUT */
 .rc-callout-feature { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
-.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
-.rc-callout-body { flex: 1; }
-.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
-.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #ffef9c; }
-.rc-callout-tip { background: #FFD706; border-left: 4px solid #0D0D0B; }
-.rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
+.rc-callout-feature-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
+.rc-callout-feature-body { flex: 1; }
+.rc-callout-feature-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
+.rc-callout-feature-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #ffef9c; }
+.rc-callout-feature-tip { background: #FFD706; border-left: 4px solid #0D0D0B; }
+.rc-callout-feature-tip .rc-callout-feature-body > strong { color: #0D0D0B; }
 
 
 
