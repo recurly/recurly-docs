@@ -18,6 +18,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 - Familiarity with Recurly’s V3 API, Webhooks, and basic REST concepts
 - [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
 - An [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) gateway account with [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) is enabled
+- Ebanx does not support Free Trials when using App Deep Links. Users accessing checkout flows through Mobile should not be offered a free trial option.
 
 ***
 
