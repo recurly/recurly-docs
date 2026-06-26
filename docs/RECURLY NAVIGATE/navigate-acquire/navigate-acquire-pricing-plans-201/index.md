@@ -1,8 +1,25 @@
 ---
-title: 'Pricing & Plans 201: Advanced (NEW COURSE)'
+title: 'Pricing & Plans 201: Advanced'
+excerpt: >-
+  Advance your subscription business with Recurly's Pricing & Plans 201 course.
+  Master advanced billing configurations including price segmentation, B2B
+  account hierarchies, metered usage billing, and hybrid pricing models.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Advance your subscription business with Recurly's Pricing & Plans 201
+    course. Master advanced billing configurations including price segmentation,
+    B2B account hierarchies, metered usage billing, and hybrid pricing models.
+  keywords:
+    - advanced subscription billing
+    - Recurly Pricing and Plans 201
+    - usage-based billing
+    - price segmentation
+    - B2B account hierarchy
+    - metered billing API
+    - hybrid pricing models
+    - enterprise invoice rollup
   robots: index
 ---
 <HTMLBlock>{`
