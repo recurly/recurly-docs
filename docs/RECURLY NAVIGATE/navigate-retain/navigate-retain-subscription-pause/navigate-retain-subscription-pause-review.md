@@ -420,7 +420,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners" class="rc-next-card">
           <div class="rc-next-card-tag">Recommended next</div>
-          <div class="rc-next-card-icon"><i class="fa-regular fa-flag-pennant"></i></div>
+          <div class="rc-next-card-icon"><i class="fa-regular fa-flag"></i></div>
           <h4>Payment Banners</h4>
           <p>Over half of all subscriber losses are preventable. Learn how payment banners support retention, how to strategically implement them, and how to track your success.</p>
           <div class="rc-next-card-arrow">Start path →</div>
