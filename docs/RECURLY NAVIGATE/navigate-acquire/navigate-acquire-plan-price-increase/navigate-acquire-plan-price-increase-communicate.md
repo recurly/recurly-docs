@@ -308,8 +308,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="rc-callout-body">
-          <strong>Personalize the value bullets</strong>
-          <p>List specific features, integrations, or capabilities that have shipped since the subscriber joined — not vague statements about effort. If you can't name three concrete improvements, that's a signal to revisit whether the increase is ready to communicate.</p>
+          <strong>Use email tokens for ramp pricing models</strong>
+          <p>If you are using ramp pricing, you can replace the price entries with <code>{{subscription_next_ramp_interval_price}}</code> for the new price and <code>{{subscription_next_ramp_interval_start_date}}</code> for the effective date, rather than entering those values manually.</p>
         </div>
       </div>
     </div>
