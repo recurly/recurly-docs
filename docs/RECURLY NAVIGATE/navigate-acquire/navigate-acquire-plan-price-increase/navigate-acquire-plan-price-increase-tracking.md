@@ -1,8 +1,26 @@
 ---
 title: 'Plan Price Increase: Tracking your impact'
+excerpt: >-
+  Track and analyze the financial impact of a subscription price change using
+  Recurly Analytics. Learn how to establish a pre-change MRR baseline, interpret
+  churn dashboards, and measure key revenue and retention KPIs at 30, 60, and 90
+  days post-migration to evaluate pricing strategy success.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Track and analyze the financial impact of a subscription price change using
+    Recurly Analytics. Learn how to establish a pre-change MRR baseline,
+    interpret churn dashboards, and measure key revenue and retention KPIs at
+    30, 60, and 90 days post-migration to evaluate pricing strategy success.
+  keywords:
+    - Recurly MRR dashboard
+    - subscriber churn analysis
+    - subscription revenue KPIs
+    - net revenue impact
+    - subscription data export
+    - billing analytics checkpoint
+    - pricing performance metrics.
   robots: index
 ---
 <HTMLBlock>{`
