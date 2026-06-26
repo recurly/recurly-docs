@@ -186,7 +186,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-feature-body { flex: 1; }
 .rc-callout-feature-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
 .rc-callout-feature-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #0d0d0d; }
-.rc-callout-feature-tip { background: #ffef9c; border-left: 4px solid #0D0D0B; }
+.rc-callout-feature-tip { background: rgba(255,215,6,0.12); border-left: 4px solid #FFD706; }
 .rc-callout-feature-tip .rc-callout-feature-body > strong { color: #0D0D0B; }
 
 
