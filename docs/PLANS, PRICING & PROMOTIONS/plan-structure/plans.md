@@ -189,7 +189,7 @@ next:
   <tr><td><strong>Price</strong></td><td>Set the fixed price charged to plan subscribers. For quantity-based pricing, use add-ons.</td></tr>
 </table>
 
-## Price segments
+## Price segmentation
 
 Price segments let you define multiple price points for a single plan within the same currency — useful for A/B testing or market-specific pricing without creating duplicate plans. A default price is always required and applies whenever no segment code is provided.
 
