@@ -431,7 +431,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-metric-card">
           <div class="rc-metric-card-icon"><i class="fa-solid fa-bolt"></i></div>
           <h4>Sign-up decline rate</h4>
-          <p>Failed sign-up attempts / total sign-up attempts</p>
+          <p>Failed first attempts at sign-up / total first attempts at sign-up</p>
         </div>
         <div class="rc-metric-card">
           <div class="rc-metric-card-icon"><i class="fa-solid fa-right-from-bracket"></i></div>
@@ -456,7 +456,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-metric-card">
           <div class="rc-metric-card-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
           <h4>Decline rate at renewal</h4>
-          <p>Percentage of failed renewal attempts</p>
+          <p>Percentage of failed first attempts at renewal</p>
         </div>
       </div>
 
