@@ -1,8 +1,29 @@
 ---
 title: 'Pause subscriptions: Things to consider'
+excerpt: >-
+  Review essential eligibility rules, plan type distinctions, and integration
+  limitations before configuring subscription pauses in Recurly. Understand the
+  technical differences between monthly and annual plan modifications, API
+  versus Hosted Account Management (HAM) restrictions, and the overall impact on
+  MRR and analytics tracking.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Review essential eligibility rules, plan type distinctions, and integration
+    limitations before configuring subscription pauses in Recurly. Understand
+    the technical differences between monthly and annual plan modifications, API
+    versus Hosted Account Management (HAM) restrictions, and the overall impact
+    on MRR and analytics tracking.
+  keywords:
+    - subscription pause eligibility
+    - monthly vs annual plans
+    - Recurly API integration
+    - Hosted Account Management limitations
+    - MRR analytics tracking
+    - subscription postponement
+    - billing cycle configuration
+    - customer support workflow.
   robots: index
 ---
 <HTMLBlock>{`
