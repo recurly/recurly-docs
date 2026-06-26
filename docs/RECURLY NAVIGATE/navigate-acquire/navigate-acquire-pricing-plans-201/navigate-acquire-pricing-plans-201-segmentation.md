@@ -1,8 +1,25 @@
 ---
 title: 'Pricing & Plans 201: Price segmentation'
+excerpt: >-
+  Prevent plan sprawl using Recurly price segments. Learn how to configure
+  geographic pricing, run A/B price tests, and manage grandfathered subscriber
+  cohorts from a single subscription plan configuration.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Prevent plan sprawl using Recurly price segments. Learn how to configure
+    geographic pricing, run A/B price tests, and manage grandfathered subscriber
+    cohorts from a single subscription plan configuration.
+  keywords:
+    - Recurly price segmentation
+    - plan sprawl
+    - geographic subscription pricing
+    - A/B price testing
+    - grandfathered pricing
+    - channel-specific billing
+    - price segment code API
+    - subscription analytics exports
   robots: index
 ---
 <HTMLBlock>{`
