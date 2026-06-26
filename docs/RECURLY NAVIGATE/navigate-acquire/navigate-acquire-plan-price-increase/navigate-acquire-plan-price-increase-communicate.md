@@ -338,7 +338,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — Term renewal reminder</h2>
       <p>Make sure your customers get a final notification before their term renewal takes place. This message is short by design. Subscribers already know the change is coming — this is a confirmation, not a pitch.</p>
-      <p>You'll find the <strong>"Term renewal reminder"</strong> template in Configuration → Email Templates → Subscription Renewal.</p> 
+      <p>You'll find the <strong>"Term renewal reminder"</strong> template in <strong>Configuration → Email Templates → Subscription Renewal</strong>.</p> 
 
       <div class="rc-email-preview">
         <div class="rc-email-header">
