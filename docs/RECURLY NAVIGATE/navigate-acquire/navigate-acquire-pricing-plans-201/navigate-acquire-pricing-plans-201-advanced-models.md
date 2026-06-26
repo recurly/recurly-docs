@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Plans 201: Advanced pricing models'
+title: 'Pricing & plans 201: Advanced pricing models'
 excerpt: >-
   Master advanced subscription billing with Recurly. Learn to configure hybrid
   pricing structures using the Purchases API and manage prepaid account balances
