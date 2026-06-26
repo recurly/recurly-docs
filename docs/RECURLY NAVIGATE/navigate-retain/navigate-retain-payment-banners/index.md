@@ -1,5 +1,5 @@
 ---
-title: Payment Banners
+title: Payment banners
 excerpt: >-
   Discover how Recurly payment banners prevent subscriber churn by delivering
   targeted, in-session notifications. Learn best practices for configuring
