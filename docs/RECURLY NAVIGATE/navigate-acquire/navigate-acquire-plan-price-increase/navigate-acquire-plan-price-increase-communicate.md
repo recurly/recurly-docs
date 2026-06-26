@@ -1,5 +1,5 @@
 ---
-title: 'Plan Price Increase: Communicating the change'
+title: 'Plan price increase: Communicating the change'
 excerpt: >-
   Optimize your subscription price change communication strategy using Recurly.
   Learn how to build an multi-touch announcement timeline, customize native
