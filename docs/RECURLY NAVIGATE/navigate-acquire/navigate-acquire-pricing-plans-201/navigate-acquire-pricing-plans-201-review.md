@@ -330,7 +330,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-next-card">
           <div class="rc-next-card-tag">Natural next step</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-message"></i></div>
           <h4>Retain pillar</h4>
           <p>Your pricing is set — now keep the subscribers you've acquired. Explore dunning, pause, churn prevention, and more.</p>
           <div class="rc-next-card-arrow">View Retain →</div>
