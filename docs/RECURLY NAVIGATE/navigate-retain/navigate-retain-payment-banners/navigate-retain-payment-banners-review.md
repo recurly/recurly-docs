@@ -371,7 +371,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- Continue your journey -->
-    <div class="rc-next-steps"style="display: none;">
+    <div class="rc-next-steps">
       <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid">
 
@@ -379,7 +379,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-rotate"></i></div>
           <h4>Account Updater</h4>
-          <p>Payment banners handle active subscribers. Account Updater silently recovers card details before a payment ever fails. Together they give you full coverage.</p>
+          <p>Payment banners handle active subscribers. Account Updater silently recovers card details before a payment ever fails. Together they give you greater coverage to protect your recurring revenue.</p>
           <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
