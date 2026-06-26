@@ -1,8 +1,28 @@
 ---
 title: 'Plan Price Increase: Review & resources'
+excerpt: >-
+  Access a consolidated hub of strategic frameworks, developer API
+  documentation, email notification templates, and billing analytics tools to
+  finalize your Recurly plan price increase. Revisit core methodologies for
+  subscriber migration, grandfathering overrides, and revenue tracking to ensure
+  a seamless execution.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Access a consolidated hub of strategic frameworks, developer API
+    documentation, email notification templates, and billing analytics tools to
+    finalize your Recurly plan price increase. Revisit core methodologies for
+    subscriber migration, grandfathering overrides, and revenue tracking to
+    ensure a seamless execution.
+  keywords:
+    - Recurly pricing strategy
+    - subscriber migration resources
+    - subscription bulk migration
+    - billing API documentation
+    - revenue expansion analytics
+    - customer retention tools
+    - subscription management guides.
   robots: index
 ---
 <HTMLBlock>{`
