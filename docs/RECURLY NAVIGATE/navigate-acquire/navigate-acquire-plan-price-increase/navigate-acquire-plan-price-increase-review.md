@@ -369,7 +369,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-next-card-tag">Live session</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
           <h4>Global Office Hours</h4>
-          <p>Bring your price increase questions to our CSMs live. We're online weekly to work through roadblocks, strategize, and help you reach your subscription goals. Sessions run weekly and are open to all Recurly merchants.</p>
+          <p>Bring your price increase questions to our CSMs live. We're here to work through roadblocks, strategize, and help you reach your subscription goals. Sessions run weekly and are open to all Recurly merchants.</p>
           <div class="rc-next-card-arrow">Register →</div>
         </a>
 
