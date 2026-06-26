@@ -1,8 +1,27 @@
 ---
-title: 'Payment Banners: Review & resources'
+title: 'Payment banners: Review & resources'
+excerpt: >-
+  Review the complete Recurly payment banners learning path and access the full
+  resource library. Find implementation guides for webhooks and Recurly Engage,
+  revenue recovery strategies, and dunning analytics to eliminate involuntary
+  churn.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Review the complete Recurly payment banners learning path and access the
+    full resource library. Find implementation guides for webhooks and Recurly
+    Engage, revenue recovery strategies, and dunning analytics to eliminate
+    involuntary churn.
+  keywords:
+    - revenue recovery resources
+    - Recurly webhooks guide
+    - Recurly Engage documentation
+    - involuntary churn management
+    - dunning strategy review
+    - billing failure triggers
+    - subscriber retention tools
+    - churn analytics dashboards
   robots: index
 ---
 <HTMLBlock>{`
