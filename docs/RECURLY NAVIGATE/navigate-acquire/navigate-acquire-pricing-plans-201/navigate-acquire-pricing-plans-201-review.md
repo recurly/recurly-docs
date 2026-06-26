@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Plans 201: Review & resources'
+title: 'Pricing & plans 201: Review & resources'
 excerpt: >-
   Review and reinforce advanced subscription billing concepts in Recurly. Access
   comprehensive documentation and resources for price segmentation, account
