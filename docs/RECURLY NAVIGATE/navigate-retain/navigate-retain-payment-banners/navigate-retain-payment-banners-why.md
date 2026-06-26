@@ -1,5 +1,5 @@
 ---
-title: 'Payment Banners: Why it matters '
+title: 'Payment Banners: Why it matters & when to use it'
 deprecated: false
 hidden: true
 metadata:
