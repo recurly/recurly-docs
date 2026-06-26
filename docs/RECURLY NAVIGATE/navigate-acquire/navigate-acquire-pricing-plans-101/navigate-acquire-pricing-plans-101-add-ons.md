@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Plans 101: Add-ons'
+title: 'Pricing & plans 101: Add-ons'
 deprecated: false
 hidden: true
 metadata:
@@ -448,7 +448,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Section: Add-ons as a packaging strategy -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-boxes-stacking rc-fa-section"></i> Add-ons as a packaging strategy</h2>
+      <h2><i class="fa-solid fa-bullseye rc-fa-section"></i> Add-ons as a packaging strategy</h2>
       <p>Add-ons are not just a billing mechanism — they're a packaging decision. How you structure them determines what your checkout experience looks like and how you capture expansion revenue over time.</p>
 
       <div class="rc-accent-card rc-accent-yellow">
