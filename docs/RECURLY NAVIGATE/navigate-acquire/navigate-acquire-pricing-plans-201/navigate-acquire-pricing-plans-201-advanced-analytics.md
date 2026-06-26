@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Plans 201: Advanced analytics'
+title: 'Pricing & plans 201: Advanced analytics'
 excerpt: >-
   Optimize your subscription insights with Recurly Advanced Analytics. Learn to
   leverage data exports, Analytics Explore, and native Snowflake integrations to
