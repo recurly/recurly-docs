@@ -286,7 +286,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — initial announcement</h2>
       <p>Customize your <strong>"Subscription Change"</strong> email template (under Configuration → Email Templates), which is triggered when a subscription is modified. Feel free to use the sample messaging below and tailor it to your brand.</p>
-		<p>The value points below should be mindfully and meaningfully communicated. Generic language ("we've been working hard") doesn't land — three specific examples outperform five vague ones.</p>
+		<p>The features or improvements bullets create meaningful moments of communication. Generic language ("we've been working hard") doesn't land. Be specific, and remind your customer of your value and care.</p>
 
       <div class="rc-email-preview">
         <div class="rc-email-header">
