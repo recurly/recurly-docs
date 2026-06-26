@@ -357,11 +357,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-coupons-promotions" class="rc-next-card">
-          <div class="rc-next-card-tag">Related topic</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-next-card">
+          <div class="rc-next-card-tag">Advanced learning</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-tag"></i></div>
-          <h4>Coupons &amp; promotions</h4>
-          <p>Learn how to use targeted discounts strategically — including how to use promotional offers as a retention tool for price-sensitive subscribers.</p>
+          <h4>Pricing & Plans 201: Advanced</h4>
+          <p>Understand the pricing architectures that mature subscription businesses use to segment markets, structure enterprise billing, charge for real-world usage, and measure what's actually driving revenue.</p>
           <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
@@ -369,7 +369,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-next-card-tag">Live session</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
           <h4>Global Office Hours</h4>
-          <p>Bring your price increase questions to our CSMs live. Sessions run weekly and are open to all Recurly merchants.</p>
+          <p>Bring your price increase questions to our CSMs live. We're online weekly to work through roadblocks, strategize, and help you reach your subscription goals. Sessions run weekly and are open to all Recurly merchants.</p>
           <div class="rc-next-card-arrow">Register →</div>
         </a>
 
