@@ -291,7 +291,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-email-preview">
         <div class="rc-email-header">
           <i class="fa-regular fa-envelope" style="color:#FFD706;font-size:.9rem;"></i>
-          <span>Messaging sample · Initial announcement</span>
+          <span>Messaging sample · Subscription change template</span>
         </div>
         <div class="rc-email-body">
           <p><strong>Subject:</strong> An update to your <code>{{company_name}}</code> subscription pricing</p>
