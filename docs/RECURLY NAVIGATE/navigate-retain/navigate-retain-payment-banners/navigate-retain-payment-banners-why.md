@@ -1,8 +1,27 @@
 ---
 title: 'Payment Banners: Why it matters & when to use it'
+excerpt: >-
+  Explore how in-session payment banners combat involuntary subscription churn
+  caused by failed renewals, expired cards, and dunning gaps. Learn the eight
+  critical trigger scenarios, from Account Updater escalations to proactive
+  cancellation save flows, that maximize subscriber retention.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Explore how in-session payment banners combat involuntary subscription churn
+    caused by failed renewals, expired cards, and dunning gaps. Learn the eight
+    critical trigger scenarios, from Account Updater escalations to proactive
+    cancellation save flows, that maximize subscriber retention.
+  keywords:
+    - involuntary churn
+    - subscription retention benchmarks
+    - failed payment triggers
+    - dunning email optimization
+    - cancellation save flows
+    - card expiration notifications
+    - annual renewal recovery
+    - Account Updater escalation
   robots: index
 ---
 <HTMLBlock>{`
