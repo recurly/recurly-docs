@@ -1,8 +1,29 @@
 ---
-title: 'Pause subscriptions: How to enable it'
+title: 'Pause subscriptions: How to enable Pause'
+excerpt: >-
+  Learn how to enable, configure, and manage subscription pause parameters in
+  Recurly using the Admin Console or Developer API. Discover how to set
+  cycle-based rules, implement event webhooks for entitlement updates, automate
+  transactional emails, and strategically place pause options within your
+  cancellation flow to preserve long-term subscriber value.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Learn how to enable, configure, and manage subscription pause parameters in
+    Recurly using the Admin Console or Developer API. Discover how to set
+    cycle-based rules, implement event webhooks for entitlement updates,
+    automate transactional emails, and strategically place pause options within
+    your cancellation flow to preserve long-term subscriber value.
+  keywords:
+    - configure subscription pause
+    - Recurly API integration
+    - subscription webhook notifications
+    - pause subscription endpoint
+    - update subscription API
+    - subscriber notification management
+    - cancellation flow placement
+    - automated product entitlements.
   robots: index
 ---
 <HTMLBlock>{`
