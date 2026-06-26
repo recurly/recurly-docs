@@ -1,5 +1,5 @@
 ---
-title: 'Plan Price Increase: Review & resources'
+title: 'Plan price increase: Review & resources'
 excerpt: >-
   Access a consolidated hub of strategic frameworks, developer API
   documentation, email notification templates, and billing analytics tools to
