@@ -1,5 +1,5 @@
 ---
-title: 'Plan Price Increase: Use cases'
+title: 'Plan price increase: Use cases'
 excerpt: >-
   Discover the strategic business triggers and use cases for executing a
   subscription plan price increase. Learn how to justify pricing changes through
