@@ -478,23 +478,23 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- Continue your journey -->
-    <div class="rc-next-steps"style="display: none;">
+    <div class="rc-next-steps">
       <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid-journey">
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-next-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-next-card">
           <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-bullseye"></i></div>
-          <h4>Acquire</h4>
-          <p>Now that your systems are optimized and you understand your metrics, explore the Acquire pillar to grow your subscriber base with confidence.</p>
+          <h4>Benchmarks 101</h4>
+          <p>Ready for a deep dive in benchmarks? This path walks you through all 8 benchmarked KPIs across 4 Analytics dashboards, so you can spot gaps, confirm strengths, and know exactly where to focus.</p>
           <div class="rc-next-card-arrow">Explore Acquire →</div>
         </a>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-next-card">
-          <div class="rc-next-card-tag">Explore the pillar</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-next-card">
+          <div class="rc-next-card-tag">Explore payments dashboards</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-rocket"></i></div>
-          <h4>All Launch paths</h4>
-          <p>See every learning path in the Launch pillar.</p>
+          <h4>Payments hub</h4>
+          <p>Your payment performance data, all in one place. Learn your way around every dashboard — and know what to look for from day one.</p>
           <div class="rc-next-card-arrow">View Launch →</div>
         </a>
 
