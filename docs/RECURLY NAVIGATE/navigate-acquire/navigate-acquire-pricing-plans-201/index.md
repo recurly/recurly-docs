@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Plans 201: Advanced'
+title: 'Pricing & plans 201: Advanced'
 excerpt: >-
   Advance your subscription business with Recurly's Pricing & Plans 201 course.
   Master advanced billing configurations including price segmentation, B2B
@@ -315,7 +315,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 201
       </div>
       <div class="rc-lp-hero-title">
-        <h1>Pricing &amp; Plans 201</h1>
+        <h1>Pricing &amp; plans 201: Advanced</h1>
       </div>
       <p>You've built the foundation. This path goes deeper — into the pricing architectures that mature subscription businesses use to segment markets, structure enterprise billing, charge for real-world usage, and measure what's actually driving revenue.</p>
     </div>
