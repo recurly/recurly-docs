@@ -1,8 +1,27 @@
 ---
-title: 'Payment Banners: Strategy & best practices'
+title: 'Payment banners: Strategy & best practices'
+excerpt: >-
+  Optimize subscription retention with strategic payment banner timing,
+  frequency caps, and copywriting best practices. Learn how to craft
+  high-converting, compliant messages for failed payments, active dunning
+  cycles, and high-value annual pre-renewals.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize subscription retention with strategic payment banner timing,
+    frequency caps, and copywriting best practices. Learn how to craft
+    high-converting, compliant messages for failed payments, active dunning
+    cycles, and high-value annual pre-renewals.
+  keywords:
+    - payment banner strategy
+    - frequency caps
+    - dunning copywriting examples
+    - subscription messaging best practices
+    - annual renewal prevention
+    - dunning recovery timing
+    - involuntary churn mitigation
+    - A/B testing prompts
   robots: index
 ---
 <HTMLBlock>{`
