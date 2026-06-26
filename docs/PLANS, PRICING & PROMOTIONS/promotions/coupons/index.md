@@ -142,6 +142,8 @@ Before building a coupon, here's what each field in the creation form does.
 
 ## Step-by-step: create a new coupon
 
+<br />
+
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">1</div>
