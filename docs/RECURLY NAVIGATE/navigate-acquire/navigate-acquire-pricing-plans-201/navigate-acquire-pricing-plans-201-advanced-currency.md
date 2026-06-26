@@ -1,8 +1,25 @@
 ---
 title: 'Pricing & Plans 201: Advanced currency'
+excerpt: >-
+  Scale global multi-currency billing with Recurly. Optimize international
+  expansion using per-currency gateway routing, 3DS2/SCA compliance for European
+  markets, and region-aware dunning campaigns.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Scale global multi-currency billing with Recurly. Optimize international
+    expansion using per-currency gateway routing, 3DS2/SCA compliance for
+    European markets, and region-aware dunning campaigns.
+  keywords:
+    - Recurly advanced currency
+    - multi-currency subscription billing
+    - custom gateway routing API
+    - 3DS2 SCA compliance
+    - region-aware dunning campaigns
+    - international subscription payment routing
+    - zero-dollar authorizations
+    - gateway failover strategy
   robots: index
 ---
 <HTMLBlock>{`
