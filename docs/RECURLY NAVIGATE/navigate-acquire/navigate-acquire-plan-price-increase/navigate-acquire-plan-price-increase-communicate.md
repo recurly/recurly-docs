@@ -285,8 +285,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION 2: Initial announcement template -->
     <div class="rc-lp-section">
       <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — Subscription change</h2>
-      <p>Customize your <strong>"Subscription Change"</strong> email template (under Configuration → Email Templates → Subscription), which is triggered when a subscription is modified. Feel free to use the sample messaging below, <strong> complete with accurate tokens</strong>, and tailor it to your brand.</p>
-		<p>The features or improvements bullets create meaningful moments of communication. Generic language ("we've been working hard") doesn't land. Be specific, and remind your customer of your value and care.</p>
+      <p>The <strong>"Subscription Change"</strong> email template is triggered when a subscription is modified and can be customized to communicate your plan price change in a meaningful way. You'll find it here: <strong>Configuration → Email Templates → Subscription</strong>. Feel free to use the sample messaging provided below, <strong> complete with accurate tokens</strong>, and tailor it to your brand.</p>
+		<p>The feature bullets should be specific and demonstrate value. Generic language like, "We've been working hard," may be too vague to feel meaningful to your customers.</p>
 
       <div class="rc-email-preview">
         <div class="rc-email-header">
@@ -308,7 +308,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="rc-callout-body">
-          <strong>Use email tokens for ramp pricing models</strong>
+          <strong>Tokens for ramp pricing models</strong>
           <p>If you are using ramp pricing, you can replace the price entries with <code>{{subscription_next_ramp_interval_price}}</code> for the new price and <code>{{subscription_next_ramp_interval_start_date}}</code> for the effective date, rather than entering those values manually.</p>
         </div>
       </div>
@@ -317,7 +317,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION 3: Final notice template -->
     <div class="rc-lp-section">
       <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — Term renewal reminder</h2>
-      <p>To ensure your customers receied the message, make sure they receive a final notification before their term reneal takes place. This message is short by design. Subscribers already know the change is coming — this is a confirmation, not a pitch.</p>
+      <p>Make sure your customers get a final notification before their term renewal takes place. This message is short by design. Subscribers already know the change is coming — this is a confirmation, not a pitch.</p>
       <p>You'll find the <strong>"Term renewal reminder"</strong> template in Configuration → Email Templates → Subscription Renewal.</p> 
 
       <div class="rc-email-preview">
