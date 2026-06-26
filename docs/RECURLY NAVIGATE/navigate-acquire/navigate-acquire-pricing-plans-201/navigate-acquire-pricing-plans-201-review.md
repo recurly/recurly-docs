@@ -298,6 +298,38 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
         <p>For each one you're considering: what is the specific problem it solves, what is the engineering or operational dependency that would need to be in place first, and who else in your organization would need to be aligned before you could activate it? Bringing concrete answers to these questions to a Global Office Hours session is a good use of 30 minutes with a CSM.</p>
       </div>
     </div>
+     <!-- Continue your journey -->
+    <div class="rc-next-steps"style="display: none;">
+      <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
+      <div class="rc-next-grid">
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-next-card">
+          <div class="rc-next-card-tag">Explore the pillar</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-store"></i></div>
+          <h4>All Acquire paths</h4>
+          <p>See every learning path in the Acquire pillar — checkout, coupons, payment methods, and more.</p>
+          <div class="rc-next-card-arrow">View Acquire →</div>
+        </a>
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-next-card">
+          <div class="rc-next-card-tag">Natural next step</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>Retain pillar</h4>
+          <p>Your pricing is set — now keep the subscribers you've acquired. Explore dunning, pause, churn prevention, and more.</p>
+          <div class="rc-next-card-arrow">View Retain →</div>
+        </a>
+
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
+          <div class="rc-next-card-tag">Live session</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
+          <h4>Global Office Hours</h4>
+          <p>Bring your pricing and plan questions to our CSMs live. Sessions run weekly.</p>
+          <div class="rc-next-card-arrow">Register →</div>
+        </a>
+
+      </div>
+    </div>
+
 
     <!-- Path nav — complete state -->
     <div class="rc-lp-nav">
