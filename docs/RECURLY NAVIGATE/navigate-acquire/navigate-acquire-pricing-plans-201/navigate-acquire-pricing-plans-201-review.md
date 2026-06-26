@@ -1,8 +1,24 @@
 ---
 title: 'Pricing & Plans 201: Review & resources'
+excerpt: >-
+  Review and reinforce advanced subscription billing concepts in Recurly. Access
+  comprehensive documentation and resources for price segmentation, account
+  hierarchy, metered usage, and analytics.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Review and reinforce advanced subscription billing concepts in Recurly.
+    Access comprehensive documentation and resources for price segmentation,
+    account hierarchy, metered usage, and analytics.
+  keywords:
+    - Recurly billing resources
+    - advanced subscription models review
+    - invoice rollup tax compliance
+    - multi-currency documentation
+    - subscription analytics exports guide
+    - enterprise billing path wrap-up
+    - subscription management quiz
   robots: index
 ---
 <HTMLBlock>{`
