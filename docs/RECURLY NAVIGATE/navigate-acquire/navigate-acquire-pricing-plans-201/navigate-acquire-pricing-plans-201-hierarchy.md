@@ -1,8 +1,25 @@
 ---
 title: 'Pricing & Plans 201: Account hierarchy'
+excerpt: >-
+  Manage complex B2B and enterprise customer billing with Recurly's Account
+  Hierarchy. Learn to structure parent-child accounts, implement consolidated
+  Invoice Rollup, and configure flexible billing responsibilities.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Manage complex B2B and enterprise customer billing with Recurly's Account
+    Hierarchy. Learn to structure parent-child accounts, implement consolidated
+    Invoice Rollup, and configure flexible billing responsibilities.
+  keywords:
+    - Recurly account hierarchy
+    - parent-child billing
+    - invoice rollup
+    - enterprise subscription management
+    - B2B billing structure
+    - consolidated invoicing
+    - calendar billing
+    - flexible billing responsibility
   robots: index
 ---
 <HTMLBlock>{`
