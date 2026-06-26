@@ -1,5 +1,5 @@
 ---
-title: 'Payment Banners: Implementation'
+title: 'Payment banners: Choosing your implementation path'
 deprecated: false
 hidden: true
 metadata:
