@@ -386,8 +386,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
  <div class="rc-callout-feature rc-callout-feature-tip">
         <div class="rc-callout-feature-icon"><i class="fa-solid fa-wallet"></i></div>
         <div class="rc-callout-feature-body">
-          <strong>Have you considered Recurly Wallet?</strong>
-          <p>Wallet automatically retries a failed charge on a designated backup payment method — no subscriber action required. It's one of the most direct ways to recover sign-up and renewal declines that would otherwise be lost. Note that Wallet requires enablement and has additional fees.</p><p><strong><a href="https://docs.recurly.com/recurly-subscriptions/docs/backup-payment-method" target="_blank">Learn more about it here</a>.</strong></p>
+          <strong>Have you added Recurly Wallet?</strong>
+          <p>Wallet automatically retries a failed charge on a designated backup payment method — no subscriber action required. It's one of the most direct ways to recover sign-up and renewal declines that would otherwise be lost. Note that Wallet requires enablement and has additional fees.</p>
+					<p><a href="https://docs.recurly.com/recurly-subscriptions/docs/backup-payment-method" target="_blank">Learn more about it here</a>.</p>
         </div>
       </div>
 
