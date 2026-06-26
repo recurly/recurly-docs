@@ -237,7 +237,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 101
       </div>
       <div class="rc-lp-hero-title">
-        <h1>Pricing &amp; Plans 101</h1>
+        <h1>Pricing &amp; plans 101: The basics</h1>
       </div>
       <p>How you structure your pricing directly influences whether a subscriber converts, which tier they choose, and whether they stay. This course covers the six core areas of Recurly's pricing and packaging — each as a focused page you can work through at your own pace.</p>
     </div>
