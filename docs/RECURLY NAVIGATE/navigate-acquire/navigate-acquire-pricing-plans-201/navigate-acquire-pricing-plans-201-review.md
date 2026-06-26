@@ -314,17 +314,18 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
         <p>For each one you're considering: what is the specific problem it solves, what is the engineering or operational dependency that would need to be in place first, and who else in your organization would need to be aligned before you could activate it? Bringing concrete answers to these questions to a Global Office Hours session is a good use of 30 minutes with a CSM.</p>
       </div>
     </div>
+
      <!-- Continue your journey -->
-    <div class="rc-next-steps"style="display: none;">
+    <div class="rc-next-steps">
       <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid">
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-next-card">
-          <div class="rc-next-card-tag">Explore the pillar</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-store"></i></div>
-          <h4>All Acquire paths</h4>
-          <p>See every learning path in the Acquire pillar — checkout, coupons, payment methods, and more.</p>
-          <div class="rc-next-card-arrow">View Acquire →</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-next-card">
+          <div class="rc-next-card-tag">Recommended next</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-chart-column"></i></div>
+          <h4>Benchmarks 101</h4>
+          <p>Learn where to find, read, and strategically utilize Recurly's 8 key metrics across your subscription lifecycle.</p>
+          <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-next-card">
