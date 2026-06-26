@@ -1,8 +1,25 @@
 ---
 title: 'Pricing & Plans 201: Advanced analytics'
+excerpt: >-
+  Optimize your subscription insights with Recurly Advanced Analytics. Learn to
+  leverage data exports, Analytics Explore, and native Snowflake integrations to
+  evaluate pricing segment and cohort performance.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize your subscription insights with Recurly Advanced Analytics. Learn
+    to leverage data exports, Analytics Explore, and native Snowflake
+    integrations to evaluate pricing segment and cohort performance.
+  keywords:
+    - Recurly advanced analytics
+    - subscription data exports
+    - Analytics Explore report builder
+    - Snowflake integration billing data
+    - external BI tools data warehouse
+    - price segment code reporting
+    - automated billing exports API
+    - subscription cohort analysis fields
   robots: index
 ---
 <HTMLBlock>{`
