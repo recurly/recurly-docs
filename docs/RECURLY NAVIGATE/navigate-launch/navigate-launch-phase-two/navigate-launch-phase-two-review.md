@@ -484,7 +484,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-next-card">
           <div class="rc-next-card-tag">Recommended next</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-chart-column"></i></div>
           <h4>Benchmarks 101</h4>
           <p>Ready for a Benchmarks deep dive? Learn to spot KPI gaps, confirm strengths, and know exactly where to focus.</p>
           <div class="rc-next-card-arrow">Explore Acquire →</div>
@@ -492,7 +492,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-next-card">
           <div class="rc-next-card-tag">Recommended next</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-rocket"></i></div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-chart-line"></i></div>
           <h4>Payments hub</h4>
           <p>Your payment performance data, all in one place. Learn your way around every dashboard — and know what to look for from day one.</p>
           <div class="rc-next-card-arrow">View Launch →</div>
