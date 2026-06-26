@@ -1,8 +1,26 @@
 ---
 title: 'Plan Price Increase: Use cases'
+excerpt: >-
+  Discover the strategic business triggers and use cases for executing a
+  subscription plan price increase. Learn how to justify pricing changes through
+  value delivery, evaluate safe increase ranges, and implement cohort testing to
+  protect subscriber unit economics while mitigating churn risks.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Discover the strategic business triggers and use cases for executing a
+    subscription plan price increase. Learn how to justify pricing changes
+    through value delivery, evaluate safe increase ranges, and implement cohort
+    testing to protect subscriber unit economics while mitigating churn risks.
+  keywords:
+    - subscription pricing triggers
+    - cohort testing churn
+    - SaaS price increase justification
+    - subscription unit economics
+    - price optimization benchmarks
+    - subscriber retention strategies
+    - phased pricing model.
   robots: index
 ---
 <HTMLBlock>{`
