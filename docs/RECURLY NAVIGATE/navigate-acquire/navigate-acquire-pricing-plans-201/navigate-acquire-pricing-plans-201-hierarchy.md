@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Plans 201: Account hierarchy'
+title: 'Pricing & plans 201: Account hierarchy'
 excerpt: >-
   Manage complex B2B and enterprise customer billing with Recurly's Account
   Hierarchy. Learn to structure parent-child accounts, implement consolidated
