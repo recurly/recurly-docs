@@ -330,7 +330,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <p>Hi <code>{{account_first_name}}</code>,</p>
           <p>Just a heads-up: your <code>{{subscription_plan_name}}</code> subscription renews on <strong><code>{{subscription_current_period_ends_at}}</code></strong> at the updated price of <strong>[manually enter new price]</strong>.</p>
           <p>If you'd like to make any changes before renewal, you can do so at <code>{{account_hosted_maintenance_url}}</code> or by replying to this email.</p>
-          <p>{{company_name}}</p>
+          <p><code>{{company_name}}</code></p>
         </div>
       </div>
     </div>
