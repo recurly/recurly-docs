@@ -1,8 +1,27 @@
 ---
-title: 'Launchpad phase 2: Acquisition & decline'
+title: 'Launchpad phase two: Acquisition & decline'
+excerpt: >-
+  Optimize your subscription growth funnel by mastering your subscriber
+  acquisition rate and sign-up decline rate. Learn how to pinpoint checkout
+  friction, detect card-testing fraud, compare gateway performance, and leverage
+  Recurly Analytics to maximize your transaction approval rates.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize your subscription growth funnel by mastering your subscriber
+    acquisition rate and sign-up decline rate. Learn how to pinpoint checkout
+    friction, detect card-testing fraud, compare gateway performance, and
+    leverage Recurly Analytics to maximize your transaction approval rates.
+  keywords:
+    - subscriber acquisition rate
+    - sign-up decline rate
+    - subscription growth metrics
+    - checkout conversion optimization
+    - card-testing fraud detection
+    - gateway approval rates
+    - Recurly Wallet backup payment
+    - payment friction reduction
   robots: index
 ---
 <HTMLBlock>{`
