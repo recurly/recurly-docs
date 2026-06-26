@@ -1,5 +1,5 @@
 ---
-title: 'Section 2: Acquisition & Growth'
+title: 'Launchpad phase 2: Acquisition & decline'
 deprecated: false
 hidden: true
 metadata:
@@ -257,10 +257,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase 2
+        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase Two
       </div>
-      <div class="rc-lp-hero-title"><h1>Subscriber acquisition &amp; sign-up decline rate</h1></div>
-      <p>These two metrics tell you how effectively you're growing — and how much friction is getting in the way of subscribers who want to sign up but can't.</p>
+      <div class="rc-lp-hero-title"><h1>Acquisition & decline</h1></div>
+      <p>Subscriber acquisition & sign-up decline rate tell you how effectively you're growing, and how much friction is getting in the way of subscribers who want to sign up but can't.</p>
     </div>
 
     <!-- Nav (non-sticky + open — Course page 2 of 5) -->
@@ -425,7 +425,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
 
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Launchpad Phase 2</span>
+          <span class="rc-footer-label">Launchpad Phase Two</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-footer-link">Path overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-footer-link">1. Benchmarks &amp; reporting</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-footer-link">2. Acquisition &amp; decline</a>
