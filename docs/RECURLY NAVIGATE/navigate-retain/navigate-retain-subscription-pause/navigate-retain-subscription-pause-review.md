@@ -411,18 +411,18 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
       <div class="rc-next-grid">
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-next-card">
-          <div class="rc-next-card-tag">Recommended next</div>
+          <div class="rc-next-card-tag">Explore the pillar</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
           <h4>Explore all Retain paths</h4>
           <p>Pause is one layer of a full retention strategy. Explore dunning, Account Updater, and cancel save flows in the Retain pillar.</p>
           <div class="rc-next-card-arrow">View Retain →</div>
         </a>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-next-card">
-          <div class="rc-next-card-tag">Explore the pillar</div>
-          <div class="rc-next-card-icon"><i class="fa-regular fa-bell"></i></div>
-          <h4>Dunning &amp; retry strategy</h4>
-          <p>Pause addresses voluntary churn. Dunning addresses involuntary churn. Together they form a complete payment recovery strategy.</p>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners" class="rc-next-card">
+          <div class="rc-next-card-tag">Recommended next</div>
+          <div class="rc-next-card-icon"><i class="fa-regular fa-flag-pennant"></i></div>
+          <h4>Payment Banners</h4>
+          <p>Over half of all subscriber losses are preventable. Learn how payment banners support retention, how to strategically implement them, and how to track your success.</p>
           <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
