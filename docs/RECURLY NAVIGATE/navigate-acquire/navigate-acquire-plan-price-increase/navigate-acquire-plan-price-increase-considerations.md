@@ -1,8 +1,28 @@
 ---
 title: 'Plan Price Increase: What to consider'
+excerpt: >-
+  Master the operational decisions behind a Recurly plan price increase before
+  modifying your billing UI. Learn how to segment subscribers, establish notice
+  timelines for monthly and annual billing cycles, manage customer
+  grandfathering overrides, and safely execute pre-increase legacy plan audits
+  without risking permanent data loss.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Master the operational decisions behind a Recurly plan price increase before
+    modifying your billing UI. Learn how to segment subscribers, establish
+    notice timelines for monthly and annual billing cycles, manage customer
+    grandfathering overrides, and safely execute pre-increase legacy plan audits
+    without risking permanent data loss.
+  keywords:
+    - Recurly subscriber segmentation
+    - subscription billing timing
+    - customer grandfathering logic
+    - legacy plan audit
+    - bulk subscription migration
+    - contract billing compliance
+    - recurring revenue retention
   robots: index
 ---
 <HTMLBlock>{`
