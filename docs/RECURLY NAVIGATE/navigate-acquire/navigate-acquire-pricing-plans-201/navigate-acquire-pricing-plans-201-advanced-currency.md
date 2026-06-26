@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Plans 201: Advanced currency'
+title: 'Pricing & plans 201: Advanced currency'
 excerpt: >-
   Scale global multi-currency billing with Recurly. Optimize international
   expansion using per-currency gateway routing, 3DS2/SCA compliance for European
