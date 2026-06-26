@@ -1,8 +1,27 @@
 ---
 title: Plan Price Increase
+excerpt: >-
+  Learn how to strategically plan and execute a subscription plan price increase
+  in Recurly. This comprehensive path overview covers pricing template changes,
+  manual and API subscriber migration, retention communication workflows, and
+  analytics tracking to optimize recurring revenue without increasing churn.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Learn how to strategically plan and execute a subscription plan price
+    increase in Recurly. This comprehensive path overview covers pricing
+    template changes, manual and API subscriber migration, retention
+    communication workflows, and analytics tracking to optimize recurring
+    revenue without increasing churn.
+  keywords:
+    - Recurly plan price increase
+    - subscription migration strategy
+    - recurring revenue management
+    - subscriber grandfathering logic
+    - price change communication
+    - subscription analytics KPIs
+    - billing platform optimization.
   robots: index
 ---
 <HTMLBlock>{`
