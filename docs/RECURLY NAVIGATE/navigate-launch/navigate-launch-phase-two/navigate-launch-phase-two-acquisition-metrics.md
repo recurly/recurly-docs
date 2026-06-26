@@ -382,6 +382,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <p>Using gateways with local acquiring relationships and accepting local currencies can reduce declines significantly. Local currency support alone has been shown to decrease decline rates by 5–10%.</p>
         </div>
       </div>
+      
+ <div class="rc-callout-feature rc-callout-feature-tip">
+        <div class="rc-callout-feature-icon"><i class="fa-solid fa-wallet"></i></div>
+        <div class="rc-callout-feature-body">
+          <strong>Have you considered Recurly Wallet</strong>
+          <p>Wallet automatically retries a failed charge on a designated backup payment method — no subscriber action required. It's one of the most direct ways to recover sign-up and renewal declines that would otherwise be lost. Note that Wallet requires enablement and has additional fees. Learn more about it <a href="https://docs.recurly.com/recurly-subscriptions/docs/backup-payment-method" target="_blank">here<a/>.</p>
+        </div>
+      </div>
+
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
