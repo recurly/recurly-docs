@@ -1,8 +1,29 @@
 ---
-title: 'Section 3: Churn & Retention'
+title: 'Launchpad phase two: Churn metrics'
+excerpt: >-
+  Diagnose and minimize subscriber loss by understanding the breakdown between
+  voluntary and involuntary churn. Learn how to calculate churn rates, analyze
+  performance in the Recurly Benchmarks Dashboard, and utilize revenue retention
+  tools like Account Updater and dunning optimization to maximize subscriber
+  loyalty.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Diagnose and minimize subscriber loss by understanding the breakdown between
+    voluntary and involuntary churn. Learn how to calculate churn rates, analyze
+    performance in the Recurly Benchmarks Dashboard, and utilize revenue
+    retention tools like Account Updater and dunning optimization to maximize
+    subscriber loyalty.
+  keywords:
+    - voluntary churn rate
+    - involuntary churn calculation
+    - subscriber retention strategy
+    - Recurly Account Updater
+    - payment failure dunning
+    - revenue recovery logic
+    - subscription churn benchmarks
+    - subscription business analytics
   robots: index
 ---
 <HTMLBlock>{`
