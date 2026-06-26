@@ -285,7 +285,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION 2: Initial announcement template -->
     <div class="rc-lp-section">
       <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — Subscription change</h2>
-      <p>The <strong>"Subscription Change"</strong> email template is triggered when a subscription is modified and can be customized to communicate your plan price change in a meaningful way. You'll find it here: <strong>Configuration → Email Templates → Subscription</strong>. Feel free to use the sample messaging provided below, <strong> complete with accurate tokens</strong>, and tailor it to your brand.</p>
+      <p>The <strong>"Subscription Change"</strong> email template is triggered when a subscription is modified. It can be customized to communicate your plan price change in a meaningful way. You'll find it here: <strong>Configuration → Email Templates → Subscription</strong>. Feel free to use the sample messaging provided below, <strong> complete with accurate tokens</strong>, and tailor it to your brand.</p>
 		<p>The feature bullets should be specific and demonstrate value. Generic language like, "We've been working hard," may be too vague to feel meaningful to your customers.</p>
 
       <div class="rc-email-preview">
