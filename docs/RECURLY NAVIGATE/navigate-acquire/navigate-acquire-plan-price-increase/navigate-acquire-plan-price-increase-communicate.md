@@ -284,14 +284,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION 2: Initial announcement template -->
     <div class="rc-lp-section">
-      <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — initial announcement</h2>
-      <p>Customize your <strong>"Subscription Change"</strong> email template (under Configuration → Email Templates), which is triggered when a subscription is modified. Feel free to use the sample messaging below and tailor it to your brand.</p>
+      <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — Subscription change</h2>
+      <p>Customize your <strong>"Subscription Change"</strong> email template (under Configuration → Email Templates → Subscription), which is triggered when a subscription is modified. Feel free to use the sample messaging below, <strong> complete with accurate tokens</strong>, and tailor it to your brand.</p>
 		<p>The features or improvements bullets create meaningful moments of communication. Generic language ("we've been working hard") doesn't land. Be specific, and remind your customer of your value and care.</p>
 
       <div class="rc-email-preview">
         <div class="rc-email-header">
           <i class="fa-regular fa-envelope" style="color:#FFD706;font-size:.9rem;"></i>
-          <span>Messaging sample · Subscription change template</span>
+          <span>Initial announcement example · Subscription change template</span>
         </div>
         <div class="rc-email-body">
           <p><strong>Subject:</strong> An update to your <code>{{company_name}}</code> subscription pricing</p>
@@ -316,20 +316,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION 3: Final notice template -->
     <div class="rc-lp-section">
-      <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — final renewal notice</h2>
-      <p>Short by design. Subscribers already know the change is coming — this is a confirmation, not a pitch.</p>
+      <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — Term renewal reminder</h2>
+      <p>To ensure your customers receied the message, make sure they receive a final notification before their term reneal takes place. This message is short by design. Subscribers already know the change is coming — this is a confirmation, not a pitch.</p>
+      <p>You'll find the <strong>"Term renewal reminder"</strong> template in Configuration → Email Templates → Subscription Renewal.</p> 
 
       <div class="rc-email-preview">
         <div class="rc-email-header">
           <i class="fa-regular fa-envelope" style="color:#FFD706;font-size:.9rem;"></i>
-          <span>Template · Final renewal notice</span>
+          <span>Final renewal notice example · Term renewal reminder template</span>
         </div>
         <div class="rc-email-body">
-          <p><strong>Subject:</strong> Your [Product Name] subscription renews on [date]</p>
-          <p>Hi [First Name],</p>
-          <p>Just a heads-up: your [Plan Name] subscription renews on <strong>[renewal date]</strong> at the updated price of <strong>[new price]</strong>.</p>
-          <p>If you'd like to make any changes before renewal, you can do so at [account link] or by replying to this email.</p>
-          <p>[Your name or team]</p>
+          <p><strong>Subject:</strong> Your <code>{{company_name}}</code> subscription renews on <code>{{subscription_current_period_ends_at}}</code></p>
+          <p>Hi <code>{{account_first_name}}</code>,</p>
+          <p>Just a heads-up: your <code>{{subscription_plan_name}}</code> subscription renews on <strong><code>{{subscription_current_period_ends_at}}</code></strong> at the updated price of <strong>[manually enter new price]</strong>.</p>
+          <p>If you'd like to make any changes before renewal, you can do so at <code>{{account_hosted_maintenance_url}}</code> or by replying to this email.</p>
+          <p>{{company_name}}</p>
         </div>
       </div>
     </div>
