@@ -1,8 +1,27 @@
 ---
 title: 'Pause subscriptions: Review & resources'
+excerpt: >-
+  Test your knowledge on subscription pause configurations, API endpoints, and
+  churn metrics. Access a comprehensive directory of technical resources,
+  including API documentation, webhooks, Recurly Engage details, and industry
+  benchmark reports to finalize your customer retention strategy.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Test your knowledge on subscription pause configurations, API endpoints, and
+    churn metrics. Access a comprehensive directory of technical resources,
+    including API documentation, webhooks, Recurly Engage details, and industry
+    benchmark reports to finalize your customer retention strategy.
+  keywords:
+    - subscription pause API
+    - evaluate voluntary churn
+    - pause_subscription endpoint
+    - Recurly developer resources
+    - subscriber retention quiz
+    - webhook notifications directory
+    - subscription lifecycle benchmarks
+    - cancellation flow optimization.
   robots: index
 ---
 <HTMLBlock>{`
