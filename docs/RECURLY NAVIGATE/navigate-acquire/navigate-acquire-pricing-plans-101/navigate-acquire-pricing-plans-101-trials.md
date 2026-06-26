@@ -294,6 +294,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-hourglass-start rc-fa-section"></i> How trials work in Recurly</h2>
       <p>A trial is a period at the start of a subscription during which the subscriber is not charged. It is set in days or months on the plan. When the trial ends, the subscription converts automatically to paid — no manual step required.</p>
       <p>Recurly also sends an automatic notification three days before the trial ends, giving subscribers a heads-up before their first charge. This is built in and requires no additional configuration.</p>
+      <p><strong><em>Note:</strong>A trial must be at least four days long for this email to trigger. Additionally, pre-renewal webhook notifications for trial expiration can be configured to fire a customizable number of days in advance.</em></p>
 
       <div class="rc-card-grid">
         <div class="rc-feature-card">
@@ -304,7 +305,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
           <h4>Automatic conversion</h4>
-          <p>When the trial period ends, the subscription converts to paid automatically. Recurly sends a 3-day notice email before conversion — no action needed on your part.</p>
+          <p>When the trial period ends, the subscription converts to paid automatically. Recurly sends a three-day notice (for trials longer than four days) before conversion — no action needed on your part.</p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-calendar-plus"></i></div>
