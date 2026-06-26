@@ -257,7 +257,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase Two
       </div>
-      <div class="rc-lp-hero-title"><h1>Revenue recovery metrics</h1></div>
+      <div class="rc-lp-hero-title"><h1>Revenue recovery</h1></div>
       <p>These three metrics measure how much of your earned revenue you actually collect — and how hard your dunning, retry, and card update systems are working on your behalf.</p>
     </div>
 
@@ -275,7 +275,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-sticky-link"><span class="rc-step-badge">2</span> Acquisition &amp; decline</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-sticky-link"><span class="rc-step-badge">3</span> Churn metrics</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Revenue &amp; recovery
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Revenue recovery
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
         
@@ -285,7 +285,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Section: Intro -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-circle-dollar-to-slot rc-fa-section"></i> How much revenue are you actually collecting?</h2>
-      <p>Revenue recovery metrics close the loop on everything you built in Phase 1. These three KPIs show how effectively you're collecting earned revenue at every stage of the billing cycle.</p>
+      <p>Revenue recovery metrics close the loop on everything you built in phase one. These three KPIs show how effectively you're collecting earned revenue at every stage of the billing cycle.</p>
     </div>
 
     <!-- Section: Renewal Invoice Paid Rate -->
@@ -465,7 +465,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-footer-link">1. Benchmarks &amp; reporting</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-footer-link">2. Acquisition &amp; decline</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-footer-link">3. Churn metrics</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-footer-link">4. Revenue &amp; recovery</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-footer-link">4. Revenue recovery</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-footer-link">5. Review &amp; resources</a>
         </div>
 
