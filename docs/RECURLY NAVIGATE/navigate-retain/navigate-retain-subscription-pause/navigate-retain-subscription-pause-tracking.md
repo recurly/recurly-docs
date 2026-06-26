@@ -1,8 +1,29 @@
 ---
-title: 'Pause subscriptions: Tracking impact'
+title: 'Pause subscriptions: Tracking your Pause impact'
+excerpt: >-
+  Learn how to measure and interpret the financial and retention impact of your
+  subscription pause program in Recurly. Understand how to monitor key
+  performance metrics like unpause rate, pause duration, and voluntary churn
+  rate using subscription exports, analytics reports, and real-time webhook
+  tracking.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Learn how to measure and interpret the financial and retention impact of
+    your subscription pause program in Recurly. Understand how to monitor key
+    performance metrics like unpause rate, pause duration, and voluntary churn
+    rate using subscription exports, analytics reports, and real-time webhook
+    tracking.
+  keywords:
+    - track subscription pause impact
+    - unpause rate metric
+    - subscription pause duration
+    - voluntary churn rate
+    - Recurly subscription exports
+    - Recurly analytics data
+    - subscription webhooks tracking
+    - pause revenue forecasting.
   robots: index
 ---
 <HTMLBlock>{`
