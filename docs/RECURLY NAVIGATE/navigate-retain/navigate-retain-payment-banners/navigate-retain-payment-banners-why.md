@@ -392,7 +392,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners" class="rc-btn-prev">← Path overview</a>
       <span class="rc-lp-nav-indicator">1 of 5</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/navigate-retain-payment-banners-implementation" class="rc-btn-path">Next: Choosing your implementation path →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-implementation" class="rc-btn-path">Next: Choosing your implementation path →</a>
     </div>
 
     <!-- Resources -->
