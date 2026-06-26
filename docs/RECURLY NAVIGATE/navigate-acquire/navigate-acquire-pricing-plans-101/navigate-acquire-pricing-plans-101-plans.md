@@ -1,8 +1,27 @@
 ---
-title: 'Pricing & Plans 101: Plans'
+title: 'Pricing & plans 101: Plans'
+excerpt: >-
+  Learn how to configure and structure subscription plans in Recurly. Understand
+  key plan fields, permanent billing intervals, subscription terms, unique plan
+  codes, and the business case for balancing monthly vs. annual billing.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Learn how to configure and structure subscription plans in Recurly.
+    Understand key plan fields, permanent billing intervals, subscription terms,
+    unique plan codes, and the business case for balancing monthly vs. annual
+    billing.
+  keywords:
+    - Recurly plan configuration
+    - subscription billing intervals
+    - permanent billing settings
+    - Recurly plan code
+    - subscription term management
+    - monthly vs annual subscription
+    - versioned pricing changes
+    - subscription plan templates
+    - Recurly admin console
   robots: index
 ---
 <HTMLBlock>{`
