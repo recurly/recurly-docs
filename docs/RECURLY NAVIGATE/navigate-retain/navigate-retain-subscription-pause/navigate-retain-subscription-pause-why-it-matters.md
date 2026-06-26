@@ -1,8 +1,27 @@
 ---
-title: 'Pause subscriptions: Why it matters'
+title: 'Pause subscriptions: Why Pause reduces churn'
+excerpt: >-
+  Discover how allowing subscribers to pause instead of cancel reduces voluntary
+  churn, improves customer retention, and stabilizes recurring revenue. Explore
+  industry benchmarks, consumer behavioral insights, and actionable metrics to
+  optimize your subscription retention strategy.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Discover how allowing subscribers to pause instead of cancel reduces
+    voluntary churn, improves customer retention, and stabilizes recurring
+    revenue. Explore industry benchmarks, consumer behavioral insights, and
+    actionable metrics to optimize your subscription retention strategy.
+  keywords:
+    - subscription pause
+    - reduce customer churn
+    - customer retention strategy
+    - voluntary churn mitigation
+    - subscription billing management
+    - recurring revenue optimization
+    - Recurly subscription lifecycle
+    - subscriber retention metrics.
   robots: index
 ---
 <HTMLBlock>{`
