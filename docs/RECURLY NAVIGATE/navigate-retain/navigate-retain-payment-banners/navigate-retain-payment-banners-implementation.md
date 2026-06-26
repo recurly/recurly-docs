@@ -1,8 +1,27 @@
 ---
 title: 'Payment banners: Choosing your implementation path'
+excerpt: >-
+  Evaluate the tradeoffs between custom Recurly webhooks and the low-code
+  Recurly Engage platform for deploying in-app payment banners. Discover
+  engineering requirements, real-time webhook events, and no-code prompt
+  configurations to accelerate subscription revenue recovery.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Evaluate the tradeoffs between custom Recurly webhooks and the low-code
+    Recurly Engage platform for deploying in-app payment banners. Discover
+    engineering requirements, real-time webhook events, and no-code prompt
+    configurations to accelerate subscription revenue recovery.
+  keywords:
+    - Recurly webhooks
+    - Recurly Engage
+    - implementation paths
+    - webhook events
+    - low-code dunning
+    - subscription revenue recovery
+    - in-app notifications
+    - customer churn mitigation
   robots: index
 ---
 <HTMLBlock>{`
