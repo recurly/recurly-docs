@@ -1,5 +1,5 @@
 ---
-title: 'Payment Banners: Why it matters & when to use it'
+title: 'Payment banners: Why it matters & when to use it'
 excerpt: >-
   Explore how in-session payment banners combat involuntary subscription churn
   caused by failed renewals, expired cards, and dunning gaps. Learn the eight
