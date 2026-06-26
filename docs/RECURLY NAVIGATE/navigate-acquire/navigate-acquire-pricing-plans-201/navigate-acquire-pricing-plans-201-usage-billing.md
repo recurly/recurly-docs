@@ -1,8 +1,25 @@
 ---
 title: 'Pricing & Plans 201: Usage billing'
+excerpt: >-
+  Implement metered and consumption-based usage billing in Recurly. Learn how to
+  configure usage-type add-ons, log records via the API, select aggregation
+  strategies, and handle billing in arrears.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Implement metered and consumption-based usage billing in Recurly. Learn how
+    to configure usage-type add-ons, log records via the API, select aggregation
+    strategies, and handle billing in arrears.
+  keywords:
+    - Recurly usage billing
+    - metered subscription billing
+    - consumption-based billing API
+    - usage add-ons
+    - billing in arrears
+    - cumulative aggregation strategy
+    - last recorded strategy
+    - Create Usage endpoint
   robots: index
 ---
 <HTMLBlock>{`
