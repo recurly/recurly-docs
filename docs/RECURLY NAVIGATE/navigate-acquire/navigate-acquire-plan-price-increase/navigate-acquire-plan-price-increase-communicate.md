@@ -285,22 +285,23 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION 2: Initial announcement template -->
     <div class="rc-lp-section">
       <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — initial announcement</h2>
-      <p>Customize the value bullets with your actual product improvements. Generic language ("we've been working hard") doesn't land — three specific examples outperform five vague ones.</p>
+      <p>Customize your <strong>"Subscription Change"</strong> email template (under Configuration → Email Templates), which is triggered when a subscription is modified. Feel free to use the sample messaging below and tailor it to your brand.</p>
+		<p>The value points below should be mindfully and meaningfully communicated. Generic language ("we've been working hard") doesn't land — three specific examples outperform five vague ones.</p>
 
       <div class="rc-email-preview">
         <div class="rc-email-header">
           <i class="fa-regular fa-envelope" style="color:#FFD706;font-size:.9rem;"></i>
-          <span>Template · Initial announcement</span>
+          <span>Messaging sample · Initial announcement</span>
         </div>
         <div class="rc-email-body">
-          <p><strong>Subject:</strong> An update to your [Product Name] subscription pricing</p>
-          <p>Hi [First Name],</p>
-          <p>We're writing to let you know that the price of your [Plan Name] subscription will increase from <strong>[current price]</strong> to <strong>[new price]</strong> effective <strong>[effective date]</strong>.</p>
+          <p><strong>Subject:</strong> An update to your <code>{{company_name}}</code> subscription pricing</p>
+          <p>Hi <code>{{account_first_name}}</code>,</p>
+          <p>We're writing to let you know that the price of your <strong><code>{{subscription_plan_name}}</code></strong> subscription will increase from <strong>[manually enter current price]</strong> to <strong>manually enter new price]</strong>, effective {{subscription_current_period_ends_at}}.</p>
           <p>Since you joined, we've shipped a lot — including:</p>
-          <p>— [Specific feature or improvement 1]<br>— [Specific feature or improvement 2]<br>— [Specific feature or improvement 3]</p>
-          <p>This update reflects the continued investment we're making in [Product Name]. Your subscription will renew at the new price starting <strong>[effective date]</strong> — no action is required on your end.</p>
-          <p>If you have questions, reply to this email or visit [support link].</p>
-          <p>[Your name or team]</p>
+          <p>— [manually enter specific feature or improvement 1]<br>— [manually enter specific feature or improvement 2]<br>— [manually enter specific feature or improvement 3]</p>
+          <p>This update reflects the continued investment we're making in {{company_name}}. Your subscription will renew at the new price starting <strong><code>{{subscription_current_period_ends_at}}</code></strong> — no action is required on your end.</p>
+          <p>If you have questions, reply to this email or visit <code>{{account_hosted_maintenance_url}}</code>.</p>
+          <p><code>{{company_name}}</code></p>
         </div>
       </div>
 
