@@ -1,8 +1,30 @@
 ---
-title: 'Pricing & Plans 101: Pricing models'
+title: 'Pricing & plans 101: Pricing models'
+excerpt: >-
+  Optimize your subscription plan architecture using Recurly’s five pricing
+  models: fixed, ramp, tiered, volume, and stairstep. Learn how each
+  subscription billing structure calculates unit charges, handles volume
+  thresholds, and aligns recurring revenue directly with your product’s value
+  metrics.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize your subscription plan architecture using Recurly’s five pricing
+    models: fixed, ramp, tiered, volume, and stairstep. Learn how each
+    subscription billing structure calculates unit charges, handles volume
+    thresholds, and aligns recurring revenue directly with your product’s value
+    metrics.
+  keywords:
+    - Recurly pricing models
+    - tiered vs volume pricing
+    - subscription billing structures
+    - ramp pricing intervals
+    - stairstep billing model
+    - unit charge calculation
+    - usage-based subscription pricing
+    - bulk volume incentives
+    - SaaS value metrics
   robots: index
 ---
 <HTMLBlock>{`
