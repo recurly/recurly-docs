@@ -1,8 +1,28 @@
 ---
 title: 'Plan Price Increase: Communicating the change'
+excerpt: >-
+  Optimize your subscription price change communication strategy using Recurly.
+  Learn how to build an multi-touch announcement timeline, customize native
+  email templates with dynamic merge tokens, and leverage pre-renewal webhooks
+  to seamlessly integrate with your external ESP to maintain high retention and
+  prevent support volume spikes.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize your subscription price change communication strategy using
+    Recurly. Learn how to build an multi-touch announcement timeline, customize
+    native email templates with dynamic merge tokens, and leverage pre-renewal
+    webhooks to seamlessly integrate with your external ESP to maintain high
+    retention and prevent support volume spikes.
+  keywords:
+    - Recurly email templates
+    - subscription notification timeline
+    - renewal scheduled webhook
+    - price change email copy
+    - subscriber communication strategy
+    - SaaS pricing change tokens
+    - ESP integration webhooks.
   robots: index
 ---
 <HTMLBlock>{`
