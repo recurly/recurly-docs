@@ -131,7 +131,7 @@ purchase = {
     billing_info: {
       first_name: "Benjamin",
       last_name: "Du Monde",
-      type: "upi-autopay", # Omit for VPA usage
+      type: "upi_autopay", # Omit for VPA usage
       authentication_method: "qr-code",  # qr-code or app-deep-links; omit for VPA usage
       address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
@@ -168,7 +168,7 @@ const purchaseReq = {
     billing_info: {
       first_name: "Benjamin",
       last_name: "Du Monde",
-      type: "upi-autopay", // Omit for VPA usage
+      type: "upi_autopay", // Omit for VPA usage
       authentication_method: "qr-code", // qr-code or app-deep-links; omit for VPA usage
       address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
@@ -205,7 +205,7 @@ purchase = {
         "billing_info": {
             "first_name": "Benjamin",
             "last_name": "Du Monde",
-            "type": "upi-autopay", # Omit for VPA usage
+            "type": "upi_autopay", # Omit for VPA usage
             "authentication_method": "qr-code", # Choose qr-code or app-deep-links; omit for VPA usage
             "address": {
                 "street1": "44/1 Bharat Apartment 4C 5th Main Road",
@@ -289,7 +289,7 @@ var purchaseReq = new PurchaseCreate()
         {
             FirstName = "Benjamin",
             LastName = "Du Monde",
-            Type = "upi-autopay",  // Omit for VPA usage
+            Type = "upi_autopay",  // Omit for VPA usage
             AuthenticationMethod = "qr-code",  // qr-code or app-deep-links; omit for VPA usage
             Address = new AddressInfo()
             {
