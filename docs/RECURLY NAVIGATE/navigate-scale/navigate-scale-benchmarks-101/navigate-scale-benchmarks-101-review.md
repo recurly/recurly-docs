@@ -280,7 +280,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <!-- QUESTION 1 — multiple choice -->
       <div class="rc-quiz-card">
         <span class="rc-quiz-label">Question 1 of 2 · Multiple choice</span>
-        <p class="rc-quiz-q">Your Involuntary Churn Rate is above benchmark but your Voluntary Churn Rate is in line with your industry. What's the most appropriate first action?</p>
+        <p class="rc-quiz-q">Your Involuntary Churn Rate is performing above industry median (higher than desired) but your Voluntary Churn Rate is in line with your industry. What's the most appropriate first action?</p>
 
         <div class="rc-quiz-options" id="quiz1">
           <label class="rc-quiz-option">
