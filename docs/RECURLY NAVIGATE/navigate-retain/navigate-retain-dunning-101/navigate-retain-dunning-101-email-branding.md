@@ -1,8 +1,27 @@
 ---
 title: 'Dunning 101: Email branding'
+excerpt: >-
+  Prevent dunning emails from looking like phishing attempts by applying your
+  brand's visual identity, tone of voice, and clear CTAs. Learn how Recurly
+  email template customization builds subscriber trust and boosts payment
+  recovery rates.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Prevent dunning emails from looking like phishing attempts by applying your
+    brand's visual identity, tone of voice, and clear CTAs. Learn how Recurly
+    email template customization builds subscriber trust and boosts payment
+    recovery rates.
+  keywords:
+    - dunning email branding
+    - Recurly email templates
+    - subscription payment communications
+    - custom dunning notifications
+    - email personalization variables
+    - payment update call-to-action
+    - involuntary churn reduction
+    - transactional email trust
   robots: index
 ---
 <HTMLBlock>{`
