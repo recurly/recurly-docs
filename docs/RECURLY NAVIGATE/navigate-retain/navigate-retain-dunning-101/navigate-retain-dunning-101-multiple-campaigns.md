@@ -1,8 +1,27 @@
 ---
 title: 'Dunning 101: Multiple campaigns'
+excerpt: >-
+  Discover the power of multiple dunning campaigns in Recurly. Learn how to
+  segment your failed payment recovery strategy by billing frequency and plan
+  value to optimize your outreach, protect high-LTV subscribers, and prevent
+  involuntary churn.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Discover the power of multiple dunning campaigns in Recurly. Learn how to
+    segment your failed payment recovery strategy by billing frequency and plan
+    value to optimize your outreach, protect high-LTV subscribers, and prevent
+    involuntary churn.
+  keywords:
+    - multiple dunning campaigns
+    - subscription dunning segmentation
+    - Recurly campaign configuration
+    - annual plan recovery
+    - customer lifetime value protection
+    - enterprise dunning strategy
+    - involuntary churn reduction
+    - subscription billing segments
   robots: index
 ---
 <HTMLBlock>{`
