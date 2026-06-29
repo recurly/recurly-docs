@@ -395,7 +395,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
           <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-store"></i></div>
           <h4>Pricing & Plans 201: Advanced</h4>
-          <p>You've built the foundation. This path goes deeper into the pricing architectures that mature subscription businesses use to segment markets, structure enterprise billing, charge for real-world usage, and measure what's actually driving revenue.</p>
+          <p>This path goes deeper into the pricing architectures that mature subscription businesses use to segment markets, structure enterprise billing, charge for real-world usage, and measure what's actually driving revenue.</p>
           <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
@@ -403,7 +403,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
           <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
           <h4>Plan price increase</h4>
-          <p>You've build the foundation for your initial plans and pricing models. Now learn when to strategically raise prices, how to decide, how to communicate it — and how to know if it worked.</p>
+          <p>You've built the foundation for your initial plans and pricing models. Now learn when to strategically raise prices, how to decide, how to communicate it — and how to know if it worked.</p>
           <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
