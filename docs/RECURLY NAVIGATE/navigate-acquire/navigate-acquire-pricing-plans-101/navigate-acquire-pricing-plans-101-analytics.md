@@ -1,8 +1,27 @@
 ---
 title: 'Pricing & Plans 101: Tracking success'
+excerpt: >-
+  Evaluate your plan and pricing performance using Recurly Analytics. Track
+  essential subscription growth metrics from launch—including MRR growth
+  breakouts, per-plan churn trends, active subscriber counts, ARPS, and trial
+  conversion rates—against industry benchmarks.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Evaluate your plan and pricing performance using Recurly Analytics. Track
+    essential subscription growth metrics from launch—including MRR growth
+    breakouts, per-plan churn trends, active subscriber counts, ARPS, and trial
+    conversion rates—against industry benchmarks.
+  keywords:
+    - Recurly analytics dashboards
+    - subscription growth metrics
+    - MRR growth breakout
+    - subscriber churn tracking
+    - average revenue per subscriber
+    - trial conversion rate analytics
+    - SaaS plan performance KPIs
+    - subscription benchmarking
   robots: index
 ---
 <HTMLBlock>{`
