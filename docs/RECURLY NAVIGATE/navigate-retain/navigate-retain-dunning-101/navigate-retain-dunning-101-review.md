@@ -1,8 +1,27 @@
 ---
 title: 'Dunning 101: Review & resources'
+excerpt: >-
+  Access a comprehensive review of Recurly's Dunning 101 path. Recapture key
+  subscription recovery strategies—including dunning window lengths, email
+  branding, and campaign segmentation—and explore all essential setup resources,
+  documentation, and expert support links.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Access a comprehensive review of Recurly's Dunning 101 path. Recapture key
+    subscription recovery strategies—including dunning window lengths, email
+    branding, and campaign segmentation—and explore all essential setup
+    resources, documentation, and expert support links.
+  keywords:
+    - recurly dunning resources
+    - subscription recovery checklist
+    - dunning management guides
+    - customer churn review
+    - billing optimization tools
+    - dunning benchmarks documentation
+    - revenue recovery webinars
+    - subscriber retention path overview
   robots: index
 ---
 <HTMLBlock>{`
