@@ -262,7 +262,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">1</div>
           <div class="rc-step-content">
             <h4>Create a new campaign</h4>
-            <p>Click <strong>New Campaign</strong> and give it a descriptive name — "Annual subscribers" or "Monthly - consumer" makes it easy to identify later. Avoid generic names like "Campaign 2" that lose meaning over time.</p>
+            <p>Click <strong>Create Campaign</strong> and give it a descriptive name — "Annual subscribers" or "Monthly - consumer" makes it easy to identify later. Avoid generic names like "Campaign 2" that lose meaning over time.</p>
           </div>
         </div>
         <div class="rc-step">
