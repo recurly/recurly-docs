@@ -312,6 +312,39 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       </div>
     </div>
+    
+ <!-- Continue your journey -->
+    <div class="rc-next-steps">
+      <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
+      <div class="rc-next-grid">
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-next-card">
+          <div class="rc-next-card-tag">Recommended next</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-rotate"></i></div>
+          <h4>Account Updater</h4>
+          <p>Payment banners handle active subscribers. Account Updater silently recovers card details before a payment ever fails. Together they give you greater coverage to protect your recurring revenue.</p>
+          <div class="rc-next-card-arrow">Start path →</div>
+        </a>
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-next-card">
+          <div class="rc-next-card-tag">Stronger retention</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+          <h4>Dunning 101</h4>
+          <p>Payment banners and dunning work best together. If you haven't yet built out your dunning sequence — or want to optimize what you have — this is the natural next step.</p>
+          <div class="rc-next-card-arrow">Start path →</div>
+        </a>
+
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
+          <div class="rc-next-card-tag">Live session</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
+          <h4>Global Office Hours</h4>
+          <p>Bring your implementation questions and strategy decisions to our CSMs live. Sessions run weekly and are free for all Recurly customers.</p>
+          <div class="rc-next-card-arrow">Register →</div>
+        </a>
+
+      </div>
+    </div>
+
 
     <!-- PATH NAV -->
     <div class="rc-lp-nav">
