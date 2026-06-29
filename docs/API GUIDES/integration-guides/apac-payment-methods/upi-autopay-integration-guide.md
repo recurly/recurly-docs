@@ -499,6 +499,8 @@ It is recommended that you listen for at least the three webhooks below, and add
 
 # Sandbox behavior
 
+**VPA Enrollment&#x20;**
+
 In Step 2, Sandbox `return_url` behavior is outlined, but requires a bit more explanation. You may render this URL in whatever way you wish (modal, full redirect, etc.) however it is not recommended to put an immense amount of effort into it as this is not a production workflow.
 
 To help with simulating a consumer's bank app, the gateway has provided a simulation site which can "pretend" to ferry along an enrollment signup and transaction authorization.
@@ -506,6 +508,28 @@ To help with simulating a consumer's bank app, the gateway has provided a simula
 **Step 1:** Upon visiting the return URL, you can click **Accept Agreement** or choose another option.
 
 **Step 2:** You're done!
+
+**QR or App Intent Enrollment&#x20;**
+
+This initial call will return different behavior in production than in sandbox.
+
+In Production: (next\_action.typeand next\_action.value) represent the QR code value that you will need to render on your checkout page for the consumer to scan and continue authorizing the payment.
+
+In Sandbox: (`next_action.type` and `next_action.value` or  `next_action.values`) will be present, but you will need to load the `return_url` value that represent the gateway's simulated UPI QR Code or Links that simulates interaction with the consumer's App. You may render this in a modal for testing purposes.
+
+**Sandbox Behavior for QR Codes and App Intents&#x20;**
+
+In Step 2, Sandbox `return_url` behavior is outlined, but requires a bit more explanation. You may render this URL in whatever way you wish (modal, full redirect, etc.) however it is not recommended to put an immense amount of effort into it as this is not a production workflow.
+
+To help with simulating a consumer's bank app, the gateway has provided a simulation site which can "pretend" to ferry along an enrollment signup and transaction authorization.
+
+**Step 1:&#x20;**&#x55;pon visiting the return URL, immediately navigate to Go to enrollment simulator.
+
+**Step 2:** Approve the enrollment (for a success use case) by choosing 'Accept Agreement'. You may also deny the use case to test a consumer declining the enrollment request. **This will result in a 404 page or an Ebanx page. This is normal.**
+
+**Step 3:** Return to the original simulator URL and click **Authorized = YES&#x20;**&#x6F;n page, to simulate a successful initial authorization for payment. **This will result in a mostly blank page with a confusing response.** Unfortunately, this is the limitation of the third party simulator, but is normal.
+
+**Step 4:&#x20;**&#x59;ou're done!
 
 ## Confirming High Amount Renewals in Sandbox
 
