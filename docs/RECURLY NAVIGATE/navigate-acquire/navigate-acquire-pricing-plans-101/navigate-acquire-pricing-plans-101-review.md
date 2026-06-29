@@ -309,7 +309,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
       <!-- Q2 -->
       <div class="rc-quiz-card">
         <span class="rc-quiz-label">Question 2 of 3 · Multiple choice</span>
-        <p class="rc-quiz-q">A merchant enables GBP on their Recurly site but doesn't add a GBP price to any plans. What happens when a UK subscriber tries to sign up?</p>
+        <p class="rc-quiz-q">You enable GBP on your Recurly site but don't add a GBP price to any plans. What happens when a UK subscriber tries to sign up?</p>
         <div class="rc-quiz-options" id="quiz2">
           <label class="rc-quiz-option">
             <input type="radio" name="quiz2" value="a">
