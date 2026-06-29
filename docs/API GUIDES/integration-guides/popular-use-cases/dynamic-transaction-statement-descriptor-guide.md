@@ -115,7 +115,17 @@ Endpoints:&#x20;
 - `POST /subscriptions`&#x20;
 - `PUT /subscriptions/{subscription_id}`&#x20;
 - `POST /invoices/recovery`&#x20;
-- `POST /accounts/{account_id/invoices`
+- `POST /accounts/{account_id/invoices`&#x20;
+
+These endpoints support a top level parameter of `transaction_descriptor_suffix`  that accepts a small string that we will use to send dynamic descriptor information to your gateway, where supported. Most gateways and banks have a limitation of 22 characters including the DBA value, so ensure the combination of your DBA, the asterisk delimiter, and the custom suffix you send do not breach this limitation.&#x20;
+
+Please do not send asterisks, Recurly handles adding in required gateway separators where necessary.
+
+**Example of a full descriptor:&#x20;**&#x41;cme\*CustomSuffix.&#x20;
+
+In this example, your Business Entity's DBA supplies the 'Acme', and your API request supplies the 'CustomSuffix'. Recurly will combine these values and send to applicable and supported gateways. They are in separate fields as some gateways require them to be separated, and some do not.
+
+Sending the full descriptor in the suffix parameter could result in errors.
 
 ```json JSON
 {
