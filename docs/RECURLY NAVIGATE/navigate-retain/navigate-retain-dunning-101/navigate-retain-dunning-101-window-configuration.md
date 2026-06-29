@@ -1,8 +1,25 @@
 ---
 title: 'Dunning 101: Dunning window configuration'
+excerpt: >-
+  Step-by-step guide to Recurly dunning window configuration. Learn how to
+  update window lengths for monthly and annual plans, optimize email schedules,
+  and audit plan assignments to maximize payment recovery.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Step-by-step guide to Recurly dunning window configuration. Learn how to
+    update window lengths for monthly and annual plans, optimize email
+    schedules, and audit plan assignments to maximize payment recovery.
+  keywords:
+    - Recurly dunning configuration
+    - dunning management settings
+    - configure dunning windows
+    - dunning email schedule
+    - subscription plan assignment
+    - dunning campaign audit
+    - failed payment recovery setup
+    - payment retry cadence
   robots: index
 ---
 <HTMLBlock>{`
