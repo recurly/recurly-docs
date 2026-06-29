@@ -1,8 +1,25 @@
 ---
 title: 'Benchmarks 101: Subscriber benchmarks'
+excerpt: >-
+  Optimize your subscription funnel using Recurly's subscriber benchmarks.
+  Compare your acquisition rate and sign-up decline rate to reduce checkout
+  friction and detect fraud.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize your subscription funnel using Recurly's subscriber benchmarks.
+    Compare your acquisition rate and sign-up decline rate to reduce checkout
+    friction and detect fraud.
+  keywords:
+    - subscriber benchmarks
+    - acquisition rate
+    - sign-up decline rate
+    - subscription funnel optimization
+    - gateway approval rate
+    - card testing fraud detection
+    - subscriber acquisition engine
+    - payment failure metrics
   robots: index
 ---
 <HTMLBlock>{`
