@@ -418,6 +418,14 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
       </div>
     </div>
 
+        <!-- Path nav -->
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-analytics" class="rc-btn-prev">← Tracking success</a>
+      <span class="rc-lp-nav-indicator">7 of 7</span>
+      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
+    </div>
+
+
     <!-- Resources — grouped -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
@@ -476,12 +484,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
       </div>
     </div>
 
-    <!-- Path nav -->
-    <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-analytics" class="rc-btn-prev">← Tracking success</a>
-      <span class="rc-lp-nav-indicator">7 of 7</span>
-      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
-    </div>
+
 
     <!-- Footer -->
     <div class="rc-footer-nav">
