@@ -97,7 +97,7 @@ When selecting which mode to use, you will want to identify how your consumer is
     "billing_info": {
       "first_name": "Benjamin",
       "last_name": "Du Monde",
-      "type": "upi-autopay",
+      "type": "upi_autopay",
       "authentication_method": "qr-code",
       "address": {
         "street1": "44/1 Bharat Apartment 4C 5th Main Road",
@@ -250,7 +250,7 @@ paymentRef.setReferenceType("upi_vpa");
 BillingInfo billingInfo = new BillingInfo();
 billingInfo.setFirstName("Benjamin");
 billingInfo.setLastName("Du Monde");
-billingInfo.setType("upi-autopay");  // Omit for VPA usage
+billingInfo.setType("upi_autopay");  // Omit for VPA usage
 billingInfo.setAuthenticationMethod("qr-code");  // qr-code or app-deep-links; omit for VPA usage
 billingInfo.setAddress(address);
 billingInfo.setGatewayCode("gateway-code");
@@ -346,7 +346,7 @@ paymentRef := recurly.PaymentGatewayReferenceCreate{
 
 firstName := "Benjamin"
 lastName := "Du Monde"
-billingType := "upi-autopay" // Omit for VPA usage
+billingType := "upi_autopay" // Omit for VPA usage
 authMethod := "qr-code" // qr-code or app-deep-links; omit for VPA usage
 gatewayCode := "gateway-code"
 
@@ -454,7 +454,7 @@ The `value` string will be an array of app deep links to present to the user. Th
 
 ```json
 "next_action": {
-    "type": "app_deep_links",
+    "type": "appp_links",
     "values": [
         "gpay://upi/mandate?pa=merchant%40pspbank&pn=M...INR&mc=621",
         "phonepe://mandate?pa=merchant%40pspbank&pn=M...INR&mc=621",
