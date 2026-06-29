@@ -1,8 +1,25 @@
 ---
 title: 'Dunning 101: Email messaging strategy'
+excerpt: >-
+  Optimize your subscription recovery with an effective dunning email messaging
+  strategy. Learn how to craft an escalating urgency message arc,
+  high-converting call-to-actions, and mobile-optimized subject lines.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize your subscription recovery with an effective dunning email
+    messaging strategy. Learn how to craft an escalating urgency message arc,
+    high-converting call-to-actions, and mobile-optimized subject lines.
+  keywords:
+    - dunning email messaging strategy
+    - escalating urgency message arc
+    - high-converting dunning CTAs
+    - mobile-optimized subject lines
+    - subscription recovery copy
+    - customer payment reminders
+    - involuntary churn prevention
+    - failed transaction notifications
   robots: index
 ---
 <HTMLBlock>{`
