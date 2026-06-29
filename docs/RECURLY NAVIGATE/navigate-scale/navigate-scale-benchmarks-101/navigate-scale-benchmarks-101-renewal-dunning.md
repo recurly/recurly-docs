@@ -421,7 +421,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">3</div>
           <div class="rc-step-content">
             <h4>Review your dunning email cadence</h4>
-            <p>Dunning emails prompt subscribers to update their payment details. A 28-day window supports roughly 5 or more touch points — use this capacity. Spread emails across the window; don't stack them at the start. Configure email timing under <strong>Configuration → Dunning Management → Email settings</strong>.</p>
+            <p>Dunning emails prompt subscribers to update their payment details. A 28-day window supports roughly 5 or more touch points — use this capacity. Spread emails across the window; don't stack them at the start. Configure email timing under by clicking into the campaign you'd like to edit, then click <strong>Campaign actions → Edit campaign</strong>.</p>
           </div>
         </div>
       </div>
