@@ -85,6 +85,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section > p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
 .rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
+.rc-card-grid-3col { grid-template-columns: 1fr 1fr 1fr; }
 .rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
 .rc-feature-card:hover { border-color: #CCC9B8; box-shadow: 0 4px 16px rgba(204,201,184,0.15); transform: translateY(-2px); }
 .rc-feature-icon { font-size: 1.4rem; line-height: 1; color: var(--offblack); }
@@ -92,14 +93,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
 
 .rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
-.rc-toc-card { display: grid; grid-template-columns: 44px 1fr 32px; align-items: center; gap: 16px; background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 18px 22px; transition: all .2s ease; }
-.rc-guide a.rc-toc-card { border-bottom: 1px solid var(--lightgray) !important; }
-.rc-guide a.rc-toc-card:hover { border-color: #CCC9B8; border-bottom: 1px solid #CCC9B8 !important; box-shadow: 0 4px 14px rgba(204,201,184,0.12); transform: translateX(3px); }
-.rc-toc-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; }
-.rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0 0 4px; }
-.rc-toc-body p { font-size: .88rem; color: var(--gray); line-height: 1.5; margin: 0; }
-.rc-toc-arrow { font-size: 1.1rem; color: var(--lightgray); text-align: right; transition: color .2s; }
-.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #CCC9B8; }
+.rc-toc-card { display: grid; grid-template-columns: 44px 1fr 32px; align-items: center; gap: 16px; background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 18px 22px; transition: all .2s ease; }
+/* ARMOR OVERRIDE: Double prefix + :not() block to strictly enforce the border across ReadMe global rules */
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-toc-card { border-bottom: 1px solid #CCC9B8 !important; text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-toc-card:hover { border-color: #CCC9B8 !important; border-bottom: 1px solid #CCC9B8 !important; box-shadow: 0 4px 14px rgba(204,201,184,0.12); transform: translateX(3px); }
+/* Hex color enforcement for child elements inside <a> */
+.rc-toc-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B !important; color: #FFD706 !important; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; }
+.rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B !important; margin: 0 0 4px; }
+.rc-toc-body p { font-size: .88rem; color: #807D73 !important; line-height: 1.5; margin: 0; }
+.rc-toc-arrow { font-size: 1.1rem; color: #CCC9B8 !important; text-align: right; transition: color .2s; }
+.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #807D73 !important; }
 
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
@@ -132,7 +137,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } .rc-hero { padding: 36px 20px 36px; } .rc-lp-hero-title h1 { font-size: 1.8rem; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; } .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rc-card-grid { grid-template-columns: 1fr; } .rc-toc-card { grid-template-columns: 36px 1fr 24px; padding: 14px 16px; }
+  .rc-card-grid, .rc-card-grid.rc-card-grid-3col { grid-template-columns: 1fr; } .rc-toc-card { grid-template-columns: 36px 1fr 24px; padding: 14px 16px; }
 }
 </style>
 
@@ -168,33 +173,35 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </details>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-handshake rc-fa-section"></i> What is Customer Success?</h2>
-      <p>Customer Success is about more than answering questions — it's a proactive partnership to ensure you get real, measurable value from Recurly.</p>
-      
-      <div class="rc-card-grid">
+      <h2><i class="fa-solid fa-compass rc-fa-section"></i> What is Recurly Navigate?</h2>
+      <p>Recurly Navigate is your always-on, digital Customer Success program. We built it to bring the expertise of a dedicated Customer Success Manager directly to you, exactly when you need it. Customer Success goes beyond basic technical support—it is a proactive partnership focused on value realization. We connect Recurly's capabilities with your specific business priorities, guiding you toward measurable outcomes.</p>
+
+      <p style="margin-top: 24px; font-weight: 700; color: var(--offblack);">How we bring Customer Success to you</p>
+      <div class="rc-card-grid rc-card-grid-3col">
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <h4>Value realization</h4>
-          <p>We connect what Recurly can do with what your business actually needs, guiding you toward better outcomes at every stage.</p>
+          <div class="rc-feature-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h4>Strategic learning</h4>
+          <p>Self-paced learning paths focused on the "why" and "how" of subscription growth, available whenever you need them.</p>
         </div>
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-life-ring"></i></div>
-          <h4>Success vs. Support</h4>
-          <p>Support resolves immediate technical issues. Customer Success proactively identifies opportunities and shares industry best practices to accelerate your growth.</p>
+          <div class="rc-feature-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <h4>Proactive insights</h4>
+          <p>Monthly performance scorecards and proactive outreach based on your specific subscription health metrics.</p>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-headset"></i></div>
+          <h4>Live guidance</h4>
+          <p>Direct access to Recurly experts through weekly Office Hours, 1:1 strategy sessions, and live workshops.</p>
         </div>
       </div>
     </div>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-compass rc-fa-section"></i> What is Recurly Navigate?</h2>
-      <p>Subscription businesses have a lot to manage — acquiring customers, retaining them, recovering revenue, and scaling efficiently. Navigate exists to be your always-on, 360-degree Customer Success program, designed to meet you where you are with exactly what you need. It is not just a website; it is a comprehensive, living program offering a central learning hub, live events, open office hours, 1:1 expert sessions, and monthly performance scorecards — all working together to proactively equip you with the best practices and insights required to exceed your growth goals.</p>
-    </div>
-
-    <div class="rc-lp-section">
       <h2><i class="fa-solid fa-list rc-fa-section"></i> What's in this path</h2>
+      <p>This path is your official orientation to the Navigate program. It walks you through how to access the central hub, how the Recurly Flywheel organizes our content, and how you can leverage our live events and proactive outreach to hit your growth goals.</p>
       <div class="rc-toc-list">
         <a href="/docs/navigate-intro-welcome" class="rc-toc-card">
-          <div class="rc-toc-num" style="background: transparent;"><img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt="Current page" style="width: 20px; height: 20px;"></div>
+          <div class="rc-toc-num" style="background: transparent !important;"><img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt="Current page" style="width: 20px; height: 20px;"></div>
           <div class="rc-toc-body">
             <h4>Welcome to Navigate</h4>
             <p><strong>You are here.</strong> An introduction to Customer Success and the comprehensive Navigate program.</p>
