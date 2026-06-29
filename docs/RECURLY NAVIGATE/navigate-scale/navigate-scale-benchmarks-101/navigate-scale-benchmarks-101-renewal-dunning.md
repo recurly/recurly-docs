@@ -1,8 +1,25 @@
 ---
 title: 'Benchmarks 101: Renewal & Dunning benchmarks'
+excerpt: >-
+  Optimize your payment recovery strategy using Recurly's renewal and dunning
+  benchmarks. Learn to evaluate invoice paid rates, reduce renewal declines, and
+  extend dunning windows.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize your payment recovery strategy using Recurly's renewal and dunning
+    benchmarks. Learn to evaluate invoice paid rates, reduce renewal declines,
+    and extend dunning windows.
+  keywords:
+    - renewal benchmarks
+    - dunning recovery rate
+    - decline rate at renewal
+    - renewal invoice paid rate
+    - Recurly dunning management
+    - account updater optimization
+    - payment recovery metrics
+    - dunning window extension
   robots: index
 ---
 <HTMLBlock>{`
