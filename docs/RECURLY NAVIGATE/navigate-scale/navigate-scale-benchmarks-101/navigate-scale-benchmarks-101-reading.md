@@ -1,8 +1,24 @@
 ---
 title: 'Benchmarks 101: Reading benchmarks'
+excerpt: >-
+  Master Recurly's benchmark dashboards to track your trend line against
+  industry peers. Learn how to interpret quartile charts, apply data filters,
+  and configure industry settings.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Master Recurly's benchmark dashboards to track your trend line against
+    industry peers. Learn how to interpret quartile charts, apply data filters,
+    and configure industry settings.
+  keywords:
+    - reading subscription benchmarks
+    - quartile chart interpretation
+    - Recurly analytics dashboards
+    - industry benchmark filtering
+    - subscriber data filters
+    - trend line tracking
+    - subscription peer groups
   robots: index
 ---
 <HTMLBlock>{`
