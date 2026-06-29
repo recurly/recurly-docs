@@ -240,14 +240,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- VIDEO + STEPS -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-gear rc-fa-section"></i> How to configure your email templates</h2>
-      <p>Head to <strong>Configuration → Email Templates → Dunning</strong> in your Recurly dashboard. You'll see one template per email in your dunning sequence. Edit each one to apply your branding and personalization before enabling your campaign.</p>
+      <p>Head to <strong>Configuration → Email Templates → Dunning management templates</strong> in your Recurly dashboard. You'll see one template per email in your dunning sequence. Edit each one to apply your branding and personalization before enabling your campaign.</p>
 
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
           <div class="rc-step-content">
             <h4>Open the template editor</h4>
-            <p>Go to <strong>Configuration → Email Templates → Dunning</strong>. Click into the first template in your sequence — usually the Day 0 email.</p>
+            <p>Go to <strong>Configuration → Email Templates → Dunning management templates</strong>. Click into the first template in your sequence — usually the Day 0 email.</p>
           </div>
         </div>
         <div class="rc-step">
