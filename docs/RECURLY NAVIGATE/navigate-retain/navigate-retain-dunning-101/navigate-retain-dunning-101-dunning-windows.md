@@ -245,7 +245,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- WHAT IT IS -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-calendar-days rc-fa-section"></i> What is the dunning window?</h2>
-      <p>The dunning window is the number of days Recurly has to attempt to recover a failed payment; at the end of the cycle, the merchant can configure the subscription to either expire or remain active. Depending on your plan, Recurly's static or Intelligent Retries are attempting the payment during this during this window, and your email sequence is running in parallel. When the window closes with no recovery, the subscription lapses.</p>
+      <p>The dunning window is the number of days Recurly has to attempt to recover a failed payment; at the end of the cycle, the merchant can configure the subscription to either expire or remain active. During this window, Recurly uses static or Intelligent Retries to attempt payment during this during this window, and your Dunning email sequence is running in parallel. When the window closes with no recovery, the subscription lapses.</p>
 
       <div class="rc-card-grid">
         <div class="rc-feature-card">
