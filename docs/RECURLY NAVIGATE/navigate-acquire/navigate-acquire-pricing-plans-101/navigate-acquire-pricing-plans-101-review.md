@@ -1,8 +1,25 @@
 ---
 title: 'Pricing & Plans 101: Review & resources'
+excerpt: >-
+  Validate your understanding of Recurly subscription foundations. Review
+  permanent billing configurations, multi-currency plan rules, volume pricing
+  math, and access advanced learning paths and documentation resources.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Validate your understanding of Recurly subscription foundations. Review
+    permanent billing configurations, multi-currency plan rules, volume pricing
+    math, and access advanced learning paths and documentation resources.
+  keywords:
+    - Recurly billing knowledge check
+    - subscription strategy review
+    - volume pricing calculation
+    - permanent plan attributes
+    - international multi-currency setup
+    - recurring billing optimization
+    - advanced subscription training path
+    - SaaS billing resource center
   robots: index
 ---
 <HTMLBlock>{`
