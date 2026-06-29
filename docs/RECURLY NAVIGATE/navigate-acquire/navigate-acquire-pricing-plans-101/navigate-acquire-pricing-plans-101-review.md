@@ -387,32 +387,32 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
     </div>
 
     <!-- Continue your journey -->
-    <div class="rc-next-steps"style="display: none;">
+    <div class="rc-next-steps">
       <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid">
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-next-card">
-          <div class="rc-next-card-tag">Explore the pillar</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-next-card">
+          <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-store"></i></div>
-          <h4>All Acquire paths</h4>
-          <p>See every learning path in the Acquire pillar — checkout, coupons, payment methods, and more.</p>
-          <div class="rc-next-card-arrow">View Acquire →</div>
+          <h4>Pricing & Plans 201: Advanced</h4>
+          <p>You've built the foundation. This path goes deeper into the pricing architectures that mature subscription businesses use to segment markets, structure enterprise billing, charge for real-world usage, and measure what's actually driving revenue.</p>
+          <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-next-card">
-          <div class="rc-next-card-tag">Natural next step</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-next-card">
+          <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h4>Retain pillar</h4>
-          <p>Your pricing is set — now keep the subscribers you've acquired. Explore dunning, pause, churn prevention, and more.</p>
-          <div class="rc-next-card-arrow">View Retain →</div>
+          <h4>Plan price increase</h4>
+          <p>You've build the foundation for your initial plans and pricing models. Now learn when to strategically raise prices, how to decide, how to communicate it — and how to know if it worked.</p>
+          <div class="rc-next-card-arrow">Start path →</div>
         </a>
 
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
           <div class="rc-next-card-tag">Live session</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
-          <h4>Global Office Hours</h4>
-          <p>Bring your pricing and plan questions to our CSMs live. Sessions run weekly.</p>
-          <div class="rc-next-card-arrow">Register →</div>
+          <h4>Customer Success Office Hours</h4>
+          <p>Bring your pricing and plan questions to our CSMs live. Visit the calendar and pick a time that works best for your schedule. Sessions run weekly.</p>
+          <div class="rc-next-card-arrow">Save your spot →</div>
         </a>
 
       </div>
