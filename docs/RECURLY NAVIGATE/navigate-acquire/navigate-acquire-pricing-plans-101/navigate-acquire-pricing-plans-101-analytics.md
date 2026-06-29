@@ -348,7 +348,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb" style="color:#0D0D0B;"></i></div>
         <div class="rc-callout-body">
           <strong>Set your industry for benchmarking</strong>
-          <p>Go to <strong>Analytics → Settings</strong> and select the industry category that best matches your business. Recurly will compare your key metrics against industry benchmarks — helping you calibrate whether your numbers are strong, average, or need attention relative to peers.</p>
+          <p>Go to <strong>Configuration → Analytics settings</strong> and select the industry category that best matches your business. Recurly will compare your key metrics against industry benchmarks — helping you calibrate whether your numbers are strong, average, or need attention relative to peers.</p>
         </div>
       </div>
     </div>
