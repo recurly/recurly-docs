@@ -69,7 +69,7 @@ Example payload:
 
 ### Step 1: Generate a UPI AutoPay Payment Request
 
-**Use** a supported client library or our  `type`  and `authentication_method` fields in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `type` enum to `upi_autopay` and ensure you are passing the authentication mode as the `authentication_method` value.&#x20;
+**Use** a supported client library or our  `type`  and `authentication_method` fields in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `type` enum to `upi-autopay` and ensure you are passing the authentication mode as the `authentication_method` value.&#x20;
 
 Authentication method will have two options:&#x20;
 
@@ -97,7 +97,7 @@ When selecting which mode to use, you will want to identify how your consumer is
     "billing_info": {
       "first_name": "Benjamin",
       "last_name": "Du Monde",
-      "type": "upi_autopay",
+      "type": "upi-autopay",
       "authentication_method": "qr-code",
       "address": {
         "street1": "44/1 Bharat Apartment 4C 5th Main Road",
@@ -131,7 +131,7 @@ purchase = {
     billing_info: {
       first_name: "Benjamin",
       last_name: "Du Monde",
-      type: "upi_autopay", # Omit for VPA usage
+      type: "upi-autopay", # Omit for VPA usage
       authentication_method: "qr-code",  # qr-code or app-deep-links; omit for VPA usage
       address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
@@ -168,7 +168,7 @@ const purchaseReq = {
     billing_info: {
       first_name: "Benjamin",
       last_name: "Du Monde",
-      type: "upi_autopay", // Omit for VPA usage
+      type: "upi-autopay", // Omit for VPA usage
       authentication_method: "qr-code", // qr-code or app-deep-links; omit for VPA usage
       address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
@@ -205,7 +205,7 @@ purchase = {
         "billing_info": {
             "first_name": "Benjamin",
             "last_name": "Du Monde",
-            "type": "upi_autopay", # Omit for VPA usage
+            "type": "upi-autopay", # Omit for VPA usage
             "authentication_method": "qr-code", # Choose qr-code or app-deep-links; omit for VPA usage
             "address": {
                 "street1": "44/1 Bharat Apartment 4C 5th Main Road",
@@ -250,7 +250,7 @@ paymentRef.setReferenceType("upi_vpa");
 BillingInfo billingInfo = new BillingInfo();
 billingInfo.setFirstName("Benjamin");
 billingInfo.setLastName("Du Monde");
-billingInfo.setType("upi_autopay");  // Omit for VPA usage
+billingInfo.setType("upi-autopay");  // Omit for VPA usage
 billingInfo.setAuthenticationMethod("qr-code");  // qr-code or app-deep-links; omit for VPA usage
 billingInfo.setAddress(address);
 billingInfo.setGatewayCode("gateway-code");
@@ -289,7 +289,7 @@ var purchaseReq = new PurchaseCreate()
         {
             FirstName = "Benjamin",
             LastName = "Du Monde",
-            Type = "upi_autopay",  // Omit for VPA usage
+            Type = "upi-autopay",  // Omit for VPA usage
             AuthenticationMethod = "qr-code",  // qr-code or app-deep-links; omit for VPA usage
             Address = new AddressInfo()
             {
@@ -346,7 +346,7 @@ paymentRef := recurly.PaymentGatewayReferenceCreate{
 
 firstName := "Benjamin"
 lastName := "Du Monde"
-billingType := "upi_autopay" // Omit for VPA usage
+billingType := "upi-autopay" // Omit for VPA usage
 authMethod := "qr-code" // qr-code or app-deep-links; omit for VPA usage
 gatewayCode := "gateway-code"
 
@@ -436,9 +436,7 @@ Recommendation is to set a timer (\~ 5 minutes) to present some urgency in scann
 
 Example is below:&#x20;
 
-
-<Image src="https://files.readme.io/fe3b8dae708ed64d415dba47dfa8f2d9148c8ba084fede4b033f3bdf693db538-UPI-Desktop-Recurly-QR_Code.png" align="left" width="300px" wrap={false} />
-
+![](https://files.readme.io/2521c1aa07e571f8a9752e9405d55a87d29dae5f33238db50cb496a7d8977a7a-UPIQR-Desktop-Example.png)
 
 <br />
 
@@ -470,9 +468,9 @@ The `value` string will be an array of app deep links to present to the user. Th
 - **iOS** does not support **generic** UPI links correctly (prefixed by `upi`), so if you identify your user is coming from an iOS device, omit the generic UPI link.
 - Create a modal that appears from the bottom with buttons, example below:&#x20;
 
+![](https://files.readme.io/9418b04bbbc32eae35116b12bd97bd6f0f986f753c1002647fa8d40795501ddc-UPI-App-Intent-Mobile-Example.png)
 
-<Image src="https://files.readme.io/22c21fbbe91f0a3b8856a20b3105e259a088037fdcbedfaf63531f7d7ae133d4-Deep-link-mobile-upi-autocollect-recurly.png" align="left" width="350px" wrap={false} />
-
+<br />
 
 ## For All Authentication Modes. (VPA, QR, and App Intent)
 
