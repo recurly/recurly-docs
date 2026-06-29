@@ -1,8 +1,25 @@
 ---
 title: 'Benchmarks 101: Review & resources'
+excerpt: >-
+  Review and reinforce your knowledge of Recurly's 8 key subscription lifecycle
+  KPIs. Access centralized resources for churn, dunning, and renewal analytics
+  configuration.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Review and reinforce your knowledge of Recurly's 8 key subscription
+    lifecycle KPIs. Access centralized resources for churn, dunning, and renewal
+    analytics configuration.
+  keywords:
+    - Recurly benchmark summary
+    - subscription KPI review
+    - subscription lifecycle resources
+    - involuntary churn assessment
+    - dunning configuration guide
+    - subscription analytics documentation
+    - industry median comparison
+    - payment recovery resources
   robots: index
 ---
 <HTMLBlock>{`
