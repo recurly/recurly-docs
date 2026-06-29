@@ -14,27 +14,28 @@ This guide shows you how to use the Purchase, Subscription, Subscription Update,
 
 ### Prerequisites
 
-* Familiarity with Recurly’s V3 API and basic REST concepts
-* You have read through our [Payment Descriptors](https://docs.recurly.com/recurly-subscriptions/docs/payment-descriptors) overview
-* You are using a Supported Gateway: [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen), [Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd), [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe), [Commerce Hub](https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub), [FreedomPay](https://docs.recurly.com/recurly-subscriptions/docs/freedompay), [Checkout.com](https://docs.recurly.com/recurly-subscriptions/docs/checkoutcom), and [Nuvei](https://docs.recurly.com/recurly-subscriptions/docs/nuvei)
-* You have discussed your descriptor suffix and DBA with your Acquirer and agreed upon prior to implementation. Some acquirers require notification prior to descriptor changes.
+- Familiarity with Recurly’s V3 API and basic REST concepts
+- You have read through our [Payment Descriptors](https://docs.recurly.com/recurly-subscriptions/docs/payment-descriptors) overview
+- You are using a Supported Gateway: [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen), [Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd), [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe), [Commerce Hub](https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub), [FreedomPay](https://docs.recurly.com/recurly-subscriptions/docs/freedompay), [Checkout.com](https://docs.recurly.com/recurly-subscriptions/docs/checkoutcom), and [Nuvei](https://docs.recurly.com/recurly-subscriptions/docs/nuvei)
+- You have discussed your descriptor suffix and DBA with your Acquirer and agreed upon prior to implementation. Some acquirers require notification prior to descriptor changes.
+- You must have the follow feature flag enabled to use the new API parameters: `Dynamic Descriptors from BE and Overrides from API`
 
 ### Limitations
 
-* Each gateways has slightly different requirements for their dynamic descriptor support.
-  * Braintree requires that all DBA prefixes be 3, 5, or 7 characters only. Recurly will truncate if provided with a DBA that does not fit within those parameters. Braintree also conditionally requires a customer service phone number. Please ensure you have this filled in.
-  * Certain Braintree processors do not allow for asterisks -- ensure you have your processor selection set properly in your gateway configuration or your payments may experience errors.
-  * Commerce Hub requires MCC, and full Business Entity details filled out.
-  * Stripe will only accept the suffix for card payments. Recurly will not be able to provide them your dynamic DBA -- check your Stripe account or ask your Stripe representative / Support member what your static DBA will display to customers.
-* Recurly supports dynamic descriptors for Cards, Apple Pay, and Google Pay payments at this time.
+- Each gateways has slightly different requirements for their dynamic descriptor support.
+  - Braintree requires that all DBA prefixes be 3, 5, or 12 characters only. Recurly will truncate if provided with a DBA that does not fit within those parameters. Braintree also conditionally requires a customer service phone number. Please ensure you have this filled in and Recurly will handle when to send it.
+  - Certain Braintree processors do not allow for asterisks -- ensure you have your processor selection set properly in your gateway configuration or your payments may experience errors. Typically this affects Moneris processors -- there is a gateway checkbox for this when you are using CAD with the Moneris processor on Braintree.
+  - Commerce Hub requires MCC, and full Business Entity details filled out.
+  - Stripe will only accept the suffix for card payments. Recurly will not be able to provide them your dynamic DBA -- check your Stripe account or ask your Stripe representative / Support member what your static DBA will display to customers.
+- Recurly supports dynamic descriptors for Cards, Apple Pay, and Google Pay payments at this time.
 
 ### Key Benefits
 
 Statement descriptors are an incredibly important piece of payment processing, as it is what customers see on their bank statements when transactions are created. Visa and other networks have programs that rely on descriptors to ensure merchants comply with chargeback and risk assessment, for example the VAMP program.
 
-* **Chargeback reduction:** Having a descriptive, coherent statement descriptor can dramatically reduce chargeback behavior by ensuring customers see a recognizable business name or product on their bank statements.
-* **Card Brand Compliance**: Ensure, for subscriptions, that the statement descriptor is consistent throughout the lifetime of a consumer's subscription.
-* **Multi-gateway Support:** Recurly supports dynamic descriptors on our major gateway partners, ensuring consistency across the entire platform.
+- **Chargeback reduction:** Having a descriptive, coherent statement descriptor can dramatically reduce chargeback behavior by ensuring customers see a recognizable business name or product on their bank statements.
+- **Card Brand Compliance**: Ensure, for subscriptions, that the statement descriptor is consistent throughout the lifetime of a consumer's subscription.
+- **Multi-gateway Support:** Recurly supports dynamic descriptors on our major gateway partners (Stripe, Braintree, CommerceHub, Adyen, Checkout, and Nuvei with more coming onboard in the future), ensuring consistency across the entire platform.
 
 ***
 
@@ -50,7 +51,7 @@ Statement descriptors are an incredibly important piece of payment processing, a
 
 **Business Entity** refers to your Business Entity or Entities that you set up within your Recurly site environment.
 
-**Descriptor Suffix** refers to the dynamic text you may send in as a merchant that will be visible to consumers. Treat this value with care and consideration.
+**Descriptor Suffix** refers to the dynamic text you may send in via API which will be visible to consumers. Treat this value with care and consideration.
 
 **Trial Suffix** refers to the Visa Trial Descriptor mandate where Recurly, during a trial conversion, will prefix your suffix with the word TRIAL. You do not need to provide this in your suffix.
 
@@ -64,32 +65,57 @@ Recurly, by default, uses your Subscription Plan names or Invoice descriptions a
 
 When customizing your suffix, keep these practices in mind:
 
-* The entire string must not breach ~ 22 characters including separators and spaces.
-* Do not include the separator in your suffix - Recurly dynamically adds the asterisk separator depending on your gateway's individual requirements.
-* Do not include your DBA in your suffix -- set your DBA at the Business Entity level.
-* Do not include special characters in your DBA or Suffix. Many gateways and banks do not support these characters, and you may experience errors in processing. Choose Alphanumeric and spaces only.
-* Be "recognizable" -- use DBAs and product descriptions that your customers will know and understand.
-* Be simple -- do not write full sentences, or lengthy product names. Remember, you only have 22 characters for your DBA, the required separator, and the suffix combined. **Example**: Acme*Product Name
-* Be aware that some gateways require truncation of the DBA to 3, 5, or 7 characters. You may wish to adopt a 3-5 character version of your business name / DBA for this purpose. Check which gateway(s) you are using for specific requirements.
-* Make sure you fully fill out your Business Entity information -- some gateways require extra information such as customer service phone numbers, emails, domain names, and MCC codes.
+- The entire string must not breach \~ 22 characters including separators and spaces.
+- Do not include the separator in your suffix - Recurly dynamically adds the asterisk separator depending on your gateway's individual requirements.
+- Do not include your DBA in your suffix -- set your DBA at the Business Entity level.
+- Do not include special characters in your DBA or Suffix. Many gateways and banks do not support these characters, and you may experience errors in processing. Choose Alphanumeric and spaces only.
+- Be "recognizable" -- use DBAs and product descriptions that your customers will know and understand.
+- Be simple -- do not write full sentences, or lengthy product names. Remember, you only have 22 characters for your DBA, the required separator, and the suffix combined. **Example**: Acme\*Product Name
+- Be aware that some gateways require truncation of the DBA to 3, 5, or 7 characters. You may wish to adopt a 3-5 character version of your business name / DBA for this purpose. Check which gateway(s) you are using for specific requirements.
+- Make sure you fully fill out your Business Entity information -- some gateways require extra information such as customer service phone numbers, emails, domain names, and MCC codes.
 
-## Integration Examples
+# Integration Examples
+
+### Supported Endpoints
+
+- **Purchase**  `/purchases` - For merchants using this endpoint for subscription signups and one time purchases.
+- Subscriptions `/subscriptions`  - For merchants using this endpoint for subscription signups.
+- Subscription Changes  `PUT` `/subscriptions/{subscription_id}` - For merchants using this endpoint for subscription changes that do not cause transactions.
+- Revenue Recovery `/invoices/recovery`  - For merchants using this endpoint for Recurly Recover&#x20;
+- Accounts > Invoices: `/accounts/{account_id/invoices`- For merchants using this endpoint for creating manual invoices that may charge in the future.
+
+## Overview
 
 When you are creating a subscription and want to customize the suffix, ensure you are submitting your subscriptions with a business entity associated with the transaction so that the information from that business entity (DBA, customer service phone numbers, etc) can be referenced for the subscription specifically. You should also ensure that you are supplying a reasonable and well-thought out descriptor suffix if you plan on customizing the soft descriptor that consumers see on their bank statements.
 
-### Setting Your Business Entity ID 
+### Use Cases&#x20;
 
-For all dynamic descriptor usage, you must either set a specific business entity ID in your requests or you may omit the value. If omitted, **Recurly will use the default business entity.** 
+- Set a specific subscription series with its own custom suffix tailored to that consumer. You would use either the Purchase Endpoint if you are signing up users through that all-in-one method, or the Subscriptions endpoint: `POST /subscriptions`.&#x20;
+- Updating the descriptor suffix on a subscription series. You may do so by modifying the subscription series using the `PUT /subscriptions/{subscription_id}`  method. Subscription updates will only take effect on future Invoices created, ensuring continuity in existing invoices that may be going through dunning and retries. Please note, these fields are not supported in the **POST** subscriptions change endpoint.
+- Line item charges -- if you want to customize the suffix for the individual consumer's purchase, such as an order number or otherwise identifying value. Do not include phone numbers in the suffix -- instead ensure your Business entity is completely filled out. You would use the `POST /purchases`and `POST /purchases/authorize`  for this use case.
+- If you use Recurly to manual invoices that are charged later, you can use the `POST /accounts/{account_id/invoices` endpoint and specify what the descriptor suffix should be when the time comes to make a payment.&#x20;
+- If you are using Recurly Recover, our Stand-alone Retries product, you would ensure you're sending the descriptor the customer is familiar with along with your recovery information to the `POST /invoices/recovery`  endpoint.
+
+### Setting Your Business Entity ID
+
+For all dynamic descriptor usage, you must either set a specific business entity ID in your requests or you may omit the value. If omitted, **Recurly will use the default business entity.**
 
 Please be aware of this default when processing. If your customer does not know who your DBA is in your default business entity, please set the business entity ID they will recognize.
 
-### Setting Descriptors on Subscriptions
+Be sure your Business Entity is completely filled out including your full company address, business name, DBA, MCC (Primary is fine), Domain, and Customer service phone numbers.&#x20;
 
-When adding a subscription, the API does not have a top level `transaction` object -- the parameter will be `transaction_descriptor_suffix`for this endpoint specifically.
+### Setting Descriptors on Subscriptions and non-Purchase endpoints
+
+When adding a subscription via the /subscriptions endpoint, Invoices endpoint, recovery endpoint, or making a change to an existing subscription series, the API does not have a top level `transaction` object -- the parameter will be `transaction_descriptor_suffix`for this endpoint specifically.
 
 In the example below, the consumer would see 'Gold Plan' as part of their statement descriptor. If your Business Entity DBA was 'Acme', the full descriptor seen by a consumer would be `Acme*Gold Plan`.
 
-Endpoint: `POST /subscriptions`
+Endpoints:&#x20;
+
+- `POST /subscriptions`&#x20;
+- `PUT /subscriptions/{subscription_id}`&#x20;
+- `POST /invoices/recovery`&#x20;
+- `POST /accounts/{account_id/invoices`
 
 ```json JSON
 {
@@ -98,26 +124,7 @@ Endpoint: `POST /subscriptions`
 }
 ```
 
-### Updating Descriptors on a given Subscription
-
-When updating a subscription, the API does not have a top level `transaction` object -- the parameter will be `transaction_descriptor_suffix`for this endpoint specifically.
-
-Subscription updates will only take effect on future Invoices created, ensuring continuity in existing invoices that may be going through dunning and retries.
-
-In the example below, the consumer would see 'Gold Plan' as part of their statement descriptor. If your Business Entity DBA was 'Acme', the full descriptor seen by a consumer would be `Acme*Gold Plan`.
-
-Endpoint: `PUT /subscriptions/{subscription_id}`
-
-Please note, these fields are not supported in the POST subscriptions change endpoint.
-
-```json
-{
-  "transaction_descriptor_suffix": "Gold Plan"
-  ...
-}
-```
-
-### Setting Descriptors on One-time Payments
+### Setting Descriptors on One-time Payments and Subscriptions using the Purchases endpoint
 
 When adding a custom suffix to your purchases or authorizations, use the top-level `transaction` object with a child parameter of `descriptor_suffix` with your suffix as the string. In the example below, the consumer would see 'Service Purchase' as part of their statement descriptor.
 
@@ -131,34 +138,7 @@ Endpoint: `POST /purchases`and `POST /purchases/authorize`
 }
 ```
 
-### Setting Descriptors for Revenue Recovery 
-
-With Revenue Recovery, Recurly is not involved in the end-to-end subscriber journey, so it will be important to ensure there is not a shift in statement descriptor information from one system to the next. You will need to provide the DBA and suffix details that you used on the customer signup and renewal transactions that are managed in your own environment to avoid card brand penalties or unexpected chargebacks. This is to ensure you do not run afoul of card brand risk and compliance programs, such as Visa's VAMP program
-
-Endpoint: `POST TBD`
-
-```json
-{
-  "transaction": {
-    "descriptor_suffix": "Gold Plan"
-  }
-}
-```
-
-### Setting Descriptors on a Pending Invoice
-
-As with the `/subscriptions` endpoint, there is no top level `transaction` object. Use the full `transaction_descriptor_suffix` parameter and set the string as your custom descriptor.
-
-In the example below, the consumer would see 'Gold Plan' as part of their statement descriptor.
-
-Endpoint: `POST /accounts/{account_id}/invoices`and `PUT /invoices/{invoice_id}`
-
-```json JSON
-{
-  "transaction_descriptor_suffix": "Gold Plan"
-  ...
-}
-```
+###
 
 <br />
 
