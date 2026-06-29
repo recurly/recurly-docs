@@ -53,11 +53,15 @@ Dynamic descriptors assist customers in recognizing their purchases with your bu
 
 Descriptors are typically limited to 22 characters, and often look like the below. They may or may not include a domain (acme.com) or a phone number. Visibility is dependent on the consumer's bank support for descriptors and the gateway support for data within a given descriptor.
 
-- **DBA\*Description of Charge**
+- **DBA\*Description of Charge (Suffix)**
+
+In more generic terms, a Descriptor is two parts concatenated by a separator (usually an asterisk).&#x20;
+
+- **Prefix\*Suffix&#x20;**&#x77;here your prefix is the DBA in your business entity, and the suffix is either a custom field you send in via API, or is derived from your Plan configuration (the name) or Line item / Invoice Descriptions. &#x20;
 
 On Recurly, we handle descriptors in the following manner:
 
-- For **Subscriptions**, we utilize your business company name or DBA, if present, and the Plan Name for a given subscription to create the descriptor text. If a Trial is converting, we add the word 'Trial' to the descriptor suffix for Visa transactions. **Example**: `AcmeInc*Trial Gold Plan`
+- For **Subscriptions**, we utilize your business company name or DBA, if present, as the prefix and the Plan Name for a given subscription to create the descriptor text as the suffix. If a Trial is converting, we add the word 'Trial' in addition to the descriptor suffix for Visa transactions. **Example**: `AcmeInc*Trial Gold Plan`
 - For **One-Time or Invoices that do not use Plans** and their respective transactions, we utilize your business company name or DBA, if present, and the Invoice Description for a given invoice to create the descriptor text. **Examples**: `AcmeInc*Charge` or `AcmeInc*One-Time Payment`
 
 ### Supported payment methods & transactions
@@ -67,10 +71,13 @@ On Recurly, we handle descriptors in the following manner:
 - One-time transactions.
 - Initial subscription transactions (of subsequent recurring transactions).
 - Recurring subscription renewal transactions.
+- Recovery Invoices&#x20;
 
 #### Supported payment methods
 
-- [Credit Cards](https://docs.recurly.com/docs/credit-cards)
+- [Credit Cards](https://docs.recurly.com/docs/credit-cards) and Network Tokens
+- [Apple Pay](https://docs.recurly.com/recurly-subscriptions/docs/apple-pay) and [Google Pay](https://docs.recurly.com/recurly-subscriptions/docs/google-pay-tm)
+- [PayPal](https://docs.recurly.com/recurly-subscriptions/docs/paypal) (Braintree Only)
 
 # Key benefits
 
