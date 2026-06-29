@@ -1,8 +1,25 @@
 ---
 title: 'Dunning 101: Campaign configuration'
+excerpt: >-
+  Configure and assign new dunning campaigns in Recurly. Learn how to set custom
+  retry windows, structure email schedules, and audit subscription plan mapping
+  to maximize revenue recovery.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Configure and assign new dunning campaigns in Recurly. Learn how to set
+    custom retry windows, structure email schedules, and audit subscription plan
+    mapping to maximize revenue recovery.
+  keywords:
+    - Recurly campaign configuration
+    - create dunning campaigns
+    - dunning management setup
+    - plan assignment audit
+    - custom retry windows
+    - dunning email scheduling
+    - subscription plan mapping
+    - involuntary churn mitigation
   robots: index
 ---
 <HTMLBlock>{`
