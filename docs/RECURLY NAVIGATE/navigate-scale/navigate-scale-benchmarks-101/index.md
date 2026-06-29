@@ -1,8 +1,25 @@
 ---
 title: Benchmarks 101
+excerpt: >-
+  Discover Recurly's Benchmarks 101 path to evaluate 8 key subscription
+  lifecycle metrics against real-time industry data and optimize your dashboard
+  analytics.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Discover Recurly's Benchmarks 101 path to evaluate 8 key subscription
+    lifecycle metrics against real-time industry data and optimize your
+    dashboard analytics.
+  keywords:
+    - Recurly benchmarks
+    - subscription metrics
+    - churn rate
+    - subscriber KPIs
+    - dunning recovery rate
+    - subscription analytics dashboard
+    - industry benchmarking
+    - revenue recovery metrics
   robots: index
 ---
 <HTMLBlock>{`
