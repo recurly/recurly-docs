@@ -1,8 +1,27 @@
 ---
 title: 'Dunning 101: Understanding Dunning windows'
+excerpt: >-
+  Optimize subscription dunning windows to maximize failed payment recovery.
+  Learn benchmark window lengths for monthly and annual plans, leverage
+  Intelligent Retries, and decouple product access using webhooks to protect
+  revenue.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize subscription dunning windows to maximize failed payment recovery.
+    Learn benchmark window lengths for monthly and annual plans, leverage
+    Intelligent Retries, and decouple product access using webhooks to protect
+    revenue.
+  keywords:
+    - dunning window length
+    - subscription payment retries
+    - Intelligent Retries
+    - passive churn recovery
+    - billing frequency segmentation
+    - soft decline recovery
+    - Recurly webhooks
+    - subscription revenue protection
   robots: index
 ---
 <HTMLBlock>{`
