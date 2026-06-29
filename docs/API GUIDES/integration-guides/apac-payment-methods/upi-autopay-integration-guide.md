@@ -499,7 +499,7 @@ It is recommended that you listen for at least the three webhooks below, and add
 
 # Sandbox behavior
 
-**VPA Enrollment&#x20;**
+### **VPA Enrollment&#x20;**
 
 In Step 2, Sandbox `return_url` behavior is outlined, but requires a bit more explanation. You may render this URL in whatever way you wish (modal, full redirect, etc.) however it is not recommended to put an immense amount of effort into it as this is not a production workflow.
 
@@ -509,7 +509,7 @@ To help with simulating a consumer's bank app, the gateway has provided a simula
 
 **Step 2:** You're done!
 
-**QR or App Intent Enrollment&#x20;**
+### **QR or App Intent Enrollment&#x20;**
 
 This initial call will return different behavior in production than in sandbox.
 
