@@ -1,8 +1,25 @@
 ---
 title: 'Benchmarks 101: Churn benchmarks'
+excerpt: >-
+  Optimize customer retention using Recurly's churn benchmarks. Isolate
+  voluntary and involuntary churn to apply targeted payment recovery and
+  retention fixes.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize customer retention using Recurly's churn benchmarks. Isolate
+    voluntary and involuntary churn to apply targeted payment recovery and
+    retention fixes.
+  keywords:
+    - subscriber churn benchmarks
+    - voluntary churn rate
+    - involuntary churn rate
+    - payment failure recovery
+    - Recurly churn management
+    - customer retention tools
+    - dunning campaign optimization
+    - churn analytics dashboard
   robots: index
 ---
 <HTMLBlock>{`
