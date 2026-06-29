@@ -1,8 +1,25 @@
 ---
 title: 'Dunning 101: The Basics'
+excerpt: >-
+  Master subscription dunning basics with Recurly's Dunning 101 path. Learn to
+  optimize dunning windows, email messaging, and campaigns for maximum payment
+  recovery and reduced involuntary churn.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Master subscription dunning basics with Recurly's Dunning 101 path. Learn to
+    optimize dunning windows, email messaging, and campaigns for maximum payment
+    recovery and reduced involuntary churn.
+  keywords:
+    - dunning management
+    - failed payment recovery
+    - Recurly dunning windows
+    - subscription billing optimization
+    - dunning email strategy
+    - automated retry campaigns
+    - customer retention analytics
+    - involuntary churn reduction
   robots: index
 ---
 <HTMLBlock>{`
