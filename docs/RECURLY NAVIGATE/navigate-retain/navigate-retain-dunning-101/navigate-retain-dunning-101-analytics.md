@@ -1,8 +1,25 @@
 ---
 title: 'Dunning 101: Measuring your performance'
+excerpt: >-
+  Track and evaluate your subscription recovery success using Recurly's dunning
+  analytics. Learn how to monitor recovery rates, compare campaign data, and
+  measure total recovered revenue.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Track and evaluate your subscription recovery success using Recurly's
+    dunning analytics. Learn how to monitor recovery rates, compare campaign
+    data, and measure total recovered revenue.
+  keywords:
+    - Recurly dunning analytics
+    - dunning benchmarks report
+    - dunning performance metrics
+    - track subscription recovery rate
+    - recovered revenue tracking
+    - compare dunning campaigns
+    - churn management analytics
+    - dunning summary dashboard
   robots: index
 ---
 <HTMLBlock>{`
