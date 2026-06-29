@@ -1,8 +1,25 @@
 ---
 title: 'Dunning 101: Email configuration'
+excerpt: >-
+  Configure your Recurly dunning email templates to maximize subscription
+  recovery. Learn how to apply visual branding, insert dynamic personalization
+  variables, write escalating message copy, and test payment update links.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Configure your Recurly dunning email templates to maximize subscription
+    recovery. Learn how to apply visual branding, insert dynamic personalization
+    variables, write escalating message copy, and test payment update links.
+  keywords:
+    - Recurly email templates
+    - dunning email configuration
+    - dynamic personalization variables
+    - hard decline recovery
+    - payment update link
+    - subscription recovery emails
+    - transactional email branding
+    - dunning sequence setup
   robots: index
 ---
 <HTMLBlock>{`
