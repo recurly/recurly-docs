@@ -377,7 +377,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
 
     <!-- Section: Reflection -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-thought-bubble rc-fa-section"></i> Something to think about</h2>
+      <h2><i class="fa-solid fa-lightbulb rc-fa-section"></i> Something to think about</h2>
 
       <div class="rc-reflect-card">
         <span class="rc-reflect-label">Question 1 of 1 · Reflection</span>
