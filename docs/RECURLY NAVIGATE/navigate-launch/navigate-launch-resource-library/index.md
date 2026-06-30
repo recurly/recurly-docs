@@ -234,14 +234,6 @@ them.</p>
         </div>
 
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-list-check"></i></div>
-          <h4>Recurly Docs</h4>
-          <p>Comprehensive guides, API references, and best practices
-across all our products</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Explore docs ↗</a>
-        </div>
-
-        <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-gear"></i></div>
           <h4>Status page</h4>
           <p>Enroll for real-time incident reporting and status updates.</p>
