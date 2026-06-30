@@ -237,7 +237,7 @@ them.</p>
           <div class="rc-feature-icon"><i class="fa-solid fa-gear"></i></div>
           <h4>Status page</h4>
           <p>Enroll for real-time incident reporting and status updates.</p>
-          <a href="https://status.recurly.com/" target="_blank" rel="noopener noreferrer">Subscribe here ↗</a>
+          <a href="https://status.recurly.com/" target="_blank" rel="noopener noreferrer">Get updates ↗</a>
         </div>
         
 				<div class="rc-feature-card">
