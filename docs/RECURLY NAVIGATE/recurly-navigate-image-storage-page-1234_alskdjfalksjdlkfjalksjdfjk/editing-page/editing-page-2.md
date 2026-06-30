@@ -247,7 +247,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       <div class="rc-card">
         <h3><i class="fa-solid fa-compass rc-fa-section"></i> How Navigate delivers</h3>
-        <p><strong>Navigate is Recurly's digital Customer Success program</strong>: built to bring the best of our expertise directly to you...digitally. Every subscription business is different and your priorities change over time. Navigate is designed to meet you where you are.</p>
+        <p><strong>Navigate is Recurly's digital Customer Success program</strong>: built to bring the best of our expertise directly to you...digitally. Every subscription business is different and your priorities change over time.</p>
+				<p> Navigate is designed to meet you where you are with offerings like <strong>Customer Success Office Hours</strong>, <strong>curated learning paths</strong>, <strong>webinars</strong>, <strong>personalized performance updates</strong>, and more. We'll walk through the full program during this course.</p>
       </div>
 </div>
     
