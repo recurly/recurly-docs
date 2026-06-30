@@ -238,9 +238,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
  <div class="rc-lp-section">
       <h2><i class="fa-solid fa-hand-heart rc-fa-section"></i> What is Navigate?</h2>
-     <p>Before we begin, it's helpful to define the foundations behind Navigate, <strong>Customer Success</strong>, it's importance in your journey, and how it correlates to the program as a whole.</p>
+     <p>Before we begin, let's define the foundation of Navigate, <strong>Customer Success</strong>, it's importance in your journey, and how it correlates to the program as a whole.<br></p>
         <div class="rc-card">
-        <h3><i class="fa-solid fa-handshake rc-fa-section"></i> What is Customer Success?</h3>
+        <h3><i class="fa-solid fa-handshake rc-fa-section"></i> Understanding Customer Success</h3>
         <p><strong>Customer Success</strong> is about more than answering questions: it's about making sure you're getting <strong>real, measurable value</strong> from Recurly. Our Customer Success team connects what Recurly can do with what your business actually needs, proactively guiding you toward better outcomes at every stage of growth.</p>
       </div>
 
