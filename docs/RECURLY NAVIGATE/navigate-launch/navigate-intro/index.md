@@ -1,5 +1,5 @@
 ---
-title: Introduction to Navigate
+title: Welcome to Navigate
 deprecated: false
 hidden: true
 metadata:
