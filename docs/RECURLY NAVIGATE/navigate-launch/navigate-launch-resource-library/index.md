@@ -216,7 +216,7 @@ them.</p>
           <div class="rc-feature-icon"><i class="fa-solid fa-chart-line"></i></div>
           <h4>Upcoming & on-demand events</h4>
           <p>Browse upcoming Navigate webinars, book a live Customer Success Office Hours session, or view our library of educational on-demand events.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">View data ↗</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">View events ↗</a>
         </div>
       </div>
     </div>
