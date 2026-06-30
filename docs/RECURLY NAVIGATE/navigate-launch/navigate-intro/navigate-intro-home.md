@@ -194,7 +194,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         </div>
       </div>
 
-      <p style="font-size:.9rem;font-weight:700;color:#0D0D0D;text-transform:uppercase;letter-spacing:.6px;margin:20px 0 12px;">Or find it through Recurly Docs</p>
+      <p style="font-size:1rem;font-weight:700;color:#0D0D0D;text-transform:uppercase;letter-spacing:.6px;margin:20px 0 12px;"><strong><br>Or</strong> find it through Recurly Docs</p>
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
