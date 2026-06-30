@@ -96,7 +96,7 @@ Enabling tax collection in Canada applies 5% GST to all taxable plan, add-on, or
 </table>
 
 <div class="rp-callout rp-callout-important">
-  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Before you go live in Canada</strong>Before enabling Canadian tax collection in production, open a support ticket with <a href="mailto:support@recurly.com">support@recurly.com</a> so our team can configure your Avalara establishment and add your tax registration number on the backend. Your Canadian taxes won't calculate correctly until this is complete. [TODO: Confirm exact wording, requirement, and process with Jason Battle (Support) before publishing.]</div>
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Before you go live in Canada</strong>Before enabling Canadian tax collection in production, open a support ticket with <a href="mailto:support@recurly.com">support@recurly.com</a> so our team can configure your Avalara establishment and add your tax registration number on the backend. Your Canadian taxes won't calculate correctly until this is complete.</div>
 </div>
 
 ## Chile
