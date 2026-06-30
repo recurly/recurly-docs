@@ -298,8 +298,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
       </div>
 
       <div class="rc-lp-nav">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-welcome" class="rc-btn-prev">← Official welcome</a>
-        <span class="rc-lp-nav-indicator">3 of 5</span>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-btn-prev">← Welcome</a>
+        <span class="rc-lp-nav-indicator">1 of 3</span>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-btn-path">Next: Navigate Home →</a>
       </div>
     </div>
