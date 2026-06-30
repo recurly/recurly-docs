@@ -237,8 +237,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
 
  <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-hand-heart rc-fa-section"></i> What is Navigate?</h2>
-     <p>Before we begin, let's define the foundation of Navigate, <strong>Customer Success</strong>, it's importance in your journey, and how it correlates to the program as a whole.<br></p>
+      <h2><i class="fa-solid fa-question rc-fa-section"></i> What is Navigate?</h2>
+   <p>Before we begin, let's define the foundation of Navigate, <strong>Customer Success</strong>, it's importance in your journey, and how it correlates to the program as a whole.<br></p></div>
+
+ <div class="rc-lp-section">
+
         <div class="rc-card">
         <h3><i class="fa-solid fa-handshake rc-fa-section"></i> Understanding Customer Success</h3>
         <p><strong>Customer Success</strong> is about more than answering questions: it's about making sure you're getting <strong>real, measurable value</strong> from Recurly. Our Customer Success team connects what Recurly can do with what your business actually needs, proactively guiding you toward better outcomes at every stage of growth.</p>
@@ -256,6 +259,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <p>Drop in and ask a Customer Success Manager anything. No agenda required, just show up with your questions.</p>
           <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">Browse the Office Hours schedule →</a>
         </div>
+</div>
         <div class="rc-wi">
           <div class="rc-wi-header"><i class="fa-solid fa-headset" style="color:#FFD706;font-size:1.1rem;"></i><h4>1:1 Expert Sessions</h4></div>
           <p>Request a 1:1 session with a Customer Success Manager to dig into a specific challenge, review your setup, and map out next steps, focused entirely on your priorities.</p>
