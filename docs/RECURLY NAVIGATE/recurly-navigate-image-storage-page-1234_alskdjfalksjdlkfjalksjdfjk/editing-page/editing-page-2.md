@@ -264,7 +264,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-card">
         <h3><i class="fa-solid fa-compass rc-fa-section"></i> How Navigate delivers</h3>
         <p><strong>Navigate is Recurly's digital Customer Success program</strong>: built to bring the best of our expertise directly to you...digitally. Every subscription business is different and your priorities change over time.</p>
-				<p> Navigate is designed to meet you where you are with offerings like <strong>Customer Success Office Hours</strong>, <strong>curated learning paths</strong>, <strong>webinars</strong>, <strong>personalized performance updates</strong>, and more. We'll walk through the full program during this course.</p>
+				<p> Navigate is designed to meet you where you are with offerings like <strong>Customer Success Office Hours</strong>, <strong>curated learning paths</strong>, <strong>webinars</strong>, <strong>personalized performance updates</strong>, and more, all centered around the four pillars of the <strong>Subscription Flywheel: launch, acquire, retain, and pause</strong>. We'll walk through the full program during this course.</p>
       </div>
 </div>
     
@@ -272,56 +272,41 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
    <!-- SECTION: WHAT'S IN THIS COURSE -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-map rc-fa-section"></i> What's in this path</h2>
-      <p>This path walks you through everything you need to evaluate, configure, and measure Pause Subscriptions — in about eight minutes.</p>
+      <p>This path walks you through everything you need to know about the Navigate Customer Success Program and how to utilize our offerings — in about eight minutes.</p>
 
       <div class="rc-toc-list">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-toc-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-toc-card">
           <div class="rc-toc-num">1</div>
           <div class="rc-toc-body">
-            <h4>Why pause reduces churn</h4>
-            <p>Understand the business case — benchmarks, subscriber behavior data, and a real-world proof point from a Recurly merchant.</p>
+            <h4>The Subscription Flywheel</h4>
+            <p>Understand the four pillars of a success subscription business and how they will show up in your Navigate Customer Success program.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-toc-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-toc-card">
           <div class="rc-toc-num">2</div>
           <div class="rc-toc-body">
-            <h4>Things to consider before you enable</h4>
-            <p>Eligibility rules, the monthly vs. annual plan distinction, HAM limitations, and key caveats to know before you configure anything.</p>
+            <h4>"Navigating" Navigate</h4>
+            <p>Navigate Home is built to support every stage of your growth. Learn where to find what you need and how to get the most out of this resource.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-how-to-enable" class="rc-toc-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-toc-card">
           <div class="rc-toc-num">3</div>
           <div class="rc-toc-body">
-            <h4>How to enable pause</h4>
-            <p>Step-by-step configuration — how to set up pause via the Admin Console and API, and where to surface it in your subscriber experience.</p>
+            <h4>The full program</h4>
+            <p>Navigate is more than a hub. Explore the curated support, best practices, updates, and resources you'll receive as part of this program.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-tracking" class="rc-toc-card">
-          <div class="rc-toc-num">4</div>
-          <div class="rc-toc-body">
-            <h4>Tracking your pause impact</h4>
-            <p>The three metrics that tell you whether your pause strategy is working — and how to find them in Recurly.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-review" class="rc-toc-card">
-          <div class="rc-toc-num">5</div>
-          <div class="rc-toc-body">
-            <h4>Review &amp; resources</h4>
-            <p>A quick knowledge check and all the resources referenced throughout the path in one place.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
+      
       </div>
 
       <p style="font-size:.9rem; color:#807D73; line-height:1.6; margin:0 0 32px;">Work through the pages in order for the full picture, or jump directly to the topic most relevant to you right now.</p>
     </div>
 
       <div class="rc-lp-nav">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-btn-prev">← Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-btn-prev">Start path</a>
         <span class="rc-lp-nav-indicator">2 of 5</span>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-btn-path">Next: The Recurly flywheel →</a>
       </div>
