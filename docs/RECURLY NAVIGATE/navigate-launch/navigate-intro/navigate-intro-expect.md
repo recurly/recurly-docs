@@ -263,7 +263,7 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
         </div>
       </details>
       
-   <!-- ACCORDION 4: Live & On-Demand Events -->
+   <!-- ACCORDION 3: Live & On-Demand Events -->
       <details class="rc-phase-block">
         <summary class="rc-phase-label">
           <div class="rc-phase-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
@@ -285,43 +285,21 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
         </div>
       </details>
 
-
-
-      <!-- ACCORDION 2: 1:1 Expert Sessions -->
-      <details class="rc-phase-block">
+<!-- ACCORDION 4: Merchant scorecards -->
+      <details class="rc-phase-block" open>
         <summary class="rc-phase-label">
-          <div class="rc-phase-icon"><i class="fa-solid fa-headset"></i></div>
-          <div class="rc-phase-title"><h3>1:1 Expert Sessions</h3></div>
+          <div class="rc-phase-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="rc-phase-title"><h3>Navigate monthly scorecards</h3></div>
           <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
         </summary>
         <div class="rc-phase-content">
           <div class="rc-acc-grid">
             <div class="rc-acc-text">
-              <p>Dedicated 1:1 time with Santi, your Navigate Customer Success Manager. He'll review your setup, strategize on a goal, or work through a specific challenge, focused entirely on your priorities.</p> 
-<p><strong>Expert sessions are 100% private and tailored to your needs</strong>. No need to reach out to us, we'll contact you! If you have questions or would like to schedule a session, feel free to jump into a <a href="https://navigate.recurly.com/global-office-hours/">Customer Success Office Hours session</a>, and our CSMs will assist you.</p>
+             <p>Every <strong>second Tuesday of the month</strong>, you'll receive your Navigate Monthly Scorecard: a snapshot of your most important subscription health metrics, benchmarked against your prior year and industry averages.</p>
+             <p><strong>Note:</strong> You first scorecard will come 90-days post-production. Learn more <a href="https://share.synthesia.io/embeds/videos/28ddb99c-c1fa-4aab-9641-d875c4842fc5" target="_blank">here</a>.</p>
             </div>
-          </div>
-        </div>
-      </details>
-
- 
-      <!-- ACCORDION 4: Live & On-Demand Events -->
-      <details class="rc-phase-block">
-        <summary class="rc-phase-label">
-          <div class="rc-phase-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
-          <div class="rc-phase-title"><h3>Live &amp; On-Demand Events</h3></div>
-          <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
-        </summary>
-        <div class="rc-phase-content">
-          <div class="rc-acc-grid">
-            <div class="rc-acc-text">
-              <p>Regular live sessions on new features, optimization strategies, and subscription trends, with Q&amp;A and on-demand recordings for everything.</p>
-              <p><a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">Browse upcoming webinars →</a></p>
-            </div>
-            <!-- Video Embed Placeholder -->
-            <div class="rc-video-embed">
-              <div class="rc-placeholder-box">Leave room for video embed</div>
-              <iframe src="YOUR_VIDEO_URL" loading="lazy" allowfullscreen></iframe>
+            <div class="rc-scorecard-img">
+              <img src="https://files.readme.io/8575081b1976d2d698d93166c69ce11a3653bd92b42855547efb96115cdc8c35-Updated_Scorecard_Image.svg" />
             </div>
           </div>
         </div>
@@ -347,6 +325,26 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
           </div>
         </div>
       </details>
+
+
+
+      <!-- ACCORDION 6: 1:1 Expert Sessions -->
+      <details class="rc-phase-block">
+        <summary class="rc-phase-label">
+          <div class="rc-phase-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="rc-phase-title"><h3>1:1 Expert Sessions</h3></div>
+          <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
+        </summary>
+        <div class="rc-phase-content">
+          <div class="rc-acc-grid">
+            <div class="rc-acc-text">
+              <p>Dedicated 1:1 time with Santi, your Navigate Customer Success Manager. He'll review your setup, strategize on a goal, or work through a specific challenge, focused entirely on your priorities.</p> 
+<p><strong>Expert sessions are 100% private and tailored to your needs</strong>. No need to reach out to us, we'll contact you! If you have questions or would like to schedule a session, feel free to jump into a <a href="https://navigate.recurly.com/global-office-hours/">Customer Success Office Hours session</a>, and our CSMs will assist you.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
 
       <!-- EMAIL WHITELIST -->
       <div class="rc-callout-warning-box" style="margin-top: 32px;">
