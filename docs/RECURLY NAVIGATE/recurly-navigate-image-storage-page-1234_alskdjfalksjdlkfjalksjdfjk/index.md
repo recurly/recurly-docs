@@ -64,4 +64,6 @@ metadata:
 
 ![](https://files.readme.io/c54eb207d25f243ff84c09f412a0d95656d5b2b23129df2c84ec9e5391d3b674-image_13.png)
 
+![](https://files.readme.io/5aebf67d8d604594b0febe1d6a50f943407ce7962e25f44faa733ecd7868e341-Calendar_examples.gif)
+
 <br />
