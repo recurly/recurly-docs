@@ -290,8 +290,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-home-title-block">
 
-        <h1>Find your path. Fuel your growth.<br></h1>
-<h3>Your Recurly Customer Success home.</h3>
+        <h1>Find your path. Fuel your growth<br></h1>
+<h3>Your Recurly Customer Success hub</h3>
      
 <p><br>Select a pillar below to uncover best practices, expert customer success guidance, and on-demand education tailored to launch, grow, and scale your subscription business.</p>
       </div>
