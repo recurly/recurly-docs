@@ -232,24 +232,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-map-location-dot rc-fa-section"></i> You are here</h2>
 
-        <h3><i class="fa-solid fa-compass rc-fa-section"></i> What is this course?</h3>
         <p>This course is your official orientation to <strong>Recurly Navigate</strong> — a digital Customer Success program that gives you the best practices, expert guidance, and product insights you need, right when you need them.</p>
         <p>Whether you're brand new to Recurly or just joining the Navigate program, this course walks you through everything: how we support you, where to find every resource, and what to expect from us.</p>
       </div>
 
  <div class="rc-lp-section">
       <h2><i class="fa-solid fa-hand-heart rc-fa-section"></i> What is Navigate?</h2>
-   <div class="rc-card">
-     <p>Before we begin, it's helpful to define <strong>Customer Success</strong>, the foundation of Navigate, and how we built this program to stragically meet you where you're at, when you need us.</p>
-
-        <h3><i class="fa-solid fa-handshake rc-fa-section"></i> What is Navigate?</h3>
-        <p>Before we begin, it's helpful to define <strong>Customer Success</strong>, the foundation of Navigate, and how we built this program to stragically meet you where you're at, when you need us.</p>
+     <p>Before we begin, it's helpful to define the foundations behind Navigate, <strong>Customer Success</strong>, it's importance in your journey, and how it correlates to the program as a whole.</p>
+        <div class="rc-card">
+        <h3><i class="fa-solid fa-handshake rc-fa-section"></i> What is Customer Success?</h3>
         <p><strong>Customer Success</strong> is about more than answering questions: it's about making sure you're getting <strong>real, measurable value</strong> from Recurly. Our Customer Success team connects what Recurly can do with what your business actually needs, proactively guiding you toward better outcomes at every stage of growth.</p>
       </div>
 
       <div class="rc-card">
-        <h3><i class="fa-solid fa-compass rc-fa-section"></i> What is Recurly Navigate?</h3>
-        <p><strong>Navigate is Recurly's digital Customer Success program</strong>: built to bring the best of our expertise directly to you at scale. Every subscription business is different and your priorities change over time. Navigate is designed to meet you where you are.</p>
+        <h3><i class="fa-solid fa-compass rc-fa-section"></i> How Navigate delivers</h3>
+        <p><strong>Navigate is Recurly's digital Customer Success program</strong>: built to bring the best of our expertise directly to you...digitally. Every subscription business is different and your priorities change over time. Navigate is designed to meet you where you are.</p>
       </div>
 
       <h2><i class="fa-solid fa-grid-2 rc-fa-section"></i> What's included in Navigate</h2>
