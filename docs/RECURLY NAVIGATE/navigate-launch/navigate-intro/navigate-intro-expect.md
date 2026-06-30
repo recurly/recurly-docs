@@ -1,5 +1,5 @@
 ---
-title: 'Welcome: The Full Program'
+title: 'Welcome: The full program'
 deprecated: false
 hidden: true
 metadata:
@@ -272,7 +272,7 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
             </div>
             <!-- Video Embed Placeholder -->
             <div class="rc-video-embed">
-              <div class="rc-placeholder-box">Leave room for video embed</div>
+              <div class="https://share.synthesia.io/embeds/videos/52ee9622-b163-4925-b9f2-fe2469a5523c">Leave room for video embed</div>
               <!-- <iframe src="YOUR_VIDEO_URL" loading="lazy" allowfullscreen></iframe> -->
             </div>
           </div>
