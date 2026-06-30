@@ -238,10 +238,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <p>Whether you're brand new to Recurly or just joining the Navigate program, this course walks you through everything: how we support you, where to find every resource, and what to expect from us.</p>
       </div>
 
+ <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-hand-heart rc-fa-section"></i> What is Navigate?</h2>
+   <div class="rc-card">
+     <p>Before we begin, it's helpful to define <strong>Customer Success</strong>, the foundation of Navigate, and how we built this program to stragically meet you where you're at, when you need us.</p>
 
-      <div class="rc-card">
-        <h3><i class="fa-solid fa-handshake rc-fa-section"></i> What is Customer Success?</h3>
-        <p>Customer Success is about more than answering questions: it's about making sure you're getting <strong>real, measurable value</strong> from Recurly. Our Customer Success team connects what Recurly can do with what your business actually needs, proactively guiding you toward better outcomes at every stage of growth.</p>
+        <h3><i class="fa-solid fa-handshake rc-fa-section"></i> What is Navigate?</h3>
+        <p>Before we begin, it's helpful to define <strong>Customer Success</strong>, the foundation of Navigate, and how we built this program to stragically meet you where you're at, when you need us.</p>
+        <p><strong>Customer Success</strong> is about more than answering questions: it's about making sure you're getting <strong>real, measurable value</strong> from Recurly. Our Customer Success team connects what Recurly can do with what your business actually needs, proactively guiding you toward better outcomes at every stage of growth.</p>
       </div>
 
       <div class="rc-card">
