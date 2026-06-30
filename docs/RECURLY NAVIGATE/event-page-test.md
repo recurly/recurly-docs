@@ -1,7 +1,7 @@
 ---
 title: Recurly Navigate Events
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: true
   url: https://navigate.recurly.com/event-hub/
