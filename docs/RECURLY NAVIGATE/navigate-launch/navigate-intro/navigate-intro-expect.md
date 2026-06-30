@@ -239,6 +239,53 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
           </div>
         </div>
       </details>
+      
+      <!-- ACCORDION 2: Office Hours -->
+      <details class="rc-phase-block">
+        <summary class="rc-phase-label">
+          <div class="rc-phase-icon"><i class="fa-solid fa-calendar-days"></i></div>
+          <div class="rc-phase-title"><h3>Weekly Customer Success Office Hours</h3></div>
+          <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
+        </summary>
+        <div class="rc-phase-content">
+          <div class="rc-acc-grid">
+            <div class="rc-acc-text">
+              <p>Drop in and ask a Customer Success Manager anything. No appointment or agenda required.</p>
+              <p>Below is an example of what you can expect! Jaclyn, Customer Success Manager, walks one Recurly merchant through global payment gateway optimization.</p>
+              <p><a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">View Office Hours schedule →</a></p>
+            </div>
+            <!-- Video Embed Placeholder -->
+            <div class="rc-video-embed">
+       <div class="rc-placeholder-box">Office Hours: Payment gateways</div>
+   <iframe src="https://share.synthesia.io/embeds/videos/52ee9622-b163-4925-b9f2-fe2469a5523c" loading="lazy" allowfullscreen></iframe> -->
+            </div>
+          </div>
+        </div>
+      </details>
+      
+   <!-- ACCORDION 4: Live & On-Demand Events -->
+      <details class="rc-phase-block">
+        <summary class="rc-phase-label">
+          <div class="rc-phase-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+          <div class="rc-phase-title"><h3>Live &amp; On-Demand Events</h3></div>
+          <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
+        </summary>
+        <div class="rc-phase-content">
+          <div class="rc-acc-grid">
+            <div class="rc-acc-text">
+              <p>Regular live sessions on new features, optimization strategies, and subscription trends, with Q&amp;A and on-demand recordings for everything.</p>
+              <p><a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">Browse upcoming webinars →</a></p>
+            </div>
+            <!-- Video Embed Placeholder -->
+            <div class="rc-video-embed">
+              <div class="rc-placeholder-box">Leave room for video embed</div>
+              <iframe src="YOUR_VIDEO_URL" loading="lazy" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </details>
+
+
 
       <!-- ACCORDION 2: 1:1 Expert Sessions -->
       <details class="rc-phase-block">
@@ -257,28 +304,7 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
         </div>
       </details>
 
-      <!-- ACCORDION 3: Office Hours -->
-      <details class="rc-phase-block">
-        <summary class="rc-phase-label">
-          <div class="rc-phase-icon"><i class="fa-solid fa-calendar-days"></i></div>
-          <div class="rc-phase-title"><h3>Weekly Customer Success Office Hours</h3></div>
-          <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
-        </summary>
-        <div class="rc-phase-content">
-          <div class="rc-acc-grid">
-            <div class="rc-acc-text">
-              <p>Drop in and ask a Customer Success Manager anything. No appointment or agenda required.</p>
-              <p><a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">View Office Hours schedule →</a></p>
-            </div>
-            <!-- Video Embed Placeholder -->
-            <div class="rc-video-embed">
-     
-   <iframe src="https://share.synthesia.io/embeds/videos/52ee9622-b163-4925-b9f2-fe2469a5523c" loading="lazy" allowfullscreen></iframe> -->
-            </div>
-          </div>
-        </div>
-      </details>
-
+ 
       <!-- ACCORDION 4: Live & On-Demand Events -->
       <details class="rc-phase-block">
         <summary class="rc-phase-label">
