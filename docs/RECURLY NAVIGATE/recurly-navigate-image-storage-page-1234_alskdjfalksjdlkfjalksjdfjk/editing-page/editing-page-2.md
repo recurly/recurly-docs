@@ -122,7 +122,33 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-wi p { font-size: .85rem; color: #807D73; line-height: 1.6; margin: 0 0 10px; }
 .rc-wi p:last-child { margin-bottom: 0; }
 .rm-Markdown.markdown-body .rc-guide .rc-wi a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-wi a { color: #FF8200 !important; font-size: .82rem; font-weight: 700; border-bottom: 0 !important; }
+  .rc-guide .rc-wi a { color: #FF8200 !important; font-size: .82rem; font-weight: 700; border-bottom: 0 !important; }
+  
+/* ── TOC CARDS ── */
+.rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
+.rc-toc-card {
+  display: grid; grid-template-columns: 44px 1fr 32px;
+  align-items: center; gap: 16px;
+  background: #FFFDF2; border: 1px solid #CCC9B8;
+  border-radius: 12px; padding: 18px 22px;
+  transition: all .2s ease;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-toc-card { border-bottom: 1px solid #CCC9B8 !important; color: #32312D !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-toc-card:hover { border-color: #FF9D88; border-bottom: 1px solid #FF9D88 !important; box-shadow: 0 4px 14px rgba(255,157,136,0.12); transform: translateX(3px); }
+.rc-toc-num {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: #0D0D0B; color: #FFD706;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .85rem; font-weight: 800; flex-shrink: 0;
+}
+.rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0 0 4px; }
+.rc-toc-body p { font-size: .88rem; color: #807D73; line-height: 1.5; margin: 0; }
+.rc-toc-arrow { font-size: 1.1rem; color: #CCC9B8; text-align: right; transition: color .2s; }
+.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #FF9D88; }
+
+
 
 /* PATH NAV BUTTONS */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
@@ -253,30 +279,56 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 </div>
     
 
- <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-list rc-fa-section"></i> What's in this course?</h2>
-      <div class="rc-wi-grid">
-        <div class="rc-wi">
-          <div class="rc-wi-header"><i class="fa-solid fa-calendar-days" style="color:#FFD706;font-size:1.1rem;"></i><h4>Open Office Hours</h4></div>
-          <p>Drop in and ask a Customer Success Manager anything. No agenda required, just show up with your questions.</p>
-          <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">Browse the Office Hours schedule →</a>
-        </div>
-        <div class="rc-wi">
-          <div class="rc-wi-header"><i class="fa-solid fa-headset" style="color:#FFD706;font-size:1.1rem;"></i><h4>1:1 Expert Sessions</h4></div>
-          <p>Request a 1:1 session with a Customer Success Manager to dig into a specific challenge, review your setup, and map out next steps, focused entirely on your priorities.</p>
-          <a href="mailto:recurlynavigate@recurly.com">Request an Expert Session →</a>
-        </div>
-        <div class="rc-wi">
-          <div class="rc-wi-header"><i class="fa-solid fa-tower-broadcast" style="color:#FFD706;font-size:1.1rem;"></i><h4>Webinars &amp; feature sessions</h4></div>
-          <p>Regular webinars on new Recurly features, optimization strategies, and subscription trends. Live sessions include Q&amp;A, and every session is available on demand afterward.</p>
-          <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">See upcoming webinars →</a>
-        </div>
-        <div class="rc-wi">
-          <div class="rc-wi-header"><i class="fa-solid fa-book-open" style="color:#FFD706;font-size:1.1rem;"></i><h4>Learning Paths &amp; on-demand</h4></div>
-          <p>Self-paced learning paths, how-to guides, and best practice articles, all organized so you can find what's most relevant to where you are right now.</p>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" target="_blank" rel="noopener noreferrer">Explore Navigate Home →</a>
-        </div>
+   <!-- SECTION: WHAT'S IN THIS COURSE -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-map rc-fa-section"></i> What's in this path</h2>
+      <p>This path walks you through everything you need to evaluate, configure, and measure Pause Subscriptions — in about eight minutes.</p>
+
+      <div class="rc-toc-list">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-toc-card">
+          <div class="rc-toc-num">1</div>
+          <div class="rc-toc-body">
+            <h4>Why pause reduces churn</h4>
+            <p>Understand the business case — benchmarks, subscriber behavior data, and a real-world proof point from a Recurly merchant.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-toc-card">
+          <div class="rc-toc-num">2</div>
+          <div class="rc-toc-body">
+            <h4>Things to consider before you enable</h4>
+            <p>Eligibility rules, the monthly vs. annual plan distinction, HAM limitations, and key caveats to know before you configure anything.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-how-to-enable" class="rc-toc-card">
+          <div class="rc-toc-num">3</div>
+          <div class="rc-toc-body">
+            <h4>How to enable pause</h4>
+            <p>Step-by-step configuration — how to set up pause via the Admin Console and API, and where to surface it in your subscriber experience.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-tracking" class="rc-toc-card">
+          <div class="rc-toc-num">4</div>
+          <div class="rc-toc-body">
+            <h4>Tracking your pause impact</h4>
+            <p>The three metrics that tell you whether your pause strategy is working — and how to find them in Recurly.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-review" class="rc-toc-card">
+          <div class="rc-toc-num">5</div>
+          <div class="rc-toc-body">
+            <h4>Review &amp; resources</h4>
+            <p>A quick knowledge check and all the resources referenced throughout the path in one place.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
       </div>
+
+      <p style="font-size:.9rem; color:#807D73; line-height:1.6; margin:0 0 32px;">Work through the pages in order for the full picture, or jump directly to the topic most relevant to you right now.</p>
+    </div>
 
       <div class="rc-lp-nav">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-btn-prev">← Overview</a>
