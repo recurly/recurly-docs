@@ -8,7 +8,7 @@ excerpt: >-
   recognition for enterprise-grade growth. Optimized for subscription leaders
   seeking data-driven insights and secure, scalable payment ecosystems.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   keywords:
     - Subscription analytics
