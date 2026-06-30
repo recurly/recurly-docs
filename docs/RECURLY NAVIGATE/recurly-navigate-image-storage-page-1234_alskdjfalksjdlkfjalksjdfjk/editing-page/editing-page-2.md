@@ -124,29 +124,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide .rc-wi a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
   .rc-guide .rc-wi a { color: #FF8200 !important; font-size: .82rem; font-weight: 700; border-bottom: 0 !important; }
   
-/* ── TOC CARDS ── */
-.rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
-.rc-toc-card {
-  display: grid; grid-template-columns: 44px 1fr 32px;
-  align-items: center; gap: 16px;
-  background: #FFFDF2; border: 1px solid #CCC9B8;
-  border-radius: 12px; padding: 18px 22px;
-  transition: all .2s ease;
-}
+/* TOC CARDS */
+.rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 32px; }
+.rc-toc-card { display: grid; grid-template-columns: 44px 1fr 32px; align-items: center; gap: 16px; background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 18px 22px; transition: all .2s ease; }
 .rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-toc-card { border-bottom: 1px solid #CCC9B8 !important; color: #32312D !important; }
+.rc-guide a.rc-toc-card { color: #32312D !important; border-bottom: 1px solid #CCC9B8 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-toc-card:hover { border-color: #FF9D88; border-bottom: 1px solid #FF9D88 !important; box-shadow: 0 4px 14px rgba(255,157,136,0.12); transform: translateX(3px); }
-.rc-toc-num {
-  width: 36px; height: 36px; border-radius: 50%;
-  background: #0D0D0B; color: #FFD706;
-  display: flex; align-items: center; justify-content: center;
-  font-size: .85rem; font-weight: 800; flex-shrink: 0;
-}
+.rc-guide a.rc-toc-card:hover { border-color: #CCC9B8; border-bottom: 1px solid #CCC9B8 !important; box-shadow: 0 4px 14px rgba(204,201,184,0.35); transform: translateX(3px); color: #32312D !important; }
+.rc-toc-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; }
 .rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0 0 4px; }
 .rc-toc-body p { font-size: .88rem; color: #807D73; line-height: 1.5; margin: 0; }
 .rc-toc-arrow { font-size: 1.1rem; color: #CCC9B8; text-align: right; transition: color .2s; }
-.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #FF9D88; }
+.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #CCC9B8; }
+
 
 
 
