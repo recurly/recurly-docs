@@ -169,7 +169,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-home-title-block">
         <h1>Resource library</h1>
-        <p>A complete collection of guides, webinars, and tools to optimize your Recurly implementation.</p>
+        <p>All your essential Recurly links, tools, and support resources. Right where you need them, when you need
+them.</p>
       </div>
     </div>
 
@@ -199,16 +200,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-card-grid rc-card-grid-3col">
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-regular fa-file-lines"></i></div>
-          <h4>Guide title placeholder</h4>
-          <p>A brief, instructional explanation of what this guide covers and how it applies to your setup.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Read the guide ↗</a>
+          <h4>What is Navigate?</h4>
+          <p>Overview of Recurly's Customer Success program, built for you.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Book session ↗</a>
         </div>
         
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-circle-play"></i></div>
-          <h4>Webinar title placeholder</h4>
-          <p>A brief summary of the key concepts discussed during this on-demand recording.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Watch on demand ↗</a>
+          <h4>Global Office Hours calendar</h4>
+          <p>Connect directly with our Customer Success Managers in small-group sessions built for practical, real-time problem-solving.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Book session ↗</a>
         </div>
 
         <div class="rc-feature-card">
