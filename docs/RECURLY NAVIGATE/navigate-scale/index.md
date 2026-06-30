@@ -360,7 +360,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
-        <a href="#" class="rc-path-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
@@ -370,21 +370,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
-        <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
-          </div>
-          <div class="rc-path-content">
-            <h3>Data exports &amp; acquisition data</h3>
-            <p>Take your data to go. Learn how to leverage Recurly's robust data exports and acquisition data to power your internal BI tools.</p>
-          </div>
-          <div class="rc-path-arrow">Start path →</div>
-        </a>
       </div>
     </div>
 
     <!-- ── GLOBAL EXPANSION ── -->
-    <div id="expansion" class="rc-category">
+    <div id="expansion" class="rc-category" style="display: none;">
       <h2><i class="fa-solid fa-globe rc-fa-section"></i> Global expansion</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
@@ -431,7 +421,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- ── REVENUE OPTIMIZATION & SECURITY ── -->
-    <div id="optimization" class="rc-category">
+    <div id="optimization" class="rc-category" style="display: none;">
       <h2><i class="fa-solid fa-shield-halved rc-fa-section"></i> Revenue optimization &amp; security</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
