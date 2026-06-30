@@ -290,7 +290,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-home-title-block">
         <h1>Recurly Navigate</h1>
-        <p>Customer success at your fingertips.</p>
+        <p>Find your path. Fuel your growth. Your digital Customer Success Program.</p>
 <p>Select a pillar below to uncover best practices, expert customer success guidance, and on-demand education tailored to launch, grow, and scale your subscription business.</p>
       </div>
     </div>
