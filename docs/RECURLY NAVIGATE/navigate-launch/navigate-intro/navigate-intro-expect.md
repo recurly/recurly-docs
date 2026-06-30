@@ -278,15 +278,15 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
             </div>
             <!-- Video Embed Placeholder -->
             <div class="rc-video-embed">
-              <div class="rc-placeholder-box">Leave room for video embed</div>
-              <iframe src="YOUR_VIDEO_URL" loading="lazy" allowfullscreen></iframe>
+              <div class="rc-placeholder-box">Lunch & Learn: Dunning optimization</div>
+              <iframe src="https://share.synthesia.io/embeds/videos/c6852b81-4b0e-49b1-85ba-a4b09b5f6c88" loading="lazy" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </details>
 
 <!-- ACCORDION 4: Merchant scorecards -->
-      <details class="rc-phase-block" open>
+      <details class="rc-phase-block">
         <summary class="rc-phase-label">
           <div class="rc-phase-icon"><i class="fa-solid fa-location-dot"></i></div>
           <div class="rc-phase-title"><h3>Navigate monthly scorecards</h3></div>
