@@ -7,261 +7,333 @@ metadata:
 ---
 <HTMLBlock>{`
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<style>
-/* HOST-THEME BACKGROUND OVERRIDE */
-body { background: #ffffff !important; }
 
-/* GLOBAL CSS IMMUNITY BLOCK */
+<style>
+body { background: #ffffff !important; }
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
 .rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
 .rc-guide [class^="fa-"], .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands, .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
-
-/* NAVIGATE MASTER ARMOR */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a, .rc-guide a:link, .rc-guide a:visited, .rc-guide a:hover, .rc-guide a:active {
   text-decoration: none !important; text-decoration-line: none !important;
   text-decoration-color: transparent !important; text-underline-offset: unset !important; border-bottom: 0 !important;
 }
-
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-.rc-guide {
-  --yellow: #FFD706; --orange: #FF8200; --offblack: #0D0D0B; --darkgray: #32312D;
-  --gray: #807D73; --lightgray: #CCC9B8; --brightgray: #F1EFE3; --offwhite: #FFFDF2;
-  color: #32312D !important; background: #ffffff;
-}
+.rc-guide { --yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2; color:#32312D !important; background:#ffffff; }
 .rc-guide * { box-sizing: border-box; }
-.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
-.rc-fa-dark { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-section { color: #0D0D0B; font-size: 1rem; }
+.rc-fa-announce { color:#0D0D0B; font-size:1rem; flex-shrink:0; }
+.rc-fa-dark { color:#FFD706 !important; font-size:1.3rem; display:block; margin-bottom:10px; }
+.rc-fa-light { color:#0D0D0B; font-size:1.3rem; display:block; margin-bottom:10px; }
+.rc-fa-section { color:#0D0D0B; font-size:1rem; }
+.rc-top-nav { padding:20px 40px 16px; max-width:1200px; margin:0 auto; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-back-link { color:#807D73 !important; font-weight:700; font-size:.9rem; display:inline-flex; align-items:center; gap:6px; transition:color .2s; border-bottom:0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover, .rc-guide a.rc-back-link:hover { color:#FF8200 !important; }
+.rc-content-wrap { max-width:1200px; margin:0 auto; padding:0 40px; }
+.rc-announce-bar { display:none; background:#FFD706; color:#0D0D0B; align-items:center; justify-content:space-between; padding:10px 20px; font-size:.88rem; font-weight:600; border-radius:10px; margin-bottom:16px; gap:12px; line-height:1.4; }
+.rc-announce-bar.rc-active { display:flex; }
+.rc-announce-inner { display:flex; align-items:center; gap:10px; flex:1; flex-wrap:wrap; }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-announce-link { color:#0D0D0B !important; font-weight:800; white-space:nowrap; padding:4px 12px; background:rgba(0,0,0,0.10); border-radius:6px; transition:background 0.2s; border-bottom:0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover, .rc-guide a.rc-announce-link:hover { background:rgba(0,0,0,0.20); color:#0D0D0B !important; }
+.rc-hero { background:linear-gradient(rgba(13,13,11,0.82),rgba(13,13,11,0.82)),url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center; background-color:#0D0D0B; background-size:cover; color:#fff; padding:40px 40px 44px; text-align:center; border-radius:16px; margin-bottom:0; }
+.rc-pillar-icon-row { display:flex; justify-content:center; gap:12px; margin:36px auto 24px; flex-wrap:wrap; }
+.rc-pillar-icon-chip { display:inline-flex; align-items:center; gap:7px; padding:7px 14px; border-radius:20px; font-size:.72rem; font-weight:800; letter-spacing:.8px; text-transform:uppercase; }
+.rc-pillar-icon-chip img { width:14px; height:14px; object-fit:contain; }
+.rc-chip-launch { background:rgba(204,201,184,0.20); border:1px solid rgba(204,201,184,0.45); color:#CCC9B8; }
+.rc-chip-acquire { background:rgba(255,215,6,0.20); border:1px solid rgba(255,215,6,0.45); color:#FFD706; }
+.rc-chip-retain { background:rgba(255,157,136,0.20); border:1px solid rgba(255,157,136,0.45); color:#FF9D88; }
+.rc-chip-scale { background:rgba(255,88,16,0.20); border:1px solid rgba(255,88,16,0.45); color:#FF5810; }
+.rc-hero h1 { font-size:2.4rem; font-weight:800; line-height:1.15; color:#FFFDF2; margin:0 0 14px; }
+.rc-hero-sub { font-size:1rem; opacity:.85; max-width:640px; margin:0 auto; color:#CCC9B8; line-height:1.6; }
+details.rc-sticky-nav-wrap { position:relative; z-index:1; background-color:#F1EFE3; box-shadow:0 4px 12px rgba(0,0,0,0.08); margin:24px 0 48px; border-radius:12px; border:1px solid rgba(0,0,0,0.08); overflow:hidden; }
+details.rc-sticky-nav-wrap > summary { list-style:none; display:flex; align-items:center; padding:15px 24px; cursor:pointer; user-select:none; }
+details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display:none; }
+details.rc-sticky-nav-wrap > summary::marker { display:none; }
+.rc-nav-toggle-label { display:inline-flex; align-items:center; gap:8px; font-weight:800; font-size:.88rem; letter-spacing:0.6px; text-transform:uppercase; color:#0D0D0B; }
+.rc-nav-chevron { font-size:.72rem; color:#0D0D0B; opacity:0.55; line-height:1; transition:transform 0.25s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform:rotate(180deg); }
+.rc-nav-drawer { display:grid; grid-template-rows:0fr; transition:grid-template-rows 0.3s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
+.rc-nav-drawer-inner { overflow:hidden; border-top:1px solid rgba(0,0,0,0.10); }
+.rc-nav-links { display:flex; flex-wrap:wrap; gap:6px 4px; padding:12px 20px 18px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-sticky-link { color:#0D0D0B !important; font-weight:700; font-size:.83rem; letter-spacing:0.4px; text-transform:uppercase; padding:7px 14px; border-radius:7px; transition:all .18s; white-space:nowrap; display:inline-flex; align-items:center; gap:6px; border-bottom:0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover, .rc-guide a.rc-sticky-link:hover { background:rgba(0,0,0,0.10); color:#0D0D0B !important; }
+.rc-sticky-link img { width:15px; height:15px; object-fit:contain; }
+.rc-step-badge { display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px; border-radius:50%; background:#0D0D0B; color:#FFD706; font-size:.65rem; font-weight:800; flex-shrink:0; line-height:1; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-sticky-link-active { font-weight:800; color:#0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover, .rc-guide a.rc-sticky-link-active:hover { background:rgba(0,0,0,0.10); color:#0D0D0B !important; }
+.rc-lp-section { margin-bottom:48px; }
+.rc-lp-section h2 { font-size:1.5rem; font-weight:800; margin:0 0 20px; color:#0D0D0B; display:flex; align-items:center; gap:12px; }
+.rc-lp-section h2::after { content:""; flex-grow:1; height:1px; background:#CCC9B8; }
+.rc-lp-section > p { font-size:.95rem; line-height:1.65; color:#32312D; margin:0 0 16px; }
+/* FLYWHEEL HERO CARD */
+.rc-flywheel-hero { background:#FFFDF2; border-radius:14px; border:1px solid #CCC9B8; padding:28px; margin-bottom:24px; display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap; }
+.rc-flywheel-img { flex:0 0 220px; border-radius:10px; overflow:hidden; background:#0D0D0B; display:flex; align-items:center; justify-content:center; min-height:220px; }
+.rc-flywheel-img img { width:100%; height:auto; display:block; }
+.rc-flywheel-text { flex:1; min-width:200px; }
+.rc-flywheel-text p { font-size:.93rem; color:#32312D; line-height:1.65; margin:0 0 10px; }
+.rc-flywheel-text p:last-child { margin-bottom:0; }
 
-.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
-.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+/* PILLAR CARDS */
+.rc-pillar-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:32px; }
+.rc-pillar { border-radius:14px; overflow:hidden; border:1px solid #CCC9B8; }
+.rc-pillar-head { padding:18px 20px; display:flex; align-items:center; gap:14px; }
+.rc-pillar-head-icon { width:40px; height:40px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.rc-pillar-head-icon img { width: 32px; height: auto; object-fit: contain; }
+.rc-pillar-head h3 { font-size:1.05rem; font-weight:800; margin:0 0 2px; color:#0D0D0B; }
+.rc-pillar-head p { font-size:.8rem; margin:0; color:#32312D; }
+.rc-pillar-scale .rc-pillar-head h3, .rc-pillar-scale .rc-pillar-head p { color:#0D0D0B; }
+.rc-pillar-body { padding:18px 20px; background:#FFFDF2; }
+.rc-pillar-body p { font-size:.88rem; color:#32312D; line-height:1.65; margin:0 0 12px; }
+.rc-tags { display:flex; flex-wrap:wrap; gap:6px; }
+.rc-tag { display:inline-block; padding:3px 10px; border-radius:20px; font-size:11px; font-weight:700; background:#0D0D0B; color:#FFD706; }
+.rc-pillar-launch .rc-pillar-head { background:#CCC9B8; }
+.rc-pillar-acquire .rc-pillar-head { background:#FFD706; }
+.rc-pillar-retain .rc-pillar-head { background:#FF9D88; }
+.rc-pillar-scale .rc-pillar-head { background:#FF5810; }
 
-.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-.rc-hero {
-  background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)), url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
-  background-color: var(--offblack); background-size: cover; color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0;
-}
-.rc-lp-pillar-tag { margin-bottom: 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
-.rc-pillar-icon-chip { display: inline-flex; align-items: center; gap: 7px; padding: 7px 14px; border-radius: 20px; font-size: .72rem; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; }
-.rc-pillar-icon-chip img { width: 14px; height: 14px; object-fit: contain; }
-.rc-chip-launch { background: rgba(204,201,184,0.20); border: 1px solid rgba(204,201,184,0.45); color: #CCC9B8; }
-.rc-chip-acquire { background: rgba(255,215,6,0.20); border: 1px solid rgba(255,215,6,0.45); color: #FFD706; }
-.rc-chip-retain { background: rgba(255,157,136,0.20); border: 1px solid rgba(255,157,136,0.45); color: #FF9D88; }
-.rc-chip-scale { background: rgba(255,88,16,0.20); border: 1px solid rgba(255,88,16,0.45); color: #FF5810; }
-.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0 0 14px; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
-
-details.rc-sticky-nav-wrap { position: sticky; top: 0; z-index: 100; background-color: var(--brightgray); box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
-details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
-details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
-details.rc-sticky-nav-wrap > summary::marker { display: none; }
-.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: var(--offblack); }
-.rc-nav-chevron { font-size: .72rem; color: var(--offblack); opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
-details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
-.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
-details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
-.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
-.rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link { color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
-.rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
-
-.rc-lp-section { margin-bottom: 48px; }
-.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
-.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
-.rc-lp-section > p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
-
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
-.rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rc-feature-card:hover { border-color: #CCC9B8; box-shadow: 0 4px 16px rgba(204,201,184,0.15); transform: translateY(-2px); }
-.rc-feature-icon { font-size: 1.4rem; line-height: 1; color: var(--offblack); }
-.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
-
-.rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
-.rc-toc-card { display: grid; grid-template-columns: 44px 1fr 32px; align-items: center; gap: 16px; background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 18px 22px; transition: all .2s ease; }
-.rc-guide a.rc-toc-card { border-bottom: 1px solid var(--lightgray) !important; }
-.rc-guide a.rc-toc-card:hover { border-color: #CCC9B8; border-bottom: 1px solid #CCC9B8 !important; box-shadow: 0 4px 14px rgba(204,201,184,0.12); transform: translateX(3px); }
-.rc-toc-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; }
-.rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0 0 4px; }
-.rc-toc-body p { font-size: .88rem; color: var(--gray); line-height: 1.5; margin: 0; }
-.rc-toc-arrow { font-size: 1.1rem; color: var(--lightgray); text-align: right; transition: color .2s; }
-.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #CCC9B8; }
-
-.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
-.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
-.rc-btn-start { background: var(--brightgray); color: var(--gray); padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--lightgray); cursor: default; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
-
-.rc-resources { background: var(--brightgray); border-left: 4px solid #CCC9B8; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
-.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
-.rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-resource-link { color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration-color: #CCC9B8 !important; }
-
-.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
-.rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
-.rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-footer-link { color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
-.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
-.rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
-
+/* WHERE TO START TABLE */
+.rc-starttip { background:#0D0D0B; border-radius:14px; padding:24px 28px; margin-bottom:32px; }
+.rc-starttip h4 { font-size:.88rem; font-weight:700; color:#FFD706; text-transform:uppercase; letter-spacing:.5px; margin:0 0 16px; }
+.rc-starttip-row { display:flex; align-items:center; gap:16px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,.08); }
+.rc-starttip-row:last-child { border-bottom:none; }
+.rc-starttip-q { font-size:.88rem; color:#CCC9B8; width:200px; flex-shrink:0; }
+.rc-starttip-a { font-size:.88rem; font-weight:700; color:#FFFDF2; }
+/* NAV BUTTONS */
+.rc-lp-nav { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:40px 0 16px; }
+.rc-lp-nav-indicator { font-size:.8rem; font-weight:600; color:#CCC9B8; letter-spacing:.5px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-btn-prev { background:transparent; color:#0D0D0B !important; padding:13px 24px; border-radius:10px; font-weight:700; font-size:.9rem; display:inline-flex; align-items:center; gap:8px; border:2px solid #CCC9B8 !important; border-bottom:2px solid #CCC9B8 !important; transition:all .2s; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover, .rc-guide a.rc-btn-prev:hover { border:2px solid #0D0D0B !important; border-bottom:2px solid #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-btn-path { background:#FFD706; color:#0D0D0B !important; padding:13px 28px; border-radius:10px; font-weight:800; font-size:.95rem; display:inline-flex; align-items:center; gap:8px; transition:all .2s; border:2px solid #FFD706 !important; border-bottom:2px solid #FFD706 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover, .rc-guide a.rc-btn-path:hover { background:transparent !important; color:#0D0D0B !important; border:2px solid #FFD706 !important; border-bottom:2px solid #FFD706 !important; }
+/* RESOURCES */
+.rc-resources { background:#F1EFE3; border-left:4px solid #CCC9B8; border-radius:10px; padding:20px 24px; margin:32px 0 0; }
+.rc-resources h3 { font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.9px; color:#807D73; margin:0 0 12px; display:flex; align-items:center; gap:8px; }
+.rc-resource-links { display:flex; flex-wrap:wrap; gap:4px 20px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-resource-link { color:#807D73 !important; text-decoration:underline !important; text-underline-offset:3px; text-decoration-color:#CCC9B8 !important; font-weight:500; font-size:.88rem; transition:all .18s; display:inline-flex; align-items:center; gap:6px; border-bottom:0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover, .rc-guide a.rc-resource-link:hover { color:#0D0D0B !important; text-decoration-color:#CCC9B8 !important; }
+/* FOOTER */
+.rc-footer-nav { border-top:1px solid #CCC9B8; padding-top:40px; margin-top:48px; padding-bottom:48px; }
+.rc-footer-links { display:flex; flex-direction:column; gap:16px; }
+.rc-footer-section { display:flex; flex-wrap:wrap; align-items:center; gap:8px 24px; }
+.rc-footer-label { font-weight:800; font-size:.75rem; text-transform:uppercase; letter-spacing:.8px; color:#32312D; background:#F1EFE3; padding:4px 10px; border-radius:6px; margin-right:4px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-footer-link { color:#807D73 !important; font-weight:600; font-size:.88rem; transition:color .2s ease; display:inline-flex; align-items:center; gap:6px; border-bottom:0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover, .rc-guide a.rc-footer-link:hover { color:#FF8200 !important; }
+.rc-footer-link img { width:14px; height:14px; object-fit:contain; opacity:0.5; transition:opacity .2s ease; }
+.rc-footer-link:hover img { opacity:1; }
+.rc-footer-utility { display:flex; flex-wrap:wrap; gap:24px; margin-top:16px; padding-top:24px; border-top:1px solid #F1EFE3; }
 @media(max-width:768px){
-  .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } .rc-hero { padding: 36px 20px 36px; } .rc-lp-hero-title h1 { font-size: 1.8rem; }
-  .rc-lp-nav { flex-wrap: wrap; justify-content: center; } .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rc-card-grid { grid-template-columns: 1fr; } .rc-toc-card { grid-template-columns: 36px 1fr 24px; padding: 14px 16px; }
+  .rc-content-wrap{padding:0 20px;} .rc-top-nav{padding:16px 20px;} .rc-hero{padding:36px 20px 36px;} .rc-hero h1{font-size:1.8rem;}
+  .rc-lp-nav{flex-wrap:wrap;justify-content:center;} .rc-lp-nav-indicator{width:100%;text-align:center;}
+  .rc-pillar-grid{grid-template-columns:1fr;} .rc-flywheel-hero{flex-direction:column;} .rc-pillar-icon-row{gap:8px;}
 }
 </style>
 
 <div class="rc-guide">
+
+  <div class="rc-top-nav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-back-link">← Back to Launch</a>
+  </div>
+
   <div class="rc-content-wrap">
-    
+
+    <div class="rc-announce-bar">
+      <div class="rc-announce-inner">
+        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
+        <strong>Upcoming:</strong> Join our CSMs for a live Q&amp;A session.
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
+      </div>
+    </div>
+
+    <div class="rc-hero">
+      <div class="rc-pillar-icon-row">
+        <span class="rc-pillar-icon-chip rc-chip-launch"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt=""> Launch</span>
+        <span class="rc-pillar-icon-chip rc-chip-acquire"><img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt=""> Acquire</span>
+        <span class="rc-pillar-icon-chip rc-chip-retain"><img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt=""> Retain</span>
+        <span class="rc-pillar-icon-chip rc-chip-scale"><img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt=""> Scale</span>
+      </div>
+      <h1>The Subscription Flywheel</h1>
+      <p class="rc-hero-sub">Navigate is designed around the four pillars of subscription growth: Launch, Acquire, Retain, Scale.</p>
+    </div>
+
     <details class="rc-sticky-nav-wrap" open>
       <summary><span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span></summary>
       <div class="rc-nav-drawer"><div class="rc-nav-drawer-inner"><div class="rc-nav-links">
-        <a href="/docs/navigate-home" class="rc-sticky-link">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="/docs/navigate-intro-welcome" class="rc-sticky-link"><span class="rc-step-badge">1</span> Welcome to Navigate</a>
-        <a href="/docs/navigate-intro-home" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Navigating Home
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-sticky-link">Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-welcome" class="rc-sticky-link"><span class="rc-step-badge">1</span> Official welcome</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> The Recurly flywheel
         </a>
-        <a href="/docs/navigate-intro-expect" class="rc-sticky-link"><span class="rc-step-badge">3</span> Navigate full program</a>
-        <a href="/docs/navigate-intro-welcome" class="rc-sticky-link">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-sticky-link"><span class="rc-step-badge">3</span> Navigate Home</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-sticky-link"><span class="rc-step-badge">4</span> What to expect</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">
           <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
         </a>
       </div></div></div>
     </details>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-house rc-fa-section"></i> Navigate Home overview</h2>
-      <p>Navigate Home in Recurly Docs is your central hub for every learning path, webinar, on-demand resource, and event the program offers — all organized around the Recurly Flywheel.</p>
+      <h2><i class="fa-solid fa-rotate rc-fa-section"></i> The Recurly Flywheel</h2>
 
-      <div class="rc-video-card">
-        <div class="rc-video-header">
-          <h4>Navigate Home walkthrough</h4>
-          <span>~2 min</span>
+      <div class="rc-flywheel-hero">
+        <div class="rc-flywheel-img">
+          <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="The Recurly Flywheel: Launch, Acquire, Retain, Scale" onerror="this.style.display='none';" />
         </div>
-        <div class="rc-video-embed">
-          <iframe src="" loading="lazy" title="Navigate Home walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
-        </div>
-        <div class="rc-video-caption">A brief tour of the Navigate hub and how to find exactly what you need.</div>
-      </div>
-    </div>
-
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-arrows-rotate rc-fa-section"></i> The Recurly Flywheel</h2>
-      <p>Navigate is built to act as your digital Customer Success Manager. Every resource on the site is structured around the four pillars of a healthy subscription business.</p>
-      
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-rocket"></i></div>
-          <h4>Launch</h4>
-          <p>Get your subscription engine running. Build a solid foundation by configuring your plans, checkout, and trial experience.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-plus"></i></div>
-          <h4>Acquire</h4>
-          <p>Grow your subscriber base efficiently. Focus on pricing strategy, promotional mechanics, and a front door that converts.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
-          <h4>Retain</h4>
-          <p>Protect revenue and reduce churn. Master dunning strategies, intelligent retries, and cancel-save flows.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
-          <h4>Scale</h4>
-          <p>Expand with confidence. Learn about global payments, revenue recognition, and advanced analytics.</p>
+        <div class="rc-flywheel-text">
+          <p>Every resource in Navigate is structured around the four pillars of a healthy subscription business.</p>
+          <p>Whether you're exploring Account Updater to fix retention issues or setting up dunning windows for the first time, Navigate meets you where you are.</p>
+          <p>The Flywheel is continuous. Most businesses are actively working across multiple pillars at any given time.</p>
         </div>
       </div>
-    </div>
 
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-location-arrow rc-fa-section"></i> Two ways to access Navigate Home</h2>
-      <p>You can jump directly to the Navigate hub at any time, or locate it within the broader Recurly documentation site.</p>
+      <h2><i class="fa-solid fa-table-cells rc-fa-section"></i> The four pillars, in depth</h2>
+
+      <div class="rc-pillar-grid">
       
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-bookmark"></i></div>
-          <h4>Bookmark the direct link</h4>
-          <p>Save <strong>docs.recurly.com/navigate-home</strong> to your browser for immediate access to learning paths, webinars, and Office Hours registrations.</p>
+        <div class="rc-pillar rc-pillar-launch">
+          <div class="rc-pillar-head">
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" />
+            </div>
+            <div>
+              <h3>Launch</h3>
+              <p>Get your subscription engine running</p>
+            </div>
+          </div>
+          <div class="rc-pillar-body">
+            <p>Build a solid foundation: configure your plans, set up payment flows, and make sure your subscriber experience is exactly what you want from day one.</p>
+            <div class="rc-tags">
+              <span class="rc-tag">Subscription setup</span>
+              <span class="rc-tag">Billing models</span>
+              <span class="rc-tag">Checkout</span>
+              <span class="rc-tag">Free trials</span>
+              <span class="rc-tag">Gateway config</span>
+            </div>
+          </div>
         </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-book-open"></i></div>
-          <h4>Find it in Recurly Docs</h4>
-          <p>Visit docs.recurly.com and locate the <strong>Navigate</strong> section in the left sidebar. The content is organized by the four Flywheel pillars.</p>
+        
+        <div class="rc-pillar rc-pillar-acquire">
+          <div class="rc-pillar-head">
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire" />
+            </div>
+            <div>
+              <h3>Acquire</h3>
+              <p>Grow your subscriber base</p>
+            </div>
+          </div>
+          <div class="rc-pillar-body">
+            <p>Focus on bringing in new subscribers efficiently and converting them effectively. Pricing strategy, promotional mechanics, and a front door that converts.</p>
+            <div class="rc-tags">
+              <span class="rc-tag">Pricing strategy</span>
+              <span class="rc-tag">Coupons &amp; promos</span>
+              <span class="rc-tag">Trial conversion</span>
+              <span class="rc-tag">Gift subscriptions</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="rc-pillar rc-pillar-retain">
+          <div class="rc-pillar-head">
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Retain" />
+            </div>
+            <div>
+              <h3>Retain</h3>
+              <p>Protect revenue, reduce churn</p>
+            </div>
+          </div>
+          <div class="rc-pillar-body">
+            <p>Retention is where subscription businesses win or lose. This pillar covers dunning, payment recovery, cancellation prevention, and everything in between.</p>
+            <div class="rc-tags">
+              <span class="rc-tag">Dunning strategy</span>
+              <span class="rc-tag">Account Updater</span>
+              <span class="rc-tag">Intelligent retries</span>
+              <span class="rc-tag">Cancel-save flows</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="rc-pillar rc-pillar-scale">
+          <div class="rc-pillar-head">
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale" />
+            </div>
+            <div>
+              <h3>Scale</h3>
+              <p>Expand with confidence</p>
+            </div>
+          </div>
+          <div class="rc-pillar-body">
+            <p>When you're ready to grow beyond your initial market, this pillar covers international expansion, advanced analytics, revenue recognition, and high-performance configurations.</p>
+            <div class="rc-tags">
+              <span class="rc-tag">Global payments</span>
+              <span class="rc-tag">Revenue recognition</span>
+              <span class="rc-tag">Advanced analytics</span>
+              <span class="rc-tag">AI insights</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <h2><i class="fa-solid fa-circle-question rc-fa-section"></i> Not sure where to start?</h2>
+      <div class="rc-starttip">
+        <h4>Ask yourself: What's my biggest priority right now?</h4>
+        <div class="rc-starttip-row">
+          <span class="rc-starttip-q">Getting set up properly</span>
+          <span class="rc-starttip-a">→ Start with Launch</span>
+        </div>
+        <div class="rc-starttip-row">
+          <span class="rc-starttip-q">Growing subscriber numbers</span>
+          <span class="rc-starttip-a">→ Start with Acquire</span>
+        </div>
+        <div class="rc-starttip-row">
+          <span class="rc-starttip-q">Stopping revenue leakage</span>
+          <span class="rc-starttip-a">→ Start with Retain</span>
+        </div>
+        <div class="rc-starttip-row">
+          <span class="rc-starttip-q">Expanding or scaling globally</span>
+          <span class="rc-starttip-a">→ Start with Scale</span>
         </div>
       </div>
-    </div>
 
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-box-open rc-fa-section"></i> What you'll find on Navigate Home</h2>
-      
-      <div class="rc-card-grid rc-card-grid-3col">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-book"></i></div>
-          <h4>Full learning paths</h4>
-          <p>Guided paths for each Flywheel pillar, covering topics end-to-end.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-calendar-check"></i></div>
-          <h4>Webinar registrations</h4>
-          <p>Register for live webinars and feature workshops directly from the hub.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-video"></i></div>
-          <h4>On-demand library</h4>
-          <p>Recorded sessions, how-to videos, and optimization walkthroughs available any time.</p>
-        </div>
+      <div class="rc-lp-nav">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-welcome" class="rc-btn-prev">← Official welcome</a>
+        <span class="rc-lp-nav-indicator">3 of 5</span>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-btn-path">Next: Navigate Home →</a>
       </div>
-    </div>
-    
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-graduation-cap rc-fa-section"></i> Why our learning paths are effective</h2>
-      <p>Every learning path is designed to be highly modular and respectful of your time. They focus strictly on <strong>what it is, why it matters, how to set it up, and best practices.</strong> You can take a full path from start to finish, or jump directly to the specific chapter you need right now. There's no expiration on the content, so your knowledge compounds over time.</p>
-      
-      <p style="font-size: .95rem; color: var(--darkgray); margin: 32px 0 24px;">Next, you will get an overview of the entire Navigate program and all the different offerings it consists of.</p>
-    </div>
-
-    <div class="rc-lp-nav">
-      <a href="/docs/navigate-intro-welcome" class="rc-btn-prev">← Welcome to Navigate</a>
-      <span class="rc-lp-nav-indicator">Navigating Home · 1 of 2</span>
-      <a href="/docs/navigate-intro-expect" class="rc-btn-path">Next: Navigate full program →</a>
     </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="/docs/navigate-home" class="rc-resource-link"><i class="fa-solid fa-house"></i> Navigate Home in Recurly Docs</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
+        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
     </div>
 
     <div class="rc-footer-nav">
+      <div class="rc-footer-links">
+        <div class="rc-footer-section">
+          <span class="rc-footer-label">Introduction to Navigate</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-welcome" class="rc-footer-link">1. Official welcome</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-footer-link">2. The Recurly flywheel</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-footer-link">3. Navigate Home</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-footer-link">4. What to expect</a>
+        </div>
+        <div class="rc-footer-utility">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
+            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
+          </a>
+          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+        </div>
       </div>
+    </div>
 
   </div>
 </div>
