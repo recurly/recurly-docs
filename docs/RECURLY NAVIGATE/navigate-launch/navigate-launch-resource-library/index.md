@@ -256,16 +256,16 @@ them.</p>
       <div class="rc-card-grid rc-card-grid-3col">
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-globe"></i></div>
-          <h4>Global Office Hours</h4>
-          <p>Bring your questions to our CSMs live. Sessions run weekly.</p>
-          <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">Register ↗</a>
+          <h4>Contact support</h4>
+          <p>Reach out directly to the Recurly Support team with specific technical inquiries.</p>
+          <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">Submit ticket ↗</a>
         </div>
         
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-envelope"></i></div>
-          <h4>Contact Support</h4>
-          <p>Reach out directly to the Recurly Support team with specific technical inquiries.</p>
-          <a href="mailto:support@recurly.com">Email Support →</a>
+          <h4>Knowledge base</h4>
+          <p>Explore how-to articles, FAQs and troubleshooting techniques.</p>
+          <a href="https://support.recurly.com/hc/en-us">View FAQs ↗</a>
         </div>
 
         <div class="rc-feature-card">
