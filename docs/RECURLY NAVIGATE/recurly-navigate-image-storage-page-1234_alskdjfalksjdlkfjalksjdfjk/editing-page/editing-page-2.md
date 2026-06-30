@@ -227,6 +227,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <p style="margin:0;font-size:.85rem;color:#807D73;">[ Insert official welcome video embed here — recommended runtime: 3–5 minutes ]</p>
         </div>
       </div>
+      
+    <!-- SECTION: Welcome to Recurly Navigate -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-map-location-dot rc-fa-section"></i> You are here</h2>
+
+      <div class="rc-card">
+        <h3><i class="fa-solid fa-compass rc-fa-section"></i> What is this course?</h3>
+        <p>This course is your official orientation to <strong>Recurly Navigate</strong> — a digital Customer Success program that gives you the best practices, expert guidance, and product insights you need, right when you need them.</p>
+        <p>Whether you're brand new to Recurly or just joining the Navigate program, this course walks you through everything: how we support you, where to find every resource, and what to expect from us.</p>
+      </div>
+
 
       <div class="rc-card">
         <h3><i class="fa-solid fa-handshake rc-fa-section"></i> What is Customer Success?</h3>
