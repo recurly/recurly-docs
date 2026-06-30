@@ -24,9 +24,11 @@ next:
 </div>
 
 # Definition
+
 <div class="rp-definition">A pricing model is the strategy you use to determine what customers pay and when. Recurly supports fixed recurring, ramp, one-time, usage-based, quantity-based, hybrid, and prepaid balance pricing — giving you the flexibility to match your revenue strategy to your product and your customers.</div>
 
 # Key benefits
+
 <div class="rp-benefits rp-benefits-2x2">
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
@@ -51,7 +53,9 @@ next:
 </div>
 
 # Pricing models
+
 <div class="rp-nav-grid">
+
 <Cards>
   <Card title="Fixed recurring pricing" href="https://docs.recurly.com/docs/fixed-recurring-pricing" target="_blank">
     A set price charged on a recurring schedule — the simplest and most common pricing model for subscriptions.
@@ -65,7 +69,7 @@ next:
   <Card title="Usage-based billing" href="https://docs.recurly.com/docs/usage-based-billing" target="_blank">
     Charges customers based on measured consumption — units, API calls, seats, or any trackable metric.
   </Card>
-  <Card title="Tiered, stairstep and volume pricing" href="https://docs.recurly.com/docs/tiered-stairstep-and-volume-pricing" target="_blank">
+  <Card title="Tiered, stairstep and volume pricing" href="https://docs.recurly.com/recurly-subscriptions/docs/-tiered-stairstep-and-volume-pricing" target="_blank">
     Applies different rates based on quantity thresholds — supports tiered, stairstep, and volume discount structures.
   </Card>
   <Card title="Quantity-based pricing" href="https://docs.recurly.com/docs/quantity-based-pricing" target="_blank">
@@ -81,4 +85,7 @@ next:
     Configure pricing in over 140 currencies to charge customers in their local currency.
   </Card>
 </Cards>
+
 </div>
+
+<br />
