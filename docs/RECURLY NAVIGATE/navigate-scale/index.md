@@ -348,25 +348,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── ADVANCED ANALYTICS & REPORTING ── -->
     <div id="analytics" class="rc-category">
-      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Advanced analytics &amp; reporting</h2>
+      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Analytics &amp; reporting</h2>
       <div class="rc-path-list">
-        <a href="#" class="rc-path-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
-            <h3>Benchmarks</h3>
+            <h3>Benchmarks 101</h3>
             <p>See how your subscription business stacks up. Learn how to interpret industry benchmarks for churn, LTV, and growth against your peers.</p>
-          </div>
-          <div class="rc-path-arrow">Start path →</div>
-        </a>
-        <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
-          </div>
-          <div class="rc-path-content">
-            <h3>Churn reporting</h3>
-            <p>Master the Churn Analysis dashboard. Understand the difference between net and gross churn and how to identify retention trends.</p>
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
