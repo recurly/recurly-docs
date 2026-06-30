@@ -240,8 +240,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-question rc-fa-section"></i> What is Navigate?</h2>
    <p>Before we begin, let's define the foundation of Navigate, <strong>Customer Success</strong>, it's importance in your journey, and how it correlates to the program as a whole.<br></p></div>
 
- <div class="rc-lp-section">
-
         <div class="rc-card">
         <h3><i class="fa-solid fa-handshake rc-fa-section"></i> Understanding Customer Success</h3>
         <p><strong>Customer Success</strong> is about more than answering questions: it's about making sure you're getting <strong>real, measurable value</strong> from Recurly. Our Customer Success team connects what Recurly can do with what your business actually needs, proactively guiding you toward better outcomes at every stage of growth.</p>
@@ -251,6 +249,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <h3><i class="fa-solid fa-compass rc-fa-section"></i> How Navigate delivers</h3>
         <p><strong>Navigate is Recurly's digital Customer Success program</strong>: built to bring the best of our expertise directly to you...digitally. Every subscription business is different and your priorities change over time. Navigate is designed to meet you where you are.</p>
       </div>
+</div>
 
       <h2><i class="fa-solid fa-grid-2 rc-fa-section"></i> What's included in Navigate</h2>
       <div class="rc-wi-grid">
