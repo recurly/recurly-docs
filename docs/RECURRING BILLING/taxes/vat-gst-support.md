@@ -281,11 +281,4 @@ If you're enabling tax collection for a country with province or state-specific 
   </div>
 </div>
 
-***
-
-📋 TODO before publishing:
-
-- [ ] Confirm the Canada "before you go live" callout — exact wording, the requirement to open a support ticket, and the Avalara establishment / backend tax registration number process — with Jason Battle on the Support team. I cannot contact him directly; this needs your verification.
-- [ ] Confirm Thailand's current VAT rate. The source references a rate increase to 10% scheduled for September 30, 2019, which is likely outdated.
-
 <br />
