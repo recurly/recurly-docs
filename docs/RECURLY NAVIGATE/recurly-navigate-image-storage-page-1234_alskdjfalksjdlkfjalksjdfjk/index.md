@@ -60,4 +60,6 @@ metadata:
 
 ![](https://files.readme.io/362138209e3acc23ae77900b1dd956118a85ac96c7baa1fff11e45e7fb9aa3e8-Screenshot_2026-06-30_at_3.31.28_PM.png)
 
+![](https://files.readme.io/034d856150007c725215b06f3df48ef9659abbc490d62aa6467efd47fb7f6a77-Screenshot_2026-06-30_at_2.55.37_PM.png)
+
 <br />
