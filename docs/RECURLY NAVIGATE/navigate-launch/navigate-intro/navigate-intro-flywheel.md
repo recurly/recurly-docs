@@ -162,16 +162,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-sticky-link">Overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-welcome" class="rc-sticky-link"><span class="rc-step-badge">1</span> Official welcome</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-sticky-link">Welcome</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> The Recurly flywheel
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> The Subscription Flywheel
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-sticky-link"><span class="rc-step-badge">3</span> Navigate Home</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-sticky-link"><span class="rc-step-badge">4</span> What to expect</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
-        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-sticky-link"><span class="rc-step-badge">2</span> "Navigating" Navigate</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-sticky-link"><span class="rc-step-badge">3</span> The full program</a>
       </div></div></div>
     </details>
 
@@ -302,8 +298,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
       </div>
 
       <div class="rc-lp-nav">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-welcome" class="rc-btn-prev">← Official welcome</a>
-        <span class="rc-lp-nav-indicator">3 of 5</span>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-btn-prev">← Welcome</a>
+        <span class="rc-lp-nav-indicator">1 of 3</span>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-btn-path">Next: Navigate Home →</a>
       </div>
     </div>
@@ -319,12 +315,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Introduction to Navigate</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-footer-link">Overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-welcome" class="rc-footer-link">1. Official welcome</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-footer-link">2. The Recurly flywheel</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-footer-link">3. Navigate Home</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-footer-link">4. What to expect</a>
+          <span class="rc-footer-label">Welcome to Navigate</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-footer-link">Welcome</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-footer-link">1. The Subscription Flywheel</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-footer-link">2. "Navigating" Navigate</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-footer-link">3. The full program</a>
         </div>
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
