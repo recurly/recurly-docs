@@ -1,5 +1,5 @@
 ---
-title: 'Introduction to Navigate: What to expect'
+title: 'Welcome to Navigate: The Full Program'
 deprecated: false
 hidden: true
 metadata:
@@ -68,7 +68,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-card p{font-size:.93rem;color:#32312D;line-height:1.65;margin:0 0 12px;}
 .rc-card p:last-child{margin-bottom:0;}
 /* SCORECARD IMAGE */
-.rc-scorecard-img{overflow:hidden;margin-bottom:24px;}
+.rc-scorecard-img{overflow:hidden;border-radius:8px;width:100%;}
 .rc-scorecard-img img{width:100%;height:auto;display:block;}
 /* 2-COL TILES */
 .rc-wi-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px;}
@@ -136,6 +136,31 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-footer-link img{width:14px;height:14px;object-fit:contain;opacity:0.5;transition:opacity .2s ease;}
 .rc-footer-link:hover img{opacity:1;}
 .rc-footer-utility{display:flex;flex-wrap:wrap;gap:24px;margin-top:16px;padding-top:24px;border-top:1px solid #F1EFE3;}
+
+/* ======= NEW ACCORDION CARDS STYLES ======= */
+details.rc-phase-block { margin-bottom: 24px; background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; overflow: hidden; transition: box-shadow 0.2s ease, border-color 0.2s ease; }
+details.rc-phase-block:hover { box-shadow: 0 6px 16px rgba(0,0,0,0.06); border-color: #807D73; }
+summary.rc-phase-label { display: flex; align-items: center; gap: 16px; padding: 18px 24px; background: #0D0D0B; cursor: pointer; list-style: none; user-select: none; transition: background 0.2s ease; margin-bottom: 0; }
+summary.rc-phase-label:hover { background: #32312D; }
+summary.rc-phase-label::-webkit-details-marker { display: none; }
+summary.rc-phase-label::marker { display: none; }
+.rc-phase-chevron { margin-left: auto; color: #FFD706; font-size: 1.2rem; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
+.rc-phase-icon { width: 44px; height: 44px; border-radius: 50%; background: #FFD706; color: #0D0D0B; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.rc-phase-title h3 { font-size: 1.05rem; font-weight: 800; color: #FFD706; margin: 0; line-height: 1.2; }
+.rc-phase-content { padding: 24px; border-top: 1px solid #E5E3D8; }
+
+/* ACCORDION CONTENT STACK (1-COLUMN ROW) */
+.rc-acc-grid { display: flex; flex-direction: column; gap: 24px; }
+.rc-acc-text p { font-size: .95rem; color: #32312D; line-height: 1.6; margin: 0 0 16px; }
+.rc-acc-text p:last-child { margin-bottom: 0; }
+.rm-Markdown.markdown-body .rc-guide .rc-acc-text a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide .rc-acc-text a{color:#FF8200 !important;font-weight:700;border-bottom:0 !important;}
+
+/* VIDEO / IMAGE EMBED PLACEHOLDER */
+.rc-video-embed { position: relative; overflow: hidden; border-radius: 8px; background: #0D0D0B; aspect-ratio: 16/9; width: 100%; }
+.rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
+.rc-placeholder-box { background: #EAE8DA; border: 2px dashed #CCC9B8; border-radius: 8px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: #807D73; font-size: .9rem; font-weight: 600; text-align: center; padding: 20px;}
+
 @media(max-width:768px){
   .rc-content-wrap{padding:0 20px;} .rc-top-nav{padding:16px 20px;} .rc-hero{padding:36px 20px 36px;} .rc-hero h1{font-size:1.8rem;}
   .rc-lp-nav{flex-wrap:wrap;justify-content:center;} .rc-lp-nav-indicator{width:100%;text-align:center;}
@@ -160,14 +185,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
     </div>
 
     <div class="rc-hero">
-     
+      
       <div class="rc-pillar-icon-row">
         <span class="rc-pillar-icon-chip rc-chip-launch"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt=""> Launch</span>
         <span class="rc-pillar-icon-chip rc-chip-acquire"><img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt=""> Acquire</span>
         <span class="rc-pillar-icon-chip rc-chip-retain"><img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt=""> Retain</span>
         <span class="rc-pillar-icon-chip rc-chip-scale"><img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt=""> Scale</span>
       </div>
-      <h1>What to expect from Navigate</h1>
+      <h1>Recurly Navigate: The full program</h1>
       <p class="rc-hero-sub">Navigate is more than a hub — we’re a live team and your partner in success. Explore the curated support, best practices, updates, and resources you'll receive as part of this program.</p>
     </div>
 
@@ -177,57 +202,128 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-sticky-link">Overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-welcome" class="rc-sticky-link"><span class="rc-step-badge">1</span> Official welcome</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-sticky-link"><span class="rc-step-badge">2</span> The Recurly flywheel</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-sticky-link"><span class="rc-step-badge">3</span> Navigate Home</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-sticky-link">Welcome</a>
+    
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-sticky-link"><span class="rc-step-badge">1</span> The Subscription flywheel</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-sticky-link"><span class="rc-step-badge">2</span> "Navigating" Navigate</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> What to expect
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> The full program
         </a>
       </div></div></div>
     </details>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-circle-check rc-fa-section"></i> Your "always-on" Customer Success program</h2><p>
-<p>Need to write a quick sentence to hammer down on the purpose of Navigate and introduce the items below.</p><br>
+      <h2><i class="fa-solid fa-circle-check rc-fa-section"></i> Your "always-on" Customer Success program</h2>
+      <p>Need to write a quick sentence to hammer down on the purpose of Navigate and introduce the items below.</p><br>
 
-      <!-- MONTHLY SCORECARD -->
-      <h2><i class="fa-solid fa-chart-bar rc-fa-section"></i> Monthly Scorecard</h2>
-      <p>Every <strong>second Tuesday of the month</strong>, you'll receive your Navigate Monthly Scorecard: a snapshot of your most important subscription health metrics, benchmarked against your prior year and industry averages.</p>
-
-      <div class="rc-scorecard-img">
-        <img src="https://files.readme.io/bf0f3ed737a5783fbd0ac153303d2aec540da707789b1225059bdb25a9f3a146-Merchant_Scorecard_Example.png" alt="Navigate Monthly Scorecard example showing subscription health metrics" />
-      </div>
-
-      <!-- HOW NAVIGATE SHOWS UP -->
+      <!-- HOW NAVIGATE SHOWS UP FOR YOU -->
       <h2><i class="fa-solid fa-bullseye rc-fa-section"></i> How Navigate shows up for you</h2>
-      <div class="rc-wi-grid">
-        <div class="rc-wi">
-          <div class="rc-wi-header"><i class="fa-solid fa-envelope" style="color:#FFD706;font-size:1.1rem;"></i><h4>Monthly Newsletter</h4></div>
-          <p>Your curated monthly briefing: new Recurly features, upcoming events, optimization tips, industry insights, and highlights from the Navigate community.</p>
+      <p>Explore the specific tools, expert guidance, and live sessions available to you through this program. We utilize self-driven resources, curated outreach and offerings, and live events to ensure you're able to access what you need, how you need it.</p>
+
+      <!-- ACCORDION 1: Navigate Home -->
+      <details class="rc-phase-block" open>
+        <summary class="rc-phase-label">
+          <div class="rc-phase-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="rc-phase-title"><h3>Navigate home & learning paths</h3></div>
+          <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
+        </summary>
+        <div class="rc-phase-content">
+          <div class="rc-acc-grid">
+            <div class="rc-acc-text">
+              <p><strong>You're here.</strong> Navigate home will provide regularly updated learning paths and resources built directly from our Customer Success Team's knowledge base. You can access the site at any time, but we'll also reach out to you with recommendations based on your unique performance, interests, and more.</p>
+         <p>Be sure to add <a href="mailto:RecurlyNavigate@Recurly.com">RecurlyNavigate@Recurly.com</a> to your safe contacts if you'd like to receive learning paths and outreach based on your performance.</p>
+            </div>
+            <div class="rc-scorecard-img">
+              <img src="https://files.readme.io/362138209e3acc23ae77900b1dd956118a85ac96c7baa1fff11e45e7fb9aa3e8-Screenshot_2026-06-30_at_3.31.28_PM.png" alt="Navigate Monthly Scorecard example showing subscription health metrics" />
+            </div>
+          </div>
         </div>
-        <div class="rc-wi">
-          <div class="rc-wi-header"><i class="fa-solid fa-calendar-days" style="color:#FFD706;font-size:1.1rem;"></i><h4>Open Office Hours</h4></div>
-          <p>Drop in and ask a Customer Success Manager anything. No appointment or agenda required.</p>
-          <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">View Office Hours schedule →</a>
+      </details>
+
+      <!-- ACCORDION 2: 1:1 Expert Sessions -->
+      <details class="rc-phase-block">
+        <summary class="rc-phase-label">
+          <div class="rc-phase-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="rc-phase-title"><h3>1:1 Expert Sessions</h3></div>
+          <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
+        </summary>
+        <div class="rc-phase-content">
+          <div class="rc-acc-grid">
+            <div class="rc-acc-text">
+              <p>Dedicated 1:1 time with Santi, your Navigate Customer Success Manager. He'll review your setup, strategize on a goal, or work through a specific challenge, focused entirely on your priorities.</p> 
+<p><strong>Expert sessions are 100% private and tailored to your needs</strong>. No need to reach out to us, we'll contact you! If you have questions or would like to schedule a session, feel free to jump into a <a href="https://navigate.recurly.com/global-office-hours/">Customer Success Office Hours session</a>, and our CSMs will assist you.</p>
+            </div>
+          </div>
         </div>
-        <div class="rc-wi">
-          <div class="rc-wi-header"><i class="fa-solid fa-tower-broadcast" style="color:#FFD706;font-size:1.1rem;"></i><h4>Webinars &amp; events</h4></div>
-          <p>Regular live sessions on new features, optimization strategies, and subscription trends, with Q&amp;A and on-demand recordings for everything.</p>
-          <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">Browse upcoming webinars →</a>
+      </details>
+
+      <!-- ACCORDION 3: Office Hours -->
+      <details class="rc-phase-block">
+        <summary class="rc-phase-label">
+          <div class="rc-phase-icon"><i class="fa-solid fa-calendar-days"></i></div>
+          <div class="rc-phase-title"><h3>Office Hours</h3></div>
+          <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
+        </summary>
+        <div class="rc-phase-content">
+          <div class="rc-acc-grid">
+            <div class="rc-acc-text">
+              <p>Drop in and ask a Customer Success Manager anything. No appointment or agenda required.</p>
+              <p><a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">View Office Hours schedule →</a></p>
+            </div>
+            <!-- Video Embed Placeholder -->
+            <div class="rc-video-embed">
+              <div class="rc-placeholder-box">Leave room for video embed</div>
+              <!-- <iframe src="YOUR_VIDEO_URL" loading="lazy" allowfullscreen></iframe> -->
+            </div>
+          </div>
         </div>
-        <div class="rc-wi">
-          <div class="rc-wi-header"><i class="fa-solid fa-headset" style="color:#FFD706;font-size:1.1rem;"></i><h4>1:1 Expert Sessions</h4></div>
-          <p>Available upon request. Dedicated 1:1 time with a CSM to review your setup, strategize on a goal, or work through a specific challenge, focused entirely on your priorities.</p>
-          <a href="mailto:recurlynavigate@recurly.com">Request an Expert Session →</a>
+      </details>
+
+      <!-- ACCORDION 4: Live & On-Demand Events -->
+      <details class="rc-phase-block">
+        <summary class="rc-phase-label">
+          <div class="rc-phase-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+          <div class="rc-phase-title"><h3>Live &amp; On-Demand Events</h3></div>
+          <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
+        </summary>
+        <div class="rc-phase-content">
+          <div class="rc-acc-grid">
+            <div class="rc-acc-text">
+              <p>Regular live sessions on new features, optimization strategies, and subscription trends, with Q&amp;A and on-demand recordings for everything.</p>
+              <p><a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">Browse upcoming webinars →</a></p>
+            </div>
+            <!-- Video Embed Placeholder -->
+            <div class="rc-video-embed">
+              <div class="rc-placeholder-box">Leave room for video embed</div>
+              <!-- <iframe src="YOUR_VIDEO_URL" loading="lazy" allowfullscreen></iframe> -->
+            </div>
+          </div>
         </div>
-      </div>
+      </details>
+
+      <!-- ACCORDION 5: Monthly Calendar -->
+      <details class="rc-phase-block">
+        <summary class="rc-phase-label">
+          <div class="rc-phase-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="rc-phase-title"><h3>Monthly calendar, updates, and CS communications</h3></div>
+          <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
+        </summary>
+        <div class="rc-phase-content">
+          <div class="rc-acc-grid">
+            <div class="rc-acc-text">
+              <p>Your curated monthly briefing: new Recurly features, upcoming events, optimization tips, industry insights, and highlights from the Navigate community.</p>
+            </div>
+            <!-- Image Placeholder -->
+            <div class="rc-scorecard-img">
+              <div class="rc-placeholder-box">Leave room for image</div>
+              <!-- <img src="YOUR_IMAGE_URL" alt="" /> -->
+            </div>
+          </div>
+        </div>
+      </details>
 
       <!-- EMAIL WHITELIST -->
-      <div class="rc-callout-warning-box">
+      <div class="rc-callout-warning-box" style="margin-top: 32px;">
         <i class="fa-solid fa-triangle-exclamation" style="color:#FF8200;font-size:1.1rem;flex-shrink:0;margin-top:2px;"></i>
         <p><strong>Action required: Whitelist our email.</strong> All Navigate communications come from <strong>recurlynavigate@recurly.com</strong>. Add this address to your email whitelist to ensure scorecards, newsletters, and event invitations reach your inbox. If you're not seeing our emails, check your spam folder and mark us as a trusted sender.</p>
       </div>
@@ -287,8 +383,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
       </div>
 
       <div class="rc-lp-nav">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-btn-prev">← Navigate Home</a>
-        <span class="rc-lp-nav-indicator">5 of 5</span>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-btn-prev">← "Navigating" Navigate</a>
+        <span class="rc-lp-nav-indicator">3 of 3</span>
         <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Course complete!</span>
       </div>
     </div>
@@ -306,12 +402,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Introduction to Navigate</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-footer-link">Overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-welcome" class="rc-footer-link">1. Official welcome</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-footer-link">2. The Recurly flywheel</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-footer-link">3. Navigate Home</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-footer-link">4. What to expect</a>
+          <span class="rc-footer-label">Welcome to Navigate</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-footer-link">Welcome</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-footer-link">1. The Subscription flywheel</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-footer-link">2. "Navigating" Navigate</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-footer-link">3. The full program</a>
         </div>
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
