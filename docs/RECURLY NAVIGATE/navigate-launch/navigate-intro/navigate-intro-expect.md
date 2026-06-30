@@ -295,7 +295,7 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
             <!-- Video Embed Placeholder -->
             <div class="rc-video-embed">
               <div class="rc-placeholder-box">Leave room for video embed</div>
-              <!-- <iframe src="YOUR_VIDEO_URL" loading="lazy" allowfullscreen></iframe> -->
+              <iframe src="YOUR_VIDEO_URL" loading="lazy" allowfullscreen></iframe>
             </div>
           </div>
         </div>
