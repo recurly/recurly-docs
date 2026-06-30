@@ -8,7 +8,7 @@ excerpt: >-
   high-conversion, PCI-compliant subscriber onboarding flows designed for
   Product-Led Growth.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Master the subscription acquisition lifecycle. Learn to optimize checkout
