@@ -273,7 +273,7 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
             <!-- Video Embed Placeholder -->
             <div class="rc-video-embed">
      
-              <!-- <iframe src="https://share.synthesia.io/embeds/videos/52ee9622-b163-4925-b9f2-fe2469a5523c" loading="lazy" allowfullscreen></iframe> -->
+   <iframe src="https://share.synthesia.io/embeds/videos/52ee9622-b163-4925-b9f2-fe2469a5523c" loading="lazy" allowfullscreen></iframe> -->
             </div>
           </div>
         </div>
