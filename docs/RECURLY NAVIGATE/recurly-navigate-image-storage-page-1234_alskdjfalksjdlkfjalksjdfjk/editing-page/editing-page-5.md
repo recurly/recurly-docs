@@ -218,19 +218,20 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
 
       <!-- HOW NAVIGATE SHOWS UP FOR YOU -->
       <h2><i class="fa-solid fa-bullseye rc-fa-section"></i> How Navigate shows up for you</h2>
-      <p>Explore the specific tools, expert guidance, and live sessions available to you through this program.</p>
+      <p>Explore the specific tools, expert guidance, and live sessions available to you through this program. We utilize self-driven resources, curated outreach and offerings, and live events to ensure you're able to access what you need, how you need it.</p>
 
-      <!-- ACCORDION 1: Monthly Scorecard -->
+      <!-- ACCORDION 1: Navigate Home -->
       <details class="rc-phase-block" open>
         <summary class="rc-phase-label">
-          <div class="rc-phase-icon"><i class="fa-solid fa-chart-bar"></i></div>
-          <div class="rc-phase-title"><h3>Monthly Scorecards</h3></div>
+          <div class="rc-phase-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="rc-phase-title"><h3>Navigate home & learning paths</h3></div>
           <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
         </summary>
         <div class="rc-phase-content">
           <div class="rc-acc-grid">
             <div class="rc-acc-text">
-              <p>Every <strong>second Tuesday of the month</strong>, you'll receive your Navigate Monthly Scorecard: a snapshot of your most important subscription health metrics, benchmarked against your prior year and industry averages.</p>
+              <p><strong>You're here.</strong> Navigate home will provide regularly updated learning paths and resources built directly from our Customer Success Team's knowledge base. You can access the site at any time, but we'll also reach out to you with recommendations based on your unique performance, interests, and more.</p>
+         <p>Be sure to add <a href="mailto:RecurlyNavigate@Recurly.com">RecurlyNavigate@Recurly.com</a> to your safe contacts if you'd like to receive learning paths and outreach based on your performance.</p>
             </div>
             <div class="rc-scorecard-img">
               <img src="https://files.readme.io/8575081b1976d2d698d93166c69ce11a3653bd92b42855547efb96115cdc8c35-Updated_Scorecard_Image.svg" alt="Navigate Monthly Scorecard example showing subscription health metrics" />
@@ -249,13 +250,8 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
         <div class="rc-phase-content">
           <div class="rc-acc-grid">
             <div class="rc-acc-text">
-              <p>Available upon request. Dedicated 1:1 time with a CSM to review your setup, strategize on a goal, or work through a specific challenge, focused entirely on your priorities.</p>
-              <p><a href="mailto:recurlynavigate@recurly.com">Request an Expert Session →</a></p>
-            </div>
-            <!-- Video Embed Placeholder -->
-            <div class="rc-video-embed">
-              <div class="rc-placeholder-box">Leave room for video embed</div>
-              <!-- <iframe src="YOUR_VIDEO_URL" loading="lazy" allowfullscreen></iframe> -->
+              <p>Dedicated 1:1 time with Santi, your Navigate Customer Success Manager. He'll review your setup, strategize on a goal, or work through a specific challenge, focused entirely on your priorities.</p> 
+<p>If you have questions about expert sessions, feel free to jump into a <a href="https://navigate.recurly.com/global-office-hours/"> Customer Success Office Hours session></a> or <a href="mailto:recurlynavigate@recurly.com">Request an Expert Session →</a></p>
             </div>
           </div>
         </div>
