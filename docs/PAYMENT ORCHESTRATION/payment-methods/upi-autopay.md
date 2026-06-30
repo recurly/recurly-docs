@@ -39,6 +39,12 @@ There are several apps that end-users / consumers to use that involves 'UPI' suc
 
 A **Virtual Payment Address (VPA)**, such as `payer@bankname`, uniquely identifies a consumer’s bank account in a UPI app. It conceals direct bank information; therefore, Recurly does not see the underlying payment method.
 
+<Callout icon="📘" theme="warn">
+  ### RBI Update on VPA Usage
+
+  RBI (Reserve Bank of India) is going to mandate QR Code and App Authentication in the future. It is recommended to use those methods instead of VPA for new integrations.
+</Callout>
+
 ### What is are QR or App Authentications?
 
 A **QR Code** will allow a consumer to scan a code and authenticate on their desktop. **App Intents** allows merchants to let mobile users authenticate in mobile if they don't have access to scan a code.
@@ -50,7 +56,8 @@ UPI AutoPay is specifically designed for subscriptions, and subscriptions only. 
 - One-time transactions, including force collections and purchases, are not supported.
 - Subscription trial conversions (forcing trials to convert) are not supported at this time due to subscription-specific mandate creation and pre-notification requirements with UPI. You can read more about our specific [mandate tolerances](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/how-are-mandates-set-up) below. Similarly, upgrades are not supported if they create an immediate charge.
 - Adding a subscription through the UI: Since UPI requires a customer in session to confirm the subscription, this is not recommended.
-- Changing billing information: Recurly will store the consumer's VPA for future subscriptions, but the billing information is stored within the UPI App itself, not with the gateway or Recurly.
+- **When using any authentication method**: If you are using VPA, Recurly will store the consumer's VPA for future subscriptions, but the billing information is stored within the UPI App itself, not with the gateway or Recurly. If you are already using QR Code or App Authentication, we do not store billing information on file, and modifying billing info must be done in the UPI app itself.
+  - If a customer changes their bank, or has a major financial change, they must resubscribe.
 - Changing the renewal date defined by the mandate: If a customer wants to change their renewal date, they need to resubscribe and confirm a new mandate. UPI mandates are strict about the date we can charge the consumer, and so modifications of the date after enrollment are not recommended as declines will occur. This includes using Calendar billing / aggregation features.
 - Coupons are supported however, **100% coupons during signup cannot be supported** as e-mandate creation is a requirement for this payment method. Please use a free trial option instead.
 
@@ -115,13 +122,16 @@ UPI AutoPay together require a minimum of fields to create a mandate for a recur
 
 ### Creating Subscriptions
 
-Use the **subscription** or **purchase** endpoints to create subscriptions with UPI AutoPay. Provide the VPA in Recurly’s `payment_gateway_references` object and specify `upi_vpa` as the reference type. See Recurly documentation for more details.
+Use the **subscription** or **purchase** endpoints to create subscriptions with UPI AutoPay.&#x20;
+
+- **VPA usage:&#x20;**&#x50;rovide the VPA in Recurly’s `payment_gateway_references` object and specify `upi_vpa` as the reference type. See Recurly documentation for more details.
+- **QR / App Intent usage:&#x20;**&#x50;rovide the `type` of `upi-autopay`, and the `authentication_method` you wish to use. See our developer guide for more details on authentication methods.
 
 ### Billing information updates
 
-UPI AutoPay **doesn’t support direct updates** to a VPA. Customers must update their banking information in the UPI app directly.
+UPI AutoPay **doesn’t support direct updates** to billing info on Recurly's systems. Customers must update their banking information in the UPI app directly.
 
-If a customer’s VPA changes, **cancel the existing subscription** and have them re-enroll with the new VPA to create a new mandate.
+If a customer’s VPA changes, **cancel the existing subscription** and have them re-enroll with the new VPA to create a new mandate, or use QR / App Intent depending on what is supported by RBI.
 
 ### Enrollments and Charges
 
@@ -171,10 +181,6 @@ A customer may resume a paused subscription directly in the UPI app. Recurly sen
 
 - subscription.resumed
 
-### Gateway tokens
-
-UPI requires Recurly's **gateway token** approach, as each consumer’s VPA functions like a virtual account identifier (`payer@bankname`). Your integration must pass the VPA through `payment_gateway_references` object and ensure you are setting the reference type as `upi_vpa`  and `gateway_code` parameters. Refer to Recurly’s API documentation for details.
-
 ### Net terms and subscription updates
 
 - **Use Net Terms = 0** to avoid failed payments due to limited UPI charge windows.
@@ -193,6 +199,8 @@ UPI AutoPay payments retries are enabled within UPI timeframes (12am - 7am IST) 
 ## Initial Signup
 
 1. During the checkout, allow your consumer to provide their VPA (Virtual Payment Address) and pass it to Recurly using documented gateway token parameters.
+   1. If you are using QR Code authentication, they will be presented with a QR code they need to scan.&#x20;
+   2. If you are using App Intents, you will need to present them with links to launch their respective UPI app of choice.
 2. This will create an enrollment request to the gateway, and if accepted by the customer within their UPI app, will set up a subscription and, if the plan is not set up for a trial, charge the first amount according to the plan currency/amount settings. **Ensure you have INR currency and applicable pricing set up properly.**
 
 ## Renewals
@@ -200,7 +208,7 @@ UPI AutoPay payments retries are enabled within UPI timeframes (12am - 7am IST) 
 Renewals will occur according to plan settings, unless the customer interrupts the subscription from the UPI Application on their phone by cancelling or pausing the subscription.
 
 1. 24-48 hours pre-renewal, a notification is set to the gateway to initiate the pre-renewal / pre-debit notification.
-2. As long as the customer does not pause or cancel their subscription via the UPI App, Recurly will make a payment attempt after the prenotification period has ended. This will align with the subscription due date.
+2. As long as the customer does not pause or cancel their subscription via the UPI App, Recurly will make a payment attempt after the pre-notification period has ended. This will align with the subscription due date.
 
 We recommend enabling specific webhooks so that you can act on these cases to pause, resume, or cancel the subscription based on the customer’s request.
 
@@ -229,7 +237,8 @@ Other good webhooks to listen for are:
 
 ### Q: Do you support UPI QR Code or One-Time transactions?
 
-- No. Our integration with Ebanx only supports recurring transactions.
+- We now support QR Code authentication when signing up for Subscriptions. See our integration guide for UPI AutoPay for more details.&#x20;
+- We do NOT support one time UPI transactions at this time.&#x20;
 
 ### Q: My UPI Subscription is failing, how can I fix this?
 
