@@ -5,7 +5,7 @@ excerpt: >-
   learning paths to launch, acquire, retain, and scale your recurring revenue
   business.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Explore Recurly Navigate, your Subscription Success Hub. Access expert
