@@ -377,7 +377,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── FOOTER SUMMARY ── -->
     <div class="rc-footer-summary">
       <h3>Maximizing your subscription potential</h3>
-      <p>Navigate puts Recurly's strategic insights in your hands. Have questions about the program? Have questions about <em>anything</em> at all? Our Customer Success Manager are online weekly to help you strategize, work towards your goals, and overcome your obstacles.</p>
+      <p>Navigate puts Recurly's strategic insights in your hands. Have questions about the program? Have questions about <em>anything</em> at all? Our Customer Success Managers are online weekly to help you strategize, work towards your goals, and overcome your obstacles.</p>
       <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" class="rc-support-link">Book an Office Hours session here →</a>
     </div>
 
