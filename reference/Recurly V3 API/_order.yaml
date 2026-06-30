@@ -16,6 +16,7 @@
 - subscription_change
 - shipping_address
 - invoice
+- revenue_recovery
 - line_item
 - credit_payment
 - purchase
@@ -38,4 +39,3 @@
 - general_ledger_account
 - performance_obligations
 - invoice_templates
-- revenue_recovery
