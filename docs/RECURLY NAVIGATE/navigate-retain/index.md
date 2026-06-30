@@ -6,7 +6,7 @@ excerpt: >-
   voluntary churn with save offers and pause features, and recover lost revenue
   automatically to increase subscriber LTV.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   keywords:
     - Involuntary churn reduction
