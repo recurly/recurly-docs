@@ -125,7 +125,7 @@ UPI AutoPay together require a minimum of fields to create a mandate for a recur
 Use the **subscription** or **purchase** endpoints to create subscriptions with UPI AutoPay.&#x20;
 
 - **VPA usage:&#x20;**&#x50;rovide the VPA in Recurly’s `payment_gateway_references` object and specify `upi_vpa` as the reference type. See Recurly documentation for more details.
-- **QR / App Intent usage:&#x20;**&#x50;rovide the `type` of `upi-autopay`, and the `authentication_method` you wish to use. See our developer guide for more details on authentication methods.
+- **QR / App Intent usage:&#x20;**&#x50;rovide the `type` of `upi-autopay`, and the `authentication_method` you wish to use. See our [developer guide](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide) for more details on authentication methods.
 
 ### Billing information updates
 
