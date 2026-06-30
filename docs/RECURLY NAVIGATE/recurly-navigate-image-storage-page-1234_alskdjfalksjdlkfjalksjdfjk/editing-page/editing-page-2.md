@@ -254,7 +254,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     
 
  <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-grid-2 rc-fa-section"></i> What's included in Navigate</h2>
+      <h2><i class="fa-solid fa-list rc-fa-section"></i> What's in this course?</h2>
       <div class="rc-wi-grid">
         <div class="rc-wi">
           <div class="rc-wi-header"><i class="fa-solid fa-calendar-days" style="color:#FFD706;font-size:1.1rem;"></i><h4>Open Office Hours</h4></div>
