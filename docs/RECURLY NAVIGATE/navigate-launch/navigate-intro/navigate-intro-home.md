@@ -215,7 +215,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
       </div>
 
 
-      <h2><i class="fa-solid fa-grid-2 rc-fa-magnifying-glass"></i> What you'll find on Navigate Home</h2>
+      <h2><i class="fa-solid fa-magnifying-glass rc-fa-section"></i> What you'll find on Navigate Home</h2>
       <div class="rc-tile-grid">
         <div class="rc-tile">
           <div class="rc-tile-icon"><i class="fa-solid fa-map"></i></div>
