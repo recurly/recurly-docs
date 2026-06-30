@@ -251,7 +251,7 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
           <div class="rc-acc-grid">
             <div class="rc-acc-text">
               <p>Dedicated 1:1 time with Santi, your Navigate Customer Success Manager. He'll review your setup, strategize on a goal, or work through a specific challenge, focused entirely on your priorities.</p> 
-<p>If you have questions about expert sessions, feel free to jump into a <a href="https://navigate.recurly.com/global-office-hours/">Customer Success Office Hours session</a> or email Santi with questions at <a href="mailto:recurlynavigate@recurly.com">sespinosa@Recurly.com</a>.</p>
+<p><strong>Expert sessions are 100% private and tailored to your needs</strong>. No need to reach out to us, we'll contact you! If you have questions or would like to schedule a session, feel free to jump into a <a href="https://navigate.recurly.com/global-office-hours/">Customer Success Office Hours session</a>, and our CSMs will assist you.</p>
             </div>
           </div>
         </div>
