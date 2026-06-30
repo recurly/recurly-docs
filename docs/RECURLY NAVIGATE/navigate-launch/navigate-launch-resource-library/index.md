@@ -202,7 +202,7 @@ them.</p>
           <div class="rc-feature-icon"><i class="fa-regular fa-file-lines"></i></div>
           <h4>What is Navigate?</h4>
           <p>Official orientation of Recurly's Customer Success program, built for you.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Explore program ↗</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/navigate-intro" target="_blank" rel="noopener noreferrer">Explore program ↗</a>
         </div>
         
         <div class="rc-feature-card">
