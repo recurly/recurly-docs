@@ -232,7 +232,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-map-location-dot rc-fa-section"></i> You are here</h2>
 
-      <div class="rc-card">
         <h3><i class="fa-solid fa-compass rc-fa-section"></i> What is this course?</h3>
         <p>This course is your official orientation to <strong>Recurly Navigate</strong> — a digital Customer Success program that gives you the best practices, expert guidance, and product insights you need, right when you need them.</p>
         <p>Whether you're brand new to Recurly or just joining the Navigate program, this course walks you through everything: how we support you, where to find every resource, and what to expect from us.</p>
