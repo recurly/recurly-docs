@@ -214,7 +214,7 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
 
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-circle-check rc-fa-section"></i> Your "always-on" Customer Success program</h2>
-      <p>Need to write a quick sentence to hammer down on the purpose of Navigate and introduce the items below.</p><br>
+      <p>Navigate is here to support you through every step of your customer journey in a wholistic way, providing digital, video, downloadable resources and more. We are growing alongside you and continuously adding to our library, ensuring you have access to the resources you need at optimal times in your subscription lifecycle.</p><br>
 
       <!-- HOW NAVIGATE SHOWS UP FOR YOU -->
       <h2><i class="fa-solid fa-bullseye rc-fa-section"></i> How Navigate shows up for you</h2>
