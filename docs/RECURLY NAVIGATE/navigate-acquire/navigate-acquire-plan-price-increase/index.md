@@ -6,7 +6,7 @@ excerpt: >-
   manual and API subscriber migration, retention communication workflows, and
   analytics tracking to optimize recurring revenue without increasing churn.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Learn how to strategically plan and execute a subscription plan price

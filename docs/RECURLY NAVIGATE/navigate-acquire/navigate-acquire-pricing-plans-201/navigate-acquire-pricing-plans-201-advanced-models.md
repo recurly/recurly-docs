@@ -5,7 +5,7 @@ excerpt: >-
   pricing structures using the Purchases API and manage prepaid account balances
   for upfront B2B payments.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Master advanced subscription billing with Recurly. Learn to configure hybrid

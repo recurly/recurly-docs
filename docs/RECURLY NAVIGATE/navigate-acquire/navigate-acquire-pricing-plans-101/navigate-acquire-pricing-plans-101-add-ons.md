@@ -6,7 +6,7 @@ excerpt: >-
   catalog for multi-plan consistency, and manage critical properties like
   billing timing, accounting codes, and pricing models.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Master Recurly add-ons to maximize subscription expansion revenue. Learn to

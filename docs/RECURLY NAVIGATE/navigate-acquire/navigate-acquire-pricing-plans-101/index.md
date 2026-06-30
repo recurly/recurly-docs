@@ -6,7 +6,7 @@ excerpt: >-
   multi-currency billing, and trial structures while tracking critical revenue
   metrics like MRR, ARPU, and subscriber churn.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize your subscription management strategy with Recurly’s Pricing &

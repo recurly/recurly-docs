@@ -5,7 +5,7 @@ excerpt: >-
   Hierarchy. Learn to structure parent-child accounts, implement consolidated
   Invoice Rollup, and configure flexible billing responsibilities.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Manage complex B2B and enterprise customer billing with Recurly's Account

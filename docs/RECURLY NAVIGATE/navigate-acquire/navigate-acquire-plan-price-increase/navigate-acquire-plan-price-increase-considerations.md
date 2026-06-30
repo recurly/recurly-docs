@@ -7,7 +7,7 @@ excerpt: >-
   grandfathering overrides, and safely execute pre-increase legacy plan audits
   without risking permanent data loss.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Master the operational decisions behind a Recurly plan price increase before

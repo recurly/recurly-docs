@@ -6,7 +6,7 @@ excerpt: >-
   breakouts, per-plan churn trends, active subscriber counts, ARPS, and trial
   conversion rates—against industry benchmarks.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Evaluate your plan and pricing performance using Recurly Analytics. Track

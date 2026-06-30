@@ -5,7 +5,7 @@ excerpt: >-
   key plan fields, permanent billing intervals, subscription terms, unique plan
   codes, and the business case for balancing monthly vs. annual billing.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Learn how to configure and structure subscription plans in Recurly.

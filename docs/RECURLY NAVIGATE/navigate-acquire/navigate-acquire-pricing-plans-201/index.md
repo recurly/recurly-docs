@@ -5,7 +5,7 @@ excerpt: >-
   Master advanced billing configurations including price segmentation, B2B
   account hierarchies, metered usage billing, and hybrid pricing models.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Advance your subscription business with Recurly's Pricing & Plans 201

@@ -5,7 +5,7 @@ excerpt: >-
   geographic pricing, run A/B price tests, and manage grandfathered subscriber
   cohorts from a single subscription plan configuration.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Prevent plan sprawl using Recurly price segments. Learn how to configure

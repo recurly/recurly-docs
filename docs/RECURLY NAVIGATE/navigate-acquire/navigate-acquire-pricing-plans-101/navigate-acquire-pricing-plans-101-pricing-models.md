@@ -7,7 +7,7 @@ excerpt: >-
   thresholds, and aligns recurring revenue directly with your product’s value
   metrics.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize your subscription plan architecture using Recurly’s five pricing

@@ -7,7 +7,7 @@ excerpt: >-
   to seamlessly integrate with your external ESP to maintain high retention and
   prevent support volume spikes.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize your subscription price change communication strategy using

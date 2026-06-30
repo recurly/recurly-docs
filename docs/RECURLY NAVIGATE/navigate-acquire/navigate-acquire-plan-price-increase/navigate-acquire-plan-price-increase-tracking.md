@@ -6,7 +6,7 @@ excerpt: >-
   churn dashboards, and measure key revenue and retention KPIs at 30, 60, and 90
   days post-migration to evaluate pricing strategy success.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Track and analyze the financial impact of a subscription price change using

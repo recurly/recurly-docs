@@ -5,7 +5,7 @@ excerpt: >-
   leverage data exports, Analytics Explore, and native Snowflake integrations to
   evaluate pricing segment and cohort performance.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize your subscription insights with Recurly Advanced Analytics. Learn

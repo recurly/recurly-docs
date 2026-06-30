@@ -6,7 +6,7 @@ excerpt: >-
   pre-expiration notifications, and navigate the strategic business decision
   between card-required and cardless trials.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize your subscription conversion funnel with Recurly's free trial

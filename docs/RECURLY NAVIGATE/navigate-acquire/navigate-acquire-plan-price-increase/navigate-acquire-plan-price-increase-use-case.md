@@ -6,7 +6,7 @@ excerpt: >-
   value delivery, evaluate safe increase ranges, and implement cohort testing to
   protect subscriber unit economics while mitigating churn risks.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Discover the strategic business triggers and use cases for executing a

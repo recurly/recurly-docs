@@ -5,7 +5,7 @@ excerpt: >-
   expansion using per-currency gateway routing, 3DS2/SCA compliance for European
   markets, and region-aware dunning campaigns.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Scale global multi-currency billing with Recurly. Optimize international

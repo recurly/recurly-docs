@@ -5,7 +5,7 @@ excerpt: >-
   comprehensive documentation and resources for price segmentation, account
   hierarchy, metered usage, and analytics.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Review and reinforce advanced subscription billing concepts in Recurly.

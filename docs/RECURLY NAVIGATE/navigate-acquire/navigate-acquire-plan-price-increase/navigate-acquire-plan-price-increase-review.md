@@ -7,7 +7,7 @@ excerpt: >-
   subscriber migration, grandfathering overrides, and revenue tracking to ensure
   a seamless execution.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Access a consolidated hub of strategic frameworks, developer API

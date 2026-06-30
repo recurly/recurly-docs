@@ -5,7 +5,7 @@ excerpt: >-
   permanent billing configurations, multi-currency plan rules, volume pricing
   math, and access advanced learning paths and documentation resources.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Validate your understanding of Recurly subscription foundations. Review

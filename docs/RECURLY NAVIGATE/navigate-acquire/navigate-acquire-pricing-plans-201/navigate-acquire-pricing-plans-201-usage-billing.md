@@ -5,7 +5,7 @@ excerpt: >-
   configure usage-type add-ons, log records via the API, select aggregation
   strategies, and handle billing in arrears.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Implement metered and consumption-based usage billing in Recurly. Learn how

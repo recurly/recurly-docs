@@ -6,7 +6,7 @@ excerpt: >-
   across 140+ currencies, verify payment gateway compatibility, set up localized
   coupons, and execute strategic market pricing models.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Configure multi-currency billing in Recurly to seamlessly scale your
