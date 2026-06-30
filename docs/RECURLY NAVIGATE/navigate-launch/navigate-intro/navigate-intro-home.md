@@ -1,5 +1,5 @@
 ---
-title: 'Introduction to Navigate: Home'
+title: 'Welcome: "Navigating" Navigate'
 deprecated: false
 hidden: true
 metadata:
