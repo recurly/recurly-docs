@@ -209,7 +209,7 @@ them.</p>
           <div class="rc-feature-icon"><i class="fa-solid fa-circle-play"></i></div>
           <h4>Global Office Hours</h4>
           <p>Connect directly with our Customer Success Managers in small-group sessions built for practical, real-time problem-solving.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Book session ↗</a>
+          <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">Book session ↗</a>
         </div>
 
         <div class="rc-feature-card">
