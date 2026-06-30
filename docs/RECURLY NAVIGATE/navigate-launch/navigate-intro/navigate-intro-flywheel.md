@@ -1,5 +1,5 @@
 ---
-title: 'Introduction to Navigate: The Subscription Flywheel'
+title: 'Introduction: The Subscription Flywheel'
 deprecated: false
 hidden: true
 metadata:
