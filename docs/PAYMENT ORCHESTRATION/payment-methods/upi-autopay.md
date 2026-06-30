@@ -237,7 +237,7 @@ Other good webhooks to listen for are:
 
 ### Q: Do you support UPI QR Code or One-Time transactions?
 
-- We now support QR Code authentication when signing up for Subscriptions. See our integration guide for UPI AutoPay for more details.&#x20;
+- We now support QR Code authentication when signing up for Subscriptions. See our [integration guide for UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide) for more details.&#x20;
 - We do NOT support one time UPI transactions at this time.&#x20;
 
 ### Q: My UPI Subscription is failing, how can I fix this?
