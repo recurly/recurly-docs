@@ -426,12 +426,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div id="plans" class="rc-lp-section">
       <h2><i class="fa-solid fa-sliders rc-fa-section"></i> Plans &amp; pricing</h2>
       <div class="rc-path-list">
-        <a href="#" class="rc-path-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Plans icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Plans</h3>
+            <h3>Pricing & plans 101: The basics</h3>
             <p>Learn how to seamlessly structure and configure your core subscription plans to attract and convert your target audience.</p>
           </div>
           <div class="rc-path-arrow">Start path →</div>
@@ -441,7 +441,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Pricing models icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Pricing models: tiers vs ramp</h3>
+            <h3>Pricing & plans 201: Advanced</h3>
             <p>Explore advanced pricing strategies, including tiered models and ramp pricing, to maximize early conversions and lifetime value.</p>
           </div>
           <div class="rc-path-arrow">Start path →</div>
@@ -451,7 +451,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Plan flexibility icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Plan flexibility</h3>
+            <h3>Plan price increase</h3>
             <p>Understand how to offer flexible plan options, allowing subscribers to pause, seamlessly upgrade, or alter their cadence.</p>
           </div>
           <div class="rc-path-arrow">Start path →</div>
@@ -460,7 +460,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- ── INCENTIVES ── -->
-    <div id="incentives" class="rc-lp-section">
+    <div id="incentives" class="rc-lp-section" style="display: none;">
       <h2><i class="fa-solid fa-tag rc-fa-section"></i> Incentives</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
@@ -487,7 +487,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- ── GIFTING & EXPANSION ── -->
-    <div id="gifting" class="rc-lp-section">
+    <div id="gifting" class="rc-lp-section" style="display: none;">
       <h2><i class="fa-solid fa-gift rc-fa-section"></i> Gifting &amp; expansion</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
@@ -514,7 +514,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- ── PAYMENTS ── -->
-    <div id="payments" class="rc-lp-section">
+    <div id="payments" class="rc-lp-section" style="display: none;">
       <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> Payments</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
