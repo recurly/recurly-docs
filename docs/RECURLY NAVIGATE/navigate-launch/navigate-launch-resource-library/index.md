@@ -230,21 +230,21 @@ them.</p>
           <div class="rc-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
           <h4>Resource center</h4>
           <p>Curated guides, case studies & benchmarks to help subscription businesses launch, grow, and retain smartly.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">View site ↗</a>
+          <a href="https://recurly.com/resources/" target="_blank" rel="noopener noreferrer">View site ↗</a>
         </div>
 
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-gear"></i></div>
           <h4>Status page</h4>
           <p>Enroll for real-time incident reporting and status updates.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Start setup ↗</a>
+          <a href="https://status.recurly.com/" target="_blank" rel="noopener noreferrer">Subscribe here ↗</a>
         </div>
         
 				<div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-list-check"></i></div>
           <h4>Email preferences</h4>
           <p>Subscribe to Newsletters, event updates and product updates.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Select preferences ↗</a>
+          <a href="https://go.recurly.com/UnsubscribePage.html?mkt_unsubscribe=1" target="_blank" rel="noopener noreferrer">Select preferences ↗</a>
         </div>
       </div>
     </div>
