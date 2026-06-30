@@ -58,4 +58,6 @@ metadata:
 
 ![](https://files.readme.io/e4eed6877aa71924cbb98a09eedd405724d697b2935fb964db22fa7a60116121-Custom_Gateways_2.png)
 
+![](https://files.readme.io/362138209e3acc23ae77900b1dd956118a85ac96c7baa1fff11e45e7fb9aa3e8-Screenshot_2026-06-30_at_3.31.28_PM.png)
+
 <br />
