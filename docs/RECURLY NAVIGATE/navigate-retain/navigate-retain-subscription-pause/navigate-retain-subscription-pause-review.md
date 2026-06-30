@@ -6,7 +6,7 @@ excerpt: >-
   including API documentation, webhooks, Recurly Engage details, and industry
   benchmark reports to finalize your customer retention strategy.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Test your knowledge on subscription pause configurations, API endpoints, and

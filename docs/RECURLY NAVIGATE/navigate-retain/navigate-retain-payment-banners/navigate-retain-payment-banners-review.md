@@ -6,7 +6,7 @@ excerpt: >-
   revenue recovery strategies, and dunning analytics to eliminate involuntary
   churn.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Review the complete Recurly payment banners learning path and access the

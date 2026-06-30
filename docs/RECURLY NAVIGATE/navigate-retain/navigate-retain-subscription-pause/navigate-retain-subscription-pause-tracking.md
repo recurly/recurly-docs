@@ -7,7 +7,7 @@ excerpt: >-
   rate using subscription exports, analytics reports, and real-time webhook
   tracking.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Learn how to measure and interpret the financial and retention impact of

@@ -7,7 +7,7 @@ excerpt: >-
   history, reduce voluntary churn, and understand the critical differences
   between pausing and postponing subscriptions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Explore the comprehensive guide to configuring pause subscriptions, allowing

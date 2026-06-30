@@ -7,7 +7,7 @@ excerpt: >-
   transactional emails, and strategically place pause options within your
   cancellation flow to preserve long-term subscriber value.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Learn how to enable, configure, and manage subscription pause parameters in

@@ -6,7 +6,7 @@ excerpt: >-
   engineering requirements, real-time webhook events, and no-code prompt
   configurations to accelerate subscription revenue recovery.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Evaluate the tradeoffs between custom Recurly webhooks and the low-code

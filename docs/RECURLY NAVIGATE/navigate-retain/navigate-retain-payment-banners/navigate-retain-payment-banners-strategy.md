@@ -6,7 +6,7 @@ excerpt: >-
   high-converting, compliant messages for failed payments, active dunning
   cycles, and high-value annual pre-renewals.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize subscription retention with strategic payment banner timing,

@@ -6,7 +6,7 @@ excerpt: >-
   Intelligent Retries, and decouple product access using webhooks to protect
   revenue.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize subscription dunning windows to maximize failed payment recovery.

@@ -6,7 +6,7 @@ excerpt: >-
   and involuntary churn deltas while troubleshooting underperforming dunning
   campaigns.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Track and optimize your payment banner performance with Recurly's 90-day

@@ -7,7 +7,7 @@ excerpt: >-
   recover failed billing attempts and track long-term subscription revenue
   impact.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Discover how Recurly payment banners prevent subscriber churn by delivering

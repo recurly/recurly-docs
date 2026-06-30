@@ -6,7 +6,7 @@ excerpt: >-
   branding, and campaign segmentation—and explore all essential setup resources,
   documentation, and expert support links.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Access a comprehensive review of Recurly's Dunning 101 path. Recapture key

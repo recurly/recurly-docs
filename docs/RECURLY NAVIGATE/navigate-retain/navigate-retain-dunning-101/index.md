@@ -5,7 +5,7 @@ excerpt: >-
   optimize dunning windows, email messaging, and campaigns for maximum payment
   recovery and reduced involuntary churn.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Master subscription dunning basics with Recurly's Dunning 101 path. Learn to

@@ -5,7 +5,7 @@ excerpt: >-
   retry windows, structure email schedules, and audit subscription plan mapping
   to maximize revenue recovery.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Configure and assign new dunning campaigns in Recurly. Learn how to set

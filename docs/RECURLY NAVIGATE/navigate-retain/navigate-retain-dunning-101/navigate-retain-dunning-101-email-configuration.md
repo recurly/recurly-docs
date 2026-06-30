@@ -5,7 +5,7 @@ excerpt: >-
   recovery. Learn how to apply visual branding, insert dynamic personalization
   variables, write escalating message copy, and test payment update links.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Configure your Recurly dunning email templates to maximize subscription

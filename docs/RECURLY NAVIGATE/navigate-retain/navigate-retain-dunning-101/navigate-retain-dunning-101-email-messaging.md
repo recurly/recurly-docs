@@ -5,7 +5,7 @@ excerpt: >-
   strategy. Learn how to craft an escalating urgency message arc,
   high-converting call-to-actions, and mobile-optimized subject lines.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize your subscription recovery with an effective dunning email

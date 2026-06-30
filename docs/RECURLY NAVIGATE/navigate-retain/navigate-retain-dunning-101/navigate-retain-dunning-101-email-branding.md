@@ -6,7 +6,7 @@ excerpt: >-
   email template customization builds subscriber trust and boosts payment
   recovery rates.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Prevent dunning emails from looking like phishing attempts by applying your

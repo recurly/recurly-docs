@@ -6,7 +6,7 @@ excerpt: >-
   value to optimize your outreach, protect high-LTV subscribers, and prevent
   involuntary churn.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Discover the power of multiple dunning campaigns in Recurly. Learn how to

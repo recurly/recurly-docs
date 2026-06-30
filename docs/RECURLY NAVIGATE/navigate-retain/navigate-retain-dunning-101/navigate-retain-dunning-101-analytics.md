@@ -5,7 +5,7 @@ excerpt: >-
   analytics. Learn how to monitor recovery rates, compare campaign data, and
   measure total recovered revenue.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Track and evaluate your subscription recovery success using Recurly's

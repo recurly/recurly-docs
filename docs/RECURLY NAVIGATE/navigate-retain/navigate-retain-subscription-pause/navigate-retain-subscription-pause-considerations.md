@@ -7,7 +7,7 @@ excerpt: >-
   versus Hosted Account Management (HAM) restrictions, and the overall impact on
   MRR and analytics tracking.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Review essential eligibility rules, plan type distinctions, and integration

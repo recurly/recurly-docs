@@ -5,7 +5,7 @@ excerpt: >-
   update window lengths for monthly and annual plans, optimize email schedules,
   and audit plan assignments to maximize payment recovery.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Step-by-step guide to Recurly dunning window configuration. Learn how to

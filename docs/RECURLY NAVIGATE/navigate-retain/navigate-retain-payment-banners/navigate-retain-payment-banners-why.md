@@ -6,7 +6,7 @@ excerpt: >-
   critical trigger scenarios, from Account Updater escalations to proactive
   cancellation save flows, that maximize subscriber retention.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Explore how in-session payment banners combat involuntary subscription churn

@@ -6,7 +6,7 @@ excerpt: >-
   industry benchmarks, consumer behavioral insights, and actionable metrics to
   optimize your subscription retention strategy.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Discover how allowing subscribers to pause instead of cancel reduces
