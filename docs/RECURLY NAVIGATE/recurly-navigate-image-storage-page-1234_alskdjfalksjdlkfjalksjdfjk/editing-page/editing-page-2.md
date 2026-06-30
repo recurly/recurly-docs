@@ -260,7 +260,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <p>Drop in and ask a Customer Success Manager anything. No agenda required, just show up with your questions.</p>
           <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">Browse the Office Hours schedule →</a>
         </div>
-</div>
         <div class="rc-wi">
           <div class="rc-wi-header"><i class="fa-solid fa-headset" style="color:#FFD706;font-size:1.1rem;"></i><h4>1:1 Expert Sessions</h4></div>
           <p>Request a 1:1 session with a Customer Success Manager to dig into a specific challenge, review your setup, and map out next steps, focused entirely on your priorities.</p>
