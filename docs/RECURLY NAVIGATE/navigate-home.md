@@ -289,8 +289,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
       </div>
       <div class="rc-home-title-block">
-        <h1>Your Recurly Digital Customer Success Hub</h1>
-        <h2>Find your path. Fuel your growth.</h2>
+<h3>Find your path. Fuel your growth.</h3>
+        <h1>Recurly Navigate</h1>
+     
 <p>Select a pillar below to uncover best practices, expert customer success guidance, and on-demand education tailored to launch, grow, and scale your subscription business.</p>
       </div>
     </div>
