@@ -250,7 +250,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <p><strong>Navigate is Recurly's digital Customer Success program</strong>: built to bring the best of our expertise directly to you...digitally. Every subscription business is different and your priorities change over time. Navigate is designed to meet you where you are.</p>
       </div>
 </div>
+    
 
+ <div class="rc-lp-section">
       <h2><i class="fa-solid fa-grid-2 rc-fa-section"></i> What's included in Navigate</h2>
       <div class="rc-wi-grid">
         <div class="rc-wi">
