@@ -233,7 +233,7 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
               <p>Every <strong>second Tuesday of the month</strong>, you'll receive your Navigate Monthly Scorecard: a snapshot of your most important subscription health metrics, benchmarked against your prior year and industry averages.</p>
             </div>
             <div class="rc-scorecard-img">
-              <img src="https://files.readme.io/bf0f3ed737a5783fbd0ac153303d2aec540da707789b1225059bdb25a9f3a146-Merchant_Scorecard_Example.png" alt="Navigate Monthly Scorecard example showing subscription health metrics" />
+              <img src="https://files.readme.io/8575081b1976d2d698d93166c69ce11a3653bd92b42855547efb96115cdc8c35-Updated_Scorecard_Image.svg" alt="Navigate Monthly Scorecard example showing subscription health metrics" />
             </div>
           </div>
         </div>
