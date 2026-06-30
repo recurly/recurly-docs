@@ -237,7 +237,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
 
  <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-thought-bubble rc-fa-section"></i> What is Navigate?</h2>
+      <h2><i class="fa-solid fa-location-pin rc-fa-section"></i> What is Navigate?</h2>
    <p>Before we begin, let's define the foundation of Navigate, <strong>Customer Success</strong>, it's importance in your journey, and how it correlates to the program as a whole.<br></p></div>
 
         <div class="rc-card">
