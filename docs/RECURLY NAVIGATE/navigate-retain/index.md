@@ -411,7 +411,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-user-minus rc-fa-section"></i> Involuntary churn management</h2>
       <div class="rc-path-list">
 
-        <a href="#" class="rc-path-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
@@ -422,35 +422,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-path-arrow">Start path →</div>
         </a>
 
-        <a href="#" class="rc-path-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Account updater</h3>
             <p>Automatically refresh expired or replaced credit cards before they fail. Discover how Account Updater drastically reduces passive churn.</p>
-          </div>
-          <div class="rc-path-arrow">Start path →</div>
-        </a>
-
-        <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
-          </div>
-          <div class="rc-path-content">
-            <h3>Intelligent retries</h3>
-            <p>Go beyond basic dunning by leveraging machine learning to retry transactions at the exact moment they are most likely to succeed.</p>
-          </div>
-          <div class="rc-path-arrow">Start path →</div>
-        </a>
-
-        <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
-          </div>
-          <div class="rc-path-content">
-            <h3>Backup payment methods</h3>
-            <p>Ensure continuous service by capturing and falling back on secondary payment methods when a primary transaction fails.</p>
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
@@ -463,35 +441,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-right-from-bracket rc-fa-section"></i> Voluntary churn &amp; lifecycle</h2>
       <div class="rc-path-list">
 
-        <a href="#" class="rc-path-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Pause subscriptions</h3>
             <p>Give your customers flexibility. Learn how to let subscribers easily pause their billing instead of outright canceling their accounts.</p>
-          </div>
-          <div class="rc-path-arrow">Start path →</div>
-        </a>
-
-        <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
-          </div>
-          <div class="rc-path-content">
-            <h3>Cancel save &amp; offers</h3>
-            <p>Intercept cancellations with targeted, personalized discount offers and down-sell options directly within the offboarding flow.</p>
-          </div>
-          <div class="rc-path-arrow">Start path →</div>
-        </a>
-
-        <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
-          </div>
-          <div class="rc-path-content">
-            <h3>Customer self-service</h3>
-            <p>Empower your subscribers to update payment details, manage their plans, and view invoices without contacting your support team.</p>
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
@@ -504,24 +460,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Communication &amp; experience</h2>
       <div class="rc-path-list">
 
-        <a href="#" class="rc-path-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Payment banners</h3>
             <p>Keep users informed without disruption. Implement native application banners to alert customers of failing cards or upcoming renewals.</p>
-          </div>
-          <div class="rc-path-arrow">Start path →</div>
-        </a>
-
-        <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
-          </div>
-          <div class="rc-path-content">
-            <h3>Invoice sequences &amp; proration</h3>
-            <p>Optimize your billing communications. Ensure clarity around upgrades, downgrades, and proration to prevent chargebacks and disputes.</p>
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
