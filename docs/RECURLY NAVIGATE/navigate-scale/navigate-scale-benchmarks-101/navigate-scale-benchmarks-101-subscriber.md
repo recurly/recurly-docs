@@ -5,7 +5,7 @@ excerpt: >-
   Compare your acquisition rate and sign-up decline rate to reduce checkout
   friction and detect fraud.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize your subscription funnel using Recurly's subscriber benchmarks.

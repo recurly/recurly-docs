@@ -5,7 +5,7 @@ excerpt: >-
   benchmarks. Learn to evaluate invoice paid rates, reduce renewal declines, and
   extend dunning windows.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize your payment recovery strategy using Recurly's renewal and dunning

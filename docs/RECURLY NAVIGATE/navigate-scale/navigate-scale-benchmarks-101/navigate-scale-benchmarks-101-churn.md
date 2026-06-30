@@ -5,7 +5,7 @@ excerpt: >-
   voluntary and involuntary churn to apply targeted payment recovery and
   retention fixes.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize customer retention using Recurly's churn benchmarks. Isolate

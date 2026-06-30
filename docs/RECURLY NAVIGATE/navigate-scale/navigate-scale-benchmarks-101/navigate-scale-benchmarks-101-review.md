@@ -5,7 +5,7 @@ excerpt: >-
   KPIs. Access centralized resources for churn, dunning, and renewal analytics
   configuration.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Review and reinforce your knowledge of Recurly's 8 key subscription

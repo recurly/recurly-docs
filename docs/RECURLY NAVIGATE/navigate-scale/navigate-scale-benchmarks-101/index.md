@@ -5,7 +5,7 @@ excerpt: >-
   lifecycle metrics against real-time industry data and optimize your dashboard
   analytics.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Discover Recurly's Benchmarks 101 path to evaluate 8 key subscription

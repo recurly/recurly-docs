@@ -5,7 +5,7 @@ excerpt: >-
   industry peers. Learn how to interpret quartile charts, apply data filters,
   and configure industry settings.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Master Recurly's benchmark dashboards to track your trend line against
