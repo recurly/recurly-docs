@@ -234,7 +234,7 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
          <p>Be sure to add <a href="mailto:RecurlyNavigate@Recurly.com">RecurlyNavigate@Recurly.com</a> to your safe contacts if you'd like to receive learning paths and outreach based on your performance.</p>
             </div>
             <div class="rc-scorecard-img">
-              <img src="https://files.readme.io/8575081b1976d2d698d93166c69ce11a3653bd92b42855547efb96115cdc8c35-Updated_Scorecard_Image.svg" alt="Navigate Monthly Scorecard example showing subscription health metrics" />
+              <img src="https://files.readme.io/362138209e3acc23ae77900b1dd956118a85ac96c7baa1fff11e45e7fb9aa3e8-Screenshot_2026-06-30_at_3.31.28_PM.png" alt="Navigate Monthly Scorecard example showing subscription health metrics" />
             </div>
           </div>
         </div>
