@@ -1,5 +1,5 @@
 ---
-title: 'Welcome to Navigate: The Full Program'
+title: 'Welcome: The Full Program'
 deprecated: false
 hidden: true
 metadata:
