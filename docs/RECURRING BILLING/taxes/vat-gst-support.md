@@ -1,8 +1,9 @@
 ---
 title: VAT & GST support
 excerpt: >-
-  Navigate the complexities of global taxation with ease. Recurly's VAT & GST
-  support ensures compliance and accuracy, tailored for your business needs.
+  Configure VAT and GST tax collection in Recurly, set up tax registration
+  numbers, and enable country-specific tax rates from your Business Entities
+  settings.
 deprecated: false
 hidden: false
 metadata:
@@ -12,177 +13,279 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Value Added Tax (VAT) and Goods and Services Tax (GST) are consumption taxes you may need to collect from customers based on where they're located. Recurly applies the correct default rate for each country you enable, displays your registration numbers on invoices, and updates automatically as line items are taxed. Set everything up once in your Business Entities configuration and let Recurly handle the rest.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#tax-registration-numbers"><span class="rp-toc-num">3</span>Tax registration numbers</a>
+    <a class="rp-toc-pill" href="#country-specific-tax-details"><span class="rp-toc-num">4</span>Country-specific tax details</a>
+    <a class="rp-toc-pill" href="#setting-up-vat-gst-in-recurly"><span class="rp-toc-num">5</span>Setting up VAT &amp; GST</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Ensure you have access to the Business Entities configuration in your Recurly account.
-* Familiarize yourself with the tax regulations of the countries you operate in.
+<ul class="rp-list">
+  <li>Access to the Business Entities configuration in your Recurly account</li>
+  <li>Familiarity with the tax regulations of the countries you operate in</li>
+</ul>
 
 ### Limitations
 
-* Tax rates are based on current regulations and may change. Always stay updated with local tax authorities.
-* The system applies default tax rates for each country. Custom rates need manual configuration.
+<ul class="rp-list">
+  <li>Tax rates are based on current regulations and may change. Always stay up to date with your local tax authorities.</li>
+  <li>Recurly applies a default tax rate for each country. Custom rates need manual configuration.</li>
+</ul>
 
 # Definition
 
-VAT (Value Added Tax) & GST (Goods and Services Tax) are consumption taxes applied to the value added to goods and services. These taxes are levied at each stage of the production or distribution process, and the end consumer typically bears the final tax cost.
+<div class="rp-definition">VAT (Value Added Tax) and GST (Goods and Services Tax) are consumption taxes applied to the value added to goods and services. These taxes are levied at each stage of the production or distribution process, and the end consumer typically bears the final tax cost.</div>
 
 # Key benefits
 
-* **Current regulation adherence**: Tax rates are based on current regulations and may change. Always stay updated with local tax authorities.
-* **Default rate application**: The system applies default tax rates for each country. Custom rates need manual configuration.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+    <strong>Country-aware rates</strong>
+    <span>Enable a country and Recurly applies its default VAT or GST rate to all taxable line items automatically.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i></div>
+    <strong>Registration numbers on every invoice</strong>
+    <span>Display your VAT and Tax Registration Numbers on invoices, with country-specific numbers where you're registered in more than one place.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Province and state control</strong>
+    <span>Layer in sub-region taxes like Canadian PST, HST, and QST, or collect GST alone across all provinces.</span>
+  </div>
+</div>
 
 # Tax registration numbers
 
-Set up default VAT and Tax Registration Numbers in the Business Entities configuration to display on all your invoices. While these settings cater to your merchant business, separate fields are available to record your customers' Tax Registration Numbers on their account records.
+Set up default VAT and Tax Registration Numbers in the Business Entities configuration to display on all your invoices. While these settings cover your merchant business, separate fields are available to record your customers' Tax Registration Numbers on their account records.
 
-### Country-specific tax registration numbers
+## Country-specific tax registration numbers
 
-For businesses registered in multiple countries, configure unique VAT Numbers and Tax Registration Numbers for specific customer invoices. For instance, if you're registered in Turkey, display both your Turkish VAT number and Tax Registration Number on invoices for Turkish customers. Access this feature via the Advanced Settings link or navigate to Configuration → Taxes → Tax Settings.
+For businesses registered in multiple countries, you can configure unique VAT Numbers and Tax Registration Numbers for specific customer invoices. For instance, if you're registered in Turkey, you can display both your Turkish VAT number and Tax Registration Number on invoices for Turkish customers. Access this feature via the Advanced Settings link, or navigate to Configuration → Taxes → Tax Settings.
 
-## Country-specific tax details
+# Country-specific tax details
 
 ## Australia
 
-Enabling tax collection in Australia will apply 10% GST to all taxable plan, add-on or adjustment line items for customers in Australia.
+Enabling tax collection in Australia applies 10% GST to all taxable plan, add-on, or adjustment line items for customers in Australia.
 
-| Tax Region | Tax Type | Minimum Address Requirement |
-| :--------- | :------- | :-------------------------- |
-| AU         | GST      | Country                     |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Tax region</td><td>Tax type</td><td>Minimum address requirement</td></tr>
+  <tr><td>AU</td><td>GST</td><td>Country</td></tr>
+</table>
 
 ### AU GST on digital services
 
-On July 1, 2017, Australia started requiring non-resident businesses with digital services sales in Australia past a specific threshold to register and collect GST from Australian customers. This change includes exemption for Australian businesses with an active and GST registered ABN, and the collection of two pieces of location evidence from customers that are taxed.
+On July 1, 2017, Australia began requiring non-resident businesses with digital services sales in Australia past a specific threshold to register and collect GST from Australian customers. This change includes an exemption for Australian businesses with an active, GST-registered ABN, and the collection of two pieces of location evidence from customers that are taxed.
 
 ## Canada
 
-Enabling tax collection in Canada will apply 5% GST to all taxable plan, add-on or adjustment line items for customers in Canada. Additional province level taxes (PST, HST, or QST) will be applied if you enable the province as a taxable sub-region and the customer is located in that province. If you want to collect only GST from all provinces in Canada, enable Canada, but do not select a province.
+Enabling tax collection in Canada applies 5% GST to all taxable plan, add-on, or adjustment line items for customers in Canada. Additional province-level taxes (PST, HST, or QST) apply if you enable the province as a taxable sub-region and the customer is located in that province. If you want to collect only GST from all provinces in Canada, enable Canada but don't select a province.
 
-| Tax Region | Tax Type                                | Minimum Address Requirement |
-| :--------- | :-------------------------------------- | :-------------------------- |
-| CA         | GST  \\nGST/PST  \\nGST/HST  \\nGST/QST | Postal Code and Country     |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Tax region</td><td>Tax type</td><td>Minimum address requirement</td></tr>
+  <tr><td>CA</td><td>GST<br/>GST/PST<br/>GST/HST<br/>GST/QST</td><td>Postal code and country</td></tr>
+</table>
+
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Before you go live in Canada</strong>Before enabling Canadian tax collection in production, open a support ticket with <a href="mailto:support@recurly.com">support@recurly.com</a> so our team can configure your Avalara establishment and add your tax registration number on the backend. Your Canadian taxes won't calculate correctly until this is complete. [TODO: Confirm exact wording, requirement, and process with Jason Battle (Support) before publishing.]</div>
+</div>
 
 ## Chile
 
-Enabling tax collection in Chile will apply 19% VAT to all taxable plan, add-on or adjustment line items for customers in Chile.
+Enabling tax collection in Chile applies 19% VAT to all taxable plan, add-on, or adjustment line items for customers in Chile.
 
-| Country | Tax Rate | Minimum Address Requirement |
-| :------ | :------- | :-------------------------- |
-| Chile   | 19%      | Country                     |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Country</td><td>Tax rate</td><td>Minimum address requirement</td></tr>
+  <tr><td>Chile</td><td>19%</td><td>Country</td></tr>
+</table>
 
-## Europe (no EU)
+## Europe (non-EU)
 
-Enabling tax collection in a non-EU European country will apply that country's VAT rate to all taxable plan, add-on or adjustment line items for customers in the country.
-
-All countries have a Tax Type of *VAT* and a Minimum Address Requirement of *Country*.
+Enabling tax collection in a non-EU European country applies that country's VAT rate to all taxable plan, add-on, or adjustment line items for customers in the country. All countries have a tax type of VAT and a minimum address requirement of Country.
 
 ## European Union
 
-The European Union VAT system has many rules and requirements, so we have created a separate page dedicated to EU VAT. Read the full details on our European Union VAT support [here](https://docs.recurly.com/eu-vat-2015).
+The European Union VAT system has many rules and requirements, so we've created a separate page dedicated to EU VAT. Read the full details in our <a href="https://docs.recurly.com/eu-vat-2015" target="_blank">European Union VAT support</a>.
 
 ## Mexico
 
-Enabling tax collection in Mexico will apply 16% VAT to all taxable plan, add-on or adjustment line items for customers in Mexico.
+Enabling tax collection in Mexico applies 16% VAT to all taxable plan, add-on, or adjustment line items for customers in Mexico.
 
-| Tax Region | Tax Type | Minimum Address Requirement |
-| :--------- | :------- | :-------------------------- |
-| MX         | VAT      | Country                     |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Tax region</td><td>Tax type</td><td>Minimum address requirement</td></tr>
+  <tr><td>MX</td><td>VAT</td><td>Country</td></tr>
+</table>
 
 ## Indonesia
 
-Enabling tax collection in Indonesia will apply 10% VAT to all taxable plan, add-on or adjustment line items for customers in Indonesia.
+Enabling tax collection in Indonesia applies 10% VAT to all taxable plan, add-on, or adjustment line items for customers in Indonesia.
 
-| Tax Region | Tax Type | Minimum Address Record |
-| :--------- | :------- | :--------------------- |
-| ID         | VAT      | Country                |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Tax region</td><td>Tax type</td><td>Minimum address requirement</td></tr>
+  <tr><td>ID</td><td>VAT</td><td>Country</td></tr>
+</table>
 
 ## Israel
 
-Enabling tax collection in Israel will apply 17% VAT to all taxable plan, add-on or adjustment line items for customers in Israel.
+Enabling tax collection in Israel applies 17% VAT to all taxable plan, add-on, or adjustment line items for customers in Israel.
 
-| Tax Region | Tax Type | Minimum Address Requirement |
-| :--------- | :------- | :-------------------------- |
-| IL         | VAT      | Country                     |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Tax region</td><td>Tax type</td><td>Minimum address requirement</td></tr>
+  <tr><td>IL</td><td>VAT</td><td>Country</td></tr>
+</table>
 
 ## New Zealand
 
-Enabling tax collection in New Zealand will apply 15% GST to all taxable plan, add-on or adjustment line items for customers in New Zealand.
+Enabling tax collection in New Zealand applies 15% GST to all taxable plan, add-on, or adjustment line items for customers in New Zealand.
 
-| Tax Region | Tax Type | Minimum Address Requirement |
-| :--------- | :------- | :-------------------------- |
-| NZ         | GST      | Country                     |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Tax region</td><td>Tax type</td><td>Minimum address requirement</td></tr>
+  <tr><td>NZ</td><td>GST</td><td>Country</td></tr>
+</table>
 
 ## South Africa
 
-Enabling tax collection in South Africa will apply 15% VAT to all taxable plan, add-on or adjustment line items for customers in South Africa.
+Enabling tax collection in South Africa applies 15% VAT to all taxable plan, add-on, or adjustment line items for customers in South Africa.
 
-| Tax Region | Tax Type | Minimum Address Requirement |
-| :--------- | :------- | :-------------------------- |
-| ZA         | VAT      | Country                     |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Tax region</td><td>Tax type</td><td>Minimum address requirement</td></tr>
+  <tr><td>ZA</td><td>VAT</td><td>Country</td></tr>
+</table>
 
 ## Thailand
 
-Enabling tax collection in Thailand will apply 7% VAT to all taxable plan, add-on or adjustment line items for customers in Thailand. VAT rate is scheduled to increase to 10% on Sept 30, 2019.
+Enabling tax collection in Thailand applies 7% VAT to all taxable plan, add-on, or adjustment line items for customers in Thailand.
 
-| Tax Region | Tax Type | Minimum Address Requirement |
-| :--------- | :------- | :-------------------------- |
-| TH         | VAT      | Country                     |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Tax region</td><td>Tax type</td><td>Minimum address requirement</td></tr>
+  <tr><td>TH</td><td>VAT</td><td>Country</td></tr>
+</table>
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The source draft notes a scheduled VAT increase to 10% on September 30, 2019. Verify Thailand's current VAT rate before publishing. [TODO: Confirm current Thailand VAT rate.]</div>
+</div>
 
 ## United Kingdom
 
-Enabling tax collection in the United Kingdom will apply 20% VAT to all taxable plan, add-on or adjustment line items for customers in the United Kingdom.
+Enabling tax collection in the United Kingdom applies 20% VAT to all taxable plan, add-on, or adjustment line items for customers in the United Kingdom.
 
-| Tax Region | Tax Type | Minimum Address Rec |
-| :--------- | :------- | :------------------ |
-| GB         | VAT      | Country             |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Tax region</td><td>Tax type</td><td>Minimum address requirement</td></tr>
+  <tr><td>GB</td><td>VAT</td><td>Country</td></tr>
+</table>
 
 # Setting up VAT & GST in Recurly
 
-### 1. **Accessing Business Entities Configuration**
+## Access the Business Entities configuration
 
-* Log in to your Recurly account.
-* Navigate to the main dashboard.
-* On the left sidebar, click on Configuration.
-* From the dropdown, select Business Entities.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Log in to Recurly</h4><p>Log in to your Recurly account and go to the main dashboard.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Open Business Entities</h4><p>In the left sidebar, select Configuration, then choose Business Entities from the dropdown.</p></div>
+  </div>
+</div>
 
-### 2. **Setting up default tax registration numbers**
+## Set up default tax registration numbers
 
-* Within the Business Entities section, locate the Tax Registration Numbers area.
-* Enter your default VAT Number and Tax Registration Number in the respective fields.
-* Click Save to apply changes.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Find the Tax Registration Numbers area</h4><p>Within the Business Entities section, locate the Tax Registration Numbers area.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enter your numbers</h4><p>Enter your default VAT Number and Tax Registration Number in the respective fields.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Save</h4><p>Select Save to apply your changes.</p></div>
+  </div>
+</div>
 
-### 3. **Configuring country-specific tax registration numbers**
+## Configure country-specific tax registration numbers
 
-* Still within the Business Entities section, find and click on the Advanced Settings link.
-* Alternatively, navigate to Configuration→Taxes→Tax Settings.
-* Here, you can specify different VAT and Tax Registration Numbers for each country you're registered in.
-* Click Add Country, select the desired country from the dropdown, and input the respective VAT and Tax Registration Numbers.
-* Repeat for all countries as necessary.
-* Click Save to store these settings.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Advanced Settings</h4><p>Within the Business Entities section, select the Advanced Settings link. Alternatively, navigate to Configuration → Taxes → Tax Settings.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Add a country</h4><p>Select Add Country, choose the country from the dropdown, and enter the VAT and Tax Registration Numbers for that country.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Repeat and save</h4><p>Repeat for each country where you're registered, then select Save to store these settings.</p></div>
+  </div>
+</div>
 
-### 4. **Enabling tax collection for specific countries**
+## Enable tax collection for specific countries
 
-* Navigate to Configuration→Taxes.
-* Here, you'll see a list of countries. Click on the country you wish to enable tax collection for.
-* Toggle the Enable Tax Collection switch to the 'ON' position.
-* The system will automatically apply the default tax rate for that country. If you wish to set a custom rate, input the desired percentage in the Tax Rate field.
-* Ensure the correct Tax Type (VAT or GST) is selected from the dropdown.
-* Click Save.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the Taxes configuration</h4><p>Navigate to Configuration → Taxes to see the list of countries, then select the country you want to enable tax collection for.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Turn on tax collection</h4><p>Toggle the Enable Tax Collection switch to the ON position. Recurly applies the default tax rate for that country automatically. To set a custom rate, enter the percentage in the Tax Rate field.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Confirm the tax type and save</h4><p>Make sure the correct tax type (VAT or GST) is selected from the dropdown, then select Save.</p></div>
+  </div>
+</div>
 
-### 5. **Setting Up province or state-specific taxes (e.g., for Canada)**
+## Set up province or state-specific taxes
 
-* If you're enabling tax collection for a country with province or state-specific taxes, you'll see an additional section labeled Sub-regions.
-* Click Add Sub-region, select the desired province or state, and input the respective tax rate.
-* Click Save.
+If you're enabling tax collection for a country with province or state-specific taxes — Canada, for example — you'll see an additional section labeled Sub-regions.
 
-### 6. **Reviewing and testing**
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Add a sub-region</h4><p>Select Add Sub-region, choose the province or state, and enter its tax rate.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Save</h4><p>Select Save to apply the sub-region tax.</p></div>
+  </div>
+</div>
 
-* Once you've set up all desired tax settings, it's crucial to review and test them.
-* Create a test invoice for a customer from one of the countries you've configured.
-* Ensure the correct tax rate is applied and that the invoice displays the appropriate VAT or Tax Registration Number.
-* If everything looks correct, your setup is complete. If not, revisit the previous steps to troubleshoot and correct any discrepancies.
+## Review and test
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Create a test invoice</h4><p>Once your tax settings are in place, create a test invoice for a customer in one of the countries you've configured.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Verify the result</h4><p>Confirm the correct tax rate is applied and that the invoice displays the appropriate VAT or Tax Registration Number.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Troubleshoot if needed</h4><p>If everything looks correct, your setup is complete. If not, revisit the previous steps to find and correct any discrepancies.</p></div>
+  </div>
+</div>
+
+***
+
+📋 TODO before publishing:
+
+- [ ] Confirm the Canada "before you go live" callout — exact wording, the requirement to open a support ticket, and the Avalara establishment / backend tax registration number process — with Jason Battle on the Support team. I cannot contact him directly; this needs your verification.
+- [ ] Confirm Thailand's current VAT rate. The source references a rate increase to 10% scheduled for September 30, 2019, which is likely outdated.
+
+<br />
