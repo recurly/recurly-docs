@@ -230,7 +230,7 @@ them.</p>
           <div class="rc-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
           <h4>Resource center</h4>
           <p>Curated guides, case studies & benchmarks to help subscription businesses launch, grow, and retain smartly.</p>
-          <a href="https://recurly.com/resources/" target="_blank" rel="noopener noreferrer">View site ↗</a>
+          <a href="https://recurly.com/resources/" target="_blank" rel="noopener noreferrer">View assets ↗</a>
         </div>
 
         <div class="rc-feature-card">
