@@ -212,7 +212,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         </div>
       </div>
 
-<img src="https://files.readme.io/c54eb207d25f243ff84c09f412a0d95656d5b2b23129df2c84ec9e5391d3b674-image_13.png" alt="Recurly Navigate Home Screenshot" style="display: block; width: 100%; max-width: 100%; height: auto; margin: 24px auto 0; border: none;" />
+<img src="https://files.readme.io/c54eb207d25f243ff84c09f412a0d95656d5b2b23129df2c84ec9e5391d3b674-image_13.png" alt="Recurly Navigate Home Screenshot" style="display: block; width: 100%; max-width: 100%; height: auto; margin: 12px auto 0; border: none;" />
 
       <h2><i class="fa-solid fa-grid-2 rc-fa-section"></i> What you'll find on Navigate Home</h2>
       <div class="rc-tile-grid">
