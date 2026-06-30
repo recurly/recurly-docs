@@ -201,21 +201,21 @@ them.</p>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-regular fa-file-lines"></i></div>
           <h4>What is Navigate?</h4>
-          <p>Overview of Recurly's Customer Success program, built for you.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Book session ↗</a>
+          <p>Official orientation of Recurly's Customer Success program, built for you.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Explore program ↗</a>
         </div>
         
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-circle-play"></i></div>
-          <h4>Global Office Hours calendar</h4>
+          <h4>Global Office Hours</h4>
           <p>Connect directly with our Customer Success Managers in small-group sessions built for practical, real-time problem-solving.</p>
           <a href="#" target="_blank" rel="noopener noreferrer">Book session ↗</a>
         </div>
 
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <h4>Data report placeholder</h4>
-          <p>Examine the latest benchmarks to see where your business stands within the industry.</p>
+          <h4>Upcoming & on-demand events</h4>
+          <p>Browse upcoming Navigate webinars, book a live Customer Success Office Hours session, or view our library of educational on-demand events.</p>
           <a href="#" target="_blank" rel="noopener noreferrer">View data ↗</a>
         </div>
       </div>
@@ -228,23 +228,31 @@ them.</p>
       <div class="rc-card-grid rc-card-grid-3col">
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h4>Framework title placeholder</h4>
-          <p>Learn the foundational strategy required to configure this feature successfully.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Read the framework ↗</a>
+          <h4>Resource center</h4>
+          <p>Curated guides, case studies & benchmarks to help subscription businesses launch, grow, and retain smartly.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">View site ↗</a>
         </div>
 
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-list-check"></i></div>
-          <h4>Checklist title placeholder</h4>
-          <p>Use this step-by-step checklist to verify your settings before launching a new plan.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer">View checklist ↗</a>
+          <h4>Recurly Docs</h4>
+          <p>Comprehensive guides, API references, and best practices
+across all our products</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Explore docs ↗</a>
         </div>
 
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-gear"></i></div>
-          <h4>Setup guide placeholder</h4>
-          <p>Follow along to connect your external tools and map your data fields accurately.</p>
+          <h4>Status page</h4>
+          <p>Enroll for real-time incident reporting and status updates.</p>
           <a href="#" target="_blank" rel="noopener noreferrer">Start setup ↗</a>
+        </div>
+        
+				<div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-list-check"></i></div>
+          <h4>Email preferences</h4>
+          <p>Subscribe to Newsletters, event updates and product updates.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Select preferences ↗</a>
         </div>
       </div>
     </div>
