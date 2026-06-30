@@ -261,7 +261,7 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
       <details class="rc-phase-block">
         <summary class="rc-phase-label">
           <div class="rc-phase-icon"><i class="fa-solid fa-calendar-days"></i></div>
-          <div class="rc-phase-title"><h3>Office Hours</h3></div>
+          <div class="rc-phase-title"><h3>Weekly Customer Success Office Hours</h3></div>
           <i class="fa-solid fa-chevron-down rc-phase-chevron"></i>
         </summary>
         <div class="rc-phase-content">
