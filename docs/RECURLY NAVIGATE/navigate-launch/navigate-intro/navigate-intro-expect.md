@@ -319,8 +319,8 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
             </div>
             <!-- Image Placeholder -->
             <div class="rc-scorecard-img">
-              <div class="rc-placeholder-box">Leave room for image</div>
-              <!-- <img src="YOUR_IMAGE_URL" alt="" /> -->
+           
+       <img src="https://files.readme.io/5aebf67d8d604594b0febe1d6a50f943407ce7962e25f44faa733ecd7868e341-Calendar_examples.gif">
             </div>
           </div>
         </div>
