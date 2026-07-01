@@ -296,7 +296,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-toc-card">
           <div class="rc-toc-num">2</div>
           <div class="rc-toc-body">
-            <h4>"Navigating" Navigate</h4>
+            <h4>Exploring Navigate home</h4>
             <p>Navigate Home is built to support every stage of your growth. Learn where to find what you need and how to get the most out of this resource.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
