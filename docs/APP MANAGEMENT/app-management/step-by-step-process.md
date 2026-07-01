@@ -1,8 +1,9 @@
 ---
 title: App Management setup
 excerpt: >-
-  This page will guide you through the process to connect your Apple and Google
-  apps, configure App Management, and initiate a migration
+  Connect your Apple App Store and Google Play apps to Recurly App Management to
+  track subscription lifecycles, then configure external products, entitlements,
+  and webhooks.
 deprecated: false
 hidden: false
 metadata:
@@ -12,157 +13,329 @@ metadata:
 next:
   description: ''
 ---
+<div class="rp-page">
+  <div class="rp-overview">To give you a complete view of your app subscription lifecycles and their revenue, Recurly needs two things: the real-time notifications from Apple and Google, and API access to retrieve key subscription info. This one-time setup connects your mobile apps to Recurly. Work through the platform you use — Apple, Google, or both — then finish with external products, entitlements, and webhooks.</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#connect-your-mobile-apps"><span class="rp-toc-num">1</span>Connect your apps</a>
+    <a class="rp-toc-pill" href="#configure-app-management"><span class="rp-toc-num">2</span>Configure App Management</a>
+    <a class="rp-toc-pill" href="#migration"><span class="rp-toc-num">3</span>Migration</a>
+  </div>
+</div>
+
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Before you begin</strong>Read through the <a href="https://docs.recurly.com/docs/app-management#key-details" target="_blank">App Management key details</a> before connecting Apple or Google. You may need to make slight modifications to the subscription purchasing workflow in your mobile apps.</div>
+</div>
+
 # Connect your mobile apps
 
-In order for Recurly to provide you a complete view of the lifecycle of your app subscriptions, and provide insight into the associated subscription revenue, you need to direct the real time notifications from Apple and Google to Recurly and provide API access to retrieve key subscription related info. Follow the steps below one-time to connect your mobile app to Recurly.
+Choose your platform below. If you offer subscriptions on both, complete each tab.
 
-**Before proceeding to connect Apple or Google**, be sure to read through the [App Management Key Details section](https://docs.recurly.com/docs/app-management#key-details). You may need to make slight modifications to the subscription purchasing workflow in your mobile apps.
-
-## Apple App Store
-
-### Prerequisites
-
-Before configuring Recurly App Management, you need to create a new Apple App Store Connect API key with appropriate permissions. In order to complete the required steps in these prerequisites, you need to be either an "Account Holder" or “Admin” within Apple App Store Connect. If you run into permission issues, please reach out to one of your Apple App Store Connect Admins.
-
-1. **Log into** Apple App Store Connect via <a href="https://appstoreconnect.apple.com/access/integrations/api" target="_blank">this link</a>. As shown below, you will be creating an **App Store Connect API key** (NOT an In-App Purchase key) for the Recurly connection.
-   1. <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/47f5ec5-createKeyv2.png" />
-2. **Create** an API key by clicking the + (plus) symbol near “Active”
-   1. **Input** a name to uniquely identify the key
-   2. For Access, **select** both "Developer", and "Sales and Reports" (see example).  
-
-       
-      1. <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/6c000ec-image.png" />
-   3. **Click** "Generate" to generate the API key.
-3. Once the key is generated, you will see an option to download the key from the table of Active keys. Please **download** that **private key file** (.p8 file), and **save it** in a secure location. **You will only be able to download that file once, so be careful to securely store it.**
-4. For that key, **save the “Key ID”**, which is found in the same row of information for the key you just created.
-5. In addition, **save the “Issuer ID”**, which is found just above the list of Active keys.
-6. While in Apple App Store Connect, **navigate** to “Reports”, which is found near the top center of your page. It can also be found from the App Store Connect page, by clicking on “Payments and Financial Reports”.
-7. When viewing the Reports page, **save your “Vendor #”**, which is listed on the top left of the page.
-8. You have now completed the prerequisites, and have all the information from Apple that you need to connect Recurly. There is one additional Apple App Store Connect step in the instructions below, so remain logged into Apple App Store Connect.
-
-### Configuration
-
-1. In Recurly, **navigate** to App Management → App Connector. Under "Apple App Store", click “Add Source”.
-   1. If you are only replacing the API key, next to "Apple App Store", click "View Details".
-2. This is where you will input all the information you noted earlier regarding the API key.
-   1. For “Authentication Key”, **open** the private key p8 file you downloaded in a text editor, and **paste the entire contents** in the field. As seen in the example below, your copy and paste includes the hyphens and BEGIN PRIVATE KEY and END PRIVATE KEY.
-   2. If you have already enabled the connection, and are coming back to replace the API key, you only need to replace the "Authentication Key" and "Key ID" fields. Once those are edited, the new API key is being used, and you can skip the remaining configuration skips listed below.
-3. As shown in the example below, **ensure** you have all 4 fields populated. Your input should look similar to what is shown. Once all 4 fields look good, click “Enable connection”.  
-
-   <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/e58446c-image.png" />
-
-   1. <br />
-4. Once enabled, you now need to point the Apple App Store notifications to Recurly. While on that same page in Recurly, copy the “Production URL” shown to your clipboard.
-   1. If you are **only** configuring Recurly App Management to push mobile app earnings revenue information into Recurly Revenue Recognition, you can skip this step and the remaining steps. Please note that if these steps are skipped, Recurly App Management will **not** provide any visibility into your mobile app subscription lifecycles and related events.
-5. Back in Apple App Store Connect, **navigate** to your app. You can get to your app in “My Apps”, or from Apps on the top of your page.
-6. While viewing your App in Apple App Store Connect, **navigate** to the “App Store Server Notifications” section under General → App Information.
-7. Next to “Production Server URL”, **click** Edit, and **input** the copied URL from Recurly into the “Production Server URL” field. In that window, **ensure** “Version 2 Notifications” are selected, and then **click** Save.
-   1. If you are testing and using a non-Production site, you will want to edit the “Sandbox Server URL” instead of Production.
-8. Once the server URL for your Apple app is correctly pointing to Recurly, go back to your open page within Recurly and check the box to confirm that you have added the URL.
-9. **Click** “Complete Configuration”.
-10. You have now completed the steps necessary to connect Recurly with your Apple app.
-    1. **Note**: The "Last Notification Received" date will remain blank until Recurly receives a valid notification from Apple. Test notifications sent directly from Apple App Store Connect to test the notification Server URL will not impact the "Last Notification Received" date.
-
-## Google Play
+<Tabs>
+<Tab title="Apple App Store">
 
 ### Prerequisites
 
-Before configuring Recurly App Management, you need to create a new Google Cloud service account and API key with appropriate permissions. Given **it can take Google up to 36 hours** to propagate the service account access, we recommend completing these prerequisites early, and then ensuring at least 36 hours has passed. When configuring Recurly App Management, your API access is checked to ensure that your subscriptions are successfully tracked upon completing the configuration.
+Before configuring Recurly App Management, create a new Apple App Store Connect API key with the right permissions. You'll need to be an Account Holder or Admin in Apple App Store Connect to complete these steps — if you hit permission issues, reach out to one of your Apple App Store Connect Admins.
 
-1. If not done already, **ensure** you have a Google Play Developer account and have set up a profile in Google Payments by following the steps below.
-   1. Set up a Google Play Developer account (instructions <a href="https://support.google.com/googleplay/android-developer/answer/6112435" target="_blank">here</a>).
-   2. Set up a profile in <a href="https://pay.google.com/" target="_blank">Google Payments Center</a>, and link that profile to your developer account (instructions <a href="https://support.google.com/googleplay/android-developer/answer/3092739" target="_blank">here</a>).
-      1. **If your app is not yet live**, you can **skip** this step and come back to it before going live.
-2. Following <a href="https://developers.google.com/android-publisher/getting_started" target="_blank">these Google instructions</a>, configure access to the Google Play Developer API through the Google Cloud Console and Google Play Console. When done following those instructions, you should have completed the following tasks. Please note that we have provided additional info below to the linked Google instructions.
-   1. **Link** your developer account to a new or existing Google Cloud Project.
-   2. **Enable** the Google Play Developer API for your linked Google Cloud Project.
-   3. **Set up** a service account with appropriate Google Play Console permissions to access the Google Play Developer API.
-      1. When you are creating the service account, **make sure** to add the “Pub/Sub Admin” and “Monitoring Viewer” roles, which give the service account necessary permissions to the Google Project.
-      2. **Save the e-mail address** for the new service account.
-   4. **Provide** the service account you created with access to your app within Google Play Console
-      1. Within Google Play Console, **click** “Invite new users” from the “Users and Permissions” page.
-      2. Within Permissions, **click** “Add app”, **select** your app from the list, and click **Apply**. When prompted to select Permissions for your app, click Apply.
-      3. Once your app appears under App permissions, **click** "Account permissions" (to the right of App permissions) and select the below 3 permissions.
-         1. View app information and download bulk reports (read-only)
-         2. View financial data, orders, and cancellation survey responses
-         3. Manage orders and subscriptions
-      4. Click **Invite User** to invite the service account, and complete this step
-3. Following <a href="https://developers.google.com/workspace/guides/create-credentials#create_credentials_for_a_service_account" target="_blank">these Google instructions</a>, **create** a new JSON key for your service account.
-   1. **Given that you can never recover the private JSON key from Google, be sure to securely store the key**. You will need this key for an upcoming step within Recurly.
-4. Referring to the section entitled “Find your Google Cloud Storage URI” of <a href="https://support.google.com/googleplay/android-developer/answer/6135870?hl=en" target="_blank">these Google instructions</a>, **save a link to the Google Storage URI** that points to the Earnings report.
-5. You have now completed the prerequisites, and have all the information from Google that you need to connect Recurly. There are additional Google steps in the instructions below, so remain logged into Google Play and Google Cloud.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Log into App Store Connect</h4><p>Log into <a href="https://appstoreconnect.apple.com/access/integrations/api" target="_blank">Apple App Store Connect</a>. You'll be creating an App Store Connect API key — not an In-App Purchase key — for the Recurly connection.</p></div>
+  </div>
+</div>
+
+<Image src="https://files.readme.io/47f5ec5-createKeyv2.png" align="center" width="40%" border={true} />
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Create an API key</h4><p>Select the + (plus) symbol near "Active." Enter a name to uniquely identify the key, and for Access select both Developer and Sales and Reports. Then select Generate.</p></div>
+  </div>
+</div>
+
+<Image src="https://files.readme.io/6c000ec-image.png" align="center" width="40%" border={true} />
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Download and store the private key</h4><p>From the table of Active keys, download the private key file (.p8) and save it in a secure location. You can only download this file once, so store it carefully.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Save the Key ID</h4><p>Find and save the Key ID in the same row as the key you just created.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Save the Issuer ID</h4><p>Find and save the Issuer ID just above the list of Active keys.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div><h4>Open Reports</h4><p>Navigate to Reports, near the top center of the page. You can also reach it from the App Store Connect page by selecting Payments and Financial Reports.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">7</div>
+    <div><h4>Save your Vendor #</h4><p>On the Reports page, save your Vendor #, listed at the top left. You now have everything from Apple you need to connect Recurly — stay logged in for one more Apple step below.</p></div>
+  </div>
+</div>
 
 ### Configuration
 
-1. As noted in the prerequisites, ensure you have waited at least 36 hours since creating the JSON key for your new Google Cloud service account. Once that time has elapsed, proceed to the next step.
-2. **Connect** your Google app to Recurly
-   1. In Recurly, **navigate** to App Management -> App Connector, and click Add Source for Google Play Store.
-   2. Using the example shown below, **input** your service account JSON key, Earnings report URI, and App package name.  
-      1. For JSON key, copy the entire contents of the JSON key file and paste them into the field.
-      2. For Google Earnings Report URI, paste in the entire URI that you saved earlier. The URI typically begins with gs\:// and ends with earnings/.
-      3. For App Package name, click into your app from Home within Google Play Console to access the Dashboard of your app. Copy the unique package name, which is found directly under the name of your app.
-      4. <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/1259949-GooogleConfig3.png" />
-   3. **Click** “Verify Credentials”
-   4. Once enabled, a Production URL for App Management is created. Leave this page open, and **continue** to the next step.
-3. **Follow** these steps to set up Google Pub/Sub, which is used by Recurly to receive notifications from Google regarding subscription activity.
-   1. If you are **only** configuring Recurly App Management to push mobile app earnings revenue information into Recurly Revenue Recognition, you can skip this step and the remaining steps. Please note that if these steps are skipped, Recurly App Management will **not** provide any visibility into your mobile app subscription lifecycles and related events.
-   2. Following <a href="https://cloud.google.com/pubsub/docs/publish-receive-messages-console#create_a_topic" target="_blank">these Google instructions</a>, **create** a topic. As shown in the example below, **uncheck** “Add a default subscription” (we will create one in the next step).
-      1. <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/e5db490-CreateTopic.png" />
-   3. While viewing the topic, **save** the “Topic ID” since you will need it later. This topic ID is the longer URI version (e.g., projects/\{project\_id}/topics/\{topic\_name}), and not just the name you provided when creating the topic.
-   4. **Add** a subscription to that topic by clicking “Create Subscription” within the topic, and inputting the following information:
-      1. Referencing the example below, **select** “Delivery type” of Push and paste the URL from Recurly App Management into “Endpoint URL”
-         1. <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/3201c7c-addSub.png" />
-      2. Referencing the example below, **change** Acknowledgement deadline from the default to 60 seconds.
-         1. <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/a280776-ackDeadline.png" />
-      3. Referencing the example below, **change** Retry policy to “Retry after exponential backoff delay”, with the default of 10 seconds for minimum backoff, and 600 seconds for maximum backoff.
-         1. <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/01414fb-retryPolicy.png" />
-      4. **Click** "Create" to create the subscription.
-   5. Following <a href="https://developer.android.com/google/play/billing/getting-ready#grant-rights" target="_blank">these Google instructions</a>, grant Google Play privileges to publish notifications to your topic. You can see an example of this step below.
-      1. <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/d683df6-addPrincipals.png" />
-4. Following <a href="https://developer.android.com/google/play/billing/getting-ready#enable-rtdn" target="_blank">these Google instructions</a>, enable real-time notifications for your app by inputting the topic name and sending a test message.
-   1. This is where you will use the longer URI version of your topic that you saved in a previous step.
-5. Once you have completed setting up Google Pub/Sub and real-time notifications for your Google app, **proceed back** to Recurly. Check the checkbox that confirms you have completed setting up the Google configuration, and then click Complete Configuration.
-6. App Management within Recurly is now set up. You can now look forward to viewing your Google Play app information within Recurly!
-   1. **Note**: The "Last Notification Received" date will remain blank until Recurly receives a valid notification from Google.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Add the Apple source in Recurly</h4><p>Navigate to App Management → App Connector. Under Apple App Store, select Add Source. If you're only replacing the API key, select View Details next to Apple App Store instead.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Input your key information</h4><p>Enter the details you noted earlier. For Authentication Key, open the .p8 private key file in a text editor and paste the entire contents — including the hyphens and the BEGIN PRIVATE KEY and END PRIVATE KEY lines.</p></div>
+  </div>
+</div>
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Replacing an existing key</strong>If you've already enabled the connection and are back to replace the API key, you only need to update the Authentication Key and Key ID fields. Once those are edited, the new key is in use and you can skip the remaining configuration steps.</div>
+</div>
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Enable the connection</h4><p>Ensure all four fields are populated and look similar to the example, then select Enable connection.</p></div>
+  </div>
+</div>
+
+<Image src="https://files.readme.io/e58446c-image.png" align="center" width="40%" border={true} />
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Copy the Production URL</h4><p>Copy the Production URL shown on that page to your clipboard — you'll point Apple's notifications to it next.</p></div>
+  </div>
+</div>
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Revenue-only setup</strong>If you're only configuring App Management to push mobile app earnings into Recurly RevRec, you can stop here. Note that skipping the remaining steps means App Management won't provide visibility into your subscription lifecycles and related events.</div>
+</div>
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Open your app in App Store Connect</h4><p>Back in Apple App Store Connect, navigate to your app via My Apps, or from Apps at the top of the page.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div><h4>Find App Store Server Notifications</h4><p>In your app, go to App Store Server Notifications under General → App Information.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">7</div>
+    <div><h4>Set the Production Server URL</h4><p>Next to Production Server URL, select Edit and paste the copied Recurly URL. Ensure Version 2 Notifications is selected, then select Save. If you're testing on a non-Production site, edit the Sandbox Server URL instead.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">8</div>
+    <div><h4>Confirm the URL in Recurly</h4><p>Return to the open Recurly page and check the box confirming you've added the URL.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">9</div>
+    <div><h4>Complete configuration</h4><p>Select Complete Configuration. Your Apple app is now connected to Recurly.</p></div>
+  </div>
+</div>
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The "Last Notification Received" date stays blank until Recurly receives a valid notification from Apple. Test notifications sent directly from Apple App Store Connect won't affect this date.</div>
+</div>
+
+</Tab>
+<Tab title="Google Play">
+
+### Prerequisites
+
+Before configuring Recurly App Management, create a new Google Cloud service account and API key with the right permissions.
+
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Allow 36 hours</strong>Google can take up to 36 hours to propagate service account access. Complete these prerequisites early and confirm at least 36 hours have passed before configuring App Management — your API access is checked during configuration to ensure subscriptions are tracked successfully.</div>
+</div>
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Set up your developer and payments accounts</h4><p>Ensure you have a <a href="https://support.google.com/googleplay/android-developer/answer/6112435" target="_blank">Google Play Developer account</a> and a profile in the <a href="https://pay.google.com/" target="_blank">Google Payments Center</a> that's <a href="https://support.google.com/googleplay/android-developer/answer/3092739" target="_blank">linked to your developer account</a>. If your app isn't live yet, you can skip the payments profile and return to it before going live.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Configure Google Play Developer API access</h4><p>Follow <a href="https://developers.google.com/android-publisher/getting_started" target="_blank">Google's instructions</a> to link your developer account to a Google Cloud project, enable the Google Play Developer API, and set up a service account. See the details below.</p></div>
+  </div>
+</div>
+
+<ol>
+  <li>Link your developer account to a new or existing Google Cloud project.</li>
+  <li>Enable the Google Play Developer API for that project.</li>
+  <li>Set up a service account with Google Play Console permissions to access the Google Play Developer API. When creating it, add the Pub/Sub Admin and Monitoring Viewer roles, and save the service account's email address.</li>
+  <li>Give the service account access to your app in Google Play Console: from Users and Permissions, select Invite new users, then Add app and choose your app. Under Account permissions, select View app information and download bulk reports (read-only), View financial data, orders, and cancellation survey responses, and Manage orders and subscriptions. Select Invite User to finish.</li>
+</ol>
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Create a JSON key</h4><p>Follow <a href="https://developers.google.com/workspace/guides/create-credentials#create_credentials_for_a_service_account" target="_blank">Google's instructions</a> to create a new JSON key for your service account. You can never recover this key from Google, so store it securely — you'll need it in Recurly.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Save the Earnings report URI</h4><p>Using the "Find your Google Cloud Storage URI" section of <a href="https://support.google.com/googleplay/android-developer/answer/6135870?hl=en" target="_blank">these Google instructions</a>, save the Google Storage URI that points to the Earnings report. Stay logged into Google Play and Google Cloud for the steps below.</p></div>
+  </div>
+</div>
+
+### Configuration
+
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Wait for propagation</strong>Confirm at least 36 hours have passed since you created the JSON key before continuing.</div>
+</div>
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Add the Google source in Recurly</h4><p>In Recurly, navigate to App Management → App Connector and select Add Source for Google Play Store.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Input your credentials</h4><p>Enter your service account JSON key, Earnings report URI, and app package name (details below), then select Verify Credentials. Once enabled, a Production URL is created — leave this page open.</p></div>
+  </div>
+</div>
+
+<ul class="rp-list">
+  <li><strong>JSON key:</strong> copy the entire contents of the JSON key file and paste them into the field.</li>
+  <li><strong>Google Earnings Report URI:</strong> paste the full URI you saved earlier. It typically begins with <code>gs://</code> and ends with <code>earnings/</code>.</li>
+  <li><strong>App package name:</strong> in Google Play Console, open your app from Home to reach its Dashboard. Copy the unique package name shown directly under your app's name.</li>
+</ul>
+
+<Image src="https://files.readme.io/1259949-GooogleConfig3.png" align="center" width="40%" border={true} />
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Set up Google Pub/Sub</h4><p>Pub/Sub is how Recurly receives notifications from Google about subscription activity. Follow the sub-steps below to configure it.</p></div>
+  </div>
+</div>
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Revenue-only setup</strong>If you're only configuring App Management to push mobile app earnings into Recurly RevRec, you can skip the Pub/Sub setup and the remaining steps. Note that skipping them means App Management won't provide visibility into your subscription lifecycles and related events.</div>
+</div>
+
+<ol>
+  <li>Following <a href="https://cloud.google.com/pubsub/docs/publish-receive-messages-console#create_a_topic" target="_blank">Google's instructions</a>, create a topic. Uncheck "Add a default subscription" — you'll create one next.</li>
+</ol>
+
+<Image src="https://files.readme.io/e5db490-CreateTopic.png" align="center" width="40%" border={true} />
+
+<ol start="2">
+  <li>While viewing the topic, save the Topic ID for later. Use the longer URI version — for example, <code>projects/PROJECT_ID/topics/TOPIC_NAME</code> — not just the name you provided.</li>
+  <li>Add a subscription to the topic by selecting Create Subscription within it, using the settings below.</li>
+</ol>
+
+Set the delivery type to Push and paste the URL from Recurly App Management into Endpoint URL.
+
+<Image src="https://files.readme.io/3201c7c-addSub.png" align="center" width="40%" border={true} />
+
+Change the acknowledgement deadline from the default to 60 seconds.
+
+<Image src="https://files.readme.io/a280776-ackDeadline.png" align="center" width="40%" border={true} />
+
+Change the retry policy to "Retry after exponential backoff delay," keeping the defaults of 10 seconds minimum backoff and 600 seconds maximum backoff. Then select Create.
+
+<Image src="https://files.readme.io/01414fb-retryPolicy.png" align="center" width="40%" border={true} />
+
+Following <a href="https://developer.android.com/google/play/billing/getting-ready#grant-rights" target="_blank">Google's instructions</a>, grant Google Play privileges to publish notifications to your topic.
+
+<Image src="https://files.readme.io/d683df6-addPrincipals.png" align="center" width="40%" border={true} />
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Enable real-time notifications</h4><p>Following <a href="https://developer.android.com/google/play/billing/getting-ready#enable-rtdn" target="_blank">Google's instructions</a>, enable real-time notifications for your app by inputting the topic name and sending a test message. Use the longer URI version of your topic that you saved earlier.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Complete configuration in Recurly</h4><p>Return to Recurly, check the box confirming you've completed the Google configuration, then select Complete Configuration.</p></div>
+  </div>
+</div>
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>App Management is now set up for Google Play. The "Last Notification Received" date stays blank until Recurly receives a valid notification from Google.</div>
+</div>
+
+</Tab>
+</Tabs>
 
 # Configure App Management
 
-Once you have completed the required steps above to connect your mobile apps, follow these steps to complete the configuration.
+Once your mobile apps are connected, complete the configuration below.
 
 ## Creating external products
 
-External products are created in order for Recurly to correctly associate your unique Apple and Google subscriptions to a single product within Recurly. This makes it easier for you to track one type of subscription, which may be available via web or your mobile apps. Follow these steps to create your external products. You only need to do this once per subscription that you have created in Apple or Google.
+External products let Recurly associate your unique Apple and Google subscriptions with a single product in Recurly — so you can track one subscription type whether it's sold on the web or your mobile apps. You only need to do this once per subscription you've created in Apple or Google.
 
-1. **Navigate** to App Management -> External Products in the left hand navigation
-2. **Click** the New External Product button
-3. **Give** the external product a name (e.g., Monthly Gold Plan).
-4. **Select** the Recurly plan you want to map to this external product (e.g., Monthly Gold Plan - Web).
-5. **Click** the Add Source button to map either your Apple or Google product, and follow the information below to enter the "External Reference Code"
-   1. For Apple, **provide** the Apple "Product ID" of the product you want to map to this Recurly plan. 
-      1. When logged into Apple App Store Connect, you can find the "Product ID" when viewing the details of a specific subscription.
-   2. For Google Play, a subscription can have one or more plans associated with it. In order to properly reference a specific subscription, you need to provide both the Product ID and Base Plan ID. Using an example of "ACME" for Product ID and "Monthly\_Pass" for Base Plan ID, you would enter "ACME+Monthly\_Pass" for the External Reference code in Recurly.
-      1. When logged into the Google Play Console, navigate to Monetize → Products → Subscriptions for your mobile app. You can find the "Product ID" when viewing the details of a specific subscription. In that same view, you can find a table of base plans under "Base plans and offers". The "Base Plan ID" is listed in the first column of that table.
-6. **Repeat** the above step if you offer an identical subscription via the other app store (Google or Apple)
-7. **Click** Create External Product to save your changes.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open External Products</h4><p>Navigate to App Management → External Products in the left-hand navigation.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Create a new external product</h4><p>Select New External Product.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Name it</h4><p>Give the external product a name, such as Monthly Gold Plan.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Map a Recurly plan</h4><p>Select the Recurly plan you want to map to this external product, such as Monthly Gold Plan - Web.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Add your source and reference code</h4><p>Select Add Source to map your Apple or Google product, then enter the External Reference Code (details below).</p></div>
+  </div>
+</div>
 
-For each subscription offered via Apple or Google, you should have one external product reflected within Recurly. For example, if you offer a monthly subscription and yearly subscription, you should have two external products configured when done with this section. The below is an example of having three types of your subscription offerings identified within Recurly as external products.
+<ul class="rp-list">
+  <li><strong>Apple:</strong> provide the Apple Product ID of the product you want to map. You'll find it when viewing the details of a specific subscription in Apple App Store Connect.</li>
+  <li><strong>Google Play:</strong> a subscription can have one or more plans, so you need both the Product ID and Base Plan ID. For example, with a Product ID of "ACME" and a Base Plan ID of "Monthly_Pass," you'd enter <code>ACME+Monthly_Pass</code> as the External Reference Code. In Google Play Console, go to Monetize → Products → Subscriptions; the Product ID is on the subscription's details view, and the Base Plan ID is in the first column of the "Base plans and offers" table.</li>
+</ul>
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/34ba932-external-products.png" />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div><h4>Repeat for the other store</h4><p>If you offer the same subscription via the other app store, repeat the previous step.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">7</div>
+    <div><h4>Save</h4><p>Select Create External Product to save your changes.</p></div>
+  </div>
+</div>
+
+For each subscription offered via Apple or Google, you should end up with one external product in Recurly. For example, if you offer a monthly and a yearly subscription, you'll have two external products when done. The example below shows three subscription offerings identified as external products.
+
+
+<Image src="https://files.readme.io/34ba932-external-products.png" align="center" width="75%" border={true} />
+
 
 ## Entitlements
 
-Our entitlements feature provides an easy way to both control and grant access to features within your mobile app. For more information on this feature, including how to create entitlements, see our [entitlements feature](https://docs.recurly.com/docs/entitlements) docs. When you create entitlements, you will see an option to assign an External Product. This is how you will include one of the external products you just created to an entitlement.
+Entitlements give you an easy way to control and grant access to features within your mobile app. When you create an entitlement, you'll see an option to assign an external product — that's how you connect one of the external products you just created. For full details, see the <a href="https://docs.recurly.com/docs/entitlements" target="_blank">entitlements feature docs</a>.
 
-If you plan to use our entitlements feature, navigate to Configuration -> Entitlements, and follow the instructions linked in the above paragraph. The below is an example of having three entitlements configured.
+If you plan to use entitlements, navigate to Configuration → Entitlements and follow the linked instructions. The example below shows three entitlements configured.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/8c29fe3-entitlements.png" />
 
-**You have now completed the minimum requirements to get App Management working properly.** If you need to migrate historical subscription related activity, see the below section.
+<Image src="https://files.readme.io/8c29fe3-entitlements.png" align="center" width="75%" border={true} />
+
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Minimum setup complete</strong>You've now completed the minimum requirements to get App Management working properly. If you need to migrate historical subscription activity, see the Migration section below.</div>
+</div>
 
 ## Webhooks
 
-Once Recurly has processed a real-time notification from Apple or Google and updated the subscription related data within Recurly, Recurly can send a webhook notification specific to the subscription event (e.g., subscriber canceled). If you would like to receive those webhooks, navigate to the <a href="https://docs.recurly.com/docs/api-support-and-webhooks#configuring-recurly-to-send-webhooks" target="_blank">next page</a> to learn more about how to configure and received those webhooks.
+Once Recurly processes a real-time notification from Apple or Google and updates the subscription data, it can send a webhook notification specific to the subscription event — for example, subscriber canceled. To receive those webhooks, see <a href="https://docs.recurly.com/docs/api-support-and-webhooks#configuring-recurly-to-send-webhooks" target="_blank">configuring Recurly to send webhooks</a>.
 
 # Migration
 
-Due to limitations with the Apple and Google App Stores, Recurly is unable to automatically ingest historical data from the App Stores on your behalf. This includes any App Store subscriptions that were created prior to your use of Recurly App Management. In order to reflect this data in Recurly, it is necessary to backfill our records with subscription and customer information stored on your side. Please contact our <a href="https://support.recurly.com/" target="_blank">support team</a>, as they will facilitate the historical import.
+Due to limitations with the Apple and Google App Stores, Recurly can't automatically ingest historical data from the app stores on your behalf. This includes any app store subscriptions created before you started using Recurly App Management. To reflect that data in Recurly, you'll need to backfill our records with the subscription and customer information stored on your side.
+
+This backfill process can be performed using Recurly's API. If you'd like help, the Professional Services team can either guide you through using the API or perform the import on your behalf. Contact the <a href="https://support.recurly.com/" target="_blank">support team</a> to request a paid engagement with the Professional Services team.
