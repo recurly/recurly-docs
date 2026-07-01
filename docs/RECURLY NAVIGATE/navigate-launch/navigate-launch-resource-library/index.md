@@ -199,7 +199,7 @@ them.</p>
       
       <div class="rc-card-grid rc-card-grid-3col">
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-regular fa-circle-play"></i></div>
+          <div class="rc-feature-icon"><i class="fa-regular fa-flag"></i></div>
           <h4>What is Navigate?</h4>
           <p>Official orientation of Recurly's Customer Success program, built for you.</p>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" target="_blank" rel="noopener noreferrer">Explore program ↗</a>
