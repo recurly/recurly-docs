@@ -36,7 +36,7 @@ These endpoints are used to view information about external subscriptions, which
 
 This endpoint is used to view information about the entitlements granted to a specific customer (aka: account).
 
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_entitlements" target="_blank">List Entitlements granted to an Account</a>
+- <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/list_entitlements" target="_blank">List Entitlements granted to an Account</a>
 
 **For a complete list of the endpoints specific to App Management**, start at <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_external_subscriptions" target="_blank">External Subscription</a> and scroll down.
 
