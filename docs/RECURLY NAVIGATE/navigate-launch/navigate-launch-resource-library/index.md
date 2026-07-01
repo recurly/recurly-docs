@@ -1,8 +1,27 @@
 ---
 title: Resource Library
+excerpt: >-
+  Explore the Recurly Navigate Resource Library for a centralized hub of
+  subscription tools, expert assets, and support links. Access Global Office
+  Hours, live webinars, product changelogs, technical FAQs, and Recurly Docs
+  configuration guides.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Explore the Recurly Navigate Resource Library for a centralized hub of
+    subscription tools, expert assets, and support links. Access Global Office
+    Hours, live webinars, product changelogs, technical FAQs, and Recurly Docs
+    configuration guides.
+  keywords:
+    - Recurly Resource Library
+    - subscription billing tools
+    - customer success resources
+    - Global Office Hours
+    - billing product changelog
+    - subscription management FAQs
+    - Recurly technical documentation
+    - customer support hub
   robots: index
 ---
 <HTMLBlock>{`
