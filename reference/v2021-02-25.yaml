@@ -20773,6 +20773,7 @@ components:
             - forever
             - single_use
             - temporal
+            - billing_periods
         temporal_amount:
           type: integer
           title: Temporal amount
@@ -21038,6 +21039,7 @@ components:
                 - forever
                 - single_use
                 - temporal
+                - billing_periods
             temporal_amount:
               type: integer
               title: Temporal amount
@@ -21326,12 +21328,15 @@ components:
           title: Duration Type
           description: >-
             The coupon's duration type. `temporal` includes an `expires_at`
-            timestamp. `forever` and `single_use` have no additional fields.
+            timestamp. `billing_periods` includes a `redemptions_remaining`
+            count of billing cycles. `forever` and `single_use` have no
+            additional fields.
           readOnly: true
           enum:
             - forever
             - single_use
             - temporal
+            - billing_periods
         expires_at:
           type: string
           title: Expires at
@@ -21339,6 +21344,13 @@ components:
           description: >-
             Present when `type` is `temporal`. The datetime after which this
             redemption will no longer apply.
+          readOnly: true
+        redemptions_remaining:
+          type: integer
+          title: Redemptions Remaining
+          description: >-
+            The number of redemption periods remaining for which this coupon
+            will still apply.
           readOnly: true
     CouponRedemptionCreate:
       type: object
