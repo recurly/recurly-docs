@@ -14,7 +14,7 @@ metadata:
   </div>
 
   <p style="font-size: 16px; margin: 0 0 32px 0; line-height: 1.5; color: #555555;">
-    As your Customer Success Manager, I want to make sure it's as easy as possible for you to find all the events that will help drive success at your business. Below are this month's office hours and sign up links.
+    Below are this month's Customer Success Office Hours dates, times, and sign up links. We're here to answer your questions, work through obstacles and strategy together, and drive your success.
   </p>
 
   <div style="background-color: #FFFFFF; border: 1px solid #8C52FF; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px;">
@@ -29,7 +29,7 @@ metadata:
       </p>
     </div>
     <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
-      <img src="YOUR_IMAGE_URL_CHRISTIAN" style="width: 100%; height: 100%; object-fit: cover;" alt="Christian Oldroyd">
+      <img src="https://files.readme.io/556f786c283fc2468e4f543ddbf3e24579a692594fc68dbc8ad4f14877ece148-Christian_Oldroyd_Customer_Success_Manager_II_1.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Christian Oldroyd">
     </div>
   </div>
 
@@ -79,8 +79,10 @@ metadata:
   </div>
 
   <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #555555;">
-    <strong style="font-weight: 700; color: #8C52FF;">Need something on a different time zone?</strong> We want to know! When is your ideal time to join us for office hours? Respond to this email and share your input.
+    <strong style="font-weight: 700; color: #8C52FF;">This calendar is updaetd monthly</strong> If you have a dedicated CSM or are subscribed to Navigate, you'll receive an updated calendar each month. Feel free to bookmark this page and check in on your own time!
   </p>
+  <p><strong>Happy Navigating,</strong></p>
+<p>Recurly Customer Success</p>
 
 </div>
 `}</HTMLBlock>
