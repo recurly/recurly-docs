@@ -233,7 +233,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-video-placeholder">
           <div class="rc-video-play"><i class="fa-solid fa-play"></i></div>
           <p style="margin:0 0 6px;font-size:1rem;font-weight:700;color:#FFFDF2;">Official Navigate Welcome</p>
-          <p style="margin:0;font-size:.85rem;color:#807D73;">[ Insert official welcome video embed here — recommended runtime: 3–5 minutes ]</p>
+          <p style="margin:0;font-size:.85rem;color:#807D73;">Meet Santi, Navigate Customer Success Manager</p>
         </div>
       </div>
       
