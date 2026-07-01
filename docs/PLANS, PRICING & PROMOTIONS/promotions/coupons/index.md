@@ -340,6 +340,10 @@ Billing period coupons let you define duration in terms of exact billing cycles 
   </ul>
 </div>
 
+![](https://files.readme.io/e600a7667f5dad66c1eb942cd6e71d110f6950032ac1020b8e4e52331916d654-Dynamic_Coupon_Redemption.png)
+
+<br />
+
 <div class="rp-callout rp-callout-note">
   <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> API support</strong>
   Billing period coupons are available in the UI and <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/create_coupon" target="_blank">API</a>. Understanding a coupon's current state, when it will expire, and the total discounted amount has never been easier with the new <code>coupon_redemptions</code> object returned in several endpoints, including the <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/get_preview_renewal" target="_blank">renewal preview API</a>.
