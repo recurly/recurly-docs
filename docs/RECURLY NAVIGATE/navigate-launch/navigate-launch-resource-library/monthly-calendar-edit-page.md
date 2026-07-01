@@ -79,7 +79,7 @@ metadata:
   </div>
 
   <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #555555;">
-    <strong style="font-weight: 700; color: #8C52FF;">This calendar is updaetd monthly</strong> If you have a dedicated CSM or are subscribed to Navigate, you'll receive an updated calendar each month. Feel free to bookmark this page and check in on your own time!
+    <strong style="font-weight: 700; color: #8C52FF;">This calendar is updated monthly</strong>.<p> If you have a dedicated CSM or are subscribed to Navigate, you'll receive an updated calendar each month. Feel free to bookmark this page and check in on your own time!
   </p>
   <p><strong>Happy Navigating,</strong></p>
 <p>Recurly Customer Success</p>
