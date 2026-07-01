@@ -157,9 +157,9 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
 .rm-Markdown.markdown-body .rc-guide .rc-acc-text a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide .rc-acc-text a{color:#FF8200 !important;font-weight:700;border-bottom:0 !important;}
 
 /* VIDEO / IMAGE EMBED PLACEHOLDER */
-.rc-video-embed { position: relative; overflow: hidden; border-radius: 8px; background: #0D0D0B; aspect-ratio: 16/9; width: 100%; }
-.rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
-.rc-placeholder-box { background: #EAE8DA; border: 2px dashed #CCC9B8; border-radius: 8px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: #807D73; font-size: .9rem; font-weight: 600; text-align: center; padding: 20px;}
+.rc-video-embed { position: relative; overflow: hidden; border-radius: 8px; background: #0D0D0B; width: 100%; }
+.rc-video-embed iframe { width: 100%; aspect-ratio: 16/9; border: none; display: block; border-radius: 8px; }
+.rc-placeholder-box { display: none; }
 
 @media(max-width:768px){
   .rc-content-wrap{padding:0 20px;} .rc-top-nav{padding:16px 20px;} .rc-hero{padding:36px 20px 36px;} .rc-hero h1{font-size:1.8rem;}
@@ -216,11 +216,9 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
       <h2><i class="fa-solid fa-circle-check rc-fa-section"></i> Your "always-on" Customer Success program</h2>
       <p>Navigate is here to support you through every step of your customer journey in a wholistic way, providing digital, video, downloadable resources and more. We are growing alongside you and continuously adding to our library, ensuring you have access to the resources you need at optimal times in your subscription lifecycle.</p><br>
 
-      <!-- HOW NAVIGATE SHOWS UP FOR YOU -->
       <h2><i class="fa-solid fa-bullseye rc-fa-section"></i> How Navigate shows up for you</h2>
       <p>Explore the specific tools, expert guidance, and live sessions available to you through this program. We utilize self-driven resources, curated outreach and offerings, and live events to ensure you're able to access what you need, how you need it.</p>
 
-      <!-- ACCORDION 1: Navigate Home -->
       <details class="rc-phase-block" open>
         <summary class="rc-phase-label">
           <div class="rc-phase-icon"><i class="fa-solid fa-location-dot"></i></div>
@@ -240,7 +238,6 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
         </div>
       </details>
       
-      <!-- ACCORDION 2: Office Hours -->
       <details class="rc-phase-block">
         <summary class="rc-phase-label">
           <div class="rc-phase-icon"><i class="fa-solid fa-calendar-days"></i></div>
@@ -254,17 +251,14 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
               <p>Below is an example of what you can expect! Jaclyn, Customer Success Manager, walks one Recurly merchant through global payment gateway optimization.</p>
               <p><a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">View Office Hours schedule →</a></p>
             </div>
-            <!-- Video Embed Placeholder -->
             <div class="rc-video-embed">
-       <div class="rc-placeholder-box">Office Hours: Payment gateways</div>
-   <iframe src="https://share.synthesia.io/embeds/videos/52ee9622-b163-4925-b9f2-fe2469a5523c" loading="lazy" allowfullscreen></iframe> -->
+              <iframe src="https://share.synthesia.io/embeds/videos/52ee9622-b163-4925-b9f2-fe2469a5523c" loading="lazy" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </details>
       
-   <!-- ACCORDION 3: Live & On-Demand Events -->
-      <details class="rc-phase-block">
+   <details class="rc-phase-block">
         <summary class="rc-phase-label">
           <div class="rc-phase-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
           <div class="rc-phase-title"><h3>Live &amp; On-Demand Events</h3></div>
@@ -276,17 +270,14 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
               <p>Regular live sessions on new features, optimization strategies, and subscription trends, with Q&amp;A and on-demand recordings for everything.</p>
               <p><a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">Browse upcoming webinars →</a></p>
             </div>
-            <!-- Video Embed Placeholder -->
             <div class="rc-video-embed">
-              <div class="rc-placeholder-box">Lunch & Learn: Dunning optimization</div>
               <iframe src="https://share.synthesia.io/embeds/videos/c6852b81-4b0e-49b1-85ba-a4b09b5f6c88" loading="lazy" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </details>
 
-<!-- ACCORDION 4: Merchant scorecards -->
-      <details class="rc-phase-block">
+<details class="rc-phase-block">
         <summary class="rc-phase-label">
           <div class="rc-phase-icon"><i class="fa-solid fa-location-dot"></i></div>
           <div class="rc-phase-title"><h3>Navigate monthly scorecards</h3></div>
@@ -305,7 +296,6 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
         </div>
       </details>
 
-      <!-- ACCORDION 5: Monthly Calendar -->
       <details class="rc-phase-block">
         <summary class="rc-phase-label">
           <div class="rc-phase-icon"><i class="fa-solid fa-envelope"></i></div>
@@ -317,7 +307,6 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
             <div class="rc-acc-text">
               <p>Your curated monthly briefing: new Recurly features, upcoming events, optimization tips, industry insights, and highlights from the Navigate community.</p>
             </div>
-            <!-- Image Placeholder -->
             <div class="rc-scorecard-img">
            
        <img src="https://files.readme.io/5aebf67d8d604594b0febe1d6a50f943407ce7962e25f44faa733ecd7868e341-Calendar_examples.gif">
@@ -328,7 +317,6 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
 
 
 
-      <!-- ACCORDION 6: 1:1 Expert Sessions -->
       <details class="rc-phase-block">
         <summary class="rc-phase-label">
           <div class="rc-phase-icon"><i class="fa-solid fa-headset"></i></div>
@@ -346,19 +334,16 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
       </details>
 
 
-      <!-- EMAIL WHITELIST -->
       <div class="rc-callout-warning-box" style="margin-top: 32px;">
         <i class="fa-solid fa-triangle-exclamation" style="color:#FF8200;font-size:1.1rem;flex-shrink:0;margin-top:2px;"></i>
         <p><strong>Action required: Whitelist our email.</strong> All Navigate communications come from <strong>recurlynavigate@recurly.com</strong>. Add this address to your email whitelist to ensure scorecards, newsletters, and event invitations reach your inbox. If you're not seeing our emails, check your spam folder and mark us as a trusted sender.</p>
       </div>
 
-      <!-- PROACTIVE MONITORING -->
       <div class="rc-card">
         <h3><i class="fa-solid fa-eye rc-fa-section"></i> Proactive monitoring &amp; outreach</h3>
         <p>Your Navigate team monitors your subscription health metrics. If we spot an opportunity to improve your results — a gap in your dunning setup, an underutilized feature, or a benchmark that suggests room for improvement — we'll reach out and offer to help.</p>
       </div>
 
-      <!-- OPT OUT -->
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-door-open"></i></div>
         <div class="rc-callout-body">
@@ -367,14 +352,12 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
         </div>
       </div>
 
-      <!-- COMPLETION BLOCK — no buttons -->
       <div class="rc-complete">
         <i class="fa-solid fa-rocket rc-fa-dark"></i>
         <h2>You're all set.</h2>
         <p>Head to Navigate Home and explore the learning path that matches your biggest priority right now. If you're not sure where to start, drop in at the next Office Hours session and ask.</p>
       </div>
 
-      <!-- CONTINUE YOUR JOURNEY -->
       <div class="rc-next-steps">
         <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
         <div class="rc-next-grid">
