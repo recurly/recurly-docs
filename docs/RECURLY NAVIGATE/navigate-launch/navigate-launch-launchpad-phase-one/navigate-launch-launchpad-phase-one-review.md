@@ -163,7 +163,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
 /* ── RECAP CARDS ── */
-.rc-recap-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; }
+.rc-recap-row { display: grid; grid-template-columns: 1fr; gap: 14px; margin-bottom: 24px; }
 .rc-recap-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 13px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px; }
 .rc-recap-card h4 { font-size: .95rem; font-weight: 800; margin: 0; color: var(--offblack); display: flex; align-items: center; gap: 8px; }
 .rc-recap-card p { font-size: .88rem; color: var(--gray); margin: 0; line-height: 1.55; flex-grow: 1; }
