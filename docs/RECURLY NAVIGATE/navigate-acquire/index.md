@@ -414,9 +414,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
             <a href="#plans" class="rc-sticky-link">Plans &amp; pricing</a>
-            <a href="#incentives" class="rc-sticky-link">Incentives</a>
-            <a href="#gifting" class="rc-sticky-link">Gifting &amp; expansion</a>
-            <a href="#payments" class="rc-sticky-link">Payments</a>
+            <a href="#incentives" class="rc-sticky-link" style="display: none;">Incentives</a>
+            <a href="#gifting" class="rc-sticky-link" style="display: none;">Gifting &amp; expansion</a>
+            <a href="#payments" class="rc-sticky-link" style="display: none;">Payments</a>
           </div>
         </div>
       </div>
@@ -546,9 +546,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-footer-section">
           <span class="rc-footer-label">Acquire</span>
           <a href="#plans" class="rc-footer-link">Plans &amp; pricing</a>
-          <a href="#incentives" class="rc-footer-link">Incentives</a>
-          <a href="#gifting" class="rc-footer-link">Gifting &amp; expansion</a>
-          <a href="#payments" class="rc-footer-link">Payments</a>
+          <a href="#incentives" class="rc-footer-link" style="display: none;">Incentives</a>
+          <a href="#gifting" class="rc-footer-link" style="display: none;">Gifting &amp; expansion</a>
+          <a href="#payments" class="rc-footer-link" style="display: none;">Payments</a>
         </div>
 
         <div class="rc-footer-utility">
