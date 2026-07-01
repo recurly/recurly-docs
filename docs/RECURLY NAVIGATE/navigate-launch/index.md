@@ -7,7 +7,7 @@ excerpt: >-
   Days" Launchpad learning paths, ensure a seamless transition from beginning
   production to site optimization with Recurly Navigate's expert-led paths.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   keywords:
     - Subscription billing implementation
