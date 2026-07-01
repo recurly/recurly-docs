@@ -181,7 +181,7 @@ them.</p>
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home="rc-sticky-link">
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
             </a>
             <a href="#essential" class="rc-sticky-link">Essential Navigate resources
@@ -199,21 +199,21 @@ them.</p>
       
       <div class="rc-card-grid rc-card-grid-3col">
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-regular fa-file-lines"></i></div>
+          <div class="rc-feature-icon"><i class="fa-regular fa-rocket"></i></div>
           <h4>What is Navigate?</h4>
           <p>Official orientation of Recurly's Customer Success program, built for you.</p>
-          <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/navigate-intro" target="_blank" rel="noopener noreferrer">Explore program ↗</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" target="_blank" rel="noopener noreferrer">Explore program ↗</a>
         </div>
         
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-circle-play"></i></div>
+          <div class="rc-feature-icon"><i class="fa-solid fa-headphones"></i></div>
           <h4>Global Office Hours</h4>
           <p>Connect directly with our Customer Success Managers in small-group sessions built for practical, real-time problem-solving.</p>
           <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">Book session ↗</a>
         </div>
 
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="rc-feature-icon"><i class="fa-solid fa-video"></i></div>
           <h4>Upcoming & on-demand events</h4>
           <p>Browse upcoming Navigate webinars, book a live Customer Success Office Hours session, or view our library of educational on-demand events.</p>
           <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">View events ↗</a>
@@ -227,14 +227,14 @@ them.</p>
       
       <div class="rc-card-grid rc-card-grid-3col">
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="rc-feature-icon"><i class="fa-solid fa-book"></i></div>
           <h4>Resource center</h4>
           <p>Curated guides, case studies & benchmarks to help subscription businesses launch, grow, and retain smartly.</p>
           <a href="https://recurly.com/resources/" target="_blank" rel="noopener noreferrer">View assets ↗</a>
         </div>
 
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-gear"></i></div>
+          <div class="rc-feature-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
           <h4>Status page</h4>
           <p>Enroll for real-time incident reporting and status updates.</p>
           <a href="https://status.recurly.com/" target="_blank" rel="noopener noreferrer">Get updates ↗</a>
@@ -256,16 +256,16 @@ them.</p>
       <div class="rc-card-grid rc-card-grid-3col">
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-globe"></i></div>
-          <h4>Contact support</h4>
-          <p>Reach out directly to the Recurly Support team with specific technical inquiries.</p>
-          <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">Submit ticket ↗</a>
+          <h4>Visit Recurly Global support</h4>
+          <p>View knowledge base or "submit a ticket" to reach out directly to the Recurly Support team with specific technical inquiries.</p>
+          <a href="https://support.recurly.com/hc/en-us" target="_blank" rel="noopener noreferrer">Submit ticket ↗</a>
         </div>
         
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-envelope"></i></div>
           <h4>Knowledge base</h4>
           <p>Explore how-to articles, FAQs and troubleshooting techniques.</p>
-          <a href="https://support.recurly.com/hc/en-us">View FAQs ↗</a>
+          <a href="https://support.recurly.com/hc/en-us/categories/36701490551956-Recurly-Subscriptions">View FAQs ↗</a>
         </div>
 
         <div class="rc-feature-card">
