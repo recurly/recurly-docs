@@ -140,7 +140,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
 /* ── CARD GRID (3 COL) ── */
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
+.rc-card-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 0 0 32px; }
 .rc-card-grid-3col { grid-template-columns: 1fr 1fr 1fr; }
 .rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
 /* Home/Neutral Hover State */
