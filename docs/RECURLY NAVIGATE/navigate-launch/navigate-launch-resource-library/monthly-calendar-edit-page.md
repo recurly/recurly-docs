@@ -54,7 +54,7 @@ metadata:
       <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4; color: #666666;">Maybe just want to learn more about Recurly’s churn tools?</p>
       <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4; color: #2D1B36;">
         Join Office Hours with Julia Lackner, CSM<br>
-        Monday, June 1st | 12:30 PM CT – <a href="https://recurly.registration.goldcast.io/events/34549592-81c7-4d98-b7d6-998a241d71f7?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a><br>
+        Monday, June 1st | 12:30 PM CT – 
         Monday, July 13th | 12:30 PM CT – <a href="https://recurly.registration.goldcast.io/events/46502010-5b55-4304-959f-a26001e73cd6?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a>
       </p>
     </div>
