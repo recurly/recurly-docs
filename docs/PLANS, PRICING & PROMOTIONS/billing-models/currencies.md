@@ -65,7 +65,7 @@ next:
   <div class="rp-step">
     <div class="rp-step-num">1</div>
     <div>
-      <h4>Enable multi-currency support and define accepted currencie</h4>
+      <h4>Enable multi-currency support and define accepted currencies</h4>
       <p>After multi-currency support is activated on your Recurly account, add the currencies you want to accept. Once a currency is enabled, you can set pricing for your subscription plans and coupons in that currency.</p>
     </div>
   </div>
