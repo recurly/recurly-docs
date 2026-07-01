@@ -339,8 +339,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" alt=""> Navigate Home
             </a>
             <a href="#analytics" class="rc-sticky-link">Analytics &amp; reporting</a>
-            <a href="#expansion" class="rc-sticky-link">Global expansion</a>
-            <a href="#optimization" class="rc-sticky-link">Revenue optimization</a>
+            <a href="#expansion" class="rc-sticky-link" style="display: none;">Global expansion</a>
+            <a href="#optimization" class="rc-sticky-link" style="display: none;">Revenue optimization</a>
           </div>
         </div>
       </div>
@@ -473,8 +473,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-footer-section">
           <span class="rc-footer-label">Scale</span>
           <a href="#analytics" class="rc-footer-link">Analytics &amp; reporting</a>
-          <a href="#expansion" class="rc-footer-link">Global expansion</a>
-          <a href="#optimization" class="rc-footer-link">Revenue optimization</a>
+          <a href="#expansion" class="rc-footer-link" style="display: none;">Global expansion</a>
+          <a href="#optimization" class="rc-footer-link" style="display: none;">Revenue optimization</a>
         </div>
 
         <div class="rc-footer-utility">
