@@ -1,8 +1,26 @@
 ---
 title: 'Welcome: The Subscription Flywheel'
+excerpt: >-
+  Master the four pillars of subscription growth with the Recurly Flywheel
+  framework. Discover strategic insights for optimized subscription setup,
+  subscriber acquisition, churn reduction, and global business scaling.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Master the four pillars of subscription growth with the Recurly Flywheel
+    framework. Discover strategic insights for optimized subscription setup,
+    subscriber acquisition, churn reduction, and global business scaling.
+  keywords:
+    - Subscription Flywheel
+    - subscription growth pillars
+    - subscriber retention strategy
+    - dunning management
+    - trial conversion optimization
+    - Recurly billing models
+    - payment gateway configuration
+    - revenue recognition software
+    - global subscription scaling
   robots: index
 ---
 <HTMLBlock>{`
