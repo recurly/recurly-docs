@@ -83,7 +83,7 @@ Before processing a webhook, send Recurly a success response — this prevents R
 The API is the most reliable data source, so always make an API call when you receive a webhook you act on, such as one that triggers a customer email. Use the receipt of the webhook to trigger an API query that validates the notification details against current API data. Use the latest version of the API (currently v2021-02-25) to ensure access to the newest features.
 
 <ul class="rp-list">
-  <li><a href="https://recurly.com/developers/reference/webhooks/" target="_blank">Developer Reference</a></li>
+  <li><a href="https://docs.recurly.com/recurly-subscriptions/docs/overview-webhooks#" target="_blank">Developer Reference</a></li>
   <li><a href="https://docs.recurly.com/docs/webhooks" target="_blank">Recurly Docs</a></li>
   <li><a href="https://docs.recurly.com/docs/api-support-and-webhooks" target="_blank">App Management API and Webhooks docs</a></li>
 </ul>
@@ -94,7 +94,7 @@ Automated Exports are a more efficient and reliable way to get data than cycling
 
 <ul class="rp-list">
   <li><a href="https://docs.recurly.com/docs/automated-exports" target="_blank">Automated Exports documentation</a></li>
-  <li><a href="https://recurly.com/developers/api/v2021-02-25/index.html#tag/automated_exports" target="_blank">Automated Exports API</a></li>
+  <li><a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/get_export_dates" target="_blank">Automated Exports API</a></li>
 </ul>
 
 <br />
