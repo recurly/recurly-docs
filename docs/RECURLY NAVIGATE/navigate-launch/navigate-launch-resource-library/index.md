@@ -217,6 +217,12 @@ them.</p>
           <h4>Upcoming & on-demand events</h4>
           <p>Browse upcoming Navigate webinars, book a live Customer Success Office Hours session, or view our library of educational on-demand events.</p>
           <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">View events ↗</a>
+                                                                                                     </div>
+                                                                                                     <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h4>Submit your Navigate ideas</h4>
+          <p>Is there a topic you’d like to explore? A feature you want to better understand? A strategy you’d like help refining? Let us know!</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA32fji1c0ydgEVo0Ene8_XiJAg-YZvnZ49ThBLgOJPaVaIA/viewform" target="_blank" rel="noopener noreferrer">Submit your ideas ↗</a>
         </div>
       </div>
     </div>
@@ -242,7 +248,7 @@ them.</p>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-code"></i></div>
           <h4>Recurly change log</h4>
-          <p>Enroll for real-time incident reporting and status updates.</p>
+          <p>Discover what's new in Recurly Subscriptions. Browse posts by year to see recent launches, enhancements, and improvements.</p>
           <a href="https://docs.recurly.com/recurly-subscriptions/changelog/2026" target="_blank" rel="noopener noreferrer">Get updates ↗</a>
         </div>
         
