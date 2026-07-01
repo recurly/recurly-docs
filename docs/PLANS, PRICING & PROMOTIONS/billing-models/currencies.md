@@ -65,7 +65,7 @@ next:
   <div class="rp-step">
     <div class="rp-step-num">1</div>
     <div>
-      <h4>Enable multi-currency support and define accepted currencies</h4>
+      <h4>Enable multi-currency support and define accepted currencie</h4>
       <p>After multi-currency support is activated on your Recurly account, add the currencies you want to accept. Once a currency is enabled, you can set pricing for your subscription plans and coupons in that currency.</p>
     </div>
   </div>
@@ -156,3 +156,5 @@ Some gateways require separate accounts to collect payments in different currenc
 # Tax support
 
 Tax region support is configured independently from currency enablement — enabling a currency does not automatically enable tax collection for that region. For information on supported tax regions, see the <a href="https://docs.recurly.com/docs/tax" target="_blank">tax documentation</a>.
+
+<br />
