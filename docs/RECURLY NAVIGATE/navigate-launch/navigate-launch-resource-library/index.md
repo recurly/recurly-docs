@@ -6,7 +6,7 @@ excerpt: >-
   Hours, live webinars, product changelogs, technical FAQs, and Recurly Docs
   configuration guides.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Explore the Recurly Navigate Resource Library for a centralized hub of
