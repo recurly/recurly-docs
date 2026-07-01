@@ -1,8 +1,27 @@
 ---
 title: 'Welcome: Exploring Navigate home'
+excerpt: >-
+  Learn how to access and maximize Recurly Navigate Home. Explore curated
+  learning paths, technical documentation links, live training webinars, and
+  weekly Customer Success Office Hours designed to accelerate your subscription
+  business growth.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Learn how to access and maximize Recurly Navigate Home. Explore curated
+    learning paths, technical documentation links, live training webinars, and
+    weekly Customer Success Office Hours designed to accelerate your
+    subscription business growth.
+  keywords:
+    - Recurly Navigate Home
+    - Customer Success portal
+    - subscription learning paths
+    - on-demand billing training
+    - Customer Success Office Hours
+    - subscription resource library
+    - Recurly technical documentation
+    - subscriber lifecycle management
   robots: index
 ---
 <HTMLBlock>{`
