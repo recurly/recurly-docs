@@ -230,14 +230,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       <div class="rc-video-wrap">
         <h3><i class="fa-solid fa-video rc-fa-section"></i> Welcome video</h3>
-        <div class="rc-video-placeholder">
-          <div class="rc-video-play"><i class="fa-solid fa-play"></i></div>
-          <p style="margin:0 0 6px;font-size:1rem;font-weight:700;color:#FFFDF2;">Official Navigate Welcome</p>
-          <p style="margin:0;font-size:.85rem;color:#807D73;">Meet Santi, Navigate Customer Success Manager</p>
-        </div>
+        <iframe src="https://share.synthesia.io/embeds/videos/679bc868-ed03-494a-93aa-3f49834950a3" style="width: 100%; aspect-ratio: 16/9; border: none; border-radius: 10px;" allowfullscreen></iframe>
       </div>
       
-    <!-- SECTION: Welcome to Recurly Navigate -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-map-location-dot rc-fa-section"></i> You are here</h2>
 
@@ -262,8 +257,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 </div>
     
 
-   <!-- SECTION: WHAT'S IN THIS COURSE -->
-    <div class="rc-lp-section">
+   <div class="rc-lp-section">
       <h2><i class="fa-solid fa-map rc-fa-section"></i> What's in this path</h2>
       <p>This path walks you through everything you need to know about the Navigate Customer Success Program and how to utilize our offerings — in about eight minutes.</p>
 
