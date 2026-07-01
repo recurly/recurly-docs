@@ -1,9 +1,8 @@
 ---
 title: API support and webhooks
 excerpt: >-
-  This page provides detail about the API endpoints involved with App
-  Management, and the webhook events that are triggered as part of subscription
-  lifecycle events
+  Use Recurly's REST API endpoints and webhooks to programmatically retrieve
+  mobile app subscription data and respond to subscription lifecycle events.
 deprecated: false
 hidden: false
 metadata:
@@ -13,44 +12,60 @@ metadata:
 next:
   description: ''
 ---
+<div class="rp-page">
+  <div class="rp-overview">App Management exposes REST API endpoints that let you pull mobile app subscription data from Recurly in JSON, plus webhooks that fire on key subscription lifecycle events. Together they let you build cross-platform workflows — query external products and subscriptions on demand, and react in real time when a subscriber cancels, renews, or upgrades.</div>
+  <div class="rp-cost">
+    <strong>Additional cost</strong><br/>
+    This feature requires an additional cost. Contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> for pricing details.
+  </div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#rest-api-endpoints"><span class="rp-toc-num">1</span>REST API endpoints</a>
+    <a class="rp-toc-pill" href="#webhooks"><span class="rp-toc-num">2</span>Webhooks</a>
+  </div>
+</div>
+
 # REST API endpoints
 
-The following REST API endpoints allow you to programmatically pull pertinent information in a JSON format from Recurly regarding your mobile app subscriptions.
+These REST API endpoints let you programmatically pull information about your mobile app subscriptions from Recurly in JSON format.
 
 ## External products
 
-These endpoints are used to view information related to the External Products you configured during setup.
+Use these endpoints to view information about the external products you configured during setup.
 
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_external_products" target="_blank">List all External Products by Site</a>.
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_external_product" target="_blank">Fetch an External Product</a>.
+<ul class="rp-list">
+  <li><a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_external_products" target="_blank">List all External Products by Site</a></li>
+  <li><a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_external_product" target="_blank">Fetch an External Product</a></li>
+</ul>
 
 ## External subscriptions
 
-These endpoints are used to view information about external subscriptions, which are Apple or Google subscriptions that your customers have purchased.
+Use these endpoints to view information about external subscriptions — the Apple or Google subscriptions your customers have purchased.
 
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_external_subscriptions" target="_blank">List all External Subscriptions by Site</a>
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_account_external_subscriptions" target="_blank">List all External Subscriptions by Account</a>
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_external_subscription" target="_blank">Fetch an External Subscription</a>
+<ul class="rp-list">
+  <li><a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_external_subscriptions" target="_blank">List all External Subscriptions by Site</a></li>
+  <li><a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_account_external_subscriptions" target="_blank">List all External Subscriptions by Account</a></li>
+  <li><a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_external_subscription" target="_blank">Fetch an External Subscription</a></li>
+</ul>
 
 ## Entitlements
 
-This endpoint is used to view information about the entitlements granted to a specific customer (aka: account).
+Use this endpoint to view the entitlements granted to a specific customer (account).
 
-- <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/list_entitlements" target="_blank">List Entitlements granted to an Account</a>
+<ul class="rp-list">
+  <li><a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/list_entitlements" target="_blank">List Entitlements granted to an Account</a></li>
+</ul>
 
-**For a complete list of the endpoints specific to App Management**, start at <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_external_subscriptions" target="_blank">External Subscription</a> and scroll down.
+For the complete list of endpoints specific to App Management, start at <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/list_external_subscriptions" target="_blank">External Subscription</a> and scroll down.
 
 # Webhooks
 
-For pertinent events in the subscription lifecycle, Recurly triggers a webhook. This allows you to take any subsequent action (e.g., e-mail your customer) based on that webhook notification.
+For key events in the subscription lifecycle, Recurly triggers a webhook so you can take follow-up action — like emailing your customer — based on the notification.
 
-<Callout icon="👍" theme="okay">
-  ### **Important:**
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong>Webhooks are configured via the Recurly Admin UI and can't be configured via API.</div>
+</div>
 
-  **Webhooks** can be configured via the Recurly Admin UI and **cannot be configured via API.**
-</Callout>
-
-Recurly webhook payloads are “lightweight” in nature and will require a subsequent call to the REST API in order to obtain the most up to date information about the App Store subscriptions. The below XML and JSON representations show an example of a webhook notification for a new External subscription. To get more info about the subscription, you would then utilize the <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/get_external_product" target="_blank">Fetch an External Subscription</a> endpoint with the "id" provided in the webhook.
+Recurly webhook payloads are lightweight by design and require a follow-up call to the REST API to get the most up-to-date information about an app store subscription. The JSON and XML examples below show a notification for a new external subscription. To get more detail, call the <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/get_external_product" target="_blank">Fetch an External Subscription</a> endpoint with the `id` provided in the webhook.
 
 ```json
 {
@@ -61,6 +76,7 @@ Recurly webhook payloads are “lightweight” in nature and will require a subs
   "event_time": "2022-12-06T22:19:15Z"
 }
 ```
+
 ```xml
 <new_external_subscription_notification>
   <external_subscription>
@@ -81,40 +97,41 @@ Recurly webhook payloads are “lightweight” in nature and will require a subs
 
 ## Configuring Recurly to send webhooks
 
-To configure Recurly to send webhooks specific to Recurly App Management, navigate to **Integrations -> Webhooks** within Recurly. From the top right, click **Configure** . Depending on what works best for you, you can either create a **New Endpoint**, or select **Options -> Edit** for an existing endpoint. When configuring the endpoint, scroll down to view the External Subscription section of webhooks. For any event that you are interested in, select the checkbox corresponding to that event. For more detail about those events, read the next section. If you want to learn more about Recurly webhooks in general, visit our <a href="hhttps://docs.recurly.com/recurly-subscriptions/docs/overview-webhooks" target="_blank">Webhooks developer documentation</a>.
+To configure webhooks for App Management, navigate to Integrations → Webhooks in Recurly and select Configure at the top right. You can either create a New Endpoint or select Options → Edit for an existing one. When configuring the endpoint, scroll to the External Subscription section and select the checkbox for any event you're interested in. The next section covers those events in detail. To learn more about Recurly webhooks in general, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/overview-webhooks" target="_blank">Webhooks developer documentation</a>.
 
 ## Complete list of webhook events
 
-The following tables provides a complete list of the webhooks Recurly will send related to mobile app subscriptions. Each webhook maps to a specific Apple or Google notification, as shown below in the table. To see JSON and XML examples for each of the webhooks listed below, view the <a href="https://docs.recurly.com/recurly-subscriptions/docs/external-subscription-notifications" target="_blank">External Subscription Notifications</a> section of the Webhooks page in our Recurly Development Hub.
+The table below lists every webhook Recurly sends related to mobile app subscriptions. Each one maps to a specific Apple or Google notification. For JSON and XML examples of each webhook, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/external-subscription-notifications" target="_blank">External Subscription Notifications</a> section of the Webhooks page in the Recurly Development Hub.
 
-| Recurly Event                        | Apple Event                                                                        | Google Event                           |
-| ------------------------------------ | ---------------------------------------------------------------------------------- | -------------------------------------- |
-| canceled                             | DID\_CHANGE\_RENEWAL\_STATUS > AUTO\_RENEW\_DISABLED                               | SUBSCRIPTION\_CANCELED                 |
-| consumption\_requested               | CONSUMPTION\_REQUEST                                                               | N/A                                    |
-| created (i.e., new subscription)     | SUBSCRIBED > INITIAL\_BUY                                                          | SUBSCRIPTION\_PURCHASED                |
-| downgraded                           | DID\_CHANGE\_RENEWAL\_PREF > DOWNGRADE                                             | N/A                                    |
-| downgrade\_canceled                  | DID\_CHANGE\_RENEWAL\_PREF                                                         | N/A                                    |
-| expired                              | EXPIRED > VOLUNTARY\<br>EXPIRED > BILLING\\\_RETRY\<br>EXPIRED > PRICE\\\_INCREASE | SUBSCRIPTION\_EXPIRED                  |
-| extended\_renewal                    | RENEWAL\_EXTENDED                                                                  | SUBSCRIPTION\_DEFERRED                 |
-| failed\_renewal                      | DID\_FAIL\_TO\_RENEW                                                               | SUBSCRIPTION\_ON\_HOLD                 |
-| failed\_renewal\_with\_grace\_period | DID\_FAIL\_TO\_RENEW > GRACE\_PERIOD                                               | SUBSCRIPTION\_IN\_GRACE\_PERIOD        |
-| grace\_period\_expired               | GRACE\_PERIOD\_EXPIRED                                                             | N/A                                    |
-| pause\_schedule\_changed             | N/A                                                                                | SUBSCRIPTION\_PAUSE\_SCHEDULE\_CHANGED |
-| paused                               | N/A                                                                                | SUBSCRIPTION\_PAUSED                   |
-| plan\_changed                        | N/A                                                                                | SUBSCRIPTION\_PURCHASED                |
-| price\_change\_confirmed             | N/A                                                                                | SUBSCRIPTION\_PRICE\_CHANGE\_CONFIRMED |
-| reactivated                          | DID\_CHANGE\_RENEWAL\_STATUS > AUTO\_RENEW\_ENABLED                                | SUBSCRIPTION\_RESTARTED                |
-| recovered                            | N/A                                                                                | SUBSCRIPTION\_RECOVERED                |
-| refunded                             | REFUND                                                                             | N/A                                    |
-| refund\_declined                     | REFUND\_DECLINED                                                                   | N/A                                    |
-| refund\_reversed                     | REFUND\_REVERSED                                                                   | N/A                                    |
-| renewed                              | DID\\\_RENEW\<br>DID\\\_RENEW > BILLING\\\_RECOVERY                                | SUBSCRIPTION\_RENEWED                  |
-| resubscribed                         | SUBSCRIBED > RESUBSCRIBE                                                           | N/A                                    |
-| resubscribed\_incorrect\_account     | SUBSCRIBED > RESUBSCRIBE                                                           | N/A                                    |
-| revoked                              | N/A                                                                                | SUBSCRIPTION\_REVOKED                  |
-| upgraded                             | DID\_CHANGE\_RENEWAL\_PREF > UPGRADE                                               | N/A                                    |
-| voided                               | N/A                                                                                | SUBSCRIPTION\_VOIDED                   |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Recurly event</td><td>Apple event</td><td>Google event</td></tr>
+  <tr><td>canceled</td><td>DID_CHANGE_RENEWAL_STATUS &gt; AUTO_RENEW_DISABLED</td><td>SUBSCRIPTION_CANCELED</td></tr>
+  <tr><td>consumption_requested</td><td>CONSUMPTION_REQUEST</td><td>N/A</td></tr>
+  <tr><td>created (new subscription)</td><td>SUBSCRIBED &gt; INITIAL_BUY</td><td>SUBSCRIPTION_PURCHASED</td></tr>
+  <tr><td>downgraded</td><td>DID_CHANGE_RENEWAL_PREF &gt; DOWNGRADE</td><td>N/A</td></tr>
+  <tr><td>downgrade_canceled</td><td>DID_CHANGE_RENEWAL_PREF</td><td>N/A</td></tr>
+  <tr><td>expired</td><td>EXPIRED &gt; VOLUNTARY<br/>EXPIRED &gt; BILLING_RETRY<br/>EXPIRED &gt; PRICE_INCREASE</td><td>SUBSCRIPTION_EXPIRED</td></tr>
+  <tr><td>extended_renewal</td><td>RENEWAL_EXTENDED</td><td>SUBSCRIPTION_DEFERRED</td></tr>
+  <tr><td>failed_renewal</td><td>DID_FAIL_TO_RENEW</td><td>SUBSCRIPTION_ON_HOLD</td></tr>
+  <tr><td>failed_renewal_with_grace_period</td><td>DID_FAIL_TO_RENEW &gt; GRACE_PERIOD</td><td>SUBSCRIPTION_IN_GRACE_PERIOD</td></tr>
+  <tr><td>grace_period_expired</td><td>GRACE_PERIOD_EXPIRED</td><td>N/A</td></tr>
+  <tr><td>pause_schedule_changed</td><td>N/A</td><td>SUBSCRIPTION_PAUSE_SCHEDULE_CHANGED</td></tr>
+  <tr><td>paused</td><td>N/A</td><td>SUBSCRIPTION_PAUSED</td></tr>
+  <tr><td>plan_changed</td><td>N/A</td><td>SUBSCRIPTION_PURCHASED</td></tr>
+  <tr><td>price_change_confirmed</td><td>N/A</td><td>SUBSCRIPTION_PRICE_CHANGE_CONFIRMED</td></tr>
+  <tr><td>reactivated</td><td>DID_CHANGE_RENEWAL_STATUS &gt; AUTO_RENEW_ENABLED</td><td>SUBSCRIPTION_RESTARTED</td></tr>
+  <tr><td>recovered</td><td>N/A</td><td>SUBSCRIPTION_RECOVERED</td></tr>
+  <tr><td>refunded</td><td>REFUND</td><td>N/A</td></tr>
+  <tr><td>refund_declined</td><td>REFUND_DECLINED</td><td>N/A</td></tr>
+  <tr><td>refund_reversed</td><td>REFUND_REVERSED</td><td>N/A</td></tr>
+  <tr><td>renewed</td><td>DID_RENEW<br/>DID_RENEW &gt; BILLING_RECOVERY</td><td>SUBSCRIPTION_RENEWED</td></tr>
+  <tr><td>resubscribed</td><td>SUBSCRIBED &gt; RESUBSCRIBE</td><td>N/A</td></tr>
+  <tr><td>resubscribed_incorrect_account</td><td>SUBSCRIBED &gt; RESUBSCRIBE</td><td>N/A</td></tr>
+  <tr><td>revoked</td><td>N/A</td><td>SUBSCRIPTION_REVOKED</td></tr>
+  <tr><td>upgraded</td><td>DID_CHANGE_RENEWAL_PREF &gt; UPGRADE</td><td>N/A</td></tr>
+  <tr><td>voided</td><td>N/A</td><td>SUBSCRIPTION_VOIDED</td></tr>
+</table>
 
 ## Viewing triggered webhooks
 
-All triggered webhooks are viewable within Recurly by navigating to **Integrations -> Webhooks**. In addition, when viewing the details of an Account or External Subscription, there is a link for Webhooks that will take you to a filtered view of the triggered webhooks.
+All triggered webhooks are viewable in Recurly under Integrations → Webhooks. You can also reach a filtered view of triggered webhooks from the Webhooks link when viewing the details of an account or external subscription.
