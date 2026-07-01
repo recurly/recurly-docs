@@ -6,7 +6,7 @@ excerpt: >-
   Sign up below. This page is updated with Office Hours, Navigate events,
   Recurly webinars, and more each month.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
