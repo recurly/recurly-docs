@@ -206,7 +206,7 @@ them.</p>
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home="rc-sticky-link">
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home"rc-sticky-link">
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
             </a>
             <a href="#essential" class="rc-sticky-link">Essential Navigate resources
