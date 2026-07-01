@@ -1,8 +1,25 @@
 ---
 title: 'Welcome: The full program'
+excerpt: >-
+  Maximize subscription growth with the full Recurly Navigate program. Access
+  1:1 expert customer success sessions, live optimization webinars, weekly
+  drop-in Office Hours, and proactive subscription health metric monitoring.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Maximize subscription growth with the full Recurly Navigate program. Access
+    1:1 expert customer success sessions, live optimization webinars, weekly
+    drop-in Office Hours, and proactive subscription health metric monitoring.
+  keywords:
+    - Recurly Navigate program
+    - customer success management
+    - subscription health metrics
+    - 1:1 expert sessions
+    - subscription optimization webinars
+    - customer success office hours
+    - recurring revenue monitoring
+    - dunning optimization
   robots: index
 ---
 <HTMLBlock>{`
