@@ -1,39 +1,77 @@
 ---
 title: Sell and manage Apple subscriptions through Recurly
 excerpt: >-
-  Streamline web-based subscription checkouts outside the App Store with
-  Recurly’s secure, customizable payment solutions.
+  Offer web-based subscription checkouts outside the App Store with Recurly
+  Checkout or Recurly.js — two secure, PCI-compliant ways to sell digital
+  subscriptions and goods.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">App Store policy updates open the door to selling digital subscriptions and goods outside Apple's in-app purchase system — and Recurly gives you two turnkey ways to do it. Both Recurly Checkout and Recurly.js deliver a fully web-based, PCI-compliant checkout experience, so you can sell outside the App Store without compromising on security or user experience. Choose the option that fits how much control you want over the checkout.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#recurly-checkout"><span class="rp-toc-num">1</span>Recurly Checkout</a>
+    <a class="rp-toc-pill" href="#recurlyjs"><span class="rp-toc-num">2</span>Recurly.js</a>
+  </div>
+</div>
 
-Make the most of App Store policy updates by offering web-based subscription checkouts outside the App Store using Recurly’s secure, customizable tools. Recurly provides two turnkey solutions for handling payments for digital subscriptions and goods outside Apple’s in-app purchase system.
+# Recurly Checkout
 
-## Recurly Checkout
+A prebuilt, mobile-friendly hosted checkout page that's fast to launch and simple to maintain.
 
-A prebuilt, mobile-friendly hosted checkout page that’s fast to launch and simple to maintain.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+    <strong>Quick, simple setup</strong>
+    <span>Activate and deploy in minutes — no heavy lifting required.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+    <strong>Custom branding</strong>
+    <span>Match your site with color, logo, and messaging options.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-credit-card" aria-hidden="true"></i></div>
+    <strong>Flexible payment options</strong>
+    <span>Offer diverse methods and pricing right out of the box.</span>
+  </div>
+</div>
 
-**Key benefits:**
+<a class="rp-btn-primary" href="https://docs.recurly.com/docs/checkout" target="_blank">Learn more about Recurly Checkout →</a>
 
-* **Quick, simple setup:** Activate and deploy in minutes—no heavy lifting required.
-* **Custom branding:** Match your site with color, logo, and messaging options.
-* **Flexible payment options:** Offer diverse methods and pricing right out of the box.
-
-Learn more: [Recurly Checkout](https://docs.recurly.com/docs/checkout)
-
-## Recurly.js
+# Recurly.js
 
 A lightweight JavaScript library for building your own secure, hosted payment experience.
 
-**Key benefits:**
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Complete control</strong>
+    <span>Customize fields, layout, and styling to fit your brand.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-plug" aria-hidden="true"></i></div>
+    <strong>Seamless integration</strong>
+    <span>Pair with other Recurly features or third-party tools effortlessly.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i></div>
+    <strong>Extensible by design</strong>
+    <span>Add new payment methods or flows as your business evolves.</span>
+  </div>
+</div>
 
-* **Complete control:** Customize fields, layout, and styling to fit your brand.
-* **Seamless integration:** Pair with other Recurly features or third-party tools effortlessly.
-* **Extensible by design:** Add new payment methods or flows as your business evolves.
+<a class="rp-btn-primary" href="https://docs.recurly.com/docs/recurlyjs" target="_blank">Learn more about Recurly.js →</a>
 
-Learn more: [Recurly.js](https://docs.recurly.com/docs/recurlyjs)
+<div class="rp-card">
 
-Both options deliver a fully web-based, PCI-compliant checkout experience—so you can sell subscriptions and digital goods outside the App Store without compromising on security or user experience. **[Learn more](https://recurly.com/blog/product-perspectives-how-to-avoid-apple-app-store-comissions/).**
+### Which option is right for you?
+
+Both are fully web-based and PCI-compliant. Choose **Recurly Checkout** if you want the fastest path to a polished, hosted page with minimal setup. Choose **Recurly.js** if you want full control over the fields, layout, and flow to build a custom experience. For the bigger picture on moving off App Store commissions, read <a href="https://recurly.com/blog/product-perspectives-how-to-avoid-apple-app-store-comissions/" target="_blank">how to avoid Apple App Store commissions</a>.
+
+</div>
+
+<br />
