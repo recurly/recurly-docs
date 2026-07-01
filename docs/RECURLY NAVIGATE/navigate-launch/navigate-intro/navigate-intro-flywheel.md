@@ -1,7 +1,7 @@
 ---
 title: 'Welcome: The Subscription Flywheel'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

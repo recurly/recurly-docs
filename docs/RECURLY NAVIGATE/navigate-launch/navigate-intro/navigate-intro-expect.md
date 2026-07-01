@@ -1,7 +1,7 @@
 ---
 title: 'Welcome: The full program'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
