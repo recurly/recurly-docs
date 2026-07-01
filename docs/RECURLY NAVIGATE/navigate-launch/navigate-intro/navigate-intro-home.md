@@ -177,7 +177,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 
       <div class="rc-video-wrap">
         <h3><i class="fa-solid fa-video rc-fa-section"></i> Navigate Home walkthrough</h3>
-        <iframe src="https://share.synthesia.io/embeds/videos/256837cd-6c51-4cbc-884f-d841a7ec670" style="width: 100%; aspect-ratio: 16/9; border: none; border-radius: 10px;" allowfullscreen></iframe>
+        <iframe src="https://share.synthesia.io/embeds/videos/256837cd-6c51-4cbc-884f-d841a7ec6706" style="width: 100%; aspect-ratio: 16/9; border: none; border-radius: 10px;" allowfullscreen></iframe>
       </div>
 
       <h2><i class="fa-solid fa-location-dot rc-fa-section"></i> How to access Navigate Home</h2>
