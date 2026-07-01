@@ -1,8 +1,27 @@
 ---
 title: Welcome to Navigate
+excerpt: >-
+  Welcome to Recurly Navigate, your official orientation to our digital Customer
+  Success program. Learn how the Subscription Flywheel framework helps launch,
+  acquire, retain, and scale your subscription business through curated learning
+  paths and live expert guidance.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Welcome to Recurly Navigate, your official orientation to our digital
+    Customer Success program. Learn how the Subscription Flywheel framework
+    helps launch, acquire, retain, and scale your subscription business through
+    curated learning paths and live expert guidance.
+  keywords:
+    - Recurly Navigate
+    - digital Customer Success program
+    - subscription business growth
+    - Subscription Flywheel
+    - customer onboarding orientation
+    - subscription management optimization
+    - recurring billing best practices
+    - customer success office hours
   robots: index
 ---
 <HTMLBlock>{`
