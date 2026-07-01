@@ -99,7 +99,7 @@ Before building a coupon, here's what each field in the creation form does.
     </tr>
     <tr>
       <td>Duration</td>
-      <td>How long the discount applies after redemption: forever, single use, or limited time (days, weeks, or months).</td>
+      <td>How long the discount applies after redemption: forever, single use, limited time (days, weeks, or months), or a defined number of billing periods.</td>
     </tr>
     <tr>
       <td>Maximum redemptions</td>
@@ -142,7 +142,7 @@ Before building a coupon, here's what each field in the creation form does.
 
 ## Step-by-step: create a new coupon
 
-<span id="rp-close"></span>
+<br />
 
 <div class="rp-steps">
   <div class="rp-step">
@@ -152,56 +152,18 @@ Before building a coupon, here's what each field in the creation form does.
       <p>Go to <strong>Configuration</strong> and click <strong>Coupons</strong>.</p>
     </div>
   </div>
-</div>
-
-<div class="rp-zoom-small">
-  <span class="rp-zoom">
-    <a class="rp-zoom-label" href="#rp-close">
-      <img src="https://files.readme.io/8d4e1fda7827d03b8f9d95d4ab67e4911db8cc092db4072c44c08d0f83f7607a-image.png" alt="Configuration menu with Coupons highlighted" class="rp-zoom-img" />
-    </a>
-    <a id="zoom-8d4e1fd" class="rp-zoom-overlay" href="#rp-close">
-      <img src="https://files.readme.io/8d4e1fda7827d03b8f9d95d4ab67e4911db8cc092db4072c44c08d0f83f7607a-image.png" alt="" />
-    </a>
-  </span>
-</div>
-
-<div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">2</div>
     <div>
       <h4>Click New Coupon</h4>
     </div>
   </div>
-</div>
-
-<span class="rp-zoom">
-  <a class="rp-zoom-label" href="#rp-close">
-    <img src="https://files.readme.io/6eb6423097ca5013a67c2465b02c775705143514fb838a48b056ade1f7eb33a8-image.png" alt="New Coupon button on the Coupons list page" class="rp-zoom-img" />
-  </a>
-  <a id="zoom-6eb6423" class="rp-zoom-overlay" href="#rp-close">
-    <img src="https://files.readme.io/6eb6423097ca5013a67c2465b02c775705143514fb838a48b056ade1f7eb33a8-image.png" alt="" />
-  </a>
-</span>
-
-<div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">3</div>
     <div>
       <h4>Enter an internal name</h4>
     </div>
   </div>
-</div>
-
-<span class="rp-zoom">
-  <a class="rp-zoom-label" href="#rp-close">
-    <img src="https://files.readme.io/2fef3df53f39b9e4fa4010ab5f7558d34ea3d236ba085162288d6b364d7c1ece-image.png" alt="Internal name field in the coupon creation form" class="rp-zoom-img" />
-  </a>
-  <a id="zoom-2fef3df" class="rp-zoom-overlay" href="#rp-close">
-    <img src="https://files.readme.io/2fef3df53f39b9e4fa4010ab5f7558d34ea3d236ba085162288d6b364d7c1ece-image.png" alt="" />
-  </a>
-</span>
-
-<div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">4</div>
     <div>
@@ -209,18 +171,6 @@ Before building a coupon, here's what each field in the creation form does.
       <p>Choose <strong>Single code</strong> or <strong>Bulk unique codes</strong>.</p>
     </div>
   </div>
-</div>
-
-<span class="rp-zoom">
-  <a class="rp-zoom-label" href="#rp-close">
-    <img src="https://files.readme.io/319f342ec6bdb8fbe9d15e4d3ae1fa1ab46ffc1b43bba9e5dd664a8662b4f8a5-image.png" alt="Code type selection in the coupon creation form" class="rp-zoom-img" />
-  </a>
-  <a id="zoom-319f342" class="rp-zoom-overlay" href="#rp-close">
-    <img src="https://files.readme.io/319f342ec6bdb8fbe9d15e4d3ae1fa1ab46ffc1b43bba9e5dd664a8662b4f8a5-image.png" alt="" />
-  </a>
-</span>
-
-<div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">5</div>
     <div>
@@ -228,37 +178,13 @@ Before building a coupon, here's what each field in the creation form does.
       <p>Select <strong>Percentage</strong>, <strong>Fixed amount</strong>, or <strong>Free trial</strong>.</p>
     </div>
   </div>
-</div>
-
-<span class="rp-zoom">
-  <a class="rp-zoom-label" href="#rp-close">
-    <img src="https://files.readme.io/4adaab2597af8e79038a3fbe21b7523378bf990bf8d463e6629204fa46991452-image.png" alt="Discount type selection in the coupon creation form" class="rp-zoom-img" />
-  </a>
-  <a id="zoom-4adaab2" class="rp-zoom-overlay" href="#rp-close">
-    <img src="https://files.readme.io/4adaab2597af8e79038a3fbe21b7523378bf990bf8d463e6629204fa46991452-image.png" alt="" />
-  </a>
-</span>
-
-<div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">6</div>
     <div>
       <h4>Set the coupon duration</h4>
-      <p>Choose <strong>Single use</strong>, <strong>Forever</strong>, or <strong>Limited time</strong> (specify days, weeks, or months).</p>
+      <p>Choose <strong>Single use</strong>, <strong>Forever</strong>, <strong>Limited time</strong> (specify days, weeks, or months), or <strong>Billing periods</strong> (specify the number of billing cycles).</p>
     </div>
   </div>
-</div>
-
-<span class="rp-zoom">
-  <a class="rp-zoom-label" href="#rp-close">
-    <img src="https://files.readme.io/552c773229720e3d71d8d5ebff6867ba6faadb03b86946d7c560a88745ec95a5-image.png" alt="Duration options in the coupon creation form" class="rp-zoom-img" />
-  </a>
-  <a id="zoom-552c773" class="rp-zoom-overlay" href="#rp-close">
-    <img src="https://files.readme.io/552c773229720e3d71d8d5ebff6867ba6faadb03b86946d7c560a88745ec95a5-image.png" alt="" />
-  </a>
-</span>
-
-<div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">7</div>
     <div>
@@ -266,36 +192,12 @@ Before building a coupon, here's what each field in the creation form does.
       <p>Set maximum redemptions, redemptions per account, and an optional redeem-by date.</p>
     </div>
   </div>
-</div>
-
-<span class="rp-zoom">
-  <a class="rp-zoom-label" href="#rp-close">
-    <img src="https://files.readme.io/e301291244dce72198845b003186c2a73dcd1051f15e07d4c086fc98c1908af8-image.png" alt="Redemption rules fields in the coupon creation form" class="rp-zoom-img" />
-  </a>
-  <a id="zoom-e301291" class="rp-zoom-overlay" href="#rp-close">
-    <img src="https://files.readme.io/e301291244dce72198845b003186c2a73dcd1051f15e07d4c086fc98c1908af8-image.png" alt="" />
-  </a>
-</span>
-
-<div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">8</div>
     <div>
       <h4>Define eligible charges, plans, and items</h4>
     </div>
   </div>
-</div>
-
-<span class="rp-zoom">
-  <a class="rp-zoom-label" href="#rp-close">
-    <img src="https://files.readme.io/75fef086e8d7aee54cd6470171ed8a5d706899f64a1fdfbeaa47f1e7a93cb551-image.png" alt="Eligible charges, plans, and items fields in the coupon creation form" class="rp-zoom-img" />
-  </a>
-  <a id="zoom-75fef08" class="rp-zoom-overlay" href="#rp-close">
-    <img src="https://files.readme.io/75fef086e8d7aee54cd6470171ed8a5d706899f64a1fdfbeaa47f1e7a93cb551-image.png" alt="" />
-  </a>
-</span>
-
-<div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">9</div>
     <div>
@@ -414,8 +316,38 @@ Free trial coupons let you offer a custom trial length that differs from your pl
       <td>Limited time</td>
       <td>The discount applies for a defined period — a specified number of days, weeks, months, or years. All invoices generated within that period receive the discount. Recurly recommends matching the period to the billing cycle of the eligible plans. Note: limited-time coupons expire automatically one hour before the anniversary of their redemption date.</td>
     </tr>
+    <tr>
+      <td>Billing periods</td>
+      <td>The discount applies for an exact number of billing cycles, regardless of cycle length. This eliminates the need to approximate billing periods using days, weeks, or months. Compatible with fixed amount, percentage, and free trial discount types. Subscription level only. Available in the UI and API.</td>
+    </tr>
   </tbody>
 </table>
+
+## Billing period coupons
+
+Billing period coupons let you define duration in terms of exact billing cycles rather than fixed time intervals. Previously, time-based durations (days, weeks, months) served only as an approximation of billing periods — requiring overhead to align them correctly and introducing inconsistencies across billing cycle lengths. With billing period coupons, the discount applies for precisely the number of cycles you specify, across any billing period type.
+
+**How billing period coupons work:**
+
+<div class="rp-list">
+  <ul>
+    <li>Once redeemed, the coupon applies to the current billing period and discounts any subscription change events within it.</li>
+    <li>A coupon set to <strong>1 billing period</strong> applies to the current period only and does not carry to the next renewal.</li>
+    <li>A coupon set to <strong>2 or more billing periods</strong> applies to the current period and the immediate renewal or renewals, including any subscription change events.</li>
+    <li>Can be used with a single code or bulk unique codes.</li>
+    <li>Compatible with fixed amount, percentage, and free trial discount types.</li>
+    <li>Subscription level only.</li>
+  </ul>
+</div>
+
+![](https://files.readme.io/e600a7667f5dad66c1eb942cd6e71d110f6950032ac1020b8e4e52331916d654-Dynamic_Coupon_Redemption.png)
+
+<br />
+
+<div class="rp-callout rp-callout-note">
+  <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> API support</strong>
+  Billing period coupons are available in the UI and <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/create_coupon" target="_blank">API</a>. Understanding a coupon's current state, when it will expire, and the total discounted amount has never been easier with the new <code>coupon_redemptions</code> object returned in several endpoints, including the <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/get_preview_renewal" target="_blank">renewal preview API</a>.
+</div>
 
 # Applying a coupon
 
@@ -571,7 +503,7 @@ Track and analyze coupon performance from the **Exports** page under **Reports**
 </Accordion>
 
 <Accordion title="How do I create a coupon that discounts across several billing cycles?">
-  Set the duration to "Limited time" and configure the period to match your plan's billing cycle. Keep in mind that if the discount is a fixed amount and eligible charges are less than the discount on any given invoice, the remaining balance won't carry forward.
+  Use the Billing periods duration type and set the number of cycles to match your needs. Unlike the Limited time option, billing period coupons align precisely to your plan's billing cycle regardless of cycle length — no manual time conversion needed. Keep in mind that if the discount is a fixed amount and eligible charges are less than the discount on any given invoice, the remaining balance won't carry forward.
 </Accordion>
 
 <Accordion title="Where can I find coupon redemption data?">
