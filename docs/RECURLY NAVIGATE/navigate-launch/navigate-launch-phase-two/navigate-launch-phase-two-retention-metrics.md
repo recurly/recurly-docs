@@ -1,7 +1,7 @@
 ---
 title: 'Launchpad phase two: Revenue recovery'
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

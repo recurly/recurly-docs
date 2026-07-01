@@ -7,7 +7,7 @@ excerpt: >-
   eliminate involuntary churn and secure post-launch subscription revenue from
   day one.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: 'Launchpad Phase 1: Optimize'
   description: >-

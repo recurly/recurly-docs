@@ -6,7 +6,7 @@ excerpt: >-
   and 60-day retry windows, construct escalating email flows, and deploy
   intelligent retry logic to recover revenue seamlessly.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Stop losing subscribers to failed credit cards. Optimize your revenue

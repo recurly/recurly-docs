@@ -1,7 +1,7 @@
 ---
 title: 'Welcome: Exploring Navigate home'
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

@@ -6,7 +6,7 @@ excerpt: >-
   mobile browser friction, and manage instant test refunds with Recurly’s
   production testing guide.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Eliminate checkout bugs before your subscribers do. Learn how to safely run

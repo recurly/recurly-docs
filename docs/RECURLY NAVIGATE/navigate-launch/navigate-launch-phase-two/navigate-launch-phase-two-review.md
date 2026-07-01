@@ -6,7 +6,7 @@ excerpt: >-
   guide, and prepare for your Monthly Metrics Scorecard to track long-term
   revenue recovery and business health.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Review your subscription optimization progress and access essential growth

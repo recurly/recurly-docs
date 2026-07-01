@@ -6,7 +6,7 @@ excerpt: >-
   windows, account updater settings, and gateway failover routing are fully
   configured to secure revenue before moving to Phase 2 metrics.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Review and verify your completed subscription billing setup with Recurly’s

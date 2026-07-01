@@ -1,7 +1,7 @@
 ---
 title: Resource Library
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

@@ -5,7 +5,7 @@ excerpt: >-
   configure automatic Gateway Failover in Recurly to seamlessly reroute live
   checkouts and queue recurring renewals using a backup payment gateway.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Protect subscription revenue from payment gateway outages. Learn how to

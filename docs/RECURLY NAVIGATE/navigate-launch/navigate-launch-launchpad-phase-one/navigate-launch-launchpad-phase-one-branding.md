@@ -6,7 +6,7 @@ excerpt: >-
   email templates, upload merchant logos, customize automated dunning messages,
   and brand your B2B subscription invoices within Recurly site settings.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Build subscriber trust and maximize payment recovery rates by personalizing

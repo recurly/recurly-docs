@@ -1,7 +1,7 @@
 ---
 title: 'Launchpad phase two: Benchmarks & reporting'
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

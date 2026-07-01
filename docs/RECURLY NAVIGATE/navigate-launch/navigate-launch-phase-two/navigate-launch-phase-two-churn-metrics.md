@@ -7,7 +7,7 @@ excerpt: >-
   tools like Account Updater and dunning optimization to maximize subscriber
   loyalty.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Diagnose and minimize subscriber loss by understanding the breakdown between

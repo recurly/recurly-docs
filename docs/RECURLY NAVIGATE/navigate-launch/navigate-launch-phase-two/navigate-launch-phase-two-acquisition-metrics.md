@@ -6,7 +6,7 @@ excerpt: >-
   friction, detect card-testing fraud, compare gateway performance, and leverage
   Recurly Analytics to maximize your transaction approval rates.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize your subscription growth funnel by mastering your subscriber

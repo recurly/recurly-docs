@@ -6,7 +6,7 @@ excerpt: >-
   and utilize the Benchmarks Dashboard to protect and optimize your subscription
   revenue.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Master the core subscription metrics and KPIs that drive business growth.

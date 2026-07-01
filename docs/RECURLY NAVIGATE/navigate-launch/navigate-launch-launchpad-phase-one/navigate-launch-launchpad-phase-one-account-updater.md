@@ -6,7 +6,7 @@ excerpt: >-
   numbers, exploit real-time gateway updates, and lower involuntary subscription
   churn.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Eliminate payment credit card declines before renewals occur. Learn how to
