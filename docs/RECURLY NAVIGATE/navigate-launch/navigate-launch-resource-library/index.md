@@ -238,6 +238,12 @@ them.</p>
           <h4>Status page</h4>
           <p>Enroll for real-time incident reporting and status updates.</p>
           <a href="https://status.recurly.com/" target="_blank" rel="noopener noreferrer">Get updates ↗</a>
+       </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-code"></i></div>
+          <h4>Recurly change log</h4>
+          <p>Enroll for real-time incident reporting and status updates.</p>
+          <a href="https://docs.recurly.com/recurly-subscriptions/changelog/2026" target="_blank" rel="noopener noreferrer">Get updates ↗</a>
         </div>
         
 				<div class="rc-feature-card">
