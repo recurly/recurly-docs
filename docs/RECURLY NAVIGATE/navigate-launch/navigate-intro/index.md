@@ -6,7 +6,7 @@ excerpt: >-
   acquire, retain, and scale your subscription business through curated learning
   paths and live expert guidance.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Welcome to Recurly Navigate, your official orientation to our digital
