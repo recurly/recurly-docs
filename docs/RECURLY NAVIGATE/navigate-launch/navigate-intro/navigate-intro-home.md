@@ -168,7 +168,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Exploring Navigate home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-sticky-link"><span class="rc-step-badge">3</span> The full program</a>
-       
+        
       </div></div></div>
     </details>
 
@@ -177,11 +177,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 
       <div class="rc-video-wrap">
         <h3><i class="fa-solid fa-video rc-fa-section"></i> Navigate Home walkthrough</h3>
-        <div class="rc-video-placeholder">
-          <div class="rc-video-play"><i class="fa-solid fa-play"></i></div>
-          <p style="margin:0 0 6px;font-size:1rem;font-weight:700;color:#FFFDF2;">Navigate Home Walkthrough</p>
-          <p style="margin:0;font-size:.85rem;color:#807D73;">[ Insert Navigate Home walkthrough video here — recommended runtime: 2–3 minutes ]</p>
-        </div>
+        <iframe src="https://share.synthesia.io/embeds/videos/679bc868-ed03-494a-93aa-3f49834950a3" style="width: 100%; aspect-ratio: 16/9; border: none; border-radius: 10px;" allowfullscreen></iframe>
       </div>
 
       <h2><i class="fa-solid fa-location-dot rc-fa-section"></i> How to access Navigate Home</h2>
