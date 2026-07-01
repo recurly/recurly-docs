@@ -5,7 +5,7 @@ excerpt: >-
   framework. Discover strategic insights for optimized subscription setup,
   subscriber acquisition, churn reduction, and global business scaling.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Master the four pillars of subscription growth with the Recurly Flywheel

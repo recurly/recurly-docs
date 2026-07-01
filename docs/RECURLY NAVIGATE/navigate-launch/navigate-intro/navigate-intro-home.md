@@ -6,7 +6,7 @@ excerpt: >-
   weekly Customer Success Office Hours designed to accelerate your subscription
   business growth.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Learn how to access and maximize Recurly Navigate Home. Explore curated

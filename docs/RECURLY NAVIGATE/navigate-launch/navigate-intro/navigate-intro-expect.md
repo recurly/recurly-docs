@@ -5,7 +5,7 @@ excerpt: >-
   1:1 expert customer success sessions, live optimization webinars, weekly
   drop-in Office Hours, and proactive subscription health metric monitoring.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Maximize subscription growth with the full Recurly Navigate program. Access
