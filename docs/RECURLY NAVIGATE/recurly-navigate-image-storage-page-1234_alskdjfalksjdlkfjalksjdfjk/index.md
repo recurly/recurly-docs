@@ -66,4 +66,8 @@ metadata:
 
 ![](https://files.readme.io/5aebf67d8d604594b0febe1d6a50f943407ce7962e25f44faa733ecd7868e341-Calendar_examples.gif)
 
+![](https://files.readme.io/ce4948c371a94bafa795673119defdf7f045bc3e1e786c83549fc34bf062c9b1-Santi.png)
+
+![](https://files.readme.io/b793d67010185237b1eae54b277d80fe9ed5d99572bee94c0aa4420b91afaa08-Transparent_Navigate_Favicon.svg)
+
 <br />
