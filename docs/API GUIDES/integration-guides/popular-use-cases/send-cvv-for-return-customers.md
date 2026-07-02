@@ -36,7 +36,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 # CVV Collection Options
 
 - You may pass the CVV code in the clear via the `cvv` field via the V3 API when making a purchase or creating a new subscription with an existing account code or billing info ID.&#x20;
-- You may tokenize the CVV field by using the stand-alone Recurly.js CVV element and passing us a token ID alongside the existing account code. This method assumes the billing info on file is the sole card or is the primary when using Wallet.
+- You may tokenize the CVV field by using the stand-alone Recurly.js CVV element and passing us a token ID alongside the existing account code. This method assumes the billing info on file is the sole card or is the primary when using Wallet. This method allows merchants to avoid touching the CVV value directly in their environments.
   - If you are using Wallet and want to specify a non-Primary billing info ID, you will need to tokenize the billing info ID and CVV together using Recurly.js.
 - You may use the CVV Verification endpoint to verify customer data prior to making non-transaction changes, such as re-enabling a subscription after a deactivation or pause.
 
