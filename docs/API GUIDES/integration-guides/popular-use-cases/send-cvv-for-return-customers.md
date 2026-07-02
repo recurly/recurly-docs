@@ -5,7 +5,7 @@ excerpt: >-
   transactions. Recurly offers several options to comply with these
   requirements.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
