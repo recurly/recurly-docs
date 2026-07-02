@@ -74,7 +74,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
 .rc-flywheel-text p { font-size:.93rem; color:#32312D; line-height:1.65; margin:0 0 10px; }
   .rc-flywheel-text p:last-child { margin-bottom:0; }
   
-  /* FLYWHEEL LIGHTBOX */
+/* FLYWHEEL LIGHTBOX (CHECKBOX HACK) */
 .rc-lightbox {
   display: none;
   position: fixed;
@@ -84,9 +84,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
   background: rgba(13, 13, 11, 0.9);
   align-items: center;
   justify-content: center;
-  text-decoration: none !important;
 }
-.rc-lightbox:target {
+/* Show the lightbox when the hidden checkbox is checked */
+.rc-lightbox-toggle:checked ~ .rc-lightbox {
   display: flex;
 }
 .rc-lightbox img {
@@ -94,6 +94,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
   max-height: 90vh;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
   border-radius: 8px;
+  position: relative;
+  z-index: 2; /* Keeps image above the background close area */
+}
+/* This invisible label covers the whole screen to close the lightbox when clicking the background */
+.rc-lightbox-close-area {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  cursor: zoom-out;
+  z-index: 1;
 }
 .rc-lightbox-close {
   position: absolute;
@@ -102,14 +112,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
   color: #FFFDF2;
   font-size: 2.5rem;
   font-weight: bold;
+  z-index: 2;
+  pointer-events: none;
 }
-/* Make the thumbnail indicate it can be clicked */
-.rc-flywheel-img a {
-  display: block;
-  cursor: zoom-in;
-  width: 100%;
-}
-
 
 
 
@@ -216,15 +221,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
 <div class="rc-flywheel-hero">
         
         <div class="rc-flywheel-img">
-          <a href="#flywheel-lightbox">
+          <label for="flywheel-toggle" style="cursor: zoom-in; display: block; width: 100%;">
             <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="The Recurly Flywheel: Launch, Acquire, Retain, Scale" onerror="this.style.display='none';" />
-          </a>
+          </label>
         </div>
 
-        <a href="#!" class="rc-lightbox" id="flywheel-lightbox" title="Click anywhere to close">
+        <input type="checkbox" id="flywheel-toggle" class="rc-lightbox-toggle" style="display: none;">
+
+        <div class="rc-lightbox">
+          <label for="flywheel-toggle" class="rc-lightbox-close-area" title="Click anywhere to close"></label>
           <span class="rc-lightbox-close">&times;</span>
           <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="The Recurly Flywheel Enlarged" />
-        </a>
+        </div>
 
         <div class="rc-flywheel-text">
           <p>Every resource in Navigate is structured around the four pillars of a healthy subscription business.</p>
@@ -232,6 +240,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
           <p>The Flywheel is continuous. Most businesses are actively working across multiple pillars at any given time.</p>
         </div>
         
+      </div>
       </div>
 
       <h2><i class="fa-solid fa-table-cells rc-fa-section"></i> The four pillars, in depth</h2>
