@@ -1,6 +1,7 @@
 - purchases-guide
 - 3d-secure-20-integration-guide
 - using-3d-secure-with-stored-billing-information
+- send-cvv-for-return-customers
 - purchase-transaction
 - kount-360-review-webhook-guide
 - free-trial-gateway-routing-continuity
@@ -12,4 +13,3 @@
 - mercado-pago-integration-guide
 - level-2-and-level-3-cedp-guide
 - dynamic-transaction-statement-descriptor-guide
-- send-cvv-for-return-customers
