@@ -156,8 +156,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-video-header { background: var(--offblack); padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
 .rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: var(--yellow); margin: 0; }
 .rc-video-header span { font-size: .78rem; color: var(--lightgray); margin-left: auto; }
-.rc-video-embed { position: relative; overflow: hidden; aspect-ratio: 16/9; background: var(--offblack); }
-.rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
+.rc-video-embed { position: relative; overflow: hidden; background: var(--offblack); width: 100%; }
+.rc-video-embed iframe { width: 100%; aspect-ratio: 16/9; border: none; display: block; }
 .rc-video-caption { padding: 12px 22px; font-size: .83rem; color: var(--gray); background: var(--brightgray); border-top: 1px solid var(--lightgray); line-height: 1.5; }
 
 /* NUMBERED STEPS */
@@ -238,14 +238,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 <div class="rc-guide">
 
-  <!-- BACK LINK -->
   <div class="rc-top-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-back-link">← Back to Scale</a>
   </div>
 
   <div class="rc-content-wrap">
 
-    <!-- ANNOUNCEMENT BAR -->
     <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
@@ -254,7 +252,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale • Benchmarks 101
@@ -263,7 +260,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Before diving into individual KPIs, here's how to navigate to each dashboard, interpret what you're seeing, and filter results to match your business.</p>
     </div>
 
-    <!-- NAV — Page 1 active -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -280,16 +276,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-churn" class="rc-sticky-link"><span class="rc-step-badge">3</span> Churn benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-renewal-dunning" class="rc-sticky-link"><span class="rc-step-badge">4</span> Renewal &amp; dunning benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
-       
+        
       </div></div></div>
     </details>
 
-    <!-- CONTENT -->
     <div class="rc-lp-section">
 
       <h2><i class="fa-solid fa-play-circle rc-fa-section"></i> Benchmarks overview</h2>
 
-      <!-- VIDEO — above steps per design system rule -->
       <div class="rc-video-card">
         <div class="rc-video-header">
           <h4>Benchmarks overview walkthrough</h4>
@@ -405,7 +399,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
       </div>
 
-      <!-- PATH NAV -->
       <div class="rc-lp-nav">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-btn-prev">← Path Overview</a>
         <span class="rc-lp-nav-indicator">1 of 5</span>
@@ -414,7 +407,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     </div>
 
-    <!-- RESOURCES -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
@@ -425,7 +417,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- FOOTER -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
