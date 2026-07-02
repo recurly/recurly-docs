@@ -162,13 +162,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* Complete Button (Inert Span) */
 .rc-btn-complete { background: var(--brightgray); color: var(--offblack) !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--yellow); cursor: default; user-select: none; white-space: nowrap !important; }
 
-/* PATH NAV - MOBILE RESPONSIVENESS */
-@media(max-width:768px){
-  /* Stacks the buttons and centers them */
-  .rc-lp-nav { flex-wrap: wrap; justify-content: center; gap: 12px; } 
-  .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  
-  /* Shrinks ALL button variants so single-line text fits on mobile */
+
+/* PATH NAV - TABLET LAYOUT (Forces 3-line stack before collision) */
+@media(max-width:1024px) {
+  .rc-lp-nav { justify-content: center !important; gap: 12px; } 
+  .rc-lp-nav-indicator { width: 100% !important; text-align: center; }
+}
+
+/* PATH NAV - MOBILE LAYOUT (Shrinks text so it fits on phones) */
+@media(max-width:768px) {
   .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
   .rc-guide a.rc-btn-prev,
   .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
