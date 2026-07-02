@@ -72,7 +72,46 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
 .rc-flywheel-img img { width:100%; height:auto; display:block; }
 .rc-flywheel-text { flex:1; min-width:200px; }
 .rc-flywheel-text p { font-size:.93rem; color:#32312D; line-height:1.65; margin:0 0 10px; }
-.rc-flywheel-text p:last-child { margin-bottom:0; }
+  .rc-flywheel-text p:last-child { margin-bottom:0; }
+  
+  /* FLYWHEEL LIGHTBOX */
+.rc-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(13, 13, 11, 0.9);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+}
+.rc-lightbox:target {
+  display: flex;
+}
+.rc-lightbox img {
+  max-width: 90%;
+  max-height: 90vh;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  border-radius: 8px;
+}
+.rc-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #FFFDF2;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+/* Make the thumbnail indicate it can be clicked */
+.rc-flywheel-img a {
+  display: block;
+  cursor: zoom-in;
+  width: 100%;
+}
+
+
+
 
 /* PILLAR CARDS */
 .rc-pillar-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:32px; }
@@ -174,15 +213,25 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-rotate rc-fa-section"></i> The Recurly Flywheel</h2>
 
-      <div class="rc-flywheel-hero">
+<div class="rc-flywheel-hero">
+        
         <div class="rc-flywheel-img">
-          <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="The Recurly Flywheel: Launch, Acquire, Retain, Scale" onerror="this.style.display='none';" />
+          <a href="#flywheel-lightbox">
+            <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="The Recurly Flywheel: Launch, Acquire, Retain, Scale" onerror="this.style.display='none';" />
+          </a>
         </div>
+
+        <a href="#!" class="rc-lightbox" id="flywheel-lightbox" title="Click anywhere to close">
+          <span class="rc-lightbox-close">&times;</span>
+          <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="The Recurly Flywheel Enlarged" />
+        </a>
+
         <div class="rc-flywheel-text">
           <p>Every resource in Navigate is structured around the four pillars of a healthy subscription business.</p>
           <p>Whether you're exploring Account Updater to fix retention issues or setting up dunning windows for the first time, Navigate meets you where you are.</p>
           <p>The Flywheel is continuous. Most businesses are actively working across multiple pillars at any given time.</p>
         </div>
+        
       </div>
 
       <h2><i class="fa-solid fa-table-cells rc-fa-section"></i> The four pillars, in depth</h2>
