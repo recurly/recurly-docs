@@ -4,6 +4,7 @@
 - send-cvv-for-return-customers
 - purchase-transaction
 - using-gateway-tokens-and-external-ntids-with-recurly-apis
+- level-2-and-level-3-cedp-guide
 - kount-360-review-webhook-guide
 - free-trial-gateway-routing-continuity
 - third-party-checkout
@@ -11,5 +12,4 @@
 - moto-mail-order-telephone-order-guide
 - co-badged-cards-guide
 - mercado-pago-integration-guide
-- level-2-and-level-3-cedp-guide
 - dynamic-transaction-statement-descriptor-guide
