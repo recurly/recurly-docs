@@ -25,6 +25,22 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<div class="rc-guide">
+
+  <div class="rc-top-nav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-back-link">← Back to Launch</a>
+  </div>
+
+  <div class="rc-content-wrap">
+
+    <div class="rc-announce-bar">
+      <div class="rc-announce-inner">
+        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
+        <strong>Upcoming:</strong> Join our CSMs for a live Q&amp;A session.
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
+      </div>
+    </div>
+
 <div style="background-color: #F8F8FF; padding: 40px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #000000; max-width: 750px; margin: 0 auto; border-radius: 8px;">
 
   <div style="margin: 0 0 16px 0;">
