@@ -25,7 +25,8 @@ There are several reasons to use customer authentication or reverification flows
   - Purchase Endpoint: [Run a customer initiated transaction via API](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase) (one time or subscriptions)
 - [Completed the Quickstart Guide](https://docs.recurly.com/v1.1/docs/quick-start-guide#/) and [3DS integration guide](https://docs.recurly.com/v1.1/docs/3d-secure-20-integration-guide#/versions)
 - Conditional usage of [Recurly.js](https://docs.recurly.com/v1.2/docs/3d-secure#/re-authenticating-existing-billing-information) depending on your supported gateway:
-  - Cybersource and WorldPay gateways require use of Recurly.js to complete this integration guide
+  - Cybersource, WorldPay, Chase, Nuvei, Braintree, and Checkout gateways require use of Recurly.js to complete this integration guide.
+  - Other gateways _may_ trigger 3DS on stored billing info, which will also make use of Recurly.js. Only gateways that use redirect methods for 3DS support a lack of pre-tokenization (Stripe, Adyen).
 
 ***
 
