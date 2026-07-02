@@ -240,7 +240,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
           <p>The Flywheel is continuous. Most businesses are actively working across multiple pillars at any given time.</p>
         </div>
         
-      </div>
+
       </div>
 
       <h2><i class="fa-solid fa-table-cells rc-fa-section"></i> The four pillars, in depth</h2>
