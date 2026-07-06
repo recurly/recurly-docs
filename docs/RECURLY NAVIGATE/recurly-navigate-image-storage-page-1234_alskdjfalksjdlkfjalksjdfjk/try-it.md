@@ -45,19 +45,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   text-decoration-color: transparent !important; text-underline-offset: unset !important; border-bottom: 0 !important;
 }
 
-/* ── BULLETPROOF PROSE LINK OVERRIDES ── */
-.rm-Markdown.markdown-body .rc-guide p a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rm-Markdown.markdown-body .rc-guide li a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn) {
-  color: #008CFF !important;
-  font-weight: 600;
-}
-.rm-Markdown.markdown-body .rc-guide p a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rm-Markdown.markdown-body .rc-guide li a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover {
-  color: #008CFF !important;
-  text-decoration: underline !important;
-  text-decoration-color: #008CFF !important;
-}
-
 /* FA ICON HELPERS */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-dark { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
@@ -120,6 +107,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
 .rc-callout-tip { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
 .rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 
 /* VIDEO */
 .rc-video-wrap { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 24px 28px; margin-bottom: 28px; }
@@ -134,6 +122,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
 .rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
 .rc-step-content p { font-size: .92rem; color: #807D73; line-height: 1.6; margin: 0; }
+.rm-Markdown.markdown-body .rc-guide .rc-step-content a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide .rc-step-content a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 
 /* 3-COL TILE GRID */
 .rc-tile-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-bottom: 32px; }
@@ -224,7 +213,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Exploring Navigate home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-sticky-link"><span class="rc-step-badge">3</span> The full program</a>
-        
+         
       </div></div></div>
     </details>
 
@@ -246,7 +235,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
       </div>
 
-      <p style="font-size:1rem;font-weight:700;color:#0D0D0B;text-transform:uppercase;letter-spacing:.6px;margin:20px 0 12px;"><strong><br>Or</strong> find it through Recurly Docs</p>
+      <p style="font-size:1rem;font-weight:700;color:#0D0D0D;text-transform:uppercase;letter-spacing:.6px;margin:20px 0 12px;"><strong><br>Or</strong> find it through Recurly Docs</p>
 
 <img src="https://files.readme.io/c54eb207d25f243ff84c09f412a0d96656d5b2b23129df2c84ec9e5391d3b674-image_13.png" alt="Recurly Navigate Home Screenshot" style="display: block; width: 100%; max-width: 100%; height: auto; margin: 12px auto 0; border: none;" />
       <div class="rc-steps">
