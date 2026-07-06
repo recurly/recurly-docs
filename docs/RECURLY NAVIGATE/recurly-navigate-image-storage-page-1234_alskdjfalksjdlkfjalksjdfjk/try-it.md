@@ -41,6 +41,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 /* NAVIGATE MASTER ARMOR — (0,0,7,1) */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a, .rc-guide a:link, .rc-guide a:visited, .rc-guide a:hover, .rc-guide a:active {
+  color: #008CFF !important;
   text-decoration: none !important; text-decoration-line: none !important;
   text-decoration-color: transparent !important; text-underline-offset: unset !important; border-bottom: 0 !important;
 }
