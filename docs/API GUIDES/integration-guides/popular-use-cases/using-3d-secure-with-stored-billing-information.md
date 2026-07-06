@@ -111,6 +111,9 @@ Gateways that require Recurly.js to tokenize billing infos are:
 
 - Cybersource
 - WorldPay
+- Chase Orbital&#x20;
+- Braintree (for Proactive 3DS)
+- Nuvei and Checkout.com&#x20;
 
 <br />
 
