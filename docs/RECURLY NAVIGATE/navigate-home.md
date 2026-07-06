@@ -43,14 +43,14 @@ body { background: #ffffff !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #D1CFC4;
+  --yellow:     #FFD706;
+  --blue:       #008CFF;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D73;
+  --lightgray:  #D1CFC4;
   --brightgray:#F2F1EA;
-  --offwhite:  #FCFBF7;
+  --offwhite:   #FCFBF7;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #0D0D0B !important;
   background: #ffffff;
@@ -58,11 +58,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide * { box-sizing: border-box; }
 
 /* ─────────────────────────────────────────────────────────────────
-   NAVIGATE MASTER ARMOR
-   Global CSS section 1.1 uses four :not() clauses → specificity (0,0,6,2).
-   Mirroring those :not() exclusions + .rc-guide gives us (0,0,7,1) for
-   the broad armor and (0,0,8,1) for per-element rules — both beat (0,0,6,2).
-   ───────────────────────────────────────────────────────────────── */
+    NAVIGATE MASTER ARMOR
+    Global CSS section 1.1 uses four :not() clauses → specificity (0,0,6,2).
+    Mirroring those :not() exclusions + .rc-guide gives us (0,0,7,1) for
+    the broad armor and (0,0,8,1) for per-element rules — both beat (0,0,6,2).
+    ───────────────────────────────────────────────────────────────── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
@@ -217,7 +217,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-hub-icon img { width: 32px; height: 32px; object-fit: contain; }
 .rc-hub-card h3 { font-size: 1.3rem; font-weight: 800; margin: 0 0 10px; color: #0D0D0B !important; }
 .rc-hub-card p { font-size: .9rem; color: #807D73 !important; line-height: 1.5; margin: 0; flex-grow: 1; }
-.rc-hub-arrow { margin-top: 20px; color: #FF8200 !important; font-weight: 700; font-size: .9rem; }
+.rc-hub-arrow { margin-top: 20px; color: #008CFF !important; font-weight: 700; font-size: .9rem; }
 
 /* ── FOOTER SUMMARY ── */
 .rc-footer-summary {
@@ -230,13 +230,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* Support link — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-support-link {
-  display: inline-block; color: #FF8200 !important; font-weight: 700;
-  padding: 10px 20px; background: rgba(255,130,0,0.1); border-radius: 8px;
+  display: inline-block; color: #008CFF !important; font-weight: 700;
+  padding: 10px 20px; background: rgba(0,140,255,0.1); border-radius: 8px;
   transition: all 0.2s ease; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-support-link:hover {
-  background: #FF8200 !important; color: #ffffff !important; transform: translateY(-2px);
+  background: #008CFF !important; color: #ffffff !important; transform: translateY(-2px);
 }
 
 /* ── FOOTER NAV ── */
@@ -252,7 +252,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-guide a.rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F2F1EA; }
