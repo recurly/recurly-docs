@@ -130,6 +130,7 @@ If you are certain and **have confirmed with Ebanx&#x20;**&#x74;hat your account
 ## Step 7: Test the Configuration (Recommended)
 
 - Perform a test transaction to confirm the integration works. It’s best to test in **development mode** on your Recurly sandbox site before going live.
+- If you have set your Settlement Model inaccurately, you will receive an Authentication error.
 
 ## Step 8: Modify your Dunning Settings (Recommended)
 
@@ -278,5 +279,10 @@ There are certain behaviors that Ebanx payment methods support -- they are liste
 ### Q: I converted a Pix Trial early and it declined. Why?
 
 - **Pix Automatico** transactions have a waiting period between consumer authentication and the start date you can charge the first renewal transaction. This is sent initially in the signup request and cannot be modified. It is best to avoid forced or early conversions for Trial subscriptions on Pix.
+
+### Q: I am getting an Authentication Failure message, but my API key is correct. Why?&#x20;
+
+- **Check your settlement model is set properly**. Cross-border and Local Settlement accounts are on different environments at the gateway-level, so if you are sending your _accurate_ API key to the wrong environment, you will receive an Authentication response.
+- **Check if your API key is a test or production key**. If you are using a production key in Recurly's sandbox or development mode sites, you will likely receive this message. You can use sandbox keys in development mode, and production keys in sandbox or production.
 
 <br />
