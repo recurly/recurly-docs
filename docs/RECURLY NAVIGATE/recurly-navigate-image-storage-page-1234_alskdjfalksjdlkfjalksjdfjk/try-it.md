@@ -28,7 +28,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --orange:     #FF8200;
   --offblack:   #0D0D0B;
   --darkgray:   #32312D;
-  --gray:       #807D73;
+  --gray:       #807D75;
   --lightgray:  #D1CFC4;
   --brightgray: #F2F1EA;
   --offwhite:   #FCFBF7;
@@ -40,10 +40,26 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* NAVIGATE MASTER ARMOR — (0,0,7,1) */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a, .rc-guide a:link, .rc-guide a:visited, .rc-guide a:hover, .rc-guide a:active {
+.rc-guide a, .rc-guide a:link, .rc-guide a:visited, .rc-guide a:active {
   color: #008CFF !important;
   text-decoration: none !important; text-decoration-line: none !important;
   text-decoration-color: transparent !important; text-underline-offset: unset !important; border-bottom: 0 !important;
+}
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
+}
+
+/* INLINE BODY LINKS — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-inline-link {
+  color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; text-decoration: none !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-inline-link:hover {
+  color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important;
 }
 
 /* FA ICON HELPERS */
@@ -54,7 +70,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* BACK LINK */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
-.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover, .rc-guide a.rc-back-link:hover { color: #008CFF !important; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
@@ -108,7 +124,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
 .rc-callout-tip { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
 .rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
-.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 
 /* VIDEO */
 .rc-video-wrap { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 24px 28px; margin-bottom: 28px; }
@@ -122,15 +137,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-step:last-child { border-bottom: none; }
 .rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
 .rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
-.rc-step-content p { font-size: .92rem; color: #807D73; line-height: 1.6; margin: 0; }
-.rm-Markdown.markdown-body .rc-guide .rc-step-content a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide .rc-step-content a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
+.rc-step-content p { font-size: .92rem; color: #807D75; line-height: 1.6; margin: 0; }
 
 /* 3-COL TILE GRID */
 .rc-tile-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-bottom: 32px; }
 .rc-tile { background: #FCFBF7; border-radius: 12px; padding: 20px; border: 1px solid #D1CFC4; }
 .rc-tile-icon { font-size: 1.4rem; line-height: 1; color: #0D0D0B; margin-bottom: 10px; }
 .rc-tile h4 { font-size: .88rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; }
-.rc-tile p { font-size: .82rem; color: #807D73; line-height: 1.5; margin: 0; }
+.rc-tile p { font-size: .82rem; color: #807D75; line-height: 1.5; margin: 0; }
 
 /* MODULE STRUCTURE TABLE */
 .rc-module-table { background: #0D0D0B; border-radius: 12px; padding: 24px 28px; margin-bottom: 32px; }
@@ -151,9 +165,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* RESOURCES */
 .rc-resources { background: #F2F1EA; border-left: 4px solid #FF5126; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
-.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D75; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-resource-link { color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-resource-link { color: #807D75 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover, .rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration-color: #FF5126 !important; }
 
 /* FOOTER */
@@ -161,7 +175,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F2F1EA; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-footer-link { color: #807D73 !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn), .rc-guide a.rc-footer-link { color: #807D75 !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover, .rc-guide a.rc-footer-link:hover { color: #008CFF !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
@@ -232,7 +246,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-bookmark"></i></div>
         <div class="rc-callout-body">
           <strong>Easiest: just bookmark it</strong>
-          <p>Save <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" target="_blank" rel="noopener noreferrer">docs.recurly.com/recurly-subscriptions/docs/navigate-home</a> directly to your browser. Every Navigate page links back to this hub, so using the built-in navigation menus keeps you inside the Customer Success portal without having to dig through the broader Recurly Docs each time.</p>
+          <p>Save <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" target="_blank" rel="noopener noreferrer" class="rc-inline-link">docs.recurly.com/recurly-subscriptions/docs/navigate-home</a> directly to your browser. Every Navigate page links back to this hub, so using the built-in navigation menus keeps you inside the Customer Success portal without having to dig through the broader Recurly Docs each time.</p>
         </div>
       </div>
 
@@ -244,7 +258,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">1</div>
           <div class="rc-step-content">
             <h4>Go to Recurly Docs</h4>
-            <p>Visit <a href="https://docs.recurly.com" target="_blank" rel="noopener noreferrer">docs.recurly.com</a> and select the <strong>Subscriptions Docs</strong> tile.</p>
+            <p>Visit <a href="https://docs.recurly.com" target="_blank" rel="noopener noreferrer" class="rc-inline-link">docs.recurly.com</a> and select the <strong>Subscriptions Docs</strong> tile.</p>
           </div>
         </div>
         <div class="rc-step">
