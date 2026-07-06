@@ -31,7 +31,7 @@ body { background: #ffffff !important; }
 
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
 /* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
@@ -46,11 +46,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --offblack:  #0D0D0B;
   --darkgray:  #32312D;
   --gray:      #807D73;
-  --lightgray: #CCC9B8;
-  --brightgray:#F1EFE3;
-  --offwhite:  #FFFDF2;
-  font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #32312D !important;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
+  --offwhite:  #FCFBF7;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #0D0D0B !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
@@ -136,14 +136,14 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   border-radius: 16px; margin-bottom: 0;
 }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: #FFFDF2 !important; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; display: block; }
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
 
-/* ── STICKY NAV — Launch (brightgray bg), collapsed ── */
+/* ── STICKY NAV — Launch (Poppy bg), collapsed ── */
 details.rc-sticky-nav-wrap {
-  position: sticky; top: 0; z-index: 100; background-color: #F1EFE3;
+  position: sticky; top: 0; z-index: 100; background-color: #FF5126;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0;
   border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
 }
@@ -186,25 +186,25 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   font-size: 1.5rem; font-weight: 800; margin: 0 0 24px; color: #0D0D0B;
   display: flex; align-items: center; gap: 12px;
 }
-.rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
+.rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 
 /* ── LEARNING PATH CARDS ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
 /* Path card — (0,0,8,1); border-bottom restore overrides armor ✓ */
 .rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-path-card {
-  background: #FFFDF2; border: 1px solid #CCC9B8;
-  border-bottom: 1px solid #CCC9B8 !important;
+  background: #FCFBF7; border: 1px solid #D1CFC4;
+  border-bottom: 1px solid #D1CFC4 !important;
   border-radius: 12px; padding: 20px 24px; color: #32312D !important;
   display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center;
   transition: all .2s ease;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-path-card:hover {
-  border: 1px solid #CCC9B8 !important; border-bottom: 1px solid #CCC9B8 !important;
-  box-shadow: 0 4px 16px rgba(204,201,184,.25); transform: translateY(-2px); color: #32312D !important;
+  border: 1px solid #FF5126 !important; border-bottom: 1px solid #FF5126 !important;
+  box-shadow: 0 4px 16px rgba(255,81,38,.25); transform: translateY(-2px); color: #32312D !important;
 }
-.rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #F1EFE3; border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
+.rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #F2F1EA; border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
 .rc-path-content { min-width: 0; }
 .rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: #0D0D0B !important; }
@@ -212,7 +212,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-path-arrow { color: #FF8200 !important; font-weight: 700; font-size: .9rem; white-space: nowrap; }
 
 /* ── OFFICE HOURS CTA ── */
-.rc-starter-cta { background: #F1EFE3; border: 1px solid #CCC9B8; border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
+.rc-starter-cta { background: #F2F1EA; border: 1px solid #D1CFC4; border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: #0D0D0B; }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: #32312D; line-height: 1.5; }
 /* Button — (0,0,8,1); border-bottom restore overrides armor ✓ */
@@ -230,10 +230,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 
 /* ── FOOTER ── */
-.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-nav { border-top: 1px solid #D1CFC4; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F2F1EA; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 /* Footer links — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-footer-link {
@@ -245,7 +245,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-guide a.rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F2F1EA; }
 
 /* ── CONSOLIDATED RESPONSIVE BLOCK ── */
 @media(max-width:768px){
@@ -267,7 +267,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR (hidden — add rc-active to show) ── -->
     <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
@@ -276,7 +275,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── HERO ── -->
     <div class="rc-hero">
       <div class="rc-brand-header">
         <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
@@ -286,7 +284,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Get configured and live fast. Build a solid subscription foundation from day one by mastering the core elements of the Recurly platform.</p>
     </div>
 
-    <!-- ── NAVIGATION MENU ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -299,16 +296,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </a>
 						<a href="#welcome" class="rc-sticky-link">Welcome to Navigate</a>
             <a href="#launchpad" class="rc-sticky-link">Launchpad</a>
-            <a href="#technical" class="rc-sticky-link"style="display: none;">Technical setup</a>
-            <a href="#onboarding" class="rc-sticky-link"style="display: none;">Onboarding</a>
+            <a href="#technical" class="rc-sticky-link" style="display: none;">Technical setup</a>
+            <a href="#onboarding" class="rc-sticky-link" style="display: none;">Onboarding</a>
           </div>
         </div>
       </div>
     </details>
 
 
- <!-- ── GETTING STARTED ── -->
-    <div id="welcome" class="rc-category">
+ <div id="welcome" class="rc-category">
       <h2><i class="fa-solid fa-signs-post rc-fa-section"></i> Welcome to Navigate</h2>
       <div class="rc-path-list">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-path-card">
@@ -329,10 +325,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
       </div>
     </div>
-   
+    
 
 
-    <!-- ── ONBOARDING ── -->
     <div id="onboarding" class="rc-category" style="display: none;">
       <h2><i class="fa-solid fa-user-check rc-fa-section"></i> Onboarding</h2>
       <div class="rc-path-list">
@@ -355,7 +350,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── LAUNCHPAD ── -->
     <div id="launchpad" class="rc-category">
       <h2><i class="fa-solid fa-rocket rc-fa-section"></i> Launchpad</h2>
       <div class="rc-path-list">
@@ -378,7 +372,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── TECHNICAL SETUP ── -->
     <div id="technical" class="rc-category" style="display: none;">
       <h2><i class="fa-solid fa-gear rc-fa-section"></i> Technical setup</h2>
       <div class="rc-path-list">
@@ -403,7 +396,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 
 
-    <!-- ── OFFICE HOURS CTA ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
         <h3><i class="fa-solid fa-headset rc-fa-light"></i>Need live guidance on your Launch?</h3>
@@ -412,7 +404,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
     </div>
 
-    <!-- ── FOOTER NAV ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
