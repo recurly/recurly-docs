@@ -40,10 +40,22 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* ─────────────────────────────────────────────────────────────────
    NAVIGATE MASTER ARMOR
-   Global CSS section 1.1 uses four :not() clauses → specificity (0,0,6,2).
-   Mirroring those :not() exclusions + .rc-guide gives us (0,0,7,1) for
-   the broad armor and (0,0,8,1) for per-element rules — both beat (0,0,6,2).
+   
+   The global CSS rule (section 1.1, lines 508-521) uses four :not()
+   clauses to reach specificity (0,0,6,2) with !important. Our rules
+   must exceed this. By mirroring those same four :not() exclusions
+   AND including .rc-guide, we reach (0,0,7,1) for the broad armor
+   and (0,0,8,1) for per-element rules — both beat (0,0,6,2).
+   
+   The :not() exclusions are:
+     :not([class*="Button"])  — attr selector = (0,0,1,0)
+     :not(.rp-anchor)         — class = (0,0,1,0)
+     :not(.rp-toc-pill)       — class = (0,0,1,0)
+     :not(.rp-btn)            — class = (0,0,1,0)
    ───────────────────────────────────────────────────────────────── */
+
+/* BROAD ARMOR — text-decoration and border for ALL Navigate links
+   Specificity: (0,0,7,1) > global (0,0,6,2) ✓ */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
@@ -56,9 +68,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
-
-/* ── LAYOUT WRAPPER ── */
-.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
 /* ── FONT AWESOME ICON HELPERS ── */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
@@ -86,7 +95,22 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
 
-/* ── HERO ── */
+/* ── TOP BACK LINK ── */
+.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
+/* Back link — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-back-link {
+  color: #807D73 !important; font-weight: 700; font-size: .9rem;
+  display: inline-flex; align-items: center; gap: 6px; transition: color .2s;
+  border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+
+/* ── CONTENT WRAPPER ── */
+.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+/* ── PILLAR HERO ── */
 .rc-hero {
   background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
@@ -94,25 +118,15 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   color: #fff; padding: 48px 40px 44px; text-align: center;
   border-radius: 16px; margin-bottom: 0;
 }
-.rc-brand-header { display: flex; align-items: center; justify-content: center; margin-bottom: 0; }
-.rc-logo-image { height: 40px; width: auto; display: block; }
-.rc-home-title-block { margin-top: 44px; }
-.rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2 !important; margin: 0 0 24px; }
-.rc-home-title-block > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #CCC9B8; line-height: 1.6; }
+.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: #FFFDF2 !important; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
+.rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
+.rc-logo-image { height: 28px; display: block; }
+.rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
 
-/* Hero stats */
-.rc-hero-stats {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
-  border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; margin-top: 4px;
-}
-.rc-hero-stat { text-align: center; padding: 0 16px; }
-.rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
-.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: #FFD706; line-height: 1; margin-bottom: 6px; }
-.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #CCC9B8; line-height: 1.3; }
-
-/* ── STICKY NAV ── */
+/* ── STICKY NAV — Launch (Poppy bg), collapsed ── */
 details.rc-sticky-nav-wrap {
-  position: sticky; top: 0; z-index: 100; background-color: #F1EFE3;
+  position: sticky; top: 0; z-index: 100; background-color: #FF5126;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0;
   border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
 }
@@ -124,8 +138,8 @@ details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
 .rc-nav-toggle-label {
   display: inline-flex; align-items: center; gap: 8px;
-  font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase;
-  color: #0D0D0B;
+  font-weight: 800; font-size: .88rem; letter-spacing: 0.6px;
+  text-transform: uppercase; color: #0D0D0B;
 }
 .rc-nav-chevron { font-size: .72rem; color: #0D0D0B; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
@@ -149,82 +163,60 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-sticky-link-active { font-weight: 800; }
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 
-/* ── SECTION HEADER ── */
-.rc-sec-header { text-align: center; margin-bottom: 24px; }
-.rc-sec-header h2 { font-size: 2rem; font-weight: 800; margin: 0 0 8px; color: #0D0D0B; }
-.rc-sec-header p { font-size: .95rem; color: #807D73; margin: 0; }
+/* ── CATEGORY SECTIONS ── */
+.rc-category { margin-bottom: 56px; }
+.rc-category h2 {
+  font-size: 1.5rem; font-weight: 800; margin: 0 0 24px; color: #0D0D0B;
+  display: flex; align-items: center; gap: 12px;
+}
+.rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 
-/* ── GETTING STARTED CTA — dark card ── */
-.rc-starter-cta {
-  background: #0D0D0B !important; border: 2px solid #FFD706 !important;
-  border-radius: 16px; padding: 28px 32px;
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 24px; margin-bottom: 32px;
+/* ── LEARNING PATH CARDS ── */
+.rc-path-list { display: flex; flex-direction: column; gap: 16px; }
+/* Path card — (0,0,8,1); border-bottom restore overrides armor ✓ */
+.rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-path-card {
+  background: #FCFBF7; border: 1px solid #D1CFC4;
+  border-bottom: 1px solid #D1CFC4 !important;
+  border-radius: 12px; padding: 20px 24px; color: #32312D !important;
+  display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center;
+  transition: all .2s ease;
 }
-.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: #FFD706 !important; }
-.rc-starter-text p { margin: 0; font-size: .95rem; color: #CCC9B8 !important; line-height: 1.5; }
-/* Primary button — (0,0,8,1) */
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-primary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-primary {
-  background: #FFD706 !important; color: #0D0D0B !important;
-  padding: 12px 26px; border-radius: 10px; font-weight: 800; font-size: .9rem;
-  white-space: nowrap; transition: all .2s; display: inline-flex; align-items: center;
-  border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
+.rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-path-card:hover {
+  border: 1px solid #FF5126 !important; border-bottom: 1px solid #FF5126 !important;
+  box-shadow: 0 4px 16px rgba(255,81,38,.25); transform: translateY(-2px); color: #32312D !important;
 }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-primary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-primary:hover {
-  background: transparent !important; color: #FFD706 !important;
-  border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
-}
+.rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #F2F1EA; border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
+.rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
+.rc-path-content { min-width: 0; }
+.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: #0D0D0B !important; }
+.rc-path-content p { font-size: .92rem; color: #807D73 !important; line-height: 1.5; margin: 0; }
+.rc-path-arrow { color: #FF8200 !important; font-weight: 700; font-size: .9rem; white-space: nowrap; }
 
-/* ── HUB GRID ── */
-.rc-hub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 24px; }
-/* Hub cards — (0,0,8,1); border-bottom restore overrides armor ✓ */
-.rm-Markdown.markdown-body .rc-guide a.rc-hub-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-hub-card {
-  background: #FFFDF2; border: 1px solid #CCC9B8;
-  border-bottom: 1px solid #CCC9B8 !important;
-  border-radius: 16px; padding: 32px 24px; color: #32312D !important;
-  transition: all .2s ease; display: flex; flex-direction: column;
-  align-items: center; text-align: center;
+/* ── OFFICE HOURS CTA ── */
+.rc-starter-cta { background: #F2F1EA; border: 1px solid #D1CFC4; border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
+.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: #0D0D0B; }
+.rc-starter-text p { margin: 0; font-size: .95rem; color: #32312D; line-height: 1.5; }
+/* Button — (0,0,8,1); border-bottom restore overrides armor ✓ */
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-btn-secondary {
+  background: transparent; color: #0D0D0B !important; padding: 10px 24px;
+  border-radius: 10px; font-weight: 700; font-size: .9rem;
+  border: 2px solid #0D0D0B; border-bottom: 2px solid #0D0D0B !important;
+  white-space: nowrap; transition: all .2s; display: inline-block;
 }
-.rm-Markdown.markdown-body .rc-guide a.rc-hub-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-hub-card:hover {
-  border-color: #FFD706; border-bottom: 1px solid #FFD706 !important;
-  box-shadow: 0 8px 24px rgba(255,215,6,.15); transform: translateY(-4px);
-  color: #32312D !important;
-}
-.rc-hub-icon { width: 64px; height: 64px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
-.rc-hub-icon img { width: 32px; height: 32px; object-fit: contain; }
-.rc-hub-card h3 { font-size: 1.3rem; font-weight: 800; margin: 0 0 10px; color: #0D0D0B !important; }
-.rc-hub-card p { font-size: .9rem; color: #807D73 !important; line-height: 1.5; margin: 0; flex-grow: 1; }
-.rc-hub-arrow { margin-top: 20px; color: #FF8200 !important; font-weight: 700; font-size: .9rem; }
-
-/* ── FOOTER SUMMARY ── */
-.rc-footer-summary {
-  background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 16px;
-  padding: 40px; margin: 48px auto 0; text-align: center; max-width: 900px;
-  display: flex; flex-direction: column; align-items: center; gap: 16px;
-}
-.rc-footer-summary h3 { font-size: 1.5rem; font-weight: 800; color: #0D0D0B; margin: 0; }
-.rc-footer-summary p { color: #32312D; font-size: 1.05rem; line-height: 1.6; margin: 0; max-width: 750px; }
-/* Support link — (0,0,8,1) */
-.rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-support-link {
-  display: inline-block; color: #FF8200 !important; font-weight: 700;
-  padding: 10px 20px; background: rgba(255,130,0,0.1); border-radius: 8px;
-  transition: all 0.2s ease; border-bottom: 0 !important;
-}
-.rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-support-link:hover {
-  background: #FF8200 !important; color: #ffffff !important; transform: translateY(-2px);
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-secondary:hover {
+  background: #0D0D0B; color: #FFD706 !important;
+  border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important;
 }
 
-/* ── FOOTER NAV ── */
-.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+/* ── FOOTER ── */
+.rc-footer-nav { border-top: 1px solid #D1CFC4; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F2F1EA; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 /* Footer links — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-footer-link {
@@ -236,26 +228,28 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-guide a.rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F2F1EA; }
 
 /* ── CONSOLIDATED RESPONSIVE BLOCK ── */
-@media(max-width:900px){ .rc-hub-grid { grid-template-columns: repeat(2, 1fr); } }
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
+  .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 36px; }
-  .rc-home-title-block h1 { font-size: 1.8rem; }
-  .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
-  .rc-hero-stat + .rc-hero-stat { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 16px; margin-top: 0; }
+  .rc-path-card { grid-template-columns: 1fr; gap: 16px; }
+  .rc-path-arrow { margin-top: 4px; }
   .rc-starter-cta { flex-direction: column; align-items: flex-start; }
-  .rc-hub-grid { grid-template-columns: 1fr; }
   .rc-announce-bar.rc-active { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 </style>
 
 <div class="rc-guide">
+
+  <div class="rc-top-nav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back-link">← Back to Home</a>
+  </div>
+
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR (hidden — add rc-active to show) ── -->
     <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
@@ -264,21 +258,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── HERO ── -->
     <div class="rc-hero">
       <div class="rc-brand-header">
-        <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
+        <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
       </div>
-      <div class="rc-home-title-block">
-
-        <h1>Find your path. Fuel your growth<br></h1>
-<h3>Your Recurly Customer Success hub</h3>
-     
-<p><br>Select a pillar below to uncover best practices, expert customer success guidance, and on-demand education tailored to launch, grow, and scale your subscription business.</p>
-      </div>
+      <img class="rc-pillar-hero-icon" src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch icon">
+      <h1>Launch</h1>
+      <p>Get configured and live fast. Build a solid subscription foundation from day one by mastering the core elements of the Recurly platform.</p>
     </div>
 
-    <!-- ── NAVIGATION MENU — sticky + collapsed ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -286,103 +274,134 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link rc-sticky-link-active">
-              <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Navigate Home
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
+              <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">Launch</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
-            <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank" rel="noopener noreferrer">Events</a>
-            <a href="https://navigate.recurly.com/global-office-hours/" class="rc-sticky-link" target="_blank" rel="noopener noreferrer">Office Hours</a>
+						<a href="#welcome" class="rc-sticky-link">Welcome to Navigate</a>
+            <a href="#launchpad" class="rc-sticky-link">Launchpad</a>
+            <a href="#technical" class="rc-sticky-link" style="display: none;">Technical setup</a>
+            <a href="#onboarding" class="rc-sticky-link" style="display: none;">Onboarding</a>
           </div>
         </div>
       </div>
     </details>
 
-    <!-- ── EXPLORE NAVIGATE ── -->
-    <div class="rc-sec-header">
-      <h2>Explore Navigate</h2>
-      <p>Choose your objective to access self-serve learning paths and resources.</p>
+
+ <div id="welcome" class="rc-category">
+      <h2><i class="fa-solid fa-signs-post rc-fa-section"></i> Welcome to Navigate</h2>
+      <div class="rc-path-list">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>Intro to Navigate</h3>
+            <p>Understand how Recurly Navigate transforms Customer Success into a one-of-a-kind, "always-on" program built for you.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-resource-library" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>Navigate resource library</h3>
+            <p>A convenient on-stop-shop for all of the support, updates, and documentation links you need.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+      </div>
+    </div>
+    
+
+
+    <div id="onboarding" class="rc-category" style="display: none;">
+      <h2><i class="fa-solid fa-user-check rc-fa-section"></i> Onboarding</h2>
+      <div class="rc-path-list">
+        <a href="#" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>The first 30 days playbook</h3>
+            <p>A structured checklist and strategic guide for your entire team to ensure a flawless, stress-free go-live experience.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+        <a href="#" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>Team training &amp; permissions</h3>
+            <p>Step-by-step instructions for inviting new users, setting up role-based access control, and training your staff on navigating the admin console.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+      </div>
     </div>
 
-    <!-- ── NEW TO NAVIGATE — dark card ── -->
+    <div id="launchpad" class="rc-category">
+      <h2><i class="fa-solid fa-rocket rc-fa-section"></i> Launchpad</h2>
+      <div class="rc-path-list">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>Launchpad phase one: Optimize</h3>
+            <p>Ensure your Recurly instance is configured for maximum impact. Learn best practices for site settings, payment gateways, and baseline security.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-two" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>Launchpad phase two: Mastering metrics</h3>
+            <p>Dive deep into Recurly Analytics. Understand your core subscription KPIs, how to read your dashboards, and track success from day one.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+      </div>
+    </div>
+
+    <div id="technical" class="rc-category" style="display: none;">
+      <h2><i class="fa-solid fa-gear rc-fa-section"></i> Technical setup</h2>
+      <div class="rc-path-list">
+        <a href="#" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>API &amp; Webhook fundamentals</h3>
+            <p>Learn how to authenticate, connect your backend architecture, and listen to real-time Recurly events seamlessly.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+        <a href="#" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>Data migration guide</h3>
+            <p>Step-by-step instructions for importing your existing customer data, billing information, and active subscriptions securely into Recurly.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+      </div>
+    </div>
+
+
+
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
-        <h3><i class="fa-solid fa-map-location-dot rc-fa-dark"></i>New to Navigate?</h3>
-        <p>Welcome! Start here to learn how to use this program and find support.</p>
+        <h3><i class="fa-solid fa-headset rc-fa-light"></i>Need live guidance on your Launch?</h3>
+        <p>Bring your configuration questions directly to our experts during our weekly open-forum sessions.</p>
       </div>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-btn-primary">Get started here</a>
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
     </div>
 
-    <!-- ── HUB GRID ── -->
-    <div class="rc-hub-grid">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-hub-card">
-        <div class="rc-hub-icon" style="background-color:#FF5126;"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch"></div>
-        <h3>Launch</h3>
-        <p>Get configured and live fast. Build a solid subscription foundation.</p>
-        <div class="rc-hub-arrow">View paths →</div>
-      </a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-hub-card">
-        <div class="rc-hub-icon" style="background-color:#FFD706;"><img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire"></div>
-        <h3>Acquire</h3>
-        <p>Convert more customers and grow your subscriber base.</p>
-        <div class="rc-hub-arrow">View paths →</div>
-      </a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-hub-card">
-        <div class="rc-hub-icon" style="background-color:#2DCECE;"><img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Retain"></div>
-        <h3>Retain</h3>
-        <p>Reduce involuntary churn and recover revenue.</p>
-        <div class="rc-hub-arrow">View paths →</div>
-      </a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-hub-card">
-        <div class="rc-hub-icon" style="background-color:#008CFF;"><img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale"></div>
-        <h3>Scale</h3>
-        <p>Expand your business and launch new products.</p>
-        <div class="rc-hub-arrow">View paths →</div>
-      </a>
-            <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
-        <div class="rc-hub-icon" style="background-color:#F2F1EA;"><img src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" alt="Office Hours"></div>
-        <h3>Office Hours</h3>
-        <p>Connect with a Recurly CSM live to ask questions.</p>
-        <div class="rc-hub-arrow">Register now ↗</div>
-      </a>
-
-      <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
-        <div class="rc-hub-icon" style="background-color:#D1CFC4;"><img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events"></div>
-        <h3>Events</h3>
-        <p>Register for webinars and peer learning sessions.</p>
-        <div class="rc-hub-arrow">View schedule ↗</div>
-      </a>
-
-    </div>
-
-    <!-- ── FOOTER SUMMARY ── -->
-    <div class="rc-footer-summary">
-      <h3>Maximizing your subscription potential</h3>
-      <p>Navigate puts Recurly's strategic insights in your hands. Have questions about the program? Have questions about <em>anything</em> at all? Our Customer Success Managers are online weekly to help you strategize, work towards your goals, and overcome your obstacles.</p>
-      <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" class="rc-support-link">Book an Office Hours session here →</a>
-    </div>
-
-    <!-- ── FOOTER NAV ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
-
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Navigate</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-footer-link">Launch</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-footer-link">Acquire</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-footer-link">Retain</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-footer-link">Scale</a>
+          <span class="rc-footer-label">Launch</span>
+					<a href="#welcome" class="rc-footer-link">Welcome to Navigate</a>
+          <a href="#launchpad" class="rc-footer-link">Launchpad</a>
+          <a href="#technical" class="rc-footer-link" style="display: none;">Technical setup</a>
+          <a href="#onboarding" class="rc-footer-link" style="display: none;">Onboarding</a>
         </div>
-
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
             <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
           </a>
           <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
         </div>
-
       </div>
     </div>
 
