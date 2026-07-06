@@ -25,7 +25,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
   --yellow:     #FFD706;
-  --poppy:      #FF5126;
+  --blue:       #008CFF;
   --offblack:   #0D0D0B;
   --darkgray:   #32312D;
   --gray:       #807D73;
@@ -203,22 +203,22 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* ── FOOTER SUMMARY ── */
 .rc-footer-summary {
-  background: #008CFF; border: 1px solid #D1CFC4; border-radius: 16px;
+  background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 16px;
   padding: 40px; margin: 48px auto 0; text-align: center; max-width: 900px;
   display: flex; flex-direction: column; align-items: center; gap: 16px;
 }
 .rc-footer-summary h3 { font-size: 1.5rem; font-weight: 800; color: #0D0D0B; margin: 0; }
-.rc-footer-summary p { color: #008CFF; font-size: 1.05rem; line-height: 1.6; margin: 0; max-width: 750px; }
+.rc-footer-summary p { color: #32312D; font-size: 1.05rem; line-height: 1.6; margin: 0; max-width: 750px; }
 /* Support link — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-support-link {
   display: inline-block; color: #008CFF !important; font-weight: 700;
-  padding: 10px 20px; background: rgba(255,81,38,0.08); border-radius: 8px;
+  padding: 10px 20px; background: rgba(0,140,255,0.08); border-radius: 8px;
   transition: all 0.2s ease; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-support-link:hover {
-  background: #008CFF !important; color: #008CFF !important; transform: translateY(-2px);
+  background: #F2F1EA !important; color: #008CFF !important; transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 }
 
@@ -235,7 +235,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF5126 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-guide a.rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F2F1EA; }
@@ -348,7 +348,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <p>Expand your business and launch new products.</p>
         <div class="rc-hub-arrow">View paths →</div>
       </a>
-            <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
         <div class="rc-hub-icon" style="background-color:#5DC32E;"><img src="https://files.readme.io/3ed42fb225be29f3870a97b6f53544168db4d559cfa859457b3e5a8d143ac30f-Headphones_Office_Hours_2.png" alt="Office Hours"></div>
         <h3>Office Hours</h3>
         <p>Connect with a Recurly CSM live to ask questions.</p>
