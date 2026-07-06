@@ -74,4 +74,6 @@ metadata:
 
 ![](https://files.readme.io/49e0763c767d5e98c095c1c2ede290b99ade4e5f8b91acc641f7abf4161971ca-Headphones_Office_Hours.png)
 
+![](https://files.readme.io/3ed42fb225be29f3870a97b6f53544168db4d559cfa859457b3e5a8d143ac30f-Headphones_Office_Hours_2.png)
+
 <br />
