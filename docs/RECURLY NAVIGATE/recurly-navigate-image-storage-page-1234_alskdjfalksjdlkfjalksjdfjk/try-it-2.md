@@ -203,12 +203,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* ── FOOTER SUMMARY ── */
 .rc-footer-summary {
-  background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 16px;
+  background: #008CFF; border: 1px solid #D1CFC4; border-radius: 16px;
   padding: 40px; margin: 48px auto 0; text-align: center; max-width: 900px;
   display: flex; flex-direction: column; align-items: center; gap: 16px;
 }
 .rc-footer-summary h3 { font-size: 1.5rem; font-weight: 800; color: #0D0D0B; margin: 0; }
-.rc-footer-summary p { color: #32312D; font-size: 1.05rem; line-height: 1.6; margin: 0; max-width: 750px; }
+.rc-footer-summary p { color: #008CFF; font-size: 1.05rem; line-height: 1.6; margin: 0; max-width: 750px; }
 /* Support link — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-support-link {
@@ -218,7 +218,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-support-link:hover {
-  background: #F2F1EA !important; color: #008CFF !important; transform: translateY(-2px);
+  background: #008CFF !important; color: #008CFF !important; transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 }
 
