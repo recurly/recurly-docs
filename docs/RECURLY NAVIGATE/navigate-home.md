@@ -373,7 +373,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </a>
 
       <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
-        <div class="rc-hub-icon" style="background-color:#FFC10B;"><img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events"></div>
+        <div class="rc-hub-icon" style="background-color:#FF9900;"><img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events"></div>
         <h3>Events</h3>
         <p>Register for webinars and peer learning sessions.</p>
         <div class="rc-hub-arrow">View schedule ↗</div>
