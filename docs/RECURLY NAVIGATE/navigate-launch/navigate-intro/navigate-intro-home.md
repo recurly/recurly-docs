@@ -89,11 +89,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 
 /* ── INLINE BODY LINKS ── */
-.rm-Markdown.markdown-body .rc-guide p > a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rm-Markdown.markdown-body .rc-guide p > a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn),
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-inline-link { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; text-decoration: none !important; }
-.rm-Markdown.markdown-body .rc-guide p > a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rm-Markdown.markdown-body .rc-guide p > a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn):hover,
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-inline-link:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
 /* FA ICON HELPERS */
@@ -316,7 +316,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-bookmark"></i></div>
         <div class="rc-callout-body">
           <strong>Easiest: just bookmark it</strong>
-          <p>Save <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" target="_blank" rel="noopener noreferrer" class="rc-inline-link">docs.recurly.com/recurly-subscriptions/docs/navigate-home</a> directly to your browser. Every Navigate page links back to this hub, so using the built-in navigation menus keeps you inside the Customer Success portal without having to dig through the broader Recurly Docs each time.</p>
+          <p>Save <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">docs.recurly.com/recurly-subscriptions/docs/navigate-home</a> directly to your browser. Every Navigate page links back to this hub, so using the built-in navigation menus keeps you inside the Customer Success portal without having to dig through the broader Recurly Docs each time.</p>
         </div>
       </div>
 
@@ -329,7 +329,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">1</div>
           <div class="rc-step-content">
             <h4>Go to Recurly Docs</h4>
-            <p>Visit <a href="https://docs.recurly.com" target="_blank" rel="noopener noreferrer" class="rc-inline-link">docs.recurly.com</a> and select the <strong>Subscriptions Docs</strong> tile.</p>
+            <p>Visit <a href="https://docs.recurly.com" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">docs.recurly.com</a> and select the <strong>Subscriptions Docs</strong> tile.</p>
           </div>
         </div>
         <div class="rc-step">
