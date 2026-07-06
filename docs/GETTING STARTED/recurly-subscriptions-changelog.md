@@ -120,7 +120,7 @@ metadata:
     border: 1px solid #32312d;
   }
   #recurly-changelog-header .rss-instructions-body p {
-    font-size: 22px !important;
+    font-size: 16px !important;
     color: #d6d1c6 !important;
     line-height: 1.65 !important;
     margin: 0 0 16px !important;
@@ -163,17 +163,31 @@ metadata:
     background: rgba(255, 201, 0, 0.06) !important;
     border-left: 3px solid #ffd400 !important;
     border-radius: 0 8px 8px 0 !important;
-    font-size: 20px !important;
+    font-size: 16px !important;
     color: #d6d1c6 !important;
     display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
     gap: 12px !important;
     align-items: flex-start !important;
   }
-  #recurly-changelog-header .rss-instructions-tip i {
-    color: #ffd400;
-    font-size: 20px;
-    margin-top: 3px;
-    flex-shrink: 0;
+  #recurly-changelog-header .rss-instructions-tip > i {
+    display: inline !important;
+    float: none !important;
+    color: #ffd400 !important;
+    font-size: 16px !important;
+    line-height: 1.65 !important;
+    flex: 0 0 auto !important;
+  }
+  #recurly-changelog-header .rss-instructions-tip > span {
+    display: block !important;
+    flex: 1 1 auto !important;
+    line-height: 1.65 !important;
+  }
+  #recurly-changelog-header .rss-instructions-tip > span strong {
+    display: inline !important;
+    font-weight: 700 !important;
+    color: rgba(255, 253, 242, 0.92) !important;
   }
 
   @media (max-width: 768px) {
@@ -201,12 +215,14 @@ metadata:
     #recurly-changelog-header .rss-instructions-toggle {
       font-size: 16px;
     }
-    #recurly-changelog-header .rss-instructions-body p,
+    #recurly-changelog-header .rss-instructions-body p {
+      font-size: 15px !important;
+    }
     #recurly-changelog-header .rss-instructions-body ol li {
       font-size: 17px !important;
     }
     #recurly-changelog-header .rss-instructions-tip {
-      font-size: 16px !important;
+      font-size: 15px !important;
     }
   }
 </style>
@@ -243,7 +259,7 @@ metadata:
         <li>Paste the URL you copied and confirm the subscription.</li>
         <li>New changelog entries will appear in your reader automatically the moment they publish.</li>
       </ol>
-      <p class="rss-instructions-tip"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> <strong>Tip:</strong> Most readers let you switch between a compact list view (titles only) and an expanded view (full post content). Pick whichever fits your workflow.</p>
+      <p class="rss-instructions-tip"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i><span><strong>Tip:</strong> Most readers let you switch between a compact list view (titles only) and an expanded view (full post content). Pick whichever fits your workflow.</span></p>
     </div>
   </div>
 </div>
