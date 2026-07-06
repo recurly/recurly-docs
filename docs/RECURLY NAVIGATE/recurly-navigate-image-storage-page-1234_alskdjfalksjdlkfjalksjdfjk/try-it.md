@@ -32,7 +32,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --lightgray: #D1CFC4;
   --brightgray:#F2F1EA;
   --offwhite:  #FFFDF2;
-  font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #32312D !important;
   background: #ffffff;
 }
