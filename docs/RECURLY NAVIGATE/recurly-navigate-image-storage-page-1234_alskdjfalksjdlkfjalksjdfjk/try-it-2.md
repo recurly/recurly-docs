@@ -218,7 +218,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-support-link:hover {
-  background: #F2F1EA !important; color: #FF5126 !important; transform: translateY(-2px);
+  background: #F2F1EA !important; color: #008CFF !important; transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 }
 
