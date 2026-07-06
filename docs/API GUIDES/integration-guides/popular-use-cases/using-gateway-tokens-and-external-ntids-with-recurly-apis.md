@@ -19,9 +19,11 @@ next:
 
 This guide is intended to walk you through the process of creating **future dated subscriptions** using a “reusable gateway token” or a reference to payment details from one of our supported gateway partners and an external NTID.
 
-> 📘 Feature Flag and API Requirement
->
-> Please note, this only functions in our V3 API with a special feature flag. Reach out to support to enable this feature flag.
+<Callout icon="📘" theme="info">
+  ### Feature Flag and API Requirement
+
+  Please note, this only functions in our V3 API with a special feature flag. Reach out to support to enable this feature flag.
+</Callout>
 
 You may be reading this guide due to a recent migration from a different payment provider, or you have a third party integration where you generate payment tokens and customer-initiated transactions with your gateway and want to set up subscriptions or customer accounts on Recurly with those tokens and resulting NTIDs.
 
@@ -144,7 +146,7 @@ It’s recommended, at this point, to store the billing info ID for the next ste
 
 ```json Adyen 
 {
-  "gateway)attributes": {
+  "gateway_attributes": {
     "account_reference": "adyen-shopper-reference"
   },
   "gateway_token": "adyen-recurring-detail-reference",
