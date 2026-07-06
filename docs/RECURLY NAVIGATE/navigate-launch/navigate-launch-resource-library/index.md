@@ -33,11 +33,29 @@ body { background: #ffffff !important; }
 
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
+  --offwhite:  #FCFBF7;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #0D0D0B !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
 
 /* ── NAVIGATE MASTER ARMOR ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
@@ -52,21 +70,6 @@ body { background: #ffffff !important; }
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
-
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-.rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #CCC9B8;
-  --brightgray:#F1EFE3;
-  --offwhite:  #FFFDF2;
-  color: #32312D !important; 
-  background: #ffffff;
-}
-.rc-guide * { box-sizing: border-box; }
 
 /* ── FONT AWESOME ICON HELPERS ── */
 .rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
@@ -83,7 +86,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* ── STICKY NAV ── */
 details.rc-sticky-nav-wrap {
-  position: sticky; top: 0; z-index: 100; background-color: #F1EFE3;
+  position: sticky; top: 0; z-index: 100; background-color: #F2F1EA;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0;
   border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
 }
@@ -131,7 +134,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-logo-image { height: 28px; display: block; }
 .rc-home-title-block { margin-top: 44px; }
 .rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0 0 24px; }
-.rc-hero p { font-size: 1rem; opacity: .85 !important; max-width: 640px; margin: 0 auto 32px; color: #CCC9B8 !important; line-height: 1.6; }
+.rc-hero p { font-size: 1rem; opacity: .85 !important; max-width: 640px; margin: 0 auto 32px; color: #D1CFC4 !important; line-height: 1.6; }
 
 /* ── SECTION HEADINGS ── */
 .rc-lp-section { margin-bottom: 48px; }
@@ -242,8 +245,8 @@ them.</p>
           <h4>Upcoming & on-demand events</h4>
           <p>Browse upcoming Navigate webinars, book a live Customer Success Office Hours session, or view our library of educational on-demand events.</p>
           <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">View events ↗</a>
-                                                                                                     </div>
-                                                                                                     <div class="rc-feature-card">
+                                                                                                                                              </div>
+                                                                                                                                              <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-lightbulb"></i></div>
           <h4>Submit your Navigate ideas</h4>
           <p>Is there a topic you’d like to explore? A feature you want to better understand? A strategy you’d like help refining? Let us know!</p>
