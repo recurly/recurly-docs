@@ -43,14 +43,14 @@ body { background: #ffffff !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #D1CFC4;
-  --brightgray:#F2F1EA;
-  --offwhite:  #FCFBF7;
+  --yellow:     #FFD706;
+  --orange:     #FF8200;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D73;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #0D0D0B !important;
   background: #ffffff;
@@ -81,7 +81,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
 /* ── STICKY NAV ── */
@@ -154,7 +154,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* Feature Card Links */
 .rm-Markdown.markdown-body .rc-guide .rc-feature-card a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-feature-card a { color: #807D73 !important; font-weight: 600; border-bottom: 0 !important; transition: color .2s; }
+.rc-guide .rc-feature-card a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; transition: color .2s; }
 .rm-Markdown.markdown-body .rc-guide .rc-feature-card a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide .rc-feature-card a:hover { color: #0D0D0B !important; text-decoration: underline !important; text-decoration-color: #0D0D0B !important; text-underline-offset: 2px !important; }
 
@@ -170,7 +170,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 
@@ -197,8 +197,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-home-title-block">
         <h1>Resource library</h1>
-        <p>All your essential Recurly links, tools, and support resources. Right where you need them, when you need
-them.</p>
+        <p>All your essential Recurly links, tools, and support resources. Right where you need them, when you need them.</p>
       </div>
     </div>
 
@@ -209,11 +208,10 @@ them.</p>
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home"class="rc-sticky-link">
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
             </a>
-            <a href="#essential" class="rc-sticky-link">Essential Navigate resources
-            </a>
+            <a href="#essential" class="rc-sticky-link">Essential Navigate resources</a>
             <a href="#recurly" class="rc-sticky-link">Recurly resources</a>
             <a href="#support" class="rc-sticky-link">Support resources</a>
           </div>
@@ -245,8 +243,9 @@ them.</p>
           <h4>Upcoming & on-demand events</h4>
           <p>Browse upcoming Navigate webinars, book a live Customer Success Office Hours session, or view our library of educational on-demand events.</p>
           <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">View events ↗</a>
-                                                                                                                                              </div>
-                                                                                                                                              <div class="rc-feature-card">
+        </div>
+
+        <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-lightbulb"></i></div>
           <h4>Submit your Navigate ideas</h4>
           <p>Is there a topic you’d like to explore? A feature you want to better understand? A strategy you’d like help refining? Let us know!</p>
@@ -272,7 +271,8 @@ them.</p>
           <h4>Status page</h4>
           <p>Enroll for real-time incident reporting and status updates.</p>
           <a href="https://status.recurly.com/" target="_blank" rel="noopener noreferrer">Get updates ↗</a>
-       </div>
+        </div>
+
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-code"></i></div>
           <h4>Recurly change log</h4>
@@ -280,7 +280,7 @@ them.</p>
           <a href="https://docs.recurly.com/recurly-subscriptions/changelog/2026" target="_blank" rel="noopener noreferrer">Get updates ↗</a>
         </div>
         
-				<div class="rc-feature-card">
+        <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-list-check"></i></div>
           <h4>Email preferences</h4>
           <p>Subscribe to Newsletters, event updates and product updates.</p>
