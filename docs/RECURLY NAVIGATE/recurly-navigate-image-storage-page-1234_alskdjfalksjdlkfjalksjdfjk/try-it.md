@@ -31,9 +31,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --gray:      #807D73;
   --lightgray: #D1CFC4;
   --brightgray:#F2F1EA;
-  --offwhite:  #FFFDF2;
+  --offwhite:  #FCFBF7;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #32312D !important;
+  color: #0D0D0B !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
