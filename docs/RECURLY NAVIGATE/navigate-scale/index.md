@@ -24,6 +24,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -31,15 +32,31 @@ metadata:
 body { background: #ffffff !important; }
 
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
-/* G-2: Hero h1 yellow underline */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-/* G-1: Polar font — wildcard ensures all descendants use it */
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
-/* FA6 FONT RESTORE — (0,0,2,0) beats wildcard (0,0,1,0); must come after wildcard */
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
+  --offwhite:  #FCFBF7;
+  --scale:     #008CFF;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #0D0D0B !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
 
 /* ── NAVIGATE MASTER ARMOR — (0,0,7,1) beats global section 1.1 rule (0,0,6,2)
    All .rc-guide a.[class] overrides must be declared AFTER this block. ── */
@@ -47,31 +64,20 @@ body { background: #ffffff !important; }
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
-.rc-guide a:hover,
 .rc-guide a:active {
+  color: #008CFF !important;
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
-
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-
-.rc-guide {
-  --yellow:     #FFD706;
-  --orange:     #FF8200;
-  --offblack:   #0D0D0B;
-  --darkgray:   #32312D;
-  --gray:       #807D73;
-  --lightgray:  #CCC9B8;
-  --brightgray: #F1EFE3;
-  --offwhite:   #FFFDF2;
-  --scale:      #FF5810;
-  color: #32312D !important;
-  background: #ffffff;
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
 }
-.rc-guide * { box-sizing: border-box; }
 
 /* ── FONT AWESOME ICON HELPERS ── */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
@@ -103,7 +109,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   transition: background 0.2s; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
 
 /* ── TOP BACK LINK ── */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
@@ -115,7 +121,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   transition: color .2s; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
 /* ── CONTENT WRAPPER ── */
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
@@ -135,15 +141,15 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; display: block; }
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
-.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: #FFFDF2; }
-.rc-hero > p { font-size: 1.1rem; opacity: .9; max-width: 700px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
+.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: #FCFBF7; }
+.rc-hero > p { font-size: 1.1rem; opacity: .9; max-width: 700px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
 
-/* ── NAVIGATION MENU — Scale: sticky + collapsed, vermillion bg, white text ── */
+/* ── NAVIGATION MENU — Scale: sticky + collapsed, blue bg ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #FF5810;
+  background-color: #008CFF;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px 0;
   border-radius: 12px;
@@ -160,41 +166,40 @@ details.rc-sticky-nav-wrap > summary {
 }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
-/* Scale pillar: toggle label and chevron must be white */
 .rc-nav-toggle-label {
   display: inline-flex; align-items: center; gap: 8px;
   font-weight: 800; font-size: .88rem;
   letter-spacing: 0.6px; text-transform: uppercase;
-  color: #ffffff;
+  color: #0D0D0B;
 }
 .rc-nav-chevron {
-  font-size: .72rem; color: #ffffff; opacity: 0.55;
+  font-size: .72rem; color: #0D0D0B; opacity: 0.55;
   line-height: 1; transition: transform 0.25s ease;
 }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 
 .rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
-.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(255,255,255,0.20); }
+.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
 
-/* Nav links — Scale dark nav: white text — (0,0,8,1) */
+/* Nav links — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link {
-  color: #ffffff !important; font-weight: 700; font-size: .83rem;
+  color: #0D0D0B !important; font-weight: 700; font-size: .83rem;
   letter-spacing: 0.4px; text-transform: uppercase;
   padding: 7px 14px; border-radius: 7px; transition: all .18s;
   white-space: nowrap; display: inline-flex; align-items: center;
   gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #ffffff !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 /* Active item — map pin only, no persistent background */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #ffffff !important; }
+.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #ffffff !important; }
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 
 /* ── CATEGORY SECTIONS ── */
 .rc-category { margin-bottom: 56px; }
@@ -202,15 +207,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   font-size: 1.6rem; font-weight: 800; margin: 0 0 24px; color: #0D0D0B;
   display: flex; align-items: center; gap: 12px;
 }
-.rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
+.rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 
 /* ── LEARNING PATH CARDS ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
 /* Path card base — (0,0,8,1) beats armor (0,0,7,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-path-card {
-  background: #FFFDF2; border: 1px solid #CCC9B8;
-  border-bottom: 1px solid #CCC9B8 !important;
+  background: #FCFBF7; border: 1px solid #D1CFC4;
+  border-bottom: 1px solid #D1CFC4 !important;
   border-radius: 12px; padding: 20px 24px;
   color: #32312D !important;
   transition: all .2s ease;
@@ -219,27 +224,28 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-path-card:hover {
-  border-color: #FF5810 !important;
-  border-bottom: 1px solid #FF5810 !important;
-  box-shadow: 0 4px 16px rgba(255,88,16,0.15);
+  border-color: #008CFF !important;
+  border-bottom: 1px solid #008CFF !important;
+  box-shadow: 0 4px 16px rgba(0,140,255,0.15);
   transform: translateY(-2px);
   color: #32312D !important;
+  text-decoration: none !important;
 }
 
 .rc-path-icon {
   width: 48px; height: 48px; border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
-  background: #F1EFE3; border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0;
+  background: #F2F1EA; border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0;
 }
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
 .rc-path-content { min-width: 0; }
 .rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: #0D0D0B; }
 .rc-path-content p { font-size: .92rem; color: #807D73; line-height: 1.5; margin: 0; }
-.rc-path-arrow { color: #FF8200; font-weight: 700; font-size: .9rem; white-space: nowrap; }
+.rc-path-arrow { color: #008CFF; font-weight: 700; font-size: .9rem; white-space: nowrap; }
 
 /* ── BOTTOM CTA ── */
 .rc-starter-cta {
-  background: #F1EFE3; border: 1px solid #CCC9B8; border-radius: 16px;
+  background: #F2F1EA; border: 1px solid #D1CFC4; border-radius: 16px;
   padding: 24px 32px; display: flex; align-items: center;
   justify-content: space-between; gap: 24px; margin-bottom: 56px;
 }
@@ -253,8 +259,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   background: transparent; color: #0D0D0B !important;
   padding: 11px 22px; border-radius: 10px;
   font-weight: 700; font-size: .9rem;
-  border: 2px solid #0D0D0B;
-  border-bottom: 2px solid #0D0D0B !important;
+  border: 2px solid #D1CFC4;
+  border-bottom: 2px solid #D1CFC4 !important;
   white-space: nowrap; transition: all .2s;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
@@ -262,16 +268,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   background: #0D0D0B !important; color: #FFD706 !important;
   border: 2px solid #0D0D0B !important;
   border-bottom: 2px solid #0D0D0B !important;
+  text-decoration: none !important;
 }
 
 /* ── FOOTER NAV ── */
-.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-nav { border-top: 1px solid #D1CFC4; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .rc-footer-label {
   font-weight: 800; font-size: .75rem; text-transform: uppercase;
   letter-spacing: .8px; color: #32312D;
-  background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px;
+  background: #F2F1EA; padding: 4px 10px; border-radius: 6px; margin-right: 4px;
 }
 /* Footer links — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
@@ -281,10 +288,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F2F1EA; }
 
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
@@ -301,14 +308,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 <div class="rc-guide">
 
-  <!-- ── TOP BACK LINK — pillar subpage: exactly "← Back to Home" ── -->
   <div class="rc-top-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back-link">← Back to Home</a>
   </div>
 
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR — hidden on load; add rc-active to show ── -->
     <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
@@ -317,7 +322,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── PILLAR HERO — no stats on pillar subpage ── -->
     <div class="rc-hero">
       <div class="rc-brand-header">
         <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
@@ -327,7 +331,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Expand your business, launch new products, and optimize global payments and analytics with advanced insights and enterprise-grade security.</p>
     </div>
 
-    <!-- ── NAVIGATION MENU — sticky + collapsed (pillar subpage) ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -336,7 +339,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
-              <img src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" alt=""> Navigate Home
+              <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
             <a href="#analytics" class="rc-sticky-link">Analytics &amp; reporting</a>
             <a href="#expansion" class="rc-sticky-link" style="display: none;">Global expansion</a>
@@ -346,7 +349,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </details>
 
-    <!-- ── ADVANCED ANALYTICS & REPORTING ── -->
     <div id="analytics" class="rc-category">
       <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Analytics &amp; reporting</h2>
       <div class="rc-path-list">
@@ -373,7 +375,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── GLOBAL EXPANSION ── -->
     <div id="expansion" class="rc-category" style="display: none;">
       <h2><i class="fa-solid fa-globe rc-fa-section"></i> Global expansion</h2>
       <div class="rc-path-list">
@@ -420,7 +421,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── REVENUE OPTIMIZATION & SECURITY ── -->
     <div id="optimization" class="rc-category" style="display: none;">
       <h2><i class="fa-solid fa-shield-halved rc-fa-section"></i> Revenue optimization &amp; security</h2>
       <div class="rc-path-list">
@@ -457,7 +457,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── BOTTOM CTA ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
         <h3><i class="fa-solid fa-headset rc-fa-light"></i>Need live guidance on scaling your business?</h3>
@@ -466,7 +465,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
     </div>
 
-    <!-- ── FOOTER NAV — pillar subpage: on-page anchors only + utility row ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
@@ -487,8 +485,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-  </div><!-- /.rc-content-wrap -->
-</div><!-- /.rc-guide -->
+  </div></div>\`\`\`
 `}</HTMLBlock>
 
 <br />
