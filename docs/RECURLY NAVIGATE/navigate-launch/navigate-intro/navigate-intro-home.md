@@ -89,8 +89,10 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 
 /* ── INLINE BODY LINKS ── */
+.rm-Markdown.markdown-body .rc-guide p > a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-inline-link { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide p > a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-inline-link:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
@@ -320,7 +322,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       <p style="font-size:1rem;font-weight:700;color:#0D0D0B;text-transform:uppercase;letter-spacing:.6px;margin:20px 0 12px;"><strong><br>Or</strong> find it through Recurly Docs</p>
 
-      <img src="https://files.readme.io/c54eb207d25f243ff84c09f412a0d95656d5b2b23129df2c84ec9e5391d3b674-image_13.png" alt="Recurly Navigate Home screenshot" style="display: block; width: 100%; max-width: 100%; height: auto; margin: 12px auto 0; border: none;" />
+      <img src="https://files.readme.io/c54eb207d25f243ff84c09f412a0d96656d5b2b23129df2c84ec9e5391d3b674-image_13.png" alt="Recurly Navigate Home screenshot" style="display: block; width: 100%; max-width: 100%; height: auto; margin: 12px auto 0; border: none;" />
 
       <div class="rc-steps">
         <div class="rc-step">
