@@ -212,7 +212,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* Support link — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-support-link {
-  display: inline-block; color: #FF5126 !important; font-weight: 700;
+  display: inline-block; color: #008CFF !important; font-weight: 700;
   padding: 10px 20px; background: rgba(255,81,38,0.08); border-radius: 8px;
   transition: all 0.2s ease; border-bottom: 0 !important;
 }
