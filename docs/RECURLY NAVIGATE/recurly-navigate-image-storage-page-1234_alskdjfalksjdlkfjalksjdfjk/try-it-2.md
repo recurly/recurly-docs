@@ -352,14 +352,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-hub-icon" style="background-color:#5DC32E;"><img src="https://files.readme.io/3ed42fb225be29f3870a97b6f53544168db4d559cfa859457b3e5a8d143ac30f-Headphones_Office_Hours_2.png" alt="Office Hours"></div>
         <h3>Office Hours</h3>
         <p>Connect with a Recurly CSM live to ask questions.</p>
-        <div class="rc-hub-arrow">Register now ↗</div>
+        <div class="rc-hub-arrow">Book a session ↗</div>
       </a>
 
       <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
         <div class="rc-hub-icon" style="background-color:#FF9900;"><img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events"></div>
         <h3>Events</h3>
         <p>Register for webinars and peer learning sessions.</p>
-        <div class="rc-hub-arrow">View schedule ↗</div>
+        <div class="rc-hub-arrow">Register now ↗</div>
       </a>
 
     </div>
