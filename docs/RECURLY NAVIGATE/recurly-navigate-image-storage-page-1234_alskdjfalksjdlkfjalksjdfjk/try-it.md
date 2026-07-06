@@ -25,21 +25,21 @@ body { background: #ffffff !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #D1CFC4;
-  --brightgray:#F2F1EA;
-  --offwhite:  #FCFBF7;
+  --yellow:     #FFD706;
+  --orange:     #FF8200;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D73;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #0D0D0B !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
 
-/* ── NAVIGATE MASTER ARMOR ── */
+/* NAVIGATE MASTER ARMOR — (0,0,7,1) */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
@@ -61,7 +61,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* FA ICON HELPERS */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
-.rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-dark { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 
@@ -83,15 +83,14 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
 
 /* HERO */
-.rc-hero { background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)), url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center; background-color: #0D0D0B; background-size: cover; color: #fff; padding: 40px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0; }
-
+.rc-hero { background: linear-gradient(rgba(13,13,11,0.82),rgba(13,13,11,0.82)),url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center; background-color: #0D0D0B; background-size: cover; color: #fff; padding: 40px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0; }
 .rc-pillar-icon-row { display: flex; justify-content: center; gap: 12px; margin: 36px auto 24px; flex-wrap: wrap; }
 .rc-pillar-icon-chip { display: inline-flex; align-items: center; gap: 7px; padding: 7px 14px; border-radius: 20px; font-size: .72rem; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; }
 .rc-pillar-icon-chip img { width: 14px; height: 14px; object-fit: contain; }
 .rc-chip-launch  { background: rgba(255,81,38,0.20); border: 1px solid rgba(255,81,38,0.45); color: #FF5126; }
-.rc-chip-acquire { background: rgba(255,215,6,0.20);   border: 1px solid rgba(255,215,6,0.45);   color: #FFD706; }
+.rc-chip-acquire { background: rgba(255,215,6,0.20); border: 1px solid rgba(255,215,6,0.45); color: #FFD706; }
 .rc-chip-retain  { background: rgba(45,206,206,0.20); border: 1px solid rgba(45,206,206,0.45); color: #2DCECE; }
-.rc-chip-scale   { background: rgba(0,140,255,0.20);  border: 1px solid rgba(0,140,255,0.45);  color: #008CFF; }
+.rc-chip-scale   { background: rgba(0,140,255,0.20); border: 1px solid rgba(0,140,255,0.45); color: #008CFF; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0 0 14px; }
 .rc-hero-sub { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
 
@@ -117,60 +116,55 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
-
-/* CONTENT SECTIONS */
 .rc-lp-section { margin-bottom: 48px; }
 .rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: #0D0D0B; display: flex; align-items: center; gap: 12px; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 .rc-lp-section > p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
-/* CARDS */
-.rc-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; }
-.rc-card h3 { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
-.rc-card p { font-size: .93rem; color: #32312D; line-height: 1.65; margin: 0 0 12px; }
-.rc-card p:last-child { margin-bottom: 0; }
+/* FLYWHEEL HERO CARD */
+.rc-flywheel-hero { background: #FCFBF7; border-radius: 14px; border: 1px solid #D1CFC4; padding: 28px; margin-bottom: 24px; display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+.rc-flywheel-img { flex: 0 0 220px; border-radius: 10px; overflow: hidden; background: #0D0D0B; display: flex; align-items: center; justify-content: center; min-height: 220px; }
+.rc-flywheel-img img { width: 100%; height: auto; display: block; }
+.rc-flywheel-text { flex: 1; min-width: 200px; }
+.rc-flywheel-text p { font-size: .93rem; color: #32312D; line-height: 1.65; margin: 0 0 10px; }
+.rc-flywheel-text p:last-child { margin-bottom: 0; }
 
-/* VIDEO PLACEHOLDER */
-.rc-video-wrap { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; }
-.rc-video-wrap h3 { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 14px; display: flex; align-items: center; gap: 8px; }
-.rc-video-placeholder { background: #0D0D0B; border-radius: 10px; padding: 48px 24px; text-align: center; }
-.rc-video-play { width: 64px; height: 64px; border-radius: 50%; background: #FFD706; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; font-size: 22px; color: #0D0D0B; }
+/* PILLAR CARDS */
+.rc-pillar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+.rc-pillar { border-radius: 14px; overflow: hidden; border: 1px solid #D1CFC4; }
+.rc-pillar-head { padding: 18px 20px; display: flex; align-items: center; gap: 14px; }
+.rc-pillar-head-icon { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.rc-pillar-head-icon img { width: 32px; height: auto; object-fit: contain; }
+.rc-pillar-head h3 { font-size: 1.05rem; font-weight: 800; margin: 0 0 2px; color: #0D0D0B; }
+.rc-pillar-head p { font-size: .8rem; margin: 0; color: #32312D; }
+.rc-pillar-scale .rc-pillar-head h3,
+.rc-pillar-scale .rc-pillar-head p { color: #0D0D0B; }
+.rc-pillar-body { padding: 18px 20px; background: #FCFBF7; }
+.rc-pillar-body p { font-size: .88rem; color: #32312D; line-height: 1.65; margin: 0 0 12px; }
+.rc-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.rc-tag { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; background: #0D0D0B; color: #FFD706; }
+.rc-pillar-launch .rc-pillar-head { background: #FF5126; }
+.rc-pillar-acquire .rc-pillar-head { background: #FFD706; }
+.rc-pillar-retain .rc-pillar-head { background: #2DCECE; }
+.rc-pillar-scale .rc-pillar-head { background: #008CFF; }
 
-/* FEATURE TILES 2-COL */
-.rc-wi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; }
-.rc-wi { background: #FCFBF7; border-radius: 12px; padding: 20px; border: 1px solid #D1CFC4; }
-.rc-wi-header { background: #0D0D0B; margin: -20px -20px 14px -20px; padding: 12px 16px; border-radius: 10px 10px 0 0; display: flex; align-items: center; gap: 10px; }
-.rc-wi-header h4 { margin: 0; font-size: .9rem; font-weight: 700; color: #FFD706; }
-.rc-wi p { font-size: .85rem; color: #807D73; line-height: 1.6; margin: 0 0 10px; }
-.rc-wi p:last-child { margin-bottom: 0; }
-.rm-Markdown.markdown-body .rc-guide .rc-wi a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-  .rc-guide .rc-wi a { color: #008CFF !important; font-size: .82rem; font-weight: 700; border-bottom: 0 !important; text-decoration: none !important; }
-.rm-Markdown.markdown-body .rc-guide .rc-wi a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-  .rc-guide .rc-wi a:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
-  
-/* TOC CARDS */
-.rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 32px; }
-.rc-toc-card { display: grid; grid-template-columns: 44px 1fr 32px; align-items: center; gap: 16px; background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 18px 22px; transition: all .2s ease; }
-.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-toc-card { color: #32312D !important; border-bottom: 1px solid #D1CFC4 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-toc-card:hover { border-color: #FF5126; border-bottom: 1px solid #FF5126 !important; box-shadow: 0 4px 14px rgba(255,81,38,0.12); transform: translateX(3px); color: #32312D !important; }
-.rc-toc-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; }
-.rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0 0 4px; }
-.rc-toc-body p { font-size: .88rem; color: #807D73; line-height: 1.5; margin: 0; }
-.rc-toc-arrow { font-size: 1.1rem; color: #D1CFC4; text-align: right; transition: color .2s; }
-.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #FF5126; }
+/* WHERE TO START TABLE */
+.rc-starttip { background: #0D0D0B; border-radius: 14px; padding: 24px 28px; margin-bottom: 32px; }
+.rc-starttip h4 { font-size: .88rem; font-weight: 700; color: #FFD706; text-transform: uppercase; letter-spacing: .5px; margin: 0 0 16px; }
+.rc-starttip-row { display: flex; align-items: center; gap: 16px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+.rc-starttip-row:last-child { border-bottom: none; }
+.rc-starttip-q { font-size: .88rem; color: #D1CFC4; width: 200px; flex-shrink: 0; }
+.rc-starttip-a { font-size: .88rem; font-weight: 700; color: #FCFBF7; }
 
-/* PATH NAV BUTTONS */
+/* NAV BUTTONS */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #D1CFC4; letter-spacing: .5px; }
-
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-start:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-start { background: #F2F1EA; color: #807D73 !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; cursor: default; display: inline-flex; align-items: center; gap: 8px; }
-
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
-
+.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
 
@@ -203,7 +197,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-hero h1 { font-size: 1.8rem; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rc-wi-grid { grid-template-columns: 1fr; }
+  .rc-pillar-grid { grid-template-columns: 1fr; }
+  .rc-flywheel-hero { flex-direction: column; }
   .rc-pillar-icon-row { gap: 8px; }
 }
 </style>
@@ -231,8 +226,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <span class="rc-pillar-icon-chip rc-chip-retain"><img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt=""> Retain</span>
         <span class="rc-pillar-icon-chip rc-chip-scale"><img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt=""> Scale</span>
       </div>
-      <h1>Welcome to Recurly Navigate</h1>
-      <p class="rc-hero-sub">Understand how Customer Success fuels your growth and how Navigate is designed to deliver CS impact when you need it, how you need it.</p>
+      <h1>The Subscription Flywheel</h1>
+      <p class="rc-hero-sub">Navigate is designed around the four pillars of subscription growth: Launch, Acquire, Retain, Scale.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -241,88 +236,147 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/navigate-intro" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Welcome
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-sticky-link">Welcome</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> The Subscription Flywheel
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-sticky-link"><span class="rc-step-badge">1</span> The Recurly flywheel</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-sticky-link"><span class="rc-step-badge">2</span> Exploring Navigate home</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-sticky-link"><span class="rc-step-badge">3</span> The full program</a>
       </div></div></div>
     </details>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-circle-play rc-fa-section"></i> Official welcome</h2>
+      <h2><i class="fa-solid fa-rotate rc-fa-section"></i> The Recurly Flywheel</h2>
 
-      <div class="rc-video-wrap">
-        <h3><i class="fa-solid fa-video rc-fa-section"></i> Welcome video</h3>
-        <iframe src="https://share.synthesia.io/embeds/videos/679bc868-ed03-494a-93aa-3f49834950a3" style="width: 100%; aspect-ratio: 16/9; border: none; border-radius: 10px;" allowfullscreen></iframe>
-      </div>
-      
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-map-location-dot rc-fa-section"></i> You are here</h2>
-
-        <p>This course is your official orientation to <strong>Recurly Navigate</strong> — a digital Customer Success program that gives you the best practices, expert guidance, and product insights you need, right when you need them.</p>
-        <p>Whether you're brand new to Recurly or just joining the Navigate program, this course walks you through everything: how we support you, where to find every resource, and what to expect from us.</p>
-      </div>
-
- <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-location-pin rc-fa-section"></i> What is Navigate?</h2>
-   <p>Before we begin, let's define the foundation of Navigate, <strong>Customer Success</strong>, it's importance in your journey, and how it correlates to the program as a whole.<br></p></div>
-
-        <div class="rc-card">
-        <h3><i class="fa-solid fa-handshake rc-fa-section"></i> Understanding Customer Success</h3>
-        <p><strong>Customer Success</strong> is about more than answering questions: it's about making sure you're getting <strong>real, measurable value</strong> from Recurly. Our Customer Success team connects what Recurly can do with what your business actually needs, proactively guiding you toward better outcomes at every stage of growth.</p>
+      <div class="rc-flywheel-hero">
+        <div class="rc-flywheel-img">
+          <img src="https://files.readme.io/c1e07f923e792c5dc65820ea9a47be0d05279725aa344f6446d2f59f70bc86d8-flywheel-updated.png" alt="The Recurly Flywheel: Launch, Acquire, Retain, Scale" onerror="this.style.display='none';" />
+        </div>
+        <div class="rc-flywheel-text">
+          <p>Every resource in Navigate is structured around the four pillars of a healthy subscription business.</p>
+          <p>Whether you're exploring Account Updater to fix retention issues or setting up dunning windows for the first time, Navigate meets you where you are.</p>
+          <p>The Flywheel is continuous. Most businesses are actively working across multiple pillars at any given time.</p>
+        </div>
       </div>
 
-      <div class="rc-card">
-        <h3><i class="fa-solid fa-compass rc-fa-section"></i> How Navigate delivers</h3>
-        <p><strong>Navigate is Recurly's digital Customer Success program</strong>: built to bring the best of our expertise directly to you...digitally. Every subscription business is different and your priorities change over time.</p>
-				<p> Navigate is designed to meet you where you are with offerings like <strong>Customer Success Office Hours</strong>, <strong>curated learning paths</strong>, <strong>webinars</strong>, <strong>personalized performance updates</strong>, and more, all centered around the four pillars of the <strong>Subscription Flywheel: launch, acquire, retain, and pause</strong>. We'll walk through the full program during this course.</p>
-      </div>
-</div>
-    
+      <h2><i class="fa-solid fa-table-cells rc-fa-section"></i> The four pillars, in depth</h2>
 
-   <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-map rc-fa-section"></i> What's in this path</h2>
-      <p>This path walks you through everything you need to know about the Navigate Customer Success Program and how to utilize our offerings — in about eight minutes.</p>
-
-      <div class="rc-toc-list">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-toc-card">
-          <div class="rc-toc-num">1</div>
-          <div class="rc-toc-body">
-            <h4>The Subscription Flywheel</h4>
-            <p>Understand the four pillars of a success subscription business and how they will show up in your Navigate Customer Success program.</p>
+      <div class="rc-pillar-grid">
+       
+        <div class="rc-pillar rc-pillar-launch">
+          <div class="rc-pillar-head">
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" />
+            </div>
+            <div>
+              <h3>Launch</h3>
+              <p>Get your subscription engine running</p>
+            </div>
           </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-toc-card">
-          <div class="rc-toc-num">2</div>
-          <div class="rc-toc-body">
-            <h4>Exploring Navigate home</h4>
-            <p>Navigate Home is built to support every stage of your growth. Learn where to find what you need and how to get the most out of this resource.</p>
+          <div class="rc-pillar-body">
+            <p>Build a solid foundation: configure your plans, set up payment flows, and make sure your subscriber experience is exactly what you want from day one.</p>
+            <div class="rc-tags">
+              <span class="rc-tag">Subscription setup</span>
+              <span class="rc-tag">Billing models</span>
+              <span class="rc-tag">Checkout</span>
+              <span class="rc-tag">Free trials</span>
+              <span class="rc-tag">Gateway config</span>
+            </div>
           </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-expect" class="rc-toc-card">
-          <div class="rc-toc-num">3</div>
-          <div class="rc-toc-body">
-            <h4>The full program</h4>
-            <p>Navigate is more than a hub. Explore the curated support, best practices, updates, and resources you'll receive as part of this program.</p>
+        </div>
+       
+        <div class="rc-pillar rc-pillar-acquire">
+          <div class="rc-pillar-head">
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire" />
+            </div>
+            <div>
+              <h3>Acquire</h3>
+              <p>Grow your subscriber base</p>
+            </div>
           </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-      
+          <div class="rc-pillar-body">
+            <p>Focus on bringing in new subscribers efficiently and converting them effectively. Pricing strategy, promotional mechanics, and a front door that converts.</p>
+            <div class="rc-tags">
+              <span class="rc-tag">Pricing strategy</span>
+              <span class="rc-tag">Coupons &amp; promos</span>
+              <span class="rc-tag">Trial conversion</span>
+              <span class="rc-tag">Gift subscriptions</span>
+            </div>
+          </div>
+        </div>
+       
+        <div class="rc-pillar rc-pillar-retain">
+          <div class="rc-pillar-head">
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Retain" />
+            </div>
+            <div>
+              <h3>Retain</h3>
+              <p>Protect revenue, reduce churn</p>
+            </div>
+          </div>
+          <div class="rc-pillar-body">
+            <p>Retention is where subscription businesses win or lose. This pillar covers dunning, payment recovery, cancellation prevention, and everything in between.</p>
+            <div class="rc-tags">
+              <span class="rc-tag">Dunning strategy</span>
+              <span class="rc-tag">Account Updater</span>
+              <span class="rc-tag">Intelligent retries</span>
+              <span class="rc-tag">Cancel-save flows</span>
+            </div>
+          </div>
+        </div>
+       
+        <div class="rc-pillar rc-pillar-scale">
+          <div class="rc-pillar-head">
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale" />
+            </div>
+            <div>
+              <h3>Scale</h3>
+              <p>Expand with confidence</p>
+            </div>
+          </div>
+          <div class="rc-pillar-body">
+            <p>When you're ready to grow beyond your initial market, this pillar covers international expansion, advanced analytics, revenue recognition, and high-performance configurations.</p>
+            <div class="rc-tags">
+              <span class="rc-tag">Global payments</span>
+              <span class="rc-tag">Revenue recognition</span>
+              <span class="rc-tag">Advanced analytics</span>
+              <span class="rc-tag">AI insights</span>
+            </div>
+          </div>
+        </div>
+       
       </div>
 
-      <p style="font-size:.9rem; color:#807D73; line-height:1.6; margin:0 0 32px;">Work through the pages in order for the full picture, or jump directly to the topic most relevant to you right now.</p>
-    </div>
+      <h2><i class="fa-solid fa-circle-question rc-fa-section"></i> Not sure where to start?</h2>
+      <div class="rc-starttip">
+        <h4>Ask yourself: What's my biggest priority right now?</h4>
+        <div class="rc-starttip-row">
+          <span class="rc-starttip-q">Getting set up properly</span>
+          <span class="rc-starttip-a">→ Start with Launch</span>
+        </div>
+        <div class="rc-starttip-row">
+          <span class="rc-starttip-q">Growing subscriber numbers</span>
+          <span class="rc-starttip-a">→ Start with Acquire</span>
+        </div>
+        <div class="rc-starttip-row">
+          <span class="rc-starttip-q">Stopping revenue leakage</span>
+          <span class="rc-starttip-a">→ Start with Retain</span>
+        </div>
+        <div class="rc-starttip-row">
+          <span class="rc-starttip-q">Expanding or scaling globally</span>
+          <span class="rc-starttip-a">→ Start with Scale</span>
+        </div>
+      </div>
 
       <div class="rc-lp-nav">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-btn-start">Start path</a>
-        <span class="rc-lp-nav-indicator">Welcome</span>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-flywheel" class="rc-btn-path">Next: The Recurly flywheel →</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-btn-prev">← Welcome</a>
+        <span class="rc-lp-nav-indicator">1 of 3</span>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro-home" class="rc-btn-path">Next: Exploring Navigate home →</a>
       </div>
-
+    </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
