@@ -349,7 +349,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-hub-arrow">View paths →</div>
       </a>
             <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
-        <div class="rc-hub-icon" style="background-color:#5DC32E;"><img src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" alt="Office Hours"></div>
+        <div class="rc-hub-icon" style="background-color:#5DC32E;"><img src="https://files.readme.io/49e0763c767d5e98c095c1c2ede290b99ade4e5f8b91acc641f7abf4161971ca-Headphones_Office_Hours.png" alt="Office Hours"></div>
         <h3>Office Hours</h3>
         <p>Connect with a Recurly CSM live to ask questions.</p>
         <div class="rc-hub-arrow">Register now ↗</div>
