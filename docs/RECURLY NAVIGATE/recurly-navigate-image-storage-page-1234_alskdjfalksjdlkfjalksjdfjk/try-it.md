@@ -24,14 +24,14 @@ body { background: #ffffff !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #D1CFC4;
+  --yellow:     #FFD706;
+  --poppy:      #FF5126;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D73;
+  --lightgray:  #D1CFC4;
   --brightgray:#F2F1EA;
-  --offwhite:  #FCFBF7;
+  --offwhite:   #FCFBF7;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #0D0D0B !important;
   background: #ffffff;
@@ -39,11 +39,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide * { box-sizing: border-box; }
 
 /* ─────────────────────────────────────────────────────────────────
-   NAVIGATE MASTER ARMOR
-   Global CSS section 1.1 uses four :not() clauses → specificity (0,0,6,2).
-   Mirroring those :not() exclusions + .rc-guide gives us (0,0,7,1) for
-   the broad armor and (0,0,8,1) for per-element rules — both beat (0,0,6,2).
-   ───────────────────────────────────────────────────────────────── */
+    NAVIGATE MASTER ARMOR
+    Global CSS section 1.1 uses four :not() clauses → specificity (0,0,6,2).
+    Mirroring those :not() exclusions + .rc-guide gives us (0,0,7,1) for
+    the broad armor and (0,0,8,1) for per-element rules — both beat (0,0,6,2).
+    ───────────────────────────────────────────────────────────────── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
@@ -173,8 +173,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-primary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-primary:hover {
-  background: transparent !important; color: #FFD706 !important;
-  border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
+  background: #F2F1EA !important; color: #0D0D0B !important;
+  border: 2px solid #F2F1EA !important; border-bottom: 2px solid #F2F1EA !important;
 }
 
 /* ── HUB GRID ── */
@@ -190,15 +190,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-hub-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-hub-card:hover {
-  border-color: #FFD706; border-bottom: 1px solid #FFD706 !important;
-  box-shadow: 0 8px 24px rgba(255,215,6,.15); transform: translateY(-4px);
+  background: #FCFBF7 !important;
+  border-color: #D1CFC4 !important; border-bottom: 1px solid #D1CFC4 !important;
+  box-shadow: 0 8px 24px rgba(13,13,11,.08); transform: translateY(-4px);
   color: #32312D !important;
 }
 .rc-hub-icon { width: 64px; height: 64px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
 .rc-hub-icon img { width: 32px; height: 32px; object-fit: contain; }
 .rc-hub-card h3 { font-size: 1.3rem; font-weight: 800; margin: 0 0 10px; color: #0D0D0B !important; }
 .rc-hub-card p { font-size: .9rem; color: #807D73 !important; line-height: 1.5; margin: 0; flex-grow: 1; }
-.rc-hub-arrow { margin-top: 20px; color: #FF8200 !important; font-weight: 700; font-size: .9rem; }
+.rc-hub-arrow { margin-top: 20px; color: #FF5126 !important; font-weight: 700; font-size: .9rem; }
 
 /* ── FOOTER SUMMARY ── */
 .rc-footer-summary {
@@ -211,13 +212,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* Support link — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-support-link {
-  display: inline-block; color: #FF8200 !important; font-weight: 700;
-  padding: 10px 20px; background: rgba(255,130,0,0.1); border-radius: 8px;
+  display: inline-block; color: #FF5126 !important; font-weight: 700;
+  padding: 10px 20px; background: rgba(255,81,38,0.08); border-radius: 8px;
   transition: all 0.2s ease; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-support-link:hover {
-  background: #FF8200 !important; color: #ffffff !important; transform: translateY(-2px);
+  background: #F2F1EA !important; color: #FF5126 !important; transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 }
 
 /* ── FOOTER NAV ── */
@@ -233,7 +235,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #FF5126 !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-guide a.rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F2F1EA; }
@@ -347,14 +349,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-hub-arrow">View paths →</div>
       </a>
             <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
-        <div class="rc-hub-icon" style="background-color:#D1CFC4;"><img src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" alt="Office Hours"></div>
+        <div class="rc-hub-icon" style="background-color:#5DC32E;"><img src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" alt="Office Hours"></div>
         <h3>Office Hours</h3>
         <p>Connect with a Recurly CSM live to ask questions.</p>
         <div class="rc-hub-arrow">Register now ↗</div>
       </a>
 
       <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
-        <div class="rc-hub-icon" style="background-color:#F2F1EA;"><img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events"></div>
+        <div class="rc-hub-icon" style="background-color:#FF9900;"><img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events"></div>
         <h3>Events</h3>
         <p>Register for webinars and peer learning sessions.</p>
         <div class="rc-hub-arrow">View schedule ↗</div>
