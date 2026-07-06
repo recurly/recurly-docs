@@ -29,8 +29,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --offblack:  #0D0D0B;
   --darkgray:  #32312D;
   --gray:      #807D73;
-  --lightgray: #CCC9B8;
-  --brightgray:#F1EFE3;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
   --offwhite:  #FFFDF2;
   font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #32312D !important;
@@ -342,13 +342,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-hub-arrow">View paths →</div>
       </a>
       <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
-        <div class="rc-hub-icon" style="background-color:##D1CFC4;"><img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events"></div>
+        <div class="rc-hub-icon" style="background-color:#D1CFC4;"><img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events"></div>
         <h3>Events</h3>
         <p>Register for webinars and peer learning sessions.</p>
         <div class="rc-hub-arrow">View schedule ↗</div>
       </a>
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
-        <div class="rc-hub-icon" style="background-color:##F2F1EA;"><img src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" alt="Office Hours"></div>
+        <div class="rc-hub-icon" style="background-color:#F2F1EA;"><img src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" alt="Office Hours"></div>
         <h3>Office Hours</h3>
         <p>Connect with a Recurly CSM live to ask questions.</p>
         <div class="rc-hub-arrow">Register now ↗</div>
