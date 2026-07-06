@@ -156,7 +156,7 @@ It’s recommended, at this point, to store the billing info ID for the next ste
 // OR 
 
 {
-  "gateway)attributes": {
+  "gateway_attributes": {
     "account_reference": "adyen-shopper-reference"
   },
   "payment_gateway_references": [
