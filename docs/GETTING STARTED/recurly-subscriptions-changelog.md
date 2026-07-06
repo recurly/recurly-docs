@@ -247,7 +247,7 @@ metadata:
   <div class="rss-instructions-wrap">
     <button type="button" class="rss-instructions-toggle" aria-expanded="false" aria-controls="rss-instructions-body">
       <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
-      How to use this
+      How to use this URL
       <i class="fa-solid fa-chevron-down rss-chevron" aria-hidden="true"></i>
     </button>
     <div id="rss-instructions-body" class="rss-instructions-body" hidden>
