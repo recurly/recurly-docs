@@ -29,7 +29,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --offblack:  #0D0D0B;
   --darkgray:  #32312D;
   --gray:      #807D73;
-  --poppy: #FF5126;
+  --lightgray: #CCC9B8;
   --brightgray:#F1EFE3;
   --offwhite:  #FFFDF2;
   font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important;
@@ -98,7 +98,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-logo-image { height: 40px; width: auto; display: block; }
 .rc-home-title-block { margin-top: 44px; }
 .rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2 !important; margin: 0 0 24px; }
-.rc-home-title-block > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #FF5126; line-height: 1.6; }
+.rc-home-title-block > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #CCC9B8; line-height: 1.6; }
 
 /* Hero stats */
 .rc-hero-stats {
@@ -108,7 +108,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-hero-stat { text-align: center; padding: 0 16px; }
 .rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
 .rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: #FFD706; line-height: 1; margin-bottom: 6px; }
-.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #FF5126; line-height: 1.3; }
+.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #CCC9B8; line-height: 1.3; }
 
 /* ── STICKY NAV ── */
 details.rc-sticky-nav-wrap {
@@ -162,7 +162,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 24px; margin-bottom: 32px;
 }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: #FFD706 !important; }
-.rc-starter-text p { margin: 0; font-size: .95rem; color: #FF5126 !important; line-height: 1.5; }
+.rc-starter-text p { margin: 0; font-size: .95rem; color: #CCC9B8 !important; line-height: 1.5; }
 /* Primary button — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-primary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-primary {
@@ -182,8 +182,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* Hub cards — (0,0,8,1); border-bottom restore overrides armor ✓ */
 .rm-Markdown.markdown-body .rc-guide a.rc-hub-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-hub-card {
-  background: #FFFDF2; border: 1px solid #FF5126;
-  border-bottom: 1px solid #FF5126 !important;
+  background: #FFFDF2; border: 1px solid #CCC9B8;
+  border-bottom: 1px solid #CCC9B8 !important;
   border-radius: 16px; padding: 32px 24px; color: #32312D !important;
   transition: all .2s ease; display: flex; flex-direction: column;
   align-items: center; text-align: center;
@@ -202,7 +202,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* ── FOOTER SUMMARY ── */
 .rc-footer-summary {
-  background: #FFFDF2; border: 1px solid #FF5126; border-radius: 16px;
+  background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 16px;
   padding: 40px; margin: 48px auto 0; text-align: center; max-width: 900px;
   display: flex; flex-direction: column; align-items: center; gap: 16px;
 }
@@ -221,7 +221,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 
 /* ── FOOTER NAV ── */
-.rc-footer-nav { border-top: 1px solid #FF5126; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
@@ -330,13 +330,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-hub-arrow">View paths →</div>
       </a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-hub-card">
-        <div class="rc-hub-icon" style="background-color:#2DCECE;"><img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Retain"></div>
+        <div class="rc-hub-icon" style="background-color:#FF9D88;"><img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Retain"></div>
         <h3>Retain</h3>
         <p>Reduce involuntary churn and recover revenue.</p>
         <div class="rc-hub-arrow">View paths →</div>
       </a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-hub-card">
-        <div class="rc-hub-icon" style="background-color:#008CFF;"><img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale"></div>
+        <div class="rc-hub-icon" style="background-color:#FF5810;"><img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale"></div>
         <h3>Scale</h3>
         <p>Expand your business and launch new products.</p>
         <div class="rc-hub-arrow">View paths →</div>
