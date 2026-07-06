@@ -330,13 +330,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-hub-arrow">View paths →</div>
       </a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-hub-card">
-        <div class="rc-hub-icon" style="background-color:#FF9D88;"><img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Retain"></div>
+        <div class="rc-hub-icon" style="background-color:#2DCECE;"><img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Retain"></div>
         <h3>Retain</h3>
         <p>Reduce involuntary churn and recover revenue.</p>
         <div class="rc-hub-arrow">View paths →</div>
       </a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-hub-card">
-        <div class="rc-hub-icon" style="background-color:#FF5810;"><img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale"></div>
+        <div class="rc-hub-icon" style="background-color:#008CFF;"><img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale"></div>
         <h3>Scale</h3>
         <p>Expand your business and launch new products.</p>
         <div class="rc-hub-arrow">View paths →</div>
