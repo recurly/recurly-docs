@@ -54,7 +54,8 @@ Ebanx is a full-service payment management platform focused on upcoming markets 
 | Gateway Specific 3DS2 Supported | No                                                                                                                                                                                                                                      |
 | Card On File Supported          | No                                                                                                                                                                                                                                      |
 | Regions                         | UPI AutoCollect for India, Pix Automatico and Mercado Pago in Brazil, and Mercado Pago in Mexico, Chile, Uruguay, and Argentina.                                                                                                        |
-| Currencies                      | INR, BRL, ARS, CPL, MXN, or UYU                                                                                                                                                                                                         |
+| Currencies                      | INR (UPI Only), BRL (Pix and Mercado Pago Only, ARS, CPL, MXN, or UYU (Mercado Pago Only)                                                                                                                                               |
+| Gateway Supported Features      | Cross-border and Local Settlement Support                                                                                                                                                                                               |
 
 # Configuring Ebanx in Recurly
 
@@ -95,26 +96,46 @@ Ensure you are enabling the correct currencies per payment method.
 
 - UPI: INR Only
 - Pix Automatico: BRL Only
-- Mercado Pago: BRL, ARS, CPL, MXN, or UYU.
+- Mercado Pago: BRL, ARS, CLP, MXN, or UYU.
 
 
-<Image src="https://files.readme.io/1c0bc5faff0d392f4bb496f251bca479cdca5d1f461e9a5bf49865c97799879c-Ebanx-PaymentMethod-Currency.png" align="center" width="80% " border={true} />
+<Image src="https://files.readme.io/3f9244597eb44e08d661db8fe9d38eb57bf92389ffec985b8cac00fca8f713cf-Ebanx_PM_and_Currency_Selection.png" align="center" width="80% " border={true} />
 
 
-## Step 5: Save and Enable the Gateway
+## Step 5: Select your Operational Settlement Model
+
+This is an advanced setting that we recommend verifying with Ebanx. Most Ebanx accounts will use a **Cross-Border settlement&#x20;**&#x6D;odal, which enables easy funding and allowing Ebanx to handle the regulator last mile on your behalf. You will typically be funded in USD.&#x20;
+
+**Local Settlement** is an uncommon model for most merchants, as it requires you to handle this regulatory "last mile" on your own. You will be funded in the local currency.
+
+Confirm with Ebanx prior to going live or changing this setting, as this will disrupt processing on your account and cause settlement delays if set improperly.&#x20;
+
+1. Choose your Settlement Model:&#x20;
+   1. Cross-Border (Default) is the most common.&#x20;
+   2. Local Settlement (Advanced) is uncommon.
+
+![](https://files.readme.io/67abf31963d7378f34d4ae4b5ab00de6ab5d426a44c3039f7dbfef460379245f-Ebanx_Settlement_Configuration.png)
+
+Choosing **Local Settlement** will cause a warning to appear.&#x20;
+
+![](https://files.readme.io/15ffd815a4c79a8ff62316c89cee02a6a976f6329b5b3a4543dc16e57136f6a8-Screenshot_2026-07-06_at_9.22.46_AM.png)
+
+If you are certain and **have confirmed with Ebanx&#x20;**&#x74;hat your account is using Local Settlement, you can proceed to Step 6. Otherwise, revert this setting to 'Cross-Border' and proceed.
+
+## Step 6: Save and Enable the Gateway
 
 1. Click **Add Payment Gateway** at the bottom.
 2. You’ll see Ebanx added to your list of Production Gateways in Recurly with a status of **Enabled**.
 
-## Step 6: Test the Configuration (Recommended)
+## Step 7: Test the Configuration (Recommended)
 
 - Perform a test transaction to confirm the integration works. It’s best to test in **development mode** on your Recurly sandbox site before going live.
 
-## Step 7: Modify your Dunning Settings (Recommended)
+## Step 8: Modify your Dunning Settings (Recommended)
 
-- Ensure your Dunning settings do not immediately expire invoices in order to allow Retries to function properly. If the invoices are set to immediately expire a subscription, retries will not occur. Learn more about Retries on Ebanx payment methods in our [Static Retries documentation](https://docs.recurly.com/recurly-subscriptions/docs/static-retries).
+- Ensure your Dunning settings **do not** immediately expire invoices in order to allow Retries to function properly. If the invoices are set to immediately expire a subscription, retries will not occur. Learn more about Retries on Ebanx payment methods in our [Static Retries documentation](https://docs.recurly.com/recurly-subscriptions/docs/static-retries).
 
-## Step 8: Go Live
+## Step 9: Go Live
 
 1. Once testing is successful, you’re ready to accept live payments through Ebanx.
 2. Make sure your **Production Credentials** are entered in Recurly and your Ebanx account is in **Production mode**.
@@ -137,7 +158,9 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 1. Log into your Ebanx Dashboard
 2. Click on your User in the top right and choose **Account Settings**
 3. Choose the **Integration** tab and enter your site callback URL in the **Status change notification URL**
-   1. Example: [https://callbacks.recurly.com/ebanx/subdomain](https://callbacks.recurly.com/ebanx/subdomain)
+   1. Example: [`https://callbacks.recurly.com/ebanx/subdomain`](https://callbacks.recurly.com/ebanx/subdomain)(replace 'subdomain' with your actual Recurly subdomain value.&#x20;
+   2. If you are on an EU site, your full domain will be [`https://callbacks.eu.recurly.com/subdomain`]()
+   3. You can see your subdomain by looking at the URL when logged into your Recurly site. It will be **subdomain**.recurly.com.
 4. Click **Save integration settings** at the bottom of the page.
 
 <Callout icon="❗️" theme="error">
@@ -184,6 +207,8 @@ These payment methods will require you always send certain data:
 - Customer Email Address
 - Customer Phone Number
 - Tax ID / Tax ID Type when the Region requires it (Brazil)
+
+**Note:&#x20;**&#x46;ailure to send the required fields, especially Tax IDs will result in signup and/or renewal failures.
 
 ## Mandate Preferences
 
