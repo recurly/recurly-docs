@@ -23,6 +23,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -41,14 +42,14 @@ body { background: #ffffff !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow:     #FFD706;
-  --orange:     #FF8200;
-  --offblack:   #0D0D0B;
-  --darkgray:   #32312D;
-  --gray:       #807D73;
-  --lightgray:  #D1CFC4;
-  --brightgray: #F2F1EA;
-  --offwhite:   #FCFBF7;
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
+  --offwhite:  #FCFBF7;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #0D0D0B !important;
   background: #ffffff;
@@ -63,12 +64,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
    must exceed this. By mirroring those same four :not() exclusions
    AND including .rc-guide, we reach (0,0,7,1) for the broad armor
    and (0,0,8,1) for per-element rules — both beat (0,0,6,2).
-   
-   The :not() exclusions are:
-     :not([class*="Button"])  — attr selector = (0,0,1,0)
-     :not(.rp-anchor)         — class = (0,0,1,0)
-     :not(.rp-toc-pill)       — class = (0,0,1,0)
-     :not(.rp-btn)            — class = (0,0,1,0)
    ───────────────────────────────────────────────────────────────── */
 
 /* BROAD ARMOR — text-decoration and border for ALL Navigate links
@@ -77,13 +72,19 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
-.rc-guide a:hover,
 .rc-guide a:active {
+  color: #008CFF !important;
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
+}
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
 }
 
 /* ── FONT AWESOME ICON HELPERS ── */
@@ -110,7 +111,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   transition: background 0.2s; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
 
 /* ── TOP BACK LINK ── */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
@@ -173,7 +174,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rc-guide a.rc-sticky-link:hover .rc-step-badge { background: #FFD706; color: #0D0D0B; }
@@ -202,7 +203,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-path-card:hover {
   border: 1px solid #FF5126 !important; border-bottom: 1px solid #FF5126 !important;
-  box-shadow: 0 4px 16px rgba(255,81,38,.25); transform: translateY(-2px); color: #32312D !important;
+  box-shadow: 0 4px 16px rgba(255,81,38,.25); transform: translateY(-2px); color: #32312D !important; text-decoration: none !important;
 }
 .rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #F2F1EA; border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
@@ -226,7 +227,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-secondary:hover {
   background: #0D0D0B; color: #FFD706 !important;
-  border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important;
+  border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; text-decoration: none !important;
 }
 
 /* ── FOOTER ── */
@@ -294,7 +295,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
-						<a href="#welcome" class="rc-sticky-link">Welcome to Navigate</a>
+            <a href="#welcome" class="rc-sticky-link">Welcome to Navigate</a>
             <a href="#launchpad" class="rc-sticky-link">Launchpad</a>
             <a href="#technical" class="rc-sticky-link" style="display: none;">Technical setup</a>
             <a href="#onboarding" class="rc-sticky-link" style="display: none;">Onboarding</a>
@@ -302,7 +303,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
       </div>
     </details>
-
 
  <div id="welcome" class="rc-category">
       <h2><i class="fa-solid fa-signs-post rc-fa-section"></i> Welcome to Navigate</h2>
@@ -407,7 +407,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Launch</span>
-					<a href="#welcome" class="rc-footer-link">Welcome to Navigate</a>
+          <a href="#welcome" class="rc-footer-link">Welcome to Navigate</a>
           <a href="#launchpad" class="rc-footer-link">Launchpad</a>
           <a href="#technical" class="rc-footer-link" style="display: none;">Technical setup</a>
           <a href="#onboarding" class="rc-footer-link" style="display: none;">Onboarding</a>
