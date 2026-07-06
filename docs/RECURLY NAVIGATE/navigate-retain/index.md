@@ -21,6 +21,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -30,15 +31,29 @@ body { margin: 0; background: #ffffff !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
-/* G-2: Hero h1 yellow underline from .rm-Guides-SuperHub rule */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-/* G-1: Polar font — wildcard ensures all descendants use it */
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
-/* FA6 FONT RESTORE — attribute selectors (0,0,2,0) beat wildcard (0,0,1,0); must follow wildcard */
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+
+.rc-guide {
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
+  --offwhite:  #FCFBF7;
+  --retain:    #2DCECE;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #0D0D0B !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
 
 /* ── NAVIGATE MASTER ARMOR ──
    Global CSS section 1.1 prose link rule: (0,0,6,2) with !important.
@@ -49,29 +64,20 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
-.rc-guide a:hover,
 .rc-guide a:active {
+  color: #008CFF !important;
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
-
-.rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #CCC9B8;
-  --brightgray:#F1EFE3;
-  --offwhite:  #FFFDF2;
-  --retain:    #FF9D88;
-  color: #32312D !important;
-  background: #ffffff;
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
 }
-.rc-guide * { box-sizing: border-box; }
 
 /* ── FONT AWESOME ICON HELPERS ── */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
@@ -109,7 +115,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
 
 /* ── TOP BACK LINK ── */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
@@ -127,7 +133,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
 /* ── CONTENT WRAPPER ── */
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
@@ -150,7 +156,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1.1rem; opacity: .85; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
-/* ── STICKY NAV — Retain salmon background ── */
+/* ── STICKY NAV — Retain teal background ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
@@ -213,7 +219,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 
@@ -237,8 +243,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-path-card {
   background: var(--offwhite);
-  border: 1px solid #CCC9B8;
-  border-bottom: 1px solid #CCC9B8 !important;
+  border: 1px solid #D1CFC4;
+  border-bottom: 1px solid #D1CFC4 !important;
   border-radius: 12px;
   padding: 20px 24px;
   color: #32312D !important;
@@ -250,10 +256,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-path-card:hover {
-  border-color: #FF9D88;
-  border-bottom: 1px solid #FF9D88 !important;
-  box-shadow: 0 4px 16px rgba(255,157,136,0.20);
+  border-color: #2DCECE;
+  border-bottom: 1px solid #2DCECE !important;
+  box-shadow: 0 4px 16px rgba(45,206,206,0.20);
   transform: translateY(-2px);
+  text-decoration: none !important;
 }
 
 .rc-path-icon {
@@ -267,7 +274,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* Child elements inside <a> must use hex + !important to override global tangerine inheritance */
 .rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: #0D0D0B !important; }
 .rc-path-content p { font-size: .92rem; color: #807D73 !important; line-height: 1.5; margin: 0; }
-.rc-path-arrow { color: #FF8200 !important; font-weight: 700; font-size: .9rem; white-space: nowrap; }
+.rc-path-arrow { color: #008CFF !important; font-weight: 700; font-size: .9rem; white-space: nowrap; }
 
 /* ── OFFICE HOURS CTA — brightgray background ── */
 .rc-starter-cta {
@@ -298,8 +305,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   border-radius: 10px;
   font-weight: 700;
   font-size: .9rem;
-  border: 2px solid #CCC9B8;
-  border-bottom: 2px solid #CCC9B8 !important;
+  border: 2px solid #D1CFC4;
+  border-bottom: 2px solid #D1CFC4 !important;
   white-space: nowrap;
   transition: all .2s;
   flex-shrink: 0;
@@ -310,6 +317,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   border: 2px solid #0D0D0B !important;
   border-bottom: 2px solid #0D0D0B !important;
   color: #0D0D0B !important;
+  text-decoration: none !important;
 }
 
 /* ── FOOTER NAV — grouped sections ── */
@@ -334,7 +342,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
@@ -368,7 +376,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR — add rc-active class to show; no close button ── -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
@@ -377,7 +384,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── HERO ── -->
     <div class="rc-hero">
       <div class="rc-brand-header">
         <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
@@ -387,7 +393,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Reduce involuntary churn, recover revenue, and keep subscribers engaged with intelligent tools that protect your bottom line.</p>
     </div>
 
-    <!-- ── STICKY NAV — pillar subpage: section anchors only, collapsed ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -406,7 +411,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </details>
 
-    <!-- ── INVOLUNTARY CHURN ── -->
     <div id="involuntary" class="rc-category">
       <h2><i class="fa-solid fa-user-minus rc-fa-section"></i> Involuntary churn management</h2>
       <div class="rc-path-list">
@@ -436,7 +440,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── VOLUNTARY CHURN ── -->
     <div id="voluntary" class="rc-category">
       <h2><i class="fa-solid fa-right-from-bracket rc-fa-section"></i> Voluntary churn &amp; lifecycle</h2>
       <div class="rc-path-list">
@@ -455,7 +458,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── COMMUNICATION ── -->
     <div id="communication" class="rc-category">
       <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Communication &amp; experience</h2>
       <div class="rc-path-list">
@@ -474,7 +476,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── OFFICE HOURS CTA ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
         <h3><i class="fa-solid fa-headset rc-fa-light"></i>Need live guidance on your retention strategy?</h3>
@@ -483,7 +484,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
     </div>
 
-    <!-- ── FOOTER NAV — pillar subpage: one section with on-page anchors + utility row only ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
