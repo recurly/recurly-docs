@@ -1,6 +1,8 @@
 ---
 title: BECS
-excerpt: ''
+excerpt: >-
+  Accept BECS Direct Debit payments on Recurly for AUD-denominated recurring
+  transactions in Australia — via GoCardless or Stripe (Third Party Checkout).
 deprecated: false
 hidden: false
 metadata:
@@ -10,29 +12,47 @@ metadata:
 next:
   description: ''
 ---
-### Prerequisites & supported gateways
+<div class="rp-page">
+  <div class="rp-overview">BECS (Bulk Electronic Clearing System) is Australia's bank-to-bank direct debit scheme for AUD-denominated recurring payments. Recurly supports BECS via GoCardless and Stripe (Third Party Checkout).</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#checkout-flow"><span class="rp-toc-num">3</span>Checkout flow</a>
+  </div>
+</div>
 
-Recurly currently supports BECS transactions [GoCardless](https://docs.recurly.com/docs/gocardless) , and [Stripe](https://docs.recurly.com/docs/stripe#/) (via [Third Party Checkout](https://recurly.com/developers/guides/3rd-party-checkout.html)) gateways.
+### Prerequisites
 
-# Description
+<ul class="rp-list">
+  <li>A supported BECS gateway: <a href="https://docs.recurly.com/docs/gocardless" target="_blank">GoCardless</a> or <a href="https://docs.recurly.com/docs/stripe#/" target="_blank">Stripe</a> (via <a href="https://recurly.com/developers/guides/3rd-party-checkout.html" target="_blank">Third Party Checkout</a>).</li>
+</ul>
 
-Integrating Recurly with GoCardless or Stripe paves the way for merchants to embrace direct debit payment systems, including BECS, an Australian scheme, through a potent combination of these gateways platforms and Recurly’s subscription strength.
+### Limitations
 
-Visit our "[How to test your gateway](https://docs.recurly.com/docs/how-to-test-your-gateway)" page.
+<ul class="rp-list">
+  <li>100% coupons during signup are not supported — billing agreement creation is required for this payment method. Use a free trial instead where supported. Standard coupons are supported.</li>
+</ul>
 
-Through the effective integration of GoCardless, Stripe, and Recurly, enhance your business capabilities to handle direct debit transactions globally, including BECS, thereby offering a seamless payment experience for your customers.
+# Definition
+
+<div class="rp-definition">BECS (Bulk Electronic Clearing System) is Australia's direct debit scheme for processing AUD-denominated recurring payments. It allows merchants to collect payments directly from Australian bank accounts using customers' BSB code and account number. Recurly supports BECS through GoCardless and Stripe (Third Party Checkout).</div>
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> See the <a href="https://docs.recurly.com/docs/how-to-test-your-gateway" target="_blank">How to test your gateway</a> guide to verify your setup before going live.</div>
+</div>
+
+# Key details
+
+<div class="rp-card">
 
 ### Use cases
 
-* Global transactions: Facilitate cross-border transactions effortlessly through the diverse range of global direct debit schemes supported by GoCardless  and Stripe.
-* Recurly Subscription Plans: Simplify BECS transactions by using the Recurly subscription platform with GoCardless and Stripe.
+**Recurring subscriptions** — Use BECS Direct Debit for AUD subscription billing and recurring collections for Australian customers.
 
-### Limitations 
+**Cross-border direct debit** — GoCardless and Stripe support multiple global direct debit schemes, making it straightforward to expand direct debit collections beyond Australia from the same integration.
 
-* Coupons are supported however, **100% coupons during signup cannot be supported** as billing agreement creation is a requirement for this payment method. Please use a free trial option instead where supported.
+</div>
 
 # Checkout flow
 
-During the checkout, ensure the capture of requisite customer information including a comprehensive address for certain payment options like ACH.
-
-Consult the GoCardless or Stripe website for address specifications pertaining to other payment methods.
+Collect the customer's full name, BSB code, and Australian bank account number during checkout to set up a BECS Direct Debit mandate. For address requirements specific to other payment methods on GoCardless or Stripe, consult your gateway's documentation.
