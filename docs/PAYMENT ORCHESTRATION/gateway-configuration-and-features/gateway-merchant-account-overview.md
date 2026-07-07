@@ -1,9 +1,9 @@
 ---
 title: Payment gateway & merchant account overview
 excerpt: >-
-  Recurly enables you to easily process recurring payments. Setting up a Recurly
-  account is just the first step – you’ll also need to connect a payment gateway
-  and merchant account to be able to accept credit cards.
+  An overview of how payment gateways, merchant accounts, and card issuers work
+  together in Recurly's transaction flow — and how to choose the right setup for
+  your business.
 deprecated: false
 hidden: false
 metadata:
@@ -13,22 +13,38 @@ metadata:
 next:
   description: ''
 ---
-## Transaction Flow
+<div class="rp-page">
+  <div class="rp-overview">This page explains how payment gateways, merchant banks, and card issuers fit together in Recurly's transaction flow — and what each party's role is when a payment is approved or declined.</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#transaction-flow"><span class="rp-toc-num">1</span>Transaction flow</a>
+    <a class="rp-toc-pill" href="#payment-gateways"><span class="rp-toc-num">2</span>Payment gateways</a>
+    <a class="rp-toc-pill" href="#merchant-banks"><span class="rp-toc-num">3</span>Merchant banks</a>
+    <a class="rp-toc-pill" href="#how-recurly-helps"><span class="rp-toc-num">4</span>How Recurly helps</a>
+  </div>
+</div>
 
-When a customer subscribes to your service, the credit card number or other payment instrument is sent from Recurly through a **payment gateway** to your **merchant account** and on to the **card issuer**, or other institution authorizing the transaction. Once the transaction has been approved, the transaction settles, and the merchant bank (Acquirer) ultimately funds you, the merchant, by transferring funds, minus fees, to your business bank account. If a transaction is declined, an error message is sent back through the system to Recurly with information on why and/or how to proceed. **Please note**, the granularity of the decline message is directly tied to a gateway's decline message availability. Some declines can be generic, and no further information is available to Recurly or the Gateway.
+# Transaction flow
+
+When a customer subscribes, their payment details are sent from Recurly through a **payment gateway** to your **merchant account** and on to the **card issuer** (or other authorizing institution). Once approved, the transaction settles and the merchant bank (acquirer) transfers funds — minus fees — to your business bank account.
+
+If a transaction is declined, an error message is sent back through the system to Recurly with information on why and how to proceed.
 
 
-<Image src="https://files.readme.io/393d40568ec94fb48407646431910507180c44cd589216c8591736a64e1ca7f3-transactionflow.png" align="center" />
+<Image src="https://files.readme.io/393d40568ec94fb48407646431910507180c44cd589216c8591736a64e1ca7f3-transactionflow.png" align="center" width="75%" border={true} />
 
 
-## Payment Gateways
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> The detail available in a decline message depends entirely on what the gateway returns. Some declines are generic, and no further information is available to Recurly or the gateway.</div>
+</div>
 
-Credit card and other payments must be submitted through a payment gateway. Payment gateways traditionally serve specific geographies and merchant types, or have specialization in specific payment methods. While most merchants require only one payment gateway, companies operating in multiple geographies may require multiple gateways. It is also important to maintain redundancy by having multiple relationships.
+# Payment gateways
 
-## Merchant Banks
+Credit card and other payments must be submitted through a payment gateway. Gateways typically serve specific geographies, merchant types, or payment methods. Most merchants need only one, but businesses operating across multiple regions may need more than one gateway. Maintaining multiple gateway relationships also provides redundancy.
 
-The purpose of your merchant bank is to serve as a ‘buffer’ in the event that transactions are contested via chargebacks. The merchant bank underwrites this risk by assessing fees to each merchant based on the characteristics and risk level of their business.
+# Merchant banks
 
-## How can Recurly help?
+Your merchant bank acts as a buffer in the event that transactions are disputed via chargebacks. The merchant bank underwrites this risk by assessing fees to each merchant based on their business type and risk profile.
 
-Recurly supports [many payment gateways](http://docs.recurly.com/payment-gateways/additional) worldwide as well as a variety of alternate payment methods. We believe that choice and flexibility help our customers make decisions that are optimal for their unique business requirements.
+# How Recurly helps
+
+Recurly supports <a href="http://docs.recurly.com/payment-gateways/additional" target="_blank">many payment gateways</a> worldwide, as well as a variety of alternative payment methods. The goal is to give merchants the flexibility to choose the combination that best fits their business requirements.
