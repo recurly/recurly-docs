@@ -1,9 +1,9 @@
 ---
 title: Audience segmentations
 excerpt: >-
-  Enhance your customer communications with Recurly's Audience Segmentations.
-  Create bespoke email templates tailored to specific customer groups based on
-  their billing or account country codes, ensuring precision in your messaging.
+  Configure alternate versions of Payment Confirmation and New Subscription
+  email templates that target specific customer subsets by billing or account
+  country code.
 deprecated: false
 hidden: true
 metadata:
@@ -13,84 +13,154 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting requires an **Elite plan** and enablement by Recurly Support. 
+<div class="rp-page">
+  <div class="rp-overview">Audience segmentation lets you send tailored email content to specific subsets of your customers — defined by billing or account country code — without changing the default template everyone else receives. Use it to meet regional compliance requirements, improve engagement, and deliver the right message in the right language.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Requires an Elite plan and enablement by Recurly Support — contact <a href="mailto:support@recurly.com" target="_blank">support@recurly.com</a> to get started</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#create-an-alternate-template"><span class="rp-toc-num">4</span>Create an alternate template</a>
+    <a class="rp-toc-pill" href="#add-audience-criteria"><span class="rp-toc-num">5</span>Add audience criteria</a>
+    <a class="rp-toc-pill" href="#upload-a-pdf-attachment"><span class="rp-toc-num">6</span>Upload a PDF attachment</a>
+  </div>
+</div>
 
 # Definition
 
-Recurly's Audience Segmentation lets merchants craft alternate versions of the Payment Confirmation and New Subscription email templates. This function ensures that tailored email content reaches specific subsets of customers, defined by their billing or account country codes.
+<div class="rp-definition">Audience segmentation is a feature that lets merchants create alternate versions of the Payment Confirmation and New Subscription email templates, each targeting a defined audience based on billing or account country codes. When a customer matches the segment criteria, they receive the alternate template; everyone else gets the default.</div>
 
 # Key benefits
 
-* **Targeted messaging**: Deliver content tailored to your customers by segmenting your audience based on their billing or account country codes.  
-* **Stay compliant**: Seamlessly communicate any country or region-specific regulatory requirements, ensuring alignment with compliance mandates.  
-* **Enhanced engagement**: Personalized emails often result in higher open rates, fostering better engagement with your audience.  
-* **Streamlined process**: With in-built multi-locale support, establish your segment once and watch as Recurly sends locale-specific templates to the right audience.  
-* **Adaptable tools**: Modify, delete, or add to your templates with ease, providing an agile communication toolkit for your business.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+    <strong>Targeted messaging</strong>
+    <span>Segment your audience by billing or account country code and deliver content that speaks directly to each group.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+    <strong>Stay compliant</strong>
+    <span>Communicate country- or region-specific regulatory requirements to the right customers, keeping you aligned with compliance mandates.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i></div>
+    <strong>Higher engagement</strong>
+    <span>Personalized emails drive better open rates and stronger connections with your audience.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-language" aria-hidden="true"></i></div>
+    <strong>Built-in multi-locale support</strong>
+    <span>Set up your segment once, then customize content per locale — Recurly handles routing the right language to the right audience automatically.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Flexible template management</strong>
+    <span>Modify, rename, delete, or add alternate templates at any time, giving you an agile communication toolkit as your business evolves.</span>
+  </div>
+</div>
 
 # Key details
 
-## Why create an audience segment on an alternate email template?
+## Supported templates
 
-Messages tailored to individual audiences often see better engagement. For scenarios like conveying region-specific regulatory requirements, it's essential that the correct group of customers receives the necessary information. An alternate email template with a defined audience segment ensures that the right customers get the tailored messaging, while others continue to receive your standard content.
+Audience segmentation works with exactly two email templates: **New Subscription** and **Payment Confirmation**. Each has a default version that all customers receive unless they match an alternate template's audience criteria.
 
-## Creating alternate email templates
+## How audience criteria work
 
-Recurly's Audience Segmentation feature is integrated with two primary email templates: New Subscription and Payment Confirmation. Each has a default version, but merchants can design an alternate version targeting a specific audience. When designing:
+Audience criteria determine which customers receive an alternate template instead of the default. A few rules govern how they behave:
 
-* Remember, only the New Subscription and Payment Confirmation templates support audience segments.
-* Define criteria in the "Audience" section. If a customer meets just one criterion, they receive the alternate version.
-* Customers outside the defined audience segment criteria will get the default email template.
+- You must define at least one criterion in the **Audience** section for an alternate template to activate.
+- Criteria use **OR logic** — a customer who matches any one criterion qualifies for the alternate template.
+- Customers who don't match any criterion continue to receive the default template.
 
-## Audience criteria
+## Locale support
 
-* Define at least one criterion in the Audience section.
-* The segment builder operates on "OR" logic – if a customer meets one criterion, they receive the alternate template.
+Alternate templates support all Recurly locales. After defining your audience segment, you can customize the email content for each locale independently.
 
-## Locale Support
+For example, if your segment targets customers in the UK, Italy, and Sweden:
 
-The audience segment of an alternate template supports all locales. After setting up your segment:
+1. Customize the content for the UK audience in English.
+2. Use locale support to add Italian and Swedish translations.
+3. Recurly routes the alternate template to customers in those countries, in the language set for their region.
 
-1. Customize the content per locale.
-2. For example, if targeting the UK, Italy, and Sweden, first modify the content for the UK audience in English. Then, use locale support for Italian and Swedish translations.
-3. The alternate template reaches customers in the defined countries, with the message in the set language for that region.
+## PDF attachments
 
-## Adding a PDF Attachment
+You can attach a PDF to an alternate template. Each locale on an alternate template supports its own unique PDF attachment, keeping your message consistent across languages.
 
-Attach a PDF to your alternate email templates. For every locale on the alternate template, Recurly supports a unique PDF attachment, ensuring your message is consistent across languages.
+## Managing your alternate templates
 
-## Your new alternate email template
+After creation, your alternate template appears in the **Email Templates** section. From there you can preview the HTML, edit content, rename, or delete the template.
 
-After creation, your new template appears under the Email Templates section. From there, options include previewing the HTML, editing, renaming, or deleting the template.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/a922248-Screen_Shot_2022-12-05_at_3.58.28_PM.png" />
+<Image src="https://files.readme.io/a922248-Screen_Shot_2022-12-05_at_3.58.28_PM.png" align="center" width="75%" border={true} />
 
-## Renaming templates
 
-Hover over the ellipsis next to the desired alternate template and select "Rename". Remember to save your changes.
+### Renaming a template
 
-<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/c0e4aa6-Screen_Shot_2022-12-05_at_9.07.12_PM.png" />
+Hover over the ellipsis next to the alternate template and select **Rename**. Save your changes when done.
 
-# How to create an alternate template
 
-1. Navigate to the headers of the Payment Confirmation and New Subscription email templates.
-2. Click on the "Options" button, then select "New Email Template".
-3. Assign a unique name to your alternate template and save.
-4. Start customizing the template. This includes the subject line, email body, and audience criteria.
-5. For activation, ensure at least one criterion is defined in the Audience section.
+<Image src="https://files.readme.io/c0e4aa6-Screen_Shot_2022-12-05_at_9.07.12_PM.png" align="center" width="40%" border={true} />
 
-# How to add audience criteria
 
-1. Click "Add Attribute" located near the screen's bottom.
-2. Choose the desired attributes.
-3. Define your country criteria and save.\
-   Once saved, your segment is active, and the alternate template is ready for deployment.
+# Create an alternate template
 
-# How to upload a PDF attachment
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Navigate to the template header</h4><p>Go to the Payment Confirmation or New Subscription email template in your Recurly account.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Create a new template</h4><p>Select the <strong>Options</strong> button, then choose <strong>New Email Template</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Name your template</h4><p>Assign a unique name to the alternate template and save.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Customize the template</h4><p>Edit the subject line, email body, and audience criteria. The template won't activate until at least one criterion is defined in the Audience section.</p></div>
+  </div>
+</div>
 
-1. In the PDF section, click "Choose File".
-2. Upload your document (max 512 KB).
-3. On activation, the attached PDF will accompany emails sent to customers.
+# Add audience criteria
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Add an attribute</h4><p>Select <strong>Add Attribute</strong> near the bottom of the screen.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Choose your attributes</h4><p>Select the attributes you want to use for this segment — billing country code, account country code, or both.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Define your country criteria and save</h4><p>Set the specific country values and save your changes. Once saved, the segment is active and the alternate template is ready to send.</p></div>
+  </div>
+</div>
+
+# Upload a PDF attachment
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the PDF section</h4><p>In the alternate template editor, locate the PDF section and select <strong>Choose File</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Upload your document</h4><p>Select the PDF you want to attach. The file must be 512 KB or smaller.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Activate the template</h4><p>Once the template is active, the attached PDF will be included in every email sent to customers in the defined audience segment.</p></div>
+  </div>
+</div>
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Each locale on an alternate template supports its own PDF attachment. If you've configured multiple locales, upload the appropriate PDF for each one to keep your messaging consistent across languages.</div>
+</div>
+
+<br />
