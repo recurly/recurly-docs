@@ -1,10 +1,9 @@
 ---
 title: ACH (US only)
 excerpt: >-
-  Recurly's ACH payment method, a US-exclusive feature, allows for direct and
-  easy transactions right from a customer's bank account, bypassing the need for
-  credit card processors and physical checks, hence, revolutionizing payment
-  solutions with streamlined processes.
+  Accept ACH bank account payments on Recurly for US merchants — with
+  NACHA-regulated authorization requirements, dunning guidance, and support
+  across Adyen, GoCardless, Stripe, Worldpay, and Check Commerce.
 deprecated: false
 hidden: false
 metadata:
@@ -14,71 +13,84 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> You can try ACH in a sandbox environment before upgrading your plan.</div>
+</div>
 
-### Required plan
+<div class="rp-page">
+  <div class="rp-overview">ACH (Automated Clearing House) lets US merchants debit funds directly from a customer's bank account through Recurly. It's an alternative to credit card processing and physical checks, with support across five gateways. NACHA governs ACH authorization and bank account verification requirements.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#checkout-flow-and-settings"><span class="rp-toc-num">2</span>Checkout flow and settings</a>
+  </div>
+</div>
 
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options. **You can try this in a sandbox environment before making the upgrade**.
+### Prerequisites
 
-### Prerequisites & supported gateways
-
-Recurly currently supports ACH transactions through [Adyen](https://docs.recurly.com/docs/adyen), [GoCardless](https://docs.recurly.com/docs/gocardless), [Stripe](https://docs.recurly.com/docs/stripe#/) (via [Third Party Checkout](https://recurly.com/developers/guides/3rd-party-checkout.html)),  [WorldPay](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview), and [Check Commerce](https://docs.recurly.com/docs/check-commerce) gateways.
+<ul class="rp-list">
+  <li>A supported ACH gateway: <a href="https://docs.recurly.com/docs/adyen" target="_blank">Adyen</a>, <a href="https://docs.recurly.com/docs/gocardless" target="_blank">GoCardless</a>, <a href="https://docs.recurly.com/docs/stripe#/" target="_blank">Stripe</a> (via <a href="https://recurly.com/developers/guides/3rd-party-checkout.html" target="_blank">Third Party Checkout</a>), <a href="https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview" target="_blank">Worldpay</a>, or <a href="https://docs.recurly.com/docs/check-commerce" target="_blank">Check Commerce</a>.</li>
+</ul>
 
 ### Limitations
 
-* The ACH feature is available exclusively for merchants based in the US, thereby limiting its global outreach.
-* ACH has a varying processing time and a series of invoice states, ranging from pending to scheduled to processed, with each stage holding its implications and possible actions.
-* ACH transactions cannot be voided via API. This action is only supported in the UI.
-* Automatic [NACHA Verification for bank accounts](https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/) is not available on all gateways. Please visit our dedicated page for options for your gateway to maintain compliance.
-* Coupons are supported however, **100% coupons during signup cannot be supported** as e-mandate creation is a requirement for this payment method. Please use a free trial option instead where supported.
+<ul class="rp-list">
+  <li>Available to US-based merchants only.</li>
+  <li>ACH has extended processing times and a multi-stage invoice lifecycle: pending → scheduled → processed. Each stage has its own implications and available actions.</li>
+  <li>ACH transactions cannot be voided via API — voiding is only supported in the Recurly Admin UI.</li>
+  <li>Automatic <a href="https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/" target="_blank">NACHA bank account verification</a> is not available on all gateways. See the NACHA verification documentation for gateway-specific options.</li>
+  <li>100% coupons during signup are not supported — e-mandate creation is required for this payment method. Use a free trial instead where supported. Standard coupons are supported.</li>
+</ul>
 
 # Definition
 
-The ACH (Automated Clearing House) payment method is designed for merchants in the US, allowing Recurly users to directly debit funds from a customer's bank account. This feature provides an alternative to traditional payment methods like physical checks and credit card processing, aiming to streamline payment transactions.
+<div class="rp-definition">ACH (Automated Clearing House) is a US payment method that lets Recurly merchants debit funds directly from a customer's bank account. It's governed by <a href="https://www.nacha.org/" target="_blank">NACHA</a>, which sets authorization and bank account verification requirements for all ACH transactions.</div>
 
-# Checkout flow
+# Checkout flow and settings
 
-#### Payment authorization
+## Payment authorization
 
-ACH is regulated by an organization called <a href="https://www.nacha.org/" target="_blank" rel="noopener noreferrer">NACHA</a>. They govern the type of authorization Merchants must obtain from customers alongside ACH regulations around bank account verification. For more information on Bank Account verification features, please see our dedicated documentation on [NACHA bank verifications](https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/).
+ACH is regulated by <a href="https://www.nacha.org/" target="_blank">NACHA</a>, which defines the authorization merchants must obtain from customers before collecting payments. For bank account verification details, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/" target="_blank">NACHA bank verifications documentation</a>.
 
-Customers must provide authorization to Merchants for all payments and any future recurring collections. The type of information a Merchant must collect must include:
+Merchants must collect the following from customers at the time of authorization:
 
-* Date of purchase
-* Amount of purchase
-* Customer name
-* Account number
-* Routing number and bank name
-* Authorization language for the payment and whether there are renewals
-* Authorization language to attempt additional collections if the first transaction fails
-* Language letting the customer know that if they need to cancel, they must contact the merchant by a certain number of days before the payment and how they should contact the merchant.
+<ul class="rp-list">
+  <li>Date of purchase</li>
+  <li>Amount of purchase</li>
+  <li>Customer name</li>
+  <li>Account number</li>
+  <li>Routing number and bank name</li>
+  <li>Authorization language for the payment and whether renewals will occur</li>
+  <li>Authorization language to attempt additional collections if the first transaction fails</li>
+  <li>Instructions for how and by when the customer must contact the merchant to cancel</li>
+</ul>
 
-#### Email communication
+## Email communication
 
-Customers receive email notifications at various stages of the payment process, informing them about the status of the transaction and what they can expect next. Refinement in email communication assures transparency in transactions.
+Customers receive email notifications at key stages of the payment process, keeping them informed of transaction status and next steps.
 
-#### Dunning
+## Dunning
 
-With the ACH feature on, review your dunning length due to ACH’s extended processing times to ensure compatibility with the Automatic Collection Dunning settings.
+ACH has longer processing times than card payments. Review your dunning length to confirm it's compatible with your Automatic Collection Dunning settings before going live.
 
-### Recurly settings
+## Recurly settings
 
-#### Hosted pages
+### Hosted pages
 
-Enable the Bank Account option on your hosted pages settings in your Recurly site to facilitate ACH transactions through the hosted payment and invoice pages. The guidelines for the settings can be referred to in the detailed overview above.
+Enable the **Bank Account** option in your Recurly site's Hosted Pages settings to accept ACH payments on hosted payment and invoice pages.
 
-#### Webhooks
+### Webhooks
 
-Ensure to update the relevant webhooks to support ACH, covering aspects like invoice state and payment state notifications. Details on code samples can be found in the [Webhooks documentation](https://docs.recurly.com/v1.3/docs/overview-webhooks#/).
+Update your webhooks to support ACH invoice state and payment state notifications. See the <a href="https://docs.recurly.com/v1.3/docs/overview-webhooks#/" target="_blank">Webhooks documentation</a> for implementation details and code samples.
 
-#### API and Recurly.js
+### API and Recurly.js
 
-Leverage the functionalities added to Recurly.js v3 and API v2 to support ACH payments. Reference the respective documentations for [API](https://dev.recurly.com/docs/lookup-an-accounts-billing-info) and [Recurly.js](https://docs.recurly.com/js/) for further details.
+ACH is supported in Recurly.js v3 and API v2. See the <a href="https://dev.recurly.com/docs/lookup-an-accounts-billing-info" target="_blank">API documentation</a> and <a href="https://docs.recurly.com/js/" target="_blank">Recurly.js documentation</a> for integration details.
 
-#### Sandbox testing
+### Sandbox testing
 
-Before going live, test the ACH setup on a Recurly sandbox site using the provided test credentials to ensure that everything is functioning correctly.
+Test your ACH setup on a Recurly sandbox site using the provided test credentials before going live.
 
-#### Updating your per-check limit
+### Per-check limit
 
-Ensure to have your ACH payment threshold in sync with your gateway settings. To modify the threshold, reach out to your gateway and follow up with [Recurly Support](https://support.recurly.com/) if issues persist.
+Keep your ACH payment threshold in sync with your gateway settings. To modify the threshold, contact your gateway. If issues persist, reach out to <a href="https://support.recurly.com/" target="_blank">Recurly Support</a>.
