@@ -1,9 +1,9 @@
 ---
 title: Prepaid and gift cards
 excerpt: >-
-  Recurly provides credit card processing solutions that support a variety of
-  credit and debit card types, offering secure and efficient handling of
-  recurring transactions through globally recognized gateways.
+  Accept prepaid Visa, Mastercard, and other network-branded cards on Recurly
+  using any card-supporting gateway — with guidance on AVS limitations, free
+  trial risk, and blocking prepaid cards.
 deprecated: false
 hidden: false
 metadata:
@@ -13,62 +13,66 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Prepaid cards — both reloadable and non-reloadable — work like standard credit or debit cards on Recurly. No special checkout flow is required. This page covers how prepaid cards behave, their limitations, and how to block them if needed. For Recurly-issued gift cards, see the <a href="https://docs.recurly.com/docs/gift-cards" target="_blank">Gift Cards documentation</a>.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#enable-prepaid-card-acceptance"><span class="rp-toc-num">3</span>Enable prepaid card acceptance</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">4</span>FAQs</a>
+  </div>
+</div>
 
-### Required plan
+### Prerequisites
 
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-### Prerequisites & supported gateways
-
-To accept prepaid cards on your Recurly site, just enable any payment gateway that processes credit or debit cards.
+<ul class="rp-list">
+  <li>Any Recurly-supported payment gateway that processes credit or debit cards. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/credit-cards" target="_blank">Credit cards</a> for the full list of supported gateways.</li>
+</ul>
 
 ### Limitations
 
-* Prepaid cards often don't pass address verification system (AVS) checks. This is because they're not linked to a specific bank account or the cardholder's current address, and few consumers register their prepaid cards with their addresses.
+<ul class="rp-list">
+  <li><strong>AVS checks often fail on prepaid cards</strong> — Prepaid cards are typically not linked to a specific bank account or the cardholder's address, and few consumers register their prepaid cards with an address. This means AVS verification will frequently fail for these cards.</li>
+  <li><strong>Non-reloadable cards deplete</strong> — Non-reloadable prepaid cards have a fixed balance. Once depleted, customers need a different payment method to keep their subscription active. Initial approval when adding a card does not guarantee future approvals.</li>
+  <li><strong>Increased free trial abuse risk</strong> — Accepting prepaid cards can lead to free trial abuse. Some gateways offer the option to block prepaid cards by BIN if this is a concern.</li>
+</ul>
 
-* Non-reloadable prepaid cards have a fixed amount of money available. When the balance is depleted, customers will need to use another payment method to keep their subscriptions active. Adding a card to Recurly or getting initial approval doesn't ensure it will always be approved in the future.
+# Definition
 
-* Accepting prepaid cards can lead to an increase in free trial abuse. If this concerns you, some gateways might offer the option to block the use of prepaid cards on your site.
+<div class="rp-definition">Prepaid cards are network-branded payment cards — issued by Visa, Mastercard, and other major networks — that come in two forms: reloadable (funds can be added) and non-reloadable (fixed balance). Unlike store gift cards, prepaid cards are not restricted to a specific retailer and can be used anywhere the card network is accepted. On Recurly, prepaid cards function identically to standard credit or debit cards — no special checkout configuration is required.</div>
 
-# Description
+# Key details
 
-For Recurly-issued Gift Cards, see [Gift Cards](https://docs.recurly.com/docs/gift-cards). 
+<div class="rp-card">
 
-For information on Recurly-specific gift cards, visit our gift card documentation.
+### Use cases
 
-Prepaid cards, provided by major credit card companies, come in two forms: reloadable and non-reloadable. This means some cards let you add money to them and others don't. Unlike gift cards, prepaid cards aren't restricted to a particular store or brand. These cards will have the logo of the major network they belong to, indicating they can be used widely.
+**Non-reloadable prepaid cards** — These cards, often in Visa or Mastercard Debit form, are commonly used as gift money for birthdays and holidays. Recipients can use them to purchase items or services at retailers and online, including subscriptions.
 
-For instance, the Visa Vanilla Prepaid Card, a non-reloadable option, is widely available and preloaded with a set amount of money. Meanwhile, the Emerald Prepaid MasterCard, a reloadable option offered by H\&R Block, is popular for managing tax refunds in the U.S. Reloadable cards are particularly useful for people without traditional bank accounts, offering a way to shop or pay bills online and in stores.
+**Reloadable prepaid cards** — Reloadable cards function like debit cards but don't require a US bank account. Customers can add funds at a retailer using cash and then use the balance for online purchases and subscriptions — making them useful for customers without traditional bank accounts.
 
-# Use cases
+</div>
 
-Non-reloadable prepaid cards, often coming in the form of a Visa or Mastercard Debit flavor, are popular ways to gift money to family and friends in lieu of cash for birthdays and holidays. Customers can use these cards at retailers and online to purchase items or services for themselves using this gifted money.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Checkout flow</strong> There is no special checkout flow for prepaid cards — they process identically to standard credit or debit cards. For Recurly-issued gift cards with a dedicated checkout flow, see the <a href="https://docs.recurly.com/docs/gift-cards" target="_blank">Gift Cards documentation</a>.</div>
+</div>
 
-Reloadable prepaid cards are also popular for paying bills or making online purchases. These types of cards are debit cards, but are not attached and do not require a US bank account to function. Consumers can add funds to the balance at a retailer using cash, and then use the card’s balance for card-based purchases, including subscriptions.
+# Enable prepaid card acceptance
 
-# Checkout flow
-
-There is no specific checkout flow for using a prepaid card on Recurly. These types of cards will function just like a normal credit or debit card.
-
-If you are looking for Recurly gift cards, see the Gift Card documentation linked below.
-
-# Recurly settings
-
-1. **Enabling Recurly Gift Cards**
-
-See the [Recurly Gift Cards documentation](https://docs.recurly.com/docs/gift-cards) for more information. 
-
-2. **Enable any gateway that supports cards**
-
-Choose a gateway that supports processing credit or debit cards and ensure you do not have Prepaid blocking on at the gateway level (where supported.)
-
-Find the list of supported credit and debit card gateways via the link provided.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Enable a card-supporting gateway</h4><p>Select any Recurly-supported gateway that processes credit or debit cards. Ensure prepaid card blocking is not enabled at the gateway level (where that setting is available) if you want to accept prepaid cards.</p></div>
+  </div>
+</div>
 
 # FAQs
 
-**Q: Can I block prepaid cards if I don’t wish to accept them?**
+<Accordion title="Can I block prepaid cards if I don't want to accept them?">
+  Yes — two options are available. The simplest is to activate <a href="https://docs.recurly.com/docs/fraud-management#kount-enterprise" target="_blank">Kount</a>, a fraud management service that can block prepaid cards on your site. Contact Recurly Support to set up Kount.
 
-Yes, if you prefer not to accept prepaid cards, there are a few strategies you can employ. The simplest method is to activate [Kount](https://docs.recurly.com/docs/fraud-management#kount-enterprise), a service that helps manage and prevent fraud on your site, including blocking prepaid cards. You can get in touch with Recurly customer support to set up Kount for your website.
+  Alternatively, consult your payment gateway provider directly — many gateways have settings to block prepaid cards by identifying and refusing cards issued by prepaid card BINs (Bank Identification Numbers).
+</Accordion>
 
-Alternatively, if you'd rather not use Kount, you can consult with your payment gateway provider. They might have specific settings or options available to block prepaid cards by identifying and refusing cards issued by prepaid card BINs (Bank Identification Numbers).
+<br />
