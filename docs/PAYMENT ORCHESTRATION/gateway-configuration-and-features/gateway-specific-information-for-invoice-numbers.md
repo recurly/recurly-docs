@@ -1,202 +1,52 @@
 ---
 title: Gateway specific information for invoice numbers
 excerpt: >-
-  Gateways each have their own specific attributes that are used for
-  transactions.  Invoice numbers are often sent but can be used differently per
-  gateway.
+  Reference guide for how each payment gateway handles invoice numbers in
+  Recurly — including character limits, truncation behavior, and
+  gateway-specific attribute mappings.  <br />
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Each payment gateway imposes its own character limits and handling rules for invoice numbers. When an invoice number exceeds a gateway's limit, Recurly left-truncates it to meet the maximum character requirement. Some gateways also use invoice numbers for additional gateway attributes, with their own separate limits.</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#invoice-number-limits-by-gateway"><span class="rp-toc-num">1</span>Invoice number limits by gateway</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Access to one or more supported payment gateways.
+<ul class="rp-list">
+  <li>Access to one or more supported payment gateways.</li>
+</ul>
 
 ### Limitations
 
-* Gateways each have their own character limit for gateway attributes.
+<ul class="rp-list">
+  <li>Each gateway has its own character limit for invoice numbers and gateway attributes. Limits are listed in the table below.</li>
+</ul>
 
-# Invoice numbers character limits
+# Invoice number limits by gateway
 
-Invoice numbers that exceed the character limit for a gateway will be left truncated to meet the maximum character requirement for that gateway.
+Invoice numbers that exceed a gateway's character limit are left-truncated to meet the maximum. Some gateways use invoice numbers for additional attributes that carry their own separate limits.
 
-The following table displays the gateway and the maximum character requirement for that gateway:
-
-| Gateway        | Max Number of Characters |
-| -------------- | ------------------------ |
-| Freedom Pay    | 17                       |
-| Chase Orbital  | 22                       |
-| Card Connect   | 36                       |
-| Check Commerce | 40                       |
-| WorldPay       | 100                      |
-
-Invoice numbers that exceed the character limit for a gateway will be left truncated to meet the maximum character requirement for that gateway.  Some gateways have additional attributes that are set that may use invoice numbers.
-
-The following table displays the gateway and the maximum character requirement for that gateway and the special considerations for gateway attributes:
-
-<Table align={["left","left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Gateway
-      </th>
-
-      <th>
-        Max Number of Characters
-      </th>
-
-      <th>
-        Special Considerations
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Vantiv
-      </td>
-
-      <td>
-        17/25
-      </td>
-
-      <td>
-        Purchases and refunds use invoice number, it will be truncated if over 25 characters.
-        Other transactions use transaction uuid, this will be left truncated if over 25 characters.
-        invoiceNumberReference set to invoiceNumber
-        Customer reference set to invoice number, will be left truncated if over 17 characters.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        TSYS
-      </td>
-
-      <td>
-        15
-      </td>
-
-      <td>
-        If the invoice number is empty, falls back to PO Number.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        PayPal
-      </td>
-
-      <td>
-        127
-      </td>
-
-      <td>
-        PayPal Business, PayPal UK, PayPal Complete:
-        Greater than 127 characters, INVNUM is left truncated to 127 characters.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Stripe
-      </td>
-
-      <td>
-        25
-      </td>
-
-      <td>
-        Long invoice numbers of 500 characters:
-        Level 3 merchant reference, left truncated at 25 characters.
-        Level 3 customer reference, left truncated at 17 characters.
-        Invoice numbers of 17 characters or less:
-        Full invoice number for metadata.invoiceNumber, Level 3 merchant reference, Level 3 customer reference.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Authorize.net
-      </td>
-
-      <td>
-        20
-      </td>
-
-      <td>
-        PO Number left truncated to 25 characters.
-        Order.InvoiceNumber left truncated to 20 characters.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Adyen
-      </td>
-
-      <td>
-        25
-      </td>
-
-      <td>
-        merchantOrderReference full invoice number up to 1000 characters.
-        enhancedSchemeData.customerReference left truncated to 25 characters.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        AmazonPay V1
-      </td>
-
-      <td>
-        128
-      </td>
-
-      <td>
-        Left truncated if over 128 characters.
-        OrderReferenceAttributes.SellerOrderAttributes.SellerOrderID, SellerOrderAttributes.SellerOrderId
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Braintree
-      </td>
-
-      <td>
-        127
-      </td>
-
-      <td>
-        Invoice number left truncated if over 128 characters for OrderId.
-        purchaseOrderNumber is left truncated if over 12 characters.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Cybersource
-      </td>
-
-      <td>
-        Varies by processor
-      </td>
-
-      <td>
-        Asia, Middle East, and Africa gateways: 40 characters.
-        China UnionPay: 40 characters.
-        Elavon Americas: 39 characters.
-        FDC Nashville Global: 8 characters.
-        All other processors: 8 characters.
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Gateway        | Max characters      | Special considerations                                                                                                                                                                                                                                                                                                                  |
+| -------------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FreedomPay     | 17                  | —                                                                                                                                                                                                                                                                                                                                       |
+| Chase Orbital  | 22                  | —                                                                                                                                                                                                                                                                                                                                       |
+| CardConnect    | 36                  | —                                                                                                                                                                                                                                                                                                                                       |
+| Check Commerce | 40                  | —                                                                                                                                                                                                                                                                                                                                       |
+| Worldpay       | 100                 | —                                                                                                                                                                                                                                                                                                                                       |
+| Vantiv         | 17 / 25             | Purchases and refunds use the invoice number (left-truncated if over 25 characters). Other transactions use the transaction UUID (left-truncated if over 25 characters). `invoiceNumberReference` is set to `invoiceNumber`. Customer reference is set to invoice number (left-truncated if over 17 characters).                        |
+| TSYS           | 15                  | If the invoice number is empty, falls back to PO Number.                                                                                                                                                                                                                                                                                |
+| PayPal         | 127                 | Applies to PayPal Business, PayPal UK, and PayPal Complete. `INVNUM` is left-truncated to 127 characters if over limit.                                                                                                                                                                                                                 |
+| Stripe         | 25                  | For invoice numbers over 25 characters: Level 3 merchant reference is left-truncated to 25 characters; Level 3 customer reference is left-truncated to 17 characters. For invoice numbers of 17 characters or fewer: full invoice number used for `metadata.invoiceNumber`, Level 3 merchant reference, and Level 3 customer reference. |
+| Authorize.Net  | 20                  | `PO Number` left-truncated to 25 characters. `Order.InvoiceNumber` left-truncated to 20 characters.                                                                                                                                                                                                                                     |
+| Adyen          | 25                  | `merchantOrderReference` accepts full invoice number up to 1,000 characters. `enhancedSchemeData.customerReference` left-truncated to 25 characters.                                                                                                                                                                                    |
+| Amazon Pay V1  | 128                 | `OrderReferenceAttributes.SellerOrderAttributes.SellerOrderID` and `SellerOrderAttributes.SellerOrderId` left-truncated if over 128 characters.                                                                                                                                                                                         |
+| Braintree      | 127                 | Invoice number left-truncated if over 128 characters for `OrderId`. `purchaseOrderNumber` left-truncated if over 12 characters.                                                                                                                                                                                                         |
+| CyberSource    | Varies by processor | Asia, Middle East, and Africa: 40 characters. China UnionPay: 40 characters. Elavon Americas: 39 characters. FDC Nashville Global: 8 characters. All other processors: 8 characters.                                                                                                                                                    |
 
 <br />
