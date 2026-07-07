@@ -71,7 +71,7 @@ Recurly supports Express Checkout and One Touch™ for all customers using the l
 **Express Checkout** opens a PayPal modal on desktop browsers so customers complete payment without leaving your checkout page. On tablets and smartphones, the PayPal screens appear in full-page mode.
 
 
-<Image src="https://files.readme.io/1de4d4b-uk-ec-step3.png" align="center" width="75%" border={true} />
+<Image src="https://files.readme.io/1de4d4b-uk-ec-step3.png" align="center" width="35%" />
 
 
 **One Touch™** lets customers stay logged into PayPal for up to 6 months. After logging in once, they can check out on return visits without re-entering their password or payment details.
