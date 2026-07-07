@@ -1,8 +1,9 @@
 ---
 title: Authorize.net
 excerpt: >-
-  Harness the power of Authorize.net’s global payment solutions, seamlessly
-  integrated with Recurly, to elevate your business's payment experience.
+  Connect Authorize.net to Recurly to process credit card transactions —
+  configure your API credentials, AVS, CVV, and card type settings in a few
+  steps.
 deprecated: false
 hidden: false
 metadata:
@@ -12,157 +13,222 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Authorize.net is a well-established payment gateway that enables secure credit card processing between your payment portal and card networks. This guide walks you through connecting Authorize.net to Recurly, configuring fraud settings, and going live. For pricing and new account signup, visit <a href="https://www.authorize.net/" target="_blank">Authorize.net</a>.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#gateway-setup-guide"><span class="rp-toc-num">3</span>Gateway setup guide</a>
+    <a class="rp-toc-pill" href="#fraud-settings"><span class="rp-toc-num">4</span>Fraud settings</a>
+  </div>
+</div>
 
 ### Limitations
 
-* Authorize.net's API response detail is limited as far as in-depth responses on declines. Recurly uses decline reasons and merchant-advice-code logic to inform retries, and other processor, issuer, and network responses to help us decide when and how to retry. Due to the generic nature of this gateway's response information, we have employed best practices as instructed by the gateway.
-  * In general, Recurly does not retry renewal declines in cases where Auth.net recommends treating a decline as a 'hard' decline. These include instances of:
-    * Expired Cards
-    * Lost or Stolen cards
-  * You can read more about Auth.net's gateway responses in their [knowledgebase article](https://support.authorize.net/knowledgebase/Knowledgearticle/?code=000001111).
-* We do not support Auth.net's fraud review flow -- if you are using Authorize.net's fraud monitoring, please be aware the gateway can void or invalidate transactions that were initially approved. It is advised to keep an eye on these external systems to avoid transactions that were initially approved and then cancelled by the gateway outside of Recurly's visibility.
-* Authorize.net does not return raw NTIDs. If you need to migrate away from Authorize.net to another platform, you must engage with Tech Support to start an NTID migration conversation with one of our team members and Auth.net directly.
+<ul class="rp-list">
+  <li><strong>Limited decline detail</strong> — Authorize.net's API responses are generic on declines. Recurly uses decline reasons, merchant-advice-code logic, and processor/issuer/network responses to inform retry decisions. Following Auth.net best practices, Recurly does not retry renewal declines where Auth.net recommends treating the decline as "hard" — this includes expired cards and lost or stolen cards. See <a href="https://support.authorize.net/knowledgebase/Knowledgearticle/?code=000001111" target="_blank">Auth.net's gateway response knowledgebase article</a> for details.</li>
+  <li><strong>Fraud review flow not supported</strong> — If you're using Authorize.net's fraud monitoring, be aware the gateway can void or invalidate transactions that were initially approved. Monitor those external systems independently, as any cancellations made outside Recurly won't be visible within the platform.</li>
+  <li><strong>No raw NTID export</strong> — Authorize.net does not return raw NTIDs. If you need to migrate away from Authorize.net to another platform, contact Recurly Tech Support to initiate an NTID migration conversation with our team and Auth.net directly.</li>
+</ul>
 
 # Definition
 
-Authorize.net is a well-established payment gateway that facilitates the seamless and secure transfer of credit card transactions between a payment portal (such as a website or mobile phone) and the credit card processors. It employs various features and tools to help businesses prevent fraudulent transactions while accepting payments with ease.
+<div class="rp-definition">Authorize.net is a payment gateway that facilitates secure credit card transactions between your payment portal and card processors. It includes built-in fraud prevention tools, supports a range of card brands, and integrates with Recurly to power recurring subscriptions and one-time payments.</div>
 
-For pricing and signup information for a new production Authorize.net account, please visit [Authorize.net](https://www.authorize.net/).
+# Key details
 
-| Features & Specifications       | Description / Availability                                                                                                        |
-| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Recurring Subscriptions, Payments (eCommerce and [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)) |
-| Supported Operations            | Anti-Fraud, Authorize and Capture, Purchase, Refund, Verify, Void                                                                 |
-| Supported Payment Types         | Credit Card                                                                                                                       |
-| Supported Card Brands           | Visa, MasterCard, Amex, Discover, JCB, Diners Club, Union Pay                                                                     |
-| Gateway Specific 3DS2 Supported | No. Authorize.net does not support 3DS.                                                                                           |
-| Card on File Supported          | Yes                                                                                                                               |
-| Regions                         | Worldwide                                                                                                                         |
-| Currencies                      | AUD, CAD, EUR, GBP, NZD, PLN, and USD.                                                                                            |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
+  <tr><td>Services that work with Recurly</td><td>Recurring subscriptions, payments (eCommerce and <a href="https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/" target="_blank">MOTO</a>)</td></tr>
+  <tr><td>Supported operations</td><td>Anti-Fraud, Authorize and Capture, Purchase, Refund, Verify, Void</td></tr>
+  <tr><td>Supported payment types</td><td>Credit card</td></tr>
+  <tr><td>Supported card brands</td><td>Visa, Mastercard, Amex, Discover, JCB, Diners Club, Union Pay</td></tr>
+  <tr><td>Gateway-specific 3DS2 supported</td><td>No — Authorize.net does not support 3DS</td></tr>
+  <tr><td>Card on file supported</td><td>Yes</td></tr>
+  <tr><td>Regions</td><td>Worldwide</td></tr>
+  <tr><td>Currencies</td><td>AUD, CAD, EUR, GBP, NZD, PLN, and USD</td></tr>
+</table>
 
-# Gateway Setup Guide
+# Gateway setup guide
 
-## API Login ID and Transaction Key
+## Step 1: Sign up for an Authorize.net account
 
-To enable seamless communication between Recurly and your Authorize.net account, it is essential to configure your API Login ID and Transaction Key within Recurly.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Create your account</h4><p>Go to the <a href="https://www.authorize.net/sign-up/" target="_blank">Authorize.net signup page</a> and complete the application form with your business details.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Log in</h4><p>After approval, log in to your Authorize.net account to proceed with credential retrieval.</p></div>
+  </div>
+</div>
 
-To find these credentials within your Authorize.net account, navigate to:
+## Step 2: Get your API Login ID and Transaction Key
 
-`Account → Settings → API Login ID and Transaction Key`.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Navigate to API credentials</h4><p>In your Authorize.net account, go to <strong>Account → Settings → API Credentials &amp; Keys</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Note your API Login ID</h4><p>Copy your API Login ID — you'll need it when configuring Recurly.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Generate a Transaction Key</h4><p>If you don't have a Transaction Key or need a new one, select <strong>New Transaction Key</strong>. You can optionally disable previously created keys using the checkbox in your Auth.net dashboard.</p></div>
+  </div>
+</div>
 
-Once you have obtained your API Login ID and Transaction Key, input these credentials into Recurly’s Payment Gateway configuration settings, thereby establishing a secure link between Recurly and Authorize.net. This step is vital for processing transactions and managing subscriptions effectively. Step by step instructions with images are below.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Checking "Disable Old Transaction Key Immediately" takes effect the moment you click Submit and will instantly break any active Auth.net integrations. Only select this option if you've been explicitly instructed to do so for fraud-prevention or security purposes.</div>
+</div>
 
-## Authorize.net setup
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Submit and retrieve your key</h4><p>Click <strong>Submit</strong>. In some cases, Auth.net will email you a PIN to verify the request — enter that PIN in the field provided to complete key generation.</p></div>
+  </div>
+</div>
 
-This step-by-step guide will help you integrate your Authorize.net account with Recurly, enabling you to securely and efficiently process payments.
 
-**Step 1: Sign up for an Authorize.net account**
+<Image src="https://files.readme.io/2c5f346-image.png" align="center" width="40%" border={true} />
 
-1. **Visit** the [Authorize.net Signup Page](https://www.authorize.net/sign-up/)
-2. **Complete** the application form with your business details.
-3. After approval, **log in** to your Authorize.net account.
 
-**Step 2: Obtain your API Login ID and Transaction Key**
 
-1. In your Authorize.net account, **navigate** to `Account → Settings → 	API Credentials & Keys`.
-2. **Note down** your API Login ID; you will need this to configure Recurly.
-3. If you do not know your Transaction Key or have never created one before, **choose** ‘New Transaction Key’. You can choose to Disable previously created Transaction Keys Immediately using the checkbox that appears in your Auth.net dashboard.
+<Image src="https://files.readme.io/cdbb55e-image.png" align="center" width="40%" border={true} />
 
-Please note, checking the box to “Disable Old Transaction Key Immediately” will _instantly break your integrations_ once you click “Submit”. Only do this if you’ve been instructed to do so for fraud-prevention or security purposes, or if you do not have an active Auth.net integration that needs previous Transaction Keys to function.
 
-4. **Click** ‘Submit’.
 
-<Image align="center" border={true} width="60% " src="https://files.readme.io/2c5f346-image.png" className="border" />
+<Image src="https://files.readme.io/4976dc3-image.png" align="center" width="75%" border={true} />
 
-In certain cases, you may be asked to provide a PIN to create a Transaction Key. Check your email for a PIN provided by Authorize.net in order to continue with this process.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/cdbb55e-image.png" className="border" />
+## Step 3: Configure Authorize.net in Recurly
 
-If you have any issues, call the number at the bottom of the modal to speak to an Auth.net representative.
-The email will contain a PIN, like the example below, which you will need to copy/paste into the field provided on Auth.net.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Gateways</h4><p>In Recurly, navigate to <strong>Configuration → Payment Gateways</strong> and select <strong>Add a Gateway → Authorize.net</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enter your API credentials</h4><p>Input your API Login ID and Transaction Key from Authorize.net.</p></div>
+  </div>
+</div>
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/4976dc3-image.png" className="border" />
 
-After you have provided your PIN, you will be given a Transaction Key to use for transactions in Recurly.
+<Image src="https://files.readme.io/060ff09-image.png" align="center" width="75%" border={true} />
 
-**Step 3: Configure Your Authorize.net Account in Recurly**
 
-1. **Log in** to your Recurly account.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Select accepted card types</h4><p>Choose which card types you're approved to accept. Contact your Auth.net representative if you're unsure which card brands apply to your account.</p></div>
+  </div>
+</div>
 
-2. **Navigate** to `Configuration → Payment Gateways`.
 
-3. **Select** `Add a Gateway` and choose `Authorize.net`.
+<Image src="https://files.readme.io/73811e6-image.png" align="center" width="75%" border={true} />
 
-4. **Enter** your API Login ID and Transaction Key from Authorize.net.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/060ff09-image.png" className="border" />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Set accepted currencies</h4><p>Select the currencies your Auth.net gateway is approved to accept.</p></div>
+  </div>
+</div>
 
-5. You can **select** which Card Types you wish to accept. This will depend on which card types you are approved to accept. Speak to your representative at Auth.net if you have questions.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/73811e6-image.png" className="border" />
+<Image src="https://files.readme.io/c4a227a-image.png" align="center" width="40%" border={true} />
 
-6. You can also **change** which currencies your Auth.net gateway can accept. Please choose from available currencies depending on which you are approved to accept.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/c4a227a-image.png" className="border" />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Configure zero-dollar authorizations (ZDA)</h4><p>Select which card types you'd like to accept ZDA-style transactions for. ZDA transactions verify a card's validity without charging any amount.</p></div>
+  </div>
+</div>
 
-7. Lastly, Auth.net accepts a zero dollar authorization (verification) for card types. Please **choose** which you would like to accept ZDA-style transactions for. ZDA transactions are good for checking the validity of a card without billing a dollar amount.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/b4559de-image.png" className="border" />
+<Image src="https://files.readme.io/b4559de-image.png" align="center" width="75%" border={true} />
 
-8. Once your configuration is set up the way you would prefer, **click** ‘Add Payment Gateway’. If you are editing your implementation, the button will state ‘Update Payment Gateway’.
 
-**Step 4: Set Up Address Verification Service (AVS)**
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div><h4>Save your configuration</h4><p>Click <strong>Add Payment Gateway</strong> to save. If you're editing an existing setup, this button will read <strong>Update Payment Gateway</strong>.</p></div>
+  </div>
+</div>
 
-1. In your Recurly account, **navigate** to `Configuration → Payment Settings`.
-2. **Scroll** to the `Address Verification Check` section.
-3. **Select** your desired AVS rules (e.g., Enabled (default) or Disabled).
+## Step 4: Set up Address Verification Service (AVS)
 
-If ‘Enabled’, if Recurly receives information in the transaction response that the Address provided does not match what the Issuer has on file, the transaction will be rejected. **Please not**e, these settings apply to all supported gateways and will not be Auth.net specific.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Settings</h4><p>In Recurly, navigate to <strong>Configuration → Payment Settings</strong> and scroll to the <strong>Address Verification Check</strong> section.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Choose your AVS rules</h4><p>Select <strong>Enabled</strong> (default) or <strong>Disabled</strong>. When enabled, transactions where the provided address doesn't match the issuer's records will be rejected.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Save your changes</h4><p>Click <strong>Save Changes</strong>. Note that AVS settings apply to all supported gateways, not just Authorize.net.</p></div>
+  </div>
+</div>
 
-4. **Click** `Save Changes`.
+## Step 5: Enable Card Code Verification (CVV)
 
-**Step 5: Enable Card Code Verification (CCV)**
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Settings</h4><p>Navigate to <strong>Configuration → Payment Settings</strong> and scroll to the <strong>Credit Card Verification Code Check</strong> section.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enable CVV verification</h4><p>Set the radio button to <strong>Enabled</strong>. Invalid or mismatched CVV submissions will be rejected based on issuer feedback.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Save your changes</h4><p>Click <strong>Save Changes</strong>. Like AVS, these settings apply to all supported gateways.</p></div>
+  </div>
+</div>
 
-1. In your Recurly account, **go to** `Configuration → Payment Settings`.
-2. **Scroll** to the `Credit Card Verification Code Check` section.
-3. **Set** the Radio Button option to ‘Enabled’. When Enabled, invalid or mismatched CVV code submissions will be rejected based on feedback from the card Issuer.
-4. **Click** `Save Changes`.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/9306094-image.png" className="border" />
+<Image src="https://files.readme.io/9306094-image.png" align="center" width="75%" border={true} />
 
-**Please note**, these settings apply to all supported gateways and will not be Auth.net specific.
 
-**Step 6: Test your integration**
+## Step 6: Test your integration
 
-1. In your Recurly account, **navigate** to `Configuration → Payment Gateways → Authorize.net`.
-2. **Click** on `Test Configuration` to ensure that Recurly can successfully communicate with your Authorize.net account.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Run a configuration test</h4><p>In Recurly, go to <strong>Configuration → Payment Gateways → Authorize.net</strong> and click <strong>Test Configuration</strong>.</p></div>
+  </div>
+</div>
 
-   <Image align="center" border={true} src="https://files.readme.io/f5ff63a-image.png" className="border" />
 
-   If you have provided your API Login ID and Transaction Key correctly, you will see this confirmation message.
+<Image src="https://files.readme.io/f5ff63a-image.png" align="center" width="75%" border={true} />
 
-**Step 7: Go Live!**
 
-1. Once you’ve successfully tested the integration, you are ready to accept real transactions.
-2. Monitor your transactions in Recurly and Authorize.net to ensure everything is working smoothly.
+If your API Login ID and Transaction Key are correct, you'll see a confirmation message.
 
-> **Note:** Ensure that you comply with PCI regulations when handling sensitive credit card information.
+## Step 7: Go live
 
-# Fraud Settings
+Once the configuration test passes, you're ready to accept real transactions. Monitor your transactions in both Recurly and Authorize.net to confirm everything is running as expected.
 
-## Address verification service (AVS)
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> For specific questions about your integration, contact your Authorize.net representative or <a href="mailto:support@recurly.com">Recurly Support</a>. Always ensure PCI compliance when handling sensitive card data.</div>
+</div>
 
-If your company accepts payments from international customers, it is crucial to be aware of certain limitations associated with the Address Verification Service (AVS). Currently, AVS fails to match zip codes if the zip code contains letters. While US Zip Codes are exclusively numeric, numerous international postal codes contain letters, resulting in failed matches when verifying zip codes. To effectively leverage AVS with international credit cards, Recurly recommends allowing the transaction to proceed if either the street address _or_ zip code aligns accurately.
+# Fraud settings
 
-## Card code verification (CVV)
+## Address Verification Service (AVS)
 
-Upon the creation of a new subscription or the update of a credit card number, Recurly submits both the card number and the CVV (Card Code Verification) to Authorize.net. In compliance with PCI regulations, storing CVV values is strictly prohibited, regardless of encryption measures. As such, the CVV can only be utilized for the initial request. Submitting the CVV along with the first request enhances the likelihood of transaction approval and serves as a robust deterrent against fraudulent activities. Banks generally permit subsequent transactions to process smoothly if previous transactions by the same merchant have been conducted without issues.
+AVS works well for US-based customers — US zip codes are numeric and match cleanly. However, many international postal codes contain letters, which causes AVS zip code matching to fail. If you accept payments from international customers, Recurly recommends configuring AVS to allow transactions where either the street address **or** zip code matches, rather than requiring both.
 
-# Final Thoughts
+## Card Code Verification (CVV)
 
-This guide is designed to walk you through the process of integrating Authorize.net with Recurly, configuring key features, and ensuring that everything is set up to start processing payments securely and efficiently. Always consult with your Authorize.net representative or Recurly support for any specific questions or issues related to your integration.
+When a new subscription is created or a credit card number is updated, Recurly submits the card number and CVV to Authorize.net together. Per PCI regulations, CVV values can't be stored — so the CVV is used only on that initial request. Submitting the CVV upfront improves approval rates and deters fraud. Banks generally continue to approve subsequent transactions from the same merchant once a clean history has been established.
