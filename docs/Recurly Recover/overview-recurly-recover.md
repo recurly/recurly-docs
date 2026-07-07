@@ -1,37 +1,69 @@
 ---
 title: 'Overview: Recurly Recover'
 excerpt: >-
-  Submit past-due invoices to Recurly's retry engine for collection, independent
-  of your billing platform.
+  Use Recurly Recover's standalone retry engine to collect on past-due invoices
+  from your existing billing platform — without adopting Recurly for
+  subscription management.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Recurly Recover is a standalone retry engine for collecting on past-due invoices without requiring Recurly as your primary billing platform. Submit a failed invoice via the Recovery API, and Recurly automatically creates the account objects, calculates an optimized retry schedule, and manages the entire collection lifecycle until the invoice is paid or the retry window closes.</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#setup"><span class="rp-toc-num">4</span>Setup</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">5</span>FAQs</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* An active Recurly account with an API key generated
-* One or more payment gateways configured
-* At least one retry window (dunning campaign) configured in your Recurly Admin UI
+<ul class="rp-list">
+  <li>An active Recurly account with an API key generated.</li>
+  <li>One or more payment gateways configured in Recurly.</li>
+  <li>At least one retry window (dunning campaign) configured in the Recurly Admin UI.</li>
+</ul>
 
 ### Limitations
 
-* Recurly Recover is designed for merchants who don't use Recurly for subscription management. It's not intended to work alongside Recurly Subscriptions
-* Accounts can only be created via the API — not through the Admin UI
-* Each successful API call creates one account with one invoice. Calling the API again with the same account code returns an error
+<ul class="rp-list">
+  <li>Recurly Recover is designed for merchants who don't use Recurly for subscription management — it's not intended to work alongside Recurly Subscriptions.</li>
+  <li>Accounts can only be created via the API, not through the Admin UI.</li>
+  <li>Each successful API call creates one account with one invoice. Calling the API again with the same account code returns an error.</li>
+</ul>
 
 # Definition
 
-Recurly Recover is a standalone retry engine that collects on past-due invoices without requiring Recurly as your primary billing platform. Submit a failed invoice via the Recovery API, and Recurly automatically creates the necessary account objects, calculates an optimized retry schedule, and manages the entire collection lifecycle until the invoice is paid or the retry window closes.
+<div class="rp-definition">Recurly Recover is a standalone retry engine that collects on past-due invoices without requiring Recurly as your primary billing platform. Submit a failed invoice via the Recovery API and Recurly automatically creates the necessary account objects, calculates an optimized retry schedule, and manages the entire collection lifecycle until the invoice is paid or the retry window closes.</div>
 
 # Key benefits
 
-* **Works with your stack**: Use Recurly's retry engine without adopting Recurly for subscription management. It integrates with your existing billing system
-* **Flexible retry strategies**: Assign a different dunning campaign per API request, making it easy to A/B test retry windows and strategies across customer segments
-* **Fully managed collection**: Recurly handles the entire retry lifecycle — calculating optimal retry dates, managing payment attempts, and firing webhooks when the journey ends
-* **Minimal setup**: No need to configure plans, items, or taxes. Setup is limited to payment gateway, retry window, and API integration
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-plug" aria-hidden="true"></i></div>
+    <strong>Works with your stack</strong>
+    <span>Use Recurly's retry engine without adopting Recurly for subscription management — it integrates with your existing billing system.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Flexible retry strategies</strong>
+    <span>Assign a different dunning campaign per API request, making it easy to A/B test retry windows and strategies across customer segments.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i></div>
+    <strong>Fully managed collection</strong>
+    <span>Recurly handles the entire retry lifecycle — calculating optimal retry dates, managing payment attempts, and firing webhooks when the journey ends.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+    <strong>Minimal setup</strong>
+    <span>No need to configure plans, items, or taxes. Setup is limited to payment gateway, retry window, and API integration.</span>
+  </div>
+</div>
 
 # Key details
 
@@ -44,44 +76,71 @@ Recurly Recover is a standalone retry engine that collects on past-due invoices 
 5. Recurly calculates the first retry date based on your submission and begins retrying per the assigned retry window.
 6. When a retry succeeds or the retry window is exhausted, Recurly fires a webhook. You update the invoice state in your system.
 
-**Important**: Pause your internal retry logic before submitting an invoice to Recurly Recover. Running parallel retries on the same payment method risks double-charging your customer.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Pause your internal retry logic before submitting an invoice to Recurly Recover. Running parallel retries on the same payment method risks double-charging your customer.</div>
+</div>
+
+# Setup
 
 ## Step 1: Connect your payment gateway
 
-Recurly Recover supports multiple payment gateways. You must connect at least one before submitting invoices.
-
-1. In the Recurly Admin UI, go to **Configuration → Payment Gateways**.
-2. Select your gateway in Recurly.
-   1. Note the **gateway code** assigned to each connection. You'll pass this value in API requests to route transactions to the correct gateway.
-
-If you need to route different card types or merchant category codes through separate gateway accounts (for example, multiple Stripe connections per merchant category code), you can add multiple connections for the same provider. Each connection gets a unique gateway code.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Gateways</h4><p>In the Recurly Admin UI, go to <strong>Configuration → Payment Gateways</strong> and connect your gateway.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Note the gateway code</h4><p>Each gateway connection is assigned a unique <strong>gateway code</strong>. You'll pass this value in API requests to route transactions to the correct gateway. If you need to route different card types or merchant category codes through separate accounts, you can add multiple connections for the same provider — each gets its own gateway code.</p></div>
+  </div>
+</div>
 
 ## Step 2: Configure a retry window
 
-A retry window defines how many days Recurly will attempt to collect on a past-due invoice. You can create multiple retry windows and assign one per API request — making it straightforward to test different retry strategies.
+A retry window defines how many days Recurly will attempt to collect on a past-due invoice. Retry windows are configured using Recurly's dunning campaign feature.
 
-Retry windows are configured using Recurly's dunning campaign feature.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Dunning Management</h4><p>In the Recurly Admin UI, go to <strong>Configuration → Dunning Management</strong> and select <strong>Create campaign</strong> (or edit an existing one).</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Configure the campaign</h4><p>Set the campaign name and the total retry window length in days. Set email notifications to <strong>disabled</strong> — Recurly Recover doesn't send dunning emails. Use your own system for customer communication.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Save and note the campaign ID</h4><p>Save the campaign and copy the campaign ID — this is the value you'll pass as <code>dunning_campaign_id</code> in API requests.</p></div>
+  </div>
+</div>
 
-1. In the Recurly Admin UI, go to **Configuration → Dunning Management**.
-2. Select **Create campaign** (or edit an existing one).
-3. Set the campaign name and the total retry window length in days.
-4. Set email notifications to **disabled** — Recurly Recover doesn't send dunning emails. Use your own system for customer communication.
-5. Save the campaign and note the campaign ID — this is the value you'll pass as `dunning_campaign_id` in API requests.
-
-**Tip**: Create a distinct retry window for each strategy you want to test. Since each API request specifies its own `dunning_campaign_id`, you can easily run A/B tests by assigning different campaign codes at submission time.
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Create a distinct retry window for each strategy you want to test. Since each API request specifies its own <code>dunning_campaign_id</code>, you can easily run A/B tests by assigning different campaign codes at submission time.</div>
+</div>
 
 ## Step 3: Generate your API key
 
-1. In the Recurly Admin UI, go to **Integrations → API Credentials**.
-2. Copy your **private API key** — use this to authenticate Recovery API requests.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Copy your private API key</h4><p>In the Recurly Admin UI, go to <strong>Integrations → API Credentials</strong> and copy your private API key. Use this to authenticate all Recovery API requests.</p></div>
+  </div>
+</div>
 
 ## Step 4: Configure webhooks
 
 Recurly fires webhook events at key points in the retry lifecycle. Configure at least one webhook endpoint so your system can respond when a payment is recovered or a retry window closes.
 
-1. In the Recurly Admin UI, go to **Integrations → Webhooks**.
-2. Add your endpoint URL.
-3. Subscribe to these events:
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Add a webhook endpoint</h4><p>In the Recurly Admin UI, go to <strong>Integrations → Webhooks</strong> and add your endpoint URL.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Subscribe to retry lifecycle events</h4><p>At minimum, subscribe to the following events:</p></div>
+  </div>
+</div>
 
 | Event                | Fires when                                              |
 | -------------------- | ------------------------------------------------------- |
@@ -90,7 +149,9 @@ Recurly fires webhook events at key points in the retry lifecycle. Configure at 
 | `new_dunning_event`  | A dunning step fires per the retry window configuration |
 | `closed_invoice`     | An invoice is marked as paid or failed                  |
 
-**Important**: The `uuid` field in payment webhook events is a **transaction ID**, not an invoice ID. Use `GET /transactions/uuid-{uuid}` to retrieve the transaction, then follow the invoice relationship if you need invoice details. Don't query `/invoices/{uuid}` with a transaction ID.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> The <code>uuid</code> field in payment webhook events is a <strong>transaction ID</strong>, not an invoice ID. Use <code>GET /transactions/uuid-{uuid}</code> to retrieve the transaction, then follow the invoice relationship if you need invoice details. Do not query <code>/invoices/{uuid}</code> with a transaction ID.</div>
+</div>
 
 For full webhook event details, see the [Webhooks documentation](/docs/overview-webhooks).
 
@@ -187,7 +248,9 @@ POST https://v3.recurly.com/invoices/recovery
 
 ## Step 6: Handle the response
 
-A successful `201` response confirms that Recurly has created the account and started the retry process. Save the `invoice_id` from the response — you'll need it if you want to stop retries later.
+A successful `201` response confirms that Recurly has created the account and started the retry process. Save the `invoice_id` from the response — you'll need it to stop retries later.
+
+The `attempt_next_collection_at` field in the response shows when Recurly will make its first retry attempt.
 
 ### Response
 
@@ -214,1201 +277,42 @@ A successful `201` response confirms that Recurly has created the account and st
       "dunning_campaign_id": "string"
     },
     "billing_info_id": "string",
-    "subscription_ids": [
-      "string"
-    ],
+    "subscription_ids": ["string"],
     "previous_invoice_id": "string",
     "number": "string",
     "collection_method": "automatic",
     "po_number": "string",
     "net_terms": 0,
     "net_terms_type": "net",
-    "address": {
-      "name_on_account": "string",
-      "company": "string",
-      "phone": "string",
-      "street1": "string",
-      "street2": "string",
-      "city": "string",
-      "region": "string",
-      "postal_code": "string",
-      "country": "string",
-      "geo_code": "string",
-      "first_name": "string",
-      "last_name": "string"
-    },
-    "shipping_address": {
-      "id": "string",
-      "object": "string",
-      "account_id": "string",
-      "nickname": "string",
-      "first_name": "string",
-      "last_name": "string",
-      "company": "string",
-      "email": "string",
-      "vat_number": "string",
-      "phone": "string",
-      "street1": "string",
-      "street2": "string",
-      "city": "string",
-      "region": "string",
-      "postal_code": "string",
-      "country": "string",
-      "geo_code": "string",
-      "created_at": "2019-08-24T14:15:22Z",
-      "updated_at": "2019-08-24T14:15:22Z"
-    },
     "currency": "str",
     "discount": 0,
     "subtotal": 0,
     "subtotal_after_discount": 0,
     "tax": 0,
-    "reference_only_currency_conversion": {
-      "currency": "str",
-      "subtotal_in_cents": 0,
-      "tax_in_cents": 0,
-      "rate": "string",
-      "source": "string",
-      "date": "2019-08-24"
-    },
     "total": 0,
     "refundable_amount": 0,
     "paid": 0,
     "balance": 0,
-    "tax_info": {
-      "type": "string",
-      "region": "string",
-      "rate": 0,
-      "tax_details": [
-        {
-          "type": "string",
-          "region": "string",
-          "rate": 0,
-          "tax": 0,
-          "name": "string",
-          "level": "string",
-          "billable": true
-        }
-      ]
-    },
-    "used_tax_service": true,
-    "vat_number": "string",
-    "vat_reverse_charge_notes": "string",
-    "terms_and_conditions": "string",
-    "customer_notes": "string",
-    "line_items": [
-      {
-        "id": "string",
-        "object": "string",
-        "uuid": "string",
-        "type": "charge",
-        "item_code": "string",
-        "item_id": "string",
-        "external_sku": "string",
-        "revenue_schedule_type": "at_invoice",
-        "state": "invoiced",
-        "legacy_category": "applied_credit",
-        "account": {
-          "id": "string",
-          "object": "string",
-          "code": "string",
-          "email": "user@example.com",
-          "first_name": "string",
-          "last_name": "string",
-          "company": "string",
-          "parent_account_id": "string",
-          "bill_to": "parent",
-          "dunning_campaign_id": "string"
-        },
-        "bill_for_account_id": "string",
-        "subscription_id": "string",
-        "plan_id": "string",
-        "plan_code": "string",
-        "add_on_id": "string",
-        "add_on_code": "string",
-        "invoice_id": "string",
-        "invoice_number": "string",
-        "previous_line_item_id": "string",
-        "original_line_item_invoice_id": "string",
-        "origin": "add_on",
-        "accounting_code": "string",
-        "product_code": "string",
-        "credit_reason_code": "general",
-        "currency": "str",
-        "amount": 0,
-        "description": "string",
-        "quantity": 1,
-        "quantity_decimal": "string",
-        "unit_amount": 0,
-        "unit_amount_decimal": "string",
-        "tax_inclusive": true,
-        "subtotal": 0,
-        "discount": 0,
-        "liability_gl_account_code": "string",
-        "revenue_gl_account_code": "string",
-        "performance_obligation_id": "string",
-        "tax": 0,
-        "taxable": true,
-        "tax_exempt": true,
-        "avalara_transaction_type": 0,
-        "avalara_service_type": 0,
-        "vertex_transaction_type": "sale",
-        "tax_code": "string",
-        "harmonized_system_code": "string",
-        "tax_info": {
-          "type": "string",
-          "region": "string",
-          "rate": 0,
-          "tax_details": [
-            {
-              "type": "string",
-              "region": "string",
-              "rate": 0,
-              "tax": 0,
-              "name": "string",
-              "level": "string",
-              "billable": true
-            }
-          ]
-        },
-        "origin_tax_address_source": "origin",
-        "destination_tax_address_source": "destination",
-        "proration_rate": 0,
-        "refund": true,
-        "refunded_quantity": 0,
-        "refunded_quantity_decimal": "string",
-        "credit_applied": 0,
-        "shipping_address": {
-          "id": "string",
-          "object": "string",
-          "account_id": "string",
-          "nickname": "string",
-          "first_name": "string",
-          "last_name": "string",
-          "company": "string",
-          "email": "string",
-          "vat_number": "string",
-          "phone": "string",
-          "street1": "string",
-          "street2": "string",
-          "city": "string",
-          "region": "string",
-          "postal_code": "string",
-          "country": "string",
-          "geo_code": "string",
-          "created_at": "2019-08-24T14:15:22Z",
-          "updated_at": "2019-08-24T14:15:22Z"
-        },
-        "start_date": "2019-08-24T14:15:22Z",
-        "end_date": "2019-08-24T14:15:22Z",
-        "custom_fields": [
-          {
-            "name": "string",
-            "value": "string",
-            "source_record_type": "account",
-            "source_record_id": "string"
-          }
-        ],
-        "created_at": "2019-08-24T14:15:22Z",
-        "updated_at": "2019-08-24T14:15:22Z"
-      }
-    ],
-    "has_more_line_items": true,
-    "transactions": [
-      {
-        "id": "string",
-        "object": "string",
-        "uuid": "string",
-        "original_transaction_id": "string",
-        "account": {
-          "id": "string",
-          "object": "string",
-          "code": "string",
-          "email": "user@example.com",
-          "first_name": "string",
-          "last_name": "string",
-          "company": "string",
-          "parent_account_id": "string",
-          "bill_to": "parent",
-          "dunning_campaign_id": "string"
-        },
-        "initiator": "customer",
-        "invoice": {
-          "id": "string",
-          "object": "string",
-          "number": "string",
-          "business_entity_id": "string",
-          "type": "charge",
-          "state": "open"
-        },
-        "merchant_reason_code": "none",
-        "voided_by_invoice": {
-          "id": "string",
-          "object": "string",
-          "number": "string",
-          "business_entity_id": "string",
-          "type": "charge",
-          "state": "open"
-        },
-        "subscription_ids": [
-          "string"
-        ],
-        "type": "authorization",
-        "origin": "api",
-        "currency": "str",
-        "amount": 0,
-        "status": "chargeback",
-        "success": true,
-        "backup_payment_method_used": true,
-        "refunded": true,
-        "billing_address": {
-          "first_name": "string",
-          "last_name": "string",
-          "phone": "string",
-          "street1": "string",
-          "street2": "string",
-          "city": "string",
-          "region": "string",
-          "postal_code": "string",
-          "country": "string",
-          "geo_code": "string"
-        },
-        "collection_method": "automatic",
-        "payment_method": {
-          "object": "acss",
-          "card_type": "American Express",
-          "first_six": "string",
-          "last_four": "stri",
-          "last_two": "st",
-          "exp_month": 0,
-          "exp_year": 0,
-          "gateway_token": "string",
-          "issuing_country": "string",
-          "funding_source": "credit",
-          "gateway_code": "string",
-          "gateway_attributes": {
-            "account_reference": "string"
-          },
-          "card_network_preference": "Bancontact",
-          "billing_agreement_id": "string",
-          "name_on_account": "string",
-          "account_type": "checking",
-          "routing_number": "string",
-          "routing_number_bank": "string",
-          "username": "string"
-        },
-        "payment_gateway_references": [
-          {
-            "token": "string",
-            "reference_type": "stripe_confirmation_token"
-          }
-        ],
-        "ip_address_v4": "string",
-        "ip_address_country": "string",
-        "status_code": "string",
-        "status_message": "string",
-        "customer_message": "string",
-        "customer_message_locale": "string",
-        "payment_gateway": {
-          "id": "string",
-          "object": "string",
-          "type": "string",
-          "name": "string"
-        },
-        "gateway_message": "string",
-        "gateway_reference": "string",
-        "gateway_approval_code": "string",
-        "gateway_response_code": "string",
-        "gateway_response_time": 0,
-        "gateway_response_values": {},
-        "cvv_check": "D",
-        "avs_check": "A",
-        "created_at": "2019-08-24T14:15:22Z",
-        "updated_at": "2019-08-24T14:15:22Z",
-        "voided_at": "2019-08-24T14:15:22Z",
-        "collected_at": "2019-08-24T14:15:22Z",
-        "action_result": {},
-        "vat_number": "string",
-        "fraud_info": {
-          "object": "string",
-          "score": 1,
-          "decision": "approve",
-          "reference": "string",
-          "risk_rules_triggered": [
-            {
-              "code": "string",
-              "message": "string"
-            }
-          ]
-        },
-        "next_action": {
-          "type": "qr_code",
-          "value": "string"
-        }
-      }
-    ],
-    "credit_payments": [
-      {
-        "id": "string",
-        "object": "string",
-        "uuid": "string",
-        "action": "payment",
-        "account": {
-          "id": "string",
-          "object": "string",
-          "code": "string",
-          "email": "user@example.com",
-          "first_name": "string",
-          "last_name": "string",
-          "company": "string",
-          "parent_account_id": "string",
-          "bill_to": "parent",
-          "dunning_campaign_id": "string"
-        },
-        "applied_to_invoice": {
-          "id": "string",
-          "object": "string",
-          "number": "string",
-          "business_entity_id": "string",
-          "type": "charge",
-          "state": "open"
-        },
-        "original_invoice": {
-          "id": "string",
-          "object": "string",
-          "number": "string",
-          "business_entity_id": "string",
-          "type": "charge",
-          "state": "open"
-        },
-        "currency": "str",
-        "amount": 0,
-        "original_credit_payment_id": "string",
-        "refund_transaction": {
-          "id": "string",
-          "object": "string",
-          "uuid": "string",
-          "original_transaction_id": "string",
-          "account": {
-            "id": "string",
-            "object": "string",
-            "code": "string",
-            "email": "user@example.com",
-            "first_name": "string",
-            "last_name": "string",
-            "company": "string",
-            "parent_account_id": "string",
-            "bill_to": "parent",
-            "dunning_campaign_id": "string"
-          },
-          "initiator": "customer",
-          "invoice": {
-            "id": "string",
-            "object": "string",
-            "number": "string",
-            "business_entity_id": "string",
-            "type": "charge",
-            "state": "open"
-          },
-          "merchant_reason_code": "none",
-          "voided_by_invoice": {
-            "id": "string",
-            "object": "string",
-            "number": "string",
-            "business_entity_id": "string",
-            "type": "charge",
-            "state": "open"
-          },
-          "subscription_ids": [
-            "string"
-          ],
-          "type": "authorization",
-          "origin": "api",
-          "currency": "str",
-          "amount": 0,
-          "status": "chargeback",
-          "success": true,
-          "backup_payment_method_used": true,
-          "refunded": true,
-          "billing_address": {
-            "first_name": "string",
-            "last_name": "string",
-            "phone": "string",
-            "street1": "string",
-            "street2": "string",
-            "city": "string",
-            "region": "string",
-            "postal_code": "string",
-            "country": "string",
-            "geo_code": "string"
-          },
-          "collection_method": "automatic",
-          "payment_method": {
-            "object": "acss",
-            "card_type": "American Express",
-            "first_six": "string",
-            "last_four": "stri",
-            "last_two": "st",
-            "exp_month": 0,
-            "exp_year": 0,
-            "gateway_token": "string",
-            "issuing_country": "string",
-            "funding_source": "credit",
-            "gateway_code": "string",
-            "gateway_attributes": {
-              "account_reference": "string"
-            },
-            "card_network_preference": "Bancontact",
-            "billing_agreement_id": "string",
-            "name_on_account": "string",
-            "account_type": "checking",
-            "routing_number": "string",
-            "routing_number_bank": "string",
-            "username": "string"
-          },
-          "payment_gateway_references": [
-            {
-              "token": "string",
-              "reference_type": "stripe_confirmation_token"
-            }
-          ],
-          "ip_address_v4": "string",
-          "ip_address_country": "string",
-          "status_code": "string",
-          "status_message": "string",
-          "customer_message": "string",
-          "customer_message_locale": "string",
-          "payment_gateway": {
-            "id": "string",
-            "object": "string",
-            "type": "string",
-            "name": "string"
-          },
-          "gateway_message": "string",
-          "gateway_reference": "string",
-          "gateway_approval_code": "string",
-          "gateway_response_code": "string",
-          "gateway_response_time": 0,
-          "gateway_response_values": {},
-          "cvv_check": "D",
-          "avs_check": "A",
-          "created_at": "2019-08-24T14:15:22Z",
-          "updated_at": "2019-08-24T14:15:22Z",
-          "voided_at": "2019-08-24T14:15:22Z",
-          "collected_at": "2019-08-24T14:15:22Z",
-          "action_result": {},
-          "vat_number": "string",
-          "fraud_info": {
-            "object": "string",
-            "score": 1,
-            "decision": "approve",
-            "reference": "string",
-            "risk_rules_triggered": [
-              {}
-            ]
-          },
-          "next_action": {
-            "type": "qr_code",
-            "value": "string"
-          }
-        },
-        "created_at": "2019-08-24T14:15:22Z",
-        "updated_at": "2019-08-24T14:15:22Z",
-        "voided_at": "2019-08-24T14:15:22Z"
-      }
-    ],
-    "created_at": "2019-08-24T14:15:22Z",
-    "updated_at": "2019-08-24T14:15:22Z",
+    "dunning_campaign_id": "string",
     "due_at": "2019-08-24T14:15:22Z",
     "closed_at": "2019-08-24T14:15:22Z",
-    "dunning_campaign_id": "string",
-    "business_entity_id": "string",
-    "custom_fields": [
-      {
-        "name": "string",
-        "value": "string",
-        "source_record_type": "account",
-        "source_record_id": "string"
-      }
-    ]
-  },
-  "credit_invoices": [
-    {
-      "id": "string",
-      "uuid": "string",
-      "object": "string",
-      "type": "charge",
-      "origin": "carryforward_credit",
-      "state": "open",
-      "account": {
-        "id": "string",
-        "object": "string",
-        "code": "string",
-        "email": "user@example.com",
-        "first_name": "string",
-        "last_name": "string",
-        "company": "string",
-        "parent_account_id": "string",
-        "bill_to": "parent",
-        "dunning_campaign_id": "string"
-      },
-      "billing_info_id": "string",
-      "subscription_ids": [
-        "string"
-      ],
-      "previous_invoice_id": "string",
-      "number": "string",
-      "collection_method": "automatic",
-      "po_number": "string",
-      "net_terms": 0,
-      "net_terms_type": "net",
-      "address": {
-        "name_on_account": "string",
-        "company": "string",
-        "phone": "string",
-        "street1": "string",
-        "street2": "string",
-        "city": "string",
-        "region": "string",
-        "postal_code": "string",
-        "country": "string",
-        "geo_code": "string",
-        "first_name": "string",
-        "last_name": "string"
-      },
-      "shipping_address": {
-        "id": "string",
-        "object": "string",
-        "account_id": "string",
-        "nickname": "string",
-        "first_name": "string",
-        "last_name": "string",
-        "company": "string",
-        "email": "string",
-        "vat_number": "string",
-        "phone": "string",
-        "street1": "string",
-        "street2": "string",
-        "city": "string",
-        "region": "string",
-        "postal_code": "string",
-        "country": "string",
-        "geo_code": "string",
-        "created_at": "2019-08-24T14:15:22Z",
-        "updated_at": "2019-08-24T14:15:22Z"
-      },
-      "currency": "str",
-      "discount": 0,
-      "subtotal": 0,
-      "subtotal_after_discount": 0,
-      "tax": 0,
-      "reference_only_currency_conversion": {
-        "currency": "str",
-        "subtotal_in_cents": 0,
-        "tax_in_cents": 0,
-        "rate": "string",
-        "source": "string",
-        "date": "2019-08-24"
-      },
-      "total": 0,
-      "refundable_amount": 0,
-      "paid": 0,
-      "balance": 0,
-      "tax_info": {
-        "type": "string",
-        "region": "string",
-        "rate": 0,
-        "tax_details": [
-          {
-            "type": "string",
-            "region": "string",
-            "rate": 0,
-            "tax": 0,
-            "name": "string",
-            "level": "string",
-            "billable": true
-          }
-        ]
-      },
-      "used_tax_service": true,
-      "vat_number": "string",
-      "vat_reverse_charge_notes": "string",
-      "terms_and_conditions": "string",
-      "customer_notes": "string",
-      "line_items": [
-        {
-          "id": "string",
-          "object": "string",
-          "uuid": "string",
-          "type": "charge",
-          "item_code": "string",
-          "item_id": "string",
-          "external_sku": "string",
-          "revenue_schedule_type": "at_invoice",
-          "state": "invoiced",
-          "legacy_category": "applied_credit",
-          "account": {
-            "id": "string",
-            "object": "string",
-            "code": "string",
-            "email": "user@example.com",
-            "first_name": "string",
-            "last_name": "string",
-            "company": "string",
-            "parent_account_id": "string",
-            "bill_to": "parent",
-            "dunning_campaign_id": "string"
-          },
-          "bill_for_account_id": "string",
-          "subscription_id": "string",
-          "plan_id": "string",
-          "plan_code": "string",
-          "add_on_id": "string",
-          "add_on_code": "string",
-          "invoice_id": "string",
-          "invoice_number": "string",
-          "previous_line_item_id": "string",
-          "original_line_item_invoice_id": "string",
-          "origin": "add_on",
-          "accounting_code": "string",
-          "product_code": "string",
-          "credit_reason_code": "general",
-          "currency": "str",
-          "amount": 0,
-          "description": "string",
-          "quantity": 1,
-          "quantity_decimal": "string",
-          "unit_amount": 0,
-          "unit_amount_decimal": "string",
-          "tax_inclusive": true,
-          "subtotal": 0,
-          "discount": 0,
-          "liability_gl_account_code": "string",
-          "revenue_gl_account_code": "string",
-          "performance_obligation_id": "string",
-          "tax": 0,
-          "taxable": true,
-          "tax_exempt": true,
-          "avalara_transaction_type": 0,
-          "avalara_service_type": 0,
-          "vertex_transaction_type": "sale",
-          "tax_code": "string",
-          "harmonized_system_code": "string",
-          "tax_info": {
-            "type": "string",
-            "region": "string",
-            "rate": 0,
-            "tax_details": [
-              {}
-            ]
-          },
-          "origin_tax_address_source": "origin",
-          "destination_tax_address_source": "destination",
-          "proration_rate": 0,
-          "refund": true,
-          "refunded_quantity": 0,
-          "refunded_quantity_decimal": "string",
-          "credit_applied": 0,
-          "shipping_address": {
-            "id": "string",
-            "object": "string",
-            "account_id": "string",
-            "nickname": "string",
-            "first_name": "string",
-            "last_name": "string",
-            "company": "string",
-            "email": "string",
-            "vat_number": "string",
-            "phone": "string",
-            "street1": "string",
-            "street2": "string",
-            "city": "string",
-            "region": "string",
-            "postal_code": "string",
-            "country": "string",
-            "geo_code": "string",
-            "created_at": "2019-08-24T14:15:22Z",
-            "updated_at": "2019-08-24T14:15:22Z"
-          },
-          "start_date": "2019-08-24T14:15:22Z",
-          "end_date": "2019-08-24T14:15:22Z",
-          "custom_fields": [
-            {
-              "name": "string",
-              "value": "string",
-              "source_record_type": "account",
-              "source_record_id": "string"
-            }
-          ],
-          "created_at": "2019-08-24T14:15:22Z",
-          "updated_at": "2019-08-24T14:15:22Z"
-        }
-      ],
-      "has_more_line_items": true,
-      "transactions": [
-        {
-          "id": "string",
-          "object": "string",
-          "uuid": "string",
-          "original_transaction_id": "string",
-          "account": {
-            "id": "string",
-            "object": "string",
-            "code": "string",
-            "email": "user@example.com",
-            "first_name": "string",
-            "last_name": "string",
-            "company": "string",
-            "parent_account_id": "string",
-            "bill_to": "parent",
-            "dunning_campaign_id": "string"
-          },
-          "initiator": "customer",
-          "invoice": {
-            "id": "string",
-            "object": "string",
-            "number": "string",
-            "business_entity_id": "string",
-            "type": "charge",
-            "state": "open"
-          },
-          "merchant_reason_code": "none",
-          "voided_by_invoice": {
-            "id": "string",
-            "object": "string",
-            "number": "string",
-            "business_entity_id": "string",
-            "type": "charge",
-            "state": "open"
-          },
-          "subscription_ids": [
-            "string"
-          ],
-          "type": "authorization",
-          "origin": "api",
-          "currency": "str",
-          "amount": 0,
-          "status": "chargeback",
-          "success": true,
-          "backup_payment_method_used": true,
-          "refunded": true,
-          "billing_address": {
-            "first_name": "string",
-            "last_name": "string",
-            "phone": "string",
-            "street1": "string",
-            "street2": "string",
-            "city": "string",
-            "region": "string",
-            "postal_code": "string",
-            "country": "string",
-            "geo_code": "string"
-          },
-          "collection_method": "automatic",
-          "payment_method": {
-            "object": "acss",
-            "card_type": "American Express",
-            "first_six": "string",
-            "last_four": "stri",
-            "last_two": "st",
-            "exp_month": 0,
-            "exp_year": 0,
-            "gateway_token": "string",
-            "issuing_country": "string",
-            "funding_source": "credit",
-            "gateway_code": "string",
-            "gateway_attributes": {
-              "account_reference": "string"
-            },
-            "card_network_preference": "Bancontact",
-            "billing_agreement_id": "string",
-            "name_on_account": "string",
-            "account_type": "checking",
-            "routing_number": "string",
-            "routing_number_bank": "string",
-            "username": "string"
-          },
-          "payment_gateway_references": [
-            {
-              "token": "string",
-              "reference_type": "stripe_confirmation_token"
-            }
-          ],
-          "ip_address_v4": "string",
-          "ip_address_country": "string",
-          "status_code": "string",
-          "status_message": "string",
-          "customer_message": "string",
-          "customer_message_locale": "string",
-          "payment_gateway": {
-            "id": "string",
-            "object": "string",
-            "type": "string",
-            "name": "string"
-          },
-          "gateway_message": "string",
-          "gateway_reference": "string",
-          "gateway_approval_code": "string",
-          "gateway_response_code": "string",
-          "gateway_response_time": 0,
-          "gateway_response_values": {},
-          "cvv_check": "D",
-          "avs_check": "A",
-          "created_at": "2019-08-24T14:15:22Z",
-          "updated_at": "2019-08-24T14:15:22Z",
-          "voided_at": "2019-08-24T14:15:22Z",
-          "collected_at": "2019-08-24T14:15:22Z",
-          "action_result": {},
-          "vat_number": "string",
-          "fraud_info": {
-            "object": "string",
-            "score": 1,
-            "decision": "approve",
-            "reference": "string",
-            "risk_rules_triggered": [
-              {}
-            ]
-          },
-          "next_action": {
-            "type": "qr_code",
-            "value": "string"
-          }
-        }
-      ],
-      "credit_payments": [
-        {
-          "id": "string",
-          "object": "string",
-          "uuid": "string",
-          "action": "payment",
-          "account": {
-            "id": "string",
-            "object": "string",
-            "code": "string",
-            "email": "user@example.com",
-            "first_name": "string",
-            "last_name": "string",
-            "company": "string",
-            "parent_account_id": "string",
-            "bill_to": "parent",
-            "dunning_campaign_id": "string"
-          },
-          "applied_to_invoice": {
-            "id": "string",
-            "object": "string",
-            "number": "string",
-            "business_entity_id": "string",
-            "type": "charge",
-            "state": "open"
-          },
-          "original_invoice": {
-            "id": "string",
-            "object": "string",
-            "number": "string",
-            "business_entity_id": "string",
-            "type": "charge",
-            "state": "open"
-          },
-          "currency": "str",
-          "amount": 0,
-          "original_credit_payment_id": "string",
-          "refund_transaction": {
-            "id": "string",
-            "object": "string",
-            "uuid": "string",
-            "original_transaction_id": "string",
-            "account": {
-              "id": "string",
-              "object": "string",
-              "code": "string",
-              "email": "user@example.com",
-              "first_name": "string",
-              "last_name": "string",
-              "company": "string",
-              "parent_account_id": "string",
-              "bill_to": "parent",
-              "dunning_campaign_id": "string"
-            },
-            "initiator": "customer",
-            "invoice": {
-              "id": "string",
-              "object": "string",
-              "number": "string",
-              "business_entity_id": "string",
-              "type": "charge",
-              "state": "open"
-            },
-            "merchant_reason_code": "none",
-            "voided_by_invoice": {
-              "id": "string",
-              "object": "string",
-              "number": "string",
-              "business_entity_id": "string",
-              "type": "charge",
-              "state": "open"
-            },
-            "subscription_ids": [
-              "string"
-            ],
-            "type": "authorization",
-            "origin": "api",
-            "currency": "str",
-            "amount": 0,
-            "status": "chargeback",
-            "success": true,
-            "backup_payment_method_used": true,
-            "refunded": true,
-            "billing_address": {
-              "first_name": "string",
-              "last_name": "string",
-              "phone": "string",
-              "street1": "string",
-              "street2": "string",
-              "city": "string",
-              "region": "string",
-              "postal_code": "string",
-              "country": "string",
-              "geo_code": "string"
-            },
-            "collection_method": "automatic",
-            "payment_method": {
-              "object": "acss",
-              "card_type": "American Express",
-              "first_six": "string",
-              "last_four": "stri",
-              "last_two": "st",
-              "exp_month": 0,
-              "exp_year": 0,
-              "gateway_token": "string",
-              "issuing_country": "string",
-              "funding_source": "credit",
-              "gateway_code": "string",
-              "gateway_attributes": {},
-              "card_network_preference": "Bancontact",
-              "billing_agreement_id": "string",
-              "name_on_account": "string",
-              "account_type": "checking",
-              "routing_number": "string",
-              "routing_number_bank": "string",
-              "username": "string"
-            },
-            "payment_gateway_references": [
-              {}
-            ],
-            "ip_address_v4": "string",
-            "ip_address_country": "string",
-            "status_code": "string",
-            "status_message": "string",
-            "customer_message": "string",
-            "customer_message_locale": "string",
-            "payment_gateway": {
-              "id": "string",
-              "object": "string",
-              "type": "string",
-              "name": "string"
-            },
-            "gateway_message": "string",
-            "gateway_reference": "string",
-            "gateway_approval_code": "string",
-            "gateway_response_code": "string",
-            "gateway_response_time": 0,
-            "gateway_response_values": {},
-            "cvv_check": "D",
-            "avs_check": "A",
-            "created_at": "2019-08-24T14:15:22Z",
-            "updated_at": "2019-08-24T14:15:22Z",
-            "voided_at": "2019-08-24T14:15:22Z",
-            "collected_at": "2019-08-24T14:15:22Z",
-            "action_result": {},
-            "vat_number": "string",
-            "fraud_info": {
-              "object": "string",
-              "score": 1,
-              "decision": "approve",
-              "reference": "string",
-              "risk_rules_triggered": [
-                null
-              ]
-            },
-            "next_action": {
-              "type": "qr_code",
-              "value": "string"
-            }
-          },
-          "created_at": "2019-08-24T14:15:22Z",
-          "updated_at": "2019-08-24T14:15:22Z",
-          "voided_at": "2019-08-24T14:15:22Z"
-        }
-      ],
-      "created_at": "2019-08-24T14:15:22Z",
-      "updated_at": "2019-08-24T14:15:22Z",
-      "due_at": "2019-08-24T14:15:22Z",
-      "closed_at": "2019-08-24T14:15:22Z",
-      "dunning_campaign_id": "string",
-      "business_entity_id": "string",
-      "custom_fields": [
-        {
-          "name": "string",
-          "value": "string",
-          "source_record_type": "account",
-          "source_record_id": "string"
-        }
-      ]
-    }
-  ],
-  "verification_transactions": [
-    {
-      "id": "string",
-      "object": "string",
-      "uuid": "string",
-      "original_transaction_id": "string",
-      "account": {
-        "id": "string",
-        "object": "string",
-        "code": "string",
-        "email": "user@example.com",
-        "first_name": "string",
-        "last_name": "string",
-        "company": "string",
-        "parent_account_id": "string",
-        "bill_to": "parent",
-        "dunning_campaign_id": "string"
-      },
-      "initiator": "customer",
-      "invoice": {
-        "id": "string",
-        "object": "string",
-        "number": "string",
-        "business_entity_id": "string",
-        "type": "charge",
-        "state": "open"
-      },
-      "merchant_reason_code": "none",
-      "voided_by_invoice": {
-        "id": "string",
-        "object": "string",
-        "number": "string",
-        "business_entity_id": "string",
-        "type": "charge",
-        "state": "open"
-      },
-      "subscription_ids": [
-        "string"
-      ],
-      "type": "authorization",
-      "origin": "api",
-      "currency": "str",
-      "amount": 0,
-      "status": "chargeback",
-      "success": true,
-      "backup_payment_method_used": true,
-      "refunded": true,
-      "billing_address": {
-        "first_name": "string",
-        "last_name": "string",
-        "phone": "string",
-        "street1": "string",
-        "street2": "string",
-        "city": "string",
-        "region": "string",
-        "postal_code": "string",
-        "country": "string",
-        "geo_code": "string"
-      },
-      "collection_method": "automatic",
-      "payment_method": {
-        "object": "acss",
-        "card_type": "American Express",
-        "first_six": "string",
-        "last_four": "stri",
-        "last_two": "st",
-        "exp_month": 0,
-        "exp_year": 0,
-        "gateway_token": "string",
-        "issuing_country": "string",
-        "funding_source": "credit",
-        "gateway_code": "string",
-        "gateway_attributes": {
-          "account_reference": "string"
-        },
-        "card_network_preference": "Bancontact",
-        "billing_agreement_id": "string",
-        "name_on_account": "string",
-        "account_type": "checking",
-        "routing_number": "string",
-        "routing_number_bank": "string",
-        "username": "string"
-      },
-      "payment_gateway_references": [
-        {
-          "token": "string",
-          "reference_type": "stripe_confirmation_token"
-        }
-      ],
-      "ip_address_v4": "string",
-      "ip_address_country": "string",
-      "status_code": "string",
-      "status_message": "string",
-      "customer_message": "string",
-      "customer_message_locale": "string",
-      "payment_gateway": {
-        "id": "string",
-        "object": "string",
-        "type": "string",
-        "name": "string"
-      },
-      "gateway_message": "string",
-      "gateway_reference": "string",
-      "gateway_approval_code": "string",
-      "gateway_response_code": "string",
-      "gateway_response_time": 0,
-      "gateway_response_values": {},
-      "cvv_check": "D",
-      "avs_check": "A",
-      "created_at": "2019-08-24T14:15:22Z",
-      "updated_at": "2019-08-24T14:15:22Z",
-      "voided_at": "2019-08-24T14:15:22Z",
-      "collected_at": "2019-08-24T14:15:22Z",
-      "action_result": {},
-      "vat_number": "string",
-      "fraud_info": {
-        "object": "string",
-        "score": 1,
-        "decision": "approve",
-        "reference": "string",
-        "risk_rules_triggered": [
-          {
-            "code": "string",
-            "message": "string"
-          }
-        ]
-      },
-      "next_action": {
-        "type": "qr_code",
-        "value": "string"
-      }
-    }
-  ]
+    "created_at": "2019-08-24T14:15:22Z",
+    "updated_at": "2019-08-24T14:15:22Z"
+  }
 }
 ```
-
-The `attempt_next_collection_at` field shows when Recurly will make its first retry attempt.
 
 ## Stopping retries
 
 You can stop all future retry attempts on an invoice at any time while it's in a `past_due` state.
 
-### Mark as paid
-
-Use when payment was collected outside of Recurly:
+**Mark as paid** — use when payment was collected outside of Recurly:
 
 ```
 PUT https://v3.recurly.com/invoices/{invoice_id}/mark_successful
 ```
 
-### Mark as failed
-
-Use when you want to abandon collection:
+**Mark as failed** — use when you want to abandon collection:
 
 ```
 PUT https://v3.recurly.com/invoices/{invoice_id}/mark_failed
@@ -1422,26 +326,28 @@ When the Wallet feature is enabled, you can designate payment methods as primary
 
 # FAQs
 
-**Do I need Recurly Subscriptions to use Recurly Recover?**
+<Accordion title="Do I need Recurly Subscriptions to use Recurly Recover?">
+  No. Recurly Recover is designed as a standalone retry engine for merchants using other billing platforms. Combining Recurly Recover with Recurly Subscriptions is not recommended.
+</Accordion>
 
-No. Recurly Recover is designed as a standalone retry engine for merchants using other billing platforms. We don't recommend combining Recurly Recover with Recurly Subscriptions at this time.
+<Accordion title="What happens when I submit a past-due invoice via the API?">
+  Recurly creates an account (without a subscription), a charge invoice, and one or more failed transactions. Billing information is stored and Recurly automatically calculates the next collection attempt date based on your submission.
+</Accordion>
 
-**What happens when I submit a past-due invoice via the API?**
+<Accordion title="Can I stop retries on a past-due invoice?">
+  Yes. While an invoice is in a past-due state, you can cancel all future collection attempts by marking the invoice as failed or paid using the Recurly Invoice API.
+</Accordion>
 
-Recurly creates an account (without a subscription), a charge invoice, and one or more failed transactions. Your billing information is stored, and Recurly automatically calculates the next collection attempt date based on your submission.
+<Accordion title="What happens when the retry window closes without a successful payment?">
+  The invoice is marked as failed and a webhook event fires. No further retries are made. You can then handle the outcome in your system — for example, suspending access or triggering a win-back campaign.
+</Accordion>
 
-**Can I stop retries on a past-due invoice?**
+<Accordion title="What if a customer provides a new payment method outside of Recurly?">
+  Mark the in-flight Recurly invoice as successful (if payment was collected) or as failed (to stop the current attempt), then submit a new recovery request with the updated payment method token.
+</Accordion>
 
-Yes. While an invoice is in a past due state, you can cancel all future collection attempts by marking the invoice as failed or paid using the Recurly Invoice API.
+<Accordion title="Can I use Recurly Recover with existing Recurly Subscriptions customers?">
+  Recurly Recover is not intended to work alongside Recurly Subscriptions — payment recovery is already included in your Recurly Subscriptions plan. For questions about which solution fits your needs, contact Recurly Sales or email <a href="mailto:support@recurly.com">support@recurly.com</a>.
+</Accordion>
 
-**What happens when the retry window closes without a successful payment?**
-
-The invoice is marked as failed and a webhook event fires. No further retries are made. You can then handle the outcome in your system — for example, suspending access or triggering a win-back campaign.
-
-**What if a customer provides a new payment method outside of Recurly?**
-
-Mark the in-flight Recurly invoice as successful (if payment was collected) or as failed (to stop the current attempt), then submit a new recovery request with the updated payment method token.
-
-**Can I use Recurly Recover with existing Recurly Subscriptions customers?**
-
-Recurly Recover is not intended to work alongside Recurly Subscriptions. Payment recovery is already included in your Recurly Subscriptions plan. For questions about which solution is right for you, contact Recurly Sales or reach out to [support@recurly.com](mailto:support@recurly.com).
+<br />
