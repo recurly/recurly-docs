@@ -1,8 +1,8 @@
 - fixed-recurring-pricing
 - ramp-pricing
 - one-time-pricing
-- decimal-pricing
 - usage-based-billing
+- decimal-pricing
 - quantity-based-pricing
 - hybrid-pricing
 - prepaid-account-balance
