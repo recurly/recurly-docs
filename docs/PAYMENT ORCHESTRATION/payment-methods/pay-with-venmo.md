@@ -1,9 +1,8 @@
 ---
-title: Venmo
+title: Venmo™
 excerpt: >-
-  Integrate Venmo™, the favored payment platform of the next-gen subscriber
-  base, into your Recurly payment gateway and offer a frictionless subscription
-  payment experience leveraging a platform with over 52 million active users.
+  Accept Venmo™ payments on Recurly via Braintree and Recurly.js — supporting
+  USD subscription sign-ups with QR code and desktop web authentication.
 deprecated: false
 hidden: false
 metadata:
@@ -13,68 +12,75 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Venmo™ is a US-based digital wallet that lets customers pay using their Venmo account and balance. Recurly supports Venmo via Braintree and Recurly.js, with synchronous transactions, multi-use funding sources, and two authentication methods: QR code and desktop web.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#configuration"><span class="rp-toc-num">3</span>Configuration</a>
+  </div>
+</div>
 
-### Required plan
+### Prerequisites
 
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-### Prerequisites & supported gateways
-
-* A connection with the [Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd#/) gateway.
-* Integration via Recurly.JS.
-* Your site must support USD transactions, as it is the only currency supported.
+<ul class="rp-list">
+  <li>A <a href="https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd#/" target="_blank">Braintree</a> gateway connection.</li>
+  <li>Integration via Recurly.js.</li>
+  <li>USD currency support on your site — Venmo only supports USD.</li>
+</ul>
 
 ### Limitations
 
-* Only supports USD as the transaction currency.
-* The integration process involves setting up with Braintree and Recurly.js, and requires technical know-how.
+<ul class="rp-list">
+  <li>USD is the only supported transaction currency.</li>
+  <li>Integration requires Braintree and Recurly.js setup.</li>
+</ul>
 
-# Description
+# Definition
 
-Venmo™ stands at the forefront of payment technology, catering to a massive user base with over 159 billion in annual transactions. It's not just a payment platform; it's a social experience, with emojis playing a fun part in the transaction narratives. With new enhancements, Venmo™ smoothly integrates into your payment method assortment, allowing for a seamless subscription payment process.
+<div class="rp-definition">Venmo™ is a digital payment platform that processes USD transactions through Braintree. It supports purchases, refunds, and manual captures, with Recurly.js handling tokenization for V2 and V3 Recurly endpoints. Venmo supports multi-use funding sources, allowing customers to change their payment source while keeping an active subscription without resubscribing. See the <a href="https://developers.recurly.com/reference/recurly-js/#venmo" target="_blank">Recurly.js Venmo documentation</a> for integration details.</div>
 
-#### Supported Features
+# Key details
 
-* Synchronous transactions: Venmo™ supports synchronous payment methods, including purchases, refunds, and manual captures.
+<div class="rp-card">
 
-* Token utilization: Utilize Venmo Recurly.js tokens to execute transactions via V2 or V3 Recurly endpoints.
+### Use cases
 
-* Platform support: Facilitates both mobile and desktop transaction flows.
+**Subscriptions** — Venmo makes subscription sign-up straightforward for customers who prefer paying with their Venmo balance.
 
-* Multi-Use Funding Sources: This enables consumers to change their funding source while the subscription is active without having to resubscribe.
+**Fast checkout** — Customers on mobile and desktop can complete purchases using a familiar app-based payment experience.
 
-## Use cases
+</div>
 
-* Easy subscriptions: Venmo™ makes subscriptions easy, attracting a younger, tech-savvy demographic.
-* Quick transactions: With Venmo™, offer a speedy checkout process, both on mobile and desktop platforms.
+## Supported features
 
-## Checkout flow
+- **Synchronous transactions** — Supports purchases, refunds, and manual captures.
+- **Recurly.js token support** — Use Venmo Recurly.js tokens to process transactions via V2 or V3 Recurly endpoints.
+- **Mobile and desktop support** — Supports transaction flows on both mobile and desktop platforms.
+- **Multi-use funding sources** — Customers can change their Venmo funding source while a subscription is active, without needing to resubscribe.
 
-#### Implementation with Recurly.JS
+# Configuration
 
-To facilitate the Venmo™ payment method on your platform, integrate it using Recurly.JS. Find the developer documentation [here](https://developers.recurly.com/reference/recurly-js/#venmo) to get started with the integration.
+## Recurly.js integration
 
-There are two authentication methods for Venmo using R.js: QR Code Authentication, which was initially rolled out with R.js, and the Desktop Web Authentication method, which launches a web modal to allow users to log in.
+Integrate Venmo using Recurly.js. See the <a href="https://developers.recurly.com/reference/recurly-js/#venmo" target="_blank">Recurly.js Venmo documentation</a> to get started.
 
-Per Braintree’s own documentation, they highly recommend using the Desktop Web Authentication, which requires an additional argument passed in the R.js instantiation for Venmo.
+Recurly.js supports two Venmo authentication methods:
+
+- **QR Code Authentication** — The original authentication method, where customers scan a QR code to log in.
+- **Desktop Web Authentication** — Launches a web modal for customers to log in. Braintree recommends this method — it requires an additional argument in the Recurly.js Venmo instantiation.
 
 ## Recurly settings
 
-#### Currency and gateway setup
+### Currency and gateway
 
-Ensure that your site is set up to handle USD transactions, as it is the only supported currency for Venmo™. In addition, verify that the Braintree gateway is active; no further configurations are needed on the Recurly side.
+Confirm your site is configured for USD transactions and that the Braintree gateway is active. No additional Recurly-side configuration is required.
 
-#### Feature Flag Enablement
+### Address feature flags
 
-In order to take advantage of addresses provided directly from the Venmo SDK when using R.js, talk to Support about enabling two feature flags on your site: Save Braintree Venmo Shipping and Billing Address. With this setting enabled, you will not be required to provide an Address via V2 or V3 APIs, however, if an address _is_ provided via API, that data will override any Venmo SDK-sourced information.
+To receive billing and shipping addresses directly from the Venmo SDK via Recurly.js, contact Recurly Support to enable the **Save Braintree Venmo Shipping and Billing Address** feature flags. With these enabled, you are not required to provide an address via the V2 or V3 API — however, if an address is provided via API, it will override any address sourced from the Venmo SDK.
 
-## Gateway settings
+## Braintree settings
 
-#### Configuring Venmo™ on Braintree
-
-Before initiating Venmo™ payments, you must set the method up through your Braintree account.
-
-Additionally, for Venmo payments, In order to take advantage of User Billing and Shipping Addresses access through R.js, you will need a setting enabled in your Braintree account to supply Enriched Data to Recurly.
-
-Detailed guidance can be found [here](https://articles.braintreepayments.com/guides/payment-methods/venmo?_ga=1.96363612.1166429227.1614967182#testing).
+Before accepting Venmo payments, enable Venmo in your Braintree account. To receive user billing and shipping addresses through Recurly.js, you also need Braintree to enable **Enriched Data** access for your account. See <a href="https://articles.braintreepayments.com/guides/payment-methods/venmo?_ga=1.96363612.1166429227.1614967182#testing" target="_blank">Braintree's Venmo documentation</a> for setup and testing details.
