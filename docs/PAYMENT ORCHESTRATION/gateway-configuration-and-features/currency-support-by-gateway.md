@@ -1,10 +1,9 @@
 ---
 title: Currency support
 excerpt: >-
-  The Currency Support feature in Recurly is designed to help merchants manage
-  and process transactions in multiple currencies. This capability ensures that
-  businesses can accommodate various local currencies, enhancing their ability
-  to serve a global customer base.
+  An overview of currencies supported by Recurly — including gateway-specific
+  currency availability, ISO standard currencies, and zero decimal currency
+  handling.
 deprecated: false
 hidden: false
 metadata:
@@ -14,40 +13,48 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Recurly supports a wide range of currencies to help merchants accept payments in customers' local currency. The specific currencies available depend on your payment gateway — some gateways support all Recurly currencies, while others have a more limited set.</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#iso-standard-currencies"><span class="rp-toc-num">3</span>ISO standard currencies</a>
+    <a class="rp-toc-pill" href="#zero-decimal-currencies"><span class="rp-toc-num">4</span>Zero decimal currencies</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Access to one or more supported payment gateways.
-* Setup and configuration of the desired payment gateway(s) within Recurly.
+<ul class="rp-list">
+  <li>Access to one or more supported payment gateways.</li>
+  <li>Gateway(s) set up and configured in Recurly.</li>
+</ul>
 
 ### Limitations
 
-* The range of supported currencies is dependent on the selected payment gateway(s).
+<ul class="rp-list">
+  <li>Supported currencies depend on the payment gateway(s) you have configured.</li>
+</ul>
 
 # Definition
 
-Recurly’s Currency Support feature provides merchants with the flexibility to manage transactions in a wide range of currencies. This capability is essential for businesses that operate in multiple countries or target customers in different regions, allowing them to offer prices in the local currency, which can improve customer satisfaction and conversion rates.
+<div class="rp-definition">Recurly's currency support lets merchants manage transactions in a wide range of currencies — essential for businesses operating across multiple countries or targeting customers in different regions. Offering prices in local currency can improve customer satisfaction and conversion rates.</div>
 
-> **Note:** Not all gateways support all currencies. For a specific gateway's supported currencies, check our dedicated gateway pages. If "All available" is listed, the gateway supports all Recurly currencies listed below.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Not all gateways support all currencies. Check the individual gateway documentation for a specific gateway's supported currencies. If "All available" is listed, the gateway supports all Recurly currencies shown below.</div>
+</div>
+
+# Key details
 
 ## Gateways with full currency support
 
-These gateways allow you to accept payments in any currency within Recurly:
-
-* **[Adyen](adyen)**: Supports most currencies, with special handling for Icelandic Króna (ISK) and Chilean Peso (CLP). **Does not support Indonesian Rupiah (IDR) or Cape Verdean Escudo (CVE).**
-
-* **[Braintree](braintree-rd)**: Accepts every currency that PayPal supports—limited to PayPal’s own currency list.
-
-* **[Commerce Hub](commerce-hub)** by Fiserv: Supports all currencies.
-
-* **[Cybersource](cybersource)**: Supports all currencies.
-
-* **[FreedomPay](freedompay)**: Supports all currencies.
-
-* **[Stripe](stripe)**: Supports all currencies; when using Gateway Failover, ensure the currency is enabled in both Stripe and Recurly.
-
-* **[WorldPay Global E-Commerce](worldpaydlocal-latam-support)**: Seamless support for every currency. **Does not support Dominican Peso (DOP) or Nicaraguan Córdoba (NIO).**
+- **Adyen** \[TODO: add link] — Supports most currencies, with special handling for Icelandic Króna (ISK) and Chilean Peso (CLP). Does not support Indonesian Rupiah (IDR) or Cape Verdean Escudo (CVE).
+- **Braintree** \[TODO: add link] — Accepts every currency that PayPal supports, limited to PayPal's own currency list.
+- **Commerce Hub by Fiserv** \[TODO: add link] — Supports all currencies.
+- **CyberSource** \[TODO: add link] — Supports all currencies.
+- **FreedomPay** \[TODO: add link] — Supports all currencies.
+- **Stripe** \[TODO: add link] — Supports all currencies. When using Gateway Failover, confirm the currency is enabled in both Stripe and Recurly.
+- **Worldpay Global eCommerce** \[TODO: add link] — Supports all currencies. Does not support Dominican Peso (DOP) or Nicaraguan Córdoba (NIO).
 
 # ISO standard currencies
 
@@ -75,15 +82,15 @@ These gateways allow you to accept payments in any currency within Recurly:
 | CAD      | GEL | KYD   | PAB | SRD | YER   |
 | CHF      | GHS | KZT   | PEN | SVC | ZAR   |
 
-> **Note**: \*Zero decimal currencies supported by Recurly.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Currencies marked with an asterisk (*) are zero decimal currencies supported by Recurly.</div>
+</div>
 
-## Definition for zero decimal currencies
+# Zero decimal currencies
 
-Zero decimal currencies are those that do not require decimal places in their monetary value. These currencies are often used in regions where smaller units of currency are not commonly utilized in everyday transactions. Examples include the Japanese Yen (**JPY**), where prices are typically expressed as whole numbers without decimals.
+Zero decimal currencies do not use decimal places in their monetary values. These are common in regions where fractional currency units aren't used in everyday transactions. For example, Japanese Yen (JPY) prices are expressed as whole numbers — an item costs 1,000 JPY, not 1,000.00 JPY.
 
-#### Example with Japanese Yen (JPY)
-
-In Japan, prices are expressed in whole numbers without any decimal places. For instance, an item might be priced at 1,000 JPY rather than 1,000.00 JPY. This practice simplifies transactions and is a key characteristic of zero decimal currencies. When dealing with these currencies in Recurly, merchants should be mindful that the system will process amounts as whole numbers, without any fractional currency.
+When processing zero decimal currencies in Recurly, amounts are handled as whole numbers with no fractional component.
 
 ## Zero decimal currencies supported by Recurly
 
@@ -92,3 +99,5 @@ In Japan, prices are expressed in whole numbers without any decimal places. For 
 | **BIF**  | **CLP** | **DJF** | **GNF** | **JPY** | **KMF** |
 | **KRW**  | **PYG** | **RWF** | **UGX** | **VND** | **VUV** |
 | **XAF**  | **XOF** | **XPF** |         |         |         |
+
+<br />
