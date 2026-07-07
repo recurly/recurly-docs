@@ -19905,6 +19905,7 @@ components:
             - pix_automatico
             - mercadopago
             - klarna
+            - stripe_link
         card_type:
           description: Visa, MasterCard, American Express, Discover, JCB, etc.
           type: string
