@@ -1,89 +1,118 @@
 ---
 title: Static retries
+excerpt: >-
+  Understand Recurly's static retry logic for failed subscription payments —
+  including soft decline schedules, hard decline exceptions, gateway error
+  handling, manual collection, and APM-specific retry rules.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Recurly's static retry logic uses gateway signals — decline codes and merchant advice codes — to schedule retry attempts for failed renewal payments. It runs without machine learning and works alongside dunning campaigns to maximize payment recovery. For ML-driven optimization, see <a href="https://docs.recurly.com/recurly-subscriptions/docs/retry-logic#/" target="_blank">Intelligent Retries</a>.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#retry-logic"><span class="rp-toc-num">3</span>Retry logic</a>
+    <a class="rp-toc-pill" href="#manual-retry-and-forced-collection"><span class="rp-toc-num">4</span>Manual retry</a>
+    <a class="rp-toc-pill" href="#direct-debit-payments"><span class="rp-toc-num">5</span>Direct debit</a>
+    <a class="rp-toc-pill" href="#specialized-retry-strategies"><span class="rp-toc-num">6</span>Specialized retries</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* An active Recurly account in production mode.
-* Recurring credit card payment setup.
-* Access to the Recurly dashboard and configurations.
+<ul class="rp-list">
+  <li>An active Recurly account in production mode.</li>
+  <li>Recurring credit card payments configured.</li>
+  <li>Access to the Recurly dashboard and configuration settings.</li>
+</ul>
 
 ### Limitations
 
-* Not applicable for hard declines.
-* Retries will cease after 7 transaction declines, 20 total transaction attempts, or 60 days since the invoice creation unless dunning settings complete earlier.
+<ul class="rp-list">
+  <li>Not applicable for hard declines (see exceptions below).</li>
+  <li>Retries stop after 7 transaction declines, 20 total transaction attempts, or 60 days since invoice creation — whichever comes first, or earlier if dunning settings complete first.</li>
+</ul>
 
 # Definition
 
-Recurly's Static Retries does not use machine learning, but rather a specific set of criteria given signals from our gateway partners such as decline codes and merchant advice codes on renewals.
+<div class="rp-definition">Recurly's static retry logic uses gateway and regulatory signals — such as decline codes and merchant advice codes — to determine retry eligibility and schedule retry attempts for failed renewal transactions. It does not use machine learning. Static retry logic works alongside dunning campaigns, stopping when the retry limit is reached or dunning ends.</div>
 
 # Key benefits
 
-* **Reduced subscriber churn**: Minimizes disruptions and involuntary subscriber churn.
-* **Compliant logic**: Tailors retry schedules to maximize the opportunity of success.
-* **Comprehensive coverage**: Works alongside other revenue recovery strategies such as Dunning.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-user-check" aria-hidden="true"></i></div>
+    <strong>Reduced subscriber churn</strong>
+    <span>Minimizes payment-related disruptions that cause involuntary subscriber loss.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+    <strong>Compliant logic</strong>
+    <span>Retry schedules follow gateway and network compliance signals to maximize recovery while staying within regulatory limits.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+    <strong>Comprehensive coverage</strong>
+    <span>Works alongside Dunning and other revenue recovery strategies as part of a layered churn prevention approach.</span>
+  </div>
+</div>
 
-# Recurly's static retry logic
-
-Recurly's static retry logic uses gateway signals and regulatory compliance signals from the transaction to increase the chances of successful payments. This helps keep your customers' subscriptions active and reduces the chance of losing them due to payment issues.
-
-Our status retry logic does not use machine learning while also increasing the likelihood of successful transactions. If you are interested in further optimizations, see our documentation on [Intelligent Retries](https://docs.recurly.com/recurly-subscriptions/docs/retry-logic#/).
-
-# General retry guidelines
+# Retry logic
 
 ## Soft declines
 
-Soft declines, which occur for reasons like insufficient funds or temporary holds, are not final. Recurly's retry strategy uses gateway signals for retry eligibility (soft declines), and set criteria for retries using the same payment method. On a set schedule, the payment will retry until the static number of retries is exhausted or dunning ends, whichever comes first.
+Soft declines (insufficient funds, temporary holds, etc.) are not final. Recurly uses gateway signals to determine retry eligibility and schedules retries on a set cadence using the same payment method. Retries continue until the static retry count is exhausted or dunning ends — whichever comes first.
 
 ## Hard declines
 
-While hard declines typically aren't retried for compliance and regulatory reasons, there are exceptions:
+Hard declines are generally not retried for compliance and regulatory reasons. There are three exceptions:
 
-* **Exception A:** Immediate retry if Account Updater or the customer updates billing information.
-* **Exception B:** Change from hard to soft decline during dunning after billing information update.
-* **Exception C:** Manual forced collection outside the typical recurring schedule.
+- **Exception A** — Immediate retry if Account Updater or the customer updates billing information.
+- **Exception B** — A hard decline may change to a soft decline during dunning after a billing info update.
+- **Exception C** — A manual forced collection outside the typical recurring schedule.
 
-## Handling gateway payment errors
+## Gateway payment error retry schedules
 
-Different gateway errors have specific retry schedules:
-
-* **Try Again/Gateway Error:** Every 2 days.
-* **Issuer or Processor Unavailable:** Every 3 days.
-* **Communication/Configuration Error:** Initial retries up to 2 times, 4 hours apart, followed by 6 retries, 1 day apart, and finally retries through the end of the dunning cycle, 3 days apart.
+| Error type                          | Retry schedule                                                                                                         |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Try Again / Gateway Error           | Every 2 days                                                                                                           |
+| Issuer or Processor Unavailable     | Every 3 days                                                                                                           |
+| Communication / Configuration Error | Up to 2 retries, 4 hours apart → then 6 retries, 1 day apart → then retries through end of dunning cycle, 3 days apart |
 
 # Manual retry and forced collection
 
-For more control, you can initiate a forced collection attempt by clicking the **Attempt Collection Now** button on a pending or past due invoice's details page. However, excessive manual retries might exhaust the allowed transaction count for automated retries. This function is also available via API. Talk to your gateway account manager or acquirer about this process so that you're well informed about Network retry abuse fees and other risks associated with retrying hard declines.
+To manually trigger a collection attempt, click **Attempt Collection Now** on a pending or past-due invoice's details page. This is also available via the Recurly API.
 
-<Image alt="Force Collection" border={false} src="https://files.readme.io/50e0c55-9c0e247-forcecollect.png" title="9c0e247-forcecollect.png" />
+
+<Image src="https://files.readme.io/50e0c55-9c0e247-forcecollect.png" align="center" width="35%" border={true} />
+
+
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Excessive manual retries can exhaust the allowed transaction count for automated retries. Contact your gateway account manager or acquirer about network retry abuse fees and other risks before manually retrying hard declines.</div>
+</div>
 
 # Direct debit payments
 
-Recurly currently supports automatic payment retries for most direct debit methods such as ACH and SEPA, when the response from the bank is due to insufficient funds, or an applicable response code. For situations that may require a retry, such as an invoice correction or update, manual retries are possible and can be executed through the Admin Console or via Recurly’s APIs.
+Recurly supports automatic retries for most direct debit methods (ACH, SEPA, etc.) when the bank response indicates insufficient funds or an applicable return code. Manual retries are also available via the Admin Console or Recurly API for situations such as invoice corrections or updates.
 
-Recurly has implemented a feature to automatically retry Direct Debit payments. Read more on the [Direct Debit Retries](https://docs.recurly.com/docs/sepa-retries) page.
+See the <a href="https://docs.recurly.com/docs/sepa-retries" target="_blank">Direct Debit Retries documentation</a> for full details on automatic retry behavior.
 
-# Specialized Retry strategies
+# Specialized retry strategies
 
-Recurly supports specialized payment retries for certain APMs where necessary, including UPI AutoPay, Pix Automatico, and Mercado Pago. There is no configuration for these payment methods to initiate retries, and are available automatically.
+Recurly supports automatic retries for UPI AutoPay, Pix Automatico, and Mercado Pago. No configuration is required — retries are available automatically for these payment methods.
 
 ## UPI AutoPay
 
-[UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay) retries must be completed on the same day as the initial failure, and will reattempt up to **2 times** in the hours after the initial failure. After 2 attempts, the invoice will be marked failed and the subscription will be handled based on the dunning settings in your configuration. UPI AutoPay does not support manual force collections.
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay" target="_blank">UPI AutoPay</a> retries must be completed on the same day as the initial failure. Recurly reattempts up to **2 times** in the hours following the initial failure. After 2 attempts, the invoice is marked failed and the subscription is handled per your dunning settings. Manual force collections are not supported.
 
 ## Pix Automatico
 
-[Pix Automatico](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico) retries must be completed within the same billing period as the initial failure, and will reattempt up to **1-3 times** in the days after the initial failure. Since Pix Automatico retries must complete within the same billing period as the initial renewal transaction, for **shorter billing periods** such as weekly, only one retry may attempt. For billing periods longer than one week, the full retry schedule should complete properly. Pix Automatico does not support manual force collections.
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico" target="_blank">Pix Automatico</a> retries must complete within the same billing period as the initial failure, with up to **1–3 reattempts** in the days following. For shorter billing periods (e.g., weekly), only one retry may occur. For billing periods longer than one week, the full retry schedule applies. Manual force collections are not supported.
 
 ## Mercado Pago
 
-[Mercado Pago](https://docs.recurly.com/recurly-subscriptions/docs/mercadopago) retries will reattempt up to **3 times**after the initial failure with 24 hour waiting period between each failure, resulting in a single attempt per day after initial failure. Mercado Pago does not support manual force collections.
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/mercadopago" target="_blank">Mercado Pago</a> retries reattempt up to **3 times** after the initial failure, with a 24-hour waiting period between each attempt (one attempt per day). Manual force collections are not supported.
