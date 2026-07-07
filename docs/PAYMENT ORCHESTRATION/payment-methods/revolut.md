@@ -1,58 +1,64 @@
 ---
 title: Revolut
 excerpt: >-
-  Revolut Pay, developed by Revolut, a global finance app, is a digital wallet
-  payment method. Revolut Pay uses the customer’s stored balance or cards to
-  fund the payment, and offers the option for non-Revolut customers to save
-  their details after their first purchase.
+  Accept Revolut Pay on Recurly via Stripe Payment Elements — letting UK and EU
+  customers pay using their Revolut balance or saved cards with app-based
+  authentication.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Revolut Pay is a digital wallet that lets customers pay using their Revolut balance or saved cards, with authentication via the Revolut app. It's available for UK and EU merchants via Stripe Payment Elements (Third Party Checkout), supporting GBP and EUR transactions.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">3</span>FAQs</a>
+  </div>
+</div>
 
-### Required plan
+### Prerequisites
 
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-### Use cases
-
-* Seamless subscriptions: Revolut enables effortless sign-ups for UK and EU merchants to offer subscriptions to UK/EU customers, by allowing customers to pay merchants by confirming their payment with the Revolut app.
-* Efficient checkout: Revolut ensures a quick and secure checkout process, catering to both mobile and desktop users.
-
-### Prerequisites & supported gateways
-
-* A connection with Stripe gateway if your integration is via Stripe Elements.
-* Your site must support transactions in GBP or EUR.
+<ul class="rp-list">
+  <li>A Stripe gateway connection.</li>
+  <li>GBP or EUR currency support on your site.</li>
+</ul>
 
 ### Limitations
 
-* Supports transactions in GBP currency for UK-based Merchants, and EUR currency for EU-based Merchants.
-* The integration process requires setting up with Stripe and Stripe Payment Elements, as well as Recurly.js, and demands technical proficiency.
+<ul class="rp-list">
+  <li>GBP is supported for UK-based merchants; EUR is supported for EU-based merchants.</li>
+  <li>Integration requires Stripe + Stripe Payment Elements and Recurly.js.</li>
+</ul>
 
 # Definition
 
-Revolut Pay, developed by Revolut, a global finance app, is a digital wallet payment method. Revolut Pay uses the customer’s stored balance or cards to fund the payment, and offers the option for non-Revolut customers to save their details after their first purchase.
-
-Revolut is supported via Third Party Checkout through Stripe Payment Elements only.
+<div class="rp-definition">Revolut Pay is a digital wallet payment method developed by Revolut. Customers pay using their stored Revolut balance or linked cards, and authenticate in the Revolut app. Non-Revolut customers can save their details after their first purchase. Revolut Pay is supported exclusively via Third Party Checkout through Stripe Payment Elements.</div>
 
 # Key details
 
-### Supported features
+<div class="rp-card">
 
-* When customers select Revolut Pay as their payment method, they are redirected to Revolut Pay’s website, where customers must authenticate with their account details or checkout as a first time user. After authenticating, Revolut Pay redirects customers back to your website.
+### Use cases
 
-* Stripe Elements ctoken utilization: Use Stripe Payment Element, and V3 API to support this payment method.
+**Subscriptions** — Revolut Pay supports subscription sign-ups for UK and EU merchants, letting customers authenticate recurring payments directly in the Revolut app.
 
-* Platform support: Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
+**Checkout** — Customers on mobile and desktop can complete purchases using their Revolut balance or saved cards without re-entering payment details.
+
+</div>
+
+## Supported features
+
+- **Redirect-based authentication** — When customers select Revolut Pay, they are redirected to Revolut Pay's site to authenticate with their account or check out as a first-time user. After authenticating, they are redirected back to your site.
+- **Stripe Elements token support** — Uses Stripe Payment Elements and the V3 API to process transactions.
+- **Mobile and desktop support** — Supports transaction flows on both mobile and desktop platforms.
 
 # FAQs
 
-#### Which gateways support Revolut?
-
-Revolut is directly supported through the below gateway offerings. Refer to the associated documentation for setup and troubleshooting guidance:
-
-* [Stripe](https://docs.recurly.com/recurly-subscriptions/update/docs/stripe-payment-elements#/) (Stripe Elements - Third Party Checkout)
+<Accordion title="Which gateways support Revolut Pay?">
+  Revolut Pay is available through Stripe Payment Elements (Third Party Checkout). See the <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/stripe-payment-elements#/" target="_blank">Stripe Payment Elements documentation</a> for setup details.
+</Accordion>
 
 <br />
