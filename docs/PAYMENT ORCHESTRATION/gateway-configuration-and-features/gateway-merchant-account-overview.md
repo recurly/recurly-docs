@@ -30,7 +30,7 @@ When a customer subscribes, their payment details are sent from Recurly through 
 If a transaction is declined, an error message is sent back through the system to Recurly with information on why and how to proceed.
 
 
-<Image src="https://files.readme.io/393d40568ec94fb48407646431910507180c44cd589216c8591736a64e1ca7f3-transactionflow.png" align="center" width="75%" border={true} />
+<Image src="https://files.readme.io/393d40568ec94fb48407646431910507180c44cd589216c8591736a64e1ca7f3-transactionflow.png" align="center" width="75%" />
 
 
 <div class="rp-callout rp-callout-note">
