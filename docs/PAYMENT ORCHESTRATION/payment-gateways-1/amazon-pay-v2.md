@@ -1,9 +1,9 @@
 ---
 title: Amazon Pay V2
 excerpt: >-
-  Amazon Pay V2 on Recurly offers a streamlined, secure way for customers to pay
-  using their Amazon account information. It enhances the subscription
-  experience by leveraging familiar Amazon payment methods.
+  Integrate Amazon Pay V2 with Recurly using Recurly.js to let customers
+  subscribe and purchase using payment methods already stored in their Amazon
+  account.
 deprecated: false
 hidden: false
 metadata:
@@ -13,212 +13,259 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Amazon Pay V2 lets customers subscribe or make purchases using the payment methods already stored in their Amazon account — no separate card entry required. V2 integrates directly into Recurly.js (no external Amazon library needed), supports 3DS in the UK and EU, and includes charge permission ID management for ongoing renewals.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#setup"><span class="rp-toc-num">3</span>Setup</a>
+    <a class="rp-toc-pill" href="#integration"><span class="rp-toc-num">4</span>Integration</a>
+    <a class="rp-toc-pill" href="#subscription-management"><span class="rp-toc-num">5</span>Subscription management</a>
+    <a class="rp-toc-pill" href="#migrating-from-amazon-pay-v1"><span class="rp-toc-num">6</span>Migrating from V1</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">7</span>FAQs</a>
+  </div>
+</div>
 
-### Required plan
+### Prerequisites
 
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-### Prerequisites & Supported Gateways
-
-* Recurly account setup.
-* Amazon Pay Seller account.
-  * Ensure [https://api.recurly.com/](https://api.recurly.com/) is allow-listed in Amazon.
-  * Ensure you have a webhook endpoint set up in your Integration configuration in Amazon. See **Enabling IPN Notifications / Webhooks** below.
-* Integration requires Recurly.js or HPP
-* Supported in the US, with Europe, and the United Kingdom coming soon.
+<ul class="rp-list">
+  <li>A Recurly account.</li>
+  <li>An Amazon Pay Seller account with <code>https://api.recurly.com/</code> allow-listed in Amazon.</li>
+  <li>A webhook endpoint configured in your Amazon Integration Settings — see <a href="#enabling-ipn-notifications--webhooks">Enabling IPN notifications / webhooks</a> below.</li>
+  <li>Integration requires Recurly.js or Hosted Payment Pages (HPP).</li>
+  <li>Currently supported in the US; Europe and UK support coming soon.</li>
+</ul>
 
 ### Limitations
 
-* Amazon Pay V2 now supports full name, email, and billing address retrieval from Amazon via scopes. Using invoice previews for tax calculation can be used.
-* Amazon Pay V2 does not yet support shipping address provision from Amazon. Shipping Address details must be provided to Recurly.
+<ul class="rp-list">
+  <li>Shipping addresses cannot be retrieved from Amazon in V2. Shipping address details must be provided to Recurly separately.</li>
+  <li>The Amazon Pay V2 sandbox does not fully support testing 3DS flows.</li>
+</ul>
 
-### Use cases
+# Definition
 
-* Subscriptions and one-time transactions for customers preferring Amazon Pay.
-* Support for 3DS in the UK and EU Regions.
-* Businesses targeting Amazon's vast user base for increased convenience.
-
-# Description
-
-Amazon Pay V2 integration with Recurly simplifies the transaction process. It allows customers to use their existing Amazon-stored payment methods for subscribing to services or making purchases, providing a familiar and trusted payment environment.
-
-Recurly offers more ways for your customers to transact, providing the trust and convenience of Amazon Pay. Amazon Pay simplifies the process for hundreds of millions of Amazon customers, allowing them to subscribe to your plans using the payment methods already stored in their Amazon accounts. Recurly streamlines the setup process, making it quick and easy to integrate with your Recurly site.
+<div class="rp-definition">Amazon Pay V2 is a payment method integration that allows customers to subscribe or make purchases using payment details already stored in their Amazon account. Unlike V1, V2 integrates directly into Recurly.js — no external Amazon widget library required. V2 also supports full name, email, and billing address retrieval from Amazon via scopes, and enables 3DS and PSD2 compliance for UK and EU transactions.</div>
 
 # Key details
 
-| Feature                         | Description                                                                                    |
-| ------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | One Time Purchases, and Subscriptions                                                          |
-| Supported operations            | Purchase, Refund, Verify, Void                                                                 |
-| Supported payment types         | [Amazon Support](https://www.amazon.com/gp/help/customer/display.html?nodeId=GFBWMNXEPYVJAY9A) |
-| Supported card brands           | [Amazon Support](https://www.amazon.com/gp/help/customer/display.html?nodeId=GFBWMNXEPYVJAY9A) |
-| Gateway Specific 3DS2 Supported | Yes (UK / EUR regions only)                                                                    |
-| Card on File Supported          | Yes                                                                                            |
-| Regions                         | Everywhere AmazonPay is supported                                                              |
-| Currencies                      | USD, GBP, EUR, DKK, ZAR, SEK, JPY, CHF, NZD, HKD, AUD                                          |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
+  <tr><td>Services that work with Recurly</td><td>One-time purchases and subscriptions</td></tr>
+  <tr><td>Supported operations</td><td>Purchase, Refund, Verify, Void</td></tr>
+  <tr><td>Supported payment types</td><td><a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GFBWMNXEPYVJAY9A" target="_blank">See Amazon support</a></td></tr>
+  <tr><td>Supported card brands</td><td><a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GFBWMNXEPYVJAY9A" target="_blank">See Amazon support</a></td></tr>
+  <tr><td>Gateway-specific 3DS2 supported</td><td>Yes (UK and EU regions only)</td></tr>
+  <tr><td>Card on file supported</td><td>Yes</td></tr>
+  <tr><td>Regions</td><td>Everywhere Amazon Pay is supported</td></tr>
+  <tr><td>Currencies</td><td>USD, GBP, EUR, DKK, ZAR, SEK, JPY, CHF, NZD, HKD, AUD</td></tr>
+</table>
 
-## Amazon support
+<div class="rp-card">
 
-Recurly supports Amazon Pay in the US, as well as the UK and Europe. Within the UK and Europe, 3DS and Multi-currency are supported through Recurly.js.
+### Use cases
 
-## Sign up for an Amazon seller account
+- Subscriptions and one-time transactions for customers who prefer Amazon Pay
+- 3DS support for UK and EU region merchants
+- Reaching Amazon's broad customer base with a familiar, trusted checkout experience
 
-To use Amazon Pay, you'll need to sign up for an Amazon Pay Seller account. This is a free online process. If you already have an Amazon Pay account, simply log in.
+</div>
 
-After signing up, you should follow Amazon's Getting Started Guide, which guides you through completing your account configuration.
+## Regional support
 
-1. **Subdomain**: Add your Recurly subdomain to your Amazon allowed JavaScript origins. [Learn more](#) about adding a website to an Amazon security profile.
-2. **Testing**: Conduct validation of your Amazon Pay integration.
-3. **Go Live**: After successful testing, switch your Amazon Pay account to Production mode.
+Recurly supports Amazon Pay in the US, as well as the UK and Europe. Within the UK and Europe, 3DS and multi-currency are supported through Recurly.js.
 
-**Note**: Ensure you are choosing the correct AmazonPay tile. If you've got a UK or EU seller account, do not authenticate through the US AmazonPay tile.
+### Europe
 
-## Amazon Pay support in Europe and the United Kingdom
+EUR, AUD, GBP, DKK, HKD, JPY, NZD, ZAR, SEK, CHF, and USD.
 
-Recurly enables transactions in the following regions and currencies:
+### United Kingdom
 
-* Europe region with Euros (EUR), Australian Dollar (AUD), British Pounds (GBP), Danish Krone (DKK), Hong Kong Dollar (HKD), Japanese Yen (JPY), New Zealand Dollar (NZD), South African Rand (ZAR), Swedish Krone (SEK), Swiss Franc (CHF), and United States Dollar (USD).
-* United Kingdom with British Pounds (GBP), Euros (EUR), Australian Dollar (AUD), Danish Krone (DKK), Hong Kong Dollar (HKD), Japanese Yen (JPY), New Zealand Dollar (NZD), South African Rand (ZAR), Swedish Krone (SEK), Swiss Franc (CHF), and United States Dollar (USD).
+GBP, EUR, AUD, DKK, HKD, JPY, NZD, ZAR, SEK, CHF, and USD.
 
-To integrate Amazon Pay in Europe and the UK, be aware of some regional-specific differences. You need to have a Seller Central account from the respective UK or EU Amazon website and set the billing region accordingly when using Recurly.js.
+# Setup
 
-## Sign up for Amazon in Europe and the United Kingdom
+## Sign up for an Amazon Pay Seller account
 
-Firstly, sign up for an Amazon Pay account tailored for the EU or UK. If you already have an Amazon Seller Central account in the UK/EU, just log use your existing account.
+To use Amazon Pay, you'll need an Amazon Pay Seller account. Signing up is free. If you already have one, log in to your existing account.
 
-## Enabling IPN Notifications / Webhooks
+After signing up, follow Amazon's Getting Started Guide to complete your account configuration:
 
-Within your Amazon Seller Central account:
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Add your Recurly subdomain</h4><p>Add your Recurly subdomain to your Amazon allowed JavaScript origins.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Test your integration</h4><p>Validate your Amazon Pay integration in sandbox mode before going live.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Go live</h4><p>After successful testing, switch your Amazon Pay account to Production mode.</p></div>
+  </div>
+</div>
 
-1. Click on the Gear icon in the upper right corner navigation.
-2. Choose **Integration Settings**.
-3. Under **Instant Notification Settings**, choose **Edit** and add your site's callback URL. Use the URL format below and replace `<merchantsubdomain>` with your own site.
-   1. Callback URL format:  `https://callbacks.recurly.com/amazon_v2/<merchantsubdomain>`
-4. Click **Update** to finalize your settings.
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong> Make sure you're selecting the correct Amazon Pay tile. If you have a UK or EU Seller account, do not authenticate through the US Amazon Pay tile.</div>
+</div>
 
-## Adding the gateway
+## Enabling IPN notifications / webhooks
 
-The Amazon Pay gateway employs a redirect method for secure account authorization and to obtain processing credentials. To start, select the Amazon Pay V2 option from your Gateway choices in Recurly. This action redirects you to the Amazon website corresponding to your business entity's location.
+Set up your webhook endpoint in Amazon Seller Central before adding the gateway in Recurly.
 
-* **For US-based entities**: You'll be directed to the US Amazon Seller Central website for login.
-* **For UK or EU-based entities**: The UK/EU Amazon Seller Central website is your destination for login. Ensure your Business Entity is located in the correct country in order to be redirected properly.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Integration Settings</h4><p>In your Amazon Seller Central account, click the gear icon in the upper-right navigation and select <strong>Integration Settings</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Add your callback URL</h4><p>Under <strong>Instant Notification Settings</strong>, select <strong>Edit</strong> and enter your callback URL using the format below, replacing <code>YOUR_MERCHANT_SUBDOMAIN</code> with your site subdomain:</p></div>
+  </div>
+</div>
 
-After authenticating your Amazon Seller credentials, simply provide approval for Recurly to handle processing on your behalf. You'll then be redirected back to your Recurly dashboard, where you can conduct sandbox transactions or set up for live operations.
+`https://callbacks.recurly.com/amazon_v2/YOUR_MERCHANT_SUBDOMAIN`
 
-> 📘 Redirection Note:
->
-> Amazon will display a notice that you will be redirected to a specific URL. Do **NOT** copy/paste the URL -- this will cause a 404 response. Please click the button that says 'Transfer API Keys'.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Save your settings</h4><p>Click <strong>Update</strong> to finalize.</p></div>
+  </div>
+</div>
 
-**Note**: Transactions will not be processed in Recurly's sandbox environment. However, Amazon Pay credentials are valid in both Recurly development and production accounts. To test your Amazon Pay transactions, you can put your Recurly sandbox into development mode. To commence live transactions, your Amazon Pay account and Recurly account must be in production mode.
+## Add the gateway in Recurly
 
-## Integration
+Amazon Pay V2 uses a redirect-based authorization flow to securely obtain processing credentials.
 
-Once your Amazon Pay accounts are set up and your Recurly site is configured, the next step is to integrate Recurly.js into  your subscription checkout process.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Select Amazon Pay V2</h4><p>In your Recurly dashboard, navigate to <strong>Configuration → Payment Gateways</strong> and select <strong>Amazon Pay V2</strong>. You'll be redirected to the Amazon Seller Central website that corresponds to your business entity's location.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Authenticate and approve</h4><p>Log in with your Amazon Seller credentials and approve Recurly to process on your behalf. US entities are redirected to the US Seller Central site; UK and EU entities are redirected to the UK/EU Seller Central site.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Return to Recurly</h4><p>After approval, you'll be redirected back to your Recurly dashboard to conduct sandbox transactions or configure for live operations.</p></div>
+  </div>
+</div>
 
-> **Note:** It's crucial to understand that the Version 1 (V1) library of Amazon Pay is not supported with Amazon Pay Version 2 (V2). Instead, you should use standard "Recurly.js" functionality for integration. This distinction is essential to avoid any confusion and ensure a smooth integration process. Make sure to refer to the latest documentation and integration guidelines provided by Amazon Pay and Recurly for accurate and up-to-date instructions.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Amazon will display a notice that you're being redirected to a specific URL. Do <strong>not</strong> copy and paste that URL — doing so returns a 404 error. Click the <strong>Transfer API Keys</strong> button instead.</div>
+</div>
 
-Recurly seamlessly integrates Amazon Pay V2 into Recurly.js, simplifying its addition to your transaction flow. Interactions primarily occur through the standard Recurly.js process, with the initial Amazon login as the only external site experience.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Transactions are not processed in Recurly's sandbox environment. However, Amazon Pay credentials work in both development and production Recurly accounts. To process live transactions, both your Amazon Pay account and your Recurly account must be in production mode.</div>
+</div>
 
-Once customers select their Amazon payment details for the subscription, the Amazon Charge Permission ID (`id`) is returned to Recurly and is tokenized using Recurly.js. The Recurly.js token is then utilized with Recurly's create subscription API as the account's billing information.
+# Integration
 
-Incorporating Recurly.js is essential for integrating Amazon Pay V2 with your Recurly account. It also includes a pricing module to enhance the checkout experience by allowing a preview of the purchase. There is no longer a need to utilize the Pay with Amazon library utilized with V1.
+Once your Amazon Pay account is configured and your Recurly site is set up, integrate Recurly.js into your subscription checkout flow.
 
-## Merchant and Buyer Data Support
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong> The Amazon Pay V1 library is not compatible with V2. Use standard Recurly.js functionality for all V2 integrations — do not use the separate Pay with Amazon library. Refer to the latest Recurly.js and Amazon Pay documentation for current integration details.</div>
+</div>
 
-Recurly sends additional data to Amazon on subscriptions and transactions, based on data available for a given merchant site, subscription plan, or invoice description.
+Amazon Pay V2 is built into Recurly.js. Interactions follow the standard Recurly.js flow, with the initial Amazon login as the only step that takes customers off your site. After login, customers confirm their payment details and a Charge Permission ID is returned to Recurly and tokenized via Recurly.js. That token is then passed to Recurly's create subscription API as the account's billing information.
 
-Recurly will send the following information:
+For detailed implementation steps, see the <a href="https://recurly.com/developers/reference/recurly-js/#amazon-pay-v2" target="_blank">Amazon Pay V2 Recurly.js documentation</a>.
 
-* Merchant DBA as Seller Store Name
-* Transaction Description as Buyer Notes
-  * For Subscriptions, this will be the Plan name
-  * For One-time charges, this will be the Invoice Description, or Item Description depending on your workflow.
+## Setting the Amazon Pay region
 
-## Standard subscription
+For EU and UK transactions, you must specify a region code in your Recurly.js request (`options.region`). If you omit the region, transactions default to US settings — including USD as the currency — which causes declines on one-time transactions, initial subscriptions, and renewals. See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/amazon-pay-v2-js" target="_blank">Amazon Pay V2 Recurly.js documentation</a> for implementation details.
 
-This section outlines the basic setup for Amazon Pay using Recurly.js, demonstrating standard configurations for a seamless integration.
+## Handling 3DS and PSD2 (UK and EU)
 
-## Setting the Amazon Pay region in Recurly.js
+UK and EU merchants must incorporate 3DS into their checkout flow to comply with Strong Customer Authentication (SCA) and PSD2 requirements. Amazon Pay V2 uses standard Recurly.js 3DS behaviors. If you're already handling this in your Recurly.js setup, no changes are needed. If not, see the <a href="https://recurly.com/developers/reference/recurly-js/#3d-secure" target="_blank">3DS behaviors in Recurly.js</a> documentation.
 
-For transactions through Amazon Pay EU/UK, merchants must specify a region code in Recurly.js requests (options.region). Failing to set the region results in Recurly will cause transactions to default to US settings, including currency selection of USD. This oversight can lead to declines in one-time transactions, initial subscription transactions, and subscription renewals. For detailed guidance, refer to the [Recurly developer hub](#).
+## Handling shipping addresses
 
-## Handling 3DS and PSD2 requirements for UK/EU integrators
+Amazon Pay V2 does not currently support retrieving shipping addresses from Amazon. For transactions involving physical shipments, prompt customers to enter their shipping address separately before completing checkout.
 
-UK or EU merchants must incorporate the 3DS into their flows to comply with SCA and PSD2. Amazon Pay V2 requires standard usage of Recurly.js 3DS behaviors. If you are already handling this in your Recurly.js setup, you can continue without any changes. If you are not yet handling [3DS behaviors in Recurly.js](https://recurly.com/developers/reference/recurly-js/#3d-secure), please see our developer hub for more information.
+## Merchant and buyer data
 
-## Handling amazon shipping addresses
+Recurly sends the following additional data to Amazon on subscriptions and transactions:
 
-Currently, Amazon's integration does not support providing shipping addresses from Amazon accounts. To ensure transaction accuracy, especially for transactions involving physical product shipments, it's recommended to prompt customers for shipping address details separately.
+- **Merchant DBA** as Seller Store Name
+- **Transaction description** as Buyer Notes — the plan name for subscriptions, or the invoice/item description for one-time charges
 
-## Subscription management
+# Subscription management
 
-When integrating Amazon Pay with your subscription checkout, customers first authenticate with their Amazon credentials. They can then confirm their payment details, granting charge permission ID for the subscription.
+When a customer checks out with Amazon Pay, they authenticate with their Amazon credentials and confirm their payment details, granting a Charge Permission ID for the subscription. Recurly stores this ID along with relevant Amazon account details and uses it automatically for subsequent renewals.
 
-Upon subscription confirmation, the customer's Amazon information, including the charge permission ID, is stored with Recurly. For subsequent renewals, this ID is used for automatic billing.
+Customers and merchants can both update billing information:
 
-Customers can modify their charge permission ID through Amazon or Recurly:
+- **Amazon** — Customers can update or cancel their Charge Permission ID directly from their Amazon account.
+- **Recurly** — Use the <a href="https://docs.recurly.com/api/billing-info" target="_blank">update billing info API</a> to apply a new Amazon Charge Permission ID or switch to a different payment method. Customers must re-authenticate through Amazon to update billing via Recurly.js.
 
-* **Amazon**: Customers can update or cancel the charge permission ID for their subscription plan via their Amazon account.
-* **Recurly**: Update billing information with a new Amazon Charge Permission ID or a different payment method using Recurly’s [update billing info](https://docs.recurly.com/api/billing-info). Customers must reauthenticate through Amazon to change their billing information through Recurly.js.
+## Amazon references in Recurly admin
 
-## Amazon references in Recurly Admin and Reporting
+In the Recurly Admin panel under **Billing Info** on an Account Details page, you can view Amazon Pay transaction details for customer service and reporting, including:
 
-In the Recurly Admin interface, under the Billing Info section of an Account Details page, you can view details of Amazon Pay usage. This includes the Amazon Charge Permission ID and corresponding Refund and Charge IDs, facilitating customer service and reporting alignment between Recurly and Amazon.
-
-Recurly stores several details relating to Amazon transactions in Gateway Parameters in UIs and APIs including:
-
-* Charge Permission ID
-* Capture Amount
-* Transaction Status (at Amazon)
-* Creation, Updated, and Expiration Timestamps
-* Charge ID (formerly Auth and Capture ID in V1)
-* Currency Code
-* Capture Now indicator
+- Charge Permission ID
+- Capture Amount
+- Transaction Status (at Amazon)
+- Creation, updated, and expiration timestamps
+- Charge ID
+- Currency code
+- Capture Now indicator
 
 ## Testing your implementation
 
-To test transactions, create a secondary Amazon account, as transactions cannot be processed through your own Seller Central account. This ensures an accurate testing environment.
+To test transactions, use a secondary Amazon account — transactions cannot be processed through your own Seller Central account.
 
-Please note, that Amazon V2 sandbox does not support fully testing 3DS flows.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> The Amazon Pay V2 sandbox does not fully support testing 3DS flows.</div>
+</div>
 
-## Migrating from Amazon Pay V1 to Amazon Pay V2
+# Migrating from Amazon Pay V1
 
-Amazon Pay V1 relied on widgets and a distinct library external to Recurly.js, utilizing Billing Agreement IDs. With Amazon Pay V2, these elements are obsolete, as it integrates directly with Recurly.js. For detailed information on the transition, consult the [Amazon V2 specific Recurly.js documentation](https://recurly.com/developers/reference/recurly-js/#amazon-pay-v2).
+Amazon Pay V1 used external widgets, a separate library, and Billing Agreement IDs. V2 integrates directly into Recurly.js — no external library or widgets are needed, and Billing Agreement IDs are replaced by Charge Permission IDs.
 
-Existing Amazon Pay V1 subscriptions can automatically transition to Amazon Pay V2 upon gateway activation, unless a specific gateway code was assigned. In such cases, a script update is necessary post-activation. HPP one time and initial subscription transactions will automatically use V2 if enabled.
+For a full migration guide, see the <a href="https://recurly.com/developers/reference/recurly-js/#amazon-pay-v2" target="_blank">Amazon Pay V2 Recurly.js documentation</a>.
 
-Amazon Pay V1 will remain operational until 2024, and updates to this guide will reflect any new information from Amazon.
+**Existing V1 subscriptions** can transition to V2 automatically when the V2 gateway is activated, unless a specific gateway code was assigned — in that case, a script update is required after activation. HPP one-time and initial subscription transactions switch to V2 automatically once V2 is enabled.
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Amazon Pay V2 became available in December 2023.</div>
+</div>
 
 # FAQs
 
-**Q: Are Amazon Pay Charge Permission IDs usable everywhere on Amazon?**
-**A:** Amazon Pay charge permission IDs are specific to the region where they were created. To switch regions for a user, a new charge permission ID must be generated in the respective region.
+<Accordion title="Are Amazon Pay Charge Permission IDs usable across regions?">
+  No — Charge Permission IDs are specific to the region where they were created. To switch a user to a different region, you must generate a new Charge Permission ID in that region.
+</Accordion>
 
-**Q: Can I pull shipping addresses from Amazon Pay V2?**
-**A:** Shipping addresses from Amazon Pay V2 need to be passed via API parameters. Updates will be provided if this feature is added in the future.
+<Accordion title="Can I retrieve shipping addresses from Amazon Pay V2?">
+  Not currently. Shipping addresses must be passed to Recurly via API parameters. This page will be updated if Amazon adds native shipping address support in V2.
+</Accordion>
 
-**Q: Will Amazon Widgets be available in V2?**
-**A:** Amazon Widgets are not supported in Amazon Pay V2.
+<Accordion title="Are Amazon widgets available in V2?">
+  No — Amazon widgets are not supported in Amazon Pay V2. All interactions go through standard Recurly.js flows.
+</Accordion>
 
-**Q: Do I need to use the Amazon library for Amazon V2?**
-**A:** No, Amazon Pay V2 is integrated into Recurly.js, so the separate Amazon library is not needed. Amazon Pay V2 is not supported by the Amazon library.
+<Accordion title="Do I need to use the separate Amazon library for V2?">
+  No. Amazon Pay V2 is built into Recurly.js, so the separate Pay with Amazon library is not needed and is not supported with V2.
+</Accordion>
 
-**Q: I don't see a consent widget in Amazon Pay V2. Is this unavailable?**
-**A:** In Amazon Pay V2, consent is obtained on the Amazon Pay hosted page, eliminating the need for a separate consent widget.
+<Accordion title="There's no consent widget in Amazon Pay V2 — is that expected?">
+  Yes. In V2, consent is obtained on the Amazon Pay hosted page, so a separate consent widget is no longer required.
+</Accordion>
 
-**Q: Do I need to use any other gateway to access Amazon Pay V2?**
-**A:** No, Amazon Pay V2 is a standalone service and does not require any additional gateways or merchant accounts outside of Amazon.
+<Accordion title="Do I need another gateway to access Amazon Pay V2?">
+  No — Amazon Pay V2 is a standalone service. No additional gateways or merchant accounts are required outside of Amazon.
+</Accordion>
 
-**Q: What happens if I cannot authorize or authenticate via hosted onboarding?**
-**A:** Check the accuracy of your Amazon Seller Central credentials. For US accounts, ensure the business entity is located in the United States; for UK or EU accounts, the entity should be in the UK or an EU country.
+<Accordion title="What should I do if I can't authorize via hosted onboarding?">
+  Verify the accuracy of your Amazon Seller Central credentials. For US accounts, confirm your business entity is located in the United States. For UK or EU accounts, confirm your entity is in the UK or an EU country, and that you're authenticating through the correct regional tile.
+</Accordion>
 
-**Q: Which currencies are available for Amazon Pay in the US?**
-**A:** In the United States, USD is the available currency for Amazon Sellers.
+<Accordion title="Which currencies are available for Amazon Pay by region?">
+  In the US, only USD is available. In the UK, GBP is available. In the EU, EUR is available. Full multi-currency support for the UK and EU is listed in the <a href="#regional-support">Regional support</a> section above.
+</Accordion>
 
-**Q: Which currencies are available on Amazon Pay in the UK or EU?**
-**A:** For sellers in the UK, GBP is available, and for those in the EU, EUR is available.
-
-# Version history
-
-* As of December 2023, Amazon Pay V2 is available.
+<br />
