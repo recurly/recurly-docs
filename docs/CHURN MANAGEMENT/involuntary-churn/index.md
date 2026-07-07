@@ -1,9 +1,9 @@
 ---
 title: Involuntary churn
 excerpt: >-
-  Minimize revenue leakage by effectively managing involuntary churn. Implement
-  strategies and tools designed to retain customers and ensure consistent
-  revenue streams.
+  Reduce involuntary customer churn in Recurly through Account Updater,
+  Intelligent Retries, Dunning Campaigns, Expired Card Management, and backup
+  payment methods.
 deprecated: false
 hidden: false
 metadata:
@@ -13,54 +13,88 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-Churn Management  is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Involuntary churn happens when customers are lost due to factors outside their intent — expired cards, bank changes, or failed payments. Recurly provides several tools to proactively catch and resolve these issues before they cause subscription loss.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#involuntary-churn-tools"><span class="rp-toc-num">3</span>Involuntary churn tools</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Familiarity with your customer's payment methods and patterns.
-* Integration with payment gateways, processors and relationships with card brands.
-* Access to customer communication channels for timely notifications.
+<ul class="rp-list">
+  <li>Familiarity with your customers' payment methods and billing patterns.</li>
+  <li>Integration with payment gateways and processors, and established relationships with card brands where required.</li>
+  <li>Access to customer communication channels for timely payment notifications.</li>
+</ul>
 
 ### Limitations
 
-* Not all involuntary churn can be prevented, as some factors are beyond control.
-* Requires regular monitoring and updates to ensure effectiveness.
-* Some strategies might not be applicable to all customer segments or payment methods.
+<ul class="rp-list">
+  <li>Not all involuntary churn can be prevented — some factors are outside your control.</li>
+  <li>Requires regular monitoring and updates to remain effective.</li>
+  <li>Some strategies may not apply to all customer segments or payment methods.</li>
+</ul>
 
 # Definition
 
-Involuntary churn refers to the loss of customers due to reasons beyond their direct intent, such as expired credit cards, bank changes, or failed payment attempts. Effective management of involuntary churn involves proactive measures to address these issues before they result in customer attrition.
+<div class="rp-definition">Involuntary churn refers to customer loss caused by factors outside their direct intent — expired credit cards, bank account changes, or failed payment attempts. Effective management involves proactive measures that address these issues before they result in subscription cancellation.</div>
 
 # Key benefits
 
-* **Revenue protection**: Reduce revenue loss from failed transactions and expiring cards.
-* **Enhanced customer experience**: Proactively address issues, reducing friction for customers.
-* **Operational efficiency**: Automate processes like card updates and payment retries.
-* **Improved retention**: Decrease involuntary churn rates, leading to higher customer lifetime value.
-* **Data insights**: Gain a better understanding of churn reasons and patterns to inform future strategies.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+    <strong>Revenue protection</strong>
+    <span>Reduce revenue loss from failed transactions and expiring cards through automated recovery tools.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-face-smile" aria-hidden="true"></i></div>
+    <strong>Enhanced customer experience</strong>
+    <span>Proactively resolve payment issues before they interrupt service, reducing friction for customers.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+    <strong>Operational efficiency</strong>
+    <span>Automate card updates, payment retries, and expiry management to reduce manual intervention.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-user-check" aria-hidden="true"></i></div>
+    <strong>Improved retention</strong>
+    <span>Lower involuntary churn rates translate directly to higher customer lifetime value.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+    <strong>Data insights</strong>
+    <span>Understand churn reasons and patterns to inform smarter recovery and retention strategies.</span>
+  </div>
+</div>
 
-# Key details
+# Involuntary churn tools
 
-## Account updater & Amex cardrefresher
+<div class="rp-nav-grid">
 
-Automate the update of customer payment information with the [Account Updater](https://docs.recurly.com/docs/account-updater) service to maintain seamless transactions and service continuity. Utilize the Amex Cardrefresher to ensure American Express card details are current, thus preventing payment interruptions and bolstering customer retention.
+<Cards>
+  <Card title="Account Updater & Amex Cardrefresher" href="https://docs.recurly.com/docs/account-updater" target="_blank">
+    Automatically keep customer payment details current — including American Express cards via Cardrefresher — to prevent payment interruptions caused by outdated card information.
+  </Card>
+  <Card title="Intelligent Retries" href="https://docs.recurly.com/docs/retry-logic" target="_blank">
+    Machine learning–driven retry logic determines the best times to reattempt failed transactions, increasing recovery rates. Starter merchants access a basic static retry system with an option to upgrade.
+  </Card>
+  <Card title="Dunning campaigns" href="https://docs.recurly.com/docs/dunning-management" target="_blank">
+    Alert customers about payment issues and give them the opportunity to update their payment method before their subscription lapses.
+  </Card>
+  <Card title="Expired card management" href="https://docs.recurly.com/docs/expired-card-management" target="_blank">
+    Proactively refresh expired card data to support uninterrupted subscription renewals, reducing transaction failures caused by expired credentials.
+  </Card>
+  <Card title="Backup payment method" href="https://docs.recurly.com/docs/backup-payment-method" target="_blank">
+    Let customers designate a backup payment method so service continues automatically if their primary payment fails.
+  </Card>
+</Cards>
 
-## Intelligent retries
+</div>
 
-The [Intelligent Retries](https://docs.recurly.com/docs/retry-logic) feature employs machine learning to determine the best times to reattempt failed transactions, increasing the likelihood of successful payments and reducing involuntary churn. Starter merchants have access to a basic static retry system, with the option to upgrade for more advanced payment recovery solutions.
-
-## Dunning campaigns
-
-Deploy [Dunning Campaigns](https://docs.recurly.com/docs/dunning-management) to alert customers about payment issues, providing them the chance to rectify their payment methods or resolve other issues, thereby averting potential churn.
-
-## Expired card management
-
-Recurly's [Expired Card Management](https://docs.recurly.com/docs/expired-card-management) proactively refreshes expired credit card data, facilitating uninterrupted subscription renewals and significantly diminishing the rate of transaction failures due to expired cards. This feature supplements the traditional method of sending automated emails for expired cards, offering a more robust solution for maintaining customer service continuity.
-
-## Backup payment method
-
-Promote the adoption of a [backup payment method](https://docs.recurly.com/docs/backup-payment-method) among customers to guarantee service continuity. Should the primary payment method fail, the backup will ensure that services remain undisrupted, thus minimizing churn.
+<br />
