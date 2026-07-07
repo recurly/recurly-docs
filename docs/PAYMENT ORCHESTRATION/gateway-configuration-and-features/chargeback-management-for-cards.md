@@ -1,6 +1,9 @@
 ---
 title: Chargeback management for cards
-excerpt: ''
+excerpt: >-
+  Manage card chargebacks in Recurly — automatically create refund invoices,
+  expire subscriptions, and configure gateway-specific chargeback webhooks for
+  Adyen, Chase Orbital, and Stripe.
 deprecated: false
 hidden: false
 metadata:
@@ -10,72 +13,141 @@ metadata:
 next:
   description: ''
 ---
-> 🚧 Early access
->
-> Chargeback management for cards is available in the early access. Please reach out to [Recurly support](https://support.recurly.com/hc/en-us) or your account manager to enable this feature.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Early Access</strong> Chargeback management for cards is available in early access. Contact <a href="https://support.recurly.com/hc/en-us" target="_blank">Recurly Support</a> or your account manager to enable this feature.</div>
+</div>
 
-Recurly provides chargeback management capabilities for card transactions. Once chargeback is completed (accepted, lost, or expired) Recurly creates an external refund invoice and expires subscription.
+<div class="rp-page">
+  <div class="rp-overview">Recurly's chargeback management automates the response to card chargebacks — creating external refund invoices and expiring subscriptions when a chargeback reaches a final state (accepted, lost, or expired). Currently available on Adyen, Chase Orbital, and Stripe.</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#recurly-chargeback-process"><span class="rp-toc-num">2</span>Chargeback process</a>
+    <a class="rp-toc-pill" href="#how-to-enable"><span class="rp-toc-num">3</span>How to enable</a>
+    <a class="rp-toc-pill" href="#gateway-specific-setup"><span class="rp-toc-num">4</span>Gateway-specific setup</a>
+    <a class="rp-toc-pill" href="#fraud-and-service-chargeback-codes"><span class="rp-toc-num">5</span>Chargeback codes</a>
+  </div>
+</div>
 
-## Gateways supported
+# Definition
 
-* **Adyen**
-* **Chase**
-* **Stripe**
+<div class="rp-definition">Recurly chargeback management handles the automated processing of card chargebacks. When a chargeback reaches a final state — accepted, lost, or expired — Recurly receives a Chargeback Completed event from the gateway, creates an external refund invoice and a chargeback transaction, and expires the associated subscription.</div>
 
-More gateways will be available in the future.
+## Supported gateways
 
-## Recurly chargeback process
+- Adyen
+- Chase Orbital
+- Stripe
 
-1. Shoppers issue a chargeback with their issuing bank. Merchant can dispute or accept a chargeback through their gateway.
-2. When chargeback is in the final state (lost or accepted) Recurly receives a “Chargeback Completed” event from a gateway.
-3. Recurly creates an external refund invoice and a chargeback transaction
-4. Recurly expires a shopper subscription.
-   1. **Note:** If supported by gateway Recurly will only expire subscription only for fraud and service chargebacks.
+Additional gateways will be supported in the future.
 
-NOTE: Recurly does not process chargeback reversals
+# Recurly chargeback process
 
-## How to enable card chargebacks
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Customer issues a chargeback</h4><p>The customer disputes a charge with their issuing bank. The merchant can dispute or accept the chargeback through their gateway.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Recurly receives the final chargeback state</h4><p>When the chargeback reaches a final state (lost or accepted), Recurly receives a Chargeback Completed event from the gateway.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Recurly creates a refund invoice and chargeback transaction</h4><p>Recurly creates an external refund invoice and a corresponding chargeback transaction on the account.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Recurly expires the subscription</h4><p>Recurly expires the customer's subscription. Where supported by the gateway, subscription expiration occurs only for fraud and service chargebacks.</p></div>
+  </div>
+</div>
 
-* Request chargeback management feature from support
-* Select `Create a refund transaction when a chargeback is received (default)` option in the chargeback setting on the `Invoice Settings` page.
-* You may optionally select to auto-expire subscriptions when a chargeback is received.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Recurly does not process chargeback reversals.</div>
+</div>
 
-<Image align="center" src="https://files.readme.io/6582a56971bedb4e9a9b2d5f0563f1e747f1952c00bd1cf07c9150b5c43919ae-Chargeback_Settings.png" />
+# How to enable
 
-## Special gateways setup or management
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Request the feature</h4><p>Contact <a href="https://support.recurly.com/hc/en-us" target="_blank">Recurly Support</a> or your account manager to enable chargeback management for your account.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Configure the chargeback setting</h4><p>On the <strong>Invoice Settings</strong> page, select <strong>Create a refund transaction when a chargeback is received (default)</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Optionally enable auto-expiry</h4><p>Select the option to automatically expire subscriptions when a chargeback is received.</p></div>
+  </div>
+</div>
 
-#### Adyen
 
-1. Enable Adyen webhooks  
-   [https://docs.recurly.com/docs/adyen#configuring-adyen-notifications-for-recurly](https://docs.recurly.com/docs/adyen#configuring-adyen-notifications-for-recurly)
-   1. (CHARGEBACK, SECOND_CHARGEBACK, DISPUTE_DEFENSE_PERIOD_ENDED)
-2. Enable chargeback Adyen event: originalReference for CHARGEBACK_REVERSED  
-   [https://docs.adyen.com/risk-management/disputes-api/dispute-notifications#enable-webhooks](https://docs.adyen.com/risk-management/disputes-api/dispute-notifications#enable-webhooks)
-3. Read more about [managing Adyen Disputes in their documentation](https://docs.adyen.com/risk-management/manage-disputes/). Certain webhook status options will not be triggered without gateway management. For example: In order to ever receive a webhook with disputeStatus: "Accepted", you must go to your Adyen Dashboard and accept the chargeback.
+<Image src="https://files.readme.io/6582a56971bedb4e9a9b2d5f0563f1e747f1952c00bd1cf07c9150b5c43919ae-Chargeback_Settings.png" align="center" width="75%" border={true} />
 
-#### Chase Orbital
 
-To enable chargeback management with Chase Orbital gateway you need to provide Recurly access to Chase chargeback file reports. Please reach out to your Chase contact for more information. They will need to setup access to Recurly's Partner ID so that we can download these files. There is no setup for this process within Recurly.
+# Gateway-specific setup
 
-## Service and Fraud Chargeback Code
+## Adyen
 
-Card brands have unique Fraud codes for each network. These codes include:
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Enable Adyen webhooks in Recurly</h4><p>Follow the <a href="https://docs.recurly.com/docs/adyen#configuring-adyen-notifications-for-recurly" target="_blank">Adyen notifications configuration guide</a> and enable the following webhook types: <code>CHARGEBACK</code>, <code>SECOND_CHARGEBACK</code>, <code>DISPUTE_DEFENSE_PERIOD_ENDED</code>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enable the CHARGEBACK_REVERSED webhook event</h4><p>Enable the <code>originalReference</code> for <code>CHARGEBACK_REVERSED</code> events in Adyen. See <a href="https://docs.adyen.com/risk-management/disputes-api/dispute-notifications#enable-webhooks" target="_blank">Adyen dispute notification setup</a>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Manage disputes in Adyen</h4><p>Certain webhook statuses require action in the Adyen Dashboard to trigger. For example, to receive a webhook with <code>disputeStatus: "Accepted"</code>, you must accept the chargeback in your Adyen Dashboard. See <a href="https://docs.adyen.com/risk-management/manage-disputes/" target="_blank">managing Adyen disputes</a>.</p></div>
+  </div>
+</div>
 
-#### Fraud Chargeback Codes
+## Chase Orbital
 
-| Visa                         | MasterCard                               | Cartes Bancaires | Discover                     | UnionPay         | Diners                  | JCB                     | Elo    | American Express                                                                                 |
-| :--------------------------- | :--------------------------------------- | :--------------- | :--------------------------- | :--------------- | :---------------------- | :---------------------- | :----- | :----------------------------------------------------------------------------------------------- |
-| 10.1, 10.2, 10.3, 10.4, 10.5 | 4837, 4840, 4849, 4863, 4870, 4871, 4999 | 45               | 4752, 4866, 4867, 7010, 7030 | 4515, 4514, 4562 | C46, C41, C42, C53, C54 | 534, 546, 526, 526, 527 | 75, 83 | 4526, 4527, 4534, 4540, 4755, 4763, 4798, 4799, F10, F14, F24, F29, F30, F31, FR2, FR4, FR5, FR6 |
+To enable chargeback management with Chase Orbital, you need to grant Recurly access to Chase chargeback file reports. Contact your Chase representative — they will set up access using Recurly's Partner ID to allow file downloads. No setup is required within Recurly for this process.
 
-#### Service Chargeback Codes
+# Fraud and service chargeback codes
 
-| Visa                                    | MasterCard                         | Cartes Bancaires | Discover            | UnionPay       | Diners          | JCB                         | Elo      | American Express                                                  |
-| :-------------------------------------- | :--------------------------------- | :--------------- | :------------------ | :------------- | :-------------- | :-------------------------- | :------- | :---------------------------------------------------------------- |
-| 13.1 13.2 13.3 13.4 13.5 13.6 13.7 13.8 | 4841 4853 4854 4855 4859 4860 6305 | 30, 41, 53       | 4755 4553 4541 8002 | 4502 4532 4544 | D62 D66 D69 D70 | 502 513 516 544 554 537 538 | 30 41 53 | 4513 4515 4544 4553 4554 4754 C02 C04 C05 C08 C14 C18 C28 C31 C32 |
+Card networks use unique reason codes for fraud and service chargebacks. Reference the tables below and your gateway's documentation for details.
 
-You can reference these codes on the Gateway's documentation pages:
+## Fraud chargeback codes
 
-* Adyen: [Adyen Dispute Reasons and Defense Requirements](https://docs.adyen.com/risk-management/understanding-disputes/dispute-reason-codes/)
-* In the case of Stripe, the chargeback status and code will be available in your Recurly Admin UI. [Stripe dispute reasons](https://docs.stripe.com/disputes/reason-codes-defense-requirements) are available in Stripe's documentation as well.
+| Network          | Codes                                                                                            |
+| ---------------- | ------------------------------------------------------------------------------------------------ |
+| Visa             | 10.1, 10.2, 10.3, 10.4, 10.5                                                                     |
+| Mastercard       | 4837, 4840, 4849, 4863, 4870, 4871, 4999                                                         |
+| Cartes Bancaires | 45                                                                                               |
+| Discover         | 4752, 4866, 4867, 7010, 7030                                                                     |
+| Union Pay        | 4515, 4514, 4562                                                                                 |
+| Diners           | C46, C41, C42, C53, C54                                                                          |
+| JCB              | 534, 546, 526, 527                                                                               |
+| Elo              | 75, 83                                                                                           |
+| American Express | 4526, 4527, 4534, 4540, 4755, 4763, 4798, 4799, F10, F14, F24, F29, F30, F31, FR2, FR4, FR5, FR6 |
 
-<Image align="center" src="https://files.readme.io/e9acffbb0f13b82929d43f981f8d65a12bddf59b6fe1b91e760d7b7335be2653-Stripe_Reason_Code_-_Visa_Chargeback.png" />
+## Service chargeback codes
+
+| Network          | Codes                                                                           |
+| ---------------- | ------------------------------------------------------------------------------- |
+| Visa             | 13.1, 13.2, 13.3, 13.4, 13.5, 13.6, 13.7, 13.8                                  |
+| Mastercard       | 4841, 4853, 4854, 4855, 4859, 4860, 6305                                        |
+| Cartes Bancaires | 30, 41, 53                                                                      |
+| Discover         | 4755, 4553, 4541, 8002                                                          |
+| Union Pay        | 4502, 4532, 4544                                                                |
+| Diners           | D62, D66, D69, D70                                                              |
+| JCB              | 502, 513, 516, 544, 554, 537, 538                                               |
+| Elo              | 30, 41, 53                                                                      |
+| American Express | 4513, 4515, 4544, 4553, 4554, 4754, C02, C04, C05, C08, C14, C18, C28, C31, C32 |
+
+For gateway-specific code documentation:
+
+- **Adyen** — <a href="https://docs.adyen.com/risk-management/understanding-disputes/dispute-reason-codes/" target="_blank">Adyen dispute reason codes</a>
+- **Stripe** — Chargeback status and code are visible in your Recurly Admin UI. See also <a href="https://docs.stripe.com/disputes/reason-codes-defense-requirements" target="_blank">Stripe dispute reason codes</a>.
+
+
+<Image src="https://files.readme.io/e9acffbb0f13b82929d43f981f8d65a12bddf59b6fe1b91e760d7b7335be2653-Stripe_Reason_Code_-_Visa_Chargeback.png" align="center" width="75%" border={true} />
+
+
+<br />
