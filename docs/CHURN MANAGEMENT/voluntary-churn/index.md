@@ -1,8 +1,9 @@
 ---
 title: Voluntary churn
 excerpt: >-
-  Learn how to reduce voluntary churn with flexible subscription pauses and
-  targeted messaging via Recurly Engage.
+  Reduce voluntary subscription churn in Recurly by offering pause options,
+  targeted Recurly Engage campaigns, and personalized retention offers before
+  customers cancel.
 deprecated: false
 hidden: false
 metadata:
@@ -12,44 +13,68 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Voluntary churn happens when customers choose to cancel. Reducing it means understanding why customers leave and offering meaningful alternatives — like subscription pauses or personalized incentives — before they go.</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#voluntary-churn-tools"><span class="rp-toc-num">3</span>Voluntary churn tools</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* A feedback mechanism (surveys, NPS, support tickets) to capture customer reasons for leaving.
-* Integration with your subscription platform or CRM.
-* A team or workflow dedicated to monitoring churn signals and acting on them.
+<ul class="rp-list">
+  <li>A feedback mechanism (surveys, NPS, support tickets) to capture customer cancellation reasons.</li>
+  <li>Integration with your subscription platform or CRM.</li>
+  <li>A team or workflow dedicated to monitoring churn signals and acting on them.</li>
+</ul>
 
 ### Limitations
 
-* Not all cancellations can be prevented—some churn is inevitable.
-* Requires ongoing monitoring and iteration to refine your approach.
-* Effectiveness may vary across customer segments and product types.
+<ul class="rp-list">
+  <li>Not all cancellations can be prevented — some churn is inevitable.</li>
+  <li>Requires ongoing monitoring and iteration to be effective.</li>
+  <li>Effectiveness may vary across customer segments and product types.</li>
+</ul>
 
 # Definition
 
-**Voluntary churn** happens when customers choose to cancel their subscriptions. Combating it means uncovering the “why” behind cancellations and offering alternatives—like subscription pauses or personalized incentives—to keep customers engaged.
+<div class="rp-definition">Voluntary churn happens when customers actively choose to cancel their subscriptions. Combating it means uncovering the reasons behind cancellations and offering alternatives — such as subscription pauses or personalized incentives — to keep customers engaged before they leave.</div>
 
 # Key benefits
 
-* **Actionable insights**: Turn customer feedback into data-driven retention strategies.
-* **Flexible retention options**: Give customers options to pause or downgrade instead of cancelling outright.
-* **Personalized outreach**: Use Recurly Engage to deliver targeted messages and offers at key moments.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i></div>
+    <strong>Actionable insights</strong>
+    <span>Turn customer feedback into data-driven retention strategies that address the real reasons subscribers cancel.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Flexible retention options</strong>
+    <span>Give customers the option to pause or downgrade rather than cancel outright.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+    <strong>Personalized outreach</strong>
+    <span>Use Recurly Engage to deliver targeted messages and offers at the moments when customers are most likely to churn.</span>
+  </div>
+</div>
 
-# Key details
+# Voluntary churn tools
 
-## Pause subscriptions
+<div class="rp-nav-grid">
 
-Offer a “pause” option in your cancellation flow so subscribers can temporarily suspend deliveries instead of leaving. Pauses let customers return seamlessly when they’re ready—no new sign-up required.
+<Cards>
+  <Card title="Pause subscriptions" href="https://docs.recurly.com/docs/pause-subscription#/" target="_blank">
+    Let customers temporarily suspend their subscription instead of cancelling — so they can return without going through a new sign-up.
+  </Card>
+  <Card title="Recurly Engage" href="https://docs.recurly.com/docs/getting-started-with-recurly-engage#/" target="_blank">
+    Send real-time, behavior-based messages at key moments — exit intent offers, win-back campaigns, and segmented outreach by tenure, usage, or feedback.
+  </Card>
+</Cards>
 
-> **Learn more**: [Pause a subscription](https://docs.recurly.com/docs/pause-subscription#/) in Recurly.
+</div>
 
-## Recurly Engage
-
-Leverage **Recurly Engage** to send real-time, behavior-based messages that address churn risks:
-
-* **Exit intent offers**: Trigger a discount or bonus content when a user initiates cancellation.
-* **Win-back campaigns**: Automatically email paused or cancelled customers with tailored incentives.
-* **Segmented messaging**: Target users by tenure, usage, or feedback to maximize relevancy.
-
-> **Learn more**: <a href="https://docs.recurly.com/docs/getting-started-with-recurly-engage#/" target="_blank">Getting started with Recurly Engage</a>
+<br />
