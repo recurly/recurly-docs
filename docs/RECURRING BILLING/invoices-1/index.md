@@ -1,9 +1,9 @@
 ---
 title: Invoices
 excerpt: >-
-  Streamline billing and payment processes with detailed, customizable invoices
-  that capture every transaction's essence, enhancing clarity and trust in your
-  financial interactions.
+  An overview of Recurly's invoicing tools — including the invoice dashboard,
+  invoice management, editing, and credit invoices for managing billing
+  adjustments.
 deprecated: false
 hidden: false
 metadata:
@@ -13,36 +13,75 @@ metadata:
 next:
   description: ''
 ---
+<div class="rp-page">
+  <div class="rp-overview">In Recurly, invoices are the central record of every transaction between you and your customers — detailing what was purchased, the price, and the payment status. This section covers the full invoicing lifecycle, from the dashboard view through editing, credits, and refunds.</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#invoice-tools"><span class="rp-toc-num">4</span>Invoice tools</a>
+  </div>
+</div>
+
 # Definition
 
-In Recurly, invoices serve as a comprehensive record of transactions between the merchant and the customer. They detail the products or services exchanged, their prices, and other vital financial information. Acting as both a request for payment and proof of purchase, invoices are crucial for maintaining transparency and accountability in business dealings.
-
-### Dates and Times
-
-Recurly records all transactions in **UTC** as the underlying billing timezone. Any dates or times shown on invoices or emails are automatically converted from UTC to the local time specified in your site settings.
+<div class="rp-definition">In Recurly, invoices serve as the comprehensive record of transactions between merchant and customer — detailing products or services, prices, and key financial information. They act as both a request for payment and proof of purchase, maintaining transparency and accountability in billing.</div>
 
 # Key benefits
 
-* **Enhanced transparency:** Detailed breakdowns provide both merchants and subscribers clarity on financial exchanges.
-* **Adaptability:** Easily create invoices to accommodate changing subscriber needs or rectify errors.
-* **Optimized cash flow:** With tools to issue credit invoices, manage potential revenue losses, and retain customer trust.
-* **Streamlined operations:** Simplify the invoicing process with automated tools and integrations.
-* **Compliance and record-keeping:** Keep accurate financial records, aiding in tax compliance and financial analysis.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i></div>
+    <strong>Full transparency</strong>
+    <span>Detailed breakdowns give merchants and subscribers a clear view of every financial exchange.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i></div>
+    <strong>Flexibility</strong>
+    <span>Edit invoices post-issuance to accommodate changing subscriber needs or correct errors.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-coins" aria-hidden="true"></i></div>
+    <strong>Optimized cash flow</strong>
+    <span>Issue credit invoices and manage revenue adjustments while maintaining customer trust.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+    <strong>Streamlined operations</strong>
+    <span>Automate invoicing workflows and manage the full lifecycle from issuance to payment or cancellation.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+    <strong>Compliance and record-keeping</strong>
+    <span>Maintain accurate financial records that support tax compliance and financial analysis.</span>
+  </div>
+</div>
 
 # Key details
 
-## Invoices dashboard
+## Dates and times
 
-Recurly's Invoices Dashboard provides a comprehensive view for managing customer invoices. It is designed to facilitate easy monitoring and handling of various invoice elements such as types, statuses, and numbering. The dashboard also includes functionalities for adjusting subscriptions, managing dunning processes, and processing refunds, ensuring a holistic approach to invoice management.
+Recurly records all transactions in **UTC** as the underlying billing timezone. Dates and times shown on invoices and emails are automatically converted from UTC to the local time specified in your site settings.
 
-## Invoice management
+# Invoice tools
 
-The Invoice Management section extends the capabilities of the Invoices Dashboard, focusing on the detailed management of invoices. It encompasses the same range of features, emphasizing the ability to oversee and manipulate the finer details of invoices, from their creation to finalization. This includes managing the lifecycle of invoices, from issuance to payment or cancellation, and applying any necessary adjustments.
+<div class="rp-nav-grid">
 
-## Edit invoices
+<Cards>
+  <Card title="Invoice dashboard" href="https://docs.recurly.com/recurly-subscriptions/docs/invoices" target="_blank">
+    Monitor and manage all customer invoices — including types, statuses, numbering, dunning, and refunds — from a single view.
+  </Card>
+  <Card title="Invoice management" href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-management" target="_blank">
+    Manage the full lifecycle of invoices — from issuance through payment or cancellation — with detailed controls and adjustments.
+  </Card>
+  <Card title="Edit invoice" href="https://docs.recurly.com/recurly-subscriptions/docs/edit-invoice" target="_blank">
+    Modify invoice details post-issuance — including account notes, due dates, PO numbers, customer notes, and terms — to keep records accurate.
+  </Card>
+  <Card title="Credit invoices" href="https://docs.recurly.com/recurly-subscriptions/docs/credit-invoices" target="_blank">
+    Issue credits to correct billing errors or adjust for subscription changes — applicable to future invoices or refunded directly to the customer.
+  </Card>
+</Cards>
 
-Recurly recognizes the need for flexibility in invoice management. The "Edit Invoices" feature allows for modifications to crucial invoice details post-issuance. Users can adjust information such as account notes, due dates, customer names, purchase order numbers, notes to customers, and terms and conditions, ensuring that invoices remain accurate and relevant to ongoing business and customer needs.
+</div>
 
-## Credit invoices
-
-To address billing errors or adjust for changes in subscription costs, Recurly offers the "Credit Invoices" feature. This allows for the issuance of credits to customers, which can be applied to future invoices or refunded directly. This feature simplifies the process of making financial adjustments, helping to maintain and even enhance customer trust by ensuring fair and responsive billing practices.
+<br />
