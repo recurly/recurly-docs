@@ -1,9 +1,9 @@
 ---
 title: Decimal pricing
 excerpt: >-
-  Recurly's decimal pricing supports up to nine decimal places for usage add-on
-  unit prices, enabling precise per-unit billing for businesses whose
-  cost-per-unit is a fractional value.
+  Recurly's decimal pricing supports up to nine decimal places for usage and
+  non-usage based add-on unit prices; enabling precise per-unit billing for
+  businesses whose cost-per-unit is a fractional value.
 deprecated: false
 hidden: false
 metadata:
@@ -18,7 +18,7 @@ next:
 <div class="rp-page">
 <div class="rp-overview">
 
-Decimal pricing lets you set usage add-on prices with up to nine decimal places — so businesses charging fractions of a cent per unit can bill accurately without rounding errors at the unit level.
+Decimal pricing lets you set usage and non-usage add-on prices with up to nine decimal places — so businesses charging fractions of a cent per unit can bill accurately without rounding errors at the unit level.
 
 </div>
 <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i>&nbsp; Available on all Recurly plans</div>
