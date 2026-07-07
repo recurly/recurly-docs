@@ -1,113 +1,107 @@
 ---
 title: Pix Automático
 excerpt: >-
-  Integrate Pix Automático, the favored payment platform of the next-gen
-  Brazilian subscriber base, into your Recurly payment gateway and offer a
-  frictionless subscription payment experience leveraging a platform with over
-  168 million registered users.
+  Accept Pix Automático payments on Recurly via Ebanx for recurring subscription
+  sign-ups in Brazil — with QR code–based enrollment, automatic retries, and
+  bank app cancellation support.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Pix Automático is Brazil's recurring payment feature within the PIX instant payment network, enabling automatic, scheduled debits from customers' bank accounts. Recurly supports Pix Automático via Ebanx for subscription sign-ups — one-time transactions are not supported.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">3</span>FAQs</a>
+  </div>
+</div>
 
-### Required plan
+### Prerequisites
 
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-Recurly currently supports Pix Automático transactions on [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway) gateway.
-
-### Use cases
-
-* **Seamless subscriptions:** Pix Automatic (Automático) enables effortless sign-ups for subscriptions, by allowing customers to pay merchants by scanning a QR code through the checkout flow.
-* **Efficient checkout:** Pix Automático ensures a quick and secure checkout process, catering to both mobile and desktop users. g
-
-### Prerequisites & supported gateways
-
-* A connection with <Anchor label="Ebanx" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/">Ebanx</Anchor> gateway.
-* The ability to work with APIs and QR Code rendering. This integration will demand technical proficiency with Base64 encoded values.
-* Your site must support transactions in  **BRL**.
+<ul class="rp-list">
+  <li>An <a href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/" target="_blank">Ebanx</a> gateway connection.</li>
+  <li>Ability to work with APIs and render QR codes — Base64 encoding knowledge is required.</li>
+  <li>BRL currency support on your site.</li>
+</ul>
 
 ### Limitations
 
-* Supports transactions in **BRL** currency only as specified by Pix Automático.
-* The integration process requires setting up with Ebanx  and Recurly's APIs and demands technical proficiency.
-* One-time customer or merchant initiated Pix transactions are not supported. Only subscription signup and automatic renewals are supported.
-* Flexible Schedules and Net Terms / Modifying the Renewal Date are not supported by this payment method. PIX demands date of renewal remain consistent with the original signup and that there are no more than one (1) successful transaction attempt within the billing period. If renewal dates are changed without signing up again, the renewals will fail.
-* Manual or forced conversion of trials is not supported by this payment method as Pix demands a static start date for the first renewal which is decided based on plan data associated with the subscription. Conversion attempts prior to this date are not supported and will fail.
-* PIX requires subscription frequencies be one of:
-  * Weekly, Monthly, Quarterly, Half-yearly, or Yearly. This can translate into other customizable Billing frequencies such as 7 Days, 30 Days, every 4 Weeks, Every 3 Months, Every 180 Days, and so on. Schedules that fall out of this pattern will be met with a validation error and the subscription signup will be unsuccessful.
-* Other limitations include:
-  * Invoice / Calendar Aggregation
-  * Parent/Child Accounts
-  * Multiple Subscriptions per Account is not supported
-  * Proration during a Subscription Upgrade or change is not supported
-  * Funds verification and Wallet payment instrument visibility are not supported
-  * Coupons are supported however, **100% coupons during signup cannot be supported** as e-mandate creation is a requirement for this payment method. Please use a free trial option instead.
+<ul class="rp-list">
+  <li>BRL is the only supported currency.</li>
+  <li>One-time transactions and force collections are not supported — only subscription sign-ups and automatic renewals.</li>
+  <li><strong>Renewal date must remain fixed</strong> — Flexible schedules, net terms, and renewal date modifications are not supported. PIX requires the renewal date to stay consistent with the original sign-up, with no more than one successful transaction per billing period. Changing renewal dates without a new sign-up will cause renewals to fail.</li>
+  <li><strong>No manual or forced trial conversion</strong> — PIX requires a static start date for the first renewal based on plan data. Conversion attempts before this date will fail.</li>
+  <li><strong>Supported billing frequencies</strong> — PIX subscriptions must use one of: Weekly, Monthly, Quarterly, Half-yearly, or Yearly — or their equivalent day-based values (7 days, 30 days, every 4 weeks, every 3 months, every 180 days, etc.). Schedules outside this pattern return a validation error and the sign-up will fail.</li>
+  <li>The following features are not supported: invoice/calendar aggregation, parent/child accounts, multiple subscriptions per account, proration during subscription upgrades or changes, and funds verification/wallet payment instrument visibility.</li>
+  <li>100% coupons during signup are not supported — e-mandate creation is required for this payment method. Use a free trial instead. Standard coupons are supported.</li>
+</ul>
 
-# Description
+# Definition
 
-PIX Automático is a recurring payment feature within Brazil's PIX instant payment system, allowing users to set up and authorize automatic, scheduled payments directly from their bank accounts for services like subscriptions, utility bills, and memberships. It functions similarly to a traditional direct debit but is processed through the instant, automated PIX network, eliminating the need for credit cards or manual actions for every payment. This system provides users with control over their recurring payments and helps businesses manage subscriptions more efficiently.
-
-Available for use with Recurly.js for subscription signups for Recurly merchants, this secure payment method is fast, easy, and simple.
+<div class="rp-definition">Pix Automático is a recurring payment feature within Brazil's PIX instant payment system. It allows customers to authorize automatic, scheduled payments from their bank accounts for subscriptions without needing to act manually on each renewal — functioning like a direct debit but processed through PIX's instant network. Signup requires rendering an on-page QR code using a Base64 value returned in the initial API response.</div>
 
 # Key details
 
+<div class="rp-card">
+
+### Use cases
+
+**Recurring subscriptions** — Pix Automático supports subscription sign-ups and automatic renewals for Brazilian customers using their bank account.
+
+**QR code enrollment** — Customers authorize the recurring mandate by scanning a QR code at checkout, completing enrollment through their banking app on mobile or desktop.
+
+</div>
+
 ## Supported features
 
-* **Subscriptions** Customers can use their Pix wallet to sign up for subscriptions. If one-time transactions are necessary, Pix is not supported.
-  * We support **Journey 2** for Trial Subscriptions and **Journey 3** for Subscriptions with an immediate payment amount due.
+- **Subscription sign-ups** — Customers authorize subscriptions via QR code. One-time transactions are not supported.
+  - **Journey 2** is supported for trial subscriptions.
+  - **Journey 3** is supported for subscriptions with an immediate payment amount due.
+- **Mobile and desktop support** — Supports transaction flows on both mobile and desktop.
+- **Compliant retries** — Retries occur automatically within the current billing period, per PIX requirements. See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/static-retries#/specialized-retry-strategies" target="_blank">Static Retries documentation</a> for details. No additional configuration is required.
 
-* **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
+## Customer bank interactions
 
-* **Compliant Retries:** Supports retrying automatically within the confines of the current billing period. Read more on our [static retries documentation](https://docs.recurly.com/recurly-subscriptions/docs/static-retries#/specialized-retry-strategies). There is no additional configuration required.
+Customers can cancel or modify their subscription from within their banking app:
 
-## Customer Bank interactions
+- **Pending payment cancellation** — Customers have 2 full days before the official processing date to cancel a pending Pix transaction. When this occurs, Recurly consumes a webhook and marks the scheduled transaction as declined. You can then reach out to the customer about payment options, cancel the subscription, or allow dunning to expire it.
+- **Enrollment revocation** — Customers can cancel their entire subscription by revoking the enrollment in their banking app. This immediately cancels the active subscription in Recurly.
 
-**What customers can do within their bank apps:** Customers can cancel enrollments (subscription agreements) and individual renewal transactions from within their banking application.
+**Merchant-initiated actions:** When you expire a subscription manually or through dunning, Recurly sends a revocation request to the gateway to expire the mandate in the customer's banking app.
 
-* When a Pix automatic transaction is submitted, consumers have a 2 full days before the official processing date to cancel the pending request. When this happens, Recurly will consume a webhook and mark the scheduled transaction as declined. You will need to reach out to your customer to discuss payment options, or you have the option to cancel the subscription, or expire the subscription through dunning if you wish.
-* Users can cancel the entire subscription by revoking their enrollment for that subscription. This will cause a complete cancellation of the active subscription within Recurly.
+## Required fields
 
-**What can you do with Pix Subscriptions in Recurly:** When expiring a subscription, either manually or through dunning, Recurly will send a revocation request to the gateway to expire the mandate within the customer's bank app.
+Always send the following customer data with Pix Automático transactions:
 
-## Required Fields
+- Customer name and billing address
+- Customer email address
+- Customer phone number
+- Tax ID and Tax ID type (required for Brazil)
 
-Pix Automático will require you always send certain data:
+## Retries and dunning
 
-* Customer Name Billing Address
-* Customer Email Address
-* Customer Phone Number
-* Tax ID / Tax ID Type when the Region requires it (Brazil)
+Pix Automático requires all retries to occur within the current billing period. For example, on a weekly subscription, the initial renewal attempt and all retries must occur within 7 days. It's important to **set your dunning window to match the billing period** to avoid dunning extending beyond the window where retries can occur.
 
-## Retries and Dunning Settings
+Pix Automático retries are asynchronous and remain in a Scheduled state until Recurly receives an update from the gateway.
 
-Due to Pix Automatico's requirement that all retries occur within the current billing period (example: if you have a weekly subscription, the initial renewal attempt and retries must occur within 7 days), if will be especially important to **set up your dunning window to match the payment method** to avoid extended dunning periods where retries cannot occur.
-
-Pix Automatico retries are, like all Pix payments, asynchronous and will remain in scheduled until we receive an update.
-
-**Other details:**
-
-* There are 3 retries available for a given billing period on Pix Automatico subscriptions.
-* If 3 failures occur after the initial renewal, your dunning settings for the invoice/subscription will be applied.
+- Up to 3 retries are available per billing period.
+- If all 3 retries fail after the initial renewal attempt, your configured dunning settings for the invoice/subscription apply.
 
 # FAQs
 
-#### **Q: Which gateways support Pix Automático?**
+<Accordion title="Which gateways support Pix Automático?">
+  Pix Automático is supported through <a href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/" target="_blank">Ebanx</a>. See the Ebanx documentation for setup and troubleshooting details.
+</Accordion>
 
-**A**: Pix Automático is directly supported through the below gateway offering. Refer to the associated documentation for setup and troubleshooting guidance:
+<Accordion title="Does Pix Automático use Recurly.js?">
+  Pix Automático requires rendering an on-page QR code during signup. You'll receive a Base64-encoded QR code in the initial payload response. See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#/" target="_blank">Pix Automático Integration Guide</a> for implementation details.
+</Accordion>
 
-* <Anchor label="Ebanx" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/">Ebanx</Anchor>
-
-#### **Q: Does Pix Automático use Recurly.js?**
-
-**A**: Pix Automático requires rendering of an **on-page QR code** during signup. You will receive a Base64 QR code in the initial payload response. See our Integration guide for more details.
-
-#### **Q: How can I integrate my checkout solution to use Pix Automático?**
-
-**A**: Pix Automático is supported our V3 APIs. You can find links to our API guide below:
-
-* <Anchor label="Pix Automatico API Guide" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#/">Pix Automatico API Guide</Anchor>
+<Accordion title="How do I integrate Pix Automático into my checkout?">
+  Pix Automático is supported via the V3 API. See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#/" target="_blank">Pix Automático Integration Guide</a> to get started.
+</Accordion>
 
 <br />
