@@ -1,9 +1,9 @@
 ---
 title: Invoice dashboard
 excerpt: >-
-  Efficiently manage and understand your Recurly invoices with our comprehensive
-  Invoices Dashboard. Gain insights, control, and clarity in your billing
-  processes.
+  View, search, filter, and sort all customer invoices from Recurly's
+  centralized invoice dashboard — with full status definitions for charge and
+  credit invoices.
 deprecated: false
 hidden: false
 metadata:
@@ -13,126 +13,115 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Invoices Dashboard in Recurly provides a centralized view for managing all customer invoices — with search, filter, and sort capabilities, alongside full visibility into invoice statuses, collection methods, dunning, and refunds.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#invoice-statuses"><span class="rp-toc-num">3</span>Invoice statuses</a>
+    <a class="rp-toc-pill" href="#credit-invoice-statuses"><span class="rp-toc-num">4</span>Credit invoice statuses</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Active Recurly account with admin access.
+<ul class="rp-list">
+  <li>An active Recurly account with admin access.</li>
+</ul>
 
 # Definition
 
-The Invoices Dashboard in Recurly provides a centralized platform for viewing, managing, and understanding various aspects of customer invoices. This dashboard allows for detailed oversight of invoice types, statuses, numbering, display elements, and collection methods, alongside specialized features like subscription changes, dunning management, and refunds.
-
-# Key benefits
-
-* **Enhanced Invoice Tracking**: Seamlessly view and manage all customer invoices, including the ability to search, filter, and sort, ensuring effective invoice oversight.
+<div class="rp-definition">The Invoices Dashboard provides a centralized platform for viewing, managing, and understanding customer invoices. It covers invoice types, statuses, numbering, collection methods, and specialized features including subscription changes, dunning management, and refunds.</div>
 
 # Key details
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/793f35e-image.png" />
+
+<Image src="https://files.readme.io/793f35e-image.png" align="center" width="75%" border={true} />
+
 
 ## View invoices
 
-You can view all your customer invoices in the Recurly Admin Console. Navigate to Customers→Invoices to access them.
+Navigate to **Customers → Invoices** in the Recurly Admin Console to access all customer invoices.
 
 ### Search
 
-Find specific invoices quickly using the search feature. You can search by:
+Find specific invoices by searching on any of the following:
 
-* Account code
-* Account username
-* Account email address
-* Account first and last name
-* Account company name
-* Invoice number
-* Invoice PO (Purchase Order) number
-* Bill To address on the invoice
-* VAT (Value Added Tax) number on the invoice
-* Total amount of the invoice
-* Discount amount on the invoice
-* Tax amount on the invoice
-* Reason for invoice recovery
+<ul class="rp-list">
+  <li>Account code</li>
+  <li>Account username</li>
+  <li>Account email address</li>
+  <li>Account first and last name</li>
+  <li>Account company name</li>
+  <li>Invoice number</li>
+  <li>Invoice PO (Purchase Order) number</li>
+  <li>Bill To address on the invoice</li>
+  <li>VAT number on the invoice</li>
+  <li>Total amount</li>
+  <li>Discount amount</li>
+  <li>Tax amount</li>
+  <li>Reason for invoice recovery</li>
+</ul>
 
 ### Filter
 
-Narrow down the invoice list using filters. You can filter invoices by:
+Narrow the invoice list using the following filters:
 
-* Posted date of the invoice
-* Currency
-* Type of invoice
-* Note: Legacy invoices originating from purchases are included under the **Charge** filter, and those originating from refunds are under the **Credit** filter.
-* Status of the invoice
-* Collection method used
-* Origin of the invoice
+<ul class="rp-list">
+  <li>Posted date</li>
+  <li>Currency</li>
+  <li>Invoice type — legacy invoices from purchases appear under <strong>Charge</strong>; those from refunds appear under <strong>Credit</strong></li>
+  <li>Invoice status</li>
+  <li>Collection method</li>
+  <li>Invoice origin</li>
+</ul>
 
 ### Sort
 
-Organize the invoice list more effectively by sorting. You can sort by:
+Click any column header to sort the invoice list by: invoice number, account display name, posted date, status, or total amount.
 
-* Invoice number
-* Account display name
-* Posted date of the invoice
-* Status of the invoice
-* Total amount of the invoice\
-  To sort the list, simply click on the desired column header.
+# Invoice statuses
 
-## Invoice statuses
+### Pending / Open
 
-#### Pending/Open
+Invoices start as Pending — neither paid nor past due. For automatic collection, invoices shift to Paid or Past Due based on the transaction result. For manual collection, invoices remain Pending until payment is received or the selected term option's due date is reached.
 
-* Initial State: Invoices start as Pending, indicating they are neither paid nor past due.
-* Automatic Collection: Invoices automatically attempting collection will shift to Paid or Past Due based on the transaction result.
-* Manual Collection: Invoices under manual collection remain Pending until payment is received or the selected term option's date is reached.
+### Processing
 
-#### Processing
+An invoice is Processing when a payment has been initiated but the result is pending — common with ACH and Direct Debit payments. The invoice updates to Paid or Past Due/Failed once the transaction result is received.
 
-* Definition: An invoice is processing when a payment is initiated but the result is pending. Common with ACH / Direct Debit payments.
-* Outcome: The invoice will be updated to Paid or Past Due/Failed, depending on the transaction's outcome.
+### Past Due
 
-#### Past Due
+An invoice becomes Past Due when it remains unpaid by the due date set by the selected <a href="https://docs.recurly.com/docs/manual-payments#end-of-month-terms" target="_blank">term option</a>. For automatic collection, invoices decline on the initial transaction. For manual collection, invoices switch to Past Due 24 hours after the due date.
 
-* Criteria: An invoice becomes past due if it remains unpaid by the due date specified by the selected [term option](https://docs.recurly.com/docs/manual-payments#end-of-month-terms).
-* Automatic Collection: Invoices automatically decline on initial transactions.
-* Manual Collection: Invoices switch to Past Due 24 hours after the due date.
-* Note: Account balances can be applied to past due invoices via the UI or the following API endpoints:
-  * API V3: [GET Account Balance](https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_account_balance), [PUT Apply Credit Balance](https://recurly.com/developers/api/v2021-02-25/index.html#operation/apply_credit_balance)
-  * API V2: [GET Account Balance](https://recurly.com/developers/api-v2/v2.29/index.html#operation/lookupAccountBalance), [PUT Apply Credit Balance](https://recurly.com/developers/api-v2/v2.29/index.html#operation/applyCreditBalance)
+Account balances can be applied to past-due invoices via the UI or the following API endpoints:
 
-#### Paid/Closed
+- **API V3**: <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_account_balance" target="_blank">GET Account Balance</a>, <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/apply_credit_balance" target="_blank">PUT Apply Credit Balance</a>
+- **API V2**: <a href="https://recurly.com/developers/api-v2/v2.29/index.html#operation/lookupAccountBalance" target="_blank">GET Account Balance</a>, <a href="https://recurly.com/developers/api-v2/v2.29/index.html#operation/applyCreditBalance" target="_blank">PUT Apply Credit Balance</a>
 
-* Definition: An invoice is Paid when the total balance is settled.
-* Automatic Zero Balance: Invoices with a zero balance due at post (due to adjustments, discounts, or credits) are immediately marked Paid.
-* Manual Collection: Invoices under manual collection reach a Paid state once the full balance is paid.
+### Paid / Closed
 
-#### Failed
+An invoice is Paid when the total balance is settled. Invoices with a zero balance at posting (due to adjustments, discounts, or credits) are immediately marked Paid. Manual collection invoices reach Paid once the full balance is received.
 
-* Definition: An invoice is marked as Failed when deemed uncollectable and written off as bad debt.
-* Credit Invoices: For invoices with the Credit Invoices feature, failing an invoice generates a corresponding write-off credit invoice, balancing the failed charge invoice to zero.
+### Failed
 
-### Credit invoice statuses
+An invoice is Failed when it is deemed uncollectable and written off as bad debt. When the Credit Invoices feature is enabled, failing an invoice generates a corresponding write-off credit invoice, balancing the failed charge invoice to zero.
 
-#### Open
+# Credit invoice statuses
 
-* Initial State: Every credit invoice begins as Open, indicating an outstanding credit balance.
+### Open
 
-#### Processing
+Every credit invoice starts as Open, indicating an outstanding credit balance.
 
-* Definition: A credit invoice enters a Processing state when a refund transaction is initiated but the result is pending. This often occurs with ACH bank payments.
-* Balance Adjustments: The processing transaction amount is temporarily deducted from the invoice balance. If the transaction is declined, the balance increases again.
-* Impact on Other Transactions: If the credit invoice has a partial balance not covered by the processing transaction, new charge invoices on the account can use the remaining balance as payment during this period.
-* Status Outcome: After the transaction response, the invoice status updates to Closed if successful with no remaining balance, or reverts to Open if declined.
+### Processing
 
-#### Closed
+A credit invoice enters Processing when a refund transaction is initiated but the result is pending — common with ACH bank payments. The processing transaction amount is temporarily deducted from the invoice balance; if declined, the balance increases again. Any partial balance not covered by the processing transaction can still be used toward new charge invoices on the account. After the transaction resolves, the invoice moves to Closed (if fully settled) or back to Open (if declined).
 
-* Definition: A credit invoice is Closed when it has no outstanding credit balance.
-* Reopening Conditions: A Closed credit invoice can be reopened if a credit payment from the invoice is voided. This usually happens if the corresponding charge invoice is failed.
-* Balance Usage: A Closed status can result from the entire credit balance being used for payments or a combination of credit payments and voided balances.
+### Closed
 
-#### Voided
+A credit invoice is Closed when it has no outstanding credit balance — either the full balance was applied to payments, or a combination of payments and voided balances reduced it to zero. A Closed credit invoice can be reopened if a credit payment is voided, which typically happens when the corresponding charge invoice is failed.
 
-* Definition: A credit invoice is Voided if it's identified as a mistake.
-* Implications: Voiding a credit invoice implies that its credit balance was neither used for payments nor refunded.
+### Voided
+
+A credit invoice is Voided when it is identified as a mistake. A voided credit invoice's balance was neither applied to payments nor refunded.
