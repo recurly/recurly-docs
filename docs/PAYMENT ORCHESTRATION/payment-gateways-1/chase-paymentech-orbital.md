@@ -1,8 +1,9 @@
 ---
 title: Chase Paymentech Orbital
 excerpt: >-
-  Effortlessly integrate Recurly with Chase Paymentech Orbital, Salem Platform
-  to optimize your payment processing capabilities.
+  Connect Chase Paymentech Orbital (Salem Platform) to Recurly to process credit
+  card, Google Pay, and China UnionPay transactions across a wide range of
+  currencies.
 deprecated: false
 hidden: false
 metadata:
@@ -12,126 +13,137 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Chase Paymentech Orbital integrates with Recurly on the Salem (Stratus) Platform, giving merchants access to a broad range of currencies, card brands, and payment types. This guide covers everything from initial Chase configuration to enabling currencies, card types, and advanced settings like Zero Dollar Authorizations and partial AVS validation.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#integrating-chase-paymentech-orbital-with-recurly"><span class="rp-toc-num">3</span>Integration</a>
+  </div>
+</div>
 
 ### Limitations
 
-* Only supported via the Stratus/Salem platform. Tampa merchant accounts are not supported.
-* Recurly does not support lifecycle webhooks or post-auth webhooks from the Gateway. If you are using gateway-level fraud review systems, or are making transaction actions at the gateway, there is risk that Recurly and the gateway could be out of sync. It is advised to keep an eye on gateway-level fraud services, and ensure you are capturing, voiding, and processing refunds from Recurly instead of at the gateway.
-* Chase returns certain response codes that mean two-separate things, though the code is mapped to one code in our system. The list is below: 
-  * C5 / Over Frequency Limit -- this can mean two different things, but looking at the gateway message is important. It may mean Over Frequency Limit unless the card brand is MasterCard, in which case it may mean that 3DS / SCA is required.
+<ul class="rp-list">
+  <li><strong>Salem/Stratus platform only</strong> — Recurly only supports Chase Paymentech Orbital on the Salem (Stratus) platform. Tampa merchant accounts are not supported.</li>
+  <li><strong>No lifecycle or post-auth webhooks</strong> — Recurly does not support lifecycle or post-auth webhooks from Chase. If you're using gateway-level fraud review systems or making transaction actions directly at the gateway, Recurly and Chase can fall out of sync. Always capture, void, and process refunds from Recurly rather than directly in the gateway.</li>
+  <li><strong>Ambiguous C5 response code</strong> — Chase's C5 / Over Frequency Limit code can mean two different things. Check the gateway message to determine the cause: for most card brands it indicates an over-frequency limit, but for Mastercard it may indicate that 3DS / SCA is required.</li>
+</ul>
 
 # Definition
 
-Recurly provides seamless support for the Chase Paymentech Orbital, specifically for the Salem Platform. This integration allows merchants to effortlessly connect their Recurly account with Chase Paymentech Orbital to facilitate secure and efficient payment processing.
+<div class="rp-definition">Chase Paymentech Orbital is a payment gateway that connects merchants to Chase's processing network via the Salem Platform. Recurly is a certified Orbital Submitter, enabling a trusted integration beyond a standard gateway connector. The integration supports a wide range of currencies, card brands, and transaction types including recurring billing and MOTO processing.</div>
 
 # Key details
 
-| Field Name                      | Description                                                                                                                                                                                                                                                                                                                                                                                                              |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Services that work with Recurly | Processing, Recurring Billing, [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)  Processing                                                                                                                                                                                                                                                                                               |
-| Supported Operations            | Authorize & Capture, Purchase, Recurring, Refund, Verify, Void                                                                                                                                                                                                                                                                                                                                                           |
-| Supported Payment Types         | Credit Cards                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Supported Card Brands           | Visa, MasterCard, American Express, Discover, China UnionPay, Apple Pay, Google Pay                                                                                                                                                                                                                                                                                                                                      |
-| Gateway Specific 3DS2 Supported | Yes                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Card on File Supported          | Yes                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Regions                         | US, Canada, Australia, Germany, France, UK, Italy                                                                                                                                                                                                                                                                                                                                                                        |
-| Currencies                      | USD, ARS, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EUR, YER, XOF, XCD, UAH, TZS, TTD, SCR, RSD, QAR, MUR, MOP, MNT, MKD, MAD, LRD, LBP, LAK, KZT, KES, JMD, EGP, DZD, DOP, BZD, BWP, BSD, BND, BMD, BAM, AZN, ALL, AFN, BDT, BBD, AED, LKR, SAR, RON, PKR, NGN, HNL, BGN, IDR, UYU, PYG, PAB, GTQ, CRC, BOB, MYR, PEN, TRY, GBP, HKD, HRK, HUF, ILS, INR, JPY, KRW, MXN, NOK, NZD, PLN, RUB, SEK, SGD, ZAR, TWD, PHP |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
+  <tr><td>Services that work with Recurly</td><td>Processing, recurring billing, <a href="https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/" target="_blank">MOTO</a> processing</td></tr>
+  <tr><td>Supported operations</td><td>Authorize and Capture, Purchase, Recurring, Refund, Verify, Void</td></tr>
+  <tr><td>Supported payment types</td><td>Credit cards</td></tr>
+  <tr><td>Supported card brands</td><td>Visa, Mastercard, American Express, Discover, China UnionPay, Apple Pay, Google Pay</td></tr>
+  <tr><td>Gateway-specific 3DS2 supported</td><td>Yes</td></tr>
+  <tr><td>Card on file supported</td><td>Yes</td></tr>
+  <tr><td>Regions</td><td>US, Canada, Australia, Germany, France, UK, Italy</td></tr>
+  <tr><td>Currencies</td><td>USD, ARS, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EUR, YER, XOF, XCD, UAH, TZS, TTD, SCR, RSD, QAR, MUR, MOP, MNT, MKD, MAD, LRD, LBP, LAK, KZT, KES, JMD, EGP, DZD, DOP, BZD, BWP, BSD, BND, BMD, BAM, AZN, ALL, AFN, BDT, BBD, AED, LKR, SAR, RON, PKR, NGN, HNL, BGN, IDR, UYU, PYG, PAB, GTQ, CRC, BOB, MYR, PEN, TRY, GBP, HKD, HRK, HUF, ILS, INR, JPY, KRW, MXN, NOK, NZD, PLN, RUB, SEK, SGD, ZAR, TWD, PHP. Contact Chase directly for the full list of Salem platform-supported currencies.</td></tr>
+</table>
 
-To integrate Recurly with Chase Paymentech Orbital, Salem Platform, it is essential to modify a few configurations in both Chase and Recurly. This ensures the integration functions optimally.
+## China UnionPay
 
-### Initial requirements
-
-1. **Platform selection**
-   * To begin, you must operate on the Chase Paymentech Orbital using the Salem (sometimes referred to as ‘Stratus’) Platform. Chase offers various processing platforms, but at this time, Recurly only supports integration with the Salem Platform through the Orbital Gateway front end. A direct Salem processing MID will not suffice. Merchant accounts through the Tampa platform are not supported.
-2. **Configuring chase**
-   * Recurly is a certified Orbital Submitter, signifying a trusted integration level beyond just a gateway connector. To initiate setup, contact Chase directly and request configuration of your account to permit connections from Recurly, a Certified Orbital Submitter on the Salem Platform. If Chase requests the Recurly's submitter ID, it can be accessed [here](https://docs.recurly.com/docs/chase-orbital-gateway-setup). Typically, this information suffices, but if Chase requires specific IP addresses used by Recurly for transaction routing, they can be obtained [here](https://docs.recurly.com/docs/ip-allowlist).
-3. **Connection details**
-   * Acquire your Merchant Account ID, Username, and Password from Chase. These credentials are necessary to accurately link your Recurly site to your Chase Paymentech gateway.
-
-### Supported currencies
-
-* **Salem platform**: The Salem platform accommodates a wider range of currencies. For detailed information, it is advisable to directly contact Chase.
-
-### China UnionPay integration
-
-Recurly extends support for **China UnionPay** through the Chase Orbital gateway. To activate this feature, you must have China Unionpay enabled on your Chase Orbital instance. Once it is an accepted card brand on your Chase Orbital instance, you can configure China UnionPay as an accepted card type within your Chase Orbital gateway settings in Recurly.
+Recurly supports China UnionPay through the Chase Orbital gateway. To enable it, first contact Chase Support to activate China UnionPay at the gateway level on your Chase Orbital instance. Once it's enabled as an accepted card brand in Chase, you can select it as an accepted card type in your Chase Orbital gateway settings in Recurly.
 
 # Integrating Chase Paymentech Orbital with Recurly
 
-### Step 1: Confirm your chase platform
+## Step 1: Confirm your Chase platform
 
-* Ensure that you are operating on the **Chase Paymentech Orbital, Salem Platform**. Chase offers various processing platforms, but Recurly currently supports integration only with the Salem Platform.
+Verify that your merchant account is on the **Chase Paymentech Orbital, Salem Platform**. Recurly supports integration only with the Salem Platform through the Orbital Gateway front end. A direct Salem processing MID is not sufficient, and Tampa platform accounts are not supported.
 
-### Step 2: Configure Chase
+## Step 2: Configure Chase
 
-* Contact **Chase Paymentech Support** and request to set up your Chase account to permit connections from Recurly, a Certified Orbital Submitter on the Salem Platform.
-* If Chase asks for Recurly’s submitter ID, provide the ID found [here](https://docs.recurly.com/docs/chase-orbital-gateway-setup).
-* If Chase requires specific IP addresses used by Recurly for transaction routing, provide the IPs found [here](https://docs.recurly.com/docs/ip-allowlist).
+Contact **Chase Paymentech Support** and request that your account be configured to permit connections from Recurly, a Certified Orbital Submitter on the Salem Platform.
 
-### Step 3: Obtain Chase credentials
+- If Chase asks for Recurly's submitter ID, provide the ID found in the <a href="https://docs.recurly.com/docs/chase-orbital-gateway-setup" target="_blank">Chase Orbital gateway setup guide</a>.
+- If Chase requires specific IP addresses used by Recurly for transaction routing, provide the IPs found in the <a href="https://docs.recurly.com/docs/ip-allowlist" target="_blank">IP allowlist</a>.
 
-* Request your **Merchant Account ID**, **Username**, and **Password** from Chase. These will be necessary to link Recurly to your Chase Paymentech gateway.
+## Step 3: Obtain Chase credentials
 
-### Step 4: Add Chase gateway in Recurly
+Request the following credentials from Chase — you'll need them to link Recurly to your gateway:
 
-* Log in to your **Recurly Admin Console**.
+- Merchant Account ID
+- Username
+- Password
 
-* Navigate to **Configuration→Payment Gateways**.
+## Step 4: Add the Chase gateway in Recurly
 
-* Click **Add Gateway** and select the icon for **Chase**.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Gateways</h4><p>In Recurly, navigate to <strong>Configuration → Payment Gateways</strong>, click <strong>Add Gateway</strong>, and select <strong>Chase</strong>.</p></div>
+  </div>
+</div>
 
-<Image align="center" border={true} src="https://files.readme.io/bc89bf8-image.png" className="border" />
 
-* In the 'Credentials' section, enter your **Username**, and **Password** obtained from Chase in Step 3. You may optionally also provide:
-  * JPMPP Merchant ID
-  * JPMPP Username
-  * JPMPP Password
+<Image src="https://files.readme.io/bc89bf8-image.png" align="center" width="75%" border={true} />
 
-### Step 5: Enable accepted credit card types and currencies
 
-* Within the Chase Paymentech Orbital gateway configuration in Recurly, enable the specific **currencies** and **card brands** you would like to support. If you would like to support Google Pay, it can be selected under Alternative Payment Methods.
-* For each additional currency provided, you must enter your Merchant ID associated with that currency. You can enter your Merchant ID under the header ‘Merchant IDs for Selected Currencies’ in the Accepted Currencies section.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enter your credentials</h4><p>In the <strong>Credentials</strong> section, enter the Username and Password obtained from Chase. Optionally, you can also provide your JPMPP Merchant ID, JPMPP Username, and JPMPP Password.</p></div>
+  </div>
+</div>
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/280b6d8-image.png" className="border" />
+## Step 5: Enable card types and currencies
 
-### Step 6: Mark gateway as enabled
+In the Chase Orbital gateway configuration in Recurly, select the card brands and currencies you want to support. To support Google Pay, select it under **Alternative Payment Methods**.
 
-* Ensure that you mark the gateway as '**Enabled for New Transactions**'. This setting activates the gateway, allowing you to start processing transactions via your Chase Paymentech Orbital gateway.
+For each additional currency, enter the Merchant ID associated with that currency under **Merchant IDs for Selected Currencies** in the Accepted Currencies section.
 
-### Step 7: Configure China UnionPay (if necessary)
 
-* If you wish to accept China UnionPay, contact **Chase Support** to enable this card brand at the gateway level. After this step, you may enable China UnionPay as an accepted card type within your Chase Orbital gateway settings in Recurly.
+<Image src="https://files.readme.io/280b6d8-image.png" align="center" width="40%" border={true} />
 
-### Step 8: Configure zero dollar authorizations (advanced)
 
-* It is recommended to enable Zero Dollar Authorizations where possible, though you will need to work with Chase directly to ensure your Merchant account is set up to do so. Do not enable Zero Dollar Authorizations if your gateway cannot support it.
-* Once set up properly with **Chase Support**, you may enable ZDA support in your Recurly settings for each supported card type.
+## Step 6: Mark the gateway as enabled
 
-### Step 9: MOTO transaction type settings
+Set the gateway status to **Enabled for New Transactions** to activate it and begin processing transactions.
 
-* Do not enable this if your business runs recurring and ecommerce transactions where the customer is directly present in your checkout flow. This setting should only be used on sites or gateway instances that are used in a back office environment where an employee at your location is submitting transactions on behalf of your customer.
+## Step 7: Configure China UnionPay (if applicable)
 
-### Step 10: Partial AVS validations
+If you want to accept China UnionPay, contact Chase Support to enable it at the gateway level first. Once enabled in Chase, select it as an accepted card type in your Chase Orbital gateway settings in Recurly.
 
-* On one-time transactions and subscription sign ups, Customers should enter their full and correct Billing Address. However, sometimes customers make mistakes and in other scenarios, the transaction may be fraudulent. In these cases, to fully protect your business against potential fraud, Recurly has introduced a setting to enable automatically rejecting (voiding) transactions where the Address Verification code received from Chase is not a **full** match.
-* Enabling this setting will only take effect if you have also enabled the Address Verification Check in Payment Settings. Address Verification Check by itself will also protect you but will only reject (void) transactions if the AVS code indicated a full mismatch (both Address and Zip Code did not match).
-* Transactions rejected by AVS Checks will appear as declines in reporting.
+## Step 8: Configure Zero Dollar Authorizations (optional)
 
-**Note**: This feature is not fully rolled out. To gain access, please contact Customer Support.
+Enable Zero Dollar Authorizations (ZDA) where possible — but only after confirming with Chase that your merchant account supports them. Do not enable ZDA in Recurly if your gateway cannot support it.
 
-### Step 11: Review and save
+Once Chase confirms ZDA support, enable it in your Recurly gateway settings for each supported card type.
 
-* Review all the settings to ensure they are correct, then click the **Save Changes** button.
+## Step 9: MOTO transaction type settings
 
-### Step 12: Test the integration
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Only enable MOTO if this gateway instance is used in a back-office environment where an employee is submitting transactions on a customer's behalf. Do not enable MOTO for sites where customers complete checkout directly.</div>
+</div>
 
-* After saving, conduct a series of test transactions to confirm the integration is working as expected.
+## Step 10: Partial AVS validation (optional)
 
-### Step 13: Monitor transactions
+Partial AVS validation automatically rejects (voids) transactions where the Address Verification code from Chase is not a **full** match — protecting against both entry errors and potential fraud.
 
-* Once live, routinely check Recurly and Chase Paymentech Orbital dashboards to ensure transactions are processing smoothly.
+This setting only takes effect if you have also enabled the Address Verification Check in **Payment Settings**. The standard Address Verification Check alone rejects transactions only on a full mismatch (both address and zip code fail). Partial AVS validation adds a stricter layer on top of that. Transactions rejected by AVS checks appear as declines in reporting.
+
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong> Partial AVS validation is not yet fully rolled out. Contact Recurly Support to request access.</div>
+</div>
+
+## Step 11: Review and save
+
+Review all settings and click **Save Changes**.
+
+## Step 12: Test the integration
+
+After saving, run a series of test transactions to confirm the integration is working as expected.
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Once live, check both the Recurly Admin interface and your Chase Paymentech Orbital dashboard regularly to confirm transactions are processing smoothly.</div>
+</div>
+
+<br />
