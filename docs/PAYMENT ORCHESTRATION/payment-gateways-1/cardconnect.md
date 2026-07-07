@@ -1,8 +1,9 @@
 ---
 title: CardConnect
 excerpt: >-
-  Seamlessly integrate and manage your CardConnect Payment Gateway through
-  Recurly for efficient and secure credit card transactions.
+  Connect CardConnect to Recurly to process credit card transactions for US and
+  Canadian merchants — with Auth and Capture support, chargeback management, and
+  merchant account application via Recurly.
 deprecated: false
 hidden: true
 metadata:
@@ -12,98 +13,108 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">CardConnect is a payment gateway for US and Canadian merchants that supports credit card purchases, recurring billing, and Auth and Capture transactions. You can apply for a new CardConnect merchant account directly through Recurly at an exclusive processing rate, or connect an existing account.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#integration-guide"><span class="rp-toc-num">3</span>Integration guide</a>
+  </div>
+</div>
 
 ### Limitations
 
-* Check CardConnect / [CardPointe's list of prohibited businesses](https://support.cardpointe.com/assets/support/assets/Wells-Fargo-US-RISO-Agent-ISV-Unqualified-List-062422.01962.pdf) if you do not yet have an account.
+<ul class="rp-list">
+  <li>Review <a href="https://support.cardpointe.com/assets/support/assets/Wells-Fargo-US-RISO-Agent-ISV-Unqualified-List-062422.01962.pdf" target="_blank">CardConnect / CardPointe's list of prohibited businesses</a> before applying to confirm your business qualifies.</li>
+</ul>
 
 # Definition
 
-CardConnect is a payment gateway that enables merchants in the US and Canada to process credit card transactions. You can sign up for a merchant account through Recurly who can offer an exclusive rate on processing services. 
-
-> **Note**: Visit our [guide on testing your gateway configurations ](https://docs.recurly.com/docs/how-to-test-your-gateway)in Recurly to ensure your payment processes are set up correctly.
+<div class="rp-definition">CardConnect is a payment gateway that enables US and Canadian merchants to process credit card transactions through Recurly. It supports purchases, recurring billing, and Auth and Capture flows. Merchants can apply for a new CardConnect merchant account through Recurly at an exclusive rate, or connect an existing account.</div>
 
 # Key details
 
-| Field                           | Description                                                                                                |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Purchase, Recurring Transactions                                                                           |
-| Supported Operations            | Authorize & Capture, Purchase, Recurring Payments, Refund, Verify, Void                                    |
-| Supported Payment Types         | Credit Card Transactions                                                                                   |
-| Supported Card Brands           | Visa, Mastercard, American Express, Discover, JCB, Diners Club                                             |
-| Gateway Specific 3DS2 Supported | N/A                                                                                                        |
-| Card on File Supported          | Yes                                                                                                        |
-| Regions                         | US, Canada                                                                                                 |
-| Currencies                      | See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a> |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
+  <tr><td>Services that work with Recurly</td><td>Purchase, recurring transactions</td></tr>
+  <tr><td>Supported operations</td><td>Authorize and Capture, Purchase, Recurring payments, Refund, Verify, Void</td></tr>
+  <tr><td>Supported payment types</td><td>Credit card transactions</td></tr>
+  <tr><td>Supported card brands</td><td>Visa, Mastercard, American Express, Discover, JCB, Diners Club</td></tr>
+  <tr><td>Gateway-specific 3DS2 supported</td><td>N/A</td></tr>
+  <tr><td>Card on file supported</td><td>Yes</td></tr>
+  <tr><td>Regions</td><td>US, Canada</td></tr>
+  <tr><td>Currencies</td><td><a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">See all available</a></td></tr>
+</table>
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Before going live, see Recurly's <a href="https://docs.recurly.com/docs/how-to-test-your-gateway" target="_blank">guide to testing gateway configurations</a> to verify your payment setup is working correctly.</div>
+</div>
 
 ## Integration notes
 
-* Initially, closing your day's transaction batch is set to automatic, but you can adjust this according to your business needs.
-* Chargebacks can be managed and viewed within the CardPointe application, with customizable notifications and support from Fiserv's chargeback support.
-* The integration with CardConnect supports the [Auth and Capture](https://docs.recurly.com/docs/auth-and-capture) transaction flow, allowing for robust and secure credit card transactions.
+- Daily transaction batch closing is set to automatic by default, but can be adjusted to suit your business needs.
+- Chargebacks can be managed and viewed within the CardPointe application, with customizable notifications and support from Fiserv's chargeback team.
+- CardConnect supports the <a href="https://docs.recurly.com/docs/auth-and-capture" target="_blank">Auth and Capture</a> transaction flow.
 
 ## Merchant account application
 
-CardConnect processes your merchant application rapidly—with a minimum of a 4-hour turnaround and a 75% rate of automatic approval. If additional review is necessary, you will be contacted within 24 hours. Keep an eye on your inbox for updates from CardConnect regarding your application status.
+CardConnect processes merchant applications quickly — with a minimum 4-hour turnaround and a 75% automatic approval rate. If additional review is needed, you'll be contacted within 24 hours. Monitor your inbox for updates from CardConnect on your application status.
 
 ## Merchant account support
 
-If you have questions or need support related to your CardConnect merchant account:
-
-* For existing CardConnect accounts: If you want to use this account with Recurly, reach out to your CardConnect representative to update your account information.
-* To delete a CardConnect account: First, remove the payment gateway from within Recurly, and then contact CardConnect to deactivate or delete your merchant account.
-* For general support: Contact CardPointe Support at [cardpointeSupport@cardconnect.com](mailto:cardpointeSupport@cardconnect.com), or call 877-828-0720 (Opt 1, Opt 1), or get assistance through CoPilot merchant ticketing.
+- **Existing CardConnect account** — To use an existing account with Recurly, contact your CardConnect representative to update your account information.
+- **Delete a CardConnect account** — Remove the payment gateway from Recurly first, then contact CardConnect to deactivate or delete the merchant account.
+- **General support** — Contact CardPointe Support at <a href="mailto:cardpointeSupport@cardconnect.com">[cardpointeSupport@cardconnect.com](mailto:cardpointeSupport@cardconnect.com)</a>, call 877-828-0720 (Opt 1 → Opt 1), or open a ticket through CoPilot merchant ticketing.
 
 # Integration guide
 
-Ensure that you have an active CardConnect account. If you don't have one, follow the steps listed below. If you already have an active CardConnect account, skip to Step 2.
+If you already have an active CardConnect account, skip to Step 2.
 
-## Step 1: Applying for a CardConnect Merchant Account via Recurly
+## Step 1: Apply for a CardConnect merchant account
 
-1. **Access the CardConnect Application Link**
-   * From the 'Add CardConnect Gateway' page in Recurly, follow the link to CardConnect’s Hosted Application Page.
-2. **Complete the Merchant Application**
-   * Fill out the application form with your business details.
-3. **Submit Your Application**
-   * Review your information and submit the application.
-4. **Monitor Your Email**
-   * Check your email for updates on the application status from CardConnect.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Access the application</h4><p>From the <strong>Add CardConnect Gateway</strong> page in Recurly, follow the link to CardConnect's Hosted Application Page.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Complete and submit the application</h4><p>Fill in your business details, review the form, and submit your application.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Monitor your email</h4><p>Check your inbox for application status updates from CardConnect. Most applications receive a decision within 4 hours; additional review takes up to 24 hours.</p></div>
+  </div>
+</div>
 
-## Step 2: Configuring CardConnect in Recurly
+## Step 2: Configure CardConnect in Recurly
 
-1. **Login to Your Recurly Account**
-   * Log in to your Recurly dashboard.
-2. **Navigate to Payment Gateway Settings**
-   * Go to **Configuration→Payment Gateways**.
-3. **Select CardConnect Gateway**
-   * Choose ‘CardConnect’ from the list of available payment gateways.
-4. **Enter CardConnect Credentials**
-   * Input the following information as provided by CardConnect:
-     * Username
-     * Password
-5. **Enable Supported Card Brands**
-   * Specify which card brands you want to support.
-6. **Enable Accepted Currencies**
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Gateways</h4><p>In Recurly, navigate to <strong>Configuration → Payment Gateways</strong> and select <strong>CardConnect</strong> from the list of available gateways.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enter your credentials</h4><p>Input your CardConnect <strong>Username</strong> and <strong>Password</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Select accepted card brands</h4><p>Choose the card brands you want to support.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Configure currencies and Merchant IDs</h4><p>Under <strong>Accepted Currencies</strong>, add all currencies associated with your CardConnect account using the Available Currencies dropdown. For each currency, enter the corresponding CardConnect Merchant ID in the <strong>Merchant IDs for Selected Currencies</strong> field.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Configure Zero Dollar Authorizations (optional)</h4><p>If your CardConnect account supports ZDA, select which card types are authorized under <strong>Zero Dollar Authorizations (Advanced)</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div><h4>Enable and save</h4><p>Set the gateway to <strong>Enabled</strong> for new transactions when you're ready, then click <strong>Add Payment Gateway</strong> to complete setup.</p></div>
+  </div>
+</div>
 
-* In the Acceptance Currencies section, use the dropdown menu in the left section under Available Currencies and add all currencies associated with your CardConnect account(s).
-* In the same Accepted Currencies section, to the right, enter your CardConnect Merchant ID associated with each selected currency under Merchant IDs for Selected Currencies’.
-
-7. If your CardConnect Account is set up to accept Zero Dollar Authorizations, select which card types are authorized under ‘Zero Dollar Authorizations (Advanced)’.
-8. **Enable the Gateway for New Transactions**
-   * Select the radio button labeled 'Enabled’ when you are ready to go live.
-9. **Save Your Settings**
-   * Click on ‘Add Payment Gateway’ to finalize the setup.
-
-## Step 3: Merchant Account Support and Maintenance
-
-1. **Modify Existing CardConnect Account (if needed)**
-   * If you have an existing merchant account with CardConnect and would like to use this account with Recurly, please contact your CardConnect representative to modify your account information.
-2. **Deleting Your CardConnect Account (if needed)**
-   * To delete a CardConnect account, first remove the payment gateway from within Recurly, and then contact CardConnect to inactivate or delete your merchant account.
-3. **CardConnect Support**
-   * For additional support, contact CardPointe Support at [cardpointeSupport@cardconnect.com](mailto:cardpointeSupport@cardconnect.com), or call 877-828-0720 (Opt 1, Opt 1).
+<br />
