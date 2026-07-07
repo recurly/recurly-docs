@@ -1,9 +1,9 @@
 ---
 title: Amazon Pay
 excerpt: >-
-  Integrate Amazon Pay, the trusted payment solution from Amazon, into your
-  Recurly payment gateway to provide a smooth subscription payment experience
-  leveraging a platform utilized by millions of Amazon customers worldwide.
+  Let customers pay using their Amazon account on your Recurly site — available
+  in V1 (widgets) and V2 (redirect), with support for subscriptions,
+  multi-currency, and Recurly.js integration.
 deprecated: false
 hidden: false
 metadata:
@@ -13,49 +13,60 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Amazon Pay lets customers pay using their existing Amazon account, providing a familiar checkout experience across your site. Recurly supports two versions: Amazon Pay V1 (inline widgets) and Amazon Pay V2 (redirect-based). Both integrate via Recurly.js and support subscriptions and multi-currency transactions.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">3</span>FAQs</a>
+  </div>
+</div>
 
-### Required plan
+### Prerequisites
 
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-### Use cases
-
-* Seamless subscriptions: Amazon Pay enables effortless sign-ups for subscriptions, appealing to Amazon's vast user base.
-* Efficient checkout: Amazon Pay ensures a quick and secure checkout process, catering to both mobile and desktop users.
-
-### Prerequisites & supported gateways
-
-* A connection with Amazon Pay gateway - Integration via Recurly.JS.
-* Your site must support transactions in multiple currencies, including USD, EUR, and GBP.
+<ul class="rp-list">
+  <li>An Amazon Pay gateway connection in Recurly, integrated via Recurly.js.</li>
+  <li>Multi-currency support on your site, including USD, EUR, and GBP.</li>
+</ul>
 
 ### Limitations
 
-* Supports transactions in multiple currencies as specified by Amazon Pay.
-* The integration process requires setting up with Amazon Pay and Recurly.js and demands technical proficiency.
-* Coupons are supported however, **100% coupons during signup cannot be supported** as billing agreement creation is a requirement for this payment method. Please use a free trial option instead.
+<ul class="rp-list">
+  <li>Supported currencies are determined by Amazon Pay — see Amazon Pay documentation for the full list.</li>
+  <li>Integration requires Recurly.js and Amazon Pay gateway setup.</li>
+  <li>100% coupons during signup are not supported — billing agreement creation is required for this payment method. Use a free trial instead. Standard coupons are supported.</li>
+</ul>
 
-# Description
+# Definition
 
-Amazon Pay simplifies how consumers use their Amazon account to pay for goods and services on your site and beyond. With billions in annual transactions, Amazon Pay offers not just a payment platform but a secure and streamlined payment experience directly through Amazon. With continuous updates, Amazon Pay easily integrates into your array of payment methods, ensuring a straightforward subscription payment journey.
-
-Amazon Pay offers two versions: Amazon Pay V1 and V2 with the newest offering a redirect option versus widgets. Amazon Pay widgets are not supported in V2.
+<div class="rp-definition">Amazon Pay lets customers use their Amazon account to pay for goods and services on your site. Recurly supports two versions: <strong>Amazon Pay V1</strong>, which uses inline widgets, and <strong>Amazon Pay V2</strong>, which uses a redirect-based flow. Amazon Pay widgets are not supported in V2. Both versions integrate via Recurly.js and support purchases, subscriptions, refunds, authorizations, and captures.</div>
 
 # Key details
 
+<div class="rp-card">
+
+### Use cases
+
+**Subscriptions** — Amazon Pay enables subscription sign-ups for customers who prefer paying with their Amazon account, including multi-currency support.
+
+**Checkout** — Customers on mobile and desktop can complete purchases without re-entering payment details, using credentials already stored in their Amazon account.
+
+</div>
+
 ## Supported features
 
-* **Asynchronous and Synchronous transactions:** Amazon Pay supports both asynchronous and synchronous payment methods, facilitating purchases, refunds, authorizations, and captures.
-
-* **R.js Token utilization:** Use Amazon Pay Recurly.js tokens to carry out transactions via V2 or V3 Recurly endpoints. Only supported via Amazon Pay V2.
-
-* **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
+- **Async and sync transactions** — Amazon Pay supports both asynchronous and synchronous payment flows, including purchases, refunds, authorizations, and captures.
+- **Recurly.js token support** — Use Amazon Pay Recurly.js tokens to process transactions via V2 or V3 Recurly endpoints. Supported on Amazon Pay V2 only.
+- **Mobile and desktop support** — Supports transaction flows on both mobile and desktop platforms.
 
 # FAQs
 
-#### Which gateways support Amazon Pay?
+<Accordion title="Which gateways support Amazon Pay?">
+  Amazon Pay is available through its own gateway in two versions. See the individual gateway documentation for setup and troubleshooting:
 
-Amazon Pay is directly supported through its own gateway offerings in two different versions. Please consult the Amazon Pay documentation for setup and troubleshooting details.
+  - <a href="https://docs.recurly.com/docs/amazon-payments" target="_blank">Amazon Pay V1</a>
+  - <a href="https://docs.recurly.com/docs/amazon-pay-v2" target="_blank">Amazon Pay V2</a>
+</Accordion>
 
-* [Amazon Pay V1](https://docs.recurly.com/docs/amazon-payments)
-* [Amazon Pay V2](https://docs.recurly.com/docs/amazon-pay-v2)
+<br />
