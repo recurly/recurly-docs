@@ -1,6 +1,9 @@
 ---
 title: Check Commerce
-excerpt: Simplify and secure your ACH payments with Check Commerce through Recurly.
+excerpt: >-
+  Set up a Check Commerce account through Recurly to accept ACH payments from
+  US-based customers — covering eligibility, required documents, and gateway
+  configuration.
 deprecated: false
 hidden: false
 metadata:
@@ -10,79 +13,117 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-page">
+  <div class="rp-overview">Check Commerce is an ACH payment gateway available exclusively through Recurly. Merchants apply for a Check Commerce account directly from the Recurly Payment Gateways page, then connect their credentials once approved. This guide covers eligibility requirements, the application process, and connecting your account to Recurly.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#apply-for-an-account"><span class="rp-toc-num">3</span>Apply for an account</a>
+    <a class="rp-toc-pill" href="#connect-your-account-to-recurly"><span class="rp-toc-num">4</span>Connect your account to Recurly</a>
+  </div>
+</div>
 
 # Definition
 
-Check Commerce is a payment gateway specifically designed to accept ACH (Automated Clearing House) payments. To process ACH payments, merchants must establish a Check Commerce account via Recurly.
-
-> **Note**: Visit our [guide on testing your gateway configurations ](https://docs.recurly.com/docs/how-to-test-your-gateway)in Recurly to ensure your payment processes are set up correctly.
+<div class="rp-definition">Check Commerce is a payment gateway designed specifically to accept ACH (Automated Clearing House) payments. To process ACH payments through Check Commerce, merchants must apply for and establish a Check Commerce account directly via Recurly.</div>
 
 # Key details
 
-| Feature                         | Description                     |
-| ------------------------------- | ------------------------------- |
-| Services that work with Recurly | ACH Payments                    |
-| Supported Operations            | Transaction Processing, Refunds |
-| Supported Payment Types         | ACH (Automated Clearing House)  |
-| Supported Card Brands           | N/A                             |
-| Gateway Specific 3DS2 Supported | N/A                             |
-| Card on File Supported          | N/A                             |
-| Regions                         | United States                   |
-| Currencies                      | USD                             |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
+  <tr><td>Services that work with Recurly</td><td>ACH payments</td></tr>
+  <tr><td>Supported operations</td><td>Transaction processing, refunds</td></tr>
+  <tr><td>Supported payment types</td><td>ACH (Automated Clearing House)</td></tr>
+  <tr><td>Supported card brands</td><td>N/A</td></tr>
+  <tr><td>Gateway-specific 3DS2 supported</td><td>N/A</td></tr>
+  <tr><td>Card on file supported</td><td>N/A</td></tr>
+  <tr><td>Regions</td><td>United States</td></tr>
+  <tr><td>Currencies</td><td>USD</td></tr>
+</table>
 
-# Eligibility criteria
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Before going live, see Recurly's <a href="https://docs.recurly.com/docs/how-to-test-your-gateway" target="_blank">guide to testing gateway configurations</a> to verify your payment setup is working correctly.</div>
+</div>
 
-* Merchants must be located in the United States to apply.
-* Merchants must have a late failure rate of 0.5% or lower.
-* Standard Check Commerce accounts are limited to $5,000/transaction, but merchants may be approved for higher limits on a case by case basis.
-* If approved for a higher limit, you will receive two Check Commerce accounts: one for transactions of $5,000 or less and one for transactions exceeding $5,000.
+## Eligibility criteria
 
-# Required application documents
+Before applying, confirm you meet the following requirements:
 
-To apply for a Check Commerce account, you will need:
+- Your business must be located in the United States.
+- Your late failure rate must be 0.5% or lower.
+- Standard accounts are limited to $5,000 per transaction. Higher limits may be approved on a case-by-case basis — if approved, you'll receive two Check Commerce accounts: one for transactions of $5,000 or less, and one for transactions exceeding $5,000.
 
-* A voided check
-* A Valid US Driver's license
-* Articles of incorporation
-* Screenshots of your checkout flow with the required disclaimers
-* Additional requirements apply if the merchant has one or more Principal Business Owners based in Canada (e.g. copy of Principal's passport)
+## Required documents
 
-## Apply for an Account
+Have the following ready before starting your application:
 
-1. **Start the Application Process**  
-   Log into Recurly and visit the **Payment Gateways** page.
-2. **Select Check Commerce**  
-   Click on the "Add a New Gateway" button at the top right of the **Payment Gateways** page, then select the **Check Commerce** option at the bottom.
-3. **Confirm Eligibility**  
-   If your Site Settings country is not in the United States, you will not see the Check Commerce option and will not be able to use this payment gateway.
-4. **Request an Account**  
-   If you do not already have a Check Commerce account, once you have selected Check Commerce, click the "Request an Account" button at the right of the page. You will be redirected to Check Commerce's online application for a new account.  
-   Do not change the Referral Partner ID on this page to avoid delays in account setup.
+- A voided check
+- A valid US driver's license
+- Articles of incorporation
+- Screenshots of your checkout flow with the required disclaimers
+- If one or more Principal Business Owners are based in Canada, a copy of the Principal's passport is also required
 
-## Connect your Account to Recurly
+# Apply for an account
 
-1. **Confirm Your Recurly Plan and Status**  
-   Ensure that you have subscribed to Recurly's Elite plan and have moved into production mode.
-2. **Enter Credentials**  
-   Visit the **Payment Gateways** page in your Recurly Admin and click "Enter Credentials" next to your Check Commerce application status.
-3. **Provide Check Commerce Credentials**  
-   Enter your Check Commerce Merchant ID/Account Number (a numeric string) and Password.
-4. **Provide Check Commerce Max Transaction Amount**  
-   This value controls the per Invoice / Transaction maximum. If it is not entered, the maximum will default to 5000.00 per Invoice. If you're unsure what this value is, check with Check Commerce directly.
-5. **Gateway Failover**  
-   Select whether or not you wish to include this instance of [Check Commerce in gateway failover logic](https://docs.recurly.com/docs/gateway-failover).
-6. **Consumer or Business Customers**  
-   Choose which type of customers you service with this Check Commerce account.  
-   Choose Individual accounts if you primarily work with end-consumers with personal checking accounts.  
-   Choose Business accounts if your primary customer is a B2B/Business entity.
-7. **Enable Check Commerce**  
-   Ensure Check Commerce is set to 'Enabled’ for new transactions when you are ready.
-8. **Add Payment Gateway**  
-   Click "Add Payment Gateway".
-9. **Confirm Activation**  
-   After completing these steps, you will see that Check Commerce has been added to our list of Production Gateways with a status of enabled.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Gateways</h4><p>Log in to Recurly and navigate to the <strong>Payment Gateways</strong> page.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Select Check Commerce</h4><p>Click <strong>Add a New Gateway</strong> at the top right of the page, then select <strong>Check Commerce</strong> from the bottom of the list.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Confirm eligibility</h4><p>If your Site Settings country is not set to the United States, the Check Commerce option won't appear and this gateway won't be available to you.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Request an account</h4><p>If you don't already have a Check Commerce account, click <strong>Request an Account</strong>. You'll be redirected to Check Commerce's online application. Do not change the Referral Partner ID on that page — doing so may delay your account setup.</p></div>
+  </div>
+</div>
+
+# Connect your account to Recurly
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Confirm your Recurly plan and mode</h4><p>Verify that you're on the Recurly Elite plan and that your account is in production mode.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Open your credentials entry</h4><p>On the <strong>Payment Gateways</strong> page in Recurly Admin, click <strong>Enter Credentials</strong> next to your Check Commerce application status.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Enter your Check Commerce credentials</h4><p>Input your Check Commerce Merchant ID / Account Number (a numeric string) and your Password.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Set your max transaction amount</h4><p>Enter the per-invoice/transaction maximum for your account. If left blank, this defaults to $5,000.00. If you're unsure of your approved limit, contact Check Commerce directly.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Configure gateway failover</h4><p>Choose whether to include this Check Commerce instance in <a href="https://docs.recurly.com/docs/gateway-failover" target="_blank">gateway failover logic</a>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div><h4>Select your customer type</h4><p>Choose <strong>Individual</strong> if you primarily serve end-consumers with personal checking accounts, or <strong>Business</strong> if your primary customers are B2B or business entities.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">7</div>
+    <div><h4>Enable Check Commerce</h4><p>Set the gateway to <strong>Enabled</strong> for new transactions when you're ready to go live.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">8</div>
+    <div><h4>Add the gateway</h4><p>Click <strong>Add Payment Gateway</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">9</div>
+    <div><h4>Confirm activation</h4><p>After completing these steps, Check Commerce will appear in your Production Gateways list with a status of <strong>Enabled</strong>.</p></div>
+  </div>
+</div>
+
+<br />
