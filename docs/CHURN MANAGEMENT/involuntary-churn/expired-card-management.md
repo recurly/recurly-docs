@@ -1,8 +1,9 @@
 ---
 title: Expired card management
 excerpt: >-
-  Automate the management of expired cards to boost revenue, reduce churn, and
-  enhance subscriber experiences.
+  Recurly's Expired Card Management automatically extends expiring card dates
+  before renewal to reduce transaction failures and involuntary churn — no setup
+  required.
 deprecated: false
 hidden: false
 metadata:
@@ -12,72 +13,99 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Expired Card Management proactively handles expiring credit cards to prevent renewal failures. When a card is approaching its expiration date, Recurly temporarily extends the date on file — giving subscribers time to update their details without losing access to their service.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">4</span>FAQs</a>
+  </div>
+</div>
 
 ### Limitations
 
-* The success rate of automatic card updates may vary based on the card issuer and network
-* Not all credit cards support automatic updates
-
-***
+<ul class="rp-list">
+  <li>The success rate of automatic card date extensions may vary by card issuer and network.</li>
+  <li>Not all credit cards support automatic updates.</li>
+</ul>
 
 # Definition
 
-Expired Card Management is a Recurly feature that proactively handles expired credit card details to prevent subscription renewals from failing. Rather than waiting for a transaction to decline, Recurly temporarily extends the expiration date on cards approaching expiry — giving subscribers time to update their details without any service disruption.
-
-***
+<div class="rp-definition">Expired Card Management is a Recurly feature that temporarily extends the expiration date on credit cards approaching expiry before an upcoming billing cycle. Rather than waiting for a transaction to decline, Recurly keeps the payment path open through the renewal window, reducing hard declines and giving subscribers time to update their details without any service interruption. This is intentionally distinct from <a href="https://docs.recurly.com/docs/account-updater" target="_blank">Account Updater</a> — instead of replacing card data automatically, Recurly selects a future expiration date to avoid conflicts with card network updates.</div>
 
 # Key benefits
 
-* **Uninterrupted subscriber experience:** Subscribers keep access to their services without needing to manually update card details.
-* **Reduced involuntary churn:** Fewer subscription lapses caused by expired cards means more revenue retained.
-* **Revenue protection:** Prevent transaction failures from turning into lost revenue.
-* **Recovery insights:** Track the effectiveness of the feature through the Recovered Revenue dashboard in Analytics.
-
-***
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Uninterrupted subscriber experience</strong>
+    <span>Subscribers keep access to their services without needing to manually update card details before renewal.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-user-check" aria-hidden="true"></i></div>
+    <strong>Reduced involuntary churn</strong>
+    <span>Fewer subscription lapses caused by expired cards means more revenue retained without subscriber intervention.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+    <strong>Revenue protection</strong>
+    <span>Prevent transaction failures from expiring cards from becoming lost revenue.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+    <strong>Recovery insights</strong>
+    <span>Track the feature's impact through the Recovered Revenue dashboard in Analytics.</span>
+  </div>
+</div>
 
 # Key details
 
 ## How it works
 
-When a credit card is set to expire before an upcoming billing cycle, Recurly temporarily extends the expiration date on file. This reduces the likelihood of hard declines at renewal and gives subscribers a window to update their card details before any service interruption occurs.
-
-This approach is intentionally distinct from [Account Updater](https://docs.recurly.com/docs/account-updater) — rather than automatically replacing card data, Recurly selects a future expiration date to keep the transaction path open. This avoids confusion between the two services and prevents potential conflicts with card network updates.
+When a credit card is set to expire before an upcoming billing cycle, Recurly temporarily extends the expiration date on file. This reduces the likelihood of hard declines at renewal and gives subscribers a window to update their card before any service interruption.
 
 ## Setup
 
-No setup is required. Expired Card Management applies to all accounts automatically once your site is in production.
+No setup required. Expired Card Management applies automatically to all accounts once your site is in production.
 
-## Monitoring recovered revenue
+## Monitor recovered revenue
 
-You can track how much revenue Expired Card Management has preserved directly in the Recurly Admin Console.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Churn Management analytics</h4><p>In the Recurly Admin Console, navigate to <strong>Analytics → Churn Management</strong>.</p></div>
+  </div>
+</div>
 
-1. Navigate to **Analytics → Churn Management**
 
-<Image align="center" border={true} width="30%" src="https://files.readme.io/923e69675ea298398d1a5765cfa10f7a6ee9978880fea7320649833e1952a036-image.png" className="border" />
+<Image src="https://files.readme.io/923e69675ea298398d1a5765cfa10f7a6ee9978880fea7320649833e1952a036-image.png" align="center" width="30%" border={true} />
 
-2. Open the **Recovered Revenue** dashboard to view the impact of expired card management over time
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/b42da2c011c01b0cb7cead9274f8c0cad6a47f7bd0b066123402fc0252967248-image.png" className="border" />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Open the Recovered Revenue dashboard</h4><p>View the impact of expired card management over time, including recovery rates and patterns in card expiration behavior.</p></div>
+  </div>
+</div>
 
-Use these metrics to understand recovery rates, identify patterns in card expiration behavior, and refine your broader churn management strategy.
 
-***
+<Image src="https://files.readme.io/b42da2c011c01b0cb7cead9274f8c0cad6a47f7bd0b066123402fc0252967248-image.png" align="center" width="75%" border={true} />
+
 
 # FAQs
 
-**How does Recurly handle expired credit cards?**
+<Accordion title="How does Recurly handle expired credit cards?">
+  Rather than replacing card data automatically, Recurly temporarily extends the expiration date on expiring cards. This reduces the chance of payment failures and hard declines at renewal, while avoiding any overlap or conflict with Account Updater services.
+</Accordion>
 
-Rather than automatically replacing card data, Recurly temporarily extends the expiration date on expiring cards. This reduces the chance of payment failures and hard declines at renewal, while avoiding any overlap or confusion with Account Updater services.
+<Accordion title="How does this feature reduce involuntary churn?">
+  Involuntary churn often occurs when outdated payment details cause transactions to fail. By keeping expiring cards active through the renewal window, Recurly reduces failed transactions — and the subscriber losses that follow.
+</Accordion>
 
-**How does this feature reduce involuntary churn?**
+<Accordion title="Can I measure the revenue recovered through Expired Card Management?">
+  Yes. The Recovered Revenue dashboard in Analytics shows recovery rates and the revenue preserved through both expired card management and retry logic, giving you a clear view of the feature's impact.
+</Accordion>
 
-Involuntary churn happens when outdated payment details cause transactions to fail. By keeping expiring cards active through the renewal window, Recurly reduces the number of failed transactions — and the subscriber losses that follow.
-
-**Can I measure the revenue recovered through Expired Card Management?**
-
-Yes. The Recovered Revenue dashboard in Recurly's Analytics section shows recovery rates and the revenue preserved through both expired card management and retry logic, giving you a clear picture of the feature's impact.
+<br />
