@@ -1,10 +1,9 @@
 ---
 title: Credit cards
 excerpt: >-
-  Harness the power and flexibility of Recurly's credit card processing
-  solutions. Securely and efficiently handle your recurring transactions with
-  support for a range of credit and debit card types, backed by the most popular
-  gateways worldwide.
+  Process credit and debit card payments through Recurly across 14 supported
+  gateways — with Level II data support, dual/co-badged card compliance, and
+  MOTO processing.
 deprecated: false
 hidden: false
 metadata:
@@ -14,83 +13,90 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Recurly's credit card solution lets you process credit and debit card payments across a wide range of supported gateways. It supports subscriptions, one-time payments, and MOTO transactions, with optional Level II card data for lower interchange rates and dual/co-badged card compliance for EU merchants.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+  </div>
+</div>
 
-### Required plan
+### Prerequisites
 
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-### Prerequisites & supported gateways
-
-* To use Recurly's credit card solutions, you'll need a merchant bank account and a payment gateway supported in your business location. Make sure to check the detailed gateway support section below.
-
-### Supported credit card gateways
-
-Explore detailed documentation for each gateway to ensure seamless integration with Recurly:
-
-* [Adyen](https://docs.recurly.com/docs/adyen)
-* [Authorize.net](https://docs.recurly.com/docs/authorizenet)
-* [Braintree](https://docs.recurly.com/docs/braintree)
-* [CardConnect](https://docs.recurly.com/docs/cardconnect)
-* [Chase Paymentech Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital)
-* [CommerceHub by Fiserv](https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub#/)
-* [CyberSource](https://docs.recurly.com/docs/cybersource)
-* [FreedomPay](https://docs.recurly.com/recurly-subscriptions/docs/freedompay#/)
-* [Merchant eSolutions](https://docs.recurly.com/docs/additional)
-* [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/)
-* [Stripe](https://docs.recurly.com/docs/additional)
-* [TSYS](https://docs.recurly.com/docs/tsys)
-* [Vantiv](https://docs.recurly.com/docs/additional)
-* [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support)
-
-Refer to the above guides to ensure a successful setup and leverage the full potential of Recurly’s supported gateways for credit card transactions.
+<ul class="rp-list">
+  <li>A merchant bank account and a Recurly-supported payment gateway for your business location — see <a href="#supported-gateways">Supported gateways</a> below.</li>
+</ul>
 
 ### Limitations
 
-There are very few limitations when processing on Recurly with a credit card. The only restrictions for card processing are listed below.
-
-* Recurly does not support Maestro cards for recurring transactions. Also, note that the availability of certain features may depend on your gateway and merchant account configurations.
-* Recurly does not support one-time transactions where the card in use is not stored for future usage.
+<ul class="rp-list">
+  <li>Maestro cards are not supported for recurring transactions.</li>
+  <li>One-time transactions where the card is not stored for future use are not supported.</li>
+</ul>
 
 # Definition
 
-Recurly's credit card solution allows businesses to securely process credit and debit card payments with a seamless integration into an array of well-established gateways. This feature not only ensures the safety of transactions but also allows for the support of level II card data, facilitating lower interchange rates for US merchants.
+<div class="rp-definition">Recurly's credit card solution enables secure processing of credit and debit card payments across a broad range of gateways. When a customer reaches checkout, they enter their card details — including Level II data if applicable — and Recurly routes the transaction to the configured gateway. For gateway-specific checkout flows, refer to the individual gateway guides.</div>
 
-# Checkout Flow
+# Key details
 
-When a customer reaches the checkout stage, they will be prompted to enter their credit card details, including any relevant level II data if applicable. This information is used by Recurly to facilitate a safe and secure transaction process, with a direct link to the supported gateways. Refer to the gateway-specific guides for a step-by-step breakdown of the process.
+<div class="rp-card">
 
-# Use cases
+### Use cases
 
-**Subscriptions**: Whether you are a subscription service looking to streamline billing processes, or a retailer seeking to secure and facilitate your payment processes, Recurly's credit card solutions are designed to fit a myriad of business needs with ease and precision. This includes subscription upgrades.
+**Subscriptions** — Recurly's credit card support covers subscription billing, upgrades, and recurring charges across all supported gateways.
 
-**One Time Payments**: If you're looking for a way to provide goods and services on a one-time payments basis, credit cards are a perfect avenue.
+**One-time payments** — Credit cards can be used for one-time purchases of goods or services.
 
-**MOTO / Back office**: If you have a call center and would like to offer payments to customers calling in, you can do so with Recurly's MOTO support. See [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)  Processing for more details and check your gateway for specific support of this use case.
+**MOTO / Back office** — For call center environments, Recurly supports MOTO (Mail Order / Telephone Order) transactions. See [MOTO Processing](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/) for details, and check your gateway for specific MOTO support.
 
-## Supported Credit Card
+</div>
 
-### Gateway Support
+## Supported gateways
 
-Your Recurly site supports various gateways based on your business location. For details on the gateways supported in your country, visit [our gateway page](http://recurly.com/gateways).
+Recurly supports credit card processing through the following gateways. Visit each gateway's documentation for setup details.
 
-### Accepted Payment Types
+- <a href="https://docs.recurly.com/docs/adyen" target="_blank">Adyen</a>
+- <a href="https://docs.recurly.com/docs/authorizenet" target="_blank">Authorize.Net</a>
+- <a href="https://docs.recurly.com/docs/braintree" target="_blank">Braintree</a>
+- <a href="https://docs.recurly.com/docs/cardconnect" target="_blank">CardConnect</a>
+- <a href="https://docs.recurly.com/docs/chase-paymentech-orbital" target="_blank">Chase Paymentech Orbital</a>
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub#/" target="_blank">Commerce Hub by Fiserv</a>
+- <a href="https://docs.recurly.com/docs/cybersource" target="_blank">CyberSource</a>
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/freedompay#/" target="_blank">FreedomPay</a>
+- <a href="https://docs.recurly.com/docs/additional" target="_blank">Merchant eSolutions</a>
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/" target="_blank">PayPal Complete</a>
+- <a href="https://docs.recurly.com/docs/additional" target="_blank">Stripe</a>
+- <a href="https://docs.recurly.com/docs/tsys" target="_blank">TSYS</a>
+- <a href="https://docs.recurly.com/docs/additional" target="_blank">Vantiv</a>
+- <a href="https://docs.recurly.com/docs/worldpaydlocal-latam-support" target="_blank">Worldpay</a>
 
-Understand the importance of [offering alternative payment methods](https://recurly.com/blog/why-offering-alternative-payment-methods-is-important-for-subscription-businesses/) for your subscription business. Recurly backs most card types approved by your merchant bank account and payment gateway, except Maestro cards due to their lack of support for recurring transactions.
+For a full list of gateways by country, visit <a href="http://recurly.com/gateways" target="_blank">recurly.com/gateways</a>.
 
-### Level II Card Data Support
+## Accepted payment types
 
-All transactions process at level I rates by default. However, Recurly facilitates level II card data support for most gateways, granting lower interchange rates for qualified transactions for US merchants. To benefit from this, ensure your sales tax is calculated through Recurly. The necessary data fields included are:
+Recurly supports most card types approved by your merchant bank account and payment gateway. Maestro cards are not supported for recurring transactions.
 
-* Sales tax amount (Enable taxes in your Recurly site!)
-* Customer code / PO number (`po_number` via API)
-* Merchant zip code (ensure your Business Entity and Site settings are up to date)
+## Level II card data support
 
-### Dual / Co-Badged Card Support
+All transactions process at Level I rates by default. For US merchants, Recurly supports Level II card data on most gateways, which can qualify transactions for lower interchange rates.
 
-In compliance with [Article 8 of EU IFR Regulation 2015/751](https://eur-lex.europa.eu/eli/reg/2015/751/oj) pertaining to co-badged cards within the European Economic Area (EEA), it is mandated that when a cardholder utilizes a co-badged card and your system accommodates both brands, they must be given the option to select the preferred brand for payment.
+To enable Level II processing, ensure the following data is present:
 
-Recurly offers dual-badged compliance on the following gateways:
+<ul class="rp-list">
+  <li>Sales tax amount — enable taxes in your Recurly site</li>
+  <li>Customer code / PO number — pass via the <code>po_number</code> API field</li>
+  <li>Merchant zip code — keep your Business Entity and Site settings current</li>
+</ul>
 
-* [Adyen](https://docs.recurly.com/docs/adyen#adyen-codual-badged-cards) (Cartes Bancaires, Bancontact, Dankort)
-* [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/) (Cartes Bancaires, Bancontact)
+## Dual / co-badged card support
+
+Under <a href="https://eur-lex.europa.eu/eli/reg/2015/751/oj" target="_blank">Article 8 of EU IFR Regulation 2015/751</a>, when a cardholder in the EEA uses a co-badged card and your system supports both card brands, you must give them the option to select their preferred brand at checkout.
+
+Recurly provides dual/co-badged card compliance on the following gateways:
+
+- <a href="https://docs.recurly.com/docs/adyen#adyen-codual-badged-cards" target="_blank">Adyen</a> — Cartes Bancaires, Bancontact, Dankort
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/stripe#/" target="_blank">Stripe</a> — Cartes Bancaires, Bancontact
+
+<br />
