@@ -19155,6 +19155,16 @@ components:
             root level and must not be included in individual line items.
           items:
             $ref: '#/components/schemas/RecoveryLineItemCreate'
+        transaction_descriptor_suffix:
+          type: string
+          title: Transaction Descriptor Suffix
+          maxLength: 255
+          description: >-
+            Optionally overrides the suffix component of the composed
+            transaction descriptor. If omitted, the suffix is derived from the
+            subscription's plan name or the invoice description, with a Trial
+            prefix on Visa trial conversions. Subject to gateway availability
+            and payment method support.
       required:
         - currency
         - due_at
@@ -22776,6 +22786,16 @@ components:
             - sale
             - rental
             - lease
+        transaction_descriptor_suffix:
+          type: string
+          title: Transaction Descriptor Suffix
+          maxLength: 255
+          description: >-
+            Optionally overrides the suffix component of the composed
+            transaction descriptor. If omitted, the suffix is derived from the
+            subscription's plan name or the invoice description, with a Trial
+            prefix on Visa trial conversions. Subject to gateway availability
+            and payment method support.
       required:
         - currency
     InvoiceCollect:
@@ -26750,6 +26770,16 @@ components:
           default: false
         proration_settings:
           $ref: '#/components/schemas/SubscriptionCreateProrationSettings'
+        transaction_descriptor_suffix:
+          type: string
+          title: Transaction Descriptor Suffix
+          maxLength: 255
+          description: >-
+            Optionally overrides the suffix component of the composed
+            transaction descriptor. If omitted, the suffix is derived from the
+            subscription's plan name or the invoice description, with a Trial
+            prefix on Visa trial conversions. Subject to gateway availability
+            and payment method support.
       required:
         - plan_code
         - currency
@@ -27042,6 +27072,16 @@ components:
             for the subscription will bill to the specified billing info.
             `billing_info_id` can ONLY be used for sites utilizing the Wallet
             feature.
+        transaction_descriptor_suffix:
+          type: string
+          title: Transaction Descriptor Suffix
+          maxLength: 255
+          description: >-
+            Optionally overrides the suffix component of the composed
+            transaction descriptor. If omitted, the suffix is derived from the
+            subscription's plan name or the invoice description, with a Trial
+            prefix on Visa trial conversions. Subject to gateway availability
+            and payment method support.
     SubscriptionPause:
       type: object
       properties:
@@ -28187,6 +28227,16 @@ components:
                     transaction, including both gateway-level fraud checks and
                     Recurly's fraud detection services. This is useful for
                     trusted transactions where fraud screening is not required.
+                descriptor_suffix:
+                  type: string
+                  title: Transaction Descriptor Suffix
+                  maxLength: 255
+                  description: >-
+                    Optionally overrides the suffix component of the composed
+                    transaction descriptor. If omitted, the suffix is derived
+                    from the subscription's plan name or the invoice
+                    description, with a Trial prefix on Visa trial conversions.
+                    Subject to gateway availability and payment method support.
         customer_notes:
           type: string
           title: Customer notes
@@ -29376,6 +29426,7 @@ components:
             - mercadopago
             - klarna
             - braintree_google_pay
+            - stripe_link
         card_type:
           description: Visa, MasterCard, American Express, Discover, JCB, etc.
           type: string
