@@ -1,9 +1,8 @@
 ---
 title: Ebanx (APAC and LATAM)
 excerpt: >-
-  Ebanx Gateway: A secure and innovative payment platform enabling seamless
-  transactions, advanced data analytics, and enhanced customer experiences for
-  businesses wanting to expand internationally.
+  Connect Ebanx to Recurly to process UPI AutoPay, Pix Automatico, and Mercado
+  Pago subscription payments across India, Brazil, and Latin America.
 deprecated: false
 hidden: false
 metadata:
@@ -13,276 +12,286 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Ebanx is a payment management platform focused on emerging markets in India and Latin America. Integrating it with Recurly lets you process recurring subscription payments via UPI AutoPay (India), Pix Automatico (Brazil), and Mercado Pago (Brazil, Mexico, Chile, Uruguay, and Argentina). An existing Ebanx relationship is required to enable this integration.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#configuring-ebanx-in-recurly"><span class="rp-toc-num">3</span>Configuring Ebanx in Recurly</a>
+    <a class="rp-toc-pill" href="#configuring-webhooks-in-ebanx"><span class="rp-toc-num">4</span>Configuring webhooks in Ebanx</a>
+    <a class="rp-toc-pill" href="#subscription-behavior"><span class="rp-toc-num">5</span>Subscription behavior</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">6</span>FAQs</a>
+  </div>
+</div>
 
-## Required plan
+### Limitations
 
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-## Limitations
-
-### UPI / India
-
-- Customer mandates cannot be migrated to Recurly if they exist on another platform. Customers must cancel those mandates and resubscribe per RBI and NPCI rules. Why? Enrollments are tightly coupled with the acquiring partner, merchant, and the consumer. During a migration, typically the acquiring partner will change, thus requiring re-enrollment.
-- RBI mandates limit individual transactions to 15000 INR without going through a consumer two-factor flow.
-  - This flow is on the Bank's specific UPI application and is not customizable in any way. 2FA will be handled in the manner that app has deemed compliant with RBI regulations.
-  - Plans or the combined amount of plans, if sent in the same purchase signup request, should be at or below this amount to avoid rejections on renewals.
-  - Read more about the UPI App in [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) documentation.
-- Billing Info updates are not supported with UPI AutoPay. If customers need to update their VPA (see definitions below) or bank accounts, they must cancel their existing mandate/subscription and re-subscribe.
-
-### General Limitations
-
-- Ad-hoc or One-Time customer-initiated purchases and merchant-initiated Force Collections are not supported.
-- Recurly.js is not supported with UPI AutoPay or Pix Automatico. Use our API to facilitate requests.
-- Refunds through Ebanx must be the **full** amount.
-- Chargebacks are not reflected / supported at this time.
-- See individual Payment Method pages for additional limitations.
-- UPI App Deep Links do not support free trials at the moment.&#x20;
+<ul class="rp-list">
+  <li><strong>UPI mandate migration not supported</strong> — Customer mandates on another platform cannot be migrated to Recurly. Customers must cancel existing mandates and resubscribe. Enrollments are tightly coupled with the acquiring partner, merchant, and consumer — when the acquiring partner changes during a migration, re-enrollment is required per RBI and NPCI rules.</li>
+  <li><strong>UPI transaction limit</strong> — RBI mandates limit individual transactions to 15,000 INR without a consumer two-factor flow. This 2FA is handled by the customer's bank UPI app and is not customizable. Plans, or the combined amount of plans sent in the same purchase signup request, should be at or below 15,000 INR to avoid renewal rejections. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/" target="_blank">UPI AutoPay</a> documentation for details.</li>
+  <li><strong>UPI billing info updates not supported</strong> — If a customer needs to update their VPA or bank account, they must cancel their existing mandate/subscription and re-subscribe.</li>
+  <li><strong>No ad-hoc or one-time purchases</strong> — Customer-initiated one-time purchases and merchant-initiated force collections are not supported.</li>
+  <li><strong>Recurly.js not supported</strong> — UPI AutoPay and Pix Automatico require direct API integration. Recurly.js is not supported for these payment methods.</li>
+  <li><strong>Refunds must be full amount</strong> — Partial refunds are not supported through Ebanx.</li>
+  <li><strong>Chargebacks not reflected</strong> — Chargebacks are not currently supported or reflected in Recurly.</li>
+  <li><strong>UPI App deep links do not support free trials</strong> — Free trial subscriptions are not available when using UPI App deep links.</li>
+  <li>See individual payment method pages for additional limitations.</li>
+</ul>
 
 # Definition
 
-Ebanx is a full-service payment management platform focused on upcoming markets such as India and Latin America. When configured with Recurly, it allows you to securely manage your transactions. You will need a relationship with Ebanx to enable this integration.
+<div class="rp-definition">Ebanx is a full-service payment management platform built for emerging markets in India and Latin America. It supports subscription mandate enrollment, recurring transactions, and refunds for UPI AutoPay, Pix Automatico, and Mercado Pago. You'll need an existing Ebanx relationship and a valid Integration Key to connect Ebanx with Recurly.</div>
 
 # Key details
 
-| Feature                         | Description                                                                                                                                                                                                                             |
-| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Payment Processing, Subscriptions, [Automatic Subscription Cancellation](https://docs.recurly.com/recurly-subscriptions/docs/expire-subscription#/auto-cancellation-of-a-subscription)                                                  |
-| Supported Operations            | Subscription Mandate Enrollment, Recurring Transactions, Refunds                                                                                                                                                                        |
-| Supported Payment Types         | [UPI - AutoPay](https://docs.recurly.com/docs/upi-autopay#/), [Pix Automatico](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/), [Mercado Pago](https://docs.recurly.com/recurly-subscriptions/docs/mercadopago#/) |
-| Supported Card Brands           | N/A                                                                                                                                                                                                                                     |
-| Gateway Specific 3DS2 Supported | No                                                                                                                                                                                                                                      |
-| Card On File Supported          | No                                                                                                                                                                                                                                      |
-| Regions                         | UPI AutoCollect for India, Pix Automatico and Mercado Pago in Brazil, and Mercado Pago in Mexico, Chile, Uruguay, and Argentina.                                                                                                        |
-| Currencies                      | INR (UPI Only), BRL (Pix and Mercado Pago Only, ARS, CPL, MXN, or UYU (Mercado Pago Only)                                                                                                                                               |
-| Gateway Supported Features      | Cross-border and Local Settlement Support                                                                                                                                                                                               |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
+  <tr><td>Services that work with Recurly</td><td>Payment processing, subscriptions, <a href="https://docs.recurly.com/recurly-subscriptions/docs/expire-subscription#/auto-cancellation-of-a-subscription" target="_blank">automatic subscription cancellation</a></td></tr>
+  <tr><td>Supported operations</td><td>Subscription mandate enrollment, recurring transactions, refunds</td></tr>
+  <tr><td>Supported payment types</td><td><a href="https://docs.recurly.com/docs/upi-autopay#/" target="_blank">UPI AutoPay</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/" target="_blank">Pix Automatico</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/mercadopago#/" target="_blank">Mercado Pago</a></td></tr>
+  <tr><td>Supported card brands</td><td>N/A</td></tr>
+  <tr><td>Gateway-specific 3DS2 supported</td><td>No</td></tr>
+  <tr><td>Card on file supported</td><td>No</td></tr>
+  <tr><td>Regions</td><td>UPI AutoCollect: India. Pix Automatico and Mercado Pago: Brazil. Mercado Pago: Mexico, Chile, Uruguay, and Argentina.</td></tr>
+  <tr><td>Currencies</td><td>INR (UPI only), BRL (Pix Automatico and Mercado Pago), ARS, CLP, MXN, UYU (Mercado Pago only)</td></tr>
+  <tr><td>Additional feature support</td><td>Cross-border and local settlement</td></tr>
+</table>
 
-# Configuring Ebanx in Recurly
+## Integration guides
 
-Follow these steps to integrate Ebanx with Recurly. Ensure you use the correct site mode (Sandbox or Production) and valid Ebanx credentials for a smooth setup.
+Refer to the individual payment method guides for implementation details:
 
-## Step 1: Obtain Ebanx Credentials
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/" target="_blank">UPI AutoPay integration guide</a>
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#" target="_blank">Pix Automatico integration guide</a>
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide" target="_blank">Mercado Pago integration guide</a>
 
-1. **Log in to your Ebanx Account**. This will require you to engage with Ebanx and address any appropriate contracts/applicable fees separate from Recurly.
+## Required fields
 
-- Switch your Ebanx Dashboard to **Production mode** for production keys.
-- Switch to **Sandbox mode** for sandbox keys.
-
-2. **Go to Account Settings**: Click your name in the top-right corner and choose **Account Settings**.
-3. **Select Integration**: From the four tabs in Settings, pick **Integration**.
-4. **Copy your Integration Key**.
-
-- Only the **Integration Key** will work with Recurly. The Public Integration Key will not function.
-
-## Step 2: Enter Credentials in Recurly
-
-1. Log in to your **Recurly** account and go to **Configuration → Payment Gateways**.
-2. Click **Add a New Gateway** at the top-right.
-3. From the list, choose **Ebanx**.
-4. Paste your **Integration Key** into the “Integration Key” field.
-
-
-<Image src="https://files.readme.io/36f169d074f9f16c9524fb217cb56bac7150d1a642e731905cbf254b1bcdcc62-Ebanx-Credentials.png" align="center" width="75% " border={true} />
-
-
-## Step 3: Set Your Payment Methods
-
-- Under **Accepted Card Types**, you won’t see any card options since this gateway currently supports regional APMs.
-- Enable **UPI AutoPay**, **Pix Automatico**, and/or **Mercado Pago**under **Alternative Payment Methods**.
-
-## Step 4: Enable Currencies
-
-Ensure you are enabling the correct currencies per payment method.
-
-- UPI: INR Only
-- Pix Automatico: BRL Only
-- Mercado Pago: BRL, ARS, CLP, MXN, or UYU.
-
-
-<Image src="https://files.readme.io/3f9244597eb44e08d661db8fe9d38eb57bf92389ffec985b8cac00fca8f713cf-Ebanx_PM_and_Currency_Selection.png" align="center" width="80% " border={true} />
-
-
-## Step 5: Select your Operational Settlement Model
-
-This is an advanced setting that we recommend verifying with Ebanx. Most Ebanx accounts will use a **Cross-Border settlement&#x20;**&#x6D;odal, which enables easy funding and allowing Ebanx to handle the regulator last mile on your behalf. You will typically be funded in USD.&#x20;
-
-**Local Settlement** is an uncommon model for most merchants, as it requires you to handle this regulatory "last mile" on your own. You will be funded in the local currency.
-
-Confirm with Ebanx prior to going live or changing this setting, as this will disrupt processing on your account and cause settlement delays if set improperly.&#x20;
-
-1. Choose your Settlement Model:&#x20;
-   1. Cross-Border (Default) is the most common.&#x20;
-   2. Local Settlement (Advanced) is uncommon.
-
-![](https://files.readme.io/67abf31963d7378f34d4ae4b5ab00de6ab5d426a44c3039f7dbfef460379245f-Ebanx_Settlement_Configuration.png)
-
-Choosing **Local Settlement** will cause a warning to appear.&#x20;
-
-![](https://files.readme.io/15ffd815a4c79a8ff62316c89cee02a6a976f6329b5b3a4543dc16e57136f6a8-Screenshot_2026-07-06_at_9.22.46_AM.png)
-
-If you are certain and **have confirmed with Ebanx&#x20;**&#x74;hat your account is using Local Settlement, you can proceed to Step 6. Otherwise, revert this setting to 'Cross-Border' and proceed.
-
-## Step 6: Save and Enable the Gateway
-
-1. Click **Add Payment Gateway** at the bottom.
-2. You’ll see Ebanx added to your list of Production Gateways in Recurly with a status of **Enabled**.
-
-## Step 7: Test the Configuration (Recommended)
-
-- Perform a test transaction to confirm the integration works. It’s best to test in **development mode** on your Recurly sandbox site before going live.
-- If you have set your Settlement Model inaccurately, you will receive an Authentication error.
-
-## Step 8: Modify your Dunning Settings (Recommended)
-
-- Ensure your Dunning settings **do not** immediately expire invoices in order to allow Retries to function properly. If the invoices are set to immediately expire a subscription, retries will not occur. Learn more about Retries on Ebanx payment methods in our [Static Retries documentation](https://docs.recurly.com/recurly-subscriptions/docs/static-retries).
-
-## Step 9: Go Live
-
-1. Once testing is successful, you’re ready to accept live payments through Ebanx.
-2. Make sure your **Production Credentials** are entered in Recurly and your Ebanx account is in **Production mode**.
-3. Make sure you have Ebanx production webhooks enabled prior to launch. See configuration steps below.
-
-> **Pro Tip:** Keep your Ebanx credentials secure. Only authorized personnel should have access. **Note:** Always consult with your Ebanx representative or Ebanx support to ensure your account is in good standing and you’re meeting all relevant regulations.
-
-<br />
-
-# Configuring Webhooks in Ebanx
-
-## Step 1: Set Recurly Callback Endpoint in Ebanx
-
-To successfully receive required webhooks for Enrollments and Payments from Ebanx in sandbox and production, follow the below steps:
-
-**Note**: The state of your Ebanx dashboard (sandbox or production) will determine which Service URLs are are updated. Ensure your service URL is pointed at the correct Recurly site.
-
-Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for Production.
-
-1. Log into your Ebanx Dashboard
-2. Click on your User in the top right and choose **Account Settings**
-3. Choose the **Integration** tab and enter your site callback URL in the **Status change notification URL**
-   1. Example: [`https://callbacks.recurly.com/ebanx/subdomain`](https://callbacks.recurly.com/ebanx/subdomain)(replace 'subdomain' with your actual Recurly subdomain value.&#x20;
-   2. If you are on an EU site, your full domain will be [`https://callbacks.eu.recurly.com/subdomain`]()
-   3. You can see your subdomain by looking at the URL when logged into your Recurly site. It will be **subdomain**.recurly.com.
-4. Click **Save integration settings** at the bottom of the page.
-
-<Callout icon="❗️" theme="error">
-  ### Warning
-
-  Enrollment, Mandate Status, and Payment Updates will not occur properly without webhook setup. Please follow these steps in both production and test environments in Ebanx.
-</Callout>
-
-# Other Notes
-
-## Integrating with Ebanx
-
-Below you will find helpful Integration Guides for payment methods supported on Ebanx. As of today, only UPI AutoPay is available.
-
-- [UPI AutoPay Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/)
-- [Pix Automatico Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#)
-- [Mercado Pago Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide)
-
-## Required Fields
-
-Ebanx will require a minimum of fields to create a mandate for a recurring subscription. The minimum required fields to submit a transaction are as follows:
+Ebanx requires specific fields to create a mandate for a recurring subscription.
 
 ### UPI AutoPay
 
-- VPA (UPI AutoPay) (PGR Array)
-- For QR / App Intent, send Payment Type / Authentication Type and omit VPA (PGR Array)
-- Customer Email Address
-- Customer First and Last Name
-- Customer Billing Address (Street Address, City, Region/State, Country, Postal Code / PIN Code)
-  - Regional Mapping:
-    - Street Address is the House/Street Name and Number (EX: HOUSE NO. 32, MG ROAD)
-    - City is the Locality and City in India (Ex: VILLAGE OF AMARPUR, NEW DELHI)
-    - State is the State or Union Territory in India (ex: MAHARASHTRA)
-    - Postal Code is the PIN Code (ex: 110019)
-    - Country is the Country (ex: IN)
-- Customer Phone Number
+- VPA (UPI AutoPay) via PGR array. For QR / App Intent flows, send Payment Type and Authentication Type and omit the VPA.
+- Customer email address
+- Customer first and last name
+- Customer billing address (street address, city, region/state, country, postal/PIN code)
+  - **Street address** — House/street name and number (e.g., HOUSE NO. 32, MG ROAD)
+  - **City** — Locality and city (e.g., VILLAGE OF AMARPUR, NEW DELHI)
+  - **State** — State or union territory (e.g., MAHARASHTRA)
+  - **Postal code** — PIN code (e.g., 110019)
+  - **Country** — Country code (e.g., IN)
+- Customer phone number
 
-## Pix Automatico and Mercado Pago
+### Pix Automatico and Mercado Pago
 
-These payment methods will require you always send certain data:
+- Customer name
+- Customer billing address
+- Customer email address
+- Customer phone number
+- Tax ID and Tax ID type (required for Brazil)
 
-- Customer Name
-- Customer Billing Address
-- Customer Email Address
-- Customer Phone Number
-- Tax ID / Tax ID Type when the Region requires it (Brazil)
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Failing to send required fields — especially Tax IDs for Brazil — will cause signup and/or renewal failures.</div>
+</div>
 
-**Note:&#x20;**&#x46;ailure to send the required fields, especially Tax IDs will result in signup and/or renewal failures.
+## Mandate preferences
 
-## Mandate Preferences
+Ebanx payment methods use subscription-level mandate IDs assigned to a customer's subscription at signup. Customers can revoke or pause (UPI only) their mandate from their banking app, which affects the subscription in Recurly.
 
-Payment methods on Ebanx use subscription-level **mandate IDs** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause (in UPI's case) this mandate from their bank apps, which can affect the subscription in Recurly. This will be configurable in the future. Presently, consumers cancelling or pausing their mandates in their banking app will be automatically handled.
+- Customers cancelling or pausing mandates in their banking app are handled automatically.
+- Pausing and resuming subscriptions via a banking app is currently supported with UPI only.
 
-- Note: Pausing and Resuming Subscriptions in a banking app is only supported with UPI at this time.
+# Configuring Ebanx in Recurly
 
-# Subscription Behavior
+## Step 1: Obtain Ebanx credentials
 
-## Retries and Dunning
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Log in to your Ebanx account</h4><p>Engage with Ebanx to address any applicable contracts and fees before proceeding. Switch your Ebanx Dashboard to <strong>Production mode</strong> for production keys, or <strong>Sandbox mode</strong> for sandbox keys.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Open Account Settings</h4><p>Click your name in the top-right corner and select <strong>Account Settings</strong>, then choose the <strong>Integration</strong> tab.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Copy your Integration Key</h4><p>Copy the <strong>Integration Key</strong> — only this key works with Recurly. The Public Integration Key will not function.</p></div>
+  </div>
+</div>
 
-Retries are supported on UPI AutoPay, Pix Automatico, and Mercado Pago when your Dunning Settings are **not** set to Expire Subscriptions immediately. Ensure you have your Dunning Settings loosened to avoid immediately expiring subs, so that retries can function properly.
+## Step 2: Enter credentials in Recurly
 
-Read more about retries on each individual methods page, and our [Static Retries](https://docs.recurly.com/recurly-subscriptions/docs/static-retries#/) documentation.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Gateways</h4><p>In Recurly, navigate to <strong>Configuration → Payment Gateways</strong>, click <strong>Add a New Gateway</strong>, and select <strong>Ebanx</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enter your Integration Key</h4><p>Paste your Integration Key into the <strong>Integration Key</strong> field.</p></div>
+  </div>
+</div>
 
-## Transaction, Invoice, and Subscription Status
 
-When processing with  [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) and [Pix Automatico](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/), as with any asynchronous payment method in Recurly, subscriptions are immediately active, but transactions and invoices will be in a scheduled/processing state respectively until the pre-renewal notification receives an update and the payment is triggered. If customers do not authorize a subscription enrollment or payment via their respective Banking App, transactions will fail and subscriptions will be expired upon consumer rejection.
+<Image src="https://files.readme.io/36f169d074f9f16c9524fb217cb56bac7150d1a642e731905cbf254b1bcdcc62-Ebanx-Credentials.png" align="center" width="75%" border={true} />
 
-See documentation for each payment method for more information.
 
-## Subscriptions and Transactions Limitations
+## Step 3: Set your payment methods
 
-There are certain behaviors that Ebanx payment methods support -- they are listed below.
+Under **Alternative Payment Methods**, enable **UPI AutoPay**, **Pix Automatico**, and/or **Mercado Pago** as applicable. No card options appear under Accepted Card Types — Ebanx supports regional alternative payment methods only.
 
-- Trial Subscriptions _with payment data_ -- trials without a prior UPI enrollment will not function. Force-converting is not supported.
-- Non-Trial Subscriptions
+## Step 4: Enable currencies
+
+Enable the correct currencies for each payment method:
+
+- **UPI AutoPay** — INR only
+- **Pix Automatico** — BRL only
+- **Mercado Pago** — BRL, ARS, CLP, MXN, or UYU
+
+
+<Image src="https://files.readme.io/3f9244597eb44e08d661db8fe9d38eb57bf92389ffec985b8cac00fca8f713cf-Ebanx_PM_and_Currency_Selection.png" align="center" width="75%" border={true} />
+
+
+## Step 5: Select your settlement model
+
+Choose your operational settlement model. Confirm this setting with Ebanx before going live — an incorrect selection will disrupt processing and cause settlement delays.
+
+- **Cross-border** _(default, recommended for most merchants)_ — Ebanx handles the regulatory last mile on your behalf. You're funded in USD.
+- **Local settlement** _(advanced, uncommon)_ — You handle the regulatory last mile yourself. You're funded in local currency.
+
+
+<Image src="https://files.readme.io/67abf31963d7378f34d4ae4b5ab00de6ab5d426a44c3039f7dbfef460379245f-Ebanx_Settlement_Configuration.png" align="center" width="75%" border={true} />
+
+
+Selecting **Local Settlement** will display a warning. If you've confirmed with Ebanx that your account uses local settlement, proceed. Otherwise, revert to **Cross-Border**.
+
+
+<Image src="https://files.readme.io/15ffd815a4c79a8ff62316c89cee02a6a976f6329b5b3a4543dc16e57136f6a8-Screenshot_2026-07-06_at_9.22.46_AM.png" align="center" width="75%" border={true} />
+
+
+## Step 6: Save and enable the gateway
+
+Click **Add Payment Gateway**. Ebanx will appear in your Production Gateways list in Recurly with a status of **Enabled**.
+
+## Step 7: Test the configuration
+
+Run a test transaction in development mode on your Recurly sandbox site before going live. If your settlement model is set incorrectly, you'll receive an Authentication error.
+
+## Step 8: Adjust dunning settings
+
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong> Ensure your dunning settings do <strong>not</strong> immediately expire invoices. If invoices are set to expire a subscription immediately, retries will not occur. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/static-retries" target="_blank">Static Retries documentation</a> for details on retry behavior for Ebanx payment methods.</div>
+</div>
+
+## Step 9: Go live
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Confirm production credentials</h4><p>Verify your Recurly site has production Ebanx credentials entered and your Ebanx account is in Production mode.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enable production webhooks</h4><p>Ensure Ebanx production webhooks are enabled before launch. See <a href="#configuring-webhooks-in-ebanx">Configuring webhooks in Ebanx</a> below.</p></div>
+  </div>
+</div>
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Keep your Ebanx credentials secure and limit access to authorized personnel. Consult your Ebanx representative to confirm your account is in good standing and compliant with all relevant regulations.</div>
+</div>
+
+# Configuring webhooks in Ebanx
+
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong> Enrollment, mandate status, and payment updates will not function correctly without webhook setup. Complete these steps in <strong>both</strong> your production and sandbox Ebanx environments.</div>
+</div>
+
+## Set the Recurly callback endpoint
+
+The state of your Ebanx dashboard (sandbox or production) determines which service URLs are updated. Sandbox Ebanx URLs must point to Recurly sandbox sites; production URLs must point to production Recurly sites.
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Integration Settings</h4><p>Log in to your Ebanx Dashboard, click your user in the top right, and select <strong>Account Settings → Integration</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enter your callback URL</h4><p>In the <strong>Status change notification URL</strong> field, enter your Recurly callback URL using the format below. Replace <code>YOUR_SUBDOMAIN</code> with your Recurly subdomain (visible in your Recurly URL as <code>YOUR_SUBDOMAIN.recurly.com</code>).</p></div>
+  </div>
+</div>
+
+`https://callbacks.recurly.com/ebanx/YOUR_SUBDOMAIN`
+
+For EU-hosted Recurly sites, use:
+
+`https://callbacks.eu.recurly.com/YOUR_SUBDOMAIN`
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Save your settings</h4><p>Click <strong>Save integration settings</strong> at the bottom of the page.</p></div>
+  </div>
+</div>
+
+# Subscription behavior
+
+## Retries and dunning
+
+Retries are supported for UPI AutoPay, Pix Automatico, and Mercado Pago when your dunning settings are **not** configured to expire subscriptions immediately. See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/static-retries#/" target="_blank">Static Retries documentation</a> and each individual payment method's page for method-specific retry behavior.
+
+## Transaction, invoice, and subscription status
+
+For <a href="https://docs.recurly.com/docs/upi-autopay#/" target="_blank">UPI AutoPay</a> and <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/" target="_blank">Pix Automatico</a>, subscriptions become active immediately, but transactions and invoices remain in a scheduled/processing state until the pre-renewal notification is received and payment is triggered. If a customer doesn't authorize enrollment or payment via their banking app, the transaction will fail and the subscription will be expired upon rejection.
+
+## Supported subscription types
+
+- Trial subscriptions with payment data on file
+- Non-trial subscriptions
 - Renewals
 
-## Features that will not work with Ebanx APMs
+## Features not supported with Ebanx
 
-### General Limitations
+The following are not supported across all Ebanx payment methods:
 
-- Transaction type of Authorize and Capture, and Void. Ebanx transactions must be refunded.
-- Subscription upgrades: Mandates stored on a consumer's Bank app control the amount and frequency. Changing this on the recurly side could cause declines.
-- Trials without Payment data (payment data on file)
-- Trials while using App Deep Links / Intents&#x20;
-- Non-Net-0 Terms: Certain Ebanx APMs must be charged on the specific day noted in the mandate, so terms above Net-0 can cause payment failures.
-- One-time transactions are not supported at this time as these payment methods support renewals only, and cannot be used for one-time transactions, merchant or customer driven.
-- Account hierarchy: Mandates associated with a parent or child account will not be used in a recurring subscription – changing the hierarchy won’t affect existing subscriptions as a result.
-- Aggregated / Calendar Invoicing: Taking existing subscriptions and combining them is against mandate-regulations in India, and therefore cannot be allowed.
-- Bundling Subscriptions: See calendar aggregation.
-- Multiple Subscriptions on a Single Account: Each individual subscription uses a mandate ID, and only one mandate ID is allowed per account.
-- Merchant Admin-created Subscriptions: due to pre-debit notification and enrollment verification/consumer authentication that occurs in the consumer's app, MIT subscription enrollments are not allowed per NPCI regulations in India and Brazilian / LATAM Banking institutions.
+- Authorize and Capture and Void transaction types — Ebanx transactions must be refunded, not voided
+- Subscription upgrades — mandate amounts and frequency are controlled by the customer's banking app; changes in Recurly can cause declines
+- Trials without payment data on file
+- Trials using App deep links / intents
+- Non-Net-0 terms — Ebanx APMs must be charged on the specific day noted in the mandate; terms above Net-0 can cause failures
+- One-time transactions — Ebanx payment methods support renewals only
+- Account hierarchy — mandates associated with a parent or child account won't apply to recurring subscriptions
+- Aggregated or calendar invoicing — combining existing subscriptions is against mandate regulations in India and LATAM banking institutions
+- Bundling subscriptions — same restriction as calendar aggregation
+- Multiple subscriptions on a single account — each subscription uses one mandate ID; only one mandate ID is permitted per account
+- Merchant admin-created subscriptions — MIT subscription enrollments are not permitted per NPCI regulations (India) and LATAM banking institutions, due to pre-debit notification and consumer authentication requirements
 
-### UPI / APAC Specific
+**UPI / APAC specific:**
 
-- Billing Info Updates: Billing Info updates must be done by customers in the UPI App.
+- Billing info updates must be made by customers directly in the UPI app
 
-# Troubleshooting FAQs
+# FAQs
 
-### **Q: My UPI subscription is failing. How can I fix this?**
+<Accordion title="My UPI subscription is failing. How can I fix this?">
+  Confirm the subscription price hasn't changed without re-engaging the customer. Also make sure the customer is responding to UPI app push notifications — this is especially important for charges above 15,000 INR, which require a two-factor authorization step in the customer's banking app.
+</Accordion>
 
-- Confirm the subscription price hasn’t changed without re-engaging the customer.
-- Make sure the customer is responding to UPI app push notifications, especially for charges above **15000 INR**.
+<Accordion title="I updated my customer's VPA, but the original account was charged. How do I fix this?">
+  Billing info updates through Recurly APIs are not supported with UPI AutoPay. If a customer has a new VPA, they must re-enroll: cancel the current subscription and have the customer re-subscribe using their new VPA. If they only need to update their bank account details, they can do so directly in the UPI app.
+</Accordion>
 
-### **Q: I updated my customer’s VPA, but the original account was charged. How do I fix this?**
+<Accordion title="A subscription renewal failed and I cannot attempt collection. Why?">
+  Merchant-initiated one-time transactions — including one-time invoices and force collections — are not supported with UPI AutoPay. Contact your customer directly about alternative payment options.
+</Accordion>
 
-- **Billing Info Updates** made through Recurly APIs aren’t supported with UPI AutoPay. If a customer has a new VPA, they must re-enroll in the subscription.
-  - Cancel the current subscription and have your customer re-subscribe using their new VPA.
-  - If Customers only need to update their bank details, they can do so in the UPI App directly.
+<Accordion title="I converted a Pix trial early and it declined. Why?">
+  Pix Automatico transactions have a waiting period between consumer authentication and the date the first renewal charge can be triggered. This date is set in the original signup request and cannot be modified. Avoid forced or early trial conversions for Pix subscriptions.
+</Accordion>
 
-### **Q: A subscription renewal failed, and I cannot attempt collection. Why?**
-
-- **Merchant-initiated one-time transactions** such as one-time invoices and force collections aren’t supported with UPI AutoPay. Reach out to your customer about payment options.
-
-### Q: I converted a Pix Trial early and it declined. Why?
-
-- **Pix Automatico** transactions have a waiting period between consumer authentication and the start date you can charge the first renewal transaction. This is sent initially in the signup request and cannot be modified. It is best to avoid forced or early conversions for Trial subscriptions on Pix.
-
-### Q: I am getting an Authentication Failure message, but my API key is correct. Why?&#x20;
-
-- **Check your settlement model is set properly**. Cross-border and Local Settlement accounts are on different environments at the gateway-level, so if you are sending your _accurate_ API key to the wrong environment, you will receive an Authentication response.
-- **Check if your API key is a test or production key**. If you are using a production key in Recurly's sandbox or development mode sites, you will likely receive this message. You can use sandbox keys in development mode, and production keys in sandbox or production.
+<Accordion title="I'm getting an Authentication Failure, but my API key is correct. Why?">
+  Check two things. First, verify your settlement model is correct — cross-border and local settlement accounts are on different gateway-level environments, so a valid API key sent to the wrong environment will return an Authentication error. Second, confirm whether your key is a sandbox or production key. Production keys in Recurly's sandbox or development mode sites will also trigger this error. Use sandbox keys for development mode, and production keys for sandbox or production sites.
+</Accordion>
 
 <br />
