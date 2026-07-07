@@ -1,58 +1,83 @@
 ---
 title: NACHA verification
 excerpt: >-
-  Effortlessly comply with NACHA regulations with Recurly's pre-verification
-  feature, ensuring seamless ACH transactions and reduced instances of bad
-  accounts or fraudulent transactions.
+  Meet NACHA bank account verification requirements for ACH in Recurly — with
+  built-in support via Adyen (Giact), Stripe (Financial Connections), and
+  Worldpay, plus guidance for external verification with GoCardless and Check
+  Commerce.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">NACHA requires merchants accepting ACH web (online) debits to verify consumer bank account details before processing. Recurly supports this through built-in verification flows on Adyen, Stripe, and Worldpay, and provides guidance for external verification on other ACH gateways.</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Access to one or more supported payment gateways or;
-* A direct integration with an ACH verification provider, such as Plaid or Giact.
+<ul class="rp-list">
+  <li>Access to one or more supported ACH payment gateways, or</li>
+  <li>A direct integration with an ACH verification provider such as Plaid or Giact.</li>
+</ul>
 
 ### Limitations
 
-* Only new bank accounts will be verified. Bank accounts on file are not subject to preverification rules.
-* Adyen gateway requires use of Giact.
-* Stripe gateway requires use of Financial Connections and cannot support externally verified bank accounts.
+<ul class="rp-list">
+  <li>Only new bank accounts are subject to pre-verification. Bank accounts already on file are not re-verified.</li>
+  <li>Adyen requires Giact for NACHA verification.</li>
+  <li>Stripe requires Financial Connections and does not support externally verified bank accounts.</li>
+</ul>
 
 # Definition
 
-Recurly’s Bank Account Verification Support feature provides merchants with the ability to verify consumer bank details (ACH) in the United States before processing transactions or setting up subscriptions, specifically when a new bank account is being provided. This capability is essential for businesses that operate in the United States and are accepting ACH transactions.
+<div class="rp-definition">Recurly's bank account verification support lets merchants verify consumer ACH bank details in the United States before processing a transaction or setting up a subscription — specifically when a new bank account is being provided. This is required for US merchants accepting ACH transactions under NACHA regulations. See <a href="https://www.nacha.org/system/files/2023-04/Account-Validation-FAQs-Oct-19-2020.pdf" target="_blank">NACHA.org</a> and their <a href="https://www.nacha.org/content/account-validation-resource-center" target="_blank">Account Validation best practices guide</a> for the full regulatory requirements.</div>
 
-> **Note:** Not all gateways support pre-verification. For ACH gateways that are not supported, external verification should be done before sending bank details to Recurly for processing.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Not all gateways support built-in pre-verification. For ACH gateways without built-in support, external verification must be completed before sending bank details to Recurly for processing.</div>
+</div>
 
-NACHA Verification Regulations can be found on the [NACHA.org site](https://www.nacha.org/system/files/2023-04/Account-Validation-FAQs-Oct-19-2020.pdf) and by reading their [Account Validation best practices guide](https://www.nacha.org/content/account-validation-resource-center).
+# Key details
 
-## Gateways with NACHA verification support
+## Gateways with built-in NACHA verification
 
-These gateways allow you to accept payments in any currency within Recurly:
+### Adyen
 
-* **[Adyen](adyen)**: You must enable **Giact** with your Adyen account and ensure you have enabled the feature within your gateway configuration on Recurly.
+Enable **Giact** with your Adyen account and enable the feature in your Adyen gateway configuration in Recurly.
 
-<Image align="center" border={false} src="https://files.readme.io/6fb1bfb995b6d992d1869d03bc8d0de195bf3b3e64418cc208a097abb5b0fafb-Screenshot_2025-07-29_at_4.11.19_PM.png" />
 
-* **[Stripe](stripe)**: You must specifically be using **Stripe Elements**, and make use of Stripe's Financial Connections platform to pre-verify bank account details using Plaid.
-* **[WorldPay](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/)**: You can use Recurly.js, our APIs, or other ACH supported mechanism. WorldPay's integration automatically supports pre-verification when a bank account is provided to Recurly. Bank accounts that are already stored will not be subject to verification again on the same Recurly site.
+<Image src="https://files.readme.io/6fb1bfb995b6d992d1869d03bc8d0de195bf3b3e64418cc208a097abb5b0fafb-Screenshot_2025-07-29_at_4.11.19_PM.png" align="center" width="75%" border={true} />
 
-## Gateways requiring pre-verification externally
 
-* **[GoCardless](https://docs.recurly.com/docs/gocardless)**
+See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen" target="_blank">Adyen documentation</a> for setup details.
 
-* **[Check Commerce](https://docs.recurly.com/docs/check-commerce)**
+### Stripe
 
-### Suggested flow for external verifications
+Use **Stripe Elements** with Stripe's **Financial Connections** platform to pre-verify bank account details. External verification is not supported on the Stripe gateway.
 
-You may use an external provider for any of our ACH supported gateways (excluding Stripe) to verify bank accounts prior to adding billing information to the Recurly platform. General best practices including verifying any _new_ bank account information provided to you by a consumer, so that you can verify it is usable for a WEB (online) transaction.
+See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/stripe" target="_blank">Stripe documentation</a> for setup details.
 
-The direct language from the mandate, effective March 2021, is as follows:
+### Worldpay
 
-* Validate first-use consumer account information for consumer debit payments authorized or initiated over an online channel (often called WEB Debits).
+Worldpay's integration automatically supports pre-verification when a new bank account is provided to Recurly via Recurly.js, the API, or any other supported ACH mechanism. Bank accounts already stored on the same Recurly site are not re-verified. See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/" target="_blank">Worldpay documentation</a> for setup details.
 
-You may require users to authenticate via Plaid, or even via micro-transactions and verify the debits/credits, prior to adding their billing info to Recurly. If the external integration verifies that a consumer's bank account is valid for online processing, and can be debited, you may follow your existing flow with Recurly today.
+## Gateways requiring external pre-verification
+
+The following gateways require you to verify bank accounts using an external provider before adding billing information to Recurly:
+
+- <a href="https://docs.recurly.com/docs/gocardless" target="_blank">GoCardless</a>
+- <a href="https://docs.recurly.com/docs/check-commerce" target="_blank">Check Commerce</a>
+
+## Suggested flow for external verification
+
+You may use an external provider (e.g., Plaid or micro-transaction verification) for any Recurly-supported ACH gateway — excluding Stripe — to verify bank accounts before adding billing information to Recurly.
+
+Best practice is to verify any new bank account provided by a consumer to confirm it can be used for a WEB (online) debit transaction. The direct language from the NACHA mandate (effective March 2021) is:
+
+> Validate first-use consumer account information for consumer debit payments authorized or initiated over an online channel (often called WEB Debits).
+
+If your external integration confirms a consumer's bank account is valid for online processing and can be debited, you may proceed with your existing Recurly billing flow.
