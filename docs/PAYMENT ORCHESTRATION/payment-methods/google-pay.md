@@ -1,9 +1,9 @@
 ---
 title: Google Pay™
 excerpt: >-
-  Leverage Google Pay™ with Recurly to offer a seamless and simplified checkout
-  experience for your customers, facilitating transactions through payment
-  details stored in their Google accounts.
+  Accept Google Pay™ payments on Recurly through Stripe, Adyen, Braintree,
+  Worldpay, CyberSource, Commerce Hub, or Chase Orbital — available in Google
+  Chrome on web and Android devices.
 deprecated: false
 hidden: false
 metadata:
@@ -13,57 +13,70 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Google Pay™ lets customers pay using preferred payment methods stored in their Google account — without entering card details each time. It works in Google Chrome on the web and on Android devices, and integrates with Recurly via Recurly.js.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+  </div>
+</div>
 
-### Required plan
+### Prerequisites
 
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-Google Pay is a payment method that allows customers to pay with preferred payment methods stored in their Google account. Google Pay provides a simpler checkout flow whether customers are buying from using Google Chrome on web or using Android devices without having to enter their payment details each time.
-
-### Prerequisites & supported gateways
-
-* Before integrating Google Pay™ into your Recurly account, ensure you have a Google Merchant ID. Recurly currently supports Google Pay™ transactions through [Stripe](https://docs.recurly.com/docs/stripe), [Adyen](https://docs.recurly.com/docs/adyen), [Braintree](https://docs.recurly.com/docs/braintree),  [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support), [Cybersource](https://docs.recurly.com/docs/cybersource#/), CommerceHub, and [Chase Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital) gateways.
-* This payment method allows using [Zero Dollar Authorizations](https://docs.recurly.com/docs/payment-gateways#/zero-dollar-authorizations-zda).
-
-### Definitions
-
-* **FPAN**: An acronym for "Funding Primary Account Number". This is referencing the actual credit card number that is physically printed on the card itself. This is also referred to as just 'PAN' as well.
-* **DPAN**: The acronym for "Device Primary Account Number". Some may also use 'Digital' in place of 'Device'. A DPAN is referring to the tokenized credit card number created by adding a consumer credit card to a Phone or Device "Wallet" system (such as Google Wallet) and is sent to gateways and processors in place of an actual FPAN. It is usually only functional when sent from that specific device, for example, the specific iPhone or iPad and typically is accompanied by a Cryptogram when a customer is in session.
-  * The DPAN is tied to that specific device, for example, the specific Android Phone or Tablet and is accompanied by a Cryptogram when a customer is in session.
-  * DPANs are full card numbers that have different set of numbers from the FPAN which can be exposed on receipts and other UI elements.
-  * DPANs are invalidated when a consumer removes the card from their device, and a new DPAN is created if they re-add the same card, or add a new card to their device. Subscriptions using a DPAN can fail due to this consumer-driven behavior and are non-recoverable.
-* **Cryptogram**: A one-time use authentication value that is created in the processing of using Google Pay to authorize a transaction. Cryptograms are not stored and must be sent on all customer-initiated transactions.
+<ul class="rp-list">
+  <li>A Google Merchant ID.</li>
+  <li>A supported Google Pay gateway: <a href="https://docs.recurly.com/docs/stripe" target="_blank">Stripe</a>, <a href="https://docs.recurly.com/docs/adyen" target="_blank">Adyen</a>, <a href="https://docs.recurly.com/docs/braintree" target="_blank">Braintree</a>, <a href="https://docs.recurly.com/docs/worldpaydlocal-latam-support" target="_blank">Worldpay</a>, <a href="https://docs.recurly.com/docs/cybersource#/" target="_blank">CyberSource</a>, Commerce Hub, or <a href="https://docs.recurly.com/docs/chase-paymentech-orbital" target="_blank">Chase Orbital</a>.</li>
+  <li><a href="https://docs.recurly.com/docs/payment-gateways#/zero-dollar-authorizations-zda" target="_blank">Zero Dollar Authorizations</a> are supported with this payment method.</li>
+</ul>
 
 ### Limitations
 
-* **This feature works only in Google Chrome**. Other search engines/browsers are not supported.
+<ul class="rp-list">
+  <li>Google Pay™ works in <strong>Google Chrome only</strong> — other browsers are not supported.</li>
+  <li>Google Pay™ is not currently supported on Recurly Checkout or Hosted Payment Pages.</li>
+</ul>
 
-### Best Practices and Compliance
+# Definition
 
-* For return customers, please use Recurly.js even if an existing account code or billing info exists, as Recurly.js handles collecting device-related data necessary for customer-initiated transactions through Google Pay.
+<div class="rp-definition">Google Pay™ is a digital wallet payment method that lets customers complete transactions using payment details stored in their Google account. It simplifies checkout on Google Chrome (web) and Android devices. Recurly integrates Google Pay™ via Recurly.js — see the <a href="https://developers.recurly.com/reference/recurly-js/index.html#google-pay" target="_blank">Recurly.js Google Pay documentation</a> for integration details.</div>
 
-### Limitations
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> The Google Pay standalone app was deprecated by Google on June 4, 2024. This does not affect the payment method itself — customers can continue to pay with Google Pay through the Google Wallet app.</div>
+</div>
 
-Currently, Google Pay™ is not supported on Recurly Checkout or Hosted Payment Pages.
+# Key details
 
-> 📘 Google Pay App was deprecated by Google on June 4, 2024.
->
-> This does not extend to the Payment Method itself. Users can continue to enjoy payments with Google Pay through the Google Wallet app.
-
-# Description
-
-Google Pay™ is a prominent payment method, allowing customers to perform transactions with their preferred payment options readily available in their Google account. It ensures a simplified checkout process whether buying through Google Chrome on the web or Android devices.
+<div class="rp-card">
 
 ### Use cases
 
-* Web Purchases: Customers can utilize Google Pay™ for straightforward transactions while shopping on web browsers such as Google Chrome.
-* Android Transactions: Enable swift and secure purchases for customers using Android devices without the need for entering payment details every time.
+**Web purchases** — Customers can use Google Pay™ for transactions in Google Chrome without entering card details.
 
-# Checkout Flow
+**Android transactions** — Customers on Android devices can pay quickly using their stored Google Pay credentials.
 
-#### Recurly.js Integration
+</div>
 
-To integrate Google Pay™, refer to the [Recurly.js documentation](https://developers.recurly.com/reference/recurly-js/index.html#google-pay) which guides through adding Google Pay™ as a payment method.
+## Token types
 
-* **Note**: for return customers, please use Recurly.js even if an existing account code or billing info exists, as Recurly.js handles collecting device-related data necessary for customer-initiated transactions through Google Pay.
+<Accordion title="FPAN — Funding Primary Account Number">
+  The actual credit card number physically printed on the card. Also referred to as PAN.
+</Accordion>
+
+<Accordion title="DPAN — Device Primary Account Number">
+  A tokenized card number created when a consumer adds a card to a device wallet (e.g., Google Wallet). DPANs are sent to gateways in place of the actual FPAN.
+
+  - Tied to a specific device (e.g., a specific Android phone or tablet) and accompanied by a Cryptogram when the customer is in session.
+  - DPANs are full card numbers with different digits from the FPAN, and can appear on receipts and other UI elements.
+  - DPANs are invalidated when a consumer removes the card from their device. If they re-add the same card or add a new one, a new DPAN is created. Subscriptions using a DPAN can fail due to this consumer-driven behavior and are non-recoverable.
+</Accordion>
+
+<Accordion title="Cryptogram">
+  A one-time authentication value generated during a Google Pay transaction. Cryptograms are not stored and must be sent on all customer-initiated transactions.
+</Accordion>
+
+## Best practices
+
+- **Return customers** — Use Recurly.js even when an existing account code or billing info is already on file. Recurly.js collects the device-related data (cryptograms) required for customer-initiated Google Pay transactions.
+
+<br />
