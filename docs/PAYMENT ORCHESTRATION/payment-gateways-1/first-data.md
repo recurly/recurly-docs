@@ -1,9 +1,9 @@
 ---
 title: First Data
 excerpt: >-
-  Streamline your payment process, secure customer transactions, and optimize
-  your business operations with the First Data GGe4 Gateway integration in
-  Recurly
+  Connect First Data's GGe4 Gateway to Recurly to process credit and debit card
+  payments for US merchants — with Auth and Capture, AVS configuration, and
+  Results API setup.
 deprecated: false
 hidden: true
 metadata:
@@ -13,126 +13,149 @@ metadata:
 next:
   description: ''
 ---
-> ❗️ For internal use only. Do not share with merchants.
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> For internal use only</strong> Do not share with merchants.</div>
+</div>
 
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">First Data's GGe4 Gateway integrates with Recurly to process credit and debit card payments for US merchants. Setup requires gathering GGe4 credentials, configuring AVS settings, and creating a separate read-only Results API user to ensure reliable transaction status queries.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#integrate-first-data-gge4-with-recurly"><span class="rp-toc-num">3</span>Integration</a>
+    <a class="rp-toc-pill" href="#set-up-a-read-only-user-for-the-results-api"><span class="rp-toc-num">4</span>Results API user setup</a>
+  </div>
+</div>
 
 # Definition
 
-First Data is a comprehensive payment gateway solution. Recurly supports integration with First Data's GGe4 Gateway for US merchants, facilitating seamless and secure payment transactions.
+<div class="rp-definition">First Data GGe4 is a payment gateway solution that supports credit and debit card processing, subscriptions, and MOTO transactions for US merchants. The Recurly integration uses GGe4's XML credentials for primary transaction processing, and a separate read-only Results API user for reliable transaction status queries.</div>
 
 # Key details
 
-| Features                        | Description / Availability                                                                                                      |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Payment processing, Subscriptions, [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)   Processing |
-| Supported operations            | Payment, Auth and Capture, Void, Refund                                                                                         |
-| Supported payment types         | Credit Card, Debit Card                                                                                                         |
-| Supported card brands           | Visa, MasterCard, Amex, Discover, JCB, Diners Club                                                                              |
-| Gateway Specific 3DS2 Supported | No                                                                                                                              |
-| Regions                         | United States                                                                                                                   |
-| Currencies                      | Multiple, including AUD, CAD, EUR, GBP, NZD, PLN, and USD                                                                       |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
+  <tr><td>Services that work with Recurly</td><td>Payment processing, subscriptions, <a href="https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/" target="_blank">MOTO</a> processing</td></tr>
+  <tr><td>Supported operations</td><td>Payment, Auth and Capture, Void, Refund</td></tr>
+  <tr><td>Supported payment types</td><td>Credit card, debit card</td></tr>
+  <tr><td>Supported card brands</td><td>Visa, Mastercard, Amex, Discover, JCB, Diners Club</td></tr>
+  <tr><td>Gateway-specific 3DS2 supported</td><td>No</td></tr>
+  <tr><td>Card on file supported</td><td>N/A</td></tr>
+  <tr><td>Regions</td><td>United States</td></tr>
+  <tr><td>Currencies</td><td>Multiple, including AUD, CAD, EUR, GBP, NZD, PLN, and USD</td></tr>
+</table>
 
-## Setting Up First Data GGe4 Gateway with Recurly
+## Required credentials
 
-To connect your Recurly site to your First Data GGe4 gateway account, you will need the following credentials:
+To connect Recurly to your First Data GGe4 account, you'll need the following credentials from the GGe4 portal:
 
-* Gateway ID
-* Password
-* HMAC Key ID
-* HMAC
+- Gateway ID
+- Password
+- HMAC Key ID
+- HMAC
 
-## Creating a User for the Results API
+## Results API user
 
-For the best performance and reliability, Recurly strongly recommends creating a separate, read-only user account in First Data. This account allows Recurly to automatically query the transaction status, which is especially valuable if the GGe4 gateway becomes unresponsive or if a network issue arises after a transaction is submitted. Enter the credentials for this read-only user in the Recurly gateway configuration page.
+Recurly strongly recommends creating a separate read-only user in First Data for the Results API. This allows Recurly to automatically query transaction status if the GGe4 gateway becomes unresponsive or a network issue occurs after a transaction is submitted.
 
-For detailed steps, refer to the First Data [docs on Results API](https://support.payeezy.com/hc/en-us/articles/203731249-Real-time-Payment-Manager-RPM-User-Guide#3).
+See the <a href="https://support.payeezy.com/hc/en-us/articles/203731249-Real-time-Payment-Manager-RPM-User-Guide#3" target="_blank">First Data Results API documentation</a> for details, and follow the [Results API user setup](#set-up-a-read-only-user-for-the-results-api) steps below.
 
-### Important Notes:
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Results API credentials expire every 60 days</strong> Update these credentials before they expire to avoid service interruption. If expired credentials are used and 12 invalid requests occur within 15 minutes, the entire integration may be suspended due to an IP-Lockout. Set a recurring calendar reminder to stay ahead of this.</div>
+</div>
 
-* **'Results API' credentials expire every 60 days.** It is critical to update these credentials before they expire to maintain uninterrupted service.
-* **Failure to update the 'Results API' credentials will result in requests returning an 'invalid_credentials' error.** If 12 of these erroneous requests are made in 15 minutes, the entire integration may be suspended due to an "IP-Lockout" scenario.  
-  For further details, refer to First Data’s [documentation on creating an account](https://support.payeezy.com/hc/en-us/articles/203731249-Real-time-Payment-Manager-RPM-User-Guide#3).
+## AVS settings
 
-## AVS Settings
+When a new credit card is added in Recurly, a transaction is created and the billing address is submitted to GGe4. An AVS (Address Verification System) response is returned and can be used for fraud prevention. You can configure AVS to require a partial match (recommended) or bypass it entirely.
 
-When adding a new credit card in Recurly, a transaction is created, and the given billing address is submitted to the payment gateway along with other transaction information. An AVS (Address Verification System) response is then returned to Recurly. This is vital for fraud prevention, and First Data’s GGe4 gateway allows you to tailor this to your needs. You can choose to require a partial match on AVS responses for transactions (recommended) or to bypass the AVS response, allowing transactions irrespective of AVS issues.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> AVS responses are only validated on initial transactions — when a credit card is first added in Recurly. AVS responses for recurring transactions are disregarded.</div>
+</div>
 
-> 📘 **Credentials Reminder**
->
-> To activate your First Data gateway, enter your Gateway ID, Password, HMAC Key ID, and HMAC on the credentials page within Recurly.
->
-> > **Please Note:** AVS responses are only validated on initial transactions (i.e., when a credit card is first added in Recurly). AVS responses for recurring transactions are disregarded.
-> >
-> > Below is the "Step-by-Step Process" section for the Recurly user guide, which is designed to guide the users through the process of integrating First Data’s GGe4 gateway with Recurly. In addition, there is a specific guide on how to set up a read-only user for the Results API on the First Data GGe4 Gateway portal.
+# Integrate First Data GGe4 with Recurly
 
-# Step-by-Step Process to Integrate First Data's GGe4 Gateway with Recurly
+## Step 1: Gather your First Data credentials
 
-### Step 1: Gather Your First Data Credentials
+Log in to your <a href="https://globalgatewaye4.firstdata.com/?lang=en" target="_blank">First Data GGe4 portal</a> and collect: Gateway ID, Password, HMAC Key ID, and HMAC.
 
-* Log in to your First Data GGe4 Gateway portal and collect the following credentials:
-  * Gateway ID
-  * Password
-  * HMAC Key ID
-  * HMAC
+## Step 2: Enter credentials in Recurly
 
-### Step 2: Enter Credentials in Recurly
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Gateways</h4><p>In Recurly, navigate to <strong>Configuration → Payment Gateways</strong> and click <strong>Add Gateway Account</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Select First Data GGe4</h4><p>Choose <strong>First Data GGe4</strong> from the dropdown.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Enter your credentials</h4><p>Input your <strong>Gateway ID</strong>, <strong>Password</strong>, <strong>HMAC Key ID</strong>, and <strong>HMAC</strong> into the corresponding fields.</p></div>
+  </div>
+</div>
 
-* Log into your Recurly account.
-* Navigate to **Configuration** > **Payment Gateways** in your Recurly Admin Console.
-* Click on **Add Gateway Account** and select **First Data GGe4** from the dropdown menu.
-* Enter your First Data **Gateway ID**, **Password**, **HMAC Key ID**, and **HMAC** into the corresponding fields.
+## Step 3: Configure AVS settings (recommended)
 
-### Step 3: Configure AVS Settings (Optional but Recommended)
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Select your AVS matching level</h4><p>Under the AVS settings section, choose one of the following options: <strong>Full Match Required</strong>, <strong>Partial Match Allowed</strong> (recommended), or <strong>No AVS Match Required</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Save your changes</h4></div>
+  </div>
+</div>
 
-* Under the AVS settings section, select your desired AVS matching level:
-  * **Full Match Required**
-  * **Partial Match Allowed**
-  * **No AVS Match Required**
-* Save your changes.
+## Step 4: Set up the Results API read-only user
 
-### Step 4: Set Up a Read-Only User for Results API
+Follow the [Results API user setup](#set-up-a-read-only-user-for-the-results-api) steps below, then return here to enter the read-only credentials in your Recurly gateway configuration.
 
-* Follow the guide below on how to set up a read-only user in the First Data GGe4 Gateway portal (explained in detail below).
+## Step 5: Test and verify
 
-### Step 5: Test and Verify
+Run a test transaction to confirm the integration is working. Review transaction status and logs in Recurly.
 
-* Perform a test transaction to ensure the integration is functioning as expected.
-* Monitor and review the transaction status and logs in Recurly.  
-  **Please Note:** Be vigilant about updating the 'Results API' credentials, which expire every 60 days. Set a recurring calendar reminder to ensure continuity.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Reminder</strong> Results API credentials expire every 60 days. Set a recurring calendar reminder to update them before expiry to avoid an IP-Lockout.</div>
+</div>
 
-# How to Set Up a Read-Only User for the Results API in First Data GGe4 Gateway
+# Set up a read-only user for the Results API
 
-### Step 1: Log Into the First Data Portal
+## Step 1: Log in to the First Data portal
 
-* Access the First Data GGe4 Gateway portal at [First Data Login Portal](https://globalgatewaye4.firstdata.com/?lang=en).
+Access the <a href="https://globalgatewaye4.firstdata.com/?lang=en" target="_blank">First Data GGe4 portal</a>.
 
-### Step 2: Navigate to User Administration
+## Step 2: Navigate to User Administration
 
-* Click on the **Administration** tab on the far right of the portal.
+Click the **Administration** tab on the far right of the portal.
 
-### Step 3: Create a New User
+## Step 3: Create a new user
 
-* Click the **Create New User** link under the Administration section.
+Click **Create New User** under the Administration section.
 
-### Step 4: Specify User Details
+## Step 4: Specify user details
 
-* Create a username and assign the **Read Only** role under the **Login** tab.
+Create a username and assign the **Read Only** role under the **Login** tab.
 
-### Step 5: Configure Merchant/Terminal Restrictions
+## Step 5: Configure Merchant/Terminal Restrictions
 
-* After creating the user, click on the username.
-* Navigate to the **Merchant / Terminal Restrictions** tab.
-* Ensure this user has access to the terminals that Recurly uses to initiate transactions on your behalf.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the user's restrictions</h4><p>After creating the user, click the username, then navigate to the <strong>Merchant / Terminal Restrictions</strong> tab.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Grant terminal access</h4><p>Confirm this user has access to the terminals Recurly uses to initiate transactions on your behalf.</p></div>
+  </div>
+</div>
 
-### Step 6: Enter Read-Only User Credentials in Recurly
+## Step 6: Enter read-only credentials in Recurly
 
-* Return to your Recurly **Payment Gateway configuration** page and input the **read-only user credentials**.
+Return to your Recurly **Payment Gateway configuration** page and enter the read-only user credentials in the Results API fields.
 
-### Step 7: Regularly Update the Results API Credentials
+## Step 7: Set a reminder to rotate credentials
 
-* Keep in mind that these credentials expire every 60 days, so it is crucial to update them regularly to avoid service interruption.
+Results API credentials expire every 60 days. Set a recurring calendar reminder to update them before expiry — expired credentials cause `invalid_credentials` errors and can trigger an IP-Lockout after 12 failed requests within 15 minutes.
