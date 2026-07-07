@@ -1,9 +1,9 @@
 ---
 title: SEPA
 excerpt: >-
-  Discover how to expand your business reach in the European Union (EU) by
-  leveraging SEPA Direct Debit through Recurly, a secure and trusted way to
-  process one-off or recurring Euro-denominated payments.
+  Accept SEPA Direct Debit payments on Recurly for EUR-denominated one-time and
+  recurring transactions across the European Union — via Adyen, Stripe,
+  GoCardless, or Worldpay.
 deprecated: false
 hidden: false
 metadata:
@@ -13,37 +13,48 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">SEPA Direct Debit lets merchants process EUR-denominated payments across the European Union using customers' IBAN bank account details. It supports both one-time and recurring payments, and Recurly automatically handles the mandatory customer debit notification requirement.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#checkout-flow"><span class="rp-toc-num">3</span>Checkout flow</a>
+  </div>
+</div>
 
-### Required plan
+### Prerequisites
 
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-### Prerequisites & supported gateways
-
-Recurly currently supports SEPA transactions through [Adyen ](https://docs.recurly.com/docs/adyen), [Stripe](https://docs.recurly.com/docs/stripe#/) (via [Third Party Checkout](https://recurly.com/developers/guides/3rd-party-checkout.html)), [GoCardless ](https://docs.recurly.com/docs/gocardless), and [WorldPay](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview) gateways.
+<ul class="rp-list">
+  <li>A supported SEPA gateway: <a href="https://docs.recurly.com/docs/adyen" target="_blank">Adyen</a>, <a href="https://docs.recurly.com/docs/stripe#/" target="_blank">Stripe</a> (via <a href="https://recurly.com/developers/guides/3rd-party-checkout.html" target="_blank">Third Party Checkout</a>), <a href="https://docs.recurly.com/docs/gocardless" target="_blank">GoCardless</a>, or <a href="https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview" target="_blank">Worldpay</a>.</li>
+</ul>
 
 ### Limitations
 
-* **Currency:** SEPA exclusively processes transactions denominated in EUR.
-* **Customer notification:** Every time a debit occurs, merchants are required to notify their customers — a function automatically handled by Recurly through email notifications.
-* Coupons are supported however, **100% coupons during signup cannot be supported** as e-mandate creation is a requirement for this payment method. Please use a free trial option instead where supported (WorldPay).
+<ul class="rp-list">
+  <li><strong>EUR only</strong> — SEPA processes transactions in Euros exclusively.</li>
+  <li><strong>Mandatory customer notification</strong> — The SEPA Direct Debit rulebook requires merchants to notify customers before every account debit. Recurly handles this automatically via email. See <a href="https://docs.recurly.com/docs/renewal-reminder#sepa-payment-method" target="_blank">SEPA renewal reminders</a> for details.</li>
+  <li>100% coupons during signup are not supported — e-mandate creation is required for this payment method. Use a free trial instead where supported (Worldpay). Standard coupons are supported.</li>
+</ul>
 
-# Description
+# Definition
 
-SEPA, or Single Euro Payments Area, Direct Debit stands as a vital payment method for merchants aiming to establish or expand their business operations in the European Union. This payment method allows for the processing of both one-time and recurring payments denominated exclusively in Euros (EUR). SEPA requires customers' names and bank account details to be in IBAN (International Bank Account Number) format.
+<div class="rp-definition">SEPA (Single Euro Payments Area) Direct Debit is a payment method for processing EUR-denominated one-time and recurring payments across the European Union. It requires customers' names and bank account details in IBAN (International Bank Account Number) format. Per the SEPA Direct Debit rulebook, merchants must notify customers before every account debit — Recurly handles this automatically through email notifications.</div>
 
-Consistent with the SEPA Direct Debit rulebook, merchants are mandated to notify customers for every account debit, a procedure automatically undertaken by Recurly through email notifications. Find further details on this [here](https://docs.recurly.com/docs/renewal-reminder#sepa-payment-method).
+# Key details
+
+<div class="rp-card">
 
 ### Use cases
 
-* Recurring Subscriptions: Easily handle subscriptions with recurring payments in EUR.
-* One-off Payments: Securely process single payments leveraging the SEPA Direct Debit scheme.
+**Recurring subscriptions** — Process subscription renewals in EUR for customers across the SEPA zone.
+
+**One-off payments** — Accept single payments via the SEPA Direct Debit scheme in addition to or independently of recurring billing.
+
+</div>
 
 # Checkout flow
 
-#### Customer information collection
+Collect the customer's name and IBAN bank account number during checkout to initiate a SEPA Direct Debit transaction.
 
-Collect essential customer details, including their name and bank account number in IBAN format, during the checkout process to facilitate SEPA Direct Debit transactions.
-
-Recurring SEPA payments can be leveraged even when the first transaction is handled through a different payment method that _does not_ support recurring billing, such as iDeal and Sofort.
+Recurring SEPA payments can be set up even when the initial transaction is completed through a different payment method that doesn't support recurring billing, such as iDEAL or Sofort.
