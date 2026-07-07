@@ -1,9 +1,9 @@
 ---
 title: Fraud management
 excerpt: >-
-  Attract a larger audience and secure customer trust with superior fraud
-  prevention mechanisms built right into your Recurly setup, courtesy of Kount's
-  expertise.
+  Configure Recurly's fraud management tools — including Kount integration,
+  AVS/CVV verification, risk score thresholds, velocity rules, and blocked
+  countries — to protect against payment fraud.
 deprecated: false
 hidden: false
 metadata:
@@ -13,117 +13,131 @@ metadata:
 next:
   description: ''
 ---
-<Callout icon="❗️">
-  **Kount Command will be deprecated in favor of Kount 360**
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Kount Command will be deprecated in April 2026</strong> Recurly will migrate all Kount merchants to Kount 360 in April 2026. No integration or settings changes are required. Some settings are not supported in Kount 360 and are marked below.</div>
+</div>
 
-  In April 2026, Recurly will be migrating all Kount merchants to Kount 360. There are no integration changes necessary, and no settings changes required for your account. Some settings are no longer supported in Kount 360, and will be marked as such below.
-</Callout>
-
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on Professional and Elite subscription plans. To request to upgrade to this plan, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+<div class="rp-page">
+  <div class="rp-overview">Recurly's fraud management suite helps merchants detect and block fraudulent transactions in real time. It includes Kount integration for transaction risk scoring, AVS and CVV verification, velocity rules, risk score thresholds, and country-level blocking.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on Professional and Elite plans — contact your Recurly account manager or <a href="mailto:support@recurly.com">support@recurly.com</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#fraud-management-configuration"><span class="rp-toc-num">4</span>Configuration</a>
+  </div>
+</div>
 
 ### Limitations
 
-* New card verifications (both sign-ups and billing info updates) are subject to risk inquiries. Existing accounts with a credit/debit card on file are not scrutinized unless their billing information is updated.
-* The efficacy of fraud detection might be influenced by the quality and completeness of the transaction and customer data provided.
+<ul class="rp-list">
+  <li>Only new card verifications (sign-ups and billing info updates) are subject to risk inquiries. Existing accounts with a card on file are not re-evaluated unless billing information is updated.</li>
+  <li>Fraud detection accuracy depends on the quality and completeness of transaction and customer data provided.</li>
+</ul>
 
 # Definition
 
-Recurly's Fraud Management is a comprehensive suite of tools designed to identify and counteract fraudulent activities in real-time. This page is about how we help merchants fight fraud.
+<div class="rp-definition">Recurly's fraud management is a suite of tools that identifies and blocks fraudulent activity in real time. It combines Kount's transaction risk scoring with AVS and CVV verification from gateway partners to protect merchants against evolving fraud tactics.</div>
 
 # Key benefits
 
-* **Real-time fraud detection:** Our system analyzes transactions as they happen, providing instant alerts on suspicious activities, helping you prevent fraudulent transactions before they occur.
-
-* **Integrated with Kount:** Leveraging Kount, a leading fraud management integration partner, we ensure your transactions are secure and your business is protected against evolving fraud tactics.
-
-* **Enhanced payment security:** Utilizing AVS (Address Verification Service) and CVV (Card Verification Value) checks to add an extra layer of security, reducing the likelihood of fraudulent transactions.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+    <strong>Real-time fraud detection</strong>
+    <span>Transactions are analyzed as they happen, with instant alerts on suspicious activity to block fraud before it occurs.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+    <strong>Integrated with Kount</strong>
+    <span>Kount's risk scoring and fraud intelligence network protect your transactions against both known and emerging fraud patterns.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></div>
+    <strong>Enhanced payment security</strong>
+    <span>AVS and CVV checks add an extra verification layer on top of Kount scoring, reducing the likelihood of fraudulent transactions.</span>
+  </div>
+</div>
 
 # Key details
 
-## Fraud Management Functionality
+## Kount
 
-### Kount
+Recurly uses Kount as its primary fraud management integration partner. See the <a href="https://docs.recurly.com/docs/kount" target="_blank">Kount integration documentation</a> for full details.
 
-We use Kount as our main fraud management integration partner to maximize fraud protection. To know more about our Kount integration, please visit our dedicated page. [Kount Integration](https://docs.recurly.com/docs/kount)
+## AVS and CVV verification
 
-### AVS and CVV Verification
+AVS and CVV responses from gateway partners are used as part of Recurly's fraud prevention. See <a href="https://docs.recurly.com/docs/payment-settings" target="_blank">Payment Settings</a> for configuration details.
 
-We also utilize AVS and CVV responses from our gateway partners as part of our fraud prevention measures. To understand the details and the process to enable these features, please visit our payment settings page. [Payment Settings](https://docs.recurly.com/docs/payment-settings)
+# Fraud management configuration
 
-# Fraud Management Configuration
+Navigate to **Configuration → Fraud Management** in Recurly to customize your fraud detection settings.
 
-To configure the fraud management settings, navigate to Configuration → Fraud Management in your Recurly account. This area allows you to customize your fraud detection and prevention measures to fit your business needs, ensuring you're equipped to handle the challenges of online payment fraud.
+The overview page shows whether fraud management is active and how it is configured. To view fraudulent transactions, click **View All** (Enterprise merchants only). To adjust settings, click **Configure Settings** in the upper right corner.
 
-On this initial page, you can find an overview of the fraud management settings, providing a snapshot of whether this critical feature is active and how it is configured. To view any fraudulent transactions, click on ‘View All’ if you have access to a dashboard (Enterprise only merchants). To tailor these settings to your needs, click on the ‘Configure Settings’ button located in the upper right corner.
+## Enable fraud management
 
-## Enabling fraud management
+Set the status to **Enabled** to activate real-time fraud monitoring.
 
-Set the status to ‘Enable’ to activate real-time fraud management monitoring, ensuring your transactions are scanned for suspicious activities.
 
-<Image align="center" border={true} src="https://files.readme.io/199fcaa-Screen_Shot_2024-06-21_at_12.42.32_PM.png" className="border" />
+<Image src="https://files.readme.io/199fcaa-Screen_Shot_2024-06-21_at_12.42.32_PM.png" align="center" width="75%" border={true} />
+
 
 ## Decline threshold rules
 
 ### High risk decline
 
-<Callout icon="📘" theme="info">
-  This configuration will be unavailable in Kount 360.
-</Callout>
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Not available in Kount 360</strong> This setting will be unavailable after the April 2026 migration to Kount 360.</div>
+</div>
 
-Utilizing Kount's extensive data and logic, this feature gives a detailed analysis of transactions, checking for connections to fraudulent activities outside of Recurly's network. Any transaction identified as High Risk by Kount will be automatically declined.
+Kount analyzes transactions for connections to known fraud outside Recurly's network. Any transaction identified as High Risk is automatically declined.
 
-<Image align="center" border={true} src="https://files.readme.io/69df826-Screen_Shot_2024-06-21_at_12.42.52_PM.png" className="border" />
 
-> **Note:** This setting is overridden if a risk score decline level of 75+ is chosen.
+<Image src="https://files.readme.io/69df826-Screen_Shot_2024-06-21_at_12.42.52_PM.png" align="center" width="75%" border={true} />
+
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> This setting is overridden if a risk score decline level of 75 or higher is selected.</div>
+</div>
 
 ### Risk score decline threshold
 
-This setting allows you to define the risk score threshold that, if exceeded by a transaction, will trigger an automatic decline. A higher Risk Score setting means a more lenient approach to risk, potentially reducing the number of declined transactions. Conversely, a lower Risk Score setting indicates a stricter risk threshold, leading to more declined transactions.
+This setting defines the risk score above which a transaction is automatically declined. A higher threshold means a more lenient approach — fewer declines. A lower threshold means stricter rules — more declines. Select the threshold from the dropdown to match your organization's risk tolerance.
 
-Adjust this threshold by selecting an option from the dropdown menu to align with your organization's risk tolerance.
 
-<Image align="center" border={true} src="https://files.readme.io/d647cf4-Screen_Shot_2024-06-21_at_12.43.10_PM.png" className="border" />
+<Image src="https://files.readme.io/d647cf4-Screen_Shot_2024-06-21_at_12.43.10_PM.png" align="center" width="75%" border={true} />
+
 
 ## Fraud velocity rules
 
-<Callout icon="📘" theme="info">
-  This configuration will be unavailable in Kount 360.
-</Callout>
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Not available in Kount 360</strong> These settings will be unavailable after the April 2026 migration to Kount 360.</div>
+</div>
 
-These rules restrict the frequency of attempts made using the same credit/debit card, IP address, email, or device for entering or updating billing information.
+Velocity rules restrict how frequently the same credit/debit card, IP address, email, or device can be used to enter or update billing information.
 
-<Image align="center" border={true} src="https://files.readme.io/3458bd2-vel_rules_edited.png" className="border" />
 
-> **Note:** There is a default for all velocity rules which can be found in your Recurly fraud management settings. This number provides a balanced approach to fraud prevention, but you may change it at your discretion. Setting this value to 0 turns off the velocity rule entirely, removing the restriction on attempt frequency. While possible, this is not recommended.
+<Image src="https://files.readme.io/3458bd2-vel_rules_edited.png" align="center" width="75%" border={true} />
 
-### Velocity rules for credit cards
 
-This rule restricts how often billing information can be updated using the same credit or debit card number within a single hour. It's designed to prevent excessive attempts that might indicate fraudulent activity.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Each velocity rule has a default value visible in your Recurly fraud management settings. This default provides a balanced approach to fraud prevention. You may adjust the value at your discretion. Setting a rule to 0 disables it entirely — this is not recommended.</div>
+</div>
 
-### Velocity rules for IP addresses
-
-Similar to credit cards, this rule limits the number of times billing information updates can occur from the same IP address within an hour, helping to identify and mitigate potential fraud.
-
-### Velocity rules for email addresses
-
-This rule sets a cap on the number of billing information updates that can be made with the same email address over a 24-hour period. It's a crucial step in controlling fraud linked to email-based manipulation.
-
-### Velocity rules for devices
-
-This regulation controls the frequency of billing updates initiated from the same device within an hour, offering an additional layer of security by monitoring device-specific activity.
+- **Credit cards** — Limits how often billing information can be updated using the same card number within a single hour.
+- **IP addresses** — Limits billing info updates from the same IP address within an hour.
+- **Email addresses** — Caps billing info updates using the same email address within a 24-hour period.
+- **Devices** — Controls how often billing updates can be initiated from the same device within an hour.
 
 ## Blocked countries
 
-<Callout icon="📘" theme="info">
-  This configuration will be unavailable in Kount 360.
-</Callout>
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Not available in Kount 360</strong> This setting will be unavailable after the April 2026 migration to Kount 360.</div>
+</div>
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/4fce49a-Screen_Shot_2024-06-21_at_12.45.05_PM.png" className="border" />
 
-You have the option to automatically reject transactions originating from countries you designate as high risk. This automatic decline activates when the customer's transaction BIN (Bank Identification Number) Country is a match with any selected on your deny list. This rule is specifically applied to credit card transactions, enhancing your fraud prevention measures by geography.
+<Image src="https://files.readme.io/4fce49a-Screen_Shot_2024-06-21_at_12.45.05_PM.png" align="center" width="75%" border={true} />
 
-<br />
+
+Automatically decline transactions from countries you designate as high risk. The block activates when the transaction's BIN (Bank Identification Number) country matches any country on your deny list. This rule applies to credit card transactions only.
