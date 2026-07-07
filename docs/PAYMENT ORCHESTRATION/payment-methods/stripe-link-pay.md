@@ -69,7 +69,7 @@ next:
 # FAQs
 
 <Accordion title="Which gateways support Link by Stripe?">
-  Link by Stripe is available through Stripe Payment Elements (Third Party Checkout). See the <a href="https://recurly.com/developers/guides/3rd-party-checkout.html#third-party-checkout" target="_blank">Third Party Checkout documentation</a> for setup details.
+  Link by Stripe is available through Stripe Payment Elements (Third Party Checkout). See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/third-party-checkout#third-party-checkout" target="_blank">Third Party Checkout documentation</a> for setup details.
 </Accordion>
 
 <br />
