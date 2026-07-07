@@ -1,6 +1,7 @@
 - fixed-recurring-pricing
 - ramp-pricing
 - one-time-pricing
+- decimal-pricing
 - usage-based-billing
 - quantity-based-pricing
 - hybrid-pricing
