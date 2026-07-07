@@ -1,151 +1,187 @@
 ---
 title: Nuvei
 excerpt: >-
-  Set up Nuvei in Recurly to process cards and wallets, enable 3D Secure, and
-  meet browser data requirements.
+  Connect Nuvei to Recurly to process card, Apple Pay, and Google Pay
+  transactions globally — with 3DS2 support, dynamic descriptors, and AVS/CVV
+  verification.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Early Access</strong> Nuvei is currently available in Early Access. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> to request access.</div>
+</div>
 
-> 👍
->
-> **Early Access** Nuvei is currently available in Early Access. Interested merchants can contact [support@recurly.com](mailto:support@recurly.com) to gain access.
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Nuvei is a full-service payment gateway supporting recurring subscriptions, ecommerce, MOTO, and 3DS transactions. Integrating it with Recurly gives you access to a wide range of card brands, Apple Pay, Google Pay, and global currency support. Recurly.js is required for all new card signups and billing info updates.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#set-up-nuvei-with-recurly"><span class="rp-toc-num">3</span>Setup</a>
+  </div>
+</div>
 
 ### Limitations
 
-> 📘 **Important note**:
->
-> Nuvei gateway requires Browser Information in all transactions, so using Recurly.js for new signups and new billing information entry, such as billing info updates, regardless of 3DS usage, is important. You may use Recurly.js for either by following our standard guides for 3DS with Recurly.js. If you need 3DS on known billing information, you may also find our guide for known billing information found in our Integration Guides: [Recurly.js with Stored Billing Information](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information)
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Recurly.js required</strong> Nuvei requires browser information on all transactions. Use Recurly.js for all new signups and billing info updates — regardless of whether you're using 3DS. Browser details are collected automatically by Recurly.js. For 3DS on stored billing info, see <a href="https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information" target="_blank">Recurly.js with Stored Billing Information</a>.</div>
+</div>
 
-- Using the API to send in raw card details, or billing info IDs without using Recurly.js will not be supported due to the gateway's strict browser information requirement. Browser details are collected automatically when using Recurly.js.
-- Swapping site modes at will is not supported. Ensure you've got two separate sites for production and development testing to avoid issues.
-- The CVV is required for all CIT card payments, including MOTO. Ensure you are capturing the CVV for return customer transactions including signups, and one-time transactions. Recurly will never store the CVV code on your behalf.
-- Gateway Tokens and Chargeback Notifications are not supported at this time.
-- Processing via the Admin UI may not be supported due to Nuvei's CVV and Customer IP address requirements. If you need to run MOTO transactions, you must integrate to the API, and collect CVV from your customer over the phone.
+<ul class="rp-list">
+  <li><strong>No raw card details or billing info IDs via API</strong> — Sending raw card data or billing info IDs without Recurly.js is not supported due to Nuvei's strict browser information requirement.</li>
+  <li><strong>Site mode switching not supported</strong> — Switching between production and development modes on a single site is not supported. Maintain separate Recurly sites for production and development testing.</li>
+  <li><strong>CVV required for all CIT card payments</strong> — This includes MOTO. Collect the CVV for all return customer transactions, signups, and one-time transactions. Recurly does not store CVV codes.</li>
+  <li><strong>Gateway tokens and chargeback notifications not supported</strong> — These features are not available for Nuvei at this time.</li>
+  <li><strong>Admin UI processing may not be supported</strong> — Nuvei's CVV and Customer IP requirements can prevent transaction processing via the Recurly Admin UI. For MOTO transactions, integrate via the API and collect the CVV from your customer directly.</li>
+</ul>
 
 # Definition
 
-The integration of Nuvei with Recurly facilitates a smooth pathway for managing your financial transactions. Whether you are a new merchant working with Nuvei or you're an existing merchant migrating to the gateway, the process is designed to be straightforward and efficient.
+<div class="rp-definition">Nuvei is a payment gateway that supports recurring subscriptions, ecommerce, MOTO, and 3D Secure transactions. It integrates with Recurly via REST API credentials and requires Recurly.js for all customer-facing card interactions due to browser information requirements. For pricing and new account setup, contact your Nuvei representative directly.</div>
 
-For pricing and signup information for a new production Nuvei account, please check with your gateway provider point of contact.
+# Key details
 
-| Features & Specifications       | Description / Availability                                                                                                                   |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Recurring Subscriptions, Payments (eCommerce and [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)), 3D Secure |
-| Supported Operations            | Authorize and Capture, Purchase, Refund, Verify, Void, Recurring, Unscheduled MIT                                                            |
-| Supported Payment Types         | Credit Card, Apple Pay, Google Pay                                                                                                           |
-| Supported Card Brands           | Visa, MasterCard, Amex, Discover, JCB, Diners Club, Union Pay                                                                                |
-| Unified 3DS2 Supported          | Yes                                                                                                                                          |
-| Card on File Supported          | Yes                                                                                                                                          |
-| Regions                         | Worldwide                                                                                                                                    |
-| Currencies                      | All supported currencies.                                                                                                                    |
-| Additional Feature Support      | Billing and Shipping Information, Level 2 Data, Dynamic Descriptors,  AVS / CVV Checks, and Line Item Passthrough                            |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
+  <tr><td>Services that work with Recurly</td><td>Recurring subscriptions, payments (eCommerce and <a href="https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/" target="_blank">MOTO</a>), 3D Secure</td></tr>
+  <tr><td>Supported operations</td><td>Authorize and Capture, Purchase, Refund, Verify, Void, Recurring, Unscheduled MIT</td></tr>
+  <tr><td>Supported payment types</td><td>Credit card, Apple Pay, Google Pay</td></tr>
+  <tr><td>Supported card brands</td><td>Visa, Mastercard, Amex, Discover, JCB, Diners Club, Union Pay</td></tr>
+  <tr><td>Unified 3DS2 supported</td><td>Yes</td></tr>
+  <tr><td>Card on file supported</td><td>Yes</td></tr>
+  <tr><td>Regions</td><td>Worldwide</td></tr>
+  <tr><td>Currencies</td><td><a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">See all available</a></td></tr>
+  <tr><td>Additional feature support</td><td>Billing and shipping information, Level 2 data, dynamic descriptors, AVS / CVV checks, line item passthrough</td></tr>
+</table>
 
-# Setup Nuvei with Recurly
+# Set up Nuvei with Recurly
 
-To enable seamless communication between Recurly and your Nuvei account, it is essential to configure your API credentials within Recurly.
+## Step 1: Obtain your Nuvei credentials
 
-### Step 1: Obtain your Nuvei credentials
+In your Nuvei account, go to the REST API **Configuration** tab and click **Generate New API Key**. You'll also need the following credentials — see <a href="https://docs-apm.nuvei.com/generate-api-key/" target="_blank">Nuvei's API credentials guide</a> for details:
 
-- You'll need to obtain your credentials from your Nuvei account directly, and ensure you have them available for entry in Step 2.
-  - From the REST API **Configuration** tab, click **Generate New API Key**.
-  - You will also need your Site ID, Merchant ID, Secret, and Source verification key.
-- You can find distinct documentation on Nuvei's website: [Access and/or Create API Credentials](https://docs-apm.nuvei.com/generate-api-key/)
-- **Note:** If you intend to use 3DS, you will also need the following information:
-  - Your Acquirer BIN (6 digits)
-  - Your Acquirer Merchant ID
-  - Your Acquirer Country
+- Site ID
+- Merchant ID
+- Secret
+- Source Verification Key
 
-### Step 2: Setup Nuvei webhooks
+If you intend to use 3DS, also gather:
 
-- Log into the Nuvei dashboard and navigate to **Settings > My Account**. Select the **Events Configuration** tab. Choose 'Client' from the dropdown.
-- Locate the specific events and enter the webhook endpoint as follows: [https://callbacks.recurly.com/nuvei/{{your-subdomain}}](https://callbacks.recurly.com/nuvei/{{your-subdomain}}). You may need to repeat this step multiple times.
-- Ensure the status is toggled to ON.
-- Specific events: Chargeback, Chargeback/Dispute
+- Acquirer BIN (6 digits)
+- Acquirer Merchant ID
+- Acquirer Country
 
-### Step 3: Enter your Nuvei credentials in your Recurly site
+## Step 2: Set up Nuvei webhooks
 
-- Navigate to **Configuration > Payment Gateways**and **Select** Nuvei from the options available.
-- Enter the details you've obtained from your Nuvei configuration into the following fields:
-  - Your Merchant ID
-  - Your Site ID
-  - Your Secret Key
-  - Your Source Verification Key
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Events Configuration</h4><p>In the Nuvei dashboard, go to <strong>Settings → My Account → Events Configuration</strong> and choose <strong>Client</strong> from the dropdown.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Add the webhook endpoint</h4><p>For the <strong>Chargeback</strong> and <strong>Chargeback/Dispute</strong> events, enter your Recurly callback URL using the format below. You may need to repeat this for each event.</p></div>
+  </div>
+</div>
 
-### Step 4: Enable 3D Secure
+`https://callbacks.recurly.com/nuvei/YOUR_SUBDOMAIN`
 
-If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well as enter the following details.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Enable the events</h4><p>Toggle each event's status to <strong>ON</strong>.</p></div>
+  </div>
+</div>
 
-**Note:** You will also want to ensure the consumer-facing website domain (url) **and** your business' main MCC value are both present in your Default Business Entity before enabling 3DS.
+## Step 3: Enter credentials in Recurly
 
-- Your Acquirer BIN, Acquirer Merchant ID (CAID), and Acquirer Country.
-- You can obtain these by speaking to Nuvei directly.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Gateways</h4><p>In Recurly, navigate to <strong>Configuration → Payment Gateways</strong> and select <strong>Nuvei</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enter your credentials</h4><p>Input your <strong>Merchant ID</strong>, <strong>Site ID</strong>, <strong>Secret Key</strong>, and <strong>Source Verification Key</strong>.</p></div>
+  </div>
+</div>
 
-### Step 5: Enable currencies
+## Step 4: Enable 3D Secure (optional)
 
-You can add as well as **change** which currencies your Nuvei gateway can accept. Please choose from available currencies depending on which you are approved to accept.
+Check **Enable 3D Secure** and enter your **Acquirer BIN**, **Acquirer Merchant ID (CAID)**, and **Acquirer Country**. Contact Nuvei directly to obtain these values.
 
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Before enabling 3DS</strong> Confirm that your consumer-facing website domain (URL) <strong>and</strong> your business's main MCC value are both present in your Default Business Entity in Nuvei before enabling 3DS.</div>
+</div>
 
-<Image src="https://files.readme.io/c4a227a-image.png" align="center" width="80% " border={true} />
+## Step 5: Enable currencies
 
-
-### Step 6: Add or Update your gateway
-
-Once your configuration is set up the way you would prefer, **click** ‘Add Payment Gateway’. If you are editing your implementation, the button will state ‘Update Payment Gateway’.
-
-## Additional Configuration
-
-### Address and Card Code Verification Enablement
-
-If you haven't already, you can block mismatched Address and CVV code results on approved transactions, by configuring rules in **Configuration → Payment Settings**. If ‘Enabled’, if Recurly receives information in the transaction response that the Address or CVV provided does not match what the Issuer has on file, the transaction will be rejected. **Please note**, these settings apply to all supported gateways and will not be Nuvei specific.
-
-**Enable Address Verification Checks**
-
-1. In your Recurly account, **navigate** to `Configuration → Payment Settings`.
-2. **Scroll** to the `Address Verification Check` section.
-3. **Select** your desired AVS rules (e.g., Enabled (default) or Disabled).
-4. **Click** `Save Changes`.
-
-**Enable Card Code Verification (CVV) Checks**
-
-1. In your Recurly account, **go to** `Configuration → Payment Settings`.
-2. **Scroll** to the `Credit Card Verification Code Check` section.
-3. **Set** the Radio Button option to ‘Enabled’. When Enabled, invalid or mismatched CVV code submissions will be rejected based on feedback from the card Issuer.
-4. **Click** `Save Changes`.
+Select the currencies your Nuvei gateway is approved to accept.
 
 
-<Image src="https://files.readme.io/9306094-image.png" align="center" width="75% " border={true} />
+<Image src="https://files.readme.io/c4a227a-image.png" align="center" width="75%" border={true} />
 
 
-### Test your integration
+## Step 6: Save the gateway
 
-1. In your Recurly account, **navigate** to `Configuration → Payment Gateways`.
-2. Choose your new Nuvei integration and click **Click** on `Options > Test Configuration` to ensure that Recurly can successfully communicate with your Nuvei account.
+Click **Add Payment Gateway**. If you're editing an existing configuration, this button reads **Update Payment Gateway**.
 
-   If you have provided your credentials correctly, you will see a confirmation message.
+## Step 7: Configure AVS and CVV checks (optional)
 
-### Go Live!
+AVS and CVV settings apply to all supported gateways, not just Nuvei. Configure these in **Configuration → Payment Settings**.
 
-1. Once you’ve successfully tested the integration, you are ready to accept real transactions.
-2. Monitor your transactions in Recurly and  Nuvei to ensure everything is working smoothly.
+**Enable Address Verification (AVS)**
 
-> **Note:** Ensure that you comply with PCI regulations when handling sensitive credit card information.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Settings</h4><p>Navigate to <strong>Configuration → Payment Settings</strong> and scroll to <strong>Address Verification Check</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Select your AVS rules and save</h4><p>Choose <strong>Enabled</strong> (default) or <strong>Disabled</strong>, then click <strong>Save Changes</strong>. When enabled, transactions where the address doesn't match the issuer's records will be rejected.</p></div>
+  </div>
+</div>
 
-This guide is designed to walk you through the process of integrating  Nuvei with Recurly, configuring key features, and ensuring that everything is set up to start processing payments securely and efficiently. Always consult with your Nuvei representative or Recurly support for any specific questions or issues related to your integration.
+**Enable Card Code Verification (CVV)**
 
-## Production and Sandbox behavior
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Settings</h4><p>Navigate to <strong>Configuration → Payment Settings</strong> and scroll to <strong>Credit Card Verification Code Check</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enable CVV and save</h4><p>Set the radio button to <strong>Enabled</strong>, then click <strong>Save Changes</strong>. Invalid or mismatched CVV submissions will be rejected based on issuer feedback.</p></div>
+  </div>
+</div>
 
-Production and Sandbox environments are entirely different endpoints and systems. If you create a Nuvei gateway account while your site is in Production or Sandbox mode, you can control whether or not these transactions are using the sandbox / production endpoints easily.
 
-If you have support move your site from Production/Sandbox **to** Development mode, or visa versa, you will need to create new gateway tiles, and disable the old ones as they will not be functional post site-mode migration. To that end, it is best practice to have your site remain in the same 'mode', and if you have a specific development site that you use for integration testing and other testing scenarios, ensure your site is set to and stays in Development mode for the duration and prior to adding accounts to avoid issues.
+<Image src="https://files.readme.io/9306094-image.png" align="center" width="75%" border={true} />
 
-Please note, this limitation includes gateway configuration "copying" when going live -- you must re-onboard this gateway to configure it properly, as the copied gateway does not share the same site identifiers.
+
+## Step 8: Test your integration
+
+In Recurly, go to **Configuration → Payment Gateways**, select your Nuvei gateway, and click **Options → Test Configuration**. A confirmation message confirms Recurly can communicate with Nuvei successfully.
+
+## Step 9: Go live
+
+Once testing passes, you're ready to accept live transactions. Monitor your transactions in both Recurly and Nuvei to confirm everything is running as expected.
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Ensure PCI compliance when handling sensitive card data. For questions specific to your integration, contact your Nuvei representative or Recurly Support.</div>
+</div>
+
+## Production and sandbox behavior
+
+Nuvei's production and sandbox environments are entirely separate endpoints. If you create a Nuvei gateway instance while your Recurly site is in Production or Sandbox mode, transactions route to the corresponding Nuvei environment automatically.
+
+If your site mode changes — for example, being moved to Development mode by Support — existing gateway instances will stop functioning. You'll need to create new gateway tiles and disable the old ones.
+
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Gateway configuration is not copyable between site modes. If you're going live from a development site, you must re-onboard the Nuvei gateway from scratch — the copied gateway does not share the same site identifiers. Best practice is to keep each Recurly site in a fixed mode and add gateway accounts only after confirming the correct mode.</div>
+</div>
 
 <br />
