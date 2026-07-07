@@ -22,26 +22,6 @@ body { background: #ffffff !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-/* ── NAVIGATE MASTER ARMOR ── */
-.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a,
-.rc-guide a:link,
-.rc-guide a:visited,
-.rc-guide a:active {
-  color: #008CFF !important;
-  text-decoration: none !important;
-  text-decoration-line: none !important;
-  text-decoration-color: transparent !important;
-  text-underline-offset: unset !important;
-  border-bottom: 0 !important;
-}
-.rc-guide a:hover {
-  color: #0067BE !important;
-  text-decoration: underline !important;
-  text-decoration-color: #008CFF !important;
-  text-underline-offset: 2px !important;
-}
-
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
@@ -64,10 +44,30 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --info-fg:    #008CFF;
   --info-bg:    #E5F3FF;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #32312D !important;
+  color: #32312D !important; /* Corrected to darkgray per knowledge rule #66 */
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
+
+/* ── NAVIGATE MASTER ARMOR ── */
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a,
+.rc-guide a:link,
+.rc-guide a:visited,
+.rc-guide a:active {
+  color: #008CFF !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+  text-underline-offset: unset !important;
+  border-bottom: 0 !important;
+}
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
+}
 
 /* ── FA ICON HELPERS ── */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
@@ -135,7 +135,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 /* ── NAV (relative + expanded for learning path) ── */
 details.rc-sticky-nav-wrap {
   position: relative; z-index: 1;
-  background-color: #F2F1EA;
+  background-color: #FF5126; /* Launch Pillar Poppy */
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px; border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
