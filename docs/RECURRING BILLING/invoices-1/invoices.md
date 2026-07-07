@@ -97,8 +97,8 @@ An invoice becomes Past Due when it remains unpaid by the due date set by the se
 
 Account balances can be applied to past-due invoices via the UI or the following API endpoints:
 
-- **API V3**: <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_account_balance" target="_blank">GET Account Balance</a>, <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/apply_credit_balance" target="_blank">PUT Apply Credit Balance</a>
-- **API V2**: <a href="https://recurly.com/developers/api-v2/v2.29/index.html#operation/lookupAccountBalance" target="_blank">GET Account Balance</a>, <a href="https://recurly.com/developers/api-v2/v2.29/index.html#operation/applyCreditBalance" target="_blank">PUT Apply Credit Balance</a>
+- **API V3**: <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference#operation/get_account_balance" target="_blank">GET Account Balance</a>, <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference#operation/apply_credit_balance" target="_blank">PUT Apply Credit Balance</a>
+- **API V2**: <a href="https://docs.recurly.com/recurly-subscriptions/v2.29/reference#operation/lookupAccountBalance" target="_blank">GET Account Balance</a>, <a href="https://docs.recurly.com/recurly-subscriptions/v2.29/reference#operation/applyCreditBalance" target="_blank">PUT Apply Credit Balance</a>
 
 ### Paid / Closed
 
