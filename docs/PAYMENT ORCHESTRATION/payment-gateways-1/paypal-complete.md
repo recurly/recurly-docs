@@ -1,11 +1,9 @@
 ---
 title: PayPal Complete
 excerpt: >-
-  PayPal Complete is the latest and greatest payment gateway solution by PayPal
-  that simplifies the payment process by accommodating a variety of PayPal
-  payment methods within one single integration. Incorporating PayPal Complete
-  into Recurly is swift and hassle-free, eliminating the need to acquire a
-  separate merchant account
+  Connect PayPal Complete to Recurly to accept credit cards, debit cards, and
+  PayPal payments — with support for subscriptions, one-time payments, and the
+  PayPal Recurring Module.
 deprecated: false
 hidden: false
 metadata:
@@ -15,300 +13,158 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This payment gateway or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">PayPal Complete is PayPal's unified payment gateway that brings credit cards, debit cards, and PayPal payments into a single integration. Adding it to Recurly gives you access to subscriptions, one-time payments, automatic cancellations, and the PayPal Recurring Module — without needing a separate merchant account.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#integrating-paypal-complete-with-recurly"><span class="rp-toc-num">3</span>Integration</a>
+    <a class="rp-toc-pill" href="#paypal-completes-recurring-module"><span class="rp-toc-num">4</span>Recurring Module</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* You must **verify your PayPal merchant account email**, or you will experience repeated 'Configuration' errors when trying to process transactions. 
-  * If you are struggling to verify your PayPal account email, you must create a ticket with PayPal's support directly. 
-  * If you are not receiving a verification email (common in Sandbox accounts), you can do this in your PayPal account by locating the verification email sent and clicking the link in the PayPal UI. To find this email, log into your PayPal Business account, and go to Settings > Email. PayPal also provides steps in their documentation: [PayPal: What if I didn't receive the email to confirm my email address?](https://www.paypal.com/us/cshelp/article/how-do-i-confirm-my-email-address-help138)
+<ul class="rp-list">
+  <li><strong>Verify your PayPal merchant account email</strong> — An unverified email causes repeated "Configuration" errors during transaction processing. To verify, log in to your PayPal Business account and go to <strong>Settings → Email</strong> to locate and confirm the verification email. If you're not receiving the email (common in sandbox accounts), see <a href="https://www.paypal.com/us/cshelp/article/how-do-i-confirm-my-email-address-help138" target="_blank">PayPal: How do I confirm my email address?</a> If you continue to have trouble, open a ticket with PayPal Support directly.</li>
+</ul>
 
 ### Limitations
 
-Please be aware of the following limitations of PayPal Complete:
-
-* PayPal Complete does not support Hosted Payment Pages (HPP) for PayPal specifically. Credit Cards are fully supported. PayPal is supported on Checkout.
-* Subscriptions initiated on PayPal Complete cannot migrate to PayPal Business due to the PPC’s vaulting features differing from the PP Business’s Billing Agreement IDs.
-* Existing Billing Agreement IDs will still function if migrating subscriptions from PayPal Business Account to a PayPal Complete gateway.
-* PayPal Complete is only supported in certain regions.
-* JCB is only available to Canadian Merchants.*
-* PayPal only returns Address details to pre-vetted Merchants. If you need this information, please escalate with PayPal to enable this for your account. See **Address Features on PayPal** below for more information.
-* Check [PayPal's list of prohibited activities/businesses ](https://www.paypal.com/us/legalhub/acceptableuse-full?locale.x=en_US)to see if you qualify for a PayPal complete account.
-* PayPal Complete's "[Recurring Module](https://docs.recurly.com/recurly-subscriptions/docs/paypal)" implementation does not support zero-dollar amounts if a trial is not specified.
+<ul class="rp-list">
+  <li><strong>Hosted Payment Pages (HPP) not supported for PayPal</strong> — HPP does not support PayPal as a payment method. Credit cards are fully supported on HPP. PayPal is supported on Checkout.</li>
+  <li><strong>No migration from PayPal Complete to PayPal Business</strong> — Subscriptions initiated on PayPal Complete cannot be migrated to PayPal Business due to differences in vaulting (PayPal Complete tokens vs. PayPal Business Billing Agreement IDs). Migration in the reverse direction (PayPal Business → PayPal Complete) is supported, and existing Billing Agreement IDs continue to function.</li>
+  <li><strong>Regional availability</strong> — PayPal Complete is only supported in certain regions. See the Regions row in Key details.</li>
+  <li><strong>JCB available to Canadian merchants only</strong>.</li>
+  <li><strong>Address details require pre-approval from PayPal</strong> — PayPal only returns address information to pre-vetted merchants. Contact PayPal to enable this for your account, then reach out to Recurly Support to enable the corresponding feature flags. See <a href="#address-features-on-paypal">Address features on PayPal</a> below.</li>
+  <li><strong>Prohibited activities</strong> — Review <a href="https://www.paypal.com/us/legalhub/acceptableuse-full?locale.x=en_US" target="_blank">PayPal's acceptable use policy</a> to confirm your business qualifies for a PayPal Complete account.</li>
+  <li><strong>Recurring Module zero-dollar limitation</strong> — PayPal Complete's <a href="https://docs.recurly.com/recurly-subscriptions/docs/paypal" target="_blank">Recurring Module</a> implementation does not support zero-dollar amounts unless a trial is specified.</li>
+</ul>
 
 # Definition
 
-[PayPal Complete](https://recurly.com/partner/paypal-recurly/) is the latest and greatest payment gateway solution by PayPal that simplifies the payment process by accommodating a variety of PayPal payment methods within one single integration. Incorporating PayPal Complete into Recurly is swift and hassle-free, eliminating the need to acquire a separate merchant account.
+<div class="rp-definition"><a href="https://recurly.com/partner/paypal-recurly/" target="_blank">PayPal Complete</a> is PayPal's unified gateway that consolidates credit cards, debit cards, and PayPal payments into a single integration — no separate merchant account required. It supports subscriptions, one-time payments, and automatic cancellations, and is the platform where all new Recurly + PayPal features will be released. PayPal Complete can also be used in META (Facebook / Instagram) WebView environments. See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/paypal" target="_blank">PayPal Recurly.js documentation</a> for details.</div>
 
-PayPal can be used in a META (Facebook / Instagram) environment when limited by WebView browsers. See our [PayPal Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal) for more information.
-
-***
-
-> 👍 Upgrade to PayPal Complete Today!
->
-> If you're using PayPal Payflow Pro, PayPal Payment Pro (US), or PayPal Business, now’s the time to switch! All new Recurly + PayPal features will be available only on PayPal Complete.
->
-> Upgrading is free, fast, and seamless—your subscriptions carry over with no disruption. [Click here for migration instructions.](https://docs.recurly.com/docs/paypal-complete#integrating-paypal-complete-with-recurly)
-
-***
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Upgrading from PayPal Payflow Pro, PayPal Payment Pro, or PayPal Business?</strong> All new Recurly + PayPal features are available on PayPal Complete only. Upgrading is free, and existing subscriptions carry over without disruption. See <a href="#integrating-paypal-complete-with-recurly">Integration</a> below to get started.</div>
+</div>
 
 # Key details
 
-| Services                        | Description                                                                                                                                                                                             |
-| :------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Supported Recurly services      | PayPal Complete, Subscriptions, One Time Payments, [Automatic Subscription Cancellations](https://docs.recurly.com/recurly-subscriptions/docs/expire-subscription#/auto-cancellation-of-a-subscription) |
-| Supported operations            | Payment, Refund                                                                                                                                                                                         |
-| Supported payment types         | Credit and Debit Cards, PayPal                                                                                                                                                                          |
-| Supported card brands           | Visa, Mastercard, American Express, Discover, JCB, Diner Club                                                                                                                                           |
-| Gateway specific 3DS2 supported | N/A                                                                                                                                                                                                     |
-| Card on File Supported          | N/A                                                                                                                                                                                                     |
-| Regions                         | United States, EMEA, Canada, United Kingdom/EU, APAC                                                                                                                                                    |
-| Currencies                      | USD, AUD, BRL, CAD, CHF, CNY, CZK, DKK, EUR, GBP, HDK, HUF, ILS, JPY, MXN, MYR, NOK, NZD, PHP, PLN, SEK, SGD, THB, and TWD.                                                                             |
-| Other Gateway Feature Support   | PayPal Tokens, Token Lifecycle and Transaction Status Webhooks, PayPal Recurring Module                                                                                                                 |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
+  <tr><td>Supported Recurly services</td><td>PayPal Complete, subscriptions, one-time payments, <a href="https://docs.recurly.com/recurly-subscriptions/docs/expire-subscription#/auto-cancellation-of-a-subscription" target="_blank">automatic subscription cancellations</a></td></tr>
+  <tr><td>Supported operations</td><td>Payment, refund</td></tr>
+  <tr><td>Supported payment types</td><td>Credit and debit cards, PayPal</td></tr>
+  <tr><td>Supported card brands</td><td>Visa, Mastercard, American Express, Discover, JCB, Diners Club</td></tr>
+  <tr><td>Gateway-specific 3DS2 supported</td><td>N/A</td></tr>
+  <tr><td>Card on file supported</td><td>N/A</td></tr>
+  <tr><td>Regions</td><td>United States, EMEA, Canada, United Kingdom / EU, APAC</td></tr>
+  <tr><td>Currencies</td><td>USD, AUD, BRL, CAD, CHF, CNY, CZK, DKK, EUR, GBP, HKD, HUF, ILS, JPY, MXN, MYR, NOK, NZD, PHP, PLN, SEK, SGD, THB, TWD</td></tr>
+  <tr><td>Additional feature support</td><td>PayPal tokens, token lifecycle and transaction status webhooks, PayPal Recurring Module</td></tr>
+</table>
 
-## Required PayPal Setup
+## Address features on PayPal
 
-### Address Features on PayPal
+PayPal only returns billing and shipping address information to pre-vetted merchants. To enable this, contact PayPal to request address data for your business account — see the <a href="https://www.paypal.com/tc/cshelp/article/why-did-i-get-api-error-code-11601-ts2035" target="_blank">PayPal Knowledge Base</a> for details. Once PayPal has enabled it on their side, contact Recurly Support to enable the Save PayPal Billing Address and/or Save PayPal Shipping Address feature flags for your Recurly site.
 
-* To receive billing and shipping address information from PayPal responses, you must have PayPal enable this for your PayPal business account. You can read more about this feature on their knowledge base: [PayPal Knowledge base](https://www.paypal.com/tc/cshelp/article/why-did-i-get-api-error-code-11601-ts2035). Reach out to Recurly support to enable Shipping and Billing Address feature flags once this is complete.
+## eCheck and bank account–funded transactions
 
-### Differences between eCheck and other PayPal transactions
+Transactions funded by bank accounts (eChecks) behave like direct debits — it takes 3–6 days for funds to clear in the customer's PayPal account. Refunds processed from a bank account when no PayPal balance is available may also take 3–6 days or longer. During this period, PayPal labels the transaction as "pending."
 
-* Transactions funded by bank accounts function similarly to direct debits (such as ACH in the United States), requiring 3-6 days for funds to clear in a customer’s PayPal account. Similarly, if you process a refund directly from your bank account—especially when there's no balance in your PayPal account—it may also take 3-6 days (or longer) for the customer to see a credit.
-* During this waiting period, PayPal labels the transaction as "pending" until the involved banks finalize the transaction.
-* You must enable PayPal status update webhooks in your site developer settings to allow status updates to occur.
+You must enable PayPal status update webhooks in your Recurly site developer settings for status updates to propagate correctly.
 
-### Bank account funded transactions in Recurly
+### Processing and status flow
 
-* **Processing Status**:
-  * Upon receiving and initiating a transaction request from Recurly, PayPal communicates a "pending" status back to Recurly. This status, visible in the Recurly App, exports, and API, simultaneously updates both the transaction and the related invoice to "processing."
-  * Concurrently, Recurly dispatches a "processing payment" webhook to any designated endpoints and, if enabled, sends a "payment processing" email to the customer.
-* **Status Updates**:
-  * As PayPal updates transaction statuses—like successful payment reception—it informs Recurly. Depending on the update, Recurly then adjusts the transaction and invoice statuses, marking them as "successful" and "paid" respectively. Ensure you have proper PayPal webhooks enabled to ensure proper status updates.
-  * Simultaneously, Recurly sends out relevant webhooks, like a successful payment or an overdue invoice, and if activated, emails the customer with either a payment confirmation or a decline notice.
+When Recurly initiates an eCheck transaction, PayPal returns a "pending" status. Recurly updates both the transaction and invoice to "processing" and dispatches a "processing payment" webhook. If enabled, a "payment processing" email is also sent to the customer.
 
-### PayPal eChecks with Recurly's dunning and retries
+As PayPal resolves the transaction, it notifies Recurly. Recurly then updates statuses to "successful" / "paid" or triggers the appropriate decline flow, along with relevant webhooks and customer emails.
 
-Due to the asynchronous nature of PayPal eChecks, Recurly treats related "past due" invoices distinctively from instant payment methods like credit cards. If a PayPal eCheck is the payment method, when Recurly automatically retries a payment, the invoice status switches to "processing" until PayPal's response. Based on PayPal's feedback, the invoice either reverts to "past due" (if still within the dunning cycle) or updates to "failed" (post dunning cycle).
+### eChecks and dunning
 
-Here's a sample scenario of status updates:
+Recurly treats eCheck invoices differently from instant payment methods during dunning. When a retry is attempted on a PayPal eCheck, the invoice moves to "processing" until PayPal responds. Based on PayPal's response, the invoice either returns to "past due" (if still within the dunning cycle) or updates to "failed" (if the dunning cycle has ended).
 
-<Table align={["left","left","left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Event
-      </th>
+**Sample eCheck status progression:**
 
-      <th>
-        PayPal Transaction Status
-      </th>
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Event</td><td>PayPal transaction status</td><td>Recurly transaction status</td><td>Recurly invoice status</td></tr>
+  <tr><td>1. Payment request by Recurly, acknowledged by PayPal</td><td>Pending</td><td>Processing</td><td>Processing</td></tr>
+  <tr><td>2. Days later, PayPal reports failure — Recurly begins dunning</td><td>Failed</td><td>Declined</td><td>Past Due</td></tr>
+  <tr><td>3. Recurly's dunning schedule triggers a dunning email</td><td>No change</td><td>No change</td><td>No change</td></tr>
+  <tr><td>4. Retry #1: Recurly makes a new payment attempt via PayPal</td><td>Pending</td><td>Processing</td><td>Processing</td></tr>
+  <tr><td>5. Days later, PayPal declines — dunning period is still ongoing</td><td>Failed</td><td>Declined</td><td>Past Due</td></tr>
+  <tr><td>6. Retry #2: Recurly attempts another payment via PayPal</td><td>Pending</td><td>Processing</td><td>Processing</td></tr>
+  <tr><td>7. PayPal reports failure — dunning period has now concluded</td><td>Failed</td><td>Declined</td><td>Failed</td></tr>
+</table>
 
-      <th>
-        Recurly Transaction Status
-      </th>
+# Integrating PayPal Complete with Recurly
 
-      <th>
-        Recurly Invoice Status
-      </th>
-    </tr>
-  </thead>
+## Step 1: Add the gateway
 
-  <tbody>
-    <tr>
-      <td>
-        1. Payment request by Recurly, acknowledged and processed by PayPal.
-      </td>
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Gateways</h4><p>In Recurly, navigate to <strong>Configuration → Payment Gateways → Add Payment Gateway</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Authenticate with PayPal</h4><p>Log in with your PayPal credentials to activate the gateway.</p></div>
+  </div>
+</div>
 
-      <td>
-        Pending
-      </td>
+## Step 2: Monitor verification status
 
-      <td>
-        Processing
-      </td>
+After adding the gateway, PayPal verifies your merchant account. Track progress in the Recurly Admin UI. If your application isn't approved immediately, it may show as **Incomplete Configuration** — check the Payment Gateways page for real-time status updates.
 
-      <td>
-        Processing
-      </td>
-    </tr>
 
-    <tr>
-      <td>
-        2. Days later, PayPal indicates payment failure, Recurly starts dunning.
-      </td>
+<Image src="https://files.readme.io/5ba78d3-PPC.Seller.AccountStatus-ConfirmEmail.png" align="center" width="75%" border={true} />
 
-      <td>
-        Failed
-      </td>
 
-      <td>
-        Declined
-      </td>
+Status messages may include email confirmation requirements, application reviews, or account restrictions. Address each alert as it appears. If you encounter issues, contact PayPal directly via the seller portal — Recurly Support may not have access to the details of your PayPal account.
 
-      <td>
-        Past Due
-      </td>
-    </tr>
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Existing PayPal Business account holders who already support credit and debit cards may bypass some of these alerts.</div>
+</div>
 
-    <tr>
-      <td>
-        3. Recurly's dunning schedule triggers a dunning email after some days.
-      </td>
+## Step 3: Configure currencies and card brands
 
-      <td>
-        No change
-      </td>
+Once the gateway is active, set your accepted currencies and card brands in the gateway configuration.
 
-      <td>
-        No change
-      </td>
+## Step 4: Configure billing and shipping data (optional)
 
-      <td>
-        No change
-      </td>
-    </tr>
+If you're not passing billing or shipping data to Recurly directly, you can have Recurly consume the data PayPal returns by enabling one or both feature flags: **Save PayPal billing address** and **Save PayPal shipping address**. Contact Recurly Support to enable these for your site.
 
-    <tr>
-      <td>
-        4. Retry #1: Following Recurly's retry logic, a new payment attempt with PayPal is made after several days.
-      </td>
+## Step 5: Configure webhooks
 
-      <td>
-        Pending
-      </td>
+Recurly listens to the following PayPal webhook events. Enable all of them in your PayPal account — enabling all events now ensures you're covered if new functionality is added in the future.
 
-      <td>
-        Processing
-      </td>
+When prompted for a callback URL, use the format:
 
-      <td>
-        Processing
-      </td>
-    </tr>
+`https://callbacks.recurly.com/paypal_complete/<MERCHANT_SUBDOMAIN>`
 
-    <tr>
-      <td>
-        5. Days later, PayPal flags the payment as declined. Recurly notes the invoice's **dunning period is ongoing**.
-      </td>
+**Vault and billing events:**
 
-      <td>
-        Failed
-      </td>
+- `VAULT.PAYMENT-TOKEN.DELETED` — Ensures billing info is disabled and subscriptions are cancelled if a customer cancels their billing agreement from within the PayPal app.
 
-      <td>
-        Declined
-      </td>
+**Onboarding events:**
 
-      <td>
-        Past Due
-      </td>
-    </tr>
+- `CUSTOMER.MERCHANT-INTEGRATION.PRODUCT-SUBSCRIPTION-UPDATED` — Fires when PayPal updates the products available to your merchant account.
+- `CUSTOMER.MERCHANT-INTEGRATION.SELLER-EMAIL-CONFIRMED` — Fires when you verify your seller email with PayPal.
+- `CUSTOMER.MERCHANT-INTEGRATION.CAPABILITY-UPDATE` — Fires when a capability on your PayPal account changes (e.g., processing ability).
 
-    <tr>
-      <td>
-        6. Retry #2: Recurly attempts another payment with PayPal after a few more days.
-      </td>
+**Transaction events:**
 
-      <td>
-        Pending
-      </td>
-
-      <td>
-        Processing
-      </td>
-
-      <td>
-        Processing
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        7. After several days, PayPal reports payment failure. Recurly updates the status after verifying the **dunning period has concluded**.
-      </td>
-
-      <td>
-        Failed
-      </td>
-
-      <td>
-        Declined
-      </td>
-
-      <td>
-        Failed
-      </td>
-    </tr>
-  </tbody>
-</Table>
-
-# Integrating PayPal complete with Recurly
-
-1. **Gateway Initialization:** To integrate PayPal Complete, navigate to Recurly Admin UI → Configuration → Payment Gateways → Add Payment Gateway. Log in using your PayPal credentials to activate the gateway.
-
-2. **Gateway Verification:** Post gateway addition, your PayPal account will undergo a verification process. Track this progression using the admin UI.
-
-3. **Gateway Status Updates:** Occasionally, your application might not gain instant approval, marking it as 'Incomplete Configuration'. The Payment Gateways page will provide real-time status updates. Statuses can range from email confirmation requisites to application reviews or denials. In case of any alert, it’s advisable to connect directly with PayPal through the seller portal, as Recurly support might not possess detailed insights about your account.
-
-<Image align="center" border={true} src="https://files.readme.io/5ba78d3-PPC.Seller.AccountStatus-ConfirmEmail.png" className="border" />
-
-4. **Post-Integration Setup:** Post successful integration, define specific settings on Recurly:
-
-* Currencies
-* Card brands
-
-## Verification
-
-* Once the gateway is added, verify your PayPal account.
-* Monitor the verification status on the Admin UI.
-* If the application isn't approved instantly, check for status updates on the "Payment Gateways" page. Refresh the status if needed.
-
-## **Status alerts**
-
-* Be attentive to various status messages such as email confirmation requirements, application reviews, and any account restrictions.
-* If you encounter multiple alerts, address each one as the application progresses.
-* Existing PayPal Business account holders that support credit and debit cards might bypass these alerts.
-
-## Billing and Shipping Data
-
-If you are not passing billing information or shipping data to us directly, you can have Recurly consume data received from PayPal by enabling one or both of two feature flags:
-
-* Save PayPal billing address
-* Save PayPal shipping address
-
-Please work with support to enable these feature flags for your site.
-
-## Webhook Configuration
-
-Recurly listens to several webhook events including the below list. Ensure they are enabled in your PayPal account. It is advised to enable all webhooks in the event we add new functionality in the future.
-
-When asked for a callback URL, you will format it as follows: `https://callbacks.recurly.com/paypal_complete/<MERCHANT_SUBDOMAIN>`
-
-* `VAULT.PAYMENT-TOKEN.DELETED` -- this will ensure billing information is disabled and subscriptions are cancelled appropriately if a consumer cancels their billing agreement from within the PayPal app.
-* During Onboarding, PayPal will send us several notices depending on the state of your Business Account with PayPal:
-  * `CUSTOMER.MERCHANT-INTEGRATION.PRODUCT-SUBSCRIPTION-UPDATED`-- Occurs when products available to a merchant within their PayPal account have been updated by PayPal.
-  * `CUSTOMER.MERCHANT-INTEGRATION.SELLER-EMAIL-CONFIRMED`-- Occurs when you verify your seller email with PayPay directly.
-  * `CUSTOMER.MERCHANT-INTEGRATION.CAPABILITY-UPDATE`-- Occurs when a capability on your PayPal account changes, such as the ability to process.
-* During the regular cycle of processing transactions, several webhooks may update transaction and invoice status appropriately:
-  * `PAYMENT.CAPTURE.REFUNDED`- Occurs when a scheduled Refund is updated to approved.
-  * `PAYMENT.CAPTURE.COMPLETED`- Occurs when a scheduled payment is updated to approved.
-  * `PAYMENT.CAPTURE.DECLINED`- Occurs when a scheduled payment is updated to declined.
+- `PAYMENT.CAPTURE.REFUNDED` — Fires when a scheduled refund is approved.
+- `PAYMENT.CAPTURE.COMPLETED` — Fires when a scheduled payment is approved.
+- `PAYMENT.CAPTURE.DECLINED` — Fires when a scheduled payment is declined.
 
 # PayPal Complete's Recurring Module
 
-Maximize conversion with the redesigned PayPal recurring payments experience.
+The Recurring Module provides customers with a richer checkout experience when subscribing via PayPal. Without it, the PayPal modal shows only the charge amount and available payment methods. With it enabled, customers see the merchant name, subscription terms, cadence, plan name, start date, and trial details.
 
-* Accelerate recurring billing agreement set up by reducing login friction via early recognition and low friction authentication methods.
-* Reduce churn by providing full transparency of the recurring billing amount on PayPal’s pay sheet.
-* Customizable and supports multiple subscription models, the new recurring billing module is designed to help your customers subscribe seamlessly with confidence.
 
-Without the Recurring Module visible, the PayPal modal customers see only has the amount and their payment methods visible. With the Recurring Module behavior enabled, customers see who they are signing up for, the terms, cadence, and plan name. They'll even see when the subscription starts, and if there is a trial.
+<Image src="https://files.readme.io/411a4993e08a568cfbbc40acb9bb197eb711b394cce2bc462601c328327dd318-Screenshot_2026-03-30_at_10.12.45_AM.png" align="center" width="350px" />
 
-<Image align="center" width="350px" src="https://files.readme.io/411a4993e08a568cfbbc40acb9bb197eb711b394cce2bc462601c328327dd318-Screenshot_2026-03-30_at_10.12.45_AM.png" />
 
-To enable this in your PayPal Complete implementation, visit our [Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal) for details.
+To enable the Recurring Module in your PayPal Complete implementation, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/paypal" target="_blank">Recurly.js documentation</a>.
