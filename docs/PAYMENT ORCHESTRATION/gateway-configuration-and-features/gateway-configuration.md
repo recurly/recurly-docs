@@ -1,6 +1,9 @@
 ---
 title: Multiple gateway configuration
-excerpt: ''
+excerpt: >-
+  Configure multiple payment gateways in Recurly to support diverse currencies,
+  card types, and payment methods — with gateway hierarchy, default settings,
+  and failover.
 deprecated: false
 hidden: false
 metadata:
@@ -10,122 +13,145 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Multiple gateway configuration lets you connect several payment gateways to your Recurly account to support different currencies, card types, and payment methods — with control over routing hierarchy, default gateways, and failover behavior.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#setting-up-multiple-gateways"><span class="rp-toc-num">4</span>Setup</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* An active Recurly account.
-* Access to gateway providers as desired.
-* Familiarity with your business's transaction routing needs.
+<ul class="rp-list">
+  <li>An active Recurly account.</li>
+  <li>Access to the gateway providers you want to connect.</li>
+  <li>An understanding of your business's transaction routing needs.</li>
+</ul>
 
 ### Limitations
 
-* Transactions will be routed to the first gateway added by default, supporting its currency and card type unless custom routing or default settings are applied.
-* The hierarchy should be thoroughly understood to ensure transactions are processed as intended.
+<ul class="rp-list">
+  <li>By default, transactions route to the first gateway added that supports the transaction's currency and card type — unless custom routing or default settings are configured.</li>
+  <li>The gateway hierarchy must be correctly understood and configured to ensure transactions process as intended.</li>
+</ul>
 
 # Definition
 
-Multiple Gateway Configuration in Recurly allows merchants to set up various payment gateways. This functionality is essential for businesses looking to accept multiple payment types, process transactions in diverse currencies, or simply to have a backup in case a primary gateway faces downtime.
+<div class="rp-definition">Multiple gateway configuration lets Recurly merchants connect several payment gateways to accept diverse payment types, process transactions in multiple currencies, and maintain a backup gateway in case a primary gateway experiences downtime.</div>
 
 # Key benefits
 
-* **Versatility**: Supports a wide range of payment methods and currencies.
-* **Optimized transaction routing**: Prioritize which gateway processes specific transactions based on predefined criteria.
-* **Business continuity**: Ensure uninterrupted transaction processing with Gateway Failover, rerouting payments if a primary gateway is unavailable.
-* **Custom routing**: Tailor gateway use based on unique business needs.
-* **Streamlined management**: Manage and view all gateway configurations from a centralized dashboard.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+    <strong>Broad payment support</strong>
+    <span>Support a wide range of payment methods and currencies across multiple gateway providers.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-route" aria-hidden="true"></i></div>
+    <strong>Optimized transaction routing</strong>
+    <span>Prioritize which gateway processes specific transactions based on card type, currency, or custom rules.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-rotate" aria-hidden="true"></i></div>
+    <strong>Business continuity</strong>
+    <span>Gateway Failover automatically reroutes payments to a secondary gateway if the primary becomes unavailable.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Custom routing</strong>
+    <span>Define gateway use based on your business logic using Custom Gateway Routing.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-table-columns" aria-hidden="true"></i></div>
+    <strong>Centralized management</strong>
+    <span>View and manage all gateway configurations from a single dashboard.</span>
+  </div>
+</div>
 
 # Key details
 
 ## Gateway support
 
-Merchants have the freedom to craft countless gateway combinations tailored to their business requisites. The typical approach involves selecting a blend of providers to facilitate support for an array of currencies and card types. Moreover, Recurly offers the capability to embrace various payment methods, ranging from credit cards, external gateway tokens, to Amazon Pay, PayPal, Apple Pay, ACH, and more.
+Recurly supports multiple gateway configurations to cover a range of currencies, card types, and payment methods — including credit cards, external gateway tokens, Amazon Pay, PayPal, Apple Pay, ACH, and more.
 
 ## Gateway hierarchy
 
-The order in which multiple gateways are added to Recurly matters. Initially, transactions will seek the first gateway on the list that can accommodate its specific card type and currency. Beyond this default behavior, Recurly has a strategic hierarchy for transaction routing:
+When multiple gateways are configured, Recurly routes transactions to the first gateway on the list that supports the transaction's card type and currency. Beyond this default, Recurly applies the following routing hierarchy:
 
-### Hierarchy
+1. Transactions with a gateway token (e.g., Vantiv tokens, Braintree tokens)
+2. Transactions referencing a `gateway_code` (Custom Gateway Routing)
+3. Non-credit card transactions (PayPal, Amazon Pay, Adyen HPP, etc.)
+4. The default gateway for credit card transactions
+5. The non-default credit card gateway, prioritizing the one added earliest
 
-1. Transactions with a gateway token (e.g., Vantiv Tokens, Braintree Token).
-2. Transactions referencing a gateway\_code (as seen in Custom Gateway Routing).
-3. Non-credit card transactions like PayPal, Amazon Pay, Adyen HPP.
-4. The default gateway for Credit Card transactions.
-5. The non-default Credit Card gateway, prioritizing the one added earliest.
+## Custom gateway routing
 
-## Gateway setup
+For precise control over which gateway handles a transaction, use Recurly's <a href="https://docs.recurly.com/docs/custom-gateway-routing-configuration" target="_blank">Custom Gateway Routing</a>.
 
-After zeroing in on the ideal providers and payment methods, follow \[5] to integrate additional gateways. It's vital to recognize that transactions, by default, get channeled to the earliest added gateway that is compatible with the given currency and card type. However, for businesses seeking finer control over this routing:
+## Default gateway
 
-### Custom gateway routing
-
-Recurly extends the facility to pinpoint precisely which gateway will handle a transaction, courtesy of our Custom Gateway Routing tool. Dive deeper into this feature and explore its nuances here.
-
-### Setting a default gateway
-
-Empower your business by setting a default gateway to handle credit card transactions. This takes precedence if the gateway is compatible with the transaction's card type and currency, and no specific gateway code has been assigned via Custom Gateway Routing.
-
-1. Navigate to the Payment Gateways configuration page and pinpoint the "Default Gateways" section on the right.
-2. Select "Edit Defaults."
-3. Within the new window, choose the desired default gateway for each payment method displayed.
-4. Confirm by clicking "Save."
+You can set a default gateway for credit card transactions. The default gateway takes precedence when it's compatible with the transaction's card type and currency and no specific `gateway_code` has been assigned via Custom Gateway Routing.
 
 ## Gateway failover
 
-To fortify your transaction processing against unforeseen issues, activate the Gateway Failover feature. This serves as a safety net, automatically rerouting transactions to a secondary gateway should the primary one face issues. The moment your primary gateway returns to full functionality, Recurly seamlessly shifts new traffic back to it, ensuring uninterrupted service.
+<a href="https://docs.recurly.com/docs/gateway-failover" target="_blank">Gateway Failover</a> automatically reroutes transactions to a secondary gateway if the primary becomes unavailable. When the primary gateway recovers, Recurly resumes routing new transactions to it.
 
 # Setting up multiple gateways
 
-### Accessing Your Account
+## Add a gateway
 
-* Log in to your Recurly account.
-* From the Configuration section, navigate to the "Payment Gateways" section.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Gateways</h4><p>In Recurly, go to <strong>Configuration → Payment Gateways</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Add a new gateway</h4><p>Click <strong>Payment Gateway Actions → Add Payment Gateway</strong> and select your preferred provider from the table of brand icons.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Enter credentials</h4><p>Input the required credentials or API keys for the chosen provider, then confirm and save.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Repeat for additional gateways</h4><p>To add more gateways, repeat the process with different providers as needed.</p></div>
+  </div>
+</div>
 
-### Adding a new gateway
+## Set a default gateway
 
-* Click on the “Payment Gateway Actions” dropdown and select “Add Payment Gateway”. 
-* Choose your preferred payment gateway provider by selecting from the table of brand icons.
-* Enter the necessary credentials or API keys related to the chosen provider.
-* Confirm and save.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Default Gateways</h4><p>In the <strong>Payment Gateways</strong> section, find <strong>Default Gateways</strong> in the sidebar.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Edit defaults</h4><p>Click <strong>Edit Defaults</strong>, assign a default gateway for each payment method in the window, then confirm and save.</p></div>
+  </div>
+</div>
 
-### Repeat for additional gateways
+## Enable gateway failover
 
-* To add more gateways, simply repeat the process by selecting different providers as needed.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Gateway Failover settings</h4><p>In the <strong>Payment Gateways</strong> section, find <strong>Gateway Failover</strong> in the sidebar.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enable failover</h4><p>Toggle failover to <strong>Enabled</strong> or <strong>Disabled</strong> as needed. Note that setting specific Primary and Backup gateways via a dropdown is not available on this page.</p></div>
+  </div>
+</div>
 
-## Setting a default gateway
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> After configuration, run a few test transactions to confirm routing works as expected based on your hierarchy and default settings. Revisit and adjust settings at any time as your needs evolve.</div>
+</div>
 
-### Navigate to Default Settings
-
-* Within the "Payment Gateways" section, find the "Default Gateways" option in the sidebar.
-
-### Edit defaults
-
-* Click on "Edit Defaults."
-* Assign a default gateway for each payment method listed in the new window.
-* Confirm and save.
-
-## Enabling gateway failover
-
-### Access gateway failover settings
-
-* Under the "Payment Gateways" section, find the "Gateway Failover" option in the sidebar.
-
-### Gateway failover configuration
-
-* On this page, you have the option to Enable or Disable gateway failover.
-* Please note that directly setting Primary and Backup gateways through a dropdown list is not a feature available on this page.
-
-## Review and test
-
-### Transaction testing
-
-* To ensure the correct functioning of all settings, initiate a few test transactions.
-* Monitor how they get routed based on the configuration and hierarchy you've set up.
-
-### Adjust as needed
-
-* Based on your testing, you might need to adjust hierarchy, configuration, or default settings. Remember, you can revisit and modify these settings anytime to better suit your business needs.
+<br />
