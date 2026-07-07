@@ -47,4 +47,4 @@ Your merchant bank acts as a buffer in the event that transactions are disputed 
 
 # How Recurly helps
 
-Recurly supports <a href="http://docs.recurly.com/payment-gateways/additional" target="_blank">many payment gateways</a> worldwide, as well as a variety of alternative payment methods. The goal is to give merchants the flexibility to choose the combination that best fits their business requirements.
+Recurly supports <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-gateways-1" target="_blank">many payment gateways</a> worldwide, as well as a variety of alternative payment methods. The goal is to give merchants the flexibility to choose the combination that best fits their business requirements.
