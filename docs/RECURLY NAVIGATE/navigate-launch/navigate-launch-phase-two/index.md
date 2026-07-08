@@ -25,16 +25,17 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 /* HOST-THEME BACKGROUND OVERRIDE */
 body { background: #ffffff !important; }
 
-/* GLOBAL CSS IMMUNITY BLOCK */
+/* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
-/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0); must follow wildcard */
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
@@ -45,26 +46,43 @@ body { background: #ffffff !important; }
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
-.rc-guide a:hover,
 .rc-guide a:active {
+  color: #008CFF !important;
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
+}
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #CCC9B8;
-  --brightgray:#F1EFE3;
-  --offwhite:  #FFFDF2;
+  --yellow:     #FFD706;
+  --blue:       #008CFF;
+  --blue-tint1: #D5EAFF;
+  --blue-tint2: #96C8FF;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D75;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
+  --warning-fg: #FFD706;
+  --warning-bg: #FFFECB;
+  --error-fg:   #FF5126;
+  --error-bg:   #FFEEE9;
+  --success-fg: #5DC32E;
+  --success-bg: #EFFAEA;
+  --info-fg:    #008CFF;
+  --info-bg:    #E5F3FF;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #32312D !important;
   background: #ffffff;
 }
@@ -75,6 +93,22 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
+
+/* INLINE BODY LINKS */
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-inline-link {
+  color: #008CFF !important;
+  font-weight: 600;
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-inline-link:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
+}
 
 /* ANNOUNCEMENT BAR */
 .rc-announce-bar {
@@ -88,14 +122,14 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-announce-link { color: #0D0D0B !important; font-weight: 800; white-space: nowrap; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; transition: background 0.2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
 
 /* TOP NAV / BACK LINK */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
 /* HERO */
@@ -107,21 +141,21 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-lp-pillar-tag {
   display: inline-flex; align-items: center; gap: 7px;
-  background: rgba(204,201,184,0.20); border: 1px solid rgba(204,201,184,0.45);
-  color: #CCC9B8; font-size: .75rem; font-weight: 800;
+  background: rgba(255,81,38,0.20); border: 1px solid rgba(255,81,38,0.45);
+  color: #FF5126; font-size: .75rem; font-weight: 800;
   letter-spacing: 1px; text-transform: uppercase;
   padding: 6px 14px; border-radius: 20px; margin-bottom: 20px;
 }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
-.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FCFBF7; margin: 0; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
 
 /* NAV — non-sticky + open (Course page) */
 details.rc-sticky-nav-wrap {
   position: relative;
   z-index: 1;
-  background-color: #F1EFE3;
+  background-color: #FF5126;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px; border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
@@ -139,18 +173,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link { color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 
 /* CONTENT SECTIONS */
 .rc-lp-section { margin-bottom: 48px; }
 .rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: #0D0D0B; display: flex; align-items: center; gap: 12px; }
-.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
 /* CALLOUT */
@@ -159,7 +193,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body { flex: 1; }
 .rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
-.rc-callout-tip { background: #F1EFE3; border-left: 4px solid #0D0D0B; }
+.rc-callout-tip { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
 .rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
 
 /* PHASE 1 HANDOFF CARD */
@@ -171,19 +205,20 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-handoff-card h3 {
   font-size: .88rem; font-weight: 800; text-transform: uppercase;
   letter-spacing: .8px; color: #FFD706 !important; margin: 0 0 10px;
-  display: flex; align-items: center; gap: 8px;
+  display: block;
 }
-.rc-handoff-card p { font-size: .92rem; color: #CCC9B8 !important; line-height: 1.6; margin: 0 0 18px; }
+.rc-handoff-card h3 i { margin-bottom: 10px; display: block; }
+.rc-handoff-card p { font-size: .92rem; color: #D1CFC4 !important; line-height: 1.6; margin: 0 0 18px; }
 .rc-handoff-checklist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-.rc-handoff-item { display: flex; align-items: center; gap: 10px; font-size: .9rem; color: #CCC9B8 !important; }
+.rc-handoff-item { display: flex; align-items: center; gap: 10px; font-size: .9rem; color: #D1CFC4 !important; }
 .rc-handoff-item i { color: #FFD706 !important; font-size: .9rem; flex-shrink: 0; }
 
 /* METRIC CARDS (3-col grid) */
 .rc-metric-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; margin: 0 0 32px; }
-.rc-metric-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 18px 20px; }
-.rc-metric-card-icon { font-size: 1.2rem; color: #FF8200; margin-bottom: 10px; line-height: 1; }
+.rc-metric-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 18px 20px; }
+.rc-metric-card-icon { font-size: 1.2rem; color: #FF5126; margin-bottom: 10px; line-height: 1; }
 .rc-metric-card h4 { font-size: .92rem; font-weight: 800; color: #0D0D0B; margin: 0 0 4px; }
-.rc-metric-card p { font-size: .83rem; color: #807D73; line-height: 1.45; margin: 0; }
+.rc-metric-card p { font-size: .83rem; color: #807D75; line-height: 1.45; margin: 0; }
 @media(max-width:768px){ .rc-metric-grid { grid-template-columns: 1fr 1fr; } }
 
 /* SCORECARD PREVIEW CARD */
@@ -193,89 +228,95 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   border: 1px solid rgba(255,255,255,0.08);
 }
 .rc-scorecard-card h3 {
-  font-size: 1rem; font-weight: 800; color: #FF8200 !important;
-  margin: 0 0 12px; display: flex; align-items: center; gap: 8px;
+  font-size: 1rem; font-weight: 800; color: #FF5126 !important;
+  margin: 0 0 12px; display: block;
 }
-.rc-scorecard-card p { font-size: .92rem; color: #CCC9B8 !important; line-height: 1.6; margin: 0 0 20px; }
+.rc-scorecard-card h3 i { margin-bottom: 10px; display: block; }
+.rc-scorecard-card p { font-size: .92rem; color: #D1CFC4 !important; line-height: 1.6; margin: 0 0 20px; }
 .rc-scorecard-card strong { color: #ffffff !important; }
 .rc-scorecard-preview { background: rgba(255,255,255,0.04); border: 0px solid rgba(255,255,255,0.10); border-radius: 0px; padding: 0px 0px; }
 .rc-scorecard-preview-label {
   font-size: .75rem; font-weight: 800; text-transform: uppercase; letter-spacing: .8px;
-  color: #FF8200 !important; margin: 0 0 0px; display: flex; align-items: center; gap: 5px;
+  color: #FF5126 !important; margin: 0 0 0px; display: flex; align-items: center; gap: 5px;
 }
 .rc-scorecard-preview-img { width: 100%; border-radius: 0px; display: block; }
 
 /* WEBINAR CLIP CARD */
-.rc-clip-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 14px; padding: 22px 24px; margin: 0 0 32px; }
-.rc-clip-badge { display: inline-flex; align-items: center; gap: 6px; background: #0D0D0B; color: #FF8200; border-radius: 6px; padding: 4px 10px; font-size: .73rem; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 12px; }
+.rc-clip-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 14px; padding: 22px 24px; margin: 0 0 32px; }
+.rc-clip-badge { display: inline-flex; align-items: center; gap: 6px; background: #0D0D0B; color: #FF5126; border-radius: 6px; padding: 4px 10px; font-size: .73rem; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 12px; }
 .rc-clip-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0 0 8px; }
 .rc-clip-card p { font-size: .9rem; color: #32312D; line-height: 1.6; margin: 0 0 14px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-clip-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-clip-link { color: #FF8200 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-clip-link { color: #008CFF !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-clip-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-clip-link:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
+.rc-guide a.rc-clip-link:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; color: #0067BE !important; text-underline-offset: 2px !important; }
 
 /* CARD GRID (2-col support cards) */
 .rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
-.rc-feature-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; }
+.rc-feature-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; }
 .rc-feature-icon { font-size: 1.4rem; line-height: 1; color: #0D0D0B; }
 .rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; flex-grow: 1; }
+.rc-feature-card p { font-size: .88rem; color: #807D75; line-height: 1.55; margin: 0; flex-grow: 1; }
 .rm-Markdown.markdown-body .rc-guide .rc-feature-card a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-feature-card a { color: #FF8200 !important; font-weight: 600; border-bottom: 0 !important; }
+.rc-guide .rc-feature-card a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide .rc-feature-card a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-feature-card a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
+.rc-guide .rc-feature-card a:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 @media(max-width:768px){ .rc-card-grid { grid-template-columns: 1fr; } }
 
-/* TOC CARDS — orange accent for Phase 2 */
+/* TOC CARDS */
 .rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 32px; }
-.rc-toc-card { display: grid; grid-template-columns: 44px 1fr 32px; align-items: center; gap: 16px; background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 18px 22px; transition: all .2s ease; }
+.rc-toc-card { display: grid; grid-template-columns: 44px 1fr 32px; align-items: center; gap: 16px; background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 18px 22px; transition: all .2s ease; }
 .rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-toc-card { color: #32312D !important; border-bottom: 1px solid #CCC9B8 !important; }
+.rc-guide a.rc-toc-card { color: #32312D !important; border-bottom: 1px solid #D1CFC4 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-toc-card:hover { border-color: #FF8200; border-bottom: 1px solid #FF8200 !important; box-shadow: 0 4px 14px rgba(255,130,0,0.18); transform: translateX(3px); color: #32312D !important; }
-.rc-toc-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FF8200; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; }
+.rc-guide a.rc-toc-card:hover { border-color: #FF5126; border-bottom: 1px solid #FF5126 !important; box-shadow: 0 4px 14px rgba(255,81,38,0.18); transform: translateX(3px); color: #32312D !important; }
+.rc-toc-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; }
 .rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0 0 4px; }
-.rc-toc-body p { font-size: .88rem; color: #807D73; line-height: 1.5; margin: 0; }
-.rc-toc-arrow { font-size: 1.1rem; color: #CCC9B8; text-align: right; transition: color .2s; }
-.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #FF8200; }
+.rc-toc-body p { font-size: .88rem; color: #807D75; line-height: 1.5; margin: 0; }
+.rc-toc-arrow { font-size: 1.1rem; color: #D1CFC4; text-align: right; transition: color .2s; }
+.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #FF5126; }
 @media(max-width:768px){ .rc-toc-card { grid-template-columns: 36px 1fr 24px; padding: 14px 16px; } }
 
-/* PATH NAV BUTTONS — orange accent for Phase 2 */
-.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
-.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #CCC9B8; letter-spacing: .5px; }
+/* PATH NAV BUTTONS */
+.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; flex-wrap: wrap; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #D1CFC4; letter-spacing: .5px; white-space: nowrap !important; flex-shrink: 0; }
 /* rc-btn-prev — double-prefix + :not() → (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #CCC9B8 !important; border-bottom: 2px solid #CCC9B8 !important; transition: all .2s; }
+.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
-/* rc-btn-path — orange for Phase 2 */
+/* rc-btn-path */
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: #FF8200; color: #ffffff !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FF8200 !important; border-bottom: 2px solid #FF8200 !important; }
+.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #FF8200 !important; border: 2px solid #FF8200 !important; border-bottom: 2px solid #FF8200 !important; }
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+/* PATH NAV - EARLY STACK */
+@media(max-width:1300px) {
+  .rc-lp-nav { justify-content: center !important; gap: 12px; }
+  .rc-lp-nav-indicator { width: 100% !important; text-align: center; }
+}
 
 /* RESOURCES */
-.rc-resources { background: #F1EFE3; border-left: 4px solid #CCC9B8; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
-.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.rc-resources { background: #F2F1EA; border-left: 4px solid #FF5126; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D75; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-resource-link { color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-resource-link { color: #807D75 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #CCC9B8 !important; }
+.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #FF5126 !important; }
 
 /* FOOTER NAV */
-.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-nav { border-top: 1px solid #D1CFC4; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F2F1EA; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-footer-link { color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-footer-link { color: #807D75 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F2F1EA; }
 
 /* RESPONSIVE */
 @media(max-width:768px){
@@ -288,6 +329,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-metric-grid { grid-template-columns: 1fr 1fr; }
   .rc-card-grid { grid-template-columns: 1fr; }
   .rc-toc-card { grid-template-columns: 36px 1fr 24px; padding: 14px 16px; }
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-prev,
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-path {
+    padding: 10px 16px !important;
+    font-size: 0.82rem !important;
+  }
 }
 </style>
 
@@ -342,7 +390,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-gear rc-fa-section"></i> Picking up from phase one</h2>
       <div class="rc-handoff-card">
-        <h3><i class="fa-solid fa-circle-check" style="color:#FFD706;font-size:1rem;"></i> Phase one complete</h3>
+        <h3><i class="fa-solid fa-circle-check rc-fa-dark"></i> Phase one complete</h3>
         <p>You've set up the systems that protect and recover your revenue automatically. Before continuing, confirm these are in place:</p>
         <ul class="rc-handoff-checklist">
           <li class="rc-handoff-item"><i class="fa-solid fa-circle-check"></i> Dunning &amp; Intelligent Retry configured</li>
@@ -464,7 +512,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
         <div class="rc-callout-body">
           <strong>Download the Metrics Cheatsheet</strong>
-          <p>Before diving in, grab the <a href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer">Launchpad Metrics Cheatsheet</a>. It lists every KPI definition, calculation formula, and which direction you want each metric to move.</p>
+          <p>Before diving in, grab the <a href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Launchpad Metrics Cheatsheet</a>. It lists every KPI definition, calculation formula, and which direction you want each metric to move.</p>
         </div>
       </div>
     </div>
@@ -473,7 +521,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Section: Your Monthly Metrics Scorecard -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-clipboard-list rc-fa-section"></i> What you're working toward</h2>
-				<p>After completing Launchpad, you'll begin receiving your <strong>Monthly Metrics Scorecard</strong> — a complete snapshot of your previous full fiscal month in Recurly. It shows your six core KPIs at a glance so you can track performance and compare against your own benchmarks over time.</p>
+        <p>After completing Launchpad, you'll begin receiving your <strong>Monthly Metrics Scorecard</strong> — a complete snapshot of your previous full fiscal month in Recurly. It shows your six core KPIs at a glance so you can track performance and compare against your own benchmarks over time.</p>
  <div class="rc-scorecard-preview">
           <div class="rc-scorecard-preview-label"><i class="fa-solid fa-eye" style="font-size:.75rem;"></i> Sneak peek</div>
           <img class="rc-scorecard-preview-img" src="https://files.readme.io/8575081b1976d2d698d93166c69ce11a3653bd92b42855547efb96115cdc8c35-Updated_Scorecard_Image.svg" alt="Monthly metrics scorecard sample">
@@ -488,7 +536,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-clip-badge"><i class="fa-solid fa-circle-play"></i> Webinar on demand</div>
         <h4>Beyond the dashboard: reporting drives growth</h4>
         <p>Director of Data Matthew Cryer walks through the Trendalyzer, hourly activation monitoring, and the four layers of Recurly reporting — including how to surface non-obvious growth insights that most merchants miss.</p>
-        <a href="https://navigate.recurly.com/lunch-and-learn/reporting-drives-growth/" target="_blank" rel="noopener noreferrer" class="rc-clip-link"><i class="fa-solid fa-circle-play"></i> Watch on demand →</a>
+        <a href="https://navigate.recurly.com/lunch-and-learn/reporting-drives-growth/" target="_blank" rel="noopener noreferrer" class="rc-clip-link">Watch on demand →</a>
       </div>
     </div>
 
@@ -500,22 +548,22 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-headset"></i></div>
           <h4>Your customer support team</h4>
-          <p>Need technical support? Recurly Support is available. Reach us at <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
+          <p>Need technical support? Recurly Support is available. Reach us at <a href="mailto:support@recurly.com" class="rc-inline-link rp-anchor">support@recurly.com</a>.</p>
         </div>
 <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-bullhorn"></i></div>
           <h4>Customer success office hours</h4>
-          <p>Have questions as you work through Launchpad? Our CSMs are here to help you live. <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">Choose a session</a> that works for you.</p>
+          <p>Have questions as you work through Launchpad? Our CSMs are here to help you live. <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Choose a session</a> that works for you.</p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
           <h4>Download your resource guide</h4>
-          <p>A quick-reference guide to all Recurly support links, documentation, and program resources. <a href="https://go.recurly.com/recurly_navigate_resource_guide.html" target="_blank" rel="noopener noreferrer">Navigate Resource Guide ↗</a></p>
+          <p>A quick-reference guide to all Recurly support links, documentation, and program resources. <a href="https://go.recurly.com/recurly_navigate_resource_guide.html" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Navigate Resource Guide ↗</a></p>
         </div>
  <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-book-atlas"></i></div>
           <h4>Navigate resource library</h4>
-          <p>A one-stop location for all links to Recurly support offerings, documentation, updates, events, and more. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-resource-library" target="_blank" rel="noopener noreferrer">Go to the Resource library</a></p>
+          <p>A one-stop location for all links to Recurly support offerings, documentation, updates, events, and more. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-resource-library" class="rc-inline-link rp-anchor">Go to the Resource library</a></p>
         </div>
 </div>
 
