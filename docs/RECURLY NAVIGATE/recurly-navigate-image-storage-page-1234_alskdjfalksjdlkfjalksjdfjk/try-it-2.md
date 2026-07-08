@@ -22,23 +22,6 @@ body { background: #ffffff !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-
-.rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #D1CFC4;
-  --brightgray:#F2F1EA;
-  --offwhite:  #FCFBF7;
-  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #0D0D0B !important;
-  background: #ffffff;
-}
-.rc-guide * { box-sizing: border-box; }
-
 /* NAVIGATE MASTER ARMOR */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
@@ -58,6 +41,28 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   text-decoration-color: #008CFF !important;
   text-underline-offset: 2px !important;
 }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:    #FFD706;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
+  --offwhite:  #FCFBF7;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #32312D !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
+
+/* INLINE BODY LINKS */
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-inline-link { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-inline-link:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
 /* FA ICON HELPERS */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
@@ -82,7 +87,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 /* TOP NAV / BACK LINK */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
@@ -141,6 +146,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
+/* CHURN TYPE CARDS (2-col with colored accents) */
+.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
+.rc-feature-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; }
+.rc-feature-card-vol { border-left: 4px solid #dc2626; }
+.rc-feature-card-inv { border-left: 4px solid #FF5126; }
+.rc-feature-icon { font-size: 1.4rem; line-height: 1; }
+.rc-feature-icon-vol { color: #dc2626; }
+.rc-feature-icon-inv { color: #FF5126; }
+.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
+.rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; }
+.rc-fix-label { font-size: .78rem; font-weight: 800; color: #32312D; margin-top: 4px; }
+@media(max-width:768px){ .rc-card-grid { grid-template-columns: 1fr; } }
+
 /* METRIC CARDS */
 .rc-metric-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 14px; padding: 22px 24px; margin-bottom: 16px; }
 .rc-metric-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
@@ -150,7 +168,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-formula { background: #F2F1EA; border-radius: 8px; padding: 10px 14px; font-size: .83rem; font-family: monospace !important; color: #32312D; margin-bottom: 12px; }
 .rc-pills { display: flex; gap: 8px; flex-wrap: wrap; }
 .rc-pill { padding: 4px 12px; border-radius: 20px; font-size: .75rem; font-weight: 700; background: #FCFBF7; border: 1px solid #D1CFC4; color: #32312D; }
-.rc-pill-up { background: rgba(22,163,74,0.10); color: #15803d; border-color: #86efac; }
 .rc-pill-down { background: rgba(220,38,38,0.10); color: #dc2626; border-color: #fca5a5; }
 
 /* VIDEO CARD */
@@ -172,17 +189,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-clip-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-clip-link:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
-/* CARD GRID (2-col action cards) */
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
-.rc-feature-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; }
-.rc-feature-icon { font-size: 1.4rem; line-height: 1; color: #0D0D0B; }
-.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; }
-.rc-feature-tag { display: inline-block; margin-top: 4px; padding: 3px 10px; border-radius: 20px; font-size: .7rem; font-weight: 700; letter-spacing: .5px; width: fit-content; }
-.rc-feature-tag-default { background: #F2F1EA; color: #32312D; }
-.rc-feature-tag-highlight { background: rgba(255,81,38,0.12); color: #FF5126; }
-@media(max-width:768px){ .rc-card-grid { grid-template-columns: 1fr; } }
-
 /* CALLOUT */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
 .rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
@@ -190,46 +196,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
 .rc-callout-tip { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
-  .rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
-  
-/* Feature CALLOUT */
-.rc-callout-feature { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
-.rc-callout-feature-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
-.rc-callout-feature-body { flex: 1; }
-.rc-callout-feature-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
-.rc-callout-feature-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #0d0d0d; }
-.rc-callout-feature-tip { background: rgba(255,215,6,0.12); border-left: 4px solid #FFD706; }
-.rc-callout-feature-tip .rc-callout-feature-body > strong { color: #0D0D0B; }
+.rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
-/* NUMBERED STEPS */
-.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
+/* NUMBERED STEPS (Phase 1 connection) */
+.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 0 0 32px; }
 .rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #F2F1EA; }
 .rc-step:last-child { border-bottom: none; }
 .rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
 .rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
 .rc-step-content p { font-size: .92rem; color: #807D73; line-height: 1.6; margin: 0; }
-.rc-step-content strong { color: #32312D; }
-
-/* CHECKLIST (pure CSS) */
-.rc-checklist { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
-.rc-checklist-header { padding: 14px 22px; background: #0D0D0B; display: flex; align-items: center; gap: 10px; }
-.rc-checklist-header h4 { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #FFD706; margin: 0; }
-.rc-checklist-item { padding: 14px 22px; border-bottom: 1px solid #F2F1EA; display: flex; align-items: flex-start; gap: 14px; transition: background .15s; cursor: pointer; }
-.rc-checklist-item:last-child { border-bottom: none; }
-.rc-checklist-item:hover { background: #F2F1EA; }
-.rc-checklist-item input[type="checkbox"] { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
-.rc-checkbox-box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid #D1CFC4; flex-shrink: 0; background: #fff; display: flex; align-items: center; justify-content: center; transition: all .18s; margin-top: 1px; }
-.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box { background: #0D0D0B; border-color: #0D0D0B; }
-.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box::after { content: '✓'; color: #FFD706; font-size: .75rem; font-weight: 800; line-height: 1; }
-.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-text strong { text-decoration: line-through; color: #807D73; }
-.rc-checklist-item:has(input[type="checkbox"]:checked) { background: #EFFAEA; }
-.rc-checklist-text { flex: 1; }
-.rc-checklist-text strong { font-size: .9rem; font-weight: 700; color: #0D0D0B; display: block; margin-bottom: 2px; transition: color .18s; }
-.rc-checklist-footer { padding: 10px 22px; background: #F2F1EA; border-top: 1px solid #D1CFC4; font-size: .78rem; color: #807D73; font-weight: 600; }
 
 /* PATH NAV BUTTONS */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
@@ -248,7 +227,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-resource-link { color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-resource-link { color: #807D75 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #FF5126 !important; }
 
@@ -299,11 +278,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase Two
       </div>
-      <div class="rc-lp-hero-title"><h1>Acquisition & decline</h1></div>
-      <p>Subscriber acquisition & sign-up decline rate tell you how effectively you're growing, and how much friction is getting in the way of subscribers who want to sign up but can't.</p>
+      <div class="rc-lp-hero-title"><h1>Churn metrics</h1></div>
+      <p>Not all churn is the same — and knowing the difference between voluntary and involuntary churn is what separates reactive businesses from proactive ones. These metrics tell you why subscribers are leaving and what you can do about it.</p>
     </div>
 
-    <!-- Nav (non-sticky + open — Course page 2 of 5) -->
+    <!-- Nav (non-sticky + open — Course page 3 of 5) -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -314,10 +293,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-sticky-link">Path overview</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-sticky-link"><span class="rc-step-badge">1</span> Benchmarks &amp; reporting</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Acquisition &amp; decline
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-sticky-link"><span class="rc-step-badge">2</span> Acquisition &amp; decline</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Churn metrics
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-sticky-link"><span class="rc-step-badge">3</span> Churn metrics</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-sticky-link"><span class="rc-step-badge">4</span> Revenue recovery</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
 
@@ -326,134 +305,140 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Section: Overview -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-arrow-trend-up rc-fa-section"></i> Growth starts at the funnel top</h2>
-      <p>Acquisition rate and sign-up decline rate are your growth-layer metrics. Together they show how fast your subscriber base is expanding — and how many potential subscribers are lost before completing their first payment.</p>
+      <h2><i class="fa-solid fa-arrow-trend-down rc-fa-section"></i> Understanding why subscribers leave</h2>
+      <p>Total churn tells you the size of your retention problem. Voluntary vs. involuntary churn tells you the cause — and each requires a completely different solution. Treating them the same means solving for the wrong problem.</p>
 
+      <div class="rc-card-grid">
+        <div class="rc-feature-card rc-feature-card-vol">
+          <div class="rc-feature-icon rc-feature-icon-vol"><i class="fa-solid fa-right-from-bracket"></i></div>
+          <h4>Voluntary churn</h4>
+          <p>Subscribers who actively chose to cancel. This reflects satisfaction, perceived value, and engagement with your product.</p>
+          <p class="rc-fix-label">Fix with: product improvements, better onboarding, pause options, cancellation save flows, loyalty offers.</p>
+        </div>
+        <div class="rc-feature-card rc-feature-card-inv">
+          <div class="rc-feature-icon rc-feature-icon-inv"><i class="fa-solid fa-credit-card"></i></div>
+          <h4>Involuntary churn</h4>
+          <p>Subscribers lost due to payment failures — expired cards, insufficient funds, or bank declines. These subscribers didn't want to leave.</p>
+          <p class="rc-fix-label">Fix with: Account Updater, dunning optimization, Intelligent Retry, clearer payment failure emails.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Trail guide video -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-circle-play rc-fa-section"></i> Trail guide: voluntary &amp; involuntary churn rate</h2>
       <div class="rc-video-card">
         <div class="rc-video-header">
-          <h4>Trail guide: acquisition &amp; sign-up decline rate</h4>
+          <h4>Churn metrics walkthrough</h4>
           <span>~5 min</span>
         </div>
         <div class="rc-video-embed">
-          <iframe src="https://share.synthesia.io/embeds/videos/e30354c7-9177-452e-a306-450a0471fd50" loading="lazy" title="Navigate Launchpad — Acquisition & Decline" allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" allowfullscreen></iframe>
+          <iframe src="https://share.synthesia.io/embeds/videos/94ebc34a-579b-4129-9a0f-ee926d42a34a" loading="lazy" title="Navigate Launchpad — Churn Metrics" allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" allowfullscreen></iframe>
         </div>
-        <div class="rc-video-caption">Where to find these metrics in the Benchmarks Dashboard — and how to calculate and act on them.</div>
+        <div class="rc-video-caption">How to find churn metrics in the Benchmarks Dashboard, interpret the voluntary vs. involuntary split, and decide what actions to take.</div>
       </div>
     </div>
 
-    <!-- Section: Acquisition Rate -->
+    <!-- Section: Voluntary churn rate -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-user-plus rc-fa-section"></i> Acquisition rate</h2>
-      <p>Measures how effectively you're bringing in new paid subscribers each month. A rising rate means your growth strategy is working. A declining rate signals a need to investigate marketing, pricing, or checkout conversion.</p>
+      <h2><i class="fa-solid fa-right-from-bracket rc-fa-section"></i> Voluntary churn rate</h2>
+      <p>The percentage of subscribers who actively cancel each month. High voluntary churn signals a product-value mismatch — subscribers aren't finding enough reason to stay.</p>
 
       <div class="rc-metric-card">
         <div class="rc-metric-header">
-          <div class="rc-metric-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+          <div class="rc-metric-icon"><i class="fa-solid fa-right-from-bracket"></i></div>
           <h3>How it's calculated</h3>
         </div>
-        <div class="rc-formula">New paid subscribers ÷ Active subscribers (start of period) = Acquisition rate %</div>
-        <div class="rc-pills">
-          <span class="rc-pill rc-pill-up">Higher is better</span>
-          <span class="rc-pill">Check monthly</span>
-          <span class="rc-pill">Analytics → Benchmarks Overview → scroll to Acquisition Rate</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section: Sign-Up Decline Rate -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-bolt rc-fa-section"></i> Sign-up decline rate</h2>
-      <p>The percentage of transaction attempts during sign-up that are declined. A high rate means real customers are trying to sign up and failing — these are missed conversions. Recurly excludes retries from this metric to give you a clear approval signal.</p>
-
-      <div class="rc-metric-card">
-        <div class="rc-metric-header">
-          <div class="rc-metric-icon"><i class="fa-solid fa-bolt"></i></div>
-          <h3>How it's calculated</h3>
-        </div>
-        <div class="rc-formula">Failed transaction attempts ÷ Total sign-up attempts = Sign-up decline rate %</div>
+        <div class="rc-formula">Subscribers who canceled ÷ Active subscribers (start of period) = Voluntary churn rate %</div>
         <div class="rc-pills">
           <span class="rc-pill rc-pill-down">Lower is better</span>
           <span class="rc-pill">Check monthly</span>
-          <span class="rc-pill">Analytics → Benchmarks Overview → scroll to Signup Decline Rate</span>
+          <span class="rc-pill">Analytics → Benchmarks Overview → scroll to Voluntary Churn Rate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Involuntary churn rate -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> Involuntary churn rate</h2>
+      <p>The percentage of subscribers lost to dunning expiration. This is directly influenced by Account Updater and dunning configuration — if you enabled both in Phase 1, you should expect to see this metric improve over the coming months.</p>
+
+      <div class="rc-metric-card">
+        <div class="rc-metric-header">
+          <div class="rc-metric-icon"><i class="fa-solid fa-credit-card"></i></div>
+          <h3>How it's calculated</h3>
+        </div>
+        <div class="rc-formula">Subscribers lost to payment failures ÷ Active subscribers (start of period) = Involuntary churn rate %</div>
+        <div class="rc-pills">
+          <span class="rc-pill rc-pill-down">Lower is better</span>
+          <span class="rc-pill">Check monthly</span>
+          <span class="rc-pill">Analytics → Benchmarks Overview →  scroll to Involuntary Churn Rate</span>
         </div>
       </div>
 
       <div class="rc-clip-card">
         <div class="rc-clip-badge"><i class="fa-solid fa-circle-play"></i> Where in the webinar?</div>
-        <h4>Deep dive: spotting fraud &amp; early friction indicators</h4>
-        <p>Fast-forward to the Sign-Up Decline Benchmarks section. Strategic CSM Dan Shipley demonstrates how to use this report to spot card-testing fraud attacks (look for sudden spikes in decline codes) and how to compare gateway performance side-by-side to optimize checkout approval rates.</p>
+        <h4>Deep dive: monitoring the impact of your retention strategy</h4>
+        <p>Fast-forward to the Churn Benchmarking section. CSM Dan Shipley walks through the three churn views — combined, voluntary, and involuntary — to show how to diagnose business health, including a real-world case study on how Account Updater directly lowers involuntary loss.</p>
         <a href="https://navigate.recurly.com/lunch-and-learn/stack-up-benchmarks/" target="_blank" rel="noopener noreferrer" class="rc-clip-link"><i class="fa-solid fa-circle-play"></i> Watch "Stack up against the competition" on demand →</a>
       </div>
     </div>
 
-    <!-- Section: What to do if declines are high -->
+    <!-- Section: Separate diagnosis from treatment -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-screwdriver-wrench rc-fa-section"></i> What to do if sign-up declines are high</h2>
-
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h4>Check for fraud patterns</h4>
-          <p>Sudden spikes — especially with specific decline codes — may indicate card-testing activity. Review with your CSM and gateway team to consider fraud tools or CAPTCHA implementation.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-code-branch"></i></div>
-          <h4>Compare gateway performance</h4>
-          <p>Different gateways approve card types at different rates. If your decline rate is high, compare approval rates by gateway to see whether a routing change or multi-gateway strategy could help.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-credit-card"></i></div>
-          <h4>Check payment method coverage</h4>
-          <p>Are you accepting the methods your customers prefer? Adding PayPal, Apple Pay, or localized payment methods can reduce checkout friction — especially for international subscribers.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-          <h4>Review 3DS and checkout UX</h4>
-          <p>Confusing 3DS authentication flows often lead to abandonment, which registers as a failed attempt. Always test your checkout UX from a subscriber's mobile perspective.</p>
-        </div>
-  <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-scale-unbalanced"></i></div>
-          <h4>Check chargeback & fraud ratios</h4>
-          <p>Merchants experiencing high chargebacks may have higher controls put in place at the issuer level, resulting in more declines.</p>
-        </div>
-  <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-earth-americas"></i></div>
-          <h4>Consider multi-currency or localized processing</h4>
-          <p>Using gateways with local acquiring relationships and accepting local currencies can reduce declines significantly. Local currency support alone has been shown to decrease decline rates by 5–10%.</p>
-        </div>
-      </div>
-      
- <div class="rc-callout-feature rc-callout-feature-tip">
-        <div class="rc-callout-feature-icon"><i class="fa-solid fa-wallet"></i></div>
-        <div class="rc-callout-feature-body">
-          <strong>Have you added Recurly Wallet?</strong>
-          <p>Wallet automatically retries a failed charge on a designated backup payment method — no subscriber action required. It's one of the most direct ways to recover sign-up and renewal declines that would otherwise be lost. Note that Wallet requires enablement and has additional fees.</p>
-					<p><a href="https://docs.recurly.com/recurly-subscriptions/docs/backup-payment-method" target="_blank">Learn more about it here</a>.</p>
-        </div>
-      </div>
-
+      <h2><i class="fa-solid fa-magnifying-glass rc-fa-section"></i> Separate your diagnosis from your treatment</h2>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
-          <strong>A note on data timing</strong>
-          <p>Mid-month rates can fluctuate significantly before traffic volume dilutes them. Always use full prior-month data in the Benchmarks Dashboard for the most accurate trend analysis.</p>
+          <strong>Always look at the split first</strong>
+          <p>If total churn is high but you don't know the voluntary/involuntary breakdown, you might invest heavily in product improvements when the real problem is simply that Account Updater isn't enabled. The split tells you where to focus.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Connecting churn to Phase 1 -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-link rc-fa-section"></i> Connecting churn to your Phase 1 work</h2>
+      <p>The optimizations you completed in Phase 1 directly influence your involuntary churn rate. Here's how to trace the connection.</p>
+
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num"><i class="fa-solid fa-rotate" style="font-size:.8rem;"></i></div>
+          <div class="rc-step-content">
+            <h4>Account Updater</h4>
+            <p>Refreshes expired or replaced cards before renewals attempt, preventing failures that would otherwise register as involuntary churn.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num"><i class="fa-solid fa-envelope" style="font-size:.8rem;"></i></div>
+          <div class="rc-step-content">
+            <h4>Dunning optimization</h4>
+            <p>Recovers failed invoices through retry logic and recovery emails before they result in subscriber loss.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num"><i class="fa-solid fa-code-branch" style="font-size:.8rem;"></i></div>
+          <div class="rc-step-content">
+            <h4>Gateway failover</h4>
+            <p>Prevents outage-driven payment failures that would otherwise register as involuntary churn — routing transactions to a backup gateway automatically.</p>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Path navigation -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-btn-prev">← Benchmarks &amp; reporting</a>
-      <span class="rc-lp-nav-indicator">2 of 5</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-btn-path">Next: Churn metrics →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-btn-prev">← Acquisition &amp; decline</a>
+      <span class="rc-lp-nav-indicator">3 of 5</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-btn-path">Next: Revenue recovery →</a>
     </div>
 
     <!-- Resources -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/docs/subscriber-benchmarks" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: subscriber benchmarks guide</a>
+        <a href="https://docs.recurly.com/docs/subscriber-churn-benchmarks" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: churn benchmarks guide</a>
         <a href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Launchpad Metrics Cheatsheet</a>
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Support</a>
