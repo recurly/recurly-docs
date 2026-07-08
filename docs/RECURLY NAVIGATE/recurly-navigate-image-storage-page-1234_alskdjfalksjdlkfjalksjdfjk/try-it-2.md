@@ -458,7 +458,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
         <div class="rc-callout-body">
           <strong>Download the Metrics Cheatsheet</strong>
-          <p>Before diving in, grab the <a href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Launchpad Metrics Cheatsheet</a>. It lists every KPI definition, calculation formula, and which direction you want each metric to move.</p>
+          <p>Before diving in, grab the <a href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Launchpad Metrics Cheatsheet.</a> It lists every KPI definition, calculation formula, and which direction you want each metric to move.</p>
         </div>
       </div>
     </div>
