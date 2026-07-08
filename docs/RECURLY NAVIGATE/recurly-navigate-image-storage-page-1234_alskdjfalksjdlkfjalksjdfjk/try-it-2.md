@@ -6,6 +6,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -125,7 +126,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 details.rc-sticky-nav-wrap {
   position: relative;
   z-index: 1;
-  background-color: #F2F1EA;
+  background-color: #FF5126;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px; border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
@@ -410,11 +411,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
       </div>
     </div>
-
-
-
-
-
 
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Your seven core benchmark metrics</h2>
