@@ -207,7 +207,173 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-webinar-cta-body p{font-size:.95rem;color:#FFFDF2 !important;line-height:1.6;margin:0 0 18px;}
 .rc-webinar-cta-body p em{font-style:normal;font-weight:700;color:#ffffff !important;}
 .rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-webinar-btn{background:#FF5126 !important;color:#ffffff !important;text-decoration:none !important;padding:12px 24px;border-radius:10px;font-weight:800;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:2px solid #FF5126 !important;border-bottom:2px solid #FF5126 !important;}
-.rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp
+.rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-webinar-btn:hover{background:transparent !important;color:#FF5126 !important;border:2px solid #FF5126 !important;border-bottom:2px solid #FF5126 !important;}
+@media(max-width:768px){.rc-webinar-cta{flex-direction:column;gap:16px;padding:24px 22px;}}
+
+.rc-lp-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:40px 0 16px;}
+.rc-lp-nav-indicator{font-size:.8rem;font-weight:600;color:var(--lightgray);letter-spacing:.5px;}
+.rc-btn-start{background:var(--brightgray);color:var(--gray);padding:13px 24px;border-radius:10px;font-weight:700;font-size:.9rem;border:2px solid var(--lightgray);cursor:default;}
+.rc-btn-complete{background:var(--brightgray);color:var(--offblack) !important;padding:13px 24px;border-radius:10px;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:2px solid var(--yellow);cursor:default;user-select:none;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-btn-prev{background:transparent;color:#0D0D0B !important;text-decoration:none !important;padding:13px 24px;border-radius:10px;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:2px solid #D1CFC4 !important;border-bottom:2px solid #D1CFC4 !important;transition:all .2s;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-btn-prev:hover{border:2px solid #0D0D0B !important;border-bottom:2px solid #0D0D0B !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-btn-path{background:var(--yellow);color:var(--offblack) !important;text-decoration:none !important;padding:13px 28px;border-radius:10px;font-weight:800;font-size:.95rem;display:inline-flex;align-items:center;gap:8px;border:2px solid var(--yellow) !important;border-bottom:2px solid var(--yellow) !important;transition:all .2s;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-btn-path:hover{background:transparent !important;color:var(--offblack) !important;border:2px solid var(--yellow) !important;border-bottom:2px solid var(--yellow) !important;}
+@media(max-width:768px){.rc-lp-nav{flex-wrap:wrap;justify-content:center;}.rc-lp-nav-indicator{width:100%;text-align:center;}}
+
+.rc-resources{background:var(--brightgray);border-left:4px solid #FF5126;border-radius:10px;padding:20px 24px;margin:32px 0 0;}
+.rc-resources h3{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.9px;color:var(--gray);margin:0 0 12px;display:flex;align-items:center;gap:8px;}
+.rc-resource-links{display:flex;flex-wrap:wrap;gap:4px 20px;}
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-resource-link{color:#807D73 !important;text-decoration:underline !important;text-underline-offset:3px;text-decoration-color:#D1CFC4 !important;font-weight:500;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-resource-link:hover{color:#0D0D0B !important;text-decoration:underline !important;text-decoration-color:#FF5126 !important;}
+.rc-resource-group{margin-bottom:16px;}
+.rc-resource-group:last-child{margin-bottom:0;}
+.rc-resource-group-label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--lightgray);margin:0 0 6px;display:block;}
+
+.rc-footer-nav{border-top:1px solid var(--lightgray);padding-top:40px;margin-top:48px;padding-bottom:48px;}
+.rc-footer-links{display:flex;flex-direction:column;gap:16px;}
+.rc-footer-section{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;}
+.rc-footer-label{font-weight:800;font-size:.75rem;text-transform:uppercase;letter-spacing:.8px;color:var(--darkgray);background:var(--brightgray);padding:4px 10px;border-radius:6px;margin-right:4px;}
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-footer-link{color:#807D73 !important;text-decoration:none !important;font-weight:600;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-footer-link:hover{color:#008CFF !important; text-decoration:none !important;}
+.rc-footer-link img{width:14px;height:14px;object-fit:contain;opacity:0.5;}
+.rc-footer-link:hover img{opacity:1;}
+.rc-footer-utility{display:flex;flex-wrap:wrap;gap:24px;margin-top:16px;padding-top:24px;border-top:1px solid var(--brightgray);}
+
+/* OFFICE HOURS CTA */
+.rc-oh-cta { background: var(--offblack); border: 2px solid var(--yellow); border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
+.rc-oh-cta h4 { color: var(--yellow); font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; display: block; }
+.rc-oh-cta p { color: var(--lightgray); font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
+.rc-oh-cta p strong { color: var(--offwhite); }
+.rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-oh-btn { background: var(--yellow); color: #0D0D0B !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: var(--yellow) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+
+</style>
+
+<div class="rc-guide">
+  <div class="rc-top-nav"><a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-back-link">← Back to Launch</a></div>
+  <div class="rc-content-wrap">
+    <div class="rc-announce-bar"><div class="rc-announce-inner"><i class="fa-regular fa-calendar-days"></i><strong>Upcoming:</strong> Join our CSMs live. <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register →</a></div></div>
+
+    <div class="rc-hero">
+      <div class="rc-lp-pillar-tag"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase One</div>
+      <div class="rc-lp-hero-title"><h1>Account Updater</h1></div>
+      <p>Keep card data current automatically so renewals succeed before expired or replaced cards ever reach a failure state.</p>
+    </div>
+
+    <details class="rc-sticky-nav-wrap" open>
+      <summary><span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span></summary>
+      <div class="rc-nav-drawer"><div class="rc-nav-drawer-inner"><div class="rc-nav-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link"><img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one" class="rc-sticky-link">Path overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-sticky-link"><span class="rc-step-badge">1</span> Final production testing</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-sticky-link"><span class="rc-step-badge">2</span> Dunning optimization</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater" class="rc-sticky-link rc-sticky-link-active"><img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Account Updater</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding"  class="rc-sticky-link"><span class="rc-step-badge">4</span> Branding emails & invoices</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-sticky-link"><span class="rc-step-badge">5</span> Gateway Failover</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review"  class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+        
+      </div></div></div>
+    </details>
+
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> How Account Updater works</h2>
+      <p>Account Updater queries Visa, Mastercard, Discover, and Amex card network files to catch changes in card numbers or expiry dates before your next renewal attempt. For most gateways, checks run days before billing. Stripe and Adyen support real-time updates during the transaction itself. Subscribers don't have to take action — their renewal just succeeds.</p>
+      <p>Account Updater and dunning are complementary: Account Updater reduces the number of payments that fail; dunning recovers the ones that still do (like NSF or lost cards).</p>
+
+      <div class="rc-video-card">
+        <div class="rc-video-header"><h4>Trail guide: Account Updater setup</h4><span>~3 min</span></div>
+        <div class="rc-video-embed"><iframe src="https://share.synthesia.io/embeds/videos/b86fe7bd-1f74-491f-8632-acebd4794615" loading="lazy" title="Account Updater" allowfullscreen allow="encrypted-media; fullscreen;"></iframe></div>
+        <div class="rc-video-caption">How Account Updater works, which card networks are supported, and where to enable it in Recurly.</div>
+      </div>
+
+      <h2><i class="fa-solid fa-toggle-on rc-fa-section"></i> Enable Account Updater</h2>
+
+      <div class="rc-card-grid" style="margin-bottom:16px;">
+        <div class="rc-pricing-card rc-pricing-free">
+          <h4><i class="fa-solid fa-circle-check" style="color:#5DC32E;margin-right:6px;"></i> Visa &amp; Discover — enabled directly</h4>
+          <p>Toggle on in <strong>Configuration → Payment Settings</strong>. No additional configuration needed.</p>
+        </div>
+        <div class="rc-pricing-card rc-pricing-paid">
+          <h4><i class="fa-solid fa-credit-card" style="color:#FFD706;margin-right:6px;"></i> Mastercard &amp; Amex — requires codes</h4>
+          <p>Mastercard requires your 4-digit <strong>MCC code</strong>. Amex requires a 10-digit <strong>SE Number</strong> (direct accounts only; Amex OptBlue not supported).</p>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-body"><strong>Where to find your codes</strong><p>Your MCC (Merchant Category Code) is on your bank processing statement. Your Amex SE Number is on your direct American Express merchant statement.</p></div>
+      </div>
+
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content"><h4>Open Payment Settings</h4><p>Navigate to <strong>Configuration → Payment Settings</strong>. Account Updater toggle controls appear at the top of this page. <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-settings" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Payment Settings</a>.</p></div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content"><h4>Enable Visa and Discover</h4><p>Toggle both on directly — no codes required. These two networks cover the majority of most subscriber bases. <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Account Updater</a>.</p></div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content"><h4>Enter Mastercard MCC and Amex SE Number</h4><p>Enter your 4-digit MCC for Mastercard. Enter your 10-digit SE Number for Amex if you have a direct Amex account. Skip Amex if you're on Amex OptBlue via your gateway. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable" target="_blank" class="rc-inline-link rp-anchor">How to enable Account Updater</a>.</p></div>
+        </div>
+      </div>
+
+      <div class="rc-checklist">
+        <div class="rc-checklist-header"><i class="fa-solid fa-list-check" style="color:var(--yellow);font-size:1rem;"></i><h4>Account Updater checklist</h4></div>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Account Updater enabled for Visa and Discover</strong></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>MCC entered for Mastercard</strong><span>Found on your bank processing statement.</span></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>SE Number entered for Amex (if direct account)</strong><span>Skip if using Amex OptBlue.</span></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Noted current involuntary churn rate as a baseline</strong><span>Use this in Phase 2 to measure Account Updater's impact.</span></div></label>
+        <div class="rc-checklist-footer">Tap each item to mark it complete</div>
+      </div>
+    </div>
+
+  <div class="rc-oh-cta">
+      <h4><i class="fa-solid fa-headset rc-fa-dark"></i> Questions about Account Updater?</h4>
+      <p>Our Customer Success team runs weekly <strong>Global Office Hours</strong> sessions where you can bring your real configuration questions — branding, plan structure, dunning setup, migration strategy, pricing model decisions. No agenda required.</p>
+      <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
+    </div>
+
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-btn-prev">← 2. Dunning optimization</a>
+      <span class="rc-lp-nav-indicator">3 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding"  class="rc-btn-path">4. Branding emails & invoices→</a>
+    </div>
+
+    <div class="rc-resources">
+      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
+      <div class="rc-resource-links">
+        <a href="https://docs.recurly.com/docs/account-updater" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Account Updater</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-settings" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Payment Settings</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Account Updater: How to enable it</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-calendar"></i> Join Global Office Hours</a>
+      <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
+      </div>
+    </div>
+
+    <div class="rc-footer-nav">
+      <div class="rc-footer-links">
+        <div class="rc-footer-section">
+          <span class="rc-footer-label">Launchpad phase one</span>
+                    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one" class="rc-footer-link">Path overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-footer-link">1. Final production testing</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-footer-link">2. Dunning optimization</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater" class="rc-footer-link">3. Account Updater</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding" class="rc-footer-link">4. Branding emails &amp; invoices</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-footer-link">5. Gateway failover</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review" class="rc-footer-link">6. Review &amp; resources</a>
+        </div>
+        <div class="rc-footer-utility">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link"><img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home</a>
+          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `}</HTMLBlock>
 
 <br />
