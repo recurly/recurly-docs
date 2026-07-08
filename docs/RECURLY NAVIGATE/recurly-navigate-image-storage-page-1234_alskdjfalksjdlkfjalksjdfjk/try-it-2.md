@@ -10,7 +10,7 @@ metadata:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* ── HOST-THEME BACKGROUND OVERRIDE ── */
+/* HOST-THEME BACKGROUND OVERRIDE */
 body { background: #ffffff !important; }
 
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
@@ -22,24 +22,7 @@ body { background: #ffffff !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-
-.rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #D1CFC4;
-  --brightgray:#F2F1EA;
-  --offwhite:  #FCFBF7;
-  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #0D0D0B !important;
-  background: #ffffff;
-}
-.rc-guide * { box-sizing: border-box; }
-
-/* ── NAVIGATE MASTER ARMOR — (0,0,7,1) ── */
+/* NAVIGATE MASTER ARMOR */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
@@ -52,7 +35,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
-
 .rc-guide a:hover {
   color: #0067BE !important;
   text-decoration: underline !important;
@@ -60,155 +42,166 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   text-underline-offset: 2px !important;
 }
 
-/* ── FA6 ICON HELPERS ── */
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:     #FFD706;
+  --blue:       #008CFF;
+  --blue-tint1: #D5EAFF;
+  --blue-tint2: #96C8FF;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D75;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
+  --warning-fg: #FFD706;
+  --warning-bg: #FFFECB;
+  --error-fg:   #FF5126;
+  --error-bg:   #FFEEE9;
+  --success-fg: #5DC32E;
+  --success-bg: #EFFAEA;
+  --info-fg:    #008CFF;
+  --info-bg:    #E5F3FF;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #32312D !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
+
+/* FA6 ICON HELPERS */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 
-/* ── LAYOUT ── */
+/* LAYOUT */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
-.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-
-/* ── BACK LINK — (0,0,8,1) ── */
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
+.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-/* ── ANNOUNCEMENT BAR ── */
-.rc-announce-bar { display: none; background: #FFD706; color: #0D0D0B; align-items: center; justify-content: space-between; padding: 10px 20px; font-size: .88rem; font-weight: 600; border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4; }
+/* ANNOUNCEMENT BAR */
+.rc-announce-bar { display: none; background: var(--yellow); color: var(--offblack); align-items: center; padding: 10px 20px; font-size: .88rem; font-weight: 600; border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4; }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-announce-link { color: #0D0D0B !important; font-weight: 800; white-space: nowrap; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; transition: background .2s; border-bottom: 0 !important; }
+.rc-guide a.rc-announce-link { color: #0D0D0B !important; font-weight: 800; white-space: nowrap; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; transition: background 0.2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
 
-/* ── HERO ── */
-.rc-hero { background: linear-gradient(rgba(13,13,11,0.82),rgba(13,13,11,0.82)), url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center; background-color: #0D0D0B; background-size: cover; color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0; }
-.rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(255,215,6,0.20); border: 1px solid rgba(255,215,6,0.45); color: #FFD706; font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
+/* HERO */
+.rc-hero {
+  background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
+              url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
+  background-color: var(--offblack); background-size: cover;
+  color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0;
+}
+.rc-lp-pillar-tag {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(255,215,6,0.20); border: 1px solid rgba(255,215,6,0.45);
+  color: var(--yellow); font-size: .75rem; font-weight: 800;
+  letter-spacing: 1px; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 20px; margin-bottom: 20px;
+}
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
-.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FCFBF7; margin: 0; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
-/* ── NAV — non-sticky, open (Course page) ── */
-details.rc-sticky-nav-wrap { position: relative; z-index: 1; background-color: #FFD706; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
+/* NAV — non-sticky, open, Course variant */
+details.rc-sticky-nav-wrap {
+  position: relative;
+  background-color: var(--yellow);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 24px 0 48px; border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
+}
 details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
-.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: .6px; text-transform: uppercase; color: #0D0D0B; }
-.rc-nav-chevron { font-size: .72rem; color: #0D0D0B; opacity: .55; line-height: 1; transition: transform .25s ease; }
+.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: var(--offblack); }
+.rc-nav-chevron { font-size: .72rem; color: var(--offblack); opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
-.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .3s ease; }
+.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link { color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: .4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-sticky-link { color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 
-/* ── INLINE LINKS ── */
-.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-inline-link { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; text-decoration: none !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-inline-link:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
-
-/* ── CONTENT SECTIONS ── */
+/* SECTION HEADINGS */
 .rc-lp-section { margin-bottom: 48px; }
-.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: #0D0D0B; display: flex; align-items: center; gap: 12px; }
-.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
-.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
+.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
+.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-/* ── NUMBERED STEPS — time label variant ── */
-.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 0 0 24px; }
-.rc-step { 
-  display: grid; 
-  grid-template-columns: 100px 1fr; 
-  justify-items: start;            
-  gap: 16px; 
-  align-items: flex-start; 
-  padding: 18px 0; 
-  border-bottom: 1px solid #F2F1EA; 
+/* TOC CARDS */
+.rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-toc-card {
+  display: grid; grid-template-columns: 44px 1fr 32px;
+  align-items: center; gap: 16px;
+  background: var(--offwhite); border: 1px solid var(--lightgray);
+  border-bottom: 1px solid #D1CFC4 !important;
+  border-radius: 12px; padding: 18px 22px;
+  transition: all .2s ease; color: #32312D !important;
 }
-.rc-step:last-child { border-bottom: none; }
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-toc-card:hover {
+  border-color: #FFD706 !important;
+  border-bottom: 1px solid #FFD706 !important;
+  box-shadow: 0 4px 14px rgba(255,215,6,0.12);
+  transform: translateX(3px);
+  text-decoration: none !important;
+}
+.rc-toc-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; }
+.rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0 0 4px; }
+.rc-toc-body p { font-size: .88rem; color: var(--gray); line-height: 1.5; margin: 0; }
+.rc-toc-arrow { font-size: 1.1rem; color: var(--lightgray); text-align: right; transition: color .2s; }
+.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #FFD706; }
 
-.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
-.rc-step-num-time { min-width: 56px; height: 36px; padding: 0 12px; border-radius: 20px; background: #0D0D0B; color: #FFD706; display: inline-flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; letter-spacing: .3px; white-space: nowrap; }
-.rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
-.rc-step-content p { font-size: .92rem; color: #807D75; line-height: 1.6; margin: 0 0 8px; }
-.rc-step-content p:last-child { margin-bottom: 0; }
-.rc-step-content strong { color: #32312D; }
-
-/* ── EMAIL PREVIEW ── */
-.rc-email-preview { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
-.rc-email-header { background: #0D0D0B; padding: 14px 20px; display: flex; align-items: center; gap: 10px; }
-.rc-email-header span { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: #FFD706; }
-.rc-email-body { padding: 24px 28px; }
-.rc-email-body p { font-size: .9rem; color: #32312D; line-height: 1.7; margin: 0 0 14px; }
-.rc-email-body p:last-child { margin-bottom: 0; }
-.rc-email-body strong { color: #0D0D0B; }
-
-/* ── CALLOUTS ── */
-.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
-.rc-callout + .rc-callout { margin-top: 12px; }
-.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
-.rc-callout-body { flex: 1; }
-.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
-.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
-.rc-callout-tip { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
-.rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
-.rc-callout-caution { background: #FFFECB; border-left: 4px solid #FFD706; }
-.rc-callout-caution .rc-callout-body > strong { color: #32312D; }
-/* Callout inline links — (0,0,8,1) */
-.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; text-decoration: none !important; }
-.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-callout-body a:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
-
-/* ── PATH NAV BUTTONS — (0,0,8,1) ── */
+/* PATH NAV BUTTONS */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
-.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #D1CFC4; letter-spacing: .5px; white-space: nowrap !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; white-space: nowrap !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; text-decoration: none !important; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; white-space: nowrap !important; }
+.rc-btn-start { background: var(--brightgray); color: var(--gray); padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--lightgray); cursor: default; display: inline-flex; align-items: center; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; white-space: nowrap !important; }
+.rc-guide a.rc-btn-path { background: var(--yellow); color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
-/* ── RESOURCES ── */
-.rc-resources { background: #F2F1EA; border-left: 4px solid #FFD706; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
-.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D75; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+/* RESOURCES */
+.rc-resources { background: var(--brightgray); border-left: 4px solid var(--yellow); border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-resource-link { color: #807D75 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #FFD706 !important; }
+.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration-color: #FFD706 !important; }
 
-/* ── FOOTER NAV ── */
-.rc-footer-nav { border-top: 1px solid #D1CFC4; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+/* FOOTER */
+.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F2F1EA; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-footer-link { color: #807D75 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-footer-link { color: #807D75 !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F2F1EA; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
-/* ── RESPONSIVE ── */
 @media(max-width:1300px) {
   .rc-lp-nav { justify-content: center !important; gap: 12px; }
   .rc-lp-nav-indicator { width: 100% !important; text-align: center; }
@@ -217,14 +210,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
-  .rc-hero { padding: 36px 20px 36px; }
+  .rc-hero { padding: 36px 20px; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
+  .rc-toc-card { grid-template-columns: 36px 1fr 24px !important; padding: 14px 16px !important; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-  .rc-guide a.rc-btn-prev,
   .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-  .rc-guide a.rc-btn-path {
+  .rc-guide a.rc-btn-path,
+  .rc-btn-start {
     padding: 10px 16px !important;
     font-size: 0.82rem !important;
   }
@@ -232,31 +225,34 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 </style>
 
 <div class="rc-guide">
+
   <div class="rc-top-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-back-link">← Back to Acquire</a>
   </div>
 
   <div class="rc-content-wrap">
 
-    <!-- ANNOUNCEMENT BAR — add rc-active class to show before publishing -->
+    <!-- Announcement bar — add rc-active to show -->
     <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
-        <strong>Upcoming:</strong> Join our CSMs for a live pricing strategy session.
+        <strong>Upcoming:</strong> Join our CSMs for a live Pricing &amp; Packaging Q&amp;A.
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
     </div>
 
-    <!-- HERO -->
+    <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire • Plan price increase
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Communicating the change</h1></div>
-      <p>What to say, when to say it, and how to use Recurly's notification tools to reach every subscriber at the right moment.</p>
+      <div class="rc-lp-hero-title">
+        <h1>Pricing &amp; plans 101: The basics</h1>
+      </div>
+      <p>How you structure your pricing directly influences whether a subscriber converts, which tier they choose, and whether they stay. This course covers the six core areas of Recurly's pricing and packaging — each as a focused page you can work through at your own pace.</p>
     </div>
 
-    <!-- NAV -->
+    <!-- Navigation Menu — non-sticky, open, Course Overview variant -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -265,154 +261,119 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-sticky-link">Path Overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-sticky-link"><span class="rc-step-badge">1</span> Use cases</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> What to consider </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Communicating the change
+        <!-- Overview — active, map pin, no number -->
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Path Overview
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-sticky-link"><span class="rc-step-badge">4</span> Tracking your impact</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-sticky-link"><span class="rc-step-badge">1</span> Plans</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-sticky-link"><span class="rc-step-badge">2</span> Add-ons</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-sticky-link"><span class="rc-step-badge">3</span> Currency</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models" class="rc-sticky-link"><span class="rc-step-badge">4</span> Pricing models</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials" class="rc-sticky-link"><span class="rc-step-badge">5</span> Trials</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-analytics" class="rc-sticky-link"><span class="rc-step-badge">6</span> Tracking success</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-review" class="rc-sticky-link"><span class="rc-step-badge">7</span> Review &amp; resources</a>
         
       </div></div></div>
     </details>
 
-    <!-- SECTION 1: Notification timeline -->
+    <!-- What's in this course -->
     <div class="rc-lp-section">
-      <h2><i class="fa-regular fa-clock rc-fa-section"></i> Notification timeline</h2>
-      <p>A well-timed sequence does three things: gives subscribers enough runway to make a decision, prevents a single-day support spike, and reinforces your value rationale at each touchpoint.</p>
+      <h2><i class="fa-solid fa-map rc-fa-section"></i> What's in this path</h2>
+      <p>Six topics, each building on the last. Start with Plans as your foundation and work through to Tracking Success — or jump directly to the topic most relevant to where you are right now.</p>
 
-      <div class="rc-steps">
-        <div class="rc-step">
-          <div class="rc-step-num-time">Day 0</div>
-          <div class="rc-step-content">
-            <h4>Initial announcement — 30–90 days before the change</h4>
-            <p>Your primary notification. Explain the why, state the new price, give the effective date. This is the most important message in the sequence — give it the most attention. Personalize with the subscriber's current plan name and price where possible.</p>
+      <div class="rc-toc-list">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-toc-card">
+          <div class="rc-toc-num">1</div>
+          <div class="rc-toc-body">
+            <h4>Plans</h4>
+            <p>What a plan is, how billing cycles work, and the decisions that lock in at creation — including the ones most people miss.</p>
           </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num-time">Day 14</div>
-          <div class="rc-step-content">
-            <h4>Reminder — for subscribers who haven't engaged</h4>
-            <p>A shorter follow-up for subscribers who didn't open or act on the first email. One paragraph restating the change and the effective date. Include a link to your FAQ or support page if you've created one.</p>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-toc-card">
+          <div class="rc-toc-num">2</div>
+          <div class="rc-toc-body">
+            <h4>Add-ons</h4>
+            <p>How to layer additional charges on a base subscription — optional vs. required, plan-level vs. Item Catalog, and the four add-on pricing models.</p>
           </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num-time">Pre-renewal</div>
-          <div class="rc-step-content">
-            <h4>Final notice — close to the subscriber's renewal date</h4>
-            <p>A brief confirmation sent near each subscriber's individual renewal date — not on a fixed calendar day. Keep it factual: their subscription renews on [date] at [new price]. Use Recurly's <code style="background:#F2F1EA;padding:2px 6px;border-radius:4px;font-size:.82rem;">renewal.scheduled</code> prerenewal webhook to trigger this automatically via your ESP. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/prerenewal-notifications" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Docs: Prerenewal notifications</a>.</p>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-toc-card">
+          <div class="rc-toc-num">3</div>
+          <div class="rc-toc-body">
+            <h4>Currency</h4>
+            <p>How multi-currency billing works in Recurly, what must be configured per currency, and why local pricing outperforms auto-converted pricing every time.</p>
           </div>
-        </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models" class="rc-toc-card">
+          <div class="rc-toc-num">4</div>
+          <div class="rc-toc-body">
+            <h4>Pricing models</h4>
+            <p>Fixed, Ramp, Tiered, Volume, Stairstep — what each model does, when to use it, and why your add-on pricing model choice is permanent.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials" class="rc-toc-card">
+          <div class="rc-toc-num">5</div>
+          <div class="rc-toc-body">
+            <h4>Trials</h4>
+            <p>Plan-level trial configuration, the card-required decision, and what trials genuinely can — and cannot — fix in your acquisition funnel.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-analytics" class="rc-toc-card">
+          <div class="rc-toc-num">6</div>
+          <div class="rc-toc-body">
+            <h4>Tracking success</h4>
+            <p>The six metrics that matter for pricing decisions — MRR, churn, ARPU, trial conversion — and where to find each one in Recurly.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-analytics" class="rc-toc-card">
+          <div class="rc-toc-num">7</div>
+          <div class="rc-toc-body">
+            <h4>Review & resources</h4>
+            <p>Everything you covered in this course.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+
       </div>
+
+      <p style="color: var(--gray); font-size: .92rem;">Each page covers one complete concept from overview to action. Work through them in order for the full picture, or jump to the topic you need most right now.</p>
     </div>
 
-    <!-- SECTION 2: Initial announcement template -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — Subscription change</h2>
-      <p>The <strong>"Subscription Change"</strong> email template is triggered when a subscription is modified. It can be customized to communicate your plan price change in a meaningful way. You'll find it here: <strong>Configuration → Email Templates → Subscription</strong>. Feel free to use the sample messaging provided below, <strong> complete with accurate tokens</strong>, and tailor it to your brand.</p>
-      <p>The feature bullets should be specific and demonstrate value. Generic language like, "We've been working hard," may be too vague to your customers.</p>
-
-      <div class="rc-email-preview">
-        <div class="rc-email-header">
-          <i class="fa-regular fa-envelope" style="color:#FFD706;font-size:.9rem;"></i>
-          <span>Initial announcement example · Subscription change template</span>
-        </div>
-        <div class="rc-email-body">
-          <p><strong>Subject:</strong> An update to your <code>{{company_name}}</code> subscription pricing</p>
-          <p>Hi <code>{{account_first_name}}</code>,</p>
-          <p>We're writing to let you know that the price of your <strong><code>{{subscription_plan_name}}</code></strong> subscription will increase from <strong>[manually enter current price]</strong> to <strong>[manually enter new price]</strong>, effective {{subscription_current_period_ends_at}}.</p>
-          <p>Since you joined, we've shipped a lot — including:</p>
-          <p>— [manually enter specific feature or improvement 1]<br>— [manually enter specific feature or improvement 2]<br>— [manually enter specific feature or improvement 3]</p>
-          <p>This update reflects the continued investment we're making in {{company_name}}. Your subscription will renew at the new price starting <strong><code>{{subscription_current_period_ends_at}}</code></strong> — no action is required on your end.</p>
-          <p>If you have questions, reply to this email or visit <code>{{account_hosted_maintenance_url}}</code>.</p>
-          <p><code>{{company_name}}</code></p>
-        </div>
-      </div>
-
-      <div class="rc-callout rc-callout-caution">
-        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-        <div class="rc-callout-body">
-          <strong>Tokens for ramp pricing models</strong>
-          <p>If you are using ramp pricing, you can replace the price entries with <code>{{subscription_next_ramp_interval_price}}</code> for the new price and <code>{{subscription_next_ramp_interval_start_date}}</code> for the effective date, rather than entering those values manually.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- SECTION 3: Final notice template -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — Term renewal reminder</h2>
-      <p>Make sure your customers get a final notification before their term renewal takes place. This message is short by design. Subscribers already know the change is coming — this is a confirmation, not a pitch.</p>
-      <p>You'll find the <strong>"Term renewal reminder"</strong> template in <strong>Configuration → Email Templates → Subscription Renewal</strong>.</p> 
-
-      <div class="rc-email-preview">
-        <div class="rc-email-header">
-          <i class="fa-regular fa-envelope" style="color:#FFD706;font-size:.9rem;"></i>
-          <span>Final renewal notice example · Term renewal reminder template</span>
-        </div>
-        <div class="rc-email-body">
-          <p><strong>Subject:</strong> Your <code>{{company_name}}</code> subscription renews on <code>{{subscription_current_period_ends_at}}</code></p>
-          <p>Hi <code>{{account_first_name}}</code>,</p>
-          <p>Just a heads-up: your <code>{{subscription_plan_name}}</code> subscription renews on <strong><code>{{subscription_current_period_ends_at}}</code></strong> at the updated price of <strong>[manually enter new price]</strong>.</p>
-          <p>If you'd like to make any changes before renewal, you can do so at <code>{{account_hosted_maintenance_url}}</code> or by replying to this email.</p>
-          <p><code>{{company_name}}</code></p>
-        </div>
-      </div>
-    </div>
-
-    <!-- SECTION 4: Recurly notification tools -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-paper-plane rc-fa-section"></i> Recurly notification tools</h2>
-      <p>You have two paths for delivering these notifications — Recurly's native email system or your own ESP via webhooks. Both work; the right choice depends on how much design control you need.</p>
-
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="rc-callout-body">
-          <strong>Using Recurly's native email templates</strong>
-          <p>Go to <strong>Configuration → Email Templates</strong> to customize subscription event emails. Templates must be enabled in two places: globally under Email Templates, and at the plan level — check both if emails aren't sending. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Docs: Email templates</a> for the correct variable syntax — Recurly uses its own parameter format, not dot-notation.</p>
-        </div>
-      </div>
-
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="rc-callout-body">
-          <strong>Using webhooks with your ESP</strong>
-          <p>If you use Braze, Iterable, Klaviyo, or similar, subscribe to the <code style="background:#F2F1EA;padding:2px 6px;border-radius:4px;font-size:.82rem;">subscription.updated</code> webhook event to trigger migration notifications, and the <code style="background:#F2F1EA;padding:2px 6px;border-radius:4px;font-size:.82rem;">renewal.scheduled</code> prerenewal webhook for the final notice. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Docs: Subscription notifications</a> for the full list of valid event names.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- PATH NAV BUTTONS -->
+    <!-- Path navigation — Overview (Start state) -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-btn-prev">← What to consider</a>
-      <span class="rc-lp-nav-indicator">3 of 5</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-btn-path">Next: Tracking your impact →</a>
+      <span class="rc-btn-start">Start</span>
+      <span class="rc-lp-nav-indicator">Overview</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-btn-path">Plans →</a>
     </div>
 
-    <!-- RESOURCES -->
+    <!-- Resources -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Email templates</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/prerenewal-notifications" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Prerenewal notifications</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Subscription notifications</a>
-        <a href="https://recurly.com/blog/how-to-ensure-that-price-changes-dont-add-friction-to-the-subscriber-experience/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Recurly: How to minimize price change friction</a>
+        <a href="https://recurly.com/resources/report/state-of-subscriptions/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> 2026 State of Subscriptions report</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Join Global Office Hours</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
       </div>
     </div>
 
-    <!-- FOOTER NAV -->
+    <!-- Footer -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Plan price increase</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-footer-link">1. Use cases</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-footer-link">2. What to consider</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-footer-link">3. Communicating the change</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-footer-link">4. Tracking your impact</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-footer-link">5. Review &amp; resources</a>
+          <span class="rc-footer-label">Pricing &amp; Plans 101</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">Path overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-footer-link">1. Plans</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-footer-link">2. Add-ons</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-footer-link">3. Currency</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models" class="rc-footer-link">4. Pricing models</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials" class="rc-footer-link">5. Trials</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-analytics" class="rc-footer-link">6. Tracking success</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-review" class="rc-footer-link">7. Review &amp; resources</a>
         </div>
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
