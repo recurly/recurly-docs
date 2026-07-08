@@ -245,8 +245,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase One</div>
-      <div class="rc-lp-hero-title"><h1>Branding emails & invoices</h1></div>
-      <p>Customize the emails and invoices Recurly sends on your behalf so every subscriber communication reflects your brand.</p>
+      <div class="rc-lp-hero-title"><h1>Gateway Failover</h1></div>
+      <p>Add a backup gateway so Recurly automatically reroutes payments if your primary provider goes down — no revenue lost to third-party outages.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -257,106 +257,75 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-sticky-link"><span class="rc-step-badge">1</span> Final production testing</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-sticky-link"><span class="rc-step-badge">2</span> Dunning optimization</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater" class="rc-sticky-link"><span class="rc-step-badge">3</span> Account Updater</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding"  class="rc-sticky-link rc-sticky-link-active"><img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Branding emails & invoices</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-sticky-link"><span class="rc-step-badge">5</span> Gateway Failover</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding"  class="rc-sticky-link"><span class="rc-step-badge">4</span> Branding emails & invoices</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-sticky-link rc-sticky-link-active"><img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Gateway Failover</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review"  class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
       </div></div></div>
     </details>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-palette rc-fa-section"></i> Why branding matters</h2>
-      <p>Recurly sends emails and invoices on your behalf. Without customization, they arrive looking generic — which increases "is this spam?" confusion and reduces subscriber response rates, especially on dunning emails. Branded communications build trust and make your billing touchpoints feel like part of your product.</p>
+      <h2><i class="fa-solid fa-shield-halved rc-fa-section"></i> How failover works</h2>
+      <p>Gateway Failover automatically routes traffic to a backup gateway when your primary gateway experiences elevated communication errors. First-time signups are actively rerouted to the backup during an outage. Recurring renewals are paused and queued, then released to the primary once it recovers.</p>
 
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-card-title"><i class="fa-solid fa-envelope rc-fa-section"></i> Transactional emails</div>
-          <p>Signup confirmation, payment receipt, renewal reminder — customized with your logo, colors, and messaging.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-card-title"><i class="fa-solid fa-file-invoice rc-fa-section"></i> Invoice templates</div>
-          <p>Add your logo, business address, and custom footer — critical for B2B subscribers who file invoices.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-card-title"><i class="fa-solid fa-triangle-exclamation rc-fa-section"></i> Dunning emails</div>
-          <p>Your payment failure recovery emails should look like they came from you. Branded dunning emails significantly improve subscriber response rates.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-card-title"><i class="fa-solid fa-user rc-fa-section"></i> Subscriber portal</div>
-          <p>The hosted billing portal where subscribers manage their accounts can also be customized to match your product's look and feel.</p>
-        </div>
+      <div class="rc-callout rc-callout-caution">
+        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="rc-callout-body"><strong>Plan requirement: Professional or Elite</strong><p>Gateway Failover is not available on Starter plans. If you're on a Starter plan, contact your CSM to discuss upgrading before completing this step.</p></div>
       </div>
 
       <div class="rc-video-card">
-        <div class="rc-video-header"><h4>Trail guide: brand your templates</h4><span>~3 min</span></div>
-        <div class="rc-video-embed"><iframe src="https://share.synthesia.io/embeds/videos/aa762aae-0ab6-44f9-9b57-a711992871fc" loading="lazy" title="Branding" allowfullscreen allow="encrypted-media; fullscreen;"></iframe></div>
-        <div class="rc-video-caption">How to add your logo, set brand colors, configure your From identity, and send test emails.</div>
+        <div class="rc-video-header"><h4>Trail guide: Gateway Failover setup</h4><span>~3 min</span></div>
+        <div class="rc-video-embed"><iframe src="https://share.synthesia.io/embeds/videos/f05bd8df-772f-4b7c-a561-848420075bb1" loading="lazy" title="Gateway Failover" allowfullscreen allow="encrypted-media; fullscreen;"></iframe></div>
+        <div class="rc-video-caption">How Recurly detects gateway outages and how to configure failover monitoring and exclusions.</div>
       </div>
 
-      <h2><i class="fa-solid fa-gear rc-fa-section"></i> Configure your templates</h2>
+      <h2><i class="fa-solid fa-gear rc-fa-section"></i> Configure Gateway Failover</h2>
 
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
-          <div class="rc-step-content"><h4>Access email templates</h4><p>Navigate to <strong>Configuration → Email Templates</strong>. You'll see the full list of transactional emails Recurly sends on your behalf. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" class="rc-inline-link rp-anchor">Email templates</a>.</p></div>
+          <div class="rc-step-content"><h4>Add a backup gateway</h4><p>Confirm you have at least two gateways configured in <strong>Configuration → Payment Gateways</strong>. Both gateways should support the same currencies and card types. <a href="https://docs.recurly.com/recurly-subscriptions/docs/gateway-configuration" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Multiple Gateway Configuration</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
-          <div class="rc-step-content"><h4>Upload your logo and set brand color</h4><p>Add your logo (PNG or JPG, max 256 KB) and set your primary brand color. These apply across all email templates via the Header/Footer snippets. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/alternate-email-templates#header-and-footer-templates" target="_blank" class="rc-inline-link rp-anchor">Header and footer templates</a>.</p></div>
+          <div class="rc-step-content"><h4>Enable failover monitoring</h4><p>On the Payment Gateways page, locate the <strong>Gateway Failover</strong> panel in the right-hand sidebar. Click "Enable" to activate monitoring. <a href="https://docs.recurly.com/recurly-subscriptions/docs/gateway-failover" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Gateway Failover</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
-          <div class="rc-step-content"><h4>Set your billing contact email</h4><p>Go to <strong>Configuration → Site Settings</strong> and set your Billing Contact Email. This is the "From" address subscribers see on every communication. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/site-settings#email-settings" target="_blank" class="rc-inline-link rp-anchor">Email settings</a>.</p></div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num">4</div>
-          <div class="rc-step-content"><h4>Customize dunning email copy</h4><p>Edit your failed payment email templates to match your brand voice. Ensure the CTA button links directly to the subscriber's billing portal page — not a generic login. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" class="rc-inline-link rp-anchor">Dunning email copy</a>.</p></div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num">5</div>
-          <div class="rc-step-content"><h4>Customize your invoice template</h4><p>Navigate to <strong>Configuration → Invoice Templates</strong>. Add your logo (max 256 KB), business name, address, and any required compliance footer text. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-customization" target="_blank" class="rc-inline-link rp-anchor">Invoice customization</a>.</p></div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num">6</div>
-          <div class="rc-step-content"><h4>Send a test email for each template</h4><p>Use Recurly's "Send Test Email" function to preview each template in a real inbox — on both desktop and mobile before marking this complete. Recurly docs: <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" class="rc-inline-link rp-anchor">Send test mail</a>.</p></div>
+          <div class="rc-step-content"><h4>Set exclusions (optional)</h4><p>If a gateway should never be used as a backup — for example, a currency-specific or specialty gateway — click <strong>Options → Edit Gateway</strong> and check "Exclude from Gateway Failover." <a href="https://docs.recurly.com/recurly-subscriptions/docs/gateway-failover" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Gateway Failover</a>.</p></div>
         </div>
       </div>
 
       <div class="rc-checklist">
-        <div class="rc-checklist-header"><i class="fa-solid fa-list-check" style="color:var(--yellow);font-size:1rem;"></i><h4>Branding checklist</h4></div>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Logo uploaded to email and invoice templates</strong><span>PNG or JPG, max 256 KB.</span></div></label>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Brand color set across all templates</strong></div></label>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Billing Contact Email set in Site Settings</strong></div></label>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Dunning emails customized with branded copy and portal CTA</strong></div></label>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Invoice template customized with logo, address, and footer</strong></div></label>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Test emails reviewed on desktop and mobile</strong></div></label>
+        <div class="rc-checklist-header"><i class="fa-solid fa-list-check" style="color:var(--yellow);font-size:1rem;"></i><h4>Gateway Failover checklist</h4></div>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Confirmed site is on Professional or Elite plan</strong></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>At least two gateways configured for the same currencies</strong></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Gateway Failover enabled in the Payment Gateways sidebar</strong></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Specialty gateways excluded from failover if needed</strong></div></label>
         <div class="rc-checklist-footer">Tap each item to mark it complete</div>
       </div>
     </div>
-    
-    <div class="rc-oh-cta">
-      <h4><i class="fa-solid fa-headset rc-fa-dark"></i> Questions about branding?</h4>
+
+  <div class="rc-oh-cta">
+      <h4><i class="fa-solid fa-headset rc-fa-dark"></i> Questions about Gateway Failover?</h4>
       <p>Our Customer Success team runs weekly <strong>Global Office Hours</strong> sessions where you can bring your real configuration questions — branding, plan structure, dunning setup, migration strategy, pricing model decisions. No agenda required.</p>
       <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater" class="rc-btn-prev">← 3. Account Updater</a>
-      <span class="rc-lp-nav-indicator">4 of 6</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-btn-path">5. Gateway Failover →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding"  class="rc-btn-prev">← 4. Branding</a>
+      <span class="rc-lp-nav-indicator">5 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review"  class="rc-btn-path">6. Review &amp; resources →</a>
     </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Email templates</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-customization" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Invoice customization</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/site-settings" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Site Settings</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning Campaigns</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/hosted-account-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Hosted Account Management</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/alternate-email-templates" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Alternate Email Templates</a>
+        <a href="https://docs.recurly.com/docs/gateway-failover" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Gateway Failover</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/gateway-configuration" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Multiple Gateway Configuration</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/gateway-failover" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Gateway Failover</a>
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-calendar"></i> Join Global Office Hours</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
-        </div>
+      </div>
     </div>
 
     <div class="rc-footer-nav">
