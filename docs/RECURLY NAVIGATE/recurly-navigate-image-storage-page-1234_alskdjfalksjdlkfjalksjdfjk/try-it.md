@@ -9,9 +9,6 @@ metadata:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* ── HOST-THEME BACKGROUND OVERRIDE ── */
-body { background: #ffffff !important; }
-
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
 .rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
@@ -55,6 +52,22 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   border-bottom: 0 !important;
 }
 .rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
+}
+
+/* ── INLINE BODY LINKS (Omits :not(.rp-anchor) so it catches our bypassed links) ── */
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-inline-link {
+  color: #008CFF !important;
+  font-weight: 600;
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-inline-link:hover {
   color: #0067BE !important;
   text-decoration: underline !important;
   text-decoration-color: #008CFF !important;
@@ -141,16 +154,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-callout-caution{background:#FFFECB;border-left:4px solid #FFD706;}
 .rc-callout-caution .rc-callout-body>strong{color:var(--darkgray);}
 
-.rm-Markdown.markdown-body .rc-callout-caution .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-callout-caution .rc-callout-body a,
-.rc-guide .rc-gw-table a { color: #008CFF !important; border-bottom: 0 !important; }
-
-.rm-Markdown.markdown-body .rc-callout-caution .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-callout-caution .rc-callout-body a:hover,
-.rc-guide .rc-gw-table a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; color: #0067BE !important; }
-
 .rc-checklist{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:12px;overflow:hidden;margin:20px 0 32px;}
 .rc-checklist-header{padding:14px 22px;background:var(--offblack);display:flex;align-items:center;gap:10px;}
 .rc-checklist-header h4{font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--yellow);margin:0;}
@@ -166,17 +169,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-checklist-text{flex:1;}
 .rc-checklist-text strong{font-size:.9rem;font-weight:700;color:var(--offblack);display:block;margin-bottom:2px;transition:color .18s;}
 .rc-checklist-text span{font-size:.8rem;color:var(--gray);line-height:1.4;display:block;}
-
-.rm-Markdown.markdown-body .rc-checklist-text a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-checklist-text a,
-.rc-guide .rc-gw-table a { color: #008CFF !important; border-bottom: 0 !important; }
-
-.rm-Markdown.markdown-body .rc-checklist-text a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-checklist-text a:hover,
-.rc-guide .rc-gw-table a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; color: #0067BE !important; }
-
 .rc-checklist-footer{padding:10px 22px;background:var(--brightgray);border-top:1px solid var(--lightgray);font-size:.78rem;color:var(--gray);font-weight:600;}
 
 .rc-pricing-card{border-radius:10px;padding:18px 22px;margin-bottom:12px;border:1px solid var(--lightgray);background:var(--offwhite);}
@@ -204,7 +196,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-btn-path:hover{background:transparent !important;color:var(--offblack) !important;border:2px solid var(--yellow) !important;border-bottom:2px solid var(--yellow) !important;}
 @media(max-width:768px){.rc-lp-nav{flex-wrap:wrap;justify-content:center;}.rc-lp-nav-indicator{width:100%;text-align:center;}}
 
-.rc-resources{background:var(--brightgray);border-left:4px solid var(--lightgray);border-radius:10px;padding:20px 24px;margin:32px 0 0;}
+.rc-resources{background:var(--brightgray);border-left:4px solid #FF5126;border-radius:10px;padding:20px 24px;margin:32px 0 0;}
 .rc-resources h3{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.9px;color:var(--gray);margin:0 0 12px;display:flex;align-items:center;gap:8px;}
 .rc-resource-links{display:flex;flex-wrap:wrap;gap:4px 20px;}
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-resource-link{color:#807D73 !important;text-decoration:underline !important;text-underline-offset:3px;text-decoration-color:#D1CFC4 !important;font-weight:500;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;border-bottom:0 !important;}
@@ -276,28 +268,28 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
-          <div class="rc-step-content"><h4>Complete a live transaction</h4><p>Use a real payment method to sign up for your cheapest active plan. Complete the full checkout flow as a new subscriber would. <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank">Recurly Docs: How to test your gateway</a>.</p></div>
+          <div class="rc-step-content"><h4>Complete a live transaction</h4><p>Use a real payment method to sign up for your cheapest active plan. Complete the full checkout flow as a new subscriber would. <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: How to test your gateway</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
-          <div class="rc-step-content"><h4>Verify the payment in Recurly</h4><p>Log in to your Recurly admin and confirm the transaction shows as successful. Check the invoice and subscription status. <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-management" target="_blank">Recurly Docs: Invoice management<a></a>.</p></div>
+          <div class="rc-step-content"><h4>Verify the payment in Recurly</h4><p>Log in to your Recurly admin and confirm the transaction shows as successful. Check the invoice and subscription status. <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-management" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Invoice management</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
-          <div class="rc-step-content"><h4>Check your confirmation email</h4><p>Verify the post-signup email arrives promptly, displays your plan name, branding, and pricing correctly, and links to your subscriber portal. <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank">Recurly Docs: Email templates<a></a>.</p></div>
+          <div class="rc-step-content"><h4>Check your confirmation email</h4><p>Verify the post-signup email arrives promptly, displays your plan name, branding, and pricing correctly, and links to your subscriber portal. <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Email templates</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">4</div>
-          <div class="rc-step-content"><h4>Refund the test transaction</h4><p>From Recurly, issue and confirm the refund. This keeps your books clean and your test subscriber off your active list. <a href="https://docs.recurly.com/recurly-subscriptions/docs/refund-transaction" target="_blank">Recurly Docs: Refund<a></a>.</p></div>
+          <div class="rc-step-content"><h4>Refund the test transaction</h4><p>From Recurly, issue and confirm the refund. This keeps your books clean and your test subscriber off your active list. <a href="https://docs.recurly.com/recurly-subscriptions/docs/refund-transaction" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Refund</a>.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">5</div>
-          <div class="rc-step-content"><h4>Verify PSD2 / 3DS (EU merchants only)</h4><p>If you process payments from EU subscribers, trigger a transaction that should require 3D Secure authentication. Confirm the challenge flow appears, completes, and the payment succeeds.<a href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide" target="_blank">Recurly Docs: 3D Secure 2.0 integration guide</a>.</p></div>
+          <div class="rc-step-content"><h4>Verify PSD2 / 3DS (EU merchants only)</h4><p>If you process payments from EU subscribers, trigger a transaction that should require 3D Secure authentication. Confirm the challenge flow appears, completes, and the payment succeeds. <a href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: 3D Secure 2.0 integration guide</a>.</p></div>
         </div>
       </div>
   <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-book"></i></div>
-        <div class="rc-callout-body"><p><strong>Learn more</strong> about PSD2 and 3DS compliance in <a href=”https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2” target="_blank" rel="noopener noreferrer"><strong>Recurly Documentation</strong>.</a></p></div>
+        <div class="rc-callout-body"><p><strong>Learn more</strong> about PSD2 and 3DS compliance in <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor"><strong>Recurly Documentation</strong>.</a></p></div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
@@ -310,7 +302,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Completed a live test transaction</strong><span>Use your cheapest plan — refund immediately after.</span></div></label>
         <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Confirmed the transaction in Recurly</strong><span>Invoice and subscription status show as successful.</span></div></label>
         <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Refunded the test transaction</strong><span>Confirmed the refund processed in Recurly.</span></div></label>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Verified PSD2 / 3DS authentication</strong><span>EU merchants only. Read <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank">Recurly Docs</a> for more details.</span></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Verified PSD2 / 3DS authentication</strong><span>EU merchants only. Read <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs</a> for more details.</span></div></label>
         <div class="rc-checklist-footer">Tap each item to mark it complete</div>
       </div>
 </div>
