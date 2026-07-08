@@ -29,7 +29,7 @@ next:
 <ul class="rp-list">
   <li><strong>Limited decline detail</strong> — Authorize.net's API responses are generic on declines. Recurly uses decline reasons, merchant-advice-code logic, and processor/issuer/network responses to inform retry decisions. Following Auth.net best practices, Recurly does not retry renewal declines where Auth.net recommends treating the decline as "hard" — this includes expired cards and lost or stolen cards. See <a href="https://support.authorize.net/knowledgebase/Knowledgearticle/?code=000001111" target="_blank">Auth.net's gateway response knowledgebase article</a> for details.</li>
   <li><strong>Fraud review flow not supported</strong> — If you're using Authorize.net's fraud monitoring, be aware the gateway can void or invalidate transactions that were initially approved. Monitor those external systems independently, as any cancellations made outside Recurly won't be visible within the platform.</li>
-  <li><strong>No raw NTID export</strong> — Authorize.net does not return raw NTIDs. If you need to migrate away from Authorize.net to another platform, contact Recurly Tech Support to initiate an NTID migration conversation with our team and Auth.net directly.</li>
+  <li><strong>Gateway Specific NTIDs on File</strong> — Authorize.net does not return raw NTIDs, but instead, their own value that we store. If you need to migrate away from Authorize.net to another platform, even within Recurly, contact Recurly Tech Support to initiate an NTID migration conversation with our team and Auth.net directly.</li>
 </ul>
 
 # Definition
@@ -97,9 +97,13 @@ next:
 <Image src="https://files.readme.io/2c5f346-image.png" align="center" width="40%" border={true} />
 
 
+<br />
+
 
 <Image src="https://files.readme.io/cdbb55e-image.png" align="center" width="40%" border={true} />
 
+
+<br />
 
 
 <Image src="https://files.readme.io/4976dc3-image.png" align="center" width="75%" border={true} />
