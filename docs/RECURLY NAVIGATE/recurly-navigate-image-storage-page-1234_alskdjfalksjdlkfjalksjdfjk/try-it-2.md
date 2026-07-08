@@ -22,6 +22,23 @@ body { background: #ffffff !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
+  --offwhite:  #FCFBF7;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #0D0D0B !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
+
 /* ── NAVIGATE MASTER ARMOR — (0,0,7,1) ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
@@ -35,39 +52,13 @@ body { background: #ffffff !important; }
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
+
 .rc-guide a:hover {
   color: #0067BE !important;
   text-decoration: underline !important;
   text-decoration-color: #008CFF !important;
   text-underline-offset: 2px !important;
 }
-
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-
-.rc-guide {
-  --yellow:     #FFD706;
-  --blue:       #008CFF;
-  --blue-tint1: #D5EAFF;
-  --blue-tint2: #96C8FF;
-  --offblack:   #0D0D0B;
-  --darkgray:   #32312D;
-  --gray:       #807D75;
-  --lightgray:  #D1CFC4;
-  --brightgray: #F2F1EA;
-  --offwhite:   #FCFBF7;
-  --warning-fg: #FFD706;
-  --warning-bg: #FFFECB;
-  --error-fg:   #FF5126;
-  --error-bg:   #FFEEE9;
-  --success-fg: #5DC32E;
-  --success-bg: #EFFAEA;
-  --info-fg:    #008CFF;
-  --info-bg:    #E5F3FF;
-  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #32312D !important;
-  background: #ffffff;
-}
-.rc-guide * { box-sizing: border-box; }
 
 /* ── FA6 ICON HELPERS ── */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
@@ -137,29 +128,34 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
-/* ── NUMBERED STEPS ── */
+/* ── NUMBERED STEPS — time label variant ── */
 .rc-steps { display: flex; flex-direction: column; gap: 0; margin: 0 0 24px; }
-.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #F2F1EA; }
+.rc-step { 
+  display: grid; 
+  grid-template-columns: 100px 1fr; 
+  justify-items: start;            
+  gap: 16px; 
+  align-items: flex-start; 
+  padding: 18px 0; 
+  border-bottom: 1px solid #F2F1EA; 
+}
 .rc-step:last-child { border-bottom: none; }
+
 .rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+.rc-step-num-time { min-width: 56px; height: 36px; padding: 0 12px; border-radius: 20px; background: #0D0D0B; color: #FFD706; display: inline-flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; letter-spacing: .3px; white-space: nowrap; }
 .rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
-.rc-step-content p { font-size: .92rem; color: #807D75; line-height: 1.6; margin: 0; }
+.rc-step-content p { font-size: .92rem; color: #807D75; line-height: 1.6; margin: 0 0 8px; }
+.rc-step-content p:last-child { margin-bottom: 0; }
 .rc-step-content strong { color: #32312D; }
 
-/* ── ACCENT CARDS ── */
-.rc-accent-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 22px 26px; margin: 0 0 12px; }
-.rc-accent-card.rc-accent-yellow { border-left: 4px solid #FFD706; }
-.rc-accent-card.rc-accent-orange { border-left: 4px solid #FFD706; } /* Mapped to current warning logic */
-.rc-accent-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0 0 8px; display: flex; align-items: center; gap: 8px; }
-.rc-accent-card p { font-size: .9rem; color: #807D75; line-height: 1.6; margin: 0; }
-.rc-accent-card p strong { color: #32312D; }
-
-/* ── PLAIN CARD ── */
-.rc-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 24px 28px; margin: 0 0 20px; }
-.rc-card-title { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
-.rc-card ul { font-size: .92rem; color: #807D75; line-height: 1.75; padding-left: 20px; margin: 0; }
-.rc-card ul li { margin-bottom: 6px; }
-.rc-card ul li strong { color: #32312D; }
+/* ── EMAIL PREVIEW ── */
+.rc-email-preview { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
+.rc-email-header { background: #0D0D0B; padding: 14px 20px; display: flex; align-items: center; gap: 10px; }
+.rc-email-header span { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: #FFD706; }
+.rc-email-body { padding: 24px 28px; }
+.rc-email-body p { font-size: .9rem; color: #32312D; line-height: 1.7; margin: 0 0 14px; }
+.rc-email-body p:last-child { margin-bottom: 0; }
+.rc-email-body strong { color: #0D0D0B; }
 
 /* ── CALLOUTS ── */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
@@ -172,6 +168,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
 .rc-callout-caution { background: #FFFECB; border-left: 4px solid #FFD706; }
 .rc-callout-caution .rc-callout-body > strong { color: #32312D; }
+/* Callout inline links — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide .rc-callout-body a:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
 /* ── PATH NAV BUTTONS — (0,0,8,1) ── */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
@@ -237,6 +238,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
+    <!-- ANNOUNCEMENT BAR — add rc-active class to show before publishing -->
     <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
@@ -245,14 +247,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
+    <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire • Plan price increase
       </div>
-      <div class="rc-lp-hero-title"><h1>What to consider</h1></div>
-      <p>The decisions to lock in before you touch the UI — segments, timing, grandfathering, and legacy plan cleanup.</p>
+      <div class="rc-lp-hero-title"><h1>Communicating the change</h1></div>
+      <p>What to say, when to say it, and how to use Recurly's notification tools to reach every subscriber at the right moment.</p>
     </div>
 
+    <!-- NAV -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -263,156 +267,149 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-sticky-link">Path Overview</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-sticky-link"><span class="rc-step-badge">1</span> Use cases</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> What to consider 
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> What to consider </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Communicating the change
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-sticky-link"><span class="rc-step-badge">3</span> Communicating the change</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-sticky-link"><span class="rc-step-badge">4</span> Tracking your impact</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
         
       </div></div></div>
     </details>
 
+    <!-- SECTION 1: Notification timeline -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-users rc-fa-section"></i> Know your subscriber segments</h2>
-      <p>Not every subscriber should be treated the same way. Before you migrate anyone, identify which group they belong to — each requires a different approach.</p>
-
-      <div class="rc-accent-card rc-accent-yellow">
-        <h4><i class="fa-solid fa-user-plus rc-fa-section"></i> New subscribers</h4>
-        <p>Once you update the plan's price in Recurly, all new subscriptions get the new rate automatically. No additional action needed. Update the plan price first, before communicating the change to existing subscribers.</p>
-      </div>
-
-      <div class="rc-accent-card rc-accent-yellow">
-        <h4><i class="fa-solid fa-arrows-rotate rc-fa-section"></i> Active subscribers on the current plan</h4>
-        <p>These subscribers need to be explicitly migrated via API — either at their next renewal (least disruptive) or immediately mid-cycle (unusual; only for significant repositioning). A third option is grandfathering specific accounts at their current rate. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/change-subscription" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Docs: Change subscription</a> for the API mechanics.</p>
-      </div>
-
-      <div class="rc-accent-card rc-accent-orange">
-        <h4><i class="fa-solid fa-file-contract rc-fa-section"></i> Subscribers under contract</h4>
-        <p>Review contracts before migrating anyone in this group. If a subscriber's agreement specifies a fixed price or locked renewal terms, you may not be able to apply the increase until that period ends. When in doubt, check with your legal or finance team first.</p>
-      </div>
-
-      <div class="rc-accent-card rc-accent-yellow">
-        <h4><i class="fa-solid fa-crown rc-fa-section"></i> High-value or long-tenure subscribers</h4>
-        <p>Your highest-value accounts — by revenue, tenure, or strategic relationship — warrant individual consideration. Some are candidates for a personal outreach before the standard notification goes out. Others may be right for grandfathering.</p>
-      </div>
-    </div>
-
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-clock rc-fa-section"></i> Timing your increase</h2>
-      <p>Moving too fast is the most common mistake. Rushing the timeline leads to subscriber surprise, support volume spikes, and avoidable churn.</p>
+      <h2><i class="fa-regular fa-clock rc-fa-section"></i> Notification timeline</h2>
+      <p>A well-timed sequence does three things: gives subscribers enough runway to make a decision, prevents a single-day support spike, and reinforces your value rationale at each touchpoint.</p>
 
       <div class="rc-steps">
         <div class="rc-step">
-          <div class="rc-step-num">1</div>
+          <div class="rc-step-num-time">Day 0</div>
           <div class="rc-step-content">
-            <h4>Choose your effective date strategically</h4>
-            <p>Avoid major holidays, Q4 renewal peaks for B2B accounts, or any period when your support team is understaffed. Mid-quarter windows with predictable renewal volume work best.</p>
+            <h4>Initial announcement — 30–90 days before the change</h4>
+            <p>Your primary notification. Explain the why, state the new price, give the effective date. This is the most important message in the sequence — give it the most attention. Personalize with the subscriber's current plan name and price where possible.</p>
           </div>
         </div>
         <div class="rc-step">
-          <div class="rc-step-num">2</div>
+          <div class="rc-step-num-time">Day 14</div>
           <div class="rc-step-content">
-            <h4>Monthly plans — 30 days minimum notice</h4>
-            <p>Monthly subscribers feel the change at their very next renewal. Give them at least 30 days to decide whether to stay.</p>
+            <h4>Reminder — for subscribers who haven't engaged</h4>
+            <p>A shorter follow-up for subscribers who didn't open or act on the first email. One paragraph restating the change and the effective date. Include a link to your FAQ or support page if you've created one.</p>
           </div>
         </div>
         <div class="rc-step">
-          <div class="rc-step-num">3</div>
+          <div class="rc-step-num-time">Pre-renewal</div>
           <div class="rc-step-content">
-            <h4>Annual plans — 60–90 days minimum notice</h4>
-            <p>Annual subscribers have a larger financial commitment and deserve more lead time. Some may prefer to lock in at the current rate for one more cycle before the new price applies.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num">4</div>
-          <div class="rc-step-content">
-            <h4>Stagger notifications, not the change itself</h4>
-            <p>If your subscriber base is large, send notices in batches over a week to prevent a single-day support spike. The plan price update and migration can happen on one date — the communication rollout can spread out.</p>
+            <h4>Final notice — close to the subscriber's renewal date</h4>
+            <p>A brief confirmation sent near each subscriber's individual renewal date — not on a fixed calendar day. Keep it factual: their subscription renews on [date] at [new price]. Use Recurly's <code style="background:#F2F1EA;padding:2px 6px;border-radius:4px;font-size:.82rem;">renewal.scheduled</code> prerenewal webhook to trigger this automatically via your ESP. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/prerenewal-notifications" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Docs: Prerenewal notifications</a>.</p>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- SECTION 2: Initial announcement template -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-lock rc-fa-section"></i> Grandfathering strategy</h2>
-      <p>Grandfathering means locking a specific subscriber at their current price while the rest of your base moves to the new rate. It's a powerful retention tool when used deliberately — and a pricing integrity problem when used as a default.</p>
+      <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — Subscription change</h2>
+      <p>The <strong>"Subscription Change"</strong> email template is triggered when a subscription is modified. It can be customized to communicate your plan price change in a meaningful way. You'll find it here: <strong>Configuration → Email Templates → Subscription</strong>. Feel free to use the sample messaging provided below, <strong> complete with accurate tokens</strong>, and tailor it to your brand.</p>
+      <p>The feature bullets should be specific and demonstrate value. Generic language like, "We've been working hard," may be too vague to your customers.</p>
 
-      <div class="rc-card">
-        <div class="rc-card-title"><i class="fa-solid fa-ruler rc-fa-section"></i> When to grandfather</div>
-        <ul>
-          <li><strong>High-risk churn accounts:</strong> A subscriber who has already flagged pricing concerns is a candidate for a retention conversation, not a migration notice.</li>
-          <li><strong>Long-tenure advocates:</strong> Subscribers who have been with you 3+ years and actively refer others. A grandfathered price is a low-cost loyalty signal.</li>
-          <li><strong>Strategic accounts:</strong> Subscribers whose logos, referrals, or case studies carry commercial value beyond their subscription revenue.</li>
-          <li><strong>Promotional commitments:</strong> Anyone who was explicitly promised a locked-in rate as part of a campaign or sales conversation.</li>
-        </ul>
+      <div class="rc-email-preview">
+        <div class="rc-email-header">
+          <i class="fa-regular fa-envelope" style="color:#FFD706;font-size:.9rem;"></i>
+          <span>Initial announcement example · Subscription change template</span>
+        </div>
+        <div class="rc-email-body">
+          <p><strong>Subject:</strong> An update to your <code>{{company_name}}</code> subscription pricing</p>
+          <p>Hi <code>{{account_first_name}}</code>,</p>
+          <p>We're writing to let you know that the price of your <strong><code>{{subscription_plan_name}}</code></strong> subscription will increase from <strong>[manually enter current price]</strong> to <strong>[manually enter new price]</strong>, effective {{subscription_current_period_ends_at}}.</p>
+          <p>Since you joined, we've shipped a lot — including:</p>
+          <p>— [manually enter specific feature or improvement 1]<br>— [manually enter specific feature or improvement 2]<br>— [manually enter specific feature or improvement 3]</p>
+          <p>This update reflects the continued investment we're making in {{company_name}}. Your subscription will renew at the new price starting <strong><code>{{subscription_current_period_ends_at}}</code></strong> — no action is required on your end.</p>
+          <p>If you have questions, reply to this email or visit <code>{{account_hosted_maintenance_url}}</code>.</p>
+          <p><code>{{company_name}}</code></p>
+        </div>
       </div>
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="rc-callout-body">
-          <strong>Don't grandfather by default</strong>
-          <p>If grandfathering becomes your standard response to any pushback, you undermine the price increase entirely. Use it for specific accounts with specific reasons — not as a pressure valve for every complaint.</p>
+          <strong>Tokens for ramp pricing models</strong>
+          <p>If you are using ramp pricing, you can replace the price entries with <code>{{subscription_next_ramp_interval_price}}</code> for the new price and <code>{{subscription_next_ramp_interval_start_date}}</code> for the effective date, rather than entering those values manually.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: Final notice template -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Email template — Term renewal reminder</h2>
+      <p>Make sure your customers get a final notification before their term renewal takes place. This message is short by design. Subscribers already know the change is coming — this is a confirmation, not a pitch.</p>
+      <p>You'll find the <strong>"Term renewal reminder"</strong> template in <strong>Configuration → Email Templates → Subscription Renewal</strong>.</p> 
+
+      <div class="rc-email-preview">
+        <div class="rc-email-header">
+          <i class="fa-regular fa-envelope" style="color:#FFD706;font-size:.9rem;"></i>
+          <span>Final renewal notice example · Term renewal reminder template</span>
+        </div>
+        <div class="rc-email-body">
+          <p><strong>Subject:</strong> Your <code>{{company_name}}</code> subscription renews on <code>{{subscription_current_period_ends_at}}</code></p>
+          <p>Hi <code>{{account_first_name}}</code>,</p>
+          <p>Just a heads-up: your <code>{{subscription_plan_name}}</code> subscription renews on <strong><code>{{subscription_current_period_ends_at}}</code></strong> at the updated price of <strong>[manually enter new price]</strong>.</p>
+          <p>If you'd like to make any changes before renewal, you can do so at <code>{{account_hosted_maintenance_url}}</code> or by replying to this email.</p>
+          <p><code>{{company_name}}</code></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: Recurly notification tools -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-paper-plane rc-fa-section"></i> Recurly notification tools</h2>
+      <p>You have two paths for delivering these notifications — Recurly's native email system or your own ESP via webhooks. Both work; the right choice depends on how much design control you need.</p>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-body">
+          <strong>Using Recurly's native email templates</strong>
+          <p>Go to <strong>Configuration → Email Templates</strong> to customize subscription event emails. Templates must be enabled in two places: globally under Email Templates, and at the plan level — check both if emails aren't sending. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Docs: Email templates</a> for the correct variable syntax — Recurly uses its own parameter format, not dot-notation.</p>
         </div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
-          <strong>How Recurly handles grandfathering</strong>
-          <p>A grandfathered price is a subscription-level unit amount override. You update the plan price for everyone, then apply a custom unit amount to specific subscriptions to lock them at the old rate. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/managing-subscription-methods-guides" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Docs: Subscription management guide</a> for the API pattern.</p>
+          <strong>Using webhooks with your ESP</strong>
+          <p>If you use Braze, Iterable, Klaviyo, or similar, subscribe to the <code style="background:#F2F1EA;padding:2px 6px;border-radius:4px;font-size:.82rem;">subscription.updated</code> webhook event to trigger migration notifications, and the <code style="background:#F2F1EA;padding:2px 6px;border-radius:4px;font-size:.82rem;">renewal.scheduled</code> prerenewal webhook for the final notice. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Docs: Subscription notifications</a> for the full list of valid event names.</p>
         </div>
       </div>
     </div>
 
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-folder-open rc-fa-section"></i> Legacy plan cleanup</h2>
-      <p>Before touching any plan, export your active subscriptions as a baseline — you'll need this for migration and for post-change comparison. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/subscriptions-exports" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Docs: Subscriptions export</a>.</p>
-
-      <div class="rc-callout rc-callout-caution">
-        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-        <div class="rc-callout-body">
-          <strong>Deleting a plan in Recurly is permanent</strong>
-          <p>In Recurly Subscriptions, there is no "inactive" toggle for plans — plans are deleted. Once deleted, a plan cannot be reactivated, and existing subscriptions on that plan cannot be edited (including price, frequency, and add-ons). Migrate all subscribers off a legacy plan before deleting it. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/plans" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Docs: Plans</a>.</p>
-        </div>
-      </div>
-
-      <div class="rc-card">
-        <div class="rc-card-title"><i class="fa-solid fa-list-check rc-fa-section"></i> Pre-increase plan audit</div>
-        <ul>
-          <li><strong>Export active subscriptions</strong> before making any changes — this is your pre-change baseline.</li>
-          <li><strong>Consolidate overlapping plans:</strong> If you have multiple plans priced within a few dollars of each other, simplify before increasing. A confused plan structure makes migration harder.</li>
-          <li><strong>Check add-on and coupon interactions:</strong> A price increase on the base plan affects how percentage discounts and add-on fees calculate. Confirm whether your increase should affect base price only or net pricing as well. Note: percentage discounts never apply to plan setup fees.</li>
-        </ul>
-      </div>
-    </div>
-
+    <!-- PATH NAV BUTTONS -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-btn-prev">← Use cases</a>
-      <span class="rc-lp-nav-indicator">2 of 5</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-btn-path">Next: Communicating the change →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-btn-prev">← What to consider</a>
+      <span class="rc-lp-nav-indicator">3 of 5</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-btn-path">Next: Tracking your impact →</a>
     </div>
 
+    <!-- RESOURCES -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/plans" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Plans</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/change-subscription" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Change subscription</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/managing-subscription-methods-guides" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Subscription management guide</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-terms" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Subscription billing terms</a>
-        <a href="https://support.recurly.com/hc/en-us/articles/44223937178004" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Support: Bulk migration best practices</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Email templates</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/prerenewal-notifications" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Prerenewal notifications</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Subscription notifications</a>
+        <a href="https://recurly.com/blog/how-to-ensure-that-price-changes-dont-add-friction-to-the-subscriber-experience/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Recurly: How to minimize price change friction</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
       </div>
     </div>
 
+    <!-- FOOTER NAV -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Plan price increase</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-footer-link">1. Uses cases</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-footer-link">2. What to consider </a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-footer-link">1. Use cases</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-footer-link">2. What to consider</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-footer-link">3. Communicating the change</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-footer-link">4. Tracking your impact</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-footer-link">5. Review &amp; resources</a>
