@@ -34,7 +34,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --brightgray:#F2F1EA;
   --offwhite:  #FCFBF7;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #32312D !important;
+  color: #0D0D0B !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
@@ -58,12 +58,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   text-decoration-color: #008CFF !important;
   text-underline-offset: 2px !important;
 }
-
-/* INLINE BODY LINKS */
-.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-inline-link { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; text-decoration: none !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-inline-link:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
 /* FA ICON HELPERS */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
@@ -112,7 +106,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FCFBF7; margin: 0; }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
 
-/* NAV — non-sticky + open (Course page) */
+/* NAV — non-sticky + open (Course R&R page) */
 details.rc-sticky-nav-wrap {
   position: relative; z-index: 1;
   background-color: #FF5126;
@@ -147,17 +141,61 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
-/* METRIC CARDS */
-.rc-metric-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 14px; padding: 22px 24px; margin-bottom: 16px; }
-.rc-metric-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-.rc-metric-icon { width: 40px; height: 40px; border-radius: 10px; background: #0D0D0B; color: #FF5126; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.rc-metric-card h3 { font-size: 1rem; font-weight: 800; margin: 0; color: #0D0D0B; }
-.rc-metric-card p { font-size: .9rem; color: #807D73; margin: 0 0 12px; line-height: 1.6; }
-.rc-formula { background: #F2F1EA; border-radius: 8px; padding: 10px 14px; font-size: .83rem; font-family: monospace !important; color: #32312D; margin-bottom: 12px; }
-.rc-pills { display: flex; gap: 8px; flex-wrap: wrap; }
-.rc-pill { padding: 4px 12px; border-radius: 20px; font-size: .75rem; font-weight: 700; background: #FCFBF7; border: 1px solid #D1CFC4; color: #32312D; }
-.rc-pill-up   { background: rgba(22,163,74,0.10); color: #15803d; border-color: #86efac; }
-.rc-pill-down { background: rgba(220,38,38,0.10); color: #dc2626; border-color: #fca5a5; }
+/* CELEBRATION CARD */
+.rc-celebration-card {
+  background: linear-gradient(135deg, #0D0D0B 0%, #1a0f00 100%);
+  border-radius: 16px; padding: 44px 36px; text-align: center;
+  margin-bottom: 32px; border: 2px solid rgba(255,81,38,0.30);
+}
+.rc-celebration-icon { color: #FFD706 !important; font-size: 2.8rem; display: block; margin-bottom: 16px; }
+.rc-celebration-card h2 { font-size: 1.8rem; font-weight: 800; color: #ffffff !important; margin: 0 0 12px; }
+.rc-celebration-card p { font-size: .96rem; color: #D1CFC4 !important; margin: 0 auto; max-width: 560px; line-height: 1.7; }
+
+/* TWO-PHASE RECAP CARDS */
+.rc-two-phase { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 32px; }
+.rc-phase-recap { border-radius: 14px; padding: 22px; background: #0D0D0B !important; }
+.rc-phase-recap-p1 { border: 2px solid #FFD706; }
+.rc-phase-recap-p2 { border: 2px solid #FF5126; }
+.rc-phase-recap h3 { font-size: .88rem; font-weight: 800; text-transform: uppercase; letter-spacing: .7px; margin: 0 0 16px; display: flex; align-items: center; gap: 8px; }
+.rc-phase-recap-p1 h3 { color: #FFD706 !important; }
+.rc-phase-recap-p2 h3 { color: #FF5126 !important; }
+.rc-recap-list { list-style: none; margin: 0; padding: 0; }
+.rc-recap-item { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: .84rem; color: #D1CFC4 !important; line-height: 1.5; }
+.rc-recap-item:last-child { border-bottom: none; }
+.rc-recap-dot { width: 22px; height: 22px; border-radius: 50%; font-size: .68rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.rc-recap-dot-y { background: #FFD706; color: #0D0D0B; }
+.rc-recap-dot-o { background: #FF5126; color: #ffffff; }
+@media(max-width:768px){ .rc-two-phase { grid-template-columns: 1fr; } }
+
+/* KPI TABLE */
+.rc-kpi-table { width: 100%; border-collapse: collapse; margin-bottom: 32px; font-size: .88rem; border-radius: 10px; overflow: hidden; border: 1px solid #D1CFC4; }
+.rc-kpi-table th { background: #0D0D0B !important; color: #ffffff !important; font-size: .75rem; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; padding: 12px 14px; text-align: left; }
+.rc-kpi-table td { padding: 11px 14px; border-bottom: 1px solid #F2F1EA; color: #32312D; vertical-align: top; background: #FCFBF7 !important; }
+.rc-kpi-table tr:last-child td { border-bottom: none; }
+.rc-kpi-table td:first-child { font-weight: 700; color: #0D0D0B; }
+.rc-kpi-table td:last-child { font-weight: 700; white-space: nowrap; }
+
+/* SAFE SENDER CARD */
+.rc-safe-sender { background: #0D0D0B !important; border: 1px solid #FFD706; border-radius: 12px; padding: 18px 22px; margin-bottom: 24px; display: flex; align-items: flex-start; gap: 16px; }
+.rc-safe-sender-icon { color: #FFD706 !important; font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+.rc-safe-sender p { font-size: .88rem; color: #D1CFC4 !important; margin: 0; line-height: 1.6; }
+.rc-safe-sender strong { color: #FFD706 !important; }
+
+/* WHAT'S NEXT CARDS */
+.rc-next-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 32px; }
+.rc-next-item { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px; }
+.rc-next-item-icon { font-size: 1.3rem; color: #0D0D0B; line-height: 1; }
+.rc-next-item h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
+.rc-next-item p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; flex-grow: 1; }
+.rm-Markdown.markdown-body .rc-guide a.rc-next-cta:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-next-cta { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; background: #0D0D0B; color: #FFD706 !important; font-size: .82rem; font-weight: 800; padding: 8px 14px; border-radius: 8px; transition: all .18s; border-bottom: 0 !important; text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-next-cta:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-next-cta:hover { background: #32312D !important; color: #FFD706 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-next-cta-ghost:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-next-cta-ghost { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; background: transparent; color: #0D0D0B !important; font-size: .82rem; font-weight: 800; padding: 8px 14px; border-radius: 8px; border: 1px solid #D1CFC4 !important; border-bottom: 1px solid #D1CFC4 !important; transition: all .18s; text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-next-cta-ghost:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-next-cta-ghost:hover { border-color: #0D0D0B !important; border-bottom: 1px solid #0D0D0B !important; color: #0D0D0B !important; }
+@media(max-width:768px){ .rc-next-grid { grid-template-columns: 1fr; } }
 
 /* VIDEO CARD */
 .rc-video-card { border: 1px solid #D1CFC4; border-radius: 14px; overflow: hidden; margin: 0 0 32px; }
@@ -168,33 +206,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
 .rc-video-caption { padding: 12px 22px; font-size: .83rem; color: #807D73; background: #F2F1EA; border-top: 1px solid #D1CFC4; line-height: 1.5; }
 
-/* WEBINAR CLIP CARD */
-.rc-clip-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 14px; padding: 22px 24px; margin: 0 0 32px; }
-.rc-clip-badge { display: inline-flex; align-items: center; gap: 6px; background: #0D0D0B; color: #FF5126; border-radius: 6px; padding: 4px 10px; font-size: .73rem; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 12px; }
-.rc-clip-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0 0 8px; }
-.rc-clip-card p { font-size: .9rem; color: #32312D; line-height: 1.6; margin: 0 0 14px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-clip-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-clip-link { color: #008CFF !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-clip-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-clip-link:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
-
-/* PHASE 1 CONNECTION DARK CARD */
-.rc-phase1-card { background: #0D0D0B !important; border-radius: 14px; padding: 28px 32px; margin: 0 0 32px; border: 1px solid rgba(255,255,255,0.08); }
-.rc-phase1-card h3 { font-size: .88rem; font-weight: 800; text-transform: uppercase; letter-spacing: .8px; color: #FFD706 !important; margin: 0 0 18px; display: flex; align-items: center; gap: 8px; }
-.rc-phase1-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0; }
-.rc-phase1-item { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: .9rem; color: #D1CFC4 !important; line-height: 1.5; }
-.rc-phase1-item:last-child { border-bottom: none; }
-.rc-phase1-badge { width: 30px; height: 30px; border-radius: 50%; background: #FFD706; color: #0D0D0B; display: flex; align-items: center; justify-content: center; font-size: .75rem; flex-shrink: 0; margin-top: 1px; }
-.rc-phase1-item strong { color: #ffffff !important; }
-
-/* CARD GRID (2-col funnel scenarios) */
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
-.rc-feature-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; }
-.rc-feature-icon { font-size: 1.2rem; line-height: 1; color: #0D0D0B; }
-.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; }
-@media(max-width:768px){ .rc-card-grid { grid-template-columns: 1fr; } }
-
 /* CALLOUT */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
 .rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
@@ -203,10 +214,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
 .rc-callout-tip { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
 .rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
-.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
+
+/* CONTINUE YOUR JOURNEY */
+.rc-next-steps { margin: 40px 0 0; }
+.rc-next-steps h3 { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 16px; display: flex; align-items: center; gap: 8px; }
+.rc-next-grid-journey { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-next-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-next-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 20px; text-decoration: none !important; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; border-bottom: 1px solid #D1CFC4 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-next-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-next-card:hover { border-color: #FF5126; border-bottom: 1px solid #FF5126 !important; box-shadow: 0 4px 16px rgba(209,207,196,0.35); transform: translateY(-2px); }
+.rc-next-card-tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #FF5126 !important; margin-bottom: 2px; }
+.rc-next-card-icon { font-size: 1.3rem; line-height: 1; color: #0D0D0B !important; }
+.rc-next-card h4 { font-size: .95rem; font-weight: 800; color: #0D0D0B !important; margin: 0; line-height: 1.3; }
+.rc-next-card p { font-size: .85rem; color: #807D73 !important; line-height: 1.5; margin: 0; flex-grow: 1; }
+.rc-next-card-arrow { font-size: .82rem; font-weight: 700; color: #008CFF !important; margin-top: 4px; }
+@media(max-width:768px){ .rc-next-grid-journey { grid-template-columns: 1fr; } }
 
 /* PATH NAV BUTTONS */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
@@ -215,10 +237,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; text-decoration: none !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
+.rc-btn-complete { background: #F2F1EA; color: #0D0D0B !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706; cursor: default; user-select: none; }
 
 /* RESOURCES */
 .rc-resources { background: #F2F1EA; border-left: 4px solid #FF5126; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
@@ -250,7 +269,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rc-card-grid { grid-template-columns: 1fr; }
+  .rc-next-grid-journey { grid-template-columns: 1fr; }
+  .rc-next-grid { grid-template-columns: 1fr; }
 }
 </style>
 
@@ -262,7 +282,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-    <!-- Announcement bar (hidden — add rc-active to show) -->
     <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
@@ -271,16 +290,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase Two
       </div>
-      <div class="rc-lp-hero-title"><h1>Revenue recovery</h1></div>
-      <p>These three metrics measure how much of your earned revenue you actually collect — and how hard your dunning, retry, and card update systems are working behind the scenes.</p>
+      <div class="rc-lp-hero-title"><h1>Review &amp; resources</h1></div>
+      <p>You've completed both phases of Launchpad. Here's a recap of everything you've built — and what comes next to keep the momentum going.</p>
     </div>
 
-    <!-- Nav (non-sticky + open — Course page 4 of 5) -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -293,188 +310,201 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-sticky-link"><span class="rc-step-badge">1</span> Benchmarks &amp; reporting</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-sticky-link"><span class="rc-step-badge">2</span> Acquisition &amp; decline</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-sticky-link"><span class="rc-step-badge">3</span> Churn metrics</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Revenue recovery
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-sticky-link"><span class="rc-step-badge">4</span> Revenue recovery</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Review &amp; resources
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
         
       </div></div></div>
     </details>
 
-    <!-- Section: Intro -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-circle-dollar-to-slot rc-fa-section"></i> How much revenue are you actually collecting?</h2>
-      <p>Revenue recovery metrics close the loop on everything you built in phase one. These three KPIs show how effectively you're collecting earned revenue at every stage of the billing cycle.</p>
+    <div class="rc-celebration-card">
+      <i class="fa-solid fa-trophy rc-celebration-icon"></i>
+      <h2>You've completed Launchpad!</h2>
+      <p>From production testing and dunning configuration to benchmarking your KPIs and understanding your revenue recovery funnel — you've done the work that sets high-performing subscription businesses apart.</p>
     </div>
 
-    <!-- Section: Renewal Invoice Paid Rate -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-circle-check rc-fa-section"></i> Renewal invoice paid rate</h2>
-      <p>The percentage of renewal invoices successfully paid — either on first attempt or through recovery. This is your primary health metric for revenue collection. A declining rate signals a growing problem with payment failures or dunning effectiveness.</p>
+      <h2><i class="fa-solid fa-list-check rc-fa-section"></i> Everything you've accomplished</h2>
+
+      <div class="rc-two-phase">
+        <div class="rc-phase-recap rc-phase-recap-p1">
+          <h3><i class="fa-solid fa-gears" style="color:#FFD706;font-size:.9rem;"></i> Phase 1 · Optimization</h3>
+          <ul class="rc-recap-list">
+            <li class="rc-recap-item"><div class="rc-recap-dot rc-recap-dot-y">1</div>Final production testing — validated your checkout end-to-end</li>
+            <li class="rc-recap-item"><div class="rc-recap-dot rc-recap-dot-y">2</div>Dunning optimization — Intelligent Retry, recovery emails, expiration rules</li>
+            <li class="rc-recap-item"><div class="rc-recap-dot rc-recap-dot-y">3</div>Account Updater — proactive card refresh before renewals fail</li>
+            <li class="rc-recap-item"><div class="rc-recap-dot rc-recap-dot-y">4</div>Branding — on-brand emails, invoices, and dunning communications</li>
+            <li class="rc-recap-item"><div class="rc-recap-dot rc-recap-dot-y">5</div>Gateway failover — automatic rerouting when primary gateway is down</li>
+          </ul>
+        </div>
+        <div class="rc-phase-recap rc-phase-recap-p2">
+          <h3><i class="fa-solid fa-chart-line" style="color:#FF5126;font-size:.9rem;"></i> Phase 2 · Mastering metrics</h3>
+          <ul class="rc-recap-list">
+            <li class="rc-recap-item"><div class="rc-recap-dot rc-recap-dot-o">1</div>Benchmarks Dashboard — found KPIs in Analytics → Dashboards → Benchmarks</li>
+            <li class="rc-recap-item"><div class="rc-recap-dot rc-recap-dot-o">2</div>Acquisition &amp; sign-up decline rate — growth metrics and checkout friction</li>
+            <li class="rc-recap-item"><div class="rc-recap-dot rc-recap-dot-o">3</div>Voluntary &amp; involuntary churn — why subscribers leave and how to act on it</li>
+            <li class="rc-recap-item"><div class="rc-recap-dot rc-recap-dot-o">4</div>Renewal &amp; recovery — paid rate, dunning recovery, and renewal decline</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-table rc-fa-section"></i> Your KPI quick reference</h2>
+
+      <table class="rc-kpi-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>What it measures</th>
+            <th>Direction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Acquisition rate</td>
+            <td>New paid subscribers / active subscribers (start of period)</td>
+            <td>Higher</td>
+          </tr>
+          <tr>
+            <td>Sign-up decline rate</td>
+            <td>Failed unique transaction attempts / total attempts</td>
+            <td>Lower</td>
+          </tr>
+          <tr>
+            <td>Voluntary churn rate</td>
+            <td>Subscribers who canceled / active subscribers (start of period)</td>
+            <td>Lower</td>
+          </tr>
+          <tr>
+            <td>Involuntary churn rate</td>
+            <td>Subscribers lost to dunning expiration / active subscribers (start of period)</td>
+            <td>Lower</td>
+          </tr>
+          <tr>
+            <td>Renewal invoice paid rate</td>
+            <td>Successfully paid renewals / all renewals issued</td>
+            <td>Higher</td>
+          </tr>
+          <tr>
+            <td>Dunning recovery rate</td>
+            <td>Invoices recovered / invoices entering dunning</td>
+            <td>Higher</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-rocket rc-fa-section"></i> What comes next</h2>
+      <p>Your optimization journey doesn't end here. Stay connected with the Recurly community and watch for tailored learning to support your specific growth goals.</p>
+
+      <div class="rc-safe-sender">
+        <i class="fa-solid fa-envelope rc-safe-sender-icon"></i>
+        <p><strong>Never miss an update:</strong> Add <strong>RecurlyNavigate@Recurly.com</strong> to your contact list. This ensures you always receive Navigate updates, exclusive invites, and your curated learning paths.</p>
+      </div>
+
+      <div class="rc-next-grid">
+        <div class="rc-next-item">
+          <div class="rc-next-item-icon"><i class="fa-solid fa-headset"></i></div>
+          <h4>Your Customer Success team</h4>
+          <p>Join a live <strong>Weekly Global Office Hours</strong> session to ask strategy questions, share learnings, and stay current with new features.</p>
+          <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-cta"><i class="fa-solid fa-calendar-days"></i> Book Global Office Hours →</a>
+        </div>
+        <div class="rc-next-item">
+          <div class="rc-next-item-icon"><i class="fa-solid fa-circle-play"></i></div>
+          <h4>Spotlight &amp; on-demand webinars</h4>
+          <p>Watch the <strong>Customer Spotlight Series</strong> for peer-led workshops, or browse Navigate On-Demand Events for topics you need.</p>
+          <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-next-cta-ghost"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit events →</a>
+        </div>
+        <div class="rc-next-item">
+          <div class="rc-next-item-icon"><i class="fa-solid fa-robot"></i></div>
+          <h4>Compass AI</h4>
+          <p>Recurly's AI assistant inside the admin. Ask it questions about your account, interpret metrics, or get configuration recommendations — available 24/7.</p>
+          <a href="https://docs.recurly.com" target="_blank" rel="noopener noreferrer" class="rc-next-cta-ghost"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Compass AI →</a>
+        </div>
+        <div class="rc-next-item">
+          <div class="rc-next-item-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h4>Proactive learning paths</h4>
+          <p>Watch your inbox — we'll send <strong>Navigate Learning Paths</strong> curated to your individual progress and performance in Recurly.</p>
+          <a href="mailto:RecurlyNavigate@Recurly.com?subject=Whitelist%20Recurly%20Navigate" class="rc-next-cta-ghost"><i class="fa-solid fa-envelope"></i> Whitelist our email →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-clipboard-list rc-fa-section"></i> Prepare for your monthly metrics scorecard</h2>
+      <p>Watch this trail guide as it walks you through your Monthly Metrics Scorecard. You'll begin receiving your personalized snapshot via email on the <strong>second Tuesday of the month</strong> after you've been in production for <strong>90 days</strong>.</p>
 
       <div class="rc-video-card">
         <div class="rc-video-header">
-          <h4>Trail guide: renewal invoice paid rate &amp; revenue recovery</h4>
+          <h4>Understanding your monthly metrics scorecard</h4>
           <span>~5 min</span>
         </div>
         <div class="rc-video-embed">
-          <iframe src="https://share.synthesia.io/embeds/videos/9cfddf79-92e3-4c0a-ae46-315581008566" loading="lazy" title="Navigate Launchpad — Renewal Invoice Paid Rate" allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" allowfullscreen></iframe>
+          <iframe src="https://share.synthesia.io/embeds/videos/a9ab0aa1-ef60-4b08-aaa8-95c0275e245f" loading="lazy" title="Understanding Your Monthly Metrics Scorecard" allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" allowfullscreen></iframe>
         </div>
-        <div class="rc-video-caption">Where to find renewal invoice paid rate and decline rate in the Benchmarks Dashboard — and how to interpret them together.</div>
-      </div>
-
-      <div class="rc-metric-card">
-        <div class="rc-metric-header">
-          <div class="rc-metric-icon"><i class="fa-solid fa-circle-check"></i></div>
-          <h3>How it's calculated</h3>
-        </div>
-        <div class="rc-formula">Renewal invoices collected ÷ Total renewal invoices = Renewal invoice paid rate %</div>
-        <div class="rc-pills">
-          <span class="rc-pill rc-pill-up">Higher is better</span>
-          <span class="rc-pill">Check monthly</span>
-          <span class="rc-pill">Analytics →  Benchmarks Overview → scroll to Renewal Invoice Paid Rate</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section: Dunning Recovery Rate -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-rotate rc-fa-section"></i> Dunning recovery rate</h2>
-      <p>Of all renewal invoices that enter dunning, what percentage are ultimately recovered? This measures the combined effectiveness of your dunning window, Intelligent Retry logic, and email sequences.</p>
-
-      <div class="rc-video-card">
-        <div class="rc-video-header">
-          <h4>Trail guide: dunning recovery rate deep dive</h4>
-          <span>~5 min</span>
-        </div>
-        <div class="rc-video-embed">
-          <iframe src="https://share.synthesia.io/embeds/videos/94ebc34a-579b-4129-9a0f-ee926d42a34a" loading="lazy" title="Navigate Launchpad — Dunning Recovery Rate" allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" allowfullscreen></iframe>
-        </div>
-        <div class="rc-video-caption">How to read your dunning recovery rate and troubleshoot if your rate is below the industry median for your vertical.</div>
-      </div>
-
-      <div class="rc-metric-card">
-        <div class="rc-metric-header">
-          <div class="rc-metric-icon"><i class="fa-solid fa-rotate"></i></div>
-          <h3>How it's calculated</h3>
-        </div>
-        <div class="rc-formula">Invoices paid ÷ Total invoices entering dunning = Dunning recovery rate %</div>
-        <div class="rc-pills">
-          <span class="rc-pill rc-pill-up">Higher is better</span>
-          <span class="rc-pill">Industry median: ~27%</span>
-          <span class="rc-pill">Analytics → Benchmarks Overview → scroll to Dunning Recovery Rate</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section: Decline Rate at Renewal -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-bolt rc-fa-section"></i> Decline rate at renewal</h2>
-      <p>The percentage of renewal invoices declined on first attempt. Unlike sign-up declines, renewal declines are almost entirely involuntary — expired cards, insufficient funds. This metric is a direct reflection of Account Updater effectiveness.</p>
-
-      <div class="rc-metric-card">
-        <div class="rc-metric-header">
-          <div class="rc-metric-icon"><i class="fa-solid fa-bolt"></i></div>
-          <h3>How it's calculated</h3>
-        </div>
-        <div class="rc-formula">First-attempt declined renewals ÷ Total renewal invoices = Decline rate at renewal %</div>
-        <div class="rc-pills">
-          <span class="rc-pill rc-pill-down">Lower is better</span>
-          <span class="rc-pill">Check monthly</span>
-          <span class="rc-pill">Analytics → Benchmarks Overview → scroll to Decline Rate at Renewal</span>
-        </div>
-      </div>
-
-      <div class="rc-clip-card">
-        <div class="rc-clip-badge"><i class="fa-solid fa-circle-play"></i> Where in the webinar?</div>
-        <h4>Deep dive: reading the renewal funnel</h4>
-        <p>Fast-forward to the Renewal and Dunning Benchmarks segment. Strategic CSM Dan Shipley breaks down the declined → entered dunning → recovered flow and shows how to benchmark your recovery rate against your vertical's top quartile to spot optimization gaps.</p>
-        <a href="https://navigate.recurly.com/lunch-and-learn/stack-up-benchmarks/" target="_blank" rel="noopener noreferrer" class="rc-clip-link"><i class="fa-solid fa-circle-play"></i> Watch "Stack up against the competition" on demand →</a>
-      </div>
-    </div>
-
-    <!-- Section: Phase 1 connection -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-gears rc-fa-section"></i> How Phase 1 configurations drive these metrics</h2>
-
-      <div class="rc-phase1-card">
-        <h3><i class="fa-solid fa-link" style="color:#FFD706;font-size:.9rem;"></i> Phase 1 → revenue recovery</h3>
-        <ul class="rc-phase1-list">
-          <li class="rc-phase1-item">
-            <div class="rc-phase1-badge"><i class="fa-solid fa-rotate" style="font-size:.65rem;"></i></div>
-            <span><strong>Account Updater</strong> reduces decline rate at renewal by refreshing card details before billing attempts</span>
-          </li>
-          <li class="rc-phase1-item">
-            <div class="rc-phase1-badge"><i class="fa-solid fa-envelope" style="font-size:.65rem;"></i></div>
-            <span><strong>Dunning optimization</strong> and Intelligent Retry directly improve your dunning recovery rate</span>
-          </li>
-          <li class="rc-phase1-item">
-            <div class="rc-phase1-badge"><i class="fa-solid fa-code-branch" style="font-size:.65rem;"></i></div>
-            <span><strong>Gateway failover</strong> prevents outage-driven declines from entering dunning at all</span>
-          </li>
-          <li class="rc-phase1-item">
-            <div class="rc-phase1-badge"><i class="fa-solid fa-palette" style="font-size:.65rem;"></i></div>
-            <span><strong>Branded dunning emails</strong> improve subscriber response rates, increasing self-serve card updates</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Section: Reading the funnel together -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-binoculars rc-fa-section"></i> Reading the recovery funnel together</h2>
-
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-arrow-trend-up" style="color:#FF5126;"></i></div>
-          <h4>High decline rate, high recovery rate</h4>
-          <p>Many invoices fail on first attempt, but most are recovered. Dunning is working — consider expanding Account Updater to reduce the initial failure rate.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-circle-check" style="color:#15803d;"></i></div>
-          <h4>Low decline rate, high paid rate</h4>
-          <p>This is the target state. Account Updater is keeping cards current, and the few failures that occur are recovered efficiently. Focus on maintaining this as you scale.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-triangle-exclamation" style="color:#dc2626;"></i></div>
-          <h4>High decline rate, low recovery rate</h4>
-          <p>Invoices are failing and staying unpaid. Revisit your dunning window, enable Intelligent Retry, and check Account Updater coverage.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-arrow-trend-down" style="color:#dc2626;"></i></div>
-          <h4>Sudden drop in paid rate</h4>
-          <p>An unexpected drop usually signals a gateway issue or a card-type-specific problem. Investigate immediately with your CSM or support team.</p>
-        </div>
+        <div class="rc-video-caption">A guided walkthrough on how to read and act on your monthly performance data.</div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
-          <strong>Benchmark relative to your vertical</strong>
-          <p>High-ticket annual subscriptions often have lower recovery rates than monthly B2C plans. Always benchmark within your vertical before drawing conclusions about your performance.</p>
+          <strong>Keep the cadence going</strong>
+          <p>Treat your Benchmarks Dashboard like a monthly scorecard — review it at the start of each month, compare to the prior period, and flag any metric that moved more than expected.</p>
         </div>
       </div>
     </div>
 
-    <!-- Path navigation -->
-    <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-btn-prev">← Churn metrics</a>
-      <span class="rc-lp-nav-indicator">4 of 5</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-btn-path">Next: Review &amp; resources →</a>
+    <div class="rc-next-steps">
+      <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
+      <div class="rc-next-grid-journey">
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-next-card">
+          <div class="rc-next-card-tag">Recommended next</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-chart-column"></i></div>
+          <h4>Benchmarks 101</h4>
+          <p>Ready for a Benchmarks deep dive? Learn to spot KPI gaps, confirm strengths, and know exactly where to focus.</p>
+          <div class="rc-next-card-arrow">Explore Acquire →</div>
+        </a>
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-next-card">
+          <div class="rc-next-card-tag">Recommended next</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>Payments hub</h4>
+          <p>Your payment performance data, all in one place. Learn your way around every dashboard — and know what to look for from day one.</p>
+          <div class="rc-next-card-arrow">View Launch →</div>
+        </a>
+
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
+          <div class="rc-next-card-tag">Live session</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
+          <h4>Global Office Hours</h4>
+          <p>Customer Success Office Hours opens the room to you. Pick a date that woks for you, and bring your questions to a live Recurly expert.</p>
+          <div class="rc-next-card-arrow">Register →</div>
+        </a>
+
+      </div>
     </div>
 
-    <!-- Resources -->
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-btn-prev">← Revenue recovery</a>
+      <span class="rc-lp-nav-indicator">5 of 5</span>
+      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
+    </div>
+
     <div class="rc-resources">
-      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
+      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> All your Launchpad resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/docs/renewal-benchmarks" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: renewal benchmarks guide</a>
+        <a href="https://go.recurly.com/Recurly_Navigate-Launchpad-Complete-Cheatsheet.html" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Full Launchpad Cheatsheet</a>
         <a href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Launchpad Metrics Cheatsheet</a>
+        <a href="https://go.recurly.com/recurly_navigate_resource_guide.html" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Navigate Resource Guide</a>
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Support</a>
       </div>
     </div>
 
-    <!-- Footer nav — Course pattern -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
@@ -498,8 +528,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-  </div><!-- /rc-content-wrap -->
-</div><!-- /rc-guide -->
+  </div></div>\`\`\`
 `}</HTMLBlock>
 
 <br />
