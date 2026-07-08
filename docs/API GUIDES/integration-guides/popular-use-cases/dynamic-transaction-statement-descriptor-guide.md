@@ -65,7 +65,7 @@ Recurly, by default, uses your Subscription Plan names or Invoice descriptions a
 
 When customizing your suffix, keep these practices in mind:
 
-- The entire string must not breach \~ 22 characters including separators and spaces.
+- The entire string must not breach \~ 22 characters including prefix, separators, and spaces.
 - Do not include the separator in your suffix (typically an asterisk) - Recurly dynamically adds the asterisk separator depending on your gateway's individual requirements.
 - Do not include your DBA in your suffix -- set your DBA at the Business Entity level.
 - Do not include special characters in your DBA or Suffix. Many gateways and banks do not support these characters, and you may experience errors in processing. Choose Alphanumeric and spaces only.
