@@ -174,7 +174,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   border-radius: 16px; padding: 44px 36px; text-align: center;
   margin-bottom: 32px; border: 2px solid rgba(255,81,38,0.30);
 }
-.rc-celebration-icon { color: #FF5126 !important; font-size: 2.8rem; display: block; justify: center; margin-bottom: 16px; }
+.rc-celebration-icon { color: #FF5126 !important; font-size: 2.8rem; display: block; margin: 0 auto 16px; }
 .rc-celebration-card h2 { font-size: 1.8rem; font-weight: 800; color: #ffffff !important; margin: 0 0 12px; }
 .rc-celebration-card p { font-size: .96rem; color: #D1CFC4 !important; margin: 0 auto; max-width: 560px; line-height: 1.7; }
 
