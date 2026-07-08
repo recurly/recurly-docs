@@ -6,9 +6,13 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+/* ── HOST-THEME BACKGROUND OVERRIDE ── */
+body { background: #ffffff !important; }
+
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
 .rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
@@ -154,6 +158,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-callout-caution{background:#FFFECB;border-left:4px solid #FFD706;}
 .rc-callout-caution .rc-callout-body>strong{color:var(--darkgray);}
 
+.rm-Markdown.markdown-body .rc-callout-caution .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-callout-caution .rc-callout-body a,
+.rc-guide .rc-gw-table a { color: #008CFF !important; border-bottom: 0 !important; }
+
+.rm-Markdown.markdown-body .rc-callout-caution .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide .rc-callout-caution .rc-callout-body a:hover,
+.rc-guide .rc-gw-table a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; color: #0067BE !important; }
+
 .rc-checklist{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:12px;overflow:hidden;margin:20px 0 32px;}
 .rc-checklist-header{padding:14px 22px;background:var(--offblack);display:flex;align-items:center;gap:10px;}
 .rc-checklist-header h4{font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--yellow);margin:0;}
@@ -169,6 +183,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-checklist-text{flex:1;}
 .rc-checklist-text strong{font-size:.9rem;font-weight:700;color:var(--offblack);display:block;margin-bottom:2px;transition:color .18s;}
 .rc-checklist-text span{font-size:.8rem;color:var(--gray);line-height:1.4;display:block;}
+
+.rm-Markdown.markdown-body .rc-checklist-text a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-checklist-text a,
+.rc-guide .rc-gw-table a { color: #008CFF !important; border-bottom: 0 !important; }
+
+.rm-Markdown.markdown-body .rc-checklist-text a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rm-Markdown.markdown-body .rc-guide .rc-gw-table a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide .rc-checklist-text a:hover,
+.rc-guide .rc-gw-table a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; color: #0067BE !important; }
+
 .rc-checklist-footer{padding:10px 22px;background:var(--brightgray);border-top:1px solid var(--lightgray);font-size:.78rem;color:var(--gray);font-weight:600;}
 
 .rc-pricing-card{border-radius:10px;padding:18px 22px;margin-bottom:12px;border:1px solid var(--lightgray);background:var(--offwhite);}
@@ -226,7 +251,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-guide a.rc-oh-btn:hover { background: transparent !important; color: var(--yellow) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
 
 </style>
-
 <div class="rc-guide">
   <div class="rc-top-nav"><a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-back-link">← Back to Launch</a></div>
   <div class="rc-content-wrap">
@@ -234,8 +258,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase One</div>
-      <div class="rc-lp-hero-title"><h1>Final production testing</h1></div>
-      <p>Walk through checkout as a real subscriber to catch payment or compliance issues before they affect live revenue.</p>
+      <div class="rc-lp-hero-title"><h1>Dunning optimization</h1></div>
+      <p>Configure automated payment retries and subscriber communications to recover failed payments without manual intervention.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -243,94 +267,90 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
       <div class="rc-nav-drawer"><div class="rc-nav-drawer-inner"><div class="rc-nav-links">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link"><img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one" class="rc-sticky-link">Path overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-sticky-link rc-sticky-link-active"><img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Final production testing</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-sticky-link"><span class="rc-step-badge">2</span> Dunning optimization</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-sticky-link"><span class="rc-step-badge">1</span> Final production testing</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-sticky-link rc-sticky-link-active"><img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Dunning optimization</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater" class="rc-sticky-link"><span class="rc-step-badge">3</span> Account Updater</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding"  class="rc-sticky-link"><span class="rc-step-badge">4</span> Branding emails & invoices</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-sticky-link"><span class="rc-step-badge">5</span> Gateway Failover</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review"  class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+
       </div></div></div>
     </details>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-flask rc-fa-section"></i> Why test in production?</h2>
-      <p>Testing from your subscriber's perspective surfaces issues your admin view won't show you — expired test cards, missing 3DS flows, and checkout errors that silently block signups. Do this before your first real renewal cycle.</p>
+      <h2><i class="fa-solid fa-rotate rc-fa-section"></i> What dunning does</h2>
+      <p><strong>Dunning</strong> is the automated process of retrying failed payments and notifying subscribers when a charge doesn't go through. Industry-wide, 20-40% of churn is involuntary. Dunning helps to combat this with automated communication and retries. Depending on your plan, Recurly runs either  <strong>Static</strong> or <strong>Intelligent Retries</strong> inside every dunning campaign — your job is to configure the campaign settings and window length.</p>
 
       <div class="rc-video-card">
-        <div class="rc-video-header"><h4>Trail guide: production testing</h4><span>~3 min</span></div>
-        <div class="rc-video-embed"><iframe src="https://share.synthesia.io/embeds/videos/f3384551-b4b2-4ab3-83fa-c8fe6e88c62f" loading="lazy" title="Production Testing" allowfullscreen allow="encrypted-media; fullscreen;"></iframe></div>
-        <div class="rc-video-caption">What to test, how to test it, and what to look for in your Recurly admin.</div>
+        <div class="rc-video-header"><h4>Trail guide: dunning done right</h4><span>~4 min</span></div>
+        <div class="rc-video-embed"><iframe src="https://share.synthesia.io/embeds/videos/7f58d816-a65c-42f4-950d-59b11953d1aa" loading="lazy" title="Dunning" allowfullscreen allow="encrypted-media; fullscreen;"></iframe></div>
+        <div class="rc-video-caption">How to configure retry schedules, email sequences, and expiration behavior for maximum recovery.</div>
       </div>
 
-      <h2><i class="fa-solid fa-list-check rc-fa-section"></i> Run your production test</h2>
-      <p>Use a live card — not a sandbox test card. Run the lowest-price plan available, then cancel and refund immediately after confirming success.</p>
+      <h2><i class="fa-solid fa-gear rc-fa-section"></i> Configure your dunning campaign</h2>
+      <p>Every Recurly account has a default dunning campaign. These steps walk you through optimizing it. You can find more technical details for each step in <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Dunning management</a>.</p>
 
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
-          <div class="rc-step-content"><h4>Complete a live transaction</h4><p>Use a real payment method to sign up for your cheapest active plan. Complete the full checkout flow as a new subscriber would. <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: How to test your gateway</a>.</p></div>
+          <div class="rc-step-content"><h4>Open dunning management</h4><p>Navigate to <strong>Configuration → Dunning Management</strong>. You'll see your default campaign — click into it to edit settings.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
-          <div class="rc-step-content"><h4>Verify the payment in Recurly</h4><p>Log in to your Recurly admin and confirm the transaction shows as successful. Check the invoice and subscription status. <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-management" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Invoice management</a>.</p></div>
+          <div class="rc-step-content"><h4>Set your dunning window</h4><p>Set <strong>28 days</strong> for monthly plans — this fits just inside the 30-day billing cycle and prevents a second invoice generating before the first is resolved. Use <strong>60 days</strong> for plans two months or longer.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
-          <div class="rc-step-content"><h4>Check your confirmation email</h4><p>Verify the post-signup email arrives promptly, displays your plan name, branding, and pricing correctly, and links to your subscriber portal. <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Email templates</a>.</p></div>
+          <div class="rc-step-content"><h4>Configure your email sequence</h4><p>For monthly plans, set up 4-5 dunning emails spaced 4-5 days apart across your 28-window. For annual plans, you'll schedule 8-10 emails spread across 60 days. The first should send immediately on failure; each subsequent email should increase in urgency. Every email must link directly to the subscriber's billing portal so they can update their payment method without contacting support.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">4</div>
-          <div class="rc-step-content"><h4>Refund the test transaction</h4><p>From Recurly, issue and confirm the refund. This keeps your books clean and your test subscriber off your active list. <a href="https://docs.recurly.com/recurly-subscriptions/docs/refund-transaction" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: Refund</a>.</p></div>
+          <div class="rc-step-content"><h4>Set expiration behavior</h4><p>Choose what happens when dunning ends without recovery: cancel immediately, or move to a past-due grace period. For high-value plans, most merchants keep the subscription active and invoice open to give the subscriber more time.</p></div>
         </div>
-        <div class="rc-step">
-          <div class="rc-step-num">5</div>
-          <div class="rc-step-content"><h4>Verify PSD2 / 3DS (EU merchants only)</h4><p>If you process payments from EU subscribers, trigger a transaction that should require 3D Secure authentication. Confirm the challenge flow appears, completes, and the payment succeeds. <a href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs: 3D Secure 2.0 integration guide</a>.</p></div>
-        </div>
-      </div>
-  <div class="rc-callout rc-callout-caution">
-        <div class="rc-callout-icon"><i class="fa-solid fa-book"></i></div>
-        <div class="rc-callout-body"><p><strong>Learn more</strong> about PSD2 and 3DS compliance in <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor"><strong>Recurly Documentation</strong>.</a></p></div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="rc-callout-body"><strong>Run the test on mobile</strong><p>Many checkout issues are device-specific. Use a mobile device and a different browser than your admin setup — this is where subscribers are most likely to encounter friction.</p></div>
+        <div class="rc-callout-body"><strong>Static or Intelligent Retries are already on</strong><p>You don't need to enable retries separately. They run automatically on every failed invoice in your dunning campaign — no setup required. Configure the campaign window and emails, and they'll work around you.</p></div>
       </div>
-    
+
+      <div class="rc-webinar-cta">
+        <div class="rc-webinar-cta-icon"><i class="fa-solid fa-circle-play rc-fa-dark"></i></div>
+        <div class="rc-webinar-cta-body">
+          <p>Want a deeper walkthrough? Watch the <em>Dunning Optimization</em> on-demand webinar for benchmarking tips and advanced recovery strategy.</p>
+          <a href="https://recurly.ondemand.goldcast.io/on-demand/a65f472f-9876-4736-9209-5b7b669de773" target="_blank" rel="noopener noreferrer" class="rc-webinar-btn">Watch on demand →</a>
+        </div>
+      </div>
+
       <div class="rc-checklist">
-        <div class="rc-checklist-header"><i class="fa-solid fa-list-check" style="color:var(--yellow);font-size:1rem;"></i><h4>Production testing checklist</h4></div>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Completed a live test transaction</strong><span>Use your cheapest plan — refund immediately after.</span></div></label>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Confirmed the transaction in Recurly</strong><span>Invoice and subscription status show as successful.</span></div></label>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Refunded the test transaction</strong><span>Confirmed the refund processed in Recurly.</span></div></label>
-        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Verified PSD2 / 3DS authentication</strong><span>EU merchants only. Read <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank" class="rc-inline-link rp-anchor">Recurly Docs</a> for more details.</span></div></label>
+        <div class="rc-checklist-header"><i class="fa-solid fa-list-check" style="color:var(--yellow);font-size:1rem;"></i><h4>Dunning checklist</h4></div>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Dunning window set to 28 days (monthly) or 60 days (longer plans)</strong></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Dunning emails configured with escalating urgency</strong><span>Spaced at least 3–4 days apart. 4-5 over 28 days for monthly, 8-10 over 60 days for annual. Each links to subscriber billing portal.</span></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Expiration behavior set</strong><span>Cancel immediately, or move to past-due grace period.</span></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Dunning email branding matches your other communications</strong></div></label>
         <div class="rc-checklist-footer">Tap each item to mark it complete</div>
       </div>
-</div>
-
- <!-- OH CTA -->
+    </div>
+    
     <div class="rc-oh-cta">
-      <h4><i class="fa-solid fa-headset rc-fa-dark"></i> Questions about Final Production Testing?</h4>
+      <h4><i class="fa-solid fa-headset rc-fa-dark"></i> Questions about Dunning?</h4>
       <p>Our Customer Success team runs weekly <strong>Global Office Hours</strong> sessions where you can bring your real configuration questions — branding, plan structure, dunning setup, migration strategy, pricing model decisions. No agenda required.</p>
       <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
-    </div>
+    </div> 
+
+
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one" class="rc-btn-prev">← Path overview</a>
-      <span class="rc-lp-nav-indicator">1 of 6</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-btn-path">2. Dunning optimization →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-btn-prev">← 1. Final production testing</a>
+      <span class="rc-lp-nav-indicator">2 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater" class="rc-btn-path">3. Account Updater →</a>
     </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-       <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: PSD2 compliance</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/test" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Test gateway</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/checkout#configuration-landing-page" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Checkout configuration</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-test-your-gateway" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: How to test your gateway</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Invoice management</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/refund-transaction" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Refund</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: 3D Secure 2.0 integration guide</a>
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-calendar"></i> Join Global Office Hours</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning management</a>
+        <a href="https://docs.recurly.com/docs/retry-logic" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Intelligent Retries</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
     </div>
@@ -343,8 +363,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-production-testing" class="rc-footer-link">1. Final production testing</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-dunning"  class="rc-footer-link">2. Dunning optimization</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-account-updater" class="rc-footer-link">3. Account Updater</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding" class="rc-footer-link">4. Branding emails & invoices</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-footer-link">5. Gateway Failover</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-branding" class="rc-footer-link">4. Branding emails &amp; invoices</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-footer-link">5. Gateway failover</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-review" class="rc-footer-link">6. Review &amp; resources</a>
         </div>
         <div class="rc-footer-utility">
