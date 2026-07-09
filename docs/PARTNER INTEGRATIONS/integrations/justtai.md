@@ -65,7 +65,7 @@ Recurly listens for two webhook event types from Justt:
 
 `chargeback.created` — fired when a new chargeback dispute is opened<br />`chargeback.updated` — fired when the status of an existing dispute changes
 
-Recurly processes each event independently. If a webhook doesn't include enough data to match a Recurly transaction (for example, no transaction ID is present), the event is stored and reconciled directly through Justt at a later time.
+These events are processed independently and will create a new record in the Justt chargeback index table
 
 ### Chargeback index page
 
