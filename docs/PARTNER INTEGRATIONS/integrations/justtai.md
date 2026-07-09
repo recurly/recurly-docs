@@ -49,17 +49,13 @@ The Justt integration processes chargebacks from the following payment service p
 - PayPal Complete
 - Adyen
 
-Webhooks from PSPs not on this list are acknowledged but not actioned.
-
 ### Chargeback actions
 
 Recurly can be configured to take the following actions when a chargeback dispute is resolved as lost (meaning the subscriber wins the dispute):
 
 - **Create a refund** — Recurly issues a refund invoice against the original transaction
-- **Pause the subscription** — Recurly pauses the associated subscription
 - **Expire the subscription** — Recurly immediately expires the associated subscription
-
-For fraud and service-related chargebacks (as determined by the reason code and card scheme, or Justt's reasonGroup field when Recurly can't make its own determination), Recurly will expire the associated subscription immediately when the dispute is lost.
+- **Manually process chargebacks** - Recurly will only send a webhook notification&#x20;
 
 Chargeback events with statuses other than lost — such as pending, won, or under\_review — are recorded in the chargeback index for visibility but do not trigger subscription actions.
 
@@ -69,7 +65,7 @@ Recurly listens for two webhook event types from Justt:
 
 `chargeback.created` — fired when a new chargeback dispute is opened<br />`chargeback.updated` — fired when the status of an existing dispute changes
 
-Recurly processes each event independently. If a webhook doesn't include enough data to match a Recurly transaction (for example, no transaction ID is present), the event is stored in a pending state and reconciled through a nightly sync job that queries Justt's chargeback API directly.
+Recurly processes each event independently. If a webhook doesn't include enough data to match a Recurly transaction (for example, no transaction ID is present), the event is stored and reconciled directly through Justt at a later time.
 
 ### Chargeback index page
 
