@@ -11,11 +11,33 @@ metadata:
 
 <style>
 body { background: #ffffff !important; }
+
+/* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
 .rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
 /* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
-.rc-guide [class^="fa-"], .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
-.rc-guide .fa-brands, .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+.rc-guide [class^="fa-"],
+.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands,
+.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:     #FFD706;
+  --orange:     #FF8200;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D75;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
+  --retain:     #2DCECE;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #0D0D0B !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
 
 /* ── NAVIGATE MASTER ARMOR ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
@@ -31,20 +53,6 @@ body { background: #ffffff !important; }
   text-underline-offset: 2px !important;
 }
 
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-.rc-guide {
-  --yellow:     #FFD706;
-  --orange:     #FF8200;
-  --offblack:   #0D0D0B;
-  --darkgray:   #32312D;
-  --gray:       #807D75;
-  --lightgray:  #D1CFC4;
-  --brightgray: #F2F1EA;
-  --offwhite:   #FCFBF7;
-  --retain:     #2DCECE;
-  color: #0D0D0B !important; background: #ffffff;
-}
-.rc-guide * { box-sizing: border-box; }
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 .rc-fa-dark { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
@@ -77,6 +85,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FCFBF7; margin: 0 0 14px; }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #D1CFC4; line-height: 1.6; }
+.rc-hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; }
+.rc-hero-stat { text-align: center; padding: 0 16px; }
+.rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
+.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: #FFD706; line-height: 1; margin-bottom: 6px; }
+.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #D1CFC4; line-height: 1.3; }
 
 /* NAV */
 details.rc-sticky-nav-wrap { position: relative; z-index: 1; background-color: #2DCECE; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
@@ -106,6 +119,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 .rc-lp-section > p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
+/* CARD GRID */
+.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 24px; }
+.rc-feature-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
+.rm-Markdown.markdown-body .rc-guide a.rc-feature-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-feature-card { border-bottom: 1px solid #D1CFC4 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-feature-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-feature-card:hover { border-color: #2DCECE !important; border-bottom: 1px solid #2DCECE !important; box-shadow: 0 4px 16px rgba(45,206,206,0.15); transform: translateY(-2px); }
+.rc-feature-icon { font-size: 1.4rem; color: #0D0D0B; }
+.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
+.rc-feature-card p { font-size: .88rem; color: #807D75; line-height: 1.55; margin: 0; }
+
 /* TABLE */
 .rc-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin: 0 0 24px; border-radius: 10px; overflow: hidden; border: 1px solid #D1CFC4; }
 .rc-table thead { background: #0D0D0B; color: #FCFBF7; }
@@ -115,14 +139,23 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-table tbody td { padding: 12px 16px; color: #32312D; border-bottom: 1px solid #D1CFC4; vertical-align: top; }
 .rc-table tbody td strong { color: #0D0D0B; }
 
-/* CARD GRID */
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 24px; }
-.rc-feature-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rc-guide a.rc-feature-card { border-bottom: 1px solid #D1CFC4 !important; }
-.rc-guide a.rc-feature-card:hover { border-color: #2DCECE !important; border-bottom: 1px solid #2DCECE !important; box-shadow: 0 4px 16px rgba(45,206,206,0.15); transform: translateY(-2px); }
-.rc-feature-icon { font-size: 1.4rem; color: #0D0D0B; }
-.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: #807D75; line-height: 1.55; margin: 0; }
+/* CHECKLIST */
+.rc-checklist { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; overflow: hidden; margin: 20px 0 24px; }
+.rc-checklist-header { padding: 14px 22px; background: #0D0D0B; display: flex; align-items: center; gap: 10px; }
+.rc-checklist-header h4 { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #FFD706; margin: 0; }
+label.rc-checklist-item { padding: 14px 22px; border-bottom: 1px solid #F2F1EA; display: flex; align-items: flex-start; gap: 14px; cursor: pointer; transition: background .15s; }
+label.rc-checklist-item:last-of-type { border-bottom: none; }
+label.rc-checklist-item:hover { background: #F2F1EA; }
+label.rc-checklist-item input[type="checkbox"] { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
+.rc-checkbox-box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid #D1CFC4; flex-shrink: 0; background: #fff; display: flex; align-items: center; justify-content: center; transition: all .18s; margin-top: 1px; }
+label.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box { background: #0D0D0B; border-color: #0D0D0B; }
+label.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box::after { content: '✓'; color: #FFD706; font-size: .75rem; font-weight: 800; line-height: 1; }
+label.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-text strong { text-decoration: line-through; color: #807D75; }
+label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: #EFFAEA; }
+.rc-checklist-text { flex: 1; }
+.rc-checklist-text strong { font-size: .9rem; font-weight: 700; color: #0D0D0B; display: block; margin-bottom: 2px; transition: color .18s; }
+.rc-checklist-text span { font-size: .8rem; color: #807D75; line-height: 1.4; display: block; }
+.rc-checklist-footer { padding: 10px 22px; background: #F2F1EA; border-top: 1px solid #D1CFC4; font-size: .78rem; color: #807D75; font-weight: 600; }
 
 /* CALLOUTS */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 0 0 16px; display: flex; gap: 14px; align-items: flex-start; }
@@ -198,8 +231,24 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 32px; } .rc-lp-hero-title h1 { font-size: 1.8rem; }
   .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
+  .rc-card-grid { grid-template-columns: 1fr; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; } .rc-lp-nav-indicator { width: 100%; text-align: center; }
+  .rc-oh-cta { padding: 24px 20px; }
 }
+
+/* STAT STRIP */
+.rc-stat-strip { display: grid; grid-template-columns: repeat(2, 1fr); background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; overflow: hidden; margin: 0 0 28px; }
+.rc-stat-tile { padding: 24px 20px; text-align: center; }
+.rc-stat-tile + .rc-stat-tile { border-left: 1px solid #D1CFC4; }
+.rc-stat-tile-num { font-size: 2.5rem; font-weight: 800; color: #2DCECE; line-height: 1; margin-bottom: 4px; }
+.rc-stat-tile-label { font-size: .9rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: #807D75; margin-bottom: 10px; }
+.rc-stat-tile-context { font-size: .88rem; color: #32312D; line-height: 1.55; padding-top: 10px; border-top: 1px solid #F2F1EA; }
+  
+.rm-Markdown.markdown-body .rc-stat-strip a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-stat-strip a { color: #008CFF !important; border-bottom: 0 !important; }
+
+.rm-Markdown.markdown-body .rc-stat-strip a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-stat-strip a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 </style>
 
 <div class="rc-guide">
@@ -221,8 +270,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain • Dunning 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Email messaging strategy</h1></div>
-      <p>What you say — and how urgency escalates across the sequence — is just as important as how the email looks.</p>
+      <div class="rc-lp-hero-title"><h1>Measuring your performance</h1></div>
+      <p>The changes you've made only create value if you can see them working. Here's where to look, what to track, and how often to review.</p>
       
     </div>
 
@@ -241,7 +290,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           Path overview
         </a>
         
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-sticky-link">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-sticky-link">
           <span class="rc-step-badge">1</span> Understanding Dunning windows
         </a>
         
@@ -257,8 +306,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <span class="rc-step-badge">4</span> Email configuration
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Email messaging strategy
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-sticky-link">
+          <span class="rc-step-badge">5</span> Email messaging strategy
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-sticky-link">
@@ -269,8 +318,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <span class="rc-step-badge">7</span> Campaign configuration
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-sticky-link">
-          <span class="rc-step-badge">8</span> Measuring your performance
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Measuring your performance
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-sticky-link">
@@ -280,147 +329,204 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div></div></div>
     </details>
 
-    <!-- MESSAGE ARC -->
+    <!-- WHY IT MATTERS — STATS -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-arrow-trend-up rc-fa-section"></i> The message arc — escalating urgency across the sequence</h2>
-      <p>Each email in your dunning sequence should feel different from the last. Early emails are low-pressure reminders. Later emails communicate real consequences. Reusing the same message — or the same subject line — trains subscribers to ignore it.</p>
+      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> What optimized Dunning looks like in practice</h2>
+      <p>These results come from merchants who <strong>overhauled their full dunning setup</strong> — window length, email frequency, branding, and personalization — at once. Use them as a benchmark for what could be possible (depending on your current settings), and rely on your Dunning Effectiveness dashboard to track your own progress.</p>
 
-      <table class="rc-table">
-        <thead>
-          <tr><th>Email</th><th>Tone</th><th>Subject line approach</th><th>CTA</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Day 0</strong></td>
-            <td>Friendly, low-pressure</td>
-            <td>"Heads up — your payment didn't go through"</td>
-            <td>Update your payment method</td>
-          </tr>
-          <tr>
-            <td><strong>Day 4–5</strong></td>
-            <td>Helpful, mild urgency</td>
-            <td>"We're still having trouble processing your payment"</td>
-            <td>Fix it today</td>
-          </tr>
-          <tr>
-            <td><strong>Day 10–12</strong></td>
-            <td>Direct, value reminder</td>
-            <td>"Your [Product] access is at risk"</td>
-            <td>Keep your subscription active</td>
-          </tr>
-          <tr>
-            <td><strong>Day 20–22</strong></td>
-            <td>Urgent, consequence-forward</td>
-            <td>"Final notice: your subscription expires in [X] days"</td>
-            <td>Reactivate now</td>
-          </tr>
-          <tr>
-            <td><strong>Final email</strong></td>
-            <td>Last chance</td>
-            <td>"Your [Product] subscription has been cancelled"</td>
-            <td>Reactivate your account</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="rc-callout-body">
-          <strong>Use the subscriber's product name, not a generic label</strong>
-          <p>Emails that reference what the subscriber will lose — their specific plan name, their content library, their team workspace — outperform generic "your subscription" language. It makes the stakes concrete and personal.</p>
+      <div class="rc-stat-strip">
+        <div class="rc-stat-tile">
+          <div class="rc-stat-tile-num">+12%</div>
+          <div class="rc-stat-tile-label">Revenue lift in 3 months</div>
+          <div class="rc-stat-tile-context">Across <strong>a group of 20 merchants</strong> who worked with Recurly's Customer Success team to overhaul their dunning setup — including branding, window length, and email frequency — revenue lifted 12% within three months of launch. <strong><br><br>Read the <a href="https://recurly.com/content/subscription-case-study-dunning-workshop-to-reduce-customer-churn/" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">case study</a> to learn more.</strong></div>
+        </div>
+        <div class="rc-stat-tile">
+          <div class="rc-stat-tile-num">+279%</div>
+          <div class="rc-stat-tile-label">Recovered revenue in 30 days</div>
+          <div class="rc-stat-tile-context"><strong>A music education subscription service</strong> implemented dunning best practices from scratch through a Recurly Navigate session — setting up separate cycles for trials, monthly, and annual plans — and saw this result in their first month.<br><br><strong><a href="https://recurly.com/resources/case-study/my-music-workshop/" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Check out their story</a> for more details.</strong></div>
         </div>
       </div>
-    </div>
 
-    <!-- SUBJECT LINES & CTAS -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-pen-to-square rc-fa-section"></i> Subject lines and CTAs that drive action</h2>
-      <p>The subject line determines whether the email gets opened. The CTA determines whether the subscriber acts. Both deserve as much attention as the email body.</p>
+      <!-- WHERE TO FIND -->
+      <div class="rc-lp-section">
+        <h2><i class="fa-solid fa-magnifying-glass-chart rc-fa-section"></i> Where to find your dunning analytics</h2>
+        <p>Recurly surfaces dunning performance in two places. Use both — they answer different questions.</p>
 
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-circle-check" style="color:#5DC32E;"></i></div>
-          <h4>Subject lines that work</h4>
-          <p>Specific over vague — "Your payment for [Plan] didn't go through" beats "Action required." Include the subscriber's name or amount where possible. Keep it under 50 characters so it renders fully on mobile.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-circle-xmark" style="color:#FF5126;"></i></div>
-          <h4>Subject lines that don't</h4>
-          <p>"Important notice," "Account update required," and "Payment failed" are overused and feel automated. They get filtered or ignored. Be specific about what failed and what the subscriber needs to do.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-circle-check" style="color:#5DC32E;"></i></div>
-          <h4>CTAs that convert</h4>
-          <p>Action-oriented and specific: "Update your payment method," "Fix it now," "Keep my subscription." Button text should match the urgency of the email — early emails can be calm, final emails should be direct.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-circle-xmark" style="color:#FF5126;"></i></div>
-          <h4>CTAs that don't</h4>
-          <p>"Click here," "Submit," and "Learn more" are vague and passive. They don't communicate what happens next or why the subscriber should act. Always use a verb that describes the outcome.</p>
+        <div class="rc-card-grid">
+          <div class="rc-feature-card">
+            <div class="rc-feature-icon"><i class="fa-solid fa-chart-bar"></i></div>
+            <h4>Dunning Benchmarks</h4>
+            <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Benchmarks</strong>. Shows your recovery rate over time compared to Recurly's industry benchmark. Use this monthly to track whether your rate is trending up after configuration changes, and to see how you compare to peers.</p>
+          </div>
+          <div class="rc-feature-card">
+            <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
+            <h4>Dunning Summary</h4>
+            <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Summary</strong>. Shows total recovered revenue broken down by recovery method — intelligent retries, Account Updater, customer updates, and manual collection. Use this to understand how your revenue is being recovered.</p>
+          </div>
+          <div class="rc-feature-card">
+            <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
+            <h4>Compare Campaigns</h4>
+            <p>Found at <strong>Analytics → Dunning Campaigns → Compare Campaigns</strong>. Shows recovery rate, recovered revenue, and dunning lifecycle data side by side for two campaigns or two versions of the same campaign. Use this to identify which segment is underperforming — and when during the dunning cycle recoveries are happening — so you can make targeted adjustments rather than changing everything at once.</p>
+          </div>
+
+          <div class="rc-feature-card">
+            <div class="rc-feature-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+            <h4>Recovered revenue report</h4>
+            <p>Found at <strong>Analytics → Churn Management → Recovered Revenue</strong>. Shows total revenue recovered through dunning by time period. Use this alongside Dunning Benchmarks to connect recovery rate improvements to actual dollar impact for your business.</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- REFLECTION -->
-    <div class="rc-reflect-card">
-      <span class="rc-reflect-label">Reflection</span>
-      <h4>Read through your current dunning email sequence from start to finish — does each email feel meaningfully different from the one before it?</h4>
-      <p>If the subject lines, tone, or CTA copy are similar across emails, subscribers will stop engaging after the first one. Distinct messaging at each stage is what keeps the sequence effective through to the window close.</p>
-    </div>
+      <!-- WHAT TO TRACK -->
+      <div class="rc-lp-section">
+        <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> What to track and what good looks like</h2>
+        <p>Not all metrics are equally actionable. Focus on these four — they cover the full recovery funnel from first failure to recovered payment.</p>
 
-    <!-- OH CTA -->
-    <div class="rc-oh-cta">
-      <h4><i class="fa-solid fa-headset rc-fa-dark"></i>Want a CSM to review your email copy?</h4>
-      <p>Bring your current dunning sequence to <strong>Global Office Hours</strong>. Our CSMs can review your subject lines, CTAs, and message arc and give direct feedback on what to change.</p>
-      <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Join Global Office Hours →</a>
-    </div>
+        <table class="rc-table">
+          <thead>
+            <tr><th>Metric</th><th>Where to find it</th><th>What good looks like</th><th>What to do if it's low</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Recovery rate</strong></td>
+              <td>Dunning Benchmarks</td>
+              <td>At or above percentile ranking; compare against industry median</td>
+              <td>Review window length, email cadence, and campaign assignments</td>
+            </tr>
+            <tr>
+              <td><strong>Revenue recovery</strong></td>
+              <td>Churn Management</td>
+              <td>Growing month-over-month as setup improves</td>
+              <td>Cross-reference with recovery rate — flat revenue on improving rate may indicate volume decline</td>
+            </tr>
+            <tr>
+              <td><strong>Subscriptions saved</strong></td>
+              <td>Subscription Details</td>
+              <td>Growing number of subscriptions saved through dunning efforts; KPIs show a low "past due" count relative to "saved" count</td>
+              <td>Review which subscriber cohorts aren't recovering and consider creating targeted dunning campaigns for those segments; check if campaign assignments cover the right plans</td>
+            </tr>
+            <tr>
+              <td><strong>Dunning lifecycle by day (recovery timing)</strong></td>
+              <td>Compare Campaigns</td>
+              <td>Most recoveries happening earlier in the dunning cycle, not concentrated at the very end (last few days); shows healthy headroom in the window</td>
+              <td>If 10%+ of recoveries happen in the last few days of the cycle, lengthen the dunning window. If few recoveries happen at all late in the cycle, the window may be appropriate for your business</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-btn-prev">← Email configuration</a>
-      <span class="rc-lp-nav-indicator">5 of 9</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-btn-path">Next: Multiple campaigns →</a>
-    </div>
-
-    <div class="rc-resources">
-      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
-      <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning management</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Email templates</a>
-        <a href="https://recurly.ondemand.goldcast.io/on-demand/a65f472f-9876-4736-9209-5b7b669de773" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-circle-play"></i> On-demand webinar: Stop the Leak</a>
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Join Global Office Hours</a>
-        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
+        <div class="rc-callout rc-callout-tip">
+          <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <div class="rc-callout-body">
+            <strong>Always compare per campaign, not in aggregate</strong>
+            <p>Your overall recovery rate is a blend of all campaigns. A strong monthly campaign can mask a poor annual one. Review Dunning Summary by campaign every month so you can see exactly which segment is underperforming and make targeted adjustments.</p>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <!-- REVIEW CADENCE CHECKLIST -->
+      <div class="rc-lp-section">
+        <h2><i class="fa-solid fa-calendar-check rc-fa-section"></i> Your review cadence</h2>
+        <p>Dunning is not a set-and-forget feature. The merchants who get the most out of it treat it like any other performance channel — checking in regularly and adjusting when the data signals a gap.</p>
+
+        <div class="rc-checklist">
+          <div class="rc-checklist-header">
+            <i class="fa-solid fa-list-check" style="color: #FFD706; font-size: 1rem;"></i>
+            <h4>Dunning performance review checklist</h4>
+          </div>
+          <label class="rc-checklist-item">
+            <input type="checkbox">
+            <div class="rc-checkbox-box"></div>
+            <div class="rc-checklist-text">
+              <strong>Monthly: check Dunning Benchmarks</strong>
+              <span>Review recovery rate trend and compare your percentile ranking to your industry benchmark. Flag any month-over-month decline for investigation.</span>
+            </div>
+          </label>
+          <label class="rc-checklist-item">
+            <input type="checkbox">
+            <div class="rc-checkbox-box"></div>
+            <div class="rc-checklist-text">
+              <strong>Monthly: review Dunning Summary by campaign</strong>
+              <span>Compare recovery rates across campaigns. If one campaign is significantly below others, investigate window length, email cadence, and plan assignments.</span>
+            </div>
+          </label>
+          <label class="rc-checklist-item">
+            <input type="checkbox">
+            <div class="rc-checklist-text">
+              <strong>Quarterly: verify all plans are assigned to the correct campaign</strong>
+              <span>New plans default to the default campaign. A quarterly audit catches any that slipped through since the last review.</span>
+            </div>
+          </label>
+          <label class="rc-checklist-item">
+            <input type="checkbox">
+            <div class="rc-checklist-text">
+              <strong>Annually: full dunning setup review</strong>
+              <span>Review window lengths, email sequences, branding, and campaign structure. If you've added new plans or billing frequencies in the past year, confirm everything is still correctly configured.</span>
+            </div>
+          </label>
+          <div class="rc-checklist-footer">Use this checklist each review cycle to stay on top of your dunning performance.</div>
+        </div>
+      </div>
+
+      <!-- REFLECTION -->
+      <div class="rc-reflect-card">
+        <span class="rc-reflect-label">Reflection</span>
+        <h4>What's your current dunning recovery rate — and do you know how it breaks down by campaign?</h4>
+        <p>If you've never looked at per-campaign recovery data, that's your starting point. Pull the Dunning Summary report today and note your baseline. Every optimization you've made in this path should produce a measurable improvement from here.</p>
+      </div>
+
+      <!-- OH CTA -->
+      <div class="rc-oh-cta">
+        <h4><i class="fa-solid fa-headset rc-fa-dark"></i>Not sure how to interpret your dunning data?</h4>
+        <p>Bring your Dunning Benchmarks and Summary reports to <strong>Global Office Hours</strong>. Our CSMs can help you read the data, identify what's working, and prioritize what to change next.</p>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Join Global Office Hours →</a>
+      </div>
+
+      <div class="rc-lp-nav">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-btn-prev">← Campaign configuration</a>
+        <span class="rc-lp-nav-indicator">8 of 9</span>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-btn-path">Continue to Review &amp; Resources →</a>
+      </div>
+
+      <div class="rc-resources">
+        <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
+        <div class="rc-resource-links">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-benchmarks" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning benchmarks</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning management</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/recovered-revenue" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Recovered revenue report</a>
+          <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Join Global Office Hours</a>
+          <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
+        </div>
+      </div>
 
 <!-- FOOTER -->
-    <div class="rc-footer-nav">
-      <div class="rc-footer-links">
+      <div class="rc-footer-nav">
+        <div class="rc-footer-links">
 
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Dunning 101</span>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-footer-link">Path overview</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-footer-link">1. Understanding Dunning windows</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-footer-link">2. Dunning window configuration</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-footer-link">3. Email branding</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-footer-link">4. Email configuration</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-footer-link">5. Email messaging strategy</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-footer-link">6. Multiple campaigns</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-footer-link">7. Campaign configuration</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-footer-link">8. Measuring your performance</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-footer-link">9. Review & resources</a>
+          <div class="rc-footer-section">
+            <span class="rc-footer-label">Dunning 101</span>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-footer-link">Path overview</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-footer-link">1. Understanding Dunning windows</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-footer-link">2. Dunning window configuration</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-footer-link">3. Email branding</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-footer-link">4. Email configuration</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-footer-link">5. Email messaging strategy</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-footer-link">6. Multiple campaigns</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-footer-link">7. Campaign configuration</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-footer-link">8. Measuring your performance</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-footer-link">9. Review &amp; resources</a>
+          </div>
+
+          <div class="rc-footer-utility">
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
+              <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
+            </a>
+            <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+          </div>
+
         </div>
-
-        <div class="rc-footer-utility">
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
-            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
-          </a>
-          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
-        </div>
-
       </div>
     </div>
   </div>
-</div>
 `}</HTMLBlock>
 
 <br />
