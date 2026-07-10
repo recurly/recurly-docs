@@ -34,7 +34,7 @@ next:
   <li>Account Updater must be activated on the <a href="https://recurly.recurly.com/configuration/payments_settings" target="_blank">Payments Settings</a> page in Recurly</li>
   <li>To enable Mastercard® updates, a Mastercard® Merchant Category Code (MCC) is required</li>
   <li>To enable American Express® Cardrefresher, a direct American Express® merchant account and SE number are required. Your business must be located in the United States</li>
-  <li>For Adyen Real Time Account Updater (RTAU), Adyen must be your primary gateway and you must be processing raw card data through Recurly (not gateway tokens or network tokens)</li>
+  <li>For Adyen Real Time Account Updater (RTAU), Adyen must be your only gateway and you must be processing raw card data through Recurly (not gateway tokens or network tokens). You can use standard Account Updater even if you are using Adyen as a gateway.</li>
 </ul>
 
 ### Limitations
