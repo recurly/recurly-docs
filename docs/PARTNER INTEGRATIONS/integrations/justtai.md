@@ -95,14 +95,12 @@ To re-enable a previously disabled integration, click the Re-enable button on th
 **Can I use Recurly's native chargeback handling and Justt at the same time?**
 No. Recurly can only use one chargeback management system per site at a time. When the Justt integration is active, Recurly stops processing gateway-level chargeback events and relies solely on Justt webhooks instead.
 
-**What happens if Justt sends a webhook for a transaction Recurly can't find?**
-If the initial transaction lookup fails (for example, if the webhook doesn't include a Recurly transaction ID), Recurly stores the event in a pending state. A nightly reconciliation job queries Justt's chargeback API for the past 24 hours and attempts to match any unresolved events. Once a match is found, the chargeback is processed normally.
+**What happens to my existing chargebacks if I disable the integration?**<br />Disabling the integration stops the processing of new webhooks from Justt. Existing chargeback records in Recurly are not deleted and remain visible on the index page. If there are pending chargebacks, those will continue to be processed between the banks and gateways, however, updates on those chargebacks will not be persisted in Recurly.
 
-**What happens to my existing chargebacks if I disable the integration?**
-Disabling the integration stops the processing of new webhooks from Justt. Existing chargeback records in Recurly are not deleted and remain visible on the index page. Recurly will not re-process those chargebacks through native gateway handling.
+**What does "lost" mean in the context of a Justt chargeback?**<br />A chargeback with a `lost` status means the subscriber's dispute was upheld by their card issuer — the merchant lost the case. This is the status that triggers Recurly to take action (refund and/or expire) based on your configured settings.
 
-**Does the Justt integration support multi-currency merchants?**
-Yes. Recurly uses the transaction's own currency when creating chargeback records, regardless of what currency the Justt webhook payload includes.
+**Why do I need to recreate my API key when I re-enable the integration?**
+When you disable the Justt integration, Recurly invalidates the API key that was previously shared with Justt. This is a security measure to ensure that a dormant key can't be used to access your Recurly data while the integration is inactive. When you re-enable, you'll need to create a fresh key and update it in your Justt account settings.
 
-**What card networks are supported for fraud and service reason code mapping?**
-Recurly maps fraud and service reason codes for Visa, Mastercard, American Express, Discover, Diners Club, Elo, JCB, and other major card networks. When a reason code and card scheme can't be mapped internally, Recurly falls back to Justt's reasonGroup field (fraud, service, processingError, or general) to determine the appropriate subscription action.
+**What's the difference between the "Created" date and the "Posting Date" on the chargeback index?**
+The "Created" date reflects when Recurly received and recorded the chargeback event. The "Posting Date" is the date the chargeback was formally reported to Justt by the card network — this date comes directly from Justt's webhook payload and may be earlier than the created date in Recurly.
