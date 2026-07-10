@@ -24,33 +24,26 @@ body { background: #ffffff !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow:     #FFD706;
-  --orange:     #FF8200;
-  --offblack:   #0D0D0B;
-  --darkgray:   #32312D;
-  --gray:       #807D75;
-  --lightgray:  #D1CFC4;
-  --brightgray: #F2F1EA;
-  --offwhite:   #FCFBF7;
-  --retain:     #2DCECE;
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
+  --offwhite:  #FCFBF7;
+  --retain:    #2DCECE;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #32312D !important;
+  color: #0D0D0B !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
 
 /* ── NAVIGATE MASTER ARMOR ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a, .rc-guide a:link, .rc-guide a:visited, .rc-guide a:active {
-  color: #008CFF !important;
+.rc-guide a, .rc-guide a:link, .rc-guide a:visited, .rc-guide a:hover, .rc-guide a:active {
   text-decoration: none !important; text-decoration-line: none !important;
   text-decoration-color: transparent !important; text-underline-offset: unset !important; border-bottom: 0 !important;
-}
-.rc-guide a:hover {
-  color: #0067BE !important;
-  text-decoration: underline !important;
-  text-decoration-color: #008CFF !important;
-  text-underline-offset: 2px !important;
 }
 
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
@@ -61,7 +54,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; transition: color .2s; }
+.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; transition: color .2s; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
@@ -122,13 +115,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* CARD GRID */
 .rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 24px; }
 .rc-feature-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rm-Markdown.markdown-body .rc-guide a.rc-feature-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-feature-card { border-bottom: 1px solid #D1CFC4 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-feature-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-feature-card:hover { border-color: #2DCECE !important; border-bottom: 1px solid #2DCECE !important; box-shadow: 0 4px 16px rgba(45,206,206,0.15); transform: translateY(-2px); }
+.rc-feature-card:hover { border-color: #2DCECE; box-shadow: 0 4px 16px rgba(45,206,206,0.15); transform: translateY(-2px); }
 .rc-feature-icon { font-size: 1.4rem; color: #0D0D0B; }
 .rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: #807D75; line-height: 1.55; margin: 0; }
+.rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; }
 
 /* TABLE */
 .rc-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin: 0 0 24px; border-radius: 10px; overflow: hidden; border: 1px solid #D1CFC4; }
@@ -150,12 +140,12 @@ label.rc-checklist-item input[type="checkbox"] { position: absolute; opacity: 0;
 .rc-checkbox-box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid #D1CFC4; flex-shrink: 0; background: #fff; display: flex; align-items: center; justify-content: center; transition: all .18s; margin-top: 1px; }
 label.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box { background: #0D0D0B; border-color: #0D0D0B; }
 label.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box::after { content: '✓'; color: #FFD706; font-size: .75rem; font-weight: 800; line-height: 1; }
-label.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-text strong { text-decoration: line-through; color: #807D75; }
-label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: #EFFAEA; }
+label.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-text strong { text-decoration: line-through; color: #807D73; }
+label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(45,206,206,0.06); }
 .rc-checklist-text { flex: 1; }
 .rc-checklist-text strong { font-size: .9rem; font-weight: 700; color: #0D0D0B; display: block; margin-bottom: 2px; transition: color .18s; }
-.rc-checklist-text span { font-size: .8rem; color: #807D75; line-height: 1.4; display: block; }
-.rc-checklist-footer { padding: 10px 22px; background: #F2F1EA; border-top: 1px solid #D1CFC4; font-size: .78rem; color: #807D75; font-weight: 600; }
+.rc-checklist-text span { font-size: .8rem; color: #807D73; line-height: 1.4; display: block; }
+.rc-checklist-footer { padding: 10px 22px; background: #F2F1EA; border-top: 1px solid #D1CFC4; font-size: .78rem; color: #807D73; font-weight: 600; }
 
 /* CALLOUTS */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 0 0 16px; display: flex; gap: 14px; align-items: flex-start; }
@@ -165,32 +155,46 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: #EFFAE
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
 .rc-callout-tip { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
 .rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
-.rc-callout-caution { background: var(--warning-bg); border-left: 4px solid #FFD706; }
-.rc-callout-caution .rc-callout-body > strong { color: #32312D; }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
+.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; color: #0067BE !important; }
+
+/* OH CTA */
+.rc-oh-cta { background: #0D0D0B; border: 2px solid #FFD706; border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
+.rc-oh-cta h4 { color: #FFD706; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; }
+.rc-oh-cta p { color: #D1CFC4; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
+.rc-oh-cta p strong { color: #FCFBF7; }
+.rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-oh-btn { background: #FFD706; color: #0D0D0B !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; transition: all .2s; }
+.rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
+
+/* REFLECT CARD */
+.rc-reflect-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-left: 4px solid #FFD706; border-radius: 14px; padding: 24px 28px; margin: 0 0 32px; }
+.rc-reflect-label { display: inline-block; background: #FFD706; color: #0D0D0B; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .6px; padding: 3px 10px; border-radius: 5px; margin-bottom: 12px; }
+.rc-reflect-card h4 { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 10px; line-height: 1.4; }
+.rc-reflect-card p { font-size: .9rem; color: #807D73; line-height: 1.6; margin: 0; }
 
 /* PATH NAV */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #D1CFC4; letter-spacing: .5px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; text-decoration: none !important; }
+.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; text-decoration: none !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; transition: all .2s; text-decoration: none !important; }
+.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; transition: all .2s; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-path:hover { background: transparent !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
 /* ── RESOURCES ── */
 .rc-resources { background: #F2F1EA; border-left: 4px solid #2DCECE; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
-.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D75; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-resource-link {
-  color: #807D75 !important; text-decoration: underline !important; text-underline-offset: 3px;
+  color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px;
   text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem;
   transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
@@ -203,12 +207,12 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: #EFFAE
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F2F1EA; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-footer-nav a.rc-footer-link {
-  color: #807D75 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem;
+.rc-guide a.rc-footer-link {
+  color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem;
   transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-footer-nav a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F2F1EA; }
@@ -227,14 +231,14 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: #EFFAE
 .rc-stat-tile { padding: 24px 20px; text-align: center; }
 .rc-stat-tile + .rc-stat-tile { border-left: 1px solid #D1CFC4; }
 .rc-stat-tile-num { font-size: 2.5rem; font-weight: 800; color: #2DCECE; line-height: 1; margin-bottom: 4px; }
-.rc-stat-tile-label { font-size: .9rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: #807D75; margin-bottom: 10px; }
+.rc-stat-tile-label { font-size: .9rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: #807D73; margin-bottom: 10px; }
 .rc-stat-tile-context { font-size: .88rem; color: #32312D; line-height: 1.55; padding-top: 10px; border-top: 1px solid #F2F1EA; }
   
-.rm-Markdown.markdown-body .rc-guide .rc-stat-strip a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rm-Markdown.markdown-body .rc-stat-strip a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-stat-strip a { color: #008CFF !important; border-bottom: 0 !important; }
 
-.rm-Markdown.markdown-body .rc-guide .rc-stat-strip a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-stat-strip a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
+.rm-Markdown.markdown-body .rc-stat-strip a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-stat-strip a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; color: #0067BE !important; }
 </style>
 
 <div class="rc-guide">
@@ -324,197 +328,197 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: #EFFAE
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">+12%</div>
           <div class="rc-stat-tile-label">Revenue lift in 3 months</div>
-          <div class="rc-stat-tile-context">Across <strong>a group of 20 merchants</strong> who worked with Recurly's Customer Success team to overhaul their dunning setup — including branding, window length, and email frequency — revenue lifted 12% within three months of launch. <strong><br><br>Read the <a href="https://recurly.com/content/subscription-case-study-dunning-workshop-to-reduce-customer-churn/" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">case study</a> to learn more.</strong></div>
+          <div class="rc-stat-tile-context">Across <strong>a group of 20 merchants</strong> who worked with Recurly's Customer Success team to overhaul their dunning setup — including branding, window length, and email frequency — revenue lifted 12% within three months of launch. <strong><br><br>Read the <a href="https://recurly.com/content/subscription-case-study-dunning-workshop-to-reduce-customer-churn/" target="_blank" rel="noopener noreferrer">case study</a> to learn more.</strong></div>
         </div>
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">+279%</div>
           <div class="rc-stat-tile-label">Recovered revenue in 30 days</div>
-          <div class="rc-stat-tile-context"><strong>A music education subscription service</strong> implemented dunning best practices from scratch through a Recurly Navigate session — setting up separate cycles for trials, monthly, and annual plans — and saw this result in their first month.<br><br><strong><a href="https://recurly.com/resources/case-study/my-music-workshop/" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Check out their story</a> for more details.</strong></div>
+          <div class="rc-stat-tile-context"><strong>A music education subscription service</strong> implemented dunning best practices from scratch through a Recurly Navigate session — setting up separate cycles for trials, monthly, and annual plans — and saw this result in their first month.<br><br><strong><a href="https://recurly.com/resources/case-study/my-music-workshop/" target="blank" rel="noopener noreferrer">Check out their story</a> for more details.</strong></div>
         </div>
       </div>
 
-      <!-- WHERE TO FIND -->
-      <div class="rc-lp-section">
-        <h2><i class="fa-solid fa-magnifying-glass-chart rc-fa-section"></i> Where to find your dunning analytics</h2>
-        <p>Recurly surfaces dunning performance in two places. Use both — they answer different questions.</p>
+    <!-- WHERE TO FIND -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-magnifying-glass-chart rc-fa-section"></i> Where to find your dunning analytics</h2>
+      <p>Recurly surfaces dunning performance in two places. Use both — they answer different questions.</p>
 
-        <div class="rc-card-grid">
+      <div class="rc-card-grid">
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-chart-bar"></i></div>
+          <h4>Dunning Benchmarks</h4>
+          <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Benchmarks</strong>. Shows your recovery rate over time compared to Recurly's industry benchmark. Use this monthly to track whether your rate is trending up after configuration changes, and to see how you compare to peers.</p>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
+          <h4>Dunning Summary</h4>
+          <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Summary</strong>. Shows total recovered revenue broken down by recovery method — intelligent retries, Account Updater, customer updates, and manual collection. Use this to understand how your revenue is being recovered.</p>
+        </div>
           <div class="rc-feature-card">
-            <div class="rc-feature-icon"><i class="fa-solid fa-chart-bar"></i></div>
-            <h4>Dunning Benchmarks</h4>
-            <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Benchmarks</strong>. Shows your recovery rate over time compared to Recurly's industry benchmark. Use this monthly to track whether your rate is trending up after configuration changes, and to see how you compare to peers.</p>
-          </div>
-          <div class="rc-feature-card">
-            <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
-            <h4>Dunning Summary</h4>
-            <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Summary</strong>. Shows total recovered revenue broken down by recovery method — intelligent retries, Account Updater, customer updates, and manual collection. Use this to understand how your revenue is being recovered.</p>
-          </div>
-          <div class="rc-feature-card">
-            <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
-            <h4>Compare Campaigns</h4>
-            <p>Found at <strong>Analytics → Dunning Campaigns → Compare Campaigns</strong>. Shows recovery rate, recovered revenue, and dunning lifecycle data side by side for two campaigns or two versions of the same campaign. Use this to identify which segment is underperforming — and when during the dunning cycle recoveries are happening — so you can make targeted adjustments rather than changing everything at once.</p>
-          </div>
-
-          <div class="rc-feature-card">
-            <div class="rc-feature-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-            <h4>Recovered revenue report</h4>
-            <p>Found at <strong>Analytics → Churn Management → Recovered Revenue</strong>. Shows total revenue recovered through dunning by time period. Use this alongside Dunning Benchmarks to connect recovery rate improvements to actual dollar impact for your business.</p>
-          </div>
+          <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
+          <h4>Compare Campaigns</h4>
+          <p>Found at <strong>Analytics → Dunning Campaigns → Compare Campaigns</strong>. Shows recovery rate, recovered revenue, and dunning lifecycle data side by side for two campaigns or two versions of the same campaign. Use this to identify which segment is underperforming — and when during the dunning cycle recoveries are happening — so you can make targeted adjustments rather than changing everything at once.</p>
         </div>
-      </div>
 
-      <!-- WHAT TO TRACK -->
-      <div class="rc-lp-section">
-        <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> What to track and what good looks like</h2>
-        <p>Not all metrics are equally actionable. Focus on these four — they cover the full recovery funnel from first failure to recovered payment.</p>
-
-        <table class="rc-table">
-          <thead>
-            <tr><th>Metric</th><th>Where to find it</th><th>What good looks like</th><th>What to do if it's low</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Recovery rate</strong></td>
-              <td>Dunning Benchmarks</td>
-              <td>At or above percentile ranking; compare against industry median</td>
-              <td>Review window length, email cadence, and campaign assignments</td>
-            </tr>
-            <tr>
-              <td><strong>Revenue recovery</strong></td>
-              <td>Churn Management</td>
-              <td>Growing month-over-month as setup improves</td>
-              <td>Cross-reference with recovery rate — flat revenue on improving rate may indicate volume decline</td>
-            </tr>
-            <tr>
-              <td><strong>Subscriptions saved</strong></td>
-              <td>Subscription Details</td>
-              <td>Growing number of subscriptions saved through dunning efforts; KPIs show a low "past due" count relative to "saved" count</td>
-              <td>Review which subscriber cohorts aren't recovering and consider creating targeted dunning campaigns for those segments; check if campaign assignments cover the right plans</td>
-            </tr>
-            <tr>
-              <td><strong>Dunning lifecycle by day (recovery timing)</strong></td>
-              <td>Compare Campaigns</td>
-              <td>Most recoveries happening earlier in the dunning cycle, not concentrated at the very end (last few days); shows healthy headroom in the window</td>
-              <td>If 10%+ of recoveries happen in the last few days of the cycle, lengthen the dunning window. If few recoveries happen at all late in the cycle, the window may be appropriate for your business</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="rc-callout rc-callout-tip">
-          <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-          <div class="rc-callout-body">
-            <strong>Always compare per campaign, not in aggregate</strong>
-            <p>Your overall recovery rate is a blend of all campaigns. A strong monthly campaign can mask a poor annual one. Review Dunning Summary by campaign every month so you can see exactly which segment is underperforming and make targeted adjustments.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- REVIEW CADENCE CHECKLIST -->
-      <div class="rc-lp-section">
-        <h2><i class="fa-solid fa-calendar-check rc-fa-section"></i> Your review cadence</h2>
-        <p>Dunning is not a set-and-forget feature. The merchants who get the most out of it treat it like any other performance channel — checking in regularly and adjusting when the data signals a gap.</p>
-
-        <div class="rc-checklist">
-          <div class="rc-checklist-header">
-            <i class="fa-solid fa-list-check" style="color: #FFD706; font-size: 1rem;"></i>
-            <h4>Dunning performance review checklist</h4>
-          </div>
-          <label class="rc-checklist-item">
-            <input type="checkbox">
-            <div class="rc-checkbox-box"></div>
-            <div class="rc-checklist-text">
-              <strong>Monthly: check Dunning Benchmarks</strong>
-              <span>Review recovery rate trend and compare your percentile ranking to your industry benchmark. Flag any month-over-month decline for investigation.</span>
-            </div>
-          </label>
-          <label class="rc-checklist-item">
-            <input type="checkbox">
-            <div class="rc-checkbox-box"></div>
-            <div class="rc-checklist-text">
-              <strong>Monthly: review Dunning Summary by campaign</strong>
-              <span>Compare recovery rates across campaigns. If one campaign is significantly below others, investigate window length, email cadence, and plan assignments.</span>
-            </div>
-          </label>
-          <label class="rc-checklist-item">
-            <input type="checkbox">
-            <div class="rc-checkbox-box"></div>
-            <div class="rc-checklist-text">
-              <strong>Quarterly: verify all plans are assigned to the correct campaign</strong>
-              <span>New plans default to the default campaign. A quarterly audit catches any that slipped through since the last review.</span>
-            </div>
-          </label>
-          <label class="rc-checklist-item">
-            <input type="checkbox">
-            <div class="rc-checkbox-box"></div>
-            <div class="rc-checklist-text">
-              <strong>Annually: full dunning setup review</strong>
-              <span>Review window lengths, email sequences, branding, and campaign structure. If you've added new plans or billing frequencies in the past year, confirm everything is still correctly configured.</span>
-            </div>
-          </label>
-          <div class="rc-checklist-footer">Use this checklist each review cycle to stay on top of your dunning performance.</div>
-        </div>
-      </div>
-
-      <!-- REFLECTION -->
-      <div class="rc-reflect-card">
-        <span class="rc-reflect-label">Reflection</span>
-        <h4>What's your current dunning recovery rate — and do you know how it breaks down by campaign?</h4>
-        <p>If you've never looked at per-campaign recovery data, that's your starting point. Pull the Dunning Summary report today and note your baseline. Every optimization you've made in this path should produce a measurable improvement from here.</p>
-      </div>
-
-      <!-- OH CTA -->
-      <div class="rc-oh-cta">
-        <h4><i class="fa-solid fa-headset rc-fa-dark"></i>Not sure how to interpret your dunning data?</h4>
-        <p>Bring your Dunning Benchmarks and Summary reports to <strong>Global Office Hours</strong>. Our CSMs can help you read the data, identify what's working, and prioritize what to change next.</p>
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Join Global Office Hours →</a>
-      </div>
-
-      <div class="rc-lp-nav">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-btn-prev">← Campaign configuration</a>
-        <span class="rc-lp-nav-indicator">8 of 9</span>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-btn-path">Continue to Review &amp; Resources →</a>
-      </div>
-
-      <div class="rc-resources">
-        <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
-        <div class="rc-resource-links">
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-benchmarks" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning benchmarks</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning management</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/recovered-revenue" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Recovered revenue report</a>
-          <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Join Global Office Hours</a>
-          <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
-        </div>
-      </div>
-
-<!-- FOOTER -->
-      <div class="rc-footer-nav">
-        <div class="rc-footer-links">
-
-          <div class="rc-footer-section">
-            <span class="rc-footer-label">Dunning 101</span>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-footer-link">Path overview</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-footer-link">1. Understanding Dunning windows</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-footer-link">2. Dunning window configuration</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-footer-link">3. Email branding</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-footer-link">4. Email configuration</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-footer-link">5. Email messaging strategy</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-footer-link">6. Multiple campaigns</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-footer-link">7. Campaign configuration</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-footer-link">8. Measuring your performance</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-footer-link">9. Review &amp; resources</a>
-          </div>
-
-          <div class="rc-footer-utility">
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
-              <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
-            </a>
-            <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
-          </div>
-
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+          <h4>Recovered revenue report</h4>
+          <p>Found at <strong>Analytics → Churn Management → Recovered Revenue</strong>. Shows total revenue recovered through dunning by time period. Use this alongside Dunning Benchmarks to connect recovery rate improvements to actual dollar impact for your business.</p>
         </div>
       </div>
     </div>
+
+    <!-- WHAT TO TRACK -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> What to track and what good looks like</h2>
+      <p>Not all metrics are equally actionable. Focus on these four — they cover the full recovery funnel from first failure to recovered payment.</p>
+
+      <table class="rc-table">
+        <thead>
+          <tr><th>Metric</th><th>Where to find it</th><th>What good looks like</th><th>What to do if it's low</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Recovery rate</strong></td>
+            <td>Dunning Benchmarks</td>
+            <td>At or above percentile ranking; compare against industry median</td>
+            <td>Review window length, email cadence, and campaign assignments</td>
+          </tr>
+          <tr>
+            <td><strong>Revenue recovery</strong></td>
+            <td>Churn Management</td>
+            <td>Growing month-over-month as setup improves</td>
+            <td>Cross-reference with recovery rate — flat revenue on improving rate may indicate volume decline</td>
+          </tr>
+          <tr>
+            <td><strong>Subscriptions saved</strong></td>
+            <td>Subscription Details</td>
+            <td>Growing number of subscriptions saved through dunning efforts; KPIs show a low "past due" count relative to "saved" count</td>
+            <td>Review which subscriber cohorts aren't recovering and consider creating targeted dunning campaigns for those segments; check if campaign assignments cover the right plans</td>
+          </tr>
+          <tr>
+            <td><strong>Dunning lifecycle by day (recovery timing)</strong></td>
+            <td>Compare Campaigns</td>
+            <td>Most recoveries happening earlier in the dunning cycle, not concentrated at the very end (last few days); shows healthy headroom in the window</td>
+            <td>If 10%+ of recoveries happen in the last few days of the cycle, lengthen the dunning window. If few recoveries happen at all late in the cycle, the window may be appropriate for your business</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-body">
+          <strong>Always compare per campaign, not in aggregate</strong>
+          <p>Your overall recovery rate is a blend of all campaigns. A strong monthly campaign can mask a poor annual one. Review Dunning Summary by campaign every month so you can see exactly which segment is underperforming and make targeted adjustments.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVIEW CADENCE CHECKLIST -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-calendar-check rc-fa-section"></i> Your review cadence</h2>
+      <p>Dunning is not a set-and-forget feature. The merchants who get the most out of it treat it like any other performance channel — checking in regularly and adjusting when the data signals a gap.</p>
+
+      <div class="rc-checklist">
+        <div class="rc-checklist-header">
+          <i class="fa-solid fa-list-check" style="color: #FFD706; font-size: 1rem;"></i>
+          <h4>Dunning performance review checklist</h4>
+        </div>
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Monthly: check Dunning Benchmarks</strong>
+            <span>Review recovery rate trend and compare your percentile ranking to your industry benchmark. Flag any month-over-month decline for investigation.</span>
+          </div>
+        </label>
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Monthly: review Dunning Summary by campaign</strong>
+            <span>Compare recovery rates across campaigns. If one campaign is significantly below others, investigate window length, email cadence, and plan assignments.</span>
+          </div>
+        </label>
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checklist-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Quarterly: verify all plans are assigned to the correct campaign</strong>
+            <span>New plans default to the default campaign. A quarterly audit catches any that slipped through since the last review.</span>
+          </div>
+        </label>
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checklist-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Annually: full dunning setup review</strong>
+            <span>Review window lengths, email sequences, branding, and campaign structure. If you've added new plans or billing frequencies in the past year, confirm everything is still correctly configured.</span>
+          </div>
+        </label>
+        <div class="rc-checklist-footer">Use this checklist each review cycle to stay on top of your dunning performance.</div>
+      </div>
+    </div>
+
+    <!-- REFLECTION -->
+    <div class="rc-reflect-card">
+      <span class="rc-reflect-label">Reflection</span>
+      <h4>What's your current dunning recovery rate — and do you know how it breaks down by campaign?</h4>
+      <p>If you've never looked at per-campaign recovery data, that's your starting point. Pull the Dunning Summary report today and note your baseline. Every optimization you've made in this path should produce a measurable improvement from here.</p>
+    </div>
+
+    <!-- OH CTA -->
+    <div class="rc-oh-cta">
+      <h4><i class="fa-solid fa-headset rc-fa-dark"></i>Not sure how to interpret your dunning data?</h4>
+      <p>Bring your Dunning Benchmarks and Summary reports to <strong>Global Office Hours</strong>. Our CSMs can help you read the data, identify what's working, and prioritize what to change next.</p>
+      <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Join Global Office Hours →</a>
+    </div>
+
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-btn-prev">← Campaign configuration</a>
+      <span class="rc-lp-nav-indicator">8 of 9</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-btn-path">Continue to Review &amp; Resources →</a>
+    </div>
+
+    <div class="rc-resources">
+      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
+      <div class="rc-resource-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-benchmarks" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning benchmarks</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning management</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recovered-revenue" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Recovered revenue report</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Join Global Office Hours</a>
+        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
+      </div>
+    </div>
+
+<!-- FOOTER -->
+    <div class="rc-footer-nav">
+      <div class="rc-footer-links">
+
+        <div class="rc-footer-section">
+          <span class="rc-footer-label">Dunning 101</span>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-footer-link">Path overview</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-footer-link">1. Understanding Dunning windows</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-footer-link">2. Dunning window configuration</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-footer-link">3. Email branding</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-footer-link">4. Email configuration</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-footer-link">5. Email messaging strategy</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-footer-link">6. Multiple campaigns</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-footer-link">7. Campaign configuration</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-footer-link">8. Measuring your performance</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-footer-link">9. Review & resources</a>
+        </div>
+
+        <div class="rc-footer-utility">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
+            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
+          </a>
+          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+        </div>
+
+      </div>
+    </div>
   </div>
+</div>
 `}</HTMLBlock>
 
 <br />
