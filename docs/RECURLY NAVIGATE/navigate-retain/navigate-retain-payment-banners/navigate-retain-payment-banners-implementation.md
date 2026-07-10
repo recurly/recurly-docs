@@ -390,7 +390,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-path-card-block">
           <div class="rc-path-card-header">
             <h3><i class="fa-solid fa-circle-play" style="margin-right:8px;"></i>Recurly Engage</h3>
-            <p>Low-code — can be live the same day<br></p>
+            <p>Low-code — can be live the same day<br><br></p>
           </div>
           <div class="rc-path-card-body">
             <div class="rc-path-detail">
