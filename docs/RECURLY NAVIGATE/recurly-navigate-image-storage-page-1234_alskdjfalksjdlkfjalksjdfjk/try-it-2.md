@@ -32,8 +32,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --lightgray:  #D1CFC4;
   --brightgray: #F2F1EA;
   --offwhite:   #FCFBF7;
+  --retain:     #2DCECE;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #0D0D0B !important;
+  color: #32312D !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
@@ -53,6 +54,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
+.rc-fa-dark { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 
 /* LAYOUT */
@@ -71,7 +73,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-announce-link { color: #0D0D0B !important; font-weight: 800; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; border-bottom: 0 !important; text-decoration: none !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); text-decoration: none !important; }
 
 /* HERO */
 .rc-hero {
@@ -84,6 +86,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0 0 14px; }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #D1CFC4; line-height: 1.6; }
+.rc-hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; }
+.rc-hero-stat { text-align: center; padding: 0 16px; }
+.rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
+.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: #FFD706; line-height: 1; margin-bottom: 6px; }
+.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #D1CFC4; line-height: 1.3; }
 
 /* NAV */
 details.rc-sticky-nav-wrap { position: relative; z-index: 1; background-color: #2DCECE; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
@@ -105,6 +112,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; text-decoration: none !important; }
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); }
 
+/* VIDEO CARD */
+.rc-video-card { border: 1px solid #D1CFC4; border-radius: 14px; overflow: hidden; margin: 0 0 32px; }
+.rc-video-header { background: #0D0D0B; padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
+.rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: #FFD706; margin: 0; }
+.rc-video-header span { font-size: .78rem; color: #D1CFC4; margin-left: auto; }
+.rc-video-embed { position: relative; overflow: hidden; aspect-ratio: 16/9; background: #0D0D0B; }
+.rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
+.rc-video-caption { padding: 12px 22px; font-size: .83rem; color: #807D75; background: #F2F1EA; border-top: 1px solid #D1CFC4; line-height: 1.5; }
+
 /* CONTENT SECTIONS */
 .rc-lp-section { margin-bottom: 40px; }
 .rc-lp-section h2 { font-size: 1.4rem; font-weight: 800; margin: 0 0 16px; color: #0D0D0B; display: flex; align-items: center; gap: 12px; }
@@ -119,14 +135,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
 .rc-feature-card p { font-size: .88rem; color: #807D75; line-height: 1.55; margin: 0; }
 
-/* TABLE */
-.rc-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin: 0 0 24px; border-radius: 10px; overflow: hidden; border: 1px solid #D1CFC4; }
-.rc-table thead { background: #0D0D0B; color: #FCFBF7; }
-.rc-table thead th { padding: 12px 16px; text-align: left; font-size: .75rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; }
-.rc-table tbody tr:nth-child(even) { background: #F2F1EA; }
-.rc-table tbody tr:nth-child(odd) { background: #FCFBF7; }
-.rc-table tbody td { padding: 12px 16px; color: #32312D; border-bottom: 1px solid #D1CFC4; vertical-align: top; }
-.rc-table tbody td strong { color: #0D0D0B; }
+/* STAT STRIP */
+.rc-stat-strip { display: grid; grid-template-columns: repeat(3, 1fr); background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; overflow: hidden; margin: 0 0 28px; }
+.rc-stat-tile { padding: 24px 20px; text-align: center; }
+.rc-stat-tile + .rc-stat-tile { border-left: 1px solid #D1CFC4; }
+.rc-stat-tile-num { font-size: 2rem; font-weight: 800; color: #2DCECE; line-height: 1; margin-bottom: 4px; }
+.rc-stat-tile-label { font-size: .7rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: #807D75; margin-bottom: 10px; }
+.rc-stat-tile-context { font-size: .8rem; color: #32312D; line-height: 1.5; padding-top: 10px; border-top: 1px solid #F2F1EA; }
 
 /* CALLOUTS */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 0 0 16px; display: flex; gap: 14px; align-items: flex-start; }
@@ -136,8 +151,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
 .rc-callout-tip { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
 .rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
-.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid #FFD706; }
-.rc-callout-warning .rc-callout-body > strong { color: #32312D; }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 
@@ -185,6 +198,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 32px; } .rc-lp-hero-title h1 { font-size: 1.8rem; }
+  .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
+  .rc-card-grid { grid-template-columns: 1fr; }
+  .rc-stat-strip { grid-template-columns: 1fr; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; } .rc-lp-nav-indicator { width: 100%; text-align: center; }
 }
 </style>
@@ -208,8 +224,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain • Dunning 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Understanding Dunning windows</h1></div>
-      <p>The window length determines the amount of time Recurly has to retry payment information and customers have to input new information. Extend this to the recommended range so that retries and emails have maximum time to work.</p>
+      <div class="rc-lp-hero-title"><h1>Email branding</h1></div>
+      <p>Unbranded dunning emails look like phishing attempts. Branded ones look like a trusted business asking for help. That difference shows up directly in your recovery rate.</p>
     </div>
 
     <!-- STICKY NAV — LP Overview variant -->
@@ -227,16 +243,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           Path overview
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Understanding Dunning windows
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-sticky-link">
+          <span class="rc-step-badge">1</span> Understanding Dunning windows
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-sticky-link">
           <span class="rc-step-badge">2</span> Dunning window configuration
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-sticky-link">
-          <span class="rc-step-badge">3</span> Email branding
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Email branding
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-sticky-link">
@@ -268,89 +284,69 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- WHAT IT IS -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-calendar-days rc-fa-section"></i> What is the dunning window?</h2>
-      <p>The dunning window is the number of days Recurly has to attempt to recover a failed payment; at the end of the cycle, the merchant can configure the subscription to either expire or remain active. During this window, Recurly uses static or Intelligent Retries to attempt payment during this during this window, and your Dunning email sequence is running in parallel. When the window closes with no recovery, the subscription lapses.</p>
+      <h2><i class="fa-solid fa-envelope-open-text rc-fa-section"></i> What branding your dunning emails means</h2>
+      <p>By default, Recurly's dunning email templates are functional but generic — plain layout, no logo, no brand colors. To a subscriber, an unformatted email asking them to update their payment details looks like a phishing attempt, not a trusted message from a business they subscribe to. Brand recognition is what turns a suspicious-looking email into an actionable one.</p>
+      <p>Branded dunning emails match your other transactional communications — same logo, colors, tone, and footer. Subscribers recognize who it's from immediately, which increases open rates, click-through rates, and ultimately recovery.</p>
+
+      <div class="rc-video-card">
+        <div class="rc-video-header">
+          <h4>Trail guide: configuring dunning email templates</h4>
+          <span>~3 min</span>
+        </div>
+        <div class="rc-video-embed">
+          <iframe src="https://share.synthesia.io/embeds/videos/aa762aae-0ab6-44f9-9b57-a711992871fc" loading="lazy" title="Dunning email template configuration walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+        </div>
+        <div class="rc-video-caption">A walkthrough of the email template editor — applying branding, adding dynamic variables, and sending a test.</div>
+      </div>
 
       <div class="rc-card-grid">
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-rotate"></i></div>
-          <h4>Intelligent Retries</h4>
-          <p>ML-powered retries run automatically throughout the window. A longer window means more retry attempts — which is the primary driver of passive churn recovery on soft declines.</p>
+          <div class="rc-feature-icon"><i class="fa-solid fa-image"></i></div>
+          <h4>Visual identity</h4>
+          <p>Your logo, brand colors, and header image. Makes the email instantly recognizable and sets the tone before the subscriber reads a word.</p>
         </div>
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-regular fa-envelope"></i></div>
-          <h4>Dunning emails</h4>
-          <p>Your email sequence runs in parallel, independently from retries. A longer window lets you space emails 4–5 days apart without compressing the cadence or overwhelming the subscriber.</p>
+          <div class="rc-feature-icon"><i class="fa-solid fa-font"></i></div>
+          <h4>Tone of voice</h4>
+          <p>Write in the same voice as your other customer communications — friendly, clear, and direct. Avoid generic system language like "payment failure detected."</p>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-arrow-pointer"></i></div>
+          <h4>Clear CTA</h4>
+          <p>A prominent, action-oriented button — "Update your payment method" — styled in your brand colors. The CTA is the only job of the email; make it impossible to miss.</p>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-list"></i></div>
+          <h4>Branded footer</h4>
+          <p>Copyright line, links to your support page and terms, and your company address. Signals legitimacy and gives the subscriber somewhere to go if they have questions.</p>
         </div>
       </div>
     </div>
 
-    <!-- RECOMMENDED BENCHMARKS -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-sliders rc-fa-section"></i> Recommended window lengths</h2>
-      <p>These benchmarks are sized to fit just inside each billing cycle — long enough to maximize retry attempts and email touchpoints, short enough to prevent a second invoice generating before the first one is resolved.</p>
-
-      <table class="rc-table">
-        <thead>
-          <tr><th>Billing frequency</th><th>Recommended window</th><th>Why</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Monthly</strong></td>
-            <td>28 days</td>
-            <td>Sits just inside the 30-day billing cycle, giving retries maximum time without risking a duplicate invoice</td>
-          </tr>
-          <tr>
-            <td><strong>Annual</strong></td>
-            <td>60 days</td>
-            <td>Annual subscribers represent high LTV — a short window here is one of the most costly mistakes in dunning setup</td>
-          </tr>
-          <tr>
-            <td><strong>Quarterly</strong></td>
-            <td>~60 days</td>
-            <td>Long enough to maximize recovery attempts while preventing the "waterfall effect," where a new invoice is generated before the prior one is collected.</td>
-          </tr>
-          <tr>
-            <td><strong>Weekly</strong></td>
-            <td>7 days</td>
-            <td>Match the billing frequency; one retry window per cycle keeps recovery and billing in sync</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="rc-callout rc-callout-warning">
-        <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
-        <div class="rc-callout-body">
-          <strong>Worried about giving free access during recovery?</strong>
-          <p>You can decouple dunning status from product entitlement using Recurly webhooks — keep the full recovery window open while restricting access after a 3–5 day grace period. This lets you protect revenue without cutting off subscribers who may resolve their payment issue within days.</p>
-        </div>
-      </div>
-
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="rc-callout-body">
-          <strong>One default window applied to all plans will always underperform</strong>
-          <p>Annual and monthly subscribers have very different recovery profiles — and very different LTV at stake. Set a separate campaign with its own window length for each billing frequency. You'll configure this in the next page.</p>
-        </div>
+    <div class="rc-callout rc-callout-tip">
+      <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+      <div class="rc-callout-body">
+        <strong>Personalization amplifies branding</strong>
+        <p>Use Recurly's dynamic variables to include the subscriber's name, the amount owed, the last four digits of their card, and the days remaining in the dunning window. A personalized email feels like it was written for that subscriber specifically — which drives action far more effectively than a generic one.</p>
       </div>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-btn-prev">← Path overview</a>
-      <span class="rc-lp-nav-indicator">1 of 9</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-btn-path">Next: Dunning window configuration →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-btn-prev">← Dunning window configuration</a>
+      <span class="rc-lp-nav-indicator">3 of 9</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-btn-path">Next: Email configuration →</a>
     </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning management</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-benchmarks" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning benchmarks</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Email templates</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
     </div>
 
-    <!-- FOOTER -->
+<!-- FOOTER -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
@@ -365,7 +361,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-footer-link">6. Multiple campaigns</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-footer-link">7. Campaign configuration</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-footer-link">8. Measuring your performance</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-footer-link">9. Review &amp; resources</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-footer-link">9. Review & resources</a>
         </div>
 
         <div class="rc-footer-utility">
