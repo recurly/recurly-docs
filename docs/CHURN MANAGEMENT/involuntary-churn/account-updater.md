@@ -159,7 +159,7 @@ To use this service, you must have a direct American Express® merchant account 
 To use Adyen RTAU with Recurly, you must meet all of the following:
 
 <ul class="rp-list">
-  <li>Adyen is your primary gateway</li>
+  <li>Adyen is your only gateway</li>
   <li>You're processing raw card data through Recurly (not gateway tokens or network tokens)</li>
   <li>You're processing card payments (RTAU doesn't apply to non-card payment methods)</li>
 </ul>
