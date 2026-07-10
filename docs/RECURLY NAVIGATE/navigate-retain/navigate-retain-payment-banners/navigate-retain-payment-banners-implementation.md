@@ -364,7 +364,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <!-- Webhooks -->
         <div class="rc-path-card-block">
           <div class="rc-path-card-header">
-            <h3><i class="fa-solid fa-hook" style="margin-right:8px;"></i>Webhooks</h3>
+            <h3><i class="fa-solid fa-wrench" style="margin-right:8px;"></i>Webhooks</h3>
             <p>Engineering-required — typically a multi-week build</p>
           </div>
           <div class="rc-path-card-body">
