@@ -23,26 +23,53 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 body { background: #ffffff !important; }
+
+/* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
-.rc-guide [class^="fa-"], .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
-.rc-guide .fa-brands, .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
+.rc-guide [class^="fa-"],
+.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands,
+.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:     #FFD706;
+  --orange:     #FF8200;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D75;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
+  --retain:     #2DCECE;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #0D0D0B !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
+
+/* ── NAVIGATE MASTER ARMOR ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a, .rc-guide a:link, .rc-guide a:visited, .rc-guide a:hover, .rc-guide a:active {
+  color: #008CFF !important;
   text-decoration: none !important; text-decoration-line: none !important;
   text-decoration-color: transparent !important; text-underline-offset: unset !important; border-bottom: 0 !important;
 }
-html { scroll-behavior: smooth; }
-.rc-guide {
-  --yellow: #FFD706; --orange: #FF8200; --offblack: #0D0D0B; --darkgray: #32312D;
-  --gray: #807D73; --lightgray: #CCC9B8; --brightgray: #F1EFE3; --offwhite: #FFFDF2; --retain: #FF9D88;
-  color: #32312D !important; background: #ffffff;
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
 }
-.rc-guide * { box-sizing: border-box; }
+
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 .rc-fa-dark { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
@@ -51,15 +78,18 @@ html { scroll-behavior: smooth; }
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; transition: color .2s; }
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; transition: color .2s; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
 /* ANNOUNCE BAR */
 .rc-announce-bar { display: none; background: #FFD706; color: #0D0D0B; align-items: center; padding: 10px 20px; font-size: .88rem; font-weight: 600; border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4; }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-announce-link { color: #0D0D0B !important; font-weight: 800; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; border-bottom: 0 !important; }
-.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); text-decoration: none !important; }
 
 /* HERO */
 .rc-hero {
@@ -68,18 +98,18 @@ html { scroll-behavior: smooth; }
   background-color: #0D0D0B; background-size: cover;
   padding: 48px 40px 44px; text-align: center; border-radius: 16px;
 }
-.rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(255,157,136,0.20); border: 1px solid rgba(255,157,136,0.45); color: #FF9D88; font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
+.rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(45,206,206,0.20); border: 1px solid rgba(45,206,206,0.45); color: #2DCECE; font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
-.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0 0 14px; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #CCC9B8; line-height: 1.6; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FCFBF7; margin: 0 0 14px; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #D1CFC4; line-height: 1.6; }
 .rc-hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; }
 .rc-hero-stat { text-align: center; padding: 0 16px; }
 .rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
 .rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: #FFD706; line-height: 1; margin-bottom: 6px; }
-.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #CCC9B8; line-height: 1.3; }
+.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #D1CFC4; line-height: 1.3; }
 
 /* NAV */
-details.rc-sticky-nav-wrap { position: relative; z-index: 1; background-color: #FF9D88; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
+details.rc-sticky-nav-wrap { position: relative; z-index: 1; background-color: #2DCECE; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
 details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker, details.rc-sticky-nav-wrap > summary::marker { display: none; }
 .rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #0D0D0B; }
@@ -91,53 +121,31 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link { color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); text-decoration: none !important; }
 
 /* CONTENT SECTIONS */
 .rc-lp-section { margin-bottom: 40px; }
 .rc-lp-section h2 { font-size: 1.4rem; font-weight: 800; margin: 0 0 16px; color: #0D0D0B; display: flex; align-items: center; gap: 12px; }
-.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 .rc-lp-section > p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
-/* CARD GRID */
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 24px; }
-.rc-feature-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rc-feature-card:hover { border-color: #FF9D88; box-shadow: 0 4px 16px rgba(255,157,136,0.15); transform: translateY(-2px); }
-.rc-feature-icon { font-size: 1.4rem; color: #0D0D0B; }
-.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; }
-
-/* TABLE */
-.rc-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin: 0 0 24px; border-radius: 10px; overflow: hidden; border: 1px solid #CCC9B8; }
-.rc-table thead { background: #0D0D0B; color: #FFFDF2; }
-.rc-table thead th { padding: 12px 16px; text-align: left; font-size: .75rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; }
-.rc-table tbody tr:nth-child(even) { background: #F1EFE3; }
-.rc-table tbody tr:nth-child(odd) { background: #FFFDF2; }
-.rc-table tbody td { padding: 12px 16px; color: #32312D; border-bottom: 1px solid #CCC9B8; vertical-align: top; }
-.rc-table tbody td strong { color: #0D0D0B; }
-
-/* CHECKLIST */
-.rc-checklist { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; overflow: hidden; margin: 20px 0 24px; }
-.rc-checklist-header { padding: 14px 22px; background: #0D0D0B; display: flex; align-items: center; gap: 10px; }
-.rc-checklist-header h4 { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #FFD706; margin: 0; }
-label.rc-checklist-item { padding: 14px 22px; border-bottom: 1px solid #F1EFE3; display: flex; align-items: flex-start; gap: 14px; cursor: pointer; transition: background .15s; }
-label.rc-checklist-item:last-of-type { border-bottom: none; }
-label.rc-checklist-item:hover { background: #F1EFE3; }
-label.rc-checklist-item input[type="checkbox"] { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
-.rc-checkbox-box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid #CCC9B8; flex-shrink: 0; background: #fff; display: flex; align-items: center; justify-content: center; transition: all .18s; margin-top: 1px; }
-label.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box { background: #0D0D0B; border-color: #0D0D0B; }
-label.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box::after { content: '✓'; color: #FFD706; font-size: .75rem; font-weight: 800; line-height: 1; }
-label.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-text strong { text-decoration: line-through; color: #807D73; }
-label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(255,157,136,0.06); }
-.rc-checklist-text { flex: 1; }
-.rc-checklist-text strong { font-size: .9rem; font-weight: 700; color: #0D0D0B; display: block; margin-bottom: 2px; transition: color .18s; }
-.rc-checklist-text span { font-size: .8rem; color: #807D73; line-height: 1.4; display: block; }
-.rc-checklist-footer { padding: 10px 22px; background: #F1EFE3; border-top: 1px solid #CCC9B8; font-size: .78rem; color: #807D73; font-weight: 600; }
+/* NUMBERED STEPS */
+.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 24px; }
+.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #F2F1EA; }
+.rc-step:last-child { border-bottom: none; }
+.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+.rc-step-content h4 { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
+.rc-step-content p { font-size: .92rem; color: #807D75; line-height: 1.6; margin: 0; }
+.rc-step-content strong { color: #32312D; }
+.rm-Markdown.markdown-body .rc-guide .rc-step-content a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-step-content a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 
 /* CALLOUTS */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 0 0 16px; display: flex; gap: 14px; align-items: flex-start; }
@@ -145,64 +153,69 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
 .rc-callout-body { flex: 1; }
 .rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
-.rc-callout-tip { background: #F1EFE3; border-left: 4px solid #0D0D0B; }
+.rc-callout-tip { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
 .rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
+.rc-callout-caution { background: rgba(255,215,6,0.12); border-left: 4px solid #FFD706; }
+.rc-callout-caution .rc-callout-body > strong { color: #32312D; }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-callout-body a { color: #FF8200 !important; font-weight: 600; border-bottom: 0 !important; }
+.rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 
 /* OH CTA */
 .rc-oh-cta { background: #0D0D0B; border: 2px solid #FFD706; border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
 .rc-oh-cta h4 { color: #FFD706; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; }
-.rc-oh-cta p { color: #CCC9B8; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
-.rc-oh-cta p strong { color: #FFFDF2; }
+.rc-oh-cta p { color: #D1CFC4; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
+.rc-oh-cta p strong { color: #FCFBF7; }
 .rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-oh-btn { background: #FFD706; color: #0D0D0B !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; transition: all .2s; }
-.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rc-guide a.rc-oh-btn { background: #FFD706; color: #0D0D0B !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; transition: all .2s; text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
 /* REFLECT CARD */
-.rc-reflect-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-left: 4px solid #FFD706; border-radius: 14px; padding: 24px 28px; margin: 0 0 32px; }
+.rc-reflect-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-left: 4px solid #FFD706; border-radius: 14px; padding: 24px 28px; margin: 0 0 32px; }
 .rc-reflect-label { display: inline-block; background: #FFD706; color: #0D0D0B; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .6px; padding: 3px 10px; border-radius: 5px; margin-bottom: 12px; }
 .rc-reflect-card h4 { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 10px; line-height: 1.4; }
-.rc-reflect-card p { font-size: .9rem; color: #807D73; line-height: 1.6; margin: 0; }
+.rc-reflect-card p { font-size: .9rem; color: #807D75; line-height: 1.6; margin: 0; }
 
 /* PATH NAV */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
-.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #CCC9B8; letter-spacing: .5px; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #D1CFC4; letter-spacing: .5px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #CCC9B8 !important; border-bottom: 2px solid #CCC9B8 !important; transition: all .2s; }
-.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
+.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; text-decoration: none !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; transition: all .2s; }
-.rc-guide a.rc-btn-path:hover { background: transparent !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; transition: all .2s; text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-path:hover { background: transparent !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
 /* ── RESOURCES ── */
-.rc-resources { background: #F1EFE3; border-left: 4px solid #FF9D88; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
-.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.rc-resources { background: #F2F1EA; border-left: 4px solid #2DCECE; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D75; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-resource-link {
-  color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px;
-  text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem;
+  color: #807D75 !important; text-decoration: underline !important; text-underline-offset: 3px;
+  text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem;
   transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #FF9D88 !important; }
+.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #2DCECE !important; }
 
 /* ── FOOTER ── */
-.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-nav { border-top: 1px solid #D1CFC4; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F2F1EA; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-footer-link {
-  color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem;
+  color: #807D75 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem;
   transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F2F1EA; }
 
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; }
@@ -214,22 +227,18 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
 }
 
 /* STAT STRIP */
-.rc-stat-strip { display: grid; grid-template-columns: repeat(2, 1fr); background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; overflow: hidden; margin: 0 0 28px; }
+.rc-stat-strip { display: grid; grid-template-columns: repeat(2, 1fr); background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; overflow: hidden; margin: 0 0 28px; }
 .rc-stat-tile { padding: 24px 20px; text-align: center; }
-.rc-stat-tile + .rc-stat-tile { border-left: 1px solid #CCC9B8; }
-.rc-stat-tile-num { font-size: 2.5rem; font-weight: 800; color: #FF9D88; line-height: 1; margin-bottom: 4px; }
-.rc-stat-tile-label { font-size: .9rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: #807D73; margin-bottom: 10px; }
-  .rc-stat-tile-context { font-size: .88rem; color: #32312D; line-height: 1.55; padding-top: 10px; border-top: 1px solid #F1EFE3; }
+.rc-stat-tile + .rc-stat-tile { border-left: 1px solid #D1CFC4; }
+.rc-stat-tile-num { font-size: 2.5rem; font-weight: 800; color: #2DCECE; line-height: 1; margin-bottom: 4px; }
+.rc-stat-tile-label { font-size: .9rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: #807D75; margin-bottom: 10px; }
+.rc-stat-tile-context { font-size: .88rem; color: #32312D; line-height: 1.55; padding-top: 10px; border-top: 1px solid #F2F1EA; }
   
 .rm-Markdown.markdown-body .rc-stat-strip a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-stat-strip a { color: #FF8200 !important; border-bottom: 0 !important; }
+.rc-stat-strip a { color: #008CFF !important; border-bottom: 0 !important; }
 
 .rm-Markdown.markdown-body .rc-stat-strip a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-stat-strip a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
-
-
-
-
+.rc-stat-strip a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 </style>
 
 <div class="rc-guide">
@@ -251,8 +260,8 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain • Dunning 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Measuring your performance</h1></div>
-      <p>The changes you've made only create value if you can see them working. Here's where to look, what to track, and how often to review.</p>
+      <div class="rc-lp-hero-title"><h1>Campaign configuration</h1></div>
+      <p>How to create a new dunning campaign, configure it correctly, and make sure every plan is pointed at the right one.</p>
       
     </div>
 
@@ -271,7 +280,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
           Path overview
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-sticky-link">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-sticky-link">
           <span class="rc-step-badge">1</span> Understanding Dunning windows
         </a>
         
@@ -295,12 +304,12 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
           <span class="rc-step-badge">6</span> Multiple campaigns
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-sticky-link">
-          <span class="rc-step-badge">7</span> Campaign configuration
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Campaign configuration
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Measuring your performance
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-sticky-link">
+          <span class="rc-step-badge">8</span> Measuring your performance
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-sticky-link">
@@ -310,172 +319,84 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
       </div></div></div>
     </details>
 
-    <!-- WHY IT MATTERS — STATS -->
+    <!-- STEPS -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> What optimized Dunning looks like in practice</h2>
-      <p>These results come from merchants who <strong>overhauled their full dunning setup</strong> — window length, email frequency, branding, and personalization — at once. Use them as a benchmark for what could be possible (depending on your current settings), and rely on your Dunning Effectiveness dashboard to track your own progress.</p>
+      <h2><i class="fa-solid fa-gear rc-fa-section"></i> How to build and assign a new campaign</h2>
+      <p>Go to <strong>Configuration → Dunning Management</strong>. You'll see your existing campaigns listed. Create a new one for each billing frequency that needs its own window length and messaging — starting with annual if you only have one campaign today.</p>
 
-      <div class="rc-stat-strip">
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">+12%</div>
-          <div class="rc-stat-tile-label">Revenue lift in 3 months</div>
-          <div class="rc-stat-tile-context">Across <strong>a group of 20 merchants</strong> who worked with Recurly's Customer Success team to overhaul their dunning setup — including branding, window length, and email frequency — revenue lifted 12% within three months of launch. <strong><br><br>Read the <a href="https://recurly.com/content/subscription-case-study-dunning-workshop-to-reduce-customer-churn/" target="_blank" rel="noopener noreferrer">case study</a> to learn more.</strong></div>
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>Create a new campaign</h4>
+            <p>Click <strong>Create Campaign</strong> and give it a descriptive name — "Annual subscribers" or "Monthly - consumer" makes it easy to identify later. Avoid generic names like "Campaign 2" that lose meaning over time.</p>
+          </div>
         </div>
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">+279%</div>
-          <div class="rc-stat-tile-label">Recovered revenue in 30 days</div>
-          <div class="rc-stat-tile-context"><strong>A music education subscription service</strong> implemented dunning best practices from scratch through a Recurly Navigate session — setting up separate cycles for trials, monthly, and annual plans — and saw this result in their first month.<br><br><strong><a href="https://recurly.com/resources/case-study/my-music-workshop/" target="blank" rel="noopener noreferrer">Check out their story</a> for more details.</strong></div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>Set the window length and email schedule</h4>
+            <p>Configure the window to match the billing frequency — <strong>28 days for monthly, 60 days for annual</strong>. Then build out the email sequence with appropriate spacing: 4–5 days apart for monthly, 8–10 days apart for annual. Each email needs distinct copy — reusing templates reduces effectiveness across the sequence.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Audit and assign every plan</h4>
+            <p>Navigate to <strong>Plans</strong> and open each plan in your catalog. Find the dunning campaign assignment field and point it to the correct campaign. <strong>Plans not manually assigned fall back to your default campaign</strong> — which means an annual plan on a 28-day window if you haven't updated the default. Check every plan without exception.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">4</div>
+          <div class="rc-step-content">
+            <h4>Update your default campaign</h4>
+            <p>Whatever plans remain on your default campaign should be intentional. Update the default window length to match your most common billing frequency, and make sure the email sequence is fully branded and current — any plan that slips through plan-level assignment will land here.</p>
+          </div>
         </div>
       </div>
 
-    <!-- WHERE TO FIND -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-magnifying-glass-chart rc-fa-section"></i> Where to find your dunning analytics</h2>
-      <p>Recurly surfaces dunning performance in two places. Use both — they answer different questions.</p>
-
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-chart-bar"></i></div>
-          <h4>Dunning Benchmarks</h4>
-          <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Benchmarks</strong>. Shows your recovery rate over time compared to Recurly's industry benchmark. Use this monthly to track whether your rate is trending up after configuration changes, and to see how you compare to peers.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
-          <h4>Dunning Summary</h4>
-          <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Summary</strong>. Shows total recovered revenue broken down by recovery method — intelligent retries, Account Updater, customer updates, and manual collection. Use this to understand how your revenue is being recovered.</p>
-        </div>
-          <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
-          <h4>Compare Campaigns</h4>
-          <p>Found at <strong>Analytics → Dunning Campaigns → Compare Campaigns</strong>. Shows recovery rate, recovered revenue, and dunning lifecycle data side by side for two campaigns or two versions of the same campaign. Use this to identify which segment is underperforming — and when during the dunning cycle recoveries are happening — so you can make targeted adjustments rather than changing everything at once.</p>
-        </div>
-
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-          <h4>Recovered revenue report</h4>
-          <p>Found at <strong>Analytics → Churn Management → Recovered Revenue</strong>. Shows total revenue recovered through dunning by time period. Use this alongside Dunning Benchmarks to connect recovery rate improvements to actual dollar impact for your business.</p>
+      <div class="rc-callout rc-callout-caution">
+        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="rc-callout-body">
+          <strong>New plans default to your default campaign automatically</strong>
+          <p>Every time you add a new plan to your catalog, it is automatically assigned to the default campaign — not to the most relevant existing campaign. Build a habit of checking the dunning assignment when you create or modify any plan, not just during a periodic audit.</p>
         </div>
       </div>
-    </div>
-
-    <!-- WHAT TO TRACK -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> What to track and what good looks like</h2>
-      <p>Not all metrics are equally actionable. Focus on these four — they cover the full recovery funnel from first failure to recovered payment.</p>
-
-      <table class="rc-table">
-        <thead>
-          <tr><th>Metric</th><th>Where to find it</th><th>What good looks like</th><th>What to do if it's low</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Recovery rate</strong></td>
-            <td>Dunning Benchmarks</td>
-            <td>At or above percentile ranking; compare against industry median</td>
-            <td>Review window length, email cadence, and campaign assignments</td>
-          </tr>
-          <tr>
-            <td><strong>Revenue recovery</strong></td>
-            <td>Churn Management</td>
-            <td>Growing month-over-month as setup improves</td>
-            <td>Cross-reference with recovery rate — flat revenue on improving rate may indicate volume decline</td>
-          </tr>
-          <tr>
-            <td><strong>Subscriptions saved</strong></td>
-            <td>Subscription Details</td>
-            <td>Growing number of subscriptions saved through dunning efforts; KPIs show a low "past due" count relative to "saved" count</td>
-            <td>Review which subscriber cohorts aren't recovering and consider creating targeted dunning campaigns for those segments; check if campaign assignments cover the right plans</td>
-          </tr>
-          <tr>
-            <td><strong>Dunning lifecycle by day (recovery timing)</strong></td>
-            <td>Compare Campaigns</td>
-            <td>Most recoveries happening earlier in the dunning cycle, not concentrated at the very end (last few days); shows healthy headroom in the window</td>
-            <td>If 10%+ of recoveries happen in the last few days of the cycle, lengthen the dunning window. If few recoveries happen at all late in the cycle, the window may be appropriate for your business</td>
-          </tr>
-        </tbody>
-      </table>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
-          <strong>Always compare per campaign, not in aggregate</strong>
-          <p>Your overall recovery rate is a blend of all campaigns. A strong monthly campaign can mask a poor annual one. Review Dunning Summary by campaign every month so you can see exactly which segment is underperforming and make targeted adjustments.</p>
+          <strong>Name campaigns clearly from the start</strong>
+          <p>Campaign names appear throughout your dunning reports and plan settings. Descriptive names like "Monthly — consumer 28d" and "Annual — 60d" make it immediately obvious which campaign is which when you're reviewing performance or assigning new plans months later.</p>
         </div>
-      </div>
-    </div>
-
-    <!-- REVIEW CADENCE CHECKLIST -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-calendar-check rc-fa-section"></i> Your review cadence</h2>
-      <p>Dunning is not a set-and-forget feature. The merchants who get the most out of it treat it like any other performance channel — checking in regularly and adjusting when the data signals a gap.</p>
-
-      <div class="rc-checklist">
-        <div class="rc-checklist-header">
-          <i class="fa-solid fa-list-check" style="color: #FFD706; font-size: 1rem;"></i>
-          <h4>Dunning performance review checklist</h4>
-        </div>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Monthly: check Dunning Benchmarks</strong>
-            <span>Review recovery rate trend and compare your percentile ranking to your industry benchmark. Flag any month-over-month decline for investigation.</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Monthly: review Dunning Summary by campaign</strong>
-            <span>Compare recovery rates across campaigns. If one campaign is significantly below others, investigate window length, email cadence, and plan assignments.</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Quarterly: verify all plans are assigned to the correct campaign</strong>
-            <span>New plans default to the default campaign. A quarterly audit catches any that slipped through since the last review.</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Annually: full dunning setup review</strong>
-            <span>Review window lengths, email sequences, branding, and campaign structure. If you've added new plans or billing frequencies in the past year, confirm everything is still correctly configured.</span>
-          </div>
-        </label>
-        <div class="rc-checklist-footer">Use this checklist each review cycle to stay on top of your dunning performance.</div>
       </div>
     </div>
 
     <!-- REFLECTION -->
     <div class="rc-reflect-card">
       <span class="rc-reflect-label">Reflection</span>
-      <h4>What's your current dunning recovery rate — and do you know how it breaks down by campaign?</h4>
-      <p>If you've never looked at per-campaign recovery data, that's your starting point. Pull the Dunning Summary report today and note your baseline. Every optimization you've made in this path should produce a measurable improvement from here.</p>
+      <h4>If you created a new annual campaign today, how many of your plans would you need to reassign — and do you know which ones they are?</h4>
+      <p>Most merchants discover several plans still pointing at the default after creating targeted campaigns. Running a plan audit before and after any campaign change is the only way to be sure the setup is correct.</p>
     </div>
 
     <!-- OH CTA -->
     <div class="rc-oh-cta">
-      <h4><i class="fa-solid fa-headset rc-fa-dark"></i>Not sure how to interpret your dunning data?</h4>
-      <p>Bring your Dunning Benchmarks and Summary reports to <strong>Global Office Hours</strong>. Our CSMs can help you read the data, identify what's working, and prioritize what to change next.</p>
+      <h4><i class="fa-solid fa-headset rc-fa-dark"></i>Want help auditing your campaign structure?</h4>
+      <p>Bring your plan catalog and dunning setup to <strong>Global Office Hours</strong>. Our CSMs can walk through your campaign assignments, flag any mismatches, and recommend a segmentation structure based on your plan mix.</p>
       <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Join Global Office Hours →</a>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-btn-prev">← Campaign configuration</a>
-      <span class="rc-lp-nav-indicator">8 of 9</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-btn-path">Continue to Review &amp; Resources →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-btn-prev">← Multiple campaigns</a>
+      <span class="rc-lp-nav-indicator">7 of 9</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-btn-path">Next: Measuring your performance →</a>
     </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-benchmarks" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning management</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recovered-revenue" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Recovered revenue report</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-benchmarks" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning benchmarks</a>
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Join Global Office Hours</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
@@ -508,6 +429,8 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
 
       </div>
     </div>
+  </div>
+</div>
 `}</HTMLBlock>
 
 <br />
