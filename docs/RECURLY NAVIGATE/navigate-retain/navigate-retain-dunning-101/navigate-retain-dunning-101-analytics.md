@@ -476,7 +476,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(4
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
-          <div class="rc-checklist-box"></div>
+          <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
             <strong>Annually: full dunning setup review</strong>
             <span>Review window lengths, email sequences, branding, and campaign structure. If you've added new plans or billing frequencies in the past year, confirm everything is still correctly configured.</span>
