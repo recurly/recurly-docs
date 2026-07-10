@@ -11,8 +11,6 @@ metadata:
 
 <style>
 body { background: #ffffff !important; }
-
-/* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
 .rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
 /* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
@@ -21,27 +19,9 @@ body { background: #ffffff !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-
-.rc-guide {
-  --yellow:     #FFD706;
-  --orange:     #FF8200;
-  --offblack:   #0D0D0B;
-  --darkgray:   #32312D;
-  --gray:       #807D75;
-  --lightgray:  #D1CFC4;
-  --brightgray: #F2F1EA;
-  --offwhite:   #FCFBF7;
-  --retain:     #2DCECE;
-  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #32312D !important;
-  background: #ffffff;
-}
-.rc-guide * { box-sizing: border-box; }
-
 /* ── NAVIGATE MASTER ARMOR ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a, .rc-guide a:link, .rc-guide a:visited, .rc-guide a:hover, .rc-guide a:active {
+.rc-guide a, .rc-guide a:link, .rc-guide a:visited, .rc-guide a:active {
   color: #008CFF !important;
   text-decoration: none !important; text-decoration-line: none !important;
   text-decoration-color: transparent !important; text-underline-offset: unset !important; border-bottom: 0 !important;
@@ -53,6 +33,20 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   text-underline-offset: 2px !important;
 }
 
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+.rc-guide {
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D75;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
+  --offwhite:  #FCFBF7;
+  --retain:    #2DCECE;
+  color: #32312D !important; background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 .rc-fa-dark { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
@@ -60,9 +54,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 /* LAYOUT */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; transition: color .2s; text-decoration: none !important; }
+.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; transition: color .2s; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
@@ -71,7 +64,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-announce-link { color: #0D0D0B !important; font-weight: 800; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; border-bottom: 0 !important; text-decoration: none !important; }
+.rc-guide a.rc-announce-link { color: #0D0D0B !important; font-weight: 800; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); text-decoration: none !important; }
 
@@ -84,13 +77,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(45,206,206,0.20); border: 1px solid rgba(45,206,206,0.45); color: #2DCECE; font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
-.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0 0 14px; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FCFBF7; margin: 0 0 14px; }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #D1CFC4; line-height: 1.6; }
-.rc-hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; }
-.rc-hero-stat { text-align: center; padding: 0 16px; }
-.rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
-.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: #FFD706; line-height: 1; margin-bottom: 6px; }
-.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #D1CFC4; line-height: 1.3; }
 
 /* NAV */
 details.rc-sticky-nav-wrap { position: relative; z-index: 1; background-color: #2DCECE; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
@@ -104,22 +92,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link { color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; text-decoration: none !important; }
+.rc-guide a.rc-sticky-link { color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; text-decoration: none !important; }
+.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); }
-
-/* VIDEO CARD */
-.rc-video-card { border: 1px solid #D1CFC4; border-radius: 14px; overflow: hidden; margin: 0 0 32px; }
-.rc-video-header { background: #0D0D0B; padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
-.rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: #FFD706; margin: 0; }
-.rc-video-header span { font-size: .78rem; color: #D1CFC4; margin-left: auto; }
-.rc-video-embed { position: relative; overflow: hidden; aspect-ratio: 16/9; background: #0D0D0B; }
-.rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
-.rc-video-caption { padding: 12px 22px; font-size: .83rem; color: #807D75; background: #F2F1EA; border-top: 1px solid #D1CFC4; line-height: 1.5; }
 
 /* CONTENT SECTIONS */
 .rc-lp-section { margin-bottom: 40px; }
@@ -127,30 +108,27 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 .rc-lp-section > p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
-/* CARD GRID */
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 24px; }
-.rc-feature-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rc-feature-card:hover { border-color: #2DCECE; box-shadow: 0 4px 16px rgba(45,206,206,0.15); transform: translateY(-2px); }
-.rc-feature-icon { font-size: 1.4rem; color: #0D0D0B; }
-.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: #807D75; line-height: 1.55; margin: 0; }
-
-/* STAT STRIP */
-.rc-stat-strip { display: grid; grid-template-columns: repeat(3, 1fr); background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; overflow: hidden; margin: 0 0 28px; }
-.rc-stat-tile { padding: 24px 20px; text-align: center; }
-.rc-stat-tile + .rc-stat-tile { border-left: 1px solid #D1CFC4; }
-.rc-stat-tile-num { font-size: 2rem; font-weight: 800; color: #2DCECE; line-height: 1; margin-bottom: 4px; }
-.rc-stat-tile-label { font-size: .7rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: #807D75; margin-bottom: 10px; }
-.rc-stat-tile-context { font-size: .8rem; color: #32312D; line-height: 1.5; padding-top: 10px; border-top: 1px solid #F2F1EA; }
+/* NUMBERED STEPS */
+.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
+.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #F2F1EA; }
+.rc-step:last-child { border-bottom: none; }
+.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+.rc-step-content h4 { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
+.rc-step-content p { font-size: .92rem; color: #807D75; line-height: 1.6; margin: 0; }
+.rc-step-content strong { color: #32312D; }
+.rm-Markdown.markdown-body .rc-guide .rc-step-content a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-step-content a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 
 /* CALLOUTS */
-.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 0 0 16px; display: flex; gap: 14px; align-items: flex-start; }
+.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0 16px; display: flex; gap: 14px; align-items: flex-start; }
 .rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
 .rc-callout-body { flex: 1; }
 .rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
 .rc-callout-tip { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
 .rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
+.rc-callout-caution { background: var(--warning-bg); border-left: 4px solid #FFD706; }
+.rc-callout-caution .rc-callout-body > strong { color: #32312D; }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 
@@ -158,11 +136,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #D1CFC4; letter-spacing: .5px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; text-decoration: none !important; }
+.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; text-decoration: none !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; transition: all .2s; text-decoration: none !important; }
+.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; transition: all .2s; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-path:hover { background: transparent !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
@@ -199,8 +177,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 32px; } .rc-lp-hero-title h1 { font-size: 1.8rem; }
   .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
-  .rc-card-grid { grid-template-columns: 1fr; }
-  .rc-stat-strip { grid-template-columns: 1fr; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; } .rc-lp-nav-indicator { width: 100%; text-align: center; }
 }
 </style>
@@ -224,11 +200,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain • Dunning 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Email branding</h1></div>
-      <p>Unbranded dunning emails look like phishing attempts. Branded ones look like a trusted business asking for help. That difference shows up directly in your recovery rate.</p>
+      <div class="rc-lp-hero-title"><h1>Email configuration</h1></div>
+      <p>Step-by-step: how to apply your branding, add personalization, and get your templates ready to send.</p>
+      
     </div>
 
-    <!-- STICKY NAV — LP Overview variant -->
+<!-- STICKY NAV — LP Overview variant -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -243,7 +220,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           Path overview
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-sticky-link">
+       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-sticky-link">
           <span class="rc-step-badge">1</span> Understanding Dunning windows
         </a>
         
@@ -251,12 +228,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <span class="rc-step-badge">2</span> Dunning window configuration
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Email branding
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-sticky-link">
+          <span class="rc-step-badge">3</span> Email branding
         </a>
         
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-sticky-link">
-          <span class="rc-step-badge">4</span> Email configuration
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Email configuration
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-sticky-link">
@@ -278,70 +255,73 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-sticky-link">
           <span class="rc-step-badge">9</span> Review &amp; resources
         </a>
-
       </div></div></div>
     </details>
 
-    <!-- WHAT IT IS -->
+    <!-- VIDEO + STEPS -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-envelope-open-text rc-fa-section"></i> What branding your dunning emails means</h2>
-      <p>By default, Recurly's dunning email templates are functional but generic — plain layout, no logo, no brand colors. To a subscriber, an unformatted email asking them to update their payment details looks like a phishing attempt, not a trusted message from a business they subscribe to. Brand recognition is what turns a suspicious-looking email into an actionable one.</p>
-      <p>Branded dunning emails match your other transactional communications — same logo, colors, tone, and footer. Subscribers recognize who it's from immediately, which increases open rates, click-through rates, and ultimately recovery.</p>
+      <h2><i class="fa-solid fa-gear rc-fa-section"></i> How to configure your email templates</h2>
+      <p>Head to <strong>Configuration → Email Templates → Dunning management templates</strong> in your Recurly dashboard. You'll see one template per email in your dunning sequence. Edit each one to apply your branding and personalization before enabling your campaign.</p>
 
-      <div class="rc-video-card">
-        <div class="rc-video-header">
-          <h4>Trail guide: configuring dunning email templates</h4>
-          <span>~3 min</span>
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>Open the template editor</h4>
+            <p>Go to <strong>Configuration → Email Templates → Dunning management templates</strong>. Click into the first template in your sequence — usually the Day 0 email.</p>
+          </div>
         </div>
-        <div class="rc-video-embed">
-          <iframe src="https://share.synthesia.io/embeds/videos/aa762aae-0ab6-44f9-9b57-a711992871fc" loading="lazy" title="Dunning email template configuration walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>Apply your visual branding</h4>
+            <p>Set your logo in the header, apply your brand's primary color to the background and button, and update the footer with your company name, address, and support link. Every email in the sequence should use the same branded header and footer.</p>
+          </div>
         </div>
-        <div class="rc-video-caption">A walkthrough of the email template editor — applying branding, adding dynamic variables, and sending a test.</div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Add dynamic variables</h4>
+            <p>Personalize each email using Recurly's built-in variables: <strong>subscriber name</strong>, <strong>amount owed</strong>, <strong>card last four digits</strong>, and <strong>days remaining</strong> in the window. Personalized emails consistently outperform generic ones — include at least the subscriber name and amount in every template.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">4</div>
+          <div class="rc-step-content">
+            <h4>Write distinct copy for each email</h4>
+            <p>Do not reuse the same message across your sequence. Each email should have a different subject line and escalating urgency — early emails are friendly reminders, later ones communicate real consequences. Subject lines and CTAs are covered in detail on the next page.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">5</div>
+          <div class="rc-step-content">
+            <h4>Send a test email and verify every link</h4>
+            <p>Before saving, use the <strong>Send Test</strong> button on each template. Open the email on both desktop and mobile. Click the payment update link and confirm it routes correctly — a broken link is the most common reason subscribers who want to update their payment can't.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-image"></i></div>
-          <h4>Visual identity</h4>
-          <p>Your logo, brand colors, and header image. Makes the email instantly recognizable and sets the tone before the subscriber reads a word.</p>
+      <div class="rc-callout rc-callout-caution">
+        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="rc-callout-body">
+          <strong>Hard declines need a Day 0 email</strong>
+          <p>Recurly typically won't retry hard declines — a wrong card number, a fraud block — so your email sequence is the only automated recovery tool in those cases. Make sure your first dunning email is scheduled for Day 0, not Day 3, so hard-decline subscribers get an immediate prompt to act.</p>
         </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-font"></i></div>
-          <h4>Tone of voice</h4>
-          <p>Write in the same voice as your other customer communications — friendly, clear, and direct. Avoid generic system language like "payment failure detected."</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-arrow-pointer"></i></div>
-          <h4>Clear CTA</h4>
-          <p>A prominent, action-oriented button — "Update your payment method" — styled in your brand colors. The CTA is the only job of the email; make it impossible to miss.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-list"></i></div>
-          <h4>Branded footer</h4>
-          <p>Copyright line, links to your support page and terms, and your company address. Signals legitimacy and gives the subscriber somewhere to go if they have questions.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="rc-callout rc-callout-tip">
-      <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-      <div class="rc-callout-body">
-        <strong>Personalization amplifies branding</strong>
-        <p>Use Recurly's dynamic variables to include the subscriber's name, the amount owed, the last four digits of their card, and the days remaining in the dunning window. A personalized email feels like it was written for that subscriber specifically — which drives action far more effectively than a generic one.</p>
       </div>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-btn-prev">← Dunning window configuration</a>
-      <span class="rc-lp-nav-indicator">3 of 9</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-btn-path">Next: Email configuration →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-btn-prev">← Email branding</a>
+      <span class="rc-lp-nav-indicator">4 of 9</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-btn-path">Next: Email messaging strategy →</a>
     </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning management</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Email templates</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning management</a>
+        <a href="https://share.synthesia.io/aa762aae-0ab6-44f9-9b57-a711992871fc" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-circle-play"></i> Trail guide: Branded for liftoff: emails & invoices</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
     </div>
@@ -352,16 +332,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
         <div class="rc-footer-section">
           <span class="rc-footer-label">Dunning 101</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-footer-link">1. Understanding Dunning windows</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-footer-link">2. Dunning window configuration</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-footer-link">3. Email branding</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-footer-link">4. Email configuration</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-footer-link">5. Email messaging strategy</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-footer-link">6. Multiple campaigns</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-footer-link">7. Campaign configuration</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-footer-link">8. Measuring your performance</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-footer-link">9. Review & resources</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-footer-link">Path overview</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-dunning-windows" class="rc-footer-link">1. Understanding Dunning windows</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configuration" class="rc-footer-link">2. Dunning window configuration</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-footer-link">3. Email branding</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-footer-link">4. Email configuration</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-messaging" class="rc-footer-link">5. Email messaging strategy</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-multiple-campaigns" class="rc-footer-link">6. Multiple campaigns</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-footer-link">7. Campaign configuration</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-footer-link">8. Measuring your performance</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-footer-link">9. Review & resources</a>
         </div>
 
         <div class="rc-footer-utility">
