@@ -25,15 +25,15 @@ body { background: #ffffff !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D75;
-  --lightgray: #D1CFC4;
-  --brightgray:#F2F1EA;
-  --offwhite:  #FCFBF7;
-  --retain:    #2DCECE;
+  --yellow:     #FFD706;
+  --orange:     #FF8200;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D75;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
+  --retain:     #2DCECE;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #0D0D0B !important;
   background: #ffffff;
@@ -45,13 +45,14 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
+.rc-guide a:hover,
 .rc-guide a:active {
-  color: #008CFF !important;
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
+  color: #008CFF !important;
 }
 .rc-guide a:hover {
   color: #0067BE !important;
@@ -153,38 +154,45 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
-/* ── STAT STRIP ── */
-.rc-stat-strip { display: grid; grid-template-columns: repeat(3, 1fr); background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; overflow: hidden; margin: 0 0 32px; }
-.rc-stat-tile { padding: 24px 20px; text-align: center; }
-.rc-stat-tile + .rc-stat-tile { border-left: 1px solid #D1CFC4; }
-.rc-stat-tile-num { font-size: 2rem; font-weight: 800; color: #2DCECE; line-height: 1; margin-bottom: 4px; }
-.rc-stat-tile-label { font-size: .7rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: #807D75; margin-bottom: 10px; }
-.rc-stat-tile-context { font-size: .8rem; color: #32312D; line-height: 1.5; padding-top: 10px; border-top: 1px solid #F2F1EA; }
-
-/* ── ACCENT CARD (proof point) ── */
-.rc-accent-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
-.rc-accent-card.rc-accent-retain { border-left: 4px solid #2DCECE; }
-.rc-accent-card h4 { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
-.rc-accent-card p { font-size: .92rem; color: #32312D; line-height: 1.65; margin: 0 0 10px; }
-.rc-accent-card p:last-child { margin-bottom: 0; }
-.rc-accent-card strong { color: #0D0D0B; }
+/* ── NUMBERED STEPS ── */
+.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
+.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #F2F1EA; }
+.rc-step:last-child { border-bottom: none; }
+.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+.rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
+.rc-step-content p { font-size: .92rem; color: #807D75; line-height: 1.6; margin: 0 0 8px; }
+.rc-step-content p:last-child { margin-bottom: 0; }
+.rc-step-content strong { color: #32312D; }
+.rm-Markdown.markdown-body .rc-guide .rc-step-content a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-step-content a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide .rc-step-content a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide .rc-step-content a:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
 /* ── CALLOUTS ── */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+.rc-callout + .rc-callout { margin-top: 12px; }
 .rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
 .rc-callout-body { flex: 1; }
 .rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
-.rc-callout-tip { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
-.rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
-.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid #FFD706; }
-.rc-callout-warning .rc-callout-body > strong { color: #32312D; }
+.rc-callout-tip      { background: #F2F1EA; border-left: 4px solid #0D0D0B; }
+.rc-callout-caution { background: rgba(255,215,6,0.12); border-left: 4px solid #FFD706; }
+.rc-callout-tip .rc-callout-body > strong     { color: #0D0D0B; }
+.rc-callout-caution .rc-callout-body > strong { color: #32312D; }
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide .rc-callout-body a:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
-/* INLINE BODY LINKS */
-.rm-Markdown.markdown-body .rc-guide .rc-callout-body a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-callout-body a.rc-inline-link { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; text-decoration: none !important; }
-.rm-Markdown.markdown-body .rc-guide .rc-callout-body a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-callout-body a.rc-inline-link:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
+/* ── OFFICE HOURS CTA ── */
+.rc-oh-cta { background: #0D0D0B; border: 2px solid #FFD706; border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
+.rc-oh-cta h4 { color: #FFD706; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; }
+.rc-oh-cta p { color: #D1CFC4; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
+.rc-oh-cta p strong { color: #FCFBF7; }
+.rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-oh-btn { background: #FFD706; color: #0D0D0B !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
 /* ── PATH NAV ── */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
@@ -192,11 +200,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
+.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; text-decoration: none !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
 /* ── RESOURCES ── */
 .rc-resources { background: #F2F1EA; border-left: 4px solid #2DCECE; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
@@ -233,10 +241,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 36px; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
+  .rc-oh-cta { padding: 24px 20px; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rc-stat-strip { grid-template-columns: 1fr; }
-  .rc-stat-tile + .rc-stat-tile { border-left: 0; border-top: 1px solid #D1CFC4; }
 }
 </style>
 
@@ -264,9 +271,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain • Pause Subscriptions
       </div>
       <div class="rc-lp-hero-title">
-        <h1>Why pause reduces churn</h1>
+        <h1>How to enable pause</h1>
       </div>
-      <p>The data behind pause — why subscribers use it, how many come back, and what it means for your revenue.</p>
+      <p>Configure your pause rules, trigger pauses via the Admin Console or API, set up subscriber notifications, and decide where to surface the option in your experience.</p>
     </div>
 
     <!-- NAV -->
@@ -281,11 +288,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-sticky-link">Path Overview</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-sticky-link rc-sticky-link-active">
-              <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Why pause reduces churn
-            </a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-sticky-link"><span class="rc-step-badge">1</span> Why pause reduces churn</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> Things to consider</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-how-to-enable" class="rc-sticky-link"><span class="rc-step-badge">3</span> How to enable pause</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-how-to-enable" class="rc-sticky-link rc-sticky-link-active">
+              <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> How to enable pause
+            </a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-tracking" class="rc-sticky-link"><span class="rc-step-badge">4</span> Tracking your pause impact</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
             
@@ -294,80 +301,215 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </details>
 
-    <!-- SECTION: THE BUSINESS CASE -->
+    <!-- SECTION: DEFINE YOUR PAUSE RULES -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> The business case for pause</h2>
-      <p>Most cancellations are triggered by temporary circumstances — a tight month, a travel stretch, a box that arrived before the last one was finished. The problem is that cancellation is permanent. Once a subscriber is out, you're spending acquisition budget to win them back.</p>
-      <p>Pause solves for the gap between "I need a break" and "I want to cancel forever." The data shows most subscribers who pause do come back — and they come back faster than most merchants expect.</p>
+      <h2><i class="fa-solid fa-sliders rc-fa-section"></i> Step 1 — Define your pause rules</h2>
+      <p>Before touching any configuration, decide on the parameters that will govern your pause offering. These decisions shape both the API calls you make and the experience you present to subscribers.</p>
 
-      <div class="rc-stat-strip">
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">38%</div>
-          <div class="rc-stat-tile-label">Prefer pause over cancel</div>
-          <div class="rc-stat-tile-context">More than a third of consumers would rather pause than cancel when they need a break — if the option is available. (2026 State of Subscriptions)</div>
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>Which plans are eligible?</h4>
+            <p>Decide whether pause applies to all plans or a subset. You may want to exclude trial plans, introductory-priced plans, or plans where pausing conflicts with your product access model. Eligibility is enforced at the point of the API call — there is no global on/off switch for pause in the Admin Console.</p>
+          </div>
         </div>
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">65%</div>
-          <div class="rc-stat-tile-label">Return within 3 months</div>
-          <div class="rc-stat-tile-context">Nearly two-thirds of subscribers who pause return and resume billing within 90 days — well within a standard retention window.</div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>How long can a subscriber pause?</h4>
+            <p>Set a minimum and maximum pause duration in billing cycles. Recurly recommends starting with a single billing cycle (e.g. one month) and testing from there. Avoid indefinite pauses — open-ended pauses reduce the urgency to return and make forecasting harder. A maximum of three cycles is a reasonable starting point for most programs.</p>
+          </div>
         </div>
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">80 days</div>
-          <div class="rc-stat-tile-label">Average decision window</div>
-          <div class="rc-stat-tile-context">The average subscriber takes about 80 days to decide whether to return or cancel permanently — giving pause time to do its job.</div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>How many times can a subscriber pause?</h4>
+            <p>Decide whether to limit the number of pauses per subscriber per year. Unlimited pausing can become a substitute for cancellation rather than an alternative to it — a subscriber who pauses every other month is effectively using it as a discount mechanism. Set a reasonable annual limit and monitor the data before adjusting.</p>
+          </div>
         </div>
-      </div>
-
-      <div class="rc-callout rc-callout-warning">
-        <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
-        <div class="rc-callout-body">
-          <strong>Pause usage is growing fast</strong>
-          <p>Pause usage across Recurly merchants increased 337% in the past year, and brands offering pause before cancel saw the strongest engagement and loyalty outcomes. This is no longer a niche feature — it's becoming a baseline expectation for subscription products.</p>
+        <div class="rc-step">
+          <div class="rc-step-num">4</div>
+          <div class="rc-step-content">
+            <h4>What happens to product access during a pause?</h4>
+            <p>Recurly pauses billing — it does not control feature access, content entitlements, or physical shipments. You need to update your own entitlement or fulfillment system to reflect the paused state. Use Recurly's webhooks to trigger those updates automatically when a pause begins and ends.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- SECTION: PAUSE IN ACTION -->
+    <!-- SECTION: PAUSE VIA ADMIN CONSOLE -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-star rc-fa-section"></i> Pause in action</h2>
-      <p>The benchmarks above are averages. Here's what pause looked like for one merchant under the most challenging conditions possible.</p>
+      <h2><i class="fa-solid fa-display rc-fa-section"></i> Step 2 — Pause via the Admin Console</h2>
+      <p>The Admin Console is the fastest way to pause or resume individual subscriptions without any development work. Use this for support-assisted pauses, one-off situations, or testing your setup before building an API integration.</p>
 
-      <div class="rc-accent-card rc-accent-retain">
-        <h4><i class="fa-solid fa-film rc-fa-section"></i> Achieved 90% retention through a 14-month closure</h4>
-        <p>A media and entertainment merchant offering a monthly subscription program faced an existential retention problem during the pandemic: their venues were closed for over a year, but mass cancellations would mean starting over from scratch when they reopened.</p>
-        <p>By activating Recurly's pause feature, they suspended billing for the entire closure period. No invoices were generated, no subscriptions were cancelled, and no account history was lost. When venues reopened, subscribers resumed exactly where they left off.</p>
-        <p><strong>The result: 90% customer retention across 14 months of closure.</strong> The program has since scaled to over 1.5 million active members, with pause still in place as a permanent part of their retention strategy.</p>
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>Navigate to the subscriber's account</h4>
+            <p>Go to <strong>Accounts</strong> and search for the subscriber by name, email, or account code.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>Open the subscription details</h4>
+            <p>From the account page, locate the active subscription and click through to its detail view.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Select Pause from the Subscription Action dropdown</h4>
+            <p>In the subscription detail view, open the <strong>Subscription Action</strong> dropdown menu and select <strong>Pause</strong>.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">4</div>
+          <div class="rc-step-content">
+            <h4>Set the number of billing cycles to pause</h4>
+            <p>Enter the number of billing cycles for the pause. The pause activates at the subscriber's next billing date — not immediately. Confirm the upcoming billing date shown on screen before submitting.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">5</div>
+          <div class="rc-step-content">
+            <h4>To resume early, use the same dropdown</h4>
+            <p>If a subscriber wants to resume before the pause period ends, return to their subscription detail view, open the <strong>Subscription Action</strong> dropdown, and select <strong>Resume</strong>. Billing restarts at the next cycle.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-caution">
+        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="rc-callout-body">
+          <strong>SCA regions — do not use the Dashboard to resume</strong>
+          <p>In regions subject to PSD2 and Strong Customer Authentication, resuming a subscription via the Admin Console may cause renewal failures. The subscriber must initiate the resume directly through a 3DS-authenticated flow. Use the API with proper 3DS handling in these regions.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION: PAUSE VIA API -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-code rc-fa-section"></i> Step 3 — Pause via the API</h2>
+      <p>API-based pause is required if you want to offer subscriber self-serve pause, trigger pauses programmatically from your own cancellation flow, or handle annual plan pauses using postponement. Pass these calls to your development team alongside the considerations from the previous page.</p>
+
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>Pause a monthly subscription — pause_subscription endpoint</h4>
+            <p>Use the <strong>pause_subscription</strong> endpoint and pass the subscription UUID along with <strong>remaining_pause_cycles</strong> set to the number of billing cycles to pause. The pause activates at the next billing date.</p>
+            <p>Full reference: <a href="https://developers.recurly.com/api/v2021-02-25/index.html#operation/pause_subscription" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Pause subscription API</a></p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>Pause an annual subscription — update_subscription endpoint</h4>
+            <p>Use the <strong>update_subscription</strong> endpoint and set <strong>next_bill_date</strong> to the desired resume date — for example, one month from the current next billing date. Update your entitlement system separately to downgrade access for that period. Do not use <strong>pause_subscription</strong> for annual plans unless you intend a full annual cycle pause.</p>
+            <p>Full reference: <a href="https://developers.recurly.com/api/v2021-02-25/index.html#operation/update_subscription" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Update subscription API</a></p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Resume a paused subscription — resume_subscription endpoint</h4>
+            <p>Use the <strong>resume_subscription</strong> endpoint to end a pause early. Billing resumes at the next cycle after the resume call is made. In SCA regions, this call must be initiated with subscriber authentication — not triggered server-side without subscriber involvement.</p>
+            <p>Full reference: <a href="https://developers.recurly.com/api/v2021-02-25/index.html#operation/resume_subscription" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Resume subscription API</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION: NOTIFICATIONS -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-bell rc-fa-section"></i> Step 4 — Configure pause notifications</h2>
+      <p>Recurly fires six webhook events across the pause lifecycle. Use these to trigger your own transactional emails, update your CRM, or adjust entitlements in your product. Silence during a pause is one of the fastest ways to lose a subscriber you've already retained.</p>
+
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>Subscription paused</h4>
+            <p>Fires when the pause is confirmed. Use this to send a pause confirmation email to the subscriber — set expectations around when billing resumes and what access continues.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>Pause scheduled / pause cancelled</h4>
+            <p>Fires when a pause is scheduled for a future billing date, and again if that scheduled pause is cancelled before it activates. Use these to keep your CRM and support queue in sync.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Subscription resumed</h4>
+            <p>Fires when billing restarts — either after the pause period ends automatically or after an early resume. Use this to re-grant product access and send a welcome-back message.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">4</div>
+          <div class="rc-step-content">
+            <h4>Resume reminder (mid-pause)</h4>
+            <p>Send a mid-pause reminder email to re-engage subscribers before their billing resumes. This is not a Recurly webhook — build this as a scheduled outreach triggered a set number of days before the resume date, using the <strong>remaining_pause_cycles</strong> field to calculate timing. Reference new features, upcoming content, or anything that reinforces the value of returning.</p>
+          </div>
+        </div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
-          <strong>You don't need an extreme event to see this outcome</strong>
-          <p>The same mechanism applies whenever a subscriber's circumstances temporarily don't fit their subscription — travel, financial pressure, seasonal use, or product overload. The scale is smaller; the logic is identical.</p>
+          <strong>Recurly Engage offers "one-click Pause" and can automate pause-triggered outreach</strong>
+          <p>If you use Recurly Engage, the Recurly connector syncs subscription data nightly and supports pause and resume as prompt-triggerable actions. You can build automated journeys that fire on pause events — confirmation messages, mid-pause re-engagement, and resume win-back sequences — without custom webhook infrastructure. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-integration" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Engage: Recurly integration</a> for setup details.</p>
         </div>
       </div>
     </div>
 
-    <!-- SECTION: WHERE PAUSE FITS YOUR BUSINESS -->
+    <!-- SECTION: WHERE TO SURFACE PAUSE -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-bullseye rc-fa-section"></i> Where pause fits your business</h2>
-      <p>Pause is most effective when your voluntary churn is driven by temporary reasons rather than product dissatisfaction. Ask yourself: when subscribers cancel today, what are the most common reasons they give? If travel, cost, or "too much product" appear regularly, pause is directly addressing that signal.</p>
-      <p>It's particularly powerful for subscription boxes, streaming services, seasonal products, education platforms, and fitness or wellness subscriptions — categories where usage naturally fluctuates but brand loyalty remains strong.</p>
+      <h2><i class="fa-solid fa-eye rc-fa-section"></i> Step 5 — Surface pause in the right place</h2>
+      <p>Pause only retains subscribers who know it exists at the moment they're about to leave. Placement matters as much as configuration.</p>
 
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="rc-callout-body">
-          <strong>Pause is a retention tool, not a revenue deferral</strong>
-          <p>It's tempting to think of pause as "losing revenue temporarily." The correct frame is: without pause, that subscriber cancels and you lose the revenue permanently, plus you pay to reacquire them. Pause converts a permanent loss into a temporary pause — and 65% of the time, the revenue comes back within 90 days.</p>
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>In the cancellation flow — highest impact</h4>
+            <p>Present pause as an alternative at the moment a subscriber initiates a cancellation. This is where it has the most retention effect — the subscriber has already signaled intent to leave, and pause directly addresses the most common temporary reasons for cancellation. Make it low-friction: one tap or click to pause, with a clear statement of what resumes when.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>In account settings — for proactive use</h4>
+            <p>Surface pause in account or subscription management settings so subscribers can find it before they reach the cancellation flow. Subscribers who pause proactively — before deciding to cancel — tend to have higher reactivation rates than those who pause as a last resort.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Communicate the value, not just the option</h4>
+            <p>When presenting pause, tell the subscriber what they keep: their locked-in price, their account history, their access to exclusive perks or loyalty benefits. "Pause your subscription" is less effective than "Pause and keep your current rate — resume whenever you're ready." The benefit statement reduces the perceived cost of pausing and increases the likelihood they return.</p>
+          </div>
         </div>
       </div>
+    </div>
+
+    <!-- OFFICE HOURS CTA -->
+    <div class="rc-oh-cta">
+      <h4><i class="rc-fa-dark fa-solid fa-headset"></i>Not sure how to structure your pause configuration?</h4>
+      <p>Bring your setup questions to a <strong>Global Office Hours</strong> session. Our CSMs can walk through your specific plan structure, integration type, and subscriber behaviour to help you define pause rules that work for your program.</p>
+      <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
     <!-- PATH NAV -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-btn-prev">← Path Overview</a>
-      <span class="rc-lp-nav-indicator">1 of 5</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-btn-path">Next: Things to consider →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-btn-prev">← Things to consider</a>
+      <span class="rc-lp-nav-indicator">3 of 5</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-tracking" class="rc-btn-path">Next: Tracking your pause impact →</a>
     </div>
 
     <!-- RESOURCES -->
@@ -375,7 +517,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
         <a href="https://docs.recurly.com/docs/pause-subscription" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Pause subscription</a>
-        <a href="https://recurly.com/blog/why-pausing-a-subscription-can-be-a-powerful-retention-tactic/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Recurly Blog: Why pause is a powerful retention tactic</a>
+        <a href="https://developers.recurly.com/api/v2021-02-25/index.html#operation/pause_subscription" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> API reference: Pause subscription</a>
+        <a href="https://developers.recurly.com/api/v2021-02-25/index.html#operation/resume_subscription" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> API reference: Resume subscription</a>
+        <a href="https://developers.recurly.com/api/v2021-02-25/index.html#operation/update_subscription" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> API reference: Update subscription</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-integration" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Engage: Recurly integration</a>
+        <a href="https://recurly.com/developers/reference/webhooks/#subscription-notifications" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Webhooks: Subscription notifications</a>
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
