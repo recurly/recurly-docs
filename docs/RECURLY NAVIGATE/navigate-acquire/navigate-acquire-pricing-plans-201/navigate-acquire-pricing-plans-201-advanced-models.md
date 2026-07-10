@@ -23,46 +23,65 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 /* HOST-THEME BACKGROUND OVERRIDE */
 body { background: #ffffff !important; }
 
-/* GLOBAL CSS IMMUNITY BLOCK */
+/* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-/* NAVIGATE MASTER ARMOR */
+/* ── NAVIGATE MASTER ARMOR ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
-.rc-guide a:hover,
 .rc-guide a:active {
+  color: #008CFF !important;
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
+}
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow: #FFD706;
-  --orange: #FF8200;
-  --offblack: #0D0D0B;
-  --darkgray: #32312D;
-  --gray: #807D73;
-  --lightgray: #CCC9B8;
-  --brightgray: #F1EFE3;
-  --offwhite: #FFFDF2;
-  color: #32312D !important;
+  --yellow:    #FFD706;
+  --blue:      #008CFF;
+  --blue-tint1:#D5EAFF;
+  --blue-tint2:#96C8FF;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D75;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
+  --offwhite:  #FCFBF7;
+  --warning-fg: #FFD706;
+  --warning-bg: #FFFECB;
+  --error-fg:   #FF5126;
+  --error-bg:   #FFEEE9;
+  --success-fg: #5DC32E;
+  --success-bg: #EFFAEA;
+  --info-fg:    #008CFF;
+  --info-bg:    #E5F3FF;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #0D0D0B !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
@@ -76,11 +95,21 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
+/* Inline Body Links */
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-inline-link {
+  color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; text-decoration: none !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-inline-link:hover {
+  color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important;
+}
+
 /* Back link */
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
 /* Announcement bar */
 .rc-announce-bar { display: none; background: var(--yellow); color: var(--offblack); align-items: center; justify-content: space-between; padding: 10px 20px; font-size: .88rem; font-weight: 600; border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4; }
@@ -89,7 +118,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-announce-link { color: #0D0D0B !important; font-weight: 800; white-space: nowrap; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; transition: background 0.2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
 
 /* Hero */
 .rc-hero { background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)), url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center; background-color: var(--offblack); background-size: cover; color: #fff; padding: 52px 40px 48px; text-align: center; border-radius: 16px; margin-bottom: 0; }
@@ -97,7 +126,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
 .rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0; }
-.rc-hero > p { font-size: 1rem; max-width: 640px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
+.rc-hero > p { font-size: 1rem; max-width: 640px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
 
 /* Nav */
 details.rc-sticky-nav-wrap { position: relative; background-color: var(--yellow); box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
@@ -114,13 +143,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link { color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 
 /* Sections */
 .rc-lp-section { margin-bottom: 48px; }
@@ -138,19 +167,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
-.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid var(--yellow); }
+.rc-callout-warning { background: var(--warning-bg); border-left: 4px solid var(--warning-fg); }
 .rc-callout-warning .rc-callout-body > strong { color: var(--darkgray); }
-.rc-callout-caution { background: rgba(255,130,0,0.08); border-left: 4px solid var(--orange); }
+.rc-callout-caution { background: var(--error-bg); border-left: 4px solid var(--error-fg); }
 .rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-callout-body a { color: #FF8200 !important; font-weight: 600; border-bottom: 0 !important; }
+.rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
+.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
 /* Accent cards */
 .rc-accent-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 28px 32px; margin: 0 0 24px; }
 .rc-accent-card.rc-accent-yellow { border-left: 4px solid var(--yellow); }
-.rc-accent-card.rc-accent-orange { border-left: 4px solid var(--orange); }
+.rc-accent-card.rc-accent-orange { border-left: 4px solid var(--error-fg); }
 .rc-accent-card h3 { font-size: 1.15rem; font-weight: 800; color: var(--offblack); margin: 0 0 10px; display: flex; align-items: center; gap: 10px; }
 .rc-accent-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.65; margin: 0 0 12px; }
 .rc-accent-card p:last-child { margin-bottom: 0; }
@@ -159,9 +188,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-accent-card ul li strong { color: var(--offblack); }
 .rc-accent-card .rc-accent-tag { display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; background: var(--offblack); color: var(--yellow); padding: 3px 10px; border-radius: 20px; margin-bottom: 14px; }
 .rm-Markdown.markdown-body .rc-guide .rc-accent-card a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-accent-card a { color: #FF8200 !important; font-weight: 600; border-bottom: 0 !important; }
+.rc-guide .rc-accent-card a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide .rc-accent-card a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-accent-card a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
+.rc-guide .rc-accent-card a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
 /* Decision callout — when to use which */
 .rc-decision-strip { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 0 0 32px; }
@@ -178,30 +207,30 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #CCC9B8 !important; border-bottom: 2px solid #CCC9B8 !important; transition: all .2s; }
+.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
+.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; text-decoration: none !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: var(--yellow); color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rc-guide a.rc-btn-path { background: var(--yellow); color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
 /* OH CTA */
 .rc-oh-cta { background: #0D0D0B !important; border: 2px solid #FFD706 !important; border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
 .rc-oh-cta h4 { color: #FFD706 !important; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; display: block; }
-.rc-oh-cta p { color: #CCC9B8 !important; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
+.rc-oh-cta p { color: #D1CFC4 !important; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
 .rc-oh-cta p strong { color: #FFFDF2 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-oh-btn { background: #FFD706 !important; color: #0D0D0B !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rc-guide a.rc-oh-btn { background: #FFD706 !important; color: #0D0D0B !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
 /* Resources */
 .rc-resources { background: var(--brightgray); border-left: 4px solid var(--yellow); border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
 .rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-resource-link { color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-resource-link { color: #807D75 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration-color: #FFD706 !important; }
 
@@ -211,14 +240,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-footer-link { color: #807D73 !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-footer-link { color: #807D75 !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
 /* Responsive */
+@media(max-width:1300px) {
+  .rc-lp-nav { justify-content: center !important; gap: 12px; }
+  .rc-lp-nav-indicator { width: 100% !important; text-align: center; }
+}
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
@@ -227,9 +260,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-decision-row { grid-template-columns: 1fr; }
   .rc-decision-cell + .rc-decision-cell { border-left: none; border-top: 1px solid var(--lightgray); }
   .rc-decision-header .rc-decision-cell + .rc-decision-cell { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); }
-  .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
-  .rc-lp-nav-indicator { width: 100%; text-align: center; }
   .rc-oh-cta { padding: 24px 20px; }
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-prev,
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-path {
+    padding: 10px 16px !important;
+    font-size: 0.82rem !important;
+  }
 }
 </style>
 
@@ -288,7 +326,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section" id="hybrid-pricing">
       <h2><i class="fa-solid fa-diagram-project rc-fa-section"></i> Hybrid pricing</h2>
       <p>Hybrid pricing lets you combine multiple pricing models — recurring, usage-based, quantity-based, and one-time — within a single purchase transaction. The result is one invoice that reflects a mixed charge structure, rather than separate invoices for each component.</p>
-			<p>Hybrid pricing is available on <strong>all Recurly plans</strong>.</a>
+      <p>Hybrid pricing is available on <strong>all Recurly plans</strong>.</a>
 
       <div class="rc-accent-card rc-accent-yellow">
         <div class="rc-accent-tag">What it is</div>
