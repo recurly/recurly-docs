@@ -28,52 +28,72 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 /* HOST-THEME BACKGROUND OVERRIDE */
 body { background: #ffffff !important; }
 
-/* GLOBAL CSS IMMUNITY BLOCK */
+/* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 FONT RESTORE — attribute selectors = (0,0,2,0), beats wildcard (0,0,1,0). */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-/* NAVIGATE MASTER ARMOR */
+/* ── NAVIGATE MASTER ARMOR ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
-.rc-guide a:hover,
 .rc-guide a:active {
+  color: #008CFF !important;
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
+}
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
   --yellow:     #FFD706;
-  --orange:     #FF8200;
+  --blue:       #008CFF;
+  --blue-tint1: #D5EAFF;
+  --blue-tint2: #96C8FF;
   --offblack:   #0D0D0B;
   --darkgray:   #32312D;
-  --gray:       #807D73;
-  --lightgray:  #CCC9B8;
-  --brightgray: #F1EFE3;
-  --offwhite:   #FFFDF2;
-  font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  --gray:       #807D75;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
+  --acquire:    #FFD706;
+  --warning-fg: #FFD706;
+  --warning-bg: #FFFECB;
+  --error-fg:   #FF5126;
+  --error-bg:   #FFEEE9;
+  --success-fg: #5DC32E;
+  --success-bg: #EFFAEA;
+  --info-fg:    #008CFF;
+  --info-bg:    #E5F3FF;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #32312D !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
 
 /* FA6 ICON HELPERS */
+.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-dark    { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-light   { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
@@ -81,9 +101,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 /* TOP NAV */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
@@ -103,8 +123,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
-.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
 /* NAV */
 details.rc-sticky-nav-wrap {
@@ -133,33 +153,34 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 
 /* CONTENT SECTIONS */
 .rc-lp-section { margin-bottom: 48px; }
 .rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: #0D0D0B; display: flex; align-items: center; gap: 12px; }
-.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
-.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
+.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-/* MODEL CARDS — 5 models, each with a distinct layout */
+/* MODEL CARDS */
 .rc-model-list { display: flex; flex-direction: column; gap: 20px; margin: 0 0 32px; }
-.rc-model-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 14px; padding: 24px 28px; display: flex; flex-direction: column; gap: 10px; }
+.rc-model-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 14px; padding: 24px 28px; display: flex; flex-direction: column; gap: 10px; }
 .rc-model-card-header { display: flex; align-items: center; gap: 14px; }
 .rc-model-icon { width: 40px; height: 40px; border-radius: 10px; background: #0D0D0B; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .rc-model-icon i { color: #FFD706 !important; font-size: 1rem; }
 .rc-model-title { font-size: 1.05rem; font-weight: 800; color: #0D0D0B; margin: 0; }
-.rc-model-tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: #807D73; background: #F1EFE3; padding: 3px 8px; border-radius: 20px; }
-.rc-model-desc { font-size: .92rem; color: #32312D; line-height: 1.65; margin: 0; }
-.rc-model-example { font-size: .85rem; color: #807D73; line-height: 1.55; background: #F1EFE3; border-radius: 8px; padding: 10px 14px; margin: 0; }
-.rc-model-example strong { color: #32312D; }
+.rc-model-tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: var(--gray); background: var(--brightgray); padding: 3px 8px; border-radius: 20px; }
+.rc-model-desc { font-size: .92rem; color: var(--darkgray); line-height: 1.65; margin: 0; }
+.rc-model-example { font-size: .85rem; color: var(--gray); line-height: 1.55; background: var(--brightgray); border-radius: 8px; padding: 10px 14px; margin: 0; }
+.rc-model-example strong { color: var(--darkgray); }
 .rc-model-bestfor { font-size: .82rem; font-weight: 700; color: #0D0D0B; display: flex; align-items: flex-start; gap: 6px; }
-.rc-model-bestfor span { font-weight: 400; color: #807D73; }
+.rc-model-bestfor span { font-weight: 400; color: var(--gray); }
+.rc-model-diagram { width: 100%; border-radius: 8px; margin-top: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
 
 /* CALLOUTS */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
@@ -167,72 +188,77 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
 .rc-callout-body { flex: 1; }
 .rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
-.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
-.rc-callout-tip { background: #F1EFE3; border-left: 4px solid #0D0D0B; }
+.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
+.rc-callout-tip { background: var(--brightgray); border-left: 4px solid #0D0D0B; }
 .rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
-.rc-callout-caution { background: rgba(255,130,0,0.08); border-left: 4px solid #FF8200; }
-.rc-callout-caution .rc-callout-body > strong { color: #32312D; }
+.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid var(--yellow); }
+.rc-callout-warning .rc-callout-body > strong { color: var(--darkgray); }
+.rc-callout-caution { background: var(--warning-bg); border-left: 4px solid var(--warning-fg); }
+.rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-callout-body a { color: #FF8200 !important; font-weight: 600; border-bottom: 0 !important; }
+.rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide .rc-callout-body a:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
 /* TABLE */
-.rc-table-wrap { overflow-x: auto; border-radius: 10px; border: 1px solid #CCC9B8; margin: 20px 0 32px; }
+.rc-table-wrap { overflow-x: auto; border-radius: 10px; border: 1px solid var(--lightgray); margin: 20px 0 32px; }
 .rc-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
-.rc-table thead tr th { background: #0D0D0B !important; color: #FFFDF2 !important; font-weight: 700; padding: 12px 16px; text-align: left; border: 0; }
-.rc-table tbody tr td { background: #FFFDF2 !important; color: #32312D !important; padding: 11px 16px; border-bottom: 1px solid #F1EFE3; vertical-align: top; line-height: 1.55; }
+.rc-table thead tr th { background: #0D0D0B !important; color: var(--offwhite) !important; font-weight: 700; padding: 12px 16px; text-align: left; border: 0; }
+.rc-table tbody tr td { background: var(--offwhite) !important; color: #32312D !important; padding: 11px 16px; border-bottom: 1px solid var(--brightgray); vertical-align: top; line-height: 1.55; }
 .rc-table tbody tr:last-child td { border-bottom: 0; }
 .rc-table tbody tr td:first-child { font-weight: 700; color: #0D0D0B !important; width: 22%; }
 
 /* ACCENT CARD */
-.rc-accent-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
+.rc-accent-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
 .rc-accent-card.rc-accent-yellow { border-left: 4px solid #FFD706; }
 .rc-accent-card h4 { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 12px; }
-.rc-accent-card ul { font-size: .9rem; color: #807D73; line-height: 1.75; padding-left: 20px; margin: 0; }
+.rc-accent-card ul { font-size: .9rem; color: var(--gray); line-height: 1.75; padding-left: 20px; margin: 0; }
 .rc-accent-card ul li { margin-bottom: 4px; }
-.rc-accent-card ul li strong { color: #32312D; }
+.rc-accent-card ul li strong { color: var(--darkgray); }
 
 /* OH CTA */
 .rc-oh-cta { background: #0D0D0B; border: 2px solid #FFD706; border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
 .rc-oh-cta h4 { color: #FFD706; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; }
-.rc-oh-cta p { color: #CCC9B8; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
-.rc-oh-cta p strong { color: #FFFDF2; }
+.rc-oh-cta p { color: var(--lightgray); font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
+.rc-oh-cta p strong { color: var(--offwhite); }
 .rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-oh-btn { background: #FFD706; color: #0D0D0B !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
 /* PATH NAV */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
-.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #CCC9B8; letter-spacing: .5px; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #CCC9B8 !important; border-bottom: 2px solid #CCC9B8 !important; transition: all .2s; }
+.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--lightgray) !important; border-bottom: 2px solid var(--lightgray) !important; transition: all .2s; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
+.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; text-decoration: none !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
 /* RESOURCES */
-.rc-resources { background: #F1EFE3; border-left: 4px solid #FFD706; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
-.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.rc-resources { background: var(--brightgray); border-left: 4px solid #FFD706; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-resource-link { color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-resource-link { color: var(--gray) !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: var(--lightgray) !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-decoration-color: #FFD706 !important; }
 
 /* FOOTER */
-.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-footer-link { color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-footer-link { color: var(--gray) !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
-.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
+.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
+.rc-footer-link:hover img { opacity: 1; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
 /* ANNOUNCE BAR */
 .rc-announce-bar { display: none; background: #FFD706; color: #0D0D0B; align-items: center; justify-content: space-between; padding: 10px 20px; font-size: .88rem; font-weight: 600; border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4; }
@@ -240,23 +266,35 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-announce-link { color: #0D0D0B !important; font-weight: 800; white-space: nowrap; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; transition: background 0.2s; border-bottom: 0 !important; }
-.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
+
+@media(max-width:1300px) {
+  .rc-lp-nav { justify-content: center !important; gap: 12px; }
+  .rc-lp-nav-indicator { width: 100% !important; text-align: center; }
+}
 
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
-  .rc-hero { padding: 36px 20px; }
+  .rc-hero { padding: 36px 20px 36px; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
   .rc-oh-cta { padding: 24px 20px; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
   .rc-table-wrap { font-size: .82rem; }
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-path,
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-prev {
+    padding: 10px 16px !important;
+    font-size: 0.82rem !important;
+  }
 }
 </style>
 
 <div class="rc-guide">
 
-  <!-- Announce bar -->
   <div class="rc-announce-bar">
     <div class="rc-announce-inner">
       <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
@@ -265,14 +303,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
   </div>
 
-  <!-- Back link -->
   <div class="rc-top-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-back-link">← Back to Acquire</a>
   </div>
 
   <div class="rc-content-wrap">
 
-    <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 101
@@ -281,7 +317,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Recurly supports five pricing models — from flat fixed pricing to usage-based and quantity-scaled approaches. This page covers how each model works, how they calculate charges differently, and which fits which business scenario.</p>
     </div>
 
-    <!-- Nav -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -304,14 +339,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div></div></div>
     </details>
 
-    <!-- Section: The five models -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-layer-group rc-fa-section"></i> The five pricing models</h2>
       <p>Pricing models are set at the plan level and determine how the charge amount is calculated each billing period. You select a model when creating a plan — it cannot be changed after the plan is created. Choose the model that matches how your product delivers value.</p>
 
       <div class="rc-model-list">
 
-        <!-- Fixed -->
         <div class="rc-model-card">
           <div class="rc-model-card-header">
             <div class="rc-model-icon"><i class="fa-solid fa-equals"></i></div>
@@ -321,11 +354,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </div>
           </div>
           <p class="rc-model-desc">A set amount charged every billing period, regardless of usage or quantity. The simplest and most common model. Price is defined once on the plan; every subscriber pays the same amount.</p>
+          
+
+[Image of Fixed pricing model chart]
+
           <p class="rc-model-example"><strong>Example:</strong> A streaming service charges $12.99/month. Every subscriber on that plan pays $12.99 regardless of how many hours they watch.</p>
-          <p class="rc-model-bestfor"><i class="fa-solid fa-circle-check" style="color:#6ab187; margin-top:2px; flex-shrink:0;"></i> <span><strong>Best for:</strong> Any business where the product delivers consistent value independent of usage — media, SaaS tools, memberships.</span></p>
+          <p class="rc-model-bestfor"><i class="fa-solid fa-circle-check" style="color:var(--success-fg); margin-top:2px; flex-shrink:0;"></i> <span><strong>Best for:</strong> Any business where the product delivers consistent value independent of usage — media, SaaS tools, memberships.</span></p>
         </div>
 
-        <!-- Ramp -->
         <div class="rc-model-card">
           <div class="rc-model-card-header">
             <div class="rc-model-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
@@ -335,11 +371,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </div>
           </div>
           <p class="rc-model-desc">A series of price points — called ramp intervals — that change automatically over a subscription's billing periods. Prices can step up (introductory offer that increases over time) or step down (loyalty pricing that rewards long-term subscribers). Up to 12 intervals per plan.</p>
+          
           <p class="rc-model-example"><strong>Example:</strong> A SaaS product charges $29/month for the first 3 months, then $49/month thereafter. The price increase happens automatically at the configured interval — no manual intervention required.</p>
-          <p class="rc-model-bestfor"><i class="fa-solid fa-circle-check" style="color:#6ab187; margin-top:2px; flex-shrink:0;"></i> <span><strong>Best for:</strong> Reducing sign-up friction with an introductory rate; rewarding long-term subscribers with loyalty pricing.</span></p>
+          <p class="rc-model-bestfor"><i class="fa-solid fa-circle-check" style="color:var(--success-fg); margin-top:2px; flex-shrink:0;"></i> <span><strong>Best for:</strong> Reducing sign-up friction with an introductory rate; rewarding long-term subscribers with loyalty pricing.</span></p>
         </div>
 
-        <!-- Tiered -->
         <div class="rc-model-card">
           <div class="rc-model-card-header">
             <div class="rc-model-icon"><i class="fa-solid fa-chart-bar"></i></div>
@@ -349,11 +385,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </div>
           </div>
           <p class="rc-model-desc">Units are charged at the rate of the tier they fall into. Each tier has its own per-unit rate — units in the first tier are charged at one rate, units in the second tier at a different (usually lower) rate. Different portions of the total quantity are priced differently.</p>
+          
           <p class="rc-model-example"><strong>Example:</strong> $1.00/unit for the first 100 units, $0.50/unit for units 101–500, $0.25/unit above 500. A subscriber using 300 units pays: (100 × $1.00) + (200 × $0.50) = $200.</p>
-          <p class="rc-model-bestfor"><i class="fa-solid fa-circle-check" style="color:#6ab187; margin-top:2px; flex-shrink:0;"></i> <span><strong>Best for:</strong> Usage-based products where you want customers to feel a direct reward as they consume more — API calls, emails sent, transactions processed.</span></p>
+          <p class="rc-model-bestfor"><i class="fa-solid fa-circle-check" style="color:var(--success-fg); margin-top:2px; flex-shrink:0;"></i> <span><strong>Best for:</strong> Usage-based products where you want customers to feel a direct reward as they consume more — API calls, emails sent, transactions processed.</span></p>
         </div>
 
-        <!-- Volume -->
         <div class="rc-model-card">
           <div class="rc-model-card-header">
             <div class="rc-model-icon"><i class="fa-solid fa-cubes"></i></div>
@@ -363,11 +399,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </div>
           </div>
           <p class="rc-model-desc">The entire quantity is priced at the rate of the highest tier reached — not just the units above the threshold. All units get the lower rate once the volume threshold is crossed, making this a stronger bulk incentive than tiered pricing.</p>
+          
           <p class="rc-model-example"><strong>Example:</strong> $10/seat for 1–20 seats, $9/seat for 21+ seats. A subscriber with 21 seats pays 21 × $9 = $189 — all seats at the lower rate, not just seat 21.</p>
-          <p class="rc-model-bestfor"><i class="fa-solid fa-circle-check" style="color:#6ab187; margin-top:2px; flex-shrink:0;"></i> <span><strong>Best for:</strong> Per-seat or per-unit models where you want to incentivize bulk purchases and reward customers who commit to higher quantities upfront.</span></p>
+          <p class="rc-model-bestfor"><i class="fa-solid fa-circle-check" style="color:var(--success-fg); margin-top:2px; flex-shrink:0;"></i> <span><strong>Best for:</strong> Per-seat or per-unit models where you want to incentivize bulk purchases and reward customers who commit to higher quantities upfront.</span></p>
         </div>
 
-        <!-- Stairstep -->
         <div class="rc-model-card">
           <div class="rc-model-card-header">
             <div class="rc-model-icon"><i class="fa-solid fa-stairs"></i></div>
@@ -377,14 +413,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </div>
           </div>
           <p class="rc-model-desc">A flat rate for a defined quantity range, regardless of the exact quantity within that range. The price jumps to the next step's flat rate when the quantity exceeds the threshold — the rate applies to all units, not incrementally.</p>
+          
           <p class="rc-model-example"><strong>Example:</strong> $50 for 1–10 seats, $100 for 11–20 seats, $150 for 21+ seats. A subscriber with 25 seats pays a flat $150 — the same as a subscriber with 50 seats in that tier.</p>
-          <p class="rc-model-bestfor"><i class="fa-solid fa-circle-check" style="color:#6ab187; margin-top:2px; flex-shrink:0;"></i> <span><strong>Best for:</strong> Seat-based SaaS, storage tiers, or any scenario where customers select a package size and you want predictable, flat-rate pricing per tier.</span></p>
+          <p class="rc-model-bestfor"><i class="fa-solid fa-circle-check" style="color:var(--success-fg); margin-top:2px; flex-shrink:0;"></i> <span><strong>Best for:</strong> Seat-based SaaS, storage tiers, or any scenario where customers select a package size and you want predictable, flat-rate pricing per tier.</span></p>
         </div>
 
       </div>
     </div>
 
-    <!-- Section: Quick comparison -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-table-cells rc-fa-section"></i> Model comparison at a glance</h2>
       <p>The three quantity-based models — tiered, volume, and stairstep — are easy to confuse. Here's how they differ when a subscriber purchases 25 units, with tiers at 1–10, 11–20, and 21+:</p>
@@ -427,7 +463,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Section: Which model to choose -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-circle-question rc-fa-section"></i> Choosing the right model</h2>
 
@@ -443,7 +478,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
 
       <div class="rc-callout rc-callout-caution">
-        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation" style="color:#FF8200;"></i></div>
+        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation" style="color:var(--warning-fg);"></i></div>
         <div class="rc-callout-body">
           <strong>Pricing model cannot be changed after plan creation</strong>
           <p>Once a plan is saved with a pricing model, you cannot change it. If you need a different model, create a new plan. Test your model in a sandbox environment before creating live plans with active subscribers.</p>
@@ -451,14 +486,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Office Hours CTA -->
     <div class="rc-oh-cta">
       <h4><i class="fa-solid fa-headset rc-fa-dark"></i>Not sure which model fits your business?</h4>
       <p>Pricing model decisions have long-term implications for billing, reporting, and subscriber experience. Bring your scenario to <strong>Global Office Hours</strong> and work through it live with a Recurly CSM.</p>
       <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
-    <!-- Resources -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
@@ -471,14 +504,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Path nav -->
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-btn-prev">← Currency</a>
       <span class="rc-lp-nav-indicator">4 of 7</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials" class="rc-btn-path">Next: Trials →</a>
     </div>
 
-    <!-- Footer -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
