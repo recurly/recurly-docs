@@ -23,45 +23,55 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 /* HOST-THEME BACKGROUND OVERRIDE */
 body { background: #ffffff !important; }
 
-/* GLOBAL CSS IMMUNITY BLOCK */
+/* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-/* NAVIGATE MASTER ARMOR */
+/* ── NAVIGATE MASTER ARMOR ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
-.rc-guide a:hover,
 .rc-guide a:active {
+  color: #008CFF !important;
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
+}
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow: #FFD706;
-  --orange: #FF8200;
-  --offblack: #0D0D0B;
-  --darkgray: #32312D;
-  --gray: #807D73;
-  --lightgray: #CCC9B8;
-  --brightgray: #F1EFE3;
-  --offwhite: #FFFDF2;
+  --yellow:    #FFD706;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D75;
+  --lightgray: #D1CFC4;
+  --brightgray:#F2F1EA;
+  --offwhite:  #FCFBF7;
+  --warning-fg: #FFD706;
+  --warning-bg: #FFFECB;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #32312D !important;
   background: #ffffff;
 }
@@ -75,15 +85,25 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
+/* Inline Body Links */
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-inline-link {
+  color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; text-decoration: none !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-inline-link:hover {
+  color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important;
+}
+
 /* Back link */
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-back-link {
-  color: #807D73 !important; font-weight: 700; font-size: .9rem;
+  color: #807D75 !important; font-weight: 700; font-size: .9rem;
   display: inline-flex; align-items: center; gap: 6px;
   transition: color .2s; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; }
 
 /* Announcement bar */
 .rc-announce-bar {
@@ -120,8 +140,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
-.rc-lp-hero-title h1 { font-size: 2.6rem; font-weight: 800; line-height: 1.1; color: #FFFDF2; margin: 0; }
-.rc-hero > p { font-size: 1.05rem; max-width: 660px; margin: 0 auto; color: #CCC9B8; line-height: 1.65; }
+.rc-lp-hero-title h1 { font-size: 2.6rem; font-weight: 800; line-height: 1.1; color: #FCFBF7; margin: 0; }
+.rc-hero > p { font-size: 1.05rem; max-width: 660px; margin: 0 auto; color: #D1CFC4; line-height: 1.65; }
 
 /* Nav — non-sticky, open, Acquire yellow */
 details.rc-sticky-nav-wrap {
@@ -188,12 +208,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
-.rc-callout-caution { background: rgba(255,130,0,0.08); border-left: 4px solid var(--orange); }
+.rc-callout-caution { background: var(--warning-bg); border-left: 4px solid var(--warning-fg); }
 .rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
-.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-callout-body a { color: #FF8200 !important; font-weight: 600; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
 
 /* TOC cards */
 .rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
@@ -205,7 +221,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   transition: all .2s ease;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-toc-card { border-bottom: 1px solid #CCC9B8 !important; }
+.rc-guide a.rc-toc-card { border-bottom: 1px solid #D1CFC4 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-toc-card:hover {
   border-color: #FFD706; border-bottom: 1px solid #FFD706 !important;
@@ -251,8 +267,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-resource-link {
-  color: #807D73 !important; text-decoration: underline !important;
-  text-underline-offset: 3px; text-decoration-color: #CCC9B8 !important;
+  color: #807D75 !important; text-decoration: underline !important;
+  text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important;
   font-weight: 500; font-size: .88rem; transition: all .18s;
   display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
@@ -269,12 +285,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-footer-link {
-  color: #807D73 !important; font-weight: 600; font-size: .88rem;
+  color: #807D75 !important; font-weight: 600; font-size: .88rem;
   transition: color .2s ease; display: inline-flex; align-items: center;
   gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
@@ -293,14 +309,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 <div class="rc-guide">
 
-  <!-- Back link -->
   <div class="rc-top-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-back-link">← Back to Acquire</a>
   </div>
 
   <div class="rc-content-wrap">
 
-    <!-- Announcement bar (hidden — add rc-active to show) -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
@@ -309,7 +323,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 201
@@ -320,7 +333,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>You've built the foundation. This path goes deeper — into the pricing architectures that mature subscription businesses use to segment markets, structure enterprise billing, charge for real-world usage, and measure what's actually driving revenue.</p>
     </div>
 
-    <!-- Nav — Course Overview, active -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -329,7 +341,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <!-- Overview — active, map pin, no number -->
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-sticky-link rc-sticky-link-active">
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Path Overview
         </a>
@@ -340,11 +351,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-advanced-currency" class="rc-sticky-link"><span class="rc-step-badge">5</span> Advanced currency</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-advanced-analytics" class="rc-sticky-link"><span class="rc-step-badge">6</span> Advanced analytics</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-review" class="rc-sticky-link"><span class="rc-step-badge">7</span> Review &amp; resources</a>
-        <!-- No Back to Path Start on Overview — it would link to itself -->
-      </div></div></div>
+        </div></div></div>
     </details>
 
-    <!-- Intro -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-map rc-fa-section"></i> What this path covers</h2>
       <p>Pricing &amp; Plans 101 covered the core configuration: plans, add-ons, currencies, pricing models, trials, and analytics. This path assumes that foundation is in place and builds on it. Each page focuses on a specific capability that becomes relevant as a subscription business grows — from serving multiple customer segments without duplicating plans, to billing enterprise accounts under a unified structure, to measuring performance beyond the built-in dashboards.</p>
@@ -354,7 +363,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
           <strong>Prerequisite: Pricing &amp; Plans 101</strong>
-          <p>This path builds directly on plans, add-ons, pricing models, currencies, and trials. If you haven't covered those yet, start with <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101">Pricing &amp; Plans 101</a> first — the 201 configurations assume those foundations are already in place.</p>
+          <p>This path builds directly on plans, add-ons, pricing models, currencies, and trials. If you haven't covered those yet, start with <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-inline-link rp-anchor">Pricing &amp; Plans 101</a> first — the 201 configurations assume those foundations are already in place.</p>
         </div>
       </div>
 
@@ -367,7 +376,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- TOC -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-list-ol rc-fa-section"></i> Path pages</h2>
 
@@ -439,14 +447,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Path nav — Start state (Overview page) -->
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
       <span class="rc-lp-nav-indicator">Overview</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation" class="rc-btn-path">Begin: Price segmentation →</a>
     </div>
 
-    <!-- Resources -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
@@ -456,8 +462,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/usage-based-pricing-guide" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Usage-based billing</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-hierarchy-1" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Account hierarchy</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-analytics-overview" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Analytics overview</a>
-
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/ah-invoice-rollup" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Invoice Rollup</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/ah-invoice-rollup" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Invoice Rollup</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-builder" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Analytics Explore Overview</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/usage-based-billing" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Usage-Based Billing</a>
         <a href="https://recurly.com/pricing/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Pricing Page (current plan tiers)</a>
@@ -465,7 +470,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Footer — Course pattern 19c -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
