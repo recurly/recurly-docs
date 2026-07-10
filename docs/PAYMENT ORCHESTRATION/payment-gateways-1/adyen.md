@@ -641,10 +641,10 @@ Before you start, confirm with Adyen that RTAU is enabled for your account and t
 ### Eligibility requirements
 
 <ul class="rp-list">
-<li>You're only using Adyen as your gateway provider, and do have have multi-gateway partners set up.</li>
+<li>You're only using Adyen as your gateway provider, and do have have multi-gateway partners set up</li>
 <li>You're using raw cards with Adyen as your only gateway through a supported Recurly API or Recurly.js (not Adyen Web Components)</li>
 <li>You're not using Adyen gateway tokens or network tokens</li>
-<li>You're not using Adyen Third Party Checkout or components through Recurly.js</li>
+<li>You're not using Adyen Third Party Checkout or components through Recurly.js or are otherwise sending Recurly Adyen tokens</li>
 </ul>
 
 ### Recurly configuration — RSA key
