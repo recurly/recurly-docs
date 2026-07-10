@@ -25,6 +25,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -33,41 +34,49 @@ body { background: #ffffff !important; }
 
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-/* ── NAVIGATE MASTER ARMOR — (0,0,7,1) ── */
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:     #FFD706;
+  --orange:     #FF5126;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D75;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
+  --retain:     #2DCECE;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #32312D !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
+
+/* ── NAVIGATE MASTER ARMOR ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
-.rc-guide a:hover,
 .rc-guide a:active {
+  color: #008CFF !important;
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
-
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-
-/* ── DESIGN TOKENS ── */
-.rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #CCC9B8;
-  --brightgray:#F1EFE3;
-  --offwhite:  #FFFDF2;
-  --retain:    #FF9D88;
-  color: #32312D !important;
-  background: #ffffff;
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
 }
 
 /* ── FONT AWESOME ICON HELPERS ── */
@@ -76,15 +85,31 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-fa-light { color: var(--offblack); font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-section { color: var(--offblack); font-size: 1rem; }
 
+/* ── INLINE LINK STYLE ── */
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-inline-link {
+  color: #008CFF !important;
+  font-weight: 600;
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-inline-link:not([class*="Button"]):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-inline-link:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
+}
+
 /* ── LAYOUT ── */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
 /* Back link — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
 /* ── ANNOUNCEMENT BAR (hidden by default) ── */
 .rc-announce-bar { display: none; background: var(--offblack); padding: 10px 40px; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
@@ -94,7 +119,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-announce-link { color: #0D0D0B !important; background: var(--yellow); padding: 5px 14px; border-radius: 6px; font-size: .82rem; font-weight: 700; border-bottom: 0 !important; transition: opacity .2s; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-announce-link:hover { opacity: .85; }
+.rc-guide a.rc-announce-link:hover { opacity: .85; text-decoration: none !important; }
 
 /* ── HERO ── */
 .rc-hero {
@@ -105,8 +130,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-lp-pillar-tag {
   display: inline-flex; align-items: center; gap: 7px;
-  background: rgba(255,157,136,0.20); border: 1px solid rgba(255,157,136,0.45);
-  color: #FF9D88; font-size: .75rem; font-weight: 800; letter-spacing: 1px;
+  background: rgba(45,206,206,0.20); border: 1px solid rgba(45,206,206,0.45);
+  color: #2DCECE; font-size: .75rem; font-weight: 800; letter-spacing: 1px;
   text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px;
 }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
@@ -141,13 +166,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; text-decoration: none !important; }
 
 /* ── CONTENT SECTIONS ── */
 .rc-lp-section { margin-bottom: 52px; }
@@ -157,7 +182,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* ── TIMING & FREQUENCY TABLE ── */
 .rc-timing-table { width: 100%; border-collapse: separate !important; border-spacing: 0 !important; font-size: .9rem; margin: 0 0 28px; border-radius: 10px !important; border: 1px solid var(--lightgray); overflow: hidden; }
-.rc-timing-table tr.rc-thead-row td { background: #0D0D0B !important; color: #FFFDF2 !important; font-weight: 700; padding: 11px 16px; }
+.rc-timing-table tr.rc-thead-row td { background: #0D0D0B !important; color: #FCFBF7 !important; font-weight: 700; padding: 11px 16px; }
 .rc-timing-table td { padding: 12px 16px; border-bottom: 1px solid var(--lightgray); vertical-align: top; background: var(--offwhite) !important; line-height: 1.5; }
 .rc-timing-table tr:last-child td { border-bottom: 0 !important; }
 .rc-timing-table tr td:first-child { font-weight: 700; color: var(--offblack); width: 24%; }
@@ -193,15 +218,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
 /* Callout inline links */
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-callout-body a { color: #FF8200 !important; font-weight: 600; border-bottom: 0 !important; }
+.rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
+.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
 /* ── OH CTA — all hex + !important on dark card ── */
 .rc-oh-cta { background: #0D0D0B !important; border: 2px solid #FFD706; border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
 .rc-oh-cta h4 { color: #FFD706 !important; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; }
-.rc-oh-cta p { color: #CCC9B8 !important; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
-.rc-oh-cta p strong { color: #FFFDF2 !important; }
+.rc-oh-cta p { color: #D1CFC4 !important; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
+.rc-oh-cta p strong { color: #FCFBF7 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-oh-btn {
   background: #FFD706 !important; color: #0D0D0B !important; text-decoration: none !important;
@@ -213,31 +238,33 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-oh-btn:hover {
   background: transparent !important; color: #FFD706 !important;
   border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
+  text-decoration: none !important;
 }
 
 /* ── PATH NAV BUTTONS ── */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 44px 0 16px; }
-.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; text-align: center; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; text-align: center; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-prev {
   background: transparent; color: #0D0D0B !important; text-decoration: none !important;
   padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem;
   display: inline-flex; align-items: center; gap: 8px;
-  border: 2px solid #CCC9B8 !important; border-bottom: 2px solid #CCC9B8 !important; transition: all .2s;
+  border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; white-space: nowrap !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
+.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; text-decoration: none !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-path {
   background: #FFD706; color: #0D0D0B !important; text-decoration: none !important;
   padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem;
   display: inline-flex; align-items: center; gap: 8px; transition: all .2s;
-  border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
+  border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; white-space: nowrap !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-path:hover {
   background: transparent !important; color: #0D0D0B !important;
   border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
+  text-decoration: none !important;
 }
 
 /* ── RESOURCES ── */
@@ -246,12 +273,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-resource-link {
-  color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px;
-  text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem;
+  color: #807D75 !important; text-decoration: underline !important; text-underline-offset: 3px;
+  text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem;
   transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-decoration-color: #FF9D88 !important; }
+.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-decoration-color: #2DCECE !important; }
 
 /* ── FOOTER NAV ── */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
@@ -259,14 +286,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-footer-link { color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-footer-link { color: #807D75 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
 /* ── CONSOLIDATED RESPONSIVE BLOCK ── */
+@media(max-width:1300px) {
+  .rc-lp-nav { justify-content: center !important; gap: 12px; }
+  .rc-lp-nav-indicator { width: 100% !important; text-align: center; }
+}
+
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
@@ -278,6 +310,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-oh-cta { padding: 24px 20px; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-prev,
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-path {
+    padding: 10px 16px !important;
+    font-size: 0.82rem !important;
+  }
 }
 </style>
 
@@ -321,7 +360,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-sticky-link"><span class="rc-step-badge">1</span> Why it matters &amp; when to use it</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-implementation" class="rc-sticky-link"><span class="rc-step-badge">2</span> Choosing your implementation path</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-strategy" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Strategy &amp; best practices</a>
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Strategy &amp; best practices
+        </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-tracking" class="rc-sticky-link"><span class="rc-step-badge">4</span> Tracking your impact</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
         
@@ -420,7 +460,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-oh-cta">
       <h4><i class="fa-solid fa-headset rc-fa-dark"></i>Want help applying this to your business?</h4>
       <p>Strategy questions — the right frequency cap for your subscriber mix, whether your dunning and banner timing are complementary, which scenarios to deploy first — are best answered live. Join a <strong>Customer Success Global Office Hours</strong> session and our CSMs will work through your specific setup with you. Sessions run weekly and are free for all Recurly customers.</p>
-      <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
+      <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Register for Office Hours →</a>
     </div>
 
     <!-- Path navigation -->
