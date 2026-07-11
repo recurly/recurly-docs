@@ -396,6 +396,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
             <strong>Scroll to the card BIN success rates. Is there a BIN with a shockingly low success rate?</strong>
             <span>Consider discussing with your gateway whether that BIN can be blocked</span>
@@ -403,6 +404,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
             <strong>Check the decline reasons table. What is your top decline reason? Is it a hard or soft decline?</strong>
             <span>Soft declines may be recoverable through retries — hard declines need a different approach</span>
