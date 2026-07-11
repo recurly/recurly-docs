@@ -26,7 +26,7 @@ body { background: #ffffff !important; }
 
 /* GLOBAL CSS IMMUNITY BLOCK */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
 /* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0); must follow wildcard */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
@@ -39,27 +39,43 @@ body { background: #ffffff !important; }
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
-.rc-guide a:hover,
 .rc-guide a:active {
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
+  color: #008CFF !important;
+}
+
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
 }
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
   --yellow:    #FFD706;
-  --orange:    #FF8200;
+  --blue:      #008CFF;
+  --blue-tint1: #D5EAFF;
+  --blue-tint2: #96C8FF;
+  --warning-fg: #FFD706;
+  --warning-bg: #FFFECB;
+  --error-fg:  #FF5126;
+  --error-bg:  #FFEEE9;
+  --success-fg: #5DC32E;
+  --success-bg: #EFFAEA;
+  --info-fg:   #008CFF;
+  --info-bg:   #E5F3FF;
   --offblack:  #0D0D0B;
   --darkgray:  #32312D;
   --gray:      #807D73;
   --lightgray: #CCC9B8;
   --brightgray:#F1EFE3;
   --offwhite:  #FFFDF2;
-  font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #32312D !important;
   background: #ffffff;
 }
@@ -83,7 +99,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   transition: color .2s; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; }
 
 /* ── ANNOUNCEMENT BAR ── */
 .rc-announce-bar {
@@ -114,8 +130,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 /* Scale pillar pill */
 .rc-lp-pillar-tag {
   display: inline-flex; align-items: center; gap: 7px;
-  background: rgba(255,88,16,0.20); border: 1px solid rgba(255,88,16,0.45);
-  color: #FF5810; font-size: .75rem; font-weight: 800;
+  background: rgba(0,140,255,0.20); border: 1px solid rgba(0,140,255,0.45);
+  color: #008CFF; font-size: .75rem; font-weight: 800;
   letter-spacing: 1px; text-transform: uppercase;
   padding: 6px 14px; border-radius: 20px; margin-bottom: 20px;
 }
@@ -127,7 +143,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 /* ── NAVIGATION — non-sticky + open (Course page) — Scale pillar ── */
 details.rc-sticky-nav-wrap {
   position: relative; z-index: 1;
-  background-color: #FF5810;
+  background-color: #008CFF;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px 0; border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
@@ -135,7 +151,7 @@ details.rc-sticky-nav-wrap {
 details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
-/* Scale nav: label + chevron must be white */
+/* Scale nav: label + chevron must be black */
 .rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #0d0d0d; }
 .rc-nav-chevron { font-size: .72rem; color: #0d0d0d; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
@@ -143,15 +159,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
-/* Nav links — Scale: white text + dark hover overlay — (0,0,8,1) */
+/* Nav links — Scale: black text + dark hover overlay — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link {
   color: #0d0d0d !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px;
   text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s;
-  white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+  white-space: nowrap !important; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #0d0d0d !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0d0d0d !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 /* Badge inverts on hover so it stays visible against dark hover overlay */
@@ -161,9 +177,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0d0d0d !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #0D0D0D !important; } 
-
-
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0D !important; }
 
 /* ── SECTION HEADINGS ── */
 .rc-lp-section { margin-bottom: 48px; }
@@ -180,10 +194,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* ── INLINE STEP VIDEO ── */
 .rc-step-video { border-radius: 10px; margin-top: 16px; border: 1px solid var(--lightgray); overflow: hidden; background: var(--offblack); }
 .rc-step-video-label { background: var(--offblack); padding: 9px 14px; display: flex; align-items: center; gap: 8px; }
-.rc-step-video-label::before { content: '▶'; font-size: .6rem; color: #FF5810; flex-shrink: 0; }
+.rc-step-video-label::before { content: '▶'; font-size: .6rem; color: #008CFF; flex-shrink: 0; }
 .rc-step-video-label span { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: var(--lightgray); }
-.rc-step-video-frame { position: relative; overflow: hidden; aspect-ratio: 16/9; }
-.rc-step-video-frame iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
+.rc-step-video-frame { aspect-ratio: 16/9; display: block; width: 100%; }
+.rc-step-video-frame iframe { aspect-ratio: 16/9; display: block; width: 100%; border: none; }
 .rc-step-video-caption { font-size: .8rem; color: var(--gray); padding: 8px 14px 10px; background: var(--brightgray); border-top: 1px solid var(--lightgray); line-height: 1.5; }
 
 /* ── CARD ── */
@@ -199,12 +213,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
 /* Callout inline links — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-callout-body a { color: #FF8200 !important; font-weight: 600; border-bottom: 0 !important; }
+.rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
+.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #0067BE !important; text-underline-offset: 2px !important; }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
-.rc-callout-caution { background: rgba(255,130,0,0.08); border-left: 4px solid var(--orange); }
+.rc-callout-caution { background: rgba(0,140,255,0.08); border-left: 4px solid #008CFF; }
 .rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
 
 /* ── CHECKLIST — pure CSS, no JS ── */
@@ -219,7 +233,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box { background: var(--offblack); border-color: var(--offblack); }
 .rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box::after { content: '✓'; color: var(--yellow); font-size: .75rem; font-weight: 800; line-height: 1; }
 .rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-text strong { text-decoration: line-through; color: var(--gray); }
-.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(255,88,16,0.06); }
+.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(0,140,255,0.06); }
 .rc-checklist-text { flex: 1; }
 .rc-checklist-text strong { font-size: .9rem; font-weight: 700; color: var(--offblack); display: block; margin-bottom: 2px; transition: color .18s; }
 .rc-checklist-text span { font-size: .8rem; color: var(--gray); line-height: 1.4; display: block; }
@@ -248,26 +262,26 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* ── PATH NAVIGATION ── */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
-/* rc-btn-prev — (0,0,8,1); hex borders per Known Issue #52 */
+/* rc-btn-prev — (0,0,8,1); hex borders per Known Issue #52; nowrap per Known Issue #68 */
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-prev {
   background: transparent; color: #0D0D0B !important;
   text-decoration: none !important; padding: 13px 24px; border-radius: 10px;
   font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px;
   border: 2px solid #CCC9B8 !important; border-bottom: 2px solid #CCC9B8 !important;
-  transition: all .2s;
+  transition: all .2s; white-space: nowrap !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-prev:hover {
   border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important;
 }
-/* rc-btn-path — (0,0,8,1) per Known Issue #44 */
+/* rc-btn-path — (0,0,8,1) per Known Issue #44; nowrap per Known Issue #68 */
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-path {
   background: #FFD706; color: #0D0D0B !important;
   text-decoration: none !important; padding: 13px 28px; border-radius: 10px;
   font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px;
-  transition: all .2s;
+  transition: all .2s; white-space: nowrap !important;
   border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
@@ -276,8 +290,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
 }
 
+@media(max-width:1300px) {
+  .rc-btn-prev, .rc-btn-path { padding: 11px 18px; font-size: .85rem; }
+}
+
+@media(max-width:768px) {
+  .rc-btn-prev, .rc-btn-path { padding: 9px 14px; font-size: .8rem; }
+}
+
 /* ── RESOURCES ── */
-.rc-resources { background: var(--brightgray); border-left: 4px solid #FF5810; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources { background: var(--brightgray); border-left: 4px solid #008CFF; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
 .rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 /* Resource links — (0,0,8,1); base color is #807D73 (gray), NOT darkgray */
@@ -290,7 +312,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-resource-link:hover {
   color: #0D0D0B !important; text-decoration: underline !important;
-  text-underline-offset: 3px; text-decoration-color: #FF5810 !important;
+  text-underline-offset: 3px; text-decoration-color: #008CFF !important;
 }
 
 /* ── FOOTER NAV ── */
@@ -305,7 +327,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
@@ -324,7 +346,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 <div class="rc-guide">
   <div class="rc-top-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-back-link">← Back to Scale</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back-link">← Back to Home</a>
   </div>
 
   <div class="rc-content-wrap">
@@ -356,7 +378,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-  <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-sticky-link"><span class="rc-step-badge">1</span> Getting started</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-sticky-link"><span class="rc-step-badge">1</span> Getting started</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-sticky-link">
           <span class="rc-step-badge">2</span> Overview dashboard
         </a>
@@ -500,7 +522,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
 
         <div class="rc-footer-section">
-      		<span class="rc-footer-label">Payments Hub</span>
+          <span class="rc-footer-label">Payments Hub</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-footer-link">1. Getting started</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-footer-link">2. Overview dashboard</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-footer-link">3. Payment processing dashboard</a>
