@@ -150,14 +150,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-screenshot { width: 100%; border-radius: 14px; border: 1px solid var(--lightgray); margin-bottom: 24px; display: block; }
 
 /* ── INLINE STEP VIDEO ── */
-.rc-step-video { border-radius: 10px; margin-top: 0; margin-bottom: 24px; border: 1px solid var(--lightgray); overflow: hidden; background: #0D0D0B; }
-.rc-step-video-label { background: #0D0D0B; padding: 9px 14px; display: flex; align-items: center; gap: 8px; }
+.rc-step-video { border-radius: 10px; margin-top: 16px; border: 1px solid var(--lightgray); overflow: hidden; background: var(--offblack); }
+.rc-step-video-label { background: var(--offblack); padding: 9px 14px; display: flex; align-items: center; gap: 8px; }
 .rc-step-video-label::before { content: '▶'; font-size: .6rem; color: #008CFF; flex-shrink: 0; }
 .rc-step-video-label span { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: var(--lightgray); }
-.rc-step-video-frame { position: relative; overflow: hidden; aspect-ratio: 16/9; }
-.rc-step-video-frame iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
-.rc-step-video-caption { font-size: .8rem; color: #807D73; padding: 8px 14px 10px; background: var(--brightgray); border-top: 1px solid var(--lightgray); line-height: 1.5; }
-
+.rc-step-video-frame { aspect-ratio: 16/9; display: block; width: 100%; }
+.rc-step-video-frame iframe { aspect-ratio: 16/9; display: block; width: 100%; border: none; }
+.rc-step-video-caption { font-size: .8rem; color: var(--gray); padding: 8px 14px 10px; background: var(--brightgray); border-top: 1px solid var(--lightgray); line-height: 1.5; }
 /* ── CARD ── */
 .rc-card { background: var(--offwhite); border-radius: 16px; padding: 28px; border: 1px solid var(--lightgray); margin-bottom: 24px; }
 .rc-card p { font-size: .92rem; color: #32312D; line-height: 1.75; margin: 0 0 12px; }
