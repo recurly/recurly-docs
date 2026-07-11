@@ -362,7 +362,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase Two
       </div>
       <div class="rc-lp-hero-title"><h1>Mastering metrics</h1></div>
-      <p>Phase one locked in the configurations that protect your revenue. Phase two builds your fluency with the six KPIs that show how your subscription business is performing.</p>
+      <p>Phase one locked in the configurations that protect your revenue. Phase two builds your fluency with the seven KPIs that show how your subscription business is performing.</p>
     </div>
 
     <!-- Nav (non-sticky + open — Course Overview page) -->
