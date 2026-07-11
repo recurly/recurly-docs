@@ -27,30 +27,26 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide {
   --yellow:     #FFD706;
   --orange:     #FF8200;
-  --scale:      #008CFF;
+  --scale:      #008CFF; /* Scale is updated to Blue standard */
   --offblack:   #0D0D0B;
   --darkgray:   #32312D;
-  --gray:       #807D73;
-  --lightgray:  #D1CFC4;
-  --brightgray: #F2F1EA;
-  --offwhite:   #FCFBF7;
+  --gray:       #807D75; /* Aligned to system gray standard */
+  --lightgray:  #D1CFC4; /* Aligned to system lightgray standard */
+  --brightgray: #F2F1EA; /* Aligned to system brightgray standard */
+  --offwhite:   #FCFBF7; /* Aligned to system offwhite standard */
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #0D0D0B !important;
+  color: #32312D !important; /* Body text color set to darkgray standard */
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
 
-/* ── NAVIGATE MASTER ARMOR ──
-   Global CSS section 1.1 prose link rule uses four :not() clauses → (0,0,6,2) !important.
-   ReadMe wraps HTMLBlock in <p> so ALL Navigate <a> elements match it.
-   Mirroring those :not() exclusions + .rc-guide → (0,0,7,1) for this armor.
-   Per-element rules add the element class → (0,0,8,1) — beats everything. */
+/* ── NAVIGATE MASTER ARMOR ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
 .rc-guide a:active {
-  color: #008CFF !important;   /* DEFAULT: all unclassed inline links → blue; overridden per-component below */
+  color: #008CFF !important; /* Default link color set to system Blue */
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
@@ -58,14 +54,14 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   border-bottom: 0 !important;
 }
 .rc-guide a:hover {
-  color: #0067BE !important;   /* Blue Shade 1 — hover darkens inline links */
+  color: #0067BE !important;
   text-decoration: underline !important;
   text-decoration-color: #008CFF !important;
   text-underline-offset: 2px !important;
 }
 
 /* FA6 ICON HELPERS */
-.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
+.rc-fa-announce { color: #ffffff; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
@@ -76,7 +72,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* BACK LINK */
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
@@ -97,11 +93,12 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0;
 }
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
-.rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
-.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0 0 24px; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
+.rc-logo-image { height: 28px; display: block; }
 .rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(0,140,255,0.20); border: 1px solid rgba(0,140,255,0.45); color: #008CFF; font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
+.rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
 
 /* ── NAVIGATION — non-sticky + open (Course page) — Scale pillar ── */
 details.rc-sticky-nav-wrap {
@@ -114,8 +111,8 @@ details.rc-sticky-nav-wrap {
 details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
-.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #0d0d0d; }
-.rc-nav-chevron { font-size: .72rem; color: #0d0d0d; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
+.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #ffffff; }
+.rc-nav-chevron { font-size: .72rem; color: #ffffff; opacity: 0.7; line-height: 1; transition: transform 0.25s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 .rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
@@ -123,20 +120,20 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link {
-  color: #0d0d0d !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px;
+  color: #ffffff !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px;
   text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s;
   white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #0d0d0d !important; text-decoration: none !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #ffffff !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover .rc-step-badge,
 .rc-guide a.rc-sticky-link:hover .rc-step-badge { background: #FFD706; color: #0D0D0B; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0d0d0d !important; }
+.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #ffffff !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #ffffff !important; text-decoration: none !important; }
 
 /* CONTENT SECTIONS */
 .rc-lp-section { margin-bottom: 48px; }
@@ -144,25 +141,55 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-/* TOC CARDS */
-.rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
-.rc-toc-card { display: grid; grid-template-columns: 44px 1fr 32px; align-items: center; gap: 16px; background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 18px 22px; transition: all .2s ease; }
-.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-toc-card { border-bottom: 1px solid #D1CFC4 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-toc-card:hover { border-color: #008CFF; border-bottom: 1px solid #008CFF !important; box-shadow: 0 4px 14px rgba(0,140,255,0.12); transform: translateX(3px); text-decoration: none !important; }
-.rc-toc-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; }
-.rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0 0 4px; }
-.rc-toc-body p { font-size: .88rem; color: var(--gray); line-height: 1.5; margin: 0; }
-.rc-toc-arrow { font-size: 1.1rem; color: var(--lightgray); text-align: right; transition: color .2s; }
-.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #008CFF; }
+/* VIDEO CARD */
+.rc-video-card { border: 1px solid var(--lightgray); border-radius: 14px; overflow: hidden; margin: 0 0 40px; }
+.rc-video-header { background: var(--offblack); padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
+.rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: var(--yellow); margin: 0; }
+.rc-video-header span { font-size: .78rem; color: var(--lightgray); margin-left: auto; }
+.rc-video-embed { background: var(--offblack); }
+.rc-video-embed iframe { width: 100%; aspect-ratio: 16/9; border: none; display: block; }
+.rc-video-caption { padding: 12px 22px; font-size: .83rem; color: var(--gray); background: var(--brightgray); border-top: 1px solid var(--lightgray); line-height: 1.5; }
+
+/* NUMBERED STEPS */
+.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
+.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--brightgray); }
+.rc-step:last-child { border-bottom: none; }
+.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+.rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: var(--offblack); margin: 0 0 6px; line-height: 1.3; }
+.rc-step-content p { font-size: .92rem; color: var(--gray); line-height: 1.6; margin: 0; }
+.rc-step-content strong { color: var(--darkgray); }
+
+/* CALLOUTS */
+.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
+.rc-callout-body { flex: 1; }
+.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
+.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
+.rc-callout-caution { background: #FFFECB; border-left: 4px solid #FFD706; }
+.rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
+.rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
+.rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
+
+/* QUARTILE EXPLAINER TABLE */
+.rc-quartile-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: .88rem; margin-bottom: 28px; border-radius: 10px; border: 1px solid var(--lightgray); }
+.rc-quartile-table tr.rp-thead-row td { background: #0D0D0B !important; color: #FFFDF2 !important; font-weight: 700; padding: 12px 16px; }
+.rc-quartile-table tr.rp-thead-row td:first-child { border-top-left-radius: 9px; }
+.rc-quartile-table tr.rp-thead-row td:last-child { border-top-right-radius: 9px; }
+.rc-quartile-table tr:not(.rp-thead-row) td { background: #FFFDF2 !important; color: var(--darkgray); padding: 12px 16px; border-bottom: 1px solid var(--lightgray); vertical-align: top; line-height: 1.6; }
+.rc-quartile-table tr:last-child td:first-child { border-bottom-left-radius: 9px; }
+.rc-quartile-table tr:last-child td:last-child { border-bottom-right-radius: 9px; }
+.rc-quartile-table tr:last-child td { border-bottom: 0 !important; }
+.rc-quartile-table td:first-child { font-weight: 700; color: var(--offblack); width: 30%; }
 
 /* PATH NAV */
-.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
-.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
-.rc-btn-start { background: var(--brightgray); color: var(--gray); padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--lightgray); cursor: default; display: inline-flex; align-items: center; }
+.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; flex-wrap: wrap; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; white-space: nowrap !important; flex-shrink: 0; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; white-space: nowrap !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: var(--yellow); color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+.rc-guide a.rc-btn-path { background: var(--yellow); color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; text-decoration: none !important; }
 
@@ -171,7 +198,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-resource-link { color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-resource-link { color: #807D75 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #008CFF !important; }
 
@@ -181,54 +208,59 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-footer-link { color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-footer-link { color: #807D75 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
-/* RESPONSIVE */
+/* RESPONSIVE & LAYOUT STACKS */
+@media(max-width:1300px) {
+  .rc-lp-nav { justify-content: center !important; gap: 12px; }
+  .rc-lp-nav-indicator { width: 100% !important; text-align: center; }
+}
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 36px; }
-  .rc-hero h1 { font-size: 1.8rem; }
+  .rc-lp-hero-title h1 { font-size: 1.8rem; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rc-toc-card { grid-template-columns: 36px 1fr 24px; padding: 14px 16px; }
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-prev,
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-path {
+    padding: 10px 16px !important;
+    font-size: 0.82rem !important;
+  }
 }
 </style>
 
 <div class="rc-guide">
 
-  <!-- BACK LINK -->
   <div class="rc-top-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-back-link">← Back to Scale</a>
   </div>
 
   <div class="rc-content-wrap">
 
-    <!-- ANNOUNCEMENT BAR (hidden by default — add rc-active to show) -->
     <div class="rc-announce-bar">
       <div class="rc-announce-inner">
-        <i class="fa-regular fa-calendar-days rc-fa-announce" style="color:#ffffff;"></i>
+        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>Upcoming:</strong> Bring your benchmark questions to a live session with our CSMs.
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
     </div>
 
-    <!-- HERO -->
     <div class="rc-hero">
-      
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale • Benchmarks 101
       </div>
-      <h1>Benchmarks 101</h1>
-      <p>Recurly benchmarks 8 key metrics across your subscription lifecycle — pulled from 2,200+ merchants. This path shows you where to find them, how to read them, and what to do with what you find.</p>
+      <div class="rc-lp-hero-title"><h1>Reading your benchmarks</h1></div>
+      <p>Before diving into individual KPIs, here's how to navigate to each dashboard, interpret what you're seeing, and filter results to match your business.</p>
     </div>
 
-    <!-- NAV — Course Overview active, non-sticky, open -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -237,10 +269,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Path Overview
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-sticky-link">Path Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-reading" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Reading benchmarks
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-reading" class="rc-sticky-link"><span class="rc-step-badge">1</span> Reading benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-subscriber" class="rc-sticky-link"><span class="rc-step-badge">2</span> Subscriber benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-churn" class="rc-sticky-link"><span class="rc-step-badge">3</span> Churn benchmarks</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-renewal-dunning" class="rc-sticky-link"><span class="rc-step-badge">4</span> Renewal &amp; dunning benchmarks</a>
@@ -249,71 +281,133 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div></div></div>
     </details>
 
-    <!-- CONTENT -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-chart-bar rc-fa-section"></i> What this path covers</h2>
-      <p>Recurly's built-in benchmarks compare your subscription metrics against thousands of similar businesses in your industry — in real time, without leaving your dashboard. This path walks you through all 8 benchmarked KPIs across 4 Analytics dashboards, so you can spot gaps, confirm strengths, and know exactly where to focus.</p>
-      <p>Before you start: confirm your industry is set correctly under <strong>Configuration → Analytics Settings</strong>. An incorrect classification skews every comparison in this path. Changes take up to 24 hours to reflect.</p>
 
-      <!-- TOC CARDS -->
-      <div class="rc-toc-list">
+      <h2><i class="fa-solid fa-play-circle rc-fa-section"></i> Benchmarks overview</h2>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-reading" class="rc-toc-card">
-          <div class="rc-toc-num">1</div>
-          <div class="rc-toc-body">
-            <h4>Reading benchmarks</h4>
-            <p>How to navigate to each dashboard, interpret the quartile chart, and filter by industry and date range.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
+      <div class="rc-video-card">
+        <div class="rc-video-header">
+          <h4>Benchmarks overview walkthrough</h4>
+          <span>~3 min</span>
+        </div>
+        <div class="rc-video-embed">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/5079f299-d1fa-47f9-aaf2-9cc14a556c67"
+            loading="lazy"
+            title="Recurly Benchmarks overview walkthrough"
+            allowfullscreen
+            allow="encrypted-media; fullscreen; microphone; screen-wake-lock;">
+          </iframe>
+        </div>
+        <div class="rc-video-caption">A walkthrough of Recurly's built-in benchmarks — what they measure, where to find them, and how to read the chart.</div>
+      </div>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-subscriber" class="rc-toc-card">
-          <div class="rc-toc-num">2</div>
-          <div class="rc-toc-body">
+      <h2><i class="fa-solid fa-map-pin rc-fa-section"></i> How to get to your benchmark dashboards</h2>
+
+      <p>There are four benchmark dashboards inside Recurly Analytics. Each maps to a specific area of your subscription lifecycle. Here's exactly where to find them.</p>
+
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
             <h4>Subscriber benchmarks</h4>
-            <p>Acquisition Rate and Sign-Up Decline Rate — the top of your subscription funnel.</p>
+            <p><strong>Analytics → Subscriber Management → Subscriber Benchmarks</strong><br>Covers Acquisition Rate and Sign-Up Decline Rate.</p>
           </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-churn" class="rc-toc-card">
-          <div class="rc-toc-num">3</div>
-          <div class="rc-toc-body">
-            <h4>Churn benchmarks</h4>
-            <p>Churn Rate, Involuntary Churn Rate, and Voluntary Churn Rate — understand what's driving subscriber loss and which fix applies.</p>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>Subscriber churn benchmarks</h4>
+            <p><strong>Analytics → Churn Management → Subscriber Churn Benchmarks</strong><br>Covers Churn Rate, Involuntary Churn Rate, and Voluntary Churn Rate.</p>
           </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-renewal-dunning" class="rc-toc-card">
-          <div class="rc-toc-num">4</div>
-          <div class="rc-toc-body">
-            <h4>Renewal &amp; dunning benchmarks</h4>
-            <p>Renewal Invoice Paid Rate, Decline Rate at Renewal, and Dunning Recovery Rate — the revenue recovery trio.</p>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Renewal benchmarks</h4>
+            <p><strong>Analytics → Churn Management → Renewal Benchmarks</strong><br>Covers Renewal Invoice Paid Rate and Decline Rate at Renewal.</p>
           </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-review" class="rc-toc-card">
-          <div class="rc-toc-num">5</div>
-          <div class="rc-toc-body">
-            <h4>Review &amp; resources</h4>
-            <p>Check your understanding and access all path resources in one place.</p>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">4</div>
+          <div class="rc-step-content">
+            <h4>Dunning benchmarks</h4>
+            <p><strong>Analytics → Dunning Campaigns → Dunning Benchmarks</strong><br>Covers Dunning Recovery Rate.</p>
           </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-
+        </div>
       </div>
 
-      <!-- PATH NAV -->
+      <h2><i class="fa-solid fa-sliders rc-fa-section"></i> Reading the benchmark chart</h2>
+
+      <p>Every benchmark dashboard uses the same chart format. Four lines represent where merchants in your industry fall — your trend line shows where you sit among them.</p>
+
+      <table class="rc-quartile-table">
+        <tr class="rp-thead-row">
+          <td>Marker</td>
+          <td>What it represents</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-caret-down" style="color:#807D73; margin-right:6px;"></i> Bottom quartile</td>
+          <td>The lowest-performing merchants in your industry for this metric.</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-square" style="color:#807D73; margin-right:6px;"></i> Median</td>
+          <td>The midpoint — half of merchants in your industry perform above this, half below.</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-caret-up" style="color:#807D73; margin-right:6px;"></i> Top quartile</td>
+          <td>The highest-performing merchants in your industry for this metric.</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-minus" style="color:#00BCD4; margin-right:6px;"></i> Your trend line</td>
+          <td>Your metric over time. Compare this against the quartile markers to see where you stand.</td>
+        </tr>
+      </table>
+
+      <h2><i class="fa-solid fa-filter rc-fa-section"></i> Filters that matter</h2>
+
+      <p>Two filters at the top of every benchmark dashboard affect every comparison you make. Set these correctly before drawing any conclusions.</p>
+
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>Industry</h4>
+            <p>Determines your peer group. If your industry is set incorrectly, every benchmark comparison is misleading. Confirm or update it under <strong>Configuration → Analytics Settings → Benchmarking</strong>. Changes take up to 24 hours to reflect.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>Date range</h4>
+            <p>Controls the time window displayed. Use a rolling 6- or 12-month view for trend analysis. Use a shorter window to investigate a specific change — a new gateway, a pricing update, or a dunning adjustment.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Subscriber type</h4>
+            <p>Available on some dashboards. Trial users can skew certain metrics significantly — particularly Sign-Up Decline Rate. Filter to <strong>paid subscribers only</strong> for the clearest baseline when comparing against benchmarks.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-caution">
+        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation" style="color:#FFD706;"></i></div>
+        <div class="rc-callout-body">
+          <strong>Check your industry setting first</strong>
+          <p>An incorrect industry classification is the most common reason benchmark comparisons feel off. A software company benchmarked against consumer retail will see misleading results across every dashboard. Verify under <strong>Configuration → Analytics Settings → Benchmarking</strong> before using any benchmark to make decisions.</p>
+        </div>
+      </div>
+
       <div class="rc-lp-nav">
-        <span class="rc-btn-start">Start</span>
-        <span class="rc-lp-nav-indicator">Overview</span>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-reading" class="rc-btn-path">Next: Reading benchmarks →</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101" class="rc-btn-prev">← Path Overview</a>
+        <span class="rc-lp-nav-indicator">1 of 5</span>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-benchmarks-101-subscriber" class="rc-btn-path">Next: Subscriber benchmarks →</a>
       </div>
+
     </div>
 
-    <!-- RESOURCES -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
@@ -324,7 +418,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- FOOTER -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
