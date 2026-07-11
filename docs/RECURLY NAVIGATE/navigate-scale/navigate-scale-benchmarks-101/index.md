@@ -23,48 +23,62 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 /* HOST-THEME BACKGROUND OVERRIDE */
 body { background: #ffffff !important; }
 
-/* GLOBAL CSS IMMUNITY BLOCK */
+/* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
-
-/* NAVIGATE MASTER ARMOR */
-.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a,
-.rc-guide a:link,
-.rc-guide a:visited,
-.rc-guide a:hover,
-.rc-guide a:active {
-  text-decoration: none !important;
-  text-decoration-line: none !important;
-  text-decoration-color: transparent !important;
-  text-underline-offset: unset !important;
-  border-bottom: 0 !important;
-}
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
   --yellow:     #FFD706;
   --orange:     #FF8200;
-  --scale:      #FF5810;
+  --scale:      #008CFF;
   --offblack:   #0D0D0B;
   --darkgray:   #32312D;
   --gray:       #807D73;
-  --lightgray:  #CCC9B8;
-  --brightgray: #F1EFE3;
-  --offwhite:   #FFFDF2;
-  color: #32312D !important;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #0D0D0B !important;
   background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
+
+/* ── NAVIGATE MASTER ARMOR ──
+   Global CSS section 1.1 prose link rule uses four :not() clauses → (0,0,6,2) !important.
+   ReadMe wraps HTMLBlock in <p> so ALL Navigate <a> elements match it.
+   Mirroring those :not() exclusions + .rc-guide → (0,0,7,1) for this armor.
+   Per-element rules add the element class → (0,0,8,1) — beats everything. */
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a,
+.rc-guide a:link,
+.rc-guide a:visited,
+.rc-guide a:active {
+  color: #008CFF !important;   /* DEFAULT: all unclassed inline links → blue; overridden per-component below */
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+  text-underline-offset: unset !important;
+  border-bottom: 0 !important;
+}
+.rc-guide a:hover {
+  color: #0067BE !important;   /* Blue Shade 1 — hover darkens inline links */
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
 }
 
 /* FA6 ICON HELPERS */
@@ -81,7 +95,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
 /* ANNOUNCEMENT BAR */
 .rc-announce-bar { display: none; background: var(--scale); color: #fff; align-items: center; justify-content: space-between; padding: 10px 20px; font-size: .88rem; font-weight: 600; border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4; }
@@ -90,7 +104,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-announce-link { color: #ffffff !important; font-weight: 800; white-space: nowrap; padding: 4px 12px; background: rgba(255,255,255,0.15); border-radius: 6px; transition: background 0.2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-announce-link:hover { background: rgba(255,255,255,0.25); color: #ffffff !important; }
+.rc-guide a.rc-announce-link:hover { background: rgba(255,255,255,0.25); color: #ffffff !important; text-decoration: none !important; }
 
 /* HERO */
 .rc-hero {
@@ -102,14 +116,14 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0 0 24px; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
-.rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(255,88,16,0.20); border: 1px solid rgba(255,88,16,0.45); color: #FF5810; font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
+.rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(0,140,255,0.20); border: 1px solid rgba(0,140,255,0.45); color: #008CFF; font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 
 /* ── NAVIGATION — non-sticky + open (Course page) — Scale pillar ── */
 details.rc-sticky-nav-wrap {
   position: relative; z-index: 1;
-  background-color: #FF5810;
+  background-color: #008CFF;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px 0; border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
@@ -117,7 +131,6 @@ details.rc-sticky-nav-wrap {
 details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
-/* Scale nav: label + chevron must be white */
 .rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #0d0d0d; }
 .rc-nav-chevron { font-size: .72rem; color: #0d0d0d; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
@@ -125,7 +138,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
-/* Nav links — Scale: white text + dark hover overlay — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link {
   color: #0d0d0d !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px;
@@ -133,17 +145,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #0d0d0d !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #0d0d0d !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
-/* Badge inverts on hover so it stays visible against dark hover overlay */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover .rc-step-badge,
 .rc-guide a.rc-sticky-link:hover .rc-step-badge { background: #FFD706; color: #0D0D0B; }
-/* Active item — no persistent background; map pin icon identifies current page */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0d0d0d !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #0D0D0D !important; }  
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
+
 /* CONTENT SECTIONS */
 .rc-lp-section { margin-bottom: 48px; }
 .rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
@@ -154,14 +165,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
 .rc-toc-card { display: grid; grid-template-columns: 44px 1fr 32px; align-items: center; gap: 16px; background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 18px 22px; transition: all .2s ease; }
 .rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-toc-card { border-bottom: 1px solid #CCC9B8 !important; }
+.rc-guide a.rc-toc-card { border-bottom: 1px solid #D1CFC4 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-toc-card:hover { border-color: #FF5810; border-bottom: 1px solid #FF5810 !important; box-shadow: 0 4px 14px rgba(255,88,16,0.12); transform: translateX(3px); }
+.rc-guide a.rc-toc-card:hover { border-color: #008CFF; border-bottom: 1px solid #008CFF !important; box-shadow: 0 4px 14px rgba(0,140,255,0.12); transform: translateX(3px); text-decoration: none !important; }
 .rc-toc-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; }
 .rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0 0 4px; }
 .rc-toc-body p { font-size: .88rem; color: var(--gray); line-height: 1.5; margin: 0; }
 .rc-toc-arrow { font-size: 1.1rem; color: var(--lightgray); text-align: right; transition: color .2s; }
-.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #FF5810; }
+.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #008CFF; }
 
 /* PATH NAV */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
@@ -170,16 +181,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-path { background: var(--yellow); color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; text-decoration: none !important; }
 
 /* RESOURCES */
-.rc-resources { background: var(--brightgray); border-left: 4px solid #FF5810; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources { background: var(--brightgray); border-left: 4px solid #008CFF; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
 .rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-resource-link { color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-resource-link { color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #FF5810 !important; }
+.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #008CFF !important; }
 
 /* FOOTER */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
@@ -189,7 +200,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-footer-link { color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
