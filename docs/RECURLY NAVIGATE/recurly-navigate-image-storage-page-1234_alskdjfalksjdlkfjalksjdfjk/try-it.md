@@ -95,6 +95,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0; }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
+
 /* ── NAV — non-sticky, open ── */
 details.rc-sticky-nav-wrap {
   position: relative; z-index: 1; background-color: var(--retain);
