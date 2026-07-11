@@ -25,15 +25,16 @@ body { background: #ffffff !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow:    #FFD706;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D75;
-  --lightgray: #D1CFC4;
-  --brightgray:#F2F1EA;
-  --offwhite:  #FCFBF7;
+  --yellow:     #FFD706;
+  --orange:     #FF8200;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D73;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #32312D !important;
+  color: #0D0D0B !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
@@ -44,6 +45,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
+.rc-guide a:hover,
 .rc-guide a:active {
   color: #008CFF !important;
   text-decoration: none !important;
@@ -68,7 +70,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* Back link — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
@@ -93,7 +95,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; margin-top: 4px; }
 .rc-hero-stat { text-align: center; padding: 0 16px; }
 .rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
-.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: #FFD706; line-height: 1; margin-bottom: 6px; }
+.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 6px; }
 .rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: var(--lightgray); line-height: 1.3; }
 
 /* ── NAVIGATION — non-sticky + open (Course page) — Scale pillar ── */
@@ -131,7 +133,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
 
-/* ── CONTENT SECTIONS ── */
+/* Section headings */
 .rc-lp-section { margin-bottom: 48px; }
 .rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
@@ -141,7 +143,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-screenshot { width: 100%; border-radius: 14px; border: 1px solid var(--lightgray); margin-bottom: 24px; display: block; }
 
 /* Inline step video */
-.rc-step-video { border-radius: 10px; margin-top: 16px; border: 1px solid var(--lightgray); overflow: hidden; background: var(--offblack); }
+.rc-step-video { border-radius: 10px; margin-top: 0; margin-bottom: 24px; border: 1px solid var(--lightgray); overflow: hidden; background: var(--offblack); }
 .rc-step-video-label { background: var(--offblack); padding: 9px 14px; display: flex; align-items: center; gap: 8px; }
 .rc-step-video-label::before { content: '▶'; font-size: .6rem; color: #008CFF; flex-shrink: 0; }
 .rc-step-video-label span { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: var(--lightgray); }
@@ -149,11 +151,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-step-video-frame iframe { display: block; width: 100%; aspect-ratio: 16/9; border: none; }
 .rc-step-video-caption { font-size: .8rem; color: var(--gray); padding: 8px 14px 10px; background: var(--brightgray); border-top: 1px solid var(--lightgray); line-height: 1.5; }
 
-/* Content card */
+/* Card */
 .rc-card { background: var(--offwhite); border-radius: 16px; padding: 28px; border: 1px solid var(--lightgray); margin-bottom: 24px; }
 .rc-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.75; margin: 0; }
 
-/* Card grid */
+/* Card grid — 2-col */
 .rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
 .rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
 .rc-feature-card:hover { border-color: #008CFF; box-shadow: 0 4px 16px rgba(0,140,255,0.15); transform: translateY(-2px); }
@@ -168,6 +170,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* Callouts */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+.rc-callout + .rc-callout { margin-top: 12px; }
 .rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
 .rc-callout-body { flex: 1; }
 .rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
@@ -180,7 +183,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
-/* Checklist */
+/* Checklist — pure CSS, no JS */
 .rc-checklist { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
 .rc-checklist-header { padding: 14px 22px; background: var(--offblack); display: flex; align-items: center; gap: 10px; }
 .rc-checklist-header h4 { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--yellow); margin: 0; }
@@ -198,17 +201,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-checklist-text span { font-size: .8rem; color: var(--gray); line-height: 1.4; display: block; }
 .rc-checklist-footer { padding: 10px 22px; background: var(--brightgray); border-top: 1px solid var(--lightgray); font-size: .78rem; color: var(--gray); font-weight: 600; }
 
-/* ── OFFICE HOURS CTA ── */
-.rc-oh-cta { background: #0D0D0B !important; border: 2px solid #FFD706; border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
+/* Office Hours CTA — all colors hex + !important for dark card */
+.rc-oh-cta { background: #0D0D0B !important; border: 2px solid #FFD706 !important; border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
 .rc-oh-cta h4 { color: #FFD706 !important; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; display: block; }
 .rc-oh-cta p { color: #D1CFC4 !important; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
 .rc-oh-cta p strong { color: #FCFBF7 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-oh-btn { background: #FFD706 !important; color: #0D0D0B !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
+.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
 
-/* ── PATH NAV BUTTONS — double-prefix + :not() → (0,0,8,1) ── */
+/* Path nav buttons — double-prefix + :not() → (0,0,8,1) per Known Issue #44 */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
@@ -220,7 +223,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; text-decoration: none !important; }
 
-/* ── RESOURCES ── */
+/* Resources */
 .rc-resources { background: var(--brightgray); border-left: 4px solid #008CFF; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
 .rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
@@ -229,7 +232,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #008CFF !important; }
 
-/* ── FOOTER NAV ── */
+/* Footer nav */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
@@ -242,7 +245,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
-/* ── RESPONSIVE ── */
+/* Responsive */
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
@@ -264,7 +267,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-    <!-- Announcement bar — add rc-active to show before publishing -->
+    <!-- Announcement bar — add rc-active class to show -->
     <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
@@ -273,17 +276,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale">
         Scale · Payments Hub
       </div>
-      <div class="rc-lp-hero-title"><h1>Overview dashboard</h1></div>
-      <p>The Overview dashboard is your starting point — a high-level summary of your payment health, with filters to drill into exactly what you need.</p>
+      <div class="rc-lp-hero-title"><h1>Payment processing dashboard</h1></div>
+      <p>Payment processing is where you find out why payments are failing — broken down by gateway, payment method, card BIN, and decline reason.</p>
     </div>
 
-    <!-- Navigation Menu — non-sticky, open on load (Course page) -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -293,168 +294,146 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-sticky-link"><span class="rc-step-badge">1</span> Getting started</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Overview
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-sticky-link"><span class="rc-step-badge">2</span> Overview dashboard</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Payment processing dashboard
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-sticky-link"><span class="rc-step-badge">2</span> Payment processing</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-sticky-link"><span class="rc-step-badge">3</span> Account updater</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-sticky-link"><span class="rc-step-badge">4</span> Payment retry recovery</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-sticky-link"><span class="rc-step-badge">5</span> Fraud prevention</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
-        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-sticky-link"><span class="rc-step-badge">4</span> Account updater dashboard</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-sticky-link"><span class="rc-step-badge">5</span> Payment retry recovery dashboard</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-sticky-link"><span class="rc-step-badge">6</span> Fraud prevention dashboard</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-sticky-link"><span class="rc-step-badge">7</span> Review &amp; resources</a>
       </div></div></div>
     </details>
 
-    <!-- Section: Overview dashboard -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-chart-pie rc-fa-section"></i> Overview dashboard</h2>
-      <p>Your top-level payment health summary. This is the first thing you see when you open Payments Hub — a single view of how your payments are performing across all gateways and methods.</p>
+      <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> Payment processing</h2>
+      <p>A deep-dive into your payment success rates and decline patterns. This is the most actionable dashboard in Payments Hub — it tells you not just what is happening, but where and why.</p>
 
-      <img class="rc-screenshot" src="https://files.readme.io/ea22de0f101e14451f795623abc56a40f45d4f4a6fb18edbaf367c0b7c5650d1-Overview_Dashboard.png" alt="Payments Hub overview dashboard" />
-
-      <h2><i class="fa-solid fa-circle-play rc-fa-section"></i> Overview dashboard walkthrough</h2>
+      <img class="rc-screenshot"
+           src="https://files.readme.io/797edff5c7b5d67b57de4d423e0e3ae316718ade98ace4da29bc28b5e6af1ed8-Payments_processing_dashboard.png"
+           alt="Payment processing dashboard" />
 
       <div class="rc-step-video">
         <div class="rc-step-video-label"><span>Dashboard demo</span></div>
         <div class="rc-step-video-frame">
-          <iframe src="https://share.synthesia.io/embeds/videos/f72f7140-35fe-4aa6-9c7a-8ba798749a04" loading="lazy" title="Payments Hub: Overview dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+          <iframe src="https://share.synthesia.io/embeds/videos/aeac2fad-ed31-40a7-a7dd-be89052c9b54" loading="lazy" title="Payments Hub: Payment processing dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
         </div>
-        <div class="rc-step-video-caption">A quick walkthrough of the Overview dashboard — what each tile shows and how to use the filters.</div>
+        <div class="rc-step-video-caption">A walkthrough of the payment processing dashboard — success rates, gateway comparison, BIN analysis, and decline reason breakdown.</div>
       </div>
     </div>
 
-    <!-- Section: What's on this dashboard -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-table-cells rc-fa-section"></i> What's on this dashboard</h2>
+      <h2><i class="fa-solid fa-table-list rc-fa-section"></i> What's on this dashboard</h2>
 
       <div class="rc-card">
         <p>
-          <strong>Global payment volume distribution</strong> — A heat map showing where your payments are coming from by billing country. Darker shades = higher volume.<br><br>
-          <strong>Payment method distribution</strong> — A pie chart showing the share of transactions by payment method type (credit card, PayPal, Apple Pay, etc.).<br><br>
-          <strong>Overall success rate</strong> — Your blended payment success rate across all methods and gateways, with a comparison to the previous time period.<br><br>
-          <strong>CIT success rate</strong> — Customer Initiated Transactions: payments where the customer is actively in session (sign-ups, checkout clicks, dunning re-entries).<br><br>
-          <strong>MIT success rate</strong> — Merchant Initiated Transactions: automatic recurring renewals and scheduled payments.<br><br>
-          <strong>Account Updater tile</strong> — Revenue authorized on automatically updated cards in the period. Visible to Account Updater enabled merchants only.<br><br>
-          <strong>Payment Retry Recovery tile</strong> — Revenue recovered on failed invoices in the time period. Includes all success reasons: retries, account updater, backup gateway, new payment method from dunning, etc.<br><br>
-          <strong>Fraud blocking tile</strong> — Count of transactions blocked by Kount. Visible to Kount-enabled merchants only.
+          <strong>Overall success rate + trend</strong> — Your blended success rate across all transaction types, with a time-series chart showing how it has moved over the period.<br><br>
+          <strong>Payment method distribution</strong> — How transactions are split across your payment methods.<br><br>
+          <strong>Gateway success rates</strong> — Side-by-side comparison of authorization rates per connected gateway. Useful for spotting underperforming routing paths.<br><br>
+          <strong>Payment method success rates</strong> — Success rate per payment method, independent of gateway.<br><br>
+          <strong>Card BIN success rates</strong> — Success rates broken down by card BIN (the first 6 digits of a card number). Identifies specific card issuers with high decline rates.<br><br>
+          <strong>Payment decline reasons</strong> — A ranked table of your top decline reasons, categorized as hard or soft, with transaction count and volume.
         </p>
-      </div>
-
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
-        <div class="rc-callout-body">
-          <strong>No data on Account Updater or Fraud tiles?</strong>
-          <p>If you don't have Account Updater or Kount enabled, those tiles will display a "Learn More" prompt instead of data. This is expected — the dashboard is aware of which features you have active.</p>
-          <p>Learn more about <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Kount fraud prevention →</a> or learn what Account Updater means and how to make it work for you via the <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-inline-link rp-anchor">Account Updater learning path →</a></p>
-        </div>
       </div>
     </div>
 
-    <!-- Section: CIT vs MIT -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-arrows-split-up-and-left rc-fa-section"></i> CIT vs. MIT — what's the difference?</h2>
+      <h2><i class="fa-solid fa-magnifying-glass rc-fa-section"></i> Key concepts to know</h2>
 
       <div class="rc-card-grid">
         <div class="rc-feature-card">
-          <h4>CIT — Customer Initiated</h4>
-          <p>The customer is present. Includes sign-up transactions, checkout pages, and dunning click-throughs where a customer re-enters their card. These typically have higher success rates because the customer is actively engaged.</p>
+          <div class="rc-feature-icon"><i class="fa-solid fa-hashtag"></i></div>
+          <h4>What is a card BIN?</h4>
+          <p>BIN stands for Bank Identification Number — the first 6 digits of a card. It identifies the issuing bank and card type. If a specific BIN has a very low success rate, it may indicate a problem with a particular bank's authorization behavior. You may be able to block that BIN via your gateway settings.</p>
         </div>
         <div class="rc-feature-card">
-          <h4>MIT — Merchant Initiated</h4>
-          <p>Automatic payments. Includes all scheduled subscription renewals and recurring charges that happen without the customer in session — which is why tools like Account Updater and intelligent retries matter most here.</p>
+          <div class="rc-feature-icon"><i class="fa-solid fa-code-branch"></i></div>
+          <h4>Hard vs. soft declines</h4>
+          <p>A <strong>soft decline</strong> is potentially recoverable — the card may succeed if retried at a different time (e.g., insufficient funds). A <strong>hard decline</strong> requires intervention — the payment won't succeed without a change like a new card (e.g., invalid card number). Knowing which type you're dealing with determines your next step.</p>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-body">
+          <strong>A note on data precision</strong>
+          <p>Payment processing shows data at the payment level — what's happening "on the wire." This is more granular than your standard Recurly billing dashboard, which includes dunning and subscriber re-entries. Some numbers may look slightly different between dashboards. Both are correct — they're measuring different things.</p>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-link"></i></div>
+        <div class="rc-callout-body">
+          <strong>Understanding your decline codes</strong>
+          <p>Not sure what a specific decline message means? This reference doc explains the most common codes and how Recurly responds to each. <a href="https://docs.recurly.com/recurly-subscriptions/docs/api-transaction-errors" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Read about decline codes →</a></p>
         </div>
       </div>
     </div>
 
-    <!-- Section: Using the filters -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-sliders rc-fa-section"></i> Using the filters</h2>
-      <p>All filters sit at the top of the dashboard and apply to the entire page. Every chart, table, and metric updates when you apply one. You can also click directly on the map or pie chart to filter by that selection.</p>
-
-      <div class="rc-card">
-        <p>
-          <strong>Date range</strong> — Defaults to the last 30 days. Adjust to any custom range.<br>
-          <strong>Country</strong> — Filter by billing country on the transaction.<br>
-          <strong>Gateway</strong> — Isolate data for one or more connected gateways.<br>
-          <strong>Payment method</strong> — Focus on a specific payment type (e.g., Apple Pay, PayPal).<br>
-          <strong>Initiated by</strong> — Filter to CIT only or MIT only.<br>
-          <strong>Currency</strong> — Filter to a specific currency.
-        </p>
-      </div>
-    </div>
-
-    <!-- Section: Activity checklist -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-list-check rc-fa-section"></i> Activity: explore the Overview</h2>
+      <h2><i class="fa-solid fa-list-check rc-fa-section"></i> Activity: explore payment processing</h2>
 
       <div class="rc-checklist">
         <div class="rc-checklist-header">
-          <i class="fa-solid fa-list-check" style="color: var(--yellow); font-size: 1rem;"></i>
-          <h4>Overview activity</h4>
+          <i class="fa-solid fa-list-check" style="color: #FFD706; font-size: 1rem;"></i>
+          <h4>Payment processing activity</h4>
         </div>
         <label class="rc-checklist-item">
           <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>What is your overall payment success rate? Is it trending up or down compared to the previous period?</strong>
-            <span>Look for the red or green delta below the success rate tile</span>
+            <strong>How has your payment success rate trended over the last 30 days? Is it improving or declining?</strong>
+            <span>Use the success rate trend chart at the top of the page</span>
           </div>
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>Try filtering by country. Does your success rate change significantly for any region?</strong>
-            <span>Click directly on the map to filter — click again to deselect</span>
+            <strong>Look at gateway success rates. Is there a gateway performing significantly better or worse than the others?</strong>
+            <span>A large gap between gateways may indicate a routing opportunity</span>
           </div>
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>Look at the payment method distribution. Is the split what you expected?</strong>
-            <span>Are there payment methods with a higher share than you realized?</span>
+            <strong>Scroll to the card BIN success rates. Is there a BIN with a shockingly low success rate?</strong>
+            <span>Consider discussing with your gateway whether that BIN can be blocked</span>
           </div>
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>Compare your CIT and MIT success rates. Which is higher, and by how much?</strong>
-            <span>A large gap between the two may be worth exploring in the Payment processing dashboard</span>
+            <strong>Check the decline reasons table. What is your top decline reason? Is it a hard or soft decline?</strong>
+            <span>Soft declines may be recoverable through retries — hard declines need a different approach</span>
           </div>
         </label>
         <div class="rc-checklist-footer">Tap each item to mark it complete</div>
       </div>
     </div>
 
-    <!-- Office Hours CTA -->
     <div class="rc-oh-cta">
-      <h4><i class="fa-solid fa-headset rc-fa-dark"></i>Want to talk through your numbers?</h4>
-      <p>Join <strong>Global Office Hours</strong> to walk through your Overview dashboard with a Recurly Customer Success Manager. We can help you understand what your metrics mean and what to prioritize.</p>
+      <h4><i class="rc-fa-dark fa-regular fa-calendar-days"></i>Questions about your decline data?</h4>
+      <p>Bring your payment processing questions to <strong>Global Office Hours</strong>. Our CSMs can help you interpret your decline patterns and identify the best next steps for your specific setup.</p>
       <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
-    <!-- Path navigation -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-btn-prev">← Getting started</a>
-      <span class="rc-lp-nav-indicator">2 of 7</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-btn-path">Next: Payment processing dashboard →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-btn-prev">← Overview dashboard</a>
+      <span class="rc-lp-nav-indicator">3 of 7</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-btn-path">Next: Account updater dashboard →</a>
     </div>
 
-    <!-- Resources -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-overview" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Overview dashboard</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-payment-processing" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Payment processing</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/api-transaction-errors" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Decline messages documentation</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
       </div>
     </div>
 
-    <!-- Footer nav -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
