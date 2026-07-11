@@ -25,6 +25,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -33,11 +34,30 @@ body { background: #ffffff !important; }
 
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:     #FFD706;
+  --orange:     #FF8200;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D73;
+  --lightgray:  #D1CFC4;
+  --brightgray: #F2F1EA;
+  --offwhite:   #FCFBF7;
+  --retain:     #2DCECE;
+  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #32312D !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
 
 /* ── NAVIGATE MASTER ARMOR — (0,0,7,1) ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
@@ -46,28 +66,18 @@ body { background: #ffffff !important; }
 .rc-guide a:visited,
 .rc-guide a:hover,
 .rc-guide a:active {
+  color: #008CFF !important;
   text-decoration: none !important;
   text-decoration-line: none !important;
   text-decoration-color: transparent !important;
   text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
-
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-
-/* ── DESIGN TOKENS ── */
-.rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #CCC9B8;
-  --brightgray:#F1EFE3;
-  --offwhite:  #FFFDF2;
-  --retain:    #FF9D88;
-  color: #32312D !important;
-  background: #ffffff;
+.rc-guide a:hover {
+  color: #0067BE !important;
+  text-decoration: underline !important;
+  text-decoration-color: #008CFF !important;
+  text-underline-offset: 2px !important;
 }
 
 /* ── FONT AWESOME ICON HELPERS ── */
@@ -78,11 +88,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-/* Back link */
+/* Back link — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-back-link:hover { color: #008CFF !important; text-decoration: none !important; }
 
 /* ── ANNOUNCEMENT BAR (hidden) ── */
 .rc-announce-bar { display: none; }
@@ -96,8 +106,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-lp-pillar-tag {
   display: inline-flex; align-items: center; gap: 7px;
-  background: rgba(255,157,136,0.20); border: 1px solid rgba(255,157,136,0.45);
-  color: #FF9D88; font-size: .75rem; font-weight: 800; letter-spacing: 1px;
+  background: rgba(45,206,206,0.20); border: 1px solid rgba(45,206,206,0.45);
+  color: #2DCECE; font-size: .75rem; font-weight: 800; letter-spacing: 1px;
   text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px;
 }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
@@ -144,10 +154,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 .rc-lp-section > p { font-size: .97rem; line-height: 1.7; color: var(--darkgray); margin: 0 0 24px; }
 
-/* ── OH CTA — all hex + !important on dark card ── */
+/* ── OH CTA ── */
 .rc-oh-cta { background: #0D0D0B !important; border: 2px solid #FFD706; border-radius: 14px; padding: 32px 36px; margin: 32px 0 0; }
 .rc-oh-cta h4 { color: #FFD706 !important; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; }
-.rc-oh-cta p { color: #CCC9B8 !important; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
+.rc-oh-cta p { color: #D1CFC4 !important; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
 .rc-oh-cta p strong { color: #FFFDF2 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-oh-btn {
@@ -171,7 +181,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   background: transparent; color: #0D0D0B !important; text-decoration: none !important;
   padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem;
   display: inline-flex; align-items: center; gap: 8px;
-  border: 2px solid #CCC9B8 !important; border-bottom: 2px solid #CCC9B8 !important; transition: all .2s;
+  border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
@@ -184,20 +194,20 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-next-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-next-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-next-card {
-  background: var(--offwhite); border: 1px solid #CCC9B8; border-bottom: 1px solid #CCC9B8 !important;
+  background: var(--offwhite); border: 1px solid #D1CFC4; border-bottom: 1px solid #D1CFC4 !important;
   border-radius: 12px; padding: 20px; color: inherit;
   display: flex; flex-direction: column; gap: 8px; transition: all .2s ease;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-next-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-next-card:hover {
-  border-color: #FF9D88 !important; border-bottom: 1px solid #FF9D88 !important;
-  box-shadow: 0 4px 16px rgba(255,157,136,0.15); transform: translateY(-2px);
+  border-color: #2DCECE !important; border-bottom: 1px solid #2DCECE !important;
+  box-shadow: 0 4px 16px rgba(45,206,206,0.15); transform: translateY(-2px);
 }
-.rc-next-card-tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #FF9D88 !important; margin-bottom: 2px; }
+.rc-next-card-tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #2DCECE !important; margin-bottom: 2px; }
 .rc-next-card-icon { font-size: 1.3rem; line-height: 1; color: #0D0D0B !important; }
 .rc-next-card h4 { font-size: .95rem; font-weight: 800; color: #0D0D0B !important; margin: 0; line-height: 1.3; }
 .rc-next-card p { font-size: .85rem; color: #807D73 !important; line-height: 1.5; margin: 0; flex-grow: 1; }
-.rc-next-card-arrow { font-size: .82rem; font-weight: 700; color: #FF8200 !important; margin-top: 4px; }
+.rc-next-card-arrow { font-size: .82rem; font-weight: 700; color: #008CFF !important; margin-top: 4px; }
 
 /* ── RESOURCES — grouped ── */
 .rc-resources { background: var(--brightgray); border-left: 4px solid var(--retain); border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
@@ -209,24 +219,24 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-resource-link {
   color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px;
-  text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem;
+  text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem;
   transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration-color: #FF9D88 !important; }
+.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration-color: #2DCECE !important; }
 
 /* ── REVIEW CARDS ── */
 .rc-review-list { display: flex; flex-direction: column; gap: 10px; margin: 28px 0 40px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-review-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-review-card {
   display: grid; grid-template-columns: 44px 1fr 28px; align-items: center; gap: 16px;
-  background: var(--offwhite); border: 1px solid #CCC9B8; border-bottom: 1px solid #CCC9B8 !important;
+  background: var(--offwhite); border: 1px solid #D1CFC4; border-bottom: 1px solid #D1CFC4 !important;
   border-radius: 12px; padding: 18px 22px; color: inherit; transition: all .2s ease;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-review-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-review-card:hover {
-  border-color: #FF9D88 !important; border-bottom: 1px solid #FF9D88 !important;
-  box-shadow: 0 4px 14px rgba(255,157,136,0.12); transform: translateX(3px);
+  border-color: #2DCECE !important; border-bottom: 1px solid #2DCECE !important;
+  box-shadow: 0 4px 14px rgba(45,206,206,0.12); transform: translateX(3px);
 }
 .rc-review-num {
   width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706;
@@ -235,8 +245,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-review-body h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B !important; margin: 0 0 4px; }
 .rc-review-body p { font-size: .88rem; color: #807D73 !important; line-height: 1.55; margin: 0; }
 .rc-review-body code { background: var(--brightgray); color: var(--darkgray); padding: 2px 6px; border-radius: 4px; font-size: .82rem; font-family: monospace !important; }
-.rc-review-arrow { font-size: 1.1rem; color: #CCC9B8 !important; text-align: right; transition: color .2s; }
-.rc-guide a.rc-review-card:hover .rc-review-arrow { color: #FF9D88 !important; }
+.rc-review-arrow { font-size: 1.1rem; color: #D1CFC4 !important; text-align: right; transition: color .2s; }
+.rc-guide a.rc-review-card:hover .rc-review-arrow { color: #2DCECE !important; }
 @media(max-width:768px){ .rc-review-card { grid-template-columns: 36px 1fr 20px; padding: 14px 16px; } }
 
 /* ── FOOTER NAV ── */
@@ -247,7 +257,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-footer-link { color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-guide a.rc-footer-link:hover { color: #008CFF !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
@@ -466,7 +476,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-                    <span class="rc-footer-label">Payment banners</span>
+          <span class="rc-footer-label">Payment banners</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners" class="rc-footer-link">Path overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-footer-link">1. Why it matters &amp; when to use it</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-implementation" class="rc-footer-link">2. Choosing your implementation path</a>
