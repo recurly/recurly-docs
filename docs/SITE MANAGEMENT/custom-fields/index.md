@@ -111,7 +111,7 @@ Account custom fields add context to the Account object. Common uses: subscriber
 To set a value, open the account, click **Edit**, scroll to the **Custom Fields** section, and enter the value. The value is displayed on the account record once saved.
 
 
-<Image src="https://files.readme.io/05191e02073030d8e2412389810a487df5d9394da03583c5a82f0de3eb44375b-image.png" align="center" width="75%" border={true} />
+<Image src="https://files.readme.io/05191e02073030d8e2412389810a487df5d9394da03583c5a82f0de3eb44375b-image.png" align="center" width="50%" border={true} />
 
 
 
