@@ -108,7 +108,7 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 </div>
 
 
-<Image src="https://files.readme.io/874a53d85998063a2ffc63b6f02421aee951ce68b58eab805d340e0d900f54c6-image.png" align="center" width="75%" border={true} />
+<Image src="https://files.readme.io/874a53d85998063a2ffc63b6f02421aee951ce68b58eab805d340e0d900f54c6-image.png" align="center" width="50%" border={true} />
 
 
 
