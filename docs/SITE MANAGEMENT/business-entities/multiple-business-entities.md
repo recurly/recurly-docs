@@ -1,10 +1,9 @@
 ---
 title: Multiple business entities
 excerpt: >-
-  Managing all of your organizations’ business entities from one Recurly site
-  simplifies tax calculation and reporting, ensures customers receive invoices
-  from the correct business entity, and allows businesses to scale with
-  efficiency and flexibility.
+  Configure multiple business entities in Recurly to represent distinct brands,
+  subsidiaries, or geographic locations — each with its own invoice treatment,
+  tax configuration, and automatic subscriber assignment.
 deprecated: false
 hidden: false
 metadata:
@@ -18,349 +17,390 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature may not be included in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-page">
+  <div class="rp-overview">Multiple business entities let you run distinct brands, subsidiaries, geographic headquarters, or legal entities from a single Recurly site. Each entity has its own invoice display, email identity, tax configuration, and subscriber assignment rules — so every customer gets accurate invoices and communications without managing multiple sites.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">4</span>FAQs</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* A Recurly site with at least one configured business entity (the Site Default Entity is created automatically)
-* Admin UI access to configure entities, invoice templates, and account settings
+<ul class="rp-list">
+  <li>A Recurly site with at least one configured business entity (the Site Default Entity is created automatically)</li>
+  <li>Admin UI access to configure entities, invoice templates, and account settings</li>
+</ul>
 
 ### Limitations
 
-* Business entity assignment cannot take effect mid-billing period — changes apply at the start of the next billing cycle
-* Changing a business entity on a subscription is not available for immediate subscription changes
-* Subscription-level entity assignment is not available for purchase calls made on Recurly Checkout
-* Each country can only be added to a single entity's Subscriber Locations at a time
-* The Site Default Entity cannot be deleted
-* Recurly supports only one Avalara account per site (multi-entity tax support is handled via sub-entity mapping)
-* Merchants on Starter and Professional plans cannot configure invoice notes at the entity level
-
-***
+<ul class="rp-list">
+  <li>Business entity assignment cannot take effect mid-billing period — changes apply at the start of the next billing cycle</li>
+  <li>Changing the business entity on a subscription is not available for immediate subscription changes</li>
+  <li>Subscription-level entity assignment is not available for purchase calls made through Recurly Checkout</li>
+  <li>Each country can only be added to a single entity's Subscriber Locations at a time</li>
+  <li>The Site Default Entity cannot be deleted</li>
+  <li>Recurly supports one Avalara account per site — multi-entity tax support is handled via sub-entity mapping</li>
+  <li>Merchants on Starter and Professional plans cannot configure invoice notes at the entity level</li>
+</ul>
 
 # Definition
 
-Business Entities let you configure Recurly to reflect how your organization is actually structured. An entity can represent a legal entity, a distinct business unit or brand, a subsidiary, a geographic headquarters, or a warehouse distribution center.
+<div class="rp-definition">Business entities let you configure Recurly to reflect how your organization is actually structured. An entity can represent a legal entity, a distinct business unit or brand, a subsidiary, a geographic headquarters, or a warehouse distribution center. With multiple entities on a single site, every customer receives invoices, emails, and tax treatment accurate to the entity they're subscribed to — without managing separate Recurly sites.</div>
 
-By setting up multiple entities on a single Recurly site, you ensure every customer receives invoices, emails, and tax treatment that's accurate for the entity they're subscribed to — all without managing multiple sites. You can create as many entities as your business needs, and update, remove, or add them at any time.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/06cfb5f7a4340dea7a32921c5b7c54aa49ce8d897bda4eaa12b6001ff157dd6d-image.png" className="border" />
+<Image src="https://files.readme.io/06cfb5f7a4340dea7a32921c5b7c54aa49ce8d897bda4eaa12b6001ff157dd6d-image.png" align="center" width="75%" border={true} />
 
-***
 
 # Key benefits
 
-* **Dynamic entity management:** Add, remove, and update entities as your business evolves — whether an entity means a brand, subsidiary, geographic location, or legal entity.
-* **Consolidated customer accounts:** Keep a single customer account subscribed to one or more of your entities at a time, all within one Recurly site.
-* **Tailored customer communications:** Send customized invoices and emails based on the entity a customer is subscribed to, improving brand clarity and customer experience.
-* **Automated, accurate tax treatment:** Configure tax calculation, reporting, filing, and registration independently for each entity.
-* **Entity performance analytics:** Use the Business Entity Overview dashboard to track and compare key metrics across entities, so you can make informed decisions for each of your markets.
-
-***
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i></div>
+    <strong>Dynamic entity management</strong>
+    <span>Add, remove, and update entities as your business evolves — whether an entity represents a brand, subsidiary, geographic location, or legal entity.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-user" aria-hidden="true"></i></div>
+    <strong>Consolidated customer accounts</strong>
+    <span>Keep a single customer account subscribed to one or more of your entities at a time, all within one Recurly site.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+    <strong>Tailored customer communications</strong>
+    <span>Send customized invoices and emails based on the entity a customer is subscribed to, improving brand clarity and customer experience.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+    <strong>Automated, accurate tax treatment</strong>
+    <span>Configure tax calculation, reporting, filing, and registration independently for each entity.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-chart-bar" aria-hidden="true"></i></div>
+    <strong>Entity performance analytics</strong>
+    <span>Use the Business Entity Overview dashboard to track and compare key metrics across entities, so you can make informed decisions per market.</span>
+  </div>
+</div>
 
 # Key details
 
 ## Entity-specific merchant email addresses
 
-The Billing Contact Email address is used as the "from" address on all transaction emails and appears on all invoices and receipts. Keeping this accurate for each entity ensures customers always see the right contact information.
+The Billing Contact Email is the "from" address on all transaction emails and appears on invoices, receipts, hosted pages, and the cancel authorization copy on hosted invoice pages.
 
-You can set a unique billing contact email for each alternate entity. If you don't, the address falls back to what's configured on the [Site Settings](https://docs.recurly.com/docs/site-settings#email-settings) page. The Site Default Entity always uses the Site Settings billing contact email. You can also override all of this at the individual [email template](https://docs.recurly.com/docs/site-settings#email-settings) level.
+You can set a unique billing contact email per alternate entity. If you don't, it falls back to the address configured on the <a href="https://docs.recurly.com/docs/site-settings#email-settings" target="_blank">Site Settings</a> page. The Site Default Entity always uses the Site Settings email. You can also override this at the individual <a href="https://docs.recurly.com/docs/site-settings#email-settings" target="_blank">email template</a> level.
 
-The billing contact email appears in the following places:
 
-* The "from" address on emails sent to customers
-* The email address shown on PDF invoice attachments
-* Invoice renderings on hosted pages
-* The cancel authorization copy on hosted invoice pages
+<Image src="https://files.readme.io/9f3208f21ddc550c979c27d904490950e1a23a21c07fc8e2d8e0fbb035d14718-image.png" align="center" width="75%" border={true} />
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/9f3208f21ddc550c979c27d904490950e1a23a21c07fc8e2d8e0fbb035d14718-image.png" className="border" />
 
-To preview which email address will appear on an invoice, click **Invoice Preview** when creating or modifying a subscription or one-time purchase. You can also check which entity is assigned to a customer's account or subscription to determine which billing contact email they'll see.
+To preview which email address will appear on an invoice, click **Invoice Preview** when creating or modifying a subscription or one-time purchase.
 
-> **Note:** Billing contact email addresses can only be configured in the Recurly Admin UI.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Billing contact email addresses can only be configured in the Recurly Admin UI.</div>
+</div>
 
 ***
 
-## Automatic assignment of entities by subscriber location
+## Automatic assignment by subscriber location
 
 ### How automatic assignment works
 
-By default, Recurly automatically assigns a business entity to each invoice based on the customer's "BILL TO" address at the time of the transaction. If a customer has manual billing enabled, or if your site is configured to use the account address, that address is used instead.
+By default, Recurly automatically assigns a business entity to each invoice based on the customer's Bill To address at the time of the transaction. If manual billing is enabled, or if your site is configured to use the account address, that address is used instead.
 
 ### Subscriber locations
 
-Subscriber Locations are an optional configuration on alternate entities that let you define which countries should trigger automatic assignment to that entity. Each country can only be added to one entity's Subscriber Locations at a time.
+Subscriber Locations are an optional configuration on alternate entities that define which countries trigger automatic assignment to that entity. Each country can only be added to one entity's Subscriber Locations at a time.
 
-If no countries are added to any alternate entity's Subscriber Locations, all customers are automatically assigned to the Site Default Entity, which acts as the site-wide fallback.
+If no countries are added to any alternate entity, all customers are automatically assigned to the Site Default Entity — which acts as the site-wide fallback.
 
-Once Subscriber Locations are configured, affected customers will start receiving invoices from the corresponding entity at the start of their next billing period. This applies to both new and existing subscribers, unless their subscription or account has a specific entity already assigned.
+Once Subscriber Locations are configured, affected customers start receiving invoices from the corresponding entity at the start of their next billing period. This applies to both new and existing subscribers, unless their subscription or account already has a specific entity assigned.
 
 ### Example
 
-Say you create an entity called "Acme Inc. Western Europe" and add Germany, Italy, France, Spain, Ireland, and England to its Subscriber Locations. Any customer with a "BILL TO" address in one of those countries will automatically receive invoices from that entity.
-
-If you also create "Acme Inc. Eastern Europe" with Poland and Hungary in its Subscriber Locations, customers in those two countries will be assigned to that entity instead.
-
-Your global headquarters can be set as the Site Default Entity — serving as the fallback for all customers not covered by any Subscriber Location.
+If you create an entity called "Acme Inc. Western Europe" and add Germany, Italy, France, Spain, Ireland, and England to its Subscriber Locations, customers with a Bill To address in any of those countries automatically receive invoices from that entity. A second entity, "Acme Inc. Eastern Europe," with Poland and Hungary in its Subscriber Locations would capture customers from those countries. Your global headquarters serves as the Site Default Entity — the fallback for everyone else.
 
 ### Viewing entity assignments
 
-You can view entity assignments on individual invoices within a customer's account. You can also query the Invoice object via API to identify which entity was applied to a specific invoice.
+Entity assignments are visible on individual invoices within a customer's account. You can also query the Invoice object via API to see which entity was applied to a specific invoice.
 
 ***
 
 ## Entity-level invoice treatments
 
-In addition to configuring company information (name, contact number, display and tax addresses, and Tax ID numbers), you can set the following invoice display options per entity:
+Each entity can be configured with its own invoice display options:
 
-* Entity prefix for invoice numbering
-* EU country sequencing
-* Header and footer logo images
-* Notes to the customer
-* Terms and conditions
+- Entity prefix for invoice numbering
+- EU country sequencing
+- Header and footer logo images
+- Notes to the customer
+- Terms and conditions
 
-These settings ensure each entity's contact information, legal language, and branding reach the right customers consistently.
+### Invoice sequencing
 
-### Invoice number settings: invoice sequencing
+Each entity can use either its own unique invoice sequence or your site's shared sequence.
 
-Each business entity can use either a unique invoice sequence or your site's shared sequence.
+### Entity prefix
 
-### Invoice number settings: entity prefix
+An entity prefix is an alphanumeric value (four characters or fewer) prepended to the sequential invoice number. When enabled, the sequence starts at 1,000 and increments by one.
 
-An entity prefix is an alphanumeric string of four characters or fewer that's added before the sequential invoice number. When enabled, the sequence starts at 1,000 and increments by one.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Changes to invoice numbering can disrupt reconciliation and gateway processing. See <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/gateway-specific-information-for-invoice-numbers" target="_blank">gateway-specific information for invoice numbers</a> for details. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> to have an entity invoice prefix added to your account.</div>
+</div>
 
-> **Note:** Changes to invoice numbering can disrupt reconciliation and gateway processing. See [gateway-specific information for invoice numbers](https://docs.recurly.com/recurly-subscriptions/update/docs/gateway-specific-information-for-invoice-numbers) for details. Contact [support@recurly.com](mailto:support@recurly.com) to have an entity invoice prefix added to your account.
+### Country sequencing
 
-### Invoice number settings: country sequencing
+By default, Recurly uses a single invoice number sequence across your site. Certain EU member states require a unique sequence per country — Country Sequencing lets you create distinct sequences for each EU member state. Enable or disable this using the radio button in the entity settings.
 
-By default, Recurly uses a single sequence across your site, in line with European Commission invoicing rules. However, certain EU member states require a unique sequence per country. The Country Sequencing feature lets you set up distinct sequences for each EU member state. Enable or disable this using the radio button in the entity settings.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/284ef27c97ca20a094f8d08fad6567c05d6bbecc95399afc7196dad3a314c322-image.png" className="border" />
+<Image src="https://files.readme.io/284ef27c97ca20a094f8d08fad6567c05d6bbecc95399afc7196dad3a314c322-image.png" align="center" width="75%" border={true} />
+
 
 ### Entity invoice images
 
-Header and footer images let you control which logos appear on invoices sent to your customers. Footer images are commonly used for secondary logos or custom messaging.
+Header and footer images control which logos appear on invoices sent to customers. Footer images are commonly used for secondary logos or custom messaging.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/9b8334250dba359821af19442ee02910a3dae837c27e9e31f0706b73cd75ed5a-image.png" className="border" />
+
+<Image src="https://files.readme.io/9b8334250dba359821af19442ee02910a3dae837c27e9e31f0706b73cd75ed5a-image.png" align="center" width="75%" border={true} />
+
 
 ### Entity charge invoice notes
 
-You can use site-level invoice notes, or override them with entity-specific notes.
+You can use site-level invoice notes or override them with entity-specific notes.
 
-**Note to customer**
+**Note to customer** — Customer-visible details or a personalized message (e.g., "Thanks for your business"). Also supports local compliance notes such as authorized dealer status, delivery note numbers, type of supply, intra-community supply details, and Israel-specific invoice fields. Shown only when text is present; no section title displayed. Appears at the bottom of the invoice in larger font than Terms and Conditions.
 
-Use this field to include any invoice details or a personalized message for the customer (e.g., "Thanks for your business"). This section is also useful for local compliance notes, such as authorized dealer status, delivery note numbers, type of supply, intra-community supply details, or Israel-specific invoice fields.
+**Terms and conditions** — Payment terms, legal notes, or contractual information. Shown only when text is present.
 
-This section only appears on an invoice if text is present and does not display a section title. Customer notes appear at the bottom of the invoice in a larger font than Terms and Conditions.
 
-**Terms and conditions**
+<Image src="https://files.readme.io/91182c3da5fd1b14818b1bc2fcd0582284d3e7a40c8bf805c74ba34787cc4270-image.png" align="center" width="75%" border={true} />
 
-Use this field for payment or contract terms. This section only appears on an invoice if text is present.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/91182c3da5fd1b14818b1bc2fcd0582284d3e7a40c8bf805c74ba34787cc4270-image.png" className="border" />
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Starter and Professional plans</strong>Merchants on Starter and Professional plans can only configure notes on the Invoice Settings page — entity-level notes are not available on these plans.</div>
+</div>
 
-### How entity invoice treatments work with existing invoice customization
+### Entity invoice treatments and Invoice Customization
 
-If a customer has a custom invoice template assigned, any display addresses and header/footer images on that template still apply. To use entity-level settings instead, select the first radio button in the invoice template's edit page.
+If a customer has a custom invoice template assigned, display addresses and header/footer images on that template continue to apply. To use entity-level settings instead, select the first radio button in the invoice template's edit page. New invoice templates default to entity-level addresses and images. You can change this at any time — updates apply only to future invoices.
 
-New invoice templates default to using entity-level addresses and images. You can change this at any time — updates only apply to invoices going forward.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Image version history</strong>Image version history is not supported at the entity level. If an invoice is edited after posting, the reissued invoice displays the image currently on the entity — including refund and credit invoices.</div>
+</div>
 
-> **Note:** Image version history is not supported at the entity level. If an invoice is edited after posting, the reissued invoice will display the image currently configured on the entity — including refund and credit invoices.
+### Entity notes and site-level invoice notes
 
-### How entity notes work with site-level invoice notes
+Notes on your site's <a href="https://docs.recurly.com/docs/invoice-settings#terms-and-conditions" target="_blank">Invoice Settings</a> page apply site-wide by default. To use entity-specific notes instead, select the first radio button on the relevant entity. Updates apply only to future invoices.
 
-Notes configured on your site's [Invoice Settings](https://docs.recurly.com/docs/invoice-settings#terms-and-conditions) page apply to all invoices site-wide by default. To use entity-specific notes instead, select the first radio button option on the relevant entity.
 
-You can change this setting at any time. Updates only apply to invoices going forward.
+<Image src="https://files.readme.io/da58122d9ba062b736399d4d39ae44e64ccb2b6cad8c2f7af0e2bac57d213920-image.png" align="center" width="75%" border={true} />
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/da58122d9ba062b736399d4d39ae44e64ccb2b6cad8c2f7af0e2bac57d213920-image.png" className="border" />
 
-If you create a new alternate entity and there are no notes on the Invoice Settings page, entity-level notes will be selected automatically. You can switch to using Invoice Settings notes at any time.
+If you create a new alternate entity and the Invoice Settings page has no notes, entity-level notes are selected automatically. You can switch back to Invoice Settings notes at any time.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/8f3ae52660374f16a2e30c3159dd0ae99c3554a09d7db48ed36e5c38c9eb66d6-image.png" className="border" />
 
-> **Note:** Merchants on Starter and Professional plans can configure notes only on the Invoice Settings page — entity-level notes are not available on these plans.
+<Image src="https://files.readme.io/8f3ae52660374f16a2e30c3159dd0ae99c3554a09d7db48ed36e5c38c9eb66d6-image.png" align="center" width="75%" border={true} />
+
 
 ***
 
-## Applying an entity to a customer's subscription
+## Applying an entity to a subscription
 
-If you have multiple brands, or customers who subscribe to more than one of your entities, you can assign a business entity directly to individual subscriptions. This allows for consolidated account management across subsidiaries and entities.
+If you have multiple brands, or customers who subscribe to more than one of your entities, you can assign a business entity directly to individual subscriptions. This supports consolidated account management across subsidiaries and entities.
 
-Entity assignment at the subscription level is supported in:
+Entity assignment at the subscription level is available via the Admin UI and the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription" target="_blank">Recurly API v3</a> (at creation and on changes).
 
-* Recurly Admin UI
-* Recurly API [V3](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription) (initial creation and changes)
-
-> **Note:** Subscription-level entity assignment is not available for purchase calls made through Recurly Checkout.
-
-**To assign an entity in the Admin UI:** Open the subscription, select your desired **Override Business Entity**, and save.
+**In the Admin UI:** Open the subscription, select your desired **Override Business Entity**, and save.
 
 **To change an entity on an existing subscription:** Changes can only take effect on the `next_bill_date` or `subscription_term`. Immediate subscription changes do not support entity changes.
 
-**To assign or change an entity via API:** Set the `business_entity_id` on the subscription object at creation, or update it via a [subscription change](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change). The new entity will be applied at the next billing renewal.
+**Via API:** Set `business_entity_id` on the subscription object at creation, or update it via a <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change" target="_blank">subscription change</a>. The new entity applies at the next billing renewal.
 
-> **Important:** Changing the business entity on a subscription is not available for immediate subscription changes.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/74aaa9417dfe9867d358e0561b462816435a71241c2a245a1912d562af8505e3-image.png" className="border" />
+<Image src="https://files.readme.io/74aaa9417dfe9867d358e0561b462816435a71241c2a245a1912d562af8505e3-image.png" align="center" width="75%" border={true} />
 
-When scheduling subscription changes for the next bill date or next term renewal:
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/51bbc96db492cbc66e85afdc376967c8ea4bd24682429c08fb394642ba7fad53-image.png" className="border" />
+When scheduling changes for the next bill date or next term renewal, you can also change the business entity on the subscription.
 
-you're able to change the business entity on the subscription.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/3be9814f06915afe9e0a5cebd70a8a527d080cbfdcac1c1d2cde7bf609649d31-image.png" className="border" />
+<Image src="https://files.readme.io/51bbc96db492cbc66e85afdc376967c8ea4bd24682429c08fb394642ba7fad53-image.png" align="center" width="75%" border={true} />
 
-Entities assigned at the subscription level take precedence over location-based assignment and any account-level entity override.
+
+
+<Image src="https://files.readme.io/3be9814f06915afe9e0a5cebd70a8a527d080cbfdcac1c1d2cde7bf609649d31-image.png" align="center" width="75%" border={true} />
+
+
+Subscription-level entity assignment takes precedence over location-based assignment and any account-level entity override.
 
 ***
 
-## Applying an overriding entity to a customer's account
+## Applying an overriding entity to an account
 
-If you want a static entity assignment — where all subscriptions and purchases for a customer always use the same entity — you can apply an overriding entity at the account level.
+To give a customer a static entity assignment — where all their subscriptions and purchases always use the same entity — apply an overriding entity at the account level.
 
-> **Tip:** If you're integrated with NetSuite, Recurly recommends applying entities at the account level rather than relying on automatic assignment. This keeps entity mapping consistent between Recurly and NetSuite, since entities are mapped when a customer is first created in NetSuite.
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> NetSuite integration</strong>If you're integrated with NetSuite, Recurly recommends applying entities at the account level rather than relying on automatic assignment. This keeps entity mapping consistent between Recurly and NetSuite, since entities are mapped when a customer is first created in NetSuite.</div>
+</div>
 
-You can apply an account-level override via the Admin UI or API (V2/V3).
+Account-level overrides can be applied via the Admin UI or API (v2/v3).
 
-**To apply an override in the Admin UI:**
+**In the Admin UI:**
 
-1. Navigate to the customer's account
-2. Go to **Edit Account Information**
-3. Select an **Overriding Business Entity** from the dropdown
-4. Save your changes
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the customer's account</h4><p>Navigate to the customer's account in the Admin Console.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Edit account information</h4><p>Select <strong>Edit Account Information</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Assign the entity</h4><p>Select an <strong>Overriding Business Entity</strong> from the dropdown and save.</p></div>
+  </div>
+</div>
 
-Once saved, all future transactions for that account will use the selected entity. This assignment persists until you change it or revert the account to automatic assignment. The new entity takes effect at the start of the next billing cycle — you can't switch entities mid-billing period.
+Once saved, all future transactions for that account use the selected entity. The assignment persists until changed or reverted. The new entity takes effect at the start of the next billing cycle — entity changes can't take effect mid-billing period.
 
-### Viewing the overriding entity on an account
+### Viewing the overriding entity
 
-The assigned entity is visible on the customer's account page under **Account Information**. You can also query the Account object via API to see the assigned entity, or query the Invoice object to see which entity was applied to a specific invoice.
+The assigned entity is visible on the customer's account page under **Account Information**. You can also query the Account object via API to see the assigned entity, or the Invoice object to see which entity was applied to a specific invoice.
 
-<Image align="center" width="30%" src="https://files.readme.io/82155ea952e61d3c4390d86ca48b6cb2a1b1f1201ece6abb81f20d6a6c3b567d-image.png" />
+
+<Image src="https://files.readme.io/82155ea952e61d3c4390d86ca48b6cb2a1b1f1201ece6abb81f20d6a6c3b567d-image.png" align="center" width="40%" border={true} />
+
 
 ***
 
 ## Account hierarchy and entities
 
-For customers in a parent/child account hierarchy, entity assignment depends on how billing is configured:
+For customers in a parent/child account hierarchy, entity assignment depends on billing configuration:
 
-* **Bill all charges to child account:** Each child account receives its own invoices and follows standard entity assignment — automatic (by Subscriber Location), subscription-level, or account-level override.
-* **Bill all charges to parent account:** Invoices generated from a child account's charges are assigned to whichever entity applies to the parent — subscription-level, account-level override, or automatic assignment based on the parent's "BILL TO" address.
+- **Bill charges to child account** — Each child account receives its own invoices and follows standard entity assignment (automatic, subscription-level, or account-level override).
+- **Bill charges to parent account** — Invoices from a child account's charges are assigned to whichever entity applies to the parent: subscription-level, account-level override, or automatic assignment based on the parent's Bill To address.
 
 ***
 
 ## Refund invoices
 
-When a refund is issued, the refund invoice always uses the entity, invoice display information, and tax address from the original transaction — even if the customer's entity assignment has changed since the original purchase. This ensures accurate tax calculation and invoice consistency.
+Refund invoices always use the entity, invoice display information, and tax address from the original transaction — even if the customer's entity assignment has changed since the original purchase. This ensures accurate tax calculation and invoice consistency.
 
 ***
 
 ## Deleting an entity
 
-The Site Default Entity cannot be deleted — it's essential to the invoicing process and serves as the fallback for all customers. It can be edited at any time.
+The Site Default Entity cannot be deleted — it's the fallback for all customers and essential to the invoicing process. It can be edited at any time.
 
 Any alternate entity can be deleted at any time. To delete one:
 
-* From the entity list page, hover over the entity, click the ellipsis (…), and select **Delete**
-* Or, from the entity's view page, select **Delete Entity** from the **Entity Actions** dropdown
+- From the entity list page: hover over the entity, click the ellipsis (…), and select **Delete**
+- From the entity view page: select **Delete Entity** from the **Entity Actions** dropdown
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/ad0103bc5853f6b97c915e6442b1a095701f9aeba65f35cc6cb180c06c606799-image.png" className="border" />
 
-To confirm deletion, you'll be prompted to enter the entity's code. Once confirmed, the entity is permanently removed. However, any refunds tied to original transactions under that entity will still use its display and tax address information.
+<Image src="https://files.readme.io/ad0103bc5853f6b97c915e6442b1a095701f9aeba65f35cc6cb180c06c606799-image.png" align="center" width="75%" border={true} />
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/a4a7e7dcadebe8753aaa09317abae29226a21d4efc7cdb4253ad6c1dd3ecd989-image.png" className="border" />
 
-After deletion, customers who had that entity set as their account-level override will be reassigned to the Site Default Entity, unless one of the following applies:
+To confirm deletion, enter the entity's code. Once confirmed, the entity is permanently removed. Refunds tied to original transactions under that entity will still use its display and tax address information.
 
-* Their subscriptions are reassigned to a different entity
-* Their "BILL TO" address matches a country in another entity's Subscriber Locations
-* The deleted entity's Subscriber Location countries are moved to another entity
-* They're manually reassigned to a specific entity at the account level
+
+<Image src="https://files.readme.io/a4a7e7dcadebe8753aaa09317abae29226a21d4efc7cdb4253ad6c1dd3ecd989-image.png" align="center" width="75%" border={true} />
+
+
+After deletion, customers who had that entity as their account-level override are reassigned to the Site Default Entity — unless their subscriptions are reassigned to a different entity, their Bill To address matches a country in another entity's Subscriber Locations, the deleted entity's Subscriber Location countries are moved to another entity, or they're manually reassigned at the account level.
 
 ***
 
 ## Tax ID numbers
 
-Tax ID Numbers (TINs) are configured per entity and appear as the last line of merchant information on invoices. When a Default TIN/VAT number is set on an entity, it displays on all invoices issued under that entity.
+Tax ID Numbers (TINs) are configured per entity and appear as the last line of merchant information on invoices. When a default TIN/VAT number is set on an entity, it displays on all invoices issued under that entity.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/b531d19695ab3ab54e4c5d6e63645e54b45f76fc8ad9b1c6f4ffdf98e2315b28-image.png" className="border" />
 
-Country-specific TINs override the default when a customer's "BILL TO" address is in a country that has its own TIN configured on the entity.
+<Image src="https://files.readme.io/b531d19695ab3ab54e4c5d6e63645e54b45f76fc8ad9b1c6f4ffdf98e2315b28-image.png" align="center" width="75%" border={true} />
 
-For example: if an entity has a default VAT number and a separate country-specific VAT number for Portugal, customers with a Portuguese billing address will see the Portugal-specific VAT number. All other customers on that entity will see the default.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/93fb6eb5b4cad4a3a221de8a367f2df5b5206bef6c6f8f424dee933ed006af13-image.png" className="border" />
+Country-specific TINs override the default when a customer's Bill To address is in a country that has its own TIN configured on the entity. For example, if an entity has a default VAT number and a separate Portugal-specific VAT number, customers with a Portuguese billing address see the Portugal-specific number; all others see the default.
 
-> **Note:** TIN/VAT numbers don't carry over between entities automatically. If you use the same TIN across multiple entities, you'll need to enter it on each one individually.
+
+<Image src="https://files.readme.io/93fb6eb5b4cad4a3a221de8a367f2df5b5206bef6c6f8f424dee933ed006af13-image.png" align="center" width="75%" border={true} />
+
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>TIN/VAT numbers don't carry over between entities automatically. If you use the same TIN across multiple entities, enter it on each one individually.</div>
+</div>
 
 ***
 
 ## Direct Avalara accounts
 
-If you have a direct Avalara integration, you can map each Recurly entity to the corresponding company in your AvaTax account for independent tax reporting and filing per entity.
+If you have a direct Avalara integration, map each Recurly entity to the corresponding company in your AvaTax account for independent tax reporting and filing per entity.
 
-Recurly supports one Avalara account per site. Multi-entity tax support works by mapping your Recurly Site Default Entity to the Avalara main company, and each alternate entity to a sub-entity within that same Avalara account.
+Recurly supports one Avalara account per site. Multi-entity support works by mapping the Recurly Site Default Entity to the Avalara main company, and each alternate entity to a sub-entity within that same Avalara account.
 
-**To set up the mapping:**
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Find the company code in Avalara</h4><p>Locate the company or sub-company code you want to map and copy it exactly as it appears.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Open Avalara settings in Recurly</h4><p>Go to <strong>Configuration → Taxes → Avalara AvaTax Settings</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Paste the company code</h4><p>Enter the code in the corresponding Company Code field for the appropriate entity and save.</p></div>
+  </div>
+</div>
 
-1. In Avalara, locate the company or sub-company code you want to map
-2. Copy the Company Code exactly as it appears
-3. In Recurly, go to **Configuration → Taxes → Avalara AvaTax Settings**
-4. Paste the code into the corresponding Company Code field for the appropriate entity
 
-If you delete an entity in Recurly, that mapping to the corresponding Avalara sub-company will be removed. Keep mappings up to date as your entities change.
+<Image src="https://files.readme.io/cec7285c7f46551ba140881ea32401ff88b034cabb313ddc525ee405912f0095-image.png" align="center" width="75%" border={true} />
 
-<Image align="center" width="75%" src="https://files.readme.io/cec7285c7f46551ba140881ea32401ff88b034cabb313ddc525ee405912f0095-image.png" />
+
+If you delete an entity in Recurly, the mapping to the corresponding Avalara sub-company is also removed. Keep mappings current as your entities change.
 
 ***
 
 ## Paused subscriptions
 
-When a paused subscription is resumed, or an immediate change is made to it, a new billing period is triggered. The next invoice will use whichever entity applies to the customer at that point — the account-level override, Subscriber Location assignment, or the Site Default Entity.
+When a paused subscription is resumed or an immediate change is made, a new billing period is triggered. The next invoice uses whichever entity applies at that point — account-level override, Subscriber Location assignment, or the Site Default Entity.
 
 ***
 
 ## Plan downgrades
 
-If you downgrade from a Recurly Elite plan to a Starter or Professional plan, you'll lose the ability to maintain multiple entities once the downgrade takes effect. Historic invoices and refunds that used alternate entities will remain unchanged. All future invoices, subscriptions, and transactions will be assigned to your Site Default Entity.
+If you downgrade from an Elite plan to Starter or Professional, you lose the ability to maintain multiple entities once the downgrade takes effect. Historic invoices and refunds that used alternate entities remain unchanged. All future invoices, subscriptions, and transactions are assigned to the Site Default Entity.
 
-If you re-upgrade to an Elite plan in the future, you'll need to recreate your alternate entities.
+If you re-upgrade to an Elite plan, you'll need to recreate your alternate entities.
 
 ***
 
 ## Entity-specific email templates
 
-Recurly supports up to 20 template variations per email template type. You can assign a specific variation to customers based on their geographic location or their subscription, account, or invoice's entity assignment. For more information, see the [Alternate Email Templates](https://docs.recurly.com/docs/alternate-email-templates) documentation.
-
-***
+Recurly supports up to 20 template variations per email template type. You can assign a specific variation based on geographic location or entity assignment. See the <a href="https://docs.recurly.com/docs/alternate-email-templates" target="_blank">Alternate Email Templates</a> documentation for details.
 
 # FAQs
 
-**Can other Recurly objects, such as plans or coupons, be entity-specific?**
+<Accordion title="Can other Recurly objects like plans or coupons be entity-specific?">
+  Plans, items, and coupons aren't siloed by entity within Recurly. You can pass specific plan, item, or coupon codes to customers via API based on their entity — but you'll need to maintain those mappings in your own integration.
+</Accordion>
 
-Objects like plans, items, and coupons aren't siloed by entity within Recurly. You can pass specific plan, item, or coupon codes to customers via API based on their entity, but you'll need to maintain those mappings and flows in your own integration.
+<Accordion title="Can purchases from a given entity be routed to a specific payment gateway?">
+  This isn't available through the Admin UI. However, you can set a specific payment gateway at both the subscription and account levels — so a subscription assigned to a particular entity can be routed to your preferred gateway.
+</Accordion>
 
-**Can purchases made from a given entity be routed to a specific payment gateway?**
+<Accordion title="Can I file taxes by entity in Avalara or Vertex?">
+  Yes, for merchants with a direct Avalara or Vertex account. Configure the integration in your Recurly site by mapping entity and company/division codes appropriately to enable entity-specific filing in your tax system.
+</Accordion>
 
-This isn't available through the Admin UI. However, you can set a specific payment gateway at both the subscription and account levels — so a subscription assigned to a particular entity can be routed to your preferred gateway.
+<Accordion title="Does this feature work with Recurly revenue recognition?">
+  Yes. Multi-entity is compatible with Recurly revenue recognition. If you enable revenue recognition after creating entities, create two GL codes for each entity on your site.
+</Accordion>
 
-**Can I file taxes by entity in Avalara or Vertex?**
+<Accordion title="Can I run entity-specific analytics in Recurly?">
+  Yes. Two dashboards include entity-specific data: the [Business Entity Overview Dashboard](https://docs.recurly.com/docs/business-entities-overview) and the [Explore — Invoices Dashboard](https://docs.recurly.com/docs/business-entities-overview#explore-invoices-dashboard). The Entity Code is also included in the following exports: Invoices — Accounts Receivable, Adjustments, Adjustments — Taxes, and Invoices — Summary.
+</Accordion>
 
-Yes — this is supported for merchants with a direct Avalara or Vertex account. You'll need to configure the integration in your Recurly site by mapping entity and company/division codes appropriately to enable entity-specific filing in your tax system.
-
-**Does this feature work with Recurly revenue recognition?**
-
-Yes, multi-entity is compatible with Recurly revenue recognition. If you enable revenue recognition after creating entities, you'll need to create two GL codes for each entity on your site.
-
-**Can I run entity-specific analytics in Recurly?**
-
-Yes. Two dashboards include entity-specific data:
-
-* [Business Entity Overview Dashboard](https://docs.recurly.com/docs/business-entities-overview)
-* [Explore — Invoices Dashboard](https://docs.recurly.com/docs/business-entities-overview#explore-invoices-dashboard)
-
-The Entity Code is also included in the Admin UI for the following exports: Invoices — Accounts Receivable, Adjustments, Adjustments — Taxes, and Invoices — Summary.
+<br />
