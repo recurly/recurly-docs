@@ -1,5 +1,5 @@
 ---
-title: Avalara for Communications (AFC)
+title: Avalara for Communications (AFC) integration
 excerpt: >-
   Explore the integration of Avalara for Communications (AFC) with Recurly,
   designed for communication service providers offering a broad spectrum of
