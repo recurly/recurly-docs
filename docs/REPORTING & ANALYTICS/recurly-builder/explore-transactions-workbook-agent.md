@@ -1,163 +1,229 @@
 ---
 title: Explore - Transactions and workbook agent
 excerpt: >-
-  The Transactions Explore feature is a is an interactive analytics tool that
-  lets you slice and filter transaction-related data across payment
-  transactions, fraud signals, geographic data, and subscription activity. Use
-  the Workbook Agent to ask natural-language questions and surface actionable
-  payment insights.
+  Use the Transactions Explore to build custom reports on gateway activity,
+  payment failures, fraud signals, and geographic trends — with an AI-powered
+  Workbook Agent for plain-language querying.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">The Transactions Explore gives you a flexible, queryable view of every transaction processed through your gateways — including linked invoices, line items, and fraud signals. Build tailored reports manually using the field picker, or let the AI-powered Workbook Agent construct and run queries from plain-language questions.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
-## Required plan
-
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-card">
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+<ul>
+<li>Users must have the Analytics user role permission.</li>
+</ul>
 
-## Definition
+</div>
 
-The transactions Explore feature is a dynamic, versatile, and powerful tool that provides a custom view of your organization's data. It transforms raw data into insightful and actionable information, catering to a wide array of data needs. This feature is a flexible way to query transaction outcomes, monitor fraud signals, analyze geographic payment patterns, and correlate transaction data with subscription and account records
+# Definition
 
-The Workbook Agent accompanies every Explore session. Ask it plain-language questions and it will identify the relevant fields, construct the query, and return results or a chart. You can refine results conversationally or switch to the field picker for manual control.
+<div class="rp-definition">The Transactions Explore is a dynamic, flexible reporting tool that gives you a custom view of all transactions processed through your gateways, along with corresponding invoices and line items. Use it to query transaction outcomes, monitor fraud signals, analyze geographic payment patterns, and correlate transaction data with subscription and account records. It's designed for gateway and payment analysis — not accounting purposes, which are better handled by the Invoices Explore.</div>
 
 # Key benefits
 
-- **Detailed transaction insights for better decision-making**: Explore provides a comprehensive view of all transactions, helping you gain deeper insights into your payment processes.
-- **Customizable reports for enhanced gateway analysis**: Easily build tailored reports to track gateway activity, failures, and payment trends, optimizing your financial operations.
-- **Streamlined fraud monitoring through Kount integration**: Gain a clear view of multiple fraud line items with seamless Kount fraud integration data.
-- **AI-assisted analytics**: Use the Workbook Agent to ask data questions in plain language. The agent interprets your question, selects the relevant fields, and returns a result set or chart.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i></div>
+    <strong>Detailed transaction insights</strong>
+    <span>Get a comprehensive view of all transactions to gain deeper insight into your payment processes and make more informed decisions.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Customizable gateway reports</strong>
+    <span>Build tailored reports to track gateway activity, failures, and payment trends — giving you more control over your financial operations.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+    <strong>Streamlined fraud monitoring</strong>
+    <span>Get a clear view of multiple fraud line items with seamless Kount fraud integration data alongside your transaction records.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>✦ AI-assisted analytics</strong>
+    <span>Use the Workbook Agent to ask data questions in plain language. The agent interprets your question, selects the relevant fields, and returns a result set or chart.</span>
+  </div>
+</div>
 
 # Key details
 
 The Transactions Explore includes **all** transactions processed through a gateway, along with corresponding invoices and line items. It does not include all invoices or charge items. Multiple transactions may be associated with a single invoice, and multiple lines may be included for a given transaction when multiple fraud line items are returned from a Kount fraud integration.
 
-This tool is useful for building reports related to gateway activity, failures, and payment information. It is **not** intended for accounting purposes, which are better handled by the invoices Explore.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The Transactions Explore is intended for gateway activity, failure analysis, and payment reporting — not accounting. Use the Invoices Explore for accounting purposes.</div>
+</div>
 
 ## Explore interface
 
-The Explorer is divided into three areas:
+The Explore is divided into three panels:
 
-| Interface Area              | Description                                                                                                                                                                                                                  |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Left panel -Workbook        | Agent Ask natural-language questions about your invoice data. The agent suggests fields and runs queries on your behalf.                                                                                                     |
-| Center panel - Field picker | Browse and search the full field catalog. Fields are grouped by topic. Click any field to add it to your active query. Use the In-use filter to see only selected fields.                                                    |
-| Right panel - results area  | Toggle between Results (table view), Chart (visualization), or Both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query and verify your field selection before committing. |
-
-
-<Image src="https://files.readme.io/26bc849b2829527adb5b7c95cefc555b6c50b03e68b2b68ee44ee4b027b03743-image.png" align="center" width="700px" border={true} />
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Panel</td><td>Description</td></tr>
+  <tr><td>Left panel — Workbook Agent</td><td>Ask natural-language questions about your transaction data. The agent suggests fields and runs queries on your behalf.</td></tr>
+  <tr><td>Center panel — Field picker</td><td>Browse and search the full field catalog. Fields are grouped by topic. Click any field to add it to your active query. Use the <strong>In-use</strong> filter to see only selected fields.</td></tr>
+  <tr><td>Right panel — Results area</td><td>Toggle between <strong>Results</strong> (table view), <strong>Chart</strong> (visualization), or <strong>Both</strong>. Use the <strong>Options</strong> tab to configure axes, grouping, and chart type. Click <strong>Preview</strong> to run a sample query and verify your field selection before committing.</td></tr>
+</table>
 
 
-### Using the Workbook Agent
+<Image src="https://files.readme.io/26bc849b2829527adb5b7c95cefc555b6c50b03e68b2b68ee44ee4b027b03743-image.png" align="center" width="75%" border={true} />
 
-The Workbook Agent is the fastest way to start an analysis. Type a question in the text box at the bottom of the left panel and press Enter (or click the send icon).
+
+## Using the Workbook Agent
+
+The Workbook Agent is the fastest way to start an analysis. Type a question in the text box at the bottom of the left panel and press **Enter** (or click the send icon).
+
+
+<Image src="https://files.readme.io/2b46f6b413106f780ea6650e6320f24661730c8a142c3ae7dbc64c18b667a9cc-image.png" align="center" width="75%" border={true} />
+
 
 **Example prompts:**
 
-- &#x20;“Show me all failed transactions in the last 7 days grouped by failure reason”
-- “What is the total transaction volume by country this month?”
-- &#x20;“Which credit card types have the highest decline rates?”
-- &#x20;“List transactions flagged for fraud in the past 30 days”
-- “Break down successful transactions by plan and subscription state”
+- "Show me all failed transactions in the last 7 days grouped by failure reason"
+- "What is the total transaction volume by country this month?"
+- "Which credit card types have the highest decline rates?"
+- "List transactions flagged for fraud in the past 30 days"
+- "Break down successful transactions by plan and subscription state"
+
+You can use the Agent and the field picker together. After the agent populates a query, you can add or remove fields manually using the center panel — changes are reflected immediately in the results view.
+
+## Opening an existing report
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the document browser</h4><p>Click the <strong>yellow Recurly logo</strong> in the upper left corner of the Explore.</p></div>
+  </div>
+</div>
 
 
-<Image src="https://files.readme.io/2b46f6b413106f780ea6650e6320f24661730c8a142c3ae7dbc64c18b667a9cc-image.png" align="center" />
+<Image src="https://files.readme.io/876fbccfd3e5c64960151b19b40148fb6688a7320eea40e9af93909becda1147-image.png" align="center" width="40%" border={true} />
 
 
-**Switching between Agent and manual mode**
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Navigate to your report</h4><p>Go to <strong>My documents</strong> for private personal reports and folders, or the <strong>Hub</strong> for the shared workspace for your entire site. Click the folder or report to open it.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Edit the report</h4><p>Select <strong>File &gt; Edit</strong> or click the <strong>Edit</strong> button in the upper right corner.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Save your changes</h4><p>Select <strong>File &gt; Save</strong> to save your updates.</p></div>
+  </div>
+</div>
 
-You can use the Agent and the field picker together. After the agent populates a query, you can add or remove fields manually using the center panel. Changes are reflected immediately in the results view.
+## Running or refreshing a report
 
-### Opening an existing report
-
-1. Click the **yellow Recurly logo** in the upper left corner of the Explore
-
-
-<Image src="https://files.readme.io/876fbccfd3e5c64960151b19b40148fb6688a7320eea40e9af93909becda1147-image.png" align="left" width="200px" border={true} />
-
-
-<br />
-
-
-<Image src="https://files.readme.io/fd6030aad81cb48304317f0583221f7df52b0df245f6ced971bf8d3103c5e81f-image.png" align="center" width="200px" border={true} />
-
-
-2. Either go to **My documents** or the **Hub&#x20;**&#x74;o access saved reports. My documents stores your private personal data reports and folders while the Hub is the shared workspace for the entire site.
-3. Click on the folder or report to open
-4. Select **File-Edit** or click th&#x65;**&#x20;Edit button** in the upper right corner to edit the report.
-5. Save your updates by selecting **File-Save**.
-
-### Run/refresh a report with or without cache
-
-1. Once in an existing report, you can run or refresh the report with or without cache by selecting the View menu
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the View menu</h4><p>In an existing report, select the <strong>View</strong> menu to access run and refresh options.</p></div>
+  </div>
+</div>
 
 
-<Image src="https://files.readme.io/2b464a13cc19f2e8b6d97c2c3b14107122f810eadc506f0bdda21000c3e77450-image.png" align="center" width="200px" border={true} />
+<Image src="https://files.readme.io/2b464a13cc19f2e8b6d97c2c3b14107122f810eadc506f0bdda21000c3e77450-image.png" align="center" width="40%" border={true} />
 
 
-<br />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Choose your refresh mode</h4><p>Select <strong>Refresh</strong> to load cached results (re-queries only if the cache has expired or fields have changed), or <strong>Refresh w/o cache</strong> to bypass stored results and pull live, up-to-the-minute data directly from your data source.</p></div>
+  </div>
+</div>
 
-- **Refresh** - this re-runs or refreshes the report against previously saved data. As an example, If you (or a colleague) ran the exact same query with the same filters, sorts, and fields within the last 1 hour, Explore will instantly load those pre-saved results. It only sends a new query to your data source if the cache has expired or if filters, sorts, and/or fields are changed in the report.
-- **Refresh w/o cache** - this bypasses the stored query results for the report and sends a direct query to your data source to pull live, up-to-the-minute data.
+## Creating a new report
 
-### Creating a new report
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Select your fields</h4><p>Browse the field catalog in the center panel. Fields are grouped by data topic — click any field to add it to your active query. Use the <strong>In-use</strong> filter to see only your current selection.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Preview your results</h4><p>Click <strong>Preview</strong> to run a sample query and verify your field selection before committing — especially useful for large result sets.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Choose your view</h4><p>Toggle between <strong>Results</strong> (table view), <strong>Chart</strong> (visualization), or <strong>Both</strong>. Use the <strong>Options</strong> tab to configure axes, grouping, and chart type.</p></div>
+  </div>
+</div>
 
-1. Browse and search the full field catalog. Fields are grouped by data topic.&#x20;
-2. Click any field to add it to your active query. Use the In-use filter to see only selected fields.
-3. Toggle between Results (table view), Chart (visualization), or both.&#x20;
-4. Use the Options tab to configure axes, grouping, and chart type.&#x20;
+## Saving a new report
 
-### Available data
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the Save dialog</h4><p>In the workbook, click <strong>File &gt; Save</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Name your document</h4><p>Give the document a name and an optional description.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Choose a location</h4><p>Use the Locations browser to find and select the folder you want to save the document to. The document can be moved after saving if needed.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Save</h4><p>Click <strong>Save</strong> to save the document.</p></div>
+  </div>
+</div>
+
+
+<Image src="https://files.readme.io/41965e12577df2175ead2737ac62f6672243bc0a79b460e3204b6eb9dfcd49d7-image.png" align="center" width="75%" border={true} />
+
+
+## Available data
 
 The field picker organizes all available dimensions and metrics by topic. Each topic maps to a set of underlying data entities:
 
-| Data                    | Description                                                                                              |
-| :---------------------- | :------------------------------------------------------------------------------------------------------- |
-| Billing Info            | Payment method details, billing address and card metadata associated with accounts                       |
-| Accounts                | Account-level attributes including account code, email, address, name, etc                               |
-| Business Entities       | Legal entity data for multi-entity merchants, including entity name and tax region.                      |
-| Country                 | Country-level geographic dimensions for filtering and grouping transaction data by region.               |
-| Credit Card             | Card brand, card type (debit/credit), issuing bank, last four digits, and expiration data.               |
-| Dunning Info            | Retry attempts, dunning state, and communication timing for failed payment recovery.                     |
-| Fraud Infos             | Fraud risk scores, decision outcomes, and signals returned by Recurly’s fraud detection layer.           |
-| Invoice Line Items      | Individual charges and credits at the line level, including unit amounts, quantities, and product codes. |
-| Invoices                | Invoice totals, state (open, collected, failed, voided), currency, and dates.                            |
-| Operations              | Internal processing metadata including gateway response codes and operation type.                        |
-| Plans                   | Plan codes, names, intervals, and pricing tiers.                                                         |
-| Subscriptions           | Subscription state, start/end dates, trial info, and associated plan and add-on metadata.                |
-| Transaction Statuses    | Standardized transaction outcome states: success, declined, error, voided, and more.                     |
-| Transaction\_Geo (maps) | Geographic coordinates and region data for map-based transaction visualizations.                         |
-| Transactions            | Core transaction fields: amount, currency, type (purchase, refund, void), gateway, and timestamp.        |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Data topic</td><td>Description</td></tr>
+  <tr><td>Billing info</td><td>Payment method details, billing address, and card metadata associated with accounts.</td></tr>
+  <tr><td>Accounts</td><td>Account-level attributes including account code, email, address, and name.</td></tr>
+  <tr><td>Business entities</td><td>Legal entity data for multi-entity merchants, including entity name and tax region.</td></tr>
+  <tr><td>Country</td><td>Country-level geographic dimensions for filtering and grouping transaction data by region.</td></tr>
+  <tr><td>Credit card</td><td>Card brand, card type (debit/credit), issuing bank, last four digits, and expiration data.</td></tr>
+  <tr><td>Dunning info</td><td>Retry attempts, dunning state, and communication timing for failed payment recovery.</td></tr>
+  <tr><td>Fraud infos</td><td>Fraud risk scores, decision outcomes, and signals returned by Recurly's fraud detection layer.</td></tr>
+  <tr><td>Invoice line items</td><td>Individual charges and credits at the line level, including unit amounts, quantities, and product codes.</td></tr>
+  <tr><td>Invoices</td><td>Invoice totals, state (open, collected, failed, voided), currency, and dates.</td></tr>
+  <tr><td>Operations</td><td>Internal processing metadata including gateway response codes and operation type.</td></tr>
+  <tr><td>Plans</td><td>Plan codes, names, intervals, and pricing tiers.</td></tr>
+  <tr><td>Subscriptions</td><td>Subscription state, start/end dates, trial info, and associated plan and add-on metadata.</td></tr>
+  <tr><td>Transaction statuses</td><td>Standardized transaction outcome states: success, declined, error, voided, and more.</td></tr>
+  <tr><td>Transaction_Geo (maps)</td><td>Geographic coordinates and region data for map-based transaction visualizations.</td></tr>
+  <tr><td>Transactions</td><td>Core transaction fields: amount, currency, type (purchase, refund, void), gateway, and timestamp.</td></tr>
+</table>
 
-### Tips & best practices
+## Tips and best practices
 
-- Use Preview before adding many fields to confirm the data shape and avoid slow load times on large result sets.
-- The In-use toggle in the field picker narrows the view to your current selection, making it easier to audit what’s included before running a query.
-- Combine Transaction Statuses with Credit Card or Country topics to identify regional or card-type-specific decline patterns.
-- Use the Fraud Infos topic alongside Transactions to correlate fraud signals with transaction outcomes — useful for investigating dispute spikes.
-- For high-volume date ranges, start with aggregated metrics (totals, counts, rates) before drilling into row-level detail to keep performance fast.
-- Save frequently used queries as a Dashboard using the + Dashboard button in the top-right corner so teammates can access them without rebuilding.
-- The Workbook Agent works best with scoped, specific questions. Include a timeframe, a transaction outcome (e.g. failed, declined), and at least one grouping dimension for the most precise results.
-
-### Saving a new report
-
-To save a report:
-
-1. In the workbook, click **File > Save**.
-2. Give the document a Name and an optional Description
-3. Use the Locations browser to find and select the folder you want to save the document to. The document can be moved after saving if needed.
-4. Click **Save** to save the document.
-
-
-<Image src="https://files.readme.io/41965e12577df2175ead2737ac62f6672243bc0a79b460e3204b6eb9dfcd49d7-image.png" align="center" width="500px" border={true} />
-
-
-<br />
+<div class="rp-card">
+<ul>
+<li>Use <strong>Preview</strong> before adding many fields to confirm the data shape and avoid slow load times on large result sets.</li>
+<li>The <strong>In-use</strong> toggle in the field picker narrows the view to your current selection, making it easier to audit what's included before running a query.</li>
+<li>Combine the <strong>Transaction statuses</strong> topic with <strong>Credit card</strong> or <strong>Country</strong> to identify regional or card-type-specific decline patterns.</li>
+<li>Use the <strong>Fraud infos</strong> topic alongside <strong>Transactions</strong> to correlate fraud signals with transaction outcomes — useful for investigating dispute spikes.</li>
+<li>For high-volume date ranges, start with aggregated metrics (totals, counts, rates) before drilling into row-level detail to keep performance fast.</li>
+<li>Save frequently used queries as a dashboard using the <strong>+ Dashboard</strong> button in the top-right corner so teammates can access them without rebuilding.</li>
+<li>The Workbook Agent works best with scoped, specific questions. Include a timeframe, a transaction outcome (e.g., failed, declined), and at least one grouping dimension for the most precise results.</li>
+</ul>
+</div>
 
 <br />
