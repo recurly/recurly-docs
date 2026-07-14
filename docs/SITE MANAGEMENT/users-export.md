@@ -1,8 +1,8 @@
 ---
 title: Users export
 excerpt: >-
-  Effortlessly download a report of your Recurly site users, apply filters, and
-  gain valuable insights into your user base.
+  Download a comprehensive report of all Recurly site users — including name,
+  email, access permissions, role, and date added — from Admin Exports.
 deprecated: false
 hidden: false
 metadata:
@@ -12,52 +12,57 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">The Users export gives administrators a full report of every user who currently has access to their Recurly site — including name, email, permissions, role, and the date they were added. Use it to audit access, review permission assignments, and monitor user activity.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+</div>
 
-### Prerequisites & limitations
+<div class="rp-card">
 
-- The **Users report** will only include users who had and continue to have access during the selected dates. Deleted users will be excluded from the users report.
-- To capture the most precise history of user access, it's recommended to running this report regularly to provide a more accurate snapshot of user access at any given point in time.
+### Limitations
 
-# Definition
+- The Users report only includes users who have current access to the site during the selected dates. Deleted users are excluded.
+- For the most accurate snapshot of user access history, run this report regularly — each export reflects access as it stands at the time of the report.
 
-The user export feature in Recurly allows administrators to easily download a comprehensive report containing information about every site user who has access to their Recurly site. This report includes the user's name, email address, their access permissions within Recurly, and the date each user was created.
+</div>
 
-# Accessing user exports
+# Access the export
 
-1. **Go** to the **Admin** section of Recurly.
-2. In the left-side panel, **navigate** to the "**Admin Exports**" option.
-
-3) **Select** "**Users**" from the list of available exports.
-
-
-<Image src="https://files.readme.io/cf686844ae85d399335ac290c89bbdbcb4689628b53de0ead7ea74367f7a7eb7-image.png" align="center" width="600px" border={true} />
+Go to **Admin → Admin Exports → Users**.
 
 
-## Explore interface
-
-The Explorer is divided into three areas:
-
-| Interface Area              | Description                                                                                                                                                                                                                  |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Left panel -Workbook        | Agent Ask natural-language questions about your invoice data. The agent suggests fields and runs queries on your behalf.                                                                                                     |
-| Center panel - Field picker | Browse and search the full field catalog. Fields are grouped by topic. Click any field to add it to your active query. Use the In-use filter to see only selected fields.                                                    |
-| Right panel - results area  | Toggle between Results (table view), Chart (visualization), or Both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query and verify your field selection before committing. |
+<Image src="https://files.readme.io/cf686844ae85d399335ac290c89bbdbcb4689628b53de0ead7ea74367f7a7eb7-image.png" align="center" width="75%" border={true} />
 
 
-<Image src="https://files.readme.io/b14849b0185ddbdd34596936d16adf5a7d73a6fb11baae37a842dc3c7616288f-image.png" border={true} />
+***
+
+# Explore interface
+
+The Explore interface provides an interactive query builder for analyzing user data. It's divided into three panels:
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Panel</td><td>Description</td></tr>
+  <tr><td><strong>Left — Workbook</strong></td><td>Ask natural-language questions about your user data. The Workbook Agent suggests fields and runs queries on your behalf.</td></tr>
+  <tr><td><strong>Center — Field picker</strong></td><td>Browse and search the full field catalog, grouped by topic. Click any field to add it to your active query. Use the In-use filter to see only selected fields.</td></tr>
+  <tr><td><strong>Right — Results area</strong></td><td>Toggle between Results (table view), Chart (visualization), or both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query before committing.</td></tr>
+</table>
 
 
-### Pre-built sample queries
-
-- **List of users (v1**) - a comprehensive report of all users within your Recurly site including first name, last name, email, user access and date added time.&#x20;
-- **List of users (v2)** - the same report as v1 but also includes the user role field.
+<Image src="https://files.readme.io/b14849b0185ddbdd34596936d16adf5a7d73a6fb11baae37a842dc3c7616288f-image.png" align="center" width="75%" border={true} />
 
 
-<Image src="https://files.readme.io/3ceeaf7681e6988fc9e83a9f517a887d40a1df14b0809ae1f829e6367cf86ae0-image.png" align="left" width="500px" border={true} />
+## Pre-built sample queries
+
+Two sample queries are available to get started quickly:
+
+- **List of users (v1)** — A comprehensive report of all site users including first name, last name, email, user access, and date added.
+- **List of users (v2)** — The same report as v1 with the addition of the user role field.
 
 
-### Using the Workbook Agent
+<Image src="https://files.readme.io/3ceeaf7681e6988fc9e83a9f517a887d40a1df14b0809ae1f829e6367cf86ae0-image.png" align="center" width="40%" border={true} />
+
+
+## Workbook Agent
 
 The Workbook Agent is the fastest way to start an analysis. Type a question in the text box at the bottom of the left panel and press Enter (or click the send icon).
 
@@ -67,64 +72,48 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 - "Which users have admin access but no MFA enabled?"
 - "Show me all users with billing permissions"
 
-## Available Fields
+## Available fields
 
-- **Email:** Filter users by their email addresses.
-- **Name:** Filter users by their first and last names.
-- **User Access:** View the list of permissions assigned to each user.
-- **Date Added Time:** Filter users based on the date they accepted their invitation to the Recurly site.
-- **User Role:** Filter users based on the role they are assigned to within your site.
+- **Email** — Filter users by email address
+- **Name** — Filter users by first and last name
+- **User Access** — View the list of permissions assigned to each user
+- **Date Added Time** — Filter users by the date they accepted their invitation to the site
+- **User Role** — Filter users by their assigned role
 
-### Creating a new report
+## Build a report
 
-1. Browse and search the full field catalog. Fields are grouped by data topic.&#x20;
-2. Click any field to add it to your active query. Use the In-use filter to see only selected fields.
-3. Toggle between Results (table view), Chart (visualization), or both.&#x20;
-4. Use the Options tab to configure axes, grouping, and chart type.&#x20;
-
-### Filtering your data
-
-1. **Standard Filters:** Drag and drop any field into the Filters section of the query builder, or click the drop-down/actions menu next to the field header in your data view and select Filter.
-2. **Filtered Measures:** To create a measure that is specifically tied to one dimension (e.g., Acted Type by Actor Name), create a pivot table with your target metric and the dimension. Right-click the measure under a specific pivot value and select Create filtered measure.&#x20;
-
-
-<Image src="https://files.readme.io/1ba5f548916b68fb496637523d03fa69b0884d6f4777b8dd4a1cc5a136e9e363-image.png" align="center" width="700px" border={true} />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Select fields</h4><p>Browse the field catalog and click any field to add it to your query. Use the <strong>In-use</strong> filter to see only selected fields.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Apply filters</h4><p>Drag and drop any field into the Filters section, or click the dropdown/actions menu next to a field header and select <strong>Filter</strong>. To create a measure tied to a specific dimension, build a pivot table and right-click the measure under a pivot value to select <strong>Create filtered measure</strong>.</p></div>
+  </div>
+</div>
 
 
-### Downloading your data
-
-To download your activity data, from the menu, select **Tab** - **Download**. You can choose from several file format options including CSV, Excel and JSON.
+<Image src="https://files.readme.io/1ba5f548916b68fb496637523d03fa69b0884d6f4777b8dd4a1cc5a136e9e363-image.png" align="center" width="75%" border={true} />
 
 
-<Image src="https://files.readme.io/bbf4a79f307a7e268318352d2b6046a6a297587b4729e4a0147a74220c6bd7b3-image.png" align="left" width="300px" border={true} />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Visualize and review</h4><p>Toggle between Results (table view), Chart (visualization), or both. Use the <strong>Options</strong> tab to configure axes, grouping, and chart type.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Download your data</h4><p>From the menu, select <strong>Tab → Download</strong> and choose your preferred format: CSV, Excel, or JSON.</p></div>
+  </div>
+</div>
 
 
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
+<Image src="https://files.readme.io/bbf4a79f307a7e268318352d2b6046a6a297587b4729e4a0147a74220c6bd7b3-image.png" align="center" width="40%" border={true} />
 
 
-<Image src="https://files.readme.io/9727ad37879c86cdf6a7f77e9689f41e48e0d5a9a80c6443c1c337f11a68da86-image.png" align="left" width="300px" border={true} />
+
+<Image src="https://files.readme.io/9727ad37879c86cdf6a7f77e9689f41e48e0d5a9a80c6443c1c337f11a68da86-image.png" align="center" width="40%" border={true} />
 
 
 <br />
