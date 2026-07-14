@@ -1,6 +1,9 @@
 ---
 title: Custom fields - API
-excerpt: ''
+excerpt: >-
+  API and UI reference for reading and writing custom field values on Recurly
+  accounts, charges, subscriptions, items, and plans — with code examples for v2
+  and v3.
 deprecated: false
 hidden: false
 metadata:
@@ -10,15 +13,32 @@ metadata:
 next:
   description: ''
 ---
-### Recurly Account API
+<div class="rp-page">
+  <div class="rp-overview">Custom field values can be set and retrieved via the Recurly API regardless of whether the field is visible in the Admin Console. This reference covers the API calls and UI behavior for each supported object — Account, Charge, Subscription, Item, and Plan.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on Pro and Elite plans — field limits vary by plan</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#account"><span class="rp-toc-num">1</span>Account</a>
+    <a class="rp-toc-pill" href="#charge"><span class="rp-toc-num">2</span>Charge</a>
+    <a class="rp-toc-pill" href="#subscription"><span class="rp-toc-num">3</span>Subscription</a>
+    <a class="rp-toc-pill" href="#item"><span class="rp-toc-num">4</span>Item</a>
+    <a class="rp-toc-pill" href="#plan"><span class="rp-toc-num">5</span>Plan</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">6</span>FAQs</a>
+  </div>
+</div>
 
-The API for custom fields will be available to your site regardless of whether or not you allow the custom field to be viewed or edited in the Recurly UI.
+# Account
 
-You can read custom fields on an individual account with a GET call. This functionality is available beginning in [API version 2.14](https://dev.recurly.com/v2.14).
+Account custom fields capture customer-specific information — subscriber IDs from external systems, sales rep names, channel partner names, subscriber segments, and regions.
 
-You can write custom field data to an individual account with a PUT or POST call through the API.
+## API
 
-```json
+Custom field values are available via the API regardless of the field's Admin Console visibility setting.
+
+**Read** custom fields on an account with a GET call (available from <a href="https://dev.recurly.com/v2.14" target="_blank">API v2.14</a>).
+
+**Write** custom field data with a PUT or POST call.
+
+```xml
 <account>
   <custom_fields type="array">
     <custom_field>
@@ -29,77 +49,78 @@ You can write custom field data to an individual account with a PUT or POST call
 </account>
 ```
 
-## Custom Fields on Charges
+# Charge
 
-Use this option to create custom field values for the Charge object when you wish to set a custom value on non-subscription line item charges/credits. This value can be set through a Line Item (charge or credit) or through a Purchase. Defining and setting a value for a Charge object also enables a merchant to trigger off this field for sending more tailored email communications.
+Charge custom fields attach additional context to non-subscription line item charges or credits. You can set values through a Line Item (charge or credit) or through a Purchase. Charge custom fields can also be used to conditionally tailor email communications.
 
-### Recurly Charges UI
+## UI
 
-When defining the custom field object, if you selected the option for 'Able to set...', you can set those values via the UI by pulling up a customer's account, selecting to Add Charge/Item or Add Credit and scroll to the bottom of the page, just above the Add Another Charge button. The name will be whatever you defined for Admin Console Field Name. In the example below it was CHARGECUSTOMFIELD. Once set, the data will only be viewable via an API call.
+If the field was defined with **Able to set in the Admin Console** access, set values by opening a customer's account, selecting **Add Charge/Item** or **Add Credit**, and scrolling to the Custom Fields section at the bottom of the page — just above the **Add Another Charge** button. The field name displayed is whatever you entered as the Admin Console Field Name.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f842535-Screen_Shot_2023-02-22_at_8.38.14_AM.png" />
+Once saved, data is only viewable via API — it won't display in the UI.
 
-### Recurly Charges API
 
-The API for custom fields will be available to your site regardless of whether or not you allow the custom field to be set in the Recurly UI.
+<Image src="https://files.readme.io/f842535-Screen_Shot_2023-02-22_at_8.38.14_AM.png" align="center" width="75%" border={true} />
 
-You can write custom field data to a line item with a POST to Line Items or Purchases.
 
-You can read custom fields data in GET calls for Line Items, Purchases and Invoices. You will see a Custom Fields array as part of the Line Items array. Below is sample code for the v3 API.
+## API
 
-```text
-"line_items":[
-    {
+Custom field values are available via the API regardless of the field's Admin Console visibility setting.
+
+**Write** custom field data to a line item via POST to Line Items or Purchases.
+
+**Read** custom fields in GET calls for Line Items, Purchases, and Invoices — field data appears as a `custom_fields` array within the `line_items` array.
+
+```json
+"line_items": [
+  {
     "currency": "USD",
     "unit_amount": "1.05",
     "type": "charge",
     "quantity": 1,
-  "custom_fields": [
-    {
-      "name": "Foo",
-      "value": "bar"
-    }
-  ]
-}
+    "custom_fields": [
+      {
+        "name": "Foo",
+        "value": "bar"
+      }
+    ]
+  }
+]
 ```
 
-[Learn more v3 api](https://recurly.com/developers/api/v2019-10-10/index.html).
+<a href="https://recurly.com/developers/api/v2019-10-10/index.html" target="_blank">v3 API reference</a> · <a href="https://recurly.com/developers/api-v2/v2.29/index.html" target="_blank">v2 API reference</a>
 
-[Learn more v2 api](https://recurly.com/developers/api-v2/v2.29/index.html).
+# Subscription
 
-## Custom Fields on a Subscription
+Subscription custom fields capture subscription-specific information. Common uses: customer device IDs (for IoT businesses), acquisition channels, customer segments, subscription IDs from external systems, and partner IDs.
 
-Use this option to create custom field values for the Subscription object when the information you need is subscription-specific. Examples of custom fields on subscriptions:
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>When subscription custom fields are populated, they display on the subscription detail in Hosted Account Management.</div>
+</div>
 
-* Customer device ID (for IOT businesses)
-* Acquisition channel
-* Customer segment
-* Subscription ID from other systems (can be used to do payouts on a subscription basis)
-* Partner ID who helped to acquire the customer
+## UI
 
-Note: When subscription custom fields are populated, they will display on the subscription detail on Hosted Account Management.
+If the field is set to editable in the UI, values can be set when creating or editing a subscription.
 
-### Recurly Subscription UI
 
-When defining the custom field object, if you selected the option to it editable in the UI, you can set those values via the UI when creating or editing a subscription:
+<Image src="https://files.readme.io/ea506fd-Screen_Shot_2018-07-12_at_5.06.54_PM.png" align="center" width="75%" border={true} />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/ea506fd-Screen_Shot_2018-07-12_at_5.06.54_PM.png" />
 
-After editing these field values, you will be able to see them on the subscription screen in the Recurly UI. This information is also available on the subscription view on the account screen.
+After saving, field values are visible on the subscription detail screen in the Admin Console and on the subscription view on the account screen.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/ce2ed0f-Screen_Shot_2018-07-12_at_5.10.50_PM.png" />
 
-### Recurly Subscription API
+<Image src="https://files.readme.io/ce2ed0f-Screen_Shot_2018-07-12_at_5.10.50_PM.png" align="center" width="75%" border={true} />
 
-The API for custom fields will be available to your site regardless of whether or not you allow the custom field to be viewed or edited in the Recurly UI.
 
-You can read custom fields on an individual subscription with a GET call.
+## API
 
-You can write custom field data to an individual subscription with a PUT or POST call through the API.
+Custom field values are available via the API regardless of the field's Admin Console visibility setting.
 
-The subscription POST call can be made while creating the subscription. This functionality is available beginning in [API version 2.14](https://recurly.com/developers/api-v2/v2.14/).
+**Read** custom fields on an individual subscription with a GET call.
 
-```json
+**Create** a subscription with custom fields using a POST call (available from <a href="https://recurly.com/developers/api-v2/v2.14/" target="_blank">API v2.14</a>).
+
+```xml
 <subscription>
   <custom_fields type="array">
     <custom_field>
@@ -110,54 +131,45 @@ The subscription POST call can be made while creating the subscription. This fun
 </subscription>
 ```
 
-The subscription PUT call functions through the subscriptions/notes route so that it will not collide with other changes being made on the subscription. This functionality is available beginning in [API version 2.14](https://dev.recurly.com/v2.14).
+**Update** custom fields on an existing subscription via the `subscriptions/notes` route. Using this route prevents collisions with other in-progress subscription changes (available from <a href="https://dev.recurly.com/v2.14" target="_blank">API v2.14</a>).
 
-```json
+```xml
 <subscription>
- <terms_and_conditions>Payment can be sent to Acme Cloud, Inc.</terms_and_conditions>
- <customer_notes>Thanks for your business!</customer_notes>
- <vat_reverse_charge_notes>No VAT was applied on this invoice. Please reference this legislation.  </vat_reverse_charge_notes>
- <custom_fields>
-  <custom_field>
-    <name>food</name> <!-- set to the appropriate name -->
-    <value>taco</value>
-  </custom_field>
- </custom_fields>
+  <terms_and_conditions>Payment can be sent to Acme Cloud, Inc.</terms_and_conditions>
+  <customer_notes>Thanks for your business!</customer_notes>
+  <vat_reverse_charge_notes>No VAT was applied on this invoice.</vat_reverse_charge_notes>
+  <custom_fields>
+    <custom_field>
+      <name>foo</name>
+      <value>bar</value>
+    </custom_field>
+  </custom_fields>
 </subscription>
 ```
 
-## Custom Fields on an Item
+# Item
 
-Use this feature to create custom field values for the Item object if you need to collect additional item information. Examples of custom fields on items:
+Item custom fields capture additional information about individual items. Common uses: product variant information (size, color), product family or category, sales channel, and sales region.
 
-* Product variant information (e.g. size, color)
-* Product family / category
-* Sales channel
-* Sales region
+## UI
 
-### Recurly Item UI
+If the field is set to editable in the UI, values can be set when creating or editing an item.
 
-When defining the custom field object, if you selected the option to it editable in the UI, you can set those values via the UI when creating or editing an item:
 
-![](https://files.readme.io/ae3addf-Edit_Item__Recurly.png "Edit_Item_—_Recurly.png")
+<Image src="https://files.readme.io/ae3addf-Edit_Item__Recurly.png" align="center" width="75%" border={true} />
 
-When defining the item object, if you selected the label as read-only in the UI, the field values will be readable via the view item screen but will not present on the edit item screen.
 
-### Recurly Item API
+If the field is set to read-only in the UI, values are visible on the item view screen but won't appear on the edit screen.
 
-The API for custom fields will be available to your site regardless of whether or not you allow the custom field to be viewed or edited in the Recurly UI.
+## API
 
-You can read custom fields on an individual item with a \[GET call]\[1].
+Custom field values are available via the API regardless of the field's Admin Console visibility setting.
 
-You can write custom field data to an individual item with a \[POST]\[2] or \[PUT]\[3] call through the API.
+**Read** custom fields on an individual item with a GET call.
 
-[1]: https\://developers.recurly.com/api/v2019-10-10/index.html#operation/get_item
+**Write** custom field data with a POST or PUT call.
 
-[2]: https\://developers.recurly.com/api/v2019-10-10/index.html#operation/create_item
-
-[3]: https\://developers.recurly.com/api/v2019-10-10/index.html#operation/update_item
-
-```json
+```xml
 <item>
   <custom_fields>
     <custom_field>
@@ -168,35 +180,29 @@ You can write custom field data to an individual item with a \[POST]\[2] or \[PU
 </item>
 ```
 
-## Custom Fields on a Plan
+# Plan
 
-Use this option to create custom field values for the Plan object when the information you need is account-specific. Examples of custom fields on a plan:
+Plan custom fields attach metadata to individual plans. Common uses: customer region or location (US vs Europe, California vs New York), specific customer channel, new vs returning customer status, and tax-related attributes.
 
-* Customer region or location (US vs Europe or California vs New York)
-* Specific Customer Channel
-* New or returning customer
-* Tax purposes
+## UI
 
-### Recurly Plan UI
+If the field is set to editable in the UI, values can be set when creating or editing a plan.
 
-When defining the custom field object, if you selected the option to be *editable in the UI*, you can set those values via the Admin UI when creating or editing a plan:
 
-<Image align="center" alt={2595} border={true} caption="Creation of a custom field on a plan" title="docs image export3x.png" src="https://files.readme.io/7e8662a-docs_image_export3x.png" width="smart" />
+<Image src="https://files.readme.io/7e8662a-docs_image_export3x.png" align="center" width="75%" border={true} />
 
-When defining the plan object, if you selected the option for as *read-only in the UI,* the field values will be readable when viewing the plan but will not be present on the edit plan screen.
 
-### Recurly Plan API
+If the field is set to read-only in the UI, values are visible when viewing the plan but won't appear on the edit screen.
 
-The API for custom fields will be available to your site regardless of whether or not you allow the custom field to be viewed or edited in the Recurly UI.
+## API
 
-You can write custom field data to an individual account with a PUT or POST to plans.
+Custom field values are available via the API regardless of the field's Admin Console visibility setting.
 
-You can read custom fields on all plans or an individual plan a GET plans call.
+**Write** custom field data with a PUT or POST to Plans.
 
-[Learn more v2 api](https://recurly.com/developers/api-v2/v2.29/#tag/plans)\
-[Learn more v3 api](https://recurly.com/developers/api/v2019-10-10/index.html#tag/plan)
+**Read** custom fields on all plans or an individual plan with a GET Plans call.
 
-```
+```xml
 <plan>
   <custom_fields>
     <custom_field>
@@ -205,13 +211,30 @@ You can read custom fields on all plans or an individual plan a GET plans call.
     </custom_field>
   </custom_fields>
 </plan>
-
 ```
 
-## FAQ
+<a href="https://recurly.com/developers/api/v2019-10-10/index.html#tag/plan" target="_blank">v3 API reference</a> · <a href="https://recurly.com/developers/api-v2/v2.29/#tag/plans" target="_blank">v2 API reference</a>
 
-* Emojis are not allowed and will be stripped in the API or will pass an error in the UI. If you pass an emoji, Recurly will not save that emoji to our database but will save all other characters.
-* There is not currently support for searching in the Recurly UI for custom field values.
-* The Recurly for Salesforce integration does not currently support passing custom field values from Salesforce to Recurly.
-* Recurly will delete any values which appear to be credit card numbers or CVV codes which are entered in custom fields. These values will never be stored in order to maintain PCI compliance.
-* An Item and Plan export is not currently offered; therefore custom field data on Items or Plans is not available via export.
+# FAQs
+
+<Accordion title="Are emojis supported in custom field values?">
+  No. Emojis are stripped when values are submitted via API, and will produce an error in the UI. All other characters are saved normally.
+</Accordion>
+
+<Accordion title="Can I search for custom field values in the Recurly UI?">
+  Searching by custom field value is not currently supported in the Recurly Admin Console.
+</Accordion>
+
+<Accordion title="Can custom field values be passed from Salesforce to Recurly?">
+  The Recurly for Salesforce integration doesn't currently support passing custom field values from Salesforce to Recurly.
+</Accordion>
+
+<Accordion title="What happens if I enter a credit card number or CVV in a custom field?">
+  Recurly will delete any values that appear to be credit card numbers or CVV codes. These values are never stored in order to maintain PCI compliance.
+</Accordion>
+
+<Accordion title="Are custom fields on Items and Plans available via export?">
+  No. Item and Plan exports are not currently available, so custom field data on those objects cannot be accessed via export.
+</Accordion>
+
+<br />
