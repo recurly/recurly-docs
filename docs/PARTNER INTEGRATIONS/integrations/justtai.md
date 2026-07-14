@@ -1,75 +1,155 @@
 ---
 title: Justt.AI
+excerpt: >-
+  Connect Recurly to Justt's AI-powered chargeback dispute platform to
+  automatically apply subscription and invoice actions based on dispute
+  outcomes.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-## Prerequisites
+<div class="rp-page">
+  <div class="rp-overview">The Justt.ai integration automates your chargeback response workflow by connecting Recurly to Justt's AI-powered dispute platform. When Justt resolves a dispute, Recurly takes the action you've configured — such as issuing a refund or expiring a subscription — without any manual intervention from your team.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#prerequisites"><span class="rp-toc-num">2</span>Prerequisites</a>
+    <a class="rp-toc-pill" href="#limitations"><span class="rp-toc-num">3</span>Limitations</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">4</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">5</span>Key details</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">6</span>FAQs</a>
+  </div>
+</div>
 
-- You must have an active Justt.ai account
-- Your Recurly site must be using one of the supported payment gateways: Stripe, Braintree, PayPal Complete, Adyen
-- You must have the Justt.ai and Chargeback Management feature flags enabled on your Recurly site (contact Recurly Support to request access)
-- You must have a Recurly API key available to share with Justt during setup
+# Definition
 
-## Limitations
+<div class="rp-definition">The Justt.ai integration connects your Recurly account to Justt's AI-powered chargeback dispute platform. Justt sends chargeback events to Recurly via webhooks, and Recurly automatically applies the subscription and invoice actions you've configured — such as issuing refunds, pausing subscriptions, or expiring subscriptions — based on the outcome of each dispute.</div>
 
-- Merchants can only use one chargeback management system at a time — either Recurly's native chargeback handling or Justt.  Once Justt is enabled, Recurly will stop processing gateway chargeback events for supported gateways
-- Only credit card chargebacks are processed; non-credit card disputes (such as ACH) are not actioned
-- Each merchant site can have one active Justt configuration
+# Prerequisites
 
-## Definition
+<div class="rp-card">
 
-The Justt.ai integration connects your Recurly account to Justt's AI-powered chargeback dispute platform. Once set up, Justt sends chargeback events to Recurly via webhooks, and Recurly automatically applies the subscription and invoice actions you've configured — such as issuing refunds, pausing subscriptions, or expiring subscriptions — based on the outcome of each dispute.
+\- You must have an active Justt.ai account.
 
-### Key Benefits
+- Your Recurly site must be using one of the supported payment gateways: Stripe, Braintree, PayPal Complete, or Adyen.
+- You must have the Justt.ai and Chargeback Management feature flags enabled on your Recurly site. Contact <a href="https://docs.recurly.com/recurly-subscriptions/docs/integrations" target="_blank">Recurly Support</a> to request access.
+- You must have a Recurly API key available to share with Justt during setup.
 
-- **Automated chargeback response:** When Justt resolves a dispute, Recurly takes the action you've specified (refund, pause, or expire) without any manual intervention, so your team spends less time on chargeback admin.
-- **Full visibility in one place:** A dedicated chargeback index page in Recurly shows every Justt dispute event, its status, and the associated account and invoice — giving you a real-time snapshot of your chargeback activity.
-- **Self-serve control:** You can connect, disconnect, and re-enable the Justt integration directly in the Recurly UI, without needing to contact support.
+</div>
 
-## Key details
+# Limitations
 
-### How the integration works
+<div class="rp-card">
 
-The Justt.ai integration follows this general setup flow:
+\- Merchants can only use one chargeback management system at a time — either Recurly's native chargeback handling or Justt. Once Justt is enabled, Recurly stops processing gateway chargeback events for supported gateways.
 
-1. **Create a Recurly API key** — In Recurly, create a dedicated read-only API key and label it for Justt.ai. You'll find the Justt.ai option in the application dropdown when creating a new private API key.
-2. **Share the key with Justt** — Log in to Justt and paste the Recurly API key. Justt will use it to fetch Recurly transaction data for chargeback enrichment.
-3. **Configure your webhook URL in Justt** — Recurly provides a merchant-specific webhook URL (formatted as [https://callbacks.recurly.com/justt/](https://callbacks.recurly.com/justt/)\<YOUR\_SUBDOMAIN>). Enter this URL in Justt's webhook settings.
-4. **Enter your Justt Merchant ID in Recurly** — In the Recurly UI, navigate to Integrations > Justt.ai and enter your Justt Merchant ID. This links incoming webhooks to your site.
-5. **Configure your chargeback actions in Recurly** — In the Recurly UI, navigate to Invoice Templates > Invoice Settings and choose what Recurly should do when it receives a chargeback event (see "Chargeback actions" below).
+- Only credit card chargebacks are processed. Non-credit card disputes — such as ACH — are not actioned.
+- Each merchant site can have one active Justt configuration.
 
-### Supported gateways
+</div>
+
+# Key benefits
+
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+    <strong>Automated chargeback response</strong>
+    <span>When Justt resolves a dispute, Recurly takes the action you've specified — refund, pause, or expire — without any manual intervention, so your team spends less time on chargeback admin.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-table-list" aria-hidden="true"></i></div>
+    <strong>Full visibility in one place</strong>
+    <span>A dedicated chargeback index page in Recurly shows every Justt dispute event, its status, and the associated account and invoice — giving you a real-time snapshot of your chargeback activity.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Self-serve control</strong>
+    <span>You can connect, disconnect, and re-enable the Justt integration directly in the Recurly UI — no need to contact support for day-to-day integration management.</span>
+  </div>
+</div>
+
+# Key details
+
+## How the integration works
+
+The Justt.ai integration follows a five-step setup flow:
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Create a Recurly API key</h4><p>In Recurly, create a dedicated read-only API key and label it for Justt.ai. You'll find the Justt.ai option in the application dropdown when creating a new private API key.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Share the key with Justt</h4><p>Log in to Justt and paste the Recurly API key. Justt will use it to fetch Recurly transaction data for chargeback enrichment.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Configure your webhook URL in Justt</h4><p>Recurly provides a merchant-specific webhook URL formatted as <code>https://callbacks.recurly.com/justt/YOUR_SUBDOMAIN</code>. Enter this URL in Justt's webhook settings.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Enter your Justt Merchant ID in Recurly</h4><p>In the Recurly UI, navigate to <strong>Integrations &gt; Justt.ai</strong> and enter your Justt Merchant ID. This links incoming webhooks to your site.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Configure your chargeback actions</h4><p>In the Recurly UI, navigate to <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-settings" target="_blank">Configuration &gt; Invoice Templates &gt; Invoice Settings</a> and choose what Recurly should do when it receives a chargeback event.</p></div>
+  </div>
+</div>
+
+## Supported gateways
 
 The Justt integration processes chargebacks from the following payment service providers (PSPs):
 
-- Stripe
-- Braintree
-- PayPal Complete
-- Adyen
+<div class="rp-nav-grid">
 
-### Chargeback actions
+<Cards>
+  <Card title="Stripe" href="https://docs.recurly.com/recurly-subscriptions/docs/stripe" target="_blank">
+    Chargeback events from Stripe card transactions are processed automatically.
+  </Card>
+  <Card title="Braintree" href="https://docs.recurly.com/recurly-subscriptions/docs/braintree" target="_blank">
+    Chargeback events from Braintree card transactions are processed automatically.
+  </Card>
+  <Card title="PayPal Complete" target="_blank">
+    Chargeback events from PayPal Complete card transactions are processed automatically.
+  </Card>
+  <Card title="Adyen" href="https://docs.recurly.com/recurly-subscriptions/docs/adyen" target="_blank">
+    Chargeback events from Adyen card transactions are processed automatically.
+  </Card>
+</Cards>
+</div>
 
-Recurly can be configured to take the following actions when a chargeback dispute is resolved as lost (meaning the subscriber wins the dispute):
+## Chargeback actions
 
-- **Create a refund** — Recurly issues a refund invoice against the original transaction
-- **Expire the subscription** — Recurly immediately expires the associated subscription
-- **Manually process chargebacks** - Recurly will only send a webhook notification&#x20;
+Recurly can be configured to take the following actions when a chargeback dispute is resolved as **lost** (meaning the subscriber wins the dispute):
 
-Chargeback events with statuses other than lost — such as pending, won, or under\_review — are recorded in the chargeback index for visibility but do not trigger subscription actions.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Action</td><td>What Recurly does</td></tr>
+  <tr><td>Create a refund</td><td>Recurly issues a refund invoice against the original transaction.</td></tr>
+  <tr><td>Expire the subscription</td><td>Recurly immediately expires the associated subscription.</td></tr>
+  <tr><td>Manually process chargebacks</td><td>Recurly sends a webhook notification only — no automatic action is taken.</td></tr>
+</table>
 
-### Webhook events
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Chargeback events with statuses other than <code>lost</code> — such as <code>pending</code>, <code>won</code>, or <code>under_review</code> — are recorded in the chargeback index for visibility but do not trigger subscription actions.</div>
+</div>
+
+## Webhook events
 
 Recurly listens for two webhook event types from Justt:
 
-`chargeback.created` — fired when a new chargeback dispute is opened<br />`chargeback.updated` — fired when the status of an existing dispute changes
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Event</td><td>When it fires</td></tr>
+  <tr><td><code>chargeback.created</code></td><td>A new chargeback dispute is opened.</td></tr>
+  <tr><td><code>chargeback.updated</code></td><td>The status of an existing dispute changes.</td></tr>
+</table>
 
-These events are processed independently and will create a new record in the Justt chargeback index table
+Each event is processed independently and creates a new record in the Justt chargeback index table.
 
-### Chargeback index page
+## Chargeback index page
 
-Once the integration is active, you'll see a chargeback index table on the Justt integration page under **Integrations > Justt.ai**. The table displays:
+Once the integration is active, a chargeback index table appears on the Justt integration page under **Integrations > Justt.ai**. The table displays:
 
 - Account (subscriber display name)
 - Invoice number
@@ -80,27 +160,38 @@ Once the integration is active, you'll see a chargeback index table on the Justt
 
 The table is sortable by account, invoice, and date columns. You can also search by keyword or phrase across non-date columns to quickly locate specific chargebacks.
 
-### Refund transactions
+## Refund transactions
 
-When Recurly creates a refund as a result of a Justt chargeback, the refund transaction will display "Processed by Justt" in the transaction summary. The transaction detail page also shows the reason code, chargeback reason message, and merchant reference from the original Justt webhook payload.
+When Recurly creates a refund as a result of a Justt chargeback, the refund transaction displays "Processed by Justt" in the transaction summary. The transaction detail page also shows the reason code, chargeback reason message, and merchant reference from the original Justt webhook payload.
 
-### Disabling and re-enabling the integration
+## Disabling and re-enabling the integration
 
-You can disable the Justt integration at any time from the Justt integration page in Recurly. Disabling it stops Recurly from processing new Justt webhooks. If you want to remove the integration entirely, contact Recurly Support to turn off the feature flag.
+You can disable the Justt integration at any time from the Justt integration page in Recurly. Disabling it stops Recurly from processing new Justt webhooks. To remove the integration entirely, contact Recurly Support to turn off the feature flag.
 
-To re-enable a previously disabled integration, click the Re-enable button on the integration page. Note that re-enabling the integration will require you to recreate your Recurly API key and share it with Justt again, as the previous key is invalidated on disable.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> API key invalidated on disable</strong>When you disable the Justt integration, Recurly invalidates the API key previously shared with Justt. To re-enable, click the <strong>Re-enable</strong> button on the integration page — then recreate your Recurly API key and update it in your Justt account settings.</div>
+</div>
 
-## FAQs
+# FAQs
 
-**Can I use Recurly's native chargeback handling and Justt at the same time?**
-No. Recurly can only use one chargeback management system per site at a time. When the Justt integration is active, Recurly stops processing gateway-level chargeback events and relies solely on Justt webhooks instead.
+<Accordion title="Can I use Recurly's native chargeback handling and Justt at the same time?">
+  No. Recurly supports only one chargeback management system per site at a time. When the Justt integration is active, Recurly stops processing gateway-level chargeback events and relies solely on Justt webhooks instead.
+</Accordion>
 
-**What happens to my existing chargebacks if I disable the integration?**<br />Disabling the integration stops the processing of new webhooks from Justt. Existing chargeback records in Recurly are not deleted and remain visible on the index page. If there are pending chargebacks, those will continue to be processed between the banks and gateways, however, updates on those chargebacks will not be persisted in Recurly.
+<Accordion title="What happens to my existing chargebacks if I disable the integration?">
+  Disabling the integration stops the processing of new webhooks from Justt. Existing chargeback records in Recurly are not deleted and remain visible on the index page. Any pending chargebacks will continue to be processed between the banks and gateways, but status updates on those chargebacks won't be persisted in Recurly.
+</Accordion>
 
-**What does "lost" mean in the context of a Justt chargeback?**<br />A chargeback with a `lost` status means the subscriber's dispute was upheld by their card issuer — the merchant lost the case. This is the status that triggers Recurly to take action (refund and/or expire) based on your configured settings.
+<Accordion title="What does 'lost' mean in the context of a Justt chargeback?">
+  A chargeback with a `lost` status means the subscriber's dispute was upheld by their card issuer — the merchant lost the case. This is the status that triggers Recurly to take action (refund and/or expire) based on your configured settings.
+</Accordion>
 
-**Why do I need to recreate my API key when I re-enable the integration?**
-When you disable the Justt integration, Recurly invalidates the API key that was previously shared with Justt. This is a security measure to ensure that a dormant key can't be used to access your Recurly data while the integration is inactive. When you re-enable, you'll need to create a fresh key and update it in your Justt account settings.
+<Accordion title="Why do I need to recreate my API key when I re-enable the integration?">
+  When you disable the Justt integration, Recurly invalidates the API key that was previously shared with Justt. This is a security measure to ensure a dormant key can't be used to access your Recurly data while the integration is inactive. When you re-enable, you'll need to create a fresh key and update it in your Justt account settings.
+</Accordion>
 
-**What's the difference between the "Created" date and the "Posting Date" on the chargeback index?**
-The "Created" date reflects when Recurly received and recorded the chargeback event. The "Posting Date" is the date the chargeback was formally reported to Justt by the card network — this date comes directly from Justt's webhook payload and may be earlier than the created date in Recurly.
+<Accordion title="What's the difference between the 'Created' date and the 'Posting date' on the chargeback index?">
+  The "Created" date reflects when Recurly received and recorded the chargeback event. The "Posting date" is the date the chargeback was formally reported to Justt by the card network — this comes directly from Justt's webhook payload and may be earlier than the created date in Recurly.
+</Accordion>
+
+<br />
