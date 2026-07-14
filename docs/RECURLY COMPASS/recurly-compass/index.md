@@ -13,6 +13,10 @@ metadata:
 next:
   description: ''
 ---
+<script async src="https://js.storylane.io/js/v2/storylane.js"></script>
+
+<iframe loading="lazy" class="sl-demo" src="https://app.storylane.io/demo/foqckpwqm5yk?embed=inline" name="sl-embed" allow="fullscreen" allowfullscreen></iframe>
+
 <div class="rp-page">
   <div class="rp-overview">Recurly Compass is an AI-powered extension of your team. It surfaces proactive insights from your subscription data, guides you through optimization plays, and lets you explore your data through natural language — so you can act faster and with more confidence.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
