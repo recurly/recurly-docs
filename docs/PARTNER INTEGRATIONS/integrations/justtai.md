@@ -155,9 +155,6 @@ Once the integration is active, a chargeback index table appears on the Justt in
 - Chargeback ID
 - Status
 - Created date
-- Posting date (the date the chargeback was reported to Justt, which may differ from when Recurly received the webhook)
-
-The table is sortable by account, invoice, and date columns. You can also search by keyword or phrase across non-date columns to quickly locate specific chargebacks.
 
 ## Refund transactions
 
