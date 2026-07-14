@@ -1,9 +1,9 @@
 ---
 title: Analytics settings
 excerpt: >-
-  Customize your analytics with ease: Set time zones, manage MRR calculations,
-  and benchmark against industry standards to optimize insights and drive
-  strategic growth on the analytics settings page.
+  Configure Recurly Analytics settings — including time zone display, MRR
+  calculation rules for coupons and failed charges, industry benchmarking, and
+  back-to-back subscription handling.
 deprecated: false
 hidden: false
 metadata:
@@ -13,60 +13,82 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Analytics Settings lets you customize how Recurly Analytics calculates and displays your subscription metrics — including time zone, MRR treatment of coupons and failed charges, industry benchmarking, and back-to-back subscription handling. Getting these right ensures your analytics reflect your actual business operations.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">1</span>Key details</a>
+  </div>
+</div>
 
-### Prerequisites
-
-* Users must have Analytics user role permission.
-
-# Definition
-
-The "analytics settings" page is designed to empower you with control over various analytics features integral to your business operations. This platform allows for the customization of settings such as time zone, Monthly Recurring Revenue (MRR) calculations, encompassing considerations like coupon discounts, failed charge handling, and industry benchmarking. This intuitive configuration interface streamlines the process, ensuring that your analytics reflect your specific operational needs and preferences.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Permissions</strong>Users must have the Analytics user role permission to access Analytics Settings.</div>
+</div>
 
 # Key details
 
 ## Time zone
 
-Recurly records all transactions in UTC as the underlying billing timezone. The analytics system then aligns its displayed calculations with the time zone specified in your site settings. This approach ensures that while billing events are consistently tracked in UTC, your analytics, reports, and metrics are presented in the local time most relevant to your business operations.
+Recurly records all transactions in UTC as the underlying billing timezone. Analytics then aligns displayed calculations with the time zone specified in your site settings. This means billing events are consistently tracked in UTC, while your analytics, reports, and metrics are shown in the local time most relevant to your business.
 
-<Image align="center" border={true} src="https://files.readme.io/68f8f91-image.png" className="border" />
+
+<Image src="https://files.readme.io/68f8f91-image.png" align="center" width="75%" border={true} />
+
+
+***
 
 ## MRR calculations
 
-<Image align="center" border={true} src="https://files.readme.io/df2c11a-image.png" className="border" />
+Configure how Recurly Analytics processes factors that affect Monthly Recurring Revenue (MRR) — including coupon discounts and failed charges.
 
-Configure how Recurly Analytics processes various factors affecting Monthly Recurring Revenue, such as coupon discounts and failed charges. These settings are crucial for accurate revenue tracking and forecasting.
+
+<Image src="https://files.readme.io/df2c11a-image.png" align="center" width="75%" border={true} />
+
 
 ### Coupon discounts
 
-Choose how to account for the impact of coupon discounts on MRR:
+Choose how coupon discounts are reflected in MRR:
 
-* **Include the discount value of coupons in MRR (Recommended):** This option adjusts MRR to reflect the actual revenue received. For instance, if a service typically costs $100 but is offered at $75 after a $25 coupon discount, MRR is reported as $75, acknowledging the discount's impact on revenue.
-* **Exclude the discount value of coupons from MRR:** Opting for this setting maintains the original service price in MRR calculations, disregarding the discount. Using the previous example, MRR would remain at $100, ignoring the $25 discount applied.
+- **Include the discount value of coupons in MRR (recommended)** — MRR reflects the actual revenue received. For example, a $100 service with a $25 coupon applied is reported as $75 MRR.
+- **Exclude the discount value of coupons from MRR** — MRR uses the original service price, ignoring the discount. The same $100 service would remain at $100 MRR regardless of the $25 coupon.
 
 ### Failed charges
 
-Determine how to treat failed recurring charges in MRR calculations:
+Choose how failed recurring charges are treated in MRR:
 
-* **Keep all recurring charges in MRR (Recommended):** This setting opts to include all anticipated recurring charges in MRR calculations, regardless of their success or failure, maintaining a consistent revenue outlook.
-* **Remove failed recurring charges from MRR:** Selecting this option adjusts MRR to exclude revenues from failed charges, potentially offering a more realistic view of actual earnings.
+- **Keep all recurring charges in MRR (recommended)** — All anticipated recurring charges are included in MRR, regardless of payment success or failure. This maintains a consistent revenue outlook.
+- **Remove failed recurring charges from MRR** — MRR excludes revenues from failed charges, which may give a more conservative view of actual earnings.
 
-> **Note:** Modifying how failed charges are accounted for will retroactively affect historical MRR and Lifetime Value (LTV) reports. For a comprehensive understanding, refer to our detailed documentation.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Retroactive impact</strong>Changing how failed charges are treated in MRR will retroactively affect historical MRR and Lifetime Value (LTV) reports.</div>
+</div>
+
+***
 
 ## Benchmarking
 
-<Image align="center" border={true} src="https://files.readme.io/de57084-image.png" className="border" />
+Select the industry category that most accurately represents your business to enable benchmarking. This compares your performance metrics against standards in your industry, highlighting your competitive position and identifying growth opportunities.
 
-Select the industry category that most accurately represents your business to enable benchmarking. This feature compares your performance metrics against standards within your industry, offering insights into your competitive stance and identifying opportunities for growth and improvement.
 
-<Image align="center" border={true} width="400px" src="https://files.readme.io/e077bd2-image.png" className="border" />
+<Image src="https://files.readme.io/de57084-image.png" align="center" width="75%" border={true} />
 
-> **Note**: Benchmark percentiles will take effect one day after the request. Benchmark quartiles will take effect immediately.
+
+
+<Image src="https://files.readme.io/e077bd2-image.png" align="center" width="40%" border={true} />
+
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Benchmark percentiles take effect one day after the request. Benchmark quartiles take effect immediately.</div>
+</div>
+
+***
 
 ## Back-to-back subscriptions
 
-Use this setting to automatically apply the desired configuration to the Hourly Activations and Churn dashboard.
+Use this setting to control how the Hourly Activations and Churn dashboard handles subscribers who start a new subscription immediately after a previous one expires. When enabled, these are counted as one continuous subscription — ensuring activations and churn are measured accurately for your business model.
 
-By using this configuration, if a subscriber started a new subscription after their previous subscription expired, this can be counted as one continuous subscription. This helps ensure that activations and churn are counted appropriately for your business.
 
-<Image align="center" src="https://files.readme.io/6d3975e-Screen_Shot_2024-06-20_at_3.03.28_PM.png" />
+<Image src="https://files.readme.io/6d3975e-Screen_Shot_2024-06-20_at_3.03.28_PM.png" align="center" width="75%" border={true} />
+
+
+<br />
