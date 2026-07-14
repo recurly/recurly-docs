@@ -1,6 +1,9 @@
 ---
 title: Billing preferences
-excerpt: Optimize your billing strategy with Recurly's versatile Billing Preferences.
+excerpt: >-
+  Configure how Recurly charges your customers — including billing terms,
+  calendar billing, shipping fees, billing info verification, and authorization
+  and capture settings.
 deprecated: false
 hidden: false
 metadata:
@@ -10,34 +13,40 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Billing preferences control the rules and settings that govern how your customers are charged — from billing frequency and calendar alignment to shipping fees, billing info verification, and payment authorization. Together, these tools give you the accuracy, flexibility, and transparency your billing process needs.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+  </div>
+</div>
 
 # Definition
 
-Billing Preferences refer to the set of rules and settings that dictate how a business charges its customers. This includes the frequency of billing, the alignment with calendar dates, handling of shipping details, and the verification of billing information. With these tools, businesses can ensure accuracy, flexibility, and transparency in their billing processes.
+<div class="rp-definition">Billing preferences are the settings that define how and when customers are charged — covering billing frequency, calendar alignment, shipping, billing info verification, and payment authorization. Configuring these correctly ensures your billing process runs accurately and transparently for both your business and your customers.</div>
 
 # Key details
 
-## Subscription billing terms
+<div class="rp-nav-grid">
 
-Establish clear and consistent [billing terms](https://docs.recurly.com/docs/subscription-terms) for your subscriptions to ensure customers understand the payment structure.
+<Cards>
+  <Card title="Subscription billing terms" href="https://docs.recurly.com/docs/subscription-terms" target="_blank">
+    Define clear, consistent billing terms for your subscriptions so customers understand the payment structure from the start.
+  </Card>
+  <Card title="Calendar billing" href="https://docs.recurly.com/docs/calendar-billing" target="_blank">
+    Align your billing cycles with calendar dates to simplify record-keeping and make financial tracking more predictable.
+  </Card>
+  <Card title="Shipping fees" href="https://docs.recurly.com/docs/shipping" target="_blank">
+    Configure and update shipping fees based on product, location, or other criteria to keep billing accurate across all fulfillment scenarios.
+  </Card>
+  <Card title="Verify billing info" href="https://docs.recurly.com/docs/verify-stored-billing-info-endpoint" target="_blank">
+    Verify that billing information is accurate and current before processing transactions to maintain payment integrity.
+  </Card>
+  <Card title="Authorization and capture" href="https://docs.recurly.com/docs/auth-and-capture" target="_blank">
+    Use Recurly's auth and capture flow to authorize payment methods separately from capturing funds, giving you control over when charges are finalized.
+  </Card>
+</Cards>
+</div>
 
-## Calendar billing
-
-Synchronize your billing cycles with [calendar ](https://docs.recurly.com/docs/calendar-billing)dates to simplify record-keeping and financial tracking.
-
-## Shipping fees
-
-Customize and update [shipping fees](https://docs.recurly.com/docs/shipping) as needed according to the product, location, or other specified criteria.
-
-## Verify billing info
-
-Maintain transactional integrity by [verifying that billing information is accurate](https://docs.recurly.com/docs/verify-stored-billing-info-endpoint) and current for each transaction.
-
-## Authorization and capture
-
-Utilize [secure processes to authorize payment methods and accurately capture payments](https://docs.recurly.com/docs/auth-and-capture), safeguarding both the customer and the business.
+<br />
