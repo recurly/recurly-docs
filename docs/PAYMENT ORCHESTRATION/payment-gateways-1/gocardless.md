@@ -77,10 +77,11 @@ Bank details are passed within the `billing_info` parameter in all versions.
 - <a href="https://dev.recurly.com/docs/create-an-accounts-billing-info-bank-account" target="_blank">API V2 billing info documentation</a>
 - <a href="https://dev.recurly.com/docs/recurlyjs" target="_blank">Recurly.js documentation</a> — use version 4 or later for bank account fields
 
-### Required fields for all GoCardless transactions
+### Required fields for GoCardless transactions
 
 - Both the **first and last name** of the account holder are required.
 - The **consumer IP address** must be included in your payload — mandate creation will fail without it.
+- **Company** sent at the Account Level if you are capturing B2B Payments and need to specify a business bank account. Setting the 'Company' value of the business you are accepting payments from will properly classify the payment at GoCardless.
 
 ## Automated retries
 
