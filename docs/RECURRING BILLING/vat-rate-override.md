@@ -1,8 +1,9 @@
 ---
 title: Tax/VAT Rate Override
 excerpt: >-
-  The "Tax Rate Override" feature allows merchants to set a single fixed tax/VAT
-  rate amount on their site to apply to all transactions.
+  Apply a single fixed tax rate across all transactions on your Recurly site —
+  bypassing regional tax configuration in favor of a site-wide override rate
+  that you manage directly.
 deprecated: false
 hidden: true
 metadata:
@@ -12,49 +13,127 @@ metadata:
 next:
   description: ''
 ---
-# How to apply an overriding tax rate
+<div class="rp-page">
+  <div class="rp-overview">The Tax/VAT Rate Override lets you apply one fixed tax rate to every transaction on your site — no regional tax configuration required. The rate you set is applied to all invoices regardless of your merchant address or customer location. You're responsible for maintaining and updating this rate as your business needs change.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">1</span>Key details</a>
+    <a class="rp-toc-pill" href="#enable-the-tax-rate-override"><span class="rp-toc-num">2</span>Enable the override</a>
+    <a class="rp-toc-pill" href="#edit-the-tax-rate"><span class="rp-toc-num">3</span>Edit the tax rate</a>
+    <a class="rp-toc-pill" href="#disable-the-tax-rate-override"><span class="rp-toc-num">4</span>Disable the override</a>
+  </div>
+</div>
 
-You will need to have the feature flag for VAT Rate Override turned on for your site. This can only be enabled via Recurly Support. Once the feature flag is enabled, you will see the "Tax Rate Override" box appear on the right-side of your screen, with an "Enable" button. 
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Feature flag required</strong>The Tax/VAT Rate Override must be enabled by Recurly Support before it's available on your site. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> to request activation.</div>
+</div>
 
-![](https://files.readme.io/ee75793-Screenshot_2023-06-01_at_4.14.46_PM.png)
+# Key details
 
-Once you accept the enablement terms, you will see the edit view to input an overriding tax rate. Once you input the desired tax rate and press "Enable", your fixed tax rate will be applied to your site and the original "Taxes" Page will change to only show the the Tax Rate Override option. You can enter in whole percentages or decimal percentages up to the fourth decimal place. 
+## What changes when you enable the override
 
-**Before pressing enable**
+When the tax rate override is active, Recurly no longer uses regional tax configuration. Instead, the rate you specify is applied to every invoice generated on your site — regardless of your merchant address or your customers' locations.
 
-![](https://files.readme.io/23659cb-Screenshot_2023-06-01_at_8.42.36_PM.png)
+There is no integration with a tax service when using this feature. By enabling it, you take responsibility for setting the correct rate and updating it as needed.
 
-**After pressing enable**
+Key behavioral changes:
 
-![](https://files.readme.io/1ebc800-Screenshot_2023-06-01_at_8.43.50_PM.png)
+- **No regional configuration needed.** You don't need to enable or configure individual tax regions. The override rate applies globally.
+- **No country prefix on invoices.** Because the rate isn't tied to a specific country, invoices display tax as "VAT X%: $ Amount" without a country code prefix.
+- **Reverse VAT rules are ignored.** All future transactions have the override rate applied. Customers who believe they shouldn't be charged VAT must request a reverse-charge adjustment directly from you.
+- **Tax-exempt accounts are still honored.** Accounts marked as **Tax Exempt** won't have any tax applied to their invoices, consistent with standard Recurly tax behavior.
 
-# Edit the Tax/VAT rate you have configured
+## Plan tax collection still required
 
-You can edit the tax rate override amount at any point in time. All forward-moving transactions will leverage the new tax rate amount; pre-existing invoices will not change the tax rate amount applied at the time the pre-existing transaction took place. 
+The override rate only applies to invoices for plans that have **Collect Tax** enabled. If a plan doesn't have this checked, invoices generated from that plan won't include any tax — regardless of the override setting.
 
-![](https://files.readme.io/f4d1bc5-Screenshot_2023-06-01_at_8.45.51_PM.png)
 
-# Disable the Tax/VAT Rate Override
+<Image src="https://files.readme.io/d428d1f-Screenshot_2023-06-01_at_9.00.50_PM.png" align="center" width="75%" border={true} />
 
-![](https://files.readme.io/567a899-Screenshot_2023-06-01_at_8.47.08_PM.png)
 
-Once you have successfully disabled the tax rate override feature from your site, your Tax page will return to its original state with all in-the-box options to enable the desired regions you need configured on your site for tax calculation. 
+## Tax-exempt accounts
 
-![](https://files.readme.io/d1018e2-Screenshot_2023-06-01_at_8.47.56_PM.png)
+Accounts with the **Tax Exempt** option enabled won't have tax applied to their invoices. Tax-exempt organizations typically include non-profits, charities, religious organizations, and educational institutions — but you decide which accounts to mark as exempt. If you want tax applied to these accounts, don't check the Tax Exempt option.
 
-# What changes when enabling the Tax Rate Override functionality?
 
-* You will not need to enable or configure particular regions for tax support as you previously did on Recurly. The tax rate you input as your tax rate override amount will be applied to each and every transaction executed on your site, regardless of your merchant origin tax address and regardless of the customer's tax address. This tax rate will simply be used on every single invoice created across your site.
-* You will, however, need to make sure that the "Collect Tax" checkbox is selected on each plan for the tax rate override feature to successfully be applied to any invoice leveraging a plan. Without selecting to collect tax on a plan, the invoices generated from that corresponding plan will not show any tax of any kind on the invoice. This is consistent with how the behavior of tax application on invoices works today using in-the-box taxes or a direct integration with a tax service. 
+<Image src="https://files.readme.io/faa9be8-Screenshot_2023-06-01_at_9.29.12_PM.png" align="center" width="75%" border={true} />
 
-  ![](https://files.readme.io/d428d1f-Screenshot_2023-06-01_at_9.00.50_PM.png)
 
-Furthermore, accounts with the "Tax Exempt" option applied to their account will also not have any taxes applied to their invoices to obey industry best practice. Tax exempt organizations typically include non-profits, charities, religious organizations, or educational organizations. You as the merchant can choose to make an account tax exempt or not. If you prefer to have these common types of "Tax Exempt" organizations still receive tax applied to their invoices, you must not select the "Tax Exempt" option on their account. 
+# Enable the tax rate override
 
-![](https://files.readme.io/faa9be8-Screenshot_2023-06-01_at_9.29.12_PM.png)
+Once Recurly Support has enabled the feature flag, a **Tax Rate Override** box with an **Enable** button appears on the right side of your Taxes page.
 
-Tax will appear on the invoice as "VAT X%: $ Amount" with the corresponding tax rate override applied as X, and the resulting tax rate amount value showing after the currency symbol. 
 
-* This establishes a change from how in-the-box taxes or direct-integration taxes work because there is no specific country to associate a unique tax rate with, but rather, the site-wide tax rate you have applied is a general tax rate applied to all transactions regardless of the location of your business or your customers' location. Thus, a country prefix before the VAT rate amount on the invoice is not included.
-* Applying an overriding tax rate will also ignore all reverse-tax rules. Once the overriding tax rate is set, all future transactions will have that tax rate applied, and, customers will need to manually request a reverse-VAT charge be issued from your company directly if their business does not qualify for VAT rate charges. 
-* This is because there is no interaction/integration with a tax service in place. By selecting to override a site tax rate, you are acknowledging that you understand the tax rate you decide to apply to all transactions is up to your discretion, and you must maintain and update that tax rate as needed for your business.
+<Image src="https://files.readme.io/ee75793-Screenshot_2023-06-01_at_4.14.46_PM.png" align="center" width="75%" border={true} />
+
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Accept the enablement terms</h4><p>Click <strong>Enable</strong> in the Tax Rate Override box and accept the terms.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enter the tax rate</h4><p>Input the desired tax rate. You can enter whole percentages or decimals up to four decimal places.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Confirm</h4><p>Click <strong>Enable</strong>. The fixed rate is applied to your site and the Taxes page updates to show only the Tax Rate Override option.</p></div>
+  </div>
+</div>
+
+
+<Image src="https://files.readme.io/23659cb-Screenshot_2023-06-01_at_8.42.36_PM.png" align="center" width="75%" border={true} />
+
+
+
+<Image src="https://files.readme.io/1ebc800-Screenshot_2023-06-01_at_8.43.50_PM.png" align="center" width="75%" border={true} />
+
+
+# Edit the tax rate
+
+You can update the tax rate override at any time.
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the Tax Rate Override settings</h4><p>Navigate to the Taxes page and click into the Tax Rate Override section.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enter the new rate</h4><p>Update the rate field with the new value and save.</p></div>
+  </div>
+</div>
+
+
+<Image src="https://files.readme.io/f4d1bc5-Screenshot_2023-06-01_at_8.45.51_PM.png" align="center" width="75%" border={true} />
+
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Only future transactions use the updated rate. Existing invoices retain the rate that was applied when they were generated.</div>
+</div>
+
+# Disable the tax rate override
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the Tax Rate Override settings</h4><p>Navigate to the Taxes page and open the Tax Rate Override section.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Disable the override</h4><p>Click <strong>Disable</strong> and confirm.</p></div>
+  </div>
+</div>
+
+
+<Image src="https://files.readme.io/567a899-Screenshot_2023-06-01_at_8.47.08_PM.png" align="center" width="75%" border={true} />
+
+
+Once disabled, your Taxes page returns to its standard state with all regional tax options available for configuration.
+
+
+<Image src="https://files.readme.io/d1018e2-Screenshot_2023-06-01_at_8.47.56_PM.png" align="center" width="75%" border={true} />
+
+
+<br />
