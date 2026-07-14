@@ -1,9 +1,9 @@
 ---
 title: Account activities export
 excerpt: >-
-  Track and export a detailed log of all account-level actions in Recurly —
-  filter by actor, verb, object, and date to audit changes and understand user
-  behavior.
+  The Account Activities export provides a detailed log of every user action and
+  modification made within customer accounts — including actor, action type,
+  affected object, and timestamp.
 deprecated: false
 hidden: false
 metadata:
@@ -16,116 +16,122 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">The Account Activities export gives you a detailed log of every user action and modification made within customer accounts on your Recurly site. Use it to audit changes, monitor account interactions, and analyze activity patterns across your subscriber base.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+</div>
 
-The Account Activities export gives you a detailed log of every user action and modification made within customer accounts on your Recurly site. Use it to audit changes, monitor account interactions, and analyze activity patterns across your subscriber base.
+# Access the export
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-# Accessing user exports
-
-1. **Go** to the **Admin** section of Recurly.
-2. In the left-side panel, **navigate** to the "**Admin Exports**" option,
-3. Select "**Account Activities**" from the list of available exports.
-
-You can access account activities at two levels:
+Account activity data is available at two levels:
 
 - **Account level** — view activity for a specific customer account directly on their account page
-- **Site level** — access the full activity log for your entire site via **Admin → Admin Exports**
+- **Site level** — access the full activity log for your entire site via **Admin → Admin Exports → Account Activities**
 
 
-<Image src="https://files.readme.io/e1c4a16aba0142612cd6333c0ae95b3bcbba27d5d6f49dd7d89be67ee9126e61-image.png" align="center" width="600px" border={true} />
+<Image src="https://files.readme.io/e1c4a16aba0142612cd6333c0ae95b3bcbba27d5d6f49dd7d89be67ee9126e61-image.png" align="center" width="75%" border={true} />
 
 
-## Explore interface
+***
 
-The Explorer is divided into three areas:
+# Explore interface
 
-| Interface Area              | Description                                                                                                                                                                                                                  |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Left panel -Workbook        | Agent Ask natural-language questions about your invoice data. The agent suggests fields and runs queries on your behalf.                                                                                                     |
-| Center panel - Field picker | Browse and search the full field catalog. Fields are grouped by topic. Click any field to add it to your active query. Use the In-use filter to see only selected fields.                                                    |
-| Right panel - results area  | Toggle between Results (table view), Chart (visualization), or Both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query and verify your field selection before committing. |
+The Explore interface provides an interactive query builder for analyzing account activity data. It's divided into three panels:
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Panel</td><td>Description</td></tr>
+  <tr><td><strong>Left — Workbook</strong></td><td>Ask natural-language questions about your activity data. The Workbook Agent suggests fields and runs queries on your behalf.</td></tr>
+  <tr><td><strong>Center — Field picker</strong></td><td>Browse and search the full field catalog, grouped by topic. Click any field to add it to your active query. Use the In-use filter to see only selected fields.</td></tr>
+  <tr><td><strong>Right — Results area</strong></td><td>Toggle between Results (table view), Chart (visualization), or both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query before committing.</td></tr>
+</table>
 
 
-<Image src="https://files.readme.io/151e9a40bf36f6e8fc2438ae06a4ad5511128db459e51697062f0d77d3dfe510-image.png" align="center" border={true} />
+<Image src="https://files.readme.io/151e9a40bf36f6e8fc2438ae06a4ad5511128db459e51697062f0d77d3dfe510-image.png" align="center" width="75%" border={true} />
 
 
-### Pre-built sample queries
+## Pre-built sample queries
 
-- **List of activities** - Returns a row-level list of all account activity events within the active date scope, including actor, action type, affected object, and timestamp.
-- **Count of activities** - Returns a grouped count of activity events broken down by activity type, giving a quick summary of the most common actions across your accounts.
+Two sample queries are available to get started quickly:
 
-### Using the Workbook Agent
+- **List of activities** — Returns a row-level list of all account activity events within the active date scope, including actor, action type, affected object, and timestamp.
+- **Count of activities** — Returns a grouped count of activity events broken down by activity type, providing a quick summary of the most common actions across your accounts.
+
+## Workbook Agent
 
 The Workbook Agent is the fastest way to start an analysis. Type a question in the text box at the bottom of the left panel and press Enter (or click the send icon).
 
 **Example prompts:**
 
-- “Show me all activity on account ABC123 in the last 14 days”
-- “Which actors made the most changes to accounts this month?”
-- “List all subscription cancellations performed via API in the past 30 days”
-- “Count account activities by type for the current revenue period”
-- “Show me all activities where the acted-upon object is a billing info record”
+- "Show me all activity on account ABC123 in the last 14 days"
+- "Which actors made the most changes to accounts this month?"
+- "List all subscription cancellations performed via API in the past 30 days"
+- "Count account activities by type for the current revenue period"
+- "Show me all activities where the acted-upon object is a billing info record"
 
-### Available Fields
+## Available fields
 
 - **Account code** — filter activity to a specific customer account
-- **Acted upon object ID** — filter by the unique ID of the object where the activity occurred, such as a specific invoice or transaction. Click any Acted ID in the table to open that object directly in a new tab
-- **Acted type** — filter by the type of object the activity occurred on, such as an invoice or a subscription
-- **Actor name** — filter by the entity that performed the action — this could be the Recurly Background Bot, an API call, or a specific user
-- **Actor type** — filter by the type of actor, such as a user
-- **Created at time/date** — filter by the timestamp or date the activity occurred
+- **Acted upon object ID** — filter by the unique ID of the object where the activity occurred (such as a specific invoice or transaction); click any ID in the table to open that object directly in a new tab
+- **Acted type** — filter by the type of object the activity occurred on (such as an invoice or subscription)
+- **Actor name** — filter by the entity that performed the action — the Recurly Background Bot, an API call, or a specific user
+- **Actor type** — filter by the type of actor (such as a user)
+- **Created at** — filter by the timestamp or date the activity occurred
 - **Verb** — filter by the action performed, such as `sent_email`, `renewed`, or `marked_past_due`
 - **Metadata** — filter by specific details about the activity, such as a plan name or invoice ID
 
-### Creating a new report
+## Build a report
 
-1. Browse and search the full field catalog. Fields are grouped by data topic.&#x20;
-2. Click any field to add it to your active query. Use the In-use filter to see only selected fields.
-3. Toggle between Results (table view), Chart (visualization), or both.&#x20;
-4. Use the Options tab to configure axes, grouping, and chart type.&#x20;
-
-### Filtering your data
-
-1. **Standard Filters:** Drag and drop any field into the Filters section of the query builder, or click the drop-down/actions menu next to the field header in your data view and select Filter.
-2. **Filtered Measures:** To create a measure that is specifically tied to one dimension (e.g., Acted Type by Actor Name), create a pivot table with your target metric and the dimension. Right-click the measure under a specific pivot value and select Create filtered measure.&#x20;
-
-
-<Image src="https://files.readme.io/05aeff02dce97d132b08e141ab868faad8ef6930bfbe0d731b0d3a91e242cd62-image.png" align="center" width="500px" />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Select fields</h4><p>Browse the field catalog in the center panel. Click any field to add it to your active query. Use the <strong>In-use</strong> filter to see only selected fields.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Apply filters</h4><p>Drag and drop any field into the Filters section, or click the dropdown/actions menu next to a field header in the data view and select <strong>Filter</strong>. To create a measure tied to a specific dimension, build a pivot table with your target metric and dimension, then right-click the measure under a pivot value and select <strong>Create filtered measure</strong>.</p></div>
+  </div>
+</div>
 
 
-### Downloading your data
-
-To download your activity data, from the menu, select **Tab** - **Download**. You can choose from several file format options including CSV, Excel and JSON.
+<Image src="https://files.readme.io/05aeff02dce97d132b08e141ab868faad8ef6930bfbe0d731b0d3a91e242cd62-image.png" align="center" width="75%" border={true} />
 
 
-<Image src="https://files.readme.io/874a53d85998063a2ffc63b6f02421aee951ce68b58eab805d340e0d900f54c6-image.png" align="center" border={true} />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Visualize and review</h4><p>Toggle between Results (table view), Chart (visualization), or both. Use the <strong>Options</strong> tab to configure axes, grouping, and chart type.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Download your data</h4><p>From the menu, select <strong>Tab → Download</strong> and choose your preferred format: CSV, Excel, or JSON.</p></div>
+  </div>
+</div>
 
 
-![]()
+<Image src="https://files.readme.io/874a53d85998063a2ffc63b6f02421aee951ce68b58eab805d340e0d900f54c6-image.png" align="center" width="75%" border={true} />
 
 
-<Image src="https://files.readme.io/5eeb0615dbbaa65e7a6566580fc02a36aef6bc8f232a8543b33977c284b805f0-image.png" align="center" width="300px" border={true} />
+
+<Image src="https://files.readme.io/5eeb0615dbbaa65e7a6566580fc02a36aef6bc8f232a8543b33977c284b805f0-image.png" align="center" width="40%" border={true} />
 
 
-<br />
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Row limit</strong>The table view displays a maximum of 5,000 rows. For larger datasets, download the file to access and analyze the complete results.</div>
+</div>
 
-> **Note:** The table visualization displays a maximum of 5,000 rows. For larger datasets, downloading the file ensures you can access and analyze the complete results.
+***
 
-| Id                                                             | Example                                     | Description                                                                                                         | Data type (max size) |
-| :------------------------------------------------------------- | :------------------------------------------ | :------------------------------------------------------------------------------------------------------------------ | :------------------- |
-| <span id="account_code">account\_code</span>                   | 123456789                                   | The unique identifier for the customer account associated with the activity.                                        | string               |
-| <span id="acted_upon_object_id">acted\_upon\_object\_id</span> | inv-abc123                                  | The unique identifier for the specific object where the activity occurred, such as an invoice or transaction.       | string               |
-| <span id="acted_type">acted\_type</span>                       | invoice                                     | The type of object the activity occurred on, such as an invoice or subscription.                                    | string               |
-| <span id="actor_name">actor\_name</span>                       | [jane@example.com](mailto:jane@example.com) | The entity that performed the activity — this could be the Recurly Background Bot, an API call, or a specific user. | string               |
-| <span id="actor_type">actor\_type</span>                       | user                                        | The type of actor who performed the activity.                                                                       | string               |
-| <span id="created_at">created\_at</span>                       | 2025-01-15T10:30:00Z                        | The timestamp when the activity occurred.                                                                           | datetime             |
-| <span id="verb">verb</span>                                    | sent\_email                                 | The action performed on the object, such as `sent_email`, `renewed`, or `marked_past_due`.                          | string               |
-| <span id="metadata">metadata</span>                            | plan\_name: Gold                            | Additional details about the activity, such as a plan name or invoice ID.                                           | string               |
+# Export fields
 
-<br />
+| Id                                                             | Example                                     | Description                                                                                                   | Data type (max size) |
+| :------------------------------------------------------------- | :------------------------------------------ | :------------------------------------------------------------------------------------------------------------ | :------------------- |
+| <span id="account_code">account\_code</span>                   | 123456789                                   | The unique identifier for the customer account associated with the activity.                                  | string               |
+| <span id="acted_upon_object_id">acted\_upon\_object\_id</span> | inv-abc123                                  | The unique identifier for the specific object where the activity occurred, such as an invoice or transaction. | string               |
+| <span id="acted_type">acted\_type</span>                       | invoice                                     | The type of object the activity occurred on, such as an invoice or subscription.                              | string               |
+| <span id="actor_name">actor\_name</span>                       | [jane@example.com](mailto:jane@example.com) | The entity that performed the activity — the Recurly Background Bot, an API call, or a specific user.         | string               |
+| <span id="actor_type">actor\_type</span>                       | user                                        | The type of actor who performed the activity.                                                                 | string               |
+| <span id="created_at">created\_at</span>                       | 2025-01-15T10:30:00Z                        | The timestamp when the activity occurred.                                                                     | datetime             |
+| <span id="verb">verb</span>                                    | sent\_email                                 | The action performed on the object, such as `sent_email`, `renewed`, or `marked_past_due`.                    | string               |
+| <span id="metadata">metadata</span>                            | plan\_name: Gold                            | Additional details about the activity, such as a plan name or invoice ID.                                     | string               |
 
 <br />
