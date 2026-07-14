@@ -356,7 +356,7 @@ Recurly supports one Avalara account per site. Multi-entity support works by map
 </div>
 
 
-<Image src="https://files.readme.io/cec7285c7f46551ba140881ea32401ff88b034cabb313ddc525ee405912f0095-image.png" align="center" width="75%" border={true} />
+<Image src="https://files.readme.io/cec7285c7f46551ba140881ea32401ff88b034cabb313ddc525ee405912f0095-image.png" align="center" width="50%" border={true} />
 
 
 If you delete an entity in Recurly, the mapping to the corresponding Avalara sub-company is also removed. Keep mappings current as your entities change.
