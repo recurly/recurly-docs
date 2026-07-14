@@ -1,10 +1,9 @@
 ---
 title: Analytics overview
 excerpt: >-
-  Effortlessly turn your subscription data into actionable insights with Recurly
-  Analytics. Our comprehensive dashboard and report sections give you a
-  360-degree view of your business performance, enabling you to make data-driven
-  decisions for unprecedented growth.
+  Recurly Analytics gives you dashboards, reports, and built-in benchmarks to
+  track subscription performance — covering MRR, churn, retention, dunning
+  effectiveness, and more.
 deprecated: false
 hidden: false
 metadata:
@@ -14,76 +13,101 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-# Definition
-
-# Key benefits
-
-* **Data-driven decisions:** Empower your strategic decision-making with in-depth and accurate data insights.
-* **Subscriber insights:** Understand your subscriber behavior, churn rates, and retention trends based on cohorts to identify what products and pricing are performing well.
-* **Financial analysis:** Dive into MRR, billings, recovered revenue and more to monitor your financial health.
+<div class="rp-page">
+  <div class="rp-overview">Recurly Analytics is your command center for subscription business insights. Build custom reports, track retention and churn, analyze financial performance, and benchmark against industry peers — all from a unified analytics suite.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 # Definition
 
-Recurly Analytics' Dashboards & Reports section serves as your command center for comprehensive subscription analytics. It provides a suite of reporting tools and analytical insights, delivering a broad view of your business performance and the dynamics of your subscription metrics.
+<div class="rp-definition">Recurly Analytics' Dashboards and Reports section provides a suite of reporting tools and analytical insights — delivering a broad view of your business performance and subscription metrics. From MRR and churn to dunning effectiveness and trial performance, it gives you the data to make informed decisions at every level of your subscription business.</div>
 
 # Key benefits
 
-* **Data-driven decisions:** Empower your strategic decision-making with in-depth and accurate data insights.
-* **Subscriber insights:** Understand your subscriber behavior, churn rates, and retention trends based on cohorts to identify what products and pricing are performing well.
-* **Financial analysis:** Dive into MRR, billings, recovered revenue and more to monitor your financial health.
-* **Performance overview:** Evaluate your trial performance and plan effectiveness for continual optimization.
-* **Dunning effectiveness:** Analyze the efficiency of your dunning (debt recovery) process for improved results.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+    <strong>Data-driven decisions</strong>
+    <span>In-depth, accurate data insights to support strategic decision-making across your subscription business.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+    <strong>Subscriber insights</strong>
+    <span>Understand subscriber behavior, churn rates, and retention trends by cohort to identify which products and pricing are performing.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-dollar-sign" aria-hidden="true"></i></div>
+    <strong>Financial analysis</strong>
+    <span>Track MRR, billings, recovered revenue, and more to monitor your financial health at a glance.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></div>
+    <strong>Performance overview</strong>
+    <span>Evaluate trial performance and plan effectiveness to continuously optimize your subscription offering.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-rotate" aria-hidden="true"></i></div>
+    <strong>Dunning effectiveness</strong>
+    <span>Analyze your dunning process to understand recovery rates and identify opportunities to improve failed payment outcomes.</span>
+  </div>
+</div>
 
 # Key details
 
-## Dashboard
+## Analytics tools
 
-Recurly Analytics offers a [dashboard ](https://docs.recurly.com/docs/dashboard)that serves as the command center for your subscription business insights. It provides the tools to build custom reports, understand subscriber behavior, track retention, and analyze churn, ensuring you have the necessary data to make informed decisions.
+<div class="rp-nav-grid">
 
-## Built-in benchmarks
+<Cards>
+  <Card title="Dashboard" href="https://docs.recurly.com/docs/dashboard" target="_blank">
+    Your primary command center for subscription insights. Build custom reports, track subscriber behavior, analyze retention and churn, and drill into the data you need most.
+  </Card>
+  <Card title="Built-in benchmarks" href="https://docs.recurly.com/docs/built-in-benchmarks" target="_blank">
+    Compare your key performance metrics against industry peers over selected timelines to contextualize your results and sharpen your business strategy.
+  </Card>
+  <Card title="Explore" href="https://docs.recurly.com/docs/recurly-builder" target="_blank">
+    Available on Recurly Elite plans. Converts raw data into actionable insights with flexible data visualization — from transaction details to credit card information.
+  </Card>
+</Cards>
+</div>
 
-Explore Recurly's innovative [built-in benchmark](https://docs.recurly.com/docs/built-in-benchmarks) reports to compare your key performance metrics against industry peers over selected timelines. Gain insights and enhance your business strategy.
+***
 
-## Explore
+## Navigation features
 
-Available exclusively for Recurly Elite plan subscribers, the [Explore ](https://docs.recurly.com/docs/recurly-builder)function is your tailored data portal. It converts raw data into actionable insights, supporting a range of data visualization needs. Explore gives you the power to examine your Recurly data in-depth, from transaction details to credit card information.
+All dashboards are designed for intuitive navigation and data retrieval. Dashboards support drill-downs for deeper exploration of any metric.
 
-# Navigation features
+### General filters
 
-All dashboards are designed for intuitive navigation and data retrieval.
+Located in the top left corner of each dashboard:
 
-> 📘 The analytics dashboards allow for drill drowns.
+- **Metric type** — View data as a percentage, active timeframe count, or churn rate.
+- **Date range** — Specify a timeframe and date range up to the past 18 months.
+
+### Plan-specific filters
+
+- **Month selector** — Define a timeframe and date range for the past 18 months.
+- **Plan selection** — Choose from a top set of plans or all available plans. This narrows the Plan Name filter accordingly — for example, selecting "Top 5 plans" limits the Plan Name filter to those five.
+- **Plan name** — Lists plans based on the Plan selection filter above.
+
+### Utility options (vertical ellipsis menu)
+
+Available on both widgets and tables. Click the vertical ellipsis on any tile to access:
+
+- **Ask a follow-up question** — Type a follow-up question to drill into subsets, re-aggregate data, or get an AI-generated summary without opening a new report.
+- **Download** — Export the tile's query results as CSV, PDF, or PNG.
+- **Data timestamp** — See when the data in that widget was last updated.
+
+### Chart interactions
+
+Dashboards include bar, line, and pie charts covering customer metrics, subscription data, and revenue trends.
+
+- **Hover** over a chart element (a point, bar, or segment) to see detailed data for that item.
+- **Click a legend color** to show or hide the corresponding data series — useful for focused analysis.
 
 <br />
-
-## General filters (Top left corner)
-
-* **Metric Type Selection:** Allows for data viewing by percentage, active timeframe, or churn rate.
-* **Date Selection:** Offers dropdowns to specify a timeframe and date range, up to the past 18 months, which then reflects on the dashboard.
-
-## Filters specific to plans
-
-* **Month Selector:** Defines a timeframe and date range for the past 18 months to influence dashboard data.
-* **Plan Selection:** Incorporates a dropdown for choosing either a top set of plans or all available ones. This impacts the "Plan Name" filter by narrowing down available choices. For instance, selecting "Top 5 plans" restricts the "Plan Name" filter to only these five.
-* **Plan Name:** Lists plans based on the prior filter's selection.
-
-## **Utility options (Vertical Ellipses):**
-
-Available for both widgets and tables, these ellipses unfold a menu, offering:
-
-* **Ask a Follow-up Question:** Instead of opening a new report, you simply type follow-up questions to drill into subsets, re-aggregate data, or get AI-generated summaries right in the dashboard.
-* **Download:** Users can export the specific tile's query results in various formats, including CSV, PDF, or PNG, for deeper analysis.
-* **Data Timestamp:** Accessed through the vertical ellipse of any widget, revealing the data's last update.
-
-## **Chart interpretations:**
-
-Data visualizations span bar, line, and pie charts, often detailing customer metrics, subscription data, revenue trends, etc., over certain periods. Legends assist with color-coded data interpretations.
-
-* **Hover Info:** Hover over a chart element, like a point or a segment, to see detailed data for that particular item.
-* **Legend Toggle:** In the legend, click on a color to show or hide the corresponding data in the chart. This feature helps with focused data analysis.
