@@ -1,8 +1,9 @@
 ---
 title: Manual invoicing
 excerpt: >-
-  Take control of your billing process with Recurly's Manual Invoicing, offering
-  flexibility and precision in your customer billing interactions.
+  Manual invoicing in Recurly lets you create invoices with custom payment
+  terms, PO numbers, and collection methods — with tools to record payments,
+  manage dunning, and reopen invoices as needed.
 deprecated: false
 hidden: false
 metadata:
@@ -12,212 +13,255 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-page">
+  <div class="rp-overview">Manual invoicing gives you full control over the billing process — set custom payment terms, add PO numbers, record payments as they come in, and manage past due accounts with a dedicated dunning workflow. It's ideal for B2B billing scenarios where customers pay on net terms rather than automatic collection.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#generate-a-manual-invoice-for-a-subscription"><span class="rp-toc-num">4</span>Generate a subscription invoice</a>
+    <a class="rp-toc-pill" href="#generate-a-one-off-invoice"><span class="rp-toc-num">5</span>Generate a one-off invoice</a>
+    <a class="rp-toc-pill" href="#record-a-payment"><span class="rp-toc-num">6</span>Record a payment</a>
+    <a class="rp-toc-pill" href="#reopen-a-manual-invoice"><span class="rp-toc-num">7</span>Reopen a manual invoice</a>
+  </div>
+</div>
 
 # Definition
 
-Manual Invoicing in Recurly allows businesses to create and manage invoices manually. This feature gives companies the flexibility to set specific payment terms, apply unique identifiers like PO numbers, and manage payments according to their unique business processes.
+<div class="rp-definition">Manual invoicing lets businesses create and send invoices without automatic payment collection — instead setting specific payment terms, applying PO numbers, and recording payments as they're received. It's designed for companies with B2B billing workflows where customers pay on net terms rather than having a card charged on file.</div>
 
 # Key benefits
 
-* **Enhanced Flexibility:** Customize payment terms, collection methods, and billing details to suit specific customer agreements and business needs.
-* **Professional and Compliant:** Generate clean, professional invoices that align with tax regulations, enhancing customer trust and satisfaction.
-* **Streamlined Payment Management:** Easily record, track, and manage payments, with options to reopen invoices and record partial payments as needed.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Enhanced flexibility</strong>
+    <span>Customize payment terms, collection methods, and billing details to match specific customer agreements and business processes.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i></div>
+    <strong>Professional and compliant</strong>
+    <span>Generate clean invoices aligned with tax regulations, with support for US sales tax and VAT — helping maintain customer trust and billing accuracy.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Streamlined payment management</strong>
+    <span>Record, track, and manage payments with options for partial payments, invoice reopening, and dedicated dunning rules for manually collected accounts.</span>
+  </div>
+</div>
 
 # Key details
 
-### Email templates
+## Collection terms
 
-Enhance the clarity and professionalism of your communications by personalizing the default text for your Invoice New, Subscription New, and Invoice Past Due emails. Incorporate additional fields like `po_number`, `net_terms`, and potentially `net_terms_type` to ensure your communication resonates with your company's branding and messaging approach.
+Every invoice in Recurly has a collection method that determines how payment is handled.
 
-> **Note**: The inclusion of `net_terms_type` may be contingent upon specific feature availability.
+**Automatically charge** — Bills the credit card stored on the customer's account directly.
 
-#### Payment confirmation options
+**Invoice (manual)** — Generates a manual invoice for the customer to pay according to the configured net terms.
 
-Choose whether to send a payment confirmation every time a payment is entered, or only when an invoice is fully paid, allowing you to control and minimize the communication your customers receive.
+All invoices default to **On Receipt** terms, meaning payment is due immediately upon creation. On a manual invoice, this means the invoice becomes past due immediately if no payment is recorded.
 
-### List views
+### Net terms options
 
-Organize and manage your invoices effectively by using filters in the list view. Filter invoices by manual or automatic to quickly and efficiently manage and review invoices based on their type, making it easier to track and act on outstanding payments.
+Professional and Elite plan customers issuing manual invoices have access to a Terms dropdown with the following options: On Receipt, Net 10, Net 30, Net 60, and Custom days.
 
-### Exports
+### End of month (EOM) terms
 
-Boost your data management and reporting efficiency by incorporating extra fields in the invoice, subscription, and transaction exports. Utilize fields like `po_number`, `collection_method`, `net_terms`, and potentially `net_terms_type` to generate comprehensive and structured data exports ideal for accounting, auditing, and analytical purposes.
+EOM terms are useful for B2B customers who pay invoices weeks or months after issuance. Available on Professional and Elite plans.
 
-**Note**: The availability of `net_terms_type` might be conditional based on specific feature settings.
+Due dates on EOM invoices are calculated from the last day of the month the invoice was issued, plus the selected EOM duration, plus an additional 24-hour window.
 
-### US sales tax/VAT
+**Examples:**
 
-For manual invoices, US sales tax and VAT are calculated using the account level address. This ensures tax compliance and accurate billing. The account's VAT number, if available, is factored into the tax calculation, along with the address, allowing for precise and compliant tax calculations.
+- Invoice created June 6 with EOM +0 → Due July 1
+- Invoice created February 18 with EOM +15 → Due March 16
+- Invoice created September 27 with EOM +60 → Due November 30
 
-### Billing information
+**Supported EOM terms:** EOM +0, EOM +15, EOM +30, EOM +45, EOM +60, and EOM +90.
 
-With manual invoices, the account address serves as the billing address, which appears on invoices and impacts US sales tax and VAT charges. This feature ensures that the correct address is used for tax calculations and that invoices are sent to the correct location.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> EOM restrictions</strong>Custom EOM terms are not supported. Once an EOM term is set on an invoice, the due date can't be edited. To change the due date, issue a refund on the current invoice and create a new one. EOM terms are available via the Admin Console and both the v2 and v3 API.</div>
+</div>
 
-#### Address requirements
+### Understanding past due invoices
 
-If the account has a billing address but an empty account address, you will need to enter the account address in order for taxes to be calculated correctly, ensuring compliance and accuracy.
+An invoice becomes past due the day after its official due date. For example, a Net 30 invoice becomes past due on day 31.
 
-### Integration methods
+***
 
-Seamlessly create subscriptions and one-time invoices via the API, specifying the collection method, net terms, and PO number as needed. This integration allows for streamlined and automated creation of manual invoices, reducing manual effort and the risk of errors.
+## Modifying a subscription's collection method
 
-### Dunning management
+To switch a subscription between automatic and manual collection:
 
-Manual Payments includes a new set of dunning rules tailored specifically for manually invoiced customers. Customize your dunning settings at [Dunning Configuration](https://app.recurly.com/go/configuration/dunning) to align with your company’s credit control processes and customer communication strategy.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the subscription</h4><p>In the Admin Console, navigate to the customer's account and click <strong>Edit</strong> next to the subscription plan.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Change the collection method</h4><p>In the subscription details, toggle between <strong>Auto-Collect</strong> and <strong>Manually Collect</strong>. To switch to Auto-Collect, the account must have stored credit card details.</p></div>
+  </div>
+</div>
 
-#### Dunning for manual payments
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Changes to manual invoice terms don't generate new customer invoices. Price, quantity, or plan changes will still result in account credits or new invoices as usual.</div>
+</div>
 
-The dunning period for manual payments will kick off after an invoice has exceeded its net terms + 1 day. Recurly will not perform any payment retries on ACH payments. Retries can be initiated by attempting to collect the invoice in the Admin Console or using the APIs.
+***
+
+## Tax and billing address
+
+For manual invoices, US sales tax and VAT are calculated using the account-level address. The account's VAT number, if available, is included in the calculation. The account address also serves as the billing address that appears on the invoice.
+
+If an account has a billing address but an empty account address, you'll need to add the account address before taxes can be calculated correctly.
+
+***
+
+## Email templates
+
+Manual invoicing uses the **New Invoice** and **Invoice Past Due** email templates. You can personalize these templates and add fields such as `po_number`, `net_terms`, and `net_terms_type` to align with your brand's messaging.
+
+You can also configure whether a payment confirmation is sent every time a payment is recorded, or only when an invoice is fully paid.
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The availability of <code>net_terms_type</code> in email templates may depend on specific feature settings on your account.</div>
+</div>
+
+***
+
+## List views and exports
+
+Filter the Invoices list view by **Manual** or **Automatic** to quickly manage and review invoices by collection method.
+
+In invoice, subscription, and transaction exports, additional fields are available for manual invoicing: `po_number`, `collection_method`, `net_terms`, and `net_terms_type`. These are useful for accounting, auditing, and reporting workflows.
+
+***
+
+## Dunning management
+
+Manual invoicing includes a dedicated set of dunning rules separate from automatic collection dunning. The dunning period for manual invoices starts the day after an invoice exceeds its net terms (net terms + one day).
+
+Recurly doesn't perform automatic payment retries on ACH payments for manual invoices. To retry, attempt to collect the invoice manually from the Admin Console or via the API.
+
+Configure your manual dunning settings at <a href="https://app.recurly.com/go/configuration/dunning" target="_blank">Dunning Configuration</a>.
+
+***
 
 ## Additional notes
 
-* Reopening a manual invoice will not be logged in the account's Activity Log. Additionally, our exports and API will not indicate that a manual invoice was reopened.
-* When a manual invoice with a partial payment recorded fails dunning, a write-off invoice for the full amount of the invoice will be created. Additionally, a partial credit from the write-off invoice will be applied to the remaining open balance on the purchase invoice. Recurly will also void the remainder of the open credit on the write-off invoice.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Reopening manual invoices</strong>Reopening a manual invoice is not logged in the account's Activity Log, and exports and the API won't indicate that a manual invoice was reopened.</div>
+</div>
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Partial payments and write-offs</strong>When a manual invoice with a partial payment recorded fails dunning, a write-off invoice is created for the full invoice amount. A partial credit from the write-off invoice is applied to the remaining open balance on the purchase invoice, and the remainder of the open credit on the write-off invoice is voided.</div>
+</div>
+
+***
 
 ## Integration notes
 
-### API integration for manual invoicing
+<div class="rp-card">
 
-* Recurly provides a robust API that allows you to integrate Manual Invoicing directly into your existing systems. This includes creating subscriptions and one-time invoices via the API, specifying the collection method, net terms, and PO number as needed.
+### API integration
 
-### Webhooks for real-time updates
+Create subscriptions and one-time invoices via the API by specifying the collection method, net terms, and PO number. Review the <a href="https://developers.recurly.com/" target="_blank">Recurly API documentation</a> for full details. Use HTTPS for all API calls and store API keys securely. Build in error handling for failed requests — retry logic or error logging is recommended.
 
-* Consider setting up webhooks to receive automated messages from Recurly when specific events related to manual invoicing occur, such as when a new manual invoice is generated. This allows for real-time syncing of invoice data between Recurly and your internal systems.
+</div>
 
-### Error handling in integration
+<div class="rp-card">
 
-* When integrating with Recurly’s API, ensure that your system is set up to handle errors gracefully. For example, if an API call to create a new manual invoice fails, your system should be able to retry the request or log the error for manual review.
+### Webhooks
 
-### Security considerations
+Set up webhooks to receive real-time notifications when manual invoice events occur (e.g., a new manual invoice is generated). This keeps invoice data synced between Recurly and your internal systems without polling.
 
-* Ensure that your integration with Recurly adheres to best practices for security. This includes using secure connections (HTTPS) for all API calls and safeguarding any API keys or credentials.
+</div>
 
-### Compliance and tax considerations
+<div class="rp-card">
 
-* Manual Invoicing in Recurly is designed to be compliant with various tax regulations, including US sales tax and VAT. However, tax regulations can vary significantly between regions, so it is essential to consult with a tax professional to ensure that your invoicing practices are fully compliant with all relevant laws and regulations.
+### Testing
 
-### Testing in a sandbox environment
+Test your manual invoicing integration in Recurly's <a href="https://docs.recurly.com/docs/sandbox-features-to-discover" target="_blank">sandbox environment</a> before going live. This lets you verify collection method behavior, term calculations, and dunning flows without affecting production data.
 
-* Before deploying your integration in a production environment, thoroughly test it in a sandbox or staging environment. Recurly provides a [sandbox environment](https://docs.recurly.com/docs/sandbox-features-to-discover) for this purpose, allowing you to ensure that the integration works as expected without affecting your live data.
+</div>
 
-By paying attention to these integration notes, you can ensure a smooth and effective implementation of Recurly's Manual Invoicing feature within your existing infrastructure and workflows.
+# Generate a manual invoice for a subscription
 
-## Collection terms
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Create or open the customer account</h4><p>If the account doesn't exist yet, create one at <strong>Customers → New Account</strong>. Add account-level address information — this carries over to all invoices for the account.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Add a subscription</h4><p>On the customer's account page, click <strong>Add Subscription</strong> and configure the subscription plan.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Set the collection method</h4><p>Under <strong>Billing Details</strong>, click <strong>Edit</strong> and set <strong>Collection Terms</strong> to <strong>Invoice</strong>. Select the appropriate net terms.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Confirm and notify</h4><p>Save the subscription. The customer will receive both a New Subscription and a New Invoice email.</p></div>
+  </div>
+</div>
 
-### 1. Automatically charge
+# Generate a one-off invoice
 
-This method will directly bill a credit card that the customer has on file.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Add charges to the account</h4><p>On the customer's account page, use the <strong>Add Charge</strong> button to add the line items you want to bill.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Generate the invoice</h4><p>Click <strong>Generate Invoice...</strong> at the top of the account page.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Select Manual collection</h4><p>In the collection method dropdown on the left, select <strong>Manual</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Enter invoice details</h4><p>Add a PO number if the customer requested one, select your net terms, then click <strong>Create Invoice</strong>.</p></div>
+  </div>
+</div>
 
-### 2. Invoice
+# Record a payment
 
-This method allows for a manual invoice to be generated for the customer.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the invoice</h4><p>Navigate to the customer's account in the Admin Console and click the open invoice you want to record a payment against.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Record a payment</h4><p>Choose <strong>Record a Payment</strong>, enter the payment amount, payment details, and receipt date, then click <strong>Save</strong>.</p></div>
+  </div>
+</div>
 
-### 3. Terms options for invoices
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Partial payments</strong>If only a partial payment is recorded, the invoice may still enter a past due state and the customer may receive past due notifications.</div>
+</div>
 
-* **General Note**: All invoices are due "On-Receipt" by default.
-* **Manual Invoices**: If you're on our Professional or Elite plans and issue manual invoices, you'll have access to a Terms dropdown. Here are the available options:
-  * On-Receipt
-  * Net-10
-  * Net-30
-  * Net-60
-  * Custom days
+# Reopen a manual invoice
 
-### 4. End of month (EOM) terms
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the invoice</h4><p>Navigate to the paid or failed manual invoice you want to reopen.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Click Reopen</h4><p>Select <strong>Reopen</strong> from the <strong>Invoice Actions</strong> dropdown.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Record new payments</h4><p>After reopening, you can record new payments on the invoice and update its status to Paid.</p></div>
+  </div>
+</div>
 
-These terms are particularly useful when you have business customers who pay invoices weeks or even months after the initial invoice was issued.
-
-* **Access**: Available for Professional or Elite plans
-* **Calculation**: The "Due Dates" on invoices indicate when they're considered "past due". An additional 24-hour window is added beyond the payment deadline. When an EOM term is applied, the "Due Date" considers the "Issue Date" of the invoice. From the last day of the issued month, the selected EOM duration is added, plus an extra 24 hours to get the final "Due Date".
-* **Examples**:
-  * Invoice created on June 6 with EOM +0 term: Due Date is July 1.
-  * Invoice created on February 18 with EOM +15 term: Due Date is March 16.
-  * Invoice created on September 27 with EOM +60 term: Due Date is November 30.
-* **Supported EOM Terms**:
-  * EOM +0
-  * EOM +15
-  * EOM +30
-  * EOM +45
-  * EOM +60
-  * EOM +90
-* **Restrictions**: Custom EOM terms are not supported. Once an EOM term is set on an invoice, its Due Date can't be edited. To change the Due Date, a refund must be issued for the current invoice, and a new one should be created.
-* **API Availability**: This feature is currently accessible via our User Interface and both V2 and V3 API
-
-### 5. Understanding past due invoices
-
-An invoice is considered past due the day after its official due date. For example, a "Net 30" invoice becomes past due exactly on the 31st day.
-
-### 6. Modifying a subscription payment method
-
-To modify:
-
-1. Go to the Recurly Admin Console and access the customer's account.
-2. Click "Edit" next to the subscription plan that requires changes.
-3. In the subscription details, click "Edit".
-4. Here, you can toggle between payment options - Auto-Collect or Manually Collect. Note: To switch to Auto-Collect, the account must have stored credit card details.
-
-**Note**: Price, quantity, or plan alterations will result in account credits or invoices. However, changes in manual invoice terms won't generate new customer invoices.
-
-# Generating a manual invoice for a subscription
-
-1. **Create a customer account (optional)**
-
-* If the customer’s account is not already created, navigate to `https://app.recurly.com/go/accounts/new` to create a new account.
-
-2. **Add account level address information**
-   * Input the address information that will be carried over to all invoices for this account.
-
-3. **Add as subscription**
-   * Click `Add Subscription` on the customer’s account page.
-   * Configure the customer’s subscription plan according to their needs.
-
-4. **Edit billing details**
-   * Under “Billing Details,” click `Edit`.
-   * Set the `Collection Terms` (see options below).
-
-5. **Customer communication**
-   * Based on the outcome of the collection terms and payment attempt, the customer will receive appropriate communication. If you select `Invoice`, the customer will receive both a new subscription and a new invoice email.
-
-### Generating one-off invoices
-
-1. **Add charges to an existing account**
-   * On an existing account, add any charges you'd like to bill the customer for using the "Add Charge" button on the account screen.
-
-2. **Generate the invoice**
-   * Once you're ready to invoice the customer, click the "Generate Invoice..." button at the top of the customer's account page.
-
-3. **Select collection method**
-   * On the left-hand side, you'll see a dropdown for the collection method. Select `Manual`.
-
-4. **Enter additional details**
-   * Enter a PO number if the customer had requested one, select your net terms, then click `Create Invoice`.
-
-### Recording payments on manual invoices
-
-1. **Access the customer’s account**
-   * Navigate to the customer’s account inside the Recurly Admin Console.
-
-2. **Open the invoice**
-   * Click on the open invoice you want to record a payment for.
-
-3. **Record a payment**
-   * Choose `Record a Payment`.
-   * Enter payment details, amount received, and payment receipt date, then click `Save`.
-
-4. **Handle partial payments**
-   * If only a partial payment is entered, be aware that the invoice may still enter a past due state and the customer may receive past due notifications.
-
-### Reopening manual invoices
-
-1. **Access the invoice**
-   * Navigate to the paid or failed manual invoice you want to reopen.
-
-2. **Reopen the invoice**
-   * Click the "Reopen" button in the Invoice Actions dropdown.
-
-3. **Record new payments**
-   * After reopening, you can record new payments on the invoice and change its status to Paid.
+<br />
