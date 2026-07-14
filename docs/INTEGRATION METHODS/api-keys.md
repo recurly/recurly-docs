@@ -1,8 +1,8 @@
 ---
 title: REST API keys
 excerpt: >-
-  Integrate and communicate effortlessly with Recurly using secure REST API
-  keys.
+  Generate, regenerate, revoke, and secure REST API keys in Recurly to
+  authenticate external applications and integrations with your account.
 deprecated: false
 hidden: false
 metadata:
@@ -12,115 +12,179 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">REST API keys authenticate external applications and grant them access to Recurly's API. Manage your keys from the API Credentials page — generate new keys, regenerate existing ones, revoke compromised keys, and assign labels to keep integrations organized and secure.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#generate-an-api-key"><span class="rp-toc-num">3</span>Generate an API key</a>
+    <a class="rp-toc-pill" href="#regenerate-an-api-key"><span class="rp-toc-num">4</span>Regenerate an API key</a>
+    <a class="rp-toc-pill" href="#revoke-an-api-key"><span class="rp-toc-num">5</span>Revoke an API key</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">6</span>FAQs</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* A Recurly account with a Role that includes the Integration permission.
-* Familiarity with API integrations and basic understanding of HTTP Basic Authentication.
+<ul class="rp-list">
+  <li>A Recurly account with a role that includes the Integration permission</li>
+  <li>Familiarity with API integrations and HTTP Basic Authentication</li>
+</ul>
 
 ### Limitations
 
-* API keys grant full access to your Recurly account and should be protected diligently.
-* Exposing API keys publicly can compromise account security.
+<ul class="rp-list">
+  <li>API keys grant full access to your Recurly account — protect them the same way you would a password</li>
+  <li>Exposing API keys publicly can compromise account security</li>
+</ul>
 
 # Definition
 
-REST API keys are unique identifiers that authenticate and grant access to the Recurly API. They function as a secure bridge, allowing external applications to communicate and interact with Recurly's platform.
+<div class="rp-definition">REST API keys are unique identifiers that authenticate and grant access to the Recurly API. They act as a secure bridge between external applications and Recurly's platform — allowing integrations to communicate with your account programmatically using HTTP Basic Authentication.</div>
 
-# What is an API?
+# Key details
 
-An API, or Application Programming Interface, acts as a communication channel between different software applications. To interface with Recurly, an API key is essential. Think of this key as a unique password that Recurly uses to identify and authenticate the requesting program.
+## How API keys work
 
-### Find or generate your API key
-
-To integrate with Recurly, you'll often need an API key. Here's how to obtain or create one:
-
-1. Navigate to **Integrations→API Credentials** as a User assigned a Role that includes the Integration permission.
-
-   <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/bfd81d4-Screen_Shot_2019-11-12_at_08.32.07.png" />
-
-2. Scroll to the bottom and select **Add Private API Key**.
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/4ec2676-Screen_Shot_2017-02-24_at_3.31.06_PM.png" />
-
-3. Assign a name to your API key, jot down its purpose, and specify the third-party application it's intended for.
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/8793e7e-Screen_Shot_2017-02-24_at_3.31.38_PM.png" />
-
-4. Confirm by clicking **Save Changes**.
-
-### Regenerating an API key
-
-An API key can be regenerated in 2 different ways. Either the existing API key will remain active for a 12 hour window or it will be disabled immediately. To regenerate a key, follow these steps:
-
-1. Head to **Developers→API keys**.
-2. **Identify** the key that you wish to regenerate.
-3. **Choose** the Regenerate Key option.
-4. **Select** the behavior that you would like to apply to the existing API key.
-
-## Revoking an API key
-
-If you would like to revoke an API key, you can do so by following the steps below. We recommend that you revoke your API key if you have any reason to believe the security of the key may be compromised.
-
-1. As a developer or Admin user, navigate to Developers→API Keys.
-
-2. Find the key you would like to revoke.
-
-3. You have three options: revoke the key permanently, to regenerate the key immediately, or to regenerate the key within 12 hours.
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/48ebbca-Screen_Shot_2017-02-24_at_3.36.40_PM.png" />
-
-**Immediately Revoke**
-
-If you revoke the key, we will not create another key, and it will immediately stop working. All applications that have access to Recurly via that key will immediately cease to have access.
-
-**Regenerate Immediately**
-
-If you regenerate a key immediately, the old key will stop working, and Recurly will issue you a new API key. All applications that have access to Recurly via the old key will immediately cease to have access, and we recommend that you update applications with the new key.
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/e73019d-Screen_Shot_2017-02-24_at_3.39.18_PM.png" />
+An API (Application Programming Interface) acts as a communication channel between software applications. An API key is the credential Recurly uses to identify and authenticate the requesting application — similar to a password, but for programmatic access.
 
 ## Base64 encoded API keys
 
-For a Base64 encoded API key, simply navigate to **Integrations→API Credentials** and expand **"Need help using the API Key?"**. The characters following "Authorization: Basic" represent your encoded key.
+To find your Base64 encoded API key, go to **Integrations → API Credentials** and expand **"Need help using the API Key?"**. The characters following `Authorization: Basic` are your encoded key.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/242d8ac-2019-11-07_0926.png" />
 
-**Regenerate after 12 hours**
+<Image src="https://files.readme.io/242d8ac-2019-11-07_0926.png" align="center" width="75%" border={true} />
 
-If you choose this option, the old key is still valid for 12 hours, and Recurly will generate a new key. This will allow you time to update applications using the old key to the new key. During the 12-hour period, applications using the old key will not be affected and will be able to authenticate as if nothing has changed. When 12 hours passes, the old key will no longer function.
 
-## API key security
+## API key security best practices
 
-API keys grant full access to your Recurly account and should be protected the same way you would protect your password. In particular, there are a few common scenarios to keep in mind when working with API keys.
+API keys grant full access to your Recurly account. Treat them with the same care as sensitive passwords.
 
-* Give each integration its own API key, and assign labels to each key so you know which key goes with which application. If a specific API key is compromised, you can disable that key without disabling access to all of your other integrations.
-* Be careful not to expose the key to the public (such as in screenshots, videos, or help documentation). Remember that blurring your data isn't always enough. It's best to use "cut" functions in your graphics program to remove the data completely.
-* If a key needs to be shared, generate a new key and label it accordingly so it can be disabled, if needed. Never email the API key, because it would allow access to your Recurly account if hackers were to compromise your email account.
-* If you revoke a user's access to your Recurly account, any API keys created by the user will be removed from your account.
-* Do not embed, store, or expose your API key(s) within client-side code, including JavaScript, mobile applications, and native executables. A bad actor can decompile your application and obtain your API key(s).
+- **One key per integration** — Assign each integration its own API key with a descriptive label. If a key is compromised, you can disable just that key without affecting other integrations.
+- **Never expose keys publicly** — Don't include API keys in screenshots, videos, or documentation. Blurring isn't sufficient — use your graphics program's cut function to remove the data entirely.
+- **Share keys securely** — If a key needs to be shared, generate a new labeled key so it can be disabled if needed. Never email an API key — a compromised email account would give an attacker access to your Recurly account.
+- **Don't embed keys in client-side code** — Never store or expose API keys in JavaScript, mobile applications, or native executables. A bad actor can decompile your application and extract the key.
+- **Revoke access with users** — If you revoke a user's access to Recurly, any API keys they created are automatically removed from your account.
+
+# Generate an API key
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open API Credentials</h4><p>Navigate to <strong>Integrations → API Credentials</strong> as a user with a role that includes the Integration permission.</p></div>
+  </div>
+</div>
+
+
+<Image src="https://files.readme.io/bfd81d4-Screen_Shot_2019-11-12_at_08.32.07.png" align="center" width="40%" border={true} />
+
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Add a private API key</h4><p>Scroll to the bottom of the page and click <strong>Add Private API Key</strong>.</p></div>
+  </div>
+</div>
+
+
+<Image src="https://files.readme.io/4ec2676-Screen_Shot_2017-02-24_at_3.31.06_PM.png" align="center" width="75%" border={true} />
+
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Name and label the key</h4><p>Give the key a descriptive name, note its purpose, and specify the third-party application it's intended for.</p></div>
+  </div>
+</div>
+
+
+<Image src="https://files.readme.io/8793e7e-Screen_Shot_2017-02-24_at_3.31.38_PM.png" align="center" width="75%" border={true} />
+
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Save the key</h4><p>Click <strong>Save Changes</strong> to generate the key.</p></div>
+  </div>
+</div>
+
+# Regenerate an API key
+
+A key can be regenerated in two ways: the old key remains active for a 12-hour window, or it's disabled immediately.
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open API keys</h4><p>Navigate to <strong>Developers → API Keys</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Select the key</h4><p>Identify the key you want to regenerate and choose <strong>Regenerate Key</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Choose regeneration behavior</h4><p>Select how the existing key should be handled — see the options below.</p></div>
+  </div>
+</div>
+
+**Regenerate immediately** — The old key stops working right away and Recurly issues a new key. Update all applications using the old key to avoid losing access.
+
+**Regenerate after 12 hours** — The old key remains valid for 12 hours while Recurly generates a new key. This gives you time to update applications before the old key expires. During the 12-hour window, existing integrations continue working without interruption.
+
+# Revoke an API key
+
+Revoke a key if you believe it may be compromised or if it's no longer needed.
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open API keys</h4><p>As a developer or Admin user, navigate to <strong>Developers → API Keys</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Find the key and select Revoke</h4><p>Locate the key you want to revoke and choose the appropriate option.</p></div>
+  </div>
+</div>
+
+
+<Image src="https://files.readme.io/48ebbca-Screen_Shot_2017-02-24_at_3.36.40_PM.png" align="center" width="75%" border={true} />
+
+
+**Immediately revoke** — The key is deleted and stops working instantly. No new key is created. All applications using that key immediately lose access.
+
+**Regenerate immediately** — The old key stops working and a new key is issued. Update applications with the new key to restore access.
+
+**Regenerate after 12 hours** — The old key remains valid for 12 hours while a new key is generated. Use this window to update your applications.
+
+
+<Image src="https://files.readme.io/e73019d-Screen_Shot_2017-02-24_at_3.39.18_PM.png" align="center" width="75%" border={true} />
+
 
 # FAQs
 
-**Q:** What exactly is an API key in the context of Recurly?\
-**A:** An API key is a unique identifier that allows external applications to securely communicate and interact with Recurly's platform. Think of it as a specialized password that Recurly uses to authenticate and authorize the requesting program.
+<Accordion title="What is an API key in the context of Recurly?">
+  An API key is a unique identifier that allows external applications to authenticate with and interact with the Recurly API. It works like a specialized password that Recurly uses to verify and authorize the requesting program.
+</Accordion>
 
-**Q:** How often should I change or update my API keys?\
-**A:** While there's no strict frequency, it's a good practice to update API keys periodically or if you believe they might have been compromised. Regularly reviewing and managing your API keys enhances security.
+<Accordion title="How often should I update my API keys?">
+  There's no required frequency, but it's good practice to rotate API keys periodically — and immediately if you believe a key may have been exposed or compromised.
+</Accordion>
 
-**Q:** Can I have multiple API keys for different applications or integrations?\
-**A:** Yes, you can generate multiple API keys. In fact, it's recommended to use separate keys for different integrations to ensure better security and easier management.
+<Accordion title="Can I have multiple API keys for different integrations?">
+  Yes, and it's recommended. Using separate keys per integration makes it easier to identify which key belongs to which application, and lets you revoke or rotate a single key without affecting others.
+</Accordion>
 
-**Q:** What happens if I revoke an API key?\
-**A:** Once revoked, the API key will no longer function. Any application or integration using that key will immediately lose access to Recurly until a valid key is provided.
+<Accordion title="What happens when I revoke an API key?">
+  The key stops working immediately. Any application or integration using that key loses access to Recurly until a valid key is provided.
+</Accordion>
 
-**Q:** Is there a way to temporarily disable an API key without revoking it?\
-**A:** No, the options available are to either revoke the key immediately or regenerate it. If you wish to temporarily disable access, you might consider regenerating the key and then providing the new key when you want to restore access.
+<Accordion title="Can I temporarily disable an API key without revoking it?">
+  No. The available options are to revoke the key immediately or regenerate it. To temporarily restrict access, regenerate the key and hold back distributing the new key until you're ready to restore access.
+</Accordion>
 
-**Q:** How do I ensure the security of my API keys?\
-**A:** Treat API keys as you would sensitive passwords. Avoid exposing them publicly, share them securely, and never embed them in client-side code. Regularly reviewing and updating your keys also enhances security.
+<Accordion title="How do I keep my API keys secure?">
+  Treat API keys like sensitive passwords — never expose them publicly, don't embed them in client-side code, share them only through secure channels, and assign one key per integration so individual keys can be revoked without disrupting everything else.
+</Accordion>
+
+<br />
