@@ -1,47 +1,82 @@
 ---
 title: Adyen Web Components
 excerpt: >-
-  Accept and tokenize Adyen Web Components in Recurly for a seamless, branded
-  checkout experience powered by Recurly.js.
+  Use Adyen Web Components with Recurly.js to collect payment state data on your
+  site, generate a Recurly.js token, and submit it to the v3 API for one-time
+  and recurring charges.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Adyen Web Components are customizable UI elements for payment collection. When paired with Recurly.js, you collect Adyen state data on your site, pass it into Recurly.js to generate a token, and submit that token to Recurly's v3 API for one-time and recurring payment processing.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
-Adyen offers powerful tools to support quick and dynamic consumer checkout solutions via their Web Components. Recurly supports accepting the Adyen component state data into Recurly.js so you can submit the resulting token ID to our V3 API for secure payment processing.
+### Prerequisites and limitations
 
-### Prerequisites & limitations
-
-* Requires a working Recurly.js integration and V3 API integration.
-* Does **not** support Adyen’s app (iOS/Android) components or React/Native SDKs—only the Web Components for the listed payment methods are supported.
-* 100% Coupons and Account Credits: Since communication with the gateway is required during initial setup, it is recommended to offer free trials in these instances to avoid future payment failures.
+<ul class="rp-list">
+  <li>Requires a working Recurly.js integration and v3 API integration</li>
+  <li>Does <strong>not</strong> support Adyen's app (iOS/Android) components or React/Native SDKs — only Web Components for the listed payment methods are supported</li>
+  <li>100% coupons and account credits: because gateway communication is required during initial setup, free trials are recommended in these cases to avoid future payment failures</li>
+</ul>
 
 # Definition
 
-Adyen Web Components are customizable UI elements for various payment methods. When paired with Recurly.js, you collect an Adyen “state data” on your site, pass it into Recurly.js to generate a Recurly.js `token_id`and then submit that to Recurly via API to complete one-time or recurring charges.
+<div class="rp-definition">Adyen Web Components are customizable UI elements for collecting payment details. When integrated with Recurly.js, they collect Adyen state data on your site, pass it into Recurly.js to generate a <code>token_id</code>, and submit that token to Recurly via the v3 API. Recurly unpacks the encrypted Adyen data, sends it to Adyen to authorize and store the payment details, and returns a reusable token for future charges and renewals.</div>
 
 # Key benefits
 
-* **Branded checkout**: Use Adyen’s Web Components to deliver a consistent, on-brand payment UI within your own site.
-* **Seamless tokenization**: Leverage Recurly.js to turn Adyen state data into a reusable payment token for future renewals and one time charges (where supported).
-* **Flexible billing updates**: Let customers update payment details via Adyen Components or any other Recurly payment solution (Checkout, HPP, Recurly.js).
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-paintbrush" aria-hidden="true"></i></div>
+    <strong>Branded checkout</strong>
+    <span>Use Adyen's Web Components to deliver a consistent, on-brand payment UI directly within your own site.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+    <strong>Seamless tokenization</strong>
+    <span>Recurly.js converts Adyen state data into a reusable payment token for future renewals and one-time charges where supported.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Flexible billing updates</strong>
+    <span>Customers can update payment details via Adyen Web Components or any other Recurly payment solution — Checkout, Hosted Payment Pages, or Recurly.js.</span>
+  </div>
+</div>
 
 # Key details
 
-## Supported Features
+## Supported features
 
-* Build a custom checkout flow with Adyen Web Components and pass the component’s state data into Recurly.js.
-* Recurly.js generates a token ID you submit to the V3 API—Recurly unpacks the encrypted Adyen data and sends the state data to Adyen to authorize and store payment details.
-* Customers may update billing info through Adyen Components or via Recurly’s other payment solutions (Checkout, HPP, Recurly.js).
-* Explore Adyen’s live demo: [Adyen Web Components Demo](https://www.mystoredemo.io/#/checkout)
+Build a checkout flow with Adyen Web Components and pass the component's state data into Recurly.js. The generated `token_id` is submitted to the v3 API — Recurly unpacks the encrypted Adyen data and forwards the state data to Adyen to authorize and store payment details.
 
-<Image align="center" border={true} width="300px" src="https://files.readme.io/2e5c1d8c261f4d9d718ee6da88a975fdb279a0b8d951aa48112cbc179c42c1ba-Screenshot_2025-05-13_at_3.55.51_PM.png" className="border" />
+Customers can update billing information through Adyen Web Components or via Recurly's other payment solutions — Checkout, Hosted Payment Pages, or Recurly.js.
 
-Read more in our [Developer Hub guide](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/third-party-checkout-guide-adyen-components#/).
+
+<Image src="https://files.readme.io/2e5c1d8c261f4d9d718ee6da88a975fdb279a0b8d951aa48112cbc179c42c1ba-Screenshot_2025-05-13_at_3.55.51_PM.png" align="center" width="40%" border={true} />
+
+
+Explore Adyen's live demo at <a href="https://www.mystoredemo.io/#/checkout" target="_blank">Adyen Web Components Demo</a>. For full implementation details, see the <a href="https://docs.recurly.com/recurly-subscriptions/v1.1/docs/third-party-checkout-guide-adyen-components#/" target="_blank">Developer Hub guide</a>.
+
+***
 
 ## Supported payment methods
 
-* **Cards**, **Apple Pay**, **Google Pay**, **Cash App Pay**, **ACH**, **SEPA**, **BACS**, **iDeal**, and **Bancontact** transactions (via Adyen Web Components). Please note Bancontact requires usage of SEPA for renewals.
-* Note: Not all Adyen methods are supported—contact Recurly support for availability.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Category</td><td>Payment methods</td></tr>
+  <tr><td>Cards and wallets</td><td>Cards, Apple Pay, Google Pay, Cash App Pay</td></tr>
+  <tr><td>Direct debit</td><td>ACH, SEPA, BACS, iDEAL, Bancontact (Bancontact requires SEPA for renewals)</td></tr>
+</table>
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Not all Adyen payment methods are supported. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> for availability details.</div>
+</div>
+
+<br />
