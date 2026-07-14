@@ -43,8 +43,7 @@ metadata:
 <ul>
 <li>Merchants can only use one chargeback management system at a time — either Recurly's native chargeback handling or Justt. Once Justt is enabled, Recurly stops processing gateway chargeback events for supported gateways.</li>
 <li>Only credit card chargebacks are processed. Non-credit card disputes — such as ACH — are not actioned.</li>
-<li>Each merchant site can have one active Justt configuration.</li>
-</ul>
+<li>Each merchant site can have one active Justt configuration.</li></ul>
 </div>
 
 # Key benefits
