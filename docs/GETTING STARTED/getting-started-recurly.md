@@ -7,6 +7,7 @@ excerpt: >-
   efficiently.
 deprecated: false
 hidden: false
+icon: fad fa-alicorn
 metadata:
   title: ''
   description: ''
