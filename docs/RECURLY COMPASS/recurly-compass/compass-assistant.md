@@ -83,11 +83,11 @@ For an overview of available exports and how to use them, see the <a href="https
 
 ## ✦ Ask AI
 
+
+<Image src="https://files.readme.io/25a6c030e6333fee3d795577619a6d3f25e4163790258a7300e7a4a793aa63ee-image.png" align="left" width="50px" border={true} wrap={true} />
+
+
 Ask AI is an AI-powered assistant built into specific pages in Recurly. It answers questions about product functionality and helps you understand and act on information — without leaving your current workflow.
-
-
-<Image src="https://files.readme.io/25a6c030e6333fee3d795577619a6d3f25e4163790258a7300e7a4a793aa63ee-image.png" align="center" width="40%" border={true} />
-
 
 ### Access Ask AI
 
@@ -180,10 +180,6 @@ Compass Assistant detects when you need help from Recurly's Support team and can
 
 
 Select any conversation to reload it and continue the thread. Follow-up questions will use that conversation's context.
-
-
-<Image src="https://files.readme.io/94fe0d2584148dd627991c38730a966435ccd0d21c694f4e5bec568043edb600-image.png" align="center" width="75%" border={true} />
-
 
 Results respect your existing permissions — you only see content you already have access to. Your chats are private and visible only to you.
 
