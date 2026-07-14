@@ -55,7 +55,7 @@ metadata:
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
     <strong>Automated chargeback response</strong>
-    <span>When Justt resolves a dispute, Recurly takes the action you've specified — refund, pause, or expire — without any manual intervention, so your team spends less time on chargeback admin.</span>
+    <span>When Justt resolves a dispute, Recurly takes the action you've specified — refund or expire — without any manual intervention, so your team spends less time on chargeback admin.</span>
   </div>
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-table-list" aria-hidden="true"></i></div>
