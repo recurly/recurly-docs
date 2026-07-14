@@ -29,13 +29,12 @@ metadata:
 # Prerequisites
 
 <div class="rp-card">
-
-\- You must have an active Justt.ai account.
-
-- Your Recurly site must be using one of the supported payment gateways: Stripe, Braintree, PayPal Complete, or Adyen.
-- You must have the Justt.ai and Chargeback Management feature flags enabled on your Recurly site. Contact <a href="https://docs.recurly.com/recurly-subscriptions/docs/integrations" target="_blank">Recurly Support</a> to request access.
-- You must have a Recurly API key available to share with Justt during setup.
-
+<ul>
+<li>You must have an active Justt.ai account.</li>
+<li>Your Recurly site must be using one of the supported payment gateways: Stripe, Braintree, PayPal Complete, or Adyen.</li>
+<li>You must have the Justt.ai and Chargeback Management feature flags enabled on your Recurly site. Contact <a href="https://docs.recurly.com/recurly-subscriptions/docs/integrations" target="_blank">Recurly Support</a> to request access.</li>
+<li>You must have a Recurly API key available to share with Justt during setup.</li>
+</ul>
 </div>
 
 # Limitations
@@ -55,7 +54,7 @@ metadata:
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
     <strong>Automated chargeback response</strong>
-    <span>When Justt resolves a dispute, Recurly takes the action you've specified — refund or expire — without any manual intervention, so your team spends less time on chargeback admin.</span>
+    <span>When Justt resolves a dispute, Recurly takes the action you've specified — refund, pause, or expire — without any manual intervention, so your team spends less time on chargeback admin.</span>
   </div>
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-table-list" aria-hidden="true"></i></div>
@@ -108,10 +107,10 @@ The Justt integration processes chargebacks from the following payment service p
   <Card title="Stripe" href="https://docs.recurly.com/recurly-subscriptions/docs/stripe" target="_blank">
     Chargeback events from Stripe card transactions are processed automatically.
   </Card>
-  <Card title="Braintree" href="https://docs.recurly.com/recurly-subscriptions/docs/braintree" target="_blank">
+  <Card title="Braintree" href="https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd" target="_blank">
     Chargeback events from Braintree card transactions are processed automatically.
   </Card>
-  <Card title="PayPal Complete" target="_blank">
+  <Card title="PayPal Complete" href="https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete" target="_blank">
     Chargeback events from PayPal Complete card transactions are processed automatically.
   </Card>
   <Card title="Adyen" href="https://docs.recurly.com/recurly-subscriptions/docs/adyen" target="_blank">
