@@ -8,11 +8,6 @@ hidden: false
 metadata:
   robots: index
 ---
-Title: Compass Assistant
-Metadata description: Compass Assistant is Recurly's AI-powered chat interface — search docs and records, generate exports, take action on plans and add-ons, get code help, and connect with support, all without leaving the app.
-
-\---PASTE INTO EDITOR BELOW---
-
 <div class="rp-page">
   <div class="rp-overview">✦ Compass Assistant is a conversational AI interface built into Recurly. Ask questions, search records and docs, generate data exports, get code examples, and take action on your subscription configuration — all from a single chat panel on any page.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
