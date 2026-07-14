@@ -1,9 +1,9 @@
 ---
 title: Shipping fees
 excerpt: >-
-  Recurly's Shipping Fees feature enables you to charge shipping fees on
-  subscriptions through our API and UI and on one-time purchases through our
-  API.
+  Configure shipping methods and fees in Recurly — add recurring shipping to
+  subscriptions or one-time purchases, manage taxation and refunds, and export
+  shipping data for reporting.
 deprecated: false
 hidden: false
 metadata:
@@ -13,77 +13,129 @@ metadata:
 next:
   description: ''
 ---
-# Feature Overview
+<div class="rp-page">
+  <div class="rp-overview">Recurly lets you record shipping costs and methods on subscriptions and one-time purchases, so shipping fees appear as recurring line items on invoices — complete with tax calculations and refund support. Configure your shipping methods once, then apply them across your billing workflows.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#configure-shipping-methods"><span class="rp-toc-num">3</span>Configure shipping methods</a>
+    <a class="rp-toc-pill" href="#add-shipping-to-a-subscription"><span class="rp-toc-num">4</span>Add shipping to a subscription</a>
+    <a class="rp-toc-pill" href="#add-shipping-to-a-one-time-purchase"><span class="rp-toc-num">5</span>Add shipping to a one-time purchase</a>
+  </div>
+</div>
 
-Shipping in one-time [eCommerce](https://www.websiteadvisor.com/ecommerce/bests/) is simple: a customer places an order and the seller passes the shipping provider's fee along to the customer or charges a flat fee.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Site requirements</strong>Shipping fees require the <a href="https://docs.recurly.com/v1.0/docs/credit-invoices-release" target="_blank">Credit Invoices</a>, <a href="https://docs.recurly.com/v1.0/docs/only-bill-what-changed" target="_blank">Only Bill What Changed</a>, and <a href="https://docs.recurly.com/docs/subscription-terms-new" target="_blank">Subscription Billing Terms</a> features to be enabled on your site. Recurly sites created after July 26, 2018 have these features enabled by default. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> if you need to enable them.</div>
+</div>
 
-Shipping is more complex in a subscription commerce context. Subscriptions are much more long-lived than standalone orders. Recurly makes decisions around shipping costs easy for merchants.
+# Definition
 
-The concept is simple: you have the ability to record the cost of shipping and the method used to ship the item(s). You can record this method and cost on a subscription, or on a one-time purchase.
+<div class="rp-definition">Shipping fees in Recurly let you record the cost and method of shipping on a subscription or one-time purchase. Unlike ecommerce, where shipping is a one-time charge per order, subscriptions are long-lived — Recurly handles recurring shipping fees automatically, billing the same shipping cost each renewal period alongside your subscription charges.</div>
 
-> 🚧 Site Requirements
->
-> In order to use this feature, your site must be configured with the [Credit Invoices](https://docs.recurly.com/v1.0/docs/credit-invoices-release), [Only Bill What Changed](https://docs.recurly.com/v1.0/docs/only-bill-what-changed), and [Subscription Billing Terms](https://docs.recurly.com/docs/subscription-terms-new) features. Please contact us if you would like more information about upgrading to these features.
->
-> Recurly sites created after July 26, 2018 will automatically have these features enabled.
+# Key details
 
-> 📘 Rate Lookups
->
-> If you would like Recurly to add the ability to directly integrate with shipping providers (DHL, USPS, etc) we'd love to hear from you! Feel free to [reach out to us](https://recurly.zendesk.com/).
+## How shipping appears on invoices
 
-# Configuring Shipping on Your Recurly Site
+Shipping appears as a line item on the invoice, always positioned after any subscription or one-time charges. Tax on the shipping fee (where applicable) is included in the tax estimate and reflected on the invoice.
 
-To begin using Shipping Fees, navigate to Configuration→Shipping.
+## Changing the shipping fee or method
 
-<Image align="center" alt={1200} border={false} caption="This is the screen you will see when configuring shipping for the first time." title="Blank Slate.png" src="https://files.readme.io/cbd41fa-Blank_Slate.png" />
+If you change a shipping fee immediately (mid-cycle), Recurly issues a full refund for the original shipping amount and its tax, then generates a new charge invoice for the updated amount and its tax. To avoid generating multiple separate charge and credit invoices, make shipping fee changes at the next renewal rather than immediately.
 
-Once you enable shipping on your site, Recurly will create a default shipping method for you. If you do not display the shipping method (e.g. USPS Priority Mail) you use to your customers, or use only one shipping method, there is no further configuration needed.
+## Refunding shipping fees
 
-If you do use multiple shipping methods or would like to show your customers which shipping method you use to ship their item(s), you can configure the method in this section.
+When refunding an invoice that includes a shipping fee, you can either refund the full shipping amount or exclude the shipping fee from the refund. Partial shipping fee refunds are not supported. Any refund of a shipping fee also refunds the associated tax amount.
 
-# Shipping Methods
+To refund shipping in the Admin Console, navigate to the invoice and select **Invoice Actions → Refund Invoice**.
 
-Shipping Methods can be useful to display to your customers which method you use to ship their item(s), or differentiate between methods you use in different geographies. To set up a shipping method, navigate to Configuration→Shipping. You can add as many Shipping Methods as your business requires.
+## Coupons and shipping fees
 
-<Image align="center" alt={1200} border={false} caption="You can use Shipping Methods to show your customers which method is being used to ship their items." title="Create.png" src="https://files.readme.io/ecd628d-Create.png" />
+Coupons don't apply to shipping fees. To discount a shipping fee, pass the discounted amount directly in your API call or Admin Console entry for the subscription or one-time charge.
 
-## Changing Shipping Providers
+## Exporting shipping data
 
-If you are changing your shipping provider, we recommend you change the name on the shipping method. This will ensure that active subscriptions which have that shipping method are migrated to the new shipping method name.
+Shipping information is available in the following exports:
 
-## Removing a Shipping Method
+- Adjustments
+- Subscriptions
+- Subscriptions — Churned
 
-Exercise caution when removing a shipping method. If there are active subscriptions with the shipping method in place, these subscriptions will renew without a shipping method.
+## Taxation on shipping fees
 
-We recommend you to not use this unless you have made a Shipping Method by mistake. If you have changed your shipping provider, we recommend either making a new Shipping Method or changing the name.
+Shipping is taxable in some jurisdictions and not in others. Recurly works with Avalara and Vertex to handle shipping tax calculations.
 
-To delete a shipping method, click the 3 dots to the right of the shipping method and click Delete Shipping Method. You'll be given a warning, and then to delete you need to enter the name of the Shipping Method to confirm this is the action you'd like to take. Note that this action cannot be undone, and may result in a loss of data.
+If you use multiple shipping addresses on one invoice, the VAT number from the billing address is used. If you need VAT reverse charges applied, use only one shipping address per invoice.
 
-![](https://files.readme.io/ad681df-Delete.png "Delete.png")
+### Avalara tax codes
 
-# Adding Shipping Fees to a Subscription
+For merchants using Recurly's built-in Avalara integration, you can specify a tax code per shipping method. The following options are available:
 
-The Shipping feature is built to make charging recurring shipping on a subscription easy.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Tax option</td><td>Use case</td></tr>
+  <tr><td>Common Carrier FOB Destination</td><td>A common carrier (e.g., USPS or FedEx) where title passes to the customer upon delivery.</td></tr>
+  <tr><td>Common Carrier FOB Origin</td><td>A common carrier where title passes to the customer when the item ships.</td></tr>
+  <tr><td>Non Common Carrier FOB Destination</td><td>A private delivery company where title passes to the customer upon delivery.</td></tr>
+  <tr><td>Non Common Carrier FOB Origin</td><td>A private delivery company where title passes to the customer when the item ships.</td></tr>
+  <tr><td>Delivery by Company Vehicle Before Passage of Title</td><td>Your own delivery vehicle and staff; you retain ownership of the goods until delivery.</td></tr>
+  <tr><td>Delivery by Company Vehicle After Passage of Title</td><td>Your own delivery vehicle and staff; title passes to the customer before delivery.</td></tr>
+  <tr><td>Non-Taxable</td><td>Shipping costs that are not subject to tax.</td></tr>
+</table>
 
-## Recurly Admin UI
+Merchants with their own Avalara or Vertex account can specify an exact tax code per shipping method for more precise compliance control.
 
-In order to create a subscription with shipping fees, navigate to the account to which you'd like to add the subscription and click Account Actions→Create Subscription. Click the "Include Shipping" checkbox and enter the fee and shipping method you'd like to use.
+### International shipping and customs
 
-![](https://files.readme.io/7bc0c8c-Screen_Shot_2019-02-25_at_12.36.27_PM.png "Screen Shot 2019-02-25 at 12.36.27 PM.png")
+Recurly computes sales tax on shipping fees for both domestic and international shipments. For international shipments, customs fees and duties are typically collected and remitted by your carrier. Recurly doesn't provide the ability to communicate customs fees or duties to customers — contact your shipping provider to discuss how to handle this in your workflow.
 
-When you add a shipping fee, you will also need to add a Shipping Address to the subscription. You can either manually enter the address, or copy it from another address on the account.
+# Configure shipping methods
 
-Once you click *Add Subscription*, you will see the shipping fee has been added to the cost of the subscription on a recurring basis. The tax estimate will include tax on the shipping cost.
+Navigate to **Configuration → Shipping** to set up and manage shipping methods. Recurly creates a default shipping method automatically when you enable shipping.
 
-![](https://files.readme.io/b74cde9-Screen_Shot_2019-02-25_at_12.43.03_PM.png "Screen Shot 2019-02-25 at 12.43.03 PM.png")
+If you use only one shipping method or don't display the method name to customers, no further configuration is needed. Configure additional methods if you use multiple carriers or want to show customers which method is used to ship their items.
+
+## Rename a shipping method
+
+If you're changing shipping providers, rename the existing shipping method rather than deleting and recreating it. This ensures active subscriptions using that method are automatically migrated to the new name.
+
+## Delete a shipping method
+
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Use caution when deleting shipping methods</strong>Active subscriptions using a deleted shipping method will renew without any shipping method applied. Only delete a shipping method if it was created by mistake. This action cannot be undone and may result in data loss.</div>
+</div>
+
+To delete a shipping method, click the three-dot menu to the right of the method and select **Delete Shipping Method**. You'll be prompted to type the method's name to confirm the deletion.
+
+# Add shipping to a subscription
+
+## Admin Console
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the customer's account</h4><p>Navigate to the account you want to add the subscription to, then select <strong>Account Actions → Create Subscription</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enable shipping</h4><p>Check <strong>Include Shipping</strong> and enter the shipping fee amount and shipping method.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Add a shipping address</h4><p>Enter the shipping address manually, or copy it from an existing address on the account.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Add the subscription</h4><p>Click <strong>Add Subscription</strong>. The shipping fee is added to the subscription cost on a recurring basis, and the tax estimate includes tax on the shipping fee.</p></div>
+  </div>
+</div>
 
 ## API
 
-On the subscription PUT call you can insert an amount for shipping\_amount\_in\_cents.
+Pass `shipping_amount_in_cents` and `shipping_method_code` on the subscription create or update call, along with a `shipping_address` block.
 
 ```xml
 <subscription>
-<plan_code>gold</plan_code>
+  <plan_code>gold</plan_code>
   <currency>USD</currency>
   <account>
     <account_code>34</account_code>
@@ -119,10 +171,10 @@ On the subscription PUT call you can insert an amount for shipping\_amount\_in\_
   <shipping_method_code>foo</shipping_method_code>
   <renewal_billing_cycles>4</renewal_billing_cycles>
   <auto_renew>true</auto_renew>
-</subscription>'
+</subscription>
 ```
 
-You can also preview a subscription with shipping fees using by calling the Subscription Preview endpoint:
+You can also preview a subscription with shipping fees using the Subscription Preview endpoint:
 
 ```xml
 <subscription>
@@ -166,15 +218,9 @@ You can also preview a subscription with shipping fees using by calling the Subs
 </subscription>
 ```
 
-# Changing the Shipping Fee or Method on a Subscription
+# Add shipping to a one-time purchase
 
-If you change the amount of the Shipping Fee on a subscription immediately versus at renewal, your customer will be issued a full refund for the original shipping amount plus the corresponding tax amount, and will receive a charge invoice for the newly updated shipping amount plus its corresponding tax amount. This can be done via UI or API.
-
-We recommend making all changes to the Shipping Fee at the next renewal to avoid numerous separate charge and credit invoices.
-
-# Adding Shipping to a purchase (one-time charge or adjustment)
-
-You can charge a shipping fee on an invoice with only one-time purchases through the Recurly API. The following is an example, and you can find more in our [developer documentation](https://developers.recurly.com/api/latest.html#operation/create_purchase).
+To charge a shipping fee on an invoice with only one-time purchases, use the `/purchases` endpoint (available from API v2.20 onwards). See the full <a href="https://developers.recurly.com/api/latest.html#operation/create_purchase" target="_blank">Purchases API documentation</a> for all available parameters.
 
 ```xml
 <purchase>
@@ -185,9 +231,9 @@ You can charge a shipping fee on an invoice with only one-time purchases through
     <shipping_fee>
       <shipping_amount_in_cents>1000</shipping_amount_in_cents>
       <shipping_method_code>fedex-2-day</shipping_method_code>
-      <shipping_address> || <shipping_address_id>
+      <shipping_address>
         ...
-      </shipping_address> || </shipping_address_id>
+      </shipping_address>
     </shipping_fee>
   </shipping_fees>
   <adjustments>
@@ -205,56 +251,4 @@ You can charge a shipping fee on an invoice with only one-time purchases through
 </purchase>
 ```
 
-# Shipping on Invoices
-
-Shipping will appear on invoices as a line item below any other subscription or one-time charges. It will always appear as the last line item on the invoice.
-
-## Taxation
-
-Recurly works with industry-best sales tax providers to ensure that our merchants are in compliance with sales tax regulations. Shipping is taxable in some jurisdictions, and not in others.
-
-If you are using multiple shipping addresses, the VAT number associated to the billing address will be used for invoices. If you need to use reverse VAT charges, we recommend only using one shipping address per invoice.
-
-For merchants who use Recurly's in-the-box Avalara product, we give options on the Shipping Method to specify the type of tax which should be charged on the fees for that method. The following tax codes are available for out-of-the-box merchants:
-
-| Tax Option                                          | Use Case                                                                                                                                                                      |
-| :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Common Carrier FOB Destination                      | A common carrier is a provider such as USPS or FedEx. FOB Destination should be used if title of the goods pass to the customer when they are delivered.                      |
-| Common Carrier FOB Origin                           | A common carrier is a provider such as USPS or FedEx. FOB Origin should be used if title of the goods pass to the customer when they are shipping.                            |
-| Non Common Carrier FOB Destination                  | If you do not use a common carrier (i.e. have a private delivery company). FOB Destination should be used if title of the goods pass to the customer when they are delivered. |
-| Non Common Carrier FOB Origin                       | If you do not use a common carrier (i.e. have a private delivery company). FOB Origin should be used if title of the goods pass to the customer when they are shipping.       |
-| Delivery by Company Vehicle Before Passage of Title | If you have your own delivery vehicle and staff and still technically own the goods until they are delivered, use this option.                                                |
-| Delivery by Company Vehicle After Passage of Title  | If you have your own delivery vehicle and staff and pass title to the goods before they are delivered, use this option.                                                       |
-| Non-Taxable                                         | If your shipping costs are not taxable, use this option.                                                                                                                      |
-
-Merchants who have their own Avalara or Vertex account can specify the exact tax code they would like to use for each shipping method to ensure compliance.
-
-## International Shipping Customs & Duties
-
-If you ship across international lines, there are more concerns than sales tax on shipping fees. The solution above will compute sales tax on shipping fees for both domestic and international shipping.
-
-In most cases, if you use a common carrier, they will handle the collection and remittance of shipping fees when you ship internationally. Recurly does not provide the ability to communicate customs fees & duties to your customers. We recommend you reach out to your shipping provider to learn more about how to implement a solution.
-
-## Refunding Shipping Fees
-
-When refunding the shipping fee from an invoice, you have two options: either refund the entire shipping amount, or do not refund the shipping fee. There is currently no ability to refund a partial shipping fee. Refunds for a shipping fee will also issue a refund for the tax amount related to the shipping fee line item.
-
-To refund shipping in the Admin UI, navigate to the invoice you would like to refund and click Invoice Actions→Refund Invoice.
-
-## Shipping Fees on One-Time Charges
-
-To charge a shipping fee on a purchase with a one-time fee, we recommend using our API. The /purchases endpoint beginning in version 2.20 of the API. See documentation here: [https://developers.recurly.com/api/latest.html#operation/create\_purchase](https://developers.recurly.com/api/latest.html#operation/create_purchase).
-
-## Coupons
-
-Recurly's coupons will not apply to shipping fees. If you would like to discount a shipping fee, we recommend passing in the value you would like to charge to the customer on the API call or UI entry that you make for the subscription or one-time charge.
-
-We are gathering feedback on whether Recurly should offer a coupon for free shipping. If this is something you would like to see, please [let us know](https://recurly.zendesk.com/).
-
-# Exporting Shipping Information
-
-Shipping information is available in the following exports:
-
-* Adjustments
-* Subscriptions
-* Subscriptions - Churned
+<br />
