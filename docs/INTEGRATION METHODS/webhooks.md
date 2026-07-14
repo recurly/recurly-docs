@@ -94,7 +94,7 @@ To bulk retry paused or failed notifications, use the appropriate button in the 
 
 Webhooks can be configured per endpoint — you can opt in to only the notification types relevant to that endpoint. For example, you can configure one endpoint to receive only new account notifications while excluding account update notifications.
 
-For the full list of notification types, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/lifecycle-events#/" target="_blank">Webhooks Developer Docs</a>.
+For the full list of notification types, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/overview-webhooks#" target="_blank">Webhooks Developer Docs</a>.
 
 ***
 
