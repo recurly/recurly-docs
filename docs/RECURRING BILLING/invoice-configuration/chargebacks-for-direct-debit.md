@@ -1,9 +1,9 @@
 ---
-title: Chargebacks / late failures for direct debit
+title: Chargebacks and late failures for direct debit
 excerpt: >-
-  Efficiently manage and respond to late failure events associated with direct
-  debit payments through Recurly’s comprehensive chargeback and late failure
-  handling feature.
+  Manage SEPA direct debit chargebacks and late failures in Recurly — with
+  automated or manual processing options, configurable invoice handling, and
+  webhook notifications via GoCardless.
 deprecated: false
 hidden: false
 metadata:
@@ -13,95 +13,124 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">When a SEPA direct debit payment is disputed or fails due to insufficient funds, Recurly can handle the chargeback automatically — or notify you so you can process it manually. Configure your preferred approach in Invoice Settings and track all chargeback transactions directly in the Admin Console.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 # Definition
 
-Chargebacks and Late Failures for direct debit in Recurly refer to the process where a customer disputes a direct debit payment or does not have sufficient funds, causing either the funds to be returned to the customer by the bank and/or the merchant to be debited. Recurly supports this functionality for SEPA direct debit through GoCardless gateway.
+<div class="rp-definition">Chargebacks and late failures for direct debit occur when a customer disputes a direct debit payment or has insufficient funds — causing the bank to return funds to the customer and debit the merchant. Recurly supports this functionality for SEPA direct debit through the GoCardless gateway, with two configurable handling modes: automated and manual.</div>
 
 # Key benefits
 
-* **Automated direct debit failure handling:** Simplify your workflow with automated invoicing processing options for Chargebacks and Late Failures.
-* **Flexible management options:** Choose between automated or manual chargeback processing based on your business needs.
-* **Clear and detailed reporting:** Easily track and manage chargeback refund transactions directly within the Recurly admin UI.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-rotate" aria-hidden="true"></i></div>
+    <strong>Automated failure handling</strong>
+    <span>Let Recurly automatically update invoices, generate refund transactions, and adjust subscription states when a chargeback is received.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Flexible management options</strong>
+    <span>Choose between automated or manual chargeback processing to match your business's operational and accounting needs.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-chart-bar" aria-hidden="true"></i></div>
+    <strong>Clear and detailed reporting</strong>
+    <span>Track chargeback refund transactions directly in the Recurly Admin Console using the Chargeback status filter on the Transactions page.</span>
+  </div>
+</div>
 
 # Key details
 
-Recurly provides robust support for handling chargebacks associated with specific direct debit payment methods, namely SEPA. The gateway that supports this functionality within Recurly include GoCardless presently.
+## Chargeback processing modes
 
-To enhance clarity and aid in decision-making for merchants, it's crucial to distinguish between automated and manual chargeback processing in Recurly. Both methods impact the handling of invoices, transactions, and event notifications differently. Understanding these differences will help merchants choose the approach that aligns best with their operational needs.
+Recurly offers two approaches to handling SEPA direct debit chargebacks. Choose based on how much control you want over the process.
 
-#### Automated chargeback handling
+### Automated chargeback handling
 
-* **Invoice Management:** When a chargeback occurs, Recurly automatically updates the original invoice with chargeback details. This ensures clear and accurate reporting within the system.
-* **Transaction Updates:** Recurly reflects chargeback events in real-time, maintaining the accuracy of transaction records.
-* **Subscription Management:** Automated processing adjusts the status of subscriptions based on predefined settings and choices, streamlining subscription and invoice management.
-* **Ideal for:** Merchants who prefer Recurly to manage chargeback events comprehensively, ensuring that their subscription and invoice states are accurately updated with minimal intervention.
+Recurly manages the full chargeback lifecycle — updating invoices, logging transactions, and adjusting subscription states — with minimal intervention required.
 
-#### Manual chargeback processing
+- **Invoice updates:** The original invoice is automatically updated with chargeback details for accurate reporting.
+- **Refund transaction:** Recurly creates a new refund transaction equal to the chargeback amount. This records that funds were reversed by the customer's bank — it doesn't trigger an actual refund request to your gateway.
+- **Subscription management:** Subscription status is adjusted based on your predefined settings.
 
-* **Notification Handling:** Merchants receive notifications of chargeback events, allowing them to handle these instances in their external systems.
-* **Invoice Adjustments:** The responsibility of adjusting the original invoice rests with the merchant. This could involve creating a refund invoice or writing off the charge, based on the business’s practices.
-* **Merchant Control:** This method provides greater control to merchants who wish to handle chargebacks personally, often due to specific accounting or customer service strategies.
-* **Ideal for:** Merchants seeking to manage chargebacks externally, especially those who require customized handling of each case or who integrate chargeback events into broader financial or customer relationship management systems.
+Best for merchants who want Recurly to handle chargeback events end-to-end.
+
+### Manual chargeback processing
+
+Recurly sends a webhook notification when a chargeback is received, and you handle the rest in your own systems.
+
+- **Webhook notification:** Recurly alerts you when a chargeback is initiated — no automatic action is taken on the invoice or transaction.
+- **Invoice adjustments:** You decide how to handle the original invoice — by creating a refund invoice, writing it off, or another method that fits your business practices.
+- **No chargeback filter:** Since no chargeback refund transactions are created, the Chargeback status filter on the Transactions page won't return results.
+
+Best for merchants who need customized handling per case, or who manage chargebacks through external financial or CRM systems.
+
+***
 
 ## Chargeback settings
 
-Within Recurly, you can define how you want to manage direct debit failures through settings available on the invoice settings page.
+Configure your chargeback handling mode at **Configuration → Invoice Templates → Invoice Settings**, then scroll to the **Chargebacks** section.
 
-Find this setting at “Configuration → Invoice Templates → Invoice Settings” and scroll down to “Chargebacks”.
 
-<Image align="center" className="border" border={true} width="90% " src="https://files.readme.io/4d7f6fd-image.png" />
+<Image src="https://files.readme.io/4d7f6fd-image.png" align="center" width="75%" border={true} />
 
-There are two primary options available for handling these types of failures:
 
-#### 1. Create a Refund Transaction When a Chargeback is Received (Default)
+### Option 1: Create a refund transaction when a chargeback is received (default)
 
-With this default setting enabled, Recurly automates the invoicing and status process for you. When a late failure or chargeback notification (via webhook) is received from a payment gateway, Recurly will:
+When enabled, Recurly automates the full invoicing and status process on receipt of a late failure or chargeback webhook from GoCardless:
 
-* **Maintain the Original Transaction Status:** The status of the original transaction that the chargeback is associated with remains unchanged in most cases. For users who are taking advantage of automatic SEPA retries, transactions that fail due to Insufficient Funds will be marked as Past Due. Read more about Automatic SEPA retries here.
-* **Generate a New Refund Transaction:** Recurly will automatically create a new refund invoice. The amount of this transaction will be equal to the chargeback amount. Please note, this does not return funds to your customer via an actual refund transaction request to your gateway, it is indicating that funds were reversed by the customer’s bank.
-* **Update the Original Invoice with Failure / Chargeback Information:** The original invoice associated with the transaction will be updated to include detailed information about the chargeback.
-* **Automatically Expire the Subscription** Please note, this setting is for Card Subscriptions only. It will not have an effect on non-Card subscriptions.
+- The original transaction status remains unchanged in most cases. For merchants using automatic SEPA retries, transactions that fail due to insufficient funds are marked as Past Due.
+- A new refund transaction is created for the chargeback amount. This reflects that funds were reversed by the bank — no refund request is sent to your gateway.
+- The original invoice is updated with detailed chargeback information.
 
-These chargeback refund transactions are easily accessible and can be found on the Transactions page within the Recurly admin UI. To view them, simply select “Chargeback” in the Status filter, and a list of chargeback refund transactions or invoices will be displayed.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The automatic subscription expiry option under this setting applies to card subscriptions only. It has no effect on non-card subscriptions.</div>
+</div>
 
-#### 2. Manually Process Chargebacks
+Chargeback refund transactions are visible on the **Transactions** page — filter by **Chargeback** status to view them.
 
-If you prefer to have more control over the chargeback process, this setting is for you. When this option is selected:
+### Option 2: Manually process chargebacks
 
-* **Receive a Webhook Notification:** Recurly will still send a webhook notification when a chargeback is initiated by a payment gateway.
-* **No Automatic Refund Transaction:** Recurly will not automatically create a refund transaction in response to the chargeback.
-* **No Automatic Action on the Original Invoice:** The original invoice associated with the chargeback will remain unchanged.
+When selected, Recurly sends a webhook notification for each chargeback but takes no automatic action:
 
-With this setting, you will not be able to filter by Chargeback status on the Transactions page since no chargeback refund transactions are created, giving you the flexibility to handle chargebacks in a way that aligns with your internal processes.
+- No refund transaction is created.
+- The original invoice remains unchanged.
+- You handle all invoice adjustments and downstream actions in your own systems.
+
+***
 
 ## Integration notes
 
-### Webhook notifications
+<div class="rp-card">
 
-* Ensure that your systems are set up to receive and process these webhook notifications appropriately.
-* For manual chargeback processing, these webhooks are essential as they alert you that action may be required.
+### Webhooks
+
+Recurly sends a webhook notification for every chargeback event, regardless of your processing mode. For manual processing, these webhooks are the primary trigger for action — make sure your systems are set up to receive and respond to them. For API integrations, update your webhook handling logic to take appropriate action based on chargeback events.
+
+</div>
+
+<div class="rp-card">
 
 ### Refund transactions
 
-* For automated chargeback handling, Recurly creates a refund transaction equal to the chargeback amount. This is separate from the original transaction and is specifically tied to the chargeback.
-* It's crucial to emphasize that this refund transaction is initiated externally to Recurly, and there is no need for an additional action in your gateway. Recurly simply records this event to accurately reflect the chargeback events as they occur.
+For automated handling, the chargeback refund transaction Recurly creates is separate from the original transaction and tied specifically to the chargeback. No additional action is required in your gateway — Recurly records the event to reflect the bank reversal accurately.
 
-### Invoice updates
+</div>
 
-* With automated chargeback handling, Recurly adds chargeback information to the original invoice. This is designed to provide clear and detailed reporting within Recurly.
-* If you are using manual chargeback processing, you will need to decide how you want to handle the original invoice based on the chargeback. This may involve creating a refund invoice or writing off the original invoice, depending on your business practices.
+<div class="rp-card">
 
-### Multi-currency handling
+### Multi-currency
 
-* If your Recurly site is set up to handle multiple currencies, ensure that your chargeback handling settings and processes are compatible with this setup.
-* Chargebacks will be processed in the currency of the original transaction.
+Chargebacks are processed in the currency of the original transaction. If your site handles multiple currencies, confirm your chargeback handling settings are compatible with each currency your customers use.
 
-### API Integration
+</div>
 
-* If you are using Recurly’s API, consider how chargebacks for direct debit payments will be handled programmatically. You may need to update your API integration to handle chargeback webhooks and take appropriate actions based on those webhooks.
+<br />
