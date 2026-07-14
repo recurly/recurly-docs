@@ -118,4 +118,4 @@ For Rails applications with `protect_from_forgery` enabled, disable forgery prot
 
 ## Developer documentation
 
-For full implementation details, see the <a href="https://docs.recurly.com/recurly-subscriptions/v1.3/docs/overview-webhooks#/" target="_blank">Webhooks developer documentation</a>.
+For full implementation details, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/overview-webhooks#/" target="_blank">Webhooks developer documentation</a>.
