@@ -20,24 +20,20 @@ next:
 
 ### Plan availability
 
-**Sandbox and Developer Modes**
-In sandbox and developer modes, you have the ability to add up to 5 custom fields to your account. This allows you to test the custom field feature and ensure that your integrations are effectively utilizing this information.
-**Starter Plan**
-The Starter plan of Recurly does not support custom fields. If you've enabled custom fields in Sandbox mode and wish to transition to the Starter plan, you'll need to remove existing custom fields before proceeding.
-**Pro Plan**
-Recurly's Pro plan users can incorporate up to 5 custom fields, offering added flexibility to mold your account and data to better suit your business operations.
-**Elite Plan**
-For those on the Recurly Elite plan, the allowance extends to 10 custom fields. This expanded capacity provides a broader scope for customization, ensuring your data management aligns perfectly with your business needs.
+**Sandbox and Developer Modes:&#x20;**&#x49;n sandbox and developer modes, you have the ability to add up to 5 custom fields to your account. This allows you to test the custom field feature and ensure that your integrations are effectively utilizing this information.<br />**Starter Plan:&#x20;**&#x54;he Starter plan of Recurly does not support custom fields. If you've enabled custom fields in Sandbox mode and wish to transition to the Starter plan, you'll need to remove existing custom fields before proceeding.<br />**Pro Plan:&#x20;**&#x52;ecurly's Pro plan users can incorporate up to 5 custom fields, offering added flexibility to mold your account and data to better suit your business operations.<br />**Elite Plan:&#x20;**&#x46;or those on the Recurly Elite plan, the allowance extends to 10 custom fields. This expanded capacity provides a broader scope for customization, ensuring your data management aligns perfectly with your business needs.
 
 # Definition
 
 In Recurly, you have the option to create custom fields for various objects such as Account, Charges, Item, Plan, and Subscription. These custom fields serve as a way to capture and store additional information related to customers, their subscription objects, item attributes, or criteria for offering plans.
+
 The creation of custom fields is done through the Recurly Admin Console (UI), where you define the specific attributes and properties of each custom field. Once defined, you can assign, edit, or view these custom fields either through the API or the Recurly Admin Console (UI).
+
 By utilizing custom fields, you can tailor your Recurly experience to match your unique business needs, ensuring that you have access to the relevant data and insights that drive your operations forward. Whether you want to track specific customer information, add extra details to your item catalog, or enable targeted plan offerings, custom fields provide the flexibility to accommodate your requirements.
 
 # Creating and editing custom field definitions
 
 Users with the Configuration permission within their role have the ability to create and edit custom field definitions on their Recurly site. These definitions allow you to collect custom field values for accounts, charges, items, plans, or subscriptions.
+
 To create a custom field definition, navigate to Configuration → Custom Fields → Create Custom Field.
 
 
@@ -85,11 +81,13 @@ To delete a custom field definition, follow these steps:
 # Custom fields on an account
 
 Custom Fields on an Account allow you to collect customer-specific information and add context to the Account object. You can create custom field values to track data such as subscriber ID from other business systems, sales representative name, channel partner name, subscriber segment, or subscriber region. These custom fields provide valuable insights and help you better understand and categorize your customer accounts.
+
 When defining an account custom field object, if you selected the **Editable in the admin console** option, you can set the custom field value when creating or editing an account.  Once the account is created or updated, the custom field and its value will appear within Account Information.
 
 # Custom fields on charges
 
 Custom Fields on Charges allow you to set custom values on non-subscription line item charges or credits. This feature enables you to add additional context for charges and even allows you to conditionally tailor your email communications based on these custom field values.
+
 When defining the custom field object, if you selected the **Able to be set in the admin console**option, you can set the custom field value when creating a charge on the Add Charge page.  The custom field and its value can be viewed via an API call.
 
 # Custom fields on a subscription
