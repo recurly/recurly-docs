@@ -33,7 +33,7 @@ metadata:
 
 <ul class="rp-list">
   <li>If only a gateway token is present, gateway failover to other providers is not possible.</li>
-  <li>Imported tokens typically don't display full payment method details and are treated as generic tokens. This includes tokens brought in through Professional Services or sent via API without using Recurly.js or standard Recurly API flows. Generic and imported tokens may not support some behaviours available to standard payment methods.</li>
+  <li>Imported tokens on a handful of gateways typically don't display full payment method details and are treated as generic tokens. This includes tokens brought in through Professional Services or sent via API without using Recurly.js or standard Recurly API flows. Generic and imported tokens may not support some behaviours available to standard payment methods. Exceptions are: Stripe, Adyen, Braintree -- speak to Support about enabling our Token Backfill behavior.</li>
   <li>If only a gateway token is present for cards (common with imports), Recurly Account Updater cannot be used. Check with your gateway provider about Account Updater availability.</li>
 </ul>
 
