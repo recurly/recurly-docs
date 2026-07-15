@@ -7,7 +7,7 @@ excerpt: >-
 deprecated: false
 hidden: false
 metadata:
-  title: Custom Fields
+  title: Custom fields
   description: >-
     Dive into Recurly's Custom Fields to personalize your data, enhancing
     account, charge, item, plan, and subscription details for a tailored
