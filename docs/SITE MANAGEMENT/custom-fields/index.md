@@ -20,7 +20,13 @@ next:
 
 ### Plan availability
 
-**Sandbox and Developer Modes:&#x20;**&#x49;n sandbox and developer modes, you have the ability to add up to 5 custom fields to your account. This allows you to test the custom field feature and ensure that your integrations are effectively utilizing this information.<br />**Starter Plan:&#x20;**&#x54;he Starter plan of Recurly does not support custom fields. If you've enabled custom fields in Sandbox mode and wish to transition to the Starter plan, you'll need to remove existing custom fields before proceeding.<br />**Pro Plan:&#x20;**&#x52;ecurly's Pro plan users can incorporate up to 5 custom fields, offering added flexibility to mold your account and data to better suit your business operations.<br />**Elite Plan:&#x20;**&#x46;or those on the Recurly Elite plan, the allowance extends to 10 custom fields. This expanded capacity provides a broader scope for customization, ensuring your data management aligns perfectly with your business needs.
+**Sandbox and Developer Modes:&#x20;**&#x49;n sandbox and developer modes, you have the ability to add up to 5 custom fields to your account. This allows you to test the custom field feature and ensure that your integrations are effectively utilizing this information.
+
+**Starter Plan:&#x20;**&#x54;he Starter plan of Recurly does not support custom fields. If you've enabled custom fields in Sandbox mode and wish to transition to the Starter plan, you'll need to remove existing custom fields before proceeding.
+
+**Pro Plan:&#x20;**&#x52;ecurly's Pro plan users can incorporate up to 5 custom fields, offering added flexibility to mold your account and data to better suit your business operations.
+
+**Elite Plan:&#x20;**&#x46;or those on the Recurly Elite plan, the allowance extends to 10 custom fields. This expanded capacity provides a broader scope for customization, ensuring your data management aligns perfectly with your business needs.
 
 # Definition
 
