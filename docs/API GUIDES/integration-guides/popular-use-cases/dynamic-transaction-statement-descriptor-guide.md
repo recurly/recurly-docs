@@ -4,7 +4,7 @@ excerpt: >-
   Customize your transaction descriptors on one-time and subscription
   transactions using the Recurly V3 API.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
