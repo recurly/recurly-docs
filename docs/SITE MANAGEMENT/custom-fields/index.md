@@ -74,9 +74,8 @@ To delete a custom field definition, follow these steps:
 3. Hover over the row of the custom field you'd like to delete, and on the right side of the table, select "Delete."
 4. Enter the value you noted in the previous step.
 5. Once entered, the "Confirm" button will become enabled.
-6. Review the consequences of deleting the custom field definition:
-   1. Deleting a custom field definition from your site will cause all associated custom field data to be permanently deleted. For example, if you are storing a custom field for "Sales Rep" that is populated with names on 100 accounts, deleting the "Sales Rep" custom field definition will result in the loss of sales representative data for those 100 accounts.
-      > **Note:** This action is irreversible, and the deletion will occur immediately upon pressing the "Confirm" button. Ensure that you genuinely want to delete the field before proceeding.
+
+   **Note:&#x20;**&#x44;eleting a custom field definition from your site will cause all associated custom field data to be permanently deleted. For example, if you are storing a custom field for "Sales Rep" that is populated with names on 100 accounts, deleting the "Sales Rep" custom field definition will result in the loss of sales representative data for those 100 accounts.
 
 # Custom fields on an account
 
