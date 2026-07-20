@@ -38,23 +38,23 @@ Only "soft" declines (Insufficient Funds, as an example) can be retried (without
 
 ## Visa Retry Limitations
 
-Visa allows re-attempts against _soft_ declined transactions up to **15 times within a 30 day period**. In other words, after an initial decline, Recurly can and will retry the transaction up to 15 times before ceasing attempts.
+Visa allows re-attempts against _soft_ declined transactions up to **20 times within a 30 day period**. In other words, after an initial decline, Recurly can and will retry the transaction up to 20 times before ceasing attempts for Category 2 through 4 soft-declines.
 
 ## MasterCard Retry Limitations
 
 MasterCard is a bit more complicated. MasterCard instructs merchants not to retry a transaction for 24 hours when the payment has resulted in 10 declines. After that 24 hour period, retries can resume _but_ must abide by these restrictions:
 
-* No more than 35 failed attempts on the same card / same merchant in a 30 day period
-* No more than 7 retries in a single day
+- No more than 35 failed attempts on the same card / same merchant in a 30 day period
+- No more than 7 retries in a single day
 
 ## General Retry Limitations
 
 The system will cease attempts in other scenarios as well:
 
-* A retry results in an approval. No further retries will be attempted after an approval.
-* A hard decline is returned by the gateway. If the response from the gateway _changes_ from a soft to a hard decline (for example, if the customer closed their account within the retry period), then Recurly will no longer attempt a payment against this card.
-* The Invoice is manually closed or the subscription expired. In this case, Recurly will no longer attempt to recover payments.
-* The billing information is updated. If the card being retried is updated, we will no longer attempt to recover funds from the previous payment method.
+- A retry results in an approval. No further retries will be attempted after an approval.
+- A hard decline is returned by the gateway. If the response from the gateway _changes_ from a soft to a hard decline (for example, if the customer closed their account within the retry period), then Recurly will no longer attempt a payment against this card.
+- The Invoice is manually closed or the subscription expired. In this case, Recurly will no longer attempt to recover payments.
+- The billing information is updated. If the card being retried is updated, we will no longer attempt to recover funds from the previous payment method.
 
 ## Network Advice Codes
 
@@ -83,3 +83,5 @@ See below for Recurly's behavior when each individual code is received on suppor
 | 41          | Non-reloadable Prepaid Card                                   | Can occur on approvals or declines. Invoice will not retry unless Billing Info is updated manually.              |
 | 42          | Mastercard refused this transaction due to a sanctions match. | Invoice will not retry unless Billing Info is updated manually or via Account Updater                            |
 | 43          | Consumer used a multi-use virtual card.                       | Can occur on approvals or declines. If declined, Invoice will not retry unless Billing Info is updated manually. |
+
+<br />
