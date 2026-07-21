@@ -670,10 +670,6 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{billing_phone}}</code></td><td>Billing phone number</td></tr>
   <tr><td><code>{{billing_internal_payment_method}}</code></td><td>Raw payment method type string</td></tr>
   <tr><td><code>{{billing_name_on_account}}</code></td><td>Name on the bank account</td></tr>
-  <tr><td><code>{{billing_last_two}}</code></td><td>Last 2 characters of IBAN / BACS account number</td></tr>
-  <tr><td><code>{{billing_sort_code}}</code></td><td>BACS sort code</td></tr>
-  <tr><td><code>{{billing_bsb_code}}</code></td><td>BECS BSB code</td></tr>
-  <tr><td><code>{{billing_routing_number_bank}}</code></td><td>Bank name</td></tr>
 </table>
 
 ## Invoice details
