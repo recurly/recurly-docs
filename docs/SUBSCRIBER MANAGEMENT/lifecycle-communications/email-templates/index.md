@@ -668,7 +668,6 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{billing_has_active_mandate}}</code></td><td>Use to conditionally display a sentence containing <code>{{direct_debit_mandate_id}}</code> only when a mandate exists</td></tr>
   <tr><td><code>{{billing_full_name}}</code></td><td>Full name on billing info</td></tr>
   <tr><td><code>{{billing_phone}}</code></td><td>Billing phone number</td></tr>
-  <tr><td><code>{{billing_internal_payment_method}}</code></td><td>Raw payment method type string</td></tr>
   <tr><td><code>{{billing_name_on_account}}</code></td><td>Name on the bank account</td></tr>
 </table>
 
