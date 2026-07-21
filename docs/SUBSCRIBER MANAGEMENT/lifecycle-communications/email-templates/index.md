@@ -727,16 +727,11 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{invoice_discounts}}</code></td><td>Array of coupon redemption objects applied to invoice</td></tr>
   <tr><td><code>{{invoice_due?}}</code></td><td>True if invoice is collectible / due</td></tr>
   <tr><td><code>{{invoice_auto_collecting?}}</code></td><td>True if invoice is set to auto-collect</td></tr>
-  <tr><td><code>{{invoice_first_ach_collection_attempt?}}</code></td><td>True if this is the first ACH collection attempt on this invoice</td></tr>
   <tr><td><code>{{invoice_credit_payments?}}</code></td><td>True if invoice has credit payments applied</td></tr>
   <tr><td><code>{{invoice_total_credit_payments}}</code></td><td>Total credit payments applied (Credit Invoices feature)</td></tr>
   <tr><td><code>{{invoice_total_credit_payments_currency}}</code></td><td>Currency code</td></tr>
   <tr><td><code>{{invoice_has_transaction?}}</code></td><td>True if invoice has at least one cash payment</td></tr>
-  <tr><td><code>{{invoice_has_many_transactions?}}</code></td><td>True if invoice has more than one cash payment</td></tr>
-  <tr><td><code>{{invoice_total_transactions}}</code></td><td>Total of all cash payment transactions</td></tr>
-  <tr><td><code>{{invoice_total_transactions_currency}}</code></td><td>Currency code</td></tr>
   <tr><td><code>{{invoice_transactions_manual?}}</code></td><td>True if all cash payments were manually entered</td></tr>
-  <tr><td><code>{{invoice_transactions_ach?}}</code></td><td>True if all cash payments are ACH</td></tr>
   <tr><td><code>{{invoice_transactions_voided?}}</code></td><td>True if all cash payments are voided (and none are refunds)</td></tr>
   <tr><td><code>{{invoice_balance}}</code></td><td>Current balance on invoice</td></tr>
   <tr><td><code>{{invoice_balance_currency}}</code></td><td>Currency code</td></tr>
