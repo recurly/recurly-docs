@@ -629,10 +629,7 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{coupons}}</code></td><td>Returns coupon information if the account has active coupons</td></tr>
   <tr><td><code>{{account_vat_number}}</code></td><td>Relevant for customers issued manual invoices or when your Tax Settings are configured to use the Account Info address on the invoice</td></tr>
   <tr><td><code>{{account_phone}}</code></td><td>Phone number</td></tr>
-  <tr><td><code>{{account_has_coupon?}}</code></td><td>True if account has active coupon redemptions (deprecated)</td></tr>
   <tr><td><code>{{account_hosted_url}}</code></td><td>Hosted account URL (no token)</td></tr>
-  <tr><td><code>{{account_password_reset_url}}</code></td><td>Hosted password reset URL using account's perishable token</td></tr>
-  <tr><td><code>{{account_password_create_url}}</code></td><td>Alias for account_password_reset_url</td></tr>
   <tr><td><code>{{account_has_billing_info?}}</code></td><td>True if account has billing info on file</td></tr>
 </table>
 
