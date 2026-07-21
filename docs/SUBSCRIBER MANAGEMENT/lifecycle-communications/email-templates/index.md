@@ -730,16 +730,10 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{invoice_credit_payments?}}</code></td><td>True if invoice has credit payments applied</td></tr>
   <tr><td><code>{{invoice_total_credit_payments}}</code></td><td>Total credit payments applied (Credit Invoices feature)</td></tr>
   <tr><td><code>{{invoice_total_credit_payments_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{invoice_has_transaction?}}</code></td><td>True if invoice has at least one cash payment</td></tr>
-  <tr><td><code>{{invoice_transactions_manual?}}</code></td><td>True if all cash payments were manually entered</td></tr>
-  <tr><td><code>{{invoice_transactions_voided?}}</code></td><td>True if all cash payments are voided (and none are refunds)</td></tr>
   <tr><td><code>{{invoice_balance}}</code></td><td>Current balance on invoice</td></tr>
   <tr><td><code>{{invoice_balance_currency}}</code></td><td>Currency code</td></tr>
   <tr><td><code>{{invoice_credit_to_account}}</code></td><td>Carryforward credit amount (from credit memo)</td></tr>
   <tr><td><code>{{invoice_credit_to_account_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{invoice_type_charge?}}</code></td><td>True if invoice is a charge invoice</td></tr>
-  <tr><td><code>{{invoice_type_credit?}}</code></td><td>True if invoice is a credit invoice</td></tr>
-  <tr><td><code>{{invoice_type_legacy?}}</code></td><td>True if invoice is legacy type</td></tr>
   <tr><td><code>{{invoice_has_bill_to_address?}}</code></td><td>True if a bill-to address is present on the invoice</td></tr>
   <tr><td><code>{{invoice_has_ship_to_address?}}</code></td><td>True if a ship-to address is present on the invoice</td></tr>
   <tr><td><code>{{invoice_guest_view_url}}</code></td><td>Auth-tokenized URL for hosted invoice guest view</td></tr>
