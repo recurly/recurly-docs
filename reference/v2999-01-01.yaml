@@ -2867,7 +2867,10 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
         '422':
-          description: Invalid request parameters.
+          description: >-
+            Invalid request parameters. Check that redeem_by.type,
+            interval_unit, and interval_amount are consistent with the coupon
+            type.
           content:
             application/json:
               schema:
@@ -2940,7 +2943,10 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
         '422':
-          description: Invalid request parameters
+          description: >-
+            Invalid request parameters. Check that redeem_by.type,
+            interval_unit, and interval_amount are consistent with the coupon
+            type.
           content:
             application/json:
               schema:
@@ -11421,12 +11427,7 @@ components:
           description: Description of the coupon on the invoice.
           maxLength: 255
         redeem_by:
-          type: string
-          title: Redeem by
-          description: >-
-            The date and time the coupon will expire and can no longer be
-            redeemed. Time is always 11:59:59, the end-of-day Pacific time.
-          format: date-time
+          $ref: '#/components/schemas/CouponRedeemBy'
         created_at:
           type: string
           title: Created at
@@ -11988,12 +11989,41 @@ components:
           title: Invoice description
           description: Description of the coupon on the invoice.
           maxLength: 255
-        redeem_by_date:
+        redeem_by:
+          $ref: '#/components/schemas/CouponRedeemBy'
+    CouponRedeemBy:
+      type: object
+      title: Redeem by
+      description: |
+        Defines when the coupon expires. Contains a `type` property and optional
+        fields depending on type: `value` (for `type=date`) or `interval_unit`
+        and `interval_amount` (for `type=window`).
+      properties:
+        type:
           type: string
-          title: Redeem by
-          description: >-
-            The date and time the coupon will expire and can no longer be
-            redeemed. Time is always 11:59:59, the end-of-day Pacific time.
+          enum:
+            - anytime
+            - date
+            - window
+        value:
+          type: string
+          title: Redeem by date
+          description: Fixed expiry date. Present only when `type=date`.
+          format: date-time
+        interval_unit:
+          type: string
+          title: Redeem by interval unit
+          description: Unit of the relative redemption window. Bulk coupons only.
+          enum:
+            - day
+            - week
+            - month
+            - year
+        interval_amount:
+          type: integer
+          title: Redeem by interval amount
+          description: Quantity of interval_unit. Present only when `type=window`.
+          minimum: 1
     CreditPayment:
       type: object
       properties:
@@ -19373,6 +19403,15 @@ components:
             The date and time the coupon was expired early or reached its
             `max_redemptions`.
           format: date-time
+        redeem_by_date:
+          type: string
+          title: Redeem by
+          description: >-
+            Absolute expiry set at code-generation time. Null for Anytime
+            coupons and for Specific Date coupons (those inherit the parent
+            coupon's redeem_by).
+          format: date-time
+          readOnly: true
     UniqueCouponCodeList:
       type: object
       properties:
