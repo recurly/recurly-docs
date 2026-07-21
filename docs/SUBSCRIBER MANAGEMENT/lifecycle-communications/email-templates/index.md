@@ -520,34 +520,48 @@ Email parameters are placeholders that automatically pull in personalized detail
 For merchants using Multiple Business Entities, the company value merged into each email parameter reflects the Business Entity applied to the associated invoice, or the overriding Business Entity applied to the customer's account.
 
 <table class="rp-params">
-  <tr class="rp-thead-row"><td>Parameter</td></tr>
-  <tr><td><code>{{company_name}}</code></td></tr>
-  <tr><td><code>{{company_email}}</code></td></tr>
-  <tr><td><code>{{company_url}}</code></td></tr>
-  <tr><td><code>{{company_hosted_account_management_enabled?}}</code></td></tr>
-  <tr><td><code>{{company_hosted_account_management_full_access?}}</code></td></tr>
-  <tr><td><code>{{company_hosted_account_management_allow_pay_invoice?}}</code></td></tr>
-  <tr><td><code>{{company_address1}}</code></td></tr>
-  <tr><td><code>{{company_address2}}</code></td></tr>
-  <tr><td><code>{{company_city}}</code></td></tr>
-  <tr><td><code>{{company_state}}</code></td></tr>
-  <tr><td><code>{{company_zip}}</code></td></tr>
-  <tr><td><code>{{company_country}}</code></td></tr>
-  <tr><td><code>{{company_full_address}}</code></td></tr>
-  <tr><td><code>{{company_phone_number}}</code></td></tr>
-  <tr><td><code>{{company_vat_number}}</code></td></tr>
-  <tr><td><code>{{company_registration_number}}</code></td></tr>
+  <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
+  <tr><td><code>{{company_name}}</code></td><td>Business entity legal name</td></tr>
+  <tr><td><code>{{company_email}}</code></td><td>Business entity billing contact email</td></tr>
+  <tr><td><code>{{company_url}}</code></td><td>Site client URL</td></tr>
+  <tr><td><code>{{company_hosted_account_management_enabled?}}</code></td><td>True if hosted account management (HAM) is enabled</td></tr>
+  <tr><td><code>{{company_hosted_account_management_full_access?}}</code></td><td>True if HAM is set to full access mode</td></tr>
+  <tr><td><code>{{company_hosted_account_management_allow_pay_invoice?}}</code></td><td>True if HAM allows subscribers to pay invoices</td></tr>
+  <tr><td><code>{{company_address1}}</code></td><td>Invoice display address line 1</td></tr>
+  <tr><td><code>{{company_address2}}</code></td><td>Address line 2</td></tr>
+  <tr><td><code>{{company_city}}</code></td><td>City</td></tr>
+  <tr><td><code>{{company_state}}</code></td><td>State</td></tr>
+  <tr><td><code>{{company_zip}}</code></td><td>Zip code</td></tr>
+  <tr><td><code>{{company_country}}</code></td><td>Country code</td></tr>
+  <tr><td><code>{{company_full_address}}</code></td><td>Full formatted company address — combined by Emaily</td></tr>
+  <tr><td><code>{{company_phone_number}}</code></td><td>Phone number</td></tr>
+  <tr><td><code>{{company_vat_number}}</code></td><td>Default VAT number</td></tr>
+  <tr><td><code>{{company_registration_number}}</code></td><td>Default registration number</td></tr>
+  <tr><td><code>{{company_subdomain}}</code></td><td>Site subdomain</td></tr>
+  <tr><td><code>{{company_merchant_name}}</code></td><td>DBA name if set, otherwise business entity name</td></tr>
+</table>
+
+## Business entity
+
+<table class="rp-params">
+  <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
+  <tr><td><code>{{business_entity_code}}</code></td><td>Business entity code (entity_code)</td></tr>
 </table>
 
 ## Subscription plan details
 
 <table class="rp-params">
   <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
-  <tr><td><code>{{plan_name}}</code></td><td></td></tr>
-  <tr><td><code>{{plan_code}}</code></td><td></td></tr>
-  <tr><td><code>{{plan_description}}</code></td><td></td></tr>
+  <tr><td><code>{{plan_name}}</code></td><td>Plan display name</td></tr>
+  <tr><td><code>{{plan_code}}</code></td><td>Plan code</td></tr>
+  <tr><td><code>{{plan_description}}</code></td><td>Plan description</td></tr>
   <tr><td><code>{{plan_per_interval}}</code></td><td>The billing period interval, e.g., "per month" or "per 2 weeks"</td></tr>
   <tr><td><code>{{plan_trial_interval}}</code></td><td>The trial period, e.g., "1 month" or "2 weeks"</td></tr>
+  <tr><td><code>{{plan_interval_unit}}</code></td><td>Billing interval unit (e.g. "months")</td></tr>
+  <tr><td><code>{{plan_interval_length}}</code></td><td>Billing interval length (e.g. 1)</td></tr>
+  <tr><td><code>{{plan_trial_interval_unit}}</code></td><td>Trial period unit</td></tr>
+  <tr><td><code>{{plan_trial_interval_length}}</code></td><td>Trial period length</td></tr>
+  <tr><td><code>{{plan_custom_fields}}</code></td><td>Array of <code>{name, value}</code> plan custom fields</td></tr>
 </table>
 
 ## Shipping address
@@ -555,19 +569,21 @@ For merchants using Multiple Business Entities, the company value merged into ea
 <table class="rp-params">
   <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
   <tr><td><code>{{subscription_has_shipping_address?}}</code></td><td>Returns <code>true</code> if the subscription has a shipping address</td></tr>
-  <tr><td><code>{{subscription_shipping_nickname}}</code></td><td></td></tr>
-  <tr><td><code>{{subscription_shipping_first_name}}</code></td><td></td></tr>
-  <tr><td><code>{{subscription_shipping_last_name}}</code></td><td></td></tr>
-  <tr><td><code>{{subscription_shipping_address1}}</code></td><td></td></tr>
-  <tr><td><code>{{subscription_shipping_address2}}</code></td><td></td></tr>
-  <tr><td><code>{{subscription_shipping_city}}</code></td><td></td></tr>
-  <tr><td><code>{{subscription_shipping_state}}</code></td><td></td></tr>
-  <tr><td><code>{{subscription_shipping_zip}}</code></td><td></td></tr>
-  <tr><td><code>{{subscription_shipping_country}}</code></td><td></td></tr>
-  <tr><td><code>{{subscription_shipping_phone}}</code></td><td></td></tr>
-  <tr><td><code>{{subscription_shipping_email}}</code></td><td></td></tr>
-  <tr><td><code>{{subscription_shipping_vat_number}}</code></td><td></td></tr>
+  <tr><td><code>{{subscription_shipping_nickname}}</code></td><td>Shipping address nickname</td></tr>
+  <tr><td><code>{{subscription_shipping_first_name}}</code></td><td>Shipping address first name</td></tr>
+  <tr><td><code>{{subscription_shipping_last_name}}</code></td><td>Shipping address last name</td></tr>
+  <tr><td><code>{{subscription_shipping_address1}}</code></td><td>Address line 1</td></tr>
+  <tr><td><code>{{subscription_shipping_address2}}</code></td><td>Address line 2</td></tr>
+  <tr><td><code>{{subscription_shipping_city}}</code></td><td>City</td></tr>
+  <tr><td><code>{{subscription_shipping_state}}</code></td><td>State</td></tr>
+  <tr><td><code>{{subscription_shipping_zip}}</code></td><td>Zip code</td></tr>
+  <tr><td><code>{{subscription_shipping_country}}</code></td><td>Country code</td></tr>
+  <tr><td><code>{{subscription_shipping_phone}}</code></td><td>Shipping phone number</td></tr>
+  <tr><td><code>{{subscription_shipping_email}}</code></td><td>Shipping address email</td></tr>
+  <tr><td><code>{{subscription_shipping_vat_number}}</code></td><td>VAT number on shipping address</td></tr>
   <tr><td><code>{{subscription_full_shipping_address}}</code></td><td>Full shipping address in one string, separated by commas</td></tr>
+  <tr><td><code>{{subscription_shipping_company}}</code></td><td>Shipping address company</td></tr>
+  <tr><td><code>{{subscription_shipping_full_address}}</code></td><td>Full formatted shipping address — combined by Emaily. This is the field name used in the codebase; the documented <code>{{subscription_full_shipping_address}}</code> above maps to the same value</td></tr>
 </table>
 
 ## Subscription alteration
@@ -576,50 +592,63 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
   <tr><td><code>{{change_at_renewal?}}</code></td><td>Returns <code>true</code> if the change timeframe is renewal or term_end, or if the timeframe is bill_date and total_billing_cycles is one</td></tr>
   <tr><td><code>{{change_at_bill_date?}}</code></td><td>Returns <code>true</code> if the change timeframe is bill_date AND total_billing_cycles is greater than one</td></tr>
-  <tr><td><code>{{change_plan_name}}</code></td><td></td></tr>
-  <tr><td><code>{{change_plan_description}}</code></td><td></td></tr>
-  <tr><td><code>{{change_plan_per_interval}}</code></td><td></td></tr>
-  <tr><td><code>{{change_subscription_quantity}}</code></td><td></td></tr>
-  <tr><td><code>{{change_subscription_total_amount}}</code></td><td></td></tr>
-  <tr><td><code>{{change_subscription_unit_amount}}</code></td><td></td></tr>
-  <tr><td><code>{{change_subscription_add_ons}}</code></td><td></td></tr>
+  <tr><td><code>{{change_plan_name}}</code></td><td>New plan name from the pending change</td></tr>
+  <tr><td><code>{{change_plan_description}}</code></td><td>New plan description</td></tr>
+  <tr><td><code>{{change_plan_per_interval}}</code></td><td>Human-readable new plan interval (e.g. "per month") — computed by Emaily</td></tr>
+  <tr><td><code>{{change_subscription_quantity}}</code></td><td>Subscription quantity after the change</td></tr>
+  <tr><td><code>{{change_subscription_total_amount}}</code></td><td>Total subscription amount after the change</td></tr>
+  <tr><td><code>{{change_subscription_unit_amount}}</code></td><td>Unit amount after the change</td></tr>
+  <tr><td><code>{{change_subscription_add_ons}}</code></td><td>Block of add-ons included in the pending change — what the subscription will have after the change activates. Use within a <code>{{#change_subscription_add_ons}} … {{/change_subscription_add_ons}}</code> block, referencing the same add-on fields as <code>subscription_add_ons</code></td></tr>
+  <tr><td><code>{{change_plan_interval_unit}}</code></td><td>New plan's billing interval unit</td></tr>
+  <tr><td><code>{{change_plan_interval_length}}</code></td><td>New plan's billing interval length</td></tr>
+  <tr><td><code>{{change_subscription_total_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{change_subscription_unit_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{change_issued_credit_invoice?}}</code></td><td>True if a credit invoice was issued as part of this change</td></tr>
+  <tr><td><code>{{change_issued_invoice?}}</code></td><td>True if a charge invoice was issued as part of this change</td></tr>
 </table>
 
 ## Account details
 
 <table class="rp-params">
   <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
-  <tr><td><code>{{account_code}}</code></td><td></td></tr>
-  <tr><td><code>{{account_username}}</code></td><td></td></tr>
-  <tr><td><code>{{account_first_name}}</code></td><td></td></tr>
-  <tr><td><code>{{account_last_name}}</code></td><td></td></tr>
-  <tr><td><code>{{account_full_name}}</code></td><td></td></tr>
-  <tr><td><code>{{account_company_name}}</code></td><td></td></tr>
-  <tr><td><code>{{account_email}}</code></td><td></td></tr>
-  <tr><td><code>{{account_full_address}}</code></td><td></td></tr>
-  <tr><td><code>{{account_address1}}</code></td><td></td></tr>
-  <tr><td><code>{{account_address2}}</code></td><td></td></tr>
-  <tr><td><code>{{account_city}}</code></td><td></td></tr>
+  <tr><td><code>{{account_code}}</code></td><td>Unique account code identifier</td></tr>
+  <tr><td><code>{{account_username}}</code></td><td>Account username</td></tr>
+  <tr><td><code>{{account_first_name}}</code></td><td>First name</td></tr>
+  <tr><td><code>{{account_last_name}}</code></td><td>Last name</td></tr>
+  <tr><td><code>{{account_full_name}}</code></td><td>Full name — combined by Emaily from first + last</td></tr>
+  <tr><td><code>{{account_company_name}}</code></td><td>Company name on account</td></tr>
+  <tr><td><code>{{account_email}}</code></td><td>Account email address</td></tr>
+  <tr><td><code>{{account_full_address}}</code></td><td>Full formatted address — combined by Emaily</td></tr>
+  <tr><td><code>{{account_address1}}</code></td><td>Street address line 1</td></tr>
+  <tr><td><code>{{account_address2}}</code></td><td>Street address line 2</td></tr>
+  <tr><td><code>{{account_city}}</code></td><td>City</td></tr>
   <tr><td><code>{{account_state}}</code></td><td>State or province</td></tr>
   <tr><td><code>{{account_zip}}</code></td><td>Zip or postal code</td></tr>
-  <tr><td><code>{{account_country}}</code></td><td></td></tr>
+  <tr><td><code>{{account_country}}</code></td><td>Country code</td></tr>
   <tr><td><code>{{account_hosted_maintenance_url}}</code></td><td>URL with an embedded authorization token to automatically log in to your hosted account management page. If hosted account management is set to "Guest View Only," this returns the Guest View Edit Billing Info URL. If disabled, this URL returns a 404. To generate the Guest View Edit Billing Info URL correctly, remove the <code>{{#company_hosted_account_management_full_access?}}</code> and <code>{{/company_hosted_account_management_full_access?}}</code> conditional tags from the template</td></tr>
   <tr><td><code>{{coupons}}</code></td><td>Returns coupon information if the account has active coupons</td></tr>
   <tr><td><code>{{account_vat_number}}</code></td><td>Relevant for customers issued manual invoices or when your Tax Settings are configured to use the Account Info address on the invoice</td></tr>
+  <tr><td><code>{{account_phone}}</code></td><td>Phone number</td></tr>
+  <tr><td><code>{{account_has_coupon?}}</code></td><td>True if account has active coupon redemptions (deprecated)</td></tr>
+  <tr><td><code>{{account_hosted_url}}</code></td><td>Hosted account URL (no token)</td></tr>
+  <tr><td><code>{{account_password_reset_url}}</code></td><td>Hosted password reset URL using account's perishable token</td></tr>
+  <tr><td><code>{{account_password_create_url}}</code></td><td>Alias for account_password_reset_url</td></tr>
+  <tr><td><code>{{account_has_billing_info?}}</code></td><td>True if account has billing info on file</td></tr>
 </table>
 
 ## Coupon parameters
 
 <table class="rp-params">
   <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
-  <tr><td><code>{{coupon_code}}</code></td><td></td></tr>
-  <tr><td><code>{{coupon_name}}</code></td><td></td></tr>
+  <tr><td><code>{{coupon_code}}</code></td><td>Coupon code</td></tr>
+  <tr><td><code>{{coupon_name}}</code></td><td>Coupon display name</td></tr>
   <tr><td><code>{{coupon_lifetime}}</code></td><td>A string of either: <code>Forever</code>, <code>Single use</code>, or <code>#months</code></td></tr>
   <tr><td><code>{{coupon_discount_percent?}}</code></td><td>Returns <code>true</code> if this coupon is a percentage-off discount</td></tr>
   <tr><td><code>{{coupon_discount_amount?}}</code></td><td>Returns <code>true</code> if this coupon is an amount-off discount</td></tr>
-  <tr><td><code>{{coupon_discount_percent}}</code></td><td></td></tr>
-  <tr><td><code>{{coupon_discount_amount}}</code></td><td></td></tr>
-  <tr><td><code>{{coupon_description}}</code></td><td></td></tr>
+  <tr><td><code>{{coupon_discount_percent}}</code></td><td>Discount percentage</td></tr>
+  <tr><td><code>{{coupon_discount_amount}}</code></td><td>Discount amount in the redemption's currency</td></tr>
+  <tr><td><code>{{coupon_description}}</code></td><td>Coupon invoice description</td></tr>
+  <tr><td><code>{{coupon_discount_amount_currency}}</code></td><td>Currency code for discount amount</td></tr>
 </table>
 
 ## Billing information
@@ -629,26 +658,34 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{billing_payment_method}}</code></td><td>e.g., Credit Card, PayPal, Amazon Pay, ACH</td></tr>
   <tr><td><code>{{billing_cc_type}}</code></td><td>Credit card type, e.g., Visa, Mastercard. Returns nothing if payment was made through PayPal</td></tr>
   <tr><td><code>{{billing_last_four}}</code></td><td>Last four digits of the credit card number</td></tr>
-  <tr><td><code>{{billing_first_name}}</code></td><td></td></tr>
-  <tr><td><code>{{billing_last_name}}</code></td><td></td></tr>
-  <tr><td><code>{{billing_address1}}</code></td><td></td></tr>
-  <tr><td><code>{{billing_address2}}</code></td><td></td></tr>
-  <tr><td><code>{{billing_city}}</code></td><td></td></tr>
+  <tr><td><code>{{billing_first_name}}</code></td><td>First name on billing info</td></tr>
+  <tr><td><code>{{billing_last_name}}</code></td><td>Last name on billing info</td></tr>
+  <tr><td><code>{{billing_address1}}</code></td><td>Billing address line 1</td></tr>
+  <tr><td><code>{{billing_address2}}</code></td><td>Billing address line 2</td></tr>
+  <tr><td><code>{{billing_city}}</code></td><td>Billing city</td></tr>
   <tr><td><code>{{billing_state}}</code></td><td>State or province</td></tr>
   <tr><td><code>{{billing_zip}}</code></td><td>Zip or postal code</td></tr>
-  <tr><td><code>{{billing_country}}</code></td><td></td></tr>
-  <tr><td><code>{{billing_full_address}}</code></td><td></td></tr>
+  <tr><td><code>{{billing_country}}</code></td><td>Billing country code</td></tr>
+  <tr><td><code>{{billing_full_address}}</code></td><td>Full formatted billing address — combined by Emaily</td></tr>
   <tr><td><code>{{billing_ip_address}}</code></td><td>The account's IP address at the time of the last billing info update</td></tr>
   <tr><td><code>{{billing_vat_applicable?}}</code></td><td>Returns <code>true</code> if the account charges VAT</td></tr>
   <tr><td><code>{{billing_vat_number}}</code></td><td>The account's VAT number</td></tr>
   <tr><td><code>{{billing_has_active_mandate}}</code></td><td>Use to conditionally display a sentence containing <code>{{direct_debit_mandate_id}}</code> only when a mandate exists</td></tr>
+  <tr><td><code>{{billing_full_name}}</code></td><td>Full name on billing info</td></tr>
+  <tr><td><code>{{billing_phone}}</code></td><td>Billing phone number</td></tr>
+  <tr><td><code>{{billing_internal_payment_method}}</code></td><td>Raw payment method type string</td></tr>
+  <tr><td><code>{{billing_name_on_account}}</code></td><td>Name on the bank account</td></tr>
+  <tr><td><code>{{billing_last_two}}</code></td><td>Last 2 characters of IBAN / BACS account number</td></tr>
+  <tr><td><code>{{billing_sort_code}}</code></td><td>BACS sort code</td></tr>
+  <tr><td><code>{{billing_bsb_code}}</code></td><td>BECS BSB code</td></tr>
+  <tr><td><code>{{billing_routing_number_bank}}</code></td><td>Bank name</td></tr>
 </table>
 
 ## Invoice details
 
 <table class="rp-params">
   <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
-  <tr><td><code>{{invoice_number}}</code></td><td></td></tr>
+  <tr><td><code>{{invoice_number}}</code></td><td>Invoice number with prefix (e.g. "INV-001")</td></tr>
   <tr><td><code>{{invoice_date}}</code></td><td>Date the invoice was created. May differ from <code>{{transaction_date}}</code> if the initial transaction failed. <code>{{transaction_date}}</code> may be empty if no transaction was required</td></tr>
   <tr><td><code>{{invoice_subtotal}}</code></td><td>Total amount after discounts are applied</td></tr>
   <tr><td><code>{{{invoice_discount_amount}}}</code></td><td>Dollar amount of discount applied to the invoice. Requires three curly braces</td></tr>
@@ -664,26 +701,64 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{invoice_customer_notes}}</code></td><td>Notes from the Customer Notes field on the invoice</td></tr>
   <tr><td><code>{{invoice_terms_and_conditions}}</code></td><td>Notes from the Terms and Conditions field on the invoice</td></tr>
   <tr><td><code>{{invoice_vat_reverse_charge_notes}}</code></td><td>Notes from the VAT Reverse Charge Notes field. Relevant for EU VAT Reverse Charge scenarios only</td></tr>
-  <tr><td><code>{{invoice_bill_to_full_name}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_bill_to_company}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_bill_to_full_address}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_bill_to_address1}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_bill_to_address2}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_bill_to_city}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_bill_to_state}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_bill_to_zip}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_bill_to_country}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_bill_to_phone}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_ship_to_full_name}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_ship_to_company}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_ship_to_full_address}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_ship_to_address1}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_ship_to_address2}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_ship_to_city}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_ship_to_state}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_ship_to_zip}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_ship_to_country}}</code></td><td></td></tr>
-  <tr><td><code>{{invoice_ship_to_phone}}</code></td><td></td></tr>
+  <tr><td><code>{{invoice_bill_to_full_name}}</code></td><td>Full name (snapshot at invoice creation)</td></tr>
+  <tr><td><code>{{invoice_bill_to_company}}</code></td><td>Company name</td></tr>
+  <tr><td><code>{{invoice_bill_to_full_address}}</code></td><td>Full formatted address — combined by Emaily</td></tr>
+  <tr><td><code>{{invoice_bill_to_address1}}</code></td><td>Address line 1</td></tr>
+  <tr><td><code>{{invoice_bill_to_address2}}</code></td><td>Address line 2</td></tr>
+  <tr><td><code>{{invoice_bill_to_city}}</code></td><td>City</td></tr>
+  <tr><td><code>{{invoice_bill_to_state}}</code></td><td>State</td></tr>
+  <tr><td><code>{{invoice_bill_to_zip}}</code></td><td>Zip code</td></tr>
+  <tr><td><code>{{invoice_bill_to_country}}</code></td><td>Country code</td></tr>
+  <tr><td><code>{{invoice_bill_to_phone}}</code></td><td>Phone number</td></tr>
+  <tr><td><code>{{invoice_ship_to_full_name}}</code></td><td>Full name</td></tr>
+  <tr><td><code>{{invoice_ship_to_company}}</code></td><td>Company name</td></tr>
+  <tr><td><code>{{invoice_ship_to_full_address}}</code></td><td>Full formatted address — combined by Emaily</td></tr>
+  <tr><td><code>{{invoice_ship_to_address1}}</code></td><td>Address line 1</td></tr>
+  <tr><td><code>{{invoice_ship_to_address2}}</code></td><td>Address line 2</td></tr>
+  <tr><td><code>{{invoice_ship_to_city}}</code></td><td>City</td></tr>
+  <tr><td><code>{{invoice_ship_to_state}}</code></td><td>State</td></tr>
+  <tr><td><code>{{invoice_ship_to_zip}}</code></td><td>Zip code</td></tr>
+  <tr><td><code>{{invoice_ship_to_country}}</code></td><td>Country code</td></tr>
+  <tr><td><code>{{invoice_ship_to_phone}}</code></td><td>Phone number</td></tr>
+  <tr><td><code>{{invoice_due_at}}</code></td><td>Invoice due date</td></tr>
+  <tr><td><code>{{invoice_total}}</code></td><td>Invoice total</td></tr>
+  <tr><td><code>{{invoice_total_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{invoice_vat_number}}</code></td><td>VAT number on invoice</td></tr>
+  <tr><td><code>{{invoice_subtotal_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{invoice_tax_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{invoice_total_due_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{invoice_total_paid_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{invoice_discount_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{invoice_has_tax_summary?}}</code></td><td>True if invoice has a detailed tax summary breakdown</td></tr>
+  <tr><td><code>{{invoice_tax_summary}}</code></td><td>Array of tax summary rows: <code>{amount, amount_currency, description}</code></td></tr>
+  <tr><td><code>{{invoice_has_vat?}}</code></td><td>True if tax type is VAT</td></tr>
+  <tr><td><code>{{invoice_has_discount?}}</code></td><td>True if invoice has a discount applied</td></tr>
+  <tr><td><code>{{invoice_discounts}}</code></td><td>Array of coupon redemption objects applied to invoice</td></tr>
+  <tr><td><code>{{invoice_due?}}</code></td><td>True if invoice is collectible / due</td></tr>
+  <tr><td><code>{{invoice_auto_collecting?}}</code></td><td>True if invoice is set to auto-collect</td></tr>
+  <tr><td><code>{{invoice_first_ach_collection_attempt?}}</code></td><td>True if this is the first ACH collection attempt on this invoice</td></tr>
+  <tr><td><code>{{invoice_credit_payments?}}</code></td><td>True if invoice has credit payments applied</td></tr>
+  <tr><td><code>{{invoice_total_credit_payments}}</code></td><td>Total credit payments applied (Credit Invoices feature)</td></tr>
+  <tr><td><code>{{invoice_total_credit_payments_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{invoice_has_transaction?}}</code></td><td>True if invoice has at least one cash payment</td></tr>
+  <tr><td><code>{{invoice_has_many_transactions?}}</code></td><td>True if invoice has more than one cash payment</td></tr>
+  <tr><td><code>{{invoice_total_transactions}}</code></td><td>Total of all cash payment transactions</td></tr>
+  <tr><td><code>{{invoice_total_transactions_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{invoice_transactions_manual?}}</code></td><td>True if all cash payments were manually entered</td></tr>
+  <tr><td><code>{{invoice_transactions_ach?}}</code></td><td>True if all cash payments are ACH</td></tr>
+  <tr><td><code>{{invoice_transactions_voided?}}</code></td><td>True if all cash payments are voided (and none are refunds)</td></tr>
+  <tr><td><code>{{invoice_balance}}</code></td><td>Current balance on invoice</td></tr>
+  <tr><td><code>{{invoice_balance_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{invoice_credit_to_account}}</code></td><td>Carryforward credit amount (from credit memo)</td></tr>
+  <tr><td><code>{{invoice_credit_to_account_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{invoice_type_charge?}}</code></td><td>True if invoice is a charge invoice</td></tr>
+  <tr><td><code>{{invoice_type_credit?}}</code></td><td>True if invoice is a credit invoice</td></tr>
+  <tr><td><code>{{invoice_type_legacy?}}</code></td><td>True if invoice is legacy type</td></tr>
+  <tr><td><code>{{invoice_has_bill_to_address?}}</code></td><td>True if a bill-to address is present on the invoice</td></tr>
+  <tr><td><code>{{invoice_has_ship_to_address?}}</code></td><td>True if a ship-to address is present on the invoice</td></tr>
+  <tr><td><code>{{invoice_guest_view_url}}</code></td><td>Auth-tokenized URL for hosted invoice guest view</td></tr>
+  <tr><td><code>{{invoice_complete_authentication_challenge_url}}</code></td><td>URL for hosted invoice 3DS authentication challenge</td></tr>
 </table>
 
 ## Line item details
@@ -691,7 +766,7 @@ For merchants using Multiple Business Entities, the company value merged into ea
 <table class="rp-params">
   <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
   <tr><td><code>{{{line_date}}}</code></td><td>Line item date or date range. Requires three curly braces</td></tr>
-  <tr><td><code>{{line_description}}</code></td><td></td></tr>
+  <tr><td><code>{{line_description}}</code></td><td>Line item description</td></tr>
   <tr><td><code>{{{line_amount}}}</code></td><td>Line item total amount. Requires three curly braces</td></tr>
   <tr><td><code>{{line_amount_is_zero?}}</code></td><td>Returns <code>true</code> if the line item has a zero amount</td></tr>
   <tr><td><code>{{{line_unit_amount}}}</code></td><td>Line item unit amount. Requires three curly braces</td></tr>
@@ -701,6 +776,13 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{line_discount_amount}}</code></td><td>The line item's discount amount, if one exists; otherwise returns zero. Purchase discounts return as positive values; refund discounts return as negative values. Wrap in an <code>invoice_has_discount</code> check to display only when at least one line item has a discount. Not included in any default templates — you'll need to add it manually</td></tr>
   <tr><td><code>{{line_external_sku}}</code></td><td>Used with Item Catalog only. Displays the External SKU of the item sold</td></tr>
   <tr><td><code>{{line_product_code}}</code></td><td>Displays the Plan Code, Add-on Code, or Item Code of the line item</td></tr>
+  <tr><td><code>{{line_start_date}}</code></td><td>Charge period start date</td></tr>
+  <tr><td><code>{{line_end_date}}</code></td><td>Charge period end date</td></tr>
+  <tr><td><code>{{line_account_code}}</code></td><td>Account code of the account that originated the line item</td></tr>
+  <tr><td><code>{{line_custom_fields}}</code></td><td>Custom fields on the line item charge</td></tr>
+  <tr><td><code>{{line_amount_currency}}</code></td><td>Currency code for line amount</td></tr>
+  <tr><td><code>{{line_unit_amount_currency}}</code></td><td>Currency code for unit amount</td></tr>
+  <tr><td><code>{{line_discount_amount_currency}}</code></td><td>Currency code</td></tr>
 </table>
 
 ## Subscription and add-on information
@@ -744,6 +826,24 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{subscription_shipping_method}}</code></td><td>Shipping method used on the charge</td></tr>
   <tr><td><code>{{subscription_remaining_pause_cycles}}</code></td><td>Number of pause cycles remaining on the subscription</td></tr>
   <tr><td><code>{{subscription_resume_at}}</code></td><td>Date when a paused subscription will resume</td></tr>
+  <tr><td><code>{{subscription_plan_name}}</code></td><td>Plan name</td></tr>
+  <tr><td><code>{{subscription_subtotal_amount}}</code></td><td>Subscription subtotal amount</td></tr>
+  <tr><td><code>{{subscription_setup_amount}}</code></td><td>Setup fee amount (0 if none)</td></tr>
+  <tr><td><code>{{subscription_trial_ends_at}}</code></td><td>Trial period end date</td></tr>
+  <tr><td><code>{{subscription_first_full_price_billing?}}</code></td><td>True if the next invoice will be the first at full price</td></tr>
+  <tr><td><code>{{subscription_custom_fields}}</code></td><td>Array of <code>{name, value}</code> subscription custom fields</td></tr>
+  <tr><td><code>{{subscription_unit_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{subscription_subtotal_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{subscription_total_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{subscription_setup_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{subscription_term_balance_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{subscription_total_term_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{subscription_shipping_cost_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{add_on_unit_amount}}</code></td><td>Unit amount</td></tr>
+  <tr><td><code>{{add_on_unit_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{add_on_usage_percentage}}</code></td><td>Usage percentage value</td></tr>
+  <tr><td><code>{{add_on_decimal?}}</code></td><td>True if add-on is a decimal quantity type</td></tr>
+  <tr><td><code>{{add_on_custom_fields}}</code></td><td>Array of <code>{name, value}</code> add-on custom fields</td></tr>
 </table>
 
 ## Subscriptions list
@@ -771,13 +871,13 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{{gift_card_image}}}</code></td><td>The gift card product's image. Requires three curly braces</td></tr>
   <tr><td><code>{{gift_card_delivery_method}}</code></td><td>Whether the gift card delivery method is <code>email</code> or <code>post</code></td></tr>
   <tr><td><code>{{gift_card_delivery_email_address}}</code></td><td>The recipient's email address</td></tr>
-  <tr><td><code>{{gift_card_delivery_address1}}</code></td><td></td></tr>
-  <tr><td><code>{{gift_card_delivery_address2}}</code></td><td></td></tr>
-  <tr><td><code>{{gift_card_delivery_city}}</code></td><td></td></tr>
-  <tr><td><code>{{gift_card_delivery_state}}</code></td><td></td></tr>
-  <tr><td><code>{{gift_card_delivery_zip}}</code></td><td></td></tr>
-  <tr><td><code>{{gift_card_delivery_country}}</code></td><td></td></tr>
-  <tr><td><code>{{gift_card_delivery_phone}}</code></td><td></td></tr>
+  <tr><td><code>{{gift_card_delivery_address1}}</code></td><td>Recipient address line 1</td></tr>
+  <tr><td><code>{{gift_card_delivery_address2}}</code></td><td>Recipient address line 2</td></tr>
+  <tr><td><code>{{gift_card_delivery_city}}</code></td><td>Recipient city</td></tr>
+  <tr><td><code>{{gift_card_delivery_state}}</code></td><td>Recipient state</td></tr>
+  <tr><td><code>{{gift_card_delivery_zip}}</code></td><td>Recipient zip code</td></tr>
+  <tr><td><code>{{gift_card_delivery_country}}</code></td><td>Recipient country code</td></tr>
+  <tr><td><code>{{gift_card_delivery_phone}}</code></td><td>Recipient phone number</td></tr>
   <tr><td><code>{{gift_card_delivery_deliver_at}}</code></td><td>The future delivery date of the gift card</td></tr>
   <tr><td><code>{{#gift_card_has_personal_message?}}</code></td><td>Returns <code>true</code> if the gift card has a personal message. Useful for hiding the message display if not included at purchase</td></tr>
   <tr><td><code>{{#gift_card_has_gifter_name?}}</code></td><td>Returns <code>true</code> if the gift card has a gifter name. Useful for hiding the display if not included at purchase</td></tr>
@@ -786,6 +886,9 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{#gift_card_delivery_city?}}</code></td><td>Returns <code>true</code> if the gift card has a city in the delivery address. Useful for hiding an address comma when no city is present</td></tr>
   <tr><td><code>{{#subscription_is_gift?}}</code></td><td>Returns <code>true</code> if the subscription started with a gift card. Useful with <code>account_has_billing_info?</code> in subscription emails to show special messaging to gift card customers about adding a payment method</td></tr>
   <tr><td><code>{{^account_has_billing_info?}}</code></td><td>Returns <code>true</code> if no billing information exists on the account. Useful nested under <code>subscription_is_gift?</code> to prompt gift card customers to add a payment method</td></tr>
+  <tr><td><code>{{gift_card_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{gift_card_delivery_full_address}}</code></td><td>Full formatted recipient address — combined by Emaily</td></tr>
+  <tr><td><code>{{gift_card_has_post_delivery?}}</code></td><td>True if delivery method is postal mail</td></tr>
 </table>
 
 ## Transaction fields
@@ -804,6 +907,17 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{transaction_payment_method}}</code></td><td>e.g., Credit Card, PayPal, Amazon Pay, ACH</td></tr>
   <tr><td><code>{{transaction_cc_type}}</code></td><td>Credit card type, e.g., Visa, Mastercard. Returns nothing if payment was made through PayPal</td></tr>
   <tr><td><code>{{transaction_cc_last_four}}</code></td><td>Last four digits of the credit card number</td></tr>
+  <tr><td><code>{{transaction_amount_currency}}</code></td><td>Currency code</td></tr>
+  <tr><td><code>{{transaction_message}}</code></td><td>Transaction message / description</td></tr>
+  <tr><td><code>{{transaction_description}}</code></td><td>Alias for transaction_message</td></tr>
+  <tr><td><code>{{transaction_date_with_time}}</code></td><td>Date + time (adjusted for account timezone)</td></tr>
+  <tr><td><code>{{transaction_scheduled?}}</code></td><td>True if transaction is scheduled (not yet attempted)</td></tr>
+  <tr><td><code>{{transaction_manual?}}</code></td><td>True if transaction was manually entered</td></tr>
+  <tr><td><code>{{transaction_credit_card?}}</code></td><td>True if credit card transaction (and not manually entered)</td></tr>
+  <tr><td><code>{{transaction_status}}</code></td><td>Status display string (success/void/decline) — computed by Emaily</td></tr>
+  <tr><td><code>{{transaction_country}}</code></td><td>Country from billing info on transaction</td></tr>
+  <tr><td><code>{{transaction_account_type}}</code></td><td>Bank account type for ACH (e.g. "Checking") — i18n translated; nil if not ACH</td></tr>
+  <tr><td><code>{{transaction_boleto_download_url}}</code></td><td>Boleto download URL (Boleto payment method only)</td></tr>
 </table>
 
 ## Direct debit fields
@@ -812,6 +926,8 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
   <tr><td><code>{{direct_debit_mandate_id}}</code></td><td>Mandate information for direct debit transactions made through GoCardless</td></tr>
   <tr><td><code>{{direct_debit_creditor_identifier}}</code></td><td>Creditor information for direct debit charges through GoCardless</td></tr>
+  <tr><td><code>{{direct_debit_guarantees_url}}</code></td><td>Hosted URL for the direct-debit guarantee page (BACS / SEPA specific)</td></tr>
+  <tr><td><code>{{direct_debit_agreement_url}}</code></td><td>Hosted URL for the specific mandate agreement</td></tr>
 </table>
 
 ## Ramp pricing fields
@@ -820,6 +936,17 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
   <tr><td><code>{{subscription_next_ramp_interval_start_date}}</code></td><td>The date when the customer's next pricing interval begins</td></tr>
   <tr><td><code>{{subscription_next_ramp_interval_price}}</code></td><td>The price that will apply at the start of that next interval</td></tr>
+  <tr><td><code>{{subscription_next_ramp_interval_price_currency}}</code></td><td>Currency code</td></tr>
+</table>
+
+## Header and footer parameters
+
+Use these to inject fully custom HTML in place of Recurly's default header and footer partials. Both require triple curly braces.
+
+<table class="rp-params">
+  <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
+  <tr><td><code>{{{header}}}</code></td><td>Custom header HTML — replaces the <code>{{> recurly_header_v2}}</code> partial. Requires triple braces.</td></tr>
+  <tr><td><code>{{{footer}}}</code></td><td>Custom footer HTML — replaces the <code>{{> recurly_footer_v2}}</code> partial. Requires triple braces.</td></tr>
 </table>
 
 ## Custom fields
