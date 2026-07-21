@@ -628,7 +628,6 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{account_hosted_maintenance_url}}</code></td><td>URL with an embedded authorization token to automatically log in to your hosted account management page. If hosted account management is set to "Guest View Only," this returns the Guest View Edit Billing Info URL. If disabled, this URL returns a 404. To generate the Guest View Edit Billing Info URL correctly, remove the <code>{{#company_hosted_account_management_full_access?}}</code> and <code>{{/company_hosted_account_management_full_access?}}</code> conditional tags from the template</td></tr>
   <tr><td><code>{{coupons}}</code></td><td>Returns coupon information if the account has active coupons</td></tr>
   <tr><td><code>{{account_vat_number}}</code></td><td>Relevant for customers issued manual invoices or when your Tax Settings are configured to use the Account Info address on the invoice</td></tr>
-  <tr><td><code>{{account_phone}}</code></td><td>Phone number</td></tr>
   <tr><td><code>{{account_has_billing_info?}}</code></td><td>True if account has billing info on file</td></tr>
 </table>
 
