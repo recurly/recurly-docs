@@ -537,8 +537,6 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{company_phone_number}}</code></td><td>Phone number</td></tr>
   <tr><td><code>{{company_vat_number}}</code></td><td>Default VAT number</td></tr>
   <tr><td><code>{{company_registration_number}}</code></td><td>Default registration number</td></tr>
-  <tr><td><code>{{company_subdomain}}</code></td><td>Site subdomain</td></tr>
-  <tr><td><code>{{company_merchant_name}}</code></td><td>DBA name if set, otherwise business entity name</td></tr>
 </table>
 
 ## Business entity
