@@ -86,6 +86,10 @@ Enabling tax collection in Australia applies 10% GST to all taxable plan, add-on
 
 On July 1, 2017, Australia began requiring non-resident businesses with digital services sales in Australia past a specific threshold to register and collect GST from Australian customers. This change includes an exemption for Australian businesses with an active, GST-registered ABN, and the collection of two pieces of location evidence from customers that are taxed.
 
+## Brazil
+
+Integrating with the latest <a href="https://docs.recurly.com/recurly-subscriptions/docs/vertex" target="_blank">Vertex version</a> will allow merchants to display informational tax on a subscriber's invoice.  Once this has been configured in your Vertex account, Recurly will automatically pull this data and display it on an invoice.
+
 ## Canada
 
 Enabling tax collection in Canada applies 5% GST to all taxable plan, add-on, or adjustment line items for customers in Canada. Additional province-level taxes (PST, HST, or QST) apply if you enable the province as a taxable sub-region and the customer is located in that province. If you want to collect only GST from all provinces in Canada, enable Canada but don't select a province.
