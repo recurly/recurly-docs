@@ -734,13 +734,6 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{line_discount_amount}}</code></td><td>The line item's discount amount, if one exists; otherwise returns zero. Purchase discounts return as positive values; refund discounts return as negative values. Wrap in an <code>invoice_has_discount</code> check to display only when at least one line item has a discount. Not included in any default templates — you'll need to add it manually</td></tr>
   <tr><td><code>{{line_external_sku}}</code></td><td>Used with Item Catalog only. Displays the External SKU of the item sold</td></tr>
   <tr><td><code>{{line_product_code}}</code></td><td>Displays the Plan Code, Add-on Code, or Item Code of the line item</td></tr>
-  <tr><td><code>{{line_start_date}}</code></td><td>Charge period start date</td></tr>
-  <tr><td><code>{{line_end_date}}</code></td><td>Charge period end date</td></tr>
-  <tr><td><code>{{line_account_code}}</code></td><td>Account code of the account that originated the line item</td></tr>
-  <tr><td><code>{{line_custom_fields}}</code></td><td>Custom fields on the line item charge</td></tr>
-  <tr><td><code>{{line_amount_currency}}</code></td><td>Currency code for line amount</td></tr>
-  <tr><td><code>{{line_unit_amount_currency}}</code></td><td>Currency code for unit amount</td></tr>
-  <tr><td><code>{{line_discount_amount_currency}}</code></td><td>Currency code</td></tr>
 </table>
 
 ## Subscription and add-on information
