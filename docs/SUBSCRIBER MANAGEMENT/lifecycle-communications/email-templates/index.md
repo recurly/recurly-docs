@@ -146,7 +146,7 @@ This setting is available on the <a href="https://docs.recurly.com/docs/site-set
 
 ### Invoice templates
 
-- **New invoice:** For manual payment collections — sent when a manual invoice is generated or a new subscription with manual collection is initiated
+- **New invoice:** For manual or automatic payment collections — sent when an invoice is generated
 - **New credit invoice:** Sent when a credit invoice is generated and posted manually
 - **Payment confirmation:** Confirms a successful payment transaction, excluding $0 invoices and new subscriptions. Can be configured to send to all customers or only Mastercard users; be sure to include any required cancellation guidelines for Mastercard subscribers
 - **Payment refunded:** Notifies subscribers of a refund on a transaction
