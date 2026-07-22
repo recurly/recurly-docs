@@ -88,7 +88,7 @@ On July 1, 2017, Australia began requiring non-resident businesses with digital 
 
 ## Brazil
 
-Integrating with the latest <a href="https://docs.recurly.com/recurly-subscriptions/docs/vertex" target="_blank">Vertex version</a> allows you to display informational tax on a subscriber's invoice. Once configured in your Vertex account, Recurly automatically pulls this data and displays it on the invoice.
+Integrating with the latest <a href="https://docs.recurly.com/recurly-subscriptions/docs/vertex" target="_blank">Vertex version</a> allows you to display Brazilian tax IDs CPF/CNPJ as informational tax on a subscriber's invoice. Once configured in your Vertex account, Recurly automatically pulls this data and displays it on the invoice.
 
 ## Canada
 
