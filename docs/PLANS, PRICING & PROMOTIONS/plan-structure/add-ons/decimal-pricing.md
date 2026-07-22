@@ -18,7 +18,7 @@ next:
 <div class="rp-page">
 <div class="rp-overview">
 
-Decimal pricing lets you set usage and non-usage add-on prices with up to nine decimal places — so businesses charging fractions of a cent per unit can bill accurately without rounding errors at the unit level.
+Decimal pricing lets you set usage and non-usage add-on prices with up to nine decimal places using any <a href="https://docs.recurly.com/recurly-subscriptions/docs/add-ons#key-benefits" target="_blank">pricing model</a> — so businesses charging fractions of a cent per unit can bill accurately without rounding errors at the unit level.
 
 </div>
 <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i>&nbsp; Available on all Recurly plans</div>
@@ -63,7 +63,7 @@ Decimal pricing is a pricing method for businesses that need non-integer unit pr
 
 ## Plans and subscriptions
 
-Decimal pricing is applied through usage and non-usage add-ons, created via the Admin Console, the <a href="https://developers.recurly.com/api/v2021-02-25/index.html" target="_blank">V3 API (2021-02-25)</a>, or the <a href="https://recurly.com/developers/api-v2/v2.29/#tag/subscription-usage-records" target="_blank">V2 API</a>.
+Decimal pricing is available on usage and non-usage add-ons through the Admin Console or the <a href="https://developers.recurly.com/api/v2021-02-25/index.html" target="_blank">V3 API (2021-02-25)</a>.  However, the <a href="https://recurly.com/developers/api-v2/v2.29/#tag/subscription-usage-records" target="_blank">V2 API</a> only supports decimal pricing on usage based add-ons at this time.
 
 When setting pricing via the API, use the `unit_amount_decimal` field. Decimal pricing supports up to nine decimal places across fixed, tiered, volume, and stairstep pricing models. When `unit_amount_decimal` is provided, `unit_amount` is automatically set to null. A plan's predefined prices are used by default when creating a subscription, but you can override them per subscription as needed.
 
