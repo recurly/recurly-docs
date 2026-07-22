@@ -840,7 +840,6 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr class="rp-thead-row"><td>Parameter</td><td>Description</td></tr>
   <tr><td><code>{{gift_card_redemption_code}}</code></td><td>The current redemption code of the gift card</td></tr>
   <tr><td><code>{{gift_card_amount}}</code></td><td>The amount of the gift card</td></tr>
-  <tr><td><code>{{gift_card_currency}}</code></td><td>The currency of the gift card amount</td></tr>
   <tr><td><code>{{gift_card_delivery_first_name}}</code></td><td>The first name of the gift recipient</td></tr>
   <tr><td><code>{{gift_card_delivery_last_name}}</code></td><td>The last name of the gift recipient</td></tr>
   <tr><td><code>{{gift_card_personal_message}}</code></td><td>The personal message for the gift recipient</td></tr>
@@ -864,8 +863,6 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{#subscription_is_gift?}}</code></td><td>Returns <code>true</code> if the subscription started with a gift card. Useful with <code>account_has_billing_info?</code> in subscription emails to show special messaging to gift card customers about adding a payment method</td></tr>
   <tr><td><code>{{^account_has_billing_info?}}</code></td><td>Returns <code>true</code> if no billing information exists on the account. Useful nested under <code>subscription_is_gift?</code> to prompt gift card customers to add a payment method</td></tr>
   <tr><td><code>{{gift_card_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{gift_card_delivery_full_address}}</code></td><td>Full formatted recipient address — combined by Emaily</td></tr>
-  <tr><td><code>{{gift_card_has_post_delivery?}}</code></td><td>True if delivery method is postal mail</td></tr>
 </table>
 
 ## Transaction fields
