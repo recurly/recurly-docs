@@ -599,10 +599,6 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{change_subscription_add_ons}}</code></td><td>Block of add-ons included in the pending change — what the subscription will have after the change activates. Use within a <code>{{#change_subscription_add_ons}} … {{/change_subscription_add_ons}}</code> block, referencing the same add-on fields as <code>subscription_add_ons</code></td></tr>
   <tr><td><code>{{change_plan_interval_unit}}</code></td><td>New plan's billing interval unit</td></tr>
   <tr><td><code>{{change_plan_interval_length}}</code></td><td>New plan's billing interval length</td></tr>
-  <tr><td><code>{{change_subscription_total_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{change_subscription_unit_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{change_issued_credit_invoice?}}</code></td><td>True if a credit invoice was issued as part of this change</td></tr>
-  <tr><td><code>{{change_issued_invoice?}}</code></td><td>True if a charge invoice was issued as part of this change</td></tr>
 </table>
 
 ## Account details
