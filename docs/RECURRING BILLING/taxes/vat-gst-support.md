@@ -88,7 +88,7 @@ On July 1, 2017, Australia began requiring non-resident businesses with digital 
 
 ## Brazil
 
-Integrating with the latest <a href="https://docs.recurly.com/recurly-subscriptions/docs/vertex" target="_blank">Vertex version</a> will allow merchants to display informational tax on a subscriber's invoice.  Once this has been configured in your Vertex account, Recurly will automatically pull this data and display it on an invoice.
+Integrating with the latest <a href="https://docs.recurly.com/recurly-subscriptions/docs/vertex" target="_blank">Vertex version</a> allows you to display informational tax on a subscriber's invoice. Once configured in your Vertex account, Recurly automatically pulls this data and displays it on the invoice.
 
 ## Canada
 
