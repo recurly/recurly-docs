@@ -781,15 +781,6 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{subscription_subtotal_amount}}</code></td><td>Subscription subtotal amount</td></tr>
   <tr><td><code>{{subscription_setup_amount}}</code></td><td>Setup fee amount (0 if none)</td></tr>
   <tr><td><code>{{subscription_trial_ends_at}}</code></td><td>Trial period end date</td></tr>
-  <tr><td><code>{{subscription_first_full_price_billing?}}</code></td><td>True if the next invoice will be the first at full price</td></tr>
-  <tr><td><code>{{subscription_custom_fields}}</code></td><td>Array of <code>{name, value}</code> subscription custom fields</td></tr>
-  <tr><td><code>{{subscription_unit_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{subscription_subtotal_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{subscription_total_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{subscription_setup_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{subscription_term_balance_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{subscription_total_term_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{subscription_shipping_cost_currency}}</code></td><td>Currency code</td></tr>
 </table>
 
 ## Subscriptions list
