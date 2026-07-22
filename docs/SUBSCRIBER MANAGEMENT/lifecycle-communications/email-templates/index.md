@@ -714,12 +714,7 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{invoice_total_currency}}</code></td><td>Currency code</td></tr>
   <tr><td><code>{{invoice_vat_number}}</code></td><td>VAT number on invoice</td></tr>
    <tr><td><code>{{invoice_tax_summary}}</code></td><td>Array of tax summary rows: <code>{amount, amount_currency, description}</code></td></tr>
-  <tr><td><code>{{invoice_has_vat?}}</code></td><td>True if tax type is VAT</td></tr>
-  <tr><td><code>{{invoice_has_discount?}}</code></td><td>True if invoice has a discount applied</td></tr>
   <tr><td><code>{{invoice_discounts}}</code></td><td>Array of coupon redemption objects applied to invoice</td></tr>
-  <tr><td><code>{{invoice_due?}}</code></td><td>True if invoice is collectible / due</td></tr>
-  <tr><td><code>{{invoice_auto_collecting?}}</code></td><td>True if invoice is set to auto-collect</td></tr>
-  <tr><td><code>{{invoice_credit_payments?}}</code></td><td>True if invoice has credit payments applied</td></tr>
   <tr><td><code>{{invoice_credit_to_account}}</code></td><td>Carryforward credit amount (from credit memo)</td></tr>
   <tr><td><code>{{invoice_credit_to_account_currency}}</code></td><td>Currency code</td></tr>
 </table>
