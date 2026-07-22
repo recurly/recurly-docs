@@ -34,7 +34,7 @@ While Recurly extends support for a comprehensive set of Vertex tax parameters t
 
 # Definition
 
-Recurly's Elite plan offers merchants the ability to perform global tax calculations on their invoices through integration with Vertex O Series or Vertex Cloud. Regardless of whether you prefer on-premise or on-demand solutions, Recurly supports both deployment modes for Vertex O Series and Vertex Cloud, including versions 7.0, 8.0, 9.0, 9.1, 9.2, and 9.3.
+Recurly's Elite plan offers merchants the ability to perform global tax calculations on their invoices through integration with Vertex O Series or Vertex Cloud. Regardless of whether you prefer on-premise or on-demand solutions, Recurly supports both deployment modes for Vertex O Series and Vertex Cloud, including versions 7.0, 8.0, 9.0-9.3.
 
 # Go live with Vertex checklist
 
@@ -66,7 +66,7 @@ We recommend connecting your Vertex account to Recurly before you enable your ta
 If you meet the prerequisites and have a Vertex O Series, 9 Series, or Vertex Cloud account, follow these steps to enable Vertex for your Recurly site:
 
 
-<Image src="https://files.readme.io/000408a4e57dd691bdcb61d9db12edb50fba03b989e5a2a502a579a88dea43c8-Screenshot_2025-10-23_at_2.24.10_PM.png" align="center" width="60% " border={true} />
+<Image src="https://files.readme.io/dfc1c63fe82c311236d655c564c4cfc392af119acf95848a85b983c584231541-Screenshot_2026-07-22_at_11.56.57_AM.png" align="center" width="80%" border={true} />
 
 
 1. **Contact** Recurly Support to request the Vertex option for your site.
