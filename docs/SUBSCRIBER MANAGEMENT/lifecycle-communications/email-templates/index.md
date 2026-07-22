@@ -790,11 +790,6 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{subscription_term_balance_currency}}</code></td><td>Currency code</td></tr>
   <tr><td><code>{{subscription_total_term_amount_currency}}</code></td><td>Currency code</td></tr>
   <tr><td><code>{{subscription_shipping_cost_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{add_on_unit_amount}}</code></td><td>Unit amount</td></tr>
-  <tr><td><code>{{add_on_unit_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{add_on_usage_percentage}}</code></td><td>Usage percentage value</td></tr>
-  <tr><td><code>{{add_on_decimal?}}</code></td><td>True if add-on is a decimal quantity type</td></tr>
-  <tr><td><code>{{add_on_custom_fields}}</code></td><td>Array of <code>{name, value}</code> add-on custom fields</td></tr>
 </table>
 
 ## Subscriptions list
