@@ -691,7 +691,7 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{invoice_vat_reverse_charge_notes}}</code></td><td>Notes from the VAT Reverse Charge Notes field. Relevant for EU VAT Reverse Charge scenarios only</td></tr>
   <tr><td><code>{{invoice_bill_to_full_name}}</code></td><td>Full name (snapshot at invoice creation)</td></tr>
   <tr><td><code>{{invoice_bill_to_company}}</code></td><td>Company name</td></tr>
-  <tr><td><code>{{invoice_bill_to_full_address}}</code></td><td>Full formatted address — combined by Emaily</td></tr>
+  <tr><td><code>{{invoice_bill_to_full_address}}</code></td><td>Full formatted address</td></tr>
   <tr><td><code>{{invoice_bill_to_address1}}</code></td><td>Address line 1</td></tr>
   <tr><td><code>{{invoice_bill_to_address2}}</code></td><td>Address line 2</td></tr>
   <tr><td><code>{{invoice_bill_to_city}}</code></td><td>City</td></tr>
@@ -713,29 +713,15 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{invoice_total}}</code></td><td>Invoice total</td></tr>
   <tr><td><code>{{invoice_total_currency}}</code></td><td>Currency code</td></tr>
   <tr><td><code>{{invoice_vat_number}}</code></td><td>VAT number on invoice</td></tr>
-  <tr><td><code>{{invoice_subtotal_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{invoice_tax_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{invoice_total_due_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{invoice_total_paid_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{invoice_discount_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{invoice_has_tax_summary?}}</code></td><td>True if invoice has a detailed tax summary breakdown</td></tr>
-  <tr><td><code>{{invoice_tax_summary}}</code></td><td>Array of tax summary rows: <code>{amount, amount_currency, description}</code></td></tr>
+   <tr><td><code>{{invoice_tax_summary}}</code></td><td>Array of tax summary rows: <code>{amount, amount_currency, description}</code></td></tr>
   <tr><td><code>{{invoice_has_vat?}}</code></td><td>True if tax type is VAT</td></tr>
   <tr><td><code>{{invoice_has_discount?}}</code></td><td>True if invoice has a discount applied</td></tr>
   <tr><td><code>{{invoice_discounts}}</code></td><td>Array of coupon redemption objects applied to invoice</td></tr>
   <tr><td><code>{{invoice_due?}}</code></td><td>True if invoice is collectible / due</td></tr>
   <tr><td><code>{{invoice_auto_collecting?}}</code></td><td>True if invoice is set to auto-collect</td></tr>
   <tr><td><code>{{invoice_credit_payments?}}</code></td><td>True if invoice has credit payments applied</td></tr>
-  <tr><td><code>{{invoice_total_credit_payments}}</code></td><td>Total credit payments applied (Credit Invoices feature)</td></tr>
-  <tr><td><code>{{invoice_total_credit_payments_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{invoice_balance}}</code></td><td>Current balance on invoice</td></tr>
-  <tr><td><code>{{invoice_balance_currency}}</code></td><td>Currency code</td></tr>
   <tr><td><code>{{invoice_credit_to_account}}</code></td><td>Carryforward credit amount (from credit memo)</td></tr>
   <tr><td><code>{{invoice_credit_to_account_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{invoice_has_bill_to_address?}}</code></td><td>True if a bill-to address is present on the invoice</td></tr>
-  <tr><td><code>{{invoice_has_ship_to_address?}}</code></td><td>True if a ship-to address is present on the invoice</td></tr>
-  <tr><td><code>{{invoice_guest_view_url}}</code></td><td>Auth-tokenized URL for hosted invoice guest view</td></tr>
-  <tr><td><code>{{invoice_complete_authentication_challenge_url}}</code></td><td>URL for hosted invoice 3DS authentication challenge</td></tr>
 </table>
 
 ## Line item details
