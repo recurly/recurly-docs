@@ -77,7 +77,7 @@ If you meet the prerequisites and have a Vertex O Series, 9 Series, or Vertex Cl
    2. **Trusted Id**: Every Vertex instance has a trusted ID, which is your API password. Recurly doesn't use a username and password to ensure your tax collection isn't shut off due to a user lockout or accidental password reset or deletion. If you're unsure about your Trusted Id, contact Vertex.
    3. **Company**: This represents the taxpayer in your Vertex instance with jurisdiction rules that apply to your invoices. If you have a division, this is the parent taxpayer.
    4. **Division**: This is the child taxpayer in your Vertex instance. If you have a Division(s), it's likely that this taxpayer has jurisdiction rules that apply to your invoices. You can have multiple Divisions configured on your Vertex site that map to Recurly Business Entities, however, the Divisions must roll up to the same singular Company code within Vertex. If you do _not_ add Division codes to Business Entities within your Recurly tax configuration, all invoices assigned to unmapped entities will fall back to and be filed under the main Vertex Company code configured in your tax integration.
-   5. **Version**: The Recurly Vertex integration currently supports O Series or Cloud 7.0, 8.0, 9.0, 9.1, 9.2, and 9.3. Select your version.
+   5. **Version**: The Recurly Vertex integration currently supports O Series or Cloud 7.0, 8.0, 9.0 - 9.3. Select your version.
 5. **Click** Save Changes.
 6. **Test** the connection by clicking the Test Configuration button to ensure successful integration.
 
