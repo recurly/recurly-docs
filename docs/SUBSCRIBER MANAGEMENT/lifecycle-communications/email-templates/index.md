@@ -884,17 +884,6 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{transaction_payment_method}}</code></td><td>e.g., Credit Card, PayPal, Amazon Pay, ACH</td></tr>
   <tr><td><code>{{transaction_cc_type}}</code></td><td>Credit card type, e.g., Visa, Mastercard. Returns nothing if payment was made through PayPal</td></tr>
   <tr><td><code>{{transaction_cc_last_four}}</code></td><td>Last four digits of the credit card number</td></tr>
-  <tr><td><code>{{transaction_amount_currency}}</code></td><td>Currency code</td></tr>
-  <tr><td><code>{{transaction_message}}</code></td><td>Transaction message / description</td></tr>
-  <tr><td><code>{{transaction_description}}</code></td><td>Alias for transaction_message</td></tr>
-  <tr><td><code>{{transaction_date_with_time}}</code></td><td>Date + time (adjusted for account timezone)</td></tr>
-  <tr><td><code>{{transaction_scheduled?}}</code></td><td>True if transaction is scheduled (not yet attempted)</td></tr>
-  <tr><td><code>{{transaction_manual?}}</code></td><td>True if transaction was manually entered</td></tr>
-  <tr><td><code>{{transaction_credit_card?}}</code></td><td>True if credit card transaction (and not manually entered)</td></tr>
-  <tr><td><code>{{transaction_status}}</code></td><td>Status display string (success/void/decline) — computed by Emaily</td></tr>
-  <tr><td><code>{{transaction_country}}</code></td><td>Country from billing info on transaction</td></tr>
-  <tr><td><code>{{transaction_account_type}}</code></td><td>Bank account type for ACH (e.g. "Checking") — i18n translated; nil if not ACH</td></tr>
-  <tr><td><code>{{transaction_boleto_download_url}}</code></td><td>Boleto download URL (Boleto payment method only)</td></tr>
 </table>
 
 ## Direct debit fields
