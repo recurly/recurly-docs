@@ -17,13 +17,26 @@ metadata:
 
   <!-- Header Section -->
   <div style="margin: 0 0 16px 0;">
-    <div style="color: #5DC32E; font-size: 18px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">August 2026</div>
+    <div style="color: #5DC32E; font-size: 18px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">August & September 2026</div>
     <h1 style="color: #0D0D0B; font-size: 44px; font-weight: 700; line-height: 1.1; margin: 0;">Upcoming events</h1>
   </div>
 
   <p style="font-size: 16px; margin: 0 0 32px 0; line-height: 1.5; color: #32312D;">
-    Below are this month's Customer Success Office Hours dates, times, and sign up links. We're here to answer your questions, work through obstacles and strategy together, and drive your success.
+    Below are upcoming Customer Success Office Hours and Navigate events. We're here to answer your questions, work through obstacles and strategy together, and drive your success.
   </p>
+
+  <!-- Navigate Lunch & Learn (Featured Event) -->
+  <div style="background-color: #FFF8F0; border: 1px solid #FF9900; border-radius: 16px; padding: 32px; margin-bottom: 24px;">
+    <div style="color: #FF9900; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">Navigate Lunch & Learn</div>
+    <h2 style="font-size: 22px; font-weight: 700; margin: 0 0 4px 0; color: #0D0D0B;">Get to know Recurly's Compass Assistant</h2>
+    <p style="font-size: 15px; font-weight: 600; color: #FF9900; margin: 0 0 12px 0;">Practical AI workflows & daily use cases</p>
+    <p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.4; color: #32312D;">
+      Join us for a live walkthrough to learn how to maximize your efficiency using Recurly’s built-in AI—from fetching live records faster to deploying skills and automated recovery playbooks. Hosted by Niraj Naik (VP of Product Management) & Patrick Rizzo (Senior CSM).
+    </p>
+    <p style="margin: 0; font-size: 15px; font-weight: 700; line-height: 1.5; color: #0D0D0B;">
+      Thursday, September 10th | 1:00 PM – 2:00 PM CDT – <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" style="color: #008CFF !important; text-decoration: underline !important;">Save your seat</a>
+    </p>
+  </div>
 
   <!-- Christian Oldroyd (Office Hours) -->
   <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px;">
@@ -87,18 +100,6 @@ metadata:
       <img src="https://files.readme.io/e431ac1dfee2a8602e2f687268fbab451030e009a7f0a459d4eef315f117f0bd-Santi.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Santi Gomez">
     </div>
   </div>
-
-  <!-- Template Example for Navigate Lunch & Learns / Events (#FF9900)
-  <div style="background-color: #FFF8F0; border: 1px solid #FF9900; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px;">
-    <div>
-      <h2 style="font-size: 22px; font-weight: 700; margin: 0 0 8px 0; color: #0D0D0B;">Navigate Lunch & Learn</h2>
-      <p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.4; color: #32312D;">Event description here...</p>
-      <p style="margin: 0; font-size: 15px; font-weight: 700; line-height: 1.5; color: #0D0D0B;">
-        Date & Time – <a href="#" target="_blank" style="color: #008CFF !important; text-decoration: underline !important;">Sign up here</a>
-      </p>
-    </div>
-  </div>
-  -->
 
   <!-- Footer Section -->
   <p style="margin: 0 0 8px 0; font-size: 15px; line-height: 1.5; color: #32312D;">
