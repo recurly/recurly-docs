@@ -28,12 +28,12 @@ metadata:
   <!-- Featured Event: Navigate Lunch & Learn -->
   <div style="margin-bottom: 36px;">
     <div style="font-size: 14px; font-weight: 700; color: #FF9900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-      <span style="background-color: #FF9900; color: #FFFFFF; font-size: 11px; padding: 2px 8px; border-radius: 4px;">FEATURED</span> Navigate Lunch & Learn
+      <span style="background-color: #FF9900; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">FEATURED</span> Navigate Lunch & Learn
     </div>
     
     <div style="background-color: #FFF8F0; border: 1px solid #FF9900; border-radius: 12px; padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
       <!-- Date Badge -->
-      <div style="background-color: #FFFFFF; border: 1px solid #FF9900; border-radius: 10px; width: 72px; text-align: center; padding: 10px 0; flex-shrink: 0;">
+      <div style="background-color: #FFFFFF; border: 1px solid #FF9900; border-radius: 8px; width: 72px; text-align: center; padding: 10px 0; flex-shrink: 0;">
         <div style="font-size: 11px; font-weight: 700; color: #FF9900; text-transform: uppercase;">SEP</div>
         <div style="font-size: 26px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">10</div>
         <div style="font-size: 11px; font-weight: 600; color: #32312D;">THU</div>
@@ -56,9 +56,9 @@ metadata:
     </div>
   </div>
 
-  <!-- Office Hours Section Header -->
-  <div style="font-size: 14px; font-weight: 700; color: #5DC32E; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px;">
-    August Customer Success Office Hours
+  <!-- Office Hours Section Header with Pill -->
+  <div style="font-size: 14px; font-weight: 700; color: #5DC32E; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+    <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">LIVE SUPPORT</span> August Customer Success Office Hours
   </div>
 
   <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px;">
