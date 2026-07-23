@@ -22,7 +22,7 @@ metadata:
   </div>
 
   <p style="font-size: 15px; margin: 0 0 32px 0; line-height: 1.5; color: #32312D;">
-    Join our live Customer Success Office Hours and Navigate events below. We're here to answer questions, work through strategy, and drive your success.
+    Join our live Customer Success Office Hours, Recurly webinars, and Navigate events below. We're here to answer questions, work through strategy, and drive your success.
   </p>
 
   <!-- Office Hours Section Header with Pill -->
@@ -211,13 +211,52 @@ metadata:
 
   </div>
 
+  <!-- Recurly Webinar Event -->
+  <div style="margin-bottom: 24px;">
+    <div style="font-size: 14px; font-weight: 700; color: #FF5126; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+      <span style="background-color: #FF5126; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">RECURLY WEBINAR</span> Innovation Spotlight
+    </div>
+    
+    <div style="background-color: #FFF5F2; border: 1px solid #FF5126; border-radius: 12px; padding: 24px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+      <!-- Date Badge -->
+      <div style="background-color: #FFFFFF; border: 1px solid #FF5126; border-radius: 8px; width: 72px; text-align: center; padding: 10px 0; flex-shrink: 0;">
+        <div style="font-size: 11px; font-weight: 700; color: #FF5126; text-transform: uppercase;">AUG</div>
+        <div style="font-size: 26px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">11</div>
+        <div style="font-size: 11px; font-weight: 600; color: #32312D;">TUE</div>
+      </div>
+
+      <!-- Info -->
+      <div style="flex: 1; min-width: 240px;">
+        <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 6px 0; color: #0D0D0B;">Innovation Spotlight: Connecting every revenue moment</h3>
+        <p style="font-size: 13px; color: #32312D; margin: 0 0 12px 0; line-height: 1.4;">
+          Revenue risk doesn’t show up in one place. It hides across failed payments, churn signals, chargebacks, and disconnected workflows. Get a first look at our latest innovations designed to connect the subscription lifecycle from detection to action.
+        </p>
+        
+        <div style="font-size: 13px; font-weight: 700; color: #0D0D0B; margin-bottom: 6px;">See what's new:</div>
+        <ul style="margin: 0 0 12px 0; padding-left: 18px; font-size: 13px; color: #32312D; line-height: 1.5;">
+          <li>Fight chargebacks with AI-powered dispute recovery</li>
+          <li>Spot payment risk with authorization and decline insights</li>
+          <li>Recover failed payments with dunning and smarter retries</li>
+          <li>Reduce manual work with connected revenue workflows</li>
+        </ul>
+
+        <div style="font-size: 13px; font-weight: 700; color: #0D0D0B;">11:00 AM CT</div>
+      </div>
+
+      <!-- Action -->
+      <div style="flex-shrink: 0; align-self: flex-start;">
+        <a href="https://recurly.com/events/innovation-spotlight-connecting-revenue/" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 10px 18px; border-radius: 6px; display: inline-block;">Register now →</a>
+      </div>
+    </div>
+  </div>
+
   <!-- Upcoming Event: Navigate Lunch & Learn -->
   <div style="margin-bottom: 32px;">
     <div style="font-size: 14px; font-weight: 700; color: #FF9900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
       <span style="background-color: #FF9900; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">EARLY REGISTRATION OPEN</span> Navigate Lunch & Learn
     </div>
     
-    <div style="background-color: #FFF8F0; border: 1px solid #FF9900; border-radius: 12px; padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+    <div style="background-color: #FFF8F0; border: 1px solid #FF9900; border-radius: 12px; padding: 24px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
       <!-- Date Badge -->
       <div style="background-color: #FFFFFF; border: 1px solid #FF9900; border-radius: 8px; width: 72px; text-align: center; padding: 10px 0; flex-shrink: 0;">
         <div style="font-size: 11px; font-weight: 700; color: #FF9900; text-transform: uppercase;">SEP</div>
@@ -236,7 +275,7 @@ metadata:
       </div>
 
       <!-- Action -->
-      <div style="flex-shrink: 0;">
+      <div style="flex-shrink: 0; align-self: flex-start;">
         <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 10px 18px; border-radius: 6px; display: inline-block;">Save your seat →</a>
       </div>
     </div>
