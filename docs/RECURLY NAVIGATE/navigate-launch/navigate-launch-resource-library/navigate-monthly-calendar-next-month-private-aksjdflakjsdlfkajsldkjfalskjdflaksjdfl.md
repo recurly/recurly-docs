@@ -17,7 +17,7 @@ metadata:
 
   <!-- Header Section -->
   <div style="margin: 0 0 24px 0;">
-    <div style="color: #0D0D0B; font-size: 16px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">August & September 2026</div>
+    <div style="color: #0D0D0B; font-size: 16px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">August 2026</div>
     <h1 style="color: #0D0D0B; font-size: 40px; font-weight: 700; line-height: 1.1; margin: 0;">Upcoming events calendar</h1>
   </div>
 
