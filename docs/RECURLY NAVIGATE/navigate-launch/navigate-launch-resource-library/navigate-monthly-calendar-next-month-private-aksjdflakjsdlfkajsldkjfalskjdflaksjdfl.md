@@ -46,7 +46,7 @@ metadata:
             <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
             <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Julia Lackner <span style="font-size: 13px; font-weight: 400; color: #666666;">• CSM</span></div>
           </div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly Churn Tools</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly churn tools</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">12:30 PM CT</div>
         </div>
       </div>
@@ -71,7 +71,7 @@ metadata:
             <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
             <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
           </div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global Subscriptions & EMEA</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global subscriptions & EMEA</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
         </div>
       </div>
@@ -118,7 +118,7 @@ metadata:
             <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
             <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
           </div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global Subscriptions & EMEA</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global subscriptions & EMEA</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
         </div>
       </div>
@@ -143,7 +143,7 @@ metadata:
             <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
             <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Santi Espinosa G&oacute;mez <span style="font-size: 13px; font-weight: 400; color: #666666;">• CSM</span></div>
           </div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Strategy & Expert Guidance</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Strategy & expert guidance</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">11:00 AM CT</div>
         </div>
       </div>
@@ -168,7 +168,7 @@ metadata:
             <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
             <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
           </div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global Subscriptions & EMEA</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global subscriptions & EMEA</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
         </div>
       </div>
@@ -193,7 +193,7 @@ metadata:
             <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
             <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Patrick Rizzo <span style="font-size: 13px; font-weight: 400; color: #666666;">• Senior CSM</span></div>
           </div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly Data Dashboards</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly data dashboards</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">3:00 PM CT</div>
         </div>
       </div>
@@ -218,7 +218,7 @@ metadata:
             <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
             <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Julia Lackner <span style="font-size: 13px; font-weight: 400; color: #666666;">• CSM</span></div>
           </div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly Churn Tools</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly churn tools</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">12:30 PM CT</div>
         </div>
       </div>
@@ -243,7 +243,7 @@ metadata:
             <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
             <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
           </div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global Subscriptions & EMEA</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global subscriptions & EMEA</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
         </div>
       </div>
