@@ -43,7 +43,7 @@ metadata:
         </div>
         <div>
           <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Julia Lackner <span style="font-size: 13px; font-weight: 400; color: #666666;">• CSM</span></div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Topic: Recurly Churn Tools</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly Churn Tools</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">12:30 PM CT</div>
         </div>
       </div>
@@ -65,7 +65,7 @@ metadata:
         </div>
         <div>
           <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Topic: Recurly EMEA Global Office Hours</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global Subscriptions & EMEA</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
         </div>
       </div>
@@ -87,7 +87,7 @@ metadata:
         </div>
         <div>
           <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Topic: Recurly EMEA Global Office Hours</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global Subscriptions & EMEA</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
         </div>
       </div>
@@ -109,7 +109,7 @@ metadata:
         </div>
         <div>
           <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Santi Gomez <span style="font-size: 13px; font-weight: 400; color: #666666;">• CSM</span></div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Topic: Strategy & Expert Guidance</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Strategy & Expert Guidance</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">11:00 AM CT</div>
         </div>
       </div>
@@ -131,7 +131,7 @@ metadata:
         </div>
         <div>
           <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Topic: Recurly EMEA Global Office Hours</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global Subscriptions & EMEA</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
         </div>
       </div>
@@ -153,7 +153,7 @@ metadata:
         </div>
         <div>
           <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Patrick Rizzo <span style="font-size: 13px; font-weight: 400; color: #666666;">• Senior CSM</span></div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Topic: Recurly Data Dashboards</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly Data Dashboards</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">3:00 PM CT</div>
         </div>
       </div>
@@ -175,7 +175,7 @@ metadata:
         </div>
         <div>
           <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Julia Lackner <span style="font-size: 13px; font-weight: 400; color: #666666;">• CSM</span></div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Topic: Recurly Churn Tools</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly Churn Tools</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">12:30 PM CT</div>
         </div>
       </div>
@@ -197,7 +197,7 @@ metadata:
         </div>
         <div>
           <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
-          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Topic: Recurly EMEA Global Office Hours</div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global Subscriptions & EMEA</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
         </div>
       </div>
@@ -211,7 +211,7 @@ metadata:
 
   </div>
 
-  <!-- Upcoming Event: Navigate Lunch & Learn (Moved Below Office Hours) -->
+  <!-- Upcoming Event: Navigate Lunch & Learn -->
   <div style="margin-bottom: 32px;">
     <div style="font-size: 14px; font-weight: 700; color: #FF9900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
       <span style="background-color: #FF9900; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">EARLY REGISTRATION OPEN</span> Navigate Lunch & Learn
