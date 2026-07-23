@@ -17,7 +17,7 @@ metadata:
 
   <!-- Header Section -->
   <div style="margin: 0 0 24px 0;">
-    <div style="color: #5DC32E; font-size: 16px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">August & September 2026</div>
+    <div style="color: #5DC32E; font-size: 16px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">August 2026</div>
     <h1 style="color: #0D0D0B; font-size: 40px; font-weight: 700; line-height: 1.1; margin: 0;">Upcoming events calendar</h1>
   </div>
 
@@ -25,43 +25,13 @@ metadata:
     Join our live Customer Success Office Hours and Navigate events below. We're here to answer questions, work through strategy, and drive your success.
   </p>
 
-  <!-- Featured Event: Navigate Lunch & Learn -->
-  <div style="margin-bottom: 36px;">
-    <div style="font-size: 14px; font-weight: 700; color: #FF9900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-      <span style="background-color: #FF9900; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">FEATURED</span> Navigate Lunch & Learn
-    </div>
-    
-    <div style="background-color: #FFF8F0; border: 1px solid #FF9900; border-radius: 12px; padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
-      <!-- Date Badge -->
-      <div style="background-color: #FFFFFF; border: 1px solid #FF9900; border-radius: 8px; width: 72px; text-align: center; padding: 10px 0; flex-shrink: 0;">
-        <div style="font-size: 11px; font-weight: 700; color: #FF9900; text-transform: uppercase;">SEP</div>
-        <div style="font-size: 26px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">10</div>
-        <div style="font-size: 11px; font-weight: 600; color: #32312D;">THU</div>
-      </div>
-
-      <!-- Info -->
-      <div style="flex: 1; min-width: 240px;">
-        <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 4px 0; color: #0D0D0B;">Get to know Recurly's Compass Assistant</h3>
-        <p style="font-size: 13px; font-weight: 600; color: #FF9900; margin: 0 0 8px 0;">Practical AI workflows & daily use cases</p>
-        <p style="font-size: 13px; color: #32312D; margin: 0 0 8px 0; line-height: 1.4;">
-          Learn how to maximize efficiency using Recurly's built-in AI. Hosted by Niraj Naik (VP of Product) & Patrick Rizzo (Senior CSM).
-        </p>
-        <div style="font-size: 13px; font-weight: 700; color: #0D0D0B;">1:00 PM – 2:00 PM CDT</div>
-      </div>
-
-      <!-- Action -->
-      <div style="flex-shrink: 0;">
-        <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 10px 18px; border-radius: 6px; display: inline-block;">Save your seat →</a>
-      </div>
-    </div>
-  </div>
-
   <!-- Office Hours Section Header with Pill -->
   <div style="font-size: 14px; font-weight: 700; color: #5DC32E; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
     <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">LIVE SUPPORT</span> August Customer Success Office Hours
   </div>
 
-  <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px;">
+  <!-- Office Hours List -->
+  <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 36px;">
 
     <!-- Entry 1: Aug 3 -->
     <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
@@ -239,6 +209,37 @@ metadata:
       </div>
     </div>
 
+  </div>
+
+  <!-- Upcoming Event: Navigate Lunch & Learn (Moved Below Office Hours) -->
+  <div style="margin-bottom: 32px;">
+    <div style="font-size: 14px; font-weight: 700; color: #FF9900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+      <span style="background-color: #FF9900; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">EARLY REGISTRATION OPEN</span> Navigate Lunch & Learn
+    </div>
+    
+    <div style="background-color: #FFF8F0; border: 1px solid #FF9900; border-radius: 12px; padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+      <!-- Date Badge -->
+      <div style="background-color: #FFFFFF; border: 1px solid #FF9900; border-radius: 8px; width: 72px; text-align: center; padding: 10px 0; flex-shrink: 0;">
+        <div style="font-size: 11px; font-weight: 700; color: #FF9900; text-transform: uppercase;">SEP</div>
+        <div style="font-size: 26px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">10</div>
+        <div style="font-size: 11px; font-weight: 600; color: #32312D;">THU</div>
+      </div>
+
+      <!-- Info -->
+      <div style="flex: 1; min-width: 240px;">
+        <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 4px 0; color: #0D0D0B;">Get to know Recurly's Compass Assistant</h3>
+        <p style="font-size: 13px; font-weight: 600; color: #FF9900; margin: 0 0 8px 0;">Practical AI workflows & daily use cases</p>
+        <p style="font-size: 13px; color: #32312D; margin: 0 0 8px 0; line-height: 1.4;">
+          Learn how to maximize efficiency using Recurly's built-in AI. Hosted by Niraj Naik (VP of Product) & Patrick Rizzo (Senior CSM).
+        </p>
+        <div style="font-size: 13px; font-weight: 700; color: #0D0D0B;">1:00 PM – 2:00 PM CDT</div>
+      </div>
+
+      <!-- Action -->
+      <div style="flex-shrink: 0;">
+        <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 10px 18px; border-radius: 6px; display: inline-block;">Save your seat →</a>
+      </div>
+    </div>
   </div>
 
   <!-- Footer Section -->
