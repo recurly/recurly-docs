@@ -1,10 +1,9 @@
 ---
 title: Navigate monthly calendar
 excerpt: >-
-  Join Recurly's Customer Success Office Hours this July to master data
-  dashboards, leverage churn tools, and optimize your subscription management
-  strategy. Register for live, expert-led Navigate sessions available across
-  global time zones, including EMEA.
+  Join Recurly's Customer Success Office Hours to master data dashboards,
+  leverage churn tools, and optimize your subscription management strategy.
+  Register for live, expert-led Navigate sessions and Recurly webinars.
 deprecated: false
 hidden: false
 metadata:
