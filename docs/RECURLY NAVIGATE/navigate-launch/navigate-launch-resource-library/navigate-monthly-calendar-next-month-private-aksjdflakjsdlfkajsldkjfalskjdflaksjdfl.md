@@ -17,7 +17,7 @@ metadata:
 
   <!-- Header Section -->
   <div style="margin: 0 0 24px 0;">
-    <div style="color: #5DC32E; font-size: 16px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">August 2026</div>
+    <div style="color: #0D0D0B; font-size: 16px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">August & September 2026</div>
     <h1 style="color: #0D0D0B; font-size: 40px; font-weight: 700; line-height: 1.1; margin: 0;">Upcoming events calendar</h1>
   </div>
 
@@ -25,15 +25,15 @@ metadata:
     Join our live Customer Success Office Hours, Recurly webinars, and Navigate events below. We're here to answer questions, work through strategy, and drive your success.
   </p>
 
-  <!-- Office Hours Section Header with Pill -->
-  <div style="font-size: 14px; font-weight: 700; color: #5DC32E; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
-    <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">LIVE SUPPORT</span> August Customer Success Office Hours
+  <!-- August Calendar Section Header -->
+  <div style="font-size: 14px; font-weight: 700; color: #0D0D0B; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+    <span style="background-color: #0D0D0B; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">AUGUST 2026</span> Live Events & Support
   </div>
 
-  <!-- Office Hours List -->
+  <!-- August Chronological Event Stream -->
   <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 36px;">
 
-    <!-- Entry 1: Aug 3 -->
+    <!-- Entry 1: Aug 3 (Office Hours) -->
     <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
       <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
         <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
@@ -55,7 +55,7 @@ metadata:
       </div>
     </div>
 
-    <!-- Entry 2: Aug 5 -->
+    <!-- Entry 2: Aug 5 (Office Hours) -->
     <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
       <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
         <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
@@ -77,7 +77,29 @@ metadata:
       </div>
     </div>
 
-    <!-- Entry 3: Aug 12 -->
+    <!-- Entry 3: Aug 11 (Recurly Webinar Tile) -->
+    <div style="background-color: #FFF5F2; border: 1px solid #D1CFC4; border-left: 4px solid #FF5126; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
+        <div style="background-color: #FFFFFF; border: 1px solid #FF5126; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
+          <div style="font-size: 10px; font-weight: 700; color: #FF5126; text-transform: uppercase;">AUG</div>
+          <div style="font-size: 20px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">11</div>
+          <div style="font-size: 10px; font-weight: 600; color: #32312D;">TUE</div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px;">
+            <span style="background-color: #FF5126; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Webinar</span>
+            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Innovation Spotlight: Connecting every revenue moment</div>
+          </div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Get a first look at Recurly's latest innovations from detection to action</div>
+          <div style="font-size: 13px; font-weight: 700; color: #FF5126; margin-top: 2px;">11:00 AM CT</div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+        <a href="https://recurly.com/events/innovation-spotlight-connecting-revenue/" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 6px; display: inline-block;">Register</a>
+      </div>
+    </div>
+
+    <!-- Entry 4: Aug 12 (Office Hours) -->
     <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
       <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
         <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
@@ -99,7 +121,7 @@ metadata:
       </div>
     </div>
 
-    <!-- Entry 4: Aug 14 -->
+    <!-- Entry 5: Aug 14 (Office Hours) -->
     <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
       <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
         <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
@@ -121,7 +143,7 @@ metadata:
       </div>
     </div>
 
-    <!-- Entry 5: Aug 19 (Christian) -->
+    <!-- Entry 6: Aug 19 (Christian) -->
     <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
       <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
         <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
@@ -143,7 +165,7 @@ metadata:
       </div>
     </div>
 
-    <!-- Entry 6: Aug 19 (Patrick) -->
+    <!-- Entry 7: Aug 19 (Patrick) -->
     <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
       <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
         <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
@@ -165,7 +187,7 @@ metadata:
       </div>
     </div>
 
-    <!-- Entry 7: Aug 24 -->
+    <!-- Entry 8: Aug 24 (Julia) -->
     <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
       <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
         <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
@@ -187,7 +209,7 @@ metadata:
       </div>
     </div>
 
-    <!-- Entry 8: Aug 26 -->
+    <!-- Entry 9: Aug 26 (Christian) -->
     <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
       <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
         <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
@@ -211,46 +233,7 @@ metadata:
 
   </div>
 
-  <!-- Recurly Webinar Event -->
-  <div style="margin-bottom: 24px;">
-    <div style="font-size: 14px; font-weight: 700; color: #FF5126; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-      <span style="background-color: #FF5126; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">RECURLY WEBINAR</span> Innovation Spotlight
-    </div>
-    
-    <div style="background-color: #FFF5F2; border: 1px solid #FF5126; border-radius: 12px; padding: 24px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
-      <!-- Date Badge -->
-      <div style="background-color: #FFFFFF; border: 1px solid #FF5126; border-radius: 8px; width: 72px; text-align: center; padding: 10px 0; flex-shrink: 0;">
-        <div style="font-size: 11px; font-weight: 700; color: #FF5126; text-transform: uppercase;">AUG</div>
-        <div style="font-size: 26px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">11</div>
-        <div style="font-size: 11px; font-weight: 600; color: #32312D;">TUE</div>
-      </div>
-
-      <!-- Info -->
-      <div style="flex: 1; min-width: 240px;">
-        <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 6px 0; color: #0D0D0B;">Innovation Spotlight: Connecting every revenue moment</h3>
-        <p style="font-size: 13px; color: #32312D; margin: 0 0 12px 0; line-height: 1.4;">
-          Revenue risk doesn’t show up in one place. It hides across failed payments, churn signals, chargebacks, and disconnected workflows. Get a first look at our latest innovations designed to connect the subscription lifecycle from detection to action.
-        </p>
-        
-        <div style="font-size: 13px; font-weight: 700; color: #0D0D0B; margin-bottom: 6px;">See what's new:</div>
-        <ul style="margin: 0 0 12px 0; padding-left: 18px; font-size: 13px; color: #32312D; line-height: 1.5;">
-          <li>Fight chargebacks with AI-powered dispute recovery</li>
-          <li>Spot payment risk with authorization and decline insights</li>
-          <li>Recover failed payments with dunning and smarter retries</li>
-          <li>Reduce manual work with connected revenue workflows</li>
-        </ul>
-
-        <div style="font-size: 13px; font-weight: 700; color: #0D0D0B;">11:00 AM CT</div>
-      </div>
-
-      <!-- Action -->
-      <div style="flex-shrink: 0; align-self: flex-start;">
-        <a href="https://recurly.com/events/innovation-spotlight-connecting-revenue/" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 10px 18px; border-radius: 6px; display: inline-block;">Register now →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Upcoming Event: Navigate Lunch & Learn -->
+  <!-- Upcoming September Event: Navigate Lunch & Learn (Early Registration) -->
   <div style="margin-bottom: 32px;">
     <div style="font-size: 14px; font-weight: 700; color: #FF9900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
       <span style="background-color: #FF9900; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">EARLY REGISTRATION OPEN</span> Navigate Lunch & Learn
