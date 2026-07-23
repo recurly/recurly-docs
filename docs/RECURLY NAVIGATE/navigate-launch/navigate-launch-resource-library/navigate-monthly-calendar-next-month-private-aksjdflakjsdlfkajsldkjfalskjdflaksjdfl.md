@@ -141,7 +141,7 @@ metadata:
         <div>
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap;">
             <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
-            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Santi Espinosa Gcaf&oacute;mez <span style="font-size: 13px; font-weight: 400; color: #666666;">• CSM</span></div>
+            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Santi Espinosa G;caf&oacute;mez <span style="font-size: 13px; font-weight: 400; color: #666666;">• CSM</span></div>
           </div>
           <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Strategy & Expert Guidance</div>
           <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">11:00 AM CT</div>
