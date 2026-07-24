@@ -24,83 +24,293 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<div style="background-color: #F8F8FF; padding: 40px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #000000; max-width: 750px; margin: 0 auto; border-radius: 8px;">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap');
+</style>
 
-  <div style="margin: 0 0 16px 0;">
-    <div style="color: #2D1B36; font-size: 24px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">July 2026</div>
-    <h1 style="color: #8C52FF; font-size: 48px; font-weight: 700; line-height: 1.1; margin: 0;">Upcoming events</h1>
+<div style="background-color: #FCFBF7; padding: 40px; font-family: 'Figtree', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #0D0D0B; max-width: 750px; margin: 0 auto; border-radius: 12px; border: 1px solid #D1CFC4;">
+
+  <!-- Header Section -->
+  <div style="margin: 0 0 24px 0;">
+    <div style="color: #0D0D0B; font-size: 16px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">August 2026</div>
+    <h1 style="color: #0D0D0B; font-size: 40px; font-weight: 700; line-height: 1.1; margin: 0;">Upcoming events calendar</h1>
   </div>
 
-  <p style="font-size: 16px; margin: 0 0 32px 0; line-height: 1.5; color: #555555;">
-    Below are this month's Customer Success Office Hours dates, times, and sign up links. We're here to answer your questions, work through obstacles and strategy together, and drive your success.
+  <p style="font-size: 15px; margin: 0 0 32px 0; line-height: 1.5; color: #32312D;">
+    Join our live Customer Success Office Hours, Recurly webinars, and Navigate events below. We're here to answer questions, work through strategy, and drive your success.
   </p>
 
-  <div style="background-color: #FFFFFF; border: 1px solid #8C52FF; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px;">
-    <div>
-      <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 8px 0; color: #2D1B36;">Recurly EMEA Office Hours:<br><span style="color: #8C52FF;">Serving our global customers!</span></h2>
-      <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4; color: #666666;">Join Office Hours with Christian Oldroyd Senior CSM out of our London office to think through your questions while his colleagues around the world sleep..</p>
-      <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4; color: #2D1B36;">
-        Wednesday, July 1st | 10:30 AM BST – <a href="https://recurly.registration.goldcast.io/events/a093ecf9-c6dc-4f8f-b363-a78207993d21?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a><br>
-        Wednesday, July 8th | 10:30 AM BST – <a href="https://recurly.registration.goldcast.io/events/da75c083-57ee-41c9-9a70-8b5dd5058356?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a><br>
-        Wednesday, July 15th | 10:30 AM BST – <a href="https://recurly.registration.goldcast.io/events/c389be80-0a23-4341-97ee-5e6cd204dec4?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a><br>
-        Wednesday, July 22nd | 10:30 AM BST – <a href="https://recurly.registration.goldcast.io/events/ed744950-16c6-4b42-8c97-62c2320af765?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a>
-      </p>
+  <!-- August Calendar Section Header -->
+  <div style="font-size: 14px; font-weight: 700; color: #0D0D0B; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+    <span style="background-color: #0D0D0B; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">AUGUST 2026</span> Live Events & Support
+  </div>
+
+  <!-- August Chronological Event Stream -->
+  <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 36px;">
+
+    <!-- Entry 1: Aug 3 (Office Hours) -->
+    <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
+        <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
+          <div style="font-size: 10px; font-weight: 700; color: #5DC32E; text-transform: uppercase;">AUG</div>
+          <div style="font-size: 20px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">03</div>
+          <div style="font-size: 10px; font-weight: 600; color: #32312D;">MON</div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap;">
+            <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
+            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Julia Lackner <span style="font-size: 13px; font-weight: 400; color: #666666;">• CSM</span></div>
+          </div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly churn tools</div>
+          <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">12:30 PM CT</div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+        <div style="width: 40px; height: 40px; background-color: #FFD706; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+          <img src="https://files.readme.io/076d29f534bdfb425daa1ec188ee5fef0e3d1c5f04cae94571b61f758f51f8c4-Julia-Lackner.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Julia Lackner">
+        </div>
+        <a href="https://recurly.registration.goldcast.io/events/8bb441d2-857e-4797-9144-c777a61fa467?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 6px; display: inline-block;">Sign up</a>
+      </div>
     </div>
-    <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
-      <img src="https://files.readme.io/556f786c283fc2468e4f543ddbf3e24579a692594fc68dbc8ad4f14877ece148-Christian_Oldroyd_Customer_Success_Manager_II_1.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Christian Oldroyd">
+
+    <!-- Entry 2: Aug 5 (Office Hours) -->
+    <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
+        <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
+          <div style="font-size: 10px; font-weight: 700; color: #5DC32E; text-transform: uppercase;">AUG</div>
+          <div style="font-size: 20px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">05</div>
+          <div style="font-size: 10px; font-weight: 600; color: #32312D;">WED</div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap;">
+            <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
+            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
+          </div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global subscriptions & EMEA</div>
+          <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+        <div style="width: 40px; height: 40px; background-color: #FFD706; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+          <img src="https://files.readme.io/556f786c283fc2468e4f543ddbf3e24579a692594fc68dbc8ad4f14877ece148-Christian_Oldroyd_Customer_Success_Manager_II_1.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Christian Oldroyd">
+        </div>
+        <a href="https://recurly.registration.goldcast.io/events/36139983-b340-465f-9299-0ccce7cec287?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 6px; display: inline-block;">Sign up</a>
+      </div>
+    </div>
+
+    <!-- Entry 3: Aug 11 (Recurly Webinar Tile) -->
+    <div style="background-color: #FFF5F2; border: 1px solid #D1CFC4; border-left: 4px solid #FF5126; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
+        <div style="background-color: #FFFFFF; border: 1px solid #FF5126; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
+          <div style="font-size: 10px; font-weight: 700; color: #FF5126; text-transform: uppercase;">AUG</div>
+          <div style="font-size: 20px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">11</div>
+          <div style="font-size: 10px; font-weight: 600; color: #32312D;">TUE</div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap;">
+            <span style="background-color: #FF5126; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Webinar</span>
+            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Innovation Spotlight: Connecting every revenue moment</div>
+          </div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Get a first look at Recurly's latest innovations from detection to action</div>
+          <div style="font-size: 13px; font-weight: 700; color: #FF5126; margin-top: 2px;">11:00 AM CT</div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+        <a href="https://recurly.com/events/innovation-spotlight-connecting-revenue/" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 6px; display: inline-block;">Register</a>
+      </div>
+    </div>
+
+    <!-- Entry 4: Aug 12 (Office Hours) -->
+    <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
+        <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
+          <div style="font-size: 10px; font-weight: 700; color: #5DC32E; text-transform: uppercase;">AUG</div>
+          <div style="font-size: 20px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">12</div>
+          <div style="font-size: 10px; font-weight: 600; color: #32312D;">WED</div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap;">
+            <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
+            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
+          </div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global subscriptions & EMEA</div>
+          <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+        <div style="width: 40px; height: 40px; background-color: #FFD706; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+          <img src="https://files.readme.io/556f786c283fc2468e4f543ddbf3e24579a692594fc68dbc8ad4f14877ece148-Christian_Oldroyd_Customer_Success_Manager_II_1.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Christian Oldroyd">
+        </div>
+        <a href="https://recurly.registration.goldcast.io/events/a61e1936-42aa-484c-9d14-35a4b876cfcd?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 6px; display: inline-block;">Sign up</a>
+      </div>
+    </div>
+
+    <!-- Entry 5: Aug 14 (Office Hours) -->
+    <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
+        <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
+          <div style="font-size: 10px; font-weight: 700; color: #5DC32E; text-transform: uppercase;">AUG</div>
+          <div style="font-size: 20px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">14</div>
+          <div style="font-size: 10px; font-weight: 600; color: #32312D;">FRI</div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap;">
+            <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
+            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Santi Espinosa G&oacute;mez <span style="font-size: 13px; font-weight: 400; color: #666666;">• CSM</span></div>
+          </div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Strategy & expert guidance</div>
+          <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">11:00 AM CT</div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+        <div style="width: 40px; height: 40px; background-color: #FFD706; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+          <img src="https://files.readme.io/e431ac1dfee2a8602e2f687268fbab451030e009a7f0a459d4eef315f117f0bd-Santi.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Santi Gomez">
+        </div>
+        <a href="https://recurly.registration.goldcast.io/events/977e665b-8960-492b-bb36-d4a1e71f3270?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 6px; display: inline-block;">Sign up</a>
+      </div>
+    </div>
+
+    <!-- Entry 6: Aug 19 (Christian) -->
+    <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
+        <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
+          <div style="font-size: 10px; font-weight: 700; color: #5DC32E; text-transform: uppercase;">AUG</div>
+          <div style="font-size: 20px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">19</div>
+          <div style="font-size: 10px; font-weight: 600; color: #32312D;">WED</div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap;">
+            <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
+            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
+          </div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global subscriptions & EMEA</div>
+          <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+        <div style="width: 40px; height: 40px; background-color: #FFD706; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+          <img src="https://files.readme.io/556f786c283fc2468e4f543ddbf3e24579a692594fc68dbc8ad4f14877ece148-Christian_Oldroyd_Customer_Success_Manager_II_1.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Christian Oldroyd">
+        </div>
+        <a href="https://recurly.registration.goldcast.io/events/bde53f20-8b3e-4aa4-bc0d-3d770b93942d?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 6px; display: inline-block;">Sign up</a>
+      </div>
+    </div>
+
+    <!-- Entry 7: Aug 19 (Patrick) -->
+    <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
+        <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
+          <div style="font-size: 10px; font-weight: 700; color: #5DC32E; text-transform: uppercase;">AUG</div>
+          <div style="font-size: 20px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">19</div>
+          <div style="font-size: 10px; font-weight: 600; color: #32312D;">WED</div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap;">
+            <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
+            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Patrick Rizzo <span style="font-size: 13px; font-weight: 400; color: #666666;">• Senior CSM</span></div>
+          </div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly data dashboards</div>
+          <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">3:00 PM CT</div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+        <div style="width: 40px; height: 40px; background-color: #FFD706; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+          <img src="https://files.readme.io/5e1a49513c3d043f66594df4828ece696bc096723cbcfcf6338ef772d432cb42-Patrick_Rizzo_Strategic_CSM__Recurly_1.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Patrick Rizzo">
+        </div>
+        <a href="https://recurly.registration.goldcast.io/events/340c0965-99ad-4715-944a-acff193740c8?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 6px; display: inline-block;">Sign up</a>
+      </div>
+    </div>
+
+    <!-- Entry 8: Aug 24 (Julia) -->
+    <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
+        <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
+          <div style="font-size: 10px; font-weight: 700; color: #5DC32E; text-transform: uppercase;">AUG</div>
+          <div style="font-size: 20px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">24</div>
+          <div style="font-size: 10px; font-weight: 600; color: #32312D;">MON</div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap;">
+            <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
+            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Julia Lackner <span style="font-size: 13px; font-weight: 400; color: #666666;">• CSM</span></div>
+          </div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Recurly churn tools</div>
+          <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">12:30 PM CT</div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+        <div style="width: 40px; height: 40px; background-color: #FFD706; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+          <img src="https://files.readme.io/076d29f534bdfb425daa1ec188ee5fef0e3d1c5f04cae94571b61f758f51f8c4-Julia-Lackner.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Julia Lackner">
+        </div>
+        <a href="https://recurly.registration.goldcast.io/events/ad04b1d7-eaea-4972-8c63-dee27575451d?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 6px; display: inline-block;">Sign up</a>
+      </div>
+    </div>
+
+    <!-- Entry 9: Aug 26 (Christian) -->
+    <div style="background-color: #FFFFFF; border: 1px solid #D1CFC4; border-left: 4px solid #5DC32E; border-radius: 8px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 260px;">
+        <div style="background-color: #EFFAEA; border: 1px solid #5DC32E; border-radius: 8px; width: 60px; text-align: center; padding: 6px 0; flex-shrink: 0;">
+          <div style="font-size: 10px; font-weight: 700; color: #5DC32E; text-transform: uppercase;">AUG</div>
+          <div style="font-size: 20px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">26</div>
+          <div style="font-size: 10px; font-weight: 600; color: #32312D;">WED</div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap;">
+            <span style="background-color: #5DC32E; color: #FFFFFF; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 700; text-transform: uppercase;">Office Hours</span>
+            <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Christian Oldroyd <span style="font-size: 13px; font-weight: 400; color: #666666;">• EMEA Senior CSM</span></div>
+          </div>
+          <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Area of expertise: Global subscriptions & EMEA</div>
+          <div style="font-size: 13px; font-weight: 700; color: #5DC32E; margin-top: 2px;">10:30 AM BST</div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+        <div style="width: 40px; height: 40px; background-color: #FFD706; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+          <img src="https://files.readme.io/556f786c283fc2468e4f543ddbf3e24579a692594fc68dbc8ad4f14877ece148-Christian_Oldroyd_Customer_Success_Manager_II_1.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Christian Oldroyd">
+        </div>
+        <a href="https://recurly.registration.goldcast.io/events/39aa2317-8977-4da1-a65c-3538796c9cc4?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 6px; display: inline-block;">Sign up</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Upcoming September Event: Navigate Lunch & Learn (Early Registration) -->
+  <div style="margin-bottom: 32px;">
+    <div style="font-size: 14px; font-weight: 700; color: #FF9900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+      <span style="background-color: #FF9900; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">EARLY REGISTRATION OPEN</span> Navigate Lunch & Learn
+    </div>
+    
+    <div style="background-color: #FFF8F0; border: 1px solid #FF9900; border-radius: 12px; padding: 24px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+      <!-- Date Badge -->
+      <div style="background-color: #FFFFFF; border: 1px solid #FF9900; border-radius: 8px; width: 72px; text-align: center; padding: 10px 0; flex-shrink: 0;">
+        <div style="font-size: 11px; font-weight: 700; color: #FF9900; text-transform: uppercase;">SEP</div>
+        <div style="font-size: 26px; font-weight: 700; color: #0D0D0B; line-height: 1.1;">10</div>
+        <div style="font-size: 11px; font-weight: 600; color: #32312D;">THU</div>
+      </div>
+
+      <!-- Info -->
+      <div style="flex: 1; min-width: 240px;">
+        <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 4px 0; color: #0D0D0B;">Get to know Recurly's Compass Assistant</h3>
+        <p style="font-size: 13px; font-weight: 600; color: #FF9900; margin: 0 0 8px 0;">Practical AI workflows & daily use cases</p>
+        <p style="font-size: 13px; color: #32312D; margin: 0 0 8px 0; line-height: 1.4;">
+          Learn how to maximize efficiency using Recurly's built-in AI. Hosted by Niraj Naik (VP of Product) & Patrick Rizzo (Senior CSM).
+        </p>
+        <div style="font-size: 13px; font-weight: 700; color: #0D0D0B;">1:00 PM – 2:00 PM CDT</div>
+      </div>
+
+      <!-- Action -->
+      <div style="flex-shrink: 0; align-self: flex-start;">
+        <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 10px 18px; border-radius: 6px; display: inline-block;">Save your seat →</a>
+      </div>
     </div>
   </div>
 
-  <div style="background-color: #FFF5E6; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px;">
-    <div>
-      <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 8px 0; color: #D97706;">Have a question?</h2>
-      <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4; color: #666666;">Perhaps you want to learn more about Recurly’s data dashboards?</p>
-      <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4; color: #2D1B36;">
-        Join Office Hours with Patrick Rizzo, Senior CSM<br>
-        Wednesday, July 8th | 3:00 PM CT – <a href="https://recurly.registration.goldcast.io/events/74befef3-9ca2-4663-b168-055995636f9d?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a><br>
-        Wednesday, July 29th | 3:00 PM CT – <a href="https://recurly.registration.goldcast.io/events/edce4eea-5a57-4b68-afaf-b9ea12290775?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a>
-      </p>
-    </div>
-    <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
-      <img src="https://files.readme.io/5e1a49513c3d043f66594df4828ece696bc096723cbcfcf6338ef772d432cb42-Patrick_Rizzo_Strategic_CSM__Recurly_1.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Patrick Rizzo">
-    </div>
-  </div>
-
-  <div style="background-color: #FDF0F0; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px;">
-    <div>
-      <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 8px 0; color: #DC2626;">Is something holding you back?</h2>
-      <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4; color: #666666;">Maybe just want to learn more about Recurly’s churn tools?</p>
-      <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4; color: #2D1B36;">
-        Join Office Hours with Julia Lackner, CSM<br>
-        Monday, June 1st | 12:30 PM CT – 
-        Monday, July 13th | 12:30 PM CT – <a href="https://recurly.registration.goldcast.io/events/46502010-5b55-4304-959f-a26001e73cd6?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a>
-      </p>
-    </div>
-    <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
-      <img src="https://files.readme.io/076d29f534bdfb425daa1ec188ee5fef0e3d1c5f04cae94571b61f758f51f8c4-Julia-Lackner.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Julia Lackner">
-    </div>
-  </div>
-
-  <div style="background-color: #F0FAFB; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 32px;">
-    <div>
-      <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 8px 0; color: #0284C7;">Do you need a helping hand?</h2>
-      <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4; color: #666666;">We all need an extra, expert set of eyes sometimes, right?</p>
-      <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4; color: #2D1B36;">
-        Join Office Hours with Santi Gomez, CSM<br>
-        Friday, July 3rd | 11:00 AM CT – <a href="https://recurly.registration.goldcast.io/events/7ccc37ff-666d-4222-a115-34272bbb3527?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a><br>
-        Friday, July 24th | 11:00 AM CT – <a href="https://recurly.registration.goldcast.io/events/da1e5679-8f2c-48ca-95e2-1b817c2ed560?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a>
-      </p>
-    </div>
-    <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
-      <img src="https://files.readme.io/e431ac1dfee2a8602e2f687268fbab451030e009a7f0a459d4eef315f117f0bd-Santi.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Santi Gomez">
-    </div>
-  </div>
-
-  <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #555555;">
-    <strong style="font-weight: 700; color: #8C52FF;">This calendar is updated monthly</strong>.</p><p> If you have a dedicated CSM or are subscribed to Navigate, you'll receive an updated calendar each month. Feel free to bookmark this page and check in on your own time!
+  <!-- Footer Section -->
+  <p style="margin: 0 0 8px 0; font-size: 14px; line-height: 1.5; color: #32312D;">
+    <strong style="font-weight: 700; color: #0D0D0B;">This calendar is updated monthly.</strong> If you have a dedicated CSM or are subscribed to Navigate, you'll receive an updated calendar each month. Feel free to bookmark this page and check in on your own time!
   </p>
-  <p><strong>Happy Navigating,</strong></p>
-<p>Recurly Customer Success</p>
+  <p style="margin: 16px 0 0 0; font-size: 14px; color: #0D0D0B;">
+    <strong>Happy Navigating,</strong><br>
+    Recurly Customer Success
+  </p>
 
 </div>
 `}</HTMLBlock>
