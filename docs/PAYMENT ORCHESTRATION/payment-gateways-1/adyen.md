@@ -272,6 +272,7 @@ To enable card data to appear when a token is received via webhook, enable respo
 - Card bin
 - Card Summary
 - Expiry date
+- Payment Account Reference
 
 #### Activation of 3DS results data
 
@@ -318,6 +319,21 @@ Once activated, Adyen generates a unique Network Transaction ID (NTID) and a reu
 <div class="rp-steps">
 <div class="rp-step">
 <div class="rp-step-num">5</div>
+<div><h4>Enable NACHA Verification (if using ACH)</h4><p>If you are using Giact for ACH Verification, enable this setting for NACHA compliance.</p></div>
+</div>
+</div>
+
+<div class="rp-steps">
+<div class="rp-step">
+<div class="rp-step-num">6</div>
+<div><h4>Allow Gateway Controlled Network Routing
+</h4><p>If you are using Adyen's intelligent debit routing, you will need to enable this setting to allow Adyen's routing to take over from Recurly.</p></div>
+</div>
+</div>
+
+<div class="rp-steps">
+<div class="rp-step">
+<div class="rp-step-num">7</div>
 <div><h4>Save your Adyen configuration</h4><p>Click Save to complete the gateway setup.</p></div>
 </div>
 </div>
@@ -630,6 +646,10 @@ Boleto Bancário (Boleto) is a popular payment method in Brazil, commonly used b
 
 # Gateway feature support
 
+## Adyen Intelligent Routing&#x20;
+
+Adyen's Intelligent Payment Routing feature for US debit transactions automatically selects the most cost-effective and reliable network to boost performance and save merchant's on transaction processing costs. The product delivers "an average of 26% in cost reductions and a 0.22% increase in authorization rates" for merchants ([source](https://www.adyen.com/press-and-media/adyens-intelligent-payment-routing-usdebit)). You can enable Adyen's Intelligent Routing by speaking to your gateway contacts, and enabling a checkbox in your Recurly Adyen gateway configuration.&#x20;
+
 ## Adyen Real Time Account Updater (RTAU)
 
 Adyen Real Time Account Updater (RTAU) updates card details and expiration dates in real time during a transaction, which can improve authorization rates and keep renewals running when a customer's card details change.
@@ -745,7 +765,7 @@ If you have a paid subscription to Adyen Protect Premium, you can create custom 
 - **Shipping method and amount** — Recurly sends the invoice shipping amount and the shipping method Name value to Adyen — see <a href="https://docs.recurly.com/docs/shipping#/shipping-methods" target="_blank">Shipping methods</a>
 - **Browser information** — Sent when the shopper is routed through 3D Secure; Revenue Protect can evaluate browser-based rules at the gateway
 - **Shopper data** — Email address, phone number, name, IP address (in-session only), and shopper reference. IP addresses are not sent to Adyen on renewals. If shopper details aren't present on the account, they won't be sent.
-- **Acquisition date** — Send account acquisition dates using `acquisition.acquired_at` in the V3 API. Existing accounts can be backfilled. See the <a href="https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase" target="_blank">V3 acquired\_at field documentation</a>.
+- **Acquisition date** — Send account acquisition dates using `acquisition.acquired_at` in the V3 API. Existing accounts can be backfilled. See the <a href="https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase" target="_blank">V3 acquired_at field documentation</a>.
 
 ### Limitations
 
