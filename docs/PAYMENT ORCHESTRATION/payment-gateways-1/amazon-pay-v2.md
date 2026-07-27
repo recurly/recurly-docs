@@ -108,7 +108,7 @@ After signing up, follow Amazon's Getting Started Guide to complete your account
 </div>
 
 <div class="rp-callout rp-callout-important">
-  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong> Make sure you're selecting the correct Amazon Pay tile. If you have a UK or EU Seller account, do not authenticate through the US Amazon Pay tile.</div>
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong> Make sure you're selecting the correct Amazon Pay tile. If you have a UK or EU Seller account, do not authenticate through the US Amazon Pay tile. When you are on the Amazon UI, do not skip adding details.</div>
 </div>
 
 ## Enabling IPN notifications / webhooks
