@@ -86,7 +86,7 @@ GBP, EUR, AUD, DKK, HKD, JPY, NZD, ZAR, SEK, CHF, and USD.
 
 # Setup
 
-## Sign up for an Amazon Pay Seller account
+## Sign up (or Sign In) for an Amazon Pay Seller account
 
 To use Amazon Pay, you'll need an Amazon Pay Seller account. Signing up is free. If you already have one, log in to your existing account.
 
@@ -95,7 +95,7 @@ After signing up, follow Amazon's Getting Started Guide to complete your account
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">1</div>
-    <div><h4>Add your Recurly subdomain</h4><p>Add your Recurly subdomain to your Amazon allowed JavaScript origins.</p></div>
+    <div><h4>Add your Recurly subdomain</h4><p>Add your Recurly subdomain to your Amazon allowed JavaScript origins / redirect URLs.</p></div>
   </div>
   <div class="rp-step">
     <div class="rp-step-num">2</div>
