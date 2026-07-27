@@ -95,7 +95,7 @@ After signing up, follow Amazon's Getting Started Guide to complete your account
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">1</div>
-    <div><h4>Add your Recurly subdomain</h4><p>Add your Recurly subdomain to your Amazon allowed JavaScript origins / redirect URLs.</p></div>
+    <div><h4>Add your Merchant Website, Privacy Policy URLs, and full Recurly subdomain</h4><p>Add your own website and Recurly subdomain to your Amazon allowed JavaScript origins / redirect URLs. This should be a full URL (https://your-subdomain.recurly.com). You can find your subdomain by logging in to your Recurly site and looking at the URL.</p></div>
   </div>
   <div class="rp-step">
     <div class="rp-step-num">2</div>
