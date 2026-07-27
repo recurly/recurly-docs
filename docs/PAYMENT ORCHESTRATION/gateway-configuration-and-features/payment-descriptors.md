@@ -37,7 +37,7 @@ metadata:
   <li><strong>Braintree</strong> descriptor support is limited to cards and PayPal.</li>
   <li><strong>Stripe</strong> descriptor support is limited to cards, Apple Pay, Google Pay, and network tokens.</li>
   <li>While Recurly sends dynamic descriptors to gateways, gateways may not pass them on to card networks, and issuers have final say on descriptor display. Contact your gateway to confirm descriptor support for your merchant account.</li>
-  <li>Only the Default Business Entity is used for prefix information. Dynamic Business Entity support is planned.</li>
+  <li>The Default Business Entity is used for prefix information when not using custom suffix behavior. Dynamic Business Entity support is available when using custom suffix API  parameters.</li>
 </ul>
 
 # Definition
