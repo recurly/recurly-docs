@@ -24,7 +24,8 @@ metadata:
 <ul class="rp-list">
   <li><strong>Visa trial descriptors</strong> — Supported on all card-supporting gateways. Recurly adds the word "Trial" to any Visa transaction converting after a trial period.</li>
   <li><strong>Descriptors beyond Visa trial (feature flag required)</strong> — Contact Recurly Support or your account manager to enable: <a href="https://docs.recurly.com/recurly-subscriptions/docs/stripe#/" target="_blank">Stripe</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd#/" target="_blank">Braintree</a>.</li>
-  <li><strong>Dynamic descriptors (no flag required)</strong> — Supported automatically on: <a href="https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub" target="_blank">Commerce Hub</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/freedompay" target="_blank">FreedomPay</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/checkoutcom" target="_blank">Checkout.com</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/nuvei" target="_blank">Nuvei</a>.</li>
+  <li><strong>Dynamic descriptors (no gateway-specific flag required)</strong> — Supported automatically on: <a href="https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub" target="_blank">Commerce Hub</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/freedompay" target="_blank">FreedomPay</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/checkoutcom" target="_blank">Checkout.com</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/nuvei" target="_blank">Nuvei</a>.</li>
+ <li><strong>Dynamic descriptors Suffix-Customization Flag</strong> — Required for customizing your descriptor suffix instead of using plan or line item/invoice description data.</li>
 </ul>
 
 ### Limitations
