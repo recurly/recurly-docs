@@ -27554,6 +27554,13 @@ components:
             - manual
         payment_method:
           $ref: '#/components/schemas/PaymentMethod'
+        payment_gateway_references:
+          type: array
+          description: >-
+            Array of Payment Gateway References captured at transaction time,
+            each a reference to a third-party gateway object of varying types.
+          items:
+            $ref: '#/components/schemas/PaymentGatewayReferences'
         ip_address_v4:
           type: string
           title: IP address
