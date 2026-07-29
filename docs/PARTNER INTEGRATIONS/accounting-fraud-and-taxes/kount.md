@@ -96,7 +96,9 @@ For new billing information (Cards) and APMs, Recurly will send relevant payment
 
 ### Kount Portfolio Accounts
 
-> 📘 Please Note: If you have a Kount Basic/Portfolio account with Kount, skip to **Step 2,** **sub-step 7** to configure your Account in Recurly.
+<Callout icon="📘" theme="info">
+  ### Please Note: If you have a Kount Basic/Portfolio account with Kount, skip to **Step 2,** **sub-step 7** to configure your Account in Recurly.
+</Callout>
 
 ## Step 1: Obtain your Kount 360 API Key and MID
 
@@ -136,7 +138,8 @@ You may follow these same steps for your Sandbox or Production Kount credentials
 
 4. **Website ID**: If you have multiple sites using the same Kount MID/API Key, and you have rules based on 'channels' in Kount 360', you will want to enter your website ID exactly as it is entered into Kount. Otherwise, leave this field blank.
 
-5. **Merchant ID**: This will be a 6 digit number provided to you by Kount.
+5. **Merchant ID**: This will be a 6-15 digit number provided to you by Kount.
+   1. If you are a previous Kount Command user, your ID will be 6 digits. If you are a brand new Kount 360 user, your ID will be 15 digits.
 
 6. **API Key**: Enter your Kount 360 that you obtained in Step 1 in this field.
 
@@ -152,9 +155,9 @@ You may follow these same steps for your Sandbox or Production Kount credentials
 
 You will only need to set up webhooks if you plan on using the 'Review' option. Otherwise, you can skip this step.
 
-> 📘
->
-> For merchants who are not ingesting Recurly webhooks or are not integrated using the Review flow (see documentation below), do not use or set up 'Review' rules in Kount 360.
+<Callout icon="📘" theme="info">
+  For merchants who are not ingesting Recurly webhooks or are not integrated using the Review flow (see documentation below), do not use or set up 'Review' rules in Kount 360.
+</Callout>
 
 1. Log into your Kount 360 Dashboard -- you must have Owner and/or Admin permissions to access API Keys, ensure you are logging in to the correct account credentials.
 2. If you have multiple Organizations, select the correct organization for your business.
