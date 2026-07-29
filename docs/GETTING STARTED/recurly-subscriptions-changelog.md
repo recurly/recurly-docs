@@ -1,7 +1,7 @@
 ---
 title: Recurly Subscriptions Changelog
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
