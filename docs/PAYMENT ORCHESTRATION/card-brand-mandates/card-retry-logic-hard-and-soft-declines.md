@@ -18,17 +18,17 @@ Credit Card payment declines can occur for a variety of reasons, and include any
 
 # What is a "soft" decline
 
-A "soft" decline means that the decline reason is "fixable", and that the payment can be reattempted at a later time. For example, Insufficient Funds is a fixable problem when it comes to a credit or debit card payment. The consumer would need to make funds available in order to complete the payment.
+A "soft" decline means that the decline reason is "fixable" or "temporary", and that the payment can be reattempted at a later time without penalty. For example, Insufficient Funds is a fixable or temporary problem when it comes to a credit or debit card payment. The consumer would need to make funds available in order to complete the payment.
 
 Once funds are available, the payment can be reattempted without causing compliance issues with the credit card networks. However, there are limits to retrying a payment in the recurring space. See below for more information on retry limitations.
 
 # What is a "hard" decline
 
-A "hard" decline means that the decline reason is not generally "fixable", and that the payment should not be retried. These reasons can include fraud, account closures, or even the consumer blocking a merchant from re-authorizing their card.
+A "hard" decline means that the decline reason is not generally "fixable" and is permanent, and that the payment should not be retried or you as a merchant may face retry abuse penalties from the card brand networks. These reasons can include fraud, account closures, or even the consumer blocking a merchant from re-authorizing their card.
 
-Visa has a list of decline reasons and categorizes them in levels. For example, a Category 1 Visa Decline Code is always going to be a hard decline and should not be retried.
+Visa has a list of decline reasons and categorizes them in levels or categories (Visa Category Code). For example, a Category 1 Visa Decline Code is always going to be a hard decline and should not be retried. Category codes 2 through 4 are generally retry-friendly. These can be broken down further into merchant advice codes or sub-codes.
 
-MasterCard uses a different method: Merchant Advice Codes. Merchant Advice Codes, or MAC for short, are also a list of MasterCard specific codes that should not be retried for recurring or one-time transactions. Certain codes can infer retry-friendly transactions if new card data is provided via Account Updater or the customer updating their billing information.
+MasterCard uses merchant advice codes. Merchant Advice Codes, or MAC for short, are also a list of MasterCard specific codes that should not be retried for recurring or one-time transactions. Certain codes can infer retry-friendly transactions if new card data is provided via Account Updater or the customer updating their billing information.
 
 Recurly works hard to maintain compliance for our customers to avoid fines associated with retry abuse and card network retry limitations.
 
@@ -58,9 +58,20 @@ The system will cease attempts in other scenarios as well:
 
 ## Network Advice Codes
 
+### Visa Category Codes and Sub-Codes
+
+Visa Category Codes are broken down into 4 categories, each with a list of sub-codes.
+
+| Category  | Sub-Codes                                                                                                                                                                                                                                                                                                                                                                                                                | Category Type                                                                                                                                                                                   |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 (One)   | **04** (Pickup Card), 07 (Pickup Card - Fraud), 12 (Invalid transaction), 14 (Invalid Account Number, 15 (No Such Issuer), 41 (Lost card), 43 (Stolen card), 46 (Closed account), 57 (Transaction Not Permitted), R0 (Stop Payment Order), R1 (Revocation of Auth), and R3 (Revocation of all Authorizations)                                                                                                            | **Hard Decline:&#x20;**&#x54;his category represents a mixture of fraud, closed account, bad card info, and customer revocation orders. This category of Visa code should never be retried.     |
+| 2 (Two)   | 03 (Invalid Merchant), 19 (Re-enter Transaction), 51 (Insufficient Funds), 59 (Suspected Fraud), 61 (Exceeds withdrawal amount), 62 (Restricted Card), 65 (Exceeds withdrawal frequency), 75 (Allowable PIN retries exceeded), 78 (Blocked - First use), 86 (ATM malfunction), 91 (Issuer or Switch inoperative), 93 (Transaction cannot be completed), N3 (Cash service not available), N4 (Cash request exceeds limit) | **Soft:&#x20;**&#x54;his category refers to transactions that Visa cannot approve at the current time, but may in the future.                                                                   |
+| 3 (Three) | 14 (Invalid account number), 54 (Expired card), 55 (Incorrect PIN), 82 (Negative CVV results), N7 (Decline for CVV failure), 1A (Additional customer authentication required), and 70 (PIN required).                                                                                                                                                                                                                    | **Soft:&#x20;**&#x54;his category refers to transactions that Visa cannot approve with the current data set. They advise correcting the bad data, such as an inaccurate CVV code, and retrying. |
+| 4 (Four)  | Any failed transaction with a raw refusal code not listed in the other categories.                                                                                                                                                                                                                                                                                                                                       | **Soft:&#x20;**&#x54;his category refers to everything else, and are generally generic declines such as Do Not Honor.                                                                           |
+
 ### MasterCard Merchant Advice Codes
 
-Mastercard Merchant Advice Codes (MACs) are alphanumeric codes used by Mastercard to provide merchants with more specific details about why a transaction was declined. They go beyond basic decline codes, offering guidance on whether to retry the transaction, when to retry, or why the card was declined in the first place.
+Mastercard Merchant Advice Codes (MACs) are codes used by Mastercard to provide merchants with more specific details about why a transaction was declined. They go beyond basic decline codes, offering guidance on whether to retry the transaction, when to retry, or why the card was declined in the first place.
 
 See below for Recurly's behavior when each individual code is received on supported gateways. Please note, not all gateways return this detail, and some gateways require the MAC code detail response to be enabled at the gateway, such as WorldPay.
 
