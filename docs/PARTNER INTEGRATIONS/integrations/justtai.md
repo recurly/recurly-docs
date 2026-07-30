@@ -69,7 +69,7 @@ metadata:
 
 ## How the integration works
 
-The Justt.ai integration follows a five-step setup flow:
+Once the feature has been enabled, the Justt.ai integration follows a five-step setup flow:
 
 <div class="rp-steps">
   <div class="rp-step">
