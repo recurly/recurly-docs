@@ -95,7 +95,7 @@ After signing up or signing in, follow Amazon's Getting Started Guide to complet
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">1</div>
-    <div><h4>Amazon will give you an option to enter details now or 'fill in later'. You must fill them in now to complete onboarding. On this page, add your Business's contact information, as well as Merchant Website, Privacy Policy URLs, and full Recurly subdomain</h4><p>Add your own website and Recurly subdomain to your Amazon allowed JavaScript origins / redirect URLs. This should be a full URL (https://your-subdomain.recurly.com). You can find your subdomain by logging in to your Recurly site and looking at the URL.</p></div>
+    <div><h4>Enter your Business Information and URLs</h4><p>Amazon will give you an option to enter details now or 'fill in later'. You must fill them in now to complete onboarding. On this page, add your Business's contact information, as well as Merchant Website, Privacy Policy URLs, and full Recurly subdomain. Add your own website and Recurly subdomain to your Amazon allowed JavaScript origins / redirect URLs. This should be a full URL (https://your-subdomain.recurly.com). You can find your subdomain by logging in to your Recurly site and looking at the URL.</p></div>
   </div>
   <div class="rp-step">
     <div class="rp-step-num">2</div>
