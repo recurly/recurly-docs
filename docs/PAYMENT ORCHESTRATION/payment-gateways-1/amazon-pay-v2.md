@@ -268,4 +268,8 @@ For a full migration guide, see the <a href="https://recurly.com/developers/refe
   In the US, only USD is available. In the UK, GBP is available. In the EU, EUR is available. Full multi-currency support for the UK and EU is listed in the <a href="#regional-support">Regional support</a> section above.
 </Accordion>
 
+<Accordion title="Amazon's hosted onboarding isn't completing / the gateway isn't appearing in my list of gateways. What can I do?">
+  Ensure that you haven't 'skipped' filling in merchant details including your website, privacy policy URL, and your full Recurly site domain (https\://your-domain.recurly.com) on Amazon's UI when onboarding. If you have chosen 'fill in details later', this bypasses proper onboarding and will not work.
+</Accordion>
+
 <br />
