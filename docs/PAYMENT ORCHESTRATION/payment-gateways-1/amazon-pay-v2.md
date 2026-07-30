@@ -86,11 +86,11 @@ GBP, EUR, AUD, DKK, HKD, JPY, NZD, ZAR, SEK, CHF, and USD.
 
 # Setup
 
-## Sign up (or Sign In) for an Amazon Pay Seller account
+## Sign up for (or Sign In to) an Amazon Pay Seller account
 
 To use Amazon Pay, you'll need an Amazon Pay Seller account. Signing up is free. If you already have one, log in to your existing account.
 
-After signing up, follow Amazon's Getting Started Guide to complete your account configuration:
+After signing up or signing in, follow Amazon's Getting Started Guide to complete your account configuration:
 
 <div class="rp-steps">
   <div class="rp-step">
