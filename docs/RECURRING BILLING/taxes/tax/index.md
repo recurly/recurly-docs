@@ -65,6 +65,8 @@ The merchant's taxable address always reflects the business entity's tax address
 <Image src="https://files.readme.io/9490870-Screenshot_2024-06-06_at_9.44.56_PM.png" align="center" width="75%" border={true} />
 
 
+<br />
+
 
 <Image src="https://files.readme.io/3508a11-Screenshot_2024-06-06_at_9.43.52_PM.png" align="center" width="75%" border={true} />
 
@@ -78,6 +80,8 @@ The customer's taxable address is drawn from one of three sources, depending on 
 
 <Image src="https://files.readme.io/1b1e2d0-Screenshot_2024-06-11_at_2.25.27_PM.png" align="center" width="75%" border={true} />
 
+
+<br />
 
 
 <Image src="https://files.readme.io/6e7280d-Screenshot_2024-06-11_at_12.44.48_PM.png" align="center" width="75%" border={true} />
@@ -98,6 +102,8 @@ The customer's taxable address is drawn from one of three sources, depending on 
 #### Multiple shipping addresses
 
 Some invoices have <a href="https://docs.recurly.com/docs/shipping-address-per-line-item#shipping-addresses-per-purchase" target="_blank">multiple unique shipping addresses</a> — this can occur with <a href="https://docs.recurly.com/docs/ah-invoice-rollup" target="_blank">Account Hierarchy Invoice Rollup</a> and/or <a href="https://docs.recurly.com/docs/calendar-billing" target="_blank">Calendar Billing</a>. In these cases, Recurly sends the unique shipping address for each line item to the tax service. If different rates apply across line items, the invoice displays a generic "Tax" label with the total tax amount, plus a breakdown section showing each shipping address's state/country code, rate, and cumulative tax amount.
+
+**Note:** If you are using Recurly's out of the box tax solution or your own Avalara account and need to ship to different countries on the same invoice, you will need to contact Support to enable this feature.
 
 
 <Image src="https://files.readme.io/39e4e93-multi_shipping_address.png" align="center" width="75%" border={true} />
@@ -121,6 +127,8 @@ By default, Recurly sets all entities to use the **Business Entity Tax Address**
 <Image src="https://files.readme.io/6876f6c-Screenshot_2024-06-06_at_9.31.37_PM.png" align="center" width="75%" border={true} />
 
 
+<br />
+
 
 <Image src="https://files.readme.io/8463c4b-Screenshot_2024-06-11_at_3.11.17_PM.png" align="center" width="75%" border={true} />
 
@@ -133,9 +141,13 @@ You can override these defaults if your business requires a different configurat
 <Image src="https://files.readme.io/a4d250b-Screenshot_2024-06-06_at_10.02.15_PM.png" align="center" width="75%" border={true} />
 
 
+<br />
+
 
 <Image src="https://files.readme.io/46c9707-Screenshot_2024-06-11_at_3.05.09_PM.png" align="center" width="75%" border={true} />
 
+
+<br />
 
 
 <Image src="https://files.readme.io/b9362c2-Screenshot_2024-06-11_at_2.47.18_PM.png" align="center" width="75%" border={true} />
@@ -150,6 +162,8 @@ You can override these defaults if your business requires a different configurat
 
 <Image src="https://files.readme.io/88ae714-Screenshot_2024-06-06_at_10.04.49_PM.png" align="center" width="75%" border={true} />
 
+
+<br />
 
 
 <Image src="https://files.readme.io/927dd57-Screenshot_2024-06-11_at_2.41.58_PM.png" align="center" width="75%" border={true} />
@@ -167,9 +181,13 @@ By default, charges inherit the taxable address configuration from the business 
 <Image src="https://files.readme.io/d5b7a87-Screenshot_2024-07-02_at_4.12.49_PM.png" align="center" width="75%" border={true} />
 
 
+<br />
+
 
 <Image src="https://files.readme.io/cc827b9-Screenshot_2024-07-02_at_4.15.32_PM.png" align="center" width="75%" border={true} />
 
+
+<br />
 
 
 <Image src="https://files.readme.io/b702ee9-Screenshot_2024-07-02_at_4.26.14_PM.png" align="center" width="75%" border={true} />
