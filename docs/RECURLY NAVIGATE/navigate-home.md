@@ -121,7 +121,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   border-radius: 16px; margin-bottom: 0;
 }
 .rc-brand-header { display: flex; align-items: center; justify-content: center; margin-bottom: 0; }
-.rc-logo-image { height: 28px; width: auto; display: block; }
+.rc-logo-image { height: 40px; width: auto; display: block; }
 .rc-home-title-block { margin-top: 44px; }
 .rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2 !important; margin: 0 0 24px; }
 .rc-home-title-block > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #D1CFC4; line-height: 1.6; }
@@ -408,3 +408,5 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   </div>
 </div>
 `}</HTMLBlock>
+
+<br />
