@@ -161,7 +161,7 @@ Recurly offers tax previews for Vertex customers via the API in the Preview Subs
 
 ## Tax inclusive pricing
 
-Tax inclusive pricing is available with Vertex. For more information, refer to the Tax Inclusive Pricing page.
+Tax inclusive pricing is available with Vertex. For more information, refer to the [Tax Inclusive Pricing](https://docs.recurly.com/recurly-subscriptions/docs/tax-inclusive-pricing) page.
 
 ## Issued invoices
 
