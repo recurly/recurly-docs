@@ -11494,12 +11494,7 @@ components:
           description: Description of the coupon on the invoice.
           maxLength: 255
         redeem_by:
-          type: string
-          title: Redeem by
-          description: >-
-            The date and time the coupon will expire and can no longer be
-            redeemed. Time is always 11:59:59, the end-of-day Pacific time.
-          format: date-time
+          $ref: '#/components/schemas/CouponRedeemBy'
         created_at:
           type: string
           title: Created at
@@ -11517,6 +11512,41 @@ components:
             The date and time the coupon was expired early or reached its
             `max_redemptions`.
           format: date-time
+    CouponRedeemBy:
+      type: object
+      title: Redeem by
+      description: |
+        Defines when the coupon expires. Contains a `type` property and optional
+        fields depending on type: `value` (for `type=date`) or `interval_unit`
+        and `interval_amount` (for `type=window`).
+      required:
+        - type
+      properties:
+        type:
+          type: string
+          enum:
+            - anytime
+            - date
+            - window
+        value:
+          type: string
+          title: Redeem by date
+          description: Fixed expiry date. Present only when `type=date`.
+          format: date-time
+        interval_unit:
+          type: string
+          title: Redeem by interval unit
+          description: Unit of the relative redemption window. Bulk coupons only.
+          enum:
+            - day
+            - week
+            - month
+            - year
+        interval_amount:
+          type: integer
+          title: Redeem by interval amount
+          description: Quantity of interval_unit. Present only when `type=window`.
+          minimum: 1
     CouponCreate:
       allOf:
         - $ref: '#/components/schemas/CouponUpdate'
@@ -12045,12 +12075,19 @@ components:
           title: Invoice description
           description: Description of the coupon on the invoice.
           maxLength: 255
+        redeem_by:
+          description: >-
+            Structured redeem-by configuration. When provided alongside
+            redeem_by_date, takes precedence.
+          $ref: '#/components/schemas/CouponRedeemBy'
         redeem_by_date:
           type: string
           title: Redeem by
           description: >-
-            The date and time the coupon will expire and can no longer be
-            redeemed. Time is always 11:59:59, the end-of-day Pacific time.
+            Deprecated. Use the `redeem_by` object instead. When both are
+            provided, `redeem_by` takes precedence.
+          format: date-time
+          deprecated: true
     CreditPayment:
       type: object
       properties:
@@ -18343,6 +18380,17 @@ components:
             The date and time the coupon was expired early or reached its
             `max_redemptions`.
           format: date-time
+        redeem_by_date:
+          type: string
+          title: Redeem by
+          description: >-
+            Absolute expiry computed and stored at code-generation time. Set
+            only for Window (relative redeem-by) coupons. Null for Anytime
+            coupons and Specific Date coupons — those resolve expiry from the
+            parent coupon's redeem_by at redemption time, not at code-generation
+            time.
+          format: date-time
+          readOnly: true
     UniqueCouponCodeList:
       type: object
       properties:
