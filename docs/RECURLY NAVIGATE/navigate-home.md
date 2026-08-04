@@ -306,12 +306,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-brand-header">
         <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
       </div>
-      <div class="rc-pillar-icon-row">
-        <span class="rc-pillar-icon-chip rc-chip-launch"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt=""> Launch</span>
-        <span class="rc-pillar-icon-chip rc-chip-acquire"><img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt=""> Acquire</span>
-        <span class="rc-pillar-icon-chip rc-chip-retain"><img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt=""> Retain</span>
-        <span class="rc-pillar-icon-chip rc-chip-scale"><img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt=""> Scale</span>
-      </div>
+   
       <div class="rc-home-title-block">
         <h1>Your subscription success hub</h1>
         <p>Everything you need to get the most out of Recurly. Select a path below to uncover best practices, expert guidance, and on-demand education tailored to your KPIs.</p>
