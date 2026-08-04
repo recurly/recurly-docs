@@ -20954,8 +20954,29 @@ components:
           title: Redeem by
           description: >-
             The date and time the coupon will expire and can no longer be
-            redeemed. Time is always 11:59:59, the end-of-day Pacific time.
+            redeemed. Time is always 11:59:59, the end-of-day Pacific time. Null
+            for bulk coupons configured with a relative redeem-by interval (see
+            redeem_by_interval_unit and redeem_by_interval_amount).
           format: date-time
+        redeem_by_interval_unit:
+          title: Redeem by interval unit
+          description: Unit of the relative redemption window. Bulk coupons only.
+          readOnly: true
+          type: string
+          enum:
+            - day
+            - week
+            - month
+            - year
+        redeem_by_interval_amount:
+          type: integer
+          title: Redeem by interval amount
+          description: >-
+            For a bulk coupon with a relative redeem-by, the number of
+            redeem_by_interval_unit intervals after a code's generation that it
+            remains redeemable. Null unless the coupon uses a relative
+            redeem-by.
+          readOnly: true
         created_at:
           type: string
           title: Created at
@@ -21507,6 +21528,24 @@ components:
           description: >-
             The date and time the coupon will expire and can no longer be
             redeemed. Time is always 11:59:59, the end-of-day Pacific time.
+            Mutually exclusive with
+            redeem_by_interval_unit/redeem_by_interval_amount.
+        redeem_by_interval_unit:
+          title: Redeem by interval unit
+          description: Unit of the relative redemption window. Bulk coupons only.
+          type: string
+          enum:
+            - day
+            - week
+            - month
+            - year
+        redeem_by_interval_amount:
+          type: integer
+          title: Redeem by interval amount
+          description: >-
+            Quantity of redeem_by_interval_unit. Must be paired with
+            redeem_by_interval_unit.
+          minimum: 1
     CreditPayment:
       type: object
       properties:
@@ -27881,6 +27920,17 @@ components:
             The date and time the coupon was expired early or reached its
             `max_redemptions`.
           format: date-time
+        redeem_by_date:
+          type: string
+          title: Redeem by
+          description: >-
+            Absolute expiry computed and stored at code-generation time. Set
+            only for Window (relative redeem-by) coupons. Null for Anytime
+            coupons and Specific Date coupons — those resolve expiry from the
+            parent coupon's redeem_by at redemption time, not at code-generation
+            time.
+          format: date-time
+          readOnly: true
     UniqueCouponCodeList:
       type: object
       properties:
