@@ -33,7 +33,9 @@ next:
 # Definition
 
 <div class="rp-definition">
-  Tax inclusive pricing allows merchants to set prices that already include any applicable taxes. Rather than calculating and displaying tax as a separate line item after the fact, the full tax obligation is baked into the displayed price — giving subscribers a consistent, predictable number every time.
+
+Tax inclusive pricing allows merchants to set prices that already include any applicable taxes. Rather than calculating and displaying tax as a separate line item after the fact, the full tax obligation is baked into the displayed price — giving subscribers a consistent, predictable number every time.
+
 </div>
 
 <div class="rp-callout rp-callout-important">
@@ -142,6 +144,16 @@ When tax inclusive pricing is enabled on your site, you can choose whether taxes
 </span>
 
 To configure: go to **Invoice templates** in your Recurly dashboard, create or edit a template, and toggle the option to show or hide taxes.
+
+# Tax Inclusive Regions
+
+When tax-inclusive pricing is enabled, you can choose which regions use tax-inclusive pricing. To configure regions, go to **Taxes → Tax** Inclusive Regions.
+
+Once you save your selections, they'll stay in place even if you disable your tax integration. This makes it easy to switch from one tax integration to another without losing your configuration.
+
+
+<Image src="https://files.readme.io/6d7a2d2816c80519a8550d529048957599184adfc29b20a9a9720bc3d029c39a-Screenshot_2026-08-04_at_2.38.21_PM.png" border={true} />
+
 
 # Integration with Recurly.js
 
