@@ -124,7 +124,17 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-logo-image { height: 40px; width: auto; display: block; }
 .rc-home-title-block { margin-top: 44px; }
 .rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2 !important; margin: 0 0 24px; }
-.rc-home-title-block > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #D1CFC4; line-height: 1.6; }
+  .rc-home-title-block > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #D1CFC4; line-height: 1.6; }
+.rc-pillar-icon-row { display: flex; justify-content: center; gap: 12px; margin: 36px auto 24px; flex-wrap: wrap; }
+.rc-pillar-icon-chip { display: inline-flex; align-items: center; gap: 7px; padding: 7px 14px; border-radius: 20px; font-size: .72rem; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; }
+.rc-pillar-icon-chip img { width: 14px; height: 14px; object-fit: contain; }
+.rc-chip-launch  { background: rgba(255,81,38,0.20); border: 1px solid rgba(255,81,38,0.45); color: #FF5126; }
+.rc-chip-acquire { background: rgba(255,215,6,0.20); border: 1px solid rgba(255,215,6,0.45); color: #FFD706; }
+.rc-chip-retain  { background: rgba(45,206,206,0.20); border: 1px solid rgba(45,206,206,0.45); color: #2DCECE; }
+.rc-chip-scale   { background: rgba(0,140,255,0.20); border: 1px solid rgba(0,140,255,0.45); color: #008CFF; }
+.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0 0 14px; }
+.rc-hero-sub { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #D1CFC4; line-height: 1.6; }
+
 
 /* Hero stats */
 .rc-hero-stats {
@@ -296,6 +306,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-brand-header">
         <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
       </div>
+      <div class="rc-pillar-icon-row">
+        <span class="rc-pillar-icon-chip rc-chip-launch"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt=""> Launch</span>
+        <span class="rc-pillar-icon-chip rc-chip-acquire"><img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt=""> Acquire</span>
+        <span class="rc-pillar-icon-chip rc-chip-retain"><img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt=""> Retain</span>
+        <span class="rc-pillar-icon-chip rc-chip-scale"><img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt=""> Scale</span>
+      </div>
       <div class="rc-home-title-block">
         <h1>Your subscription success hub</h1>
         <p>Everything you need to get the most out of Recurly. Select a path below to uncover best practices, expert guidance, and on-demand education tailored to your KPIs.</p>
@@ -408,5 +424,3 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   </div>
 </div>
 `}</HTMLBlock>
-
-<br />
