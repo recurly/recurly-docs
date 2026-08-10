@@ -11,12 +11,12 @@
 - sepa-direct-debit
 - bacs
 - becs
-- revolut
 - klarna-bnpl-pay-now-pay-later
 - ideal
 - mercadopago
 - pix-automatico
 - upi-autopay
+- revolut
 - stripe-link-pay
 - sofort
 - boleto
