@@ -373,6 +373,21 @@ ISK and CLP are zero-decimal currencies, meaning they cannot have partial amount
 
 Recurly supports sending shipping addresses to Adyen, but Adyen requires a full, complete address to avoid errors. Recurly will not send partial addresses. If you use Adyen's reporting or fraud services and rely on shipping address data, ensure the customer's shipping address includes all five fields: street address, city, state, country, and postal code. If any field is absent, Recurly omits the entire shipping address.
 
+### New MasterCard and ELO Customer Authentication Compliance
+
+MasterCard is implementing additional customer authentication requirements that will require merchants to enforce supplying customer data including:&#x20;
+
+- **At least one contact detail**: cardholder name, email address or phone number
+- **At least one address**: billing address or shipping address
+- The **customer’s IP address**
+
+Additionally, ELO in Brazil is implementing requirements to pass along the following:&#x20;
+
+- Customer **Email address**, **Telephone number**, and **Address** information
+- **Browser/device** information
+
+For both card brand requirements, Recurly supports sending the required customer data via several integration paths, and Recurly.js is specifically built to capture customer IP and browser data by design. Consider a move to Recurly.js if you are under the jurisdiction of the above card brand compliance mandates.
+
 # Payment method specifics
 
 ## ACH and SEPA reporting setup
@@ -809,11 +824,9 @@ In a standard Recurly.js flow, Recurly handles payment authorization. The custom
 # Troubleshooting
 
 <Accordion title="A tokenized payment method isn't allowing conversions, or subscriptions are failing — what can I do?">
-Confirm you've enabled the required webhooks. `RECURRING_CONTRACT` webhooks are critical for all non-card payment methods — see the webhook configuration steps in Step 2 above.
+  Confirm you've enabled the required webhooks. `RECURRING_CONTRACT` webhooks are critical for all non-card payment methods — see the webhook configuration steps in Step 2 above.
 </Accordion>
 
 <Accordion title="My customer got a decline from Adyen at checkout — what happened?">
-Start with the decline code shown in the Recurly Admin UI for the transaction. If the decline is related to 3DS, confirm 3DS is enabled and configured in both Adyen and your Recurly.js implementation. If 3DS is already enabled, the customer may not have completed the 3DS challenge successfully, and the decline is expected.
+  Start with the decline code shown in the Recurly Admin UI for the transaction. If the decline is related to 3DS, confirm 3DS is enabled and configured in both Adyen and your Recurly.js implementation. If 3DS is already enabled, the customer may not have completed the 3DS challenge successfully, and the decline is expected.
 </Accordion>
-
-<br />
