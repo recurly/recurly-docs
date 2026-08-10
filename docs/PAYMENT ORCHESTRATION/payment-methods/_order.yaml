@@ -5,7 +5,6 @@
 - paypal-payments
 - amazon-pay
 - paypal-on-adyen
-- stripe-link-pay
 - cash-app-pay
 - ach-bank-payments
 - sepa-direct-debit
@@ -16,6 +15,7 @@
 - ideal
 - sofort
 - pay-with-venmo
+- stripe-link-pay
 - boleto
 - mercadopago
 - pix-automatico
