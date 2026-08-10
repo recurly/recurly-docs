@@ -18,7 +18,6 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 - Familiarity with Recurly’s V3 API, Webhooks, and basic REST concepts
 - [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
 - An [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) gateway account with [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) is enabled
-- Ebanx does not support Free Trials when using App Deep Links. Users accessing checkout flows through Mobile should not be offered a free trial option.
 
 ***
 
@@ -513,7 +512,7 @@ To help with simulating a consumer's bank app, the gateway has provided a simula
 
 This initial call will return different behavior in production than in sandbox.
 
-In Production: (next\_action.typeand next\_action.value) represent the QR code value that you will need to render on your checkout page for the consumer to scan and continue authorizing the payment.
+In Production: (next_action.typeand next_action.value) represent the QR code value that you will need to render on your checkout page for the consumer to scan and continue authorizing the payment.
 
 In Sandbox: (`next_action.type` and `next_action.value` or  `next_action.values`) will be present, but you will need to load the `return_url` value that represent the gateway's simulated UPI QR Code or Links that simulates interaction with the consumer's App. You may render this in a modal for testing purposes.
 
