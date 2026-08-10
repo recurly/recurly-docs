@@ -80,15 +80,15 @@ next:
 
 <ul class="rp-list">
 <li>At least one contact detail**: cardholder name, email address or phone number</li>
-<li>At least one address**: billing address or shipping address</li>
+<li>At least one address: billing address or shipping address</li>
 <li>The **customer’s IP address</li>
 </ul>
 
 Additionally, ELO in Brazil is implementing requirements to pass along the following:
 
 <ul class="rp-list">
-<li>Customer **Email address**, **Telephone number**, and **Address** information</li>
-<li>Browser/device** information</li>
+<li>Customer Email address, Telephone number, and Address** information</li>
+<li>Browser/device information</li>
 </ul>
 
 For both card brand requirements, Recurly supports sending the required customer data via several integration paths, and Recurly.js is specifically built to capture customer IP and browser data by design. Consider a move to Recurly.js if you are under the jurisdiction of the above card brand compliance mandates.</div>
