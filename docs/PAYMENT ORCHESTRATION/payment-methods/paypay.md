@@ -48,7 +48,6 @@ With Recurly, users will be able to sign up for subscriptions using their PayPay
 PayPay is designed specifically for subscriptions and does not support many standard Recurly features available with credit cards.
 
 <ul class="rp-list">
-  <li>One-time transactions and CIT purchases are not supported.</li>
   <li>Creating subscriptions through the Recurly Admin UI is not supported — PayPay wallet requires a customer to be in session to confirm the subscription via authenticating to their account.</li>
   <li>Recurly Checkout and Hosted Payment Pages are not currently supported.</li>
   <li>100% coupons during signup are not supported — token creation is required. Use a free trial instead. Standard coupons are supported.</li>
