@@ -99,4 +99,19 @@ Recurly provides dual/co-badged card compliance on the following gateways:
 - <a href="https://docs.recurly.com/docs/adyen#adyen-codual-badged-cards" target="_blank">Adyen</a> — Cartes Bancaires, Bancontact, Dankort
 - <a href="https://docs.recurly.com/recurly-subscriptions/docs/stripe#/" target="_blank">Stripe</a> — Cartes Bancaires, Bancontact
 
+### New MasterCard and ELO Customer Authentication Compliance
+
+MasterCard is implementing additional customer authentication requirements that will require merchants to enforce supplying customer data including:&#x20;
+
+- **At least one contact detail**: cardholder name, email address or phone number
+- **At least one address**: billing address or shipping address
+- The **customer’s IP address**
+
+Additionally, ELO in Brazil is implementing requirements to pass along the following:&#x20;
+
+- Customer **Email address**, **Telephone number**, and **Address** information
+- **Browser/device** information
+
+For both card brand requirements, Recurly supports sending the required customer data via several integration paths, and Recurly.js is specifically built to capture customer IP and browser data by design. Consider a move to Recurly.js if you are under the jurisdiction of the above card brand compliance mandates.
+
 <br />
