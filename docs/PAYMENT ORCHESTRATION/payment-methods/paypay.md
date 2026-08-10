@@ -1,7 +1,7 @@
 ---
 title: PayPay
 excerpt: >-
-  Accept PayPay on Recurly via Adyen (Recurly.js) — supporting JPY
+  Accept PayPay in Japan on Recurly via Adyen (Recurly.js) — supporting JPY
   subscriptions 
 deprecated: false
 hidden: true
