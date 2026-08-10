@@ -87,7 +87,7 @@ next:
 Additionally, ELO in Brazil is implementing requirements to pass along the following:
 
 <ul class="rp-list">
-<li>Customer Email address, Telephone number, and Address** information</li>
+<li>Customer Email address, Telephone number, and Address information</li>
 <li>Browser/device information</li>
 </ul>
 
