@@ -75,6 +75,22 @@ next:
   <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Before going live, see Recurly's <a href="https://docs.recurly.com/docs/how-to-test-your-gateway" target="_blank">guide to testing gateway configurations</a> to verify your payment setup is working correctly.</div>
 </div>
 
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i>New MasterCard and ELO Customer Authentication Compliance</strong>MasterCard is implementing additional customer authentication requirements that will require merchants to enforce supplying customer data including:
+
+
+<li>At least one contact detail**: cardholder name, email address or phone number</li>
+<li>At least one address**: billing address or shipping address</li>
+<li>The **customer’s IP address</li>
+
+Additionally, ELO in Brazil is implementing requirements to pass along the following:
+
+<li>Customer **Email address**, **Telephone number**, and **Address** information</li>
+<li>Browser/device** information</li>
+
+For both card brand requirements, Recurly supports sending the required customer data via several integration paths, and Recurly.js is specifically built to capture customer IP and browser data by design. Consider a move to Recurly.js if you are under the jurisdiction of the above card brand compliance mandates.</div>
+</div>
+
 ### New MasterCard and ELO Customer Authentication Compliance
 
 MasterCard is implementing additional customer authentication requirements that will require merchants to enforce supplying customer data including:&#x20;
