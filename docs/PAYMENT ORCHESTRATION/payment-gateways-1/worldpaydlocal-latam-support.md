@@ -75,6 +75,21 @@ next:
   <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Before going live, see Recurly's <a href="https://docs.recurly.com/docs/how-to-test-your-gateway" target="_blank">guide to testing gateway configurations</a> to verify your payment setup is working correctly.</div>
 </div>
 
+### New MasterCard and ELO Customer Authentication Compliance
+
+MasterCard is implementing additional customer authentication requirements that will require merchants to enforce supplying customer data including:&#x20;
+
+- **At least one contact detail**: cardholder name, email address or phone number
+- **At least one address**: billing address or shipping address
+- The **customer’s IP address**
+
+Additionally, ELO in Brazil is implementing requirements to pass along the following:&#x20;
+
+- Customer **Email address**, **Telephone number**, and **Address** information
+- **Browser/device** information
+
+For both card brand requirements, Recurly supports sending the required customer data via several integration paths, and Recurly.js is specifically built to capture customer IP and browser data by design. Consider a move to Recurly.js if you are under the jurisdiction of the above card brand compliance mandates.
+
 # Credentials
 
 WorldPay WPG requires XML credentials from WorldPay. For SEPA, you'll also need additional information for mandate creation.
@@ -171,7 +186,7 @@ WorldPay WPG requires XML credentials from WorldPay. For SEPA, you'll also need 
 
 ## Step 4: Configure tax ID collection (LATAM)
 
-For Argentine and other LATAM transactions, collect the customer's tax ID (e.g., CUIT) during the initial transaction. Include the <code>tax\_identifier</code> and <code>tax\_identifier\_type</code> fields in your transaction payload. If using a tax ID type other than CUIT, CPF, or CNPJ, send the value without a type definition.
+For Argentine and other LATAM transactions, collect the customer's tax ID (e.g., CUIT) during the initial transaction. Include the <code>tax_identifier</code> and <code>tax_identifier_type</code> fields in your transaction payload. If using a tax ID type other than CUIT, CPF, or CNPJ, send the value without a type definition.
 
 ## Step 5: Test and go live
 
@@ -188,5 +203,3 @@ Test the full setup rigorously — including regional payment methods, tax ID su
 
   ACH transactions that have been scheduled or approved can also fail later due to bank processing times. For failures due to insufficient funds or closed accounts, Recurly can retry automatically when you enable <a href="https://docs.recurly.com/recurly-subscriptions/docs/sepa-retries#/" target="_blank">Direct Debit retries in Payment Settings</a>. Recurly retries ACH and SEPA payments only when the failure reason is insufficient funds.
 </Accordion>
-
-<br />
