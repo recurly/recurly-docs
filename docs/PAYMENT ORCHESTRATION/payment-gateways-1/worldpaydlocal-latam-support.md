@@ -79,9 +79,9 @@ next:
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i>New MasterCard and ELO Customer Authentication Compliance</strong>MasterCard is implementing additional customer authentication requirements that will require merchants to enforce supplying customer data including:
 
 <ul class="rp-list">
-<li>At least one contact detail**: cardholder name, email address or phone number</li>
+<li>At least one contact detail: cardholder name, email address or phone number</li>
 <li>At least one address: billing address or shipping address</li>
-<li>The **customer’s IP address</li>
+<li>The customer’s IP address</li>
 </ul>
 
 Additionally, ELO in Brazil is implementing requirements to pass along the following:
