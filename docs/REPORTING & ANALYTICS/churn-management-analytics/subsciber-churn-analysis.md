@@ -27,6 +27,10 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The Subscriber Churn Analysis dashboard is an insightful tool that monitors subscription losses over a specified timeframe, broken down by voluntary and involuntary reasons. Uncover why your subscribers are leaving and identify strategies to mitigate churn and increase customer retention.
 
+Throughout our analytics, **churn** and **acquisition** are calculated by comparing active subscribers at the beginning of a time period with active subscribers at the end of that period.
+
+- A subscriber is considered churned if they are not expired at the beginning of the period but are expired by the end of the period. For example, when using a weekly timeframe, a subscriber who is active at the beginning of the week and expired at the end of the week would be counted as churn.
+
 # Key benefits
 
 - **Industry comparison**: Compare key subscription metrics with industry benchmarks to understand performance relative to peers, identifying areas of strengths and weaknesses.
@@ -111,7 +115,4 @@ Understand the rate of voluntary churn, comparing specific involuntary churn rea
 Dive into the data to understand the specifics across all churn reasons.
 
 
-<Image src="https://files.readme.io/4b0201dc9c54e36970cca73931bdb90544d887c174a4bae604ac80820e48263c-image.png" align="right" border={true} />
-
-
-<br />
+<Image src="https://files.readme.io/4b0201dc9c54e36970cca73931bdb90544d887c174a4bae604ac80820e48263c-image.png" align="right" border={true} wrap={true} />
