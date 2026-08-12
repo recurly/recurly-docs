@@ -83,7 +83,7 @@ A purchase containing more than one subscription produces a single invoice that 
 
 ## Admin Console
 
-You can add multiple subscriptions to an account directly in the Admin Console by increasing the quantity in the **Quantity** field for a plan. Each subscription is invoiced and billed separately upon payment.
+You can add multiple subscriptions to an account directly in the Admin Console by increasing the quantity in the **Quantity** field for a plan. Each subscription is invoiced and billed separately upon payment. Keep in mind, specific payment methods may not be friendly to this kind of behavior. Please refer to the payment method in use on the customer's account to avoid declines.
 
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Multiple subscriptions cannot be created when a subscription start date in the past is provided.</div>
@@ -140,5 +140,3 @@ For <a href="https://docs.recurly.com/docs/invoice-settings#section-vat-reverse-
 - Your Recurly site has EU VAT enabled or uses an Avalara AvaTax account.
 - The customer is in the EU, has a VAT number, and is based in a different country than your company.
 - No custom VAT notes are specified for the invoice (in which case, those override the site-level notes).
-
-<br />
