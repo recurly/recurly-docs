@@ -80,7 +80,7 @@ Understanding the token types used in Apple Pay helps you configure the correct 
 </Accordion>
 
 <Accordion title="MPAN — Merchant-Level Token">
-  A merchant-level token used for Apple Pay that is associated with the merchant rather than a specific device. MPANs are not transferable between merchants and are not suitable for M&A-related data migrations.
+  A merchant-level token used for Apple Pay that is associated with the merchant rather than a specific device. MPANs are not transferable between merchants and are not suitable for M\&A-related data migrations.
 
   - MPANs are not invalidated when a consumer removes their card from a device, making them subscription-friendly.
   - MPANs benefit from expiry date forwarding, but card number changes are not received via Account Updater. Apple may receive new FPAN details, but the MPAN in Recurly remains unchanged.
@@ -108,6 +108,12 @@ To request MPANs for renewals, use Simple or Advanced Labeling in your Recurly.j
 - **Advanced Labeling** — Configure the `RecurringPaymentRequest`. See <a href="https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrecurringpaymentrequest" target="_blank">Apple's RecurringPaymentRequest documentation</a>.
 
 For full context, see Apple's documentation on <a href="https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/3955946-recurringpaymentrequest" target="_blank">specifying the recurring payment request</a>.
+
+<Callout icon="📘" theme="info">
+  ### **MPAN or DPAN Return Behavior**
+
+  **Keep in mind&#x20;**&#x74;hat MPANs are not guaranteed even if you are integrated properly. MPANs are returned based on a combination of decisions beyond Recurly's control. Parties involved are: Apple, Card Networks, Issuing Bank - -between these three entities, a decision is made to return a DPAN or an MPAN based on Issuer support, card network and/or bank policies, your merchant risk profile, and other indicators.
+</Callout>
 
 # Checkout flow
 
@@ -224,5 +230,3 @@ Setting up Apple Pay with Braintree differs from other gateways and requires coo
 <Accordion title="What do I do when my CSRs are about to expire?">
   Contact Recurly Support to generate new CSRs. Once you have the new files, delete and re-upload all files yourself to control timing and minimize any downtime for customers using Apple Pay.
 </Accordion>
-
-<br />
