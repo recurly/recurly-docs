@@ -113,6 +113,8 @@ For full context, see Apple's documentation on <a href="https://developer.apple.
   ### **MPAN or DPAN Return Behavior**
 
   **Keep in mind&#x20;**&#x74;hat MPANs are not guaranteed even if you are integrated properly. MPANs are returned based on a combination of decisions beyond Recurly's control. Parties involved are: Apple, Card Networks, Issuing Bank - -between these three entities, a decision is made to return a DPAN or an MPAN based on Issuer support, card network and/or bank policies, your merchant risk profile, and other indicators.
+
+  If you are not receiving MPANs consistently, or at all, and your integration looks accurate, it is likely due to this decisioning process.
 </Callout>
 
 # Checkout flow
