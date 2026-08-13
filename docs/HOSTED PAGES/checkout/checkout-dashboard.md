@@ -77,7 +77,7 @@ Two filters at the top left of the dashboard control the data shown across all c
 The Checkout visits chart shows how many customers are visiting your checkout pages during the selected period, with a month-over-month comparison.
 
 
-<Image src="https://files.readme.io/a477494601cfcf5540bc0df1dd4c07239c0d38a46c641af8486e027b5432a142-Checkout_Visits.png" align="center" width="75%" border={true} />
+<Image src="https://files.readme.io/e64e16469b4fc1e5e57028200d7ae1d1624befa0b45fb0dbd85b409ef9f83103-image.png" border={true} />
 
 
 The bar chart breaks visits into three groups: customers who landed on the page without interacting, customers who engaged with at least one element (such as entering payment information or modifying the cart), and customers who completed a purchase.
