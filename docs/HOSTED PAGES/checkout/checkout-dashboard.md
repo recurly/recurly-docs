@@ -100,7 +100,15 @@ The Payment method conversion chart shows how conversion rates vary by payment m
 <Image src="https://files.readme.io/7930434a19652494d51e8dd5fe9bc164484aff5f9f9450c8f4f314be9f497833-image.png" border={true} />
 
 
-Compare performance across credit card, digital wallet, and alternative payment methods to see which options customers complete purchases with most often. Use this data to decide which payment methods to prioritize or promote within a given configuration, and to spot methods that may be causing unnecessary drop-off.
+Compare performance across credit card, digital wallet, and alternative payment methods to see which option is most often shown, attempted, and successfully charged — with two key metrics:
+
+- **Checkout Rate** — how often customers choose this method when they see it.
+
+- **Auth Rate** — how often the payment succeeds once chosen.
+
+Use this data to decide which payment methods to prioritize or promote within a given configuration, and to spot methods that may be causing unnecessary drop-off.
+
+A breakdown table for each method showing how often it's shown, attempted, and successfully charged — with two key metrics:
 
 ## Checkout average order size
 
