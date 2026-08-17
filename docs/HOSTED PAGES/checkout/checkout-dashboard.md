@@ -92,6 +92,16 @@ The Checkout conversion chart answers the core question: of all the customers vi
 
 View overall conversion across all configurations, or drill down into individual configurations to compare performance. The chart also shows which products customers purchased per configuration — useful for understanding which offerings resonate most with your audience. Use this data to prioritize high-performing configurations and deprioritize underperforming ones.
 
+## Payment Method Conversion
+
+The Payment method conversion chart shows how conversion rates vary by payment method across your checkout configurations.
+
+
+<Image src="https://files.readme.io/7930434a19652494d51e8dd5fe9bc164484aff5f9f9450c8f4f314be9f497833-image.png" border={true} />
+
+
+Compare performance across credit card, digital wallet, and alternative payment methods to see which options customers complete purchases with most often. Use this data to decide which payment methods to prioritize or promote within a given configuration, and to spot methods that may be causing unnecessary drop-off.
+
 ## Checkout average order size
 
 The average order size chart shows how much customers are spending per order, trended over time with a prior-month comparison.
