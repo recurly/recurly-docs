@@ -77,7 +77,7 @@ Two filters at the top left of the dashboard control the data shown across all c
 The Checkout visits chart shows how many customers are visiting your checkout pages during the selected period, with a month-over-month comparison.
 
 
-<Image src="https://files.readme.io/45484ed4695939c7da54f4b6c684008ca203cbedb94ffd336ebed98d4b7272a0-image.png" border={true} />
+<Image src="https://files.readme.io/45484ed4695939c7da54f4b6c684008ca203cbedb94ffd336ebed98d4b7272a0-image.png" align="center" width="75%" border={true} />
 
 
 The bar chart breaks visits into three groups: customers who landed on the page without interacting, customers who engaged with at least one element (such as entering payment information or modifying the cart), and customers who completed a purchase.
@@ -87,7 +87,7 @@ The bar chart breaks visits into three groups: customers who landed on the page 
 The Checkout conversion chart answers the core question: of all the customers visiting your checkout pages, how many are completing a purchase?
 
 
-<Image src="https://files.readme.io/fa1e0bda9c51ba5572fad5a2b791b3d5b8e6f0daa377d8c6f4806e7bd528bed5-image.png" border={true} />
+<Image src="https://files.readme.io/fa1e0bda9c51ba5572fad5a2b791b3d5b8e6f0daa377d8c6f4806e7bd528bed5-image.png" align="center" width="75%" border={true} />
 
 
 View overall conversion across all configurations, or drill down into individual configurations to compare performance. The chart also shows which products customers purchased per configuration — useful for understanding which offerings resonate most with your audience. Use this data to prioritize high-performing configurations and deprioritize underperforming ones.
@@ -97,25 +97,22 @@ View overall conversion across all configurations, or drill down into individual
 The Payment method conversion chart shows how conversion rates vary by payment method across your checkout configurations.
 
 
-<Image src="https://files.readme.io/7930434a19652494d51e8dd5fe9bc164484aff5f9f9450c8f4f314be9f497833-image.png" border={true} />
+<Image src="https://files.readme.io/7930434a19652494d51e8dd5fe9bc164484aff5f9f9450c8f4f314be9f497833-image.png" align="center" width="75%" border={true} />
 
 
 Compare performance across credit card, digital wallet, and alternative payment methods to see which option is most often shown, attempted, and successfully charged — with two key metrics:
 
 - **Checkout Rate** — how often customers choose this method when they see it.
-
 - **Auth Rate** — how often the payment succeeds once chosen.
 
 Use this data to decide which payment methods to prioritize or promote within a given configuration, and to spot methods that may be causing unnecessary drop-off.
-
-A breakdown table for each method showing how often it's shown, attempted, and successfully charged — with two key metrics:
 
 ## Checkout average order size
 
 The average order size chart shows how much customers are spending per order, trended over time with a prior-month comparison.
 
 
-<Image src="https://files.readme.io/17d540cbad84a52df987cef0e84440e2c69b4dccf2ba1555e4a41a5bcd6de3c8-image.png" border={true} />
+<Image src="https://files.readme.io/17d540cbad84a52df987cef0e84440e2c69b4dccf2ba1555e4a41a5bcd6de3c8-image.png" align="center" width="75%" border={true} />
 
 
 Monitoring this metric alongside conversion rates helps you identify which configurations are generating the most revenue — not just the most purchases.
@@ -125,7 +122,7 @@ Monitoring this metric alongside conversion rates helps you identify which confi
 The time to checkout chart shows how long customers are spending in the checkout flow for each configuration.
 
 
-<Image src="https://files.readme.io/58e50e2dd687c29afee6bc2030aafdfe62c312e9aa31cca540f22e2addec4ef4-image.png" border={true} />
+<Image src="https://files.readme.io/58e50e2dd687c29afee6bc2030aafdfe62c312e9aa31cca540f22e2addec4ef4-image.png" align="center" width="75%" border={true} />
 
 
 Configurations with shorter completion times may indicate a simpler, more optimized flow. Compare time to checkout against conversion rates and average order value to understand the trade-offs each configuration is making.
@@ -134,6 +131,8 @@ Configurations with shorter completion times may indicate a simpler, more optimi
 
 The Checkout errors chart shows what errors customers are encountering during the checkout process.
 
-![](https://files.readme.io/f8f072a1afd3a3eb8f96bde1da7a0f413eb96574b5bc9b24dcca3f68410c55fe-image.png)
+
+<Image src="https://files.readme.io/f8f072a1afd3a3eb8f96bde1da7a0f413eb96574b5bc9b24dcca3f68410c55fe-image.png" align="center" width="75%" border={true} />
+
 
 Review this chart regularly to surface recurring issues. Spikes in errors may point to gateway configuration problems that can be adjusted to reduce failed transactions and checkout abandonment.
