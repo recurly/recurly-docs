@@ -47,7 +47,7 @@ _Note:_`recurly.configure`_&#x20;accepts additional options. For further details
 
 ***
 
-# Build a payment form with elements
+# Build a payment form with Elements
 
 Design an HTML form to collect customer payment details. Use the `data-recurly` attribute to identify non-card billing fields. Recurly.js builds the card fields using Elements.
 
@@ -69,7 +69,7 @@ Design an HTML form to collect customer payment details. Use the `data-recurly` 
 
 ***
 
-# The card element
+# The Card Element
 
 
 <Image src="https://files.readme.io/5a6031def261981056429456e6e339475283e49e59948602bf500c497b358182-image.png" align="center" width="400px" />
@@ -85,7 +85,7 @@ cardElement.attach('#recurly-elements');
 
 ***
 
-# Other elements
+# Other Elements
 
 Recurly.js also offers individual Elements for separate card fields if a combined field doesn't fit your design needs. See the [Elements documentation](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/elements#/) for further details.
 
