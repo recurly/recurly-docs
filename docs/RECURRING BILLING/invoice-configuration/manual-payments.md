@@ -249,19 +249,6 @@ Test your manual invoicing integration in Recurly's <a href="https://docs.recurl
 
 # Reopen a manual invoice
 
-<div class="rp-steps">
-  <div class="rp-step">
-    <div class="rp-step-num">1</div>
-    <div><h4>Open the invoice</h4><p>Navigate to the paid or failed manual invoice you want to reopen.</p></div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">2</div>
-    <div><h4>Click Reopen</h4><p>Select <strong>Reopen</strong> from the <strong>Invoice Actions</strong> dropdown.</p></div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">3</div>
-    <div><h4>Record new payments</h4><p>After reopening, you can record new payments on the invoice and update its status to Paid.</p></div>
-  </div>
-</div>
+<div class="rp-callout rp-callout-note"> <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Legacy invoices only</strong>Reopening a manual invoice is only available on legacy invoices. If you've upgraded from legacy invoices, the option to reopen an invoice is removed from the UI — but you can still use the API to reopen existing legacy invoices.</div> </div> <div class="rp-steps"> <div class="rp-step"> <div class="rp-step-num">1</div> <div><h4>Open the invoice</h4><p>Navigate to the paid or failed manual invoice you want to reopen.</p></div> </div> <div class="rp-step"> <div class="rp-step-num">2</div> <div><h4>Click Reopen</h4><p>Select <strong>Reopen</strong> from the <strong>Invoice Actions</strong> dropdown.</p></div> </div> <div class="rp-step"> <div class="rp-step-num">3</div> <div><h4>Record new payments</h4><p>After reopening, you can record new payments on the invoice and update its status to Paid.</p></div> </div> </div> <br />
 
 <br />
