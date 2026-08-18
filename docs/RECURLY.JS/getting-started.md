@@ -23,18 +23,13 @@ To begin, include the Recurly.js script on your page:
 - You must have a valid Recurly account with API access.
 - Basic familiarity with HTML, JavaScript, and RESTful APIs.
 - Using Recurly.js is optional but recommended for enhanced security and reduced PCI scope.
+- **Self-hosting:** we recommend only using the Recurly-hosted version of Recurly.js, which is updated regularly to maintain compatibility with Recurly’s system updates. Self-hosted copies may encounter integration issues or service interruptions.
 
 ***
 
 # How it works
 
 Recurly.js streamlines your checkout by securely capturing customer payment information. When a customer submits your payment form, Recurly.js encrypts their payment data and stores it on our servers, returning an authorization key (or _token_). With this token, you can complete the subscription process using our API—without ever directly handling sensitive payment data. This reduces your PCI compliance requirements significantly.
-
-***
-
-# Self-hosting Recurly.js
-
-We highly recommend using the Recurly-hosted version of Recurly.js. This version is updated to maintain compatibility with Recurly’s system updates. Locally hosted copies may encounter integration issues or service interruptions.
 
 ***
 
