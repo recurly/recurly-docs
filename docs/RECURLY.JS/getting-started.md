@@ -20,9 +20,9 @@ To begin, include the Recurly.js script on your page:
 
 ### Prerequisites & limitations
 
-* You must have a valid Recurly account with API access.
-* Basic familiarity with HTML, JavaScript, and RESTful APIs.
-* Using Recurly.js is optional but recommended for enhanced security and reduced PCI scope.
+- You must have a valid Recurly account with API access.
+- Basic familiarity with HTML, JavaScript, and RESTful APIs.
+- Using Recurly.js is optional but recommended for enhanced security and reduced PCI scope.
 
 ***
 
@@ -48,7 +48,7 @@ recurly.configure('sc-ABCDEFGHI123456789');
 
 **Use Your Site's Public Key:** Replace `sc-ABCDEFGHI123456789` with your own public key.
 
-_Note:`recurly.configure` accepts additional options. For further details, refer to the [source](https://github.com/recurly/recurly-js/blob/master/lib/recurly.js#L48)._
+_Note:_`recurly.configure`_&#x20;accepts additional options. For further details, refer to the [source](https://github.com/recurly/recurly-js/blob/master/lib/recurly.js#L48)._
 
 ***
 
@@ -76,7 +76,9 @@ Design an HTML form to collect customer payment details. Use the `data-recurly` 
 
 # The card element
 
-<Image align="center" width="80% " src="https://files.readme.io/5a6031def261981056429456e6e339475283e49e59948602bf500c497b358182-image.png" />
+
+<Image src="https://files.readme.io/5a6031def261981056429456e6e339475283e49e59948602bf500c497b358182-image.png" align="center" width="80% " />
+
 
 The Card Element is the simplest way to accept customer card data. Recurly.js injects a single, responsive field for the card number, expiry, and CVV. This field includes helpful UX enhancements for smooth entry on any device.
 
@@ -84,6 +86,16 @@ The Card Element is the simplest way to accept customer card data. Recurly.js in
 const elements = recurly.Elements();
 const cardElement = elements.CardElement();
 cardElement.attach('#recurly-elements');
+```
+
+***
+
+# Required Fields&#x20;
+
+Recurly.js allows you to set required fields in your implementation if you wish to enforce entry of fields. Simply add the field you wish to require to your configuration.
+
+```javascript js
+required: ['number', 'month', 'year', 'cvv', 'first_name', 'last_name'],
 ```
 
 ***
