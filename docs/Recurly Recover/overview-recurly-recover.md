@@ -377,7 +377,7 @@ When the Wallet feature is enabled, you can designate payment methods as primary
   Use the <code>invoice_id</code> parameter — it's a shared identifier that links all related invoices and their transactions across both object types.
 </Accordion>
 
-<Accordion title="How should I handle webhook authenticity, duplicate deliveries, and out-of-order events?">
+<Accordion title="How should I handle webhook authenticity, duplicate deliveries, and out-of-order events?" icon="far fa-scanner-touchscreen">
   Treat webhooks as triggers, not as the source of truth: verify they're genuine, ignore repeats, and always confirm state through an API query before acting.
 
   <ul class="rp-list">
