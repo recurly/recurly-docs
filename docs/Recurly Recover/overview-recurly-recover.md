@@ -250,7 +250,9 @@ POST https://v3.recurly.com/invoices/recovery
 
 A successful `201` response confirms that Recurly has created the account and started the retry process. Save the `invoice_id` from the response — you'll need it to stop retries later.
 
-The `attempt_next_collection_at` field in the response shows when Recurly will make its first retry attempt.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> The Recover API response doesn't include a field for the next scheduled retry date. Use webhook notifications to track retry progress — see <a href="#step-4-configure-webhooks">Step 4: Configure webhooks</a>.</div>
+</div>
 
 ### Response
 
@@ -347,7 +349,49 @@ When the Wallet feature is enabled, you can designate payment methods as primary
 </Accordion>
 
 <Accordion title="Can I use Recurly Recover with existing Recurly Subscriptions customers?">
-  Recurly Recover is not intended to work alongside Recurly Subscriptions — payment recovery is already included in your Recurly Subscriptions plan. For questions about which solution fits your needs, contact Recurly Sales or email <a href="mailto:support@recurly.com">support@recurly.com</a>.
+  Recurly Recover is not intended to work alongside Recurly Subscriptions — payment recovery is already included in your Recurly Subscriptions plan. For questions about which solution fits your needs, contact Recurly Sales or email <a href="mailto:support@recurly.com">[support@recurly.com](mailto:support@recurly.com)</a>.
 </Accordion>
 
-<br />
+<Accordion title="Does the API response tell me when the next retry attempt will happen?">
+  No. The Recover API response doesn't include a next-retry date or time. Track retry progress through webhook notifications instead — a <code>new_dunning_event</code> notification is delivered each time an invoice enters or hits a milestone in the retry schedule.
+</Accordion>
+
+<Accordion title="When do successful_payment, failed_payment, new_dunning_event, and closed_invoice fire?">
+  <ul class="rp-list">
+    <li><strong>successful_payment</strong> — delivered after a retry transaction is created and successfully collected by the gateway. Expected once per invoice.</li>
+    <li><strong>failed_payment</strong> — delivered after a retry transaction is created and declined by the gateway. Multiple notifications can fire per invoice depending on the retry window.</li>
+    <li><strong>new_dunning_event</strong> — delivered when an invoice enters or hits a milestone in the dunning retry schedule, per the schedule's configured event count.</li>
+    <li><strong>closed_invoice</strong> — delivered when a previously past-due invoice moves to a final state, either by being paid or by exhausting the retry schedule.</li>
+  </ul>
+</Accordion>
+
+<Accordion title="What event sequence should I expect for a successful recovery versus an exhausted retry window?">
+  You'll receive a <code>new_dunning_event</code> notification marking the schedule milestone, followed by a <code>successful_payment</code> or <code>failed_payment</code> notification confirming the outcome of that retry attempt. A <code>closed_invoice</code> notification is delivered for the invoice's final state, confirming that no further collection attempts will occur.
+</Accordion>
+
+<Accordion title="Which webhook event represents the authoritative final outcome?">
+  <code>closed_invoice</code>. It includes a <code>state</code> parameter reflecting either <code>collected</code>/<code>paid</code> or <code>failed</code>/<code>unpaid</code>, and confirms that no other collection attempts will occur.
+</Accordion>
+
+<Accordion title="How do I correlate payment webhook events with the Recover invoice?">
+  Use the <code>invoice_id</code> parameter — it's a shared identifier that links all related invoices and their transactions across both object types.
+</Accordion>
+
+<Accordion title="How should I handle webhook authenticity, duplicate deliveries, and out-of-order events?">
+  Treat webhooks as triggers, not as the source of truth: verify they're genuine, ignore repeats, and always confirm state through an API query before acting.
+
+  <ul class="rp-list">
+    <li><strong>Authenticity</strong> — verify the <code>recurly-signature</code> header (HMAC-SHA256) on every JSON webhook using your endpoint's secret key. You can optionally add HTTP Basic Auth and IP allowlisting.</li>
+    <li><strong>Duplicates</strong> — Recurly resends on delivery failure, so expect repeats. Use the <code>recurly-notification-id</code> header, which stays identical across retries of the same notification, to detect and skip ones you've already processed. Reply with a 2XX within 5 seconds so Recurly doesn't retry unnecessarily.</li>
+    <li><strong>Out-of-order events</strong> — never act on the payload alone. Use the webhook as a signal to call the Recurly API, compare the result to your local record, and update only if the API confirms a change. This handles delayed retries arriving after the resource has already changed.</li>
+  </ul>
+</Accordion>
+
+<Accordion title="How can I trigger and test all four webhook events in a sandbox?">
+  Use Stripe test cards configured to trigger declines and successes. Testing both types in your sandbox triggers and delivers the corresponding notifications to your configured endpoint.
+
+  <ul class="rp-list">
+    <li>A successful Stripe test card triggers <code>new_dunning_event</code>, <code>successful_payment</code>, and <code>closed_invoice</code>.</li>
+    <li>A declining Stripe test card triggers <code>new_dunning_event</code> and <code>failed_payment</code>. If tested with a shortened retry window, <code>closed_invoice</code> also fires once the schedule reaches its final milestone and the invoice automatically updates to a failed state.</li>
+  </ul>
+</Accordion>
