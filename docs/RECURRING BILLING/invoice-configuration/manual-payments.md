@@ -150,12 +150,6 @@ Configure your manual dunning settings at <a href="https://app.recurly.com/go/co
 
 ***
 
-## Additional notes
-
-<div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Reopening manual invoices</strong>Reopening a manual invoice is not logged in the account's Activity Log, and exports and the API won't indicate that a manual invoice was reopened.</div>
-</div>
-
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Partial payments and write-offs</strong>When a manual invoice with a partial payment recorded fails dunning, a write-off invoice is created for the full invoice amount. A partial credit from the write-off invoice is applied to the remaining open balance on the purchase invoice, and the remainder of the open credit on the write-off invoice is voided.</div>
 </div>
@@ -249,19 +243,10 @@ Test your manual invoicing integration in Recurly's <a href="https://docs.recurl
 
 # Reopen a manual invoice
 
-<div class="rp-steps">
-  <div class="rp-step">
-    <div class="rp-step-num">1</div>
-    <div><h4>Open the invoice</h4><p>Navigate to the paid or failed manual invoice you want to reopen.</p></div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">2</div>
-    <div><h4>Click Reopen</h4><p>Select <strong>Reopen</strong> from the <strong>Invoice Actions</strong> dropdown.</p></div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">3</div>
-    <div><h4>Record new payments</h4><p>After reopening, you can record new payments on the invoice and update its status to Paid.</p></div>
-  </div>
-</div>
+<div class="rp-steps"> <div class="rp-step"> <div class="rp-step-num">1</div> <div><h4>Open the invoice</h4><p>Navigate to the paid or failed manual invoice you want to reopen.</p></div> </div> <div class="rp-step"> <div class="rp-step-num">2</div> <div><h4>Click Reopen</h4><p>Select <strong>Reopen</strong> from the <strong>Invoice Actions</strong> dropdown.</p></div> </div> <div class="rp-step"> <div class="rp-step-num">3</div> <div><h4>Record new payments</h4><p>After reopening, you can record new payments on the invoice and update its status to Paid.</p></div> </div> </div> 
 
-<br />
+<div class="rp-callout rp-callout-note"> <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Legacy invoices only</strong>Reopening a manual invoice is only available on legacy invoices. If you've upgraded from legacy invoices, the option to reopen an invoice is removed from the UI — but you can still use the API to reopen existing legacy invoices.</div> </div>
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Reopening manual invoices</strong>Reopening a manual invoice is not logged in the account's Activity Log, and exports and the API won't indicate that a manual invoice was reopened.</div>
+</div>
