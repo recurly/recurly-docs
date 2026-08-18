@@ -150,12 +150,6 @@ Configure your manual dunning settings at <a href="https://app.recurly.com/go/co
 
 ***
 
-## Additional notes
-
-<div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Reopening manual invoices</strong>Reopening a manual invoice is not logged in the account's Activity Log, and exports and the API won't indicate that a manual invoice was reopened.</div>
-</div>
-
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Partial payments and write-offs</strong>When a manual invoice with a partial payment recorded fails dunning, a write-off invoice is created for the full invoice amount. A partial credit from the write-off invoice is applied to the remaining open balance on the purchase invoice, and the remainder of the open credit on the write-off invoice is voided.</div>
 </div>
@@ -256,6 +250,3 @@ Test your manual invoicing integration in Recurly's <a href="https://docs.recurl
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Reopening manual invoices</strong>Reopening a manual invoice is not logged in the account's Activity Log, and exports and the API won't indicate that a manual invoice was reopened.</div>
 </div>
-
-
-<br />
