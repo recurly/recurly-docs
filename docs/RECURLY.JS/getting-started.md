@@ -109,3 +109,19 @@ Below is a table of potential billing fields supported by Recurly.js. Some field
 | vat_number          | `SE0000`         | Customer VAT number (used for VAT exclusion)                             |
 | tax_identifier      | `972.791.615-53` | A valid CPF or CUIT (required for consumer cards in Brazil or Argentina) |
 | tax_identifier_type | `cpf` or `cuit`  | Accepted values: `cpf` or `cuit`                                         |
+
+***
+
+# Additional configuration
+
+When configuring Recurly.js, some additional options are available to customize your implementation.
+
+```javascript
+recurly.configure({
+  publicKey: 'sc-ABCDEFGHI123456789',
+
+  // Specify which fields are required to create a token.
+  // default: ['number', 'month', 'year', 'first_name', 'last_name']
+  required: ['number', 'month', 'year', 'cvv'],
+});
+```
