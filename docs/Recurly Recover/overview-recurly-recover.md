@@ -328,35 +328,35 @@ When the Wallet feature is enabled, you can designate payment methods as primary
 
 # FAQs
 
-<Accordion title="Do I need Recurly Subscriptions to use Recurly Recover?">
+<Accordion title="Do I need Recurly Subscriptions to use Recurly Recover?" icon="fa-solid fa-link-slash">
   No. Recurly Recover is designed as a standalone retry engine for merchants using other billing platforms. Combining Recurly Recover with Recurly Subscriptions is not recommended.
 </Accordion>
 
-<Accordion title="What happens when I submit a past-due invoice via the API?">
+<Accordion title="What happens when I submit a past-due invoice via the API?" icon="fa-solid fa-file-invoice">
   Recurly creates an account (without a subscription), a charge invoice, and one or more failed transactions. Billing information is stored and Recurly automatically calculates the next collection attempt date based on your submission.
 </Accordion>
 
-<Accordion title="Can I stop retries on a past-due invoice?">
+<Accordion title="Can I stop retries on a past-due invoice?" icon="fa-solid fa-hand">
   Yes. While an invoice is in a past-due state, you can cancel all future collection attempts by marking the invoice as failed or paid using the Recurly Invoice API.
 </Accordion>
 
-<Accordion title="What happens when the retry window closes without a successful payment?">
+<Accordion title="What happens when the retry window closes without a successful payment?" icon="fa-solid fa-hourglass-end">
   The invoice is marked as failed and a webhook event fires. No further retries are made. You can then handle the outcome in your system — for example, suspending access or triggering a win-back campaign.
 </Accordion>
 
-<Accordion title="What if a customer provides a new payment method outside of Recurly?">
+<Accordion title="What if a customer provides a new payment method outside of Recurly?" icon="fa-solid fa-credit-card">
   Mark the in-flight Recurly invoice as successful (if payment was collected) or as failed (to stop the current attempt), then submit a new recovery request with the updated payment method token.
 </Accordion>
 
-<Accordion title="Can I use Recurly Recover with existing Recurly Subscriptions customers?">
+<Accordion title="Can I use Recurly Recover with existing Recurly Subscriptions customers?" icon="fa-solid fa-ban">
   Recurly Recover is not intended to work alongside Recurly Subscriptions — payment recovery is already included in your Recurly Subscriptions plan. For questions about which solution fits your needs, contact Recurly Sales or email <a href="mailto:support@recurly.com">[support@recurly.com](mailto:support@recurly.com)</a>.
 </Accordion>
 
-<Accordion title="Does the API response tell me when the next retry attempt will happen?">
+<Accordion title="Does the API response tell me when the next retry attempt will happen?" icon="fa-solid fa-clock">
   No. The Recover API response doesn't include a next-retry date or time. Track retry progress through webhook notifications instead — a <code>new_dunning_event</code> notification is delivered each time an invoice enters or hits a milestone in the retry schedule.
 </Accordion>
 
-<Accordion title="When do successful_payment, failed_payment, new_dunning_event, and closed_invoice fire?">
+<Accordion title="When do successful_payment, failed_payment, new_dunning_event, and closed_invoice fire?" icon="fa-solid fa-bolt">
   <ul class="rp-list">
     <li><strong>successful_payment</strong> — delivered after a retry transaction is created and successfully collected by the gateway. Expected once per invoice.</li>
     <li><strong>failed_payment</strong> — delivered after a retry transaction is created and declined by the gateway. Multiple notifications can fire per invoice depending on the retry window.</li>
@@ -365,19 +365,19 @@ When the Wallet feature is enabled, you can designate payment methods as primary
   </ul>
 </Accordion>
 
-<Accordion title="What event sequence should I expect for a successful recovery versus an exhausted retry window?">
+<Accordion title="What event sequence should I expect for a successful recovery versus an exhausted retry window?" icon="fa-solid fa-list-ol">
   You'll receive a <code>new_dunning_event</code> notification marking the schedule milestone, followed by a <code>successful_payment</code> or <code>failed_payment</code> notification confirming the outcome of that retry attempt. A <code>closed_invoice</code> notification is delivered for the invoice's final state, confirming that no further collection attempts will occur.
 </Accordion>
 
-<Accordion title="Which webhook event represents the authoritative final outcome?">
+<Accordion title="Which webhook event represents the authoritative final outcome?" icon="fa-solid fa-flag-checkered">
   <code>closed_invoice</code>. It includes a <code>state</code> parameter reflecting either <code>collected</code>/<code>paid</code> or <code>failed</code>/<code>unpaid</code>, and confirms that no other collection attempts will occur.
 </Accordion>
 
-<Accordion title="How do I correlate payment webhook events with the Recover invoice?">
+<Accordion title="How do I correlate payment webhook events with the Recover invoice?" icon="fa-solid fa-link">
   Use the <code>invoice_id</code> parameter — it's a shared identifier that links all related invoices and their transactions across both object types.
 </Accordion>
 
-<Accordion title="How should I handle webhook authenticity, duplicate deliveries, and out-of-order events?" icon="far fa-scanner-touchscreen">
+<Accordion title="How should I handle webhook authenticity, duplicate deliveries, and out-of-order events?" icon="fa-solid fa-shield-halved">
   Treat webhooks as triggers, not as the source of truth: verify they're genuine, ignore repeats, and always confirm state through an API query before acting.
 
   <ul class="rp-list">
@@ -387,7 +387,7 @@ When the Wallet feature is enabled, you can designate payment methods as primary
   </ul>
 </Accordion>
 
-<Accordion title="How can I trigger and test all four webhook events in a sandbox?">
+<Accordion title="How can I trigger and test all four webhook events in a sandbox?" icon="fa-solid fa-flask">
   Use Stripe test cards configured to trigger declines and successes. Testing both types in your sandbox triggers and delivers the corresponding notifications to your configured endpoint.
 
   <ul class="rp-list">
