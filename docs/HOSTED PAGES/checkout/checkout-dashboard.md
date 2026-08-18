@@ -92,7 +92,7 @@ The Checkout conversion chart answers the core question: of all the customers vi
 
 View overall conversion across all configurations, or drill down into individual configurations to compare performance. The chart also shows which products customers purchased per configuration — useful for understanding which offerings resonate most with your audience. Use this data to prioritize high-performing configurations and deprioritize underperforming ones.
 
-## Payment Method Conversion
+## Payment method conversion
 
 The Payment method conversion chart shows how conversion rates vary by payment method across your checkout configurations.
 
@@ -114,7 +114,9 @@ A breakdown table for each method showing how often it's shown, attempted, and s
 
 The average order size chart shows how much customers are spending per order, trended over time with a prior-month comparison.
 
-![](https://files.readme.io/17d540cbad84a52df987cef0e84440e2c69b4dccf2ba1555e4a41a5bcd6de3c8-image.png)
+
+<Image src="https://files.readme.io/17d540cbad84a52df987cef0e84440e2c69b4dccf2ba1555e4a41a5bcd6de3c8-image.png" border={true} />
+
 
 Monitoring this metric alongside conversion rates helps you identify which configurations are generating the most revenue — not just the most purchases.
 
@@ -122,7 +124,9 @@ Monitoring this metric alongside conversion rates helps you identify which confi
 
 The time to checkout chart shows how long customers are spending in the checkout flow for each configuration.
 
-![](https://files.readme.io/58e50e2dd687c29afee6bc2030aafdfe62c312e9aa31cca540f22e2addec4ef4-image.png)
+
+<Image src="https://files.readme.io/58e50e2dd687c29afee6bc2030aafdfe62c312e9aa31cca540f22e2addec4ef4-image.png" border={true} />
+
 
 Configurations with shorter completion times may indicate a simpler, more optimized flow. Compare time to checkout against conversion rates and average order value to understand the trade-offs each configuration is making.
 
