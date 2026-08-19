@@ -1,9 +1,8 @@
 ---
 title: Subscriber retention
 excerpt: >-
-  Unlock powerful insights with Recurly's Subscriber Retention feature. Dive
-  deep into retention & churn trends, leverage cohort analysis, and strategize
-  effectively to boost customer loyalty.
+  Learn how to use Recurly's Subscriber Retention dashboard to analyze
+  cohort-based retention and churn trends for paying subscribers.
 deprecated: false
 hidden: false
 metadata:
@@ -13,84 +12,133 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Subscriber Retention lets you analyze and evaluate the retention and churn rates of your paying subscribers over a specified timeframe. Using cohort analysis, the dashboard shows you where subscribers drop off and where they stick around, so you can identify areas for improvement and build effective retention strategies.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#drill-experience"><span class="rp-toc-num">4</span>Drill experience</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-Subscriber Retention is a powerful feature within Recurly that allows businesses to analyze and evaluate the retention and churn rates of their paid subscribers over a specified timeframe. By utilizing cohort analysis, the Subscriber Retention dashboard provides insights into the performance and trends of subscriber retention, enabling businesses to identify areas for improvement and develop effective strategies to maximize customer retention.
+<div class="rp-definition">Subscriber Retention is a feature within Recurly that lets you analyze the retention and churn rates of your paying subscribers over a specified timeframe. Using cohort analysis, the dashboard surfaces trends in subscriber retention so you can identify areas for improvement and build effective retention strategies.</div>
 
-> **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
->
-> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>It's important to understand the difference between a subscriber and a subscription. A single subscriber might hold multiple active subscriptions, but this dashboard counts each individual subscriber — not the number of subscriptions they hold. For more on navigating and using the filter tools, see our <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">analytics overview documentation</a>.</div>
+</div>
 
-By setting the appropriate interval, subscriptions that start immediately after the expiration of a previous subscription will be counted as a single continuous subscription. This helps provide a more accurate representation of activations and churn.
+When you set an appropriate interval, subscriptions that start immediately after a previous subscription expires are counted as a single continuous subscription. This gives you a more accurate picture of activations and churn.
 
-# Subscriber retention dashboards
+# Key benefits
 
-This section presents insights into the retention trends of subscribers through a Subscriber Cohort Descent line chart and detailed cohort analysis.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Retention visibility</strong>
+    <span>Track how many paying subscribers stay active month over month, broken down by cohort.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Churn analysis</strong>
+    <span>Pinpoint when and why subscribers churn, down to the specific cohort and time period.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Data-driven retention strategy</strong>
+    <span>Use cohort trends to identify weak points in your subscriber lifecycle and prioritize retention efforts where they'll have the most impact.</span>
+  </div>
+</div>
 
-* The sign-up month denotes the month in which a new subscriber has made a payment exceeding $0. Subscribers with a $0 invoice or whose first paid invoice is overdue will not be considered. Thus, to be categorized in the "Paying Subscriber" cohort, a subscriber must have successfully settled their invoice.
-* Data excludes subscriptions under trial or those covered by a previously purchased gift card.
-* Subsequent subscriptions purchased by an existing subscriber won't affect this dataset.
-* A subscriber is regarded as retained if they have at least one active subscription. On the flip side, they're deemed to have churned if their sole or last subscription lapses. A subscription on hold is not labeled as churned.
-* Subscribers are counted in month 0 retention if they stay subscribed for a full month post-sign-up. As an instance, a subscriber joining on November 14th but leaving before December 14th is logged as a churn in Month 0. Similarly, one who exits before January 14th is registered as a churn in Month 1.
+# Key details
+
+This section shows retention trends across your subscriber base using a Subscriber Cohort Descent line chart and detailed cohort analysis.
+
+<ul class="rp-list">
+  <li>The sign-up month is the month a new subscriber makes a payment greater than $0. Subscribers with a $0 invoice, or whose first paid invoice is overdue, aren't counted — a subscriber must successfully settle their invoice to be categorized in the "Paying Subscriber" cohort.</li>
+  <li>Data excludes subscriptions under trial or those covered by a previously purchased gift card.</li>
+  <li>Subsequent subscriptions purchased by an existing subscriber don't affect this dataset.</li>
+  <li>A subscriber is considered retained if they have at least one active subscription, and churned if their sole or last subscription lapses. A subscription on hold isn't labeled as churned.</li>
+  <li>Subscribers are counted in month 0 retention if they stay subscribed for a full month after sign-up. For example, a subscriber who joins on November 14th but leaves before December 14th is logged as a churn in month 0. One who leaves before January 14th is logged as a churn in month 1.</li>
+</ul>
 
 ## Filters
 
-<Image align="center" border={true} src="https://files.readme.io/2c453b8f205ed1ab99e8925fee45787bc12568c4a72b4e4d93fbfadbe28def37-image.png" className="border" />
+
+<Image src="https://files.readme.io/2c453b8f205ed1ab99e8925fee45787bc12568c4a72b4e4d93fbfadbe28def37-image.png" align="center" width="75%" border={true} />
+
 
 #### Subscriber filters
 
-* **All Subscribers**: Includes all accounts with a current or past active subscription.
-* **Paying Subscribers Only**: Includes subscriptions where at least one successful payment has been made.
-* **Paying Subscribers Only (Exclude Refunds)**: Includes subscriptions with successful payments where the total payment amount, after refunds, is greater than $0.
-* **Non-Paying Subscribers**: Includes subscriptions where no successful payments have been made, starting from activation and ending at expiration.
-* **Trials**: Includes subscriptions currently in their trial period.
+<ul class="rp-list">
+  <li><strong>All subscribers</strong>: Includes all accounts with a current or past active subscription.</li>
+  <li><strong>Paying subscribers only</strong>: Includes subscriptions where at least one successful payment has been made.</li>
+  <li><strong>Paying subscribers only (exclude refunds)</strong>: Includes subscriptions with successful payments where the total payment amount, after refunds, is greater than $0.</li>
+  <li><strong>Non-paying subscribers</strong>: Includes subscriptions where no successful payments have been made, from activation through expiration.</li>
+  <li><strong>Trials</strong>: Includes subscriptions currently in their trial period.</li>
+</ul>
 
-#### Metric Types
+#### Metric types
 
-* **Percent (% Still Active)**: The percentage of subscriptions that remain active.
-* **Active (# Still Active)**: The total number of subscriptions still active.
-* **Churned (# Churned)**: The total number of subscriptions that have churned.
+<ul class="rp-list">
+  <li><strong>Percent (% still active)</strong>: The percentage of subscriptions that remain active.</li>
+  <li><strong>Active (# still active)</strong>: The total number of subscriptions still active.</li>
+  <li><strong>Churned (# churned)</strong>: The total number of subscriptions that have churned.</li>
+</ul>
 
-## Subscriber Retention 
+## Subscriber retention
 
-A line chart visualizing the subscriber retention rate based on chosen metrics like percentage, active status, or churn rate, across the specified period.
+A line chart visualizing your subscriber retention rate based on the metric you choose — percentage, active status, or churn rate — across the specified period.
 
-<Image align="center" border={true} src="https://files.readme.io/8bf241751759a0c44bf684434000161d6f7b0ec06f20bcb28c447c6b10ae655b-image.png" className="border" />
+
+<Image src="https://files.readme.io/8bf241751759a0c44bf684434000161d6f7b0ec06f20bcb28c447c6b10ae655b-image.png" align="center" width="75%" border={true} />
+
 
 ## Subscriber retention analysis detail
 
-A deep dive into the retention figures of paying subscribers registered in a specific month. The snapshot below reveals the month-wise percentage of these subscribers. Users can now download data spanning up to 100 columns.
+A deeper look at the retention figures of paying subscribers who signed up in a specific month. The snapshot below shows the month-by-month percentage of these subscribers, and you can download up to 100 columns of data.
 
-<Image align="center" border={true} src="https://files.readme.io/49fe9cdbbe44564f81a4b4a3ab44cbc43e1522f617e32ae71d9c6ef803a3c31d-image.png" className="border" />
 
-<Image align="center" alt={2600} border={true} caption="Subscriber Retention Cohort Decent" title="subscriber cohort decent.png" src="https://files.readme.io/5596be4-subscriber_cohort_decent.png" width="75% " />
+<Image src="https://files.readme.io/49fe9cdbbe44564f81a4b4a3ab44cbc43e1522f617e32ae71d9c6ef803a3c31d-image.png" align="center" width="75%" border={true} />
 
-**Cohort Analysis Detail:** is a cohort analysis of retention count for paying subscribers that sign up in a designated month.  The example in the following screenshot shows the percentage of paying subscribers by month. You can download this up to 100 columns now.
 
-<Image align="center" alt={2598} border={true} caption="Subscriber Retention Cohort Analysis Detail" title="cohort analysis detail.png" src="https://files.readme.io/3be94c9-cohort_analysis_detail.png" width="75% " />
+
+<Image src="https://files.readme.io/5596be4-subscriber_cohort_decent.png" align="center" width="75%" caption="Subscriber Retention Cohort Descent" border={true} />
+
+
+**Cohort analysis detail** is a cohort analysis of the retention count for paying subscribers who sign up in a given month. The example below shows the percentage of paying subscribers by month, and you can download up to 100 columns of data.
+
+
+<Image src="https://files.readme.io/3be94c9-cohort_analysis_detail.png" align="center" width="75%" caption="Subscriber Retention Cohort Analysis Detail" border={true} />
+
 
 # Drill experience
 
-Enhance your data analysis by drilling down into specific points directly from the data charts. This feature allows for a deeper understanding of the underlying metrics.
+Drill into specific data points directly from the charts for a deeper look at the metrics behind each number.
 
-<Image align="center" border={true} src="https://files.readme.io/e64ba86-image.png" className="border" />
 
-As part of the drill-down experience, you will encounter detailed data columns, each providing a specific metric:
+<Image src="https://files.readme.io/e64ba86-image.png" align="center" width="75%" border={true} />
 
-<Image align="center" border={true} src="https://files.readme.io/ccbd55c-image.png" className="border" />
 
-* **`new_subscribers`**: Represents whether a subscriber is new within the specified period. A value of 1 indicates a new subscriber; otherwise, it's 0.
-* **`churn_count`**: Indicates whether a subscriber has churned. A value of 1 signifies a churned subscriber during the analyzed period.
-* **`net_count`**: Reflects subscribers contributing to the total count displayed. A value of 1 means the subscriber is included in the net count.
-* **`End of Period Count`**: Shows if a subscriber is active at the end of the period. A value of 1 denotes an active subscriber at period end.
-* **`subscriber_retention`**: Identifies subscribers retained during the period. A value of 1 is assigned to "retained" subscribers.
+The drill-down view includes several data columns, each representing a specific metric:
+
+
+<Image src="https://files.readme.io/ccbd55c-image.png" align="center" width="75%" border={true} />
+
+
+<ul class="rp-list">
+  <li><code>new_subscribers</code>: Whether a subscriber is new within the specified period. A value of 1 indicates a new subscriber; otherwise, it's 0.</li>
+  <li><code>churn_count</code>: Whether a subscriber has churned. A value of 1 signifies a churned subscriber during the analyzed period.</li>
+  <li><code>net_count</code>: Whether a subscriber contributes to the total count displayed. A value of 1 means the subscriber is included in the net count.</li>
+  <li><code>End of Period Count</code>: Whether a subscriber is active at the end of the period. A value of 1 denotes an active subscriber at period end.</li>
+  <li><code>subscriber_retention</code>: Whether a subscriber was retained during the period. A value of 1 is assigned to retained subscribers.</li>
+</ul>
