@@ -1,8 +1,8 @@
 ---
 title: Accounts analysis
 excerpt: >-
-  Dive deep into Recurly's Account analytics for a comprehensive view of account
-  behaviors, trends, and growth patterns.
+  Learn how to use Recurly's Accounts dashboard to track account counts and
+  trends across new, returning, and closed accounts.
 deprecated: false
 hidden: false
 metadata:
@@ -12,44 +12,51 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Accounts dashboard in Recurly's Reporting & Analytics gives you a clear view of your account counts and how they're trending over time. Track new, existing, and closed accounts side by side to understand what's driving growth or decline in your account base.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The "Account" section of Recurly's reporting & analytics offers a comprehensive set of reports and metrics to help you track and analyze account counts and trends. It provides valuable insights into your subscription signups, churn rates, and overall subscriber growth.
+<div class="rp-definition">The Account section of Recurly's Reporting & Analytics offers reports and metrics for tracking and analyzing account counts and trends. It gives you insight into your subscription signups, churn rates, and overall subscriber growth.</div>
 
 # Key details
 
-**For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>For more on navigating and using the filter tools, see our <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">analytics overview documentation</a>.</div>
+</div>
 
-## Analyzing accounts
+## Account trends
 
-1. Evaluate the net change in accounts over time to understand the overall growth or decline of the accounts.
-2. Assess the contributions of new accounts, returning accounts, and churned accounts to the net change.
-3. Identify any significant trends or patterns that can inform strategic decision-making.
+This chart lets you evaluate the net change in your accounts over time and see how new, existing, and closed accounts each contribute to that change. Use it to spot significant trends or patterns that can inform your strategic decisions.
 
-   <Image align="center" border={true} src="https://files.readme.io/1d0059e4bf534566004e1b03c4708d6b2d37f12b0b7a504a57f64f72f680ce44-image.png" className="border" />
-4. This chart shows the number of open accounts over time.  You can see the breakdown by previously existing accounts, new accounts and closed accounts.
-   * **Previously Existing Accounts:** Accounts that were created prior to the specific timeframe.
-   * **New Accounts - Accounts**:  Accounts that were created during the specific timeframe.
-   * **Closed Accounts - Accounts**: Accounts that were closed during the specific timeframe.
-5. The number above each bar represents the total number of open accounts for the given timeframe.
-6. Hover over any point on the bar to view the number of accounts for the selected timeframe.
-7. Gain insights into the fluctuations in account counts and understand how the account base has evolved over time.
-8. Click on any bar in the chart to view the total number of accounts for the selected timeframe.
-9. Analyze the account trends and identify any significant changes or patterns.
-10. Use the interactive features of the widget to navigate through different timeframes and gain a comprehensive understanding of account counts.
+The chart shows the number of open accounts over time, broken down into three categories:
 
-    <Image align="center" border={true} src="https://files.readme.io/b3c95c9fbd41ba2fd92440f4ac229d3bdaef3878b54c7cd3aa7c3566d0bd4ea1-image.png" className="border" />
+<ul class="rp-list">
+  <li><strong>Previously existing accounts</strong>: Accounts created before the selected timeframe.</li>
+  <li><strong>New accounts</strong>: Accounts created during the selected timeframe.</li>
+  <li><strong>Closed accounts</strong>: Accounts closed during the selected timeframe.</li>
+</ul>
 
-This table is a representation of the chart above, it shows the specific number for each timeframe and account group as well as the net and total number of accounts.
 
-<br />
+<Image src="https://files.readme.io/1d0059e4bf534566004e1b03c4708d6b2d37f12b0b7a504a57f64f72f680ce44-image.png" align="center" width="75%" border={true} />
+
+
+The number above each bar shows the total open accounts for that timeframe. Hover over any point on the bar to see the account count for that timeframe, or select a bar to drill into the specific accounts it represents.
+
+
+<Image src="https://files.readme.io/b3c95c9fbd41ba2fd92440f4ac229d3bdaef3878b54c7cd3aa7c3566d0bd4ea1-image.png" align="center" width="75%" border={true} />
+
+
+The table below the chart mirrors this data, showing the exact numbers for each timeframe and account group, along with the net and total account counts.
