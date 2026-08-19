@@ -1,9 +1,8 @@
 ---
 title: Plans, pricing and promotions analytics
 excerpt: >-
-  Unlock insights with Plans Pricing and Promo analytics. Optimize plan
-  performance, analyze churn, and elevate retention strategies for
-  profitability.
+  An overview of Recurly's Plans, Pricing and Promotions analytics, covering
+  plan performance, churn, retention, trials, MRR, and lifetime value.
 deprecated: false
 hidden: false
 metadata:
@@ -13,50 +12,56 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Plans, Pricing and Promotions dashboards give you a complete view of how each of your plans is performing — from acquisition and churn to trial conversion and lifetime value. Use them to see what's working, spot where a plan is underperforming, and make more informed pricing and retention decisions.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The Plans, Pricing and Promotions area of analytics offers a suite of dashboards aimed at analyzing and optimizing the performance of various plans within your business. With dashboards like Plan KPI, Subscriptions by Plan, Churn Trends by Plan, Retention by Plan, Trials by Plan, MRR by Plan, and LTV by Plan, you are equipped to thoroughly analyze key metrics such as acquisition rates, churn rates, average revenue per user, and lifetime value across different pricing tiers. 
+<div class="rp-definition">The Plans, Pricing and Promotions area of analytics offers a suite of dashboards for analyzing and optimizing how your plans perform. Use it to track acquisition rates, churn rates, average revenue per user, and lifetime value across your pricing tiers.</div>
 
-These analytics provide a granular view of subscription distribution, subscriber retention, trial effectiveness, and revenue generation segmented by plans. By leveraging these insights, you can identify popular plans, discover areas for improvement, devise targeted retention strategies, and work on enhancing overall profitability and customer value across your diverse pricing and promotional offerings.
+These dashboards give you a granular view of subscription distribution, subscriber retention, trial effectiveness, and revenue by plan, so you can identify your most popular plans, catch problem areas early, and improve profitability across your pricing and promotional offerings.
 
-**Note**: Data only includes plans that have had at least 1 subscriber.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Data only includes plans that have had at least one subscriber.</div>
+</div>
 
 # Key details
 
-## Plan KPI (key performance indicators)
+<div class="rp-nav-grid">
 
-Access a comprehensive dashboard that provides [key metrics](https://docs.recurly.com/docs/plan-performance) for each subscription plan, such as acquisition and churn rates, and average revenue per user (ARPU). This data is crucial for evaluating the success and profitability of your pricing strategies.
-
-## Subscriptions by plan
-
-[This feature](https://docs.recurly.com/docs/plans-1) allows you to examine how subscriptions are distributed among your various plans, highlighting which are most popular and identifying where improvements can be made.
-
-## Churn trends by plan
-
-Investigate [churn metrics divided by plan](https://docs.recurly.com/docs/churn-trends-by-plan) to pinpoint trends and problematic areas, and to create targeted retention strategies that can help in maintaining a stable subscriber base.
-
-## Retention by plan
-
-Measure the effectiveness of [retention efforts](https://docs.recurly.com/docs/retention-by-plan) for each plan by analyzing subscriber duration and identifying ways to enhance loyalty and minimize churn.
-
-## Trials by plan
-
-Monitor the performance of [trial offers for each plan](https://docs.recurly.com/docs/trials-by-plan), assessing conversion rates and engagement during the trial phase to optimize the transition from trial to paid subscriptions.
-
-## MRR (monthly recurring revenue) by plan
-
-Keep track of the [Monthly Recurring Revenue](https://docs.recurly.com/docs/mmr-by-plan) attributed to each plan, which is essential for financial planning and understanding how each plan contributes to your revenue stream.
-
-## LTV (lifetime value) by plan
-
-Explore the [lifetime value](https://docs.recurly.com/docs/ltv-by-plan) of subscribers associated with each plan, providing insight into the long-term revenue and customer value generated by different pricing tiers.
+<Cards>
+  <Card title="Plan KPI (key performance indicators)" href="https://docs.recurly.com/docs/plan-performance" target="_blank">
+    See key metrics for each subscription plan, including acquisition and churn rates and average revenue per user (ARPU).
+  </Card>
+  <Card title="Subscriptions by plan" href="https://docs.recurly.com/docs/plans-1" target="_blank">
+    See how subscriptions are distributed across your plans, and spot which ones are most popular.
+  </Card>
+  <Card title="Churn trends by plan" href="https://docs.recurly.com/docs/churn-trends-by-plan" target="_blank">
+    Break down churn by plan to catch trends early and build targeted retention strategies.
+  </Card>
+  <Card title="Retention by plan" href="https://docs.recurly.com/docs/retention-by-plan" target="_blank">
+    Measure retention effectiveness for each plan by analyzing subscriber duration.
+  </Card>
+  <Card title="Trials by plan" href="https://docs.recurly.com/docs/trials-by-plan" target="_blank">
+    Track trial-to-paid conversion and engagement for each plan's trial offer.
+  </Card>
+  <Card title="MRR (monthly recurring revenue) by plan" href="https://docs.recurly.com/docs/mmr-by-plan" target="_blank">
+    See how much Monthly Recurring Revenue each plan contributes to your business.
+  </Card>
+  <Card title="LTV (lifetime value) by plan" href="https://docs.recurly.com/docs/ltv-by-plan" target="_blank">
+    See the long-term revenue and customer value generated by each pricing tier.
+  </Card>
+</Cards>
+</div>
