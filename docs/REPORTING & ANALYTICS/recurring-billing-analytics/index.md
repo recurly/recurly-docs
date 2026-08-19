@@ -12,11 +12,6 @@ metadata:
 next:
   description: ''
 ---
-Title: Recurring billing
-Metadata description: An overview of Recurly's Recurring Billing reports, covering monthly recurring revenue and billings analytics.
-
-\---PASTE INTO EDITOR BELOW---
-
 <div class="rp-page">
   <div class="rp-overview">Recurring Billing brings together the reports you need to manage subscriptions and revenue — subscriber behavior, financial performance, plan effectiveness, and dunning efficiency — all backed by the same data. Use it to make strategic decisions with confidence instead of guesswork.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
