@@ -1,9 +1,8 @@
 ---
 title: Recovered revenue
 excerpt: >-
-  Boost your bottom line with Recurly's Recovered Revenue dashboard. Track,
-  analyze, and optimize your strategies to minimize involuntary churn and
-  maximize recovered revenue.
+  Learn how Recurly's Recovered Revenue dashboard tracks revenue reclaimed from
+  declined invoices across each recovery process.
 deprecated: false
 hidden: false
 metadata:
@@ -13,80 +12,85 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Recovered Revenue dashboard shows you how much revenue Recurly has helped you reclaim from declined invoices. See your recovery performance at a glance, understand which process is doing the most work, and track your progress over time.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The **Recovered Revenue** dashboard highlights revenue reclaimed through Recurly’s tools, focusing on declined invoices and recovery strategies.
+<div class="rp-definition">The Recovered Revenue dashboard highlights revenue reclaimed through Recurly's tools, focusing on declined invoices and recovery strategies.</div>
 
-1. **Expiration Date Changes** – Automatically updates expiration dates for continuous invoices.
-2. **Account Updater** – Refreshes payment details to prevent transaction failures.
-3. **Intelligent Retries** – Strategically retries failed invoices to maximize recovery.
-4. **Backup Payment Method** – Automatically retries failed payments using a backup payment method.
-5. **Customer Updates** – Allows customers to update their payment method to resolve failed payments.
-6. **External Recovery** – Recovers failed invoices using other systems outside of Recurly.
-7. **Forced Recovery** – When merchants manually initiate a collection attempt on a past-due invoice.
+<ul class="rp-list">
+  <li><strong>Expiration date changes</strong>: Automatically updates expiration dates for continuous invoices.</li>
+  <li><strong>Account updater</strong>: Refreshes payment details to prevent transaction failures.</li>
+  <li><strong>Intelligent retries</strong>: Strategically retries failed invoices to maximize recovery.</li>
+  <li><strong>Backup payment method</strong>: Automatically retries failed payments using a backup payment method.</li>
+  <li><strong>Customer updates</strong>: Lets customers update their payment method to resolve failed payments.</li>
+  <li><strong>External recovery</strong>: Recovers failed invoices using systems outside of Recurly.</li>
+  <li><strong>Forced recovery</strong>: When merchants manually initiate a collection attempt on a past-due invoice.</li>
+</ul>
 
-# Recovered Revenue
+# Key details
 
-The Recovered Revenue dashboard is a robust tool that provides insights into how much revenue you have recovered through Recurly's system. By monitoring involuntary churn from declined invoices, the dashboard uses three main mechanisms - Expiration Date Changes, Account Updater, and Dunning Retries, to ensure the highest rate of paid invoices.
+The Recovered Revenue dashboard gives you insight into how much revenue you've recovered through Recurly's system. By monitoring involuntary churn from declined invoices, it uses several mechanisms — including expiration date changes, account updater, and intelligent retries — to help maximize your rate of paid invoices.
 
-**Expiration date changes:** This mechanism updates the expiration date on the account's billing information, allowing continuity of invoices and subscriptions. This reduces the likelihood of service disruption for the customer and prevents potential revenue loss.
+## How recovery works
 
-**Account updater:** If enabled, this tool checks for credit card updates with providers before a subscription renewal, or when a one-time invoices or re-subscribe sign-up results in a hard decline. By staying up-to-date with customer's payment details, this tool aids in reducing failed invoices and maintaining a steady revenue stream.
-
-**Intelligent retries:** This is Recurly's sophisticated retry logic that maximizes the likelihood of turning failed invoices into successful ones. By strategically timing the retries, it significantly reduces involuntary churn caused by failed invoices.
-
-**Backup payment method:** Our Backup Payment Method feature acts as your safety net, ensuring uninterrupted service for your customers even when their primary payment method fails. By securely storing an alternative payment option, it safeguards your revenue stream and minimizes disruptions.
-
-**Customer Updates:** When a customer updates their payment method, Recurly will attempt collection on the failed automated invoice. Customers may be prompted to update their payment method via Recurly's dunning emails, or other notifications built into your application. This data does not include manual invoices.
-
-**External Recovery:** When other systems successfully collect on a failed invoice, and send an update to Recurly.
+<ul class="rp-list">
+  <li><strong>Expiration date changes</strong>: Updates the expiration date on an account's billing information, so invoices and subscriptions continue without interruption. This reduces the risk of service disruption and potential revenue loss.</li>
+  <li><strong>Account updater</strong>: When enabled, checks for credit card updates with card providers before a renewal, or when a one-time invoice or resubscribe results in a hard decline. Keeping payment details current helps reduce failed invoices and maintain steady revenue.</li>
+  <li><strong>Intelligent retries</strong>: Recurly's retry logic, which times retry attempts strategically to maximize the chance of turning a failed invoice into a successful one and reduce involuntary churn.</li>
+  <li><strong>Backup payment method</strong>: Securely stores an alternative payment method, so service continues uninterrupted even if a customer's primary payment method fails.</li>
+  <li><strong>Customer updates</strong>: When a customer updates their payment method — often prompted by a dunning email or another in-app notification — Recurly attempts collection on the failed automated invoice. This doesn't include manual invoices.</li>
+  <li><strong>External recovery</strong>: Applied when another system successfully collects on a failed invoice and sends an update to Recurly.</li>
+</ul>
 
 ## Features and benefits
 
-The Recovered Revenue dashboard has an intuitive layout, presenting you with an at-a-glance view of the revenue key performance indicators, a detailed bar chart showing the recovered revenue, and a chart detailing the revenue recovered by each of Recurly's processes. This overview gives you a comprehensive understanding of your business's health and Recurly's impact on your revenue recovery.
+The Recovered Revenue dashboard gives you an at-a-glance view of your revenue KPIs, a bar chart showing recovered revenue, and a chart breaking recovered revenue down by process — a complete picture of your business's health and Recurly's impact on revenue recovery.
 
-You are able to filter on the invoice creation date, or the invoice closed date, to track the success of automated invoice recovery. You are also able to view the amount recovered based on specific currencies, where the default will include all invoices, converted to your primary currency. When viewing the time graph, note that the current month will start off low, and increase as the month progresses, and invoices are recovered.
+Filter by invoice creation date or invoice closed date to track the success of automated invoice recovery, and view amounts by currency — the default includes all invoices converted to your primary currency. On the time graph, expect the current month to start low and rise as the month progresses and more invoices are recovered.
 
-1. **Recovered revenue KPI:** These indicators offer a real-time snapshot of your revenue dynamics. They help you measure the effectiveness of your revenue recovery strategies by comparing your current payment amounts with totals for the last month, previous month, three months ago, and a year ago. This enables you to identify trends and track progress, supporting informed decisions to proactively manage involuntary churn as you track the amount of revenue recovered over time, and compared to last year.
+### Recovered revenue KPI
 
-
-<Image src="https://files.readme.io/82bf6559f3b90ad2b458c0d0e513079879d6d33d951e0050a89d5dd077bc7baa-image.png" align="center" border={true} />
-
-
-<br />
-
-2. **Recovered Revenue chart:** This bar chart visualizes the revenue that Recurly has helped you recover by minimizing involuntary churn from declined automated invoices. It allows you to see at a glance the financial impact of Recurly's services, making it a powerful tool for forecasting and resource allocation. These charts are displayed as a total revenue saved, or a count of invoices recovered.
+These indicators give you a real-time snapshot of your revenue recovery, comparing current payment amounts to totals from last month, the previous month, three months ago, and a year ago. Use them to spot trends, track progress, and proactively manage involuntary churn.
 
 
-<Image src="https://files.readme.io/40dfc0fa1fe13c6e9c395906a99fab9b12cc298514d48502e78a8e6915813e60-image.png" align="center" border={true} />
+<Image src="https://files.readme.io/82bf6559f3b90ad2b458c0d0e513079879d6d33d951e0050a89d5dd077bc7baa-image.png" align="center" width="75%" border={true} />
 
 
-<br />
+### Recovered revenue chart
 
-3. **Recovered Revenue Detail:** This detailed breakdown gives you insights into the processes that drive revenue recovery. By displaying the amount recovered through each process (Expired Card Management, Account Updater, Intelligent Retries, Backup Payment Method, Customer Updates, and External Recovery), it enables you to see which tools are most effective. This knowledge empowers you to focus your efforts on the most productive areas, thereby improving recovery rates, enhancing service continuity, and fostering customer retention. These charts are displayed as a total revenue saved, or a count of invoices recovered.
-
-
-<Image src="https://files.readme.io/1b47403d9847c0becfa5fab2226f73ff73c118f2aae3fb1490013271d45ad266-image.png" align="center" border={true} />
+This bar chart shows the revenue Recurly has helped you recover by reducing involuntary churn from declined automated invoices — a clear view of Recurly's financial impact, useful for forecasting and resource planning. View it as total revenue saved or as a count of invoices recovered.
 
 
-By having a clear understanding of the Recovered Revenue features, you can maximize their usage and significantly reduce involuntary churn, thereby enhancing your revenue recovery.
+<Image src="https://files.readme.io/40dfc0fa1fe13c6e9c395906a99fab9b12cc298514d48502e78a8e6915813e60-image.png" align="center" width="75%" border={true} />
+
+
+### Recovered revenue detail
+
+This breakdown shows how much revenue each process recovers — Expired Card Management, Account Updater, Intelligent Retries, Backup Payment Method, Customer Updates, and External Recovery — so you can see which tools are most effective and focus your efforts accordingly. View it as total revenue saved or as a count of invoices recovered.
+
+
+<Image src="https://files.readme.io/1b47403d9847c0becfa5fab2226f73ff73c118f2aae3fb1490013271d45ad266-image.png" align="center" width="75%" border={true} />
+
+
+Understanding these features helps you get the most out of them, reducing involuntary churn and strengthening your revenue recovery.
 
 ## Related dashboards
 
-Continue to learn more about how Recurly helps you prevent churn and your recovered invoice rate by navigating to the related dashboards. Also review your dunning campaign strategy to continue to increase your dunning recoveries.
+Explore related dashboards to learn more about how Recurly helps prevent churn and improve your recovered invoice rate. Review your dunning campaign strategy too, to keep increasing your dunning recoveries.
 
 
-<Image src="https://files.readme.io/91d2dd4-Screen_Shot_2024-01-22_at_7.58.05_PM.png" align="center" />
-
-
-<br />
+<Image src="https://files.readme.io/91d2dd4-Screen_Shot_2024-01-22_at_7.58.05_PM.png" align="center" width="75%" border={true} />
