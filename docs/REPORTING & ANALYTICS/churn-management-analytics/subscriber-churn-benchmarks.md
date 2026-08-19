@@ -13,97 +13,120 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Subscriber Churn Benchmarks dashboard shows you your churn rates — overall, involuntary, and voluntary — and compares your performance against others in your industry using Recurly's built-in benchmarks.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">4</span>FAQs</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-Users must have analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The subscriber churn benchmarks dashboard will provide insights on your churn rates, including overall churn, as well as both involuntary and voluntary , comparing yourself to others in your industry with Recurly’s built-in benchmarks.
+<div class="rp-definition">The subscriber churn benchmarks dashboard shows you your churn rates — including overall, involuntary, and voluntary churn — and compares your performance to others in your industry using Recurly's built-in benchmarks.</div>
 
 # Key benefits
 
-- **Industry comparison**: Compare key subscription metrics with industry benchmarks to understand performance relative to peers, identifying areas of strengths and weaknesses.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Industry comparison</strong>
+    <span>Compare key subscription metrics with industry benchmarks to see how you stack up against peers, and spot your strengths and weaknesses.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Competitive insights</strong>
+    <span>See how competitors are performing on the same subscription metrics, and find areas where you can differentiate and improve.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Informed decision-making</strong>
+    <span>Make decisions based on real-world data to set realistic goals for subscription growth and customer retention.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Forecasting and planning</strong>
+    <span>Enable more accurate forecasting and long-term planning, so you can set reachable growth targets and allocate resources effectively.</span>
+  </div>
+</div>
 
-- **Competitive insights**: Gain insights into how competitors are faring in terms of subscription metrics, uncovering areas to differentiate and improve to gain a competitive edge.
+<div class="rp-card">
 
-- **Informed decision-making**: Make informed decisions based on real-world data to help set realistic goals and expectations for subscription growth and customer retention.
+### Subscription churn (legacy) dashboard
 
-- **Forecasting and planning**: Enable more accurate forecasting and long-term planning to help businesses set reachable growth targets and allocate resources effectively.
+The Subscription Churn (Legacy) dashboard is still available via a link at the bottom of this dashboard. It measures churn at the subscription level rather than the subscriber level. We recommend measuring churn at the subscriber level for two reasons:
 
-> 👍 Subscription churn (legacy) dashboard
->
-> The Subscription Churn (Legacy) dashboard is still available via a link at the bottom of this dashboard. This dashboard provides an insight to churn at the subscription level, rather than the subscriber level. It is recommended to primarily measure churn at the subscriber level for the following reasons:
->
-> 1. Recurly uses subscriber level churn to benchmark merchant performance.
-> 2. Subscription level churn can sometimes be inflated if subscriptions are automatically expired and automatically rolled into new subscriptions.
+1. Recurly uses subscriber-level churn to benchmark merchant performance.
+2. Subscription-level churn can be inflated when subscriptions automatically expire and roll into new subscriptions.
 
-# Key Details
+</div>
+
+# Key details
 
 ## General filters (top left corner)
 
-- **Date Range:** You can adjust the time period for viewing your benchmark comparisons, with a default setting of 14 months. This allows you to analyze trends over more than a year.
-
-- **Industry:** This filter lets you view benchmark data tailored to your specific industry, providing more relevant insights.
-
-- **Subscriber Type:** Another non-editable filter, preset to "Paying Subscribers." It focuses your benchmark comparison on those subscribers who have made payments.
+<ul class="rp-list">
+  <li><strong>Date range</strong>: Adjust the time period for your benchmark comparisons. The default is 14 months, so you can analyze trends over more than a year.</li>
+  <li><strong>Industry</strong>: View benchmark data tailored to your specific industry for more relevant insights.</li>
+  <li><strong>Subscriber type</strong>: A non-editable filter preset to Paying Subscribers, focusing your comparison on subscribers who have made payments.</li>
+</ul>
 
 ## Subscriber benchmarks
 
-The subscriber churn benchmarks dashboard is a powerful tool for evaluating the success of your customer retention strategies. By presenting your churn rates clearly, it helps you identify both the strengths and weaknesses of your current approach. Understanding these metrics is crucial for refining your tactics and enhancing subscriber retention effectively.
+The Subscriber Churn Benchmarks dashboard is a valuable tool for evaluating your customer retention strategies. By laying out your churn rates clearly, it helps you identify what's working and what isn't, so you can refine your approach and strengthen retention.
 
-**Churn rates**
+#### Churn rates
 
-Churn rates are calculated by dividing the number of subscribers lost during a specified time period by the total number of subscribers at the beginning of that period. Here are the key considerations for calculating churn rates:
+Churn rate is calculated by dividing the number of subscribers you lost during a period by the total number of subscribers you had at the start of that period. A few things to know about how it's calculated:
 
-- **Eligibility Criteria:** Only subscribers who have received at least one paid subscription invoice are included. This means subscribers in a trial phase or in a dunning process from a trial are not considered.
+<ul class="rp-list">
+  <li><strong>Eligibility criteria</strong>: Only subscribers with at least one paid subscription invoice are included — subscribers in a trial, or in dunning from a trial, aren't counted.</li>
+  <li><strong>Detailed calculation</strong>: Benchmarks apply only to monthly periods. Churn that occurs and resolves within the same month ("ghost churn") isn't included.</li>
+  <li><strong>Benchmark calculation</strong>: Benchmark quartiles are generated monthly, giving you a consistent comparison at the start of each month. Individual merchant KPI rates, like the renewal invoice paid rate, are calculated daily and refreshed on their own dashboards — but the broader benchmark comparisons stay static until the next monthly update.</li>
+  <li><strong>Multiple subscriptions</strong>: If a subscriber has multiple subscriptions that expire, the reason for the last subscription's expiration determines whether the churn is classified as voluntary or involuntary.</li>
+</ul>
 
-- **Detailed Calculation:** Benchmarks apply exclusively to monthly periods. Any churn occurring within the month (often referred to as ‘ghost churn’) is not included in the benchmarks.
-
-- **Benchmark Calculation** Benchmark quartiles are generated monthly, providing a consistent framework for comparison at the start of each new month. However, individual Merchant KPI rates, such as the renewal invoice paid rate, are calculated on a daily basis. This means that while the benchmarks themselves are updated monthly, the underlying data for specific KPIs is refreshed daily and can be observed on their respective dashboards. It's important for users to note that although these daily updates occur, the broader benchmark comparisons remain static throughout the month until the next monthly update cycle.
-
-- **Multiple Subscriptions:** If a subscriber has multiple subscriptions that expire for any reason, the reason for the last subscription expiration is used to classify the churn as either voluntary (chosen by the subscriber) or involuntary (due to non-payment).
-
-Your performance, in terms of churn, is contextualized within your industry by displaying your percentile rank. Observing your percentile trend over time can offer insights into how your churn rate compares to industry standards and whether your retention strategies are becoming more or less effective.
+Your churn performance is shown as a percentile rank within your industry. Track your percentile trend over time to see how your churn rate compares to industry standards and whether your retention strategies are becoming more or less effective.
 
 There are three key churn benchmarks to consider:
 
-1. **Overall Churn:** This metric aggregates both involuntary and voluntary churn, providing a comprehensive view of total subscriber loss.
+1. **Overall churn**: Combines involuntary and voluntary churn for a complete picture of subscriber loss.
 
 
-<Image src="https://files.readme.io/16e5f0911248d473d19a5fac8da791654b1e17dfcba604ff40c3312badf2edfb-image.png" align="center" width="700px" border={true} />
+<Image src="https://files.readme.io/16e5f0911248d473d19a5fac8da791654b1e17dfcba604ff40c3312badf2edfb-image.png" align="center" width="75%" border={true} />
 
 
-2. **Involuntary Churn:** This benchmark focuses on subscribers lost due to payment issues, helping you understand the effectiveness of your payment recovery efforts.
+2. **Involuntary churn**: Subscribers lost due to payment issues, showing how effective your payment recovery efforts are.
 
 
-<Image src="https://files.readme.io/7c473db56aa2c62de8ee6963bf6034ef1c150b0bce00c7903dbd82182c26e897-image.png" align="center" width="700px" border={true} />
+<Image src="https://files.readme.io/7c473db56aa2c62de8ee6963bf6034ef1c150b0bce00c7903dbd82182c26e897-image.png" align="center" width="75%" border={true} />
 
 
-3. **Voluntary Churn:** This measures the rate at which subscribers choose to leave of their own accord, offering insights into subscriber satisfaction and the value they perceive from your service.
+3. **Voluntary churn**: The rate at which subscribers choose to leave on their own, reflecting subscriber satisfaction and perceived value.
 
 
-<Image src="https://files.readme.io/bf456526c2f24c1639f5c1d15e1199ec328d863a18dcf931c2c0c1d9829a6e3f-image.png" align="right" border={true} />
+<Image src="https://files.readme.io/bf456526c2f24c1639f5c1d15e1199ec328d863a18dcf931c2c0c1d9829a6e3f-image.png" align="center" width="75%" border={true} />
 
-
-<br />
 
 ## About benchmarks
 
-Recurly's benchmark reports offer insights into your performance metrics compared to similar businesses in your industry over time. This tool helps you understand your competitive position and identify growth opportunities by comparing your key performance indicators (KPIs) with industry standards.
+Recurly's benchmark reports show how your performance metrics compare to similar businesses in your industry over time. Use them to understand your competitive position and find growth opportunities by comparing your key performance indicators (KPIs) against industry standards.
 
-### FAQs
+# FAQs
 
-**What is a "Paid Subscriber"?**
+<Accordion title="What is a &quot;Paid Subscriber&quot;?">
+  A "Paid Subscriber" is someone who has at least one paid invoice associated with their subscription. This excludes subscribers who are currently in a trial period or in a dunning process following a trial.
+</Accordion>
 
-A "Paid Subscriber" refers to someone who has at least one paid invoice associated with their subscription. This excludes subscribers who are currently in a trial period or in a dunning process following a trial.
-
-**Why is the timeframe preset to "Monthly"?**
-
-The benchmarks are compiled and analyzed on a monthly basis to ensure consistency and accuracy in the data. This approach allows for a standardized comparison of performance metrics across different periods and companies.
+<Accordion title="Why is the timeframe preset to &quot;Monthly&quot;?">
+  Benchmarks are compiled and analyzed on a monthly basis to keep the data consistent and accurate. This gives you a standardized comparison of performance metrics across different periods and companies.
+</Accordion>
