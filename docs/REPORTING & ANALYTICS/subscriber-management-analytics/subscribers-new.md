@@ -1,8 +1,8 @@
 ---
 title: Subscribers
 excerpt: >-
-  Dive deep into Recurly's subscribers analytics for a comprehensive view of
-  subscriber behaviors, trends, and growth patterns.
+  Learn how to use the Subscribers dashboard in Recurly's Reporting & Analytics
+  to track subscriber growth, composition, and churn.
 deprecated: false
 hidden: false
 metadata:
@@ -12,80 +12,103 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Subscribers dashboard in Recurly's Reporting & Analytics suite gives you a clear view of how your subscriber base is growing and changing over time. Track new, returning, and churned subscribers, compare acquisition and churn rates against your industry, and see exactly how many customers hold at least one active subscription. Use the filters to narrow the view by date range, timeframe, and subscriber type.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">4</span>FAQs</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The Subscribers dashboard of Recurly's Reporting & Analytics offers a comprehensive set of reports and metrics to help you track and analyze subscriber counts and trends.
+<div class="rp-definition">The Subscribers dashboard offers reports and metrics for tracking and analyzing your subscriber counts and trends, including signups, churn, and overall subscriber base growth. It's built to help you understand the dynamics behind your subscription business, not just the totals.</div>
 
 # Key benefits
 
-* **Measure growth**: Understand how your acquisition rates are trending over time.
-
-* **Subscriber composition**: Gain insights into what your target group of subscribers your targeting efforts are attracting between new or returning.
-
-* **Forecasting and planning**: Enable more accurate forecasting and long-term planning to help businesses set reachable growth targets and allocate resources effectively.
-
-# Definition
-
-The "Subscribers" section within Recurly's Reporting & Analytics suite offers a wide array of reports and metrics tailored to help you keep a close eye on and analyze the number of your subscribers as well as their trends. This tool is instrumental in gaining insights into the dynamics of your subscription signups, churn rates, and the overall growth of your subscriber base.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Measure growth</strong>
+    <span>See how your acquisition rates are trending over time so you can gauge the health of your subscriber base.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Understand subscriber composition</strong>
+    <span>See whether new signups or returning subscribers are driving your growth, so you can evaluate how well your targeting efforts are working.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Forecast and plan ahead</strong>
+    <span>Set realistic growth targets and allocate resources more effectively with a clearer view of where your subscriber base is headed.</span>
+  </div>
+</div>
 
 # Key details
 
-> **Note:** It's important to understand the difference between a subscriber and a subscription. A single subscriber may have several active subscriptions, but this dashboard's focus is on counting each subscriber as one entity, rather than tallying the total subscriptions they may hold.
->
-> **For more information on how to navigate and make the most of the filter tools available, please refer to our documentation[here](https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features).**
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>It's important to understand the difference between a subscriber and a subscription. A single subscriber may have several active subscriptions, but this dashboard counts each subscriber as one entity — not the total number of subscriptions they hold.</div>
+</div>
 
-## Filters (top left corner)
+## Filters
 
-* **Date range:** Utilize dropdown menus to select a specific timeframe and date range for the data displayed on the dashboard.
-* **Timeframe:** Adjust this to view data over different periods for a more detailed or broader overview.
-* **Subscriber type:** This filter lets you categorize the data by the type of subscriber, whether they are paying, non-paying, or in a trial phase.
+Use the filters in the top-left corner of the dashboard to narrow the data you're viewing:
+
+<ul class="rp-list">
+  <li><strong>Date range</strong>: Select a specific timeframe and date range for the data displayed on the dashboard.</li>
+  <li><strong>Timeframe</strong>: Adjust this to view data over different periods for a more detailed or broader look.</li>
+  <li><strong>Subscriber type</strong>: Categorize the data by subscriber type — paying, non-paying, or trial.</li>
+</ul>
+
+For more on navigating and getting the most out of these filter tools, see our <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">analytics overview documentation</a>.
 
 ## Active subscribers
 
-This dashboard segment is designed to clarify the total number of customers who maintain at least one active (not expired) subscription, including those in active, paused, or canceled states.
+This section shows the total number of customers who hold at least one active (not expired) subscription, including subscriptions in an active, paused, or canceled state. The KPI widget displays your current active subscriber count alongside how it has changed compared to the same date last year.
 
-The KPI widget immediately shows the total number of active subscribers and highlights how this number has changed compared to the same date in the previous year.
 
-<Image align="center" border={true} src="https://files.readme.io/5796968e7db9b40b087b0190b008d80863025582bcdd7a229869ee89f8222dd8-image.png" className="border" />
+<Image src="https://files.readme.io/5796968e7db9b40b087b0190b008d80863025582bcdd7a229869ee89f8222dd8-image.png" align="center" width="75%" border={true} />
 
-## Subscriber growth
-
-This section is designed to give you a clear perspective on the trends influencing the growth of your subscriber base. Through an easily interpretable chart, you'll be able to track the numbers of both new and returning subscribers, alongside the count of those who have churned. This visualization aids in determining your net subscriber count, essentially answering the pivotal question: What is the net change in the number of new subscribers compared to those who have churned?
 
 ## Subscriber growth
 
-This section is designed to give you a clear perspective on the trends influencing the growth of your subscriber base. Through an easily interpretable chart, you'll be able to track the numbers of both new and returning subscribers, alongside the count of those who have churned. This visualization aids in determining your net subscriber count, essentially answering the pivotal question: What is the net change in the number of new subscribers compared to those who have churned?
+Track the trends driving your subscriber base with a chart showing new, returning, and churned subscribers over time. Together, these numbers reveal your net subscriber count — the change in subscribers gained versus lost.
 
-* **New Subscribers:** Individuals signing up for a subscription for the first time.
-* **Returning Subscribers:** Former subscribers who have reactivated their subscription.
-* **Churned Subscribers:** Subscribers whose subscriptions have ended, either voluntarily or involuntarily.
+<ul class="rp-list">
+  <li><strong>New subscribers</strong>: Customers signing up for a subscription for the first time.</li>
+  <li><strong>Returning subscribers</strong>: Former subscribers who have reactivated their subscription.</li>
+  <li><strong>Churned subscribers</strong>: Subscribers whose subscriptions have ended, whether voluntarily or involuntarily.</li>
+</ul>
 
-Accompanying this chart, a detailed table breaks down these figures on a monthly basis. This breakdown allows for a deeper dive into the specific changes month over month, offering insights into the ebb and flow of your subscriber dynamics. This data is crucial for understanding the overall health and growth trajectory of your subscriber base.
+A table below the chart breaks these figures down by month, so you can dig into the specific changes in your subscriber dynamics over time — insight that's essential for understanding the health and growth trajectory of your subscriber base.
 
-<Image align="center" border={true} src="https://files.readme.io/855f0f9579c6c6321446f090ced4b7d052e784e2e264139b0af4758c7c9f6cb5-image.png" className="border" />
+
+<Image src="https://files.readme.io/855f0f9579c6c6321446f090ced4b7d052e784e2e264139b0af4758c7c9f6cb5-image.png" align="center" width="75%" border={true} />
+
 
 ## Acquisition and churn rates
 
-View the acquisition rate and churn rates in a YOY comparison to learn how your subscriber base is growing, and what percentage of your subscribers discontinued their subscription either voluntarily or involuntarily. Compare these rates to the benchmarked version to understand how you compare to those in your industry.
+Compare your acquisition and churn rates year-over-year to see how your subscriber base is growing and what percentage of subscribers discontinued their subscription — voluntarily or involuntarily. Benchmark these rates against your industry to see how you stack up.
 
-<Image align="center" border={true} src="https://files.readme.io/a7fa2fd0bef616f79fd73995cefdad303e3d4c39fa447657d943dc2e9dbedb4c-image.png" className="border" />
+
+<Image src="https://files.readme.io/a7fa2fd0bef616f79fd73995cefdad303e3d4c39fa447657d943dc2e9dbedb4c-image.png" align="center" width="75%" border={true} />
+
 
 # FAQs
 
-**Where did the previous Subscribers dashboard go?**
+<Accordion title="Where did the previous Subscribers dashboard go?">
+  It hasn't disappeared. A link to the Subscribers (Legacy) dashboard is available at the bottom of the Subscribers page. Recurly plans to phase out the legacy dashboard, so it's worth getting familiar with the current dashboard's features and capabilities.
+</Accordion>
 
-If you're looking for the previous version of the Subscribers dashboard, it hasn't disappeared. A link to the “Subscribers (Legacy)” dashboard is provided at the bottom of the subscribers page. Please note, Recurly plans to phase out the legacy dashboard, so it's a good idea to familiarize yourself with the current dashboard's features and capabilities.
-
-**How is churn and acquisition calculated?**
-
-Throughout our dashboards, churn and acquisition are calculated by comparing subscribers who are not expired at the beginning of the time period vs the subscribers who are not expired at the end of the time period. For example, if using a weekly timeframe, if a subscriber is not expired at the beginning of the week but is expired at the end of the week would be churn.
+<Accordion title="How are churn and acquisition calculated?">
+  Churn and acquisition are calculated by comparing subscribers who aren't expired at the beginning of a time period to those who aren't expired at the end of it. For example, using a weekly timeframe, a subscriber who isn't expired at the start of the week but is expired by the end of it counts as churn.
+</Accordion>
