@@ -165,4 +165,8 @@ Once testing passes, you're ready to accept live payments through CyberSource.
   <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Keep your CyberSource credentials secure and limit access to authorized personnel. Regularly review and regenerate your SOAP Toolkit keys for added security. Consult your CyberSource account representative to confirm your account is in good standing and compliant with all relevant regulations.</div>
 </div>
 
-<br />
+# FAQ
+
+<Accordion title="I am using Recurly.js and I am not receiving a token -- what's wrong?">
+  Cybersource uses pre-flights to initiate 3DS requests using the Gateway's SDK when using Recurly.js by default. If you do not have 3DS enabled on your gateway account and are calling 3DS in your R.js configuration, you are likely running up against a Cybersource gateway configuration issue where you are calling 3DS behavior and your gateway account does not support it. Talk to your Cybersource contacts about enabling 3DS, or remove 3DS configuration from your R.js setup.
+</Accordion>
