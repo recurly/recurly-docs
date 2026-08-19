@@ -1,8 +1,8 @@
 ---
 title: Plans (legacy)
 excerpt: >-
-  Harness the power of your subscription data, refine your offerings, and drive
-  growth with the Plans Section.
+  Learn how to use Recurly's Subscriptions by Plan dashboard to track active
+  subscriptions and trends across your plans.
 deprecated: false
 hidden: false
 metadata:
@@ -12,58 +12,82 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Subscriptions by Plan dashboard shows you a complete breakdown of your active subscriptions by plan, so you can see which plans are driving growth and which need attention. Visualize subscriptions across active, trial, canceled, and paused states, and view trends over the timeframe that matters to you.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The Subscriptions by Plans dashboard, a crucial feature of Recurly, displays a complete breakdown of your active subscriptions based on different plans. It's your go-to tool for assessing the popularity of your plans, helping you identify which are driving growth and which need tweaking. Its rich data visualization includes subscriptions in different states, offering a panoramic view of your subscription model's health.
+<div class="rp-definition">The Subscriptions by Plan dashboard shows you a complete breakdown of your active subscriptions by plan. Use it to assess how popular each plan is, see which are driving growth, and spot which ones need adjustment.</div>
 
-**Note**: Data only includes plans that have had at least 1 subscriber.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Data only includes plans that have had at least one subscriber.</div>
+</div>
 
 # Key benefits
 
-* **Intuitive data visualization:** The dashboard simplifies complex subscription data into easy-to-understand formats like graphs, bar charts, and tables.
-* **Customizable timeframe:** You have the flexibility to view subscription trends over your chosen period, be it daily, weekly, or monthly.
-* **Detailed breakdown:** Each subscription plan is thoroughly examined, with specific counts for active, trial, canceled, and paused subscriptions.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Intuitive data visualization</strong>
+    <span>See complex subscription data laid out in easy-to-read graphs, bar charts, and tables.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Customizable timeframe</strong>
+    <span>View subscription trends over the period that matters to you — daily, weekly, or monthly.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Detailed breakdown</strong>
+    <span>See exact counts for active, trial, canceled, and paused subscriptions, plan by plan.</span>
+  </div>
+</div>
 
 # Key details
 
-### Subscriptions key performance indicator
+## Subscriptions key performance indicator (KPI)
 
-<Image align="center" border={true} src="https://files.readme.io/8d0bbb927c23cda97b2f9f4ef74d47f9ecbba782e286cabb5744ad4854cc0515-image.png" className="border" />
 
-The Subscriptions Key Performance Indicator (KPI) widget offers a quick overview of your active subscription counts across different time periods. It compares current active subscription numbers by plan to previous periods, such as last month, previous months, three months, or a year ago, with indicators showing whether there's an increase or decrease. This widget is crucial for tracking subscription trends and making informed decisions based on these patterns. You can filter down to look at plans by total subscriptions, new subscriptions, and churned subscriptions.
+<Image src="https://files.readme.io/8d0bbb927c23cda97b2f9f4ef74d47f9ecbba782e286cabb5744ad4854cc0515-image.png" align="center" width="75%" border={true} />
 
-### Subscription by plans 
 
-<Image align="center" border={true} src="https://files.readme.io/19432bf80592a4d654e518bd0be8479ad573196a4d4549d75efaceddf92cb7e6-image.png" className="border" />
+This widget gives you a quick view of your active subscription counts by plan across different time periods. Compare current totals to last month, the previous few months, or a year ago, with indicators showing whether each plan is trending up or down. Filter by total subscriptions, new subscriptions, or churned subscriptions to focus on what matters most.
 
-This feature visually breaks down your subscriptions by plan over your selected timeframe. Each bar in the chart represents a time unit, and its height indicates the total number of subscriptions. The bars are color-coded for different plans, allowing for immediate visual comparison. Clicking on a bar or section provides detailed subscription totals for each plan.
+## Subscriptions by plan
 
-### Subscriptions by plans details table
 
-<Image align="center" border={true} src="https://files.readme.io/4fe6c69e438c14ca8dcfe0ff7ec7187447da8387eb87651dd86ad439b1ecc0f0-image.png" className="border" />
+<Image src="https://files.readme.io/19432bf80592a4d654e518bd0be8479ad573196a4d4549d75efaceddf92cb7e6-image.png" align="center" width="75%" border={true} />
 
-The detail table provides a thorough view of your active subscriptions for chosen plans compared to the overall total. Organized by your selected timeframe, this table is essential for analyzing the long-term performance and popularity of your plans. It helps in identifying which plans are consistently successful and which may require adjustments.
 
-# How to utilize the subscription by plans dashboard
+This chart breaks your subscriptions down by plan over your selected timeframe. Each bar represents a time unit, its height shows the total number of subscriptions, and each plan gets its own color for easy comparison. Select a bar or section to see detailed subscription totals for that plan.
 
-**Understand your key performance indicators (KPIs):** The dashboard's KPI view shows current active subscription totals by plan over different time periods. Use the indicators to compare changes in active subscriptions across various periods.
+## Subscriptions by plan details table
 
-**Read the bar chart:** This chart shows subscription numbers for selected plans over your chosen timeframe. Each bar is time-specific and color-coded to represent different plans. Click on a bar to see detailed numbers for each plan.
 
-**Analyze the details chart:** This chart compares the total number of active subscriptions for selected plans against the total for all plans, within your preferred timeframe. It's useful for pinpointing high-performing plans and those needing improvement.
+<Image src="https://files.readme.io/4fe6c69e438c14ca8dcfe0ff7ec7187447da8387eb87651dd86ad439b1ecc0f0-image.png" align="center" width="75%" border={true} />
 
-**Filter your view:** Personalize the dashboard with filters like 'Select Timeframe', 'Select Plans', and 'Plans' to tailor the displayed data to your needs.
 
-**Refresh your data:** Stay updated with the latest information by refreshing the data on the dashboard, ensuring you're always working with the most current figures.
+This table gives you a detailed view of active subscriptions for your selected plans against the overall total, organized by timeframe. Use it to analyze the long-term performance of your plans and spot which are consistently successful and which need adjustment.
 
-**Download and share your data:** Enhance team collaboration by downloading and sharing the data in your preferred format for further discussion or analysis.
+## Using the dashboard
+
+A few ways to get more out of this dashboard:
+
+<ul class="rp-list">
+  <li><strong>Filter your view</strong>: Use filters like Select Timeframe, Select Plans, and Plans to tailor the data to your needs.</li>
+  <li><strong>Refresh your data</strong>: Refresh the dashboard whenever you need the most current figures.</li>
+  <li><strong>Download and share your data</strong>: Download the data in your preferred format to share with your team for further discussion.</li>
+</ul>
