@@ -1,8 +1,8 @@
 ---
 title: Renewal benchmarks
 excerpt: >-
-  The Renewal Benchmarks dashboard will provide insights on your renewal invoice
-  success and decline rates, benchmarked against those in your industry.
+  Learn how to use Recurly's Renewal Benchmarks dashboard to compare your
+  renewal invoice performance against industry standards.
 deprecated: false
 hidden: false
 metadata:
@@ -12,72 +12,98 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Renewal Benchmarks give you insight into your overall renewal invoice performance, along with detail into why renewal invoices decline. Compare your results against industry peers to see where your renewal strategy stands.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">4</span>FAQs</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-- Users must have analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The renewal benchmarks will provide insights on your overall renewal invoices as well as provide detail into the decline reasons for renewal invoices.
+<div class="rp-definition">Renewal Benchmarks give you insight into your overall renewal invoices, along with detail into why renewal invoices decline.</div>
 
 # Key benefits
 
-- **Industry comparison**: Compare key subscription metrics with industry benchmarks to understand performance relative to peers, identifying areas of strengths and weaknesses.
-- **Competitive insights**: Gain insights into how competitors are faring in terms of subscription metrics, uncovering areas to differentiate and improve to gain a competitive edge.
-- **Informed decision-making**: Make informed decisions based on real-world data to help set realistic goals and expectations for subscription growth and customer retention.
-- **Forecasting and planning**: Enable more accurate forecasting and long-term planning to help businesses set reachable growth targets and allocate resources effectively.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Industry comparison</strong>
+    <span>Compare key subscription metrics with industry benchmarks to see how you stack up against peers, and spot your strengths and weaknesses.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Competitive insights</strong>
+    <span>See how competitors are performing on the same subscription metrics, and find areas where you can differentiate and improve.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Informed decision-making</strong>
+    <span>Make decisions based on real-world data to set realistic goals for subscription growth and customer retention.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Forecasting and planning</strong>
+    <span>Enable more accurate forecasting and long-term planning, so you can set reachable growth targets and allocate resources effectively.</span>
+  </div>
+</div>
 
 # Key details
 
-## General filters (Top left corner)
+## General filters (top left corner)
 
-- **Invoice Date range:** Allows you to specify the time period of invoices to review.
+<ul class="rp-list">
+  <li><strong>Invoice date range</strong>: Specify the time period of invoices to review.</li>
+  <li><strong>Industry</strong>: Switch between industries to review benchmark information. Defaults to your configured industry.</li>
+</ul>
 
-- **Industry:** Allows you to change between different industries to review the benchmark information, and will default to your configured industry.
+## Renewal invoice benchmarks
 
-# Renewal invoice benchmarks
+Renewal Invoice Benchmarks give you insight into the performance of your renewal invoices — both those that are paid successfully and those that fail on the first transaction attempt.
 
-The Renewal Invoices Benchmarks offer insights into the performance of renewal invoices, both those that are successfully paid and those that fail on the first transaction attempt.
-
-Your ranking in this area is presented as a percentile, comparing your performance to that of peers in your industry. Monitoring your percentile trend over time can provide valuable insights into how your renewal strategy performs relative to the broader industry standards.
-
-
-<Image src="https://files.readme.io/7b3d6b10e20db9201dcb63f4f28bde9ff4e3f0e88205af002741e30f27eb1b13-image.png" align="center" border={true} />
+Your ranking is shown as a percentile, comparing your performance to peers in your industry. Track your percentile trend over time to see how your renewal strategy performs relative to industry standards.
 
 
-**Renewal invoice paid rate calculation**
-
-This calculation shows the percentage of renewal invoices created within a certain period that are successfully paid (marked as "paid") out of the total number of renewal invoices issued.
-
-- **Example:** In April, if 1,000 renewal invoices are issued and 750 are paid, the initial paid rate is 75%. If, after two weeks, another 150 invoices are settled following dunning efforts, the revised invoice paid rate reaches 90%.
-
-Calculations are based on the “invoice creation date” to ensure consistency.
+<Image src="https://files.readme.io/7b3d6b10e20db9201dcb63f4f28bde9ff4e3f0e88205af002741e30f27eb1b13-image.png" align="center" width="75%" border={true} />
 
 
-<Image src="https://files.readme.io/a6561f42cabc0c5694f5333b856d14e4c652986c4e6d53442f688d65de7b3714-image.png" align="center" border={true} />
+#### Renewal invoice paid rate calculation
+
+This calculation shows the percentage of renewal invoices created within a period that are successfully paid, out of the total number of renewal invoices issued.
+
+<ul class="rp-list">
+  <li><strong>Example</strong>: In April, if 1,000 renewal invoices are issued and 750 are paid, the initial paid rate is 75%. If another 150 invoices are settled through dunning over the following two weeks, the revised paid rate reaches 90%.</li>
+</ul>
+
+Calculations are based on the invoice creation date, to keep results consistent.
 
 
-**Renewal decline rate calculation**
+<Image src="https://files.readme.io/a6561f42cabc0c5694f5333b856d14e4c652986c4e6d53442f688d65de7b3714-image.png" align="center" width="75%" border={true} />
 
-This calculation shows the percentage of renewal invoices that are not successfully paid on the first attempt.
 
-Your position within your industry is represented as a percentile, showing where you stand compared to others. Tracking your percentile over time helps you understand how your renewal process compares and evolves in the context of your industry.
+#### Renewal decline rate calculation
 
-- **Initial transactions:** These are the very first attempts to process a payment on an invoice, highlighting the importance of the initial interaction.
-- **Reason for focusing on first transaction:** This approach ensures a fair comparison across businesses, regardless of their policies on retrying invoice payments. It's about ensuring consistency and comparability.
+This calculation shows the percentage of renewal invoices that aren't successfully paid on the first attempt.
 
-The evaluation period is determined by the date of the initial transaction on the invoice.
+<ul class="rp-list">
+  <li><strong>Initial transactions</strong>: The first attempt to process payment on an invoice — the interaction this metric focuses on.</li>
+  <li><strong>Why we focus on the first transaction</strong>: It keeps the comparison fair across businesses, regardless of how aggressively they retry failed payments.</li>
+</ul>
 
-Your position within your industry is represented as a percentile, showing where you stand compared to others. Tracking your percentile over time helps you understand how your renewal process compares and evolves in the context of your industry.
+The evaluation period is based on the date of the invoice's initial transaction. Your position is shown as a percentile within your industry — track it over time to see how your renewal process compares and evolves.
 
-### FAQs
+# FAQs
 
-**What is a Renewal Invoice?**
-
-A renewal invoice refers to an invoice that is issued as part of a subscription's regular renewal process. This includes any invoices that are generated at the set intervals following the initial signup or the first invoice after a trial period. Essentially, renewal invoices represent the recurring billing aspect of a subscription, excluding the initial acquisition or trial conversion invoices.
+<Accordion title="What is a renewal invoice?">
+  A renewal invoice is an invoice issued as part of a subscription's regular renewal process. This includes invoices generated at set intervals after the initial sign-up, or the first invoice after a trial period. Renewal invoices represent the recurring billing side of a subscription, excluding the initial acquisition or trial conversion invoices.
+</Accordion>
