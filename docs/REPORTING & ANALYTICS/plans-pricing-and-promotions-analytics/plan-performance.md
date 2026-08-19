@@ -12,100 +12,184 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Plan KPIs dashboard gives you a complete picture of how each of your plans is performing. Review plan attributes and key metrics side by side, track subscription growth and churn by plan, and see how subscribers move between plans over time.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#kpis"><span class="rp-toc-num">3</span>KPIs</a>
+    <a class="rp-toc-pill" href="#plan-performance"><span class="rp-toc-num">4</span>Plan performance</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The 'KPIs' view on the dashboard bifurcates into two distinct sections: Plan Attributes & KPIs and Key Performance Indicators. While the 'Attributes' section elucidates the fundamental details of each plan, the 'KPIs' section serves as a powerhouse of metrics, delivering insights into the health and performance of these plans. Together, they grant a comprehensive understanding, facilitating informed decision-making.
+<div class="rp-definition">The KPIs view is split into two sections: Plan Attributes & KPIs and Key Performance Indicators. The Attributes section covers the fundamental details of each plan, while the KPIs section provides the metrics behind their health and performance. Together, they give you a complete picture to inform your decisions.</div>
 
-> **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
->
-> **Note**: Data only includes plans that have had at least 1 subscriber.
->
-> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>It's important to understand the difference between a subscriber and a subscription. A single subscriber might hold multiple active subscriptions, but this dashboard counts each individual subscriber — not the number of subscriptions they hold. Data only includes plans that have had at least one subscriber.</div>
+</div>
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>For more on navigating and using the filter tools, see our <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">analytics overview documentation</a>.</div>
+</div>
 
 # Key benefits
 
-* **Streamlined plan overview**: The 'Attributes' segment acts as a quick reference, detailing essential plan specifications, enabling swift and effective cross-referencing.
-* **Holistic performance assessment**: With metrics like churn rate, MRR growth, and average LTV, the 'KPIs' section offers a panoramic view of plan health, making it easier to pinpoint areas of excellence and improvement.
-* **Efficient navigation and integration**: The actionable links embedded in the KPI page, particularly with the plan name and plan code, ensure seamless transitions between analytical insights and actionable configurations within the Recurly app.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Quick plan reference</strong>
+    <span>The Attributes section gives you the essential specs for each plan in one place, so you can cross-reference plans quickly.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Complete performance view</strong>
+    <span>Metrics like churn rate, MRR growth, and average LTV give you a full picture of plan health, so you can spot what's working and what needs attention.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Efficient navigation</strong>
+    <span>Plan name and plan code links on the KPI page take you straight from analysis to the matching configuration screen in the Recurly app.</span>
+  </div>
+</div>
 
 # KPIs
 
-This view consists of two subsections: Plan Attributes & KPIs and Key Performance Indicators (KPIs).
+This view has two subsections: Plan Attributes & KPIs and Key Performance Indicators (KPIs).
 
-The '**Attributes**' section displays plan details such as the plan name, plan code, trial length, current subscriptions, and current MRR. You can use these details to cross-reference plan information and for easier navigation when analyzing multiple plans.
+### Attributes
 
-<Image align="center" border={true} src="https://files.readme.io/28b9fe992f7feb3cc8ff8da6ff04aebe8442493e80753c041d7934c269b319f4-image.png" className="border" />
+The Attributes section displays plan details such as the plan name, plan code, trial length, current subscriptions, and current MRR. Use these details to cross-reference plan information and navigate more easily when analyzing multiple plans.
 
-The '**KPIs**' section provides a snapshot of various plan performances, including subscription growth, avg. churn rate, trial conversion rate, subscriptions moving in, subscriptions moving out, monthly recurring revenue (MRR) growth, and average lifetime value (LTV). This overview can help identify which plans are performing well and which ones need improvement.
 
-<Image align="center" border={true} src="https://files.readme.io/dd55405da9eaeaea80aeb2e38570336d8deee15b7ab5dfe2e5e7eeb2d21685bc-image.png" className="border" />
+<Image src="https://files.readme.io/28b9fe992f7feb3cc8ff8da6ff04aebe8442493e80753c041d7934c269b319f4-image.png" align="center" width="75%" border={true} />
 
-### Utilizing the KPIs Feature
 
-1. Go to the "Plan KPIs" dashboard and delve into the 'KPIs' section for an at-a-glance assessment of how your plans are performing.
+### Key performance indicators (KPIs)
 
-2. Examine the 'Plan Attributes & KPIs' section to gain insights into the specifics of your plans.
+The KPIs section gives you a snapshot of plan performance, including subscription growth, average churn rate, trial conversion rate, subscriptions moving in, subscriptions moving out, MRR growth, and average lifetime value (LTV). Use it to identify which plans are performing well and which need improvement.
 
-3. It's advisable to set a regular schedule to revisit these KPIs, allowing you to monitor and benchmark their progression over time.
 
-> **Note:** Within the KPI page, both the plan name and plan code serve as direct links. Clicking on them will redirect you to the plan configuration page within the Recurly app.
+<Image src="https://files.readme.io/dd55405da9eaeaea80aeb2e38570336d8deee15b7ab5dfe2e5e7eeb2d21685bc-image.png" align="center" width="75%" border={true} />
 
-# Plan performance subscriptions
 
-The 'Subscriptions' view includes a line chart that illustrates subscription totals and three bar charts that show subscription growth.
+### Using the KPIs dashboard
 
-* The line chart showing total subscriptions is beneficial for viewing the overall growth trend and determining which plans have the highest subscription rates.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Review the KPIs section</h4><p>Go to the Plan KPIs dashboard and check the KPIs section for an at-a-glance view of how your plans are performing.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Check the Plan Attributes & KPIs section</h4><p>Review this section for the specifics of each plan.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Revisit KPIs regularly</h4><p>Set a regular schedule to check back on these metrics so you can monitor and benchmark their progress over time.</p></div>
+  </div>
+</div>
 
-  <Image align="center" border={true} src="https://files.readme.io/c667b84d6f67cf1f265b0e347db6bd6f53e7e15336dc0b293be9558129355d79-image.png" className="border" />
-* The three bar charts include net subscriptions, new subscriptions, and churn subscriptions. These charts can be used to analyze the subscription growth rate, identify which plans are gaining or losing subscribers, and determine if certain plans have higher churn rates.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>On the KPI page, both the plan name and plan code are links. Selecting either one takes you to that plan's configuration page in the Recurly app.</div>
+</div>
 
-_Plan Performance Net Subscriptions_
+# Plan performance
 
-<Image align="center" border={true} width="700px" src="https://files.readme.io/eed9e73329d15c55484887486560c75d601d16f0645199f3b6e866cb41e1cd51-image.png" className="border" />
+## Subscriptions
 
-_Plan Performance New Subscriptions _
+The Subscriptions view includes a line chart showing subscription totals and three bar charts showing subscription growth.
 
-<Image align="center" border={true} width="700px" src="https://files.readme.io/d4a6468155f422c28af936cfbe7591d3784feb9e734ffcc4dd132c969a12f1f3-image.png" className="border" />
+The line chart shows your overall growth trend and which plans have the highest subscription counts.
 
-_Plan Performance Churned Subscriptions_
 
-<Image align="center" border={true} width="700px" src="https://files.readme.io/1ec089720efe3ff9d3a27367b13c7c8b67476f4ae33af0dff3f3ad7e08a6659d-image.png" className="border" />
+<Image src="https://files.readme.io/c667b84d6f67cf1f265b0e347db6bd6f53e7e15336dc0b293be9558129355d79-image.png" align="center" width="75%" border={true} />
 
-The analysis showcases either the top 5 or top 10 subscription plans, ranked by their total subscriber count. This approach helps in identifying which plans are experiencing higher churn rates, offering a clear perspective on subscriber trends and behaviors.
 
-### How to use the plan performance subscriptions feature
+The three bar charts — net, new, and churned subscriptions — let you analyze subscription growth rate, see which plans are gaining or losing subscribers, and spot which plans have higher churn rates.
 
-1. Go to the 'Subscriptions' view.
-2. Observe the line chart that shows subscription totals. This will provide you a visual representation of the overall growth trend of your subscriptions.
-3. Monitor the three bar charts for net subscriptions, new subscriptions, and churn subscriptions. This will help you gauge the subscription growth rate, and which plans are gaining or losing subscribers.
-4. Identify high churn rate plans and brainstorm strategies for improvement.
+#### Net subscriptions
 
-## Plan performance plan movement
 
-The 'Plan Movement' view consists of one trend chart in the 'Plan Movement' section and two bar charts in the 'Plan Movement Breakout' section.
+<Image src="https://files.readme.io/eed9e73329d15c55484887486560c75d601d16f0645199f3b6e866cb41e1cd51-image.png" align="center" width="75%" border={true} />
 
-* The trend chart provides a visualization of the net movement for the top five plans, which can be valuable in identifying which plans are gaining or losing subscribers.
 
-  <Image align="center" border={true} src="https://files.readme.io/1d7689ed1a8d9d4b37a4f1c9e7296009094d93749a944684925565b29580759b-image.png" className="border" />
-* The bar charts in the 'Plan Movement Breakout' section depict incoming and outgoing subscriptions, allowing you to see how customers are moving between different plans.
+#### New subscriptions
 
-<Image align="center" border={true} width="700px" src="https://files.readme.io/52b319e0547318589077da9bd67c9f314c413b9db0c49aa214c4dfeb96b35de6-image.png" className="border" />
 
-<br />
+<Image src="https://files.readme.io/d4a6468155f422c28af936cfbe7591d3784feb9e734ffcc4dd132c969a12f1f3-image.png" align="center" width="75%" border={true} />
 
-### How to use the plan performance plan movement feature
 
-1. Go to the Plan KPIs Dashboard and navigate to the 'Plan Movement' view.
-2. Look at the trend chart in the 'Plan Movement' section. It will give you a visual representation of the net movement for your top plans.
-3. Examine the two bar charts in the 'Plan Movement Breakout' section. They can show you how customers are moving between different plans.
-4. Use this data to improve your plan design and customer retention strategies.
+#### Churned subscriptions
+
+
+<Image src="https://files.readme.io/1ec089720efe3ff9d3a27367b13c7c8b67476f4ae33af0dff3f3ad7e08a6659d-image.png" align="center" width="75%" border={true} />
+
+
+Each chart shows the top 5 or top 10 subscription plans, ranked by total subscriber count, so you can quickly see which plans have higher churn rates and understand subscriber trends and behavior.
+
+### How to use plan performance subscriptions
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Go to the Subscriptions view</h4><p>Open the Subscriptions view within the Plan KPIs dashboard.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Review the line chart</h4><p>Check the line chart showing subscription totals for a visual read on your overall growth trend.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Check the bar charts</h4><p>Review the net, new, and churn subscription bar charts to gauge growth rate and see which plans are gaining or losing subscribers.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Identify high-churn plans</h4><p>Flag plans with higher churn rates and brainstorm strategies for improvement.</p></div>
+  </div>
+</div>
+
+## Plan movement
+
+The Plan Movement view has one trend chart in the Plan Movement section and two bar charts in the Plan Movement Breakout section.
+
+The trend chart shows net movement for your top five plans, helping you see which plans are gaining or losing subscribers.
+
+
+<Image src="https://files.readme.io/1d7689ed1a8d9d4b37a4f1c9e7296009094d93749a944684925565b29580759b-image.png" align="center" width="75%" border={true} />
+
+
+The bar charts in the Plan Movement Breakout section show incoming and outgoing subscriptions, so you can see how customers are moving between plans.
+
+
+<Image src="https://files.readme.io/52b319e0547318589077da9bd67c9f314c413b9db0c49aa214c4dfeb96b35de6-image.png" align="center" width="75%" border={true} />
+
+
+### How to use plan movement
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Go to the Plan Movement view</h4><p>Open the Plan KPIs dashboard and navigate to the Plan Movement view.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Review the trend chart</h4><p>Check the trend chart in the Plan Movement section for net movement across your top plans.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Check the breakout charts</h4><p>Review the two bar charts in the Plan Movement Breakout section to see how customers are moving between plans.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Apply what you find</h4><p>Use this data to improve your plan design and customer retention strategies.</p></div>
+  </div>
+</div>
