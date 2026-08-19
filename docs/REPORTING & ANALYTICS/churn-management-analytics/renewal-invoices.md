@@ -1,9 +1,8 @@
 ---
 title: Renewal invoices
 excerpt: >-
-  Understand the effectiveness of Recurly’s recovered revenue methods and how
-  your invoice paid rate can increase over time compared to others in your
-  industry using Recurly’s built-in benchmarks.
+  Learn how to use Recurly's Renewal Paid Rate dashboard to track renewal
+  invoice outcomes and recovery performance.
 deprecated: false
 hidden: false
 metadata:
@@ -13,78 +12,94 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Renewal Paid Rate dashboard shows you how many renewals are successfully paid against all renewal invoices. See which invoices pay without any intervention, how Recurly's churn management features help recover the rest, and how that performance breaks down by currency.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The Renewal Paid Rate dashboard will provide insights on renewals that are successfully paid against all renewal invoices.
+<div class="rp-definition">The Renewal Paid Rate dashboard shows you renewals that are successfully paid against all renewal invoices.</div>
 
 # Key benefits
 
-- **Industry comparison**: Compare key subscription metrics with industry benchmarks to understand performance relative to peers, identifying areas of strengths and weaknesses.
-
-- **Competitive insights**: Gain insights into how competitors are faring in terms of subscription metrics, uncovering areas to differentiate and improve to gain a competitive edge.
-
-- **Informed decision-making**: Make informed decisions based on real-world data to help set realistic goals and expectations for subscription growth and customer retention.
-
-- **Forecasting and planning**: Enable more accurate forecasting and long-term planning to help businesses set reachable growth targets and allocate resources effectively.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Industry comparison</strong>
+    <span>Compare key subscription metrics with industry benchmarks to see how you stack up against peers, and spot your strengths and weaknesses.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Competitive insights</strong>
+    <span>See how competitors are performing on the same subscription metrics, and find areas where you can differentiate and improve.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Informed decision-making</strong>
+    <span>Make decisions based on real-world data to set realistic goals for subscription growth and customer retention.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Forecasting and planning</strong>
+    <span>Enable more accurate forecasting and long-term planning, so you can set reachable growth targets and allocate resources effectively.</span>
+  </div>
+</div>
 
 # Key details
 
-## Filters (Top left corner)
+## Filters (top left corner)
 
-- **Date range:** Offers dropdowns to specify a timeframe and date range, up to the past 18 months, which then reflects on the dashboard.
-- **Select Timeframe:** Adjust this to view data over different periods for a more detailed or broader overview.
-- **Currency:** Offers dropdowns to select a specific currency, where the default converts all currencies to the primary currency for the site.
+<ul class="rp-list">
+  <li><strong>Date range</strong>: Use the dropdowns to select a timeframe and date range, up to the past 18 months, reflected on the dashboard.</li>
+  <li><strong>Select timeframe</strong>: Adjust this to view data over different periods for a more detailed or broader overview.</li>
+  <li><strong>Currency</strong>: Select a specific currency from the dropdown. By default, all currencies are converted to the site's primary currency.</li>
+</ul>
 
-## Renewal Invoices - Paid without issue
+## Renewal invoices paid without issue
 
-The two graphs in this section will allow you to view the trend of the percentage of invoices that are paid without any intervention from Recurly or a customer. These invoices do not require any type of recovery, pre or post transaction, such as account updater, or customer updates. The two graphs break down these invoices by percentage of total invoices created, and by count of invoices.
+These two graphs show the trend in the percentage of invoices paid without any intervention from Recurly or the customer — invoices that don't require any recovery, before or after the transaction, such as account updater or customer updates. One graph breaks these invoices down by percentage of total invoices created, and the other by invoice count.
 
-<br />
-
-> **Note:** The amount of invoices represented in the current month will be lower than previous month since invoices will continually be generated as the month continues.
->
-> ![]()
-
-
-<Image src="https://files.readme.io/d505574551929c18fd0286546679f7554c1230d7d4bddab801672a934e5f53c5-image.png" align="center" border={true} />
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The number of invoices shown for the current month will be lower than for previous months, since invoices continue to be generated as the month goes on.</div>
+</div>
 
 
-## Renewal Invoice Outcomes
-
-This dashboard series of 4 graphs allow you to understand how many invoices were paid without any intervention, and how Recurly helped drive the success of your invoices through our churn management features.
-
-The second two graphs illustrate the status of the remaining invoices. These graphs indicate how many were successfully paid through Recurly's churn management features; Account Updater, Expired Card Management, Intelligent Retries, Customer Updates (during dunning), and Backup Payment Method. In addition you can see how many invoices failed during the selected time period, how many invoices are past due or processing and how many were updated through external recoveries.
-
-To understand the success of each feature, we provide the count and percentage of revenue in the different sets of tables.
-
-This table is also broken out by selected currency to allow you to understand the breakdown of successful recovery by different currencies.
+<Image src="https://files.readme.io/d505574551929c18fd0286546679f7554c1230d7d4bddab801672a934e5f53c5-image.png" align="center" width="75%" border={true} />
 
 
-<Image src="https://files.readme.io/0ab4ca4cafe7594a91364a23312604661361bceaed1cb1c952b421964d70b4ba-image.png" align="center" border={true} />
+## Renewal invoice outcomes
+
+This series of four graphs shows how many invoices were paid without any intervention, and how Recurly helped drive invoice success through our churn management features.
+
+The remaining two graphs show the status of the rest of your invoices — how many were successfully paid through Recurly's churn management features (Account Updater, Expired Card Management, Intelligent Retries, Customer Updates during dunning, and Backup Payment Method), how many failed during the selected period, how many are past due or processing, and how many were updated through external recoveries.
+
+To understand how well each feature is performing, we show both the count and the percentage of revenue across these tables.
+
+This data is also broken out by currency, so you can see how recovery success varies across currencies.
 
 
-<br />
+<Image src="https://files.readme.io/0ab4ca4cafe7594a91364a23312604661361bceaed1cb1c952b421964d70b4ba-image.png" align="center" width="75%" border={true} />
 
 
-<Image src="https://files.readme.io/5c3521deee977af5347bdcdf623a182a8f0a0e7f6146ed3825006dc88c816d1b-image.png" align="center" border={true} />
+
+<Image src="https://files.readme.io/5c3521deee977af5347bdcdf623a182a8f0a0e7f6146ed3825006dc88c816d1b-image.png" align="center" width="75%" border={true} />
 
 
 ## Related dashboards
 
-Continue to learn more about how Recurly helps you prevent churn and your renewal invoice decline rate by navigating to the related dashboards. Also review your dunning campaign strategy to continue to increase your dunning recoveries.
+Explore related dashboards to learn more about how Recurly helps prevent churn and lower your renewal invoice decline rate. Review your dunning campaign strategy too, to keep increasing your dunning recoveries.
 
 
-<Image src="https://files.readme.io/0f63abd-image.png" align="center" width="75% " border={true} />
-
-
-<br />
+<Image src="https://files.readme.io/0f63abd-image.png" align="center" width="75%" border={true} />
