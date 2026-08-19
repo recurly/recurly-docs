@@ -10,43 +10,63 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The renewal declines trendalyzer dashboard helps you dig into failed renewal invoices and understand where your payment strategy is falling short. Pivot the data across payment type, brand, gateway, and failure type, then trend it daily, weekly, or monthly over any date range you choose.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The renewal decline trendalyzer dashboard provides insights into failed renewal invoices, allowing you to assess the effectiveness of your payment methods and gateway strategy to reduce decline rates. With this tool, you can track trends at daily, weekly, or monthly intervals across any date range. Users can arrange various dimensions—such as Payment Type, Brand, Gateway, and Failure Type—in the desired order and select from key metrics, including Decline Rate (%), Total Transactions, and Failed Transactions.
+<div class="rp-definition">The renewal declines trendalyzer dashboard is a pivotable breakout dashboard for failed renewal invoice data. Select a primary dimension and up to two breakout dimensions, choose a metric — Decline Rate, Total Transactions, or Failed Transactions — and the dashboard rebuilds the chart and table to match.</div>
 
 # Key benefits
 
-- **Informed decision-making**: Make data-driven decisions to set realistic goals and enhance subscription growth and customer retention strategies.
-- **Forecasting and planning**: Improve forecasting and resource allocation for reachable growth targets.
-- **Customizable data views**: Pivot data to optimize presentation, select specific metrics, and analyze trends across daily, weekly, or monthly ranges.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Informed decision-making</strong>
+    <span>Make data-driven decisions to set realistic goals and strengthen your subscription growth and customer retention strategies.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Forecasting and planning</strong>
+    <span>Improve forecasting and resource allocation to set reachable growth targets.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Customizable data views</strong>
+    <span>Pivot data to optimize how it's presented, select specific metrics, and analyze trends across daily, weekly, or monthly ranges.</span>
+  </div>
+</div>
 
 # Key details
 
-This breakout dashboard enables you to adjust the pivot table to view different fields in various orders and switch between metrics like Decline Rate, Failed Transactions, and Total Transactions. The top chart displays the primary dimension over time, and the table provides a breakdown of the primary dimension by the selected breakout dimensions.
+This breakout dashboard lets you adjust the pivot table to view fields in different orders and switch between metrics like Decline Rate, Failed Transactions, and Total Transactions. The top chart shows your primary dimension over time, while the table breaks that dimension down by your selected breakout dimensions.
 
-## General filters (Top left corner)
-
-
-<Image src="https://files.readme.io/ea3a17b3f5cc482d91fa41f61e7d278c099423cf6cf62eca3866413270201d21-image.png" align="center" border={true} />
+## General filters (top left corner)
 
 
-- **Timeframe**: Analyze different monthly timeframes.
-- **Invoice Creation Date**: Choose a specific date range, up to the last 18 months, for dashboard data. Use dropdown menus to select start and end dates.
-- **Primary Dimension**: Focus on a specific metric by selecting between Payment Type, Brand, Gateway, or Failure Type.
-- **Dimension Breakout 1**: Select an additional dimension from the list, or view all dimensions.
-- **Dimension Breakout 2**: Choose another dimension from the list, or view all dimensions.
-- **Metric**: Select the key metric to analyze, choosing from Decline Rate (%), Total Transactions, or Failed Transactions.
-- **Gateway Type**: Specify the gateway you’d like to view in the data.
-- **Failure Type**: Filter by failure reasons, with options to view the Top 5, Top 10, or all reasons.
+<Image src="https://files.readme.io/ea3a17b3f5cc482d91fa41f61e7d278c099423cf6cf62eca3866413270201d21-image.png" align="center" width="75%" border={true} />
 
-<br />
+
+<ul class="rp-list">
+  <li><strong>Timeframe</strong>: Analyze different monthly timeframes.</li>
+  <li><strong>Invoice creation date</strong>: Choose a specific date range, up to the last 18 months, using the start and end date dropdowns.</li>
+  <li><strong>Primary dimension</strong>: Focus on a specific metric by selecting from Payment Type, Brand, Gateway, or Failure Type.</li>
+  <li><strong>Dimension breakout 1</strong>: Select an additional dimension from the list, or view all dimensions.</li>
+  <li><strong>Dimension breakout 2</strong>: Choose another dimension from the list, or view all dimensions.</li>
+  <li><strong>Metric</strong>: Select the key metric to analyze — Decline Rate (%), Total Transactions, or Failed Transactions.</li>
+  <li><strong>Gateway type</strong>: Specify the gateway you'd like to view in the data.</li>
+  <li><strong>Failure type</strong>: Filter by failure reason, choosing the top 5, top 10, or all reasons.</li>
+</ul>
