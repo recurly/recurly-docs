@@ -12,6 +12,11 @@ metadata:
 next:
   description: ''
 ---
+Title: Recurring billing
+Metadata description: An overview of Recurly's Recurring Billing reports, covering monthly recurring revenue and billings analytics.
+
+\---PASTE INTO EDITOR BELOW---
+
 <div class="rp-page">
   <div class="rp-overview">Recurring Billing brings together the reports you need to manage subscriptions and revenue — subscriber behavior, financial performance, plan effectiveness, and dunning efficiency — all backed by the same data. Use it to make strategic decisions with confidence instead of guesswork.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
@@ -64,10 +69,14 @@ next:
 
 # Key details
 
-## MRR (Monthly recurring revenue)
+<div class="rp-nav-grid">
 
-The <a href="https://docs.recurly.com/docs/monthly-recurring-revenue" target="_blank"><strong>MRR</strong> dashboard</a> gives you a clear view of your business's monthly recurring revenue, letting you track growth, identify trends, and understand revenue composition. With insight into new business, expansions, contractions, and churn, it's a valuable tool for financial forecasting and strategic planning.
-
-## Billings
-
-The <a href="https://docs.recurly.com/docs/billings" target="_blank">Billings dashboards</a> give you visibility into payments, refunds, and net billings from all customers, showing only successful transactions while excluding manual or credit invoices. See a clear snapshot of your financial activity by region, so you can understand your cash flow and build stronger revenue strategies.
+<Cards>
+  <Card title="MRR (Monthly recurring revenue)" href="https://docs.recurly.com/docs/monthly-recurring-revenue" target="_blank">
+    Track growth, identify trends, and understand revenue composition — including new business, expansions, contractions, and churn.
+  </Card>
+  <Card title="Billings" href="https://docs.recurly.com/docs/billings" target="_blank">
+    See payments, refunds, and net billings by region, showing only successful transactions while excluding manual or credit invoices.
+  </Card>
+</Cards>
+</div>
