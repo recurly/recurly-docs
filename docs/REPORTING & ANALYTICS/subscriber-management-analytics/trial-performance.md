@@ -1,9 +1,8 @@
 ---
 title: Trial performance
 excerpt: >-
-  Unlock insights with the 'Trial Performance' dashboard: A real-time tool to
-  monitor subscription trial outcomes and conversion rates, updated frequently
-  for the latest data.
+  Learn how to use Recurly's Trial Performance dashboard to track trial starts,
+  conversion rates, and trial subscription status.
 deprecated: false
 hidden: false
 metadata:
@@ -13,96 +12,182 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Trial Performance dashboard shows you how your subscription trials are performing, from how many trials start to how many convert to paid subscriptions. The dashboard refreshes several times a day, so you're always looking at close-to-current data, and you can drill into conversion trends, subscription status, and status details for any date range.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#using-the-trial-performance-dashboard"><span class="rp-toc-num">4</span>Using the dashboard</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The Trial Performance dashboard is a crucial tool that allows you to track the performance of your subscription trials and monitor the conversion rates from trial to active subscriptions. This dashboard is updated several times daily to ensure access to the most current information. The last update time can be verified by checking the widget at the bottom of the dashboard.
+<div class="rp-definition">The Trial Performance dashboard tracks the performance of your subscription trials and monitors conversion rates from trial to active subscription. It updates several times a day — check the widget at the bottom of the dashboard to see when it was last refreshed.</div>
 
-> **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
->
-> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>It's important to understand the difference between a subscriber and a subscription. A single subscriber might hold multiple active subscriptions, but this dashboard counts each individual subscriber — not the number of subscriptions they hold. For more on navigating and using the filter tools, see our <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">analytics overview documentation</a>.</div>
+</div>
 
-# Trial performance dashboards
+# Key benefits
 
-The Trial Performance Dashboard is structured into several sections, each providing specific insights about your trials. These sections include.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Trial visibility</strong>
+    <span>See trial starts, conversions, and churn updated several times daily.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Conversion insight</strong>
+    <span>Track how trials convert to paid, automatically or manually, and spot trends over time.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Early problem detection</strong>
+    <span>Catch payment failures and missing billing info before they hurt revenue.</span>
+  </div>
+</div>
 
-## Trial performance key performance indicator (KPI) totals
+# Key details
 
-This widget provides an at-a-glance view of your trial performance. It displays the current Trials Started totals, as well as totals for last month, the previous month, three months ago, and one year ago. An up arrow under each total indicates the difference between that timeframe and the Total Started value, providing a quick visual representation of the growth or decline of your trials over time.
+The Trial Performance dashboard is organized into several sections, each giving you specific insight into your trials.
 
-<Image align="center" border={true} src="https://files.readme.io/88969ce3bd815c97017027c5c460d9daf8f7931ae485a38a5037fbceb30a8f0c-image.png" className="border" />
+## Trial performance KPI totals
+
+This widget gives you an at-a-glance view of your trial performance. It shows your current Trials Started total alongside totals from last month, the previous month, three months ago, and one year ago. An arrow under each total shows the difference between that timeframe and your current total, so you can quickly see whether your trials are growing or declining.
+
+
+<Image src="https://files.readme.io/88969ce3bd815c97017027c5c460d9daf8f7931ae485a38a5037fbceb30a8f0c-image.png" align="center" width="75%" border={true} />
+
 
 ## Trial conversion rate
 
-This section features a line chart that shows the conversion rate for trial subscriptions that transitioned to paid subscriptions during the selected date range. It's important to note that "converted" means the subscription moved from a free trial to a paid subscription, either automatically or manually. However, setup fees charged while the customer is in trial aren't included in this conversion metric. Also, this dashboard doesn't track the state of the subscription after conversion. The date range and interval picker impact the date the subscription started in trial.
+This line chart shows the conversion rate for trial subscriptions that moved to paid subscriptions during your selected date range. A subscription counts as converted when it moves from a free trial to a paid subscription, whether automatically or manually — setup fees charged during the trial aren't included in this metric, and the dashboard doesn't track what happens to a subscription after conversion. The date range and interval you select affect the date the subscription started its trial.
 
-<Image align="center" border={true} src="https://files.readme.io/a8e723c543b8c036cf3a2479c0aa8ce92e34bad66db709b8a8ebbb41360a3816-image.png" className="border" />
+
+<Image src="https://files.readme.io/a8e723c543b8c036cf3a2479c0aa8ce92e34bad66db709b8a8ebbb41360a3816-image.png" align="center" width="75%" border={true} />
+
 
 ## Trial subscription status
 
-This bar chart tracks the current state of subscriptions that began as trials during the selected date range. Only subscriptions that started with a trial are included in this chart.
+This bar chart tracks the current state of subscriptions that started as trials during your selected date range. Only subscriptions that began with a trial are included.
 
-<Image align="center" border={true} src="https://files.readme.io/71746a777d8ff8e5bfc2665b11545a58b110172e94923a53f61fa4c19ea88e78-image.png" className="border" />
+
+<Image src="https://files.readme.io/71746a777d8ff8e5bfc2665b11545a58b110172e94923a53f61fa4c19ea88e78-image.png" align="center" width="75%" border={true} />
+
 
 The potential states for these subscriptions are:
 
-* **Canceled:** The subscription was canceled.
-* **Payment Failed:** Customer entered billing information, and the trial churned after failing to collect payment.
-* **Pending:** A temporary state of subscriptions that started in trial and have not yet converted or churned.
-* **Converted Manual:** The subscription, where manual invoices/payment collection is enabled, ended trial and successfully converted to paid (through a manual payment greater than 0).
-* **Converted Auto:** The subscription ended its trial and the invoice of greater than 0 is successfully converted to paid , where automatic invoices/payment collection is enabled.
-* **No Billing Info:** The customer never entered billing information.
+<ul class="rp-list">
+  <li><strong>Canceled</strong>: The subscription was canceled.</li>
+  <li><strong>Payment failed</strong>: The customer entered billing information, but the trial churned after a failed payment collection attempt.</li>
+  <li><strong>Pending</strong>: A temporary state for subscriptions that started in trial and haven't yet converted or churned.</li>
+  <li><strong>Converted manual</strong>: The subscription had manual invoicing enabled, ended its trial, and successfully converted to paid through a manual payment greater than $0.</li>
+  <li><strong>Converted auto</strong>: The subscription had automatic invoicing enabled, ended its trial, and successfully converted to paid through an invoice greater than $0.</li>
+  <li><strong>No billing info</strong>: The customer never entered billing information.</li>
+</ul>
 
 ## Trial subscription status details
 
-This section provides more granular detail on the status of trial subscriptions for a selected date range.
+This section gives you a more granular look at the status of trial subscriptions for your selected date range.
 
-<Image align="center" border={true} src="https://files.readme.io/64f0e46d9657cd4cfc08d2342e9164f33c26dd4713235e8480087bdb6af2899b-image.png" className="border" />
+
+<Image src="https://files.readme.io/64f0e46d9657cd4cfc08d2342e9164f33c26dd4713235e8480087bdb6af2899b-image.png" align="center" width="75%" border={true} />
+
 
 It tracks the following metrics:
 
-* Trials started
-* Converted (Sum of Converted - Auto and Converted - Manual)
-* Converted - Automatic
-* Converted - Manual
-* Canceled
-* Payment Failed
-* Pending
+<ul class="rp-list">
+  <li>Trials started</li>
+  <li>Converted (the sum of Converted - Automatic and Converted - Manual)</li>
+  <li>Converted - Automatic</li>
+  <li>Converted - Manual</li>
+  <li>Canceled</li>
+  <li>Payment failed</li>
+  <li>Pending</li>
+</ul>
 
-In summary, the Trial Performance Dashboard provides a comprehensive view of your trials, helping you understand your trial performance and make data-driven decisions to optimize your trial conversion rates.
+Together, these sections give you a complete view of your trial performance, so you can make data-driven decisions to improve your conversion rates.
 
-# Viewing trial performance key performance indicator (KPI) totals
+# Using the trial performance dashboard
 
-1. From your Recurly dashboard, navigate to the "Trial Performance" dashboard.
-2. Locate the "Trial Performance KPI Totals" widget.
-3. You can view the number of trials started for the current month, last month, the previous month, three months ago, and one year ago.
-4. The arrow indicator below each total displays the difference between that specific time frame and the total number of trials started.
+## Viewing trial performance KPI totals
 
-# Analyzing the trial conversion rate
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Navigate to Trial Performance</h4><p>From your Recurly dashboard, go to the Trial Performance dashboard.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Find the KPI totals widget</h4><p>Locate the Trial Performance KPI Totals widget.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Review the totals</h4><p>View trials started for the current month, last month, the previous month, three months ago, and one year ago.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Check the growth indicator</h4><p>Look at the arrow under each total to see the difference between that timeframe and your current total.</p></div>
+  </div>
+</div>
 
-1. In the "Trial Performance" dashboard, find the "Trial Conversion Rate" line chart.
-2. This chart displays the conversion rate for trial subscriptions that converted to paid subscriptions during the selected date range.
-3. Review the line chart to track conversion trends and patterns over time.
+## Analyzing the trial conversion rate
 
-# Assessing the trial subscription status
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Find the conversion rate chart</h4><p>In the Trial Performance dashboard, find the Trial Conversion Rate line chart.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Read the chart</h4><p>The chart shows the conversion rate for trial subscriptions that converted to paid during your selected date range.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Track trends</h4><p>Review the line chart to track conversion trends and patterns over time.</p></div>
+  </div>
+</div>
 
-1. On the "Trial Performance" dashboard, identify the "Trial Subscription Status" bar chart.
-2. This chart shows the current state of subscriptions that started as trials during the selected date range.
-3. Examine the bar chart to determine how many trial subscriptions have converted (either manually or automatically), have been canceled, have failed payment, or are still pending.
+## Assessing the trial subscription status
 
-# Monitoring the trial subscription status details
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Find the status chart</h4><p>On the Trial Performance dashboard, locate the Trial Subscription Status bar chart.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Read the chart</h4><p>This chart shows the current state of subscriptions that started as trials during your selected date range.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Compare outcomes</h4><p>Compare how many trial subscriptions converted (manually or automatically), were canceled, failed payment, or are still pending.</p></div>
+  </div>
+</div>
 
-1. Navigate to the "Trial Subscription Status Details" section on the "Trial Performance" dashboard.
-2. This section provides a more granular view of the status of trial subscriptions over a selected date range.
-3. Use this information to further analyze the effectiveness of your trials and to identify potential issues or areas of improvement.
+## Monitoring the trial subscription status details
 
-<br />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Navigate to status details</h4><p>Go to the Trial Subscription Status Details section on the Trial Performance dashboard.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Review the details</h4><p>This section gives you a more granular view of trial subscription status over your selected date range.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Use the data</h4><p>Use this information to analyze the effectiveness of your trials and identify potential issues or areas for improvement.</p></div>
+  </div>
+</div>
