@@ -13,47 +13,89 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Plan Performance Subscription Churn gives you a detailed view of churn by plan, broken into total, voluntary, and involuntary churn. Use it to understand why customers are leaving and build targeted strategies to reduce churn.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-Plan Performance Subscription Churn is a feature within Recurly that offers a detailed visualization of churn data via three line charts that delineate total churn, voluntary churn, and involuntary churn.
+<div class="rp-definition">Plan Performance Subscription Churn is a feature within Recurly that gives you a detailed visualization of churn data through three line charts: total churn, voluntary churn, and involuntary churn.</div>
 
-> **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
->
-> **Note**: Data only includes plans that have had at least 1 subscriber.
->
-> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>It's important to understand the difference between a subscriber and a subscription. A single subscriber might hold multiple active subscriptions, but this dashboard counts each individual subscriber — not the number of subscriptions they hold. Data only includes plans that have had at least one subscriber.</div>
+</div>
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>For more on navigating and using the filter tools, see our <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">analytics overview documentation</a>.</div>
+</div>
 
 # Key benefits
 
-* **Comprehensive churn overview:** By assessing all three charts, businesses gain a holistic understanding of churn dynamics, enabling better decision-making for customer retention.
-* **Reasons behind churn:** The segregation between voluntary and involuntary churn charts offers insights into specific reasons driving customer attrition for each plan.
-* **Strategic intervention:** With clear visibility into the different churn categories, businesses can craft tailored strategies to tackle and reduce high churn rates effectively.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Comprehensive churn overview</strong>
+    <span>Assess all three charts together for a holistic understanding of churn dynamics, so you can make better retention decisions.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Reasons behind churn</strong>
+    <span>Separate voluntary from involuntary churn to see the specific reasons driving attrition for each plan.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Strategic intervention</strong>
+    <span>See exactly where churn is coming from so you can craft tailored strategies to reduce it.</span>
+  </div>
+</div>
 
-# Plan performance subscription churn
+# Key details
 
-The 'Churn' view displays three line charts that calculate total, voluntary, and involuntary churn.
+The Churn view shows three line charts that track total, voluntary, and involuntary churn. Reviewing all three together helps you understand the reasons behind churn for each plan, which is essential for improving retention.
 
-* By examining the total churn, voluntary churn, and involuntary churn charts, you can understand the reasons behind the churn rates for each plan, which is essential for mitigating churn and improving customer retention.
-* <Image align="center" border={true} src="https://files.readme.io/b83adaf263c5075111be21dd74145b133912c1902341ab223ef756407e4c61d7-image.png" className="border" />
+#### Total churn
 
-  <Image align="center" border={true} src="https://files.readme.io/63a2bca08c52d60af847fe73e3866e75f65163012d79577f482d4b8b456bf04f-image.png" className="border" />
 
-  <Image align="center" border={true} src="https://files.readme.io/db1f6ff9162c37c0180beb40ea8db51178df7dac5da481d1ba6d1e26210886ca-image.png" className="border" />
+<Image src="https://files.readme.io/b83adaf263c5075111be21dd74145b133912c1902341ab223ef756407e4c61d7-image.png" align="center" width="75%" border={true} />
 
-<br />
 
-### How to use the Plan Performance Subscription Churn
+#### Voluntary churn
 
-1. Navigate to the 'Churn' view.
-2. Review the total churn, voluntary churn, and involuntary churn line charts. This can help you understand the reasons behind the churn rates for each plan.
-3. Analyze the reasons behind high voluntary and involuntary churn rates and develop strategies to mitigate them.
+
+<Image src="https://files.readme.io/63a2bca08c52d60af847fe73e3866e75f65163012d79577f482d4b8b456bf04f-image.png" align="center" width="75%" border={true} />
+
+
+#### Involuntary churn
+
+
+<Image src="https://files.readme.io/db1f6ff9162c37c0180beb40ea8db51178df7dac5da481d1ba6d1e26210886ca-image.png" align="center" width="75%" border={true} />
+
+
+### How to use plan performance subscription churn
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Go to the Churn view</h4><p>Navigate to the Churn view within the dashboard.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Review the churn charts</h4><p>Check the total, voluntary, and involuntary churn line charts to understand the reasons behind churn rates for each plan.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Develop a mitigation strategy</h4><p>Analyze the reasons behind high voluntary and involuntary churn rates and build strategies to address them.</p></div>
+  </div>
+</div>
