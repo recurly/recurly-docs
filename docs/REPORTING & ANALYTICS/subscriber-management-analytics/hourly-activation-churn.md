@@ -1,8 +1,8 @@
 ---
 title: Hourly activation & churn
 excerpt: >-
-  Dive deep into Recurly's Hourly Activation & Churn analytics for a
-  comprehensive view of subscriber behaviors, trends, and growth patterns.
+  Learn how Recurly's Hourly Activation and Churn dashboard tracks subscriber
+  activity, data freshness, and churn trends in near real time.
 deprecated: false
 hidden: false
 metadata:
@@ -12,82 +12,124 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Hourly Activation and Churn dashboard gives you an operational, hour-by-hour view of subscriber activity, updated throughout the day. Track signups and churn as they happen, review the widgets and charts that make up the dashboard, and understand exactly how fresh the data is at any given moment.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The "Hourly Activations and Churn" section of Recurly's Reporting & Analytics provides an operational overview of subscriber activity and trends, updated hourly. It offers insights into subscription signups and churn rates to help you make informed decisions.
+<div class="rp-definition">The Hourly Activation and Churn section of Recurly's Reporting & Analytics gives you an operational overview of subscriber activity and trends, updated hourly. It surfaces subscription signups and churn rates so you can make informed decisions faster.</div>
 
-> **Note:** Subscriber counts focus on individual subscribers, not the number of subscriptions they hold.  
-> For guidance on filter tools, visit our <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">documentation</a>.
-
-# Key updates on data freshness
-
-* Dashboards are updated hourly, and data can lag up to **two hours.**
-* **MRR updates every two hours** due to computational complexity.
-* Dashboards include a timestamp at the bottom, indicating the data's last refresh time.
-
-**Exceptions and insights:**
-
-1. Some reports can reflect data as recent as **20–25 minutes** due to faster data lake refreshes (10–15 minutes). However, analytics mart processes introduce up to **1–1.5 hours of staleness** before the next run.
-2. Dashboards have a **four-hour cache**. Merchants can clear the cache manually for more recent updates.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Subscriber counts focus on individual subscribers, not the number of subscriptions they hold. For guidance on filter tools, see our <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">analytics overview documentation</a>.</div>
+</div>
 
 # Key benefits
 
-* **Near real-time visibility:** Gain up-to-date insights into subscriber activations, churn, and net growth.
-* **Trend analysis:** Monitor subscriber behavior on an hourly basis and spot emerging patterns.
-* **Performance tracking:** Compare daily data with past periods for actionable insights.
-* **Decision-making support:** Use detailed metrics to optimize subscriptions and retention strategies.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Near real-time visibility</strong>
+    <span>Get up-to-date insight into subscriber activations, churn, and net growth.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Trend analysis</strong>
+    <span>Monitor subscriber behavior on an hourly basis and spot emerging patterns.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Performance tracking</strong>
+    <span>Compare daily data against past periods for actionable insights.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Decision-making support</strong>
+    <span>Use detailed metrics to optimize subscriptions and retention strategies.</span>
+  </div>
+</div>
 
 # Key details
 
-### General filters 
+## General filters
 
-* **Date:** Select specific timeframes for deeper insights.
-* **Plan Name:** Analyze data by specific subscription plans.
-* **Combine Subscriptions:** Combines consecutive subscriptions for accurate metrics.
-* **Subscriber Type:** Filter all subscribers, paying subscribers (with or without refunds), non paying or trial users.
+<ul class="rp-list">
+  <li><strong>Date</strong>: Select specific timeframes for deeper insights.</li>
+  <li><strong>Plan name</strong>: Analyze data by specific subscription plans.</li>
+  <li><strong>Combine Subscriptions</strong>: Combines consecutive subscriptions for more accurate metrics.</li>
+  <li><strong>Subscriber type</strong>: Filter by all subscribers, paying subscribers (with or without refunds), non-paying subscribers, or trial users.</li>
+</ul>
 
-### Hourly Activation & Churn
+## Hourly activation and churn
 
-1. Review the **four key widgets** at the top:
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Review the four key widgets</h4><p>These sit at the top of the dashboard and give you an at-a-glance summary of subscriber movement.</p></div>
+  </div>
+</div>
 
-   * Subscribers Activated
-   * Subscribers Churned
-   * Net Subscribers
-   * Total Subscribers
+<ul class="rp-list">
+  <li>Subscribers activated</li>
+  <li>Subscribers churned</li>
+  <li>Net subscribers</li>
+  <li>Total subscribers</li>
+</ul>
 
-   <Image align="center" border={true} src="https://files.readme.io/c9ac3660913f039be73673a554d5628e3516581bf5a209e3c9891a0bdce37e3f-image.png" className="border" />
 
-   <br />
+<Image src="https://files.readme.io/c9ac3660913f039be73673a554d5628e3516581bf5a209e3c9891a0bdce37e3f-image.png" align="center" width="75%" border={true} />
 
-2. Analyze bar charts for **Activations** and **Churn:**
 
-   * Charts are interactive, providing granular account details.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Analyze the activation and churn charts</h4><p>Both bar charts are interactive — select any bar for granular account-level detail.</p></div>
+  </div>
+</div>
 
-**Activations**
+#### Activations
 
-<Image align="center" border={true} src="https://files.readme.io/e299713c63c0164ed435ad7fd70c10738f5b9dbe265425bf0aacd6e99f001435-image.png" className="border" />
 
-<br />
+<Image src="https://files.readme.io/e299713c63c0164ed435ad7fd70c10738f5b9dbe265425bf0aacd6e99f001435-image.png" align="center" width="75%" border={true} />
 
-**Churn**
 
-![](https://files.readme.io/d78ed12c2d6cdb04f1ae5808b2df77bdf5aedc458255e39b6f23177cc0474cbe-image.png)
+#### Churn
 
-Pay attention to **Plan Rankings** for insights into plan-level performance.
 
-# Recommendations for real-time updates
+<Image src="https://files.readme.io/d78ed12c2d6cdb04f1ae5808b2df77bdf5aedc458255e39b6f23177cc0474cbe-image.png" align="center" width="75%" border={true} />
 
-* If merchants require faster updates, suggest leveraging **webhooks** to build a custom solution. While this requires significant development, it provides more control over data freshness.
-* Emphasize the value of existing hourly updates for high-volume days or executive reporting.
 
-By using these tools and insights, you can optimize subscriber management and align your strategies with data-driven outcomes.
+Pay attention to **Plan Rankings** for insight into plan-level performance.
+
+## Key updates on data freshness
+
+<ul class="rp-list">
+  <li>Dashboards update hourly, and data can lag up to <strong>two hours</strong>.</li>
+  <li><strong>Monthly Recurring Revenue (MRR) updates every two hours</strong> due to computational complexity.</li>
+  <li>Dashboards include a timestamp at the bottom indicating the data's last refresh time.</li>
+</ul>
+
+#### Exceptions and insights
+
+<ol>
+  <li>Some reports can reflect data as recent as <strong>20–25 minutes</strong> old, thanks to faster data lake refreshes (10–15 minutes). Analytics mart processes then add up to <strong>1–1.5 hours of staleness</strong> before the next run.</li>
+  <li>Dashboards use a <strong>four-hour cache</strong>. Merchants can clear the cache manually for more recent updates.</li>
+</ol>
+
+## Recommendations for real-time updates
+
+If you need updates faster than hourly, using **webhooks** to build a custom solution gives you more control over data freshness — though it requires significant development effort. For high-volume days or executive reporting, the existing hourly updates are usually enough on their own.
+
+Use these tools and insights to manage your subscribers more effectively and align your strategies with data-driven outcomes.
