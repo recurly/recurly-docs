@@ -1,10 +1,9 @@
 ---
 title: Explore - Invoices and workbook agent
 excerpt: >-
-  The Invoices Explore feature is a is an interactive analytics tool that lets
-  you slice and filter invoice-related data across accounts, subscriptions,
-  plans, dunning events, and more to create custom reports. Use the Workbook
-  Agent to ask natural-language questions and get AI-assisted analysis.
+  Learn how to use Recurly's invoices Explore feature to build custom reports
+  and analyze invoice and account data, including with the AI-powered Workbook
+  Agent.
 deprecated: false
 hidden: false
 metadata:
@@ -14,139 +13,223 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-## Required plan
-
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-page">
+  <div class="rp-overview">Invoices Explore gives you a flexible way to dig into your invoice and account data without waiting on a custom report from support. Build the exact view you need using the field picker, or ask the Workbook Agent a question in plain language and let it build the query for you.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#creating-a-new-report"><span class="rp-toc-num">4</span>Creating a new report</a>
+    <a class="rp-toc-pill" href="#saving-a-report"><span class="rp-toc-num">5</span>Saving a report</a>
+    <a class="rp-toc-pill" href="#opening-an-existing-report"><span class="rp-toc-num">6</span>Opening an existing report</a>
+    <a class="rp-toc-pill" href="#running-or-refreshing-a-report"><span class="rp-toc-num">7</span>Running or refreshing a report</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have the Analytics user role permission.</li>
+</ul>
 
-## Definition
+# Definition
 
-The invoices Explore feature is a dynamic, versatile, and powerful tool that provides a custom view of your organization's data. It transforms raw data into insightful and actionable information, catering to a wide array of data needs. From invoice details to account information and various other fields, Explore allows you to delve deeply into your Recurly data.
+<div class="rp-definition">Invoices Explore is a dynamic, versatile tool that provides a custom view of your organization's invoice data. It transforms raw data — invoice details, account information, and more — into actionable information you can use to build reports for invoicing or accounting.</div>
 
 # Key benefits
 
-- **Customizable reports for actionable insights**: Recurly Explore provides flexible report-building capabilities, allowing you to create custom reports tailored to your specific business needs.
-- **Comprehensive data views for deep analysis**: From accounts to transactions, Explore offers predefined data views, enabling you to analyze every aspect of your Recurly data.
-- **Optimized decision-making through detailed metrics**: Use dimensions and measures to uncover patterns and make informed decisions that enhance business performance.
-- **AI-assisted analytics**: Use the Workbook Agent to ask data questions in plain language. The agent interprets your question, selects the relevant fields, and returns a result set or chart.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Customizable reports for actionable insights</strong>
+    <span>Flexible report-building capabilities let you create custom reports tailored to your specific business needs.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Comprehensive data views for deep analysis</strong>
+    <span>Predefined data views cover everything from accounts to transactions, so you can analyze every aspect of your Recurly data.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Optimized decision-making through detailed metrics</strong>
+    <span>Use dimensions and measures to uncover patterns and make informed decisions that improve business performance.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>AI-assisted analytics</strong>
+    <span>Use the Workbook Agent to ask data questions in plain language. It interprets your question, selects the relevant fields, and returns a result set or chart.</span>
+  </div>
+</div>
 
 # Key details
 
-The invoices Explore includes **all** invoices and their corresponding line items. It does not contain transaction or gateway information. The data provided is particularly useful for building reports related to invoicing or accounting. Note that gateway, fraud, error code, or payment method information is not included in this Explore.
+Invoices Explore includes all invoices and their corresponding line items. It doesn't contain transaction or gateway information, which makes it particularly useful for reports related to invoicing or accounting.
 
-With the Recurly invoices Explore feature, you can easily create custom reports and visualize the data that matters most to your business.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Gateway, fraud, error code, and payment method information aren't included in this Explore.</div>
+</div>
 
 ## Explore interface
 
 The Explorer is divided into three areas:
 
-| Interface Area              | Description                                                                                                                                                                                                                  |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Left panel -Workbook        | Agent Ask natural-language questions about your invoice data. The agent suggests fields and runs queries on your behalf.                                                                                                     |
-| Center panel - Field picker | Browse and search the full field catalog. Fields are grouped by topic. Click any field to add it to your active query. Use the In-use filter to see only selected fields.                                                    |
-| Right panel - results area  | Toggle between Results (table view), Chart (visualization), or Both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query and verify your field selection before committing. |
+| Interface area              | Description                                                                                                                                                                                                                  |
+| :-------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Left panel — Workbook Agent | Ask natural-language questions about your invoice data. The agent suggests fields and runs queries on your behalf.                                                                                                           |
+| Center panel — Field picker | Browse and search the full field catalog. Fields are grouped by topic. Click any field to add it to your active query. Use the In-use filter to see only selected fields.                                                    |
+| Right panel — Results area  | Toggle between Results (table view), Chart (visualization), or Both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query and verify your field selection before committing. |
 
 
-<Image src="https://files.readme.io/26bc849b2829527adb5b7c95cefc555b6c50b03e68b2b68ee44ee4b027b03743-image.png" align="center" width="700px" border={true} />
+<Image src="https://files.readme.io/26bc849b2829527adb5b7c95cefc555b6c50b03e68b2b68ee44ee4b027b03743-image.png" align="center" width="75%" border={true} />
 
 
-### Using the Workbook Agent
+## Using the Workbook Agent
 
-The Workbook Agent is the fastest way to start an analysis. Type a question in the text box at the bottom of the left panel and press Enter (or click the send icon).
+The Workbook Agent is the fastest way to start an analysis. Type a question in the text box at the bottom of the left panel and press Enter, or select the send icon.
 
 **Example prompts:**
 
-- "Show me total invoice revenue by plan for the last 30 days"
-- "Which accounts have open invoices older than 60 days?"
-- "Break down failed charges by dunning state this month"
-- "How many invoice line items are associated with add-ons?"
-
-![](https://files.readme.io/2296d3c8cd45a5ec1e0e5a244b05be1c63faa5a33fc652eb30533f0f9a273dfc-image.png)
-
-**Switching between Agent and manual mode**
-
-You can use the Agent and the field picker together. After the agent populates a query, you can add or remove fields manually using the center panel. Changes are reflected immediately in the results view.
-
-### Opening an existing report
-
-1. Click the **yellow Recurly logo** in the upper left corner of the Explore
+<ul class="rp-list">
+  <li>Show me total invoice revenue by plan for the last 30 days</li>
+  <li>Which accounts have open invoices older than 60 days?</li>
+  <li>Break down failed charges by dunning state this month</li>
+  <li>How many invoice line items are associated with add-ons?</li>
+</ul>
 
 
-<Image src="https://files.readme.io/876fbccfd3e5c64960151b19b40148fb6688a7320eea40e9af93909becda1147-image.png" align="left" width="200px" border={true} />
+<Image src="https://files.readme.io/2296d3c8cd45a5ec1e0e5a244b05be1c63faa5a33fc652eb30533f0f9a273dfc-image.png" align="center" width="75%" border={true} />
 
 
-<br />
+### Switching between Agent and manual mode
 
+You can use the Agent and the field picker together. After the agent populates a query, add or remove fields manually using the center panel — changes appear immediately in the results view.
 
-<Image src="https://files.readme.io/fd6030aad81cb48304317f0583221f7df52b0df245f6ced971bf8d3103c5e81f-image.png" align="center" width="200px" border={true} />
-
-
-2. Either go to **My documents** or the **Hub&#x20;**&#x74;o access saved reports. My documents stores your private personal data reports and folders while the Hub is the shared workspace for the entire site.
-3. Click on the folder or report to open
-4. Select **File-Edit** or click th&#x65;**&#x20;Edit button** in the upper right corner to edit the report.
-5. Save your updates by selecting **File-Save**.
-
-### Run/refresh a report with or without cache
-
-1. Once in an existing report, you can run or refresh the report with or without cache by selecting the View menu
-
-
-<Image src="https://files.readme.io/2b464a13cc19f2e8b6d97c2c3b14107122f810eadc506f0bdda21000c3e77450-image.png" align="center" width="200px" border={true} />
-
-
-<br />
-
-- **Refresh** - this re-runs or refreshes the report against previously saved data. As an example, If you (or a colleague) ran the exact same query with the same filters, sorts, and fields within the last 1 hour, Explore will instantly load those pre-saved results. It only sends a new query to your data source if the cache has expired or if filters, sorts, and/or fields are changed in the report.
-- **Refresh w/o cache** - this bypasses the stored query results for the report and sends a direct query to your data source to pull live, up-to-the-minute data.
-
-### Creating a new report
-
-1. Browse and search the full field catalog. Fields are grouped by data topic.&#x20;
-2. Click any field to add it to your active query. Use the In-use filter to see only selected fields.
-3. Toggle between Results (table view), Chart (visualization), or both.&#x20;
-4. Use the Options tab to configure axes, grouping, and chart type.&#x20;
-
-### Available data
+## Available data
 
 The field picker organizes all available dimensions and metrics by topic. Each topic maps to a set of underlying data entities:
 
 | Data                 | Description                                                                                              |
 | :------------------- | :------------------------------------------------------------------------------------------------------- |
-| Account Billing Info | Payment method details, billing address and card metadata associated with accounts                       |
-| Accounts             | Account-level attributes including account code, email, address, name, etc                               |
-| Business Entities    | Legal entity data for multi-entity merchants, including entity name and tax region.                      |
-| Dunning Info         | Retry attempts, dunning state, and communication timing for failed payment recovery.                     |
-| Invoice Line Items   | Individual charges and credits at the line level, including unit amounts, quantities, and product codes. |
+| Account billing info | Payment method details, billing address, and card metadata associated with accounts.                     |
+| Accounts             | Account-level attributes including account code, email, address, name, and more.                         |
+| Business entities    | Legal entity data for multi-entity merchants, including entity name and tax region.                      |
+| Dunning info         | Retry attempts, dunning state, and communication timing for failed payment recovery.                     |
+| Invoice line items   | Individual charges and credits at the line level, including unit amounts, quantities, and product codes. |
 | Invoices             | Invoice totals, state (open, collected, failed, voided), currency, and dates.                            |
 | Plans                | Plan codes, names, intervals, and pricing tiers.                                                         |
-| Subscriptions        | Subscription state, start/end dates, trial info, and associated plan and add-on metadata.                |
+| Subscriptions        | Subscription state, start and end dates, trial info, and associated plan and add-on metadata.            |
 
-### Tips & best practices
+## Tips & best practices
 
-- Use Preview before adding many fields — it confirms the data shape without running a full query.
-- The In-use toggle in the field picker narrows the view to your current selection, making it easier to review what's included.
-- Save frequent queries as a Dashboard using the button in the top-right corner so teammates can access them without rebuilding.
-- For large date ranges, start with aggregated metrics (totals, counts) before drilling into line-level detail to keep load times fast.
-- The Workbook Agent works best with specific, scoped questions. Include a timeframe and at least one entity type (account, plan, subscription) for the most accurate results.
+<ul class="rp-list">
+  <li>Use Preview before adding many fields — it confirms the data shape without running a full query.</li>
+  <li>Use the In-use toggle in the field picker to narrow the view to your current selection, making it easier to review what's included.</li>
+  <li>Save frequent queries as a dashboard using the button in the top-right corner so teammates can access them without rebuilding.</li>
+  <li>For large date ranges, start with aggregated metrics (totals, counts) before drilling into line-level detail to keep load times fast.</li>
+  <li>The Workbook Agent works best with specific, scoped questions. Include a timeframe and at least one entity type (account, plan, subscription) for the most accurate results.</li>
+</ul>
 
-### Saving a report
+# Creating a new report
 
-To save an explore:
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Browse the field catalog</h4><p>Browse and search the full field catalog. Fields are grouped by data topic.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Add fields to your query</h4><p>Click any field to add it to your active query. Use the In-use filter to see only selected fields.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Choose your view</h4><p>Toggle between Results (table view), Chart (visualization), or Both.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Configure the chart</h4><p>Use the Options tab to configure axes, grouping, and chart type.</p></div>
+  </div>
+</div>
 
-1. In the workbook, click **File > Save**.
-2. Give the document a Name and an optional Description
-3. Use the Locations browser to find and select the folder you want to save the document to. The document can be moved after saving if needed.
-4. Click **Save** to save the document.
+# Saving a report
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the Save dialog</h4><p>In the workbook, select File > Save.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Name your document</h4><p>Give the document a name and an optional description.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Choose a location</h4><p>Use the Locations browser to find and select the folder you want to save the document to. You can move it after saving if needed.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Save the document</h4><p>Select Save to save the document.</p></div>
+  </div>
+</div>
 
 
-<Image src="https://files.readme.io/41965e12577df2175ead2737ac62f6672243bc0a79b460e3204b6eb9dfcd49d7-image.png" align="center" width="500px" border={true} />
+<Image src="https://files.readme.io/41965e12577df2175ead2737ac62f6672243bc0a79b460e3204b6eb9dfcd49d7-image.png" align="center" width="75%" border={true} />
 
 
-<br />
+# Opening an existing report
 
-<br />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the Explore menu</h4><p>Select the yellow Recurly logo in the upper-left corner of the Explore.</p></div>
+  </div>
+</div>
+
+
+<Image src="https://files.readme.io/876fbccfd3e5c64960151b19b40148fb6688a7320eea40e9af93909becda1147-image.png" align="center" width="40%" border={true} />
+
+
+
+<Image src="https://files.readme.io/fd6030aad81cb48304317f0583221f7df52b0df245f6ced971bf8d3103c5e81f-image.png" align="center" width="40%" border={true} />
+
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Choose a location</h4><p>Go to My documents for your private reports and folders, or the Hub for the shared workspace used by the entire site.</p></div>
+  </div>
+</div>
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Select a report</h4><p>Select the folder or report you want to open.</p></div>
+  </div>
+</div>
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Enter edit mode</h4><p>Select File > Edit, or select the Edit button in the upper-right corner.</p></div>
+  </div>
+</div>
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Save your changes</h4><p>Save your updates by selecting File > Save.</p></div>
+  </div>
+</div>
+
+# Running or refreshing a report
+
+Once you're in an existing report, you can run or refresh it with or without cache from the View menu.
+
+
+<Image src="https://files.readme.io/2b464a13cc19f2e8b6d97c2c3b14107122f810eadc506f0bdda21000c3e77450-image.png" align="center" width="40%" border={true} />
+
+
+<ul class="rp-list">
+  <li><strong>Refresh</strong> — Re-runs the report against previously saved data. If you (or a colleague) ran the exact same query with the same filters, sorts, and fields within the last hour, Explore instantly loads those pre-saved results. It only sends a new query to your data source if the cache has expired, or if filters, sorts, or fields change in the report.</li>
+  <li><strong>Refresh w/o cache</strong> — Bypasses the stored query results for the report and sends a direct query to your data source to pull live, up-to-the-minute data.</li>
+</ul>
