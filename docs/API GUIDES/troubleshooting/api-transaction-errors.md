@@ -149,6 +149,8 @@ Transaction errors represent failures during payment processing. Each error incl
 | `invalid_billing_agreement_status` | Your billing agreement is no longer valid. Please update your billing information. | The billing agreement is no longer valid. The customer may have canceled the agreement. |
 | `billing_agreement_not_found` | Your billing agreement is no longer valid. Please update your billing information. | The billing agreement is no longer valid. The customer may have canceled the agreement. |
 | `invalid_payment_method_hard` | Your transaction was declined. Please contact your bank for further details or try another card. | The transaction was declined by the payment gateway. Contact the payment gateway for more details. |
+| `mandate_no_active_subscription` | A subscription-based payment method requires at least one active subscription. | Mandate-based payment methods require at least one active subscription. The account has no active subscriptions. |
+| `mandate_single_subscription_required` | Only a single subscription can be present when updating billing info using mandate-based payment methods. | Only a single subscription can be present when updating billing info using mandate-based payment methods. |
 
 ## Fraud
 
