@@ -1,6 +1,8 @@
 ---
 title: Monthly recurring revenue
-excerpt: ''
+excerpt: >-
+  Learn how Recurly's MRR dashboard calculates monthly recurring revenue, breaks
+  it into components, and lets you drill into account-level detail.
 deprecated: false
 hidden: false
 metadata:
@@ -10,102 +12,163 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-page">
+  <div class="rp-overview">The Monthly Recurring Revenue (MRR) dashboard gives you a deep, up-to-date view of your predictable monthly revenue. Track total MRR and MRR changes, break revenue down into its component parts, and drill into the specific accounts, plans, or add-ons behind any number.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The Monthly Recurring Revenue (MRR) dashboard is a vital tool for subscription-based businesses, offering a deep dive into predictable monthly revenue patterns. While not equivalent to GAAP revenue, MRR is a pivotal metric that reflects your company's growth and revenue trends. Updated multiple times daily, this dashboard provides the freshest insights into both successful and failed transactions, dunning activities, discounts, and projected MRR.
+<div class="rp-definition">The Monthly Recurring Revenue (MRR) dashboard is a vital tool for subscription-based businesses, offering a deep dive into predictable monthly revenue patterns. MRR isn't equivalent to GAAP revenue, but it's a key metric that reflects your company's growth and revenue trends. Updated multiple times a day, the dashboard gives you fresh insight into successful and failed transactions, dunning activity, discounts, and projected MRR.</div>
 
-> **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
->
-> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>It's important to understand the difference between a subscriber and a subscription. A single subscriber might hold multiple active subscriptions, but this dashboard counts each individual subscriber — not the number of subscriptions they hold. For more on navigating and using the filter tools, see our <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">analytics overview documentation</a>.</div>
+</div>
 
-# Understanding MRR
+Check the widget at the bottom of the dashboard to see when the data was last updated.
 
-The Monthly Recurring Revenue (MRR) dashboard provides valuable insights into your business's growth and revenue momentum by tracking total MRR and MRR changes. MRR represents the predictable revenue that a business can expect on a monthly basis and is a key metric for subscription-based businesses. It's important to note that MRR is not the same as reportable Generally Accepted Accounting Principles (GAAP) revenue and should not be treated as such.
+# Key benefits
 
-The data is updated multiple times a day, and you can check the widget at the bottom of the dashboard to verify the time of the last update.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Revenue visibility</strong>
+    <span>See predictable monthly revenue, updated multiple times a day.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Trend tracking</strong>
+    <span>See whether MRR is growing or shrinking, and what's driving the change.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Dunning and discount insight</strong>
+    <span>See how failed transactions, dunning, and discounts affect your recurring revenue.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Account-level detail</strong>
+    <span>Drill into the accounts, plans, or add-ons behind any number on the dashboard.</span>
+  </div>
+</div>
 
-The MRR dashboard now offers a more nuanced view of your monthly recurring revenue, including insights into failed transactions, transactions in dunning, discounts, and expected MRR.
+# Key details
 
 ## What's included on the dashboard?
 
-The MRR calculation incorporates various components related to invoiced recurring charges, credits, and refunds from subscriptions. You can determine if a charge is included in MRR if the line item associated with that charge has a start and end date on the invoice.
+MRR is calculated from invoiced recurring charges, credits, and refunds on subscriptions. A charge counts toward MRR if its associated invoice line item has both a start date and an end date.
 
-Examples of adjustments included in the MRR calculation:
+<div class="rp-card">
 
-* Subscription and subscription add-on amounts
-* Manual recurring charges
-* Proration credit from a subscription downgrade/upgrade
-* Refund of a subscription amount
+### Included in the MRR calculation
 
-The following are **NOT** included in the MRR calculation:
+<ul class="rp-list">
+  <li>Subscription and subscription add-on amounts</li>
+  <li>Manual recurring charges</li>
+  <li>Proration credit from a subscription downgrade or upgrade</li>
+  <li>Refund of a subscription amount</li>
+</ul>
 
-* One-time charges without start_date and end_date
-* One-time credits
-* Taxes
-* Usage-based billing amounts
+</div>
 
-You have the option to include or exclude the following in the MRR calculation:
+<div class="rp-card">
 
-* Recurring charges from failed invoices
-* Coupon discounts
-* Multi-currency support
+### Not included in the MRR calculation
 
-For sites that support multiple currencies, the default view shows total MRR across all currencies, converted to the primary currency and summed. Conversion rates are updated daily using data from [https://openexchangerates.org/](https://openexchangerates.org/). Historical MRR uses the conversion rate at the time the charge was created and does not change over time for current conversion rates.
+<ul class="rp-list">
+  <li>One-time charges without a start date and end date</li>
+  <li>One-time credits</li>
+  <li>Taxes</li>
+  <li>Usage-based billing amounts</li>
+</ul>
 
-For both the Total MRR graph and the MRR Break-Out we have drills for accounts, plans or add-ons.
+</div>
 
-<Image align="center" border={true} src="https://files.readme.io/f1e965f8fbc00c3b359d588f0fb00b8bfec4e46f49309bc84b24c2f9a29e0730-image.png" className="border" />
+<div class="rp-card">
 
-<br />
+### Optional in the MRR calculation
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/0bcc8ae-image.png" className="border" />
+You can choose to include or exclude each of these:
 
-These drills provide a detailed view of each account contributing to the data in the bar/number, sorted by total MRR. A convenient filter at the top lets you narrow down the data by specific accounts or emails.
+<ul class="rp-list">
+  <li>Recurring charges from failed invoices</li>
+  <li>Coupon discounts</li>
+  <li>Multi-currency support</li>
+</ul>
 
-For a more granular view, you can further drill into a particular account by selecting the Total MRR or Total ARR number.
+</div>
 
-<Image align="center" width="75% " src="https://files.readme.io/02f934a-image.png" />
+For sites that support multiple currencies, the default view shows total MRR across all currencies, converted to your primary currency and summed. Conversion rates update daily using data from <a href="https://openexchangerates.org/" target="_blank">Open Exchange Rates</a>. Historical MRR uses the conversion rate in effect when the charge was created, and doesn't change as current rates change.
 
-This deeper drill showcases all the associated charges that contribute to the total MRR or ARR for the selected account. The same drill-down functionality is available in the MRR Growth section.
+Both the Total MRR graph and the MRR Break-Out let you drill into accounts, plans, or add-ons.
+
+
+<Image src="https://files.readme.io/f1e965f8fbc00c3b359d588f0fb00b8bfec4e46f49309bc84b24c2f9a29e0730-image.png" align="center" width="75%" border={true} />
+
+
+
+<Image src="https://files.readme.io/0bcc8ae-image.png" align="center" width="75%" border={true} />
+
+
+These drills show a detailed view of each account contributing to the number you selected, sorted by total MRR. Use the filter at the top to narrow the results by account or email.
+
+For a more granular view, drill further into a specific account by selecting its Total MRR or Total Annual Recurring Revenue (ARR) number.
+
+
+<Image src="https://files.readme.io/02f934a-image.png" align="center" width="75%" border={true} />
+
+
+This deeper drill shows all the charges that contribute to the total MRR or ARR for the selected account. The same drill-down functionality is available in the MRR Growth section.
 
 ### MRR Break-Out
 
-This feature offers users a detailed breakdown of the four components that make up the total MRR, with the added ability to drill into account-level specifics for each component.
+This feature gives you a detailed breakdown of the four components that make up total MRR, with the ability to drill into account-level specifics for each one.
 
-Currently, both discounts and failed invoices are integrated into the analytics settings, resulting in four potential default states. The displayed Total MRR is a reflection of the chosen settings combination. Note: If there are any modifications to the analytical settings within the Recurly application, the Total MRR line in the chart will adjust accordingly. This Total MRR is also mirrored in the Total MRR chart and table.
+Discount and failed-invoice settings are both built into your analytics settings, giving you four possible default states — the Total MRR shown reflects whichever combination you've chosen.
 
-The newly added “In Dunning” series provides insights into the MRR of the current period that's still undergoing the Recurly revenue collection process. Invoices that remain uncollected after retries transition into the failed category and eventually exit the MRR report once the subscription end date is surpassed.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>If you change your analytics settings within Recurly, the Total MRR line in the chart updates to match — and this change is also reflected in the Total MRR chart and table.</div>
+</div>
 
-"Expected MRR" denotes the MRR amount for the daily, weekly, or monthly period that's yet to be collected. For clarity, the monthly and weekly views display data for the last day of the respective period. The daily view offers a more dynamic perspective, illustrating the month's progression.
+The "In Dunning" series shows the MRR from the current period that's still going through Recurly's revenue collection process. Invoices that remain uncollected after retries move into the failed category and drop out of the MRR report once the subscription's end date has passed.
 
-In this section, the MRR can be viewed by:
+"Expected MRR" is the amount for the daily, weekly, or monthly period that hasn't been collected yet. Monthly and weekly views show data for the last day of the period; the daily view shows the month's progression in more detail.
 
-* Collected MRR
-* MRR in Dunning
-* Expected MRR (based on upcoming subscription bills)
-* Discounts applied to MRR
-* Total MRR (Sum of MRR, In Dunning, Expected MRR, minus Discounts)
+In this section, you can view MRR by:
 
-<Image align="center" border={true} src="https://files.readme.io/9e1cce6ae5a9994bb180d575c2eb898cdc0fbec1f46c8ebb091aebc7b73a9d16-image.png" className="border" />
+<ul class="rp-list">
+  <li>Collected MRR</li>
+  <li>MRR in dunning</li>
+  <li>Expected MRR (based on upcoming subscription bills)</li>
+  <li>Discounts applied to MRR</li>
+  <li>Total MRR (the sum of MRR, In Dunning, and Expected MRR, minus discounts)</li>
+</ul>
 
-As you can see with the MRR graph,  you have the ability to drill by account, plan or add-on and then can dive even further, as needed.
 
-## Ways to leverage the MRR dashboard
+<Image src="https://files.readme.io/9e1cce6ae5a9994bb180d575c2eb898cdc0fbec1f46c8ebb091aebc7b73a9d16-image.png" align="center" width="75%" border={true} />
 
-The MRR data provides valuable insights and helps answer important questions for subscription businesses:
 
-1. What is the expected revenue for each month?
-2. Is the revenue increasing or decreasing month over month?
-3. Are the monthly recurring revenue targets being met?
+As with the MRR graph, you can drill by account, plan, or add-on, and dig even deeper as needed.
 
-By analyzing the MRR dashboard, you can gain a deeper understanding of your business's revenue trends and make informed decisions to drive growth and meet your financial goals.
+## Ways to use the MRR dashboard
+
+MRR data helps you answer key questions for your subscription business, such as:
+
+<ul class="rp-list">
+  <li>What revenue can I expect each month?</li>
+  <li>Is revenue increasing or decreasing month over month?</li>
+  <li>Are my monthly recurring revenue targets being met?</li>
+</ul>
+
+Analyzing the MRR dashboard gives you a deeper understanding of your revenue trends, so you can make informed decisions that drive growth and meet your financial goals.
