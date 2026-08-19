@@ -1,8 +1,8 @@
 ---
 title: Retention by plan
 excerpt: >-
-  Delve deep with Recurly's 'Subscriber Retention by Plan': An intricate
-  breakdown of subscriber activity and churn across diverse plans.
+  Learn how to use Recurly's Retention by Plan dashboard to track subscriber
+  retention, active volume, and churn by plan.
 deprecated: false
 hidden: false
 metadata:
@@ -12,60 +12,79 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Subscriber Retention by Plan section gives you a detailed look at your subscribers, segmented by plan. See everything from active to churned subscribers, distinguished by which plan they signed up with.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The "Subscriber Retention by Plan Section" in Recurly delivers a detailed examination of subscribers, segmenting them by their specific plans. It brings to the forefront a spectrum of data, from active subscribers to churned ones, while making distinctions based on their initial plan choices.
+<div class="rp-definition">The Subscriber Retention by Plan section gives you a detailed look at your subscribers, segmented by plan. See everything from active to churned subscribers, distinguished by which plan they signed up with.</div>
 
-> **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
->
-> **Note**: Data only includes plans that have had at least 1 subscriber.
->
-> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>It's important to understand the difference between a subscriber and a subscription. A single subscriber might hold multiple active subscriptions, but this dashboard counts each individual subscriber — not the number of subscriptions they hold. Data only includes plans that have had at least one subscriber.</div>
+</div>
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>For more on navigating and using the filter tools, see our <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">analytics overview documentation</a>.</div>
+</div>
 
 # Key benefits
 
-* **Plan-specific insights:** Obtain a granular perspective on subscriber activity and trends, filtering specifically by plan, to understand unique retention dynamics.
-* **Clear data segmentation:** With explicit differentiation between initial plans and subsequent plan changes, ensure data clarity and accuracy in subscriber retention analysis.
-* **Informed strategy development:** Harness these insights to craft targeted retention initiatives for specific plans, maximizing subscriber longevity.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Plan-specific insights</strong>
+    <span>See subscriber activity and trends filtered by plan, to understand what's driving retention for each one.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Clear data segmentation</strong>
+    <span>Understand the difference between a subscriber's original plan and any later plan changes, so your retention analysis stays accurate.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Informed strategy development</strong>
+    <span>Use these insights to build targeted retention strategies for specific plans that keep subscribers around longer.</span>
+  </div>
+</div>
 
-# Subscriber retention by plan section
+# Key details
 
-This section provides a granular view of active and churned subscribers, differentiated by their plans.
+This section gives you a granular view of active and churned subscribers, broken down by plan.
 
-* The "Subscriber Retention by Plan" includes reactivations and is presented at the subscription level, reflecting every subscription's retention based on the plan it was activated with.
+Subscriber Retention by Plan includes reactivations and works at the subscription level — each subscription's retention is tied to the plan it was activated with. Subscriber Retention, on the other hand, works at the subscriber level: it combines concurrent subscriptions based on the subscriber's first activation and last expiration. If a subscriber has a gap with no active subscription, their next activation starts a new subscriber cycle and they're counted again. See the Subscribers dashboard for more on returning subscribers.
 
-On the other hand, "Subscriber Retention" is evaluated at the subscriber level. It amalgamates concurrent subscriptions, taking into account the first activation and the last expiration. If there's an interval wherein a subscriber has no active subscription, their subsequent activation will be considered a new subscriber cycle, and they will be counted again. For further details on returning subscribers, kindly refer to the Subscribers dashboard topic.
+## Retention by plan status
 
-## Subscriber retention by plan status
+This report shows Subscriber Retention based on a subscriber's initial subscription plan — the plan they activated with. If a subscriber activates a second subscription, they're counted again for that month and plan. Later changes to the subscription plan don't affect the data shown here.
 
-This report displays Subscriber Retention based on the initial subscription plan. The plan referenced corresponds to the one activated with the subscription.
 
-If a subscriber activates a second subscription, they will be counted again in the month and plan for that second activation.
+<Image src="https://files.readme.io/44283c5c36e7729c49fe994b1a6fa794e99137ef2435e9ba8facddbd0ce263e3-image.png" align="center" width="75%" border={true} />
 
-Any subsequent changes to the subscription plan will not modify the data presented in this report.
 
-<Image align="center" border={true} width="700px" src="https://files.readme.io/44283c5c36e7729c49fe994b1a6fa794e99137ef2435e9ba8facddbd0ce263e3-image.png" className="border" />
+## Active volume by plan
 
-## Subscriber retention by plan active volume
+Shows the count of active subscribers, grouped by sign-up period and plan.
 
-Illustrates the count of active subscribers, grouped by their sign-up periods and chosen plans.
 
-<Image align="center" border={true} width="700px" src="https://files.readme.io/ab607870c447bf5f627eff7d16d4af25d41e6472f67433b424c107a663befff5-image.png" className="border" />
+<Image src="https://files.readme.io/ab607870c447bf5f627eff7d16d4af25d41e6472f67433b424c107a663befff5-image.png" align="center" width="75%" border={true} />
 
-## Subscriber retention by plan churned volume
 
-Reveals the number of subscribers who churned within the selected timeframes and plans.
+## Churned volume by plan
 
-<Image align="center" border={true} width="700px" src="https://files.readme.io/9842a1c2acfc7a0183df9381d5dc73b29d38c813a9fbf62c907a03edfd79d1af-image.png" className="border" />
+Shows the number of subscribers who churned within the selected timeframes and plans.
 
-<br />
+
+<Image src="https://files.readme.io/9842a1c2acfc7a0183df9381d5dc73b29d38c813a9fbf62c907a03edfd79d1af-image.png" align="center" width="75%" border={true} />
