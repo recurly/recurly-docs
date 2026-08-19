@@ -1,9 +1,8 @@
 ---
 title: Renewal declines
 excerpt: >-
-  Decrease your Renewal Invoice Declines by monitoring your rate against others
-  in your industry using Recurly’s built-in benchmarks. Learn about your gateway
-  performance and payment method effectiveness.
+  Learn how to use Recurly's Renewal Decline Rate dashboard to track why
+  renewals fail and compare your performance against industry benchmarks.
 deprecated: false
 hidden: false
 metadata:
@@ -13,98 +12,118 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Renewal Decline Rate dashboard shows you insights on renewals that fail on the initial transaction attempt, so you can evaluate your payment method and gateway strategy and compare your decline rate against industry benchmarks.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>Users must have Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The new renewal decline rate dashboard will provide insights on renewals that fail on the initial transaction attempt, enabling you to understand the effectiveness of your payment method and gateway strategy to decrease your decline rate, comparing yourself to others in your industry with Recurly’s built-in benchmarks.
+<div class="rp-definition">The Renewal Decline Rate dashboard shows you insights on renewals that fail on the initial transaction attempt, helping you understand the effectiveness of your payment method and gateway strategy so you can lower your decline rate. Compare yourself to others in your industry with Recurly's built-in benchmarks.</div>
 
 # Key benefits
 
-- **Industry comparison**: Compare key subscription metrics with industry benchmarks to understand performance relative to peers, identifying areas of strengths and weaknesses.
-
-- **Competitive insights**: Gain insights into how competitors are faring in terms of subscription metrics, uncovering areas to differentiate and improve to gain a competitive edge.
-
-- **Informed decision-making**: Make informed decisions based on real-world data to help set realistic goals and expectations for subscription growth and customer retention.
-
-- **Forecasting and planning**: Enable more accurate forecasting and long-term planning to help businesses set reachable growth targets and allocate resources effectively.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Industry comparison</strong>
+    <span>Compare key subscription metrics with industry benchmarks to see how you stack up against peers, and spot your strengths and weaknesses.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Competitive insights</strong>
+    <span>See how competitors are performing on the same subscription metrics, and find areas where you can differentiate and improve.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Informed decision-making</strong>
+    <span>Make decisions based on real-world data to set realistic goals for subscription growth and customer retention.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Forecasting and planning</strong>
+    <span>Enable more accurate forecasting and long-term planning, so you can set reachable growth targets and allocate resources effectively.</span>
+  </div>
+</div>
 
 # Key details
 
-## General Filters (Top left corner)
+## General filters (top left corner)
 
-- **Invoice Creation Date:** Offers dropdowns to specify a timeframe and date range, up to the past 18 months, which then reflects on the dashboard.
-- **Gateway:** View your renewal declines based on all gateways, or select a specific gateway to explore.
-- **Failure type:** By default, the top 5 decline reasons will be displayed, and you can modify the filter to display additional decline reasons.
-- **Payment type:** Review your renewal declines by selecting specific payment methods that you offer to your customers.
-- **Metric type:** View by transaction count or Total Amount
+<ul class="rp-list">
+  <li><strong>Invoice creation date</strong>: Use the dropdowns to specify a timeframe and date range, up to the past 18 months, reflected on the dashboard.</li>
+  <li><strong>Gateway</strong>: View your renewal declines across all gateways, or select a specific gateway to explore.</li>
+  <li><strong>Failure type</strong>: Shows the top 5 decline reasons by default; adjust the filter to see more.</li>
+  <li><strong>Payment type</strong>: Review your renewal declines by specific payment method.</li>
+  <li><strong>Metric type</strong>: View by transaction count or total amount.</li>
+</ul>
 
 ## Declined renewal invoices
 
-View your decline rate trend over time, so you can monitor your decline rate and explore any growing issues with your renewals. Compare a similar timeframe year over year to understand your performance.
+View your decline rate trend over time to monitor your decline rate and catch any growing issues with renewals early. Compare a similar timeframe year-over-year to understand your performance. Decline rate graphs are shown as both a rate and a count.
 
-The decline rate graphs are displayed as a rate as well as a count.
-
-> **Note:** the amount of invoices represented in the current month will be lower than previous month since invoices will continually be generated as the month continues.
-
-
-<Image src="https://files.readme.io/5f95957edce7ff4d30c28190107955bbc8e30048637c1418974b2f55782efe01-image.png" align="center" border={true} />
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The number of invoices shown for the current month will be lower than for previous months, since invoices continue to be generated as the month goes on.</div>
+</div>
 
 
-# Decline reasons
+<Image src="https://files.readme.io/5f95957edce7ff4d30c28190107955bbc8e30048637c1418974b2f55782efe01-image.png" align="center" width="75%" border={true} />
+
 
 ## Payment failure types by invoice count
 
-This dashboard displays your payment failure types by count of invoices. The data provides a detailed view of your failure types for invoices that failed on the first attempt to collect:
+This section shows your payment failure types by invoice count, giving you a detailed view of failure types for invoices that failed on the first attempt to collect:
 
-- The overall invoice count during the dashboard’s date range.
-- A comparison between the start and end of the dashboard’s date range.
-  - The count of Invoices at the start of the dashboard’s date range.
-  - The count of Invoices at the end of the dashboard’s date range.
-  - The % of this count has increased or decreased since the start of the dashboard’s date range.
+<ul class="rp-list">
+  <li>The overall invoice count during the dashboard's date range.
+    <ul>
+      <li>The invoice count at the start of the date range.</li>
+      <li>The invoice count at the end of the date range.</li>
+      <li>The percentage this count has increased or decreased since the start of the date range.</li>
+    </ul>
+  </li>
+</ul>
 
-## Decline Reasons
+## Decline reasons
 
-Dive into the specific decline reasons for invoices that failed on 1st attempt. These graphs are broken down by count and % of total failed invoice reasons. Use these graphs to identify any changes in the overall failure types.
-
-
-<Image src="https://files.readme.io/9f9445d0fecbbae89f63e50f9eea6fafc42fd3cd615bf113d0b96f3f3434b849-image.png" align="center" width="1000px" border={true} />
-
-
-<br />
-
-## Gateways & payment methods summary
-
-Learn more about which gateways and payment methods are performing well on renewal. These tables provide data on the performance of your different gateways and the supported payment methods and card brands for each gateway.
-
-For each of these areas, we provide a detailed count of Renewal Invoices, Renewal Invoices Failed on 1st Attempt to Collect an Invoice, Renewal Decline Rate, and Rate Change (during selected date range).
+Dive into the specific decline reasons for invoices that failed on the first attempt. These graphs break down by count and percentage of total failed invoices, helping you spot any changes in your overall failure types.
 
 
-<Image src="https://files.readme.io/62608b0a7862857eaf89e2ff022378b9e1b4faa436f7ab87348d9afe52246b6c-image.png" align="center" border={true} />
+<Image src="https://files.readme.io/9f9445d0fecbbae89f63e50f9eea6fafc42fd3cd615bf113d0b96f3f3434b849-image.png" align="center" width="75%" border={true} />
 
 
+## Gateways and payment methods summary
 
-<Image src="https://files.readme.io/77afd239194d1f50c3f135cac13d191dae325807570b5ad590f3675d4931cb72-image.png" align="center" border={true} />
+See which gateways and payment methods are performing well on renewal. These tables show how each of your gateways, and the payment methods and card brands they support, are performing.
+
+For each of these areas, you get a detailed count of renewal invoices, renewal invoices failed on the first attempt to collect, renewal decline rate, and rate change during your selected date range.
+
+
+<Image src="https://files.readme.io/62608b0a7862857eaf89e2ff022378b9e1b4faa436f7ab87348d9afe52246b6c-image.png" align="center" width="75%" border={true} />
 
 
 
-<Image src="https://files.readme.io/c547665c0f64f0a388119de4ec6de944a5d2559fc00f07039d38143866e3633a-image.png" align="center" border={true} />
+<Image src="https://files.readme.io/77afd239194d1f50c3f135cac13d191dae325807570b5ad590f3675d4931cb72-image.png" align="center" width="75%" border={true} />
+
+
+
+<Image src="https://files.readme.io/c547665c0f64f0a388119de4ec6de944a5d2559fc00f07039d38143866e3633a-image.png" align="center" width="75%" border={true} />
 
 
 ## Related dashboards
 
-Continue to learn more about how Recurly helps you prevent churn and your renewal invoice decline rate by navigating to the related dashboards. Also review your dunning campaign strategy to continue to increase your dunning recoveries.
+Explore related dashboards to learn more about how Recurly helps prevent churn and lower your renewal invoice decline rate. Review your dunning campaign strategy too, to keep increasing your dunning recoveries.
 
 
-<Image src="https://files.readme.io/a1f4ba8-image.png" align="center" width="75% " border={true} />
-
-
-<br />
+<Image src="https://files.readme.io/a1f4ba8-image.png" align="center" width="75%" border={true} />
