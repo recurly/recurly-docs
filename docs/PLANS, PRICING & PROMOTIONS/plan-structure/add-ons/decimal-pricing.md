@@ -1,9 +1,9 @@
 ---
 title: Decimal pricing
 excerpt: >-
-  Recurly's decimal pricing supports up to nine decimal places for usage and
-  non-usage based add-on unit prices; enabling precise per-unit billing for
-  businesses whose cost-per-unit is a fractional value.
+  Recurly's decimal pricing supports up to nine decimal places on items and
+  add-ons; enabling precise per-unit billing for businesses whose cost-per-unit
+  is a fractional value.
 deprecated: false
 hidden: false
 metadata:
@@ -18,7 +18,7 @@ next:
 <div class="rp-page">
 <div class="rp-overview">
 
-Decimal pricing lets you set usage and non-usage add-on prices with up to nine decimal places while using any <a href="https://docs.recurly.com/recurly-subscriptions/docs/add-ons#key-benefits" target="_blank">pricing model</a> — so businesses charging fractions of a cent per unit can bill accurately without rounding errors at the unit level.
+Decimal pricing lets you set prices with up to nine decimal places on items, item-backed add-ons, usage and non-usage add-ons — using any <a href="https://docs.recurly.com/recurly-subscriptions/docs/add-ons#key-benefits" target="_blank">pricing model</a> — so businesses charging fractions of a cent per unit can bill accurately without rounding errors at the unit level.
 
 </div>
 <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i>&nbsp; Available on all Recurly plans</div>
@@ -35,7 +35,7 @@ Decimal pricing lets you set usage and non-usage add-on prices with up to nine d
 
 <div class="rp-definition">
 
-Decimal pricing is a pricing method for businesses that need non-integer unit prices. Instead of rounding prices to the nearest cent at configuration time, you define a precise per-unit cost — up to nine decimal places — and Recurly calculates the invoice total by multiplying usage by that unit price, rounding only the final line item to the currency's supported precision. For example, a video streaming company charging $0.005 per GB sets that exact price, and the total is computed correctly regardless of how much data a customer consumes.
+Decimal pricing is a pricing method for businesses that need non-integer unit prices. Instead of rounding prices to the nearest cent at configuration time, you define a precise per-unit cost — up to nine decimal places — on items, item-backed add-ons, usage and non-usage add-ons, and Recurly calculates the invoice total by multiplying usage by that unit price, rounding only the final line item to the currency's supported precision. For example, a video streaming company charging $0.005 per GB sets that exact price, and the total is computed correctly regardless of how much data a customer consumes.
 
 </div>
 
@@ -55,7 +55,7 @@ Decimal pricing is a pricing method for businesses that need non-integer unit pr
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-plug" aria-hidden="true"></i></div>
     <strong>Broad integration compatibility</strong>
-    <span>Decimal pricing works across fixed, tiered, volume, and stairstep pricing models, and passes through to supported integration partners.</span>
+    <span>Decimal pricing works across fixed, tiered, volume, and stairstep pricing models — for add-ons, Items, and item-backed add-ons alike — and passes through to supported integration partners.</span>
   </div>
 </div>
 
@@ -63,9 +63,9 @@ Decimal pricing is a pricing method for businesses that need non-integer unit pr
 
 ## Plans and subscriptions
 
-Decimal pricing is available on usage and non-usage add-ons through the Admin Console and the <a href="https://developers.recurly.com/api/v2021-02-25/index.html" target="_blank">V3 API (2021-02-25)</a>.  However, the <a href="https://recurly.com/developers/api-v2/v2.29/#tag/subscription-usage-records" target="_blank">V2 API</a> only supports decimal pricing on usage based add-ons at this time.
+Decimal pricing is available on usage and non-usage add-ons, as well as on Items — including item-backed add-ons — through the Admin Console and the <a href="https://developers.recurly.com/api/v2021-02-25/index.html" target="_blank">V3 API (2021-02-25)</a>. However, the <a href="https://recurly.com/developers/api-v2/v2.29/#tag/subscription-usage-records" target="_blank">V2 API</a> only supports decimal pricing on usage based add-ons at this time.
 
-When setting pricing via the API, use the `unit_amount_decimal` field. Decimal pricing supports up to nine decimal places across fixed, tiered, volume, and stairstep pricing models. When `unit_amount_decimal` is provided, `unit_amount` is automatically set to null. A plan's predefined prices are used by default when creating a subscription, but you can override them per subscription as needed.
+When setting pricing via the API, use the `unit_amount_decimal` field. Decimal pricing supports up to nine decimal places across fixed, tiered, volume, and stairstep pricing models. This applies whether the price is set directly on an add-on or on an Item — item-backed add-ons inherit their decimal pricing from the item they reference. When `unit_amount_decimal` is provided, `unit_amount` is automatically set to null. A plan's predefined prices are used by default when creating a subscription, but you can override them per subscription as needed.
 
 ## Invoices
 
@@ -111,8 +111,8 @@ If your Recurly site was created on or before May 7, 2018, you must enable Credi
   <div class="rp-step">
     <div class="rp-step-num">2</div>
     <div>
-      <h4>Create a usage add-on</h4>
-      <p>In the Admin Console or via the V3 API, create the usage add-on where you want to apply decimal pricing.</p>
+      <h4>Create an add-on or item</h4>
+      <p>In the Admin Console or via the V3 API, create the add-on or item where you want to apply decimal pricing. If you're pricing an item-backed add-on, set the decimal price on the item — the add-on inherits it.</p>
     </div>
   </div>
   <div class="rp-step">
@@ -158,5 +158,3 @@ If your Recurly site was created on or before May 7, 2018, you must enable Credi
     <td>Does not currently support decimal pricing. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> if this is a requirement for your business.</td>
   </tr>
 </table>
-
-<br />
