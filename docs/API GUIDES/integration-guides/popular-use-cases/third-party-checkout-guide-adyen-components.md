@@ -19,41 +19,44 @@ This guide walks you through how to connect your Adyen Web Components integratio
   You **must** follow the [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/) setup guide including applicable **Webhooks** configuration at Adyen. Without proper webhooks configuration, certain behaviors such as Recurring Token usage and Async Status updates _will not function properly._
 </Callout>
 
-* A working **Adyen** Web Components implementation using the **Advanced Flow** (Cards, Cash App Pay, Google Pay, Apple Pay, ACH, SEPA, BACS, iDeal, and Bancontact). You do not need to send the State Data to Adyen.
-* Recurly.js loaded on your page and initialized per our [Recurly.js documentation](/developers/reference/recurly-js).
-* Access to your Recurly V3 API credentials and a Recurly site configured to accept payments.
-* **Not supported**:
-  * 100% Coupons and Account Credits: Since communication with the gateway is required during initial setup, it is recommended to offer free trials in these instances to avoid future payment failures. 100% Coupons/Credits are not supported.
-  * Adyen Sessions flow.
-* **Supported payment methods**:
+- A working **Adyen** Web Components implementation using the **Advanced Flow** (Cards, Cash App Pay, Google Pay, Apple Pay, ACH, SEPA, BACS, iDeal, and Bancontact). You do not need to send the State Data to Adyen.
+- Recurly.js loaded on your page and initialized per our [Recurly.js documentation](/developers/reference/recurly-js).
+- Access to your Recurly V3 API credentials and a Recurly site configured to accept payments.
+- **Not supported**:
+  - 100% Coupons and Account Credits: Since communication with the gateway is required during initial setup, it is recommended to offer free trials in these instances to avoid future payment failures. 100% Coupons/Credits are not supported.
+  - Adyen Sessions flow.
+- **Supported payment methods**:
 
-  * **Cards**: Visa, MasterCard, Discover, Diners, JCB/I, Union Pay, American Express, Cartes Bancaires, Bancontact (requires SEPA for renewals)
-  * **Wallets**: Apple Pay, Google Pay, Cash App Pay
-  * **Direct Debit**: ACH, SEPA, BACS, iDeal (requires SEPA for renewals)
+  - **Cards**: Visa, MasterCard, Discover, Diners, JCB/I, Union Pay, American Express, Cartes Bancaires, Bancontact (requires SEPA for renewals)
+  - **Wallets**: Apple Pay, Google Pay, Cash App Pay, PayPay
+  - **Direct Debit**: ACH, SEPA, BACS, iDeal (requires SEPA for renewals)
 
 ***
 
-> ❗️ Integration Flow
->
-> Do not write code to create, update, or otherwise process transactions or tokens with Adyen directly. To use this feature, you will only create the state data, and then pass it to Recurly using the guide below.
+<Callout icon="❗️" theme="error">
+  ### Integration Flow
+
+  Do not write code to create, update, or otherwise process transactions or tokens with Adyen directly. To use this feature, you will only create the state data, and then pass it to Recurly using the guide below.
+</Callout>
 
 ## Step 1: Build your Adyen components + Recurly.js integration
 
 Follow Adyen’s **Advanced Flow** docs to render Web Components for each method:
 
-* Cards: [Card Web Component | Adyen Docs](https://docs.adyen.com/payment-methods/cards/web-component/?tab=advanced-requirements_2)
-  * Bancontact (card only): [Bancontact Card Component](https://docs.adyen.com/payment-methods/bancontact/bancontact-card/web-component/)
-* Cash App Pay: [Cash App Pay Component | Adyen Docs](https://docs.adyen.com/payment-methods/cash-app-pay/web-component/?tab=advanced-requirements_2)
-* Google Pay: [Google Pay Component | Adyen Docs](https://docs.adyen.com/payment-methods/google-pay/web-component/)
+- Cards: [Card Web Component | Adyen Docs](https://docs.adyen.com/payment-methods/cards/web-component/?tab=advanced-requirements_2)
+  - Bancontact (card only): [Bancontact Card Component](https://docs.adyen.com/payment-methods/bancontact/bancontact-card/web-component/)
+- Cash App Pay: [Cash App Pay Component | Adyen Docs](https://docs.adyen.com/payment-methods/cash-app-pay/web-component/?tab=advanced-requirements_2)
+- Google Pay: [Google Pay Component | Adyen Docs](https://docs.adyen.com/payment-methods/google-pay/web-component/)
 
-  * Express Checkout: [Google Pay express checkout | Adyen Docs](https://docs.adyen.com/payment-methods/google-pay/web-component/express-checkout/)
-* Apple Pay: [Apple Pay Component | Adyen Docs](https://docs.adyen.com/payment-methods/apple-pay/web-component/?tab=advanced-requirements_2)
+  - Express Checkout: [Google Pay express checkout | Adyen Docs](https://docs.adyen.com/payment-methods/google-pay/web-component/express-checkout/)
+- Apple Pay: [Apple Pay Component | Adyen Docs](https://docs.adyen.com/payment-methods/apple-pay/web-component/?tab=advanced-requirements_2)
 
-  * Express Checkout: [Apple Pay express checkout | Adyen Docs](https://docs.adyen.com/payment-methods/apple-pay/web-component/express-checkout/)
-* ACH: [ACH Direct Debit Component | Adyen Docs](https://docs.adyen.com/payment-methods/ach-direct-debit/web-component/?flow=Advanced+flow\&integration=Component\&version=6.19.0)
-* SEPA: [SEPA Direct Debit Component | Adyen Docs](https://docs.adyen.com/payment-methods/sepa-direct-debit/web-component/?tab=advanced-requirements_2)
-* BACS: [BACS Direct Debit | Adyen Docs](https://docs.adyen.com/payment-methods/bacs/web-component/?tab=advanced-requirements_2)
-* iDeal: [iDeal Web Component | Adyen Docs](https://docs.adyen.com/payment-methods/ideal/web-component/?tab=advanced-requirements_2)
+  - Express Checkout: [Apple Pay express checkout | Adyen Docs](https://docs.adyen.com/payment-methods/apple-pay/web-component/express-checkout/)
+- ACH: [ACH Direct Debit Component | Adyen Docs](https://docs.adyen.com/payment-methods/ach-direct-debit/web-component/?flow=Advanced+flow\&integration=Component\&version=6.19.0)
+- SEPA: [SEPA Direct Debit Component | Adyen Docs](https://docs.adyen.com/payment-methods/sepa-direct-debit/web-component/?tab=advanced-requirements_2)
+- BACS: [BACS Direct Debit | Adyen Docs](https://docs.adyen.com/payment-methods/bacs/web-component/?tab=advanced-requirements_2)
+- iDeal: [iDeal Web Component | Adyen Docs](https://docs.adyen.com/payment-methods/ideal/web-component/?tab=advanced-requirements_2)
+- PayPay Wallet: [Adyen PayPay Web Component | Adyen Docs ](https://docs.adyen.com/payment-methods/paypay/web-component?flow=Advanced+flow\&integration=Component\&version=6.41.1)
 
 Before rendering, fetch your supported methods via Adyen’s API and pass the `paymentMethodsResponse` into the Components configuration. Only include methods that your Recurly site supports.
 
@@ -128,7 +131,7 @@ Ensure the following options are set for reliable tokenization with Adyen and re
 
 For full Adyen advanced flow guidance, see:
 
-* [Advanced flow integration guide | Adyen Docs](https://docs.adyen.com/online-payments/build-your-integration/advanced-flow/?platform=Web\&integration=Components\&version=6.5.1)
+- [Advanced flow integration guide | Adyen Docs](https://docs.adyen.com/online-payments/build-your-integration/advanced-flow/?platform=Web\&integration=Components\&version=6.5.1)
 
 ***
 
@@ -161,8 +164,7 @@ Authorization: Bearer YOUR_API_KEY
 
 ## Step 5: Handle the purchase response
 
-– On success, Recurly returns an `InvoiceCollection` containing any charge or credit invoices created.  
-– On error, inspect the response code and message for validation or gateway issues, and surface them to the user.
+– On success, Recurly returns an `InvoiceCollection` containing any charge or credit invoices created.<br />– On error, inspect the response code and message for validation or gateway issues, and surface them to the user.<br />– For **PayPay** specifically, inspect the response and handle the action_result by following our standard Recurly.js Alternative Payment Method flow documentation.
 
 ***
 
@@ -170,4 +172,4 @@ Authorization: Bearer YOUR_API_KEY
 
 After completing an initial purchase, explore our Subscription Management guide to learn how to update, cancel, or migrate subscriptions:
 
-* [Subscription Management](https://docs.recurly.com/v1.1/docs/managing-subscription-methods-guides#/)
+- [Subscription Management](https://docs.recurly.com/v1.1/docs/managing-subscription-methods-guides#/)
