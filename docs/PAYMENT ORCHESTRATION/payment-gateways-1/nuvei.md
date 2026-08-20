@@ -35,6 +35,7 @@ metadata:
   <li><strong>CVV required for all CIT card payments</strong> — This includes MOTO. Collect the CVV for all return customer transactions, signups, and one-time transactions. Recurly does not store CVV codes.</li>
   <li><strong>Gateway tokens and chargeback notifications not supported</strong> — These features are not available for Nuvei at this time.</li>
   <li><strong>Admin UI processing may not be supported</strong> — Nuvei's CVV and Customer IP requirements can prevent transaction processing via the Recurly Admin UI. For MOTO transactions, integrate via the API and collect the CVV from your customer directly.</li>
+<li><strong>NTIDs in Sandbox</strong> — Only <a href="https://docs.nuvei.com/documentation/integration/testing/testing-cards/">Nuvei's test cards</a> support returning NTIDs in sandbox -- if you use other test cards, subscription signups will not return an NTID an renewals will fail.</li>
 </ul>
 
 # Definition
@@ -183,5 +184,3 @@ If your site mode changes — for example, being moved to Development mode by Su
 <div class="rp-callout rp-callout-warning">
   <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Gateway configuration is not copyable between site modes. If you're going live from a development site, you must re-onboard the Nuvei gateway from scratch — the copied gateway does not share the same site identifiers. Best practice is to keep each Recurly site in a fixed mode and add gateway accounts only after confirming the correct mode.</div>
 </div>
-
-<br />
