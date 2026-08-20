@@ -35,7 +35,7 @@ Decimal pricing lets you set prices with up to nine decimal places on items, ite
 
 <div class="rp-definition">
 
-Decimal pricing is a pricing method for businesses that need non-integer unit prices. Instead of rounding prices to the nearest cent at configuration time, you define a precise per-unit cost — up to nine decimal places — on usage and non-usage add-ons, Items, or item-backed add-ons, and Recurly calculates the invoice total by multiplying usage by that unit price, rounding only the final line item to the currency's supported precision. For example, a video streaming company charging $0.005 per GB sets that exact price, and the total is computed correctly regardless of how much data a customer consumes.
+Decimal pricing is a pricing method for businesses that need non-integer unit prices. Instead of rounding prices to the nearest cent at configuration time, you define a precise per-unit cost — up to nine decimal places — on items, item-backed add-ons, usage and non-usage add-ons, and Recurly calculates the invoice total by multiplying usage by that unit price, rounding only the final line item to the currency's supported precision. For example, a video streaming company charging $0.005 per GB sets that exact price, and the total is computed correctly regardless of how much data a customer consumes.
 
 </div>
 
