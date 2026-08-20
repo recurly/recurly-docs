@@ -1,7 +1,7 @@
 ---
-title: Boleto, iDEAL, Sofort, and CashApp
+title: 'Adyen APMs: PayPay, Boleto, iDEAL, Sofort, and CashApp'
 excerpt: >-
-  Implement Boleto, iDEAL, Sofort, and Cash App with a single Recurly.js
+  Implement PayPay, Boleto, iDEAL, Sofort, and Cash App with a single Recurly.js
   integration that renders the Adyen payment component, handles tokenization,
   and returns a secure payment-method token for your server-side purchase call.
 deprecated: false
@@ -9,19 +9,18 @@ hidden: false
 metadata:
   robots: index
 ---
-`recurly.AlternativePaymentMethods` is a convenience wrapper around Adyen’s JavaScript component.\
-With one configuration object you can:
+`recurly.AlternativePaymentMethods` is a convenience wrapper around Adyen’s JavaScript drop-in component.<br />With one configuration object you can:
 
-* **Render** a localized payment-method UI (Boleto, iDEAL, Sofort, or Cash App) inside any container.
-* **Tokenize** the shopper’s details—no sensitive information hits your server.
-* **Emit** a Recurly token that you send to any v3 endpoint that accepts `billing_info`.
-* **Hand off / handle actions** (iDEAL & Sofort redirects) or skip them entirely (Cash App).
+- **Render** a localized payment-method UI (PayPay, Boleto, iDEAL|Wero, Sofort/Klarna Debit Risk, or Cash App) inside any container.
+- **Tokenize** the shopper’s details—no sensitive information hits your server.
+- **Emit** a Recurly token that you send to any v3 endpoint that accepts `billing_info`.
+- **Hand off / handle actions** (iDEAL | Wero & Sofort/Klarna Debit Risk, PayPay redirects) or skip them entirely (Cash App).
 
 ### Prerequisites and limitations
 
-* Your Recurly site must be connected to **Adyen** and the payment-method(s) you intend to offer must be enabled in your Adyen merchant account.
-* For **iDEAL** and **Sofort** you **must** provide a `returnURL`.
-* Cash App does **not** return an `action_result`; you can ignore `paymentMethod.handleAction`.
+- Your Recurly site must be connected to **Adyen** and the payment-method(s) you intend to offer must be enabled in your Adyen merchant account.
+- For **iDEAL|Wero** and **Sofort/Klarna Debit Risk** you **must** provide a `returnURL`.
+- Cash App does **not** return an `action_result`; you can ignore `paymentMethod.handleAction`.
 
 ### Configuration
 
@@ -32,13 +31,13 @@ For example:
 ```js
 const paymentMethod = recurly.AlternativePaymentMethods({
   allowedPaymentMethods: [
-    "boleto"
+    "paypay"
   ],
   blockedPaymentMethods: [],
   containerSelector: "#payment-methods-container",
-  amount: 10,
-  currency: "BRL",
-  countryCode: "BR",
+  amount: 1000,
+  currency: "JPY",
+  countryCode: "JP",
   locale: "en-US",
   channel: "Web",
   adyen: {
@@ -52,6 +51,15 @@ const paymentMethod = recurly.AlternativePaymentMethods({
 ```
 
 See reference for details. The various payment methods may be configured as follows:
+
+### PayPay Wallet
+
+| Param                 | Type     | Description                                                               |
+| :-------------------- | :------- | :------------------------------------------------------------------------ |
+| allowedPaymentMethods | `Array`  | Array needs to contain `paypay`.                                          |
+| currency              | `String` | String needs to be `JPY`.                                                 |
+| countryCode           | `String` | String needs to be `JP`                                                   |
+| locale                | `String` | String needs to be a valid ISO locale string, such as `ja-JP` or `en-US`  |
 
 ### Boleto
 
@@ -89,16 +97,13 @@ See reference for details. The various payment methods may be configured as foll
 
 ### Rendering the Payment Methods
 
-After configuring your recurly instance, call `paymentMethod.start()` to show each configured Payment Method(s) within\
-the target element.
+After configuring your recurly instance, call `paymentMethod.start()` to show each configured Payment Method(s) within<br />the target element.
 
-Call `paymentMethod.destroy()` to safely remove the rendered payment UI from the document. This is necessary if you\
-wish to re-render the component.
+Call `paymentMethod.destroy()` to safely remove the rendered payment UI from the document. This is necessary if you<br />wish to re-render the component.
 
 ### Generating a token
 
-After filling and confirming the data, `paymentMethod.submit()` should be called so that the token event can be\
-dispatched. You may optionally provide a specific customer billing address to this call.
+After filling and confirming the data, `paymentMethod.submit()` should be called so that the token event can be<br />dispatched. You may optionally provide a specific customer billing address to this call.
 
 ```js
 paymentMethod.submit();
@@ -129,15 +134,16 @@ paymentMethod.on('token', function (token) {
 
 ### Making a purchase
 
-Having the token, a request must be sent to the server, which internally will call the Recurly API to make the purchase.\
-The request must contain the fields from the previously filled in the element container. The response must then be
+Having the token, a request must be sent to the server, which internally will call the Recurly API to make the purchase.<br />The request must contain the fields from the previously filled in the element container. The response must then be
 handled to retrieve the `action_result` and pass it back to the browser. With the action result,
 `paymentMethod.handleAction(action_result)` can be called.
 
 <div class="alert alert--warning" markdown="1">
-  **Using Cash App?**
 
-  Cash App does not use an `action_result` so `paymentMethod.handleAction` can be ignored.
+**Using Cash App?**
+
+Cash App does not use an `action_result` so `paymentMethod.handleAction` can be ignored.
+
 </div>
 
 ```js
@@ -218,8 +224,7 @@ Nothing.
 
 ##### `error`
 
-This event is emitted when any error is encountered, whether during setup of the payment method flow, or during customer\
-interaction with the payment method interface.
+This event is emitted when any error is encountered, whether during setup of the payment method flow, or during customer<br />interaction with the payment method interface.
 
 ##### Payload
 
@@ -229,15 +234,14 @@ interaction with the payment method interface.
 
 ##### `token`
 
-This event is fired when the customer has completed the payment method flow. Recurly has received the payment details,\
-and generated this token to be used in our API.
+This event is fired when the customer has completed the payment method flow. Recurly has received the payment details,<br />and generated this token to be used in our API.
 
 ##### Payload
 
 | Param      | Type     | Description                            |
 | :--------- | :------- | :------------------------------------- |
 | token      | `Object` |                                        |
-| token.type | `String` | 'payment\_method'                      |
+| token.type | `String` | 'payment_method'                       |
 | token.id   | `String` | Token identifier to be sent to the API |
 
 ***
