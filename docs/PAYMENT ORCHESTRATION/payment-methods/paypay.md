@@ -61,7 +61,11 @@ Customers interact with their account during signup:
 
 ## Required fields
 
-Always send the following with UPI AutoPay transactions:
+Always send the following with PayPay transactions:
+
+- Currency - JPY
+- Locale (Japanese if necessary, else, consumer driven)
+- Customer Name and Billing Address Information as usual
 
 # Integration guide
 
@@ -69,22 +73,7 @@ PayPay is not supported on Recurly Checkout or Hosted Payment Pages. See the <a 
 
 ## Billing information updates
 
-PayPay doesn't support direct billing info updates in Recurly. Customers must update banking details in their PayPay app. If a customer's wallet account changes, they will need to resubscribe.
-
-## Enrollments and charges (webhooks)
-
-PayPay is asynchronous — transactions begin in a Scheduled state until the customer authenticates in-app. Listen for the following webhooks:
-
-**At signup:**
-
-- `payment.scheduled`
-- `subscription.created`
-
-**After customer authenticates in-app:**
-
-- `payment.transaction_status_updated`
-- `payment.success`
-- `charge_invoice.paid`
+PayPay doesn't support direct billing info updates in Recurly. Customers must update payment details in their PayPay app. If a customer's wallet account changes, they will need to resubscribe.
 
 ## Testing
 
