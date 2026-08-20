@@ -1,0 +1,5 @@
+- listaccountsshippingaddress
+- createshippingaddress
+- lookupshippingaddress
+- updateshippingaddress
+- deleteshippingaddress
