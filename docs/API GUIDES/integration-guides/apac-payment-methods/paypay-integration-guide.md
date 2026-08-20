@@ -43,53 +43,24 @@ Use a supported client library and Recurly.js to configure your checkout setup. 
 TBD
 ```
 
-### Step 2: Obtain the token from the response
+### Step 2: Obtain the action result value from the response
 
-Upon submitting your API request you will receive a response that looks like this:
+You'll receive a redirect blob in `transactions.gateway_response_values.action_result` response.
 
-```text
-TBD -- token response handling 
+```json
+"action_result": "{\"method\":\"GET\",\"paymentMethodType\":\"paypay\",\"type\":\"redirect\",\"url\":\"https://checkoutshopper-test.adyen.com/checkoutshopper/checkoutPaymentRedirect?redirectData=X3XtfGC9%2...eWteWFSyDxkTo3iXeATHjO%2BxTyV4nnN155A%3D\"}",
 ```
 
-PayPay requires consumer authentication, and so interacting with Recurly.js is necessary to allow consumers to authenticate their identity and authorize payments in their mobile apps. You will need to use the `three_d_secure_action_token_id` value to render the modal for this process.
+PayPay requires consumer authentication, and so interacting with Recurly.js is necessary to allow consumers to authenticate their identity and authorize payments in their mobile apps. You will need to submit the action result value to Recurly.js in order to render the modal for this process.
 
-### Step 3: Interact with Recurly.js
+### Step 3: Handle the Action Result using Recurly.js&#x20;
 
-You can follow along in our Redirect Guide, starting at Step 3: [Recurly.js Token-ID Redirect Guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-responsew)
+With the action result, `paymentMethod.handleAction(action_result)` can be called. Follow our general [Alternative Payment Methods documentation](https://docs.recurly.com/recurly-subscriptions/docs/boleto-ideal-sofort-and-cashapp) for additional details.&#x20;
 
-### Step 4: Resubmit the Purchase request with the Action Result Token
+This will allow the customer to interact with the PayPay app on their phones.&#x20;
 
-Once the user has interacted with the modal, and you will receive a `three_d_secure_action_result_token_id` from Recurly.js, you must resubmit your original request with the results token ID.
+### Reminder
 
-Use the `three_d_secure_action_result_token_id` from Step 3 in a new API call (e.g., Create Purchase) to finalize authentication. The account/billing info must match the original request. Changing these details may cause a token mismatch error.
+Adyen will return the result of that interaction to Recurly via webhooks, including the final transaction status and the token for renewals, upon approval. Ensure you have your Adyen webhooks enabled properly by following our gateway setup documentation around webhooks.&#x20;
 
-Your JSON payload may look like this:
-
-```text
-{
-    "subscriptions": [
-		{
-			"plan_code": "monthly-plan" 
-
-		}
-	],
-    "account": {
-        "code": "miyamoto",
-        "email":"miyamotosan@example.com",
-        "billing_info": {
-            "first_name":"Shigeru",
-            "last_name":"Miyamoto",
-            "address":{
-                "street1":"Sunshine Building 4022-3-4 Kabukicho",
-                "city":Tokyo",
-                "region":"Tokyo-to",
-                "postal_code":"〒100-8994",
-                "country":"JP",
-                "phone":"+81-70-123-1234"
-            },
-            "three_d_secure_action_result_token_id":"action-result-id"
-        }
-    },
-    "currency": "JPY"
-}
-```
+**Minimum required webhooks**: Standard and Token Lifecycle events are critical.
