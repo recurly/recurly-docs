@@ -13477,6 +13477,13 @@ components:
             third-party gateway object of varying types.
           items:
             $ref: '#/components/schemas/PaymentGatewayReferences'
+        payment_method:
+          $ref: '#/components/schemas/RecoveryPaymentMethodCreate'
+          description: >-
+            Merchant-supplied fallback payment method metadata. Recurly's own
+            gateway-token lookup is authoritative and will override any of these
+            fields it can determine itself; these fields are only used to fill
+            gaps when that lookup is unavailable.
         network_transaction_id:
           type: string
           title: Network Transaction ID
@@ -13506,6 +13513,91 @@ components:
         - gateway_code
         - payment_gateway_references
         - transactions
+    RecoveryPaymentMethodCreate:
+      type: object
+      title: Recovery payment method
+      description: >
+        Merchant-supplied fallback for payment method metadata on the revenue
+        recovery
+
+        endpoint. Recurly's own gateway-token lookup is authoritative for these
+        fields;
+
+        a value supplied here is only used to fill a gap when that lookup is
+        restricted
+
+        or fails, and is overwritten if that lookup later succeeds.
+
+
+        Not accepted on the Purchase endpoint or the standard
+        billing_info/billing_infos
+
+        endpoints — Recover only.
+      properties:
+        object:
+          description: The payment method type.
+          type: string
+          enum:
+            - credit_card
+            - apple_pay
+            - google_pay
+            - google_pay_device_pan
+            - paypal_billing_agreement
+        card_type:
+          description: >-
+            The card brand (e.g. `Visa`, `MasterCard`). Present for
+            `credit_card`, `apple_pay`, and
+            `google_pay`/`google_pay_device_pan`; omitted for
+            `paypal_billing_agreement`.
+          type: string
+          enum:
+            - American Express
+            - Dankort
+            - Diners Club
+            - Discover
+            - ELO
+            - Forbrugsforeningen
+            - Hipercard
+            - JCB
+            - Laser
+            - Maestro
+            - MasterCard
+            - Union Pay
+            - Unknown
+            - Visa
+            - Tarjeta Naranja
+        first_six:
+          type: string
+          description: >
+            For a plain card, the card's own first six digits (BIN).
+
+
+            For a tokenized wallet payment (`apple_pay`, `google_pay`, or
+
+            `google_pay_device_pan`), this is the DPAN's (the wallet/device
+            token's own
+
+            number) first six digits — **not** the underlying card's (FPAN). The
+            FPAN is
+
+            never accepted or represented; no separate wallet-specific field is
+            provided.
+          maxLength: 6
+        last_four:
+          type: string
+          description: >-
+            The card's (or, for a tokenized wallet payment, the DPAN's) last
+            four digits. See `first_six` for the DPAN-vs-FPAN distinction on
+            wallets.
+          maxLength: 4
+        exp_month:
+          type: integer
+          description: Expiration month.
+          maxLength: 2
+        exp_year:
+          type: integer
+          description: Expiration year.
+          maxLength: 4
     RecoveryAccountCreate:
       type: object
       properties:
@@ -20948,13 +21040,32 @@ components:
             - Tarjeta Naranja
         first_six:
           type: string
-          description: Credit card number's first six digits.
+          description: >
+            Credit card number's first six digits.
+
+
+            For a tokenized wallet payment (`apple_pay`, `google_pay`, or
+
+            `google_pay_device_pan`), this is the DPAN's (the wallet/device
+            token's own
+
+            number) first six digits, not the underlying card's (FPAN).
           maxLength: 6
         last_four:
           type: string
-          description: >-
+          description: >
             Credit card number's last four digits. Will refer to bank account if
-            payment method is ACH.
+            payment
+
+            method is ACH.
+
+
+            For a tokenized wallet payment (`apple_pay`, `google_pay`, or
+
+            `google_pay_device_pan`), this is the DPAN's last four digits, not
+            the
+
+            underlying card's (FPAN).
           maxLength: 4
         last_two:
           type: string
