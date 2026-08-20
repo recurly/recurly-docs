@@ -1,0 +1,5 @@
+- listaccountscouponredemptions
+- listinvoicescouponredemptions
+- listsubscriptionscouponredemption
+- redeemcoupononaccount
+- removecouponredemptionfromaccount
