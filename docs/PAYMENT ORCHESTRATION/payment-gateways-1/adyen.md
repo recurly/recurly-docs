@@ -60,7 +60,7 @@ next:
 <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
 <tr><td>Services that work with Recurly</td><td>Credit/Debit cards, Recurring, Adyen Web Components, <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-network-tokens" target="_blank">Adyen-derived Network Tokens</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#revenue-protect-and-protect-premium" target="_blank">Revenue Protect / Protect Premium</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions" target="_blank">MOTO Processing</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/level-2-and-level-3-cedp-guide" target="_blank">Level 2/3 Processing</a></td></tr>
 <tr><td>Supported operations</td><td>Authorize &amp; Capture, Purchase, Refund, Verify, Void</td></tr>
-<tr><td>Supported payment types</td><td>Credit/Debit cards, ACH, Boleto, iDEAL, Klarna Debit Risk (existing merchants only), SEPA, Google Pay, Apple Pay, Cash App Pay. Note: Klarna Debit Risk and Boleto are not supported in the new Adyen Components Recurly.js integration.</td></tr>
+<tr><td>Supported payment types</td><td>Credit/Debit cards, ACH, Boleto, iDEAL, Klarna Debit Risk (existing merchants only), SEPA, Google Pay, Apple Pay, Cash App Pay, and PayPay wallet. Note: Klarna Debit Risk and Boleto are not supported in the new Adyen Components Recurly.js integration.</td></tr>
 <tr><td>Supported card brands</td><td>Visa, Mastercard, American Express, Discover, JCB, Diners Club, China Union Pay, ELO (BRL only), Hipercard (BRL only), Cartes Bancaires, Dankort, Bancontact</td></tr>
 <tr><td>Gateway-specific 3DS2 supported</td><td>Yes</td></tr>
 <tr><td>Card on file supported</td><td>Yes</td></tr>
@@ -645,6 +645,16 @@ Boleto Bancário (Boleto) is a popular payment method in Brazil, commonly used b
 3. The Boleto email template notifies the customer and provides a download link.
 4. Once the customer pays the Boleto, the invoice status in Recurly updates to Paid.
 
+## Adyen PayPay
+
+PayPay is a popular QR-code based wallet and payment method available primarily in Japan, commonly used by customers to sign up for subscriptions or make purchases. It supports JOY currency and is supported in Recurly.js natively and via Adyen Components. PayPay requires specific Adyen webhooks enabled -- please follows webhook configuration instructions to avoid missing transaction status updates and token lifecycle events.
+
+### Recurly configuration
+
+- Activate Japanese Yen (JPY) currency
+- Integrate Adyen as your gateway
+- Use Recurly.js to add the PayPay payment option to your checkout page
+
 # Gateway feature support
 
 ## Adyen Intelligent Routing&#x20;
@@ -809,11 +819,9 @@ In a standard Recurly.js flow, Recurly handles payment authorization. The custom
 # Troubleshooting
 
 <Accordion title="A tokenized payment method isn't allowing conversions, or subscriptions are failing — what can I do?">
-Confirm you've enabled the required webhooks. `RECURRING_CONTRACT` webhooks are critical for all non-card payment methods — see the webhook configuration steps in Step 2 above.
+  Confirm you've enabled the required webhooks. `RECURRING_CONTRACT` webhooks are critical for all non-card payment methods — see the webhook configuration steps in Step 2 above.
 </Accordion>
 
 <Accordion title="My customer got a decline from Adyen at checkout — what happened?">
-Start with the decline code shown in the Recurly Admin UI for the transaction. If the decline is related to 3DS, confirm 3DS is enabled and configured in both Adyen and your Recurly.js implementation. If 3DS is already enabled, the customer may not have completed the 3DS challenge successfully, and the decline is expected.
+  Start with the decline code shown in the Recurly Admin UI for the transaction. If the decline is related to 3DS, confirm 3DS is enabled and configured in both Adyen and your Recurly.js implementation. If 3DS is already enabled, the customer may not have completed the 3DS challenge successfully, and the decline is expected.
 </Accordion>
-
-<br />
