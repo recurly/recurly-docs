@@ -18,7 +18,7 @@ next:
 <div class="rp-page">
 <div class="rp-overview">
 
-Decimal pricing lets you set prices with up to nine decimal places on usage and non-usage add-ons, Items, and item-backed add-ons — using any <a href="https://docs.recurly.com/recurly-subscriptions/docs/add-ons#key-benefits" target="_blank">pricing model</a> — so businesses charging fractions of a cent per unit can bill accurately without rounding errors at the unit level.
+Decimal pricing lets you set prices with up to nine decimal places on items, item-backed add-ons, usage and non-usage add-ons — using any <a href="https://docs.recurly.com/recurly-subscriptions/docs/add-ons#key-benefits" target="_blank">pricing model</a> — so businesses charging fractions of a cent per unit can bill accurately without rounding errors at the unit level.
 
 </div>
 <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i>&nbsp; Available on all Recurly plans</div>
@@ -158,5 +158,3 @@ If your Recurly site was created on or before May 7, 2018, you must enable Credi
     <td>Does not currently support decimal pricing. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> if this is a requirement for your business.</td>
   </tr>
 </table>
-
-<br />
