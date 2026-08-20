@@ -1,0 +1,7 @@
+- listactivecoupons
+- createcoupon
+- lookupacoupon
+- expirecoupon
+- editcoupon
+- generateuniquecodes
+- restorecoupon
