@@ -200,10 +200,6 @@ Authorization: Bearer YOUR_API_KEY
   <li>For PayPay specifically, inspect the response and handle the <code>action_result</code> by following the standard <a href="https://docs.recurly.com/recurly-subscriptions/docs/boleto-ideal-sofort-and-cashapt" target="_blank">Recurly.js alternative payment method flow</a>.</li>
 </ul>
 
-# Error handling and troubleshooting
-
-\[TODO: Add a gateway-specific error code table. Step 5 above covers general response handling; this section needs the specific validation/gateway error codes this integration can return.]
-
 # Webhooks
 
 Adyen returns recurring token usage and async status updates to Recurly through webhooks, as configured in the <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/" target="_blank">Adyen setup guide</a>.
