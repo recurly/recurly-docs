@@ -98,6 +98,6 @@ Set up a test account with Adyen and follow their sandbox instructions. You don'
 
 ***
 
-📋 TODO before publishing:
+<br />
 
-- [ ] Add a "Checkout flow" section (redirect/authentication modal) — the TOC pill currently has no matching content
+<br />
