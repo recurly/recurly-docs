@@ -100,10 +100,3 @@ By understanding these dunning recovery features, you can maximize their use and
 
 
 <Image src="https://files.readme.io/21b1a96dc44c09e9309007d79c1a7c0be7016ad498b7bc995598084590ce3b1c-image.png" align="center" width="75%" border={true} />
-
-
-***
-
-<br />
-
-<br />
