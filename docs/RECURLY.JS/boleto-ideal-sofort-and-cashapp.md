@@ -1,32 +1,58 @@
 ---
 title: 'Adyen APMs: PayPay, Boleto, iDEAL, Sofort, and CashApp'
 excerpt: >-
-  Implement PayPay, Boleto, iDEAL, Sofort, and Cash App with a single Recurly.js
-  integration that renders the Adyen payment component, handles tokenization,
-  and returns a secure payment-method token for your server-side purchase call.
+  Configure, render, and tokenize alternative payment methods — PayPay, Boleto,
+  iDEAL, Sofort, and CashApp — using recurly.AlternativePaymentMethods and
+  Adyen.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-`recurly.AlternativePaymentMethods` is a convenience wrapper around Adyen’s JavaScript drop-in component.<br />With one configuration object you can:
+<div class="rp-page">
+  <div class="rp-overview"><code>recurly.AlternativePaymentMethods</code> is a convenience wrapper around Adyen's JavaScript drop-in component. With one configuration object, you can render, tokenize, and hand off any of the supported alternative payment methods without sensitive data ever hitting your server.</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-concepts"><span class="rp-toc-num">2</span>Key concepts</a>
+    <a class="rp-toc-pill" href="#integration-guide"><span class="rp-toc-num">3</span>Integration guide</a>
+    <a class="rp-toc-pill" href="#sdk-reference"><span class="rp-toc-num">4</span>SDK reference</a>
+    <a class="rp-toc-pill" href="#error-handling-and-troubleshooting"><span class="rp-toc-num">5</span>Error handling</a>
+    <a class="rp-toc-pill" href="#testing-your-integration"><span class="rp-toc-num">6</span>Testing</a>
+    <a class="rp-toc-pill" href="#whats-next"><span class="rp-toc-num">7</span>What's next</a>
+  </div>
+</div>
 
-- **Render** a localized payment-method UI (PayPay, Boleto, iDEAL|Wero, Sofort/Klarna Debit Risk, or Cash App) inside any container.
-- **Tokenize** the shopper’s details—no sensitive information hits your server.
-- **Emit** a Recurly token that you send to any v3 endpoint that accepts `billing_info`.
-- **Hand off / handle actions** (iDEAL | Wero & Sofort/Klarna Debit Risk, PayPay redirects) or skip them entirely (Cash App).
+### Prerequisites
 
-### Prerequisites and limitations
+<ul class="rp-list">
+  <li>Your Recurly site must be connected to Adyen, and the payment method(s) you intend to offer must be enabled in your Adyen merchant account.</li>
+  <li>iDEAL|Wero and Sofort/Klarna Debit Risk require you to provide a <code>returnURL</code>.</li>
+</ul>
 
-- Your Recurly site must be connected to **Adyen** and the payment-method(s) you intend to offer must be enabled in your Adyen merchant account.
-- For **iDEAL|Wero** and **Sofort/Klarna Debit Risk** you **must** provide a `returnURL`.
-- Cash App does **not** return an `action_result`; you can ignore `paymentMethod.handleAction`.
+### Limitations
 
-### Configuration
+<ul class="rp-list">
+  <li>CashApp doesn't return an <code>action_result</code> — you can ignore <code>paymentMethod.handleAction</code> for CashApp.</li>
+</ul>
 
-To start with any of these payment methods, call `recurly.AlternativePaymentMethods`.
+# Definition
 
-For example:
+<div class="rp-definition"><code>recurly.AlternativePaymentMethods</code> is a convenience wrapper around Adyen's JavaScript drop-in component. It renders a localized payment-method UI, tokenizes the shopper's details client-side, and emits a Recurly token you send to any V3 endpoint that accepts <code>billing_info</code>.</div>
+
+# Key concepts
+
+With one configuration object, <code>recurly.AlternativePaymentMethods</code> lets you:
+
+- **Render** — Show a localized payment-method UI (PayPay, Boleto, iDEAL|Wero, Sofort/Klarna Debit Risk, or CashApp) inside any container.
+- **Tokenize** — Collect the shopper's details client-side. No sensitive information hits your server.
+- **Emit** — Generate a Recurly token you send to any V3 endpoint that accepts `billing_info`.
+- **Hand off / handle actions** — Redirect or present an authentication step for iDEAL|Wero, Sofort/Klarna Debit Risk, and PayPay, or skip this entirely for CashApp.
+
+# Integration guide
+
+## Configure the component
+
+Call `recurly.AlternativePaymentMethods` with a configuration object to start with any of these payment methods:
 
 ```js
 const paymentMethod = recurly.AlternativePaymentMethods({
@@ -50,60 +76,65 @@ const paymentMethod = recurly.AlternativePaymentMethods({
 });
 ```
 
-See reference for details. The various payment methods may be configured as follows:
+See the <a href="#sdk-reference">SDK reference</a> below for the full list of configuration options. Each payment method has its own required parameters:
 
-### PayPay Wallet
+### PayPay wallet
 
-| Param                 | Type     | Description                                                               |
-| :-------------------- | :------- | :------------------------------------------------------------------------ |
-| allowedPaymentMethods | `Array`  | Array needs to contain `paypay`.                                          |
-| currency              | `String` | String needs to be `JPY`.                                                 |
-| countryCode           | `String` | String needs to be `JP`                                                   |
-| locale                | `String` | String needs to be a valid ISO locale string, such as `ja-JP` or `en-US`  |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Param</td><td>Type</td><td>Description</td></tr>
+  <tr><td><code>allowedPaymentMethods</code></td><td><code>Array</code></td><td>Must contain <code>paypay</code>.</td></tr>
+  <tr><td><code>currency</code></td><td><code>String</code></td><td>Must be <code>JPY</code>.</td></tr>
+  <tr><td><code>countryCode</code></td><td><code>String</code></td><td>Must be <code>JP</code>.</td></tr>
+  <tr><td><code>locale</code></td><td><code>String</code></td><td>Must be a valid ISO locale string, such as <code>ja-JP</code> or <code>en-US</code>.</td></tr>
+</table>
 
 ### Boleto
 
-| Param                 | Type     | Description                      |
-| :-------------------- | :------- | :------------------------------- |
-| allowedPaymentMethods | `Array`  | Array needs to contain `boleto`. |
-| currency              | `String` | String needs to be `BRL`.        |
-| countryCode           | `String` | String needs to be `BR`          |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Param</td><td>Type</td><td>Description</td></tr>
+  <tr><td><code>allowedPaymentMethods</code></td><td><code>Array</code></td><td>Must contain <code>boleto</code>.</td></tr>
+  <tr><td><code>currency</code></td><td><code>String</code></td><td>Must be <code>BRL</code>.</td></tr>
+  <tr><td><code>countryCode</code></td><td><code>String</code></td><td>Must be <code>BR</code>.</td></tr>
+</table>
 
 ### iDEAL
 
-| Param                 | Type     | Description                           |
-| :-------------------- | :------- | :------------------------------------ |
-| allowedPaymentMethods | `Array`  | Array needs to contain `ideal`.       |
-| currency              | `String` | String needs to be `EUR`.             |
-| countryCode           | `String` | String needs to be `NL`               |
-| returnURL             | `String` | The return url is required for iDEAL. |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Param</td><td>Type</td><td>Description</td></tr>
+  <tr><td><code>allowedPaymentMethods</code></td><td><code>Array</code></td><td>Must contain <code>ideal</code>.</td></tr>
+  <tr><td><code>currency</code></td><td><code>String</code></td><td>Must be <code>EUR</code>.</td></tr>
+  <tr><td><code>countryCode</code></td><td><code>String</code></td><td>Must be <code>NL</code>.</td></tr>
+  <tr><td><code>returnURL</code></td><td><code>String</code></td><td>Required for iDEAL.</td></tr>
+</table>
 
 ### Sofort
 
-| Param                 | Type     | Description                                                                        |
-| :-------------------- | :------- | :--------------------------------------------------------------------------------- |
-| allowedPaymentMethods | `Array`  | Array needs to contain `sofort`.                                                   |
-| currency              | `String` | String should have one of the following currencies: `EUR`, `CHF`                   |
-| countryCode           | `String` | String should have one of the following values: `AT`, `BE`, `DE`, `ES`, `CH`, `NL` |
-| returnURL             | `String` | The return url is required for Sofort.                                             |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Param</td><td>Type</td><td>Description</td></tr>
+  <tr><td><code>allowedPaymentMethods</code></td><td><code>Array</code></td><td>Must contain <code>sofort</code>.</td></tr>
+  <tr><td><code>currency</code></td><td><code>String</code></td><td>One of <code>EUR</code>, <code>CHF</code>.</td></tr>
+  <tr><td><code>countryCode</code></td><td><code>String</code></td><td>One of <code>AT</code>, <code>BE</code>, <code>DE</code>, <code>ES</code>, <code>CH</code>, <code>NL</code>.</td></tr>
+  <tr><td><code>returnURL</code></td><td><code>String</code></td><td>Required for Sofort.</td></tr>
+</table>
 
 ### CashApp
 
-| Param                 | Type     | Description                       |
-| :-------------------- | :------- | :-------------------------------- |
-| allowedPaymentMethods | `Array`  | Array needs to contain `cashapp`. |
-| currency              | `String` | String needs to be `USD`.         |
-| countryCode           | `String` | String needs to be: `US`.         |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Param</td><td>Type</td><td>Description</td></tr>
+  <tr><td><code>allowedPaymentMethods</code></td><td><code>Array</code></td><td>Must contain <code>cashapp</code>.</td></tr>
+  <tr><td><code>currency</code></td><td><code>String</code></td><td>Must be <code>USD</code>.</td></tr>
+  <tr><td><code>countryCode</code></td><td><code>String</code></td><td>Must be <code>US</code>.</td></tr>
+</table>
 
-### Rendering the Payment Methods
+## Render the payment method UI
 
-After configuring your recurly instance, call `paymentMethod.start()` to show each configured Payment Method(s) within<br />the target element.
+After configuring your Recurly instance, call `paymentMethod.start()` to show the configured payment method(s) within the target element.
 
-Call `paymentMethod.destroy()` to safely remove the rendered payment UI from the document. This is necessary if you<br />wish to re-render the component.
+Call `paymentMethod.destroy()` to safely remove the rendered payment UI from the document. This is necessary if you want to re-render the component.
 
-### Generating a token
+## Generate a token
 
-After filling and confirming the data, `paymentMethod.submit()` should be called so that the token event can be<br />dispatched. You may optionally provide a specific customer billing address to this call.
+After the shopper fills in and confirms their details, call `paymentMethod.submit()` so the token event can be dispatched. You may optionally provide a specific customer billing address to this call.
 
 ```js
 paymentMethod.submit();
@@ -124,7 +155,7 @@ paymentMethod.submit({
 
 ```
 
-After submit is called, the token will be emitted in the `token` event.
+After `submit` is called, the token is emitted in the `token` event:
 
 ```js
 paymentMethod.on('token', function (token) {
@@ -132,18 +163,12 @@ paymentMethod.on('token', function (token) {
 });
 ```
 
-### Making a purchase
+## Make a purchase
 
-Having the token, a request must be sent to the server, which internally will call the Recurly API to make the purchase.<br />The request must contain the fields from the previously filled in the element container. The response must then be
-handled to retrieve the `action_result` and pass it back to the browser. With the action result,
-`paymentMethod.handleAction(action_result)` can be called.
+With the token, send a request to your server, which internally calls the Recurly API to make the purchase. The request must contain the fields previously filled in the element container. The response must then be handled to retrieve the `action_result` and pass it back to the browser — with the action result, `paymentMethod.handleAction(action_result)` can be called.
 
-<div class="alert alert--warning" markdown="1">
-
-**Using Cash App?**
-
-Cash App does not use an `action_result` so `paymentMethod.handleAction` can be ignored.
-
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong>Using CashApp? It doesn't return an <code>action_result</code>, so <code>paymentMethod.handleAction</code> can be ignored.</div>
 </div>
 
 ```js
@@ -168,80 +193,95 @@ fetch(form.action, {
     });
 ```
 
-### Reference
+# SDK reference
 
-#### <span class="heading-tag heading-tag--fn">fn</span> recurly.AlternativePaymentMethods
+## `recurly.AlternativePaymentMethods`
 
-##### Arguments
+#### Arguments
 
-| Param                           | Type      | Description                                                                  |
-| :------------------------------ | :-------- | :--------------------------------------------------------------------------- |
-| options                         | `Object`  |                                                                              |
-| options.allowedPaymentMethods   | `Array`   | An array containing the desired payment method.                              |
-| options.blockedPaymentMethods   | `Array`   | An array containing the payment methods that will be blocked.                |
-| options.containerSelector       | `String`  | String containing the CSS selector of the container.                         |
-| options.amount                  | `Integer` | The amount to be paid.                                                       |
-| options.currency                | `String`  | The currency for the transaction.                                            |
-| options.locale                  | `String`  | The locale for the transaction.                                              |
-| options.channel                 | `String`  | The channel.                                                                 |
-| options.adyen                   | `Object`  | An object containing adyen gateway configuration.                            |
-| options.adyen.publicKey         | `String`  | The public key.                                                              |
-| options.adyen.env               | `String`  | The environment.                                                             |
-| options.adyen.showPayButton     | `Boolean` | Whether to show or not the pay button.                                       |
-| options.componentConfig         | `Object`  | An object with the component configuration.                                  |
-| options.returnURL               | `String`  | Return URL (needed only for iDEAL and Sofort).                               |
-| options.customer                | `Object`  | An object containing additional customer details.                            |
-| options.customer.billingAddress | `Object`  | Customer billing address. See [Billing Fields](#billing-fields) for options. |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Param</td><td>Type</td><td>Description</td></tr>
+  <tr><td><code>options</code></td><td><code>Object</code></td><td></td></tr>
+  <tr><td><code>options.allowedPaymentMethods</code></td><td><code>Array</code></td><td>An array containing the desired payment method.</td></tr>
+  <tr><td><code>options.blockedPaymentMethods</code></td><td><code>Array</code></td><td>An array containing the payment methods that will be blocked.</td></tr>
+  <tr><td><code>options.containerSelector</code></td><td><code>String</code></td><td>String containing the CSS selector of the container.</td></tr>
+  <tr><td><code>options.amount</code></td><td><code>Integer</code></td><td>The amount to be paid.</td></tr>
+  <tr><td><code>options.currency</code></td><td><code>String</code></td><td>The currency for the transaction.</td></tr>
+  <tr><td><code>options.locale</code></td><td><code>String</code></td><td>The locale for the transaction.</td></tr>
+  <tr><td><code>options.channel</code></td><td><code>String</code></td><td>The channel.</td></tr>
+  <tr><td><code>options.adyen</code></td><td><code>Object</code></td><td>An object containing Adyen gateway configuration.</td></tr>
+  <tr><td><code>options.adyen.publicKey</code></td><td><code>String</code></td><td>The public key.</td></tr>
+  <tr><td><code>options.adyen.env</code></td><td><code>String</code></td><td>The environment.</td></tr>
+  <tr><td><code>options.adyen.showPayButton</code></td><td><code>Boolean</code></td><td>Whether to show the pay button.</td></tr>
+  <tr><td><code>options.componentConfig</code></td><td><code>Object</code></td><td>An object with the component configuration.</td></tr>
+  <tr><td><code>options.returnURL</code></td><td><code>String</code></td><td>Return URL (needed only for iDEAL and Sofort).</td></tr>
+  <tr><td><code>options.customer</code></td><td><code>Object</code></td><td>An object containing additional customer details.</td></tr>
+  <tr><td><code>options.customer.billingAddress</code></td><td><code>Object</code></td><td>Customer billing address. See the <code>submit</code> arguments below for billing address fields.</td></tr>
+</table>
 
-##### Returns
+#### Returns
 
-A new `AlternativePaymentMethods` instance
+A new `AlternativePaymentMethods` instance.
 
-#### <span class="heading-tag heading-tag--fn">fn</span> alternativePaymentMethods.start
+## `alternativePaymentMethods.start`
 
-##### Arguments
+No arguments. Returns nothing.
 
-None.
+## `alternativePaymentMethods.submit`
 
-##### Returns
+#### Arguments
 
-Nothing.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Param</td><td>Type</td><td>Description</td></tr>
+  <tr><td><code>[options]</code></td><td><code>Object</code></td><td></td></tr>
+  <tr><td><code>[options.billingAddress]</code></td><td><code>Object</code></td><td>Customer billing address.</td></tr>
+</table>
 
-#### <span class="heading-tag heading-tag--fn">fn</span> alternativePaymentMethods.submit
-
-##### Arguments
-
-| Param                     | Type     | Description                                                                  |
-| :------------------------ | :------- | :--------------------------------------------------------------------------- |
-| \[options]                | `Object` |                                                                              |
-| \[options.billingAddress] | `Object` | Customer billing address. See [Billing Fields](#billing-fields) for options. |
-
-##### Returns
+#### Returns
 
 Nothing.
 
-#### <span class="heading-tag heading-tag--event">events</span> Emits
+## Events
 
-##### `error`
+### `error`
 
-This event is emitted when any error is encountered, whether during setup of the payment method flow, or during customer<br />interaction with the payment method interface.
+Emitted when any error is encountered, whether during setup of the payment method flow or during customer interaction with the payment method interface.
 
-##### Payload
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Param</td><td>Type</td><td>Description</td></tr>
+  <tr><td><code>error</code></td><td><code>RecurlyError</code></td><td>An error describing the issue that occurred.</td></tr>
+</table>
 
-| Param | Type           | Description                                  |
-| :---- | :------------- | :------------------------------------------- |
-| error | `RecurlyError` | An error describing the issue that occurred. |
+### `token`
 
-##### `token`
+Fired when the customer has completed the payment method flow. Recurly has received the payment details and generated this token to be used in the API.
 
-This event is fired when the customer has completed the payment method flow. Recurly has received the payment details,<br />and generated this token to be used in our API.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Param</td><td>Type</td><td>Description</td></tr>
+  <tr><td><code>token</code></td><td><code>Object</code></td><td></td></tr>
+  <tr><td><code>token.type</code></td><td><code>String</code></td><td><code>'payment_method'</code></td></tr>
+  <tr><td><code>token.id</code></td><td><code>String</code></td><td>Token identifier to be sent to the API.</td></tr>
+</table>
 
-##### Payload
+# Error handling and troubleshooting
 
-| Param      | Type     | Description                            |
-| :--------- | :------- | :------------------------------------- |
-| token      | `Object` |                                        |
-| token.type | `String` | 'payment_method'                       |
-| token.id   | `String` | Token identifier to be sent to the API |
+Listen for the `error` event to catch problems during setup or while the shopper interacts with the payment method UI:
 
-***
+```js
+paymentMethod.on('error', function (err) {
+  // err is a RecurlyError describing what went wrong
+});
+```
+
+On the server side, check the purchase response for an `error` field before looking for `action_result` — see the `fetch` example in <a href="#make-a-purchase">Make a purchase</a> above.
+
+# Testing your integration
+
+Use your Adyen test/sandbox merchant account and set `adyen.env` to `"test"` in the configuration object, as shown in the example above. Switch it to `"live"` only when you're ready for production traffic.
+
+Each payment method has its own sandbox simulator in Adyen's test environment — consult Adyen's documentation for the specific method you're testing to trigger successful and failed payment scenarios.
+
+# What's next
+
+- <a href="https://developers.recurly.com/api/latest/" target="_blank">Full API reference</a> — Complete endpoint documentation for all Recurly resources
+- <a href="/developers/reference/recurly-js" target="_blank">Recurly.js documentation</a> — Set up and configure Recurly.js on your checkout page
