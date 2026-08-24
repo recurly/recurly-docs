@@ -1,9 +1,8 @@
 ---
 title: Dunning benchmarks
 excerpt: >-
-  Built-in dunning benchmarks allow merchants to see their key performance
-  metrics, related to subscribers, how they stack against similar companies
-  within their industry, and how they’re trending.
+  See how your dunning recovery rate compares to industry benchmarks with
+  Recurly's Dunning Benchmarks dashboard.
 deprecated: false
 hidden: false
 metadata:
@@ -13,60 +12,85 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The Dunning Benchmarks dashboard gives you insight into your dunning recovery rate, comparing your performance against others in your industry using Recurly's built-in benchmarks.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-- Users must have analytics user role permission.
+<ul class="rp-list">
+  <li>You must have the Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-The dunning benchmark dashboard will provide insights on your Dunning Recovery Rate, comparing yourself to others in your industry with Recurly’s built-in benchmarks.
+<div class="rp-definition">The Dunning Benchmarks dashboard gives you insight into your dunning recovery rate, comparing your performance against others in your industry using Recurly's built-in benchmarks.</div>
 
 # Key benefits
 
-- **Industry comparison**: Compare key subscription metrics with industry benchmarks to understand performance relative to peers, identifying areas of strengths and weaknesses.
-
-- **Competitive insights**: Gain insights into how competitors are faring in terms of subscription metrics, uncovering areas to differentiate and improve to gain a competitive edge.
-
-- **Informed decision-making**: Make informed decisions based on real-world data to help set realistic goals and expectations for subscription growth and customer retention.
-
-- **Forecasting and planning**: Enable more accurate forecasting and long-term planning to help businesses set reachable growth targets and allocate resources effectively.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Industry comparison</strong>
+    <span>Compare key subscription metrics with industry benchmarks to understand your performance relative to peers, and identify areas of strength and weakness.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Competitive insights</strong>
+    <span>Gain insights into how competitors are faring on subscription metrics, uncovering areas to differentiate and improve to gain a competitive edge.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Informed decision-making</strong>
+    <span>Make informed decisions based on real-world data to set realistic goals and expectations for subscription growth and customer retention.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Forecasting and planning</strong>
+    <span>Enable more accurate forecasting and long-term planning, so you can set reachable growth targets and allocate resources effectively.</span>
+  </div>
+</div>
 
 # Key details
 
 ## General filters (top left corner)
 
-- **Date range:** This lets you modify the time period for benchmark comparisons, with a default duration of 14 months, allowing for extensive analysis over time.
-- **Industry:** Shows benchmark data tailored to the industry you select, providing insights relevant to your sector.
-- **Timeframe:** A preset filter that provides a monthly overview of benchmark metrics, ensuring consistency in the data you're reviewing.
-- **Subscriber type:** This filter is fixed to “Paying Subscribers,” focusing the benchmarks on subscribers who have made at least one payment, ensuring the data reflects genuine customer engagement.
+<ul class="rp-list">
+  <li><strong>Date range</strong> — Modify the time period for benchmark comparisons. The default duration is 14 months, allowing for extensive analysis over time.</li>
+  <li><strong>Industry</strong> — Shows benchmark data tailored to the industry you select, providing insights relevant to your sector.</li>
+  <li><strong>Timeframe</strong> — A preset filter that provides a monthly overview of benchmark metrics, ensuring consistency in the data you're reviewing.</li>
+  <li><strong>Subscriber type</strong> — Fixed to "Paying Subscribers," focusing the benchmarks on subscribers who have made at least one payment, so the data reflects genuine customer engagement.</li>
+</ul>
 
 ## Dunning benchmarks
 
-The Dunning Benchmarks dashboard will enable you to understand how you compare to peers in your industry with regards to recovering invoices that fail and enter dunning. This will allow you to make adjustments to your dunning strategy to make incremental progress to increase your recovery rate as compared to your industry.
+The Dunning Benchmarks dashboard shows you how you compare to peers in your industry when it comes to recovering invoices that fail and enter dunning. Use it to make adjustments to your dunning strategy and make incremental progress toward a higher recovery rate relative to your industry.
 
-**Dunning recovery rate calculation**
+### Dunning recovery rate calculation
 
 This metric measures the effectiveness of your dunning process by calculating the percentage of invoices that are successfully recovered after initially entering the dunning process.
 
-Your performance is contextualized within your industry through a percentile ranking, showing how you compare to peers. Monitoring your percentile trend over time offers insights into the effectiveness of your dunning strategies relative to the industry.
+Your performance is contextualized within your industry through a percentile ranking, showing how you compare to peers. Monitoring your percentile trend over time offers insight into the effectiveness of your dunning strategies relative to the industry.
 
-Here’s how it’s determined:
+Here's how it's determined:
 
-- **Formula:** The rate is calculated by dividing the number of invoices that are recovered during the dunning process by the total number of invoices that entered dunning.
+<ul class="rp-list">
+  <li><strong>Formula</strong> — The rate is calculated by dividing the number of invoices recovered during the dunning process by the total number of invoices that entered dunning.</li>
+  <li><strong>Time basis</strong> — Calculations are based on the invoice creation date, aligning this metric with the methodology used for renewal invoice decline and success rate benchmarks.</li>
+</ul>
 
-- **Time basis:** Calculations are based on the invoice creation date, aligning this metric with the methodology used for renewal invoice decline and success rate benchmarks.
 
-  <Image src="https://files.readme.io/04959e0e4cc91980abe307fbab94f695069bf9fba9a36a245de616c7a22244f8-image.png" align="center" border={true} />
+<Image src="https://files.readme.io/04959e0e4cc91980abe307fbab94f695069bf9fba9a36a245de616c7a22244f8-image.png" align="center" width="75%" border={true} />
 
 
-Your performance is contextualized within your industry through a percentile ranking, showing how you compare to peers. Monitoring your percentile trend over time offers insights into the effectiveness of your dunning strategies relative to the industry.
+<div class="rp-card">
 
-## About benchmarks
+Recurly's benchmark reports offer insights into your performance metrics compared to similar businesses in your industry over time. Use this tool to understand your competitive position and identify growth opportunities by comparing your key performance indicators (KPIs) with industry standards.
 
-Recurly's benchmark reports offer insights into your performance metrics compared to similar businesses in your industry over time. This tool helps you understand your competitive position and identify growth opportunities by comparing your key performance indicators (KPIs) with industry standards.
+</div>
