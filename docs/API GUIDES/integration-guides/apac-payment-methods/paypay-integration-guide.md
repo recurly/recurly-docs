@@ -105,7 +105,7 @@ Send a request to the `create_purchase` method on Recurly's API, including:
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">3</div>
-    <div><h4>Handle the action result with Recurly.js</h4><p>Call <code>paymentMethod.handleAction(action_result)</code> to let the customer complete the flow in the PayPay app on their phone.</p></div>
+    <div><h4>Handle the action result or action token ID with Recurly.js</h4><p>Call <code>paymentMethod.handleAction(action_result)</code> or <code>threeDSecure.attach()</code> to let the customer complete the flow in the PayPay app on their phone.</p></div>
   </div>
 </div>
 
