@@ -1,66 +1,94 @@
 ---
 title: PayPay integration guide
 excerpt: >-
-  Create subscriptions via Purchase API using PayPay wallet using Adyen's
-  Sandbox environment
+  Learn how to accept subscriptions payments with the PayPay wallet through
+  Adyen, using Recurly's Purchase endpoint and Recurly.js.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">This guide shows you how to use Recurly's <a href="https://developers.recurly.com/api/latest/#tag/purchase" target="_blank">Purchase endpoint</a> to create new subscriptions with the PayPay wallet payment method through Adyen. It also covers how to test the flow using the Adyen sandbox simulator.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#creating-purchases"><span class="rp-toc-num">2</span>Creating purchases</a>
+  </div>
+</div>
 
-This guide shows you how to use the [Purchase endpoint](https://developers.recurly.com/api/latest/#tag/purchase) to create new subscriptions using the PayPay wallet payment method. We’ll also illustrate how to work with the Adyen sandbox simulator.
+### Prerequisites
 
-### Prerequisites & limitations
+<ul class="rp-list">
+  <li>Familiarity with Recurly's API v3, webhooks, and basic REST concepts</li>
+  <li>Completed the <a href="https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/" target="_blank">Quickstart guide</a></li>
+  <li>Familiarity with Recurly.js</li>
+  <li>An Adyen gateway account with PayPay enabled, configured with a <strong>SALE</strong> acquirer setup</li>
+</ul>
 
-- Familiarity with Recurly’s V3 API, Webhooks, and basic REST concepts
-- [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
-- Familiarity with Recurly.js&#x20;
-- An Adyen gateway account with PayPay enabled with a **SALE** Acquirer setup.
-  - If you are using only Auth and Capture, you may do so for one time transactions only. Recurring cannot be supported with an AUTH acquirer setup.
-- Your Adyen gateway account is set up to send your Recurly sandbox and/or production site the proper **webhooks** so that **tokens** and **status updates&#x20;**&#x6F;ccur seamlessly. Please see Adyen configuration with Recurly and follow all steps if you have not yet done so.&#x20;
-  - If you do not set up proper webhooks, your testing and production behavior will experience significant degradation and errors.
+### Limitations
+
+<ul class="rp-list">
+  <li>An Auth-and-Capture acquirer setup only supports one-time transactions — recurring payments require a SALE acquirer setup</li>
+  <li>Your Adyen account must send the correct webhooks to your Recurly sandbox and/or production site so that tokens and status updates sync correctly. Without this, testing and production behavior will be significantly degraded.</li>
+</ul>
 
 # Definition
 
-**Creating Purchases** refers to the process of generating new customer accounts alongside subscriptions in a single, consolidated call to the Recurly Purchase endpoint. This streamlines checkout experiences by bundling all required resources into one request.
+<div class="rp-definition">Creating a purchase means generating a new customer account and its subscription in a single call to Recurly's Purchase endpoint. This bundles everything a checkout needs — account, billing info, and subscription — into one request instead of several.</div>
+
+# Creating purchases
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Generate a PayPay wallet payment request</h4><p>Use a supported client library along with Recurly.js to configure your checkout. PayPay uses Recurly.js whether you're on native Recurly.js checkout or Adyen Web Components through Third-Party Checkout.</p></div>
+  </div>
+</div>
+
+Send a request to the `create_purchase` method on Recurly's API, including:
+
+<ul class="rp-list">
+  <li>Customer account data — code, name, billing info, phone number, and email address</li>
+  <li>Subscriptions — with plan codes</li>
+  <li>A Recurly.js token</li>
+</ul>
+
+```text
+[TODO: Add a sample create_purchase request body]
+```
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Obtain the action result value from the response</h4><p>The response includes a redirect blob in <code>transactions.gateway_response_values.action_result</code>.</p></div>
+  </div>
+</div>
+
+```json
+{
+  "action_result": "{\"method\":\"GET\",\"paymentMethodType\":\"paypay\",\"type\":\"redirect\",\"url\":\"https://checkoutshopper-test.adyen.com/checkoutshopper/checkoutPaymentRedirect?redirectData=X3XtfGC9%2...eWteWFSyDxkTo3iXeATHjO%2BxTyV4nnN155A%3D\"}"
+}
+```
+
+PayPay requires consumer authentication, so the customer needs to authenticate and authorize the payment in their mobile app through Recurly.js. Submit the `action_result` value to Recurly.js to render that modal.
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Handle the action result with Recurly.js</h4><p>Call <code>paymentMethod.handleAction(action_result)</code> to let the customer complete the flow in the PayPay app on their phone.</p></div>
+  </div>
+</div>
+
+For more detail, see our <a href="https://docs.recurly.com/recurly-subscriptions/docs/boleto-ideal-sofort-and-cashapt" target="_blank">Alternative payment methods documentation</a>.
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Adyen returns the result of that interaction to Recurly through webhooks, including the final transaction status and the token for renewals once approved. Minimum required webhooks: <strong>Standard</strong> and <strong>Token Lifecycle</strong> events.</div>
+</div>
 
 ***
 
-# Creating Purchases&#x20;
+📋 TODO before publishing:
 
-### Step 1: Generate a PayPay Wallet Payment Request
-
-Use a supported client library and Recurly.js to configure your checkout setup. Our client libraries help you build out our APIs easily and process transactions faster. PayPay uses Recurly.js whether or not you are using our native Recurly.js checkout or Adyen Web Components via Third Party Checkout.
-
-- Send a request to the `create_purchase` method on Recurly’s API, including:
-  - Customer account data (e.g., code, name, billing info, phone number, email address)
-  - Subscriptions (with plan codes)
-  - Recurly.js token&#x20;
-
-```text
-TBD
-```
-
-### Step 2: Obtain the action result value from the response
-
-You'll receive a redirect blob in `transactions.gateway_response_values.action_result` response.
-
-```json
-"action_result": "{\"method\":\"GET\",\"paymentMethodType\":\"paypay\",\"type\":\"redirect\",\"url\":\"https://checkoutshopper-test.adyen.com/checkoutshopper/checkoutPaymentRedirect?redirectData=X3XtfGC9%2...eWteWFSyDxkTo3iXeATHjO%2BxTyV4nnN155A%3D\"}",
-```
-
-PayPay requires consumer authentication, and so interacting with Recurly.js is necessary to allow consumers to authenticate their identity and authorize payments in their mobile apps. You will need to submit the action result value to Recurly.js in order to render the modal for this process.
-
-### Step 3: Handle the Action Result using Recurly.js&#x20;
-
-With the action result, `paymentMethod.handleAction(action_result)` can be called. Follow our general [Alternative Payment Methods documentation](https://docs.recurly.com/recurly-subscriptions/docs/boleto-ideal-sofort-and-cashapp) for additional details.&#x20;
-
-This will allow the customer to interact with the PayPay app on their phones.&#x20;
-
-### Reminder
-
-Adyen will return the result of that interaction to Recurly via webhooks, including the final transaction status and the token for renewals, upon approval. Ensure you have your Adyen webhooks enabled properly by following our gateway setup documentation around webhooks.&#x20;
-
-**Minimum required webhooks**: Standard and Token Lifecycle events are critical.
+- [ ] Add the "Adyen configuration with Recurly" link referenced in Limitations
+- [ ] Add a sample `create_purchase` request body in Step 1 (source left this code block empty)
