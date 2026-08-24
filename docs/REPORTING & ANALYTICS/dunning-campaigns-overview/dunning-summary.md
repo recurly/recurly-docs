@@ -104,8 +104,6 @@ By understanding these dunning recovery features, you can maximize their use and
 
 ***
 
-📋 TODO before publishing:
+<br />
 
-- [ ] **Recovery methods list reconciled** — The source gave two lists of dunning recovery categories: one with 6 items (including "Forced Collection" and "Manual" as separate entries) and one with 5 more detailed items (using "Manual Collection" instead). I merged these into a single 6-item list; please confirm "Forced Collection" and "Manual" are meant to be distinct categories and not overlapping descriptions of the same thing.
-- [ ] **Key benefits** — Source only provided 2 benefits (Effectiveness, Insights); I drafted a third ("Actionable reporting") to meet the 3-benefit minimum. Please confirm, refine, or replace.
-- [ ] **Empty image removed** — The source included a stray `![]()` with no image URL at the end of the page; it's been dropped. Add it back with a real source if there's a missing screenshot.
+<br />
