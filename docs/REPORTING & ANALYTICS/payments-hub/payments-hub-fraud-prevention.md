@@ -128,6 +128,6 @@ This bar chart shows the volume of fraud-blocked transactions by payment gateway
 
 ***
 
-📋 TODO before publishing:
+<br />
 
-- [ ] **Second image under "Blocked transactions by gateway"** — The source included a second, uncaptioned image (`6447de1f...png`) right after this chart with no description of what it shows. I've kept it in place, but please confirm what it represents (or remove it if it was included by mistake) — it may need its own heading and description.
+<br />
