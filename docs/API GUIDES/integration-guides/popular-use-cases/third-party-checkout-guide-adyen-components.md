@@ -210,8 +210,8 @@ Adyen returns recurring token usage and async status updates to Recurly through 
 
 # What's next
 
-- <a href="https://developers.recurly.com/api/latest/" target="_blank">Full API reference</a> — Complete endpoint documentation for all Recurly resources
-- <a href="https://docs.recurly.com/v1.1/docs/managing-subscription-methods-guides#/" target="_blank">Subscription management</a> — Update, cancel, or migrate subscriptions after the initial purchase
+- <a href="docs.recurly.com/recurly-subscriptions/reference" target="_blank">Full API reference</a> — Complete endpoint documentation for all Recurly resources
+- <a href="https://docs.recurly.com/docs/managing-subscription-methods-guides#/" target="_blank">Subscription management</a> — Update, cancel, or migrate subscriptions after the initial purchase
 
 <br />
 
