@@ -1,8 +1,8 @@
 ---
-title: 'Adyen APMs: PayPay, Boleto, iDEAL, Sofort, and CashApp'
+title: 'Adyen APMs: PayPay, Boleto, iDEAL, Sofort, and Cash App'
 excerpt: >-
   Configure, render, and tokenize alternative payment methods — PayPay, Boleto,
-  iDEAL, Sofort, and CashApp — using recurly.AlternativePaymentMethods and
+  iDEAL, Sofort, and Cash App — using recurly.AlternativePaymentMethods and
   Adyen.
 deprecated: false
 hidden: false
@@ -32,7 +32,7 @@ metadata:
 ### Limitations
 
 <ul class="rp-list">
-  <li>CashApp doesn't return an <code>action_result</code> — you can ignore <code>paymentMethod.handleAction</code> for CashApp.</li>
+  <li>Cash App doesn't return an <code>action_result</code> — you can ignore <code>paymentMethod.handleAction</code> for Cash App.</li>
 </ul>
 
 # Definition
@@ -43,10 +43,10 @@ metadata:
 
 With one configuration object, <code>recurly.AlternativePaymentMethods</code> lets you:
 
-- **Render** — Show a localized payment-method UI (PayPay, Boleto, iDEAL|Wero, Sofort/Klarna Debit Risk, or CashApp) inside any container.
+- **Render** — Show a localized payment-method UI (PayPay, Boleto, iDEAL|Wero, Sofort/Klarna Debit Risk, or Cash App) inside any container.
 - **Tokenize** — Collect the shopper's details client-side. No sensitive information hits your server.
 - **Emit** — Generate a Recurly token you send to any V3 endpoint that accepts `billing_info`.
-- **Hand off / handle actions** — Redirect or present an authentication step for iDEAL|Wero, Sofort/Klarna Debit Risk, and PayPay, or skip this entirely for CashApp.
+- **Hand off / handle actions** — Redirect or present an authentication step for iDEAL|Wero, Sofort/Klarna Debit Risk, and PayPay, or skip this entirely for Cash App.
 
 # Integration guide
 
@@ -117,7 +117,7 @@ See the <a href="#sdk-reference">SDK reference</a> below for the full list of co
   <tr><td><code>returnURL</code></td><td><code>String</code></td><td>Required for Sofort.</td></tr>
 </table>
 
-### CashApp
+### Cash App
 
 <table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Param</td><td>Type</td><td>Description</td></tr>
@@ -168,7 +168,7 @@ paymentMethod.on('token', function (token) {
 With the token, send a request to your server, which internally calls the Recurly API to make the purchase. The request must contain the fields previously filled in the element container. The response must then be handled to retrieve the `action_result` and pass it back to the browser — with the action result, `paymentMethod.handleAction(action_result)` can be called.
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong>Using CashApp? It doesn't return an <code>action_result</code>, so <code>paymentMethod.handleAction</code> can be ignored.</div>
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong>Using Cash App? It doesn't return an <code>action_result</code>, so <code>paymentMethod.handleAction</code> can be ignored.</div>
 </div>
 
 ```js
@@ -283,5 +283,5 @@ Each payment method has its own sandbox simulator in Adyen's test environment �
 
 # What's next
 
-- <a href="https://developers.recurly.com/api/latest/" target="_blank">Full API reference</a> — Complete endpoint documentation for all Recurly resources
-- <a href="/developers/reference/recurly-js" target="_blank">Recurly.js documentation</a> — Set up and configure Recurly.js on your checkout page
+- <a href="docs.recurly.com/recurly-subscriptions/reference" target="_blank">Full API reference</a> — Complete endpoint documentation for all Recurly resources
+- <a href="overview-recurlyjs" target="_blank">Recurly.js documentation</a> — Set up and configure Recurly.js on your checkout page
