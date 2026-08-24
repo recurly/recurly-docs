@@ -56,6 +56,10 @@ PayPay is designed specifically for subscriptions and doesn't support many stand
   <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong>Request a <code>SALE</code> acquirer setup. Recurly renewals process as <code>SALE</code> transactions and can't run on a separate Auth-and-Capture flow. An <code>AUTH</code> acquirer setup only supports one-time transactions — not renewals or subscriptions.</div>
 </div>
 
+# Checkout flow
+
+Customers will select PayPay at checkout, and they are redirected to the PayPay app (on mobile) or shown a QR code (on desktop) to authorize the payment. Payment is completed after customer approval and the final status is confirmed via webhooks from the gateway. You will also receive Recurly webhooks in order to handle transaction, invoice, and subscription status in your environment.
+
 ## Customer actions in the PayPay wallet
 
 Customers interact with their account during signup:
