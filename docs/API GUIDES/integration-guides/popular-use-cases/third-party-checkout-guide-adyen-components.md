@@ -208,12 +208,6 @@ Authorization: Bearer YOUR_API_KEY
 
 Adyen returns recurring token usage and async status updates to Recurly through webhooks, as configured in the <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/" target="_blank">Adyen setup guide</a>.
 
-\[TODO: Confirm the exact webhook event names to subscribe to for this integration (recurring token lifecycle, async payment status).]
-
-# Testing your integration
-
-\[TODO: Add sandbox/test environment guidance — test site credentials, test card numbers, and/or Adyen sandbox simulator details for this integration.]
-
 # What's next
 
 - <a href="https://developers.recurly.com/api/latest/" target="_blank">Full API reference</a> — Complete endpoint documentation for all Recurly resources
