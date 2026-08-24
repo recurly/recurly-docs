@@ -81,13 +81,26 @@ Send a request to the `create_purchase` method on Recurly's API, including:
   </div>
 </div>
 
-```json
+```json Recurly.js Native
 {
   "action_result": "{\"method\":\"GET\",\"paymentMethodType\":\"paypay\",\"type\":\"redirect\",\"url\":\"https://checkoutshopper-test.adyen.com/checkoutshopper/checkoutPaymentRedirect?redirectData=X3XtfGC9%2...eWteWFSyDxkTo3iXeATHjO%2BxTyV4nnN155A%3D\"}"
 }
 ```
+```json Third Party Checkout - Adyen Components
+"transaction_error": {
+            "object": "transaction_error",
+            "transaction_id": "transaction-id",
+            "category": "three_d_secure_action_required",
+            "code": "three_d_secure_action_required",
+            "decline_code": null,
+            "message": "Your card must be authenticated with 3-D Secure before continuing.",
+            "merchant_advice": "Your payment gateway is requesting that the transaction be completed with 3-D Secure.",
+            "three_d_secure_action_token_id": "i0_mWYjn3kXQWW83PgJqTg",
+            "fraud_info": null
+        }
+```
 
-PayPay requires consumer authentication, so the customer needs to authenticate and authorize the payment in their mobile app through Recurly.js. Submit the `action_result` value to Recurly.js to render that modal.
+**Recurly.js Native:&#x20;**&#x50;ayPay requires consumer authentication, so the customer needs to authenticate and authorize the payment in their mobile app through Recurly.js. Submit the `action_result` value to Recurly.js to render that modal.
 
 <div class="rp-steps">
   <div class="rp-step">
@@ -97,6 +110,10 @@ PayPay requires consumer authentication, so the customer needs to authenticate a
 </div>
 
 For more detail, see our <a href="https://docs.recurly.com/recurly-subscriptions/docs/boleto-ideal-sofort-and-cashapt" target="_blank">Alternative payment methods documentation</a>.
+
+**Third Party Checkout | Adyen Components:&#x20;**&#x50;ayPay requires consumer authentication regardless of checkout method, so customers will need to authenticate. Third Party Checkout utlilizes the redirect flow instead of action result methods. You will handle the action token ID returned in the initial response, and interact with Recurly.js using the 3DS redirect flow.
+
+For more detail, see our <a href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure" target="_blank">Redirect documentation</a>.
 
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Adyen returns the result of that interaction to Recurly through webhooks, including the final transaction status and the token for renewals once approved. Minimum required webhooks: <strong>Standard</strong> and <strong>Token Lifecycle</strong> events.</div>
