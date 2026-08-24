@@ -369,7 +369,7 @@ When the Wallet feature is enabled, you can designate payment methods as primary
         <li><a href="https://prototypes.recurly.net/analytics/recovered-revenue/" target="_blank">Recovered revenue</a></li>
         <li><a href="https://prototypes.recurly.net/analytics/payment-processing/" target="_blank">Payment processing</a></li>
         <li><a href="https://prototypes.recurly.net/analytics/retry-recovery/" target="_blank">Retry & recovery</a></li>
-        <li>Retry comparisons <em>(new analytics embed — link pending)</em></li>
+        <li>Retry comparisons <em>(new analytics embed)</em></li>
         <li><a href="https://prototypes.recurly.net/payments/invoices/" target="_blank">Invoices</a></li>
         <li><a href="https://prototypes.recurly.net/payments/transactions/" target="_blank">Transactions</a></li>
       </ul>
