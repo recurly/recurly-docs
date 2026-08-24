@@ -16,7 +16,8 @@ metadata:
     <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
     <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
     <a class="rp-toc-pill" href="#setup"><span class="rp-toc-num">4</span>Setup</a>
-    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">5</span>FAQs</a>
+    <a class="rp-toc-pill" href="#roles-permissions"><span class="rp-toc-num">5</span>Roles & permissions</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">6</span>FAQs</a>
   </div>
 </div>
 
@@ -326,6 +327,88 @@ Use the `invoice_id` returned in the original API response. Once marked, Recurly
 
 When the Wallet feature is enabled, you can designate payment methods as primary or backup in your API request. You can submit multiple payment methods, but only one can be marked as primary.
 
+# Roles & permissions
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> This section describes Recurly Recover's current (stop-gap) roles and permissions model. A full custom-role system is planned; until then, access is managed through the four permission categories below.</div>
+</div>
+
+## How admin access is provisioned
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Your site is provisioned on a Recover plan</h4><p>Recurly configures your merchant account on either the <strong>Recurly Recover Annual Monthly</strong> or <strong>Recurly Recover Monthly</strong> plan and provisions your RSM site with an initial Admin user.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>The Admin user logs in</h4><p>Because the account is subscribed to a Recover plan, this user sees the Recover/Nova UI and navigation. Until roles are created, they see only the <strong>Admin</strong> navigation link and page.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>The Admin creates roles</h4><p>Using <strong>Admin → Roles</strong>, the Admin user builds one or more roles from the permission categories in the table below.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>The Admin invites users and assigns roles</h4><p>Each invited user is assigned one of the roles created in the previous step.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Users get access based on their role</h4><p>Newly added users can access only the pages granted by the permission categories on their assigned role. Every user — regardless of role — has access to the Recover dashboard.</p></div>
+  </div>
+</div>
+
+## Permission categories
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Category</td><td>Grants access to</td></tr>
+  <tr>
+    <td>Analytics & Insights</td>
+    <td>
+      <ul class="rp-list">
+        <li><a href="https://prototypes.recurly.net/analytics/recovered-revenue/" target="_blank">Recovered revenue</a></li>
+        <li><a href="https://prototypes.recurly.net/analytics/payment-processing/" target="_blank">Payment processing</a></li>
+        <li><a href="https://prototypes.recurly.net/analytics/retry-recovery/" target="_blank">Retry & recovery</a></li>
+        <li>Retry comparisons <em>(new analytics embed — link pending)</em></li>
+        <li><a href="https://prototypes.recurly.net/payments/invoices/" target="_blank">Invoices</a></li>
+        <li><a href="https://prototypes.recurly.net/payments/transactions/" target="_blank">Transactions</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Configuration</td>
+    <td>
+      <ul class="rp-list">
+        <li><a href="https://prototypes.recurly.net/payments/gateways/" target="_blank">Payment gateway settings</a> — view and edit</li>
+        <li><a href="https://prototypes.recurly.net/retention/retry-windows/" target="_blank">Retention (retry window) settings</a> — view and edit</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Integrations</td>
+    <td>
+      <ul class="rp-list">
+        <li><a href="https://prototypes.recurly.net/developer/api-credentials/" target="_blank">API credentials</a> — view and edit</li>
+        <li><a href="https://prototypes.recurly.net/developer/webhooks/" target="_blank">Webhooks</a> — view and edit</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Admin</td>
+    <td>
+      <ul class="rp-list">
+        <li>Users</li>
+        <li>Roles</li>
+        <li>Hosted account management page</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> A role can combine any number of these categories. For example, a role for a finance teammate might combine Analytics & Insights with Configuration, while a role for a developer might combine Integrations with Analytics & Insights.</div>
+</div>
+
 # FAQs
 
 <Accordion title="Do I need Recurly Subscriptions to use Recurly Recover?" icon="fa-solid fa-link-slash">
@@ -395,3 +478,11 @@ When the Wallet feature is enabled, you can designate payment methods as primary
     <li>A declining Stripe test card triggers <code>new_dunning_event</code> and <code>failed_payment</code>. If tested with a shortened retry window, <code>closed_invoice</code> also fires once the schedule reaches its final milestone and the invoice automatically updates to a failed state.</li>
   </ul>
 </Accordion>
+
+<Accordion title="Who can create and assign roles in Recurly Recover?" icon="fa-solid fa-user-shield">
+  Only a user with the Admin permission category can create roles and invite or assign users. Every user granted access — regardless of role — automatically has access to the Recover dashboard.
+</Accordion>
+
+<br />
+
+<br />
