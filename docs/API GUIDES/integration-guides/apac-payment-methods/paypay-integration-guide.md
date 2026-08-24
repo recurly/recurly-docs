@@ -30,7 +30,7 @@ metadata:
 
 <ul class="rp-list">
   <li>An Auth-and-Capture acquirer setup only supports one-time transactions — recurring payments require a SALE acquirer setup</li>
-  <li>Your Adyen account must send the correct webhooks to your Recurly sandbox and/or production site so that tokens and status updates sync correctly. Without this, testing and production behavior will be significantly degraded.</li>
+  <li>Your Adyen account must <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#step-2--configure-adyen-webhooks">send the correct webhooks</code> to your Recurly sandbox and/or production site so that tokens and status updates sync correctly. Without this, testing and production behavior will be significantly degraded.</li>
 </ul>
 
 # Definition
