@@ -54,14 +54,30 @@ Send a request to the `create_purchase` method on Recurly's API, including:
   <li>A Recurly.js token</li>
 </ul>
 
-```text
-[TODO: Add a sample create_purchase request body]
+```json
+{
+  "currency": "JPY",
+  "account": {
+    "code": "JohnSmith",
+    "email":"exampleemail+paypay@example.com",
+    "billing_info": {
+      "token_id":"FtwEuwdbulS0YsDAVgNARA"
+      //"three_d_secure_action_result_token_id":"Or8w_yF27FjtBKHHLUkPFg"
+      }
+    },
+  "subscriptions": [
+  {
+    "plan_code": "plan-code"
+  }
+  ],
+  "gateway_code":"gateway-code"
+}
 ```
 
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">2</div>
-    <div><h4>Obtain the action result value from the response</h4><p>The response includes a redirect blob in <code>transactions.gateway_response_values.action_result</code>.</p></div>
+    <div><h4>Obtain the action result value from the response</h4><p>The response includes a redirect blob in <code>transactions.gateway_response_values.action_result</code>. You will only provide <code>three_d_secure_action_result_token_id</code> on follow-up stepsif you are using Third Party Checkout, which does not use <code>action_result</code> responses.</p></div>
   </div>
 </div>
 
