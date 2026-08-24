@@ -119,9 +119,6 @@ For more detail, see our <a href="https://docs.recurly.com/recurly-subscriptions
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Adyen returns the result of that interaction to Recurly through webhooks, including the final transaction status and the token for renewals once approved. Minimum required webhooks: <strong>Standard</strong> and <strong>Token Lifecycle</strong> events.</div>
 </div>
 
-***
+<br />
 
-📋 TODO before publishing:
-
-- [ ] Add the "Adyen configuration with Recurly" link referenced in Limitations
-- [ ] Add a sample `create_purchase` request body in Step 1 (source left this code block empty)
+<br />
