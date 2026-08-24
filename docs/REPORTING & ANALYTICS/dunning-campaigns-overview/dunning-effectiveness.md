@@ -1,8 +1,8 @@
 ---
 title: Dunning campaigns dashboards
 excerpt: >-
-  Boost your bottom line with Recurly's dunning campaigns effectiveness
-  dashboards.
+  Learn how to use Recurly's Dunning Effectiveness dashboards to monitor,
+  compare, and optimize your dunning campaigns' revenue recovery performance.
 deprecated: false
 hidden: false
 metadata:
@@ -12,209 +12,379 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Dunning management is key to Recurly's revenue recovery efforts. The Dunning Effectiveness dashboard gives you insight into your dunning recovery rate, the revenue you've recovered, and the number of subscriptions saved from overdue invoices. Use it to monitor, analyze, and optimize your dunning campaigns and improve revenue recovery over time.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#dunning-effectiveness-charts"><span class="rp-toc-num">2</span>Dunning effectiveness charts</a>
+    <a class="rp-toc-pill" href="#using-the-dunning-effectiveness-dashboard"><span class="rp-toc-num">3</span>Using the dunning effectiveness dashboard</a>
+    <a class="rp-toc-pill" href="#getting-the-most-from-dunning-effectiveness"><span class="rp-toc-num">4</span>Getting the most from dunning effectiveness</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+<ul class="rp-list">
+  <li>You must have the Analytics user role permission.</li>
+</ul>
 
 # Definition
 
-Dunning management is key to Recurly’s revenue recovery efforts. Through the Dunning Effectiveness dashboard, you can gain insights into the dunning recovery rate, amount of revenue recovered, and the number of subscriptions saved from overdue invoices. The Dunning Effectiveness dashboard allows you to monitor, analyze, and optimize your dunning efforts, leading to improved revenue recovery.
+<div class="rp-definition">Dunning management is key to Recurly's revenue recovery efforts. Through the Dunning Effectiveness dashboard, you can gain insights into your dunning recovery rate, the amount of revenue recovered, and the number of subscriptions saved from overdue invoices.</div>
 
-> **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>It's important to understand the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard counts the individual subscriber, not the number of subscriptions they hold.</div>
+</div>
 
 # Dunning effectiveness charts
 
-The Dunning Effectiveness feature in Recurly allows for a comprehensive analysis of your dunning campaigns with eight different view configurations divided into three significant sections. **The information available depends on the dunning campaigns created and active in the system.**
+Dunning Effectiveness offers eight view configurations grouped into three sections, letting you analyze your dunning campaigns from every angle. **The information available depends on the dunning campaigns created and active in your system.**
 
 ## All dunning campaigns
 
 ### By invoices
 
-This section provides a comprehensive view of your invoice recovery performance across all dunning campaigns.
+This section gives you a comprehensive view of invoice recovery performance across all your dunning campaigns.
 
-**Charts and information available:**
+#### KPIs
 
-1. **KPIs:** These indicators provide a snapshot of your total past due invoices and recovery rate, allowing you to track changes over time and make informed decisions about your dunning strategies.\
-   ![](https://files.readme.io/23d072b-image.png)
-2. **Invoice recovery rate:** This chart shows the recovery rate of invoices that went past due during the selected date range. It's a valuable tool for gauging the success of your overall recovery efforts.\
-   ![](https://files.readme.io/0a8e038-image.png)
+These indicators give you a snapshot of your total past due invoices and recovery rate, so you can track changes over time and make informed decisions about your dunning strategies.
 
-### Recovery Reasons
 
-In both the **Invoice by Recovery Reason** and **Dunning Life Cycle by Day** graphs, recoveries are grouped into four primary categories:
+<Image src="https://files.readme.io/23d072b-image.png" align="center" width="75%" border={true} />
 
-1. **Successful retries**\
-   Invoices that were collected after one of Recurly’s [static or intelligent retry](https://docs.recurly.com/docs/retry-logic) attempts.
-2. **Customer updates**\
-   Invoices recovered because the customer updated their own payment information (often in response to a dunning email prompt).
-3. **Manual**\
-   Invoices recovered due to direct action by your team—such as manually updating the payment method on file or marking an invoice as paid.
-4. **Other**\
-   Invoices that do not cleanly fit into the above categories. Common examples include:
 
-* **Expiration Management**\
-  When a card’s expiration date is automatically updated, causing the invoice to be recovered without a direct customer or manual update.
-* **Account Updater (post-dunning)**\
-  If an invoice has already entered dunning, any successful collection attempt—whether prompted by Account Updater or otherwise—is reported as a “retry” in analytics. As a result, **post-dunning Account Updater recoveries** may appear in your dashboards under **Other** (or “retry”) rather than under an explicit “account\_updater” label.
+#### Invoice recovery rate
 
-1. **Invoice recovery by reason (Recovered Invoices by Recovery Reason):** This detailed breakdown helps you understand the reasons for invoice recovery, providing valuable insights into where your strategies are most effective.\
-   ![](https://files.readme.io/baaaf1c-image.png)
-2. **Dunning lifecycle by day (Percent Recovered by Days in Dunning):** This chart tracks the recovery of revenue over time, helping you understand the efficiency of your dunning strategies throughout different stages of the dunning lifecycle.\
-   ![](https://files.readme.io/501dc3a-image.png)
+This chart shows the recovery rate of invoices that went past due during the selected date range — a valuable gauge of your overall recovery efforts.
+
+
+<Image src="https://files.readme.io/0a8e038-image.png" align="center" width="75%" border={true} />
+
+
+#### Recovery reasons
+
+In both the Invoice by Recovery Reason and Dunning Life Cycle by Day charts, recoveries are grouped into four categories:
+
+<ul class="rp-list">
+  <li><strong>Successful retries</strong> — Invoices collected after one of Recurly's <a href="https://docs.recurly.com/docs/retry-logic" target="_blank">static or intelligent retry</a> attempts.</li>
+  <li><strong>Customer updates</strong> — Invoices recovered because the customer updated their own payment information, often in response to a dunning email.</li>
+  <li><strong>Manual</strong> — Invoices recovered through direct action by your team, such as manually updating the payment method on file or marking an invoice as paid.</li>
+  <li><strong>Other</strong> — Invoices that don't cleanly fit into the categories above. Common examples include:
+    <ul>
+      <li><strong>Expiration management</strong> — When a card's expiration date is automatically updated, causing the invoice to be recovered without a direct customer or manual update.</li>
+      <li><strong>Account Updater (post-dunning)</strong> — If an invoice has already entered dunning, any successful collection attempt — whether prompted by Account Updater or otherwise — is reported as a retry in analytics. As a result, post-dunning Account Updater recoveries may appear in your dashboards under Other (or "retry") rather than under an explicit "account_updater" label.</li>
+    </ul>
+  </li>
+</ul>
+
+#### Invoice recovery by reason
+
+This breakdown shows the reasons for invoice recovery, giving you insight into where your strategies are most effective.
+
+
+<Image src="https://files.readme.io/baaaf1c-image.png" align="center" width="75%" border={true} />
+
+
+#### Dunning lifecycle by day
+
+This chart tracks the recovery of revenue over time, helping you understand the efficiency of your dunning strategies across the dunning lifecycle.
+
+
+<Image src="https://files.readme.io/501dc3a-image.png" align="center" width="75%" border={true} />
+
 
 ### By revenue
 
 This view focuses on the financial impact of your dunning campaigns.
 
-**Charts and information available:**
+#### KPIs
 
-1. **KPIs:** Key performance indicators here focus on past due and recovered revenue. By monitoring these figures, you can assess the financial effectiveness of your dunning efforts.\
-   ![](https://files.readme.io/e6eb23b-image.png)
-2. **Dunning recovered revenue by recovery reason:** This chart provides a breakdown of recovered revenue by reason, allowing you to identify which areas of your recovery strategies are most financially successful.\
-   ![](https://files.readme.io/5c49022-image.png)
-3. **Dunning lifecycle by day (Percent Recovered by Days in Dunning):** This chart tracks the recovery of revenue over time, helping you understand the efficiency of your dunning strategies throughout different stages of the dunning lifecycle.\
-   ![](https://files.readme.io/1c795c5-image.png)
+These indicators focus on past due and recovered revenue, so you can assess the financial effectiveness of your dunning efforts.
+
+
+<Image src="https://files.readme.io/e6eb23b-image.png" align="center" width="75%" border={true} />
+
+
+#### Dunning recovered revenue by recovery reason
+
+This chart breaks down recovered revenue by reason, helping you identify which parts of your recovery strategy are most financially successful.
+
+
+<Image src="https://files.readme.io/5c49022-image.png" align="center" width="75%" border={true} />
+
+
+#### Dunning lifecycle by day
+
+This chart tracks the recovery of revenue over time, helping you understand the efficiency of your dunning strategies across the dunning lifecycle.
+
+
+<Image src="https://files.readme.io/1c795c5-image.png" align="center" width="75%" border={true} />
+
 
 ### By subscriptions
 
-The focus here is on how dunning campaigns affect your subscription numbers.
+This view focuses on how dunning campaigns affect your subscription numbers.
 
-**Charts and information available:**
+#### KPIs
 
-1. **KPIs:** The key performance indicators here revolve around subscriptions, including the number of subscriptions past due and saved. By monitoring these metrics, you can assess the effect of your dunning campaigns on your subscriber base.\
-   ![](https://files.readme.io/8df91db-image.png)
-2. **Subscriptions saved:** This chart presents the total number of subscriptions saved through your dunning efforts.\
-   ![](https://files.readme.io/7c75b32-image.png)
-3. **Subscriptions saved by recovery reason:** This breakdown provides insight into the reasons for subscription recovery, aiding in the refinement of your dunning strategies.\
-   ![](https://files.readme.io/93a92ff-image.png)
-4. **Dunning lifecycle by day (Percent Recovered by Days in Dunning):** This chart tracks the number of subscriptions recovered over the dunning cycle, giving you a sense of when most recoveries occur.\
-   ![](https://files.readme.io/23d05c3-image.png)
+These indicators revolve around subscriptions, including the number past due and saved, so you can assess the effect of your dunning campaigns on your subscriber base.
+
+
+<Image src="https://files.readme.io/8df91db-image.png" align="center" width="75%" border={true} />
+
+
+#### Subscriptions saved
+
+This chart shows the total number of subscriptions saved through your dunning efforts.
+
+
+<Image src="https://files.readme.io/7c75b32-image.png" align="center" width="75%" border={true} />
+
+
+#### Subscriptions saved by recovery reason
+
+This breakdown shows the reasons for subscription recovery, helping you refine your dunning strategies.
+
+
+<Image src="https://files.readme.io/93a92ff-image.png" align="center" width="75%" border={true} />
+
+
+#### Dunning lifecycle by day
+
+This chart tracks the number of subscriptions recovered over the dunning cycle, giving you a sense of when most recoveries occur.
+
+
+<Image src="https://files.readme.io/23d05c3-image.png" align="center" width="75%" border={true} />
+
 
 ## Individual dunning campaigns
 
 ### By invoices
 
-**Charts and information available:**
+#### Invoice recovery rate
 
-1. **Invoice recovery rate:** This chart tracks the recovery rate of invoices for a specific dunning campaign.\
-   ![](https://files.readme.io/d7dca90-image.png)
-2. **Invoice recovery by reason (Recovered Invoices by Recovery Reason):** This provides a breakdown of recovered invoices by reason for an individual campaign.\
-   ![](https://files.readme.io/6e2df47-image.png)
-3. **Dunning lifecycle by day (Percent Recovered by Recovery Reason):** This tracks the recovery of revenue over the dunning lifecycle for a specific campaign.\
-   ![](https://files.readme.io/75ef79e-image.png)
-4. **Dunning lifecycle by bucket (Dunning Bucket by Recovery Reason):** This table presents when during the dunning cycle subscriptions are most commonly saved for a specific campaign.\
-   ![](https://files.readme.io/bc8632f-Screen_Shot_2024-07-18_at_2.43.59_PM.png)
+This chart tracks the recovery rate of invoices for a specific dunning campaign.
+
+
+<Image src="https://files.readme.io/d7dca90-image.png" align="center" width="75%" border={true} />
+
+
+#### Invoice recovery by reason
+
+This breakdown shows recovered invoices by reason for an individual campaign.
+
+
+<Image src="https://files.readme.io/6e2df47-image.png" align="center" width="75%" border={true} />
+
+
+#### Dunning lifecycle by day
+
+This chart tracks the recovery of revenue by recovery reason over the dunning lifecycle for a specific campaign.
+
+
+<Image src="https://files.readme.io/75ef79e-image.png" align="center" width="75%" border={true} />
+
+
+#### Dunning lifecycle by bucket
+
+This table shows when during the dunning cycle subscriptions are most commonly saved for a specific campaign.
+
+
+<Image src="https://files.readme.io/bc8632f-Screen_Shot_2024-07-18_at_2.43.59_PM.png" align="center" width="75%" border={true} />
+
 
 ### By revenue
 
-**Charts and information available:**
+#### Dunning recovered revenue by recovery reason
 
-1. **Dunning recovered revenue by recovery reason:** This chart breaks down recovered revenue by reason for an individual campaign.\
-   ![](https://files.readme.io/28d44c4-image.png)
+This chart breaks down recovered revenue by reason for an individual campaign.
 
-2. **Dunning lifecycle by day (Percent Recovered by Days in Dunning):** This tracks the recovery of revenue over the dunning lifecycle for a specific campaign.
 
-3. **Dunning lifecycle by bucket (Dunning Bucket by Recovery Reason):** This chart presents when during the dunning cycle subscriptions are most commonly saved for a specific campaign.\
-   ![](https://files.readme.io/00d9a01-image.png)
+<Image src="https://files.readme.io/28d44c4-image.png" align="center" width="75%" border={true} />
 
-4. **Dunning lifecycle by day (Dunning Day by Recovery Reason):** This tracks the recovery of subscriptions over the dunning lifecycle for a specific campaign.\
-   ![](https://files.readme.io/910885a-image.png)
+
+#### Dunning lifecycle by day
+
+This chart tracks the recovery of revenue over the dunning lifecycle for a specific campaign.
+
+#### Dunning lifecycle by bucket
+
+This chart shows when during the dunning cycle subscriptions are most commonly saved for a specific campaign.
+
+
+<Image src="https://files.readme.io/00d9a01-image.png" align="center" width="75%" border={true} />
+
+
+#### Dunning lifecycle by day (by recovery reason)
+
+This chart tracks the recovery of subscriptions over the dunning lifecycle for a specific campaign.
+
+
+<Image src="https://files.readme.io/910885a-image.png" align="center" width="75%" border={true} />
+
 
 ### By subscriptions
 
-**Charts and information available:**
+#### Saved subscriptions
 
-1. **Saved subscriptions:** This chart shows the total number of subscriptions saved through a specific dunning campaign.\
-   ![](https://files.readme.io/bbc8735-image.png)
-2. **Subscriptions saved by recovery reason:** This breaks down saved subscriptions by reason for an individual campaign.\
-   ![](https://files.readme.io/f569a77-image.png)
-3. **Dunning lifecycle by bucket (Dunning Bucket by Recovery Reason):** This chart presents when during the dunning cycle subscriptions are most commonly saved for a specific campaign.\
-   ![](https://files.readme.io/8e88275-image.png)
-4. **Dunning lifecycle by day (Dunning Day by Recovery Reason):** This tracks the recovery of subscriptions over the dunning lifecycle for a specific campaign.\
-   ![](https://files.readme.io/4f14549-image.png)
+This chart shows the total number of subscriptions saved through a specific dunning campaign.
+
+
+<Image src="https://files.readme.io/bbc8735-image.png" align="center" width="75%" border={true} />
+
+
+#### Subscriptions saved by recovery reason
+
+This breaks down saved subscriptions by reason for an individual campaign.
+
+
+<Image src="https://files.readme.io/f569a77-image.png" align="center" width="75%" border={true} />
+
+
+#### Dunning lifecycle by bucket
+
+This chart shows when during the dunning cycle subscriptions are most commonly saved for a specific campaign.
+
+
+<Image src="https://files.readme.io/8e88275-image.png" align="center" width="75%" border={true} />
+
+
+#### Dunning lifecycle by day (by recovery reason)
+
+This chart tracks the recovery of subscriptions over the dunning lifecycle for a specific campaign.
+
+
+<Image src="https://files.readme.io/4f14549-image.png" align="center" width="75%" border={true} />
+
 
 ## Compare dunning
 
-This section allows you to compare the effectiveness of different versions of a campaign or different campaigns altogether.
+This section lets you compare the effectiveness of different versions of a campaign, or different campaigns altogether.
 
 ### By versions
 
-**Charts and information available:**
+#### Recovery rate
 
-1. **Recovery rate:** This comparison between two versions provides information about their respective recovery rates and durations, alongside a month-by-month breakdown for each.
+This comparison between two versions shows their respective recovery rates and durations, alongside a month-by-month breakdown for each.
 
-<Image align="center" width="75% " src="https://files.readme.io/90adef7-image.png" />
 
-2. **Dunning lifecycle by day (Dunning Version A Buckets by Recovery Reason & Dunning Version B Buckets by Recovery Reason):** These charts allow you to compare when recoveries typically occur in the lifecycle of each version.
+<Image src="https://files.readme.io/90adef7-image.png" align="center" width="75%" border={true} />
 
-<Image align="center" width="75% " src="https://files.readme.io/ce003b8-image.png" />
+
+#### Dunning lifecycle by day
+
+These charts let you compare when recoveries typically occur in the lifecycle of each version.
+
+
+<Image src="https://files.readme.io/ce003b8-image.png" align="center" width="75%" border={true} />
+
 
 ### By campaigns
 
-**Charts and information available:**
+#### Recovery rate
 
-1. **Recovery rate:** This comparison between two campaigns provides information about their respective recovery rates and durations, alongside a month-by-month breakdown for each.
+This comparison between two campaigns shows their respective recovery rates and durations, alongside a month-by-month breakdown for each.
 
-<Image align="center" width="75% " src="https://files.readme.io/2229926-image.png" />
 
-2. **Dunning lifecycle by day (Dunning Campaign A Buckets by Recovery Reason & Dunning Campaign B Buckets by Recovery Reason):** These charts allow you to compare when recoveries typically occur in the lifecycle of each campaign.
+<Image src="https://files.readme.io/2229926-image.png" align="center" width="75%" border={true} />
 
-<Image align="center" width="75% " src="https://files.readme.io/7cb65ea-image.png" />
 
-# Leverage dunning effectiveness functionalities
+#### Dunning lifecycle by day
 
-1. **Navigating to the Dunning Effectiveness dashboards:** Log into your Recurly account. From the left navigation pane, click on "Analytics", then select "Dunning Effectiveness".
-2. **Interacting with the dashboard actions:** The actions are located in the top right corner of the dashboard. Use these to refresh your data (the "Reload" action), hide filters ("Hide Filters" action), clear cache and refresh the data, download the dashboard, reset filters to default settings, or open folders from the dashboard. These actions ensure you're always working with the most current and relevant data.
-3. **Applying filters:** Use the filters in the top left corner to refine the displayed data. You can adjust the time frame for displaying subscriber data (daily, weekly, monthly), choose a metric type, select a specific date range, or choose the currency type that displays on the dashboard. These filters allow you to dive deeper and find the exact data you need. **In the “Compare Dunning” screens, you can configure additional filters to select which campaigns or versions the system is loading for the comparisons.**
-4. **Enabling multi-currency support:** If you're using Recurly Professional, or Elite plans, you can run transactions in more than one currency. To enable this, specify which currencies you want to accept for your account. Then, define the pricing for your subscription plans and coupons using the new currency. Now, you can choose one of the enabled currencies for the dashboard.
-5. **Viewing the total billings across all currencies:** If your site supports more than one currency, you'll see a default view that shows the total payments, refunds, and net billings across all currencies, converted to your primary currency.Refreshing your data: The "Clear Cache" option allows you to refresh your data. You can do this in three ways: at the bottom of the dashboard, within each widget, or from the top right corner. This ensures your dashboard always reflects the most current data.
-6. **Interacting with charts and legends:** The dashboard presents your data in various formats, like bar, line, and pie charts. Color-coded legends help you understand the values. Click on a point in a chart to display the corresponding timeframe and value. You can also hide and restore data on the widget by clicking on the colors in the legend. This interactive feature enables you to understand your data at a glance.
+These charts let you compare when recoveries typically occur in the lifecycle of each campaign.
 
-# Getting dunning effectiveness full potential
 
-Leveraging the full potential of the "Dunning Effectiveness" section involves not only understanding its features but also how to use these features to improve your dunning campaigns. Below are some steps to guide you:
+<Image src="https://files.readme.io/7cb65ea-image.png" align="center" width="75%" border={true} />
 
-1. **Understand your dunning campaigns**
 
-Start by familiarizing yourself with all your active dunning campaigns. The "All Dunning Campaigns" section provides an overview of these campaigns. Focus on the following data:
+# Using the dunning effectiveness dashboard
 
-* Key Performance Indicators (KPIs)
-* Recovery rates (for invoices, revenue, and subscriptions)
-* Recovery reasons
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Navigate to the dashboard</h4><p>Log in to your Recurly account. From the left navigation pane, select Analytics, then Dunning Effectiveness.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Interact with the dashboard actions</h4><p>The actions are in the top right corner of the dashboard. Use them to refresh your data, hide filters, clear the cache, download the dashboard, reset filters to their default settings, or open folders from the dashboard. These actions keep you working with the most current, relevant data.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Apply filters</h4><p>Use the filters in the top left corner to refine the displayed data. Adjust the time frame for subscriber data (daily, weekly, monthly), choose a metric type, select a date range, or choose the currency displayed on the dashboard. In the Compare Dunning screens, you can also configure additional filters to select which campaigns or versions to load for comparison.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Enable multi-currency support</h4><p>If you're on a Recurly Professional or Elite plan, you can run transactions in more than one currency. Specify which currencies to accept for your account, define pricing for your plans and coupons in the new currency, then choose one of the enabled currencies for the dashboard.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>View total billings across all currencies</h4><p>If your site supports more than one currency, the default view shows total payments, refunds, and net billings across all currencies, converted to your primary currency.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div><h4>Refresh your data</h4><p>Use Clear Cache to refresh your data — at the bottom of the dashboard, within each widget, or from the top right corner — so your dashboard always reflects the most current data.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">7</div>
+    <div><h4>Interact with charts and legends</h4><p>The dashboard presents data as bar, line, and pie charts, with color-coded legends. Select a point on a chart to see the corresponding timeframe and value, or select a color in the legend to hide or restore that data on the widget.</p></div>
+  </div>
+</div>
 
-Identify any trends or patterns, such as common recovery reasons or periods when recovery rates tend to spike or drop.
+# Getting the most from dunning effectiveness
 
-2. **Deep dive into individual campaigns**
+Getting the most from the Dunning Effectiveness section means understanding not just its features, but how to use them to improve your dunning campaigns.
 
-Use the "Individual Dunning Campaigns" section to get detailed insights on specific campaigns. You can compare different campaigns and versions of campaigns to identify what's working and what's not.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Understand your dunning campaigns</h4><p>Start by familiarizing yourself with all your active dunning campaigns. All dunning campaigns gives you an overview of these campaigns — focus on the data below and look for trends, such as common recovery reasons or periods when recovery rates spike or drop.</p></div>
+  </div>
+</div>
 
-* For invoice data, check the "Invoice recovery rate" and the "Invoice Recovery by Reason".
-* For revenue data, check the "Dunning Recovered Revenue by Recovery Reason" and the "Dunning Lifecycle by Day".
-* For subscriptions, check the "Saved Subscriptions", "Subscriptions Saved by Recovery Reason", and the "Dunning Lifecycle by Bucket".
+<ul class="rp-list">
+  <li>Key performance indicators (KPIs)</li>
+  <li>Recovery rates (for invoices, revenue, and subscriptions)</li>
+  <li>Recovery reasons</li>
+</ul>
 
-Pay attention to which strategies lead to the highest recovery rates. Also, watch for strategies that don't seem to be working, as indicated by low recovery rates or high churn rates.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Deep dive into individual campaigns</h4><p>Use Individual dunning campaigns to get detailed insights on specific campaigns. Compare different campaigns and versions of campaigns to identify what's working and what isn't.</p></div>
+  </div>
+</div>
 
-3. **Compare Dunning Campaigns and Versions**
+<ul class="rp-list">
+  <li>For invoice data, check invoice recovery rate and invoice recovery by reason.</li>
+  <li>For revenue data, check dunning recovered revenue by recovery reason and dunning lifecycle by day.</li>
+  <li>For subscriptions, check saved subscriptions, subscriptions saved by recovery reason, and dunning lifecycle by bucket.</li>
+</ul>
 
-This step helps identify best practices and areas for improvement. Use the "Compare Dunning'' section to evaluate the effectiveness of different campaigns or versions of a campaign.
+Pay attention to which strategies lead to the highest recovery rates, and watch for strategies that aren't working — indicated by low recovery rates or high churn rates.
 
-* In comparing versions, focus on the "Recovery rate" and "Dunning Lifecycle by Day".
-* In comparing campaigns, look at similar metrics but across different campaigns.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Compare dunning campaigns and versions</h4><p>Use Compare dunning to evaluate the effectiveness of different campaigns or versions of a campaign, and identify best practices and areas for improvement.</p></div>
+  </div>
+</div>
 
-Compare the performance of each campaign/version in terms of recovery rate and when during the dunning lifecycle recovery happens.
+<ul class="rp-list">
+  <li>When comparing versions, focus on recovery rate and dunning lifecycle by day.</li>
+  <li>When comparing campaigns, look at the same metrics across different campaigns.</li>
+</ul>
 
-4. **Apply insights to improve dunning campaigns**
+Compare the performance of each campaign or version by recovery rate and by when in the dunning lifecycle recovery happens.
 
-Use the insights gathered from the above steps to make informed decisions about how to modify your dunning campaigns. This could mean changing the timing, frequency, or content of your dunning emails, or it could mean altering how you segment and target customers within your dunning campaigns.
-
-5. **Continually monitor and adjust**
-
-The Dunning Effectiveness feature is not a set-it-and-forget-it tool. To get the most out of it, you need to continually monitor your campaign performance and adjust your strategies as needed. Pay close attention to any changes in your recovery rates or in the reasons for recovery, as these could signal that further changes to your dunning campaigns are needed.
-
-By following these steps, you can ensure that you're using the Dunning Effectiveness feature to its fullest potential, and in turn, making your dunning campaigns as effective as possible.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Apply insights to improve your dunning campaigns</h4><p>Use the insights from the steps above to make informed decisions about how to modify your dunning campaigns — for example, changing the timing, frequency, or content of your dunning emails, or how you segment and target customers.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Continually monitor and adjust</h4><p>Dunning Effectiveness isn't a set-it-and-forget-it tool. Keep monitoring your campaign performance and adjusting your strategies. Watch for changes in recovery rates or recovery reasons — they can signal that your dunning campaigns need further changes.</p></div>
+  </div>
+</div>
