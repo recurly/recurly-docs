@@ -1,15 +1,15 @@
 ---
 title: PayPay
 excerpt: >-
-  Accept PayPay in Japan on Recurly via Adyen (Recurly.js) — supporting JPY
-  subscriptions 
+  Learn how PayPay wallet payments work with Recurly subscriptions through
+  Adyen, including setup requirements, limitations, and integration details.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
 <div class="rp-page">
-  <div class="rp-overview">PayPay wallet enables recurring subscription payments in Japan. Customers authorize their payment after redirecting to a modal. Recurly manages status updates for transactions and tokens via Webhooks from the gateway.</div>
+  <div class="rp-overview">PayPay wallet enables recurring subscription payments in Japan. Customers authorize their payment after redirecting to a modal, and Recurly manages transaction and token status updates through webhooks from the gateway.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
@@ -30,7 +30,7 @@ metadata:
 
 <div class="rp-definition">PayPay is a digital wallet in Japan, where approximately half of the population are registered users. Launched in 2018 as a joint venture between SoftBank and Yahoo Japan, the app lets users pay at restaurants, convenience stores, taxis, and online shops by scanning a QR code or showing a barcode. It has over 70 million users nationwide.
 
-With Recurly, users will be able to sign up for subscriptions using their PayPay wallet and authorizing via modal / pop-up and authenticating to their account directly. Recurly integrates PayPay through Adyen. See the <a href="#" target="_blank">PayPay integration guide</a> to get started.</div>
+With Recurly, customers can sign up for subscriptions using their PayPay wallet, authorizing and authenticating directly through a modal. Recurly integrates PayPay through Adyen. See the <a href="paypay-integration-guide" target="_blank">PayPay integration guide</a> to get started.</div>
 
 # Key details
 
@@ -44,43 +44,56 @@ With Recurly, users will be able to sign up for subscriptions using their PayPay
 
 ## PayPay limitations
 
-PayPay is designed specifically for subscriptions and does not support many standard Recurly features available with credit cards.
+PayPay is designed specifically for subscriptions and doesn't support many standard Recurly features available with credit cards.
 
 <ul class="rp-list">
-  <li>Creating subscriptions through the Recurly Admin UI is not supported — PayPay wallet requires a customer to be in session to confirm the subscription via authenticating to their account.</li>
-  <li>Recurly Checkout and Hosted Payment Pages are not currently supported.</li>
-  <li>100% coupons during signup are not supported — token creation is required. Use a free trial instead. Standard coupons are supported.</li>
-  <li>Depending on your acquirer setup, you may be limited to running only Purchase requests or only Auth and Capture requests. Please request SALE Acquirer setup as Recurly renewals are processed as "sale" transactions and do not support separate Auth and Capture. If you are only running one-time transactions and are not using renewals/subscriptions, you can use an AUTH acquirer setup and use the Auth and Capture behavior in Recurly APIs.</li>
+  <li>Creating subscriptions through the Recurly admin UI isn't supported — the PayPay wallet requires the customer to be in session to confirm the subscription by authenticating to their account.</li>
+  <li>Recurly Checkout and Hosted Payment Pages aren't currently supported.</li>
+  <li>100% coupons at signup aren't supported, since token creation is required — use a free trial instead. Standard coupons are supported.</li>
 </ul>
+
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong>Request a <code>SALE</code> acquirer setup. Recurly renewals process as <code>SALE</code> transactions and can't run on a separate Auth-and-Capture flow. An <code>AUTH</code> acquirer setup only supports one-time transactions — not renewals or subscriptions.</div>
+</div>
 
 ## Customer actions in the PayPay wallet
 
 Customers interact with their account during signup:
 
-- **Customer Wallet Authentication&#x20;**&#x20;— Required for every new subscription. Without the customer authenticating their wallet credentials, the token is not set up properly and the subscription will fail.
+- **Customer wallet authentication** — Required for every new subscription.
+
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong>If the customer doesn't authenticate their wallet credentials, the token isn't set up correctly and the subscription fails.</div>
+</div>
 
 ## Required fields
 
 Always send the following with PayPay transactions:
 
-- Currency - JPY
-- Locale (Japanese if necessary, else, consumer driven)
-- Customer Name and Billing Address Information as usual
+- **Currency** — JPY
+- **Locale** — Japanese, unless the consumer's device locale dictates otherwise
+- **Customer name and billing address** — as with any standard transaction
 
 # Integration guide
 
-PayPay is not supported on Recurly Checkout or Hosted Payment Pages. See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/e#/" target="_blank">PayPay Integration Guide</a> for full implementation details.
+PayPay isn't supported on Recurly Checkout or Hosted Payment Pages. See the <a href="paypay-integration-guide" target="_blank">PayPay integration guide</a> for full implementation details.
 
 ## Billing information updates
 
-PayPay doesn't support direct billing info updates in Recurly. Customers must update payment details in their PayPay app. If a customer's wallet account changes, they will need to resubscribe.
+PayPay doesn't support direct billing info updates in Recurly. Customers must update payment details in their PayPay app. If a customer's wallet account changes, they'll need to resubscribe.
 
 ## Testing
 
-You will need to acquire a test gateway account with a supported gateway and follow their instructions. You do not need to download the PayPay app to test with Adyen.
+Set up a test account with Adyen and follow their sandbox instructions. You don't need to download the PayPay app to test — Adyen provides a sandbox simulator for the redirect flow.
 
 # FAQs
 
 <Accordion title="Do you support Auth and Capture with PayPay?">
-  Yes, but only if your business use case does not include subscriptions. Recurly's subscription model does not offer automated Auth and Capture on renewals. Only merchants using SALE acquirer setups can use Subscriptions on Recurly when using PayPay.
+  Yes, but only if your business use case doesn't include subscriptions. Recurly's subscription model doesn't support automated Auth and Capture on renewals — only merchants using a <code>SALE</code> acquirer setup can run subscriptions with PayPay.
 </Accordion>
+
+***
+
+📋 TODO before publishing:
+
+- [ ] Add a "Checkout flow" section (redirect/authentication modal) — the TOC pill currently has no matching content
