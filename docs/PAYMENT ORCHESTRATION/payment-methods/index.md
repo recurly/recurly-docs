@@ -124,6 +124,9 @@ next:
   <Card title="Venmo" href="https://docs.recurly.com/recurly-subscriptions/docs/pay-with-venmo" target="_blank">
     US digital wallet payments in USD via Braintree.
   </Card>
+<Card title="PayPay" href="https://docs.recurly.com/recurly-subscriptions/docs/paypay" target="_blank">
+    PayPay wallet support in JPY via Adyen.
+  </Card>
 </Cards>
 
 </div>
@@ -153,5 +156,4 @@ next:
 | [SEPA Direct Debit](https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit)                             | Adyen, Stripe, GoCardless, Worldpay                                                                                                                   | EUR                                  | SEPA zone                                 |
 | [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay)                                         | Ebanx                                                                                                                                                 | INR                                  | India                                     |
 | [Venmo](https://docs.recurly.com/recurly-subscriptions/docs/pay-with-venmo)                                            | Braintree                                                                                                                                             | USD                                  | United States                             |
-
-<br />
+| PayPay                                                                                                                 | Adyen                                                                                                                                                 | JPY                                  | Japan                                     |

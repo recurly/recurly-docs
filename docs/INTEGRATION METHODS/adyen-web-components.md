@@ -71,12 +71,10 @@ Explore Adyen's live demo at <a href="https://www.mystoredemo.io/#/checkout" tar
 
 <table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Category</td><td>Payment methods</td></tr>
-  <tr><td>Cards and wallets</td><td>Cards, Apple Pay, Google Pay, Cash App Pay</td></tr>
+  <tr><td>Cards and wallets</td><td>Cards, Apple Pay, Google Pay, Cash App Pay, PayPay</td></tr>
   <tr><td>Direct debit</td><td>ACH, SEPA, BACS, iDEAL, Bancontact (Bancontact requires SEPA for renewals)</td></tr>
 </table>
 
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Not all Adyen payment methods are supported. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> for availability details.</div>
 </div>
-
-<br />
