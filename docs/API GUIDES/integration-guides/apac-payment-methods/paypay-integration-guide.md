@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to accept subscriptions payments with the PayPay wallet through
   Adyen, using Recurly's Purchase endpoint and Recurly.js.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
