@@ -4,7 +4,7 @@ excerpt: >-
   Learn how PayPay wallet payments work with Recurly subscriptions through
   Adyen, including setup requirements, limitations, and integration details.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
