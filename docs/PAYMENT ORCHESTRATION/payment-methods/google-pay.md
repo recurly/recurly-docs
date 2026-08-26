@@ -26,7 +26,7 @@ next:
 
 <ul class="rp-list">
   <li>A Google Merchant ID.</li>
-  <li>A supported Google Pay gateway: <a href="https://docs.recurly.com/docs/stripe" target="_blank">Stripe</a>, <a href="https://docs.recurly.com/docs/adyen" target="_blank">Adyen</a>, <a href="https://docs.recurly.com/docs/braintree" target="_blank">Braintree</a>, <a href="https://docs.recurly.com/docs/worldpaydlocal-latam-support" target="_blank">Worldpay</a>, <a href="https://docs.recurly.com/docs/cybersource#/" target="_blank">CyberSource</a>, Commerce Hub, or <a href="https://docs.recurly.com/docs/chase-paymentech-orbital" target="_blank">Chase Orbital</a>.</li>
+  <li>A supported Google Pay gateway: <a href="https://docs.recurly.com/docs/stripe" target="_blank">Stripe</a>, <a href="https://docs.recurly.com/docs/adyen" target="_blank">Adyen</a>, <a href="https://docs.recurly.com/docs/braintree" target="_blank">Braintree</a>, <a href="https://docs.recurly.com/docs/worldpaydlocal-latam-support" target="_blank">Worldpay</a>, <a href="https://docs.recurly.com/docs/cybersource#/" target="_blank">CyberSource</a>, Commerce Hub, Checkout.com, Nuvei, or <a href="https://docs.recurly.com/docs/chase-paymentech-orbital" target="_blank">Chase Orbital</a>.</li>
   <li><a href="https://docs.recurly.com/docs/payment-gateways#/zero-dollar-authorizations-zda" target="_blank">Zero Dollar Authorizations</a> are supported with this payment method.</li>
 </ul>
 
@@ -78,5 +78,3 @@ next:
 ## Best practices
 
 - **Return customers** — Use Recurly.js even when an existing account code or billing info is already on file. Recurly.js collects the device-related data (cryptograms) required for customer-initiated Google Pay transactions.
-
-<br />
