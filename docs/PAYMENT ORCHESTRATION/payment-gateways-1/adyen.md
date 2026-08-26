@@ -669,6 +669,7 @@ PayPay is a popular QR-code based wallet and payment method available primarily 
 - Activate Japanese Yen (JPY) currency
 - Integrate Adyen as your gateway
 - Use Recurly.js to add the PayPay payment option to your checkout page
+- View our [integration guide](https://docs.recurly.com/recurly-subscriptions/docs/paypay-integration-guide) and [Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/docs/boleto-ideal-sofort-and-cashapp) for details.
 
 # Gateway feature support
 
