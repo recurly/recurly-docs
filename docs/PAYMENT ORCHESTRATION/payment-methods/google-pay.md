@@ -2,8 +2,8 @@
 title: Google Pay™
 excerpt: >-
   Accept Google Pay™ payments on Recurly through Stripe, Adyen, Braintree,
-  Worldpay, CyberSource, Commerce Hub, or Chase Orbital — available in Google
-  Chrome on web and Android devices.
+  Nuvei, Checkout.com, Worldpay, CyberSource, Commerce Hub, or Chase Orbital —
+  available in Google Chrome on web and Android devices.
 deprecated: false
 hidden: false
 metadata:
