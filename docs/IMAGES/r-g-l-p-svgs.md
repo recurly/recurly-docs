@@ -21,7 +21,9 @@ metadata:
 <Image src="https://files.readme.io/eb473e08a5d8ea2855c5eea7a997615ac57b2104d6ea30c34fb2922d9187f11b-logo-docs-subscriptions.svg" align="center" />
 
 
-![](https://files.readme.io/972a95e0a4de5ce8a015aa67218d46e7ace6469eefede2d89b2eeacab59ee52a-logo_recurly-recover-docs_yellow.svg)
+
+<Image src="https://files.readme.io/972a95e0a4de5ce8a015aa67218d46e7ace6469eefede2d89b2eeacab59ee52a-logo_recurly-recover-docs_yellow.svg" align="center" />
+
 
 <br />
 
