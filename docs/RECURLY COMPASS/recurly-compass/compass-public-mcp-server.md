@@ -4,7 +4,7 @@ excerpt: >-
   Connect AI agents like Claude and Cursor to Recurly's knowledge and coding
   resources using the Recurly Compass public MCP server.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
