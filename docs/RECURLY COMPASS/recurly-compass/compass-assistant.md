@@ -31,7 +31,7 @@ metadata:
 ## ✦ Get answers
 
 
-<Image src="https://files.readme.io/f06509a783ea3a05f9755df8e32b6266ecc36d9ed0d54530834b908b65aa87df-image.png" align="left" width="40px" border={true} wrap={true} />
+<Image src="https://files.readme.io/39e9f8c77c227bd9df119c28ed5bc8c3e380734f000763ff36f7da7ba9350a5c-image.png" align="left" width="10%" wrap={true} />
 
 
 To open Compass Assistant, click the sparkles icon in the bottom right corner of your Recurly site. Start with an example prompt or ask your own question. Ask follow-up questions to refine results, and provide feedback with a thumbs up or thumbs down.
@@ -165,16 +165,18 @@ Compass Assistant detects when you need help from Recurly's Support team and can
 **New chat** — Select **New chat** to start a fresh conversation with its own context.
 
 
-<Image src="https://files.readme.io/1b1773bc0b56daf683f2c8e5b0500a1e2d6a44569db5e49cee1467d2de5c2d3e-image.png" align="center" width="75%" border={true} />
+<Image src="https://files.readme.io/9fc222b5492f9f11208ab7d4b735f7f8681e2ceb4dcfe6524acfb5e008c91117-image.png" align="center" width="75%" />
 
 
 **Chat history** — Open **Chat history** to view your previous conversations.
 
 
-<Image src="https://files.readme.io/a0ed09369bb2235544b76993590d3bbe2b5db8e03bcf7883deb74625a5edfa60-image.png" align="center" width="75%" border={true} />
+<Image src="https://files.readme.io/8ee919cd7104dbff6e22a10a3413690d1099c312986818b39fa88290fa5179e4-image.png" align="center" width="75%" />
 
 
-Select any conversation to reload it and continue the thread. Follow-up questions will use that conversation's context.
+The speech bubble icon indicates a previous conversation. Select any conversation to reload it and continue the thread. Follow-up questions will use that conversation's context.
+
+The s-shaped icon indicates a Compass Skill and to the right is the status of the skill \[Not Started, In Progress, Complete].&#x20;
 
 Results respect your existing permissions — you only see content you already have access to. Your chats are private and visible only to you.
 
@@ -203,5 +205,3 @@ Results respect your existing permissions — you only see content you already h
 <Accordion title="How do I opt out of Recurly Compass?">
   Contact [support@recurly.com](mailto:support@recurly.com) to opt out.
 </Accordion>
-
-<br />
