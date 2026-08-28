@@ -87,6 +87,4 @@ This snippet loads the Recurly Engage library on your site via your tag manager,
 
 This skill will create an additional email to be sent before the final Expired for Non-Payment email extending the total dunning length to 27 days. This will only make changes to the default dunning campaign for your site.
 
-# FAQs
-
 <br />
