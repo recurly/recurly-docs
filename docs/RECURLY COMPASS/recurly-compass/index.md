@@ -34,7 +34,6 @@ next:
 Access requirements vary by Compass feature:
 
 - **Insights** — Requires Analytics permissions
-- **Playbooks** — Requires Analytics AND Configuration permissions
 - **Search** — Available to all users
 
 </div>
@@ -73,31 +72,6 @@ Anomalies can reflect positive and anticipated outcomes — such as a spike from
 
 ***
 
-## ✦ Playbooks
-
-Guided and self-paced journeys designed to help you optimize your subscription strategy through clear, actionable steps.
-
-
-<Image src="https://files.readme.io/2c729f5cbcee7416d9d104838d3a9425591e962da4d9d34370d9425544940d2e-Screenshot_2025-03-24_at_12.35.54_PM.png" align="center" width="75%" border={true} />
-
-
-**Guided plays** walk through the setup of features that can improve your subscription business:
-
-- <i class="fa-solid fa-envelope" aria-hidden="true"></i> **Optimize default dunning length** — Adds an additional email before the final Expired for Non-Payment email, extending total dunning length to 27 days. This only modifies the default dunning campaign for your site.
-- <i class="fa-solid fa-credit-card" aria-hidden="true"></i> **Enable Account Updater** — Enables Visa and Discover card brands to receive automatic updates. Mastercard and American Express must be enabled separately from the Payments Settings page.
-
-**Self-paced plays** offer additional strategies to grow your business:
-
-- **Accept PayPal Payments** — To implement PayPal Complete, your location must be supported by PayPal. The email address used to connect to PayPal is pulled from the Billing Contact Email in Recurly.
-
-Playbooks help you reduce involuntary churn, drive subscriber acquisition, and combat voluntary churn.
-
-
-<Image src="https://files.readme.io/cf114bffbb5b94bc2b1ecb7bfa5b69e08adb0fce4e38304afd438b5cbf2566fa-Screenshot_2025-03-24_at_12.36.26_PM.png" align="center" width="75%" border={true} />
-
-
-***
-
 ## ✦ Global Search
 
 Find exactly what you need, fast. Global Search puts key Recurly resources at your fingertips from anywhere in the app — no navigation required.
@@ -116,24 +90,6 @@ Search covers Product Docs, Developer Docs, and the Customer Support Knowledge B
 
 ***
 
-## ✦ Explore Assistant
-
-Explore Assistant is a natural language interface for building charts and graphs directly from your site's data. Ask questions in plain English — for example, _"Show me failed invoices each month for the past 12 months"_ or _"Display transaction success rate by country"_ — and Explore generates the visualization for you.
-
-You can refine your queries in real time, narrowing from a broad view to a detailed breakdown by credit card type or country. A built-in chat history (accessible via the hamburger menu) lets you revisit previous queries. Use the Settings icon in the upper right to save or download your dashboard.
-
-
-<Image src="https://files.readme.io/261762306e23a0cc4fff870013de429e5b11a4f46080c6c3466660bc3d9b0781-Screenshot_2025-04-16_at_9.31.57_AM.png" align="center" width="75%" border={true} />
-
-
-<br />
-
-
-<Image src="https://files.readme.io/f3ca6d62501f8d16e178621918a217b4deb6b493c61a44b7e2058124223cc87c-Screenshot_2025-04-16_at_9.34.22_AM.png" align="center" width="75%" border={true} />
-
-
-***
-
 ## Legal
 
 Recurly AI Data Insights, Recurly Data Explorer, and Recurly Chat Assistant share non-merchant-identifiable information and additional inputs with third parties — including Google Vertex AI, Google's Gemini LLM, and Elastic Cloud. Insights and responses are generated using Google Vertex AI, Gemini LLM, and a retrieval-augmented generation (RAG) model, and may include inaccurate information. All data insights and responses must be carefully reviewed, verified for accuracy, and checked for applicability before acting on them.
@@ -144,7 +100,6 @@ Recurly AI Data Insights, Recurly Data Explorer, and Recurly Chat Assistant shar
   Access requirements vary by feature:
 
   - **Insights** — Requires Analytics permissions
-  - **Playbooks** — Requires Analytics AND Configuration permissions
   - **Search** — Available to all users
 </Accordion>
 
@@ -167,5 +122,3 @@ Recurly AI Data Insights, Recurly Data Explorer, and Recurly Chat Assistant shar
 <Accordion title="How do I opt out of Recurly Compass?">
   Contact [support@recurly.com](mailto:support@recurly.com) to opt out.
 </Accordion>
-
-<br />
