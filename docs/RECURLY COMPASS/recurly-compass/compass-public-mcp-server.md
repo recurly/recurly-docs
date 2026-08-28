@@ -1,69 +1,103 @@
 ---
 title: Compass public MCP server
 excerpt: >-
-  Connect AI agents like Claude and Cursor to Recurly's knowledge and coding
-  resources using the Recurly Compass public MCP server.
+  Connect Claude, Cursor, or any Model Context Protocol tool to Recurly's
+  documentation and API knowledge through the public Compass MCP server.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
-
-### Required plan
-
-This feature is currently limited to early access users. It will be available to all customers on any Recurly subscription plan upon general release.
+<div class="rp-page">
+  <div class="rp-overview">Recurly Compass MCP connects your AI development tools directly to Recurly's documentation and API knowledge. Point Claude, Cursor, or any Model Context Protocol (MCP)-compatible tool at a single server URL, authenticate once, and start asking questions or generating Recurly code — all without leaving the workflow you already use.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Early access only — available on all Recurly subscription plans at general release</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Early access users must have permissions within a site that has the MCP feature flag enabled
-
-***
+<ul class="rp-list">
+  <li>Early access users must have permissions within a site that has the MCP feature flag enabled</li>
+</ul>
 
 # Definition
 
-The Recurly Compass MCP Server is a public Model Context Protocol (MCP) server that lets AI agents — such as Claude Desktop or Cursor — interact directly with Recurly tools and APIs, without complex setup.
+<div class="rp-definition">Recurly Compass MCP is a public MCP server that lets AI agents — such as Claude Desktop or Cursor — work directly with Recurly's tools and APIs, without complex setup. It uses streamable HTTP connections to expose Recurly's agents to any compatible AI orchestration tool, so you can bring Recurly's documentation and API knowledge into the development workflow you already use.</div>
 
-It uses streamable HTTP connections to expose Recurly's agents to any compatible AI orchestration tool, making it straightforward to bring Recurly's documentation and API knowledge into your existing development workflow.
+# Key benefits
 
-**Server URL:** `https://mcp.recurly.com/mcp`
-
-> **Tip:** Log in to Recurly before connecting. The OAuth flow will authenticate automatically. Note that tokens expire after 30 days.
-
-***
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>No complex setup</strong>
+    <span>Connect with a single command or config snippet over streamable HTTP. Nothing to install, no server to run.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Recurly knowledge in your workflow</strong>
+    <span>Surface Recurly's documentation and API guidance directly inside Claude, Cursor, or any compatible AI tool.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Two agents, one server</strong>
+    <span>The Knowledge Agent answers documentation questions; the Coding Agent supplies code examples and parameter references. Configure either or both.</span>
+  </div>
+</div>
 
 # Key details
 
+Point any compatible AI tool at the Compass MCP server URL:
+
+```text
+https://mcp.recurly.com/mcp
+```
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>Log in to Recurly before connecting — the OAuth flow authenticates automatically. Tokens expire after 30 days, so you'll reconnect periodically.</div>
+</div>
+
 ## Available agents
 
-| Agent               | Description                                                                                                          | Access |
-| :------------------ | :------------------------------------------------------------------------------------------------------------------- | :----- |
-| **Knowledge Agent** | Searches Recurly's comprehensive documentation knowledge base to answer questions and surface relevant content       | Public |
-| **Coding Agent**    | Provides code examples, parameter references, library guidance, and explanations to help you get code running faster | Public |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Agent</td><td>Description</td><td>Access</td></tr>
+  <tr><td>Knowledge Agent</td><td>Searches Recurly's documentation knowledge base to answer questions and surface relevant content</td><td>Public</td></tr>
+  <tr><td>Coding Agent</td><td>Provides code examples, parameter references, library guidance, and explanations to help you get code running faster</td><td>Public</td></tr>
+</table>
 
-> **Note:** Both agents can be configured simultaneously. See the combined configuration example below.
-
-***
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>You can configure both agents at once. See the combined Cursor configuration below.</div>
+</div>
 
 ## Integrating with Claude
 
 Both agents use the same command in Claude:
 
-```
+```bash
 claude mcp add --transport http Recurly https://mcp.recurly.com/mcp
 ```
 
-***
-
 ## Integrating with Cursor
 
-To add the Recurly Compass MCP server to Cursor IDE:
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Cursor settings</h4><p>Navigate to Settings.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Add a new MCP server</h4><p>Select New MCP Server.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Add your configuration</h4><p>Add the relevant configuration below to your MCP configuration file.</p></div>
+  </div>
+</div>
 
-1. Navigate to **Settings**
-2. Click **New MCP Server**
-3. Add the relevant configuration to your configuration file
-
-**Knowledge Agent only:**
+**Knowledge Agent only**
 
 ```json
 {
@@ -78,7 +112,7 @@ To add the Recurly Compass MCP server to Cursor IDE:
 }
 ```
 
-**Coding Agent only:**
+**Coding Agent only**
 
 ```json
 {
@@ -93,7 +127,7 @@ To add the Recurly Compass MCP server to Cursor IDE:
 }
 ```
 
-**Both agents:**
+**Both agents**
 
 ```json
 {
