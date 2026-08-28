@@ -57,6 +57,12 @@ Compass Assistant helps you find what you need through conversational navigation
 
 ***
 
+## ✦ Full Screen Assistant
+
+From Recurly's left navigation menu, select Assistant to access the assistant in a full screen view.  Your chat history is available to pick up where you left off or start a new chat.
+
+![Full screen assistant ](https://files.readme.io/25db6cfbfe3ba71f9a572a437f9172e120c8198d21425ca6194dfed05c52c830-image.png)
+
 ## ✦ Get data with the Data Agent
 
 The Data Agent is an embedded AI agent within Compass Assistant that lets you generate async exports through natural language. Request an export, specify filters (version, time range, variations), and receive a download link — without navigating export forms or learning export schemas.
