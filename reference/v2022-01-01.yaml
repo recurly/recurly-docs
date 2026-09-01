@@ -9918,13 +9918,14 @@ components:
           title: Transactions
           description: >-
             Transactions from previous collection attempts for this payment
-            method.
+            method. Optional, unless this billing_info is the primary payment
+            method and the account's dunning campaign skips Recurly's own retry
+            attempts entirely -- in that case at least one entry is required.
           items:
             $ref: '#/components/schemas/RecoveryTransactionCreate'
       required:
         - gateway_code
         - payment_gateway_references
-        - transactions
     RecoveryAccountCreate:
       type: object
       properties:
