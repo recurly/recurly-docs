@@ -1,8 +1,9 @@
 ---
 title: Payment settings
 excerpt: >-
-  Configure Account Updater, CVV and AVS verification rules, and duplicate
-  billing information prevention from Recurly's Payment Settings page.
+  Configure Account Updater, CVV and AVS verification rules, Direct Debit
+  Retries, and duplicate billing information prevention from Recurly's Payment
+  Settings page.
 deprecated: false
 hidden: false
 metadata:
@@ -220,15 +221,13 @@ By default, the setting is configured to allow duplicates. When set to block dup
 # FAQs
 
 <Accordion title="What if my customer doesn't provide an address on the initial transaction?">
-Your gateway will still generate an AVS response code — and without address data, the result will likely be a rejection. To avoid a spike in declines when AVS checks are enabled, make sure your checkout flow captures billing information for all transactions.
+  Your gateway will still generate an AVS response code — and without address data, the result will likely be a rejection. To avoid a spike in declines when AVS checks are enabled, make sure your checkout flow captures billing information for all transactions.
 </Accordion>
 
 <Accordion title="Does Account Updater work on bank account details?">
-No. Account Updater is exclusively for credit card payment methods and is not needed if you don't accept credit cards.
+  No. Account Updater is exclusively for credit card payment methods and is not needed if you don't accept credit cards.
 </Accordion>
 
 <Accordion title="Will CVV be checked on recurring transactions?">
-No. Recurly doesn't store CVV codes in order to comply with PCI standards, so the CVV is never included in recurring transactions. Both AVS and CVV rules apply only to initial transactions — for example, a customer's first sign-up.
+  No. Recurly doesn't store CVV codes in order to comply with PCI standards, so the CVV is never included in recurring transactions. Both AVS and CVV rules apply only to initial transactions — for example, a customer's first sign-up.
 </Accordion>
-
-<br />
