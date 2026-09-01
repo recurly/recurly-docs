@@ -22,6 +22,7 @@ metadata:
   </div>
 
   <p style="font-size: 15px; margin: 0 0 32px 0; line-height: 1.5; color: #32312D;">
+
     Join our live Customer Success Office Hours, Recurly webinars, and Navigate events below. We're here to answer questions, work through strategy, and drive your success.
   </p>
 
@@ -143,7 +144,7 @@ metadata:
         </div>
         <div>
           <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap;">
-            <span style="background-color: #FF9900; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">NAVIGATE LUNCH & LEARN</span>
+            <span style="background-color: #FF9900; color: #FFFFFF; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 700;">NAVIGATE LUNCH + LEARN</span>
             <div style="font-size: 15px; font-weight: 700; color: #0D0D0B;">Get to know Recurly's agentic AI: Built for subscriptions</div>
           </div>
           <div style="font-size: 13px; color: #32312D; margin-top: 2px;">Discover how Recurly's agentic AI seamlessly automates and scales your subscription workflows.</div>
