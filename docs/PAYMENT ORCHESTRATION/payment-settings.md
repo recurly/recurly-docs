@@ -218,6 +218,19 @@ By default, the setting is configured to allow duplicates. When set to block dup
 <Image src="https://files.readme.io/d5fb633232ff5ac8ccc03566f54a76df4e1caa9caab01a8c96d5e7c1862da351-Screenshot_2026-04-15_at_12.42.35_PM.png" align="center" width="75%" border={true} />
 
 
+## Direct Debit Retry Enablement&#x20;
+
+When you have a supported gateway and payment method enabled, we will retry certain Direct Debit failures within compliant limitations. Retries for Direct Debit are only actionable on insufficient funds responses, and various regulatory bodies restrict retries to only 2 attempts after the initial decline.
+
+You can read more on our dedicated documentation for <Anchor target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/sepa-retries">Direct Debit retries</Anchor>.
+
+Direct Debit payment methods include:&#x20;
+
+- ACH&#x20;
+- SEPA
+- BACS
+- BECS
+
 # FAQs
 
 <Accordion title="What if my customer doesn't provide an address on the initial transaction?">
