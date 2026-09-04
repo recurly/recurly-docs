@@ -156,7 +156,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-skill[open] .rc-skill-chevron { transform: rotate(180deg); }
 .rc-skill-body { padding: 8px 22px 24px; border-top: 1px solid #F2F1EA; }
 .rm-Markdown.markdown-body .rc-guide img.rc-skill-image,
-.rc-guide img.rc-skill-image { display: block; width: 100% !important; max-width: 400px !important; height: auto !important; margin: 18px auto 10px !important; border-radius: 12px; border: 1px solid #D1CFC4; }
+.rc-guide img.rc-skill-image { display: block; width: 100% !important; max-width: 200px !important; height: auto !important; margin: 0 !important; }
+.rc-skill-intro { display: grid; grid-template-columns: 200px 1fr; gap: 24px; align-items: start; margin: 16px 0 0; }
+.rc-skill-intro-text p { font-size: .92rem; line-height: 1.65; color: #32312D; margin: 0 0 12px; }
+.rc-skill-intro-text p:last-child { margin-bottom: 0; }
+.rc-skill-intro-text strong { color: #32312D; }
 .rc-skill-body > p { font-size: .92rem; line-height: 1.65; color: #32312D; margin: 14px 0 0; }
 .rc-skill-body > p:first-child { margin-top: 16px; }
 .rc-skill-body strong { color: #32312D; }
@@ -202,6 +206,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
+  .rc-skill-intro { grid-template-columns: 1fr; gap: 14px; }
   .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 36px; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
@@ -267,7 +272,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Knowledge Agent Skills</h2>
+      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Skill</h2>
       <p>Open the skill below to watch the demo and try it in your own account.</p>
 
       <div class="rc-skill-list">
@@ -279,7 +284,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </summary>
           <div class="rc-skill-body">
 
-            <img src="https://files.readme.io/f678ac42b052a5392727fdf2702a31c41248885b8664a6c5fc21302f3fd443f3-Knowledge_Agent.png" alt="Documentation Search — Knowledge Agent" class="rc-skill-image">
+            <div class="rc-skill-intro">
+              <img src="https://files.readme.io/f678ac42b052a5392727fdf2702a31c41248885b8664a6c5fc21302f3fd443f3-Knowledge_Agent.png" alt="Documentation Search — Knowledge Agent" class="rc-skill-image">
+              <div class="rc-skill-intro-text">
+                <p><strong>What it does:</strong> Ask any Recurly question and get a sourced, specific answer drawn from product docs, developer docs, and the knowledge base.</p>
+                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose Documentation Search, or ask the Compass Assistant (the sparkles icon) directly. Start with a broad question, then ask follow-ups — the agent remembers the thread.</p>
+              </div>
+            </div>
 
             <!-- HIDDEN DEMO: after the webinar, delete the "rc-hidden" class from the div below to reveal this video. -->
             <div class="rc-video-card rc-hidden">
@@ -291,9 +302,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               </div>
               <div class="rc-video-caption">Watch the Knowledge Agent search Recurly's docs to explain voluntary vs. involuntary churn — then show how Recurly helps you solve it.</div>
             </div>
-
-            <p><strong>What it does:</strong> Ask any Recurly question and get a sourced, specific answer drawn from product docs, developer docs, and the knowledge base.</p>
-            <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose Documentation Search, or ask the Compass Assistant (the sparkles icon) directly. Start with a broad question, then ask follow-ups — the agent remembers the thread.</p>
 
             <div class="rc-accent-card rc-accent-scale">
               <h4>Try it yourself</h4>
