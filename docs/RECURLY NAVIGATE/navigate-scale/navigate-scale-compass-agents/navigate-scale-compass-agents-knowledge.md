@@ -272,7 +272,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Skill</h2>
+      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Knowledge Agent Skills</h2>
       <p>Open the skill below to watch the demo and try it in your own account.</p>
 
       <div class="rc-skill-list">
