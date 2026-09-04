@@ -236,7 +236,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- NAV -->
-    <details class="rc-sticky-nav-wrap" open>
+    <details class="rc-sticky-nav-wrap">
       <summary><span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span></summary>
       <div class="rc-nav-drawer"><div class="rc-nav-drawer-inner"><div class="rc-nav-links">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
@@ -302,7 +302,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">3</div>
           <div class="rc-toc-body">
             <h4>Configuration Agent</h4>
-            <p>Build plans and billing setups through natural language with the Create a Plan skill.</p>
+            <p>Build a subscription plan just by describing it, with the Create a Plan skill.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
