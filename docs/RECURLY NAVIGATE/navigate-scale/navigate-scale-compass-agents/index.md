@@ -132,7 +132,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* ── ALL-AGENTS GIF FRAME ── */
 .rc-gif-frame { text-align: center; margin: 0 0 48px; }
-.rc-gif-frame img { display: inline-block; width: 100%; max-width: 640px; height: auto; border-radius: 16px; border: 1px solid #D1CFC4; box-shadow: 0 6px 20px rgba(13,13,11,0.06); }
+.rc-gif-frame img { display: inline-block; width: 100%; max-width: 320px; height: auto; border-radius: 16px; border: 1px solid #D1CFC4; box-shadow: 0 6px 20px rgba(13,13,11,0.06); }
 
 /* ── ACCENT CARD (Scale) ── */
 .rc-accent-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
