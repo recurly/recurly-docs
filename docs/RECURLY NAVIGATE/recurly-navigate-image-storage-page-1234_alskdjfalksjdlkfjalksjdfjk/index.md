@@ -7,6 +7,7 @@ metadata:
   robots: index
 ---
 <div style={{ backgroundColor: '#ccc9b8', minHeight: '100vh' }}>
+
   # Flywheel Logos
 
   <Image align="center" src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" />
@@ -78,4 +79,4 @@ metadata:
 
 ![]()
 
-<br />
+![]()
