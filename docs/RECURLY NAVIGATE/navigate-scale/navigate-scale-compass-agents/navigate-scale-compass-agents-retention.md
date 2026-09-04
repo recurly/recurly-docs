@@ -325,7 +325,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-skill-list">
 
         <!-- SKILL 1: Involuntary Churn Remediation (open) -->
-        <details class="rc-skill" id="skill-involuntary-churn-remediation" open>
+        <details class="rc-skill" id="skill-involuntary-churn-remediation">
           <summary>
             <i class="fa-solid fa-receipt rc-skill-icon"></i>
             <span class="rc-skill-name">Involuntary Churn Remediation</span>
