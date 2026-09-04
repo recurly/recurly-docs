@@ -2,6 +2,8 @@
 title: Compass Agents and Skills
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
