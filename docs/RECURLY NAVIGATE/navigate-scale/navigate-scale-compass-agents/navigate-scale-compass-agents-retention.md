@@ -314,7 +314,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: SKILLS -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Skills</h2>
+      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Retention Agent skills</h2>
       <p>The Retention Agent runs two skills. Jump to either one to watch the demo and work through it in your own account.</p>
 
       <div class="rc-skill-nav">
