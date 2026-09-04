@@ -155,6 +155,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-skill-chevron { font-size: .72rem; color: #807D75; margin-left: auto; transition: transform .25s ease; }
 .rc-skill[open] .rc-skill-chevron { transform: rotate(180deg); }
 .rc-skill-body { padding: 8px 22px 24px; border-top: 1px solid #F2F1EA; }
+.rc-skill-image { display: block; width: 100%; max-width: 480px; height: auto; margin: 18px auto 8px; border-radius: 12px; border: 1px solid #D1CFC4; }
 .rc-skill-body > p { font-size: .92rem; line-height: 1.65; color: #32312D; margin: 14px 0 0; }
 .rc-skill-body > p:first-child { margin-top: 16px; }
 .rc-skill-body strong { color: #32312D; }
@@ -277,6 +278,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </summary>
           <div class="rc-skill-body">
 
+            <img src="https://files.readme.io/f678ac42b052a5392727fdf2702a31c41248885b8664a6c5fc21302f3fd443f3-Knowledge_Agent.png" alt="Documentation Search — Knowledge Agent" class="rc-skill-image">
+
             <!-- HIDDEN DEMO: after the webinar, delete the "rc-hidden" class from the div below to reveal this video. -->
             <div class="rc-video-card rc-hidden">
               <div class="rc-video-header">
@@ -293,8 +296,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
             <div class="rc-accent-card rc-accent-scale">
               <h4>Try it yourself</h4>
-              <p>Open the Compass Assistant and ask:</p>
-              <p class="rc-prompt-text">How do I set up and optimize dunning to reduce failed payment churn?</p>
+              <p>Open the Compass Assistant and try one of these:</p>
+              <p class="rc-prompt-text">What is the difference between voluntary and involuntary churn?</p>
+              <p class="rc-prompt-text">What is tiered pricing and how do I set it up?</p>
+              <p class="rc-prompt-text">How does dunning work in Recurly?</p>
             </div>
 
           </div>
