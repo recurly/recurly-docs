@@ -79,4 +79,16 @@ metadata:
 
 ![Agents GIF](https://files.readme.io/2cdfa816939c824af8e30d8e12df8e9c8323b11dfa1b1e2fbd5e979a57c17d45-Compass_Skills_and_Agents-v3.gif)
 
-![]()
+![Knowledge Agent](https://files.readme.io/f678ac42b052a5392727fdf2702a31c41248885b8664a6c5fc21302f3fd443f3-Knowledge_Agent.png)
+
+![Involuntary Churn Remediation](https://files.readme.io/553a77dfa941120e58abc0e888596950798bb71680d8da8ad088e093dadaf0e4-Involuntary_Churn_Remediation.png)
+
+![](https://files.readme.io/8c47602fe1f4de0b58f5ca8e7a27654539594afec158711ac91429a17a0a2f44-Optimize_Default_Dunning.png)
+
+![](https://files.readme.io/05b2ef74463d66f4e7f358d96001738fd3376f398b6cb316dd220816e2ce4e0a-Generate_an_Export.png)
+
+![](https://files.readme.io/ce221b4bea0c7af4f6fa7c252ff450c7fc7d0894fa2a70e861c0bf381eeb02e4-Create_a_plan.png)
+
+![](https://files.readme.io/2d220484bc626ebd527e1be16b70ec119a03bcbee7f9f5cea5c88de6fbb35e11-Write_Code.png)
+
+![](https://files.readme.io/44fc2aefb950e62f521c57fdd6606d68c32a5ae70440687459b40e3fb628c0c6-Compass_Assistant.png)
