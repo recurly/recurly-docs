@@ -135,6 +135,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-accent-card h4 { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 10px; }
 .rc-accent-card p { font-size: .92rem; color: #32312D; line-height: 1.6; margin: 0; }
 .rc-accent-card p.rc-tryit-note { font-size: .85rem; color: #807D75; margin-top: 14px; }
+.rc-accent-card ul { font-size: .92rem; color: #807D75; line-height: 1.75; padding-left: 20px; margin: 6px 0 0; }
+.rc-accent-card ul li { margin-bottom: 8px; }
+.rc-accent-card ul li:last-child { margin-bottom: 0; }
+.rc-accent-card ul li strong { color: #32312D; }
 .rc-prompt-text { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important; font-size: .92rem; color: #0D0D0B; background: #ffffff; border: 1px solid #D1CFC4; border-radius: 8px; padding: 12px 16px; margin: 12px 0 0 !important; line-height: 1.5; }
 
 /* ── VIDEO CARD (featured) + HIDDEN STATE ── */
@@ -314,10 +318,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: SKILLS -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Retention Agent skills</h2>
+      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Skills</h2>
       <p>The Retention Agent runs two skills. Jump to either one to watch the demo and work through it in your own account.</p>
 
-      <div class="rc-skill-nav" style="display: none;">
+      <div class="rc-skill-nav">
         <a href="#skill-involuntary-churn-remediation" class="rc-skill-nav-item"><i class="fa-solid fa-receipt"></i> Involuntary Churn Remediation</a>
         <a href="#skill-optimize-default-dunning" class="rc-skill-nav-item"><i class="fa-solid fa-receipt"></i> Optimize Default Dunning</a>
       </div>
@@ -325,7 +329,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-skill-list">
 
         <!-- SKILL 1: Involuntary Churn Remediation (open) -->
-        <details class="rc-skill" id="skill-involuntary-churn-remediation">
+        <details class="rc-skill" id="skill-involuntary-churn-remediation" open>
           <summary>
             <i class="fa-solid fa-receipt rc-skill-icon"></i>
             <span class="rc-skill-name">Involuntary Churn Remediation</span>
