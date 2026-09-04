@@ -130,6 +130,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
+/* ── ALL-AGENTS GIF FRAME ── */
+.rc-gif-frame { text-align: center; margin: 0 0 48px; }
+.rc-gif-frame img { display: inline-block; width: 100%; max-width: 640px; height: auto; border-radius: 16px; border: 1px solid #D1CFC4; box-shadow: 0 6px 20px rgba(13,13,11,0.06); }
+
 /* ── ACCENT CARD (Scale) ── */
 .rc-accent-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
 .rc-accent-card.rc-accent-scale { border-left: 4px solid #008CFF; }
@@ -259,6 +263,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </ul>
       </div>
       <p>In short: agents are the <em>who</em>, skills are the <em>what</em>, and the Compass Assistant is <em>how</em> you put them to work. This path introduces each agent and the skills it runs, then finishes with the Assistant that ties everything together.</p>
+    </div>
+
+    <!-- ALL-AGENTS GIF -->
+    <div class="rc-gif-frame">
+      <img src="https://files.readme.io/2cdfa816939c824af8e30d8e12df8e9c8323b11dfa1b1e2fbd5e979a57c17d45-Compass_Skills_and_Agents-v3.gif" alt="Recurly Compass agents and skills">
     </div>
 
     <!-- SECTION: WHAT'S INSIDE (TOC) -->
