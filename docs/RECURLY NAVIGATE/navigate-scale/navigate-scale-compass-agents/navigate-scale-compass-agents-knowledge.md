@@ -155,7 +155,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-skill-chevron { font-size: .72rem; color: #807D75; margin-left: auto; transition: transform .25s ease; }
 .rc-skill[open] .rc-skill-chevron { transform: rotate(180deg); }
 .rc-skill-body { padding: 8px 22px 24px; border-top: 1px solid #F2F1EA; }
-.rc-skill-image { display: block; width: 100%; max-width: 480px; height: auto; margin: 18px auto 8px; border-radius: 12px; border: 1px solid #D1CFC4; }
+.rm-Markdown.markdown-body .rc-guide img.rc-skill-image,
+.rc-guide img.rc-skill-image { display: block; width: 100% !important; max-width: 400px !important; height: auto !important; margin: 18px auto 10px !important; border-radius: 12px; border: 1px solid #D1CFC4; }
 .rc-skill-body > p { font-size: .92rem; line-height: 1.65; color: #32312D; margin: 14px 0 0; }
 .rc-skill-body > p:first-child { margin-top: 16px; }
 .rc-skill-body strong { color: #32312D; }
