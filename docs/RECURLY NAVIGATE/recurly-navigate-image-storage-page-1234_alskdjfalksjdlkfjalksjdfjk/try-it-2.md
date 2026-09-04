@@ -1,7 +1,7 @@
 ---
 title: try it 2
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
