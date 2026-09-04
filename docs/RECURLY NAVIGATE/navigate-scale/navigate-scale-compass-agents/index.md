@@ -1,5 +1,5 @@
 ---
-title: Compass Agents and Skills
+title: Compass Agents & Skills
 deprecated: false
 hidden: true
 link:
