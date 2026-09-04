@@ -130,9 +130,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #D1CFC4; }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
-/* ── ALL-AGENTS GIF FRAME ── */
-.rc-gif-frame { text-align: center; margin: 0 0 48px; }
-.rc-gif-frame img { display: inline-block; width: 100%; max-width: 320px; height: auto; border-radius: 16px; border: 1px solid #D1CFC4; box-shadow: 0 6px 20px rgba(13,13,11,0.06); }
+/* ── SPLIT ROW (intro text + GIF card) ── */
+.rc-split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin: 4px 0 24px; }
+.rc-split-text p { font-size: .98rem; line-height: 1.7; color: #32312D; margin: 0 0 16px; }
+.rc-split-text p:last-child { margin-bottom: 0; }
+.rc-gif-card { background: #F2F1EA; border: 1px solid #D1CFC4; border-radius: 20px; padding: 20px; box-shadow: 0 10px 30px rgba(13,13,11,0.08); }
+.rc-gif-card-label { font-size: .95rem; font-weight: 800; color: #0D0D0B; margin: 0 0 14px; }
+.rc-gif-card img { display: block; width: 100%; height: auto; border-radius: 12px; }
 
 /* ── ACCENT CARD (Scale) ── */
 .rc-accent-card { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
@@ -194,6 +198,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
+  .rc-split { grid-template-columns: 1fr; gap: 24px; }
+  .rc-gif-card img { max-width: 360px; margin: 0 auto; }
   .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 36px; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
@@ -253,7 +259,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: AGENTS, SKILLS, ASSISTANT -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-sitemap rc-fa-section"></i> Agents, skills, and the Assistant</h2>
-      <p>Recurly Compass is the AI built into your Recurly account. It's organized into three simple parts — once you see how they fit, the rest of this path is easy to follow.</p>
+      <div class="rc-split">
+        <div class="rc-split-text">
+          <p>Recurly Compass is the AI built into your Recurly account, and it's organized into three simple parts. Once you see how they fit together, the rest of this path is easy to follow.</p>
+          <p>Each part plays a distinct role — a specialist to ask, a task it runs for you, and a chat that puts them to work.</p>
+        </div>
+        <div class="rc-split-media">
+          <div class="rc-gif-card">
+            <div class="rc-gif-card-label">Compass Skills</div>
+            <img src="https://files.readme.io/2cdfa816939c824af8e30d8e12df8e9c8323b11dfa1b1e2fbd5e979a57c17d45-Compass_Skills_and_Agents-v3.gif" alt="Recurly Compass agents and skills">
+          </div>
+        </div>
+      </div>
       <div class="rc-accent-card rc-accent-scale">
         <h4>The three pieces</h4>
         <ul>
@@ -263,11 +280,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </ul>
       </div>
       <p>In short: agents are the <em>who</em>, skills are the <em>what</em>, and the Compass Assistant is <em>how</em> you put them to work. This path introduces each agent and the skills it runs, then finishes with the Assistant that ties everything together.</p>
-    </div>
-
-    <!-- ALL-AGENTS GIF -->
-    <div class="rc-gif-frame">
-      <img src="https://files.readme.io/2cdfa816939c824af8e30d8e12df8e9c8323b11dfa1b1e2fbd5e979a57c17d45-Compass_Skills_and_Agents-v3.gif" alt="Recurly Compass agents and skills">
     </div>
 
     <!-- SECTION: WHAT'S INSIDE (TOC) -->
