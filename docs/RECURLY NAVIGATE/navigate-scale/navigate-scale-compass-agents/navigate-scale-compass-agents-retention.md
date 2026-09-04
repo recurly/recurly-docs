@@ -317,7 +317,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Retention Agent skills</h2>
       <p>The Retention Agent runs two skills. Jump to either one to watch the demo and work through it in your own account.</p>
 
-      <div class="rc-skill-nav">
+      <div class="rc-skill-nav" style="display: none;">
         <a href="#skill-involuntary-churn-remediation" class="rc-skill-nav-item"><i class="fa-solid fa-receipt"></i> Involuntary Churn Remediation</a>
         <a href="#skill-optimize-default-dunning" class="rc-skill-nav-item"><i class="fa-solid fa-receipt"></i> Optimize Default Dunning</a>
       </div>
