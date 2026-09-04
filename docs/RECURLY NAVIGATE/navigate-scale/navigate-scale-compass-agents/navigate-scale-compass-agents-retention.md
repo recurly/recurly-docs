@@ -318,8 +318,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: SKILLS -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Skills</h2>
-      <p>The Retention Agent runs two skills. Jump to either one to watch the demo and work through it in your own account.</p>
+      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Retention Agent skills</h2>
+      <p>The Retention Agent currently runs two skills. Jump to either one to watch the demo and work through it in your own account.</p>
 
       <div class="rc-skill-nav">
         <a href="#skill-involuntary-churn-remediation" class="rc-skill-nav-item"><i class="fa-solid fa-receipt"></i> Involuntary Churn Remediation</a>
@@ -329,7 +329,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-skill-list">
 
         <!-- SKILL 1: Involuntary Churn Remediation (open) -->
-        <details class="rc-skill" id="skill-involuntary-churn-remediation" open>
+        <details class="rc-skill" id="skill-involuntary-churn-remediation">
           <summary>
             <i class="fa-solid fa-receipt rc-skill-icon"></i>
             <span class="rc-skill-name">Involuntary Churn Remediation</span>
