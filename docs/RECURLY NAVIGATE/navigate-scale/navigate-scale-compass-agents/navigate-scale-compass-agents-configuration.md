@@ -133,6 +133,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-accent-card h4 { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 10px; }
 .rc-accent-card p { font-size: .92rem; color: #32312D; line-height: 1.6; margin: 0; }
 .rc-prompt-text { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important; font-size: .92rem; color: #0D0D0B; background: #ffffff; border: 1px solid #D1CFC4; border-radius: 8px; padding: 12px 16px; margin: 12px 0 0 !important; line-height: 1.5; }
+.rc-callout { display: flex; gap: 12px; padding: 16px 18px; border-radius: 10px; margin: 20px 0 0; border: 1px solid #96C8FF; background: #E5F3FF; }
+.rc-callout-icon { font-size: 1rem; color: #008CFF; flex-shrink: 0; margin-top: 2px; }
+.rc-callout-body { font-size: .9rem; line-height: 1.6; color: #32312D; }
+.rc-callout-body > strong { color: #0D0D0B; }
+.rc-callout-body em { color: #32312D; }
 
 /* ── VIDEO CARD (featured) + HIDDEN STATE ── */
 .rc-hidden { display: none !important; }
@@ -240,7 +245,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass Agents &amp; Skills
       </div>
       <div class="rc-lp-hero-title"><h1>Configuration Agent</h1></div>
-      <p>Set up plans by describing what you want — no clicking through configuration screens.</p>
+      <p>Set up plans, add-ons, and items by describing what you want — no clicking through configuration screens.</p>
     </div>
 
     <!-- NAV (content page — expanded) -->
@@ -266,13 +271,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-pencil rc-fa-section"></i> What the Configuration Agent does</h2>
-      <p>The Configuration Agent sets up your plan configurations through conversation. Describe the plan, and it builds it for you — handling flexible pricing models like usage-based, tiered, and multi-currency along the way.</p>
+      <p>The Configuration Agent sets up your billing configuration through conversation. Describe the plan, add-on, or item you want, and it builds it for you — guiding you through the details step by step.</p>
       <p>If you leave out something it needs, it asks before creating anything, and it keeps context so you can refine or build on what you just made without starting over. It's a shortcut past the configuration screens and the documentation.</p>
     </div>
 
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Configuration Agent skills</h2>
+      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Skill</h2>
       <p>Open the skill below to watch the demo and try it in your own account.</p>
 
       <div class="rc-skill-list">
@@ -287,8 +292,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <div class="rc-skill-intro">
               <img src="https://files.readme.io/ce221b4bea0c7af4f6fa7c252ff450c7fc7d0894fa2a70e861c0bf381eeb02e4-Create_a_plan.png" alt="Create a Plan — Configuration Agent" class="rc-skill-image">
               <div class="rc-skill-intro-text">
-                <p><strong>What it does:</strong> Build subscription plans with flexible pricing models — including usage-based, tiered, and multi-currency options — by describing them in plain language. The agent fills in the details and flags anything it still needs.</p>
-                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose Create a Plan, or ask the Compass Assistant (the sparkles icon) directly. Give it the essentials — price, billing interval, trial — and confirm the rest as it asks.</p>
+                <p><strong>What it does:</strong> Create a subscription plan by describing it in plain language — set the price, billing interval, and free trial, and the agent fills in the details, asking before it creates anything.</p>
+                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose Create a Plan, then describe your plan — price, billing interval, free trial — and confirm as it asks. Need an add-on or item instead? Ask the Compass Assistant directly; those are part of the agent's broader chat, not this skill.</p>
               </div>
             </div>
 
@@ -312,6 +317,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
           </div>
         </details>
+      </div>
+
+      <div class="rc-callout">
+        <i class="fa-solid fa-comment-dots rc-callout-icon"></i>
+        <div class="rc-callout-body"><strong>Beyond the skill:</strong> the Create a Plan skill is scoped to plans, but the Configuration Agent can also create and modify <strong>add-ons and items</strong> right in the Compass Assistant — just describe what you need. For example: <em>"Add a $5/month priority-support add-on to my Pro plan"</em> or <em>"Create a new item for a one-time onboarding fee."</em></div>
       </div>
     </div>
 
