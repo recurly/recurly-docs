@@ -240,7 +240,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass Agents &amp; Skills
       </div>
       <div class="rc-lp-hero-title"><h1>Configuration Agent</h1></div>
-      <p>Set up plans, coupons, add-ons, and billing settings by describing what you want — no clicking through configuration screens.</p>
+      <p>Set up plans by describing what you want — no clicking through configuration screens.</p>
     </div>
 
     <!-- NAV (content page — expanded) -->
@@ -266,7 +266,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-pencil rc-fa-section"></i> What the Configuration Agent does</h2>
-      <p>The Configuration Agent sets up your billing configuration through conversation. Describe the plan, coupon, add-on, or setting you want, and it builds it for you — handling flexible pricing models like usage-based, tiered, and multi-currency along the way.</p>
+      <p>The Configuration Agent sets up your plan configurations through conversation. Describe the plan, and it builds it for you — handling flexible pricing models like usage-based, tiered, and multi-currency along the way.</p>
       <p>If you leave out something it needs, it asks before creating anything, and it keeps context so you can refine or build on what you just made without starting over. It's a shortcut past the configuration screens and the documentation.</p>
     </div>
 
