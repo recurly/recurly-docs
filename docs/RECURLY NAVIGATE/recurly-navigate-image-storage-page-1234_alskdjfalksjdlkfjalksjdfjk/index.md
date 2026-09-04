@@ -2,7 +2,7 @@
 title: Navigate Image Storage
 excerpt: 'Navigate image storage page. This is meant to be a private '
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
@@ -77,6 +77,6 @@ metadata:
 
 ![](https://files.readme.io/3ed42fb225be29f3870a97b6f53544168db4d559cfa859457b3e5a8d143ac30f-Headphones_Office_Hours_2.png)
 
-![]()
+![Agents GIF](https://files.readme.io/2cdfa816939c824af8e30d8e12df8e9c8323b11dfa1b1e2fbd5e979a57c17d45-Compass_Skills_and_Agents-v3.gif)
 
 ![]()
