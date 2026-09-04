@@ -92,3 +92,9 @@ metadata:
 ![](https://files.readme.io/2d220484bc626ebd527e1be16b70ec119a03bcbee7f9f5cea5c88de6fbb35e11-Write_Code.png)
 
 ![](https://files.readme.io/44fc2aefb950e62f521c57fdd6606d68c32a5ae70440687459b40e3fb628c0c6-Compass_Assistant.png)
+
+![](https://files.readme.io/e9d7cff9b00612bd69cafc9644701029ca4dbe62e6b42325cf1f5b3856dc8338-Screenshot_2026-09-04_at_4.32.47_PM.png)
+
+![](https://files.readme.io/ac28571648522201f5d346991e6596a9b667f2337c68efbfebfd35f209658780-Screenshot_2026-09-04_at_4.34.07_PM.png)
+
+![](https://files.readme.io/a963312aae1646a2c7eac23cad34d3072bff8c4bc3c0ab5a4e5b5c0e51d8bfdc-Screenshot_2026-09-04_at_4.34.32_PM.png)
