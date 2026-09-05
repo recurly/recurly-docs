@@ -488,6 +488,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
       <div class="rc-resource-group">
         <span class="rc-resource-group-label">Go deeper</span>
         <div class="rc-resource-links">
+ <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-video"></i> Webinar: Get to know Recurly's agentic AI</a>
           <a href="https://recurly.com/product/recurly-compass/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Recurly Compass product page</a>
           <a href="https://recurly.com/blog/recurly-spring-release-2026-highlights/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Spring '26 release highlights</a>
           <a href="https://recurly.com/blog/ai-evaluations-and-recurly-compass/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> AI evaluations &amp; Recurly Compass</a>
@@ -496,7 +497,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
       <div class="rc-resource-group">
         <span class="rc-resource-group-label">Live help</span>
         <div class="rc-resource-links">
-          <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-video"></i> Webinar: Get to know Recurly's agentic AI</a>
+        
           <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
           <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Support</a>
         </div>
