@@ -294,11 +294,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 <div class="rc-guide">
   <div class="rc-content-wrap">
 
-    <div class="rc-announce-bar">
+    <div class="rc-announce-bar rc-active">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
-        <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
+        <strong>This Thursday:</strong> Get to know Recurly's agentic AI — join us for demos, live best practices, and Q&A with the product experts on September 10.
+        <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Learn more →</a>
       </div>
     </div>
 
