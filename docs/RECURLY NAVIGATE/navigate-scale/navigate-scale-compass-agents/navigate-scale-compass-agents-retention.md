@@ -407,7 +407,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </div>
 
             <!-- HIDDEN DEMO: after the webinar, delete the "rc-hidden" class from the div below to reveal this video. -->
-            <div class="rc-video-card rc-hidden">
+            <div class="rc-video-card">
               <div class="rc-video-header">
                 <h4>Compass AI Skills: Optimize Default Dunning - Retention Agent</h4>
               </div>
