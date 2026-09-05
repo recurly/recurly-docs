@@ -98,3 +98,5 @@ metadata:
 ![](https://files.readme.io/ac28571648522201f5d346991e6596a9b667f2337c68efbfebfd35f209658780-Screenshot_2026-09-04_at_4.34.07_PM.png)
 
 ![](https://files.readme.io/a963312aae1646a2c7eac23cad34d3072bff8c4bc3c0ab5a4e5b5c0e51d8bfdc-Screenshot_2026-09-04_at_4.34.32_PM.png)
+
+![](https://files.readme.io/b437353dd0ddce1cbbd116ec09bf2fd1192e51351764184a60e67dc2406af827-Sparkle_Button.png)
