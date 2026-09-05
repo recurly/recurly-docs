@@ -147,7 +147,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* ── INLINE SPARKLES BUTTON ── */
 .rm-Markdown.markdown-body .rc-guide img.rc-sparkle-inline,
-.rc-guide img.rc-sparkle-inline { height: 24px !important; width: auto !important; vertical-align: middle; margin: 0 3px; display: inline-block; border: 0; border-radius: 6px; }
+.rc-guide img.rc-sparkle-inline { height: 36px !important; width: auto !important; vertical-align: middle; margin: 0 5px; display: inline-block; border: 0; border-radius: 8px; }
+
+/* ── ASSISTANT INTRO (larger framed screenshot) ── */
+.rc-assistant-intro { display: grid; grid-template-columns: 380px 1fr; gap: 40px; align-items: start; margin: 16px 0 0; }
+.rc-assistant-frame { background: #FCFBF7; border: 1px solid #D1CFC4; border-radius: 14px; padding: 14px; box-shadow: 0 4px 14px rgba(13,13,11,0.05); }
+.rm-Markdown.markdown-body .rc-guide img.rc-assistant-shot,
+.rc-guide img.rc-assistant-shot { display: block; width: 100% !important; height: auto !important; margin: 0 !important; border-radius: 8px; }
 
 /* ── DEPLOY PROMPT LIST ── */
 .rc-deploy-item { margin-top: 15px; }
@@ -229,6 +235,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-skill-intro { grid-template-columns: 1fr; gap: 14px; }
+  .rc-assistant-intro { grid-template-columns: 1fr; gap: 20px; }
+  .rc-assistant-frame { max-width: 440px; }
   .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 36px; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
@@ -289,8 +297,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> What the Compass Assistant does</h2>
 
-      <div class="rc-skill-intro">
-        <img src="https://files.readme.io/44fc2aefb950e62f521c57fdd6606d68c32a5ae70440687459b40e3fb628c0c6-Compass_Assistant.png" alt="Compass Assistant" class="rc-skill-image">
+      <div class="rc-assistant-intro">
+        <div class="rc-assistant-frame">
+          <img src="https://files.readme.io/44fc2aefb950e62f521c57fdd6606d68c32a5ae70440687459b40e3fb628c0c6-Compass_Assistant.png" alt="Compass Assistant chat" class="rc-assistant-shot">
+        </div>
         <div class="rc-skill-intro-text">
           <p><strong>What it is:</strong> The Compass Assistant is the chat behind the sparkles button <img src="https://files.readme.io/b437353dd0ddce1cbbd116ec09bf2fd1192e51351764184a60e67dc2406af827-Sparkle_Button.png" alt="Compass Assistant sparkles button" class="rc-sparkle-inline"> in the corner of Recurly. It's the single place where every agent comes together — ask for anything the five agents can do, and the Assistant runs the right skill for you.</p>
           <p><strong>How to use it:</strong> No special commands. Ask in plain language, the way you'd ask a colleague, and follow up to refine. It also answers best-practice questions, so it's often faster than logging a support ticket.</p>
