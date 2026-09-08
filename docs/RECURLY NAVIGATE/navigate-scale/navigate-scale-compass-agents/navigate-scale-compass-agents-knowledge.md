@@ -1,5 +1,5 @@
 ---
-title: 'Compass Agents & Skills: Knowledge Agent'
+title: 'Compass agents & skills: Knowledge agent'
 deprecated: false
 hidden: true
 metadata:
@@ -237,9 +237,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass Agents &amp; Skills
+        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass agents &amp; skills
       </div>
-      <div class="rc-lp-hero-title"><h1>Knowledge Agent</h1></div>
+      <div class="rc-lp-hero-title"><h1>Knowledge agent</h1></div>
       <p>Your co-pilot for quick, reliable answers across Recurly — without hunting through documentation or opening a support ticket.</p>
     </div>
 
@@ -252,12 +252,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-sticky-link">Path overview</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Knowledge Agent
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Knowledge agent
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-sticky-link"><span class="rc-step-badge">2</span> Code Agent</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-sticky-link"><span class="rc-step-badge">3</span> Configuration Agent</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-sticky-link"><span class="rc-step-badge">4</span> Data Agent</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-sticky-link"><span class="rc-step-badge">5</span> Retention Agent</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-sticky-link"><span class="rc-step-badge">2</span> Code agent</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-sticky-link"><span class="rc-step-badge">3</span> Configuration agent</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-sticky-link"><span class="rc-step-badge">4</span> Data agent</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-sticky-link"><span class="rc-step-badge">5</span> Retention agent</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-assistant" class="rc-sticky-link"><span class="rc-step-badge">6</span> Compass Assistant</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-review" class="rc-sticky-link"><span class="rc-step-badge">7</span> Review &amp; resources</a>
       </div></div></div>
@@ -266,14 +266,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-book-open rc-fa-section"></i> What the Knowledge Agent does</h2>
-      <p>The Knowledge Agent answers Recurly questions in plain language. It searches Recurly's product documentation, developer docs, and support knowledge base, then gives you a direct answer — not just a definition, but how Recurly specifically solves the problem you're asking about.</p>
+      <p>The Knowledge agent answers Recurly questions in plain language. It searches Recurly's product documentation, developer docs, and support knowledge base, then gives you a direct answer — not just a definition, but how Recurly specifically solves the problem you're asking about.</p>
       <p>Because it keeps the context of your conversation, you can start broad and narrow in with follow-up questions. It's the fastest way to get a reliable answer without leaving your workflow or waiting on a support reply.</p>
     </div>
 
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Knowledge Agent skills</h2>
-      <p>Open the skill below to learn more and try it in your own account. New Knowledge Agent skills will be added to this list as they deploy.</p>
+      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Knowledge agent skills</h2>
+      <p>Open the skill below to learn more and try it in your own account. New knowledge agent skills will be added to this list as they deploy.</p>
 
       <div class="rc-skill-list">
         <details class="rc-skill" id="skill-documentation-search" open>
@@ -320,14 +320,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-btn-prev">← Overview</a>
       <span class="rc-lp-nav-indicator">1 of 7</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-btn-path">Next: Code Agent →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-btn-path">Next: Code agent →</a>
     </div>
 
     <!-- RESOURCES -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/compass-skills" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Compass Skills</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/compass-skills" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Compass skills</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/compass-assistant" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Compass Assistant</a>
       </div>
     </div>
@@ -336,13 +336,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Compass Agents &amp; Skills</span>
+          <span class="rc-footer-label">Compass agents &amp; skills</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention Agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention agent</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-assistant" class="rc-footer-link">6. Compass Assistant</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-review" class="rc-footer-link">7. Review &amp; resources</a>
         </div>
