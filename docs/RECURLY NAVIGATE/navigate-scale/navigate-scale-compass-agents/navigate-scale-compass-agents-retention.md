@@ -300,7 +300,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass Agents &amp; Skills
       </div>
-      <div class="rc-lp-hero-title"><h1>Retention Agent</h1></div>
+      <div class="rc-lp-hero-title"><h1>Retention agent</h1></div>
       <p>Keep the revenue you've already earned — optimize your dunning and win back subscribers whose payments quietly fail.</p>
     </div>
 
@@ -326,15 +326,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-receipt rc-fa-section"></i> What the Retention Agent does</h2>
-      <p>The Retention Agent helps you keep revenue you've already earned. It optimizes your dunning — the retry-and-reminder process that recovers failed payments — and helps you remediate involuntary churn with in-app prompts that ask subscribers to fix a past-due payment.</p>
-      <p>It's the only agent with two skills today: Optimize Default Dunning and Involuntary Churn Remediation. One tunes your automated recovery settings; the other builds a prompt that appears in your app. Together they target the failed payments that quietly erode subscription revenue.</p>
+      <h2><i class="fa-solid fa-receipt rc-fa-section"></i> What the <b>retention agent</b> does</h2>
+      <p>The <b>retention agent</> helps you keep revenue you've already earned. It optimizes your dunning — the retry-and-reminder process that recovers failed payments — and helps you remediate involuntary churn with in-app prompts that ask subscribers to fix a past-due payment.</p>
+      <p>Currently, this agent has two skills: <b>Optimize default dunning</b> and <b>involuntary churn remediation</b>. One tunes your automated recovery settings; the other builds a prompt that appears in your app. Together they target the failed payments that quietly erode subscription revenue.</p>
     </div>
 
     <!-- SECTION: SKILLS -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Retention Agent skills</h2>
-      <p>The Retention Agent currently runs two skills. Jump to either one to learn more and work through it in your own account.</p>
+      <p>The retention agent currently runs two skills. Jump to either one to learn more and work through it in your own account.</p>
 
   
       <div class="rc-skill-list">
