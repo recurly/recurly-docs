@@ -1,5 +1,5 @@
 ---
-title: 'Compass Agents & Skills: Configuration Agent'
+title: 'Compass agents & skills: Configuration agent'
 deprecated: false
 hidden: true
 metadata:
@@ -242,9 +242,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass Agents &amp; Skills
+        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass agents &amp; skills
       </div>
-      <div class="rc-lp-hero-title"><h1>Configuration Agent</h1></div>
+      <div class="rc-lp-hero-title"><h1>Configuration agent</h1></div>
       <p>Set up plans, add-ons, and items by describing what you want — no clicking through configuration screens.</p>
     </div>
 
@@ -256,13 +256,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-sticky-link">Path overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-sticky-link"><span class="rc-step-badge">1</span> Knowledge Agent</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-sticky-link"><span class="rc-step-badge">2</span> Code Agent</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-sticky-link"><span class="rc-step-badge">1</span> Knowledge agent</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-sticky-link"><span class="rc-step-badge">2</span> Code agent</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Configuration Agent
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Configuration agent
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-sticky-link"><span class="rc-step-badge">4</span> Data Agent</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-sticky-link"><span class="rc-step-badge">5</span> Retention Agent</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-sticky-link"><span class="rc-step-badge">4</span> Data agent</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-sticky-link"><span class="rc-step-badge">5</span> Retention agent</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-assistant" class="rc-sticky-link"><span class="rc-step-badge">6</span> Compass Assistant</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-review" class="rc-sticky-link"><span class="rc-step-badge">7</span> Review &amp; resources</a>
       </div></div></div>
@@ -270,21 +270,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-pencil rc-fa-section"></i> What the Configuration Agent does</h2>
-      <p>The Configuration Agent sets up your plan and billing configuration through conversation either in your sparkles chat or a programmed skill. Describe the plan, add-on, or item you want, and it builds it for you — guiding you through the details step by step.</p>
+      <h2><i class="fa-solid fa-pencil rc-fa-section"></i> What the configuration agent does</h2>
+      <p>The configuration agent sets up your plan and billing configuration through conversation either in your sparkles chat or a programmed skill. Describe the plan, add-on, or item you want, and it builds it for you — guiding you through the details step by step.</p>
       <p>If you leave out something it needs, it asks before creating anything, and it keeps context so you can refine or build on what you just made without starting over. It's a shortcut past the configuration screens and the documentation.</p>
     </div>
 
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Skill</h2>
-      <p>Open the skill below to learn more and try it in your own account. New Configuration Agent skills will be added to this list as they deploy.</p>
+      <p>Open the skill below to learn more and try it in your own account. New configuration agent skills will be added to this list as they deploy.</p>
 
       <div class="rc-skill-list">
         <details class="rc-skill" id="skill-create-a-plan" open>
           <summary>
             <i class="fa-solid fa-pencil rc-skill-icon"></i>
-            <span class="rc-skill-name">Create a Plan</span>
+            <span class="rc-skill-name">Create a plan</span>
             <i class="fa-solid fa-chevron-up rc-skill-chevron"></i>
           </summary>
           <div class="rc-skill-body">
@@ -305,7 +305,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <div class="rc-video-embed">
                 <iframe src="https://share.synthesia.io/embeds/videos/1f0f331c-26a5-47b8-9352-3de008943702" loading="lazy" title="Compass AI Skills: Create a Plan - Configuration Agent" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
               </div>
-              <div class="rc-video-caption">Watch the Configuration Agent create a $9.99/month plan with a 14-day free trial, then confirm it under Configuration → Plans.</div>
+              <div class="rc-video-caption">Watch the configuration agent create a $9.99/month plan with a 14-day free trial, then confirm it under Configuration → Plans.</div>
             </div>
 
             <div class="rc-accent-card rc-accent-scale">
@@ -327,9 +327,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- PATH NAV -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-btn-prev">← Code Agent</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-btn-prev">← Code agent</a>
       <span class="rc-lp-nav-indicator">3 of 7</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-btn-path">Next: Data Agent →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-btn-path">Next: Data agent →</a>
     </div>
 
     <!-- RESOURCES -->
@@ -347,11 +347,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-footer-section">
           <span class="rc-footer-label">Compass Agents &amp; Skills</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention Agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention agent</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-assistant" class="rc-footer-link">6. Compass Assistant</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-review" class="rc-footer-link">7. Review &amp; resources</a>
         </div>
