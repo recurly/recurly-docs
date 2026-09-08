@@ -342,6 +342,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
             <a href="#analytics" class="rc-sticky-link">Analytics &amp; reporting</a>
+ <a href="#AIautomation" class="rc-sticky-link">AI &amp; automation</a>
             <a href="#expansion" class="rc-sticky-link" style="display: none;">Global expansion</a>
             <a href="#optimization" class="rc-sticky-link" style="display: none;">Revenue optimization</a>
           </div>
@@ -374,7 +375,31 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
       </div>
     </div>
-
+ <div id="AIautomation" class="rc-category">
+      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> AI &amp; automation</h2>
+      <div class="rc-path-list">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-path-card">
+          <div class="rc-path-icon">
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
+          </div>
+          <div class="rc-path-content">
+            <h3>Compass agents & skills</h3>
+            <p>Streamline operations using Recurly's AI agents and skills. Deploy different skills for coding, data querying, configuration, churn recovery, and more.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-path-card">
+          <div class="rc-path-icon">
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
+          </div>
+          <div class="rc-path-content">
+            <h3>Payments Hub</h3>
+            <p>Optimize your gateway performance. Use the Payments Hub to track transaction success rates and decline reasons across all methods.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+      </div>
+    </div>
     <div id="expansion" class="rc-category" style="display: none;">
       <h2><i class="fa-solid fa-globe rc-fa-section"></i> Global expansion</h2>
       <div class="rc-path-list">
