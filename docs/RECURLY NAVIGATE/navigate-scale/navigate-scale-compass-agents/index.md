@@ -229,9 +229,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass Agents &amp; Skills
+        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass agents &amp; skills
       </div>
-      <div class="rc-lp-hero-title"><h1>Compass Agents &amp; Skills</h1></div>
+      <div class="rc-lp-hero-title"><h1>Compass agents &amp; skills</h1></div>
       <p>Recurly Compass puts a team of AI agents inside your Recurly account — to answer questions, configure billing, pull data, write code, and protect revenue. This path introduces each agent, the skills it runs, and the Compass Assistant that brings them together.</p>
     </div>
 
