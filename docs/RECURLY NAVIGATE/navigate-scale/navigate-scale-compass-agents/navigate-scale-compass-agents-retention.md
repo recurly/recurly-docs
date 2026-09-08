@@ -20,7 +20,7 @@ metadata:
     - in-app payment prompt
     - recurly engage integration
     - subscription revenue recovery.
-  robots: index
+  robots: noindex
 ---
 <HTMLBlock>{`
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
