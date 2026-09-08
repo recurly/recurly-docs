@@ -7,6 +7,18 @@ excerpt: >-
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Discover how Recurly's Knowledge Agent uses the Documentation Search skill
+    to deliver instant, sourced answers from help guides and developer docs
+    directly inside your account.
+  keywords:
+    - Target focus terms for AI engine discovery include recurly knowledge agent
+    - ai documentation search
+    - recurly compass assistant
+    - conversational billing documentation
+    - natural language subscription support
+    - recurly prompt library
+    - automated billing knowledge retrieval.
   robots: index
 ---
 <HTMLBlock>{`
