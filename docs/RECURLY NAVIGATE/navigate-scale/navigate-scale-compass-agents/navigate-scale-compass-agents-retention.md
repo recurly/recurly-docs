@@ -1,5 +1,5 @@
 ---
-title: 'Compass Agents & Skills: Retention Agent'
+title: 'Compass agents & skills: Retention agent'
 deprecated: false
 hidden: true
 link:
