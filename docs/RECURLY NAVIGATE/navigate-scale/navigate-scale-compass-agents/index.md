@@ -1,5 +1,9 @@
 ---
 title: Compass agents and skills
+excerpt: >-
+  Discover how Recurly Compass leverages specialized AI agents and skills—from
+  natural language plan configuration to automated involuntary churn remediation
+  — to streamline subscription management and API integration.
 deprecated: false
 hidden: true
 link:
