@@ -277,8 +277,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Skill</h2>
-      <p>Open the skill below to learn more and try it in your own account. New configuration agent skills will be added to this list as they deploy.</p>
+      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Configuration agent skills</h2>
+      <p>Open a skill below to learn more and try it in your own account. New configuration agent skills will be added to this list as they deploy.</p>
 
       <div class="rc-skill-list">
         <details class="rc-skill" id="skill-create-a-plan" open>
@@ -293,24 +293,24 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/ce221b4bea0c7af4f6fa7c252ff450c7fc7d0894fa2a70e861c0bf381eeb02e4-Create_a_plan.png" alt="Create a Plan — Configuration Agent" class="rc-skill-image">
               <div class="rc-skill-intro-text">
                 <p><strong>What it does:</strong> Create a subscription plan by describing it in plain language — set the price, billing interval, and free trial, and the agent fills in the details, asking before it creates anything.</p>
-                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose Create a Plan, then describe your plan — price, billing interval, free trial — and confirm as it asks. Need an add-on or item instead? Ask the Compass Assistant directly; those are part of the agent's broader chat, not this skill.</p>
+                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose "create a plan," then describe your plan — price, billing interval, free trial — and confirm as it asks. Need an add-on or item instead? Ask the Compass Assistant directly; those are part of the agent's broader chat, not this skill.</p>
               </div>
             </div>
 
             <!-- HIDDEN DEMO: after the webinar, delete the "rc-hidden" class from the div below to reveal this video. -->
             <div class="rc-video-card rc-hidden">
               <div class="rc-video-header">
-                <h4>Compass AI Skills: Create a Plan - Configuration Agent</h4>
+                <h4>Compass AI skills: Create a plan - Configuration agent</h4>
               </div>
               <div class="rc-video-embed">
                 <iframe src="https://share.synthesia.io/embeds/videos/1f0f331c-26a5-47b8-9352-3de008943702" loading="lazy" title="Compass AI Skills: Create a Plan - Configuration Agent" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
               </div>
-              <div class="rc-video-caption">Watch the configuration agent create a $9.99/month plan with a 14-day free trial, then confirm it under Configuration → Plans.</div>
+              <div class="rc-video-caption">Watch the <strong>configuration agent</strong> create a $9.99/month plan with a 14-day free trial, then confirm it under Configuration → Plans.</div>
             </div>
 
             <div class="rc-accent-card rc-accent-scale">
               <h4>Try it yourself</h4>
-              <p>Open the Compass Assistant and try one of these:</p>
+              <p>Open the Compass Assistant or the <strong>create a plan</strong> skill, and try one of these:</p>
               <p class="rc-prompt-text">Create a new monthly subscription plan for $9.99/month with a 14-day free trial.</p>
               <p class="rc-prompt-text">Set up a new annual plan with a discount compared to my monthly plan.</p>
             </div>
@@ -321,7 +321,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       <div class="rc-callout">
         <i class="fa-solid fa-comment-dots rc-callout-icon"></i>
-        <div class="rc-callout-body"><strong>Beyond the skill:</strong> the Create a Plan skill is scoped to plans, but the Configuration Agent can also create and modify <strong>add-ons and items</strong> right in the Compass Assistant — just describe what you need. For example: <em>"Add a $5/month priority-support add-on to my Pro plan"</em> or <em>"Create a new item for a one-time onboarding fee."</em></div>
+        <div class="rc-callout-body"><strong>Beyond the skill:</strong> the <strong>create a plan</strong> skill is scoped to plans, but the <strong>configuration agent</strong> can also create and modify <strong>add-ons and items</strong> right in Compass Assistant — just describe what you need. For example: <em>"Add a $5/month priority-support add-on to my Pro plan"</em> or <em>"Create a new item for a one-time onboarding fee."</em></div>
       </div>
     </div>
 
