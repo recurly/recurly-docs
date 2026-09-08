@@ -1,7 +1,9 @@
 ---
-title: 'Compass Agents & Skills: Review & resources'
+title: 'Compass agents & skills: Review & resources'
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
