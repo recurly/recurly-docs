@@ -406,7 +406,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- PATH NAV -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-btn-prev">← Retention Agent</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-btn-prev">← Retention agent</a>
       <span class="rc-lp-nav-indicator">6 of 7</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-review" class="rc-btn-path">Next: Review &amp; resources →</a>
     </div>
