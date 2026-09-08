@@ -1,8 +1,22 @@
 ---
-title: 'Compass Agents & Skills: Data Agent'
+title: 'Compass agents & skills: Data agent'
+excerpt: >-
+  Discover how Recurly's data agent converts plain language prompts into
+  ready-to-download revenue, invoice, and subscriber reports.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Discover how Recurly's data agent converts plain language prompts into
+    ready-to-download revenue, invoice, and subscriber reports.
+  keywords:
+    - The target focus terms for search visibility include recurly data agent
+    - generate an export skill
+    - natural language saas data export
+    - automated revenue report generation
+    - recurly accounts receivable export
+    - subscriber churn data export
+    - compass assistant data agent.
   robots: index
 ---
 <HTMLBlock>{`
