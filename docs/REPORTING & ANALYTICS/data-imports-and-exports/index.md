@@ -149,13 +149,3 @@ next:
   <li><a href="https://docs.recurly.com/recurly-subscriptions/docs/site-activities-export-an" target="_blank">Site activities</a> — site activity records.</li>
   <li><a href="https://docs.recurly.com/recurly-subscriptions/docs/users-export-an" target="_blank">Users</a> — user information for your site.</li>
 </ul>
-
-{/*
-📋 TODO before publishing:
-- [x] Links verified against the live left-nav and the Reporting & Analytics section index (docs.recurly.com/recurly-subscriptions/docs/...). All 35 import/export slugs confirmed current. Note "customer-imports" (not "customer-data-imports"), and the activities/users exports use the "-an" variants that live under the Data exports tree.
-- [ ] Added current export pages that weren't in the draft: Custom exports, Account activities, Site activities, Users. Remove any you don't want listed here.
-- [ ] "Dashboards & reports" — the draft listed this, but it isn't part of the Data imports and exports tree in the live IA. Omitted; add a link if one was intended.
-- [ ] "Account acquisition data export" — the draft listed this with no link, and there's no dedicated export page in the current structure. Omitted; confirm the intended target (the account-acquisition-data feature page, or coverage inside the Accounts export).
-- [ ] Revenue recognition export — verified the slug resolves, but the page was sunset 2025-10-31 (read-only, noindex, replaced by RevRec Standalone). Now shown as a sunset callout rather than a current export. Remove entirely if you'd rather not surface it.
-- [ ] Deprecated "Invoices" export — export-overview flags a deprecated combined Invoices export replaced by Invoices — Summary and Adjustments. Left out intentionally; add under a "Deprecated" note if you want it visible.
-*/}
