@@ -266,20 +266,20 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-code rc-fa-section"></i> What the code agent does</h2>
-      <p>The Code Agent helps the developers on your team write Recurly integration code. Tell it your language and what you're building, and it returns working snippets — API calls, webhook and event handling, and implementation guidance — drawn from Recurly's product docs, API reference, and client libraries.</p>
+      <p>The <strong>code agent</strong> helps the developers on your team write Recurly integration code. Tell it your language and what you're building, and it returns working snippets — API calls, webhook and event handling, and implementation guidance — drawn from Recurly's product docs, API reference, and client libraries.</p>
       <p>It keeps the context of your conversation, so once it knows you're working in Python, Ruby, or another language, every follow-up stays in that language. It's the fastest way to understand how Recurly's APIs work without reading the full reference end to end.</p>
     </div>
 
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Code agent skills</h2>
-      <p>Open the skill below to learn more and try it in your own account. New Code agent skills will be added to this list as they deploy.</p>
+      <p>Open a skill below to learn more and try it in your own account. New code agent skills will be added to this list as they deploy.</p>
 
       <div class="rc-skill-list">
         <details class="rc-skill" id="skill-write-code" open>
           <summary>
             <i class="fa-solid fa-code rc-skill-icon"></i>
-            <span class="rc-skill-name">Write Code</span>
+            <span class="rc-skill-name">Write code</span>
             <i class="fa-solid fa-chevron-up rc-skill-chevron"></i>
           </summary>
           <div class="rc-skill-body">
@@ -288,7 +288,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/2d220484bc626ebd527e1be16b70ec119a03bcbee7f9f5cea5c88de6fbb35e11-Write_Code.png" alt="Write Code — Code Agent" class="rc-skill-image">
               <div class="rc-skill-intro-text">
                 <p><strong>What it does:</strong> Skip the API docs and get straight to code. Describe what you're building and the Code Agent returns a ready-to-use snippet in your language, along with the webhook and event logic to support it.</p>
-                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose Write Code, or ask the Compass Assistant (the sparkles icon) directly. Tell it your language and goal up front — it'll tailor every snippet to match.</p>
+                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose <strong>"write code,"</strong> or ask Compass Assistant (the sparkles icon) directly. Tell it your language and goal up front — it'll tailor every snippet to match.</p>
               </div>
             </div>
 
@@ -300,12 +300,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <div class="rc-video-embed">
                 <iframe src="https://share.synthesia.io/embeds/videos/0db5544f-df04-4b53-af69-6c68138c1fdf" loading="lazy" title="Compass AI Skills: Write Code - Code Agent" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
               </div>
-              <div class="rc-video-caption">Watch the Code Agent generate a Python snippet to create a subscription, then add webhook handling for failed payments.</div>
+              <div class="rc-video-caption">Watch the <strong>code agent</strong> generate a Python snippet to create a subscription, then add webhook handling for failed payments.</div>
             </div>
 
             <div class="rc-accent-card rc-accent-scale">
               <h4>Try it yourself</h4>
-              <p>Open the Compass Assistant and try one of these:</p>
+              <p>Open Compass Assistant and try one of these:</p>
               <p class="rc-prompt-text">Generate a Python code snippet to create a new subscription via the Recurly API.</p>
               <p class="rc-prompt-text">Show me how to set up webhook event handling for failed payments.</p>
               <p class="rc-prompt-text">Give me sample code for creating a measured unit for usage-based billing.</p>
