@@ -419,24 +419,24 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/8c47602fe1f4de0b58f5ca8e7a27654539594afec158711ac91429a17a0a2f44-Optimize_Default_Dunning.png" alt="Optimize Default Dunning — Retention Agent" class="rc-skill-image">
               <div class="rc-skill-intro-text">
                 <p><strong>What it does:</strong> Configure automated payment retry schedules and email sequences to maximize recovery from failed payments — recovering revenue lost by 2.5% or more.</p>
-                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose Optimize Default Dunning. The Compass Assistant checks your current setup and applies the change for you — no prompt needed.</p>
+                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose <strong>"optimize default Dunning."</strong> The Compass Assistant checks your current setup and applies the change for you — no prompt needed.</p>
               </div>
             </div>
 
             <!-- HIDDEN DEMO: after the webinar, delete the "rc-hidden" class from the div below to reveal this video. -->
             <div class="rc-video-card">
               <div class="rc-video-header">
-                <h4>Compass AI Skills: Optimize Default Dunning - Retention Agent</h4>
+                <h4>Compass AI skills: Optimize default Dunning - Retention agent</h4>
               </div>
               <div class="rc-video-embed">
                 <iframe src="https://share.synthesia.io/embeds/videos/d9606887-b52f-4f9b-a4fa-e42d8292669c" loading="lazy" title="Compass AI Skills: Optimize Default Dunning - Retention Agent" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
               </div>
-              <div class="rc-video-caption">Watch the Retention Agent check your default dunning length and extend it to the recommended 27 days.</div>
+              <div class="rc-video-caption">Watch the <strong>retention agent</strong> check your default dunning length and extend it to the recommended 27 days.</div>
             </div>
 
             <div class="rc-callout rc-callout-info">
               <i class="fa-solid fa-circle-info rc-callout-icon"></i>
-              <div class="rc-callout-body"><strong>Narrow by design.</strong> This skill adds one email to your default dunning campaign to reach a 27-day total. It won't create new campaigns or rewrite existing emails — think of it as a single guided configuration action.</div>
+              <div class="rc-callout-body"><strong>Narrow by design.</strong> This skill adds one email to your default Dunning campaign to reach a 27-day total. It won't create new campaigns or rewrite existing emails — think of it as a single guided configuration action.</div>
             </div>
 
             <div class="rc-skill-sub">How the guided workflow goes</div>
