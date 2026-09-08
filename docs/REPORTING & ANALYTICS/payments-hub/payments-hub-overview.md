@@ -9,6 +9,8 @@ metadata:
   title: Overview
   robots: index
 ---
+Payments hub overview · MDX
+
 <div class="rp-page">
   <div class="rp-overview">The Overview dashboard provides a high-level summary of payment performance, geographic distribution, payment method mix, and the health of your payment recovery services. If you're using Account Updater or Kount, you'll also see a high-level view of your vault and fraud health metrics.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
@@ -58,7 +60,7 @@ metadata:
   <li><strong>Country</strong> — See data specific to your country, offering relevant insights and comparisons.</li>
   <li><strong>Gateway</strong> — Segment and analyze data by available payment processors — look at all gateways together or examine one at a time to understand where issues are happening.</li>
   <li><strong>Payment method</strong> — See the breakdown of failed payments by the method your customers use, and select specific payment options to analyze.</li>
-  <li><strong>Initiated by</strong> — Select between CIT (customer-initiated) or MIT (merchant-initiated) transactions. CIT transactions typically require more payment authentication.</li>
+  <li><strong>Initiated by</strong> — Filter to CIT (customer-initiated) or MIT (merchant-initiated) transactions. This classifies each transaction by who triggered the payment, not by whether it's a first charge or a renewal — see CIT vs. MIT transactions below. CIT payments are more likely to involve extra authentication, such as a 3DS challenge, because the customer is present.</li>
   <li><strong>Currency</strong> — Filter by the currencies available for your site's geo-location.</li>
 </ul>
 
@@ -86,9 +88,23 @@ This card displays your total success rate as a single, at-a-glance percentage, 
 <Image src="https://files.readme.io/645df300b087e16cfea9f5568243a38c3c56a1c487678f80eba690928c006b00-image.png" align="center" width="40%" border={true} />
 
 
+## CIT vs. MIT transactions
+
+The **Initiated by** filter and the CIT and MIT success rate cards below classify every transaction by who triggered it — not by whether it's a first charge or a renewal.
+
+**CIT (Customer-Initiated Transactions)** happen while the customer is present and actively engaged: sign-ups, checkout, and dunning click-throughs where a customer updates or re-enters their card and the retry runs as a result of that action. Because the customer is in session, these transactions tend to see higher success rates and are more likely to trigger extra authentication, such as a 3DS challenge.
+
+**MIT (Merchant-Initiated Transactions)** run automatically, without the customer in session: scheduled subscription renewals and recurring charges, along with the automatic retries Recurly runs against a failed invoice. This is where recovery tools like Account Updater and intelligent retries have the most impact, which is why the MIT success rate is a useful proxy for the health of your renewals.
+
+So a card updated by the customer during dunning — where they re-enter their details and that submission triggers the charge — counts as CIT, while an automatic scheduled retry of the same invoice counts as MIT.
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>CIT is not the same as a sign-up decline. Sign-up declines count only the very first transaction on an account, whereas CIT and MIT classify every transaction — first charge or renewal — by who initiated it. A sign-up attempt is always a CIT, but not every CIT is a sign-up.</div>
+</div>
+
 ## CIT success rate
 
-This card displays your Customer Initiated Transaction (CIT) success rate as a single, at-a-glance percentage, paired with a comparison to the previous time period, so you can immediately see whether performance is improving or declining.
+This card displays your Customer Initiated Transaction (CIT) success rate — covering payments where the customer is present, such as sign-ups, checkout, and customer-driven card updates during dunning — as a single, at-a-glance percentage, paired with a comparison to the previous time period, so you can immediately see whether performance is improving or declining.
 
 
 <Image src="https://files.readme.io/d8db93ab5b0155426a5c125585abed3a7e14b95f9fdfafca218077325824d2bc-image.png" align="center" width="40%" border={true} />
