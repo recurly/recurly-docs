@@ -5,7 +5,7 @@ excerpt: >-
   single conversational chat, enabling you to build plans, write code, run
   exports, and optimize dunning using plain language.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

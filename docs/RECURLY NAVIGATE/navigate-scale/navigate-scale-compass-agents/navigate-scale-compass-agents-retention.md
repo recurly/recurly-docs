@@ -4,7 +4,7 @@ excerpt: >-
   Discover how Recurly's retention agent uses automated dunning optimization and
   in-app payment prompts to recover failed payments and cut involuntary churn.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

@@ -4,7 +4,7 @@ excerpt: >-
   Discover how Recurly's data agent converts plain language prompts into
   ready-to-download revenue, invoice, and subscriber reports.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Discover how Recurly's data agent converts plain language prompts into

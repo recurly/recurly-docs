@@ -5,7 +5,7 @@ excerpt: >-
   deliver instant, sourced answers from help guides and developer docs directly
   inside your account.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Discover how Recurly's Knowledge Agent uses the Documentation Search skill
