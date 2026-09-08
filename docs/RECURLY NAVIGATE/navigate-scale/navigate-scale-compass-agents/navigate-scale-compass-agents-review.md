@@ -329,7 +329,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass Agents &amp; Skills
       </div>
       <div class="rc-lp-hero-title"><h1>Review &amp; resources</h1></div>
-      <p>You've completed Compass Agents &amp; Skills. Check what stuck, revisit the prompt library, and find everything in one place.</p>
+      <p>You've completed Compass Agents &amp; Skills. Check what stuck, try your own prompts, and make Compass your new home for discovery, coding assistance, plan deployment, and day-to-day tasks.</p>
     </div>
 
     <!-- NAV (content page — expanded) -->
