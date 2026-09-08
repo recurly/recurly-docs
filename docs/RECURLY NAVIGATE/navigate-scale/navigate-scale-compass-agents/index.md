@@ -5,6 +5,20 @@ hidden: true
 link:
   new_tab: false
 metadata:
+  description: >-
+    Discover how Recurly Compass leverages specialized AI agents and skills —
+    from natural language plan configuration to automated involuntary churn
+    remediation—to streamline subscription management and API integration.
+  keywords:
+    - >-
+      The target focus terms for search visibility include recurly compass ai
+      agents
+    - subscription management agentic ai
+    - automated dunning optimization
+    - recurring billing plan generator
+    - recurly api code generation
+    - involuntary churn remediation
+    - automated saas data export
   robots: index
 ---
 <HTMLBlock>{`
