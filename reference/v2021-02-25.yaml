@@ -403,6 +403,7 @@ x-tagGroups:
       - automated_exports
       - general_ledger_account
       - performance_obligations
+      - invoice_templates
   - name: App Management
     tags:
       - external_subscriptions
@@ -412,13 +413,104 @@ x-tagGroups:
       - external_product_references
       - external_payment_phases
 tags:
-  - name: site
-    x-displayName: Site
-  - name: custom_field_definition
-    x-displayName: Custom Field Definition
+  - name: account
+    x-displayName: Account
     description: >-
-      Describes the fields that can be used as custom fields on accounts, items,
-      line-items (one time charges), plans, or subscriptions.
+      Accounts are core to managing your customers inside of Recurly. The
+      account object stores the entire Recurly history of your customer and acts
+      as the entry point for working with a customer's billing information,
+      subscription data, transactions, invoices and more.
+  - name: note
+    x-displayName: Account Note
+    description: >-
+      Account notes allow your team to leave notes on an account to add context,
+      e.g. the reason for a refund, customer requests, and/or complaints. These
+      notes are internal and not exposed to your customers.
+  - name: account_acquisition
+    x-displayName: Account Acquisition Info
+    description: >-
+      Recurly offers the ability to record marketing data on customer accounts
+      to match this data with revenue and billing data events in Recurly.
+  - name: billing_info
+    x-displayName: Billing Info
+    description: >-
+      Without the premium Wallet feature, an account can only have one stored
+      payment method at a time. Examples include credit cards, PayPal, or bank
+      accounts. Billing info is filled out by the customer upon purchase or when
+      they update their information.
+  - name: billing_infos
+    x-displayName: Billing Infos
+    description: >-
+      If the premium Wallet feature is enabled, an account can have multiple
+      payment methods stored. Examples include credit cards, PayPal, or bank
+      accounts. Primary or backup billing infos can be designated from these
+      endpoints.
+  - name: coupon_redemption
+    x-displayName: Coupon Redemption
+    description: >-
+      Coupon redemptions are created when a coupon is applied to an account or
+      subscription. This allows you to track your promotions.
+  - name: subscription
+    x-displayName: Subscription
+    description: >-
+      Subscriptions are created when your customers subscribe to one of your
+      plans. The customer's subscription tells Recurly when and how much to bill
+      the customer.
+  - name: subscription_change
+    x-displayName: Subscription Change
+    description: >-
+      Subscription changes alter subscription in a way that might affect the
+      invoiced amount, such as changing the plan, add-ons, quantities, or
+      shipping address. Changes can be made immediately in the current billing
+      cycle or scheduled to take place at the next renewal.
+  - name: usage
+    x-displayName: Usage
+    description: >-
+      Send Recurly your customer usage and we will automatically bill them in
+      arrears at the end of the billing cycle. For more info on usage-based
+      billing, [click here](https://docs.recurly.com/docs/usage-based-billing).
+  - name: shipping_address
+    x-displayName: Shipping Address
+    description: >-
+      Shipping addresses are tied to a customer's account. Each account can have
+      up to 20 different shipping addresses, and if you have enabled multiple
+      subscriptions per account, you can associate different shipping addresses
+      to each subscription.
+  - name: purchase
+    x-displayName: Purchase
+    description: >-
+      A purchase is a checkout containing at least one or more subscriptions or
+      one-time charges (line items) and supports both coupon and gift card
+      redemptions. All items purchased will be on one invoice and paid for with
+      one transaction. The purchases endpoint can also be used to immediately
+      create a credit invoice on an account, when Credit Invoices is enabled on
+      your site.
+  - name: invoice
+    x-displayName: Invoice
+    description: >-
+      An invoice relates charges, credits, and payments together. When a
+      subscription is created or renewed or a charge is created on the account,
+      Recurly will sum the charges, discount or tax as appropriate, and send the
+      invoice out for collection.
+  - name: line_item
+    x-displayName: Line Item
+    description: Line items are the charges and credits on your customer's invoices.
+  - name: credit_payment
+    x-displayName: Credit Payment
+  - name: transaction
+    x-displayName: Transaction
+    description: >-
+      Purchasing information is sent to your payment gateway in an action called
+      a transaction. This includes the customer's billing information and the
+      amount of money to be charged, voided, or refunded.
+  - name: revenue_recovery
+    x-displayName: Revenue Recovery
+    description: Revenue recovery
+  - name: gift_cards
+    x-displayName: Gift Cards
+    description: >-
+      Add gift card purchases to your checkout and allow gift card recipients to
+      redeem the gift card for credit towards any of your products.
   - name: item
     x-displayName: Item
     description: >-
@@ -448,166 +540,40 @@ tags:
       A measured unit describes a usage-based add-on's usage. If different
       usage-based add-ons share the same measured unit, you can report on
       customer usage for those add-ons at the aggregated measured unit level.
-  - name: account
-    x-displayName: Account
-    description: >-
-      Accounts are core to managing your customers inside of Recurly. The
-      account object stores the entire Recurly history of your customer and acts
-      as the entry point for working with a customer's billing information,
-      subscription data, transactions, invoices and more.
-  - name: note
-    x-displayName: Account Note
-    description: >-
-      Account notes allow your team to leave notes on an account to add context,
-      e.g. the reason for a refund, customer requests, and/or complaints. These
-      notes are internal and not exposed to your customers.
-  - name: account_acquisition
-    x-displayName: Account Acquisition Info
-    description: >-
-      Recurly offers the ability to record marketing data on customer accounts
-      to match this data with revenue and billing data events in Recurly.
-  - name: price_segment
-    x-displayName: Price Segment
-  - name: billing_info
-    x-displayName: Billing Info
-    description: >-
-      Without the premium Wallet feature, an account can only have one stored
-      payment method at a time. Examples include credit cards, PayPal, or bank
-      accounts. Billing info is filled out by the customer upon purchase or when
-      they update their information.
-  - name: billing_infos
-    x-displayName: Billing Infos
-    description: >-
-      If the premium Wallet feature is enabled, an account can have multiple
-      payment methods stored. Examples include credit cards, PayPal, or bank
-      accounts. Primary or backup billing infos can be designated from these
-      endpoints.
-  - name: subscription
-    x-displayName: Subscription
-    description: >-
-      Subscriptions are created when your customers subscribe to one of your
-      plans. The customer's subscription tells Recurly when and how much to bill
-      the customer.
-  - name: subscription_change
-    x-displayName: Subscription Change
-    description: >-
-      Subscription changes alter subscription in a way that might affect the
-      invoiced amount, such as changing the plan, add-ons, quantities, or
-      shipping address. Changes can be made immediately in the current billing
-      cycle or scheduled to take place at the next renewal.
-  - name: shipping_address
-    x-displayName: Shipping Address
-    description: >-
-      Shipping addresses are tied to a customer's account. Each account can have
-      up to 20 different shipping addresses, and if you have enabled multiple
-      subscriptions per account, you can associate different shipping addresses
-      to each subscription.
-  - name: invoice
-    x-displayName: Invoice
-    description: >-
-      An invoice relates charges, credits, and payments together. When a
-      subscription is created or renewed or a charge is created on the account,
-      Recurly will sum the charges, discount or tax as appropriate, and send the
-      invoice out for collection.
-  - name: revenue_recovery
-    x-displayName: Revenue Recovery
-    description: Revenue recovery
-  - name: line_item
-    x-displayName: Line Item
-    description: Line items are the charges and credits on your customer's invoices.
-  - name: credit_payment
-    x-displayName: Credit Payment
-  - name: purchase
-    x-displayName: Purchase
-    description: >-
-      A purchase is a checkout containing at least one or more subscriptions or
-      one-time charges (line items) and supports both coupon and gift card
-      redemptions. All items purchased will be on one invoice and paid for with
-      one transaction. The purchases endpoint can also be used to immediately
-      create a credit invoice on an account, when Credit Invoices is enabled on
-      your site.
-  - name: usage
-    x-displayName: Usage
-    description: >-
-      Send Recurly your customer usage and we will automatically bill them in
-      arrears at the end of the billing cycle. For more info on usage-based
-      billing, [click here](https://docs.recurly.com/docs/usage-based-billing).
-  - name: transaction
-    x-displayName: Transaction
-    description: >-
-      Purchasing information is sent to your payment gateway in an action called
-      a transaction. This includes the customer's billing information and the
-      amount of money to be charged, voided, or refunded.
   - name: coupon
     x-displayName: Coupon
     description: >-
       Coupons can either be single codes that easily allow mass distribution by
       many customers or bulk coupons that can generate many unique coupons that
       can allow for individual delivery and tracking.
-  - name: coupon_redemption
-    x-displayName: Coupon Redemption
-    description: >-
-      Coupon redemptions are created when a coupon is applied to an account or
-      subscription. This allows you to track your promotions.
   - name: unique_coupon_code
     x-displayName: Unique Coupon Code
     description: Unique coupon codes are generated from bulk coupons.
+  - name: price_segment
+    x-displayName: Price Segment
+  - name: site
+    x-displayName: Site
+  - name: custom_field_definition
+    x-displayName: Custom Field Definition
+    description: >-
+      Describes the fields that can be used as custom fields on accounts, items,
+      line-items (one time charges), plans, or subscriptions.
   - name: shipping_method
     x-displayName: Shipping Method
     description: Shipping methods offered to send products to customers.
-  - name: automated_exports
-    x-displayName: Automated Exports
-    description: Automated exports of customer data.
   - name: dunning_campaigns
     x-displayName: Dunning Campaigns
     description: >-
       Settings used when attempting to dun customers whose payments are
       declined.
-  - name: external_subscriptions
-    x-displayName: External Subscription
-    description: >-
-      A subscription from an external resource that is not managed by the
-      Recurly platform and instead is managed by third-party platforms like
-      Apple App Store and Google Play Store.
-  - name: external_invoices
-    x-displayName: External Invoice
-    description: >-
-      An invoice from an external resource that is not managed by the Recurly
-      platform and instead is managed by third-party platforms like Apple App
-      Store and Google Play Store.
-  - name: external_products
-    x-displayName: External Product
-    description: >-
-      A product from an external resource that is not managed by the Recurly
-      platform and instead is managed by third-party platforms like Apple App
-      Store and Google Play Store.
-  - name: external_product_references
-    x-displayName: External Product Reference
-    description: >-
-      Associates an external product to a corresponding resource on an external
-      platform like the Apple App Store or Google Play Store.
-  - name: external_payment_phases
-    x-displayName: External Payment Phase
-    description: >-
-      Details of payments in the lifecycle of a subscription from an external
-      resource that is not managed by the Recurly platform, e.g. App Store or
-      Google Play Store.
-  - name: gift_cards
-    x-displayName: Gift Cards
-    description: >-
-      Add gift card purchases to your checkout and allow gift card recipients to
-      redeem the gift card for credit towards any of your products.
-  - name: external_accounts
-    x-displayName: External Account
-    description: >-
-      An account from an external resource that is not managed by the Recurly
-      platform and instead is managed by third-party platforms like Apple App
-      Store and Google Play Store.
   - name: business_entities
     x-displayName: Business Entities
     description: >-
       Describes the business address that will be used for invoices and taxes
       depending on settings and subscriber location.
+  - name: automated_exports
+    x-displayName: Automated Exports
+    description: Automated exports of customer data.
   - name: general_ledger_account
     x-displayName: General Ledger Account
     description: |
@@ -672,6 +638,43 @@ tags:
         - The customer receives and consumes the benefits of the goods or services as they are provided
         by the entity (routine, recurring services like a cleaning service are an example of a series of
         services that are substantially the same and have the same pattern of transfer)
+  - name: external_subscriptions
+    x-displayName: External Subscription
+    description: >-
+      A subscription from an external resource that is not managed by the
+      Recurly platform and instead is managed by third-party platforms like
+      Apple App Store and Google Play Store.
+  - name: external_invoices
+    x-displayName: External Invoice
+    description: >-
+      An invoice from an external resource that is not managed by the Recurly
+      platform and instead is managed by third-party platforms like Apple App
+      Store and Google Play Store.
+  - name: external_products
+    x-displayName: External Product
+    description: >-
+      A product from an external resource that is not managed by the Recurly
+      platform and instead is managed by third-party platforms like Apple App
+      Store and Google Play Store.
+  - name: external_accounts
+    x-displayName: External Account
+    description: >-
+      An account from an external resource that is not managed by the Recurly
+      platform and instead is managed by third-party platforms like Apple App
+      Store and Google Play Store.
+  - name: external_product_references
+    x-displayName: External Product Reference
+    description: >-
+      Associates an external product to a corresponding resource on an external
+      platform like the Apple App Store or Google Play Store.
+  - name: external_payment_phases
+    x-displayName: External Payment Phase
+    description: >-
+      Details of payments in the lifecycle of a subscription from an external
+      resource that is not managed by the Recurly platform, e.g. App Store or
+      Google Play Store.
+  - name: invoice_templates
+    description: ''
 paths:
   /sites:
     get:
