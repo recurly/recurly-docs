@@ -271,7 +271,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-pencil rc-fa-section"></i> What the configuration agent does</h2>
-      <p>The configuration agent sets up your plan and billing configuration through conversation either in your sparkles chat or a programmed skill. Describe the plan, add-on, or item you want, and it builds it for you — guiding you through the details step by step.</p>
+      <p>The <strong>configuration agent</strong> sets up your plan and billing configuration through conversation either in your sparkles chat or a programmed skill. Describe the plan, add-on, or item you want, and it builds it for you — guiding you through the details step by step.</p>
       <p>If you leave out something it needs, it asks before creating anything, and it keeps context so you can refine or build on what you just made without starting over. It's a shortcut past the configuration screens and the documentation.</p>
     </div>
 
@@ -293,7 +293,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/ce221b4bea0c7af4f6fa7c252ff450c7fc7d0894fa2a70e861c0bf381eeb02e4-Create_a_plan.png" alt="Create a Plan — Configuration Agent" class="rc-skill-image">
               <div class="rc-skill-intro-text">
                 <p><strong>What it does:</strong> Create a subscription plan by describing it in plain language — set the price, billing interval, and free trial, and the agent fills in the details, asking before it creates anything.</p>
-                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose "create a plan," then describe your plan — price, billing interval, free trial — and confirm as it asks. Need an add-on or item instead? Ask the Compass Assistant directly; those are part of the agent's broader chat, not this skill.</p>
+                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose <strong>"create a plan,"</strong> then describe your plan — price, billing interval, free trial — and confirm as it asks. Need an add-on or item instead? Ask the Compass Assistant directly; those are part of the agent's broader chat, not this skill.</p>
               </div>
             </div>
 
