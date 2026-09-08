@@ -1,8 +1,8 @@
 ---
 title: UPI AutoPay integration guide
 excerpt: >-
-  Create subscriptions via Purchase API using UPI AutoPay with a VPA and Ebanx
-  sandbox simulation.
+  Create subscriptions via Purchase API using UPI AutoPay with a VPA, QR Code,
+  or App Links and Ebanx sandbox simulation.
 deprecated: false
 hidden: false
 metadata:
