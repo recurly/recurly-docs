@@ -1,5 +1,9 @@
 ---
 title: 'Compass agents & skills: Knowledge agent'
+excerpt: >-
+  Discover how Recurly's Knowledge Agent uses the Documentation Search skill to
+  deliver instant, sourced answers from help guides and developer docs directly
+  inside your account.
 deprecated: false
 hidden: true
 metadata:
@@ -265,7 +269,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-book-open rc-fa-section"></i> What the Knowledge agent does</h2>
+      <h2><i class="fa-solid fa-book-open rc-fa-section"></i> What the knowledge agent does</h2>
       <p>The Knowledge agent answers Recurly questions in plain language. It searches Recurly's product documentation, developer docs, and support knowledge base, then gives you a direct answer — not just a definition, but how Recurly specifically solves the problem you're asking about.</p>
       <p>Because it keeps the context of your conversation, you can start broad and narrow in with follow-up questions. It's the fastest way to get a reliable answer without leaving your workflow or waiting on a support reply.</p>
     </div>
