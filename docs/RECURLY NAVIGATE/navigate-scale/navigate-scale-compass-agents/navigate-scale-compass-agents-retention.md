@@ -319,7 +319,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: SKILLS -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Retention Agent skills</h2>
-      <p>The Retention Agent currently runs two skills. Jump to either one to watch the demo and work through it in your own account.</p>
+      <p>The Retention Agent currently runs two skills. Jump to either one to learn more and work through it in your own account.</p>
 
   
       <div class="rc-skill-list">
@@ -339,6 +339,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
                 <p><strong>What it does:</strong> Prompt subscribers with a past-due payment to update their billing details through an in-app message that works alongside your dunning campaigns — recovering revenue that would otherwise churn involuntarily, and reducing involuntary churn by up to 14%.</p>
                 <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose Involuntary Churn Remediation. The Compass Assistant walks you through the prompt — title, message, button, and colors — then hands you a snippet to add to your app.</p>
               </div>
+            </div>
+
+            <div class="rc-callout rc-callout-info">
+              <i class="fa-solid fa-circle-info rc-callout-icon"></i>
+              <div class="rc-callout-body"><strong>Runs on Recurly Engage.</strong> Two technical steps finish the setup before subscribers see the prompt: install the Recurly Engage script via your tag manager, and add FetchID logic to identify logged-in users. Not on Engage yet? Many Recurly Subscriptions customers add it for richer campaigns and in-app messages — to learn more, <a href="mailto:support@recurly.com" class="rc-callout-link">contact support@recurly.com</a>.</div>
             </div>
 
             <!-- HIDDEN DEMO: after the webinar, delete the "rc-hidden" class from the div below to reveal this video. -->
@@ -381,10 +386,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               </ul>
             </div>
 
-            <div class="rc-callout rc-callout-info">
-              <i class="fa-solid fa-circle-info rc-callout-icon"></i>
-              <div class="rc-callout-body"><strong>Runs on Recurly Engage.</strong> Two technical steps finish the setup before subscribers see the prompt: install the Recurly Engage script via your tag manager, and add FetchID logic to identify logged-in users. Not on Engage yet? Many Recurly Subscriptions customers add it for richer campaigns and in-app messages — to learn more, <a href="mailto:support@recurly.com" class="rc-callout-link">contact support@recurly.com</a>.</div>
-            </div>
+
 
           </div>
         </details>
