@@ -451,7 +451,7 @@ The `value` string will be an array of app deep links to present to the user. Th
 
 ```json
 "next_action": {
-    "type": "appp_links",
+    "type": "app_deep_links",
     "values": [
         "gpay://upi/mandate?pa=merchant%40pspbank&pn=M...INR&mc=621",
         "phonepe://mandate?pa=merchant%40pspbank&pn=M...INR&mc=621",
