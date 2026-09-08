@@ -288,7 +288,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Data agent skills</h2>
-      <p>Open the skill below to learn more and try it in your own account. New data agent skills will be added to this list as they deploy.</p>
+      <p>Open a skill below to learn more and try it in your own account. New data agent skills will be added to this list as they deploy.</p>
 
       <div class="rc-skill-list">
         <details class="rc-skill" id="skill-generate-an-export" open>
@@ -303,7 +303,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/05b2ef74463d66f4e7f358d96001738fd3376f398b6cb316dd220816e2ce4e0a-Generate_an_Export.png" alt="Generate an Export — Data Agent" class="rc-skill-image">
               <div class="rc-skill-intro-text">
                 <p><strong>What it does:</strong> Create exports of subscription, billing, and revenue data for analysis and reporting by describing what you need. The agent maps your request to the right export, runs it, and gives you a download link.</p>
-                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose "generate an export," or ask Compass Assistant (the sparkles icon) directly. Say what data and time range you want, confirm, and it runs the report to your exports area.</p>
+                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose <strong>"generate an export,"</strong> or ask Compass Assistant (the sparkles icon) directly. Say what data and time range you want, confirm, and it runs the report to your exports area.</p>
               </div>
             </div>
 
@@ -313,7 +313,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
                 <h4>Compass AI skills: Generate an export - Data agent</h4>
               </div>
               <div class="rc-video-embed">
-                <iframe src="https://share.synthesia.io/embeds/videos/b2d08fbd-ab6c-4f95-ad27-2193f579320c" loading="lazy" title="Compass AI Skills: Generate an Export - Data Agent" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+                <iframe src="https://share.synthesia.io/embeds/videos/b2d08fbd-ab6c-4f95-ad27-2193f579320c" loading="lazy" title="Compass AI skills: Generate an export - Data agent" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
               </div>
               <div class="rc-video-caption">Watch the <strong>data agent</strong> pull all past-due invoices from the last 30 days and generate a ready-to-download A/R report.</div>
             </div>
