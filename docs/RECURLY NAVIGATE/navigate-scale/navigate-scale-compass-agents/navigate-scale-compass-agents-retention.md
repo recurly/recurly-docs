@@ -328,13 +328,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-receipt rc-fa-section"></i> What the <b>retention agent</b> does</h2>
       <p>The <b>retention agent</> helps you keep revenue you've already earned. It optimizes your dunning — the retry-and-reminder process that recovers failed payments — and helps you remediate involuntary churn with in-app prompts that ask subscribers to fix a past-due payment.</p>
-      <p>Currently, this agent has two skills: <b>Optimize default dunning</b> and <b>involuntary churn remediation</b>. One tunes your automated recovery settings; the other builds a prompt that appears in your app. Together they target the failed payments that quietly erode subscription revenue.</p>
+      <p>Currently, this agent has two skills: <strong>Optimize default dunning</strong> and <strong>involuntary churn remediation</strong>. One tunes your automated recovery settings; the other builds a prompt that appears in your app. Together they target the failed payments that quietly erode subscription revenue.</p>
     </div>
 
     <!-- SECTION: SKILLS -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Retention Agent skills</h2>
-      <p>The retention agent currently runs two skills. Jump to either one to learn more and work through it in your own account.</p>
+      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Retention agent skills</h2>
+      <p>Open a skill below to learn more and try it in your own account. New retention agent skills will be added to this list as they deploy.</p>
 
   
       <div class="rc-skill-list">
@@ -343,7 +343,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <details class="rc-skill" id="skill-involuntary-churn-remediation">
           <summary>
             <i class="fa-solid fa-receipt rc-skill-icon"></i>
-            <span class="rc-skill-name">Involuntary Churn Remediation</span>
+            <span class="rc-skill-name">Involuntary churn remediation</span>
             <i class="fa-solid fa-chevron-up rc-skill-chevron"></i>
           </summary>
           <div class="rc-skill-body">
@@ -352,7 +352,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/553a77dfa941120e58abc0e888596950798bb71680d8da8ad088e093dadaf0e4-Involuntary_Churn_Remediation.png" alt="Involuntary Churn Remediation — Retention Agent" class="rc-skill-image">
               <div class="rc-skill-intro-text">
                 <p><strong>What it does:</strong> Prompt subscribers with a past-due payment to update their billing details through an in-app message that works alongside your dunning campaigns — recovering revenue that would otherwise churn involuntarily, and reducing involuntary churn by up to 14%.</p>
-                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose Involuntary Churn Remediation. The Compass Assistant walks you through the prompt — title, message, button, and colors — then hands you a snippet to add to your app.</p>
+                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose <strong>involuntary churn remediation</strong>. The Compass Assistant walks you through the prompt — title, message, button, and colors — then hands you a snippet to add to your app.</p>
               </div>
             </div>
 
@@ -364,12 +364,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <!-- HIDDEN DEMO: after the webinar, delete the "rc-hidden" class from the div below to reveal this video. -->
             <div class="rc-video-card rc-hidden">
               <div class="rc-video-header">
-                <h4>Compass AI Skills: Involuntary Churn Remediation - Retention Agent</h4>
+                <h4>Compass AI skills: Involuntary churn remediation - Retention agent</h4>
               </div>
               <div class="rc-video-embed">
                 <iframe src="https://share.synthesia.io/embeds/videos/048c3139-c84b-46a8-962b-5f58fca53080" loading="lazy" title="Compass AI Skills: Involuntary Churn Remediation - Retention Agent" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
               </div>
-              <div class="rc-video-caption">Watch the Retention Agent build a past-due in-app prompt — message, CTA, and colors — then generate the snippet to embed in your app.</div>
+              <div class="rc-video-caption">Watch the <strong>retention agent</strong> build a past-due in-app prompt — message, CTA, and colors — then generate the snippet to embed in your app.</div>
             </div>
 
             <div class="rc-skill-sub">Try it yourself</div>
@@ -410,7 +410,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <details class="rc-skill" id="skill-optimize-default-dunning">
           <summary>
             <i class="fa-solid fa-receipt rc-skill-icon"></i>
-            <span class="rc-skill-name">Optimize Default Dunning</span>
+            <span class="rc-skill-name">Optimize default Dunning</span>
             <i class="fa-solid fa-chevron-up rc-skill-chevron"></i>
           </summary>
           <div class="rc-skill-body">
@@ -444,7 +444,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <div class="rc-step">
                 <div class="rc-step-num">1</div>
                 <div class="rc-step-content">
-                  <p><strong>Find the skill.</strong> In the left nav, open <strong>Compass → Skills</strong> and locate the Optimize Default Dunning card. You'll need the Compass Assistant Chat feature flag enabled, plus Admin — or both Configuration and Analytics — permissions.</p>
+                  <p><strong>Find the skill.</strong> In the left nav, open <strong>Compass → Skills</strong> and locate the <strong>optimize default Dunning</strong> card. You'll need the Compass Assistant Chat feature flag enabled, plus Admin — or both Configuration and Analytics — permissions.</p>
                 </div>
               </div>
               <div class="rc-step">
@@ -456,7 +456,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <div class="rc-step">
                 <div class="rc-step-num">3</div>
                 <div class="rc-step-content">
-                  <p><strong>Review your current setup.</strong> The Assistant checks your default dunning and shows your existing length, then explains it will add one email before the final "Expired for Non-Payment" notice to reach 27 days.</p>
+                  <p><strong>Review your current setup.</strong> The Assistant checks your default Dunning and shows your existing length, then explains it will add one email before the final "Expired for Non-Payment" notice to reach 27 days.</p>
                   <img src="https://files.readme.io/e9d7cff9b00612bd69cafc9644701029ca4dbe62e6b42325cf1f5b3856dc8338-Screenshot_2026-09-04_at_4.32.47_PM.png" alt="Compass Assistant checking the existing default dunning length" class="rc-step-shot">
                   <img src="https://files.readme.io/ac28571648522201f5d346991e6596a9b667f2337c68efbfebfd35f209658780-Screenshot_2026-09-04_at_4.34.07_PM.png" alt="Compass Assistant reviewing the proposed dunning changes" class="rc-step-shot">
                 </div>
@@ -464,7 +464,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <div class="rc-step">
                 <div class="rc-step-num">4</div>
                 <div class="rc-step-content">
-                  <p><strong>Confirm the change.</strong> Approve it and the Assistant applies the update. You'll then be pointed to your dunning emails to write the new copy yourself — the skill surfaces a "Manage your dunning campaigns" link, but doesn't edit copy for you.</p>
+                  <p><strong>Confirm the change.</strong> Approve it and Compass Assistant applies the update. You'll then be pointed to your Dunning emails to write the new copy yourself — the skill surfaces a "Manage your Dunning campaigns" link, but doesn't edit copy for you.</p>
                   <img src="https://files.readme.io/a963312aae1646a2c7eac23cad34d3072bff8c4bc3c0ab5a4e5b5c0e51d8bfdc-Screenshot_2026-09-04_at_4.34.32_PM.png" alt="Default dunning length updated, with a link to manage dunning campaigns" class="rc-step-shot">
                 </div>
               </div>
@@ -478,7 +478,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- PATH NAV -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-btn-prev">← Data Agent</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-btn-prev">← Data agent</a>
       <span class="rc-lp-nav-indicator">5 of 7</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-assistant" class="rc-btn-path">Next: Compass Assistant →</a>
     </div>
@@ -495,14 +495,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- FOOTER -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Compass Agents &amp; Skills</span>
+               <div class="rc-footer-section">
+          <span class="rc-footer-label">Compass agents &amp; skills</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention Agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention agent</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-assistant" class="rc-footer-link">6. Compass Assistant</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-review" class="rc-footer-link">7. Review &amp; resources</a>
         </div>
