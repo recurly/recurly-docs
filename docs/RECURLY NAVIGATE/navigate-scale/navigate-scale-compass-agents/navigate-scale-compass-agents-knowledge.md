@@ -282,14 +282,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-book-open rc-fa-section"></i> What the knowledge agent does</h2>
-      <p>The Knowledge agent answers Recurly questions in plain language. It searches Recurly's product documentation, developer docs, and support knowledge base, then gives you a direct answer — not just a definition, but how Recurly specifically solves the problem you're asking about.</p>
+      <p>The <strong>knowledge agent</strong> answers Recurly questions in plain language. It searches Recurly's product documentation, developer docs, and support knowledge base, then gives you a direct answer — not just a definition, but how Recurly specifically solves the problem you're asking about.</p>
       <p>Because it keeps the context of your conversation, you can start broad and narrow in with follow-up questions. It's the fastest way to get a reliable answer without leaving your workflow or waiting on a support reply.</p>
     </div>
 
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Knowledge agent skills</h2>
-      <p>Open the skill below to learn more and try it in your own account. New knowledge agent skills will be added to this list as they deploy.</p>
+      <p>Open a skill below to learn more and try it in your own account. New knowledge agent skills will be added to this list as they deploy.</p>
 
       <div class="rc-skill-list">
         <details class="rc-skill" id="skill-documentation-search" open>
@@ -304,24 +304,24 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/f678ac42b052a5392727fdf2702a31c41248885b8664a6c5fc21302f3fd443f3-Knowledge_Agent.png" alt="Documentation Search — Knowledge Agent" class="rc-skill-image">
               <div class="rc-skill-intro-text">
                 <p><strong>What it does:</strong> Ask any Recurly question and get a sourced, specific answer drawn from product docs, developer docs, and the knowledge base.</p>
-                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose Documentation Search, or ask the Compass Assistant (the sparkles icon) directly. Start with a broad question, then ask follow-ups — the agent remembers the thread.</p>
+                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose <strong>"documentation search,"</strong> or ask the Compass Assistant (the sparkles icon) directly. Start with a broad question, then ask follow-ups — the agent remembers the thread.</p>
               </div>
             </div>
 
             <!-- HIDDEN DEMO: after the webinar, delete the "rc-hidden" class from the div below to reveal this video. -->
             <div class="rc-video-card rc-hidden">
               <div class="rc-video-header">
-                <h4>Compass AI Skills: Documentation Search - Knowledge Agent</h4>
+                <h4>Compass AI skills: Documentation search - Knowledge agent</h4>
               </div>
               <div class="rc-video-embed">
                 <iframe src="https://share.synthesia.io/embeds/videos/1a464b2c-f916-480a-9332-490d201eddad" loading="lazy" title="Compass AI Skills: Documentation Search - Knowledge Agent" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
               </div>
-              <div class="rc-video-caption">Watch the Knowledge Agent search Recurly's docs to explain voluntary vs. involuntary churn — then show how Recurly helps you solve it.</div>
+              <div class="rc-video-caption">Watch the <strong>knowledge agent</strong> search Recurly's docs to explain voluntary vs. involuntary churn — then show how Recurly helps you solve it.</div>
             </div>
 
             <div class="rc-accent-card rc-accent-scale">
               <h4>Try it yourself</h4>
-              <p>Open the Compass Assistant and try one of these:</p>
+              <p>Open Compass Assistant or the <strong>documentation search</strong> skill, and try one of these:</p>
               <p class="rc-prompt-text">What is the difference between voluntary and involuntary churn?</p>
               <p class="rc-prompt-text">What is tiered pricing and how do I set it up?</p>
               <p class="rc-prompt-text">How does dunning work in Recurly?</p>
