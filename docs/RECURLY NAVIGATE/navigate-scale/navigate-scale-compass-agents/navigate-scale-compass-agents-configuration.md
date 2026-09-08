@@ -271,14 +271,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-pencil rc-fa-section"></i> What the Configuration Agent does</h2>
-      <p>The Configuration Agent sets up your billing configuration through conversation. Describe the plan, add-on, or item you want, and it builds it for you — guiding you through the details step by step.</p>
+      <p>The Configuration Agent sets up your plan and billing configuration through conversation either in your sparkles chat or a programmed skill. Describe the plan, add-on, or item you want, and it builds it for you — guiding you through the details step by step.</p>
       <p>If you leave out something it needs, it asks before creating anything, and it keeps context so you can refine or build on what you just made without starting over. It's a shortcut past the configuration screens and the documentation.</p>
     </div>
 
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Skill</h2>
-      <p>Open the skill below to watch the demo and try it in your own account.</p>
+      <p>Open the skill below to learn more and try it in your own account. New Configuration Agent skills will be added to this list as they deploy.</p>
 
       <div class="rc-skill-list">
         <details class="rc-skill" id="skill-create-a-plan" open>
