@@ -1,5 +1,8 @@
 ---
 title: 'Compass agents & skills: Retention agent'
+excerpt: >-
+  Discover how Recurly's retention agent uses automated dunning optimization and
+  in-app payment prompts to recover failed payments and cut involuntary churn.
 deprecated: false
 hidden: true
 link:
