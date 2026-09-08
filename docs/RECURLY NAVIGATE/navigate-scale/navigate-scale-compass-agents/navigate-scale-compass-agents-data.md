@@ -254,7 +254,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass Agents &amp; Skills
       </div>
-      <div class="rc-lp-hero-title"><h1>Data Agent</h1></div>
+      <div class="rc-lp-hero-title"><h1>Data agent</h1></div>
       <p>Ask for the data you need in plain language and get an export ready to download — no navigating export forms or picking filters.</p>
     </div>
 
@@ -280,21 +280,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-database rc-fa-section"></i> What the Data Agent does</h2>
-      <p>The Data Agent pulls subscription, billing, and revenue data on request. Describe what you want in plain language, and it understands your export schema, builds the right report, and hands you a link to download it — no export forms or filter menus to work through.</p>
+      <h2><i class="fa-solid fa-database rc-fa-section"></i> What the data agent does</h2>
+      <p>The <strong>data agent</strong> pulls subscription, billing, and revenue data on request. Describe what you want in plain language, and it understands your export schema, builds the right report, and hands you a link to download it — no export forms or filter menus to work through.</p>
       <p>It keeps context, so you can refine a request or ask for a different cut without starting over. It's the quickest way to get data out of Recurly when you don't want to dig through the exports area or wait on someone else to pull it.</p>
     </div>
 
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Data Agent skills</h2>
-      <p>Open the skill below to learn more and try it in your own account. New Data Agent skills will be added to this list as they deploy.</p>
+      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Data agent skills</h2>
+      <p>Open the skill below to learn more and try it in your own account. New data agent skills will be added to this list as they deploy.</p>
 
       <div class="rc-skill-list">
         <details class="rc-skill" id="skill-generate-an-export" open>
           <summary>
             <i class="fa-solid fa-database rc-skill-icon"></i>
-            <span class="rc-skill-name">Generate an Export</span>
+            <span class="rc-skill-name">Generate an export</span>
             <i class="fa-solid fa-chevron-up rc-skill-chevron"></i>
           </summary>
           <div class="rc-skill-body">
@@ -303,24 +303,24 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/05b2ef74463d66f4e7f358d96001738fd3376f398b6cb316dd220816e2ce4e0a-Generate_an_Export.png" alt="Generate an Export — Data Agent" class="rc-skill-image">
               <div class="rc-skill-intro-text">
                 <p><strong>What it does:</strong> Create exports of subscription, billing, and revenue data for analysis and reporting by describing what you need. The agent maps your request to the right export, runs it, and gives you a download link.</p>
-                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose Generate an Export, or ask the Compass Assistant (the sparkles icon) directly. Say what data and time range you want, confirm, and it runs the report to your exports area.</p>
+                <p><strong>How to use it:</strong> Open <strong>Compass → Skills</strong> and choose "generate an export," or ask Compass Assistant (the sparkles icon) directly. Say what data and time range you want, confirm, and it runs the report to your exports area.</p>
               </div>
             </div>
 
             <!-- HIDDEN DEMO: after the webinar, delete the "rc-hidden" class from the div below to reveal this video. -->
             <div class="rc-video-card rc-hidden">
               <div class="rc-video-header">
-                <h4>Compass AI Skills: Generate an Export - Data Agent</h4>
+                <h4>Compass AI skills: Generate an export - Data agent</h4>
               </div>
               <div class="rc-video-embed">
                 <iframe src="https://share.synthesia.io/embeds/videos/b2d08fbd-ab6c-4f95-ad27-2193f579320c" loading="lazy" title="Compass AI Skills: Generate an Export - Data Agent" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
               </div>
-              <div class="rc-video-caption">Watch the Data Agent pull all past-due invoices from the last 30 days and generate a ready-to-download A/R report.</div>
+              <div class="rc-video-caption">Watch the <strong>data agent</strong> pull all past-due invoices from the last 30 days and generate a ready-to-download A/R report.</div>
             </div>
 
             <div class="rc-accent-card rc-accent-scale">
               <h4>Try it yourself</h4>
-              <p>Open the Compass Assistant and try one of these:</p>
+              <p>Open Compass Assistant or the <strong>generate an export</strong> skill, and try one of these:</p>
               <p class="rc-prompt-text">Which accounts have open invoices older than 60 days?</p>
               <p class="rc-prompt-text">Show me total invoice revenue by plan for the last 30 days.</p>
               <p class="rc-prompt-text">Give me a list of subscribers who canceled in the past 90 days.</p>
@@ -334,9 +334,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- PATH NAV -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-btn-prev">← Configuration Agent</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-btn-prev">← Configuration agent</a>
       <span class="rc-lp-nav-indicator">4 of 7</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-btn-path">Next: Retention Agent →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-btn-path">Next: Retention agent →</a>
     </div>
 
     <!-- RESOURCES -->
@@ -352,13 +352,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Compass Agents &amp; Skills</span>
+          <span class="rc-footer-label">Compass agents &amp; skills</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention Agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention agent</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-assistant" class="rc-footer-link">6. Compass Assistant</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-review" class="rc-footer-link">7. Review &amp; resources</a>
         </div>
