@@ -2,7 +2,9 @@
 title: Navigate Image Storage
 excerpt: 'Navigate image storage page. This is meant to be a private '
 deprecated: false
-hidden: false
+hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
