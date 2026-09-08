@@ -343,7 +343,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
             <div class="rc-callout rc-callout-info">
               <i class="fa-solid fa-circle-info rc-callout-icon"></i>
-              <div class="rc-callout-body"><strong>Runs on Recurly Engage.</strong> Two technical steps finish the setup before subscribers see the prompt: install the Recurly Engage script via your tag manager, and add FetchID logic to identify logged-in users. Not on Engage yet? Many Recurly Subscriptions customers add it for richer campaigns and in-app messages — to learn more, <a href="mailto:support@recurly.com" class="rc-callout-link">contact support@recurly.com</a>.</div>
+              <div class="rc-callout-body"><strong>Runs on Recurly Engage.</strong> Two technical steps needed for setup before subscribers see the prompt: install the Recurly Engage script via your tag manager, and add FetchID logic to identify logged-in users. <b>Not on Engage yet? </b>Many Recurly Subscriptions customers add it for richer campaigns and in-app messages — to learn more, <a href="mailto:support@recurly.com" class="rc-callout-link">contact support@recurly.com</a>.</div>
             </div>
 
             <!-- HIDDEN DEMO: after the webinar, delete the "rc-hidden" class from the div below to reveal this video. -->
