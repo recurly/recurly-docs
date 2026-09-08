@@ -342,7 +342,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass Agents &amp; Skills
+        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass agents &amp; skills
       </div>
       <div class="rc-lp-hero-title"><h1>Review &amp; resources</h1></div>
       <p>You've completed Compass Agents &amp; Skills. Check what stuck, try your own prompts, and make Compass your new home for discovery, coding assistance, plan deployment, and day-to-day tasks.</p>
@@ -380,27 +380,27 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
           <label class="rc-quiz-option">
             <input type="radio" name="quiz1" value="a">
             <div class="rc-radio-dot"></div>
-            <span class="rc-option-text">Data Agent</span>
+            <span class="rc-option-text">Data agent</span>
           </label>
           <label class="rc-quiz-option rc-quiz-correct">
             <input type="radio" name="quiz1" value="b">
             <div class="rc-radio-dot"></div>
-            <span class="rc-option-text">Knowledge Agent</span>
+            <span class="rc-option-text">Knowledge agent</span>
           </label>
           <label class="rc-quiz-option">
             <input type="radio" name="quiz1" value="c">
             <div class="rc-radio-dot"></div>
-            <span class="rc-option-text">Configuration Agent</span>
+            <span class="rc-option-text">Configuration agent</span>
           </label>
           <label class="rc-quiz-option">
             <input type="radio" name="quiz1" value="d">
             <div class="rc-radio-dot"></div>
-            <span class="rc-option-text">Code Agent</span>
+            <span class="rc-option-text">Code agent</span>
           </label>
         </div>
         <details class="rc-quiz-reveal">
           <summary>See answer</summary>
-          <div class="rc-quiz-answer"><strong>Knowledge Agent</strong> — it searches Recurly's product docs, developer docs, and knowledge base to give you a sourced, specific answer, then explains how Recurly solves the problem.</div>
+          <div class="rc-quiz-answer"><strong>Knowledge agent</strong> — it searches Recurly's product docs, developer docs, and knowledge base to give you a sourced, specific answer, then explains how Recurly solves the problem.</div>
         </details>
       </div>
 
@@ -470,7 +470,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
           <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
           <h4>Dunning 101</h4>
-          <p>Go deeper on the dunning strategy the Retention Agent automates — over in the Retain pillar.</p>
+          <p>Go deeper on the dunning strategy the <b>retention agent</b> automates — over in the Retain pillar.</p>
           <div class="rc-next-card-arrow">Start path →</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-getting-started" class="rc-next-card">
@@ -524,13 +524,13 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Compass Agents &amp; Skills</span>
+          <span class="rc-footer-label">Compass agents &amp; skills</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention Agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention agent</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-assistant" class="rc-footer-link">6. Compass Assistant</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-review" class="rc-footer-link">7. Review &amp; resources</a>
         </div>
