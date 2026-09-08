@@ -313,14 +313,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> What the Compass Assistant does</h2>
+      <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> What Compass Assistant does</h2>
 
       <div class="rc-assistant-intro">
         <div class="rc-assistant-frame">
           <img src="https://files.readme.io/44fc2aefb950e62f521c57fdd6606d68c32a5ae70440687459b40e3fb628c0c6-Compass_Assistant.png" alt="Compass Assistant chat" class="rc-assistant-shot">
         </div>
         <div class="rc-skill-intro-text">
-          <p><strong>What it is:</strong> The Compass Assistant is the chat behind the sparkles button <img src="https://files.readme.io/b437353dd0ddce1cbbd116ec09bf2fd1192e51351764184a60e67dc2406af827-Sparkle_Button.png" alt="Compass Assistant sparkles button" class="rc-sparkle-inline"> in the corner of Recurly. It's the single place where every agent comes together — ask for anything the five agents can do, and the Assistant runs the right skill for you.</p>
+          <p><strong>What it is:</strong>Compass Assistant is the chat behind the sparkles button <img src="https://files.readme.io/b437353dd0ddce1cbbd116ec09bf2fd1192e51351764184a60e67dc2406af827-Sparkle_Button.png" alt="Compass Assistant sparkles button" class="rc-sparkle-inline"> in the corner of Recurly. It's the single place where every agent comes together — ask for anything the five agents can do, and the Assistant runs the right skill for you.</p>
           <p><strong>How to use it:</strong> No special commands. Ask in plain language, the way you'd ask a colleague, and follow up to refine. It also answers best-practice questions, so it's often faster than logging a support ticket.</p>
         </div>
       </div>
@@ -328,49 +328,49 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <!-- HIDDEN DEMO: after the webinar, delete the "rc-hidden" class from the div below to reveal this video. -->
       <div class="rc-video-card rc-hidden">
         <div class="rc-video-header">
-          <h4>Compass Assistant Overview</h4>
+          <h4>Compass Assistant overview</h4>
         </div>
         <div class="rc-video-embed">
           <iframe src="https://share.synthesia.io/embeds/videos/f4f48b7b-be7b-40eb-a8a0-57280d37aca2" loading="lazy" title="Compass Assistant Overview" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
         </div>
-        <div class="rc-video-caption">Watch the Compass Assistant field a best-practices question about launching a dunning campaign.</div>
+        <div class="rc-video-caption">Watch Compass Assistant field a best-practices question about launching a Dunning campaign.</div>
       </div>
     </div>
 
     <!-- SECTION: DEPLOY ANY SKILL -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-bolt rc-fa-section"></i> Deploy any skill, right from the chat</h2>
-      <p>Every skill in this path runs straight from the Assistant. Ask in plain language — search the docs, write code, create a plan, run an export, optimize your dunning, or build a churn prompt — and it deploys the matching skill for you, with no trip to the Skills page.</p>
+      <p>Every skill in this path runs straight from the Assistant. Ask in plain language — search the docs, write code, create a plan, run an export, optimize your Dunning, or build a churn prompt — and it deploys the matching skill for you, with no trip to the Skills page.</p>
       <p>It goes beyond the skill cards, too: create add-ons and items on request, get best-practice guidance, or ask it to analyze your data and recommend what to do next — the kind of help you'd get from a Customer Success rep.</p>
 
       <div class="rc-accent-card rc-accent-scale">
         <h4>Deploy a skill from chat</h4>
         <p>Ask in plain language and the Assistant runs the matching skill — one prompt to try for each:</p>
         <div class="rc-deploy-item">
-          <span class="rc-deploy-label">Documentation Search</span>
+          <span class="rc-deploy-label">Documentation search</span>
           <p class="rc-prompt-text">How does dunning work in Recurly?</p>
         </div>
         <div class="rc-deploy-item">
-          <span class="rc-deploy-label">Write Code</span>
+          <span class="rc-deploy-label">Write code</span>
           <p class="rc-prompt-text">Generate a Python snippet to create a subscription via the Recurly API.</p>
         </div>
         <div class="rc-deploy-item">
-          <span class="rc-deploy-label">Create a Plan</span>
+          <span class="rc-deploy-label">Create a plan</span>
           <p class="rc-prompt-text">Create a monthly plan for $9.99/month with a 14-day free trial.</p>
         </div>
         <div class="rc-deploy-item">
-          <span class="rc-deploy-label">Generate an Export</span>
+          <span class="rc-deploy-label">Generate an export</span>
           <p class="rc-prompt-text">Show me all past-due invoices from the last 30 days.</p>
         </div>
         <div class="rc-deploy-item">
-          <span class="rc-deploy-label">Optimize Default Dunning</span>
+          <span class="rc-deploy-label">Optimize default Dunning</span>
           <p class="rc-prompt-text">Optimize my default dunning campaign to the recommended length.</p>
         </div>
         <div class="rc-deploy-item">
-          <span class="rc-deploy-label">Involuntary Churn Remediation</span>
+          <span class="rc-deploy-label">Involuntary churn remediation</span>
           <p class="rc-prompt-text">Set up an in-app prompt to recover past-due payments.</p>
         </div>
-        <p class="rc-deploy-note">No skill card needed — the Assistant can also create add-ons and items on request:</p>
+        <p class="rc-deploy-note">No skill card needed — Compass Assistant can also create add-ons and items on request:</p>
         <div class="rc-deploy-item">
           <span class="rc-deploy-label">Add-on</span>
           <p class="rc-prompt-text">Add a $5/month priority-support add-on to my Pro plan.</p>
@@ -384,7 +384,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-accent-card rc-accent-scale">
         <h4>Or just ask</h4>
         <p>The Assistant is also an advisor — ask for guidance or analysis, no skill required:</p>
-        <p class="rc-prompt-text">I want to launch a new dunning campaign — what best practices should I follow?</p>
+        <p class="rc-prompt-text">I want to launch a new Dunning campaign — what best practices should I follow?</p>
         <p class="rc-prompt-text">Analyze my churn over the past 90 days and recommend a playbook to optimize retention.</p>
       </div>
     </div>
@@ -392,14 +392,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: HOW TO OPEN IT -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-comment-dots rc-fa-section"></i> How to open it</h2>
-      <p>Open the Assistant from the sparkles button <img src="https://files.readme.io/b437353dd0ddce1cbbd116ec09bf2fd1192e51351764184a60e67dc2406af827-Sparkle_Button.png" alt="Compass Assistant sparkles button" class="rc-sparkle-inline"> in the bottom-right of any Recurly page, or use the full-screen Assistant view under <strong>Compass</strong> in the left navigation, which keeps your chat history.</p>
+      <p>Compass Assistant lives in the sparkles button <img src="https://files.readme.io/b437353dd0ddce1cbbd116ec09bf2fd1192e51351764184a60e67dc2406af827-Sparkle_Button.png" alt="Compass Assistant sparkles button" class="rc-sparkle-inline"> in the bottom-right of any Recurly page, or use the full-screen Assistant view under <strong>Compass</strong> in the left navigation, which keeps your chat history.</p>
 
       <div class="rc-accent-card rc-accent-scale">
         <h4>Pro tips</h4>
         <ul>
           <li><strong>Ask follow-ups</strong> to refine an answer — you don't need to start over.</li>
           <li><strong>Use the thumbs up/down</strong> buttons to help improve accuracy over time.</li>
-          <li><strong>It's on every page</strong> — the Assistant is available anywhere in Recurly.</li>
+          <li><strong>It's on every page</strong> — Compass Assistant is available anywhere in Recurly.</li>
         </ul>
       </div>
     </div>
