@@ -5,7 +5,7 @@ excerpt: >-
   natural language plan configuration to automated involuntary churn remediation
   — to streamline subscription management and API integration.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
