@@ -363,7 +363,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-path-card">
+       
+
+ <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
@@ -375,10 +377,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
       </div>
     </div>
- <div id="AIautomation" class="rc-category">
-      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> AI &amp; automation</h2>
+ 
+
+<div id="AIautomation" class="rc-category">
+      <h2><i class="fa-solid fa-chart-line rc-fa-robot"></i> AI &amp; automation</h2>
       <div class="rc-path-list">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-path-card">
+        
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
@@ -388,16 +393,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
-          </div>
-          <div class="rc-path-content">
-            <h3>Payments Hub</h3>
-            <p>Optimize your gateway performance. Use the Payments Hub to track transaction success rates and decline reasons across all methods.</p>
-          </div>
-          <div class="rc-path-arrow">Start path →</div>
-        </a>
+        
       </div>
     </div>
     <div id="expansion" class="rc-category" style="display: none;">
