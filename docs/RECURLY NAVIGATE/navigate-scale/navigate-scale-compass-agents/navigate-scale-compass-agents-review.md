@@ -5,6 +5,18 @@ hidden: true
 link:
   new_tab: false
 metadata:
+  description: >-
+    Review your Recurly Compass agents & skills knowledge, test your
+    understanding, kick off your own prompts, and find support where you need
+    it.
+  keywords:
+    - recurly compass review
+    - agentic ai skills mastery
+    - dunning strategy automation
+    - subscription analytics benchmarks
+    - recurly office hours support
+    - automated payment recovery
+    - recurly learning path completion.
   robots: index
 ---
 <HTMLBlock>{`
