@@ -18,7 +18,9 @@ next:
 
 <div class="rp-page">
   <div class="rp-overview">
-    Plans are the blueprint for your subscription business — they define what your customers subscribe to, how often they're billed, and how much they pay. Whether your model includes free trials, setup fees, ramp pricing, or price segments, Recurly's plans are built to match your business exactly. There's no limit to the number of plans you can create.
+
+Plans are the blueprint for your subscription business — they define what your customers subscribe to, how often they're billed, and how much they pay. Whether your model includes free trials, setup fees, ramp pricing, or price segments, Recurly's plans are built to match your business exactly. There's no limit to the number of plans you can create.
+
   </div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
   <div class="rp-card">
@@ -38,7 +40,9 @@ next:
 # Definition
 
 <div class="rp-definition">
-  A Recurly plan defines the billing frequency and base price for a subscription product. Plans support free trials, setup fees, multiple pricing models, and add-ons — giving you the flexibility to model any subscription business without limits on how many plans you create.
+
+A Recurly plan defines the billing frequency and base price for a subscription product. Plans support free trials, setup fees, multiple pricing models, and add-ons — giving you the flexibility to model any subscription business without limits on how many plans you create.
+
 </div>
 
 # Key benefits
@@ -104,7 +108,7 @@ next:
 <table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Field</td><td>Description</td></tr>
   <tr><td><strong>Plan name</strong></td><td>Describes your plan. Appears on the Hosted Payment Page and the subscriber's invoice. Limit: 255 characters. Check with your payment gateway before using special characters.</td></tr>
-  <tr><td><strong>Plan code</strong></td><td>Your plan's unique identifier in Recurly. Used in Hosted Payment Page URLs and API requests. Limit: 25 alphanumeric characters.</td></tr>
+  <tr><td><strong>Plan code</strong></td><td>Your plan's unique identifier in Recurly. Used in Hosted Payment Page URLs and API requests. Limit: 50 alphanumeric characters.</td></tr>
   <tr><td><strong>Plan description</strong></td><td>Describes what the plan includes. Appears on the subscriber's email invoice if configured in your email templates.</td></tr>
 </table>
 
@@ -250,10 +254,10 @@ Price segments let you define multiple price points for a single plan within the
 
 ### Developer references
 
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_price_segments" target="_blank">/price\_segment</a>
+- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_price_segments" target="_blank">/price_segment</a>
 - <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_plans" target="_blank">/plans</a>
 - <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription" target="_blank">/subscriptions</a>
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change" target="_blank">/create\_subscription\_change</a>
+- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change" target="_blank">/create_subscription_change</a>
 - <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank">Recurly.js — surface price segments in your front end</a>
 
 ## Billing details
@@ -473,5 +477,3 @@ Check the boxes to enable email communication for specific billing events. You c
 <div class="rp-callout rp-callout-warning">
   <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Deleting a plan is permanent and prevents new customers from subscribing to it. Existing subscriptions continue to renew, but once deleted, a plan can't be reactivated. Subscriptions tied to a deleted plan cannot be edited — including frequency, price, and add-ons.</div>
 </div>
-
-<br />
