@@ -326,7 +326,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-receipt rc-fa-section"></i> What the <strong>retention agent</strong> does</h2>
+      <h2><i class="fa-solid fa-receipt rc-fa-section"></i> What the retention agent does</h2>
       <p>The <b>retention agent</> helps you keep revenue you've already earned. It optimizes your dunning — the retry-and-reminder process that recovers failed payments — and helps you remediate involuntary churn with in-app prompts that ask subscribers to fix a past-due payment.</p>
       <p>Currently, this agent has two skills: <strong>Optimize default dunning</strong> and <strong>involuntary churn remediation</strong>. One tunes your automated recovery settings; the other builds a prompt that appears in your app. Together they target the failed payments that quietly erode subscription revenue.</p>
     </div>
