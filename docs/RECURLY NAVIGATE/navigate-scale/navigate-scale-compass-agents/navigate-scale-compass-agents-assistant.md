@@ -1,5 +1,5 @@
 ---
-title: 'Compass Agents & Skills: Compass Assistant'
+title: 'Compass agents & kkills: Compass Assistant'
 deprecated: false
 hidden: true
 link:
