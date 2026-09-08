@@ -5,6 +5,18 @@ hidden: true
 link:
   new_tab: false
 metadata:
+  description: >-
+    Discover how Recurly's retention agent uses automated dunning optimization
+    and in-app payment prompts to recover failed payments and cut involuntary
+    churn by up to 14%.
+  keywords:
+    - recurly retention agent
+    - involuntary churn remediation
+    - default dunning optimization
+    - automated payment retry schedule
+    - in-app payment prompt
+    - recurly engage integration
+    - subscription revenue recovery.
   robots: index
 ---
 <HTMLBlock>{`
