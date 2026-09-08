@@ -1,5 +1,5 @@
 ---
-title: 'Compass agents & kkills: Compass Assistant'
+title: 'Compass agents & skills: Compass Assistant'
 excerpt: >-
   Discover how the Recurly Compass Assistant unifies agentic AI skills into a
   single conversational chat, enabling you to build plans, write code, run
