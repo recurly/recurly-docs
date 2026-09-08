@@ -265,7 +265,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- SECTION: WHAT IT DOES -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-code rc-fa-section"></i> What the Code agent does</h2>
+      <h2><i class="fa-solid fa-code rc-fa-section"></i> What the code agent does</h2>
       <p>The Code Agent helps the developers on your team write Recurly integration code. Tell it your language and what you're building, and it returns working snippets — API calls, webhook and event handling, and implementation guidance — drawn from Recurly's product docs, API reference, and client libraries.</p>
       <p>It keeps the context of your conversation, so once it knows you're working in Python, Ruby, or another language, every follow-up stays in that language. It's the fastest way to understand how Recurly's APIs work without reading the full reference end to end.</p>
     </div>
