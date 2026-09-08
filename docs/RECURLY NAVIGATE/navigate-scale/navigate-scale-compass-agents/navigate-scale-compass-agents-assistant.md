@@ -256,7 +256,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   <div class="rc-content-wrap">
 
     <!-- ANNOUNCEMENT BAR — hidden by default. Add class "rc-active" to show before the webinar. -->
-    <div class="rc-announce-bar">
+    <div class="rc-announce-bar rc-active">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>Upcoming:</strong> Get to know Recurly's agentic AI — join us live for the full walkthrough.
@@ -270,7 +270,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Compass Agents &amp; Skills
       </div>
       <div class="rc-lp-hero-title"><h1>Compass Assistant</h1></div>
-      <p>The sparkles chat on every page in Recurly — run any agent's skill and get best-practice guidance, all just by asking.</p>
+      <p>The sparkles chat on every page in your Recurly app — run any agent's skill and get best-practice guidance, all just by asking.</p>
     </div>
 
     <!-- NAV (content page — expanded) -->
