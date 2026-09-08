@@ -1,10 +1,28 @@
 ---
 title: 'Compass agents & kkills: Compass Assistant'
+excerpt: >-
+  Discover how the Recurly Compass Assistant unifies agentic AI skills into a
+  single conversational chat, enabling you to build plans, write code, run
+  exports, and optimize dunning using plain language.
 deprecated: false
 hidden: true
 link:
   new_tab: false
 metadata:
+  description: >-
+    Discover how the Recurly Compass Assistant unifies agentic AI skills into a
+    single conversational chat, enabling you to build plans, write code, run
+    exports, and optimize dunning using plain language.
+  keywords:
+    - >-
+      The target focus terms for search visibility include recurly compass
+      assistant
+    - agentic ai chat widget
+    - natural language subscription management
+    - automated dunning prompt
+    - direct plan add-on creation
+    - persistent ai chat history
+    - in-app ai advisor.
   robots: index
 ---
 <HTMLBlock>{`
