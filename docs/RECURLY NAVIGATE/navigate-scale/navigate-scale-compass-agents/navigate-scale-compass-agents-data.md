@@ -274,7 +274,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: SKILL -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-wand-magic-sparkles rc-fa-section"></i> Data Agent skills</h2>
-      <p>Open the skill below to watch the demo and try it in your own account.</p>
+      <p>Open the skill below to learn more and try it in your own account.</p>
 
       <div class="rc-skill-list">
         <details class="rc-skill" id="skill-generate-an-export" open>
