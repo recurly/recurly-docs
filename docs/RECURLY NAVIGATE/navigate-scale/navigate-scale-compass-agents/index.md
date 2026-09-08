@@ -303,40 +303,40 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-toc-card">
           <div class="rc-toc-num">1</div>
           <div class="rc-toc-body">
-            <h4>Knowledge Agent</h4>
-            <p>Get clear, Recurly-specific answers on demand with the Documentation Search skill.</p>
+            <h4>Knowledge agent</h4>
+            <p>Get clear, Recurly-specific answers on demand with the <strong>documentation search</strong> skill.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-toc-card">
           <div class="rc-toc-num">2</div>
           <div class="rc-toc-body">
-            <h4>Code Agent</h4>
-            <p>Skip the API docs and get straight to integration code with the Write Code skill.</p>
+            <h4>Code agent</h4>
+            <p>Skip the API docs and get straight to integration code with the <strong>write code</strong> skill.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-toc-card">
           <div class="rc-toc-num">3</div>
           <div class="rc-toc-body">
-            <h4>Configuration Agent</h4>
-            <p>Build a subscription plan just by describing it, with the Create a Plan skill.</p>
+            <h4>Configuration agent</h4>
+            <p>Build a subscription plan just by describing it, with the <strong>create a plan</strong> skill.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-toc-card">
           <div class="rc-toc-num">4</div>
           <div class="rc-toc-body">
-            <h4>Data Agent</h4>
-            <p>Pull the data you need and run exports in plain language with the Generate an Export skill.</p>
+            <h4>Data agent</h4>
+            <p>Pull the data you need and run exports in plain language with the <strong>generate an export</strong> skill.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-toc-card">
           <div class="rc-toc-num">5</div>
           <div class="rc-toc-body">
-            <h4>Retention Agent</h4>
-            <p>Protect revenue with two skills: Optimize Default Dunning and Involuntary Churn Remediation.</p>
+            <h4>Retention agent</h4>
+            <p>Protect revenue with two skills: <strong>optimize default Dunning</strong> and <strong>involuntary churn remediation</strong>.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
@@ -352,7 +352,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">7</div>
           <div class="rc-toc-body">
             <h4>Review &amp; resources</h4>
-            <p>Recap what you learned, work through the prompt library, and find every resource in one place.</p>
+            <p>Recap what you learned, create your own prompts, and find every resource in one place.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
@@ -381,14 +381,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- FOOTER -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Compass Agents &amp; Skills</span>
+               <div class="rc-footer-section">
+          <span class="rc-footer-label">Compass agents &amp; skills</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data Agent</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention Agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-knowledge" class="rc-footer-link">1. Knowledge agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-code" class="rc-footer-link">2. Code agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-configuration" class="rc-footer-link">3. Configuration agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-data" class="rc-footer-link">4. Data agent</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-retention" class="rc-footer-link">5. Retention agent</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-assistant" class="rc-footer-link">6. Compass Assistant</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-compass-agents-review" class="rc-footer-link">7. Review &amp; resources</a>
         </div>
