@@ -1,5 +1,8 @@
 ---
 title: 'Compass agents & skills: Review & resources'
+excerpt: >-
+  Review your Recurly Compass agents & skills knowledge, test your
+  understanding, kick off your own prompts, and find support where you need it.
 deprecated: false
 hidden: true
 link:
