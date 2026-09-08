@@ -7122,6 +7122,63 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
       x-code-samples: []
+    post:
+      tags:
+        - dunning_campaigns
+      operationId: create_dunning_campaign
+      summary: Create a new dunning campaign
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DunningCampaignCreate'
+        required: true
+      responses:
+        '201':
+          description: A new dunning campaign.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DunningCampaign'
+        '400':
+          description: Bad request; perhaps missing or invalid parameters.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Upgrade your plan to unlock multiple dunning campaigns.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Incorrect site.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '422':
+          description: Invalid request parameters.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '503':
+          description: >-
+            The email template service is temporarily unavailable; retry the
+            request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-code-samples: []
   /dunning_campaigns/{dunning_campaign_id}:
     parameters:
       - $ref: '#/components/parameters/dunning_campaign_id'
@@ -7145,6 +7202,140 @@ paths:
                 $ref: '#/components/schemas/Error'
         '404':
           description: Incorrect site or campaign ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-code-samples: []
+    put:
+      tags:
+        - dunning_campaigns
+      operationId: update_dunning_campaign
+      summary: Update a dunning campaign
+      description: >-
+        Each cycle write is a full replacement of that cycle's settings; omitted
+        scalars fall back to the model default rather than the prior version.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DunningCampaignUpdate'
+        required: true
+      responses:
+        '200':
+          description: The updated dunning campaign.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DunningCampaign'
+        '400':
+          description: Bad request; perhaps missing or invalid parameters.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Upgrade your plan to unlock multiple dunning campaigns.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Incorrect site or campaign ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '422':
+          description: Invalid request parameters.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '503':
+          description: >-
+            The email template service is temporarily unavailable; retry the
+            request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-code-samples: []
+    delete:
+      tags:
+        - dunning_campaigns
+      operationId: deactivate_dunning_campaign
+      summary: Deactivate a dunning campaign
+      description: The default dunning campaign cannot be deactivated.
+      responses:
+        '200':
+          description: The deactivated dunning campaign.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DunningCampaign'
+        '403':
+          description: Upgrade your plan to unlock multiple dunning campaigns.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Incorrect site or campaign ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '422':
+          description: Campaign is already inactive, or is the default campaign.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-code-samples: []
+  /dunning_campaigns/email_templates:
+    get:
+      tags:
+        - dunning_campaigns
+      operationId: list_dunning_campaign_email_templates
+      summary: >-
+        List the custom email templates assignable to a dunning campaign
+        interval
+      responses:
+        '200':
+          description: A list of the site's assignable custom email templates.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DunningCampaignEmailTemplateList'
+        '404':
+          description: Incorrect site.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '503':
+          description: >-
+            The email template service is temporarily unavailable; retry the
+            request.
           content:
             application/json:
               schema:
@@ -20139,6 +20330,176 @@ components:
         email_template:
           type: string
           description: Email template being used.
+        email_template_id:
+          type: string
+          nullable: true
+          description: >-
+            The id of the custom email template assigned to this interval, from
+            `GET /dunning_campaigns/email_templates`. `null` means the system
+            default template for this interval. Accepted on write; round-tripped
+            on read.
+    DunningCampaignCreate:
+      type: object
+      properties:
+        name:
+          type: string
+          title: Name
+          description: Campaign name.
+          maxLength: 255
+        code:
+          type: string
+          title: Code
+          description: Campaign code.
+          maxLength: 50
+        description:
+          type: string
+          title: Description
+          description: Campaign description.
+          maxLength: 255
+        dunning_cycles:
+          type: array
+          description: >-
+            Dunning Cycle settings. One entry per collection method
+            (`automatic`, `manual`, `trial`); each type may appear at most once.
+          items:
+            $ref: '#/components/schemas/DunningCycleWrite'
+      required:
+        - name
+        - code
+    DunningCampaignUpdate:
+      type: object
+      properties:
+        name:
+          type: string
+          title: Name
+          description: Campaign name.
+          maxLength: 255
+        code:
+          type: string
+          title: Code
+          description: Campaign code.
+          maxLength: 50
+        description:
+          type: string
+          title: Description
+          description: Campaign description.
+          maxLength: 255
+        default:
+          type: boolean
+          title: Default
+          description: >-
+            Set to `true` to make this the default campaign for accounts or
+            plans without an assigned dunning campaign. Cannot be set on an
+            inactive campaign, and cannot be unset directly—assign a different
+            campaign as the default instead.
+        dunning_cycles:
+          type: array
+          description: >-
+            Dunning Cycle settings. One entry per collection method
+            (`automatic`, `manual`, `trial`); each type may appear at most once.
+            Each cycle write fully replaces that cycle's current settings
+            version.
+          items:
+            $ref: '#/components/schemas/DunningCycleWrite'
+    DunningCycleWrite:
+      type: object
+      description: >-
+        Write shape for a single dunning cycle, shared by campaign create and
+        update.
+      properties:
+        type:
+          type: string
+          description: The type of invoice this cycle applies to.
+          enum:
+            - automatic
+            - manual
+            - trial
+        active:
+          type: boolean
+          description: >-
+            Only meaningful on the `trial` cycle, where sending `false` removes
+            it. Other cycle types cannot be deactivated.
+        applies_to_manual_trial:
+          type: boolean
+          description: >-
+            Whether the dunning settings will be applied to manual trials. Only
+            applies to trial cycles.
+        expire_subscription:
+          type: boolean
+          description: >-
+            Whether the subscription(s) should be cancelled at the end of the
+            dunning cycle.
+        fail_invoice:
+          type: boolean
+          description: >-
+            Whether the invoice should be failed at the end of the dunning
+            cycle.
+        send_immediately_on_hard_decline:
+          type: boolean
+          description: >-
+            Whether or not to send an extra email immediately to customers whose
+            initial payment attempt fails with either a hard decline or invalid
+            billing info.
+        external_payment_recovery_extension_days:
+          type: integer
+          description: >-
+            Number of days to extend external payment recovery. Only available
+            when the site has external payment retries enabled.
+        intervals:
+          type: array
+          description: Dunning intervals. Required unless `active` is `false`.
+          items:
+            $ref: '#/components/schemas/DunningIntervalWrite'
+      required:
+        - type
+    DunningIntervalWrite:
+      type: object
+      description: >-
+        Write shape for a dunning interval. Unlike the read `DunningInterval`,
+        the resolved `email_template` name is not accepted on write.
+      properties:
+        days:
+          type: integer
+          description: Number of days before sending the next email.
+        email_template_id:
+          type: string
+          nullable: true
+          description: >-
+            The id of the custom email template to assign to this interval, from
+            `GET /dunning_campaigns/email_templates`. `null` uses the system
+            default template for this interval.
+    DunningCampaignEmailTemplate:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The id to assign under `intervals[].email_template_id`.
+        name:
+          type: string
+          description: Template name.
+        type:
+          type: string
+          description: >-
+            The root template this custom template replaces, e.g.
+            `payment_declined`, `invoice_past_due`,
+            `post_trial_payment_declined`, `subscription_canceled_nonpayment`.
+    DunningCampaignEmailTemplateList:
+      type: object
+      properties:
+        object:
+          type: string
+          title: Object type
+          description: Will always be List.
+        has_more:
+          type: boolean
+          description: Indicates there are more results on subsequent pages.
+        next:
+          type: string
+          description: Path to subsequent page of results.
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/DunningCampaignEmailTemplate'
     DunningCampaignsBulkUpdate:
       properties:
         plan_codes:
