@@ -1,5 +1,8 @@
 ---
 title: 'Global payments expansion: The basics'
+excerpt: >-
+  What changes when you start billing customers in new markets, and the three
+  decisions that matter most.
 deprecated: false
 hidden: true
 icon: fad fa-alicorn
@@ -8,6 +11,7 @@ link:
 metadata:
   robots: index
 ---
+<HTMLBlock>{`
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -335,3 +339,4 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   </div>
 </div>
+`}</HTMLBlock>
