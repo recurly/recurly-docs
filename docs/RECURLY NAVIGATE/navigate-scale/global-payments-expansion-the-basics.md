@@ -260,9 +260,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments" class="rc-sticky-link rc-sticky-link-active">
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Path overview
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-mor" class="rc-sticky-link"><span class="rc-step-badge">1</span> Local acquiring vs. merchant of record</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-currency" class="rc-sticky-link"><span class="rc-step-badge">2</span> Currency and local payment methods</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-sticky-link"><span class="rc-step-badge">3</span> Compliance and language requirements</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-mor" class="rc-sticky-link"><span class="rc-step-badge">1</span> LCA vs. MoR</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-currency" class="rc-sticky-link"><span class="rc-step-badge">2</span> Currency &amp; payment methods</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-sticky-link"><span class="rc-step-badge">3</span> Compliance &amp; language</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-review" class="rc-sticky-link"><span class="rc-step-badge">4</span> Review &amp; resources</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">
           <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Scale
@@ -279,7 +279,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-mor" class="rc-toc-card">
         <div class="rc-toc-num">1</div>
         <div class="rc-toc-body">
-          <h4>Local acquiring vs. merchant of record</h4>
+          <h4>LCA vs. MoR</h4>
           <p>Decide who carries the tax, risk, and compliance burden as you enter a new market.</p>
         </div>
         <div class="rc-toc-arrow">&rarr;</div>
@@ -287,7 +287,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-currency" class="rc-toc-card">
         <div class="rc-toc-num">2</div>
         <div class="rc-toc-body">
-          <h4>Currency and local payment methods</h4>
+          <h4>Currency &amp; payment methods</h4>
           <p>See why offering the local currency and payment method is the biggest lever you have for conversion.</p>
         </div>
         <div class="rc-toc-arrow">&rarr;</div>
@@ -295,7 +295,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-toc-card">
         <div class="rc-toc-num">3</div>
         <div class="rc-toc-body">
-          <h4>Compliance and language requirements</h4>
+          <h4>Compliance &amp; language</h4>
           <p>Know what to check, region by region, before you flip the switch on a new market.</p>
         </div>
         <div class="rc-toc-arrow">&rarr;</div>
@@ -317,7 +317,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <span class="rc-btn-start">&larr; Start</span>
       <span class="rc-lp-nav-indicator">Overview</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-mor" class="rc-btn-path">1. Local acquiring vs. merchant of record &rarr;</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-mor" class="rc-btn-path">1. LCA vs. MoR &rarr;</a>
     </div>
 
     <div class="rc-footer-nav">
@@ -325,9 +325,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-footer-section">
           <span class="rc-footer-label">Global payments expansion</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-mor" class="rc-footer-link">1. Local acquiring vs. merchant of record</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-currency" class="rc-footer-link">2. Currency and local payment methods</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-footer-link">3. Compliance and language requirements</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-mor" class="rc-footer-link">1. LCA vs. MoR</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-currency" class="rc-footer-link">2. Currency &amp; payment methods</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-footer-link">3. Compliance &amp; language</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-review" class="rc-footer-link">4. Review &amp; resources</a>
         </div>
         <div class="rc-footer-utility">
