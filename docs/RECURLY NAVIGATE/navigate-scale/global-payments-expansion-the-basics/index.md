@@ -1,5 +1,5 @@
 ---
-title: 'Global payments expansion: The basics'
+title: Global payments expansion
 excerpt: >-
   What changes when you start billing customers in new markets, and the three
   decisions that matter most.
