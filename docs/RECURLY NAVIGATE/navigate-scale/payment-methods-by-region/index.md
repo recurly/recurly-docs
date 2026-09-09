@@ -166,7 +166,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   border-radius: 12px; padding: 18px 22px;
   transition: all .2s ease;
 }
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-toc-card { border-bottom: 1px solid var(--lightgray) !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-toc-card:hover { border-color: #008CFF; border-bottom: 1px solid #008CFF !important; box-shadow: 0 4px 14px rgba(0,140,255,0.12); transform: translateX(3px); }
 .rc-toc-num {
   width: 36px; height: 36px; border-radius: 50%;
