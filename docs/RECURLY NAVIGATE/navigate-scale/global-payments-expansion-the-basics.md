@@ -1,8 +1,10 @@
 ---
 title: 'Global payments expansion: The basics'
 deprecated: false
-hidden: false
+hidden: true
 icon: fad fa-alicorn
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
