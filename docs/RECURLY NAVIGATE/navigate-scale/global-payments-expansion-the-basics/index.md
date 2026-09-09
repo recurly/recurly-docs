@@ -247,7 +247,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale &middot; Global payments expansion
       </div>
-      <div class="rc-lp-hero-title"><h1>Global payments expansion: the basics</h1></div>
+      <div class="rc-lp-hero-title"><h1>Global payments expansion: The basics</h1></div>
       <p>What changes when you start billing customers in new markets, and the three decisions that matter most.</p>
     </div>
 
