@@ -179,7 +179,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* ── VIDEO CARD (featured) + HIDDEN STATE ── */
 .rc-hidden { display: none !important; }
-.rc-video-card { border: 1px solid #D1CFC4; border-radius: 14px; overflow: hidden; margin: 4px 0 20px; }
+.rc-video-card { border: 1px solid #D1CFC4; border-radius: 14px; overflow: hidden; margin: 24px 0 20px; }
 .rc-video-header { background: #0D0D0B; padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
 .rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: #FFD706; margin: 0; }
 .rc-video-embed { background: #0D0D0B; }
@@ -334,11 +334,11 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
   <div class="rc-content-wrap">
 
     <!-- ANNOUNCEMENT BAR — hidden by default. Add class "rc-active" to show before the webinar. -->
-    <div class="rc-announce-bar">
+    <div class="rc-announce-bar rc-active">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
-        <strong>Upcoming:</strong> Get to know Recurly's agentic AI — join us live for the full walkthrough.
-        <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
+        <strong>Upcoming:</strong> Watch <strong>Get to know Recurly's agentic AI</strong> customer training on-demand here. 
+        <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Watch now →</a>
       </div>
     </div>
 
