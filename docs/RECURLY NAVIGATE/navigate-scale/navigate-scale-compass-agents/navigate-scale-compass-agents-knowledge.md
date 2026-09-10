@@ -242,11 +242,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   <div class="rc-content-wrap">
 
     <!-- ANNOUNCEMENT BAR — hidden by default. Add class "rc-active" to show before the webinar. -->
-    <div class="rc-announce-bar">
+    <div class="rc-announce-bar rc-active">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
-        <strong>Upcoming:</strong> Get to know Recurly's agentic AI — join us live for the full walkthrough.
-        <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
+        <strong>Upcoming:</strong> Watch the knowledge agent on-demand, complete with expert commentary and audience Q&A.
+        <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Watch it now →</a>
       </div>
     </div>
 
