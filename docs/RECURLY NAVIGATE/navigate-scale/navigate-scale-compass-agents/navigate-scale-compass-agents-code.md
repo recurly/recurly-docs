@@ -226,7 +226,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   <div class="rc-content-wrap">
 
     <!-- ANNOUNCEMENT BAR — hidden by default. Add class "rc-active" to show before the webinar. -->
-    <div class="rc-announce-bar">
+    <div class="rc-announce-bar rc-active">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>Upcoming:</strong> Get to know Recurly's agentic AI — watch the on-demand customer training for all six skill demos, discussion, and answers to audience questions.
