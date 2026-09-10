@@ -5,7 +5,6 @@ excerpt: >-
   decisions that matter most.
 deprecated: false
 hidden: true
-icon: fad fa-alicorn
 link:
   new_tab: false
 metadata:
