@@ -152,7 +152,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* ── VIDEO CARD (featured) + HIDDEN STATE ── */
 .rc-hidden { display: none !important; }
-.rc-video-card { border: 1px solid #D1CFC4; border-radius: 14px; overflow: hidden; margin: 4px 0 20px; }
+.rc-video-card { border: 1px solid #D1CFC4; border-radius: 14px; overflow: hidden; margin: 24px 0 20px; }
 .rc-video-header { background: #0D0D0B; padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
 .rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: #FFD706; margin: 0; }
 .rc-video-embed { background: #0D0D0B; }
