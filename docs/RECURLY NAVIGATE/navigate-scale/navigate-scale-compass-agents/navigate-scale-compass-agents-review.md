@@ -336,7 +336,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
     <!-- ANNOUNCEMENT BAR — hidden by default. Add class "rc-active" to show before the webinar. -->
     <div class="rc-announce-bar rc-active">
       <div class="rc-announce-inner">
-        <i class="fa-regular fa-graduation-cap rc-fa-announce"></i>
+        <i class="fa-regular fa-bell rc-fa-announce"></i>
         <strong>Customer training:</strong> Watch <strong>Get to know Recurly's agentic AI</strong> on-demand for all six demos, expert commentary, and audience Q&A. 
         <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Watch now →</a>
       </div>
