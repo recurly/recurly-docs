@@ -228,8 +228,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ANNOUNCEMENT BAR — hidden by default. Add class "rc-active" to show before the webinar. -->
     <div class="rc-announce-bar rc-active">
       <div class="rc-announce-inner">
-        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
-        <strong>Upcoming:</strong> Get to know Recurly's agentic AI — watch the on-demand customer training for all six skill demos, discussion, and answers to audience questions.
+        <i class="fa-regular fa-graduation-cap rc-fa-announce"></i>
+        <strong>Customer training:</strong> Get to know Recurly's agentic AI — watch the on-demand customer training for all six skill demos, discussion, and answers to audience questions.
         <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Watch it now →</a>
       </div>
     </div>
