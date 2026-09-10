@@ -2,7 +2,6 @@
 title: 'Global payments expansion: LCA vs MoR'
 deprecated: false
 hidden: true
-icon: fad fa-alicorn
 link:
   new_tab: false
 metadata:
