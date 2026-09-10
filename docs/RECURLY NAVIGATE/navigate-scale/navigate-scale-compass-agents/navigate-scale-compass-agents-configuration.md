@@ -235,7 +235,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>Upcoming:</strong> Get to know Recurly's agentic AI — watch the full walkthrough on-demand.
-        <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
+        <a href="https://navigate.recurly.com/compass-assistant/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Watch it here →</a>
       </div>
     </div>
 
