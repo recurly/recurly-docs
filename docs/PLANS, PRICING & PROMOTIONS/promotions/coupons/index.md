@@ -16,7 +16,9 @@ next:
 ---
 <div class="rp-page">
   <div class="rp-overview">
-    Coupons and discounts give you flexible tools to reduce prices for subscribers — automatically applied by you or redeemed via a code at checkout. Use them to run promotions, reward loyalty, and drive new signups across any plan or billing cycle.
+
+Coupons and discounts give you flexible tools to reduce prices for subscribers — automatically applied by you or redeemed via a code at checkout. Use them to run promotions, reward loyalty, and drive new signups across any plan or billing cycle.
+
   </div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
   <div class="rp-toc">
@@ -110,7 +112,7 @@ Before building a coupon, here's what each field in the creation form does.
       <td>How many times a single account can redeem the coupon — once, unlimited, or a specific number.</td>
     </tr>
     <tr>
-      <td>Redeem by date</td>
+      <td>Redeem by</td>
       <td>Optional expiration date. After this date the coupon can no longer be redeemed.</td>
     </tr>
     <tr>
@@ -509,5 +511,3 @@ Track and analyze coupon performance from the **Exports** page under **Reports**
 <Accordion title="Where can I find coupon redemption data?">
   Every coupon has a Redemptions table showing all accounts that have redeemed it and the total discount applied. For bulk coupons, a "Not redeemed" table shows all unused unique codes. You can expire unredeemed codes early — expired codes appear at the end of the table.
 </Accordion>
-
-<br />
