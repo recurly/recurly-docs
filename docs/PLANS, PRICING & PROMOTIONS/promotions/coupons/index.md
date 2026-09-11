@@ -191,7 +191,7 @@ Before building a coupon, here's what each field in the creation form does.
     <div class="rp-step-num">7</div>
     <div>
       <h4>Configure redemption rules</h4>
-      <p>Set maximum redemptions, redemptions per account, and an optional redeem-by date.</p>
+      <p>Set maximum redemptions, redemptions per account, and an optional redeem-by date or window.</p>
     </div>
   </div>
   <div class="rp-step">
