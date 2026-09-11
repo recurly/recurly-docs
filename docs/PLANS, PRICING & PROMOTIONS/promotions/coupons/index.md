@@ -113,7 +113,7 @@ Before building a coupon, here's what each field in the creation form does.
     </tr>
     <tr>
       <td>Redeem by</td>
-      <td>Optional expiration date. After this date the coupon can no longer be redeemed.</td>
+      <td>When a coupon can be redeemed by - forever, specific date, within a set period of time (days, weeks, months, years).  After this date the coupon can no longer be redeemed.  Defaults to forever.  A set period of time is only available with bulk coupons. </td>
     </tr>
     <tr>
       <td>Eligible charges</td>
