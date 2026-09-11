@@ -113,7 +113,7 @@ Before building a coupon, here's what each field in the creation form does.
     </tr>
     <tr>
       <td>Redeem by</td>
-      <td>When a coupon can be redeemed by: forever, specific date, or within a set period of time (days, weeks, months, years).  After this date the coupon can no longer be redeemed.  Defaults to forever.  A set period of time is only available with bulk coupons. </td>
+      <td>When a coupon can be redeemed by: anytime, specific date, or within a set period of time (days, weeks, months, years).  After this date the coupon can no longer be redeemed.  Defaults to forever.  A set period of time is only available with bulk coupons. </td>
     </tr>
     <tr>
       <td>Eligible charges</td>
@@ -350,6 +350,12 @@ Billing period coupons let you define duration in terms of exact billing cycles 
   <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> API support</strong>
   Billing period coupons are available in the UI and <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/create_coupon" target="_blank">API</a>. Understanding a coupon's current state, when it will expire, and the total discounted amount has never been easier with the new <code>coupon_redemptions</code> object returned in several endpoints, including the <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/get_preview_renewal" target="_blank">renewal preview API</a>.
 </div>
+
+# Coupon redemption
+
+Setting when a coupon can be redeemed by is a great option to help forecast when a coupon could be used and can easily be tied to specific promotional periods or marketing pushes.  There are 2 redeem by options when creating a single coupon - **anytime** and **a specific date**.  A coupon with 'anytime' set as its redeem by value will not expire automatically.  A coupon with a specific date set will expire once that date passes.&#x20;
+
+A third option, **Within a set time period**, becomes available for bulk coupons.
 
 # Applying a coupon
 
