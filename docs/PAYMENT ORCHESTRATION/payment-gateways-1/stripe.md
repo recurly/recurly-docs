@@ -114,7 +114,7 @@ Stripe supports Recurly's Auth and Capture feature, which pre-authorizes funds b
 
 # Stripe webhook behavior
 
-Recurly supports several Stripe webhook event types automatically. No additional configuration is needed in your Stripe dashboard — contact your Recurly representative to enable the relevant feature flag.
+Recurly supports several Stripe webhook event types automatically. No additional configuration is needed in your Stripe dashboard.
 
 ## Payment method and customer token lifecycle
 
@@ -200,5 +200,3 @@ Review your Stripe transactions regularly. Stripe may send transaction notices t
 <div class="rp-callout rp-callout-warning">
   <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Do not modify Recurly metadata sent to Stripe. While Stripe allows merchants to edit this data, Recurly relies on it for the integration to function correctly. Editing or deleting it can break transaction processing.</div>
 </div>
-
-<br />
