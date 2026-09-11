@@ -355,9 +355,7 @@ Billing period coupons let you define duration in terms of exact billing cycles 
 
 Setting when a coupon can be redeemed by is a great option to help forecast when a coupon could be used and can easily be tied to specific promotional periods or marketing pushes.  There are 2 redeem by options when creating a single coupon - **anytime** and **a specific date**.  A coupon with 'anytime' set as its redeem by value will not expire automatically.  A coupon with a specific date set will expire once that date passes.&#x20;
 
-A third option, **Within a set time period**, is available for bulk coupons. It lets you set a relative expiration period (e.g., 7 days, 2 weeks, 1 month) that starts individually for each unique code when it's generated, rather than when the coupon is created. Each time you generate a new batch of unique codes within that bulk coupon, you can set a new redeem-by window. This gives you more flexibility and reduces the number of unused or duplicate coupons.
-
-UI STUFF goes here
+A third option, **Within a set time period**, is available for bulk coupons. It lets you set a relative expiration period (e.g., 7 days, 2 weeks, 1 month) that starts individually for each unique code when it's generated, rather than when the coupon is created. Each time you generate a new batch of unique codes within that bulk coupon, you can set a new redeem-by window. This gives you more flexibility and reduces the number of unused or duplicate coupons.  This redeem-by window is converted to a date and displayed on the bulk coupon's page.
 
 ## During a purchase
 
