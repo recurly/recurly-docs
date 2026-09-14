@@ -27,7 +27,7 @@ Coupons and discounts give you flexible tools to reduce prices for subscribers â
     <a class="rp-toc-pill" href="#creating-a-coupon"><span class="rp-toc-num">3</span>Creating a coupon</a>
     <a class="rp-toc-pill" href="#types-of-discounts"><span class="rp-toc-num">4</span>Types of discounts</a>
     <a class="rp-toc-pill" href="#discount-duration"><span class="rp-toc-num">5</span>Discount duration</a>
-    <a class="rp-toc-pill" href="#applying-a-coupon"><span class="rp-toc-num">6</span>Applying a coupon</a>
+    <a class="rp-toc-pill" href="#coupon-redemption"><span class="rp-toc-num">6</span>Coupon redemption</a>
     <a class="rp-toc-pill" href="#editing-and-removing-coupons"><span class="rp-toc-num">7</span>Editing and removing coupons</a>
     <a class="rp-toc-pill" href="#expiration-and-restoration"><span class="rp-toc-num">8</span>Expiration and restoration</a>
     <a class="rp-toc-pill" href="#reporting-and-analysis"><span class="rp-toc-num">9</span>Reporting and analysis</a>
@@ -68,7 +68,15 @@ Coupons and discounts give you flexible tools to reduce prices for subscribers â
 
 <div class="rp-callout rp-callout-important">
   <strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Limitations</strong>
-  Once a coupon is created, the following attributes cannot be edited: coupon code, discount type, duration, eligible plans, eligible items, and discount level. Additionally: free trial coupons cannot be applied to an existing account (only at subscription creation); coupons cannot be applied alongside "On next renewal" subscription changes; a fixed amount discount that exceeds eligible charges does not carry over to future invoices; percentage discounts never apply to plan setup fees; and coupons cannot retroactively discount an existing invoice.
+  Keep these constraints in mind when configuring coupons:
+  <ul>
+    <li>Once a coupon is created, these attributes can't be edited: coupon code, discount type, duration, eligible plans, eligible items, and discount level.</li>
+    <li>Free trial coupons can only be applied when a subscription is created â€” not to an existing account.</li>
+    <li>Coupons can't be applied alongside "On next renewal" subscription changes.</li>
+    <li>A fixed amount discount that exceeds eligible charges doesn't carry over to future invoices.</li>
+    <li>Percentage discounts never apply to plan setup fees.</li>
+    <li>Coupons can't retroactively discount an existing invoice.</li>
+  </ul>
 </div>
 
 # Creating a coupon
@@ -113,7 +121,7 @@ Before building a coupon, here's what each field in the creation form does.
     </tr>
     <tr>
       <td>Redeem by</td>
-      <td>When a coupon can be redeemed by: anytime, specific date, or within a set period of time (days, weeks, months, years).  After this date or period the coupon can no longer be redeemed.  Defaults to forever.  A set period of time is only available with bulk coupons. </td>
+      <td>When a coupon can be redeemed: anytime, a specific date, or within a set period of time (days, weeks, months, years). After this date or period, the coupon can no longer be redeemed. Defaults to forever. A set period of time is only available with bulk coupons.</td>
     </tr>
     <tr>
       <td>Eligible charges</td>
@@ -268,9 +276,9 @@ Billing period coupons let you define duration in terms of exact billing cycles 
   </ul>
 </div>
 
-![](https://files.readme.io/e600a7667f5dad66c1eb942cd6e71d110f6950032ac1020b8e4e52331916d654-Dynamic_Coupon_Redemption.png)
 
-<br />
+<Image src="https://files.readme.io/e600a7667f5dad66c1eb942cd6e71d110f6950032ac1020b8e4e52331916d654-Dynamic_Coupon_Redemption.png" align="center" width="75%" border={true} />
+
 
 <div class="rp-callout rp-callout-note">
   <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> API support</strong>
@@ -279,9 +287,9 @@ Billing period coupons let you define duration in terms of exact billing cycles 
 
 # Coupon redemption
 
-Setting when a coupon can be redeemed by is a great option to help forecast when a coupon could be used and can easily be tied to specific promotional periods or marketing pushes.  There are 2 redeem by options when creating a single coupon - **anytime** and **a specific date**.  A coupon with 'anytime' set as its redeem by value will not expire automatically.  A coupon with a specific date set will expire once that date passes.&#x20;
+Setting a redeem-by date helps you forecast when a coupon will be used and ties redemptions to specific promotional periods or marketing pushes. When creating a single coupon, you have two redeem-by options â€” **anytime** and **a specific date**. A coupon set to **anytime** never expires automatically; a coupon with a specific date expires once that date passes.
 
-A third option, **Within a set time period**, is available for bulk coupons. It lets you set a relative expiration period (e.g., 7 days, 2 weeks, 1 month) that starts individually for each unique code when it's generated, rather than when the coupon is created. Each time you generate a new batch of unique codes within that bulk coupon, you can set a new redeem-by window. This gives you more flexibility and reduces the number of unused or duplicate coupons.  This redeem-by window is converted to a date and displayed on the bulk coupon's page.
+A third option, **within a set time period**, is available for bulk coupons. It lets you set a relative expiration period (for example, 7 days, 2 weeks, or 1 month) that starts individually for each unique code when it's generated, rather than when the coupon is created. Each time you generate a new batch of unique codes within that bulk coupon, you can set a new redeem-by window. This gives you more flexibility and reduces the number of unused or duplicate coupons. The redeem-by window is converted to a date and displayed on the bulk coupon's page.
 
 ## During a purchase
 
