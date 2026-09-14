@@ -40,7 +40,7 @@ next:
 
 # Integration guide
 
-## Step 1 — Set a primary payment method
+## Set a primary payment method
 
 The first payment method added to an account automatically becomes the primary. Only one payment method can be primary at a time.
 
@@ -157,5 +157,3 @@ When the primary payment method changes:
   <li>To change the payment method used for the next recurring charge, update the subscription's <code>billing_info_id</code> before the charge date</li>
   <li>For immediate subscription changes, update the billing info before initiating the change to ensure the correct method is charged</li>
 </ul>
-
-<br />
