@@ -40,7 +40,7 @@ next:
 
 # Integration guide
 
-## Set a primary payment method
+## Setting a primary payment method
 
 The first payment method added to an account automatically becomes the primary. Only one payment method can be primary at a time.
 
@@ -52,7 +52,15 @@ PUT /accounts/{account_code}/billing_infos/{billing_info_id}
 
 Include `primary_payment_method: true` in the request body. The previously primary method is automatically demoted to non-primary.
 
-## Step 2 — Add additional payment methods
+When the primary payment method changes:
+
+<ul class="rp-list">
+  <li>Subscriptions with no <code>billing_info_id</code> set switch to the new primary</li>
+  <li>Subscriptions pinned to a specific <code>billing_info_id</code> are unaffected</li>
+  <li>Updating billing info triggers a collection attempt on all unpaid invoices associated with that billing info</li>
+</ul>
+
+## Adding additional payment methods
 
 An account can store up to 20 billing infos. Each new entry receives a unique `billing_info_id` that can be referenced in future subscription or purchase requests.
 
@@ -70,7 +78,7 @@ Provide the payment details in the request body (card data, bank account details
   <li>If <code>primary_payment_method</code> is omitted — the existing primary billing info is updated</li>
 </ul>
 
-## Step 3 — Assign a payment method to a subscription or purchase
+## Assigning a payment method to a subscription or purchase
 
 When creating or updating a subscription or purchase, pass the `billing_info_id` of the desired payment method to pin it to that specific method.
 
@@ -93,7 +101,7 @@ Include `billing_info_id` at the subscription or line-item level. If no `billing
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> A subscription pinned to a specific <code>billing_info_id</code> retains that assignment even if the account's primary payment method later changes. If the assigned billing info is deleted, the subscription falls back to the primary.</div>
 </div>
 
-## Step 4 — Update a subscription's payment method
+## Updating a subscription's payment method
 
 To change the payment method on an existing subscription, send a `PUT` request to the subscription with the new `billing_info_id`:
 
@@ -103,7 +111,7 @@ PUT /subscriptions/{subscription_id}
 
 To reassign a subscription back to the primary payment method without specifying an ID, omit `billing_info_id` from the request — the subscription will default to whatever is currently primary.
 
-## Step 5 — List and manage payment methods
+## List and manage payment methods
 
 To retrieve all payment methods stored on an account:
 
@@ -130,24 +138,6 @@ To delete the primary payment method when multiple are present, first promote a 
 <div class="rp-callout rp-callout-warning">
   <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Deleting the only payment method</strong> Deleting all payment methods on an account with active subscriptions may cause those subscriptions to expire unless a new payment method is added. Subscriptions or invoices linked to a deleted billing info automatically fall back to the primary — or expire if no primary exists.</div>
 </div>
-
-## Step 6 — Change the primary payment method
-
-To promote a payment method to primary:
-
-```
-PUT /accounts/{account_code}/billing_infos/{billing_info_id}
-```
-
-Set `primary_payment_method: true` in the request body. The current primary is automatically demoted.
-
-When the primary payment method changes:
-
-<ul class="rp-list">
-  <li>Subscriptions with no <code>billing_info_id</code> set switch to the new primary</li>
-  <li>Subscriptions pinned to a specific <code>billing_info_id</code> are unaffected</li>
-  <li>Updating billing info triggers a collection attempt on all unpaid invoices associated with that billing info</li>
-</ul>
 
 # Best practices
 
