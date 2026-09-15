@@ -121,7 +121,7 @@ Before building a coupon, here's what each field in the creation form does.
     </tr>
     <tr>
       <td>Redeem by</td>
-      <td>When a coupon can be redeemed: anytime, a specific date, or within a set period of time (days, weeks, months, years). After this date or period, the coupon can no longer be redeemed. Defaults to forever. A set period of time is only available with bulk coupons.</td>
+      <td>When a coupon can be redeemed: anytime, a specific date, or within a set period of time (days, weeks, months, years). After this date or period, the coupon can no longer be redeemed. Defaults to anytime. A set period of time is only available with bulk coupons.</td>
     </tr>
     <tr>
       <td>Eligible charges</td>
@@ -310,7 +310,7 @@ To pre-populate a coupon code on your hosted payment page, append this URL param
 
 <div class="rp-callout rp-callout-note">
   <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>
-  Coupons cannot currently be applied to existing accounts through hosted account management pages. To request this capability, submit a <a href="https://support.recurly.com/" target="_blank">support ticket</a>.
+  Coupons cannot currently be applied to existing accounts through hosted account management pages. To request this capability, submit a <a href="https://support.recurly.com/" target="_blank">support ticket</a> or email <a href="mailto:support@recurly.com">support@recurly.com</a>.
 </div>
 
 ## During an upgrade or downgrade
