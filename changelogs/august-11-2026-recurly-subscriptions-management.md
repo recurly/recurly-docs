@@ -1,0 +1,13 @@
+---
+title: August 11, 2026 - Recurly Subscriptions Management
+author: Jenn Schnoes
+hidden: false
+published_at: '2026-08-07T21:17:19.929Z'
+---
+The August 11th release brings improved mandate visibility and an Adyen ACH fix.. Subscriptions and Accounts UI now surface a "Mandate Reference" and "Mandate Status" label so it's clear which mandate is tied to a given subscription. On the Adyen side, a Web Components issue affecting ACH bank accounts under Third Party Checkout — which was causing payments to refund unexpectedly — will be resolved upon release.
+
+| Release Date | **Feature**       | Type        | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                       |
+| :----------- | :---------------- | ----------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Aug 11, 2026 | **Subscriptions** | Enhancement | Low                  | We will be adding a UI element to Subscriptions and Accounts UI(s) referencing applicable mandate IDs and status so that it's clear which subscription is associated with a given mandate. This change only affects mandate-driven payment methods such as Direct Debit, and certain APMs such as UPI AutoPay, Pix Automatico, and Mercado Pago. |
+| Aug 11, 2026 | **Adyen Gateway** | Bug fix     | Low                  | We have fixed an issue with Adyen Web Components implementation with regards to ACH bank accounts that was causing payments to refund unexpectedly when using Third Party Checkout.                                                                                                                                                              |
+| Aug 11, 2026 | **Netsuite**      | Enhancement | Low                  | The Sync Errors page now has pagination, removing the previous 200-error display limit.  A new 'Ignore' category is now available which will bucket and display all ignore sync errors for record keeping purposes.                                                                                                                              |
