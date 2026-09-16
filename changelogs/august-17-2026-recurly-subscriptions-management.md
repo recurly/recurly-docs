@@ -1,0 +1,11 @@
+---
+title: August 17, 2026 - Recurly Subscriptions Management
+author: Tammy Pippin
+hidden: false
+published_at: '2026-08-11T19:18:41.764Z'
+---
+The Subscriber Churn Analysis dashboard was updated to remove "same period churn" (subscribers who signed up and canceled within the same reporting period), so churn is now calculated consistently by comparing a subscriber's status at the start versus the end of each period. You may notice churn totals shift slightly as a result, and your numbers will now reconcile more cleanly with acquisition and net subscriber change elsewhere in your analytics.
+
+| Release Date    | Feature   | Type        | Potential Impact | Description / Overview                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| --------------- | --------- | ----------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| August 17, 2026 | Analytics | Enhancement | Low              | The Subscriber Churn Analysis dashboard was updated to remove "same period churn" (subscribers who signed up and canceled within the same reporting period), so churn is now calculated consistently by comparing a subscriber's status at the start versus the end of each period. You may notice churn totals shift slightly as a result, and your numbers will now reconcile more cleanly with acquisition and net subscriber change elsewhere in your analytics. |
