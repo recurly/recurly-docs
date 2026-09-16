@@ -141,6 +141,8 @@ Within Recurly, **go** to Integrations→Automated Exports and enable the follow
    1. Filter on "Modified Yesterday"
    2. Note: this is only available if utilizing App Management
 
+_Note: The lowest supported version is v2 for all four exports._
+
 
 <Image src="https://files.readme.io/aaa214d-image.png" align="center" border={true} />
 
