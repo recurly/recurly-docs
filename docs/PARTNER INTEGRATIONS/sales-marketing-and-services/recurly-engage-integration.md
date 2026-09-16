@@ -53,15 +53,19 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 * Fill out the form to create a Recurly Engage instance.
 * This will automatically generate your Recurly Engage instance, provision the Recurly API key, and complete the creation process.
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/56557a4-image.png" className="border" />
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/aa285a2-image.png" className="border" />
+<Image src="https://files.readme.io/56557a4-image.png" align="center" width="80% " border={true} />
+
+
+
+<Image src="https://files.readme.io/aa285a2-image.png" align="center" width="80% " border={true} />
+
 
 2. **Configure** Recurly Engage.
 
 * You will receive an invitation to create your account/password in Recurly Engage.
 
-<Image border={false} src="https://files.readme.io/376835ea973bd71fdf1416dbc6e4dc135c11d35327a0740e6d3513e9584ca821-image.png" />
+![](https://files.readme.io/376835ea973bd71fdf1416dbc6e4dc135c11d35327a0740e6d3513e9584ca821-image.png)
 
 * **Log** into Recurly Engage using your new Recurly Engage account from the step above.
 
@@ -70,9 +74,12 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 * If you are planning to be in more than one instance (site/subdomain), you will have to use the alias process (similar to Recurly), e.g., [chad+demo@recurly.com](mailto:chad+demo@recurly.com).
 * Once you are logged into Recurly Engage, **go** to Settings→Application:
   * **Enter** your domain.
+
   * You can also change/edit the name of the instance here if needed—make it descriptive so that you know what the instance usage will be.
+
   * **Click** save changes.
-  <br />
+
+
   > **Note:** the ID and API keys should already be populated from Recurly.
 
 **Inviting a co-worker to the Recurly Engage console is easy:**
@@ -81,7 +88,9 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 * Enter their email and click + Add User.
 * Learn more in Recurly Engage: <a href="https://help.redfast.com/docs/invite-users" target="_blank">invite users</a>.
 
-<Image align="center" border={true} width="60% " src="https://files.readme.io/1ede92b-image.png" className="border" />
+
+<Image src="https://files.readme.io/1ede92b-image.png" align="center" width="60% " border={true} />
+
 
 ## Step 2: Configure Recurly Engage / add Recurly Engage tag
 
@@ -90,7 +99,9 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
   * User tracking is set by either enabling the Recurly Engage tag in Google Tag Manager or copying the script displayed to each page in the customer’s storefront to enable tracking.
   * Once one of these options is enabled on the storefront, tracking will begin. You can verify this by noting the status of “Active” with a green dot.
 
-<Image align="center" border={true} src="https://files.readme.io/a4444bf-image.png" className="border" />
+
+<Image src="https://files.readme.io/a4444bf-image.png" align="center" border={true} />
+
 
 * You can configure additional tracking items here. Some examples include identifying the cancellation button ID or creating a new tracker.
 * Learn more in [Recurly Engage](https://docs.recurly.com/recurly-engage/docs/usage-tracking-1#/).
@@ -120,17 +131,19 @@ You may need to work with your developers to determine the best method to identi
 
 Within Recurly, **go** to Integrations→Automated Exports and enable the following automated exports:
 
-1. Billing Info v6
+1. Billing Info v7
    1. Filter on "Modified Yesterday"
 2. Invoices - Summary v5
    1. Filter on "Modified Yesterday"
 3. Subscriptions v5
    1. Filter on "Modified Yesterday"
-4. External Subscriptions v5
+4. External Subscriptions v6
    1. Filter on "Modified Yesterday"
    2. Note: this is only available if utilizing App Management
 
-<Image align="center" border={true} src="https://files.readme.io/aaa214d-image.png" className="border" />
+
+<Image src="https://files.readme.io/aaa214d-image.png" align="center" border={true} />
+
 
 #### Recurly Engage - Importing Traits
 
@@ -164,7 +177,9 @@ To test your implementation, configure [Test Users](https://docs.recurly.com/rec
 
 Within Recurly Engage, you still see the two pre-built guides for Cancel Save and Failed Payment. Follow the steps below to customize these guides.
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/e52e66e-image.png" className="border" />
+
+<Image src="https://files.readme.io/e52e66e-image.png" align="center" width="80% " border={true} />
+
 
 ### Syncing Recurly data
 
@@ -172,7 +187,9 @@ Recurly data will be synced to Recurly Engage for use in building out offers. Th
 
 To force a sync, navigate to Recurly Engage -> Settings -> Integrations -> External -> Recurly. Uncheck the active checkbox, save, then recheck it, which forces a refresh
 
-<Image align="center" border={true} width="60% " src="https://files.readme.io/d8a9d83-Screen_Shot_2024-06-13_at_9.38.26_AM.png" className="border" />
+
+<Image src="https://files.readme.io/d8a9d83-Screen_Shot_2024-06-13_at_9.38.26_AM.png" align="center" width="60% " border={true} />
+
 
 ### Cancel save guide
 
@@ -213,7 +230,7 @@ Based on use cases, set up the specific prompts triggered by actions.
 3. Complete testing of all additional prompts and guides.
 4. Activate all prompts and guides.
 
-Testing on your production account is favorable and has many benefits. By using Test Users, you can test your prompts on your production instance of Recurly and/or Recurly Engage. This will reduce effort to change site alias, rebuilt prompts, and or change API keys. When testing against Test Users, these test accounts can be added to a segment that will apply to the prompts you are testing. 
+Testing on your production account is favorable and has many benefits. By using Test Users, you can test your prompts on your production instance of Recurly and/or Recurly Engage. This will reduce effort to change site alias, rebuilt prompts, and or change API keys. When testing against Test Users, these test accounts can be added to a segment that will apply to the prompts you are testing.
 
 ### Post go-live
 
