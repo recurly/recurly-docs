@@ -33,7 +33,7 @@ next:
 
 <ul class="rp-list">
   <li>A valid billing contact email address must be configured on your Recurly site for fallback notifications</li>
-  <li>Sender Authentication is <strong>required</strong> for all new sites before emails can be sent</li>
+  <li>Before an email can be sent, Sender Authentication must be completed</li>
 </ul>
 
 ### Limitations
