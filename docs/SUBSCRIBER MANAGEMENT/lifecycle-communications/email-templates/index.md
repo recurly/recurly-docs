@@ -600,11 +600,14 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{change_plan_interval_unit}}</code></td><td>New plan's billing interval unit</td></tr>
   <tr><td><code>{{change_plan_interval_length}}</code></td><td>New plan's billing interval length</td></tr>
   <tr><td><code>{{change_changed_plan?}}</code></td><td>Returns <code>true</code> if a subscription has changed plans</td></tr>
-  <tr><td><code>{{change_previous_plan_name}}</code></td><td>tbd</td></tr>
-  <tr><td><code>{{change_previous_plan_description}}</code></td><td>tbd</td></tr>
-  <tr><td><code>{{change_changed_subscription_add_ons?}}</code></td><td>tbd</td></tr>
-  <tr><td><code>{{change_previous_subscription_add_ons}}</code></td><td>tbd</td></tr>
-  <tr><td><code>{{change_removed_subscription_add_ons}}</code></td><td>tbd</td></tr>
+  <tr><td><code>{{change_previous_plan_name}}</code></td><td>The previous subscription's plan name</td></tr>
+  <tr><td><code>{{change_previous_plan_description}}</code></td><td>The previous subscription plan's description</td></tr>
+  <tr><td><code>{{change_changed_subscription_add_ons?}}</code></td><td>Returns true if the subscriptions add-ons have changed</td></tr>
+  <tr><td><code>{{change_previous_subscription_add_ons}}</code></td><td>The previous add-ons of a subscription</td></tr>
+  <tr><td><code>{{change_removed_subscription_add_ons?}}</code></td><td>Returns true if the change removed subscription add ons</td></tr>
+  <tr><td><code>{{change_removed_subscription_add_ons}}</code></td><td>The specific add-ons that were previously removed</td></tr>
+  <tr><td><code>{{change_subscription_add_ons?}}</code></td><td>Returns true if the change has any subscription add ons</td></tr>
+  <tr><td><code>{{subscription_add_ons?}}</code></td><td>Returns true if the subscription has any subscription add ons</td></tr>
 </table>
 
 ## Account details
