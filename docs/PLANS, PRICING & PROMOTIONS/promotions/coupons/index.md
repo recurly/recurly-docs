@@ -16,7 +16,9 @@ next:
 ---
 <div class="rp-page">
   <div class="rp-overview">
-    Coupons and discounts give you flexible tools to reduce prices for subscribers — automatically applied by you or redeemed via a code at checkout. Use them to run promotions, reward loyalty, and drive new signups across any plan or billing cycle.
+
+Coupons and discounts give you flexible tools to reduce prices for subscribers — automatically applied by you or redeemed via a code at checkout. Use them to run promotions, reward loyalty, and drive new signups across any plan or billing cycle.
+
   </div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
   <div class="rp-toc">
@@ -25,7 +27,7 @@ next:
     <a class="rp-toc-pill" href="#creating-a-coupon"><span class="rp-toc-num">3</span>Creating a coupon</a>
     <a class="rp-toc-pill" href="#types-of-discounts"><span class="rp-toc-num">4</span>Types of discounts</a>
     <a class="rp-toc-pill" href="#discount-duration"><span class="rp-toc-num">5</span>Discount duration</a>
-    <a class="rp-toc-pill" href="#applying-a-coupon"><span class="rp-toc-num">6</span>Applying a coupon</a>
+    <a class="rp-toc-pill" href="#coupon-redemption"><span class="rp-toc-num">6</span>Coupon redemption</a>
     <a class="rp-toc-pill" href="#editing-and-removing-coupons"><span class="rp-toc-num">7</span>Editing and removing coupons</a>
     <a class="rp-toc-pill" href="#expiration-and-restoration"><span class="rp-toc-num">8</span>Expiration and restoration</a>
     <a class="rp-toc-pill" href="#reporting-and-analysis"><span class="rp-toc-num">9</span>Reporting and analysis</a>
@@ -66,7 +68,15 @@ next:
 
 <div class="rp-callout rp-callout-important">
   <strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Limitations</strong>
-  Once a coupon is created, the following attributes cannot be edited: coupon code, discount type, duration, eligible plans, eligible items, and discount level. Additionally: free trial coupons cannot be applied to an existing account (only at subscription creation); coupons cannot be applied alongside "On next renewal" subscription changes; a fixed amount discount that exceeds eligible charges does not carry over to future invoices; percentage discounts never apply to plan setup fees; and coupons cannot retroactively discount an existing invoice.
+  Keep these constraints in mind when configuring coupons:
+  <ul>
+    <li>Once a coupon is created, these attributes can't be edited: coupon code, discount type, duration, eligible plans, eligible items, and discount level.</li>
+    <li>Free trial coupons can only be applied when a subscription is created — not to an existing account.</li>
+    <li>Coupons can't be applied alongside "On next renewal" subscription changes.</li>
+    <li>A fixed amount discount that exceeds eligible charges doesn't carry over to future invoices.</li>
+    <li>Percentage discounts never apply to plan setup fees.</li>
+    <li>Coupons can't retroactively discount an existing invoice.</li>
+  </ul>
 </div>
 
 # Creating a coupon
@@ -110,8 +120,8 @@ Before building a coupon, here's what each field in the creation form does.
       <td>How many times a single account can redeem the coupon — once, unlimited, or a specific number.</td>
     </tr>
     <tr>
-      <td>Redeem by date</td>
-      <td>Optional expiration date. After this date the coupon can no longer be redeemed.</td>
+      <td>Redeem by</td>
+      <td>When a coupon can be redeemed: anytime, a specific date, or within a set period of time (days, weeks, months, years). After this date or period, the coupon can no longer be redeemed. Defaults to anytime. A set period of time is only available with bulk coupons.</td>
     </tr>
     <tr>
       <td>Eligible charges</td>
@@ -139,80 +149,6 @@ Before building a coupon, here's what each field in the creation form does.
     </tr>
   </tbody>
 </table>
-
-## Step-by-step: create a new coupon
-
-<br />
-
-<div class="rp-steps">
-  <div class="rp-step">
-    <div class="rp-step-num">1</div>
-    <div>
-      <h4>Navigate to Coupons</h4>
-      <p>Go to <strong>Configuration</strong> and click <strong>Coupons</strong>.</p>
-    </div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">2</div>
-    <div>
-      <h4>Click New Coupon</h4>
-    </div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">3</div>
-    <div>
-      <h4>Enter an internal name</h4>
-    </div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">4</div>
-    <div>
-      <h4>Select a code type</h4>
-      <p>Choose <strong>Single code</strong> or <strong>Bulk unique codes</strong>.</p>
-    </div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">5</div>
-    <div>
-      <h4>Choose a discount type</h4>
-      <p>Select <strong>Percentage</strong>, <strong>Fixed amount</strong>, or <strong>Free trial</strong>.</p>
-    </div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">6</div>
-    <div>
-      <h4>Set the coupon duration</h4>
-      <p>Choose <strong>Single use</strong>, <strong>Forever</strong>, <strong>Limited time</strong> (specify days, weeks, or months), or <strong>Billing periods</strong> (specify the number of billing cycles).</p>
-    </div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">7</div>
-    <div>
-      <h4>Configure redemption rules</h4>
-      <p>Set maximum redemptions, redemptions per account, and an optional redeem-by date.</p>
-    </div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">8</div>
-    <div>
-      <h4>Define eligible charges, plans, and items</h4>
-    </div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">9</div>
-    <div>
-      <h4>Add descriptions (optional)</h4>
-      <p>Optionally enter a payment page description and/or invoice description.</p>
-    </div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">10</div>
-    <div>
-      <h4>Click Create coupon</h4>
-      <p>The discount will automatically appear on the invoice when it's generated.</p>
-    </div>
-  </div>
-</div>
 
 # Types of discounts
 
@@ -340,16 +276,20 @@ Billing period coupons let you define duration in terms of exact billing cycles 
   </ul>
 </div>
 
-![](https://files.readme.io/e600a7667f5dad66c1eb942cd6e71d110f6950032ac1020b8e4e52331916d654-Dynamic_Coupon_Redemption.png)
 
-<br />
+<Image src="https://files.readme.io/e600a7667f5dad66c1eb942cd6e71d110f6950032ac1020b8e4e52331916d654-Dynamic_Coupon_Redemption.png" align="center" width="75%" border={true} />
+
 
 <div class="rp-callout rp-callout-note">
   <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> API support</strong>
   Billing period coupons are available in the UI and <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/create_coupon" target="_blank">API</a>. Understanding a coupon's current state, when it will expire, and the total discounted amount has never been easier with the new <code>coupon_redemptions</code> object returned in several endpoints, including the <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/get_preview_renewal" target="_blank">renewal preview API</a>.
 </div>
 
-# Applying a coupon
+# Coupon redemption
+
+Setting a redeem-by date can help you forecast when a coupon could be used and can tie redemptions to specific promotional periods or marketing pushes. When creating a single coupon, you have two redeem-by options — **anytime** and **a specific date**. A coupon set to **anytime** never expires automatically; a coupon with a specific date expires once that date passes.
+
+A third option, **within a set time period**, is available for bulk coupons. It lets you set a relative expiration period (for example, 7 days, 2 weeks, or 1 month) that starts individually for each unique code when it's generated, rather than when the coupon is created. Each time you generate a new batch of unique codes within that bulk coupon, you can set a new redeem-by window. This gives you more flexibility and reduces the number of unused or duplicate coupons. The redeem-by window is converted to a date and displayed on the bulk coupon's page.
 
 ## During a purchase
 
@@ -370,7 +310,7 @@ To pre-populate a coupon code on your hosted payment page, append this URL param
 
 <div class="rp-callout rp-callout-note">
   <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>
-  Coupons cannot currently be applied to existing accounts through hosted account management pages. To request this capability, submit a <a href="https://support.recurly.com/" target="_blank">support ticket</a>.
+  Coupons cannot currently be applied to existing accounts through hosted account management pages. To request this capability, submit a <a href="https://support.recurly.com/" target="_blank">support ticket</a> or email <a href="mailto:support@recurly.com">support@recurly.com</a>.
 </div>
 
 ## During an upgrade or downgrade
@@ -509,5 +449,3 @@ Track and analyze coupon performance from the **Exports** page under **Reports**
 <Accordion title="Where can I find coupon redemption data?">
   Every coupon has a Redemptions table showing all accounts that have redeemed it and the total discount applied. For bulk coupons, a "Not redeemed" table shows all unused unique codes. You can expire unredeemed codes early — expired codes appear at the end of the table.
 </Accordion>
-
-<br />
