@@ -1,0 +1,15 @@
+---
+title: August 25, 2026 - Recurly Subscription Management
+author: Jenn Schnoes
+hidden: false
+published_at: '2026-08-21T21:29:16.630Z'
+---
+This release adds PayPay Wallet support on Adyen, giving merchants a way to reach customers in Japan via Recurly.js or Adyen Components through Third Party Checkout — full details, integration guides, and an overview of the method will be available in our docs post-release. We've also fixed a GoCardless bug where BACS direct debit failures weren't retrying when the response code indicated potential insufficient funds, so those transactions now retry as intended after release.
+
+The Stripe version change was also moved to this week's release.
+
+| Release Date | Feature            | Type        | Potential Impact | Description / Overview                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------ | ------------------ | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Aug 25       | Adyen Gateway      | Enhancement | Medium           | Recurly will be launching a new payment method, PayPay Wallet ( a very popular wallet option in Japan) on Adyen for use with Recurly.js or with Adyen Components via Third Party Checkout. To learn more about PayPay on Adyen, visit our [Adyen documentation ](https://docs.recurly.com/recurly-subscriptions/docs/adyen)after release.                                                         |
+| Aug 25       | Gocardless Gateway | Bug fix     | Low              | We have fixed an issue where BACS direct debit failures were not retrying when the response code indicated potential insufficient funds.                                                                                                                                                                                                                                                          |
+| Aug 25       | Stripe Gateway     | Enhancement | Medium           | Recurly will be upgrading our default Stripe version in Platform Connect to our currently supported `2025-08-27.basil`. If you are connecting on your own to Stripe using a connected account, ensure you are using an updated version (from the last 2 years at least), no higher than the version listed, to avoid issues. **Note:&#x20;**&#x74;his action was pushed from last week's release. |
