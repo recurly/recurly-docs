@@ -1,8 +1,8 @@
 ---
 title: RBI regulations
 excerpt: >-
-  Navigate the new RBI e-mandate guidelines for recurring transactions with
-  ease, ensuring compliance and reducing payment failure rates.
+  Navigate the RBI e-mandate guidelines for recurring transactions with ease,
+  ensuring compliance and reducing payment failure rates.
 deprecated: false
 hidden: false
 metadata:
@@ -20,7 +20,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The Reserve Bank of India's (RBI) new regulations on e-mandates for recurring transactions aim to enhance the security and control of cardholders over such transactions. With a focus on transparency, the guidelines demand pre-transaction notifications and limit e-mandate transactions to INR 15,000 (raised from 5,000 previously), among other mandates.
+The Reserve Bank of India's (RBI) regulations on e-mandates for recurring transactions aim to enhance the security and control of cardholders over such transactions. With a focus on transparency, the guidelines demand pre-transaction notifications and limit e-mandate transactions to INR 15,000 (raised from 5,000 previously), among other mandates.
 
 # Key benefits
 
@@ -60,7 +60,7 @@ We have also introduced support for UPI AutoPay and associated e-mandate support
 
 ### All Other gateways and payment methods
 
-If you are not using Stripe with Cards, or Ebanx with UPI AutoPay, to minimize the impact of these changes on your business, we recommend **ceasing** standard recurring payments for customers in India. This is due to the high risk of declines, and instead, we recommend utilizing Recurly’s dunning campaigns. 
+If you are not using Stripe with Cards, or Ebanx with UPI AutoPay, to minimize the impact of these changes on your business, we recommend **ceasing** standard recurring payments for customers in India. This is due to the high risk of declines, and instead, we recommend utilizing Recurly’s dunning campaigns.
 
 These automated messages will inform your Indian customers about expected payment declines and guide them on how to activate customer-initiated transactions (CIT). Offering multi-month or annual subscriptions can also be an effective strategy to reduce monthly confirmations by customers. With Recurly’s prepaid account balance functionality, you can allow subscribers to add to their prepaid account balance, and then decrement subscribers’ account balances monthly.
 
