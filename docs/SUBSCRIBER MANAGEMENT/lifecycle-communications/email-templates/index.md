@@ -599,7 +599,12 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{change_subscription_add_ons}}</code></td><td>Block of add-ons included in the pending change — what the subscription will have after the change activates. Use within a <code>{{#change_subscription_add_ons}} … {{/change_subscription_add_ons}}</code> block, referencing the same add-on fields as <code>subscription_add_ons</code></td></tr>
   <tr><td><code>{{change_plan_interval_unit}}</code></td><td>New plan's billing interval unit</td></tr>
   <tr><td><code>{{change_plan_interval_length}}</code></td><td>New plan's billing interval length</td></tr>
-  <tr><td><code>{{change_changed_plan?}}</code></td><td>Returns <code>true</code>if a subscription has changed plans </td></tr>
+  <tr><td><code>{{change_changed_plan?}}</code></td><td>Returns <code>true</code> if a subscription has changed plans</td></tr>
+  <tr><td><code>{{change_previous_plan_name}}</code></td><td>tbd</td></tr>
+  <tr><td><code>{{change_previous_plan_description}}</code></td><td>tbd</td></tr>
+  <tr><td><code>{{change_changed_subscription_add_ons?}}</code></td><td>tbd</td></tr>
+  <tr><td><code>{{change_previous_subscription_add_ons}}</code></td><td>tbd</td></tr>
+  <tr><td><code>{{change_removed_subscription_add_ons}}</code></td><td>tbd</td></tr>
 </table>
 
 ## Account details
