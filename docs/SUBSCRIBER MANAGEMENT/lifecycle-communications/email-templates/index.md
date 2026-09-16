@@ -33,7 +33,7 @@ next:
 
 <ul class="rp-list">
   <li>A valid billing contact email address must be configured on your Recurly site for fallback notifications</li>
-  <li>Sender Authentication is strongly recommended before going live with custom from addresses</li>
+  <li>Before an email can be sent, Sender Authentication must be completed</li>
 </ul>
 
 ### Limitations
@@ -373,6 +373,10 @@ To add an image such as your company logo, insert the following HTML in your ema
 
 Recurly's Sender Authentication feature lets you verify your DNS records directly from the Email Templates page — the most reliable way to ensure your emails are delivered successfully.
 
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Sender Authentication is <strong>required</strong> for all new sites that do not have their own paid SendGrid account. If you're using a paid SendGrid integration, refer to the <a href="https://docs.recurly.com/docs/sendgrid" target="_blank">SendGrid documentation</a> instead.</div>
+</div>
+
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">1</div>
@@ -393,10 +397,6 @@ Recurly's Sender Authentication feature lets you verify your DNS records directl
 
 
 If a template has a specific "from" address configured, that template name appears under the associated domain in the Sender Authentication panel. Templates using the default sender address are listed as **Default Sender**.
-
-<div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Sender Authentication is only available to sites that do not have their own paid SendGrid account. If you're using a paid SendGrid integration, refer to the <a href="https://docs.recurly.com/docs/sendgrid" target="_blank">SendGrid documentation</a> instead.</div>
-</div>
 
 # Email preferences
 
@@ -915,5 +915,3 @@ Recurly supports email parameters for custom fields on Accounts, Plans, Subscrip
 <Accordion title="If a merchant enables the Annual Renewal Reminder, will it apply to existing subscriptions?">
   Yes. Once enabled, the Annual Renewal Reminder applies to all subscriptions — both new and existing — for any plans that have the template enabled.
 </Accordion>
-
-<br />
