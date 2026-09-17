@@ -192,178 +192,29 @@ During integration setup, you can specify a FlexibleField ID and the value you'd
 
 This section details the fields that Recurly sends to Vertex with each invoice that is created. This core set of data fields supports basic tax configurations. If you require additional fields as part of your tax setup, contact your Vertex rep and Recurly <a href="https://recurly.com/contact-form/" target="_blank">Sales</a> or <a href="https://support.recurly.com/" target="_blank">Support</a> to see if that request can be supported.
 
-<Table align={["left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Recurly Attribute
-      </th>
+| Recurly Attribute                                                          | Vertex Attribute                                                                                |
+| :------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| Invoice number                                                             | Request/documentNumber                                                                          |
+| Invoice posted date                                                        | Request/documentDate                                                                            |
+| _N/A_                                                                      | Request/TransactionType (always sends "SALE")                                                   |
+| Invoice currency                                                           | Request/isoCurrencyCodeAlpha (defaults to "USD")                                                |
+| Vertex credentials/company                                                 | Request/Seller/Company                                                                          |
+| Vertex credentials/division(s)                                             | Request/Seller/Division(s)                                                                      |
+| Business Entity address                                                    | Request/Seller/PhysicalOrigin<br />Request/Seller/AdministrativeOrigin                          |
+| Customer account code                                                      | Request/Customer/CustomerCode<br />_Must be 40 characters or less._                             |
+| Invoice taxable address (e.g. - Bill To or Ship To)                        | Request/Customer/Destination<br />Request/LineItem/Customer/Destination (for credit line items) |
+| VAT number for invoice taxable address                                     | Request/LineItem/Customer/TaxRegistration                                                       |
+| Line item product code (e.g. - plan code, add-on code)                     | Request/LineItem/Product                                                                        |
+| Line item tax code                                                         | Request/LineItem/productClass                                                                   |
+| Line item subtotal after discounts                                         | Request/LineItem/ExtendedPrice                                                                  |
+| Line item's original invoice number (for credit line items / refunds)      | Request/LineItem/FlexibleFields                                                                 |
+| Line items' original invoice posted date (for credit line items / refunds) | Request/LineItem/taxDate                                                                        |
+| Custom fields (max: 10 fields)                                             | Vertex Flexible Fields                                                                          |
 
-      <th>
-        Vertex Attribute
-      </th>
-    </tr>
-  </thead>
+#### Notes
 
-  <tbody>
-    <tr>
-      <td>
-        Invoice number
-      </td>
-
-      <td>
-        Request/documentNumber
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Invoice posted date
-      </td>
-
-      <td>
-        Request/documentDate
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        _N/A_
-      </td>
-
-      <td>
-        Request/TransactionType (always sends "SALE")
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Invoice currency
-      </td>
-
-      <td>
-        Request/isoCurrencyCodeAlpha (defaults to "USD")
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Vertex credentials/company
-      </td>
-
-      <td>
-        Request/Seller/Company
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Vertex credentials/division(s)
-      </td>
-
-      <td>
-        Request/Seller/Division(s)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Business Entity address
-      </td>
-
-      <td>
-        Request/Seller/PhysicalOrigin
-        Request/Seller/AdministrativeOrigin
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Customer account code
-      </td>
-
-      <td>
-        Request/Customer/CustomerCode
-        _Must be 40 characters or less._
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Invoice taxable address (e.g. - Bill To or Ship To)
-      </td>
-
-      <td>
-        Request/Customer/Destination
-        Request/LineItem/Customer/Destination (for credit line items)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        VAT number for invoice taxable address
-      </td>
-
-      <td>
-        Request/LineItem/Customer/TaxRegistration
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Line item product code (e.g. - plan code, add-on code)
-      </td>
-
-      <td>
-        Request/LineItem/Product
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Line item tax code
-      </td>
-
-      <td>
-        Request/LineItem/productClass
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Line item subtotal after discounts
-      </td>
-
-      <td>
-        Request/LineItem/ExtendedPrice
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Line item's original invoice number (for credit line items / refunds)
-      </td>
-
-      <td>
-        Request/LineItem/FlexibleFields
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Line items' original invoice posted date (for credit line items / refunds)
-      </td>
-
-      <td>
-        Request/LineItem/taxDate
-      </td>
-    </tr>
-  </tbody>
-</Table>
-
-#### Limitations
-
-Vertex requires the Customer Code to be 40 characters or fewer. Recurly allows up to 50 characters for Account Code, so ensure that your Recurly Account Codes are within Vertex's character limit to avoid declined transactions.
+- Vertex requires the Customer Code to be 40 characters or fewer. Recurly allows up to 50 characters for Account Code, so ensure that your Recurly Account Codes are within Vertex's character limit to avoid declined transactions.
+- A custom field will automatically be sent to Vertex when an invoice is created if an invoice line item has a custom field and if it is properly mapped to the Vertex Flexible Fields in your Vertex account.
 
 # Disable Vertex
 
