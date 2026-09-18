@@ -214,7 +214,7 @@ This section details the fields that Recurly sends to Vertex with each invoice t
 #### Notes
 
 - Vertex requires the Customer Code to be 40 characters or fewer. Recurly allows up to 50 characters for Account Code, so ensure that your Recurly Account Codes are within Vertex's character limit to avoid declined transactions.
-- A custom field will automatically be sent to Vertex when an invoice is created if an invoice line item has a custom field and if it is properly mapped to the Vertex Flexible Fields in your Vertex account.
+- In order for a custom field to be sent to Vertex, it must be properly mapped to the Vertex Flexible Fields in your Vertex account and the Recurly custom field option "Allow this field to show up on Invoices" must be enabled.  Once these two tasks have been completed, custom fields will automatically be sent to Vertex when an invoice is created.
 
 # Disable Vertex
 
