@@ -33,7 +33,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
   * [3D Secure for new cards](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/)
 * [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
 * An Ebanx or WorldPay (WPG) gateway account with credit cards and 3DS enabled in the LATAM region
-* Familiarity with our tax integrations, specifically Vertex or Avalara.
+* Familiarity with our [tax integrations](https://docs.recurly.com/recurly-subscriptions/docs/taxes), specifically Vertex or Avalara.
 
 ### Required and recommended fields&#x20;
 
