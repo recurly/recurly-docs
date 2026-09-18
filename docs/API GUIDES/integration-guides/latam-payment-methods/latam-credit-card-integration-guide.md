@@ -1,5 +1,9 @@
 ---
 title: LATAM Credit Card integration guide
+excerpt: >-
+  Learn how to create new subscriptions using a credit card on Ebanx or WorldPay
+  in the LATAM region, including the customer data and 3DS handling required for
+  regional compliance.
 deprecated: false
 hidden: true
 link:
