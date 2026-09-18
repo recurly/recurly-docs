@@ -2,7 +2,15 @@
 title: LATAM Payment Methods
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
+  title: Recurly | LATAM Payment Methods - Credit Card, Pix Automatico, Mercado Pago
+  keywords:
+    - pix automatico
+    - latam processing
+    - mercado pago
+    - recurly
   robots: index
 ---
 # Overview
