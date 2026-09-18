@@ -54,7 +54,7 @@ Fields to collect:&#x20;
 * Full billing address (at minimum)
 * Date of Birth
 * A valid email address&#x20;
-* A valid tax ID
+* A valid Tax ID (and type, conditionally)
 
 ***
 
