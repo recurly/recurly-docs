@@ -35,11 +35,6 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 * An Ebanx or WorldPay (WPG) gateway account with credit cards and 3DS enabled in the LATAM region
 * Familiarity with our [tax integrations](https://docs.recurly.com/recurly-subscriptions/docs/taxes), specifically Vertex or Avalara.
 
-### Required and recommended fields&#x20;
-
-* Full first and last name information, billing address, and email for your customer
-* In certain regions the Tax ID and Date of Birth of the customer are required. You can use Recurly's API to pass the data to the gateway, and we will store it for renewals and return customer transactions.
-
 ***
 
 # Definition
