@@ -25,7 +25,8 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 ### Prerequisites & limitations
 
 * Familiarity with Recurly’s API  and basic REST concepts
-* Familiarity with Recurly.js and 3DS concepts
+* Familiarity with our 3DS guides:
+  * [3D Secure for new cards](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/)
 * [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
 * An Ebanx or WorldPay (WPG) gateway account with credit cards and 3DS enabled in the LATAM region
 
