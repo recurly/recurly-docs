@@ -43,10 +43,10 @@ One-time transactions are allowed when using a card payment method for a consume
 
 ## Step 1: Generate a Card Payment Request + Subscription
 
-**Use** a supported client library, Recurly.js and/or a V3 Recurly API implementation. Our client libraries help you build out our APIs easily and process transactions faster. Cards for India customers will require 3DS handling via Recurly.js, so ensure, no matter how you pass in card data, that you are handling 3DS Action and 3Ds Action Result tokens. See our <Anchor label="3DS documentation" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/">3DS documentation</Anchor> for details.
+**Use** a supported client library, Recurly.js and/or a V3 Recurly API implementation. Our client libraries help you build out our APIs easily and process transactions faster. Cards for India customers will require 3DS handling via Recurly.js, so ensure, no matter how you pass in card data, that you are handling 3DS Action and 3Ds Action Result tokens. See our <Anchor target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/">3DS documentation</Anchor> for details.
 
 <Callout icon="📘" theme="info">
-  **One-Step Flow**
+  ### **One-Step Flow**
 
   It is recommended to handle the subscription signup and card detail storage in a single step to avoid Stripe requesting 3DS verification twice.
 </Callout>
@@ -58,7 +58,7 @@ One-time transactions are allowed when using a card payment method for a consume
 
 **Please Note:** You can use the `/subscriptions` endpoint for this purpose, but ensure you're passing in the token-id or the PAN data in that call for al "all in one" style subscription creation. This will ensure the mandate is created properly with the card and 3DS is handled prior to card storage.
 
-> **Tip:** Many more parameters are available. See the <Anchor label="Create Purchase" target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
+> **Tip:** Many more parameters are available. See the <Anchor target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
 
 ***
 
@@ -109,6 +109,6 @@ You can test successful mandate creation, consumer-driven pauses or cancellation
 
 ## Next steps
 
-Now that you can create new  <Anchor label="subscriptions" target="_blank" href="https://app.recurly.com/go/subscriptions">subscriptions</Anchor>, explore payment method guide to explore other use cases and limitations related to the <Anchor label="Card usage in India" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/stripe#/india-mandates-with-credit-cards">Card usage in India</Anchor> on Stripe. Ensure you've read through our [RBI documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/) if you are not using Stripe.
+Now that you can create new  <Anchor target="_blank" href="https://app.recurly.com/go/subscriptions">subscriptions</Anchor>, explore payment method guide to explore other use cases and limitations related to the <Anchor target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/stripe#/india-mandates-with-credit-cards">Card usage in India</Anchor> on Stripe. Ensure you've read through our [RBI documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/) if you are not using Stripe.
 
 <br />
