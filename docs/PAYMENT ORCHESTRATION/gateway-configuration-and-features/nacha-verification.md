@@ -59,7 +59,7 @@ See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen" targ
 
 Use **Stripe Elements** with Stripe's **Financial Connections** platform to pre-verify bank account details. External verification is not supported on the Stripe gateway.
 
-See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/stripe" target="_blank">Stripe documentation</a> for setup details.
+See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/stripe" target="_blank">Stripe documentation</a> for setup details. Recurly supports this method when using Third Party Checkout with Stripe.
 
 ### Worldpay
 
