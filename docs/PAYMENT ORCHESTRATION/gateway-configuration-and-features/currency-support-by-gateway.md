@@ -60,29 +60,29 @@ next:
 
 Recurly supports the following ISO 4217 currency codes across its gateways. Codes marked with an asterisk (\*) are zero decimal currencies.
 
-| Currency |     |       |     |     |       |
-| -------- | --- | ----- | --- | --- | ----- |
-| AED      | BZD | GIP   | LRD | PEN | TJS   |
-| AMD      | CAD | GMD   | LSL | PGK | TOP   |
-| AOA      | CHF | GNF   | MAD | PHP | TRY   |
-| ARS      | CLP | GTQ   | MDL | PKR | TTD   |
-| AUD      | CNY | GYD   | MKD | PLN | TWD   |
-| AWG      | COP | HKD   | MNT | PYG | TZS   |
-| AZN      | CRC | HNL   | MOP | QAR | UAH   |
-| BAM      | CVE | HRK   | MUR | RON | UGX   |
-| BBD      | CZK | HTG   | MVR | RSD | USD   |
-| BDT      | DJF | HUF   | MWK | RUB | UYU   |
-| BGN      | DKK | IDR   | MXN | RWF | UZS   |
-| \*BIF    | DOP | ILS   | MYR | SAR | VEF   |
-| BMD      | DZD | INR   | MZN | SBD | \*VND |
-| BND      | EGP | JMD   | NAD | SCR | \*VUV |
-| BOB      | ETB | \*JPY | NGN | SEK | WST   |
-| BRL      | EUR | KES   | NIO | SGD | \*XAF |
-| BSD      | FJD | KGS   | NOK | SHP | XCD   |
-| BWP      | FKP | \*KMF | NPR | SLL | \*XOF |
-| BZD      | GBP | \*KRW | NZD | SOS | \*XPF |
-| CAD      | GEL | KYD   | PAB | SRD | YER   |
-| CHF      | GHS | KZT   | PEN | SVC | ZAR   |
+| Currency |       |       |     |       |       |
+| -------- | ----- | ----- | --- | ----- | ----- |
+| AED      | BZD   | GIP   | LRD | PEN   | TJS   |
+| AMD      | CAD   | GMD   | LSL | PGK   | TOP   |
+| AOA      | CHF   | \*GNF | MAD | PHP   | TRY   |
+| ARS      | \*CLP | GTQ   | MDL | PKR   | TTD   |
+| AUD      | CNY   | GYD   | MKD | PLN   | TWD   |
+| AWG      | COP   | HKD   | MNT | \*PYG | TZS   |
+| AZN      | CRC   | HNL   | MOP | QAR   | UAH   |
+| BAM      | CVE   | HRK   | MUR | RON   | \*UGX |
+| BBD      | CZK   | HTG   | MVR | RSD   | USD   |
+| BDT      | \*DJF | HUF   | MWK | RUB   | UYU   |
+| BGN      | DKK   | IDR   | MXN | \*RWF | UZS   |
+| \*BIF    | DOP   | ILS   | MYR | SAR   | VEF   |
+| BMD      | DZD   | INR   | MZN | SBD   | \*VND |
+| BND      | EGP   | JMD   | NAD | SCR   | \*VUV |
+| BOB      | ETB   | \*JPY | NGN | SEK   | WST   |
+| BRL      | EUR   | KES   | NIO | SGD   | \*XAF |
+| BSD      | FJD   | KGS   | NOK | SHP   | XCD   |
+| BWP      | FKP   | \*KMF | NPR | SLL   | \*XOF |
+| BZD      | GBP   | \*KRW | NZD | SOS   | \*XPF |
+| CAD      | GEL   | KYD   | PAB | SRD   | YER   |
+| CHF      | GHS   | KZT   | PEN | SVC   | ZAR   |
 
 <div class="rp-callout rp-callout-note"><div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Currencies marked with an asterisk (*) are <a href="#zero-decimal-currencies">zero decimal currencies</a> supported by Recurly.</div></div>
 
