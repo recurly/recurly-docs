@@ -15,9 +15,10 @@ next:
 ---
 <div class="rp-page">
   <div class="rp-overview">Recurly supports a wide range of currencies to help merchants accept payments in customers' local currency. The specific currencies available depend on your payment gateway — some gateways support all Recurly currencies, while others have a more limited set.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
-    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#gateway-currency-support"><span class="rp-toc-num">2</span>Gateway currency support</a>
     <a class="rp-toc-pill" href="#iso-standard-currencies"><span class="rp-toc-num">3</span>ISO standard currencies</a>
     <a class="rp-toc-pill" href="#zero-decimal-currencies"><span class="rp-toc-num">4</span>Zero decimal currencies</a>
   </div>
@@ -40,23 +41,24 @@ next:
 
 <div class="rp-definition">Recurly's currency support lets merchants manage transactions in a wide range of currencies — essential for businesses operating across multiple countries or targeting customers in different regions. Offering prices in local currency can improve customer satisfaction and conversion rates.</div>
 
-<div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Not all gateways support all currencies. Check the individual gateway documentation for a specific gateway's supported currencies. If "All available" is listed, the gateway supports all Recurly currencies shown below.</div>
-</div>
+<div class="rp-callout rp-callout-note"><div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Not all gateways support all currencies. Check the individual gateway's documentation for its supported currencies. When "All available" is listed below, the gateway supports every Recurly currency in the ISO standard list.</div></div>
 
-# Key details
+# Gateway currency support
 
-## Gateways with full currency support
-
-- **Adyen** \[TODO: add link] — Supports most currencies, with special handling for Icelandic Króna (ISK) and Chilean Peso (CLP). Does not support Indonesian Rupiah (IDR) or Cape Verdean Escudo (CVE).
-- **Braintree** \[TODO: add link] — Accepts every currency that PayPal supports, limited to PayPal's own currency list.
-- **Commerce Hub by Fiserv** \[TODO: add link] — Supports all currencies.
-- **CyberSource** \[TODO: add link] — Supports all currencies.
-- **FreedomPay** \[TODO: add link] — Supports all currencies.
-- **Stripe** \[TODO: add link] — Supports all currencies. When using Gateway Failover, confirm the currency is enabled in both Stripe and Recurly.
-- **Worldpay Global eCommerce** \[TODO: add link] — Supports all currencies. Does not support Dominican Peso (DOP) or Nicaraguan Córdoba (NIO).
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Gateway</td><td>Supported currencies</td></tr>
+  <tr><td><a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen" target="_blank">Adyen</a></td><td>Most currencies, with special handling for Icelandic Króna (ISK) and Chilean Peso (CLP). Does not support Indonesian Rupiah (IDR) or Cape Verdean Escudo (CVE).</td></tr>
+  <tr><td><a href="https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd" target="_blank">Braintree</a></td><td>Every currency PayPal supports — limited to PayPal's own currency list.</td></tr>
+  <tr><td><a href="https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub" target="_blank">Commerce Hub by Fiserv</a></td><td>All available.</td></tr>
+  <tr><td><a href="https://docs.recurly.com/recurly-subscriptions/docs/cybersource" target="_blank">CyberSource</a></td><td>All available.</td></tr>
+  <tr><td><a href="https://docs.recurly.com/recurly-subscriptions/docs/freedompay" target="_blank">FreedomPay</a></td><td>All available.</td></tr>
+  <tr><td><a href="https://docs.recurly.com/recurly-subscriptions/docs/stripe" target="_blank">Stripe</a></td><td>All available. When using Gateway Failover, confirm the currency is enabled in both Stripe and Recurly.</td></tr>
+  <tr><td><a href="https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support" target="_blank">Worldpay Global eCommerce</a></td><td>All available, except Dominican Peso (DOP) and Nicaraguan Córdoba (NIO).</td></tr>
+</table>
 
 # ISO standard currencies
+
+Recurly supports the following ISO 4217 currency codes across its gateways. Codes marked with an asterisk (\*) are zero decimal currencies.
 
 | Currency |     |       |     |     |       |
 | -------- | --- | ----- | --- | --- | ----- |
@@ -82,9 +84,7 @@ next:
 | CAD      | GEL | KYD   | PAB | SRD | YER   |
 | CHF      | GHS | KZT   | PEN | SVC | ZAR   |
 
-<div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Currencies marked with an asterisk (*) are zero decimal currencies supported by Recurly.</div>
-</div>
+<div class="rp-callout rp-callout-note"><div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Currencies marked with an asterisk (*) are <a href="#zero-decimal-currencies">zero decimal currencies</a> supported by Recurly.</div></div>
 
 # Zero decimal currencies
 
@@ -99,5 +99,3 @@ When processing zero decimal currencies in Recurly, amounts are handled as whole
 | **BIF**  | **CLP** | **DJF** | **GNF** | **JPY** | **KMF** |
 | **KRW**  | **PYG** | **RWF** | **UGX** | **VND** | **VUV** |
 | **XAF**  | **XOF** | **XPF** |         |         |         |
-
-<br />
