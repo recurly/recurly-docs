@@ -82,6 +82,32 @@ Fields to collect:&#x20;
 > **Tip:** Many more parameters are available. See the <Anchor target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
 
 ```json Example Subscription Signup
+{
+    "currency": "BRL",
+    "account": {
+        "code":"account-code",
+        "email":"john-doe@example.com",
+        "billing_info": {
+            "first_name":"John",
+            "last_name":"Doe",
+            "address":{
+                "street1":"Carrera 7 No. 123-45",
+                "city":"Bogotá",
+                "postal_code":"110111",
+                "region":"Bogotá",
+                "country":"BR"
+            },
+            "number": "4111111111111111",
+            "month": "03",
+            "year": "2030",
+            "cvv": "123",
+            "tax_identifier_type":"tax-id-type", // conditional
+            "tax_identifier":"tax-identifier-value",
+            "date_of_birth":"YYYY-MM-DD"
+        }
+    },
+    "gateway_code":"yp92b88r7seb"
+}
 ```
 
 ## Step 2: Process the purchase response
