@@ -407,6 +407,27 @@ Check the boxes to enable email communication for specific billing events. You c
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Versioned plan terms — such as price, billing interval, and setup fees — apply to new subscribers only. Existing subscribers keep the terms that were in effect when they signed up.</div>
 </div>
 
+## Plan price changes
+
+Editing a plan's price never changes the price of subscriptions that already exist — it only sets the price for subscriptions created afterward. This holds true even after an existing subscription renews: Recurly renews each subscription at the price it was created with, so a renewal never pulls in the plan's current price.
+
+**Example:** You raise your Standard plan from $10 to $12. Every subscriber who signed up at $10 keeps paying $10 — on their next renewal and every renewal after that. Only subscribers who sign up after the change pay $12.
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Subscription</td><td>Price applied</td></tr>
+  <tr><td><strong>New subscriptions</strong></td><td>The updated plan price, for anyone who subscribes after you save the change.</td></tr>
+  <tr><td><strong>Existing subscriptions</strong></td><td>Their original price — unchanged by the edit.</td></tr>
+  <tr><td><strong>Existing subscriptions after renewal</strong></td><td>Still their original price. Renewal does not apply the new plan price.</td></tr>
+</table>
+
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Price changes never reach existing subscribers — even at renewal</strong> A plan price change only affects new subscriptions. Existing subscriptions keep the price they were created with for the life of the subscription, including through every renewal.</div>
+</div>
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> To change the price for a subscriber who has already signed up, edit their subscription directly instead of the plan. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/change-subscription" target="_blank">Change a subscription</a>.</div>
+</div>
+
 # Duplicate a plan
 
 <div class="rp-steps">
