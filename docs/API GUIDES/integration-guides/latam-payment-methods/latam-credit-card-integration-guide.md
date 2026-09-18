@@ -46,7 +46,7 @@ This is necessary for LATAM regional compliance due to the 3DS requirement for c
 
 # LATAM Requirements
 
-When processing cards in LATAM, we will request an e-mandate from the gateway which is tied to the specific subscription. **You may only have one e-mandate per Account at this time.**
+When processing cards in LATAM, customer tax IDs and birthdates are conditionally required. You will also need to integrate a tax service to handle compliance and region-specific taxation in certain cases.&#x20;
 
 <br />
 
