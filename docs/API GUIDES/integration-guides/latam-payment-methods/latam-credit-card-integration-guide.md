@@ -60,9 +60,28 @@ Fields to collect:&#x20;
 
 ***
 
-# Creating Purchases
+# Creating Purchases / Subscriptions
 
-## Step 1: Generate a credit card subscription signup
+## Step 1: Generate a Card Payment Request + Subscription
+
+**Use** a supported client library, Recurly.js and/or a V3 Recurly API implementation. Our client libraries help you build out our APIs easily and process transactions faster. Cards for LATAM customers may conditionally require 3DS handling via Recurly.js, so ensure, no matter how you pass in card data, that you are handling 3DS Action and 3Ds Action Result tokens where necessary. See our <Anchor target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/">3DS documentation</Anchor> for details.
+
+<Callout icon="📘" theme="info">
+  ### **One-Step Flow**
+
+  It is recommended to handle the subscription signup and card detail storage in a single step to avoid the gateway requesting 3DS verification twice.
+</Callout>
+
+**Send** a request to the create `/purchase` endpoint on Recurly’s API, including:
+
+* **Customer account data** (e.g., code, name, billing info, phone number, email address, date of birth, tax ID, and card or Recurly.js token-id containing the card number)
+* **Subscriptions** (with plan codes)
+
+**Please Note:** You can use the `/subscriptions` endpoint as well, but make sure you're passing in all the same required data.
+
+> **Tip:** Many more parameters are available. See the <Anchor target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
+
+<br />
 
 <br />
 
