@@ -34,6 +34,8 @@ You can find API documentation for sending Tax IDs and Tax ID Types in our V3 AP
 
 **Fields to look for:**
 
+The below fields are sent in the `billing_info` object. Tax ID type and DOB are conditionally required depending on your gateway's and the region's requirements.
+
 * `tax_identifier`: This is the Tax ID Number for the consumer. It is required when servicing LATAM customers.
 * `tax_identifier_type`: This is the Tax ID Type for the specific tax ID being sent in the payload. You only need to send this when the value is `cpf` or `cnpj`. Otherwise, only send the Tax ID.
 * `date_of_birth`: This field will accept a date of birth for supported gateways and regions that require it. Format accepted is YYYY-MM-DD.
