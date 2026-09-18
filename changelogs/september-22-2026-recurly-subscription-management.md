@@ -1,0 +1,11 @@
+---
+title: September 22, 2026 - Recurly Subscription Management
+author: Eric Ghazal
+hidden: true
+published_at: '2026-09-18T16:50:06.168Z'
+---
+| Release Date | Feature         | Type        | Potential Impact | Description / Overview                                                                                                                                                                                                                                                                                                                                                  |
+| ------------ | --------------- | ----------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sep 22       | Vertex          | Enhancement | Low              | [Recurly's integration with Vertex](https://docs.recurly.com/recurly-subscriptions/docs/vertex#field-mapping) now allows up to 10 custom fields that can be mapped to Vertex's Flexible Fields.                                                                                                                                                                         |
+| Sep 22       | Email Templates | Enhancement | Low              | Several new [email template parameters](https://docs.recurly.com/recurly-subscriptions/docs/email-templates#subscription-alteration) have been released allowing you to conditionally display plan-change and add-on-change details in your email templates — making it easier to send clearer, more relevant notifications when a subscriber's plan or add-ons change. |
+|              |                 |             |                  |                                                                                                                                                                                                                                                                                                                                                                         |
