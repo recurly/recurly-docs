@@ -1,7 +1,7 @@
 ---
 title: September 22, 2026 - Recurly Subscription Management
 author: Eric Ghazal
-hidden: true
+hidden: false
 published_at: '2026-09-18T16:50:06.168Z'
 ---
 The September 22nd release brings a strong mix of platform improvements across tax, communications, and payments infrastructure. Vertex merchants can now map up to 10 custom fields to Flexible Fields, and new email template parameters make plan and add-on change notifications smarter and more relevant for subscribers. Point-of-sale merchants gain a streamlined single-call NTID flow, while Brazilian merchants on EBANX will now see IOF tax surfaced directly on transaction details. On the gateway side, a Stripe chargeback fix ensures subscriptions expire correctly on fraud and service-related disputes — and CyberSource mid-volume merchants should note their migration window is September 21st–23rd.
