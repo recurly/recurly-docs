@@ -106,7 +106,11 @@ After a successful purchase, you can confirm the details via the Recurly Admin U
 
 After a successful signup, there will be webhooks you should listen to in order to ensure you are enabling access to features on in your environment.
 
-<br />
+***
+
+## Next steps
+
+Now that you can create new  <Anchor target="_blank" href="https://app.recurly.com/go/subscriptions">subscriptions</Anchor>, explore other LATAM payment method guide to explore other use cases.
 
 <br />
 
