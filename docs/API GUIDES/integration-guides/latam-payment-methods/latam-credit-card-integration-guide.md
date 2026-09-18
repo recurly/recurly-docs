@@ -56,8 +56,6 @@ Fields to collect:&#x20;
 * A valid email address&#x20;
 * A valid tax ID
 
-<br />
-
 ***
 
 # Creating Purchases / Subscriptions
