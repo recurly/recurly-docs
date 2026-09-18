@@ -1,8 +1,8 @@
 ---
 title: LATAM Payment Methods
 excerpt: >-
-  Learn how to implement various payment methods with Recurly in the LATAM
-  regions.
+  Learn how to implement Credit Cards, Pix Automatico, and Mercado Pago with
+  Recurly to accept payments across the LATAM regions.
 deprecated: false
 hidden: false
 link:
