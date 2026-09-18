@@ -94,7 +94,17 @@ In this step, you will handle the 3DS flow using Recurly.js as documented in the
 
 Please reference 3DS flows for Recurly.js and return to this page.
 
-<br />
+***
+
+## Step 3: Verify and finish
+
+After a successful purchase, you can confirm the details via the Recurly Admin UI or by calling Recurly’s API to list your new account, subscription, or invoice.
+
+***
+
+## Step 4: Listen for webhooks
+
+After a successful signup, there will be webhooks you should listen to in order to ensure you are enabling access to features on in your environment.
 
 <br />
 
