@@ -41,6 +41,8 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 
 **Creating Purchases** refers to the process of generating new customer accounts alongside subscriptions in a single, consolidated call to the Recurly Purchase endpoint. This streamlines checkout experiences by bundling all required resources into one request.
 
+This is necessary for LATAM regional compliance due to the 3DS requirement for customer-initiated requests. All Subscription Signup requests from Recurly's APIs are customer initiated.
+
 ***
 
 # Creating Purchases
