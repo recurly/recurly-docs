@@ -46,7 +46,15 @@ This is necessary for LATAM regional compliance due to the 3DS requirement for c
 
 # LATAM Requirements
 
-When processing cards in LATAM, customer tax IDs and birthdates are conditionally required. You will also need to integrate a tax service to handle compliance and region-specific taxation in certain cases.&#x20;
+When processing cards in LATAM, customer name, emails, addresses, tax IDs and birthdates are conditionally required. You will also need to integrate a tax service to handle compliance and region-specific taxation in certain cases. You can use Recurly's APIs or Recurly.js fields to collect specific pieces of information and send it to us for processing.&#x20;
+
+Fields to collect:&#x20;
+
+* First and Last Name&#x20;
+* Full billing address (at minimum)
+* Date of Birth
+* A valid email address&#x20;
+* A valid tax ID
 
 <br />
 
