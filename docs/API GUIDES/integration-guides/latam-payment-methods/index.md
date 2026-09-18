@@ -1,5 +1,8 @@
 ---
 title: LATAM Payment Methods
+excerpt: >-
+  Learn how to implement various payment methods with Recurly in the LATAM
+  regions.
 deprecated: false
 hidden: false
 link:
