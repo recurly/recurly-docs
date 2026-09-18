@@ -29,6 +29,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
   * [3D Secure for new cards](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/)
 * [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
 * An Ebanx or WorldPay (WPG) gateway account with credit cards and 3DS enabled in the LATAM region
+* Familiarity with our tax integrations, specifically Vertex or Avalara.
 
 ### Required and recommended fields&#x20;
 
@@ -42,6 +43,12 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 **Creating Purchases** refers to the process of generating new customer accounts alongside subscriptions in a single, consolidated call to the Recurly Purchase endpoint. This streamlines checkout experiences by bundling all required resources into one request.
 
 This is necessary for LATAM regional compliance due to the 3DS requirement for customer-initiated requests. All Subscription Signup requests from Recurly's APIs are customer initiated.
+
+# LATAM Requirements
+
+When processing cards in LATAM, we will request an e-mandate from the gateway which is tied to the specific subscription. **You may only have one e-mandate per Account at this time.**
+
+<br />
 
 ***
 
