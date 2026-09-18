@@ -18,7 +18,7 @@ There are several gateways and payment methods that support the LATAM region inc
 * **Boleto**: Supported on Adyen (Pending Deprecation)
 * **Mercado Pago**: Supported on Ebanx
 * **Pix Automatico**: Supported on Ebanx
-* **Cards with Tax ID requirements**: Supported on WorldPay and Braintree
+* **Cards with Tax ID requirements**: Supported on WorldPay
 
 Additionally, some LATAM card integrations will require 3DS in certain cases. Both WorldPay and Braintree support 3DS. You can find this information separately in our 3DS Integration Guide.
 
@@ -30,12 +30,13 @@ Generally speaking, when processing cards in the LATAM region, you can follow st
 
 You can find API documentation for sending Tax IDs and Tax ID Types in our V3 API in several endpoints.
 
-* Documentation
+* [Documentation](https://recurly.com/developers/api/v2021-02-25/)
 
 **Fields to look for:**
 
 * `tax_identifier`: This is the Tax ID Number for the consumer. It is required when servicing LATAM customers.
 * `tax_identifier_type`: This is the Tax ID Type for the specific tax ID being sent in the payload. You only need to send this when the value is `cpf` or `cnpj`. Otherwise, only send the Tax ID.
+* `date_of_birth`: This field will accept a date of birth for supported gateways and regions that require it. Format accepted is YYYY-MM-DD.
 
 Certain LATAM regions also require 3D Secure when processing with cards. Ensure you are following new customer and stored billing info 3DS guides appropriately given your situation:
 
@@ -48,9 +49,9 @@ Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and 
 
 ### Mercado Pago
 
-Mercado Pago is supported on Ebanx, and requires the integrator to handling the Recurly.js token and 3DS Action token in their checkout flow for a customer to interact with the pop up modal. Keep in mind, sandbox behavior differs from production. 
+Mercado Pago is supported on Ebanx, and requires the integrator to handling the Recurly.js token and 3DS Action token in their checkout flow for a customer to interact with the pop up modal. Keep in mind, sandbox behavior differs from production.
 
-Mercado Pago requires usage of our V3 APIs and Recurly.js. See our dedicated Mercado Pago integration guide for details. 
+Mercado Pago requires usage of our V3 APIs and Recurly.js. See our dedicated Mercado Pago integration guide for details.
 
 * [Mercado Pago integration guide](https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide)
 
@@ -82,5 +83,3 @@ In the LATAM region, some payment methods are synchronous (immediate response) a
 It is highly recommended to listen for all webhooks given that some payment methods are asynchronous (they update hours or days later with an official status), and some are synchronous (the payment status is known immediately). Deploying these payment methods without proper webhooks enabled will result in failures and degraded customer experiences.
 
 * [Webhooks Best Practices](https://docs.recurly.com/recurly-subscriptions/docs/best-practices#/)
-
-<br />
