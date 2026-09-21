@@ -10,10 +10,8 @@ metadata:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* HOST-THEME BACKGROUND OVERRIDE */
 body { background: #ffffff !important; }
 
-/* GLOBAL CSS IMMUNITY BLOCK */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
 .rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
 .rc-guide [class^="fa-"],
@@ -21,7 +19,6 @@ body { background: #ffffff !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-/* NAVIGATE MASTER ARMOR */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
@@ -69,10 +66,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-guide * { box-sizing: border-box; }
 
-.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 
-/* TOP NAV / BACK LINK */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
@@ -80,7 +75,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide a.rc-back-link:hover { color: #008CFF !important; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-/* ANNOUNCEMENT BAR */
 .rc-announce-bar {
   display: none; background: #FFD706; color: #0D0D0B;
   align-items: center; justify-content: space-between;
@@ -89,6 +83,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
+.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-announce-link {
   color: #0D0D0B !important; font-weight: 800; white-space: nowrap;
@@ -98,7 +93,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
 
-/* HERO */
 .rc-hero {
   background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
@@ -121,7 +115,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
 }
 
-/* NAV MENU */
 details.rc-sticky-nav-wrap {
   position: relative;
   z-index: 1;
@@ -155,57 +148,58 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 
-/* TOC CARDS */
-.rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
-.rc-toc-card {
-  display: grid; grid-template-columns: 44px 1fr 32px;
-  align-items: center; gap: 16px;
-  background: var(--offwhite); border: 1px solid var(--lightgray);
-  border-radius: 12px; padding: 18px 22px;
-  transition: all .2s ease;
-}
-.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-toc-card { border-bottom: 1px solid var(--lightgray) !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-toc-card:hover { border-color: #008CFF; border-bottom: 1px solid #008CFF !important; box-shadow: 0 4px 14px rgba(0,140,255,0.12); transform: translateX(3px); }
-.rc-toc-num {
-  width: 36px; height: 36px; border-radius: 50%;
-  background: var(--offblack); color: var(--yellow);
-  display: flex; align-items: center; justify-content: center;
-  font-size: .85rem; font-weight: 800; flex-shrink: 0;
-}
-.rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0 0 4px; }
-.rc-toc-body p { font-size: .88rem; color: var(--gray); line-height: 1.5; margin: 0; }
-.rc-toc-arrow { font-size: 1.1rem; color: var(--lightgray); text-align: right; transition: color .2s; }
-.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #008CFF; }
-@media(max-width:768px){ .rc-toc-card { grid-template-columns: 36px 1fr 24px; padding: 14px 16px; } }
+.rc-lp-section { margin-bottom: 40px; }
+.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
+.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-/* SECTION HEADING */
-.rc-guide h2 { font-size: 1.3rem; font-weight: 800; color: var(--offblack); margin: 0 0 8px; }
-.rc-guide p.rc-lead { font-size: 1rem; color: var(--darkgray); line-height: 1.65; margin: 0 0 28px; }
+.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+.rc-callout + .rc-callout { margin-top: 12px; }
+.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
+.rc-callout-body { flex: 1; }
+.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
+.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
+.rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
+.rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
+.rc-callout-caution { background: var(--warning-bg); border-left: 4px solid var(--warning-fg); }
+.rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-callout-body a { color: #008CFF !important; font-weight: 600; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
 
-/* PATH NAV */
+.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
+.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--brightgray); }
+.rc-step:last-child { border-bottom: none; }
+.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+.rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: var(--offblack); margin: 0 0 6px; line-height: 1.3; }
+.rc-step-content p { font-size: .92rem; color: var(--gray); line-height: 1.6; margin: 0; }
+.rc-step-content strong { color: var(--darkgray); }
+
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; flex-wrap: wrap; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; white-space: nowrap !important; flex-shrink: 0; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; white-space: nowrap !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; white-space: nowrap !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
-.rc-btn-start { background: var(--brightgray); color: var(--gray); padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--lightgray); cursor: default; display: inline-flex; align-items: center; white-space: nowrap !important; }
 @media(max-width:1300px) {
   .rc-lp-nav { justify-content: center !important; gap: 12px; }
   .rc-lp-nav-indicator { width: 100% !important; text-align: center; }
 }
 @media(max-width:768px) {
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-prev,
   .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-  .rc-guide a.rc-btn-path,
-  .rc-btn-start {
+  .rc-guide a.rc-btn-path {
     padding: 10px 16px !important;
     font-size: 0.82rem !important;
   }
 }
 
-/* RESOURCES */
 .rc-resources { background: var(--brightgray); border-left: 4px solid #008CFF; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
 .rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
@@ -218,7 +212,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #008CFF !important; }
 
-/* FOOTER */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
@@ -233,6 +226,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
+
+/* UK comparison table */
+.rc-uk-table-wrap { overflow-x: auto; margin: 8px 0 24px; border: 1px solid var(--lightgray); border-radius: 10px; }
+.rc-uk-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.rc-uk-table thead tr { background: var(--offblack); }
+.rc-uk-table thead th { color: var(--offwhite) !important; font-weight: 700; text-align: left; padding: 12px 16px; white-space: nowrap; }
+.rc-uk-table tbody tr { background: var(--offwhite); }
+.rc-uk-table tbody tr:nth-child(even) { background: #ffffff; }
+.rc-uk-table tbody td { padding: 12px 16px; color: var(--darkgray); border-bottom: 1px solid var(--brightgray); }
+.rc-uk-table tbody tr:last-child td { border-bottom: none; }
 
 @media(max-width:768px){ .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } }
 </style>
@@ -256,8 +259,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Payment methods by region
       </div>
-      <div class="rc-lp-hero-title"><h1>Payment methods by region</h1></div>
-      <p>Which local payment methods matter where, and how to turn them on in Recurly.</p>
+      <div class="rc-lp-hero-title"><h1>UK</h1></div>
+      <p>Which payment methods drive conversion in the UK, and how to enable them in Recurly.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -266,90 +269,102 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Path overview
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-sticky-link">Path overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> UK
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-sticky-link"><span class="rc-step-badge">1</span> UK</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-sticky-link"><span class="rc-step-badge">2</span> North America</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-sticky-link"><span class="rc-step-badge">3</span> EU</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-sticky-link"><span class="rc-step-badge">5</span> LATAM</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+    
       </div></div></div>
     </details>
 
-    <h2>What this path covers</h2>
-    <p class="rc-lead">
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-sterling-sign rc-fa-section"></i> Why it matters</h2>
+      <p>Credit cards convert the least reliably of any method offered by UK merchants on Recurly, at roughly 75% sign-up success. BACS Direct Debit and SEPA both convert above 99% at sign-up, and PayPal is offered by nearly a third of UK merchants on the platform. Prioritizing the right methods here has a direct, measurable effect on how many UK sign-ups actually complete.</p>
 
-      Offering local payment methods measurably increases conversion and revenue in the regions where customers expect them. This path builds on <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments" class="rc-inline-link rp-anchor" target="_blank" rel="noopener noreferrer">Global payments expansion</a> and goes one level deeper: which methods actually move the needle in five regions, and how to turn each one on in Recurly.
-    </p>
+      <div class="rc-uk-table-wrap">
+        <table class="rc-uk-table">
+          <thead>
+            <tr><th>Payment method</th><th>Sign-up success</th><th>Renewal success</th><th>% of Recurly merchants offering</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>BACS</td><td>99.18%</td><td>95.65%</td><td>1.80%</td></tr>
+            <tr><td>SEPA</td><td>100.00%</td><td>88.89%</td><td>0.90%</td></tr>
+            <tr><td>Google Pay</td><td>83.71%</td><td>81.81%</td><td>7.44%</td></tr>
+            <tr><td>Apple Pay</td><td>92.28%</td><td>76.50%</td><td>16.69%</td></tr>
+            <tr><td>PayPal</td><td>72.20%</td><td>95.78%</td><td>31.79%</td></tr>
+            <tr><td>Credit card</td><td>75.20%</td><td>88.04%</td><td>100.00%</td></tr>
+          </tbody>
+        </table>
+      </div>
 
-    <div class="rc-toc-list">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-toc-card">
-        <div class="rc-toc-num">1</div>
-        <div class="rc-toc-body">
-          <h4>UK</h4>
-          <p>BACS, PayPal, and Apple Pay performance in the UK, plus the disclosure rules that shape checkout.</p>
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-body">
+          <strong>BACS is a growing preference, not a niche one</strong>
+          <p>Only 1.8% of Recurly merchants currently offer BACS, but it converts and renews better than every other method in the table. Merchants underweighting it are leaving reliable recurring revenue on the table.</p>
         </div>
-        <div class="rc-toc-arrow">→</div>
-      </a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-toc-card">
-        <div class="rc-toc-num">2</div>
-        <div class="rc-toc-body">
-          <h4>North America</h4>
-          <p>How US and Canadian payment preferences diverge, and where ACH and digital wallets fit.</p>
+      </div>
+
+      <div class="rc-callout rc-callout-caution">
+        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="rc-callout-body">
+          <strong>Disclosure requirements apply at checkout</strong>
+          <p>The Consumer Contracts Regulations and the Digital Markets, Competition and Consumers Act require clear auto-renewal disclosure, a straightforward cancellation path, and advance notice of price changes — regardless of which payment method the customer chooses.</p>
         </div>
-        <div class="rc-toc-arrow">→</div>
-      </a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-toc-card">
-        <div class="rc-toc-num">3</div>
-        <div class="rc-toc-body">
-          <h4>EU</h4>
-          <p>Why Belgium, France, Germany, Denmark, and the Netherlands each favor a different local method.</p>
-        </div>
-        <div class="rc-toc-arrow">→</div>
-      </a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-toc-card">
-        <div class="rc-toc-num">4</div>
-        <div class="rc-toc-body">
-          <h4>APAC</h4>
-          <p>BECS in Australia and UPI Auto Pay in India — two very different mandates and payment cultures.</p>
-        </div>
-        <div class="rc-toc-arrow">→</div>
-      </a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-toc-card">
-        <div class="rc-toc-num">5</div>
-        <div class="rc-toc-body">
-          <h4>LATAM</h4>
-          <p>Why Brazil's payment mix, led by Pix Automático, looks nothing like the rest of the world.</p>
-        </div>
-        <div class="rc-toc-arrow">→</div>
-      </a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-toc-card">
-        <div class="rc-toc-num">6</div>
-        <div class="rc-toc-body">
-          <h4>Review &amp; resources</h4>
-          <p>Pinpoint which region has the biggest method-adoption gap in your own account.</p>
-        </div>
-        <div class="rc-toc-arrow">→</div>
-      </a>
+      </div>
     </div>
 
-    <p class="rc-lead" style="margin-bottom:24px;">Work through the regions in order, or jump to the one relevant to your current expansion.</p>
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-gears rc-fa-section"></i> How to enable it</h2>
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>Enable GBP</h4>
+            <p>Go to <strong>Configuration → Currencies</strong> and add Pound Sterling.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>Confirm gateway support</h4>
+            <p>BACS is available through GoCardless, Stripe, or Adyen. Confirm your configured gateway supports it in <strong>Configuration → Payment gateways</strong> before enabling.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Set localized pricing</h4>
+            <p>Under each plan, add a GBP price rather than relying on automatic conversion — customers respond better to a price set deliberately in their own currency.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">4</div>
+          <div class="rc-step-content">
+            <h4>Enable 3D Secure</h4>
+            <p>3DS is required for card transactions under UK PSD2-equivalent rules. Confirm it's active in your gateway configuration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="rc-lp-nav">
-      <span class="rc-btn-start">← Start</span>
-      <span class="rc-lp-nav-indicator">Overview</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-btn-path">1. UK →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-btn-prev">← Path overview</a>
+      <span class="rc-lp-nav-indicator">1 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-btn-path">Next: North America →</a>
     </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Prerequisite: Global payments expansion</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Payment methods</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/bacs" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: BACS</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/currencies" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Currencies</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
       </div>
     </div>
 
