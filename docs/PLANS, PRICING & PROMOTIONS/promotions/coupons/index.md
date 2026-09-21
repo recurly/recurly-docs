@@ -291,6 +291,19 @@ Setting a redeem-by date can help you forecast when a coupon could be used and c
 
 A third option, **within a set time period**, is available for bulk coupons. It lets you set a relative expiration period (for example, 7 days, 2 weeks, or 1 month) that starts individually for each unique code when it's generated, rather than when the coupon is created. Each time you generate a new batch of unique codes within that bulk coupon, you can set a new redeem-by window. This gives you more flexibility and reduces the number of unused or duplicate coupons. The redeem-by window is converted to a date and displayed on the bulk coupon's page.
 
+```text
+{
+  "name": "string",
+  "code": "string",
+  // ...
+  "redeem_by_date": "string",
+  "redeem_by_interval_unit": "day",  //"day", "week", "month", "year". Bulk coupons only
+  "redeem_by_interval_amount": 1,  //Must be paired with redeem_by_interval_unit
+  // ...
+  "discount_type": "fixed"
+}
+```
+
 ## During a purchase
 
 Subscribers can enter a coupon code at checkout via your hosted payment page, your own checkout page using Recurly.js or the API, or the Recurly UI when adding a subscription to an existing account.
