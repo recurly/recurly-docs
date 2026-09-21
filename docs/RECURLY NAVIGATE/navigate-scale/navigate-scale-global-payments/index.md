@@ -8,6 +8,16 @@ hidden: true
 link:
   new_tab: false
 metadata:
+  keywords:
+    - global payments expansion
+    - merchant of record vs local acquiring
+    - cross border subscription billing
+    - recurly global payments
+    - multi currency payment processing
+    - international payment compliance
+    - local payment methods conversion
+    - cross border tax risk
+    - subscription localization strategy
   robots: index
 ---
 <HTMLBlock>{`
