@@ -389,19 +389,6 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <p>Local acquiring vs. merchant of record, currency and payment methods, or compliance and language. What's the one thing you still need to find out before you can make that call?</p>
     </div>
 
-    <div class="rc-resources">
-      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
-      <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/gateway-merchant-account-overview" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Payment gateway &amp; merchant account overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Payment methods</a>
-        <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Currency support by gateway</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/vat-gst-support" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: VAT &amp; GST support</a>
-        <a href="https://docs.recurly.com/docs/tax" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Taxes</a>
-        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
-      </div>
-    </div>
-
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h2>
       <div class="rc-next-grid">
@@ -428,6 +415,21 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
         </a>
       </div>
     </div>
+
+    <div class="rc-resources">
+      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
+      <div class="rc-resource-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/gateway-merchant-account-overview" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Payment gateway &amp; merchant account overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Payment methods</a>
+        <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Currency support by gateway</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/vat-gst-support" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: VAT &amp; GST support</a>
+        <a href="https://docs.recurly.com/docs/tax" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Taxes</a>
+        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
+      </div>
+    </div>
+
+
 
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-btn-prev">&larr; Compliance &amp; language</a>
