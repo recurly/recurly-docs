@@ -1,5 +1,9 @@
 ---
 title: 'Global payment expansion: Compliance & language'
+excerpt: >-
+  Master international subscription compliance by navigating regional VAT/GST
+  rules, payment provider licensing, data privacy laws, and localized language
+  mandates for recurring billing.
 deprecated: false
 hidden: true
 link:
