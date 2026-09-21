@@ -42,6 +42,9 @@ metadata:
   <Card title="Account updater" href="https://docs.recurly.com/docs/payments-hub-account-updater" target="_blank">
     Tracks retained revenue through automated card updates, showing how the service prevents payment failures by keeping card expiration dates and numbers current.
   </Card>
+ <Card title="3DS authentication" href="https://docs.recurly.com/docs/payments-hub-3DS-authentication" target="_blank">
+    See how your payments perform through 3D Secure authentication and the issuer's final decision, broken out by outcome, gateway, and country.
+  </Card>
   <Card title="Payment retry recovery" href="https://docs.recurly.com/docs/payments-hub-payment-retry-recovery" target="_blank">
     Surfaces retained revenue through intelligent retry strategies, showing how optimized logic helps recover initially failed payments.
   </Card>
