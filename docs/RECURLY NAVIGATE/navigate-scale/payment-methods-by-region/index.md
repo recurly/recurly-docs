@@ -277,14 +277,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-apac" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-latam" class="rc-sticky-link"><span class="rc-step-badge">5</span> LATAM</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Scale
-        </a>
       </div></div></div>
     </details>
 
     <h2>What this path covers</h2>
     <p class="rc-lead">
+
       Offering local payment methods measurably increases conversion and revenue in the regions where customers expect them. This path builds on <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/global-payments-expansion-the-basics" class="rc-inline-link rp-anchor" target="_blank" rel="noopener noreferrer">Global payments expansion: The basics</a> and goes one level deeper: which methods actually move the needle in five regions, and how to turn each one on in Recurly.
     </p>
 
