@@ -226,8 +226,10 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
 /* CONTINUE YOUR JOURNEY */
 .rc-next-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
 .rc-next-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 20px; text-decoration: none !important; color: inherit; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
+.rm-Markdown.markdown-body .rc-guide a.rc-next-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-next-card { border-bottom: 1px solid var(--lightgray) !important; }
-.rc-guide a.rc-next-card:hover { border-color: #008CFF; border-bottom: 1px solid #008CFF !important; box-shadow: 0 4px 16px rgba(0,140,255,0.15); transform: translateY(-2px); }
+.rm-Markdown.markdown-body .rc-guide a.rc-next-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-next-card:hover { border-color: #008CFF; border-bottom: 1px solid #008CFF !important; box-shadow: 0 4px 16px rgba(0,140,255,0.15); transform: translateY(-2px); text-decoration: none !important; }
 .rc-next-card-tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #008CFF !important; margin-bottom: 2px; }
 .rc-next-card-icon { font-size: 1.3rem; line-height: 1; color: #0D0D0B !important; }
 .rc-next-card h4 { font-size: .95rem; font-weight: 800; color: #0D0D0B !important; margin: 0; line-height: 1.3; }
@@ -428,8 +430,6 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
       </div>
     </div>
-
-
 
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-btn-prev">&larr; Compliance &amp; language</a>
