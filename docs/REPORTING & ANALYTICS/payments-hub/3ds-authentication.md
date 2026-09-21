@@ -72,13 +72,13 @@ Two grids break performance down by where the payment ran — Gateway detail and
 
 <table class="rp-gw-table"> <tr class="rp-thead-row"><td>Column</td><td>What it shows</td></tr> <tr><td>Completed</td><td>Challenges that returned a 3DS result.</td></tr> <tr><td>Approved</td><td>Completed transactions the bank approved.</td></tr> <tr><td>Declined</td><td>Completed transactions the bank declined.</td></tr> <tr><td>Voided</td><td>Completed transactions the bank voided.</td></tr> <tr><td>Approval rate</td><td>Approved ÷ (approved + declined). Voided and pending transactions are excluded.</td></tr> <tr><td>Authenticated but declined</td><td>Transactions that passed 3DS authentication but were still declined by the bank.</td></tr> <tr><td>Authenticated decline rate</td><td>Authenticated-and-declined ÷ (authenticated and either approved or declined).</td></tr> <tr><td>Not completed</td><td>Challenges that never returned a 3DS result.</td></tr> <tr><td>Not completed rate</td><td>Not completed ÷ (completed + not completed).</td></tr> </table> <div class="rp-callout rp-callout-note"> <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The three rate columns use different denominators, so they won't add up to 100% — each one is answering a different question about your funnel.</div> </div>
 
-## 3DS outcome versus bank decision
+### 3DS outcome versus bank decision
 
 These grids exist because 3DS success and the bank's decision are two separate things. A transaction can authenticate cleanly through 3DS and still be declined by the issuing bank for reasons that have nothing to do with authentication — insufficient funds, fraud rules, or card restrictions, for example. When you see a high authenticated decline rate for a gateway or country, that's a bank-side issue to investigate with your acquirer or issuer, not a 3DS problem.
 
 <div class="rp-callout rp-callout-note"> <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>If you process through Checkout.com or Nuvei via Hyperswitch, your 3DS challenge is delivered through Recurly.js using JusPay's white-labeled 3DS service rather than the gateway's native flow. Your checkout experience isn't affected, but this dashboard is your authoritative source for 3DS data on those gateways — the gateway's own reporting won't show it.</div> </div>
 
-## Zero-state
+### Zero-state
 
 If your account has no 3DS activity in the selected date range, the dashboard shows a message instead of empty charts and grids, so you know there's nothing to troubleshoot.
 
