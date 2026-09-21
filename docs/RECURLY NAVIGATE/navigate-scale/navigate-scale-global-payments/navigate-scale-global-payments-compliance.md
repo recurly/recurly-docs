@@ -5,6 +5,17 @@ hidden: true
 link:
   new_tab: false
 metadata:
+  description: >-
+    Master international subscription compliance by navigating regional VAT/GST
+    rules, payment provider licensing, data privacy laws, and localized language
+    mandates for recurring billing.
+  keywords:
+    - international subscription payment compliance
+    - cross border vat gst recurring billing
+    - subscription data residency compliance
+    - localized invoice language requirements
+    - global payment licensing psp
+    - tax inclusive subscription pricing
   robots: index
 ---
 <HTMLBlock>{`
@@ -284,9 +295,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Compliance &amp; language
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-review" class="rc-sticky-link"><span class="rc-step-badge">4</span> Review &amp; resources</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Scale
-        </a>
       </div></div></div>
     </details>
 
