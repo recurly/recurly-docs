@@ -1,10 +1,25 @@
 ---
 title: 'Global payment expansion: Review & resources'
+excerpt: >-
+  Review your global payments expansion strategy with Recurly's comprehensive
+  summary, interactive knowledge checks, documentation links, and expert
+  resources for international scaling.
 deprecated: false
 hidden: true
 link:
   new_tab: false
 metadata:
+  description: >-
+    Review your global payments expansion strategy with Recurly's comprehensive
+    summary, interactive knowledge checks, documentation links, and expert
+    resources for international scaling.
+  keywords:
+    - global payments expansion review
+    - recurly global payments resources
+    - international subscription billing guide
+    - merchant of record summary
+    - cross border payments checklist
+    - subscription scaling best practices
   robots: index
 ---
 <HTMLBlock>{`
@@ -301,9 +316,6 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-sticky-link"><span class="rc-step-badge">3</span> Compliance &amp; language</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-review" class="rc-sticky-link rc-sticky-link-active">
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Review &amp; resources
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Scale
         </a>
       </div></div></div>
     </details>
