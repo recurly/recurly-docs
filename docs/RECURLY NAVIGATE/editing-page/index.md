@@ -54,6 +54,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --lightgray:  #D1CFC4;
   --brightgray: #F2F1EA;
   --offwhite:   #FCFBF7;
+  --scale:      #008CFF;
   --warning-fg: #FFD706;
   --warning-bg: #FFFECB;
   --error-fg:   #FF5126;
@@ -62,7 +63,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --success-bg: #EFFAEA;
   --info-fg:    #008CFF;
   --info-bg:    #E5F3FF;
-  --scale:      #008CFF;
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #32312D !important;
   background: #ffffff;
@@ -71,7 +71,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
-.rc-fa-dark { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 
 /* TOP NAV / BACK LINK */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
@@ -117,12 +116,16 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
 .rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0; }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: var(--lightgray); line-height: 1.6; }
+@media(max-width:768px){
+  .rc-hero { padding: 36px 20px 36px; }
+  .rc-lp-hero-title h1 { font-size: 1.8rem; }
+}
 
-/* NAVIGATION MENU */
+/* NAV MENU */
 details.rc-sticky-nav-wrap {
   position: relative;
   z-index: 1;
-  background-color: #008CFF;
+  background-color: var(--scale);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px 0; border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
@@ -152,46 +155,55 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 
+/* TOC CARDS */
+.rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
+.rc-toc-card {
+  display: grid; grid-template-columns: 44px 1fr 32px;
+  align-items: center; gap: 16px;
+  background: var(--offwhite); border: 1px solid var(--lightgray);
+  border-radius: 12px; padding: 18px 22px;
+  transition: all .2s ease;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-toc-card { border-bottom: 1px solid var(--lightgray) !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-toc-card:hover { border-color: #008CFF; border-bottom: 1px solid #008CFF !important; box-shadow: 0 4px 14px rgba(0,140,255,0.12); transform: translateX(3px); }
+.rc-toc-num {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--offblack); color: var(--yellow);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .85rem; font-weight: 800; flex-shrink: 0;
+}
+.rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0 0 4px; }
+.rc-toc-body p { font-size: .88rem; color: var(--gray); line-height: 1.5; margin: 0; }
+.rc-toc-arrow { font-size: 1.1rem; color: var(--lightgray); text-align: right; transition: color .2s; }
+.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #008CFF; }
+@media(max-width:768px){ .rc-toc-card { grid-template-columns: 36px 1fr 24px; padding: 14px 16px; } }
+
 /* SECTION HEADING */
-.rc-lp-section { margin-bottom: 48px; }
-.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
-.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
-.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
+.rc-guide h2 { font-size: 1.3rem; font-weight: 800; color: var(--offblack); margin: 0 0 8px; }
+.rc-guide p.rc-lead { font-size: 1rem; color: var(--darkgray); line-height: 1.65; margin: 0 0 28px; }
 
-/* CONGRATULATORY CALLOUT */
-.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
-.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
-.rc-callout-body { flex: 1; }
-.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
-.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
-.rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
-.rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
-
-/* QUIZ CARD */
-.rc-quiz-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 14px; overflow: hidden; padding: 22px 24px; margin: 20px 0; }
-.rc-quiz-label { display: inline-block; background: var(--offblack); color: var(--yellow); font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .6px; padding: 3px 8px; border-radius: 5px; margin-bottom: 10px; }
-.rc-quiz-q { font-size: 1rem; font-weight: 800; color: var(--offblack); margin: 0 0 16px; line-height: 1.45; }
-.rc-quiz-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
-.rc-quiz-option { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--lightgray); background: #fff; cursor: pointer; transition: all .18s; }
-.rc-quiz-option input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
-.rc-radio-dot { width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--lightgray); flex-shrink: 0; background: #fff; transition: all .18s; }
-.rc-quiz-option:has(input[type="radio"]:checked) .rc-radio-dot { background: var(--offblack); border-color: var(--offblack); }
-.rc-option-text { font-size: .9rem; color: var(--darkgray); line-height: 1.4; }
-.rc-quiz-option.rc-quiz-correct:has(input[type="radio"]:checked) { background: var(--success-bg); border-color: var(--success-fg); }
-.rc-quiz-option:not(.rc-quiz-correct):has(input[type="radio"]:checked) { background: var(--error-bg); border-color: var(--error-fg); }
-details.rc-quiz-reveal > summary::-webkit-details-marker { display: none; }
-details.rc-quiz-reveal > summary::marker { display: none; }
-details.rc-quiz-reveal > summary::before { content: "\25B6"; font-size: .58rem; display: inline-block; transition: transform .2s; margin-right: 6px; }
-details.rc-quiz-reveal[open] > summary::before { transform: rotate(90deg); }
-details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: var(--gray); cursor: pointer; user-select: none; display: inline-flex; align-items: center; }
-.rc-quiz-answer { margin-top: 10px; background: var(--brightgray); border-radius: 8px; padding: 12px 16px; font-size: .88rem; color: var(--darkgray); line-height: 1.55; }
-.rc-quiz-answer strong { color: var(--offblack); }
-
-/* REFLECTION CARD */
-.rc-reflect-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-left: 4px solid var(--yellow); border-radius: 14px; padding: 24px 28px; margin: 20px 0; }
-.rc-reflect-label { display: inline-block; background: #FFD706; color: #0D0D0B; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .6px; padding: 3px 10px; border-radius: 5px; margin-bottom: 12px; }
-.rc-reflect-card h4 { font-size: 1rem; font-weight: 800; color: var(--offblack); margin: 0 0 10px; line-height: 1.4; }
-.rc-reflect-card p { font-size: .9rem; color: var(--gray); line-height: 1.6; margin: 0; }
+/* PATH NAV */
+.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; flex-wrap: wrap; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; white-space: nowrap !important; flex-shrink: 0; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; white-space: nowrap !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+.rc-btn-start { background: var(--brightgray); color: var(--gray); padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--lightgray); cursor: default; display: inline-flex; align-items: center; white-space: nowrap !important; }
+@media(max-width:1300px) {
+  .rc-lp-nav { justify-content: center !important; gap: 12px; }
+  .rc-lp-nav-indicator { width: 100% !important; text-align: center; }
+}
+@media(max-width:768px) {
+  .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+  .rc-guide a.rc-btn-path,
+  .rc-btn-start {
+    padding: 10px 16px !important;
+    font-size: 0.82rem !important;
+  }
+}
 
 /* RESOURCES */
 .rc-resources { background: var(--brightgray); border-left: 4px solid #008CFF; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
@@ -205,28 +217,6 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #008CFF !important; }
-
-/* CONTINUE YOUR JOURNEY */
-.rc-next-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
-.rc-next-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 20px; text-decoration: none !important; color: inherit; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rm-Markdown.markdown-body .rc-guide a.rc-next-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-next-card { border-bottom: 1px solid var(--lightgray) !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-next-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-next-card:hover { border-color: #008CFF; border-bottom: 1px solid #008CFF !important; box-shadow: 0 4px 16px rgba(0,140,255,0.15); transform: translateY(-2px); text-decoration: none !important; }
-.rc-next-card-tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #008CFF !important; margin-bottom: 2px; }
-.rc-next-card-icon { font-size: 1.3rem; line-height: 1; color: #0D0D0B !important; }
-.rc-next-card h4 { font-size: .95rem; font-weight: 800; color: #0D0D0B !important; margin: 0; line-height: 1.3; }
-.rc-next-card p { font-size: .85rem; color: #807D75 !important; line-height: 1.5; margin: 0; flex-grow: 1; }
-.rc-next-card-arrow { font-size: .82rem; font-weight: 700; color: #008CFF !important; margin-top: 4px; }
-
-/* PATH NAV */
-.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; flex-wrap: wrap; }
-.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; white-space: nowrap !important; flex-shrink: 0; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; white-space: nowrap !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
-.rc-btn-complete { background: var(--brightgray); color: var(--offblack) !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--yellow); cursor: default; user-select: none; white-space: nowrap !important; }
 
 /* FOOTER */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
@@ -244,31 +234,12 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-  .rc-content-wrap { padding: 0 20px; }
-  .rc-top-nav { padding: 16px 20px; }
-  .rc-hero { padding: 36px 20px 36px; }
-  .rc-lp-hero-title h1 { font-size: 1.8rem; }
-  .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
-  .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rc-next-grid { grid-template-columns: 1fr; }
-  .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-  .rc-guide a.rc-btn-prev,
-  .rc-btn-complete {
-    padding: 10px 16px !important;
-    font-size: 0.82rem !important;
-  }
-}
-@media(max-width:1300px) {
-  .rc-lp-nav { justify-content: center !important; gap: 12px; }
-  .rc-lp-nav-indicator { width: 100% !important; text-align: center; }
-}
+@media(max-width:768px){ .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } }
 </style>
 
 <div class="rc-guide">
   <div class="rc-top-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-back-link">&larr; Back to Scale</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-back-link">← Back to Scale</a>
   </div>
 
   <div class="rc-content-wrap">
@@ -277,16 +248,16 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>Upcoming:</strong> Join our CSMs for a live session.
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now &rarr;</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
     </div>
 
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale &middot; Global payments expansion
+        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Payment methods by region
       </div>
-      <div class="rc-lp-hero-title"><h1>Review &amp; resources</h1></div>
-      <p>Test what you've learned and find every resource from this path in one place.</p>
+      <div class="rc-lp-hero-title"><h1>Payment methods by region</h1></div>
+      <p>Which local payment methods matter where, and how to turn them on in Recurly.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -295,140 +266,104 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments" class="rc-sticky-link">Path overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-mor" class="rc-sticky-link"><span class="rc-step-badge">1</span> LCA vs. MoR</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-currency" class="rc-sticky-link"><span class="rc-step-badge">2</span> Currency &amp; payment methods</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-sticky-link"><span class="rc-step-badge">3</span> Compliance &amp; language</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-review" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Review &amp; resources
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Path overview
         </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-sticky-link"><span class="rc-step-badge">1</span> UK</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-sticky-link"><span class="rc-step-badge">2</span> North America</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-sticky-link"><span class="rc-step-badge">3</span> EU</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-sticky-link"><span class="rc-step-badge">5</span> LATAM</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
       </div></div></div>
     </details>
 
-    <div class="rc-callout rc-callout-tip">
-      <div class="rc-callout-icon"><i class="fa-solid fa-flag-checkered"></i></div>
-      <div class="rc-callout-body">
-        <strong>You've completed Global payments expansion</strong>
-        <p>You now have a framework for the three decisions that come up in almost every market-entry conversation: who sells the transaction, how customers pay, and what to check before launch. Test yourself below, then use the resources to go deeper on any topic.</p>
-      </div>
-    </div>
+    <h2>What this path covers</h2>
+    <p class="rc-lead">
 
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-clipboard-question rc-fa-section"></i> Check your understanding</h2>
-    </div>
+      Offering local payment methods measurably increases conversion and revenue in the regions where customers expect them. This path builds on <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/global-payments-expansion-the-basics" class="rc-inline-link rp-anchor" target="_blank" rel="noopener noreferrer">Global payments expansion: The basics</a> and goes one level deeper: which methods actually move the needle in five regions, and how to turn each one on in Recurly.
+    </p>
 
-    <div class="rc-quiz-card">
-      <span class="rc-quiz-label">Question 1 of 2 &middot; Multiple choice</span>
-      <p class="rc-quiz-q">A merchant wants to expand into a market with unfamiliar VAT rules and doesn't want to own tax compliance directly. Which model shifts that liability off their books?</p>
-      <div class="rc-quiz-options" id="quiz1">
-        <label class="rc-quiz-option">
-          <input type="radio" name="quiz1" value="a">
-          <div class="rc-radio-dot"></div>
-          <span class="rc-option-text">Local acquiring through their existing gateway</span>
-        </label>
-        <label class="rc-quiz-option rc-quiz-correct">
-          <input type="radio" name="quiz1" value="b">
-          <div class="rc-radio-dot"></div>
-          <span class="rc-option-text">Merchant of record</span>
-        </label>
-        <label class="rc-quiz-option">
-          <input type="radio" name="quiz1" value="c">
-          <div class="rc-radio-dot"></div>
-          <span class="rc-option-text">Enabling a new local currency</span>
-        </label>
-      </div>
-      <details class="rc-quiz-reveal">
-        <summary>See answer</summary>
-        <div class="rc-quiz-answer">
-          <strong>Merchant of record.</strong> A merchant of record takes on tax calculation, collection, and remittance on the merchant's behalf, along with chargeback and fraud liability &mdash; at the cost of the MoR's name appearing on the customer's statement.
+    <div class="rc-toc-list">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-toc-card">
+        <div class="rc-toc-num">1</div>
+        <div class="rc-toc-body">
+          <h4>UK</h4>
+          <p>BACS, PayPal, and Apple Pay performance in the UK, plus the disclosure rules that shape checkout.</p>
         </div>
-      </details>
-    </div>
-
-    <div class="rc-quiz-card">
-      <span class="rc-quiz-label">Question 2 of 2 &middot; Multiple choice</span>
-      <p class="rc-quiz-q">True or false: enabling a local currency in Recurly automatically enables the local payment methods associated with that market.</p>
-      <div class="rc-quiz-options" id="quiz2">
-        <label class="rc-quiz-option">
-          <input type="radio" name="quiz2" value="a">
-          <div class="rc-radio-dot"></div>
-          <span class="rc-option-text">True</span>
-        </label>
-        <label class="rc-quiz-option rc-quiz-correct">
-          <input type="radio" name="quiz2" value="b">
-          <div class="rc-radio-dot"></div>
-          <span class="rc-option-text">False</span>
-        </label>
-      </div>
-      <details class="rc-quiz-reveal">
-        <summary>See answer</summary>
-        <div class="rc-quiz-answer">
-          <strong>False.</strong> Currency and payment method are separate configurations. Each local payment method needs its own setup at the gateway and plan level, even if the currency it runs on is already enabled.
+        <div class="rc-toc-arrow">→</div>
+      </a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-toc-card">
+        <div class="rc-toc-num">2</div>
+        <div class="rc-toc-body">
+          <h4>North America</h4>
+          <p>How US and Canadian payment preferences diverge, and where ACH and digital wallets fit.</p>
         </div>
-      </details>
+        <div class="rc-toc-arrow">→</div>
+      </a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-toc-card">
+        <div class="rc-toc-num">3</div>
+        <div class="rc-toc-body">
+          <h4>EU</h4>
+          <p>Why Belgium, France, Germany, Denmark, and the Netherlands each favor a different local method.</p>
+        </div>
+        <div class="rc-toc-arrow">→</div>
+      </a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-toc-card">
+        <div class="rc-toc-num">4</div>
+        <div class="rc-toc-body">
+          <h4>APAC</h4>
+          <p>BECS in Australia and UPI Auto Pay in India — two very different mandates and payment cultures.</p>
+        </div>
+        <div class="rc-toc-arrow">→</div>
+      </a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-toc-card">
+        <div class="rc-toc-num">5</div>
+        <div class="rc-toc-body">
+          <h4>LATAM</h4>
+          <p>Why Brazil's payment mix, led by Pix Automático, looks nothing like the rest of the world.</p>
+        </div>
+        <div class="rc-toc-arrow">→</div>
+      </a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-toc-card">
+        <div class="rc-toc-num">6</div>
+        <div class="rc-toc-body">
+          <h4>Review &amp; resources</h4>
+          <p>Pinpoint which region has the biggest method-adoption gap in your own account.</p>
+        </div>
+        <div class="rc-toc-arrow">→</div>
+      </a>
     </div>
 
-    <div class="rc-reflect-card">
-      <span class="rc-reflect-label">Question 1 of 1 &middot; Reflection</span>
-      <h4>Which of the three decisions in this path comes up first for the market you're planning to enter next?</h4>
-      <p>Local acquiring vs. merchant of record, currency and payment methods, or compliance and language. What's the one thing you still need to find out before you can make that call?</p>
-    </div>
+    <p class="rc-lead" style="margin-bottom:24px;">Work through the regions in order, or jump to the one relevant to your current expansion.</p>
 
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h2>
-      <div class="rc-next-grid">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-next-card">
-          <div class="rc-next-card-tag">Recommended next</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-globe"></i></div>
-          <h4>Payments hub</h4>
-          <p>Go deeper on Recurly's payments capabilities beyond global expansion.</p>
-          <div class="rc-next-card-arrow">Start path &rarr;</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-next-card">
-          <div class="rc-next-card-tag">Explore the pillar</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
-          <h4>Scale</h4>
-          <p>See everything else in the Scale pillar.</p>
-          <div class="rc-next-card-arrow">View Scale &rarr;</div>
-        </a>
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
-          <div class="rc-next-card-tag">Live session</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
-          <h4>Global Office Hours</h4>
-          <p>Bring your specific market-entry questions to a live CSM session.</p>
-          <div class="rc-next-card-arrow">Register &rarr;</div>
-        </a>
-      </div>
+    <div class="rc-lp-nav">
+      <span class="rc-btn-start">← Start</span>
+      <span class="rc-lp-nav-indicator">Overview</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-btn-path">1. UK →</a>
     </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/gateway-merchant-account-overview" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Payment gateway &amp; merchant account overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/global-payments-expansion-the-basics" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Prerequisite: Global payments expansion</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Payment methods</a>
-        <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Currency support by gateway</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/vat-gst-support" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: VAT &amp; GST support</a>
-        <a href="https://docs.recurly.com/docs/tax" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Taxes</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
       </div>
     </div>
 
-    <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-btn-prev">&larr; Compliance &amp; language</a>
-      <span class="rc-lp-nav-indicator">4 of 4</span>
-      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
-    </div>
-
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Global payments expansion</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-mor" class="rc-footer-link">1. LCA vs. MoR</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-currency" class="rc-footer-link">2. Currency &amp; payment methods</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-footer-link">3. Compliance &amp; language</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-review" class="rc-footer-link">4. Review &amp; resources</a>
+          <span class="rc-footer-label">Payment methods by region</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-footer-link">Path overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-footer-link">1. UK</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-footer-link">2. North America</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-footer-link">3. EU</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-footer-link">4. APAC</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-footer-link">5. LATAM</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-footer-link">6. Review &amp; resources</a>
         </div>
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
