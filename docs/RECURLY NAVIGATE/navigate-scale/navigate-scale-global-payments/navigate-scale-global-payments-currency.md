@@ -1,10 +1,25 @@
 ---
 title: 'Global payment expansion: Currency & payment methods'
+excerpt: >-
+  Maximize global subscription conversion rates by offering local currency
+  pricing and popular regional payment methods like SEPA Direct Debit, iDEAL,
+  Pix, and UPI AutoPay.
 deprecated: false
 hidden: true
 link:
   new_tab: false
 metadata:
+  description: >-
+    Maximize global subscription conversion rates by offering local currency
+    pricing and popular regional payment methods like SEPA Direct Debit, iDEAL,
+    Pix, and UPI AutoPay.
+  keywords:
+    - local currency subscription billing
+    - international payment methods for SaaS
+    - multi-currency recurring payments
+    - SEPA Direct Debit and iDEAL integration
+    - global payment methods conversion rate
+    - regional payment methods expansion
   robots: index
 ---
 <HTMLBlock>{`
@@ -291,9 +306,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-sticky-link"><span class="rc-step-badge">3</span> Compliance &amp; language</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-review" class="rc-sticky-link"><span class="rc-step-badge">4</span> Review &amp; resources</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Scale
-        </a>
+  
       </div></div></div>
     </details>
 
