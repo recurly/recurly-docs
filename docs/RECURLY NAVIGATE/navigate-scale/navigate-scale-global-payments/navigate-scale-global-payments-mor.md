@@ -1,10 +1,25 @@
 ---
 title: 'Global payments expansion: LCA vs MoR'
+excerpt: >-
+  Compare Local Acquiring (LCA) and Merchant of Record (MoR) models for global
+  subscription expansion, evaluating tax liabilities, chargebacks, compliance,
+  and seller of record responsibilities.
 deprecated: false
 hidden: true
 link:
   new_tab: false
 metadata:
+  description: >-
+    Compare Local Acquiring (LCA) and Merchant of Record (MoR) models for global
+    subscription expansion, evaluating tax liabilities, chargebacks, compliance,
+    and seller of record responsibilities.
+  keywords:
+    - Merchant of record vs local acquiring
+    - merchant of record subscription billing
+    - local acquiring payment gateway
+    - cross border tax and compliance liability
+    - seller of record for international markets
+    - chargeback liability merchant of record
   robots: index
 ---
 <HTMLBlock>{`
@@ -285,9 +300,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-currency" class="rc-sticky-link"><span class="rc-step-badge">2</span> Currency &amp; payment methods</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-sticky-link"><span class="rc-step-badge">3</span> Compliance &amp; language</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-review" class="rc-sticky-link"><span class="rc-step-badge">4</span> Review &amp; resources</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Scale
-        </a>
+       
       </div></div></div>
     </details>
 
