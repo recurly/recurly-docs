@@ -289,9 +289,9 @@ Billing period coupons let you define duration in terms of exact billing cycles 
 
 Setting a redeem-by date can help you forecast when a coupon could be used and can tie redemptions to specific promotional periods or marketing pushes. When creating a single coupon, you have two redeem-by options — **anytime** and **a specific date**. A coupon set to **anytime** never expires automatically; a coupon with a specific date expires once that date passes.
 
-A third option, **within a set time period**, is available for bulk coupons. It lets you set a relative expiration period (for example, 7 days, 2 weeks, or 1 month) that starts individually for each unique code when it's generated, rather than when the coupon is created. Each time you generate a new batch of unique codes within that bulk coupon, you can set a new redeem-by window. This gives you more flexibility and reduces the number of unused or duplicate coupons. The redeem-by window is converted to a date and displayed on the bulk coupon's page.
+A third option, **within a set time period**, is available for bulk coupons. It lets you set a relative expiration period (for example, 7 days, 2 weeks, or 1 month) that starts individually for each unique code when it's generated, rather than when the coupon is created. Each time you generate a new batch of unique codes, you can set a new redeem-by window in the UI or by updating the bulk coupon via the [API.](https://recurly.com/developers/api/v2021-02-25/index.html#tag/coupon) This gives you more flexibility and reduces the number of unused or duplicate coupons. The redeem-by window is converted to a date and displayed on the bulk coupon's page.
 
-```text
+```text Redeem by fields
 {
   "name": "string",
   "code": "string",
