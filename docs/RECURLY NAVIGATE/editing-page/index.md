@@ -281,7 +281,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <h2>What this path covers</h2>
     <p class="rc-lead">
 
-      Offering local payment methods measurably increases conversion and revenue in the regions where customers expect them. This path builds on <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/global-payments-expansion-the-basics" class="rc-inline-link rp-anchor" target="_blank" rel="noopener noreferrer">Global payments expansion: The basics</a> and goes one level deeper: which methods actually move the needle in five regions, and how to turn each one on in Recurly.
+      Offering local payment methods measurably increases conversion and revenue in the regions where customers expect them. This path builds on <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments" class="rc-inline-link rp-anchor" target="_blank" rel="noopener noreferrer">Global payments expansion</a> and goes one level deeper: which methods actually move the needle in five regions, and how to turn each one on in Recurly.
     </p>
 
     <div class="rc-toc-list">
