@@ -11,7 +11,9 @@ metadata:
 <div class="rp-page"> <div class="rp-overview">The 3DS Authentication dashboard shows you how your payments move through 3D Secure (3DS) — and what happens after. It lives in Payments Hub alongside the other payments analytics you already use, and it's built on the same outcome definitions Recurly's own payments team relies on internally, so what you see here matches what Recurly sees. It's especially useful if you're on a gateway integrated through Hyperswitch, where 3DS activity doesn't show up in the gateway's own reporting at all.</div> <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div> <div class="rp-card">
 
 </div> <div class="rp-toc"> <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a> <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a> <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a> <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">4</span>FAQs</a> </div> </div>
-Limitations
+
+# Limitations
+
 <ul class="rp-list"> <li>The dashboard shows 3DS outcomes on individual transactions. It doesn't yet show how 3DS authentication on an initial checkout affects the approval rate of later recurring charges — that comparison is planned for a future release.</li> <li>A frictionless-versus-full-challenge breakdown isn't available yet, since not all gateways report that distinction consistently.</li> </ul>
 
 # Definition
