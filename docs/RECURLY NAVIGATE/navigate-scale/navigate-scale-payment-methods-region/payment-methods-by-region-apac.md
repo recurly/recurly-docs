@@ -1,10 +1,27 @@
 ---
 title: 'Payment methods by region: APAC'
+excerpt: >-
+  Configure local APAC payment methods in Recurly—including BECS Direct Debit in
+  Australia and UPI Auto Pay in India—while remaining compliant with RBI 24-hour
+  pre-notification rules and Australian GST requirements.
 deprecated: false
 hidden: true
 link:
   new_tab: false
 metadata:
+  description: >-
+    Configure local APAC payment methods in Recurly—including BECS Direct Debit
+    in Australia and UPI Auto Pay in India—while remaining compliant with RBI
+    24-hour pre-notification rules and Australian GST requirements.
+  keywords:
+    - To optimize search visibility and AI retrieval
+    - target Recurly APAC payment methods
+    - BECS Direct Debit Australia
+    - UPI Auto Pay subscription billing
+    - RBI recurring payment regulations
+    - Ebanx Recurly India integration
+    - Australian GST subscription threshold
+    - and INR payment settlement.
   robots: index
 ---
 <HTMLBlock>{`
