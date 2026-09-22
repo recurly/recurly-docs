@@ -230,8 +230,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* UK comparison table */
 .rc-uk-table-wrap { overflow-x: auto; margin: 8px 0 24px; border: 1px solid var(--lightgray); border-radius: 10px; }
 .rc-uk-table { width: 100% !important; display: table !important; border-collapse: collapse; font-size: .88rem; }
-.rc-uk-table thead tr { background: var(--offblack); }
-.rc-uk-table thead th { color: var(--offwhite) !important; font-weight: 700; text-align: left; padding: 12px 16px; white-space: normal; vertical-align: bottom; }
+.rc-uk-table thead tr { background: #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide .rc-uk-table thead th,
+.rc-uk-table thead th {
+  background-color: #0D0D0B !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 16px;
+  white-space: normal;
+  vertical-align: bottom;
+}
 .rc-uk-table tbody tr { background: var(--offwhite); }
 .rc-uk-table tbody tr:nth-child(even) { background: #ffffff; }
 .rc-uk-table tbody td { padding: 12px 16px; color: var(--darkgray); border-bottom: 1px solid var(--brightgray); }
