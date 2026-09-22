@@ -320,50 +320,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-sterling-sign rc-fa-section"></i> Why it matters</h2>
       <p>Credit cards convert the least reliably of any method offered by UK merchants on Recurly, at roughly 75% sign-up success. BACS Direct Debit and SEPA both convert above 99% at sign-up, and PayPal is offered by nearly a third of UK merchants on the platform. Prioritizing the right methods here has a direct, measurable effect on how many UK sign-ups actually complete.</p>
 
-      <div class="rc-uk-table-wrap">
-        <table class="rc-uk-table">
-          <thead>
-            <tr>
-              <th>Payment Type</th>
-              <th>Sign-up %</th>
-              <th>Renewal %</th>
-              <th>% of Volume when Merchant is Offering Payment Type</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Apple Pay</td>
-              <td>92.38%</td>
-              <td>76.85%</td>
-              <td>18.02%</td>
-            </tr>
-            <tr>
-              <td>BACS</td>
-              <td>97.91%</td>
-              <td>95.44%</td>
-              <td>44.48%</td>
-            </tr>
-            <tr>
-              <td>Credit Card</td>
-              <td>76.38%</td>
-              <td>88.09%</td>
-              <td>73.85%</td>
-            </tr>
-            <tr>
-              <td>Google Pay</td>
-              <td>85.17%</td>
-              <td>79.15%</td>
-              <td>2.02%</td>
-            </tr>
-            <tr>
-              <td>PayPal</td>
-              <td>64.44%</td>
-              <td>95.97%</td>
-              <td>22.13%</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+     
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
