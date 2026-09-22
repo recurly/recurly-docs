@@ -201,7 +201,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
  <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h2>
+      <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-next-card">
           <div class="rc-next-card-tag">Recommended next</div>
