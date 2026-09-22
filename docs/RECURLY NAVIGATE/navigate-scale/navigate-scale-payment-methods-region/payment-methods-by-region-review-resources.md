@@ -160,9 +160,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-review" class="rc-sticky-link rc-sticky-link-active">
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Review &amp; resources
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Scale
-        </a>
       </div></div></div>
     </details>
 
@@ -194,7 +191,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-resource-group">
         <span class="rc-resource-group-label">Prerequisite &amp; overview</span>
         <div class="rc-resource-links">
-          <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/global-payments-expansion-the-basics" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Global payments expansion: The basics</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Global payments expansion</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Payment methods overview</a>
         </div>
       </div>
