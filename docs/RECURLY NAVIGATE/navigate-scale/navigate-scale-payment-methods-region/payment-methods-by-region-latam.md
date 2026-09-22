@@ -1,8 +1,22 @@
 ---
 title: 'Payment methods by region: LATAM'
+excerpt: >-
+  Configure local LATAM payment methods in Recurly—including Pix Automático,
+  Mercado Pago, and BRL installment pricing—to boost Brazilian subscription
+  conversion and satisfy mandatory e-invoicing rules.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Configure local LATAM payment methods in Recurly—including Pix Automático,
+    Mercado Pago, and BRL installment pricing—to boost Brazilian subscription
+    conversion and satisfy mandatory e-invoicing rules.
+  keywords:
+    - Pix Automático subscription integration
+    - Mercado Pago Ebanx configuration
+    - Brazil installment pricing strategy
+    - BRL localized currency setup
+    - and Brazilian subscription e-invoicing compliance.
   robots: index
 ---
 <HTMLBlock>{`
@@ -137,14 +151,60 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
-.rc-latam-table-wrap { overflow-x: auto; margin: 8px 0 24px; border: 1px solid var(--lightgray); border-radius: 10px; }
-.rc-latam-table { width: 100%; border-collapse: collapse; font-size: .86rem; }
-.rc-latam-table thead tr { background: var(--offblack); }
-.rc-latam-table thead th { color: var(--offwhite) !important; font-weight: 700; text-align: left; padding: 10px 14px; white-space: nowrap; }
-.rc-latam-table tbody tr { background: var(--offwhite); }
-.rc-latam-table tbody tr:nth-child(even) { background: #ffffff; }
-.rc-latam-table tbody td { padding: 10px 14px; color: var(--darkgray); border-bottom: 1px solid var(--brightgray); }
-.rc-latam-table tbody tr:last-child td { border-bottom: none; }
+
+/* LATAM comparison table wrapper */
+.rc-latam-table-wrap { 
+  overflow-x: auto; 
+  margin: 8px 0 24px; 
+  border: 1px solid var(--lightgray); 
+  border-radius: 10px; 
+}
+
+/* Force table expansion and remove bottom margin white space */
+.rm-Markdown.markdown-body .rc-guide table.rc-latam-table,
+.rc-latam-table { 
+  width: 100% !important; 
+  display: table !important; 
+  border-collapse: collapse; 
+  font-size: .84rem; 
+  margin: 0 !important; 
+  margin-bottom: 0 !important; 
+}
+
+.rc-latam-table thead tr { 
+  background: #0D0D0B !important; 
+}
+
+/* Header high-specificity font color & background fix */
+.rm-Markdown.markdown-body .rc-guide .rc-latam-table thead th,
+.rc-latam-table thead th { 
+  background-color: #0D0D0B !important; 
+  color: #ffffff !important; 
+  font-weight: 700; 
+  text-align: left; 
+  padding: 10px 12px; 
+  white-space: normal; 
+  vertical-align: bottom; 
+}
+
+/* Body rows & cell styles */
+.rc-latam-table tbody tr { 
+  background: var(--offwhite); 
+}
+
+.rc-latam-table tbody tr:nth-child(even) { 
+  background: #ffffff; 
+}
+
+.rc-latam-table tbody td { 
+  padding: 10px 12px; 
+  color: var(--darkgray); 
+  border-bottom: 1px solid var(--brightgray); 
+}
+
+.rc-latam-table tbody tr:last-child td { 
+  border-bottom: none; 
+}
 @media(max-width:768px){ .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } }
 </style>
 
@@ -177,18 +237,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region" class="rc-sticky-link">Path overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-uk" class="rc-sticky-link"><span class="rc-step-badge">1</span> UK</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-north-america" class="rc-sticky-link"><span class="rc-step-badge">2</span> North America</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-eu" class="rc-sticky-link"><span class="rc-step-badge">3</span> EU</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-apac" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-latam" class="rc-sticky-link rc-sticky-link-active">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-sticky-link">Path overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-sticky-link"><span class="rc-step-badge">1</span> UK</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-sticky-link"><span class="rc-step-badge">2</span> North America</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-sticky-link"><span class="rc-step-badge">3</span> EU</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-sticky-link rc-sticky-link-active">
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> LATAM
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Scale
-        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+
       </div></div></div>
     </details>
 
@@ -198,12 +256,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       <div class="rc-latam-table-wrap">
         <table class="rc-latam-table">
-          <thead><tr><th>Payment method</th><th>Sign-up success</th><th>Renewal success</th><th>% of Recurly merchants offering</th></tr></thead>
+          <thead><tr><th>Payment Type</th><th>Sign-up %</th><th>Renewal %</th><th>% of Volume when Merchant is Offering Payment Type</th></tr></thead>
           <tbody>
-            <tr><td>Credit card</td><td>58.45%</td><td>80.15%</td><td>100.00%</td></tr>
-            <tr><td>PayPal</td><td>50.43%</td><td>86.55%</td><td>33.95%</td></tr>
-            <tr><td>Google Pay</td><td>41.58%</td><td>69.34%</td><td>9.05%</td></tr>
-            <tr><td>Apple Pay</td><td>4.03%</td><td>65.92%</td><td>20.58%</td></tr>
+            <tr><td>Apple Pay</td><td>46.54%</td><td>68.02%</td><td>3.30%</td></tr>
+            <tr><td>Credit Card</td><td>42.82%</td><td>80.27%</td><td>93.56%</td></tr>
+            <tr><td>Google Pay</td><td>48.30%</td><td>68.19%</td><td>3.90%</td></tr>
+            <tr><td>PayPal</td><td>76.26%</td><td>86.55%</td><td>5.32%</td></tr>
           </tbody>
         </table>
       </div>
@@ -258,9 +316,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-apac" class="rc-btn-prev">← APAC</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-btn-prev">← APAC</a>
       <span class="rc-lp-nav-indicator">5 of 6</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-review" class="rc-btn-path">Next: Review &amp; resources →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-btn-path">Next: Review &amp; resources →</a>
     </div>
 
     <div class="rc-resources">
@@ -277,13 +335,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Payment methods by region</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-uk" class="rc-footer-link">1. UK</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-north-america" class="rc-footer-link">2. North America</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-eu" class="rc-footer-link">3. EU</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-apac" class="rc-footer-link">4. APAC</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-latam" class="rc-footer-link">5. LATAM</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-review" class="rc-footer-link">6. Review &amp; resources</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-footer-link">Path overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-footer-link">1. UK</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-footer-link">2. North America</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-footer-link">3. EU</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-footer-link">4. APAC</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-footer-link">5. LATAM</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-footer-link">6. Review &amp; resources</a>
         </div>
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
