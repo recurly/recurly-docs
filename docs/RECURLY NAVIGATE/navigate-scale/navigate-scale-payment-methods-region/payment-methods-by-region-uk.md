@@ -1,8 +1,25 @@
 ---
 title: 'Payment methods by region: UK'
+excerpt: >-
+  Learn how to configure BACS Direct Debit, localized GBP pricing, and 3D Secure
+  in Recurly to optimize UK subscription conversion rates while maintaining
+  compliance with UK consumer disclosure laws.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Learn how to configure BACS Direct Debit, localized GBP pricing, and 3D
+    Secure in Recurly to optimize UK subscription conversion rates while
+    maintaining compliance with UK consumer disclosure laws.
+  keywords:
+    - To maximize search visibility and AI retrieval
+    - target Recurly UK payment methods
+    - BACS Direct Debit subscription integration
+    - GBP localized pricing setup
+    - 3D Secure PSD2 compliance UK
+    - GoCardless Recurly integration
+    - UK subscription conversion rates
+    - and Digital Markets Competition and Consumers Act compliance.
   robots: index
 ---
 <HTMLBlock>{`
