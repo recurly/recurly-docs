@@ -246,9 +246,26 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* UK comparison table */
 .rc-uk-table-wrap { overflow-x: auto; margin: 8px 0 24px; border: 1px solid var(--lightgray); border-radius: 10px; }
-.rc-uk-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
-.rc-uk-table thead tr { background: var(--offblack); }
-.rc-uk-table thead th { color: var(--offwhite) !important; font-weight: 700; text-align: left; padding: 12px 16px; white-space: nowrap; }
+.rm-Markdown.markdown-body .rc-guide table.rc-uk-table,
+.rc-uk-table {
+  width: 100% !important;
+  display: table !important;
+  border-collapse: collapse;
+  font-size: .88rem;
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+}
+.rc-uk-table thead tr { background: #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide .rc-uk-table thead th,
+.rc-uk-table thead th {
+  background-color: #0D0D0B !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 16px;
+  white-space: normal;
+  vertical-align: bottom;
+}
 .rc-uk-table tbody tr { background: var(--offwhite); }
 .rc-uk-table tbody tr:nth-child(even) { background: #ffffff; }
 .rc-uk-table tbody td { padding: 12px 16px; color: var(--darkgray); border-bottom: 1px solid var(--brightgray); }
@@ -295,7 +312,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-sticky-link"><span class="rc-step-badge">5</span> LATAM</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
-    
+        
       </div></div></div>
     </details>
 
@@ -306,15 +323,44 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-uk-table-wrap">
         <table class="rc-uk-table">
           <thead>
-            <tr><th>Payment method</th><th>Sign-up success</th><th>Renewal success</th><th>% of Recurly merchants offering</th></tr>
+            <tr>
+              <th>Payment Type</th>
+              <th>Sign-up %</th>
+              <th>Renewal %</th>
+              <th>% of Volume when Merchant is Offering Payment Type</th>
+            </tr>
           </thead>
           <tbody>
-            <tr><td>BACS</td><td>99.18%</td><td>95.65%</td><td>1.80%</td></tr>
-            <tr><td>SEPA</td><td>100.00%</td><td>88.89%</td><td>0.90%</td></tr>
-            <tr><td>Google Pay</td><td>83.71%</td><td>81.81%</td><td>7.44%</td></tr>
-            <tr><td>Apple Pay</td><td>92.28%</td><td>76.50%</td><td>16.69%</td></tr>
-            <tr><td>PayPal</td><td>72.20%</td><td>95.78%</td><td>31.79%</td></tr>
-            <tr><td>Credit card</td><td>75.20%</td><td>88.04%</td><td>100.00%</td></tr>
+            <tr>
+              <td>Apple Pay</td>
+              <td>92.38%</td>
+              <td>76.85%</td>
+              <td>18.02%</td>
+            </tr>
+            <tr>
+              <td>BACS</td>
+              <td>97.91%</td>
+              <td>95.44%</td>
+              <td>44.48%</td>
+            </tr>
+            <tr>
+              <td>Credit Card</td>
+              <td>76.38%</td>
+              <td>88.09%</td>
+              <td>73.85%</td>
+            </tr>
+            <tr>
+              <td>Google Pay</td>
+              <td>85.17%</td>
+              <td>79.15%</td>
+              <td>2.02%</td>
+            </tr>
+            <tr>
+              <td>PayPal</td>
+              <td>64.44%</td>
+              <td>95.97%</td>
+              <td>22.13%</td>
+            </tr>
           </tbody>
         </table>
       </div>
