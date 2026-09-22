@@ -141,8 +141,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
-/* NA comparison table wrapper */
-.rc-na-table-wrap { 
+/* APAC comparison table wrapper */
+.rc-apac-table-wrap { 
   overflow-x: auto; 
   margin: 8px 0 24px; 
   border: 1px solid var(--lightgray); 
@@ -150,8 +150,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 
 /* Force table expansion and remove bottom margin white space */
-.rm-Markdown.markdown-body .rc-guide table.rc-na-table,
-.rc-na-table { 
+.rm-Markdown.markdown-body .rc-guide table.rc-apac-table,
+.rc-apac-table { 
   width: 100% !important; 
   display: table !important; 
   border-collapse: collapse; 
@@ -160,13 +160,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   margin-bottom: 0 !important; 
 }
 
-.rc-na-table thead tr { 
+.rc-apac-table thead tr { 
   background: #0D0D0B !important; 
 }
 
 /* Header high-specificity font color & background fix */
-.rm-Markdown.markdown-body .rc-guide .rc-na-table thead th,
-.rc-na-table thead th { 
+.rm-Markdown.markdown-body .rc-guide .rc-apac-table thead th,
+.rc-apac-table thead th { 
   background-color: #0D0D0B !important; 
   color: #ffffff !important; 
   font-weight: 700; 
@@ -177,21 +177,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 
 /* Body rows & cell styles */
-.rc-na-table tbody tr { 
+.rc-apac-table tbody tr { 
   background: var(--offwhite); 
 }
 
-.rc-na-table tbody tr:nth-child(even) { 
+.rc-apac-table tbody tr:nth-child(even) { 
   background: #ffffff; 
 }
 
-.rc-na-table tbody td { 
+.rc-apac-table tbody td { 
   padding: 10px 12px; 
   color: var(--darkgray); 
   border-bottom: 1px solid var(--brightgray); 
 }
 
-.rc-na-table tbody tr:last-child td { 
+.rc-apac-table tbody tr:last-child td { 
   border-bottom: none; 
 }
 
@@ -217,8 +217,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Payment methods by region
       </div>
-      <div class="rc-lp-hero-title"><h1>North America</h1></div>
-      <p>How US and Canadian payment preferences diverge, and which methods to prioritize in each.</p>
+      <div class="rc-lp-hero-title"><h1>APAC</h1></div>
+      <p>BECS in Australia and UPI Auto Pay in India — two very different mandates and payment cultures.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -227,31 +227,33 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-sticky-link">Path overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-sticky-link"><span class="rc-step-badge">1</span> UK</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> North America
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region" class="rc-sticky-link">Path overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-uk" class="rc-sticky-link"><span class="rc-step-badge">1</span> UK</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-north-america" class="rc-sticky-link"><span class="rc-step-badge">2</span> North America</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-eu" class="rc-sticky-link"><span class="rc-step-badge">3</span> EU</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-apac" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> APAC
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-sticky-link"><span class="rc-step-badge">3</span> EU</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-sticky-link"><span class="rc-step-badge">5</span> LATAM</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
-
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-latam" class="rc-sticky-link"><span class="rc-step-badge">5</span> LATAM</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">
+          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Scale
+        </a>
       </div></div></div>
     </details>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-map rc-fa-section"></i> Why it matters</h2>
-      <p>The US and Canada share a currency family but not a payment culture. Canadian credit card renewals succeed at 89.8% versus 89.5% for the US, but sign-up success on cards is weak in both markets — 52% in Canada, 43% in the US — which is exactly where digital wallets and PayPal close the gap.</p>
+      <h2><i class="fa-solid fa-earth-asia rc-fa-section"></i> Why it matters</h2>
+      <p>Australia and India both run on mandate-based direct debit systems, but the mandates themselves — and the customer behavior around them — look nothing alike. BECS in Australia is a mature, high-success rail. UPI Auto Pay in India is newer but already outperforms every other method in the market on sign-up success.</p>
 
       <div class="rc-feature-card">
-        <div class="rc-feature-icon"><i class="fa-solid fa-flag-usa"></i></div>
-        <h4>United States</h4>
-        <p>ACH leads for B2B (90.87% sign-up success). Apple Pay, Google Pay, and Amazon Pay are growing for B2C, with Klarna and Cash App gaining relevance. Chargebacks run higher here than most markets — invest in clear billing descriptors.</p>
+        <div class="rc-feature-icon"><i class="fa-solid fa-building-columns"></i></div>
+        <h4>Australia</h4>
+        <p>BECS converts at 97.22% sign-up and 99.23% renewal, but only 0.65% of merchants offer it. PayPal is offered by 34% of merchants and converts strongly. Foreign businesses exceeding AUD $75,000 in Australian revenue must register for GST.</p>
       </div>
 
-      <div class="rc-na-table-wrap">
-        <table class="rc-na-table">
+      <div class="rc-apac-table-wrap">
+        <table class="rc-apac-table">
           <thead>
             <tr>
               <th>Payment Type</th>
@@ -261,24 +263,23 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </tr>
           </thead>
           <tbody>
-            <tr><td>ACH</td><td>96.62%</td><td>97.04%</td><td>3.02%</td></tr>
-            <tr><td>Amazon Pay</td><td>94.75%</td><td>93.80%</td><td>8.18%</td></tr>
-            <tr><td>Apple Pay</td><td>89.65%</td><td>72.31%</td><td>8.37%</td></tr>
-            <tr><td>Credit Card</td><td>54.30%</td><td>89.02%</td><td>85.60%</td></tr>
-            <tr><td>Google Pay</td><td>84.59%</td><td>78.66%</td><td>1.06%</td></tr>
-            <tr><td>PayPal</td><td>93.41%</td><td>96.39%</td><td>11.23%</td></tr>
+            <tr><td>Apple Pay</td><td>87.33%</td><td>76.49%</td><td>6.60%</td></tr>
+            <tr><td>BECS</td><td>99.05%</td><td>99.09%</td><td>8.14%</td></tr>
+            <tr><td>Credit Card</td><td>82.95%</td><td>83.19%</td><td>85.52%</td></tr>
+            <tr><td>Google Pay</td><td>84.85%</td><td>68.93%</td><td>1.72%</td></tr>
+            <tr><td>PayPal</td><td>93.51%</td><td>93.73%</td><td>13.97%</td></tr>
           </tbody>
         </table>
       </div>
 
       <div class="rc-feature-card">
-        <div class="rc-feature-icon"><i class="fa-solid fa-flag"></i></div>
-        <h4>Canada</h4>
-        <p>PayPal converts at 92.49% sign-up and 94.97% renewal — the strongest combination in the region. Apple Pay also performs well. Label prices "CAD" explicitly; many Canadians shop US sites and default to assuming USD.</p>
+        <div class="rc-feature-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+        <h4>India</h4>
+        <p>UPI Auto Pay leads sign-up success at 87.13%, well above credit cards at 36.18%. Apple Pay also performs strongly (85.85%). Free trials and low entry-price tiers resonate strongly with Indian consumers.</p>
       </div>
 
-      <div class="rc-na-table-wrap">
-        <table class="rc-na-table">
+      <div class="rc-apac-table-wrap">
+        <table class="rc-apac-table">
           <thead>
             <tr>
               <th>Payment Type</th>
@@ -288,11 +289,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             </tr>
           </thead>
           <tbody>
-            <tr><td>Amazon Pay</td><td>63.83%</td><td>64.86%</td><td>0.21%</td></tr>
-            <tr><td>Apple Pay</td><td>89.69%</td><td>85.96%</td><td>7.75%</td></tr>
-            <tr><td>Credit Card</td><td>50.80%</td><td>89.66%</td><td>85.93%</td></tr>
-            <tr><td>Google Pay</td><td>87.34%</td><td>82.14%</td><td>2.01%</td></tr>
-            <tr><td>PayPal</td><td>92.87%</td><td>95.00%</td><td>13.10%</td></tr>
+            <tr><td>Apple Pay</td><td>81.20%</td><td>68.78%</td><td>0.40%</td></tr>
+            <tr><td>Credit Card</td><td>12.16%</td><td>50.14%</td><td>92.70%</td></tr>
+            <tr><td>Google Pay</td><td>46.56%</td><td>49.56%</td><td>1.17%</td></tr>
+            <tr><td>PayPal</td><td>25.21%</td><td>79.60%</td><td>4.40%</td></tr>
+            <tr><td>UPI AutoPay</td><td>85.94%</td><td>82.55%</td><td>91.38%</td></tr>
           </tbody>
         </table>
       </div>
@@ -300,8 +301,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="rc-callout-body">
-          <strong>Quebec requires French-language checkout</strong>
-          <p>Canada's Official Languages Act requires customer-facing materials — checkout, emails, terms of service — in both English and French for federally regulated businesses operating in or marketing to Quebec.</p>
+          <strong>RBI requires 3DS and 24-hour advance notice on recurring payments</strong>
+          <p>The Reserve Bank of India mandates additional verification for recurring transactions and requires cardholders receive pre-transaction notification at least 24 hours before a recurring charge. Payments must also settle in INR — cross-border INR transactions are restricted.</p>
         </div>
       </div>
     </div>
@@ -312,38 +313,39 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-step">
           <div class="rc-step-num">1</div>
           <div class="rc-step-content">
-            <h4>Enable USD and/or CAD</h4>
-            <p>In <strong>Configuration → Currencies</strong>, add the currencies you plan to sell in. Set localized pricing under each plan rather than relying on conversion.</p>
+            <h4>Enable AUD and/or INR</h4>
+            <p>In <strong>Configuration → Currencies</strong>, add the currencies you need and set localized pricing per plan.</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
           <div class="rc-step-content">
             <h4>Confirm gateway coverage</h4>
-            <p>ACH is available through Adyen, GoCardless, Stripe, Worldpay, or Check Commerce. Digital wallets are broadly supported — confirm which gateways you have configured support the specific methods you want.</p>
+            <p>BECS is available through GoCardless or Stripe. UPI Auto Pay is available through Ebanx — Recurly's preferred gateway for India transactions.</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
           <div class="rc-step-content">
-            <h4>Connect a tax engine</h4>
-            <p>US sales tax spans over 13,000 jurisdictions. Integrate Avalara or Vertex rather than managing rates manually.</p>
+            <h4>Enable 3DS for India</h4>
+            <p>Turn on 3D Secure in your gateway configuration to satisfy the RBI mandate before processing recurring INR transactions.</p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-btn-prev">← UK</a>
-      <span class="rc-lp-nav-indicator">2 of 6</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-btn-path">Next: EU →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-eu" class="rc-btn-prev">← EU</a>
+      <span class="rc-lp-nav-indicator">4 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-latam" class="rc-btn-path">Next: LATAM →</a>
     </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/ach-bank-payments" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: ACH</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/avalara" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Avalara integration</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/becs" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: BECS</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: UPI AutoPay</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: RBI regulations</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
     </div>
@@ -352,13 +354,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Payment methods by region</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-footer-link">1. UK</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-footer-link">2. North America</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-footer-link">3. EU</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-footer-link">4. APAC</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-footer-link">5. LATAM</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-footer-link">6. Review &amp; resources</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region" class="rc-footer-link">Path overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-uk" class="rc-footer-link">1. UK</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-north-america" class="rc-footer-link">2. North America</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-eu" class="rc-footer-link">3. EU</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-apac" class="rc-footer-link">4. APAC</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-latam" class="rc-footer-link">5. LATAM</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-review" class="rc-footer-link">6. Review &amp; resources</a>
         </div>
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
