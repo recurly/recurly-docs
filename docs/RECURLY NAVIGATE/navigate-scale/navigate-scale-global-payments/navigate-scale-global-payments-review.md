@@ -400,11 +400,11 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h2>
       <div class="rc-next-grid">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-next-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-next-card">
           <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-globe"></i></div>
-          <h4>Payments hub</h4>
-          <p>Go deeper on Recurly's payments capabilities beyond global expansion.</p>
+          <h4>Payment methods by region</h4>
+          <p>Go deeper in global payments expansion by understanding the payment methods in each region.</p>
           <div class="rc-next-card-arrow">Start path &rarr;</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-next-card">
