@@ -192,6 +192,33 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
+ <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h2>
+      <div class="rc-next-grid">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-next-card">
+          <div class="rc-next-card-tag">Recommended next</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-globe"></i></div>
+          <h4>Payments hub</h4>
+          <p>Go deeper on Recurly's payments capabilities beyond global expansion.</p>
+          <div class="rc-next-card-arrow">Start path &rarr;</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-next-card">
+          <div class="rc-next-card-tag">Explore the pillar</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+          <h4>Scale</h4>
+          <p>See everything else in the Scale pillar.</p>
+          <div class="rc-next-card-arrow">View Scale &rarr;</div>
+        </a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
+          <div class="rc-next-card-tag">Live session</div>
+          <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
+          <h4>Global Office Hours</h4>
+          <p>Bring your specific market-entry questions to a live CSM session.</p>
+          <div class="rc-next-card-arrow">Register &rarr;</div>
+        </a>
+      </div>
+    </div>
+
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-btn-prev">← LATAM</a>
       <span class="rc-lp-nav-indicator">6 of 6</span>
