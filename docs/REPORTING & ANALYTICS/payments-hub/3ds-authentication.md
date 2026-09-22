@@ -8,7 +8,7 @@ hidden: false
 metadata:
   robots: index
 ---
-<div class="rp-page"> <div class="rp-overview">The 3DS Authentication dashboard shows you how your payments move through 3D Secure (3DS) — and what happens after. It lives in Payments Hub alongside the other payments analytics you already use. It's especially useful if you're on a gateway integrated through Hyperswitch, where 3DS activity doesn't show up in the gateway's own reporting at all.</div> <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div> <div class="rp-card">
+<div class="rp-page"> <div class="rp-overview">The 3DS Authentication dashboard shows you when your payments are being challenged for 3D Secure (3DS) and how those challenges affect whether payments go through. It lives in Payments Hub alongside the payments analytics you already use. Use it as a diagnostic tool — confirm authentication is working where SCA requires it, find payments that should be authenticating but aren't, and catch challenges you didn't expect from a gateway misconfiguration — so you can see exactly where 3DS is helping payments succeed and where it's costing you approvals.</div> <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div> <div class="rp-card">
 
 </div> <div class="rp-toc"> <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a> <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a> <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a> <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">4</span>FAQs</a> </div> </div>
 
