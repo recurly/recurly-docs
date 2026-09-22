@@ -91,6 +91,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
 .rc-callout-caution { background: var(--warning-bg); border-left: 4px solid var(--warning-fg); }
 .rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
+.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 8px; }
+.rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
+.rc-feature-card:hover { border-color: #008CFF; box-shadow: 0 4px 16px rgba(0,140,255,0.15); transform: translateY(-2px); }
+.rc-feature-icon { font-size: 1.4rem; line-height: 1; color: var(--offblack); }
+.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0; }
+.rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
+@media(max-width:768px){ .rc-card-grid { grid-template-columns: 1fr; } }
 .rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
 .rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--brightgray); }
 .rc-step:last-child { border-bottom: none; }
@@ -133,14 +140,61 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
-.rc-eu-table-wrap { overflow-x: auto; margin: 8px 0 24px; border: 1px solid var(--lightgray); border-radius: 10px; }
-.rc-eu-table { width: 100%; border-collapse: collapse; font-size: .84rem; }
-.rc-eu-table thead tr { background: var(--offblack); }
-.rc-eu-table thead th { color: var(--offwhite) !important; font-weight: 700; text-align: left; padding: 10px 12px; white-space: nowrap; }
-.rc-eu-table tbody tr { background: var(--offwhite); }
-.rc-eu-table tbody tr:nth-child(even) { background: #ffffff; }
-.rc-eu-table tbody td { padding: 10px 12px; color: var(--darkgray); border-bottom: 1px solid var(--brightgray); }
-.rc-eu-table tbody tr:last-child td { border-bottom: none; }
+
+/* NA comparison table wrapper */
+.rc-na-table-wrap { 
+  overflow-x: auto; 
+  margin: 8px 0 24px; 
+  border: 1px solid var(--lightgray); 
+  border-radius: 10px; 
+}
+
+/* Force table expansion and remove bottom margin white space */
+.rm-Markdown.markdown-body .rc-guide table.rc-na-table,
+.rc-na-table { 
+  width: 100% !important; 
+  display: table !important; 
+  border-collapse: collapse; 
+  font-size: .84rem; 
+  margin: 0 !important; 
+  margin-bottom: 0 !important; 
+}
+
+.rc-na-table thead tr { 
+  background: #0D0D0B !important; 
+}
+
+/* Header high-specificity font color & background fix */
+.rm-Markdown.markdown-body .rc-guide .rc-na-table thead th,
+.rc-na-table thead th { 
+  background-color: #0D0D0B !important; 
+  color: #ffffff !important; 
+  font-weight: 700; 
+  text-align: left; 
+  padding: 10px 12px; 
+  white-space: normal; 
+  vertical-align: bottom; 
+}
+
+/* Body rows & cell styles */
+.rc-na-table tbody tr { 
+  background: var(--offwhite); 
+}
+
+.rc-na-table tbody tr:nth-child(even) { 
+  background: #ffffff; 
+}
+
+.rc-na-table tbody td { 
+  padding: 10px 12px; 
+  color: var(--darkgray); 
+  border-bottom: 1px solid var(--brightgray); 
+}
+
+.rc-na-table tbody tr:last-child td { 
+  border-bottom: none; 
+}
+
 @media(max-width:768px){ .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } }
 </style>
 
@@ -163,8 +217,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Payment methods by region
       </div>
-      <div class="rc-lp-hero-title"><h1>EU</h1></div>
-      <p>Why Belgium, France, Germany, Denmark, and the Netherlands each favor a different local method.</p>
+      <div class="rc-lp-hero-title"><h1>North America</h1></div>
+      <p>How US and Canadian payment preferences diverge, and which methods to prioritize in each.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -175,49 +229,82 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-sticky-link">Path overview</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-sticky-link"><span class="rc-step-badge">1</span> UK</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-sticky-link"><span class="rc-step-badge">2</span> North America</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> EU
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> North America
         </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-sticky-link"><span class="rc-step-badge">3</span> EU</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-sticky-link"><span class="rc-step-badge">5</span> LATAM</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">
-          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Scale
-        </a>
+
       </div></div></div>
     </details>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-euro-sign rc-fa-section"></i> Why it matters</h2>
-      <p>Shared currency and shared compliance rules mask sharp differences in how EU customers actually prefer to pay. Belgium looks to Bancontact, France to SEPA and Carte Bancaire, Germany to PayPal over cards, Denmark to Dankort, and the Netherlands to iDEAL. Treating "EU" as one payment strategy leaves conversion on the table in every one of these markets.</p>
+      <h2><i class="fa-solid fa-map rc-fa-section"></i> Why it matters</h2>
+      <p>The US and Canada share a currency family but not a payment culture. Canadian credit card renewals succeed at 89.8% versus 89.5% for the US, but sign-up success on cards is weak in both markets — 52% in Canada, 43% in the US — which is exactly where digital wallets and PayPal close the gap.</p>
 
-      <div class="rc-eu-table-wrap">
-        <table class="rc-eu-table">
-          <thead><tr><th>Country</th><th>Dominant local method</th><th>Why it matters</th></tr></thead>
+      <div class="rc-card-grid">
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-flag-usa"></i></div>
+          <h4>United States</h4>
+          <p>ACH leads for B2B (90.87% sign-up success). Apple Pay, Google Pay, and Amazon Pay are growing for B2C, with Klarna and Cash App gaining relevance. Chargebacks run higher here than most markets — invest in clear billing descriptors.</p>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-flag"></i></div>
+          <h4>Canada</h4>
+          <p>PayPal converts at 92.49% sign-up and 94.97% renewal — the strongest combination in the region. Apple Pay also performs well. Label prices "CAD" explicitly; many Canadians shop US sites and default to assuming USD.</p>
+        </div>
+      </div>
+
+      <h3 style="font-size: 1.15rem; font-weight: 800; margin: 24px 0 10px; color: var(--offblack);">United States</h3>
+      <div class="rc-na-table-wrap">
+        <table class="rc-na-table">
+          <thead>
+            <tr>
+              <th>Payment Type</th>
+              <th>Sign-up %</th>
+              <th>Renewal %</th>
+              <th>% of Volume when Merchant is Offering Payment Type</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td>Belgium</td><td>Bancontact</td><td>Used by ~60% of Belgian online shoppers; co-badged card mandate applies</td></tr>
-            <tr><td>France</td><td>SEPA Direct Debit / Carte Bancaire</td><td>Strong preference for SEPA and PayPal; Carte Bancaire required under co-badging rules</td></tr>
-            <tr><td>Germany</td><td>PayPal</td><td>47% conversion lift for digital goods merchants offering PayPal; #1 method in the country</td></tr>
-            <tr><td>Denmark</td><td>Dankort</td><td>Co-branded Visa card; effectively mandatory for Danish subscription conversion</td></tr>
-            <tr><td>Netherlands</td><td>iDEAL</td><td>Over 70% of Dutch online purchases; 39% conversion lift when offered</td></tr>
+            <tr><td>ACH</td><td>96.62%</td><td>97.04%</td><td>3.02%</td></tr>
+            <tr><td>Amazon Pay</td><td>94.75%</td><td>93.80%</td><td>8.18%</td></tr>
+            <tr><td>Apple Pay</td><td>89.65%</td><td>72.31%</td><td>8.37%</td></tr>
+            <tr><td>Credit Card</td><td>54.30%</td><td>89.02%</td><td>85.60%</td></tr>
+            <tr><td>Google Pay</td><td>84.59%</td><td>78.66%</td><td>1.06%</td></tr>
+            <tr><td>PayPal</td><td>93.41%</td><td>96.39%</td><td>11.23%</td></tr>
           </tbody>
         </table>
       </div>
 
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="rc-callout-body">
-          <strong>SEPA Direct Debit is the EU-wide constant</strong>
-          <p>Across Belgium, France, Germany, and the Netherlands, SEPA converts and renews above 91% — layer it in everywhere alongside whichever local method matters most in that specific market.</p>
-        </div>
+      <h3 style="font-size: 1.15rem; font-weight: 800; margin: 24px 0 10px; color: var(--offblack);">Canada</h3>
+      <div class="rc-na-table-wrap">
+        <table class="rc-na-table">
+          <thead>
+            <tr>
+              <th>Payment Type</th>
+              <th>Sign-up %</th>
+              <th>Renewal %</th>
+              <th>% of Volume when Merchant is Offering Payment Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Amazon Pay</td><td>63.83%</td><td>64.86%</td><td>0.21%</td></tr>
+            <tr><td>Apple Pay</td><td>89.69%</td><td>85.96%</td><td>7.75%</td></tr>
+            <tr><td>Credit Card</td><td>50.80%</td><td>89.66%</td><td>85.93%</td></tr>
+            <tr><td>Google Pay</td><td>87.34%</td><td>82.14%</td><td>2.01%</td></tr>
+            <tr><td>PayPal</td><td>92.87%</td><td>95.00%</td><td>13.10%</td></tr>
+          </tbody>
+        </table>
       </div>
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="rc-callout-body">
-          <strong>Co-badged card compliance is an EU-wide requirement</strong>
-          <p>Under EU IFR Regulation 2015/751, when a customer's card carries two brands (e.g. a local scheme plus Visa or Mastercard) and your checkout supports both, the customer must be able to choose which brand to pay with.</p>
+          <strong>Quebec requires French-language checkout</strong>
+          <p>Canada's Official Languages Act requires customer-facing materials — checkout, emails, terms of service — in both English and French for federally regulated businesses operating in or marketing to Quebec.</p>
         </div>
       </div>
     </div>
@@ -228,39 +315,38 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-step">
           <div class="rc-step-num">1</div>
           <div class="rc-step-content">
-            <h4>Enable EUR and DKK as needed</h4>
-            <p>In <strong>Configuration → Currencies</strong>, add Euro for Belgium, France, Germany, and the Netherlands, and Danish Krone for Denmark. Set localized pricing per plan.</p>
+            <h4>Enable USD and/or CAD</h4>
+            <p>In <strong>Configuration → Currencies</strong>, add the currencies you plan to sell in. Set localized pricing under each plan rather than relying on conversion.</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
           <div class="rc-step-content">
-            <h4>Confirm local method support on your gateway</h4>
-            <p>iDEAL and SEPA are available through Adyen or Stripe. Bancontact and Dankort require Adyen specifically — confirm your configured gateway before enabling.</p>
+            <h4>Confirm gateway coverage</h4>
+            <p>ACH is available through Adyen, GoCardless, Stripe, Worldpay, or Check Commerce. Digital wallets are broadly supported — confirm which gateways you have configured support the specific methods you want.</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
           <div class="rc-step-content">
-            <h4>Enable 3D Secure</h4>
-            <p>3DS is required across the EU under PSD2. Confirm it's active in <strong>Configuration → Payment gateways</strong> for every card transaction.</p>
+            <h4>Connect a tax engine</h4>
+            <p>US sales tax spans over 13,000 jurisdictions. Integrate Avalara or Vertex rather than managing rates manually.</p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-btn-prev">← North America</a>
-      <span class="rc-lp-nav-indicator">3 of 6</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-btn-path">Next: APAC →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-btn-prev">← UK</a>
+      <span class="rc-lp-nav-indicator">2 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-btn-path">Next: EU →</a>
     </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/ideal" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: iDEAL</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: SEPA</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/co-badged-cards-guide" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Co-badged cards guide</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/ach-bank-payments" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: ACH</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/avalara" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Avalara integration</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
     </div>
