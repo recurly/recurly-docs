@@ -91,13 +91,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
 .rc-callout-caution { background: var(--warning-bg); border-left: 4px solid var(--warning-fg); }
 .rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 8px; }
-.rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rc-feature-card:hover { border-color: #008CFF; box-shadow: 0 4px 16px rgba(0,140,255,0.15); transform: translateY(-2px); }
-.rc-feature-icon { font-size: 1.4rem; line-height: 1; color: var(--offblack); }
-.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
-@media(max-width:768px){ .rc-card-grid { grid-template-columns: 1fr; } }
+.rc-accent-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
+.rc-accent-card.rc-accent-scale { border-left: 4px solid var(--scale); }
+.rc-accent-card h4 { font-size: 1rem; font-weight: 800; color: var(--offblack); margin: 0 0 12px; }
+.rc-accent-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.65; margin: 0; }
 .rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
 .rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--brightgray); }
 .rc-step:last-child { border-bottom: none; }
@@ -140,61 +137,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
-
-/* APAC comparison table wrapper */
-.rc-apac-table-wrap { 
-  overflow-x: auto; 
-  margin: 8px 0 24px; 
-  border: 1px solid var(--lightgray); 
-  border-radius: 10px; 
-}
-
-/* Force table expansion and remove bottom margin white space */
-.rm-Markdown.markdown-body .rc-guide table.rc-apac-table,
-.rc-apac-table { 
-  width: 100% !important; 
-  display: table !important; 
-  border-collapse: collapse; 
-  font-size: .84rem; 
-  margin: 0 !important; 
-  margin-bottom: 0 !important; 
-}
-
-.rc-apac-table thead tr { 
-  background: #0D0D0B !important; 
-}
-
-/* Header high-specificity font color & background fix */
-.rm-Markdown.markdown-body .rc-guide .rc-apac-table thead th,
-.rc-apac-table thead th { 
-  background-color: #0D0D0B !important; 
-  color: #ffffff !important; 
-  font-weight: 700; 
-  text-align: left; 
-  padding: 10px 12px; 
-  white-space: normal; 
-  vertical-align: bottom; 
-}
-
-/* Body rows & cell styles */
-.rc-apac-table tbody tr { 
-  background: var(--offwhite); 
-}
-
-.rc-apac-table tbody tr:nth-child(even) { 
-  background: #ffffff; 
-}
-
-.rc-apac-table tbody td { 
-  padding: 10px 12px; 
-  color: var(--darkgray); 
-  border-bottom: 1px solid var(--brightgray); 
-}
-
-.rc-apac-table tbody tr:last-child td { 
-  border-bottom: none; 
-}
-
+.rc-latam-table-wrap { overflow-x: auto; margin: 8px 0 24px; border: 1px solid var(--lightgray); border-radius: 10px; }
+.rc-latam-table { width: 100%; border-collapse: collapse; font-size: .86rem; }
+.rc-latam-table thead tr { background: var(--offblack); }
+.rc-latam-table thead th { color: var(--offwhite) !important; font-weight: 700; text-align: left; padding: 10px 14px; white-space: nowrap; }
+.rc-latam-table tbody tr { background: var(--offwhite); }
+.rc-latam-table tbody tr:nth-child(even) { background: #ffffff; }
+.rc-latam-table tbody td { padding: 10px 14px; color: var(--darkgray); border-bottom: 1px solid var(--brightgray); }
+.rc-latam-table tbody tr:last-child td { border-bottom: none; }
 @media(max-width:768px){ .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } }
 </style>
 
@@ -217,8 +167,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Payment methods by region
       </div>
-      <div class="rc-lp-hero-title"><h1>APAC</h1></div>
-      <p>BECS in Australia and UPI Auto Pay in India — two very different mandates and payment cultures.</p>
+      <div class="rc-lp-hero-title"><h1>LATAM</h1></div>
+      <p>Why Brazil's payment mix, led by Pix Automático, looks nothing like the rest of the world.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -227,15 +177,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-sticky-link">Path overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-sticky-link"><span class="rc-step-badge">1</span> UK</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-sticky-link"><span class="rc-step-badge">2</span> North America</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-sticky-link"><span class="rc-step-badge">3</span> EU</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> APAC
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region" class="rc-sticky-link">Path overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-uk" class="rc-sticky-link"><span class="rc-step-badge">1</span> UK</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-north-america" class="rc-sticky-link"><span class="rc-step-badge">2</span> North America</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-eu" class="rc-sticky-link"><span class="rc-step-badge">3</span> EU</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-apac" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-latam" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> LATAM
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-sticky-link"><span class="rc-step-badge">5</span> LATAM</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">
           <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Scale
         </a>
@@ -243,66 +193,39 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </details>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-earth-asia rc-fa-section"></i> Why it matters</h2>
-      <p>Australia and India both run on mandate-based direct debit systems, but the mandates themselves — and the customer behavior around them — look nothing alike. BECS in Australia is a mature, high-success rail. UPI Auto Pay in India is newer but already outperforms every other method in the market on sign-up success.</p>
+      <h2><i class="fa-solid fa-earth-americas rc-fa-section"></i> Why it matters</h2>
+      <p>Brazil doesn't fit the credit-card-first model most merchants default to. Pix Automático is used by more than 75% of Brazilians, charges no fees to individuals, and settles near-instantly — but it's new enough that most merchants haven't adopted it yet. Meanwhile credit cards, the most commonly offered method, convert at just 58.45% sign-up.</p>
 
-      <div class="rc-feature-card">
-        <div class="rc-feature-icon"><i class="fa-solid fa-building-columns"></i></div>
-        <h4>Australia</h4>
-        <p>BECS converts at 97.22% sign-up and 99.23% renewal, but only 0.65% of merchants offer it. PayPal is offered by 34% of merchants and converts strongly. Foreign businesses exceeding AUD $75,000 in Australian revenue must register for GST.</p>
-      </div>
-
-      <div class="rc-apac-table-wrap">
-        <table class="rc-apac-table">
-          <thead>
-            <tr>
-              <th>Payment Type</th>
-              <th>Sign-up %</th>
-              <th>Renewal %</th>
-              <th>% of Volume when Merchant is Offering Payment Type</th>
-            </tr>
-          </thead>
+      <div class="rc-latam-table-wrap">
+        <table class="rc-latam-table">
+          <thead><tr><th>Payment Type</th><th>Sign-up %</th><th>Renewal %</th><th>% of Volume when Merchant is Offering Payment Type</th></tr></thead>
           <tbody>
-            <tr><td>Apple Pay</td><td>87.33%</td><td>76.49%</td><td>6.60%</td></tr>
-            <tr><td>BECS</td><td>99.05%</td><td>99.09%</td><td>8.14%</td></tr>
-            <tr><td>Credit Card</td><td>82.95%</td><td>83.19%</td><td>85.52%</td></tr>
-            <tr><td>Google Pay</td><td>84.85%</td><td>68.93%</td><td>1.72%</td></tr>
-            <tr><td>PayPal</td><td>93.51%</td><td>93.73%</td><td>13.97%</td></tr>
+            <tr><td>Apple Pay</td><td>46.54%</td><td>68.02%</td><td>3.30%</td></tr>
+            <tr><td>Credit Card</td><td>42.82%</td><td>80.27%</td><td>93.56%</td></tr>
+            <tr><td>Google Pay</td><td>48.30%</td><td>68.19%</td><td>3.90%</td></tr>
+            <tr><td>PayPal</td><td>76.26%</td><td>86.55%</td><td>5.32%</td></tr>
           </tbody>
         </table>
       </div>
 
-      <div class="rc-feature-card">
-        <div class="rc-feature-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
-        <h4>India</h4>
-        <p>UPI Auto Pay leads sign-up success at 87.13%, well above credit cards at 36.18%. Apple Pay also performs strongly (85.85%). Free trials and low entry-price tiers resonate strongly with Indian consumers.</p>
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-body">
+          <strong>Pix Automático and Mercado Pago are new but growing fast</strong>
+          <p>Recurly added Pix Automático and Mercado Pago support specifically to strengthen LATAM coverage. Adoption is still early, so merchants who enable them now are ahead of where most of the market currently sits. Mercado Pago via Ebanx also extends to Argentina, Chile, Mexico, and Uruguay.</p>
+        </div>
       </div>
 
-      <div class="rc-apac-table-wrap">
-        <table class="rc-apac-table">
-          <thead>
-            <tr>
-              <th>Payment Type</th>
-              <th>Sign-up %</th>
-              <th>Renewal %</th>
-              <th>% of Volume when Merchant is Offering Payment Type</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Apple Pay</td><td>81.20%</td><td>68.78%</td><td>0.40%</td></tr>
-            <tr><td>Credit Card</td><td>12.16%</td><td>50.14%</td><td>92.70%</td></tr>
-            <tr><td>Google Pay</td><td>46.56%</td><td>49.56%</td><td>1.17%</td></tr>
-            <tr><td>PayPal</td><td>25.21%</td><td>79.60%</td><td>4.40%</td></tr>
-            <tr><td>UPI AutoPay</td><td>85.94%</td><td>82.55%</td><td>91.38%</td></tr>
-          </tbody>
-        </table>
+      <div class="rc-accent-card rc-accent-scale">
+        <h4>Installments change how you should price</h4>
+        <p>Brazil has a strong cultural preference for installment payments. A monthly subscription billed over 12 months will typically outperform an annual plan billed as a single lump sum — structure your Brazil pricing with that in mind rather than porting your standard annual plan directly.</p>
       </div>
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="rc-callout-body">
-          <strong>RBI requires 3DS and 24-hour advance notice on recurring payments</strong>
-          <p>The Reserve Bank of India mandates additional verification for recurring transactions and requires cardholders receive pre-transaction notification at least 24 hours before a recurring charge. Payments must also settle in INR — cross-border INR transactions are restricted.</p>
+          <strong>E-invoicing is mandatory for domestic taxpayers</strong>
+          <p>Brazil's tax system is one of the most complex globally, and e-invoicing is required for virtually all domestic taxpayers. Merchants with a local entity or a local partner need systems that comply with this before launching.</p>
         </div>
       </div>
     </div>
@@ -313,39 +236,39 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-step">
           <div class="rc-step-num">1</div>
           <div class="rc-step-content">
-            <h4>Enable AUD and/or INR</h4>
-            <p>In <strong>Configuration → Currencies</strong>, add the currencies you need and set localized pricing per plan.</p>
+            <h4>Enable BRL</h4>
+            <p>In <strong>Configuration → Currencies</strong>, add Brazilian Real and set localized, installment-friendly pricing under each plan.</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
           <div class="rc-step-content">
-            <h4>Confirm gateway coverage</h4>
-            <p>BECS is available through GoCardless or Stripe. UPI Auto Pay is available through Ebanx — Recurly's preferred gateway for India transactions.</p>
+            <h4>Connect Ebanx</h4>
+            <p>Pix Automático, UPI-style local mandates, and Mercado Pago all route through Ebanx — Recurly's gateway partner built for local acquiring in LATAM.</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
           <div class="rc-step-content">
-            <h4>Enable 3DS for India</h4>
-            <p>Turn on 3D Secure in your gateway configuration to satisfy the RBI mandate before processing recurring INR transactions.</p>
+            <h4>Plan for tax compliance</h4>
+            <p>Use a tax engine such as Avalara or Vertex, and confirm your e-invoicing setup complies with Brazilian requirements before going live.</p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-btn-prev">← EU</a>
-      <span class="rc-lp-nav-indicator">4 of 6</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-btn-path">Next: LATAM →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-apac" class="rc-btn-prev">← APAC</a>
+      <span class="rc-lp-nav-indicator">5 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-review" class="rc-btn-path">Next: Review &amp; resources →</a>
     </div>
 
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/becs" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: BECS</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: UPI AutoPay</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: RBI regulations</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Pix Automático</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/mercadopago" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Mercado Pago</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Ebanx gateway</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
       </div>
     </div>
@@ -354,13 +277,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Payment methods by region</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-footer-link">1. UK</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-footer-link">2. North America</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-footer-link">3. EU</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-footer-link">4. APAC</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-footer-link">5. LATAM</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-footer-link">6. Review &amp; resources</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region" class="rc-footer-link">Path overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-uk" class="rc-footer-link">1. UK</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-north-america" class="rc-footer-link">2. North America</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-eu" class="rc-footer-link">3. EU</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-apac" class="rc-footer-link">4. APAC</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-latam" class="rc-footer-link">5. LATAM</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-methods-by-region-review" class="rc-footer-link">6. Review &amp; resources</a>
         </div>
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
