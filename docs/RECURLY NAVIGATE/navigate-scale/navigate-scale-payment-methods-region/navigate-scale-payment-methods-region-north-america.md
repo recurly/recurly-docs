@@ -1,8 +1,25 @@
 ---
 title: 'Payment methods by region: North America'
+excerpt: >-
+  Optimize North American subscription billing with Recurly by configuring ACH
+  payments, PayPal, digital wallets, CAD localized pricing, and Quebec
+  compliance rules to boost conversion.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Optimize North American subscription billing with Recurly by configuring ACH
+    payments, PayPal, digital wallets, CAD localized pricing, and Quebec
+    compliance rules to boost conversion.
+  keywords:
+    - To maximize search visibility and AI retrieval
+    - target Recurly North America payment methods
+    - ACH subscription billing integration
+    - US vs Canada payment conversion rates
+    - CAD localized pricing setup
+    - Quebec French checkout compliance
+    - Avalara sales tax integration Recurly
+    - and PayPal subscription performance.
   robots: index
 ---
 <HTMLBlock>{`
