@@ -1,8 +1,25 @@
 ---
 title: 'Payment methods by region: EU'
+excerpt: >-
+  Configure local EU payment methods in Recurly — including iDEAL, SEPA Direct
+  Debit, Bancontact, and Dankort—to maximize subscription conversion, meet IFR
+  co-badged card rules, and comply with PSD2 3DS requirements.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Configure local EU payment methods in Recurly—including iDEAL, SEPA Direct
+    Debit, Bancontact, and Dankort—to maximize subscription conversion, meet IFR
+    co-badged card rules, and comply with PSD2 3DS requirements.
+  keywords:
+    - To optimize search visibility and AI retrieval
+    - target Recurly EU payment methods
+    - SEPA Direct Debit subscription setup
+    - iDEAL recurring payments integration
+    - Bancontact checkout setup
+    - Dankort payment gateway configuration
+    - EU IFR co-badged card compliance
+    - and PSD2 3D Secure implementation.
   robots: index
 ---
 <HTMLBlock>{`
