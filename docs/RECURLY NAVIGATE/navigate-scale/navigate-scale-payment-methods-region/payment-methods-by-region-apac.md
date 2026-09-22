@@ -142,14 +142,61 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
-.rc-apac-table-wrap { overflow-x: auto; margin: 8px 0 24px; border: 1px solid var(--lightgray); border-radius: 10px; }
-.rc-apac-table { width: 100%; border-collapse: collapse; font-size: .86rem; }
-.rc-apac-table thead tr { background: var(--offblack); }
-.rc-apac-table thead th { color: var(--offwhite) !important; font-weight: 700; text-align: left; padding: 10px 14px; white-space: nowrap; }
-.rc-apac-table tbody tr { background: var(--offwhite); }
-.rc-apac-table tbody tr:nth-child(even) { background: #ffffff; }
-.rc-apac-table tbody td { padding: 10px 14px; color: var(--darkgray); border-bottom: 1px solid var(--brightgray); }
-.rc-apac-table tbody tr:last-child td { border-bottom: none; }
+
+/* APAC comparison table wrapper */
+.rc-apac-table-wrap { 
+  overflow-x: auto; 
+  margin: 8px 0 24px; 
+  border: 1px solid var(--lightgray); 
+  border-radius: 10px; 
+}
+
+/* Force table expansion and remove bottom margin white space */
+.rm-Markdown.markdown-body .rc-guide table.rc-apac-table,
+.rc-apac-table { 
+  width: 100% !important; 
+  display: table !important; 
+  border-collapse: collapse; 
+  font-size: .84rem; 
+  margin: 0 !important; 
+  margin-bottom: 0 !important; 
+}
+
+.rc-apac-table thead tr { 
+  background: #0D0D0B !important; 
+}
+
+/* Header high-specificity font color & background fix */
+.rm-Markdown.markdown-body .rc-guide .rc-apac-table thead th,
+.rc-apac-table thead th { 
+  background-color: #0D0D0B !important; 
+  color: #ffffff !important; 
+  font-weight: 700; 
+  text-align: left; 
+  padding: 10px 12px; 
+  white-space: normal; 
+  vertical-align: bottom; 
+}
+
+/* Body rows & cell styles */
+.rc-apac-table tbody tr { 
+  background: var(--offwhite); 
+}
+
+.rc-apac-table tbody tr:nth-child(even) { 
+  background: #ffffff; 
+}
+
+.rc-apac-table tbody td { 
+  padding: 10px 12px; 
+  color: var(--darkgray); 
+  border-bottom: 1px solid var(--brightgray); 
+}
+
+.rc-apac-table tbody tr:last-child td { 
+  border-bottom: none; 
+}
+
 @media(max-width:768px){ .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } }
 </style>
 
@@ -201,28 +248,54 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-earth-asia rc-fa-section"></i> Why it matters</h2>
       <p>Australia and India both run on mandate-based direct debit systems, but the mandates themselves — and the customer behavior around them — look nothing alike. BECS in Australia is a mature, high-success rail. UPI Auto Pay in India is newer but already outperforms every other method in the market on sign-up success.</p>
 
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-building-columns"></i></div>
-          <h4>Australia</h4>
-          <p>BECS converts at 97.22% sign-up and 99.23% renewal, but only 0.65% of merchants offer it. PayPal is offered by 34% of merchants and converts strongly. Foreign businesses exceeding AUD $75,000 in Australian revenue must register for GST.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
-          <h4>India</h4>
-          <p>UPI Auto Pay leads sign-up success at 87.13%, well above credit cards at 36.18%. Apple Pay also performs strongly (85.85%). Free trials and low entry-price tiers resonate strongly with Indian consumers.</p>
-        </div>
+      <div class="rc-feature-card">
+        <div class="rc-feature-icon"><i class="fa-solid fa-building-columns"></i></div>
+        <h4>Australia</h4>
+        <p>BECS converts at 97.22% sign-up and 99.23% renewal, but only 0.65% of merchants offer it. PayPal is offered by 34% of merchants and converts strongly. Foreign businesses exceeding AUD $75,000 in Australian revenue must register for GST.</p>
       </div>
 
       <div class="rc-apac-table-wrap">
         <table class="rc-apac-table">
-          <thead><tr><th>Method</th><th>Market</th><th>Sign-up success</th><th>Renewal success</th></tr></thead>
+          <thead>
+            <tr>
+              <th>Payment Type</th>
+              <th>Sign-up %</th>
+              <th>Renewal %</th>
+              <th>% of Volume when Merchant is Offering Payment Type</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td>BECS</td><td>Australia</td><td>97.22%</td><td>99.23%</td></tr>
-            <tr><td>PayPal</td><td>Australia</td><td>94.05%</td><td>93.54%</td></tr>
-            <tr><td>UPI Auto Pay</td><td>India</td><td>87.13%</td><td>81.88%</td></tr>
-            <tr><td>Apple Pay</td><td>India</td><td>85.85%</td><td>60.63%</td></tr>
-            <tr><td>Credit card</td><td>India</td><td>36.18%</td><td>53.80%</td></tr>
+            <tr><td>Apple Pay</td><td>87.33%</td><td>76.49%</td><td>6.60%</td></tr>
+            <tr><td>BECS</td><td>99.05%</td><td>99.09%</td><td>8.14%</td></tr>
+            <tr><td>Credit Card</td><td>82.95%</td><td>83.19%</td><td>85.52%</td></tr>
+            <tr><td>Google Pay</td><td>84.85%</td><td>68.93%</td><td>1.72%</td></tr>
+            <tr><td>PayPal</td><td>93.51%</td><td>93.73%</td><td>13.97%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="rc-feature-card">
+        <div class="rc-feature-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+        <h4>India</h4>
+        <p>UPI Auto Pay leads sign-up success at 87.13%, well above credit cards at 36.18%. Apple Pay also performs strongly (85.85%). Free trials and low entry-price tiers resonate strongly with Indian consumers.</p>
+      </div>
+
+      <div class="rc-apac-table-wrap">
+        <table class="rc-apac-table">
+          <thead>
+            <tr>
+              <th>Payment Type</th>
+              <th>Sign-up %</th>
+              <th>Renewal %</th>
+              <th>% of Volume when Merchant is Offering Payment Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Apple Pay</td><td>81.20%</td><td>68.78%</td><td>0.40%</td></tr>
+            <tr><td>Credit Card</td><td>12.16%</td><td>50.14%</td><td>92.70%</td></tr>
+            <tr><td>Google Pay</td><td>46.56%</td><td>49.56%</td><td>1.17%</td></tr>
+            <tr><td>PayPal</td><td>25.21%</td><td>79.60%</td><td>4.40%</td></tr>
+            <tr><td>UPI AutoPay</td><td>85.94%</td><td>82.55%</td><td>91.38%</td></tr>
           </tbody>
         </table>
       </div>
