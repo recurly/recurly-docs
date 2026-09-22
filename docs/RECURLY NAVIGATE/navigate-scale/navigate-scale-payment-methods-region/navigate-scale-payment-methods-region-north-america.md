@@ -6,6 +6,8 @@ excerpt: >-
   co-badged card rules, and comply with PSD2 3DS requirements.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   description: >-
     Configure local EU payment methods in Recurly—including iDEAL, SEPA Direct
