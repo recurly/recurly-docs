@@ -400,7 +400,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
     </div>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h2>
+      <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-next-card">
           <div class="rc-next-card-tag">Recommended next</div>
