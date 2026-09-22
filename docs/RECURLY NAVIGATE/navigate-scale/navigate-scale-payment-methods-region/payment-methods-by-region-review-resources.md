@@ -192,6 +192,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
+
+
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-btn-prev">← LATAM</a>
+      <span class="rc-lp-nav-indicator">6 of 6</span>
+      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
+    </div>
+
  <div class="rc-lp-section">
       <h2><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h2>
       <div class="rc-next-grid">
@@ -217,12 +225,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-next-card-arrow">Register &rarr;</div>
         </a>
       </div>
-    </div>
-
-    <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-btn-prev">← LATAM</a>
-      <span class="rc-lp-nav-indicator">6 of 6</span>
-      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
     </div>
 
     <div class="rc-resources">
