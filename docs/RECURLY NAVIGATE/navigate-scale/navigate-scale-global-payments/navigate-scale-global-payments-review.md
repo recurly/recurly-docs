@@ -399,7 +399,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
     </div>
 
-    <div class="rc-lp-section">
+    <div class="rc-next-steps">
       <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-next-card">
