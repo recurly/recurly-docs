@@ -391,6 +391,12 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       <p>Local acquiring vs. merchant of record, currency and payment methods, or compliance and language. What's the one thing you still need to find out before you can make that call?</p>
     </div>
 
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-btn-prev">&larr; Compliance &amp; language</a>
+      <span class="rc-lp-nav-indicator">4 of 4</span>
+      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
+    </div>
+
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h2>
       <div class="rc-next-grid">
@@ -431,11 +437,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
       </div>
     </div>
 
-    <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-global-payments-compliance" class="rc-btn-prev">&larr; Compliance &amp; language</a>
-      <span class="rc-lp-nav-indicator">4 of 4</span>
-      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
-    </div>
+
 
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
