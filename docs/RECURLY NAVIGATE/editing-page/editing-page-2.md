@@ -137,14 +137,60 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
-.rc-latam-table-wrap { overflow-x: auto; margin: 8px 0 24px; border: 1px solid var(--lightgray); border-radius: 10px; }
-.rc-latam-table { width: 100%; border-collapse: collapse; font-size: .86rem; }
-.rc-latam-table thead tr { background: var(--offblack); }
-.rc-latam-table thead th { color: var(--offwhite) !important; font-weight: 700; text-align: left; padding: 10px 14px; white-space: nowrap; }
-.rc-latam-table tbody tr { background: var(--offwhite); }
-.rc-latam-table tbody tr:nth-child(even) { background: #ffffff; }
-.rc-latam-table tbody td { padding: 10px 14px; color: var(--darkgray); border-bottom: 1px solid var(--brightgray); }
-.rc-latam-table tbody tr:last-child td { border-bottom: none; }
+
+/* LATAM comparison table wrapper */
+.rc-latam-table-wrap { 
+  overflow-x: auto; 
+  margin: 8px 0 24px; 
+  border: 1px solid var(--lightgray); 
+  border-radius: 10px; 
+}
+
+/* Force table expansion and remove bottom margin white space */
+.rm-Markdown.markdown-body .rc-guide table.rc-latam-table,
+.rc-latam-table { 
+  width: 100% !important; 
+  display: table !important; 
+  border-collapse: collapse; 
+  font-size: .84rem; 
+  margin: 0 !important; 
+  margin-bottom: 0 !important; 
+}
+
+.rc-latam-table thead tr { 
+  background: #0D0D0B !important; 
+}
+
+/* Header high-specificity font color & background fix */
+.rm-Markdown.markdown-body .rc-guide .rc-latam-table thead th,
+.rc-latam-table thead th { 
+  background-color: #0D0D0B !important; 
+  color: #ffffff !important; 
+  font-weight: 700; 
+  text-align: left; 
+  padding: 10px 12px; 
+  white-space: normal; 
+  vertical-align: bottom; 
+}
+
+/* Body rows & cell styles */
+.rc-latam-table tbody tr { 
+  background: var(--offwhite); 
+}
+
+.rc-latam-table tbody tr:nth-child(even) { 
+  background: #ffffff; 
+}
+
+.rc-latam-table tbody td { 
+  padding: 10px 12px; 
+  color: var(--darkgray); 
+  border-bottom: 1px solid var(--brightgray); 
+}
+
+.rc-latam-table tbody tr:last-child td { 
+  border-bottom: none; 
+}
 @media(max-width:768px){ .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } }
 </style>
 
