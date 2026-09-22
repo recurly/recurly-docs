@@ -244,20 +244,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-map rc-fa-section"></i> Why it matters</h2>
       <p>The US and Canada share a currency family but not a payment culture. Canadian credit card renewals succeed at 89.8% versus 89.5% for the US, but sign-up success on cards is weak in both markets — 52% in Canada, 43% in the US — which is exactly where digital wallets and PayPal close the gap.</p>
 
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-flag-usa"></i></div>
-          <h4>United States</h4>
-          <p>ACH leads for B2B (90.87% sign-up success). Apple Pay, Google Pay, and Amazon Pay are growing for B2C, with Klarna and Cash App gaining relevance. Chargebacks run higher here than most markets — invest in clear billing descriptors.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-flag"></i></div>
-          <h4>Canada</h4>
-          <p>PayPal converts at 92.49% sign-up and 94.97% renewal — the strongest combination in the region. Apple Pay also performs well. Label prices "CAD" explicitly; many Canadians shop US sites and default to assuming USD.</p>
-        </div>
+      <div class="rc-feature-card">
+        <div class="rc-feature-icon"><i class="fa-solid fa-flag-usa"></i></div>
+        <h4>United States</h4>
+        <p>ACH leads for B2B (90.87% sign-up success). Apple Pay, Google Pay, and Amazon Pay are growing for B2C, with Klarna and Cash App gaining relevance. Chargebacks run higher here than most markets — invest in clear billing descriptors.</p>
       </div>
 
-      <h3 style="font-size: 1.15rem; font-weight: 800; margin: 24px 0 10px; color: var(--offblack);">United States</h3>
       <div class="rc-na-table-wrap">
         <table class="rc-na-table">
           <thead>
@@ -279,7 +271,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </table>
       </div>
 
-      <h3 style="font-size: 1.15rem; font-weight: 800; margin: 24px 0 10px; color: var(--offblack);">Canada</h3>
+      <div class="rc-feature-card">
+        <div class="rc-feature-icon"><i class="fa-solid fa-flag"></i></div>
+        <h4>Canada</h4>
+        <p>PayPal converts at 92.49% sign-up and 94.97% renewal — the strongest combination in the region. Apple Pay also performs well. Label prices "CAD" explicitly; many Canadians shop US sites and default to assuming USD.</p>
+      </div>
+
       <div class="rc-na-table-wrap">
         <table class="rc-na-table">
           <thead>
