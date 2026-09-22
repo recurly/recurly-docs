@@ -157,14 +157,61 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
-.rc-na-table-wrap { overflow-x: auto; margin: 8px 0 24px; border: 1px solid var(--lightgray); border-radius: 10px; }
-.rc-na-table { width: 100%; border-collapse: collapse; font-size: .86rem; }
-.rc-na-table thead tr { background: var(--offblack); }
-.rc-na-table thead th { color: var(--offwhite) !important; font-weight: 700; text-align: left; padding: 10px 14px; white-space: nowrap; }
-.rc-na-table tbody tr { background: var(--offwhite); }
-.rc-na-table tbody tr:nth-child(even) { background: #ffffff; }
-.rc-na-table tbody td { padding: 10px 14px; color: var(--darkgray); border-bottom: 1px solid var(--brightgray); }
-.rc-na-table tbody tr:last-child td { border-bottom: none; }
+
+/* NA comparison table wrapper */
+.rc-na-table-wrap { 
+  overflow-x: auto; 
+  margin: 8px 0 24px; 
+  border: 1px solid var(--lightgray); 
+  border-radius: 10px; 
+}
+
+/* Force table expansion and remove bottom margin white space */
+.rm-Markdown.markdown-body .rc-guide table.rc-na-table,
+.rc-na-table { 
+  width: 100% !important; 
+  display: table !important; 
+  border-collapse: collapse; 
+  font-size: .84rem; 
+  margin: 0 !important; 
+  margin-bottom: 0 !important; 
+}
+
+.rc-na-table thead tr { 
+  background: #0D0D0B !important; 
+}
+
+/* Header high-specificity font color & background fix */
+.rm-Markdown.markdown-body .rc-guide .rc-na-table thead th,
+.rc-na-table thead th { 
+  background-color: #0D0D0B !important; 
+  color: #ffffff !important; 
+  font-weight: 700; 
+  text-align: left; 
+  padding: 10px 12px; 
+  white-space: normal; 
+  vertical-align: bottom; 
+}
+
+/* Body rows & cell styles */
+.rc-na-table tbody tr { 
+  background: var(--offwhite); 
+}
+
+.rc-na-table tbody tr:nth-child(even) { 
+  background: #ffffff; 
+}
+
+.rc-na-table tbody td { 
+  padding: 10px 12px; 
+  color: var(--darkgray); 
+  border-bottom: 1px solid var(--brightgray); 
+}
+
+.rc-na-table tbody tr:last-child td { 
+  border-bottom: none; 
+}
+
 @media(max-width:768px){ .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } }
 </style>
 
@@ -214,28 +261,55 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-map rc-fa-section"></i> Why it matters</h2>
       <p>The US and Canada share a currency family but not a payment culture. Canadian credit card renewals succeed at 89.8% versus 89.5% for the US, but sign-up success on cards is weak in both markets — 52% in Canada, 43% in the US — which is exactly where digital wallets and PayPal close the gap.</p>
 
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-flag-usa"></i></div>
-          <h4>United States</h4>
-          <p>ACH leads for B2B (90.87% sign-up success). Apple Pay, Google Pay, and Amazon Pay are growing for B2C, with Klarna and Cash App gaining relevance. Chargebacks run higher here than most markets — invest in clear billing descriptors.</p>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-flag"></i></div>
-          <h4>Canada</h4>
-          <p>PayPal converts at 92.49% sign-up and 94.97% renewal — the strongest combination in the region. Apple Pay also performs well. Label prices "CAD" explicitly; many Canadians shop US sites and default to assuming USD.</p>
-        </div>
+      <div class="rc-feature-card">
+        <div class="rc-feature-icon"><i class="fa-solid fa-flag-usa"></i></div>
+        <h4>United States</h4>
+        <p>ACH leads for B2B (90.87% sign-up success). Apple Pay, Google Pay, and Amazon Pay are growing for B2C, with Klarna and Cash App gaining relevance. Chargebacks run higher here than most markets — invest in clear billing descriptors.</p>
       </div>
 
       <div class="rc-na-table-wrap">
         <table class="rc-na-table">
-          <thead><tr><th>Method</th><th>US sign-up</th><th>US renewal</th><th>Canada sign-up</th><th>Canada renewal</th></tr></thead>
+          <thead>
+            <tr>
+              <th>Payment Type</th>
+              <th>Sign-up %</th>
+              <th>Renewal %</th>
+              <th>% of Volume when Merchant is Offering Payment Type</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td>Credit card</td><td>43.23%</td><td>89.52%</td><td>52.19%</td><td>89.80%</td></tr>
-            <tr><td>PayPal</td><td>91.15%</td><td>96.37%</td><td>92.49%</td><td>94.97%</td></tr>
-            <tr><td>Apple Pay</td><td>88.68%</td><td>69.30%</td><td>87.69%</td><td>84.91%</td></tr>
-            <tr><td>Google Pay</td><td>78.80%</td><td>79.31%</td><td>70.04%</td><td>85.03%</td></tr>
-            <tr><td>ACH</td><td>90.87%</td><td>91.76%</td><td>—</td><td>—</td></tr>
+            <tr><td>ACH</td><td>96.62%</td><td>97.04%</td><td>3.02%</td></tr>
+            <tr><td>Amazon Pay</td><td>94.75%</td><td>93.80%</td><td>8.18%</td></tr>
+            <tr><td>Apple Pay</td><td>89.65%</td><td>72.31%</td><td>8.37%</td></tr>
+            <tr><td>Credit Card</td><td>54.30%</td><td>89.02%</td><td>85.60%</td></tr>
+            <tr><td>Google Pay</td><td>84.59%</td><td>78.66%</td><td>1.06%</td></tr>
+            <tr><td>PayPal</td><td>93.41%</td><td>96.39%</td><td>11.23%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="rc-feature-card">
+        <div class="rc-feature-icon"><i class="fa-solid fa-flag"></i></div>
+        <h4>Canada</h4>
+        <p>PayPal converts at 92.49% sign-up and 94.97% renewal — the strongest combination in the region. Apple Pay also performs well. Label prices "CAD" explicitly; many Canadians shop US sites and default to assuming USD.</p>
+      </div>
+
+      <div class="rc-na-table-wrap">
+        <table class="rc-na-table">
+          <thead>
+            <tr>
+              <th>Payment Type</th>
+              <th>Sign-up %</th>
+              <th>Renewal %</th>
+              <th>% of Volume when Merchant is Offering Payment Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Amazon Pay</td><td>63.83%</td><td>64.86%</td><td>0.21%</td></tr>
+            <tr><td>Apple Pay</td><td>89.69%</td><td>85.96%</td><td>7.75%</td></tr>
+            <tr><td>Credit Card</td><td>50.80%</td><td>89.66%</td><td>85.93%</td></tr>
+            <tr><td>Google Pay</td><td>87.34%</td><td>82.14%</td><td>2.01%</td></tr>
+            <tr><td>PayPal</td><td>92.87%</td><td>95.00%</td><td>13.10%</td></tr>
           </tbody>
         </table>
       </div>
