@@ -152,6 +152,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
+
 /* EU comparison table wrapper */
 .rc-eu-table-wrap { 
   overflow-x: auto; 
@@ -205,6 +206,115 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-eu-table tbody tr:last-child td { 
   border-bottom: none; 
 }
+
+/* Accordion styling */
+.rc-country-accordion-header {
+  margin: 32px 0 12px;
+}
+.rc-country-accordion-header h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--offblack);
+  margin: 0 0 6px;
+}
+.rc-country-accordion-header p {
+  font-size: .92rem;
+  color: var(--darkgray);
+  margin: 0;
+  line-height: 1.5;
+}
+.rc-country-accordions {
+  margin: 16px 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+details.rc-accordion-item {
+  background: var(--offwhite);
+  border: 1px solid var(--lightgray);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+details.rc-accordion-item[open] {
+  border-color: var(--gray);
+}
+details.rc-accordion-item > summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  cursor: pointer;
+  user-select: none;
+  background: var(--brightgray);
+  font-weight: 700;
+  font-size: .95rem;
+  color: var(--offblack);
+}
+details.rc-accordion-item > summary::-webkit-details-marker { display: none; }
+details.rc-accordion-item > summary::marker { display: none; }
+.rc-accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rc-accordion-chevron {
+  font-size: .8rem;
+  color: var(--gray);
+  transition: transform 0.25s ease;
+}
+details.rc-accordion-item[open] .rc-accordion-chevron {
+  transform: rotate(180deg);
+}
+.rc-accordion-content {
+  padding: 20px 24px 24px;
+  border-top: 1px solid var(--lightgray);
+  background: #ffffff;
+}
+.rc-country-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+@media (max-width: 860px) {
+  .rc-country-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.rc-country-col h4 {
+  font-size: .95rem;
+  font-weight: 800;
+  color: var(--offblack);
+  margin: 0 0 10px;
+}
+.rc-country-col ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: .88rem;
+  line-height: 1.6;
+  color: var(--darkgray);
+}
+.rc-country-col ul li {
+  margin-bottom: 6px;
+}
+.rc-country-col ul.checklist {
+  list-style-type: none;
+  padding-left: 0;
+}
+.rc-country-col ul.checklist li {
+  position: relative;
+  padding-left: 20px;
+}
+.rc-country-col ul.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--offblack);
+  font-weight: 800;
+}
+
 @media(max-width:768px){ .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } }
 </style>
 
@@ -264,7 +374,339 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <tr><td>Denmark</td><td>Dankort</td><td>Co-branded Visa card; effectively mandatory for Danish subscription conversion</td></tr>
             <tr><td>Netherlands</td><td>iDEAL</td><td>Over 70% of Dutch online purchases; 39% conversion lift when offered</td></tr>
           </tbody>
-        </table>
+      </table>
+      </div>
+
+      <div class="rc-country-accordion-header">
+        <h3>Country-Specific Performance &amp; Breakdown</h3>
+        <p>Select a country below to view detailed payment method sign-up and renewal conversion metrics, volume shares, market considerations, and expansion checklists.</p>
+      </div>
+
+      <div class="rc-country-accordions">
+
+        <!-- Belgium Accordion -->
+        <details class="rc-accordion-item">
+          <summary>
+            <span class="rc-accordion-title">🇧🇪 Belgium — Euro (EUR)</span>
+            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
+          </summary>
+          <div class="rc-accordion-content">
+            <div class="rc-country-grid">
+              <div class="rc-country-col">
+                <h4>Considerations</h4>
+                <ul>
+                  <li>Bancontact is the primary local card scheme, used by nearly 60% of Belgian consumers for online purchases — absence has a direct impact on conversion.</li>
+                  <li>SEPA Direct Debit increases conversion by 12% when used by EU customers.</li>
+                  <li>Payconiq is the companion mobile app to Bancontact, growing especially among younger consumers.</li>
+                  <li>Standard VAT rate is 21%. Register via EU OSS scheme once exceeding €10,000 cross-border digital services threshold.</li>
+                  <li>Companies must notify customers at least 15 days in advance of a renewal. A 14-day right of withdrawal applies to most digital subscriptions.</li>
+                  <li>Belgium has three official languages: French, Dutch (Flemish), and German.</li>
+                </ul>
+              </div>
+              <div class="rc-country-col">
+                <h4>Expansion Checklist</h4>
+                <ul class="checklist">
+                  <li>Enable EUR currency</li>
+                  <li>Enable 3DS (PSD2 compliance)</li>
+                  <li>Register for EU VAT via OSS scheme</li>
+                  <li>Enable SEPA Direct Debit</li>
+                  <li>Support Bancontact under Co-badged Card mandate</li>
+                  <li>Offer invoice translations in French, Dutch, and German</li>
+                </ul>
+              </div>
+            </div>
+            <h4>Payment Method Performance</h4>
+            <div class="rc-eu-table-wrap">
+              <table class="rc-eu-table">
+                <thead>
+                  <tr>
+                    <th>Payment Type</th>
+                    <th>Sign-up %</th>
+                    <th>Renewal %</th>
+                    <th>% of Volume when Merchant is Offering Payment Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Apple Pay</td><td>68.86%</td><td>80.95%</td><td>6.1%</td></tr>
+                  <tr><td>Credit Card</td><td>73.43%</td><td>87.76%</td><td>53.96%</td></tr>
+                  <tr><td>Google Pay</td><td>54.59%</td><td>81.91%</td><td>1.7%</td></tr>
+                  <tr><td>PayPal</td><td>92.28%</td><td>94.86%</td><td>29.21%</td></tr>
+                  <tr><td>SEPA</td><td>99.40%</td><td>99.90%</td><td>46.92%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+
+        <!-- France Accordion -->
+        <details class="rc-accordion-item">
+          <summary>
+            <span class="rc-accordion-title">🇫🇷 France — Euro (EUR)</span>
+            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
+          </summary>
+          <div class="rc-accordion-content">
+            <div class="rc-country-grid">
+              <div class="rc-country-col">
+                <h4>Considerations</h4>
+                <ul>
+                  <li>French law requires all commercial communications, contracts, and consumer-facing materials directed at French consumers be in French — this is a legal requirement.</li>
+                  <li>French law requires B2C businesses to provide access to a consumer mediation service for dispute resolution.</li>
+                  <li>Strong preference toward SEPA Direct Debit and PayPal.</li>
+                  <li>VAT rate is 20%. Register via EU OSS scheme once exceeding €10,000 threshold.</li>
+                  <li>Renewable contracts must notify consumers of their right to cancel between 1–3 months before renewal. Failure gives the consumer the right to cancel and receive a refund at any time.</li>
+                  <li>Consumers can cancel most subscription contracts at any time after the first 12 months with just 1 month's notice.</li>
+                </ul>
+              </div>
+              <div class="rc-country-col">
+                <h4>Expansion Checklist</h4>
+                <ul class="checklist">
+                  <li>Enable EUR currency</li>
+                  <li>Enable 3DS (PSD2 compliance)</li>
+                  <li>Register for EU VAT via OSS scheme (20% rate)</li>
+                  <li>Translate all customer-facing content into French</li>
+                  <li>Enable SEPA Direct Debit and PayPal</li>
+                  <li>Implement consumer mediation service reference in T&amp;Cs</li>
+                </ul>
+              </div>
+            </div>
+            <h4>Payment Method Performance</h4>
+            <div class="rc-eu-table-wrap">
+              <table class="rc-eu-table">
+                <thead>
+                  <tr>
+                    <th>Payment Type</th>
+                    <th>Sign-up %</th>
+                    <th>Renewal %</th>
+                    <th>% of Volume when Merchant is Offering Payment Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Apple Pay</td><td>87.05%</td><td>82.72%</td><td>10.20%</td></tr>
+                  <tr><td>Credit Card</td><td>67.88%</td><td>89.34%</td><td>67.71%</td></tr>
+                  <tr><td>Google Pay</td><td>70.13%</td><td>79.48%</td><td>1.64%</td></tr>
+                  <tr><td>PayPal</td><td>92.29%</td><td>96.45%</td><td>27.41%</td></tr>
+                  <tr><td>SEPA</td><td>92.85%</td><td>92.60%</td><td>14.69%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+
+        <!-- Germany Accordion -->
+        <details class="rc-accordion-item">
+          <summary>
+            <span class="rc-accordion-title">🇩🇪 Germany — Euro (EUR)</span>
+            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
+          </summary>
+          <div class="rc-accordion-content">
+            <div class="rc-country-grid">
+              <div class="rc-country-col">
+                <h4>Considerations</h4>
+                <ul>
+                  <li>PayPal is the #1 payment method in Germany — 64% increase in conversion when offered. Many consumers do not use or prefer credit cards.</li>
+                  <li>SEPA direct deposit and digital wallets are gaining popularity.</li>
+                  <li>Businesses offering Revolut Pay via Stripe saw an average 3% increase in conversion and 13% increase in revenue.</li>
+                  <li>B2C subscriptions must include a clearly labelled cancellation button: 'Jetzt kündigen' ('Cancel now').</li>
+                  <li>Auto-renewal periods for consumer contracts are capped at one month at a time after the initial term.</li>
+                  <li>VAT rate is 19%. Register via EU OSS scheme.</li>
+                </ul>
+              </div>
+              <div class="rc-country-col">
+                <h4>Expansion Checklist</h4>
+                <ul class="checklist">
+                  <li>Enable EUR currency</li>
+                  <li>Enable 3DS (PSD2 compliance)</li>
+                  <li>Register for EU VAT via OSS scheme (19% rate)</li>
+                  <li>Enable PayPal as priority payment method</li>
+                  <li>Enable SEPA Direct Debit</li>
+                  <li>Implement 'Jetzt kündigen' cancellation button (legal requirement)</li>
+                </ul>
+              </div>
+            </div>
+            <h4>Payment Method Performance</h4>
+            <div class="rc-eu-table-wrap">
+              <table class="rc-eu-table">
+                <thead>
+                  <tr>
+                    <th>Payment Type</th>
+                    <th>Sign-up %</th>
+                    <th>Renewal %</th>
+                    <th>% of Volume when Merchant is Offering Payment Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Apple Pay</td><td>83.68%</td><td>87.95%</td><td>3.60%</td></tr>
+                  <tr><td>Credit Card</td><td>71.13%</td><td>88.90%</td><td>24.58%</td></tr>
+                  <tr><td>Google Pay</td><td>70.58%</td><td>84.32%</td><td>0.50%</td></tr>
+                  <tr><td>PayPal</td><td>88.77%</td><td>97.40%</td><td>63.79%</td></tr>
+                  <tr><td>SEPA</td><td>99.25%</td><td>99.89%</td><td>44.35%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+
+        <!-- Italy Accordion -->
+        <details class="rc-accordion-item">
+          <summary>
+            <span class="rc-accordion-title">🇮🇹 Italy — Euro (EUR)</span>
+            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
+          </summary>
+          <div class="rc-accordion-content">
+            <div class="rc-country-grid">
+              <div class="rc-country-col">
+                <h4>Considerations</h4>
+                <ul>
+                  <li>PayPal is the #2 payment method in Italy — 40.64% increase in conversion when offered. Many consumers do not use or prefer credit cards.</li>
+                  <li>SEPA direct deposit and digital wallets are gaining popularity.</li>
+                  <li>Italy has one of the highest adoption rates of digital wallets.</li>
+                  <li>Italy requires e-invoicing using the government's Sistema di Interscambio.</li>
+                  <li>Article 54-bis goes into effect 19 June 2026 and requires an explicit, dedicated cancellation button on all websites offering subscription services.</li>
+                  <li>VAT rate is 22%. Register via EU OSS scheme.</li>
+                </ul>
+              </div>
+              <div class="rc-country-col">
+                <h4>Expansion Checklist</h4>
+                <ul class="checklist">
+                  <li>Enable EUR currency</li>
+                  <li>Enable 3DS (PSD2 compliance)</li>
+                  <li>Register for EU VAT via OSS scheme (22% rate)</li>
+                  <li>Enable PayPal as priority payment method</li>
+                  <li>Enable SEPA Direct Debit</li>
+                  <li>Implement e-invoicing and cancellation buttons (legal requirements)</li>
+                </ul>
+              </div>
+            </div>
+            <h4>Payment Method Performance</h4>
+            <div class="rc-eu-table-wrap">
+              <table class="rc-eu-table">
+                <thead>
+                  <tr>
+                    <th>Payment Type</th>
+                    <th>Sign-up %</th>
+                    <th>Renewal %</th>
+                    <th>% of Volume when Merchant is Offering Payment Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Apple Pay</td><td>88.06%</td><td>72.91%</td><td>10.07%</td></tr>
+                  <tr><td>Credit Card</td><td>72.71%</td><td>80.52%</td><td>56.19%</td></tr>
+                  <tr><td>Google Pay</td><td>76.46%</td><td>74.24%</td><td>4.13%</td></tr>
+                  <tr><td>PayPal</td><td>85.44%</td><td>92.66%</td><td>40.64%</td></tr>
+                  <tr><td>SEPA</td><td>93.67%</td><td>93.96%</td><td>8.11%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+
+        <!-- Denmark Accordion -->
+        <details class="rc-accordion-item">
+          <summary>
+            <span class="rc-accordion-title">🇩🇰 Denmark — Danish Krone (DKK)</span>
+            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
+          </summary>
+          <div class="rc-accordion-content">
+            <div class="rc-country-grid">
+              <div class="rc-country-col">
+                <h4>Considerations</h4>
+                <ul>
+                  <li>Offering Dankort (co-branded Visa) is effectively mandatory — absence will materially impact conversion.</li>
+                  <li>PayPal is an increasingly popular payment method, outperforming credit cards and Apple Pay.</li>
+                  <li>Denmark's VAT rate is 25% and applies broadly to all sales.</li>
+                  <li>Subscription auto-renewal terms must be clearly disclosed at the point of sign-up.</li>
+                  <li>Despite exceptionally high English proficiency, customer-facing subscription terms and cancellation flows should be available in Danish.</li>
+                  <li>Corporate income tax rate is 22%; 15% global minimum tax for large multinationals (Pillar Two).</li>
+                </ul>
+              </div>
+              <div class="rc-country-col">
+                <h4>Expansion Checklist</h4>
+                <ul class="checklist">
+                  <li>Enable DKK currency</li>
+                  <li>Enable 3DS (PSD2 compliance)</li>
+                  <li>Apply Danish VAT at 25%</li>
+                  <li>Enable Dankort (co-branded Visa) — required for conversion</li>
+                  <li>Enable PayPal</li>
+                  <li>Ensure Danish-language cancellation flows</li>
+                </ul>
+              </div>
+            </div>
+            <h4>Payment Method Performance</h4>
+            <div class="rc-eu-table-wrap">
+              <table class="rc-eu-table">
+                <thead>
+                  <tr>
+                    <th>Payment Type</th>
+                    <th>Sign-up %</th>
+                    <th>Renewal %</th>
+                    <th>% of Volume when Merchant is Offering Payment Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Apple Pay</td><td>87.85%</td><td>79.25%</td><td>5.18%</td></tr>
+                  <tr><td>Credit Card</td><td>75.65%</td><td>89.57%</td><td>78.62%</td></tr>
+                  <tr><td>Google Pay</td><td>82.24%</td><td>83.21%</td><td>1.20%</td></tr>
+                  <tr><td>PayPal</td><td>82.64%</td><td>93.16%</td><td>20.49%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+
+        <!-- Netherlands Accordion -->
+        <details class="rc-accordion-item">
+          <summary>
+            <span class="rc-accordion-title">🇳🇱 Netherlands — Euro (EUR)</span>
+            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
+          </summary>
+          <div class="rc-accordion-content">
+            <div class="rc-country-grid">
+              <div class="rc-country-col">
+                <h4>Considerations</h4>
+                <ul>
+                  <li>iDEAL is the go-to method for over 70% of online purchases in the Netherlands — offering it drives a 39% increase in conversion.</li>
+                  <li>PayPal outperforms credit cards and digital wallets, though Apple Pay and Google Pay are preferred by younger Dutch consumers.</li>
+                  <li>Standard Dutch VAT rate is 21%.</li>
+                  <li>Consumers must be able to cancel via the same channel they used to subscribe (e.g. if subscribed online, must be able to cancel online).</li>
+                  <li>Dutch law prohibits automatically converting expired subscriptions into new fixed-term contracts.</li>
+                  <li>Companies must clearly state when a free trial ends and send a reminder before paid billing begins.</li>
+                </ul>
+              </div>
+              <div class="rc-country-col">
+                <h4>Expansion Checklist</h4>
+                <ul class="checklist">
+                  <li>Enable EUR currency</li>
+                  <li>Enable 3DS (PSD2 compliance)</li>
+                  <li>Register for EU VAT via OSS scheme (21% rate)</li>
+                  <li>Enable iDEAL (critical for conversion)</li>
+                  <li>Enable SEPA Direct Debit and PayPal</li>
+                  <li>Implement same-channel cancellation mechanism</li>
+                </ul>
+              </div>
+            </div>
+            <h4>Payment Method Performance</h4>
+            <div class="rc-eu-table-wrap">
+              <table class="rc-eu-table">
+                <thead>
+                  <tr>
+                    <th>Payment Type</th>
+                    <th>Sign-up %</th>
+                    <th>Renewal %</th>
+                    <th>% of Volume when Merchant is Offering Payment Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Apple Pay</td><td>84.21%</td><td>82.33%</td><td>6.37%</td></tr>
+                  <tr><td>Credit Card</td><td>72.73%</td><td>87.17%</td><td>51.84%</td></tr>
+                  <tr><td>Google Pay</td><td>75.19%</td><td>79.04%</td><td>2.09%</td></tr>
+                  <tr><td>PayPal</td><td>90.85%</td><td>96.39%</td><td>32.78%</td></tr>
+                  <tr><td>SEPA</td><td>99.32%</td><td>99.95%</td><td>60.60%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+
       </div>
 
       <div class="rc-callout rc-callout-tip">
@@ -277,7 +719,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-        <div class="rc-callout-body">
+      0 <div class="rc-callout-body">
           <strong>Co-badged card compliance is an EU-wide requirement</strong>
           <p>Under EU IFR Regulation 2015/751, when a customer's card carries two brands (e.g. a local scheme plus Visa or Mastercard) and your checkout supports both, the customer must be able to choose which brand to pay with.</p>
         </div>
