@@ -267,52 +267,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <p>ACH leads for B2B (90.87% sign-up success). Apple Pay, Google Pay, and Amazon Pay are growing for B2C, with Klarna and Cash App gaining relevance. Chargebacks run higher here than most markets — invest in clear billing descriptors.</p>
       </div>
 
-      <div class="rc-na-table-wrap">
-        <table class="rc-na-table">
-          <thead>
-            <tr>
-              <th>Payment Type</th>
-              <th>Sign-up %</th>
-              <th>Renewal %</th>
-              <th>% of Volume when Merchant is Offering Payment Type</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>ACH</td><td>96.62%</td><td>97.04%</td><td>3.02%</td></tr>
-            <tr><td>Amazon Pay</td><td>94.75%</td><td>93.80%</td><td>8.18%</td></tr>
-            <tr><td>Apple Pay</td><td>89.65%</td><td>72.31%</td><td>8.37%</td></tr>
-            <tr><td>Credit Card</td><td>54.30%</td><td>89.02%</td><td>85.60%</td></tr>
-            <tr><td>Google Pay</td><td>84.59%</td><td>78.66%</td><td>1.06%</td></tr>
-            <tr><td>PayPal</td><td>93.41%</td><td>96.39%</td><td>11.23%</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="rc-feature-card">
-        <div class="rc-feature-icon"><i class="fa-solid fa-flag"></i></div>
-        <h4>Canada</h4>
-        <p>PayPal converts at 92.49% sign-up and 94.97% renewal — the strongest combination in the region. Apple Pay also performs well. Label prices "CAD" explicitly; many Canadians shop US sites and default to assuming USD.</p>
-      </div>
-
-      <div class="rc-na-table-wrap">
-        <table class="rc-na-table">
-          <thead>
-            <tr>
-              <th>Payment Type</th>
-              <th>Sign-up %</th>
-              <th>Renewal %</th>
-              <th>% of Volume when Merchant is Offering Payment Type</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Amazon Pay</td><td>63.83%</td><td>64.86%</td><td>0.21%</td></tr>
-            <tr><td>Apple Pay</td><td>89.69%</td><td>85.96%</td><td>7.75%</td></tr>
-            <tr><td>Credit Card</td><td>50.80%</td><td>89.66%</td><td>85.93%</td></tr>
-            <tr><td>Google Pay</td><td>87.34%</td><td>82.14%</td><td>2.01%</td></tr>
-            <tr><td>PayPal</td><td>92.87%</td><td>95.00%</td><td>13.10%</td></tr>
-          </tbody>
-        </table>
-      </div>
+    
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
