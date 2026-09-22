@@ -404,7 +404,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
           <div class="rc-next-card-tag">Recommended next</div>
           <div class="rc-next-card-icon"><i class="fa-solid fa-globe"></i></div>
           <h4>Payment methods by region</h4>
-          <p>Go deeper in global payments expansion by understanding the payment methods in each region.</p>
+          <p>Go deeper in global payments expansion with regional payment methods.</p>
           <div class="rc-next-card-arrow">Start path &rarr;</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-next-card">
