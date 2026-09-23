@@ -64,8 +64,8 @@ dLocal and the [GCash method](https://docs.recurly.com/recurly-subscriptions/v1.
 
 ### GCash Wallet
 
-- Customer email address
 - Customer first and last name
+- Customer email address
 - Customer billing address (street address, city, region/state, country, postal/PIN code)
   - **Street address** — House/street name and number&#x20;
   - **City** — Locality and city&#x20;
