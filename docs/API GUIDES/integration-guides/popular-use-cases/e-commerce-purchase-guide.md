@@ -50,7 +50,9 @@ If you have specific need to allow customers to process transactions without sto
 * You must pass the `store_billing_info` field set to `false`&#x20;
 * You must be using a supported gateway and payment method. See limitations and prerequisits.
 
-<br />
+| Parameter                         | Value                                | Description                                                                                                                                                                                                                                     |
+| :-------------------------------- | ------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `billing_info.store_billing_info` | **Boolean.&#x20;**&#x44;efault: true | **Boolean**. Child of billing_info. An identifier for the intent to store the provided payment method on the transaction. Certain payment methods require `true` or `false`. See your respective payment method integration guides for details. |
 
 &#x20;
 
