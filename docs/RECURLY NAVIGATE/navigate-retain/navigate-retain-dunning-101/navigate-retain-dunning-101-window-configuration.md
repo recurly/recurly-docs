@@ -249,6 +249,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-sticky-link">
+
           Path overview
         </a>
         
@@ -307,7 +308,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">2</div>
           <div class="rc-step-content">
             <h4>Update the window length</h4>
-            <p>Set to <strong>28 days for monthly plans</strong> and <strong>60 days for annual plans</strong>.</p>
+            <p>Set to <strong>27 days for monthly plans</strong> and <strong>60 days for annual plans</strong>.</p>
           </div>
         </div>
         <div class="rc-step">
@@ -328,7 +329,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">5</div>
           <div class="rc-step-content">
             <h4>Assign plans to the correct campaign</h4>
-            <p>Navigate to each plan in your catalog and assign it to the right campaign. <strong>Plans not manually assigned fall back to your default.</strong> Audit every plan to make sure nothing is misassigned — a monthly plan on a 60-day window, or an annual on 27 days, will both underperform.</p>
+            <p>Navigate to each plan in your catalog and assign it to the right campaign. <strong>Plans not manually assigned fall back to your default.</strong> Audit every plan to make sure nothing is misassigned — a monthly plan on a 60-day window, or an annual on 27 days, may underperform or even create invoicing issues.</p>
           </div>
         </div>
       </div>
@@ -410,5 +411,3 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   </div>
 </div>
 `}</HTMLBlock>
-
-<br />
