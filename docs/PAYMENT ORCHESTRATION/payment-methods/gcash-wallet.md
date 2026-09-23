@@ -80,7 +80,7 @@ Always send the following with GCash transactions:
 
 # Integration guide
 
-GCash isn't supported on Recurly Checkout or Hosted Payment Pages. See the <a href="gcash-integration-guide" target="_blank">GCash integration guide</a> for full implementation details.
+GCash isn't supported on Recurly Checkout or Hosted Payment Pages. See the <a href="/docs/gcash-integration-guide" target="_blank">GCash integration guide</a> for full implementation details.
 
 ## Billing information updates
 
