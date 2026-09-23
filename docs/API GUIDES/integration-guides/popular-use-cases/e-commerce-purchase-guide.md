@@ -12,7 +12,7 @@ metadata:
 
 This guide shows you how to use the V3 <Anchor target="_blank" href="https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase">Purchases endpoint</Anchor> to create a transaction where Recurly \_does not store the payment details\_. This behavior is limited to specific payment methods presently, so ensure you are using the right gateway and payment method.
 
-If you have a gateway payment method combo that is not listed below -- please submit a [feature request](https://example.com).
+If you have a gateway payment method combo that is not listed below -- please submit a feature request.
 
 ### Prerequisites & limitations
 
