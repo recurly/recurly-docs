@@ -73,3 +73,64 @@ dLocal and the [GCash method](https://docs.recurly.com/recurly-subscriptions/v1.
   - **Postal code** — Postal / zip code&#x20;
   - **Country** — Country code (e.g., IN)
 - Customer phone number
+
+# Configuring dLocal in Recurly
+
+## Step 1: Obtain dLocal credentials
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Log in to your dLocal account</h4><p>Engage with dLocal to address any applicable contracts and fees before proceeding. Access your dLocal <strong>Production account</strong> for production keys, or <strong>Sandbox account</strong> for sandbox keys.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Open Settings</h4><p>Within your dLocal merchant dashboard, select <strong>Settings</strong>, then choose the <strong>Integration</strong> option.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Copy your credentials</h4><p>Copy the <strong>X-Login</strong>, <strong>X-Trans-Key</strong> and the <strong>Secret Key</strong>. You do not need the smartfields API key. Save these for Step 2.</p></div>
+  </div>
+</div>
+
+## Step 2: Enter credentials in Recurly
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Payment Gateways</h4><p>In Recurly, navigate to <strong>Configuration → Payment Gateways</strong>, click <strong>Add a New Gateway</strong>, and select <strong>dLocal</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enter your credentials</h4><p>Paste your X-Login, X-Trans-Key, and Secret Key into the applicable fields.</p></div>
+  </div>
+</div>
+
+
+<Image src="https://files.readme.io/6c473d99f0f0f7f50fad57259059ba00ac561bc6f0086714a548fc6a14d8d692-Screenshot_2026-09-23_at_3.31.20_PM.png" align="left" width="50%" border={true} wrap={false} />
+
+
+## Step 3: Set your payment methods
+
+Under **Alternative Payment Methods**, enable **GCash** as it is the only option. No card options appear under Accepted Card Types — Recurly does not support card processing with dLocal presently.
+
+## Step 4: Save and enable the gateway
+
+Click **Add Payment Gateway**. dLocal will appear in your Production Gateways list in Recurly with a status of **Enabled**.
+
+## Step 5: Test the configuration
+
+Run a test transaction in development mode on your Recurly sandbox site before going live. If your settlement model is set incorrectly, you'll receive an Authentication error.
+
+## Step 8: Go live
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Confirm production credentials</h4><p>Verify your Recurly site has production dLocal credentials entered and your dLocal account is in Production mode.</p></div>
+  </div>
+</div>
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Keep your dLocal credentials secure and limit access to authorized personnel. Consult your dLocal representative to confirm your account is in good standing and compliant with all relevant regulations.</div>
+</div>
