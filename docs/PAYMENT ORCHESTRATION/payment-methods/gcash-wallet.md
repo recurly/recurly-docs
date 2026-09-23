@@ -30,7 +30,7 @@ metadata:
 
 <div class="rp-definition">GCash is a digital wallet in the Philippines, an extremely popular option in the region. Launched in 2018 as a joint venture between SoftBank and Yahoo Japan, the app lets users pay at restaurants, convenience stores, taxis, and online shops by scanning a QR code or showing a barcode. It has over 70 million users nationwide.
 
-With Recurly, customers can sign up for subscriptions using their PayPay wallet, authorizing and authenticating directly through a modal. Recurly integrates PayPay through Adyen. See the <a href="paypay-integration-guide" target="_blank">PayPay integration guide</a> to get started.</div>
+With Recurly, customers can sign up for subscriptions using their GCash wallet, authorizing and authenticating directly through a modal. Recurly integrates GCash through dLocal. See the <a href="gcash-integration-guide" target="_blank">GCash integration guide</a> to get started.</div>
 
 # Key details
 
@@ -38,29 +38,25 @@ With Recurly, customers can sign up for subscriptions using their PayPay wallet,
 
 ### Use cases
 
-**Subscription plans** — Combine Recurly's subscription management with Adyen to offer PayPay for recurring billing in Japan.
+**Subscription plans** — Combine Recurly's subscription management with dLocal to offer GCash for recurring and one time payments in the Philippines.
 
 </div>
 
-## PayPay limitations
+## GCash limitations
 
-PayPay is designed specifically for subscriptions and doesn't support many standard Recurly features available with credit cards.
+GCash is designed specifically for ecommerce and recurring subscriptions and doesn't support many standard Recurly features available with other methods.
 
 <ul class="rp-list">
-  <li>Creating subscriptions through the Recurly admin UI isn't supported — the PayPay wallet requires the customer to be in session to confirm the subscription by authenticating to their account.</li>
+  <li>Creating subscriptions through the Recurly admin UI isn't supported — the GCash wallet requires the customer to be in session to confirm the subscription by authenticating to their account.</li>
   <li>Recurly Checkout and Hosted Payment Pages aren't currently supported.</li>
   <li>100% coupons at signup aren't supported, since token creation is required — use a free trial instead. Standard coupons are supported.</li>
 </ul>
 
-<div class="rp-callout rp-callout-important">
-  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong>Request a <code>SALE</code> acquirer setup. Recurly renewals process as <code>SALE</code> transactions and can't run on a separate Auth-and-Capture flow. An <code>AUTH</code> acquirer setup only supports one-time transactions — not renewals or subscriptions.</div>
-</div>
-
 # Checkout flow
 
-Customers will select PayPay at checkout, and they are redirected to the PayPay app (on mobile) or shown a QR code (on desktop) to authorize the payment. Payment is completed after customer approval and the final status is confirmed via webhooks from the gateway. You will also receive Recurly webhooks in order to handle transaction, invoice, and subscription status in your environment.
+Customers will select GCash at checkout, and they are redirected to the GCash app (on mobile) or redirected to authenticate (on desktop) to authorize the payment. Payment is completed after customer approval and the final status is confirmed immediately. You will also receive Recurly webhooks in order to handle transaction, invoice, and subscription status in your environment.
 
-## Customer actions in the PayPay wallet
+## Customer actions in the GCash wallet
 
 Customers interact with their account during signup:
 
@@ -72,28 +68,29 @@ Customers interact with their account during signup:
 
 ## Required fields
 
-Always send the following with PayPay transactions:
+Always send the following with GCash transactions:
 
-- **Currency** — JPY
-- **Locale** — Japanese, unless the consumer's device locale dictates otherwise
+- **Currency** — PHP
+- **Locale** — Philippines, unless the consumer's device locale dictates otherwise
 - **Customer name and billing address** — as with any standard transaction
+- **Email and Phone --&#x20;**&#x70;rovide for approval
 
 # Integration guide
 
-PayPay isn't supported on Recurly Checkout or Hosted Payment Pages. See the <a href="paypay-integration-guide" target="_blank">PayPay integration guide</a> for full implementation details.
+GCash isn't supported on Recurly Checkout or Hosted Payment Pages. See the <a href="gcash-integration-guide" target="_blank">GCash integration guide</a> for full implementation details.
 
 ## Billing information updates
 
-PayPay doesn't support direct billing info updates in Recurly. Customers must update payment details in their PayPay app. If a customer's wallet account changes, they'll need to resubscribe.
+GCash doesn't support direct billing info updates in Recurly. Customers must update payment details in their GCash wallet. If a customer's wallet account changes, they'll need to resubscribe.
 
 ## Testing
 
-Set up a test account with Adyen and follow their sandbox instructions. You don't need to download the PayPay app to test — Adyen provides a sandbox simulator for the redirect flow.
+Set up a test account with dLocal and follow their sandbox instructions. You don't need to download the GCash app to test — dLocal provides a sandbox simulator for the redirect flow.
 
 # FAQs
 
-<Accordion title="Do you support Auth and Capture with PayPay?">
-  Yes, but only if your business use case doesn't include subscriptions. Recurly's subscription model doesn't support automated Auth and Capture on renewals — only merchants using a <code>SALE</code> acquirer setup can run subscriptions with PayPay.
+<Accordion title="Do you support Auth and Capture with GCash?">
+  No, this is not a supported flow.
 </Accordion>
 
 ***
