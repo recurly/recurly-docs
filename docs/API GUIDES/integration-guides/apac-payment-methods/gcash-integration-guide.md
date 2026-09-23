@@ -92,9 +92,6 @@ Send a request to the `create_purchase` method on Recurly's API, including:
   </div>
 </div>
 
-```json Recurly.js Native
-```
-
 <br />
 
 <br />
