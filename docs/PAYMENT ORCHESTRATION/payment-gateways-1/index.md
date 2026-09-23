@@ -88,7 +88,7 @@ The successor to Payeezy and First Data, specializing in ecommerce and recurring
 <Card title="Cybersource" href="https://docs.recurly.com/recurly-subscriptions/docs/cybersource" target="_blank">
 A complete payment management platform delivering safe and seamless transaction processing with advanced fraud management tools.
 </Card>
-<card title="dLocal (Philippines)" href="https://docs.recurly.com/recurly-subscriptions/v1.0_dlocal-gcash/docs/dlocal" target="_blank">
+<Card title="dLocal (Philippines)" href="https://docs.recurly.com/recurly-subscriptions/v1.0_dlocal-gcash/docs/dlocal" target="_blank">
 Specialising in regional processing, with current support for GCash Wallet in the Philippines for subscription signups, renewals, and ecommerce transactions.
 </Card>
 <Card title="Ebanx (APAC and LATAM)" href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway" target="_blank">
