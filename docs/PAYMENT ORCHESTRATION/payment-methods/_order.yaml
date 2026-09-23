@@ -13,6 +13,7 @@
 - becs
 - klarna-bnpl-pay-now-pay-later
 - ideal
+- gcash-wallet
 - mercadopago
 - pix-automatico
 - upi-autopay
@@ -21,4 +22,3 @@
 - stripe-link-pay
 - sofort
 - boleto
-- gcash-wallet
