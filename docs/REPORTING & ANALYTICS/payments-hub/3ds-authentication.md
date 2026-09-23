@@ -10,17 +10,17 @@ link:
 metadata:
   robots: index
 ---
-<div class="rp-page"> <div class="rp-overview">The 3DS Authentication dashboard shows you when your payments are being challenged for 3D Secure (3DS) and how those challenges affect whether payments go through. It lives in Payments Hub alongside the payments analytics you already use. Use it as a diagnostic tool — confirm authentication is working where SCA requires it, find payments that should be authenticating but aren't, and catch challenges you didn't expect from a gateway misconfiguration — so you can see exactly where 3DS is helping payments succeed and where it's costing you approvals.</div> <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div> <div class="rp-card">
+<div class="rp-page"> <div class="rp-overview">The 3DS Processing dashboard shows you when your customer's payments are being challenged for 3D Secure (3DS) and how those challenges resolve. The dashboard lives in Payments Hub alongside the payments analytics you already use. Use it as a diagnostic tool — confirm 3D-Secure is working where SCA requires it, find payments that should be authenticating but aren't, and catch challenges you didn't expect from a gateway misconfiguration — so you can see exactly where 3DS is working as expected, or where you may have an integration issue.</div> <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div> <div class="rp-card">
 
 </div> <div class="rp-toc"> <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a> <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a> <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a> <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">4</span>FAQs</a> </div> </div>
 
 # Limitations
 
-<ul class="rp-list"> <li>The dashboard shows 3DS outcomes on individual transactions. It doesn't yet show how 3DS authentication on an initial checkout affects the approval rate of later recurring charges — that comparison is planned for a future release.</li> <li>A frictionless-versus-full-challenge breakdown isn't available yet, since not all gateways report that distinction consistently.</li> </ul>
+<ul class="rp-list"> <li>The dashboard shows 3DS outcomes on individual transactions. It doesn't yet show how 3DS authentication on an initial signup affects the approval rate of future recurring charges — that comparison is planned for a future release.</li> <li>A frictionless-versus-full-challenge breakdown isn't available yet, since not all gateways report that distinction consistently.</li> </ul>
 
 # Definition
 
-<div class="rp-definition">Every card payment that requires Strong Customer Authentication (SCA) resolves to one of three states: approved, declined, or declined with a 3DS requirement. The 3DS Authentication dashboard tracks what happens from that point on — whether the customer completed the 3DS challenge, which of eight outcome categories the attempt landed in, and, separately, whether the bank ultimately approved or declined the payment. Those are two different things: a payment can authenticate successfully through 3DS and still be declined by the issuing bank, and this dashboard keeps that distinction visible instead of collapsing it into a single pass/fail number.</div>
+<div class="rp-definition">Every card payment that requires Strong Customer Authentication (SCA) resolves to one of three states: approved, declined, or rejected with a 3DS requirement. The 3DS Authentication dashboard tracks what happens from that point on — whether the customer completed the 3DS challenge, which of the several results categories the challenge landed in, and, separately, whether the bank ultimately approved or declined the transaction. Those are two different concepts: a payment can authenticate successfully through 3DS and still be declined by the issuing bank, and this dashboard keeps that distinction visible instead of collapsing it into a single pass/fail number.</div>
 
 # Key benefits
 
