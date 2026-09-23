@@ -349,7 +349,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    /* WHAT TO SEGMENT — AND WHY */
+    <!--/* WHAT TO SEGMENT — AND WHY */-->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-layer-group rc-fa-section"></i> What to segment — and why</h2>
       <p>At minimum, create two campaigns. A great starting point is one for monthly and one for annual (if you offer both). You can also set up unique campaigns for different monthly plans. From there, additional segmentation by subscriber type or value tier adds meaningful gains. Each segment benefits from a tailored window length, email cadence, and tone.</p>
