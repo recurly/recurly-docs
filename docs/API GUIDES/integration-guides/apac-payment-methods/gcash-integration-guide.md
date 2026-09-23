@@ -53,6 +53,7 @@ Send a request to the `create_purchase` method on Recurly's API, including:
 
 <ul class="rp-list">
   <li>Customer account data — code, name, billing info, phone number, and email address</li>
+  <li>Tax ID -- the customer's tax ID</li>
   <li>Subscriptions — with plan codes</li>
   <li>The `type` field set to `gcash`</li>
   <li>If you are processing an ecommerce transaction, the `store_billing_info` field set to `false`</li>
