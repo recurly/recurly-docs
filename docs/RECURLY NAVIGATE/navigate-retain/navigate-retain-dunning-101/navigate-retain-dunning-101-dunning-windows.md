@@ -318,7 +318,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <tr>
             <td><strong>Monthly</strong></td>
             <td>27 days</td>
-            <td>Sits just inside the 30-day billing cycle while still just short enough for February's 28 days, giving retries maximum time without risking duplicate invoices</td>
+            <td>Sits just inside the 30-day billing cycle while timed perfectly for February's 28 days, giving retries maximum time without risking duplicate invoices</td>
           </tr>
           <tr>
             <td><strong>Annual</strong></td>
