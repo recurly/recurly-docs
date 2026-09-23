@@ -23,7 +23,7 @@ metadata:
 ### Supported gateways
 
 <ul class="rp-list">
-  <li><a href="https://docs.recurly.com/recurly-subscriptions/docs/dlocal" target="_blank">dLocal</a></li>
+  <li><a href="https://docs.recurly.com/recurly-subscriptions/v1.0_dlocal-gcash/docs/dlocal" target="_blank">dLocal</a></li>
 </ul>
 
 # Definition
