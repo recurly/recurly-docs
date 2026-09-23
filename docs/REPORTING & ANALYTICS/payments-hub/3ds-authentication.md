@@ -30,19 +30,19 @@ metadata:
 
 ## <br />Accessing the dashboard
 
-The 3DS Authentication dashboard is a new, read-only page under Analytics > Payments Hub in Recurly Admin. It requires no setup — if your account processes 3DS transactions, the dashboard is available to you automatically.
+The 3DS Authentication dashboard is a new option under Analytics > Payments Hub in Recurly Admin. It requires no setup — if your account processes 3DS transactions, the dashboard is available to you automatically.
 
 ## Filters
 
 All metrics, trends, and grids respond to the filters at the top of the dashboard:
 
-<ul class="rp-list"> <li><strong>Date range</strong> — the period the dashboard reports on.</li> <li><strong>Country</strong> — cardholder country.</li> <li><strong>Gateway</strong> — the payment gateway processing the transaction.</li> <li><strong>Currency</strong> — transaction currency.</li> <li><strong>Initiated by</strong> — customer-initiated (CIT) or merchant-initiated (MIT) transactions. Defaults to Customer Initiated.</li> <li><strong>Card brand</strong> — for example, Visa or American Express. Defaults to any value.</li> </ul> <div class="rp-callout rp-callout-note"> <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Use the Initiated by filter to check whether renewal payments (MIT) are being challenged for 3DS when they shouldn't be.</div> </div>
+<ul class="rp-list"> <li><strong>Date range</strong> — the period the dashboard reports on.</li> <li><strong>Country</strong> — cardholder country.</li> <li><strong>Gateway</strong> — the payment gateway processing the transaction.</li> <li><strong>Currency</strong> — transaction currency.</li> <li><strong>Initiated by</strong> — customer-initiated (CIT) or merchant-initiated (MIT) transactions. Defaults to Customer Initiated.</li> <li><strong>Card brand</strong> — for example, Visa or American Express. Defaults to any value.</li> </ul> <div class="rp-callout rp-callout-note"> <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Use the Initiated by filter to check whether renewal payments (MIT) are being challenged for 3DS, which is rare, but possible.</div> </div>
 
 ## 3DS challenges and completions
 
 At the top of the dashboard, two metrics summarize your overall 3DS activity:
 
-<ul class="rp-list"> <li><strong>3DS challenges</strong> — how many of your transaction attempts were challenged for 3DS, and what share of total attempts that represents, with a daily trend. This count is inferred as the sum of the eight outcome categories described below, since there's no single direct counter for it.</li> <li><strong>3DS completions</strong> — how many of those challenges returned a 3DS result (rather than going unanswered), and the completion rate as a share of challenges, with a daily trend.</li> </ul>
+<ul class="rp-list"> <li><strong>3DS challenges</strong> — how many of your transaction attempts were challenged for 3DS, and what share of total attempts that represents, with a daily trend. This count is inferred as the sum of the eight results categories described below, since there's no single direct counter for it.</li> <li><strong>3DS completions</strong> — how many of those challenges returned a 3DS result (rather than a technical issue), and the completion rate as a share of challenges, with a daily trend.</li> </ul>
 
 
 <Image src="https://files.readme.io/13a8c9598802d5af22f124f7403f01b9a34d93c56457efa6338cd608deb717fc-image.png" align="center" border={true} />
