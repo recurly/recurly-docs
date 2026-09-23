@@ -63,7 +63,7 @@ Customers interact with their account during signup:
 - **Customer wallet authentication** — Required for every new subscription.
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong>If the customer doesn't authenticate their wallet credentials, the token isn't set up correctly and the subscription fails.</div>
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong>If the customer doesn't authenticate their wallet credentials, the token isn't set up correctly for subscriptions and the subscription signup or purchase fails.</div>
 </div>
 
 ## Required fields
