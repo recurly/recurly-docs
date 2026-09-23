@@ -36,7 +36,11 @@ metadata:
 
 <div class="rp-definition">Creating a purchase means generating a new customer account and its subscription or respective line items in a single call to Recurly's Purchase endpoint. This bundles everything a checkout needs — account, billing info, and subscription or line items — into one request instead of several.</div>
 
-# Step 1a: Creating a Subscription Signup
+# Integration Guide for Subscriptions and eCommerce Transactions
+
+With GCash, the initial payment request has slight differences, and the handling of responses is generally the same. See below for specific steps for Subscription handling and eCommerce flows for GCash.
+
+## Step 1a: Creating a Subscription Signup
 
 <div class="rp-steps">
   <div class="rp-step">
@@ -85,7 +89,7 @@ Send a request to the `create_purchase` method on Recurly's API, including:
 }
 ```
 
-# Step 1b: Creating an eCommerce transaction
+## Step 1b: Creating an eCommerce transaction
 
 <div class="rp-steps">
   <div class="rp-step">
@@ -139,7 +143,7 @@ Send a request to the `create_purchase` method on Recurly's API, including:
 ]
 ```
 
-# Processing the Responses
+## Step 2: Processing the Responses
 
 <div class="rp-steps">
   <div class="rp-step">
@@ -147,3 +151,15 @@ Send a request to the `create_purchase` method on Recurly's API, including:
     <div><h4>Obtain the action result value from the response</h4><p>Whether you are signing up for a subscription, or creating an ecommerce transaction, the response handling will remain the same. The initial response includes an action token in the <code>three_d_secure_action_token_id</code> param. You will feed that through Recurly.js to render the customer authentication modal. Once they have completed, you will receive an action result token from Recurly.js and provide it in <code>three_d_secure_action_result_token_id</code> on the follow-up steps. Simply resubmit the original payload with the new value, and the payment will process.</p></div>
   </div>
 </div>
+
+***
+
+## Step 3: Verify and finish
+
+After a successful purchase, you can confirm the details via the Recurly Admin UI or by calling Recurly’s API to list your new account, subscription, or invoice. Please note, for GCash ecommerce transactions, there will be no billing info ID associated to the transaction, invoice or account if no subscription is on file.
+
+***
+
+## Step 4: Listen for webhooks
+
+After a successful signup, there will be several webhooks you should listen to in order to ensure you are enabling access to features on in your environment, and disabling access should a consumer decide to cancel their subscription. View our webhooks documentation for more details.
