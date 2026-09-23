@@ -444,7 +444,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-resources">
         <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
         <div class="rc-resource-links">
-          <a href="https://go.recurly.com/Navigate-Launchpad-Cheatsheet.html" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Launchpad Phase 1 cheatsheet</a>
+          <a href="https://go.recurly.com/rs/439-LSC-903/images/Recurly%20Navigate%20Launchpad%20Phase%20One%20Cheatsheet.pdf" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Launchpad Phase 1 cheatsheet</a>
           <a href="https://go.recurly.com/rs/439-LSC-903/images/Recurly%20Navigate%20Resource%20Guide.pdf" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Navigate Resource Guide</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Account Updater</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Dunning Management</a>
