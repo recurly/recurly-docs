@@ -3,6 +3,7 @@
 - using-3d-secure-with-stored-billing-information
 - send-cvv-for-return-customers
 - purchase-transaction
+- e-commerce-purchase-guide
 - using-gateway-tokens-and-external-ntids-with-recurly-apis
 - dynamic-transaction-statement-descriptor-guide
 - level-2-and-level-3-cedp-guide
@@ -13,4 +14,3 @@
 - moto-mail-order-telephone-order-guide
 - co-badged-cards-guide
 - mercado-pago-integration-guide
-- e-commerce-purchase-guide
