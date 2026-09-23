@@ -73,6 +73,7 @@ Always send the following with GCash transactions:
 - **Currency** — PHP
 - **Locale** — Philippines, unless the consumer's device locale dictates otherwise
 - **Customer name and billing address** — as with any standard transaction
+- **Customer Tax ID** -- provide for approval
 - **Email and Phone --&#x20;**&#x70;rovide for approval
 
 # Integration guide
