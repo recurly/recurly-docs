@@ -39,7 +39,7 @@ metadata:
 
 # Definition
 
-<div class="rp-definition">Ebanx is a full-service payment management platform built for emerging markets in India and Latin America. It supports subscription mandate enrollment, recurring transactions, and refunds for UPI AutoPay, Pix Automatico, and Mercado Pago. You'll need an existing Ebanx relationship and a valid Integration Key to connect Ebanx with Recurly.</div>
+<div class="rp-definition">dLocal is a full-service payment management platform built for emerging markets in APAC and LATAM. It supports subscription enrollment, recurring transactions, one time payments, and refunds for GCash. You'll need an existing dLocal relationship and a valid Integration Key to connect Ebanx with Recurly.</div>
 
 # Key details
 
