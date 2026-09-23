@@ -1,5 +1,5 @@
 ---
-title: dLocal
+title: dLocal (Philippines)
 deprecated: false
 hidden: true
 link:
