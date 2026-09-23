@@ -243,6 +243,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-sticky-link">
+
           Path overview
         </a>
         
@@ -316,8 +317,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <tbody>
           <tr>
             <td><strong>Monthly</strong></td>
-            <td>28 days</td>
-            <td>Sits just inside the 30-day billing cycle, giving retries maximum time without risking a duplicate invoice</td>
+            <td>27 days</td>
+            <td>Sits just inside the 30-day billing cycle while still just short enough for February's 28 days, giving retries maximum time without risking duplicate invoices</td>
           </tr>
           <tr>
             <td><strong>Annual</strong></td>
