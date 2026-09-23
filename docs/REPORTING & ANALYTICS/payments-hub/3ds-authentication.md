@@ -78,9 +78,9 @@ Two grids break performance down by where the payment ran — Gateway detail and
 
 ### 3DS outcome versus bank decision
 
-These grids exist because 3DS success and the bank's decision are two separate things. A transaction can authenticate cleanly through 3DS and still be declined by the issuing bank for reasons that have nothing to do with authentication — insufficient funds, fraud rules, or card restrictions, for example. When you see a high authenticated decline rate for a gateway or country, that's a bank-side issue to investigate with your acquirer or issuer, not a 3DS problem.
+These tables exist because 3DS authentication outcome and the bank's authorization outcome are two separate concepts. A consumer can authenticate successfully through 3DS and the transaction still be declined by the issuing bank for reasons that have nothing to do with authentication — insufficient funds, fraud rules, or card restrictions, for example. When you see a high authorization decline rate for a gateway or country, that's a bank-side issue to investigate with your acquirer or issuer, not a 3DS problem.
 
-<div class="rp-callout rp-callout-note"> <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>If you process through Checkout.com or Nuvei via Hyperswitch, your 3DS challenge is delivered through Recurly.js using JusPay's white-labeled 3DS service rather than the gateway's native flow. Your checkout experience isn't affected, but this dashboard is your authoritative source for 3DS data on those gateways — the gateway's own reporting won't show it.</div> </div>
+<div class="rp-callout rp-callout-note"> <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>If you process through Checkout.com or Nuvei, your 3DS challenge is delivered through Recurly.js via a stand-alone 3DS service rather than the gateway's native flow. Your checkout experience and compliance isn't affected, but this dashboard is your authoritative source for 3DS data on those gateways — the gateway's own reporting won't show it.</div> </div>
 
 ### Zero-state
 
@@ -96,14 +96,14 @@ If your account has no 3DS activity in the selected date range, the dashboard sh
   Each rate uses a different denominator. Approval rate compares approved to approved-plus-declined. Authenticated decline rate looks only at authenticated transactions. Not-completed rate compares completed to completed-plus-not-completed. They answer three different questions, so there's no reason for them to sum to one total.
 </Accordion>
 
-<Accordion title="My gateway shows no 3DS data of its own — is that a bug?">
-  Not if you're on Checkout.com or Nuvei through Hyperswitch. Recurly runs your 3DS challenge through JusPay's white-labeled service and delivers it via Recurly.js, so the gateway itself never sees the 3DS event. This dashboard is the authoritative source for that data.
+<Accordion title="My gateway shows very little 3DS data of its own — is that a bug?">
+  Not if you're on Checkout.com or Nuvei. On these gateways, Recurly runs 3DS challenge through a stand-alone 3DS service rather than a gateway-specific SDK, though the results data is sent to the gateway. Depending on the gateway, they may or may not display that information, so our 3DS dashboard can be your source of truth.
 </Accordion>
 
 <Accordion title="What's the difference between 'Failed' and '3DS action required'?">
-  Failed means the 3DS check ran and the issuer didn't approve it — you got a result. 3DS action required means no result ever came back at all, usually because the challenge screen never rendered or the customer didn't complete it. Both end in a decline, but only one of them reflects an actual 3DS outcome.
+  Failed means the 3DS check ran and the consumer wasn't able to authenticate — this was the final result of that interaction. 3DS action required means no result ever came back at all, usually because the challenge screen never rendered or the customer didn't complete it. Both typically result in a decline, but only one of them reflects an actual 3DS outcome. Note: Banks can sometimes approve transactions with a failed 3DS result, though quite rare.
 </Accordion>
 
 <Accordion title="Can I see how 3DS on a customer's first purchase affects later renewal approvals?">
-  Not yet. Recurly stores the Network Transaction ID (NTID) from the original customer-initiated transaction and links it to later merchant-initiated renewals, which will make that comparison possible in a future release.
+  Not yet. Recurly stores the Network Transaction ID (NTID) and Transaction Link Id (TLID) from the original customer-initiated transaction and sents these values to later merchant-initiated renewals, which will make that comparison possible in a future release.
 </Accordion>
