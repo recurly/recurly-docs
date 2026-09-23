@@ -134,3 +134,15 @@ Run a test transaction in development mode on your Recurly sandbox site before g
 <div class="rp-callout rp-callout-tip">
   <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Keep your dLocal credentials secure and limit access to authorized personnel. Consult your dLocal representative to confirm your account is in good standing and compliant with all relevant regulations.</div>
 </div>
+
+***
+
+# FAQs
+
+<Accordion title="I am using the billing info ID for one time purchases, and it's failing. What can I do?">
+  Recurly's integration with dLocal includes GCash only, which doesn't allow CIT one time purchases using on-file tokens. You must offer the customer the option of using GCash and use Recurly.js to allow them to authenticate their account for one time / line item purchases. If there is a stored payment method, its specific use is for active subscriptions only.
+</Accordion>
+
+<Accordion title="I'm setting Store Billing Info API field to 'true' on a line item purchase, but I'm getting an error. What gives?">
+  One time, or more specifically, ecommerce transactions using GCash does not produce a storable token for future purchases. Customers must re-authenticate with their app for every purchase. You will need to set the `store_billing_info` api param to `false` and setup your Checkout flow to always prompt the user to select the payment method during checkout versus a stored method.
+</Accordion>
