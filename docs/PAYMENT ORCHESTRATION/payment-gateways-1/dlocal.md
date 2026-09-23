@@ -55,3 +55,10 @@ metadata:
   <tr><td>Currencies</td><td>PHP only</td></tr>
   <tr><td>Additional feature support</td><td>None</td></tr>
 </table>
+
+## Integration guides
+
+Refer to the individual payment method guides for implementation details:
+
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/" target="_blank">GCash integration guide</a>
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#" target="_blank">One-time Payments / eCommerce integration guide</a>
