@@ -62,3 +62,19 @@ Refer to the individual payment method guides for implementation details:
 
 - <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/" target="_blank">GCash integration guide</a>
 - <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#" target="_blank">One-time Payments / eCommerce integration guide</a>
+
+## Required fields
+
+dLocal and the GCash method requires specific fields authorize a payment successfully.
+
+### GCash Wallet
+
+- Customer email address
+- Customer first and last name
+- Customer billing address (street address, city, region/state, country, postal/PIN code)
+  - **Street address** — House/street name and number&#x20;
+  - **City** — Locality and city&#x20;
+  - **State** — State or union territory&#x20;
+  - **Postal code** — Postal / zip code&#x20;
+  - **Country** — Country code (e.g., IN)
+- Customer phone number
