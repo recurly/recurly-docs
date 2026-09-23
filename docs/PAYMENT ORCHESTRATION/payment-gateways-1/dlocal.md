@@ -26,20 +26,15 @@ metadata:
 ### Limitations
 
 <ul class="rp-list">
-  <li><strong>UPI mandate migration not supported</strong> — Customer mandates on another platform cannot be migrated to Recurly. Customers must cancel existing mandates and resubscribe. Enrollments are tightly coupled with the acquiring partner, merchant, and consumer — when the acquiring partner changes during a migration, re-enrollment is required per RBI and NPCI rules.</li>
-  <li><strong>UPI transaction limit</strong> — RBI mandates limit individual transactions to 15,000 INR without a consumer two-factor flow. This 2FA is handled by the customer's bank UPI app and is not customizable. Plans, or the combined amount of plans sent in the same purchase signup request, should be at or below 15,000 INR to avoid renewal rejections. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/" target="_blank">UPI AutoPay</a> documentation for details.</li>
-  <li><strong>UPI billing info updates not supported</strong> — If a customer needs to update their VPA or bank account, they must cancel their existing mandate/subscription and re-subscribe.</li>
-  <li><strong>No ad-hoc or one-time purchases</strong> — Customer-initiated one-time purchases and merchant-initiated force collections are not supported.</li>
-  <li><strong>Recurly.js not supported</strong> — UPI AutoPay and Pix Automatico require direct API integration. Recurly.js is not supported for these payment methods.</li>
-  <li><strong>Refunds must be full amount</strong> — Partial refunds are not supported through Ebanx.</li>
+  <li><strong>GCash billing info updates not supported</strong> — If a customer needs to update their wallet funding source, they must do so in the app itself.</li>
+  <li><strong>No ad-hoc or one-time purchases using stored billing info</strong> — Customer-initiated one-time purchases using stored billing info and merchant-initiated force collections are not supported.</li>
   <li><strong>Chargebacks not reflected</strong> — Chargebacks are not currently supported or reflected in Recurly.</li>
-  <li><strong>UPI App deep links do not support free trials</strong> — Free trial subscriptions are not available when using UPI App deep links.</li>
-  <li>See individual payment method pages for additional limitations.</li>
+  <li><strong>GCash one time payments do not store billing info by design. Customers must reauthenticate via Recurly.js every time.</li>
 </ul>
 
 # Definition
 
-<div class="rp-definition">dLocal is a full-service payment management platform built for emerging markets in APAC and LATAM. It supports subscription enrollment, recurring transactions, one time payments, and refunds for GCash. You'll need an existing dLocal relationship and a valid Integration Key to connect Ebanx with Recurly.</div>
+<div class="rp-definition">dLocal is a full-service payment management platform built for emerging markets in APAC, specifically, the Philippines. It supports subscription enrollment, recurring transactions, one time payments, and refunds for GCash. You'll need an existing dLocal relationship and a valid Integration Key to connect Ebanx with Recurly.</div>
 
 # Key details
 
@@ -65,7 +60,7 @@ Refer to the individual payment method guides for implementation details:
 
 ## Required fields
 
-dLocal and the GCash method requires specific fields authorize a payment successfully.
+dLocal and the [GCash method](https://docs.recurly.com/recurly-subscriptions/v1.0_dlocal-gcash/docs/gcash-wallet) requires specific fields authorize a payment successfully.
 
 ### GCash Wallet
 
