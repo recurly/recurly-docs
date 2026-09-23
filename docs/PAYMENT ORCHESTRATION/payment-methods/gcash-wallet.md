@@ -40,6 +40,8 @@ With Recurly, customers can sign up for subscriptions using their GCash wallet, 
 
 **Subscription plans** — Combine Recurly's subscription management with dLocal to offer GCash for recurring and one time payments in the Philippines.
 
+**One time purchases** — Use GCash to accept single, non-recurring payments from customers in the Philippines.
+
 </div>
 
 ## GCash limitations
