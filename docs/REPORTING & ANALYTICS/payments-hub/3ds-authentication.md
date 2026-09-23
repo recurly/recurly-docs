@@ -1,8 +1,8 @@
 ---
 title: 3DS Processing
 excerpt: >-
-  See how your payments perform through 3D Secure authentication and the
-  issuer's final decision, broken out by outcome, gateway, and country.
+  See how your payments perform through 3D Secure and the issuer's final
+  decision, broken out by outcome, gateway, and country.
 deprecated: false
 hidden: false
 link:
