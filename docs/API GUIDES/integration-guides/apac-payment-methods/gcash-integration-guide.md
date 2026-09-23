@@ -36,11 +36,11 @@ metadata:
 
 <div class="rp-definition">Creating a purchase means generating a new customer account and its subscription or respective line items in a single call to Recurly's Purchase endpoint. This bundles everything a checkout needs — account, billing info, and subscription or line items — into one request instead of several.</div>
 
-# Creating a Subscription Signup
+# Step 1a: Creating a Subscription Signup
 
 <div class="rp-steps">
   <div class="rp-step">
-    <div class="rp-step-num">1</div>
+    <div class="rp-step-num">1a</div>
     <div><h4>Generate a GCash wallet payment request</h4><p>Use a supported client library along with Recurly.js to configure your checkout. GCash uses Recurly.js to display the consumer authentication window during checkout.</p></div>
   </div>
 </div>
@@ -50,7 +50,7 @@ Send a request to the `create_purchase` method on Recurly's API, including:
 <ul class="rp-list">
   <li>Customer account data — code, name, billing info, phone number, and email address</li>
   <li>Subscriptions — with plan codes</li>
-  <li>The `create_purchase` field set to `gcash`</li>
+  <li>The `type` field set to `gcash`</li>
   <li>If you are processing an ecommerce transaction, the `store_billing_info` field set to `false`</li>
 </ul>
 
@@ -85,13 +85,65 @@ Send a request to the `create_purchase` method on Recurly's API, including:
 }
 ```
 
+# Step 1b: Creating an eCommerce transaction
+
 <div class="rp-steps">
   <div class="rp-step">
-    <div class="rp-step-num">2</div>
-    <div><h4>Obtain the action result value from the response</h4><p>The response includes an action token in the <code>three_d_secure_action_token_id</code> param. You will feed that through Recurly.js to render the customer authentication modal. Once they have completed, you will receive an action result token from Recurly.js and provide it in <code>three_d_secure_action_result_token_id</code> on the follow-up steps. Simply resubmit the original payload with the new value, and the payment will process.</p></div>
+    <div class="rp-step-num">1b</div>
+    <div><h4>Generate a GCash wallet payment request</h4><p>Use a supported client library along with Recurly.js to configure your checkout. GCash uses Recurly.js to display the consumer authentication window during checkout.</p></div>
   </div>
 </div>
 
-<br />
+Send a request to the `create_purchase` method on Recurly's API, including:
 
-<br />
+<ul class="rp-list">
+  <li>Customer account data — code, name, billing info, phone number, and email address</li>
+  <li>Line items with specific values or IDs if you are using Line item catalogue</li>
+  <li>The `type` field set to `gcash`</li>
+  <li>You must set the `store_billing_info` field set to `false`</li>
+</ul>
+
+```json Signup Request
+{
+  "currency": "PHP",
+  "account": {
+      "code": "account-code",
+      "email":"customer-email@example.com",
+      "billing_info": {
+          "first_name": "First",
+          "last_name": "Last",
+          //"three_d_secure_action_result_token_id": "BSFIYrYdEbdfcnI982gr9Q",
+          "address": {
+              "street1": "14 Laurel Road, Florentino Subd.",
+              "city": "Brgy. San Antonio",
+              "region": "Metro Manila",
+              "postal_code": "1234",
+              "country": "PH"
+          },
+          "tax_identifier":"123456789012", // Valid PH tax id
+          "store_billing_info": false,
+          "type":"gcash"
+      }
+  },
+  "gateway_code": "gateway-code", 
+  "line_items": [
+        {
+            "unit_amount": "10.00",
+            "quantity": 1,
+            "description": "Item Description",
+            "type": "charge",
+            "tax_code": "physical", // or digital
+            "product_code": "product-code"
+        }
+    ]
+]
+```
+
+# Processing the Responses
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Obtain the action result value from the response</h4><p>Whether you are signing up for a subscription, or creating an ecommerce transaction, the response handling will remain the same. The initial response includes an action token in the <code>three_d_secure_action_token_id</code> param. You will feed that through Recurly.js to render the customer authentication modal. Once they have completed, you will receive an action result token from Recurly.js and provide it in <code>three_d_secure_action_result_token_id</code> on the follow-up steps. Simply resubmit the original payload with the new value, and the payment will process.</p></div>
+  </div>
+</div>
