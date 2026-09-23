@@ -300,6 +300,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-sticky-link">
+
           Path overview
         </a>
         
@@ -357,7 +358,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-calendar"></i></div>
           <h4>Monthly subscribers</h4>
-          <p>28-day window, 4–5 emails spaced 4–5 days apart. Friendly, concise tone — most monthly failures are soft declines that resolve quickly with a timely prompt.</p>
+          <p>27-day window, 4–5 emails spaced 4–5 days apart. Friendly, concise tone — most monthly failures are soft declines that resolve quickly with a timely prompt.</p>
           <span class="rc-feature-tag">Start here</span>
         </div>
         <div class="rc-feature-card">
@@ -383,7 +384,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <tr><th>Campaign type</th><th>Window</th><th>Email count</th><th>Tone</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>Monthly consumer</strong></td><td>28 days</td><td>4–5 emails</td><td>Friendly, concise</td></tr>
+          <tr><td><strong>Monthly consumer</strong></td><td>27 days</td><td>4–5 emails</td><td>Friendly, concise</td></tr>
           <tr><td><strong>Annual</strong></td><td>60 days</td><td>8–10 emails</td><td>Higher-touch, value-focused</td></tr>
           <tr><td><strong>Low-value / price-sensitive</strong></td><td>14–21 days</td><td>3–4 emails</td><td>Casual, option-forward</td></tr>
           <tr><td><strong>Enterprise / team</strong></td><td>60+ days</td><td>8–12 emails</td><td>Formal, consequence-aware</td></tr>
@@ -444,5 +445,3 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   </div>
 </div>
 `}</HTMLBlock>
-
-<br />
