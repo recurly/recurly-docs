@@ -29,7 +29,7 @@ metadata:
 ### Limitations
 
 <ul class="rp-list">
-  <li>GCash one time payments do not store payment method data -- you must allow cusotmers to select GCash as a payment method in your Checkout flow</li>
+  <li>GCash one time payments do not store payment method data -- you must allow customers to select GCash as a payment method in your Checkout flow</li>
 </ul>
 
 # Definition
