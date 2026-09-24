@@ -24,6 +24,7 @@ metadata:
   <li>Completed the <a href="https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/" target="_blank">Quickstart guide</a></li>
   <li>Familiarity with Recurly.js</li>
   <li>A dLocal sandbox and/or production gateway account with GCash enabled</li>
+  <li>If you are planning on implementing ecommerce-style (customer-in-session, one time transactions) flows, you must have Support enable the associated feature flag allowing use of the <code>store_billing_info</code> field.
 </ul>
 
 ### Limitations
