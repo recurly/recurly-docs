@@ -26,9 +26,9 @@ In the context of webhooks, **subscription lifecycle&#x20;**&#x69;s a long-term 
 
 * Review our dedicated documentation for [Subscription notifications](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications)
 * The shortlist is:&#x20;
-  * Basics: Created, Updated, Cancelled, Expired, Renewed, Paused
-  * More specific: Reactivated (after cancellation), variations of Pause including Paused Scheduled, Pause Modified, Pause Cancelled), Resumed after Pause, Renewal Skipped, Pending Change Scheduled
-  * Very specific: Mandate cancelled/inactive, Low Balance (gift cards)
+  * **Basics**: Created, Updated, Cancelled, Expired, Renewed, Paused -- these events are highly recommended for all merchants consuming webhooks to understand the state of their subscriptions at all times.
+  * **Advanced**: Reactivated (after cancellation), variations of Pause including Paused Scheduled, Pause Modified, Pause Cancelled), Resumed after Pause, Renewal Skipped, Pending Change Scheduled -- for merchants using pause functionality or advanced pause scheduling, or allowing customers to reactivate / resume after a cancellation or pause, these are also critical, but their importance depends on your business model and integration.
+  * **Payment Method Specific:** Mandate inactive, Low Balance (gift cards) -- you will only receive these if you are using Recurly gift card behavior (low balance), or a payment method that uses mandates for subscriptions, such as UPI AutoPay, or SEPA Direct Debit.
 
 ### Best Practices and Notable Information
 
