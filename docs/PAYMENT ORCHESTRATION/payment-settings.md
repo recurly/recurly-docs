@@ -58,6 +58,13 @@ next:
 <li>Merchants outside the US using Amex will not be able to use Card Refresher</li>
 </ul>
 
+**Mandate Revocation Settings**
+
+<ul class="rp-list">
+<li>Applicable to mandated-payment methods only</li>
+<li>Gateways supported: Ebanx, Stripe, PayPal Complete</li>
+</ul>
+
 # Definition
 
 <div class="rp-definition">Payment settings is your central hub for configuring how Recurly handles card verification and billing data integrity. It brings together Account Updater — which keeps subscription billing data current as cards expire or change — and AVS/CVV rejection rules, which let you automatically void approved transactions where the cardholder's address or security code doesn't match what the issuing bank has on file.</div>
