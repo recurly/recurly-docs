@@ -1,5 +1,8 @@
 ---
 title: Aynchronous payments webhook guide
+excerpt: >-
+  Learn how to manage payment status updates for methods that remain in pending
+  and are later updated.
 deprecated: false
 hidden: false
 metadata:
