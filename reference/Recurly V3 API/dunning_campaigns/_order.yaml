@@ -1,3 +1,7 @@
 - list_dunning_campaigns
 - get_dunning_campaign
 - put_dunning_campaign_bulk_update
+- create_dunning_campaign
+- update_dunning_campaign
+- deactivate_dunning_campaign
+- list_dunning_campaign_email_templates
