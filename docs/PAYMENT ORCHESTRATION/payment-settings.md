@@ -238,6 +238,70 @@ Direct Debit payment methods include:&#x20;
 - BACS
 - BECS
 
+## Enabling Mandate Settings
+
+There are two features to Mandate settings:&#x20;
+
+**Mandate Buffer:** Certain APMs require an 'upper limit' for the mandate to allow for price changes, and Recurly's default is 18% calculated off the plan amount itself. You may use this setting to customize the percentage of the buffer based on your business's specific requirements.&#x20;
+
+Keep in mind, the upper limit of a mandate is **visible&#x20;**&#x74;o your consumer in their banking apps, and as such it is not recommended to make the buffer percentage too high as this can cause cart abandonment. No higher than 30% is recommended.
+
+It is also not recommended to go _lower_ than 15%, as this gives you very little wiggle room if you want to make minor price changes. For example, a buffer of 15% on a $10.00 plan only nets you a 11.50 mandate upper limit, only allowing you to modify your prices a teeny bit.
+
+- **Supported Gateways:&#x20;**&#x45;banx, Stripe (India e-mandates)
+
+<div class="rp-steps">
+<div class="rp-step">
+<div class="rp-step-num">1</div>
+<div><h4>Go to Configuration → Payment Settings</h4><p>Navigate to Configuration, then select Payment Settings.</p></div>
+</div>
+</div>
+
+<div class="rp-steps">
+<div class="rp-step">
+<div class="rp-step-num">2</div>
+<div><h4>Verify your gateway</h4><p>Confirm your gateway appears in the supported list and is active in your gateway settings.</p></div>
+</div>
+</div>
+
+<div class="rp-steps">
+<div class="rp-step">
+<div class="rp-step-num">3</div>
+<div><h4>Choose the Default or a Custom Percentage</h4><p>The default will be the 18% buffer, but you may choose to change to a custom value. Simply select 'Set a custom percentage', and enter the value you want to use.</p></div>
+</div>
+</div>
+
+![](https://files.readme.io/145e72fcebdd3ffef7285263be977550ee0a759886dd5d10d757d5fecc9e6ae2-Screenshot_2026-09-24_at_4.52.28_PM.png)
+
+<br />
+
+**Mandate Revocation handling**: When Recurly has a mandate on file, that mandate also exists at a bank-level, and for certain APMs, customers can revoke their mandates through a banking app. Supported methods include: UPI AutoPay, Cards in India using e-mandates (Stripe only), Pix Automatico, Mercado Pago.
+
+<div class="rp-steps">
+<div class="rp-step">
+<div class="rp-step-num">1</div>
+<div><h4>Go to Configuration → Payment Settings</h4><p>Navigate to Configuration, then select Payment Settings.</p></div>
+</div>
+</div>
+
+<div class="rp-steps">
+<div class="rp-step">
+<div class="rp-step-num">2</div>
+<div><h4>Verify your gateway</h4><p>Confirm your gateway appears in the supported list and is active in your gateway settings.</p></div>
+</div>
+</div>
+
+<div class="rp-steps">
+<div class="rp-step">
+<div class="rp-step-num">3</div>
+<div><h4>Choose Automated Subscription handling or Manual handling</h4><p>The default will be automatic management, and you are given a choice to auto-cancel or auto-expire subscriptions if a customer cancels their mandate externally. If you are listening to the <code>mandate.inactive</code> subscription webhook, you may choose to change to manual handling. With manual management, Recurly will not cancel or expire subscriptions upon mandate revocation, and you must take action on your own by calling our APIs to change subscription states to cancelled or expired.</p></div>
+</div>
+</div>
+
+
+<Image src="https://files.readme.io/b9b6655bc7dfc4fc8b291a67aad124a6d8dd0b1828a6dc0a0b8f0f73a440f2e1-Screenshot_2026-09-24_at_4.42.04_PM.png" align="center" width="75%" border={true} />
+
+
 # FAQs
 
 <Accordion title="What if my customer doesn't provide an address on the initial transaction?">
@@ -250,4 +314,12 @@ Direct Debit payment methods include:&#x20;
 
 <Accordion title="Will CVV be checked on recurring transactions?">
   No. Recurly doesn't store CVV codes in order to comply with PCI standards, so the CVV is never included in recurring transactions. Both AVS and CVV rules apply only to initial transactions — for example, a customer's first sign-up.
+</Accordion>
+
+<Accordion title="If I set my mandate buffer to 0%, can I raise my prices later?">
+  No. External mandates with specific APMs will decline transaction requests if they exceed the mandate upper limit applied at the start of the subscription. If you have set your mandate buffer to 0%, which is not recommended, the subscription needs to be cancelled and the customer brought back into session to sign up again.
+</Accordion>
+
+<Accordion title="My customer revoked their mandate on a subscription and the subscription is now cancelled. Can I reactivate it?">
+  No. External mandates that have been revoked will remain in that state. Customers will need to come back into session to sign up for a subscription again, as the mandate is no longer valid with the bank and transaction attempts against it will fail.
 </Accordion>
