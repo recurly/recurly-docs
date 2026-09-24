@@ -2,7 +2,9 @@
 title: Subscription lifecycle webhook guide
 excerpt: Learn how to manage your subscriptions' lifecycles through webhooks.
 deprecated: false
-hidden: true
+hidden: false
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
