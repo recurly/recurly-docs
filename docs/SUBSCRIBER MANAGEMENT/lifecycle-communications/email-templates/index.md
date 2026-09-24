@@ -376,7 +376,7 @@ Recurly's Sender Authentication feature lets you verify your DNS records directl
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>
   <ul>
-    <li>Sender Authentication is required for all new sites that do not have their own paid SendGrid account. If you're using a paid SendGrid integration, refer to the <a href="https://docs.recurly.com/docs/sendgrid" target="_blank">SendGrid documentation</a> instead.</li>
+    <li>Sender Authentication is <span style={{fontWeight: "bold"}}>required</span> for all new sites that do not have their own paid SendGrid account. If you're using a paid SendGrid integration, refer to the <a href="https://docs.recurly.com/docs/sendgrid" target="_blank">SendGrid documentation</a> instead.</li>
     <li>If you have multiple sites and wish to reuse authenticated senders, please contact Recurly Support or your CSM.</li>
   </ul>
   </div>
