@@ -62,11 +62,21 @@ Recurly's integration uses Kount's updated **Kount 360** platform.
 
 Once Kount’s Fraud Service is activated, Recurly initiates risk assessments for new card verifications, including sign-ups and billing info updates. Accounts with existing credit or debit cards will only be assessed if their billing information is updated.
 
+# Kount Basic (Portfolio)
+
+For businesses seeking a fraud management solution, but don't want to deal with a lot of customization or technical enablement, Kount Portfolio is the ideal choice. With Kount Basic, you can:
+
+- Select which payment methods Kount takes action on.
+- Access Kount scores in the Recurly UI to track fraud behavior.
+- Leverage Kount's advanced artificial intelligence scoring for improved fraud detection.
+
 # Kount Enterprise
 
 For businesses seeking a robust and customizable fraud management solution, Kount Enterprise is the ideal choice. It offers the foundational fraud prevention technology of Kount Basic, enhanced with direct access to your Kount Control Center and a dedicated Kount Customer Success Manager. With Kount Enterprise, you can:
 
 - Create custom rules based on observed fraud trends and specific business policies.
+- Access Kount scores in the Recurly UI to track fraud behavior.
+- Select which payment methods Kount takes action on.
 - Access Kount’s business intelligence tools for comprehensive analysis.
 - Conduct manual reviews for transactions.
 - Leverage Kount's advanced artificial intelligence scoring for improved fraud detection.
@@ -88,13 +98,14 @@ For new billing information (Cards) and APMs, Recurly will send relevant payment
 - **On Approval** -- if Kount "approves" a transaction, Recurly will send the authorization request to the specified gateway for approval at the bank. The transaction can still be declined by the bank or gateway.
 - **On Review** -- if Kount marks a transaction to be "reviewed", Recurly will send the authorization request to the specified gateway for approval at the bank. The transaction can still be declined by the bank or gateway. If you mark a 'Review' transaction in Kount as declined, expect a webhook from Recurly. You will need to take action (void or refund) on your own when this happens.
   - See [Webhook Setup](https://docs.recurly.com/recurly-subscriptions/docs/kount#step-3-webhook-configuration-optional) and our [Kount Webhook Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide) for more details.
+  - Note: Review flows are only available to Kount Enterprise accounts.
 - **On Decline** -- if Kount marks a transaction as "declined", Recurly will not send the transaction to the gateway, and the transaction will be marked declined.
 
 # Kount Configuration
 
 ## API Key Configuration and Setup
 
-### Kount Portfolio Accounts
+### Kount Basic Accounts
 
 <Callout icon="📘" theme="info">
   ### Please Note: If you have a Kount Basic/Portfolio account with Kount, skip to **Step 2,** **sub-step 7** to configure your Account in Recurly.
