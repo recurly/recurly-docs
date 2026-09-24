@@ -79,7 +79,7 @@ next:
 </div>
 <div class="rp-benefit">
 <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
-<strong>Block fraudulent sign-ups at the gate</strong>
+<strong>Block fraudulent sign-ups at the start</strong>
 <span>CVV and AVS rejection rules let you void approved transactions where the card code, street address, or postal code doesn't match the issuer's records — stopping fraud at the moment of first contact.</span>
 </div>
 <div class="rp-benefit">
