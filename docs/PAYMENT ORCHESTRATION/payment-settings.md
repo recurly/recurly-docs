@@ -277,6 +277,8 @@ It is also not recommended to go _lower_ than 15%, as this gives you very little
 
 **Mandate Revocation handling**: When Recurly has a mandate on file, that mandate also exists at a bank-level, and for certain APMs, customers can revoke their mandates through a banking app. Supported methods include: UPI AutoPay, Cards in India using e-mandates (Stripe only), Pix Automatico, Mercado Pago.
 
+* **Supported Gateways:&#x20;**&#x45;banx, Stripe (India e-mandates)
+
 <div class="rp-steps">
 <div class="rp-step">
 <div class="rp-step-num">1</div>
