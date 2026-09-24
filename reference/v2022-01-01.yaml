@@ -366,62 +366,59 @@ security:
 x-tagGroups:
   - name: Customers
     tags:
-      - account
-      - note
-      - account_acquisition
-      - billing_info
-      - billing_infos
-      - coupon_redemption
-      - subscription
-      - subscription_change
-      - usage
-      - shipping_address
+      - Account
+      - Account Note
+      - Account Acquisition Info
+      - Billing Info
+      - Billing Infos
+      - Coupon Redemption
+      - Subscription
+      - Subscription Change
+      - Usage
+      - Shipping Address
   - name: Invoices and Payments
     tags:
-      - purchase
-      - invoice
-      - line_item
-      - credit_payment
-      - transaction
-      - revenue_recovery
-      - gift_cards
+      - Purchase
+      - Invoice
+      - Line Item
+      - Credit Payment
+      - Transaction
+      - Revenue Recovery
+      - Gift Cards
   - name: Products and Promotions
     tags:
-      - item
-      - plan
-      - add-on
-      - price_segment
-      - measured_unit
-      - coupon
-      - unique_coupon_code
+      - Item
+      - Plan
+      - Add-on
+      - Price Segment
+      - Measured Unit
+      - Coupon
+      - Unique Coupon Code
   - name: Configuration
     tags:
-      - site
-      - custom_field_definition
-      - shipping_method
-      - dunning_campaigns
-      - business_entities
-      - automated_exports
-      - general_ledger_account
-      - performance_obligations
+      - Site
+      - Custom Field Definition
+      - Shipping Method
+      - Dunning Campaigns
+      - Business Entities
+      - Automated Exports
+      - General Ledger Account
+      - Performance Obligations
   - name: App Management
     tags:
-      - external_subscriptions
-      - external_invoices
-      - external_products
-      - external_accounts
-      - external_product_references
-      - external_payment_phases
+      - External Subscription
+      - External Invoice
+      - External Product
+      - External Account
+      - External Product Reference
+      - External Payment Phase
 tags:
-  - name: site
-    x-displayName: Site
-  - name: custom_field_definition
-    x-displayName: Custom Field Definition
+  - name: Site
+  - name: Custom Field Definition
     description: >-
       Describes the fields that can be used as custom fields on accounts, items,
       line-items (one time charges), plans, or subscriptions.
-  - name: item
-    x-displayName: Item
+  - name: Item
     description: >-
       For merchants who sell the same things to many customers, documenting
       those offerings in a catalog allows for faster charge creation, easier
@@ -431,95 +428,78 @@ tags:
 
 
       Recurly's item catalog requires the Credit Invoices feature to be enabled.
-  - name: plan
-    x-displayName: Plan
+  - name: Plan
     description: >-
       A plan tells Recurly how often and how much to charge your customers.
       Plans can be created with free trials, optional products (called add-ons),
       setup fees, and more.
-  - name: add-on
-    x-displayName: Add-on
+  - name: Add-on
     description: >-
       An add-on is a charge billed each billing period in addition to a
       subscription’s base charge. Each plan may have one or more add-ons
       associated with it.
-  - name: measured_unit
-    x-displayName: Measured Unit
+  - name: Measured Unit
     description: >-
       A measured unit describes a usage-based add-on's usage. If different
       usage-based add-ons share the same measured unit, you can report on
       customer usage for those add-ons at the aggregated measured unit level.
-  - name: account
-    x-displayName: Account
+  - name: Account
     description: >-
       Accounts are core to managing your customers inside of Recurly. The
       account object stores the entire Recurly history of your customer and acts
       as the entry point for working with a customer's billing information,
       subscription data, transactions, invoices and more.
-  - name: note
-    x-displayName: Account Note
+  - name: Account Note
     description: >-
       Account notes allow your team to leave notes on an account to add context,
       e.g. the reason for a refund, customer requests, and/or complaints. These
       notes are internal and not exposed to your customers.
-  - name: account_acquisition
-    x-displayName: Account Acquisition Info
+  - name: Account Acquisition Info
     description: >-
       Recurly offers the ability to record marketing data on customer accounts
       to match this data with revenue and billing data events in Recurly.
-  - name: price_segment
-    x-displayName: Price Segment
-  - name: billing_info
-    x-displayName: Billing Info
+  - name: Price Segment
+  - name: Billing Info
     description: >-
       Without the premium Wallet feature, an account can only have one stored
       payment method at a time. Examples include credit cards, PayPal, or bank
       accounts. Billing info is filled out by the customer upon purchase or when
       they update their information.
-  - name: billing_infos
-    x-displayName: Billing Infos
+  - name: Billing Infos
     description: >-
       If the premium Wallet feature is enabled, an account can have multiple
       payment methods stored. Examples include credit cards, PayPal, or bank
       accounts. Primary or backup billing infos can be designated from these
       endpoints.
-  - name: subscription
-    x-displayName: Subscription
+  - name: Subscription
     description: >-
       Subscriptions are created when your customers subscribe to one of your
       plans. The customer's subscription tells Recurly when and how much to bill
       the customer.
-  - name: subscription_change
-    x-displayName: Subscription Change
+  - name: Subscription Change
     description: >-
       Subscription changes alter subscription in a way that might affect the
       invoiced amount, such as changing the plan, add-ons, quantities, or
       shipping address. Changes can be made immediately in the current billing
       cycle or scheduled to take place at the next renewal.
-  - name: shipping_address
-    x-displayName: Shipping Address
+  - name: Shipping Address
     description: >-
       Shipping addresses are tied to a customer's account. Each account can have
       up to 20 different shipping addresses, and if you have enabled multiple
       subscriptions per account, you can associate different shipping addresses
       to each subscription.
-  - name: invoice
-    x-displayName: Invoice
+  - name: Invoice
     description: >-
       An invoice relates charges, credits, and payments together. When a
       subscription is created or renewed or a charge is created on the account,
       Recurly will sum the charges, discount or tax as appropriate, and send the
       invoice out for collection.
-  - name: revenue_recovery
-    x-displayName: Revenue Recovery
+  - name: Revenue Recovery
     description: Revenue recovery
-  - name: line_item
-    x-displayName: Line Item
+  - name: Line Item
     description: Line items are the charges and credits on your customer's invoices.
-  - name: credit_payment
-    x-displayName: Credit Payment
-  - name: purchase
-    x-displayName: Purchase
+  - name: Credit Payment
+  - name: Purchase
     description: >-
       A purchase is a checkout containing at least one or more subscriptions or
       one-time charges (line items) and supports both coupon and gift card
@@ -527,90 +507,73 @@ tags:
       one transaction. The purchases endpoint can also be used to immediately
       create a credit invoice on an account, when Credit Invoices is enabled on
       your site.
-  - name: usage
-    x-displayName: Usage
+  - name: Usage
     description: >-
       Send Recurly your customer usage and we will automatically bill them in
       arrears at the end of the billing cycle. For more info on usage-based
       billing, [click here](https://docs.recurly.com/docs/usage-based-billing).
-  - name: transaction
-    x-displayName: Transaction
+  - name: Transaction
     description: >-
       Purchasing information is sent to your payment gateway in an action called
       a transaction. This includes the customer's billing information and the
       amount of money to be charged, voided, or refunded.
-  - name: coupon
-    x-displayName: Coupon
+  - name: Coupon
     description: >-
       Coupons can either be single codes that easily allow mass distribution by
       many customers or bulk coupons that can generate many unique coupons that
       can allow for individual delivery and tracking.
-  - name: coupon_redemption
-    x-displayName: Coupon Redemption
+  - name: Coupon Redemption
     description: >-
       Coupon redemptions are created when a coupon is applied to an account or
       subscription. This allows you to track your promotions.
-  - name: unique_coupon_code
-    x-displayName: Unique Coupon Code
+  - name: Unique Coupon Code
     description: Unique coupon codes are generated from bulk coupons.
-  - name: shipping_method
-    x-displayName: Shipping Method
+  - name: Shipping Method
     description: Shipping methods offered to send products to customers.
-  - name: automated_exports
-    x-displayName: Automated Exports
+  - name: Automated Exports
     description: Automated exports of customer data.
-  - name: dunning_campaigns
-    x-displayName: Dunning Campaigns
+  - name: Dunning Campaigns
     description: >-
       Settings used when attempting to dun customers whose payments are
       declined.
-  - name: external_subscriptions
-    x-displayName: External Subscription
+  - name: External Subscription
     description: >-
       A subscription from an external resource that is not managed by the
       Recurly platform and instead is managed by third-party platforms like
       Apple App Store and Google Play Store.
-  - name: external_invoices
-    x-displayName: External Invoice
+  - name: External Invoice
     description: >-
       An invoice from an external resource that is not managed by the Recurly
       platform and instead is managed by third-party platforms like Apple App
       Store and Google Play Store.
-  - name: external_products
-    x-displayName: External Product
+  - name: External Product
     description: >-
       A product from an external resource that is not managed by the Recurly
       platform and instead is managed by third-party platforms like Apple App
       Store and Google Play Store.
-  - name: external_product_references
-    x-displayName: External Product Reference
+  - name: External Product Reference
     description: >-
       Associates an external product to a corresponding resource on an external
       platform like the Apple App Store or Google Play Store.
-  - name: external_payment_phases
-    x-displayName: External Payment Phase
+  - name: External Payment Phase
     description: >-
       Details of payments in the lifecycle of a subscription from an external
       resource that is not managed by the Recurly platform, e.g. App Store or
       Google Play Store.
-  - name: gift_cards
-    x-displayName: Gift Cards
+  - name: Gift Cards
     description: >-
       Add gift card purchases to your checkout and allow gift card recipients to
       redeem the gift card for credit towards any of your products.
-  - name: external_accounts
-    x-displayName: External Account
+  - name: External Account
     description: >-
       An account from an external resource that is not managed by the Recurly
       platform and instead is managed by third-party platforms like Apple App
       Store and Google Play Store.
-  - name: business_entities
-    x-displayName: Business Entities
+  - name: Business Entities
     description: >-
       Describes the business address that will be used for invoices and taxes
       depending on settings and subscriber location.
-  - name: general_ledger_account
-    x-displayName: General Ledger Account
+  - name: General Ledger Account
     description: |
       A general ledger account is an account of record used to sort, store
       and summarize a company's transactions. Recurly supports the balance
@@ -642,8 +605,7 @@ tags:
 
       If you are interested in Recurly Revenue Recognition features, please
       contact a Recurly customer service representative.
-  - name: performance_obligations
-    x-displayName: Performance Obligations
+  - name: Performance Obligations
     description: >
       A performance obligation is a promise to provide a distinct good or
 
@@ -686,7 +648,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       tags:
-        - site
+        - Site
       parameters:
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
@@ -718,7 +680,7 @@ paths:
       operationId: get_site
       summary: Fetch a site
       tags:
-        - site
+        - Site
       parameters:
         - $ref: '#/components/parameters/site_id'
       responses:
@@ -744,7 +706,7 @@ paths:
   /accounts:
     get:
       tags:
-        - account
+        - Account
       operationId: list_accounts
       summary: List a site's accounts
       description: >-
@@ -789,7 +751,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - account
+        - Account
       operationId: create_account
       summary: Create an account
       requestBody:
@@ -837,7 +799,7 @@ paths:
       - $ref: '#/components/parameters/account_id'
     get:
       tags:
-        - account
+        - Account
       operationId: get_account
       summary: Fetch an account
       responses:
@@ -856,7 +818,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - account
+        - Account
       operationId: update_account
       summary: Update an account
       requestBody:
@@ -901,7 +863,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - account
+        - Account
       operationId: deactivate_account
       summary: Deactivate an account
       description: >-
@@ -945,7 +907,7 @@ paths:
       - $ref: '#/components/parameters/account_id'
     put:
       tags:
-        - account
+        - Account
       operationId: redact_account
       summary: Redact an account (GDPR Right to Erasure)
       description: >-
@@ -988,7 +950,7 @@ paths:
       - $ref: '#/components/parameters/account_id'
     get:
       tags:
-        - account_acquisition
+        - Account Acquisition Info
       operationId: get_account_acquisition
       summary: Fetch an account's acquisition data
       responses:
@@ -1007,7 +969,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - account_acquisition
+        - Account Acquisition Info
       operationId: update_account_acquisition
       summary: Update an account's acquisition data
       requestBody:
@@ -1044,7 +1006,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - account_acquisition
+        - Account Acquisition Info
       operationId: remove_account_acquisition
       summary: Remove an account's acquisition data
       responses:
@@ -1062,7 +1024,7 @@ paths:
       - $ref: '#/components/parameters/account_id'
     put:
       tags:
-        - account
+        - Account
       operationId: reactivate_account
       summary: Reactivate an inactive account
       description: >-
@@ -1099,7 +1061,7 @@ paths:
       - $ref: '#/components/parameters/account_id'
     get:
       tags:
-        - account
+        - Account
       operationId: get_account_balance
       summary: Fetch an account's balance and past due status
       responses:
@@ -1125,7 +1087,7 @@ paths:
   /accounts/{account_id}/billing_info:
     get:
       tags:
-        - billing_info
+        - Billing Info
       operationId: get_billing_info
       summary: Fetch an account's billing information
       parameters:
@@ -1152,7 +1114,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - billing_info
+        - Billing Info
       operationId: update_billing_info
       summary: Set an account's billing information
       description: >
@@ -1229,7 +1191,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - billing_info
+        - Billing Info
       operationId: remove_billing_info
       summary: Remove an account's billing information
       parameters:
@@ -1251,7 +1213,7 @@ paths:
   /accounts/{account_id}/billing_info/verify:
     post:
       tags:
-        - billing_info
+        - Billing Info
       operationId: verify_billing_info
       summary: Verify an account's credit card billing information
       parameters:
@@ -1293,7 +1255,7 @@ paths:
   /accounts/{account_id}/billing_info/verify_cvv:
     post:
       tags:
-        - billing_info
+        - Billing Info
       operationId: verify_billing_info_cvv
       summary: Verify an account's credit card billing cvv
       parameters:
@@ -1336,7 +1298,7 @@ paths:
   /accounts/{account_id}/billing_infos:
     get:
       tags:
-        - billing_infos
+        - Billing Infos
       operationId: list_billing_infos
       summary: Get the list of billing information associated with an account
       description: >-
@@ -1370,7 +1332,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - billing_infos
+        - Billing Infos
       operationId: create_billing_info
       summary: Add new billing information on an account
       description: >
@@ -1448,7 +1410,7 @@ paths:
   /accounts/{account_id}/billing_infos/{billing_info_id}:
     get:
       tags:
-        - billing_infos
+        - Billing Infos
       operationId: get_a_billing_info
       summary: Fetch a billing info
       parameters:
@@ -1470,7 +1432,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - billing_infos
+        - Billing Infos
       operationId: update_a_billing_info
       summary: Update an account's billing information
       description: >
@@ -1548,7 +1510,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - billing_infos
+        - Billing Infos
       operationId: remove_a_billing_info
       summary: Remove an account's billing information
       parameters:
@@ -1579,7 +1541,7 @@ paths:
   /accounts/{account_id}/billing_infos/{billing_info_id}/verify:
     post:
       tags:
-        - billing_infos
+        - Billing Infos
       operationId: verify_billing_infos
       summary: Verify a billing information's credit card
       parameters:
@@ -1622,7 +1584,7 @@ paths:
   /accounts/{account_id}/billing_infos/{billing_info_id}/verify_cvv:
     post:
       tags:
-        - billing_infos
+        - Billing Infos
       operationId: verify_billing_infos_cvv
       summary: Verify a billing information's credit card cvv
       parameters:
@@ -1670,7 +1632,7 @@ paths:
   /accounts/{account_id}/coupon_redemptions:
     get:
       tags:
-        - coupon_redemption
+        - Coupon Redemption
       operationId: list_account_coupon_redemptions
       summary: List the coupon redemptions for an account
       description: >-
@@ -1706,7 +1668,7 @@ paths:
   /accounts/{account_id}/coupon_redemptions/active:
     get:
       tags:
-        - coupon_redemption
+        - Coupon Redemption
       operationId: list_active_coupon_redemptions
       summary: List the coupon redemptions that are active on an account
       description: >-
@@ -1736,7 +1698,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - coupon_redemption
+        - Coupon Redemption
       operationId: create_coupon_redemption
       summary: Generate an active coupon redemption on an account or subscription
       parameters:
@@ -1775,7 +1737,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - coupon_redemption
+        - Coupon Redemption
       operationId: remove_coupon_redemption
       summary: Delete the active coupon redemption from an account
       parameters:
@@ -1803,7 +1765,7 @@ paths:
   /accounts/{account_id}/coupon_redemptions/{coupon_redemption_id}:
     get:
       tags:
-        - coupon_redemption
+        - Coupon Redemption
       operationId: get_coupon_redemption
       summary: Show the coupon redemption
       parameters:
@@ -1831,7 +1793,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - coupon_redemption
+        - Coupon Redemption
       operationId: remove_coupon_redemption_by_id
       summary: Delete the coupon redemption
       description: Deactivate the coupon redemption on an account.
@@ -1867,7 +1829,7 @@ paths:
   /accounts/{account_id}/credit_payments:
     get:
       tags:
-        - credit_payment
+        - Credit Payment
       operationId: list_account_credit_payments
       summary: List an account's credit payments
       description: >-
@@ -1911,7 +1873,7 @@ paths:
       - $ref: '#/components/parameters/account_id'
     get:
       tags:
-        - external_accounts
+        - External Account
       operationId: list_account_external_account
       summary: List external accounts for an account
       responses:
@@ -1948,7 +1910,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - external_accounts
+        - External Account
       operationId: create_account_external_account
       summary: Create an external account
       requestBody:
@@ -1994,7 +1956,7 @@ paths:
       - $ref: '#/components/parameters/external_account_id'
     get:
       tags:
-        - external_accounts
+        - External Account
       operationId: get_account_external_account
       summary: Get an external account for an account
       responses:
@@ -2031,7 +1993,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - external_accounts
+        - External Account
       operationId: update_account_external_account
       summary: Update an external account
       requestBody:
@@ -2073,7 +2035,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - external_accounts
+        - External Account
       operationId: delete_account_external_account
       summary: Delete an external account for an account
       responses:
@@ -2113,7 +2075,7 @@ paths:
       - $ref: '#/components/parameters/account_id'
     get:
       tags:
-        - account
+        - Account
       operationId: list_account_external_invoices
       summary: List the external invoices on an account
       description: >-
@@ -2146,7 +2108,7 @@ paths:
   /accounts/{account_id}/invoices:
     get:
       tags:
-        - invoice
+        - Invoice
       operationId: list_account_invoices
       summary: List an account's invoices
       description: >-
@@ -2190,7 +2152,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - invoice
+        - Invoice
       operationId: create_invoice
       summary: Create an invoice for pending line items
       parameters:
@@ -2238,7 +2200,7 @@ paths:
   /accounts/{account_id}/invoices/preview:
     post:
       tags:
-        - invoice
+        - Invoice
       operationId: preview_invoice
       summary: Preview new invoice for pending line items
       parameters:
@@ -2284,7 +2246,7 @@ paths:
   /accounts/{account_id}/line_items:
     get:
       tags:
-        - line_item
+        - Line Item
       operationId: list_account_line_items
       summary: List an account's line items
       description: >-
@@ -2329,7 +2291,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - line_item
+        - Line Item
       operationId: create_line_item
       summary: Create a new line item for the account
       description: >-
@@ -2372,7 +2334,7 @@ paths:
   /accounts/{account_id}/notes:
     get:
       tags:
-        - note
+        - Account Note
       operationId: list_account_notes
       summary: List an account's notes
       description: >-
@@ -2403,7 +2365,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - note
+        - Account Note
       operationId: create_account_note
       summary: Create an account note
       parameters:
@@ -2449,7 +2411,7 @@ paths:
   /accounts/{account_id}/notes/{account_note_id}:
     get:
       tags:
-        - note
+        - Account Note
       operationId: get_account_note
       summary: Fetch an account note
       parameters:
@@ -2477,7 +2439,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - note
+        - Account Note
       operationId: remove_account_note
       summary: Delete an account note
       parameters:
@@ -2502,7 +2464,7 @@ paths:
   /accounts/{account_id}/shipping_addresses:
     get:
       tags:
-        - shipping_address
+        - Shipping Address
       operationId: list_shipping_addresses
       summary: Fetch a list of an account's shipping addresses
       description: >-
@@ -2538,7 +2500,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - shipping_address
+        - Shipping Address
       operationId: create_shipping_address
       summary: Create a new shipping address for the account
       parameters:
@@ -2578,7 +2540,7 @@ paths:
   /accounts/{account_id}/shipping_addresses/{shipping_address_id}:
     get:
       tags:
-        - shipping_address
+        - Shipping Address
       operationId: get_shipping_address
       summary: Fetch an account's shipping address
       parameters:
@@ -2606,7 +2568,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - shipping_address
+        - Shipping Address
       operationId: update_shipping_address
       summary: Update an account's shipping address
       parameters:
@@ -2652,7 +2614,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - shipping_address
+        - Shipping Address
       operationId: remove_shipping_address
       summary: Remove an account's shipping address
       parameters:
@@ -2671,7 +2633,7 @@ paths:
   /accounts/{account_id}/subscriptions:
     get:
       tags:
-        - subscription
+        - Subscription
       operationId: list_account_subscriptions
       summary: List an account's subscriptions
       description: >-
@@ -2715,7 +2677,7 @@ paths:
   /accounts/{account_id}/transactions:
     get:
       tags:
-        - transaction
+        - Transaction
       operationId: list_account_transactions
       summary: List an account's transactions
       description: >-
@@ -2760,7 +2722,7 @@ paths:
   /accounts/{account_id}/accounts:
     get:
       tags:
-        - account
+        - Account
       operationId: list_child_accounts
       summary: List an account's child accounts
       description: >-
@@ -2806,7 +2768,7 @@ paths:
   /acquisitions:
     get:
       tags:
-        - account_acquisition
+        - Account Acquisition Info
       operationId: list_account_acquisition
       summary: List a site's account acquisition data
       description: >-
@@ -2848,7 +2810,7 @@ paths:
   /coupons:
     get:
       tags:
-        - coupon
+        - Coupon
       operationId: list_coupons
       summary: List a site's coupons
       description: >-
@@ -2889,7 +2851,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - coupon
+        - Coupon
       operationId: create_coupon
       summary: Create a new coupon
       requestBody:
@@ -2936,7 +2898,7 @@ paths:
   /coupons/{coupon_id}:
     get:
       tags:
-        - coupon
+        - Coupon
       operationId: get_coupon
       summary: Fetch a coupon
       parameters:
@@ -2963,7 +2925,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - coupon
+        - Coupon
       operationId: update_coupon
       summary: Update an active coupon
       parameters:
@@ -3011,7 +2973,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - coupon
+        - Coupon
       operationId: deactivate_coupon
       summary: Expire a coupon
       parameters:
@@ -3034,7 +2996,7 @@ paths:
   /coupons/{coupon_id}/generate:
     post:
       tags:
-        - unique_coupon_code
+        - Unique Coupon Code
       operationId: generate_unique_coupon_codes
       summary: Generate unique coupon codes
       parameters:
@@ -3078,7 +3040,7 @@ paths:
   /coupons/{coupon_id}/generate_sync:
     post:
       tags:
-        - unique_coupon_code
+        - Unique Coupon Code
       operationId: generate_unique_coupon_codes_sync
       summary: Generate unique coupon codes synchronously
       description: >-
@@ -3128,7 +3090,7 @@ paths:
   /coupons/{coupon_id}/restore:
     put:
       tags:
-        - coupon
+        - Coupon
       operationId: restore_coupon
       summary: Restore an inactive coupon
       description: >-
@@ -3177,7 +3139,7 @@ paths:
   /coupons/{coupon_id}/unique_coupon_codes:
     get:
       tags:
-        - unique_coupon_code
+        - Unique Coupon Code
       operationId: list_unique_coupon_codes
       summary: List unique coupon codes associated with a bulk coupon
       description: >-
@@ -3215,7 +3177,7 @@ paths:
   /credit_payments:
     get:
       tags:
-        - credit_payment
+        - Credit Payment
       operationId: list_credit_payments
       summary: List a site's credit payments
       description: >-
@@ -3256,7 +3218,7 @@ paths:
   /credit_payments/{credit_payment_id}:
     get:
       tags:
-        - credit_payment
+        - Credit Payment
       operationId: get_credit_payment
       summary: Fetch a credit payment
       parameters:
@@ -3284,7 +3246,7 @@ paths:
   /custom_field_definitions:
     get:
       tags:
-        - custom_field_definition
+        - Custom Field Definition
       operationId: list_custom_field_definitions
       summary: List a site's custom field definitions
       description: >-
@@ -3337,7 +3299,7 @@ paths:
   /custom_field_definitions/{custom_field_definition_id}:
     get:
       tags:
-        - custom_field_definition
+        - Custom Field Definition
       operationId: get_custom_field_definition
       summary: Fetch an custom field definition
       parameters:
@@ -3365,7 +3327,7 @@ paths:
   /general_ledger_accounts:
     post:
       tags:
-        - general_ledger_account
+        - General Ledger Account
       operationId: create_general_ledger_account
       summary: Create a new general ledger account
       requestBody:
@@ -3390,7 +3352,7 @@ paths:
       x-code-samples: []
     get:
       tags:
-        - general_ledger_account
+        - General Ledger Account
       operationId: list_general_ledger_accounts
       summary: List a site's general ledger accounts
       description: >-
@@ -3419,7 +3381,7 @@ paths:
   /general_ledger_accounts/{general_ledger_account_id}:
     get:
       tags:
-        - general_ledger_account
+        - General Ledger Account
       operationId: get_general_ledger_account
       summary: Fetch a general ledger account
       parameters:
@@ -3440,7 +3402,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - general_ledger_account
+        - General Ledger Account
       operationId: update_general_ledger_account
       summary: Update a general ledger account
       parameters:
@@ -3468,7 +3430,7 @@ paths:
   /performance_obligations/{performance_obligation_id}:
     get:
       tags:
-        - performance_obligations
+        - Performance Obligations
       operationId: get_performance_obligation
       summary: Get a single Performance Obligation.
       parameters:
@@ -3490,7 +3452,7 @@ paths:
   /performance_obligations:
     get:
       tags:
-        - performance_obligations
+        - Performance Obligations
       operationId: get_performance_obligations
       summary: Get a site's Performance Obligations
       responses:
@@ -3510,7 +3472,7 @@ paths:
   /invoice_templates/{invoice_template_id}/accounts:
     get:
       tags:
-        - account
+        - Account
       operationId: list_invoice_template_accounts
       summary: List an invoice template's associated accounts
       description: >-
@@ -3556,7 +3518,7 @@ paths:
   /items:
     get:
       tags:
-        - item
+        - Item
       operationId: list_items
       summary: List a site's items
       description: >-
@@ -3598,7 +3560,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - item
+        - Item
       operationId: create_item
       summary: Create a new item
       requestBody:
@@ -3642,7 +3604,7 @@ paths:
   /items/{item_id}:
     get:
       tags:
-        - item
+        - Item
       operationId: get_item
       summary: Fetch an item
       parameters:
@@ -3669,7 +3631,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - item
+        - Item
       operationId: update_item
       summary: Update an active item
       parameters:
@@ -3714,7 +3676,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - item
+        - Item
       operationId: deactivate_item
       summary: Deactivate an item
       parameters:
@@ -3747,7 +3709,7 @@ paths:
       - $ref: '#/components/parameters/item_id'
     put:
       tags:
-        - item
+        - Item
       operationId: reactivate_item
       summary: Reactivate an inactive item
       description: >-
@@ -3782,7 +3744,7 @@ paths:
   /measured_units:
     get:
       tags:
-        - measured_unit
+        - Measured Unit
       operationId: list_measured_unit
       summary: List a site's measured units
       description: >-
@@ -3818,7 +3780,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - measured_unit
+        - Measured Unit
       operationId: create_measured_unit
       summary: Create a new measured unit
       requestBody:
@@ -3862,7 +3824,7 @@ paths:
   /measured_units/{measured_unit_id}:
     get:
       tags:
-        - measured_unit
+        - Measured Unit
       operationId: get_measured_unit
       summary: Fetch a measured unit
       parameters:
@@ -3889,7 +3851,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - measured_unit
+        - Measured Unit
       operationId: update_measured_unit
       summary: Update a measured unit
       parameters:
@@ -3934,7 +3896,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - measured_unit
+        - Measured Unit
       operationId: remove_measured_unit
       summary: Remove a measured unit
       description: A mesured unit cannot be deleted if it is used by an active plan.
@@ -3963,7 +3925,7 @@ paths:
   /external_products:
     get:
       tags:
-        - external_products
+        - External Product
       operationId: list_external_products
       summary: List a site's external products
       description: >-
@@ -3993,7 +3955,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - external_products
+        - External Product
       operationId: create_external_product
       summary: Create an external product
       requestBody:
@@ -4033,7 +3995,7 @@ paths:
       - $ref: '#/components/parameters/external_product_id'
     get:
       tags:
-        - external_products
+        - External Product
       operationId: get_external_product
       summary: Fetch an external product
       responses:
@@ -4058,7 +4020,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - external_products
+        - External Product
       operationId: update_external_product
       summary: Update an external product
       requestBody:
@@ -4089,7 +4051,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - external_products
+        - External Product
       operationId: deactivate_external_products
       summary: Deactivate an external product
       description: Deactivate an external product.
@@ -4118,7 +4080,7 @@ paths:
       - $ref: '#/components/parameters/external_product_id'
     get:
       tags:
-        - external_product_references
+        - External Product Reference
       operationId: list_external_product_external_product_references
       summary: List the external product references for an external product
       description: >-
@@ -4150,7 +4112,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - external_product_references
+        - External Product Reference
       operationId: create_external_product_external_product_reference
       summary: Create an external product reference on an external product
       requestBody:
@@ -4185,7 +4147,7 @@ paths:
       - $ref: '#/components/parameters/external_product_reference_id'
     get:
       tags:
-        - external_product_references
+        - External Product Reference
       operationId: get_external_product_external_product_reference
       summary: Fetch an external product reference
       responses:
@@ -4210,7 +4172,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - external_product_references
+        - External Product Reference
       operationId: deactivate_external_product_external_product_reference
       summary: Deactivate an external product reference
       responses:
@@ -4236,7 +4198,7 @@ paths:
   /external_subscriptions:
     post:
       tags:
-        - external_subscriptions
+        - External Subscription
       operationId: create_external_subscription
       summary: Create an external subscription
       requestBody:
@@ -4273,7 +4235,7 @@ paths:
       x-code-samples: []
     get:
       tags:
-        - external_subscriptions
+        - External Subscription
       operationId: list_external_subscriptions
       summary: List the external subscriptions on a site
       description: >-
@@ -4306,7 +4268,7 @@ paths:
       parameters:
         - $ref: '#/components/parameters/external_subscription_id_fetch'
       tags:
-        - external_subscriptions
+        - External Subscription
       operationId: get_external_subscription
       summary: Fetch an external subscription
       responses:
@@ -4339,7 +4301,7 @@ paths:
       parameters:
         - $ref: '#/components/parameters/external_subscription_id'
       tags:
-        - external_subscriptions
+        - External Subscription
       operationId: put_external_subscription
       summary: Update an external subscription
       requestBody:
@@ -4385,7 +4347,7 @@ paths:
       - $ref: '#/components/parameters/external_subscription_id'
     get:
       tags:
-        - external_subscriptions
+        - External Subscription
       operationId: list_external_subscription_external_invoices
       summary: List the external invoices on an external subscription
       description: >-
@@ -4417,7 +4379,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - external_invoices
+        - External Invoice
       operationId: create_external_invoice
       summary: Create an external invoice
       requestBody:
@@ -4455,7 +4417,7 @@ paths:
   /invoices:
     get:
       tags:
-        - invoice
+        - Invoice
       operationId: list_invoices
       summary: List a site's invoices
       description: >-
@@ -4498,7 +4460,7 @@ paths:
   /invoices/{invoice_id}:
     get:
       tags:
-        - invoice
+        - Invoice
       operationId: get_invoice
       summary: Fetch an invoice
       parameters:
@@ -4525,7 +4487,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - invoice
+        - Invoice
       operationId: update_invoice
       summary: Update an invoice
       parameters:
@@ -4559,7 +4521,7 @@ paths:
   /invoices/{invoice_id}.pdf:
     get:
       tags:
-        - invoice
+        - Invoice
       operationId: get_invoice_pdf
       summary: Fetch an invoice as a PDF
       parameters:
@@ -4587,7 +4549,7 @@ paths:
   /invoices/{invoice_id}/apply_credit_balance:
     put:
       tags:
-        - invoice
+        - Invoice
       operationId: apply_credit_balance
       summary: Apply available credit to a pending or past due charge invoice
       description: >-
@@ -4628,7 +4590,7 @@ paths:
   /invoices/{invoice_id}/collect:
     put:
       tags:
-        - invoice
+        - Invoice
       operationId: collect_invoice
       summary: Collect a pending or past due, automatic invoice
       description: >-
@@ -4673,7 +4635,7 @@ paths:
   /invoices/{invoice_id}/mark_failed:
     put:
       tags:
-        - invoice
+        - Invoice
       operationId: mark_invoice_failed
       summary: Mark an open invoice as failed
       description: >
@@ -4715,7 +4677,7 @@ paths:
   /invoices/{invoice_id}/mark_successful:
     put:
       tags:
-        - invoice
+        - Invoice
       operationId: mark_invoice_successful
       summary: Mark an open invoice as successful
       description: >
@@ -4758,7 +4720,7 @@ paths:
   /invoices/{invoice_id}/reopen:
     put:
       tags:
-        - invoice
+        - Invoice
       operationId: reopen_invoice
       summary: Reopen a closed, manual invoice
       parameters:
@@ -4794,7 +4756,7 @@ paths:
   /invoices/{invoice_id}/void:
     put:
       tags:
-        - invoice
+        - Invoice
       operationId: void_invoice
       summary: Void a credit invoice.
       description: >-
@@ -4831,7 +4793,7 @@ paths:
   /invoices/{invoice_id}/transactions:
     post:
       tags:
-        - invoice
+        - Invoice
       operationId: record_external_transaction
       summary: Record an external payment for a manual invoices.
       description: >-
@@ -4875,7 +4837,7 @@ paths:
   /invoices/{invoice_id}/line_items:
     get:
       tags:
-        - line_item
+        - Line Item
       operationId: list_invoice_line_items
       summary: List an invoice's line items
       description: >-
@@ -4921,7 +4883,7 @@ paths:
   /invoices/{invoice_id}/coupon_redemptions:
     get:
       tags:
-        - coupon_redemption
+        - Coupon Redemption
       operationId: list_invoice_coupon_redemptions
       summary: List the coupon redemptions applied to an invoice
       description: >-
@@ -4956,7 +4918,7 @@ paths:
   /invoices/{invoice_id}/related_invoices:
     get:
       tags:
-        - invoice
+        - Invoice
       operationId: list_related_invoices
       summary: List an invoice's related credit or charge invoices
       description: >
@@ -4995,7 +4957,7 @@ paths:
   /invoices/{invoice_id}/refund:
     post:
       tags:
-        - invoice
+        - Invoice
       operationId: refund_invoice
       summary: Refund an invoice
       description: >
@@ -5048,7 +5010,7 @@ paths:
   /invoices/recovery:
     post:
       tags:
-        - revenue_recovery
+        - Revenue Recovery
       operationId: create_invoice_retry
       summary: Create an invoice for revenue recovery
       requestBody:
@@ -5094,7 +5056,7 @@ paths:
   /line_items:
     get:
       tags:
-        - line_item
+        - Line Item
       operationId: list_line_items
       summary: List a site's line items
       description: >-
@@ -5139,7 +5101,7 @@ paths:
   /line_items/{line_item_id}:
     get:
       tags:
-        - line_item
+        - Line Item
       operationId: get_line_item
       summary: Fetch a line item
       parameters:
@@ -5166,7 +5128,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - line_item
+        - Line Item
       operationId: remove_line_item
       summary: Delete an uninvoiced line item
       parameters:
@@ -5196,7 +5158,7 @@ paths:
   /plans:
     get:
       tags:
-        - plan
+        - Plan
       operationId: list_plans
       summary: List a site's plans
       description: >-
@@ -5238,7 +5200,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - plan
+        - Plan
       operationId: create_plan
       summary: Create a plan
       requestBody:
@@ -5276,7 +5238,7 @@ paths:
   /plans/{plan_id}:
     get:
       tags:
-        - plan
+        - Plan
       operationId: get_plan
       summary: Fetch a plan
       parameters:
@@ -5303,7 +5265,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - plan
+        - Plan
       operationId: update_plan
       summary: Update a plan
       parameters:
@@ -5342,7 +5304,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - plan
+        - Plan
       operationId: remove_plan
       summary: Remove a plan
       parameters:
@@ -5364,7 +5326,7 @@ paths:
   /plans/{plan_id}/add_ons:
     get:
       tags:
-        - add-on
+        - Add-on
       operationId: list_plan_add_ons
       summary: List a plan's add-ons
       description: >-
@@ -5407,7 +5369,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - add-on
+        - Add-on
       operationId: create_plan_add_on
       summary: Create an add-on
       parameters:
@@ -5447,7 +5409,7 @@ paths:
   /plans/{plan_id}/add_ons/{add_on_id}:
     get:
       tags:
-        - add-on
+        - Add-on
       operationId: get_plan_add_on
       summary: Fetch a plan's add-on
       parameters:
@@ -5475,7 +5437,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - add-on
+        - Add-on
       operationId: update_plan_add_on
       summary: Update an add-on
       parameters:
@@ -5515,7 +5477,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - add-on
+        - Add-on
       operationId: remove_plan_add_on
       summary: Remove an add-on
       parameters:
@@ -5538,7 +5500,7 @@ paths:
   /price_segments:
     get:
       tags:
-        - price_segment
+        - Price Segment
       operationId: list_price_segments
       summary: List a site's price segments
       description: >-
@@ -5577,7 +5539,7 @@ paths:
   /price_segments/{price_segment_id}:
     get:
       tags:
-        - price_segment
+        - Price Segment
       operationId: get_price_segment
       summary: Fetch a price segment
       parameters:
@@ -5605,7 +5567,7 @@ paths:
   /add_ons:
     get:
       tags:
-        - add-on
+        - Add-on
       operationId: list_add_ons
       summary: List a site's add-ons
       description: >-
@@ -5648,7 +5610,7 @@ paths:
   /add_ons/{add_on_id}:
     get:
       tags:
-        - add-on
+        - Add-on
       operationId: get_add_on
       summary: Fetch an add-on
       parameters:
@@ -5676,7 +5638,7 @@ paths:
   /shipping_methods:
     get:
       tags:
-        - shipping_method
+        - Shipping Method
       operationId: list_shipping_methods
       summary: List a site's shipping methods
       description: >-
@@ -5717,7 +5679,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - shipping_method
+        - Shipping Method
       operationId: create_shipping_method
       summary: Create a new shipping method
       requestBody:
@@ -5761,7 +5723,7 @@ paths:
   /shipping_methods/{shipping_method_id}:
     get:
       tags:
-        - shipping_method
+        - Shipping Method
       operationId: get_shipping_method
       summary: Fetch a shipping method
       parameters:
@@ -5788,7 +5750,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - shipping_method
+        - Shipping Method
       operationId: update_shipping_method
       summary: Update an active Shipping Method
       parameters:
@@ -5833,7 +5795,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - shipping_method
+        - Shipping Method
       operationId: deactivate_shipping_method
       summary: Deactivate a shipping method
       parameters:
@@ -5864,7 +5826,7 @@ paths:
   /subscriptions:
     get:
       tags:
-        - subscription
+        - Subscription
       operationId: list_subscriptions
       summary: List a site's subscriptions
       description: >-
@@ -5906,7 +5868,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - subscription
+        - Subscription
       operationId: create_subscription
       summary: Create a new subscription
       requestBody:
@@ -5946,7 +5908,7 @@ paths:
   /subscriptions/{subscription_id}:
     get:
       tags:
-        - subscription
+        - Subscription
       operationId: get_subscription
       summary: Fetch a subscription
       parameters:
@@ -5973,7 +5935,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - subscription
+        - Subscription
       operationId: update_subscription
       summary: Update a subscription
       description: >-
@@ -6005,7 +5967,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - subscription
+        - Subscription
       operationId: terminate_subscription
       summary: Terminate a subscription
       description: >
@@ -6087,7 +6049,7 @@ paths:
   /subscriptions/{subscription_id}/cancel:
     put:
       tags:
-        - subscription
+        - Subscription
       operationId: cancel_subscription
       summary: Cancel a subscription
       description: >-
@@ -6136,7 +6098,7 @@ paths:
   /subscriptions/{subscription_id}/reactivate:
     put:
       tags:
-        - subscription
+        - Subscription
       operationId: reactivate_subscription
       summary: Reactivate a canceled subscription
       description: >
@@ -6179,7 +6141,7 @@ paths:
   /subscriptions/{subscription_id}/pause:
     put:
       tags:
-        - subscription
+        - Subscription
       operationId: pause_subscription
       summary: Pause subscription
       description: >
@@ -6233,7 +6195,7 @@ paths:
   /subscriptions/{subscription_id}/resume:
     put:
       tags:
-        - subscription
+        - Subscription
       operationId: resume_subscription
       summary: Resume subscription
       description: >
@@ -6277,7 +6239,7 @@ paths:
   /subscriptions/{subscription_id}/convert_trial:
     put:
       tags:
-        - subscription
+        - Subscription
       operationId: convert_trial
       summary: Convert trial subscription
       description: >-
@@ -6320,7 +6282,7 @@ paths:
   /subscriptions/{subscription_id}/preview_renewal:
     get:
       tags:
-        - subscription
+        - Subscription
       operationId: get_preview_renewal
       summary: Fetch a preview of a subscription's renewal invoice(s)
       description: >-
@@ -6358,7 +6320,7 @@ paths:
   /subscriptions/{subscription_id}/change:
     get:
       tags:
-        - subscription_change
+        - Subscription Change
       operationId: get_subscription_change
       summary: Fetch a subscription's pending change
       parameters:
@@ -6399,7 +6361,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - subscription_change
+        - Subscription Change
       operationId: create_subscription_change
       summary: Create a new subscription change
       description: >
@@ -6461,7 +6423,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - subscription_change
+        - Subscription Change
       operationId: remove_subscription_change
       summary: Delete the pending subscription change
       parameters:
@@ -6488,7 +6450,7 @@ paths:
   /subscriptions/{subscription_id}/change/preview:
     post:
       tags:
-        - subscription_change
+        - Subscription Change
       operationId: preview_subscription_change
       summary: Preview a new subscription change
       description: >-
@@ -6533,7 +6495,7 @@ paths:
   /subscriptions/{subscription_id}/invoices:
     get:
       tags:
-        - invoice
+        - Invoice
       operationId: list_subscription_invoices
       summary: List a subscription's invoices
       description: >-
@@ -6578,7 +6540,7 @@ paths:
   /subscriptions/{subscription_id}/line_items:
     get:
       tags:
-        - line_item
+        - Line Item
       operationId: list_subscription_line_items
       summary: List a subscription's line items
       description: >-
@@ -6624,7 +6586,7 @@ paths:
   /subscriptions/{subscription_id}/coupon_redemptions:
     get:
       tags:
-        - coupon_redemption
+        - Coupon Redemption
       operationId: list_subscription_coupon_redemptions
       summary: List the coupon redemptions for a subscription
       description: >-
@@ -6659,7 +6621,7 @@ paths:
   /subscriptions/{subscription_id}/coupon_redemptions/{coupon_redemption_id}:
     get:
       tags:
-        - coupon_redemption
+        - Coupon Redemption
       operationId: get_subscription_coupon_redemption
       summary: Show the coupon redemption for a subscription
       parameters:
@@ -6687,7 +6649,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - coupon_redemption
+        - Coupon Redemption
       operationId: remove_subscription_coupon_redemption
       summary: Delete the coupon redemption from a subscription
       description: Deactivate the coupon redemption on a subscription.
@@ -6723,7 +6685,7 @@ paths:
   /subscriptions/{subscription_id}/add_ons/{add_on_id}/usage:
     get:
       tags:
-        - usage
+        - Usage
       operationId: list_usage
       summary: List a subscription add-on's usage records
       parameters:
@@ -6764,7 +6726,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - usage
+        - Usage
       operationId: create_usage
       summary: Log a usage record on this subscription add-on
       parameters:
@@ -6811,7 +6773,7 @@ paths:
   /usage/{usage_id}:
     get:
       tags:
-        - usage
+        - Usage
       operationId: get_usage
       summary: Get a usage record
       parameters:
@@ -6844,7 +6806,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - usage
+        - Usage
       operationId: update_usage
       summary: Update a usage record
       parameters:
@@ -6889,7 +6851,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - usage
+        - Usage
       operationId: remove_usage
       summary: Delete a usage record.
       parameters:
@@ -6925,7 +6887,7 @@ paths:
   /transactions:
     get:
       tags:
-        - transaction
+        - Transaction
       operationId: list_transactions
       summary: List a site's transactions
       description: >-
@@ -6969,7 +6931,7 @@ paths:
   /transactions/{transaction_id}:
     get:
       tags:
-        - transaction
+        - Transaction
       operationId: get_transaction
       summary: Fetch a transaction
       parameters:
@@ -6999,7 +6961,7 @@ paths:
       - $ref: '#/components/parameters/unique_coupon_code_id'
     get:
       tags:
-        - unique_coupon_code
+        - Unique Coupon Code
       operationId: get_unique_coupon_code
       summary: Fetch a unique coupon code
       responses:
@@ -7024,7 +6986,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - unique_coupon_code
+        - Unique Coupon Code
       operationId: deactivate_unique_coupon_code
       summary: Deactivate a unique coupon code
       description: >-
@@ -7061,7 +7023,7 @@ paths:
       - $ref: '#/components/parameters/unique_coupon_code_id'
     put:
       tags:
-        - unique_coupon_code
+        - Unique Coupon Code
       operationId: reactivate_unique_coupon_code
       summary: Restore a unique coupon code
       responses:
@@ -7093,7 +7055,7 @@ paths:
   /purchases:
     post:
       tags:
-        - purchase
+        - Purchase
       operationId: create_purchase
       summary: Create a new purchase
       description: >-
@@ -7136,7 +7098,7 @@ paths:
   /purchases/preview:
     post:
       tags:
-        - purchase
+        - Purchase
       operationId: preview_purchase
       summary: Preview a new purchase
       description: >-
@@ -7179,7 +7141,7 @@ paths:
   /purchases/pending:
     post:
       tags:
-        - purchase
+        - Purchase
       operationId: create_pending_purchase
       summary: Create a pending purchase
       description: >-
@@ -7240,7 +7202,7 @@ paths:
   /purchases/authorize:
     post:
       tags:
-        - purchase
+        - Purchase
       operationId: create_authorize_purchase
       summary: Authorize a purchase
       description: >-
@@ -7294,7 +7256,7 @@ paths:
   /purchases/{transaction_id}/capture:
     post:
       tags:
-        - purchase
+        - Purchase
       parameters:
         - $ref: '#/components/parameters/transaction_id'
       operationId: create_capture_purchase
@@ -7351,7 +7313,7 @@ paths:
 
         Cancel an open Authorization request
       tags:
-        - purchase
+        - Purchase
       operationId: cancelPurchase
       responses:
         '200':
@@ -7382,7 +7344,7 @@ paths:
   /export_dates:
     get:
       tags:
-        - automated_exports
+        - Automated Exports
       operationId: get_export_dates
       summary: List the dates that have an available export to download.
       description: >-
@@ -7419,7 +7381,7 @@ paths:
       - $ref: '#/components/parameters/export_date'
     get:
       tags:
-        - automated_exports
+        - Automated Exports
       operationId: get_export_files
       summary: List of the export files that are available to download.
       description: >-
@@ -7454,7 +7416,7 @@ paths:
   /dunning_campaigns:
     get:
       tags:
-        - dunning_campaigns
+        - Dunning Campaigns
       operationId: list_dunning_campaigns
       summary: List the dunning campaigns for a site
       description: >-
@@ -7482,12 +7444,69 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
       x-code-samples: []
+    post:
+      tags:
+        - dunning_campaigns
+      operationId: create_dunning_campaign
+      summary: Create a new dunning campaign
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DunningCampaignCreate'
+        required: true
+      responses:
+        '201':
+          description: A new dunning campaign.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DunningCampaign'
+        '400':
+          description: Bad request; perhaps missing or invalid parameters.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Upgrade your plan to unlock multiple dunning campaigns.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Incorrect site.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '422':
+          description: Invalid request parameters.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '503':
+          description: >-
+            The email template service is temporarily unavailable; retry the
+            request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-code-samples: []
   /dunning_campaigns/{dunning_campaign_id}:
     parameters:
       - $ref: '#/components/parameters/dunning_campaign_id'
     get:
       tags:
-        - dunning_campaigns
+        - Dunning Campaigns
       operationId: get_dunning_campaign
       summary: Fetch a dunning campaign
       responses:
@@ -7516,12 +7535,146 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
       x-code-samples: []
+    put:
+      tags:
+        - dunning_campaigns
+      operationId: update_dunning_campaign
+      summary: Update a dunning campaign
+      description: >-
+        Each cycle write is a full replacement of that cycle's settings; omitted
+        scalars fall back to the model default rather than the prior version.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DunningCampaignUpdate'
+        required: true
+      responses:
+        '200':
+          description: The updated dunning campaign.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DunningCampaign'
+        '400':
+          description: Bad request; perhaps missing or invalid parameters.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Upgrade your plan to unlock multiple dunning campaigns.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Incorrect site or campaign ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '422':
+          description: Invalid request parameters.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '503':
+          description: >-
+            The email template service is temporarily unavailable; retry the
+            request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-code-samples: []
+    delete:
+      tags:
+        - dunning_campaigns
+      operationId: deactivate_dunning_campaign
+      summary: Deactivate a dunning campaign
+      description: The default dunning campaign cannot be deactivated.
+      responses:
+        '200':
+          description: The deactivated dunning campaign.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DunningCampaign'
+        '403':
+          description: Upgrade your plan to unlock multiple dunning campaigns.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Incorrect site or campaign ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '422':
+          description: Campaign is already inactive, or is the default campaign.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-code-samples: []
+  /dunning_campaigns/email_templates:
+    get:
+      tags:
+        - dunning_campaigns
+      operationId: list_dunning_campaign_email_templates
+      summary: >-
+        List the custom email templates assignable to a dunning campaign
+        interval
+      responses:
+        '200':
+          description: A list of the site's assignable custom email templates.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DunningCampaignEmailTemplateList'
+        '404':
+          description: Incorrect site.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '503':
+          description: >-
+            The email template service is temporarily unavailable; retry the
+            request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-code-samples: []
   /dunning_campaigns/{dunning_campaign_id}/bulk_update:
     parameters:
       - $ref: '#/components/parameters/dunning_campaign_id'
     put:
       tags:
-        - dunning_campaigns
+        - Dunning Campaigns
       operationId: put_dunning_campaign_bulk_update
       summary: Assign a dunning campaign to multiple plans
       requestBody:
@@ -7623,7 +7776,7 @@ paths:
   /external_invoices:
     get:
       tags:
-        - external_invoices
+        - External Invoice
       operationId: list_external_invoices
       summary: List the external invoices on a site
       description: >-
@@ -7658,7 +7811,7 @@ paths:
       - $ref: '#/components/parameters/external_invoice_id'
     get:
       tags:
-        - external_invoices
+        - External Invoice
       operationId: show_external_invoice
       summary: Fetch an external invoice
       responses:
@@ -7692,7 +7845,7 @@ paths:
       - $ref: '#/components/parameters/external_subscription_id'
     get:
       tags:
-        - external_subscriptions
+        - External Subscription
       operationId: list_external_subscription_external_payment_phases
       summary: List the external payment phases on an external subscription
       description: >-
@@ -7728,7 +7881,7 @@ paths:
       - $ref: '#/components/parameters/external_payment_phase_id'
     get:
       tags:
-        - external_payment_phases
+        - External Payment Phase
       operationId: get_external_subscription_external_payment_phase
       summary: Fetch an external payment phase
       responses:
@@ -7757,7 +7910,7 @@ paths:
       - $ref: '#/components/parameters/filter_limited_subscription_state'
     get:
       tags:
-        - account
+        - Account
       operationId: list_entitlements
       summary: List entitlements granted to an account
       responses:
@@ -7785,7 +7938,7 @@ paths:
       - $ref: '#/components/parameters/account_id'
     get:
       tags:
-        - account
+        - Account
       operationId: list_account_external_subscriptions
       summary: List an account's external subscriptions
       description: >-
@@ -7818,7 +7971,7 @@ paths:
       - $ref: '#/components/parameters/business_entity_id'
     get:
       tags:
-        - business_entities
+        - Business Entities
       operationId: get_business_entity
       summary: Fetch a business entity
       responses:
@@ -7844,7 +7997,7 @@ paths:
   /business_entities:
     get:
       tags:
-        - business_entities
+        - Business Entities
       operationId: list_business_entities
       summary: List business entities
       responses:
@@ -7870,7 +8023,7 @@ paths:
   /gift_cards:
     get:
       tags:
-        - gift_cards
+        - Gift Cards
       operationId: list_gift_cards
       summary: List gift cards
       responses:
@@ -7895,7 +8048,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - gift_cards
+        - Gift Cards
       operationId: create_gift_card
       summary: Create gift card
       requestBody:
@@ -7935,7 +8088,7 @@ paths:
       - $ref: '#/components/parameters/gift_card_id'
     get:
       tags:
-        - gift_cards
+        - Gift Cards
       operationId: get_gift_card
       summary: Fetch a gift card
       responses:
@@ -7961,7 +8114,7 @@ paths:
   /gift_cards/preview:
     post:
       tags:
-        - gift_cards
+        - Gift Cards
       operationId: preview_gift_card
       summary: Preview gift card
       requestBody:
@@ -8001,7 +8154,7 @@ paths:
       - $ref: '#/components/parameters/redemption_code'
     post:
       tags:
-        - gift_cards
+        - Gift Cards
       operationId: redeem_gift_card
       summary: Redeem gift card
       requestBody:
@@ -8039,7 +8192,7 @@ paths:
   /business_entities/{business_entity_id}/invoices:
     get:
       tags:
-        - invoice
+        - Invoice
       operationId: list_business_entity_invoices
       summary: List a business entity's invoices
       description: >-
@@ -19141,6 +19294,176 @@ components:
         email_template:
           type: string
           description: Email template being used.
+        email_template_id:
+          type: string
+          nullable: true
+          description: >-
+            The id of the custom email template assigned to this interval, from
+            `GET /dunning_campaigns/email_templates`. `null` means the system
+            default template for this interval. Accepted on write; round-tripped
+            on read.
+    DunningCampaignCreate:
+      type: object
+      properties:
+        name:
+          type: string
+          title: Name
+          description: Campaign name.
+          maxLength: 255
+        code:
+          type: string
+          title: Code
+          description: Campaign code.
+          maxLength: 50
+        description:
+          type: string
+          title: Description
+          description: Campaign description.
+          maxLength: 255
+        dunning_cycles:
+          type: array
+          description: >-
+            Dunning Cycle settings. One entry per collection method
+            (`automatic`, `manual`, `trial`); each type may appear at most once.
+          items:
+            $ref: '#/components/schemas/DunningCycleCreate'
+      required:
+        - name
+        - code
+    DunningCampaignUpdate:
+      type: object
+      properties:
+        name:
+          type: string
+          title: Name
+          description: Campaign name.
+          maxLength: 255
+        code:
+          type: string
+          title: Code
+          description: Campaign code.
+          maxLength: 50
+        description:
+          type: string
+          title: Description
+          description: Campaign description.
+          maxLength: 255
+        default_campaign:
+          type: boolean
+          title: Default Campaign
+          description: >-
+            Set to `true` to make this the default campaign for accounts or
+            plans without an assigned dunning campaign. Cannot be set on an
+            inactive campaign, and cannot be unset directly—assign a different
+            campaign as the default instead.
+        dunning_cycles:
+          type: array
+          description: >-
+            Dunning Cycle settings. One entry per collection method
+            (`automatic`, `manual`, `trial`); each type may appear at most once.
+            Each cycle write fully replaces that cycle's current settings
+            version.
+          items:
+            $ref: '#/components/schemas/DunningCycleCreate'
+    DunningCycleCreate:
+      type: object
+      description: >-
+        Write shape for a single dunning cycle, shared by campaign create and
+        update.
+      properties:
+        type:
+          type: string
+          description: The type of invoice this cycle applies to.
+          enum:
+            - automatic
+            - manual
+            - trial
+        active:
+          type: boolean
+          description: >-
+            Only meaningful on the `trial` cycle, where sending `false` removes
+            it. Other cycle types cannot be deactivated.
+        applies_to_manual_trial:
+          type: boolean
+          description: >-
+            Whether the dunning settings will be applied to manual trials. Only
+            applies to trial cycles.
+        expire_subscription:
+          type: boolean
+          description: >-
+            Whether the subscription(s) should be cancelled at the end of the
+            dunning cycle.
+        fail_invoice:
+          type: boolean
+          description: >-
+            Whether the invoice should be failed at the end of the dunning
+            cycle.
+        send_immediately_on_hard_decline:
+          type: boolean
+          description: >-
+            Whether or not to send an extra email immediately to customers whose
+            initial payment attempt fails with either a hard decline or invalid
+            billing info.
+        external_payment_recovery_extension_days:
+          type: integer
+          description: >-
+            Number of days to extend external payment recovery. Only available
+            when the site has external payment retries enabled.
+        intervals:
+          type: array
+          description: Dunning intervals. Required unless `active` is `false`.
+          items:
+            $ref: '#/components/schemas/DunningIntervalCreate'
+      required:
+        - type
+    DunningIntervalCreate:
+      type: object
+      description: >-
+        Write shape for a dunning interval. Unlike the read `DunningInterval`,
+        the resolved `email_template` name is not accepted on write.
+      properties:
+        days:
+          type: integer
+          description: Number of days before sending the next email.
+        email_template_id:
+          type: string
+          nullable: true
+          description: >-
+            The id of the custom email template to assign to this interval, from
+            `GET /dunning_campaigns/email_templates`. `null` uses the system
+            default template for this interval.
+    DunningCampaignEmailTemplate:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The id to assign under `intervals[].email_template_id`.
+        name:
+          type: string
+          description: Template name.
+        type:
+          type: string
+          description: >-
+            The root template this custom template replaces, e.g.
+            `payment_declined`, `invoice_past_due`,
+            `post_trial_payment_declined`, `subscription_canceled_nonpayment`.
+    DunningCampaignEmailTemplateList:
+      type: object
+      properties:
+        object:
+          type: string
+          title: Object type
+          description: Will always be List.
+        has_more:
+          type: boolean
+          description: Indicates there are more results on subsequent pages.
+        next:
+          type: string
+          description: Path to subsequent page of results.
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/DunningCampaignEmailTemplate'
     DunningCampaignsBulkUpdate:
       properties:
         plan_codes:
