@@ -374,7 +374,12 @@ To add an image such as your company logo, insert the following HTML in your ema
 Recurly's Sender Authentication feature lets you verify your DNS records directly from the Email Templates page — the most reliable way to ensure your emails are delivered successfully.
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Sender Authentication is <strong>required</strong> for all new sites that do not have their own paid SendGrid account. If you're using a paid SendGrid integration, refer to the <a href="https://docs.recurly.com/docs/sendgrid" target="_blank">SendGrid documentation</a> instead.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>
+  <ul>
+    <li>Sender Authentication is <strong>required</strong> for all new sites that do not have their own paid SendGrid account. If you're using a paid SendGrid integration, refer to the <a href="https://docs.recurly.com/docs/sendgrid" target="_blank">SendGrid documentation</a> instead.</li>
+    <li>If you have multiple sites and wish to reuse authenticated senders, please contact Recurly Support or your CSM.</li>
+  </ul>
+  </div>
 </div>
 
 <div class="rp-steps">
