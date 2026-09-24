@@ -22,6 +22,40 @@ This guide helps you understand which webhooks you need to properly manage subsc
 
 In the context of webhooks, **subscription lifecycle&#x20;**&#x69;s a long-term trackong of the health and status of a given subscription and associated behaviors can can occur during the lifetime of the customer's subscription.&#x20;
 
+## Lifecycle of a Subscription&#x20;
+
+The standard path a subscription moves through starts with creation:
+
+1. **Creation** — created fires when the subscription is first established.
+
+2. **Steady state**, with two paths for changes:
+   1. Immediate or already-applied changes → `updated` (upgrade, downgrade, or renewal date change — fired right away if the change is immediate, or at renewal if the change was deferred to that point)
+   2. `Deferred changes` → `pending_change.scheduled` fires first as advance notice, then `updated` fires later when the change actually takes effect at renewal
+
+3. Each billing term rollover → `renewed` fires whenever the subscription enters a new term, independent of whether payment succeeded.
+
+4. Optional `pause` branch (subscription can enter this from active state):
+   1. `pause.scheduled` — pause is scheduled, with&#x20;
+      1. paused_at/resumed_at/remaining_pause_cycles set
+   2. `pause.modified` — scheduled pause duration changed before it takes effect
+   3. `pause.canceled` — scheduled pause called off before it takes effect (fields go nil)
+   4. `paused` — subscription actually moves active → paused
+   5. `enewal.skipped` — each billing cycle that's skipped while paused, decrementing `remaining_pause_cycles`
+   6. `resumed` — subscription moves paused → active again, new billing cycle starts
+
+5. Cancellation branch:
+   1. `canceled` — subscription set to not renew, but stays valid until `expires_at`
+   2. From here, either:
+      1. `reactivated` — customer reactivates before expiration, returning to active state, or
+      2. `expired` — the canceled subscription reaches expires_at and is no longer valid
+
+6. Alternate route to cancelation or expiration — `expired` can also fire directly from an active subscription if it's refunded and terminated immediately, bypassing canceled entirely. `canceled` or `expired` can can also occur directly from `active` if the mandate is revoked and rendered inactive.
+
+Cross-cutting events (not part of the linear path, can occur at various points):
+
+1. `mandate.inactive` — the payment madate is revoked (by gateway, bank, or customer), which resolves the subscription to either canceled or expired depending on mandate revocation settings
+2. `low_balance` — gift-card-funded subscription's balance runs low
+
 ### **Event Types**
 
 * Review our dedicated documentation for [Subscription notifications](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications)
