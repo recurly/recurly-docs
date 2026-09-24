@@ -48,6 +48,7 @@ If you have specific need to allow customers to process transactions without sto
 
 ## Requirements&#x20;
 
+* You must have the `Enable store_billing_info on purchase requests` feature flag enabled. Please speak to Support.
 * You must be using the Purchases or Purchases/Authorize endpoints
   * Note: GCash only supports the Purchases endpoint, while Cards can use either.
 * You must pass the `store_billing_info` field set to `false`&#x20;
