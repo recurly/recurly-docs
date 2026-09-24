@@ -21,18 +21,18 @@ Keep your systems in sync by receiving webhook notifications whenever a subscrip
 
 When using XML webhooks, subscriptions will return an array of add-ons if the subscription includes add-ons. If you have a plan on your site with a usage-based add-on, you will start seeing these additional add-on attributes when add-ons are returned:
 
-* add\_on\_type
-* usage\_percentage
-* measured\_unit\_id
+* add_on_type
+* usage_percentage
+* measured_unit_id
 
 In addition, Subscription notifications will include information about shipping addresses when applicable:
 
 * id
 * nickname
-* first\_name
-* last\_name
-* company\_name
-* vat\_number
+* first_name
+* last_name
+* company_name
+* vat_number
 * street1
 * street2
 * city
@@ -41,8 +41,8 @@ In addition, Subscription notifications will include information about shipping 
 * country
 * email
 * phone
-* external\_sku
-* tier\_type
+* external_sku
+* tier_type
 
 ## New subscription
 
@@ -321,7 +321,7 @@ Sent whenever a subscription renews. This notification is sent regardless of a s
 </renewed_subscription_notification>
 ```
 
-### Reactivated subscription
+## Reactivated subscription
 
 Sent when a subscription is reactivated after having been canceled.
 
@@ -713,6 +713,55 @@ Sent whenever a scheduled pause is canceled. The `paused_at`, `resume_at` and `r
     <remaining_pause_cycles nil="true"></remaining_pause_cycles>
   </subscription>
 </subscription_pause_canceled_notification>
+```
+
+## Subscription Mandate Inactive&#x20;
+
+Sent when a mandate for a given subscription has been marked inactive by the affiliated gateway, bank, or revoked by the customer themselves. If you have mandate revocation settings enabled, the subscription state will be one of either `canceled` or `expired` .
+
+```json
+{
+  "id": "qlm81nq1drd0",
+  "object_type": "subscription",
+  "site_id": "qc326l1hl8k9",
+  "event_type": "mandate.inactive",
+  "event_time": "2022-07-27T15:43:04Z",
+  "uuid": "612bcf671a227b272b753a487fb6576a"
+}
+```
+```xml
+<mandate_inactive_notification>
+  <account>
+    <account_code>abc123</account_code>
+    <username/>
+    <email>user@example.com</email>
+    <first_name>Jane</first_name>
+    <last_name>Doe</last_name>
+    <company_name/>
+    <phone/>
+  </account>
+  <subscription>
+    <uuid>63ab5718be89b4f20a27714a8395ec2f</uuid>
+    <plan>
+      <plan_code>monthly</plan_code>
+      <name>Monthly Plan</name>
+    </plan>
+    <state>active</state>
+    <quantity type="integer">1</quantity>
+    <total_amount_in_cents type="integer">1000</total_amount_in_cents>
+    <subscription_add_ons type="array"/>
+    <activated_at type="datetime">2024-01-01T00:00:00Z</activated_at>
+    <canceled_at nil="nil"/>
+    <expires_at nil="nil"/>
+    <current_period_started_at type="datetime">2024-09-01T00:00:00Z</current_period_started_at>
+    <current_period_ends_at type="datetime">2024-10-01T00:00:00Z</current_period_ends_at>
+    <trial_started_at nil="nil"/>
+    <trial_ends_at nil="nil"/>
+    <paused_at nil="nil"/>
+    <resume_at nil="nil"/>
+    <remaining_pause_cycles nil="nil"/>
+  </subscription>
+</mandate_inactive_notification>
 ```
 
 ## Low balance gift card
