@@ -1,7 +1,7 @@
 ---
 title: September 29, 2026 - Recurly Subscription Management
 author: Jenn Schnoes
-hidden: true
+hidden: false
 published_at: '2026-09-25T14:42:06.835Z'
 ---
 Recurly's September 29th release expands our global payment reach significantly, with two major additions for international merchants. EBANX credit card processing is now available across supported Latin American countries, and we're excited to introduce dLocal as a brand new gateway bringing GCash support to merchants processing in the Philippines. Both integrations require enablement on the gateway and Recurly side, so check our updated documentation after release to get started.
