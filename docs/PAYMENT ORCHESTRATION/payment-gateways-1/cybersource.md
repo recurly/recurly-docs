@@ -48,16 +48,6 @@ next:
   <tr><td>Currencies</td><td><a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">See all available</a></td></tr>
 </table>
 
-## Address Verification System (AVS) settings
-
-CyberSource merchants can configure AVS checks to one of three options — set this when configuring or editing the gateway in Recurly:
-
-- **All transactions** — AVS checks run on every transaction globally.
-- **US and Canada only** _(recommended)_ — AVS checks run only for US and Canadian transactions.
-- **Disabled** — AVS checks are turned off entirely.
-
-Recurly recommends enabling AVS for the US and Canada only. AVS works reliably in those regions but can be inconsistent or unsupported internationally — enabling it globally may cause unnecessary declines.
-
 ## CyberSource processor configuration
 
 CyberSource may require different integration parameters depending on the processor linked to your account. When configuring the CyberSource gateway in Recurly, you must select the correct processor in the **Credit Card Processor** dropdown.
@@ -148,6 +138,16 @@ Enable Zero Dollar Authorizations (ZDA) for each applicable card type. ZDA is es
 ## Step 9: Configure AVS settings
 
 Select your AVS preference for the CyberSource gateway — see the [AVS settings](#address-verification-system-avs-settings) section above for guidance on each option.
+
+### Address Verification System (AVS) settings
+
+CyberSource merchants can configure AVS checks to one of three options — set this when configuring or editing the gateway in Recurly:
+
+- **All transactions** — AVS checks run on every transaction globally.
+- **US and Canada only** _(recommended)_ — AVS checks run only for US and Canadian transactions.
+- **Disabled** — AVS checks are turned off entirely.
+
+Recurly recommends enabling AVS for the US and Canada only. AVS works reliably in those regions but can be inconsistent or unsupported internationally — enabling it globally may cause unnecessary declines.
 
 ## Step 10: Save and enable the gateway
 
