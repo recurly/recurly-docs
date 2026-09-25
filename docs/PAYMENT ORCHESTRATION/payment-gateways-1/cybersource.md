@@ -53,7 +53,11 @@ next:
 CyberSource may require different integration parameters depending on the processor linked to your account. When configuring the CyberSource gateway in Recurly, you must select the correct processor in the **Credit Card Processor** dropdown.
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Do not leave the Credit Card Processor selection unset. Various compliance mandates rely on this value to pass the correct data to the gateway. Leaving it blank can cause transaction failures.</div>
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Cybersource Processor Selection</strong> Do not leave the Credit Card Processor selection unset. Various compliance mandates rely on this value to pass the correct data to the gateway. Leaving it blank can cause transaction failures.</div>
+</div>
+
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Cybersource REST Migration</strong> Ensure you have a P12 certificate on your Cybersource gateway to avoid errors.</div>
 </div>
 
 # Configuring CyberSource in Recurly
