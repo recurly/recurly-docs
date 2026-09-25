@@ -40,7 +40,7 @@ next:
   <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
   <tr><td>Services that work with Recurly</td><td>Payment processing</td></tr>
   <tr><td>Supported operations</td><td>Purchase, Authorize and Capture, Void, Refund, AVS checks</td></tr>
-  <tr><td>Supported payment types</td><td>Credit/debit card, Apple Pay, Google Pay. <em>Note: Apple Pay is not supported with the TSYS/Vital acquirer.</em></td></tr>
+  <tr><td>Supported payment types</td><td>Credit/debit card, Apple Pay, Google Pay. <em>Note: If you need Apple Pay on the TSYS/Vital acquirer, please reach out to Cybersource to be migrated to their new version behind-the-scenes.</em></td></tr>
   <tr><td>Supported card brands</td><td>Visa, Mastercard, American Express, Discover, Diners Club, JCB, Union Pay</td></tr>
   <tr><td>Gateway-specific 3DS2 supported</td><td>Yes</td></tr>
   <tr><td>Card on file supported</td><td>Yes</td></tr>
@@ -72,7 +72,7 @@ CyberSource may require different integration parameters depending on the proces
 
 Log in to your CyberSource Business Gateway. If you don't have an account, sign up through CyberSource to get started.
 
-## Step 2: Generate a SOAP Toolkit key
+## Step 2: Generate a SOAP Toolkit key (Legacy)
 
 <div class="rp-steps">
   <div class="rp-step">
@@ -93,7 +93,7 @@ Log in to your CyberSource Business Gateway. If you don't have an account, sign 
   <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important — P12 authentication required</strong> CyberSource is upgrading SOAP API authentication from username/password to P12 certificate-based authentication. You must remove username/password authentication and transition to certificate-based authentication by the following dates:<br /><br /><strong>Sandbox:</strong> September 1, 2025<br /><strong>Production:</strong> September 15, 2025</div>
 </div>
 
-## Step 3: Generate your P12 certificate
+## Step 3: Generate your P12 certificate (New - Required)
 
 <div class="rp-steps">
   <div class="rp-step">
