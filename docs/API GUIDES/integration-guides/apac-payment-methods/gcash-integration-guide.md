@@ -159,10 +159,3 @@ Send a request to the `create_purchase` method on Recurly's API, including:
     <div><h4>Listen for webhooks</h4><p>You should listen for several webhooks to ensure you enable access to features in your environment, and disable access if a customer cancels their subscription. See <a href="/docs/webhooks" target="_blank">Recurly webhooks</a> for more details.</p></div>
   </div>
 </div>
-
-***
-
-📋 TODO before publishing:
-
-- [ ] Confirm `/docs/webhooks` is the correct link for "Recurly webhooks" — the source named this reference without a URL
-
