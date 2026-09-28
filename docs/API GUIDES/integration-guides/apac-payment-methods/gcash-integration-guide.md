@@ -71,7 +71,6 @@ Send a request to the `create_purchase` method on Recurly's API, including:
       "billing_info": {
           "first_name": "First",
           "last_name": "Last",
-          //"three_d_secure_action_result_token_id": "BSFIYrYdEbdfcnI982gr9Q",
           "address": {
               "street1": "14 Laurel Road, Florentino Subd.",
               "city": "Brgy. San Antonio",
@@ -79,7 +78,7 @@ Send a request to the `create_purchase` method on Recurly's API, including:
               "postal_code": "1234",
               "country": "PH"
           },
-          "tax_identifier":"123456789012", // Valid PH tax id
+          "tax_identifier":"123456789012",
           "store_billing_info": true,
           "type":"gcash"
       }
@@ -104,8 +103,6 @@ Send a request to the `create_purchase` method on Recurly's API, including:
   <li>The `store_billing_info` field set to `false`</li>
 </ul>
 
-\[TODO: Dev/PO review — possible issue: this JSON includes `//` comments (invalid in JSON, same as the block above), and is missing its closing `}` for the root object while also having an extra trailing `]` — the bracket structure needs to be corrected before this goes live.]
-
 ```json Purchase Request
 {
   "currency": "PHP",
@@ -123,7 +120,7 @@ Send a request to the `create_purchase` method on Recurly's API, including:
               "postal_code": "1234",
               "country": "PH"
           },
-          "tax_identifier":"123456789012", // Valid PH tax id
+          "tax_identifier":"123456789012",
           "store_billing_info": false,
           "type":"gcash"
       }
@@ -139,7 +136,7 @@ Send a request to the `create_purchase` method on Recurly's API, including:
             "product_code": "product-code"
         }
     ]
-]
+}
 ```
 
 <div class="rp-steps">
@@ -170,6 +167,4 @@ Send a request to the `create_purchase` method on Recurly's API, including:
 - [ ] Fix the malformed second JSON payload (missing closing `}`, extra trailing `]`) — flagged inline above the code block
 - [ ] Both JSON payloads contain `//` comments, which aren't valid JSON — flagged inline above each code block
 - [ ] Confirm `/docs/webhooks` is the correct link for "Recurly webhooks" — the source named this reference without a URL
-- [ ] Add a Testing your integration section (sandbox/test details for GCash via dLocal)
-- [ ] Add an Error handling and troubleshooting section
-- [ ] Add a What's next section
+
