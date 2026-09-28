@@ -128,16 +128,16 @@ Refer to the individual payment method guides for implementation details:
   <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong>[TODO: Confirm this required-fields list is accurate for GCash/Philippines. As written it uses India/UPI conventions (PIN code, region/state, country code "IN") and may have been copied from the wrong source.]</div>
 </div>
 
-dLocal and the <a href="https://docs.recurly.com/recurly-subscriptions/v1.0_dlocal-gcash/docs/gcash-wallet" target="_blank">GCash method</a> require specific fields to authorize a payment successfully.
+dLocal and the <a href="/docs/gcash-wallet" target="_blank">GCash method</a> require specific fields to authorize a payment successfully.
 
 - Customer first and last name
 - Customer email address
 - Customer billing address (street address, city, region/state, country, postal/PIN code)
   - **Street address** — House/street name and number
   - **City** — Locality and city
-  - **State** — State or union territory
-  - **Postal code** — Postal / zip code
-  - **Country** — Country code (e.g., IN)
+  - **State** — Province
+  - **Postal code** — Postal / zip code (4 digit)
+  - **Country** — Country code (e.g., PH)
 - Customer phone number
 
 # FAQs
