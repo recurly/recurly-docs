@@ -1,77 +1,97 @@
 ---
-title: E-Commerce Purchase Guide
+title: Ecommerce purchase guide
 excerpt: >-
-  Learn how to use the store_billing_info field to optionally store payment data
-  for pure ecommerce processing.
+  Learn how to use Recurly's Purchases endpoint to process an eCommerce
+  transaction without storing the customer's payment details on file.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">This guide walks you through using Recurly's Purchases endpoint to process an eCommerce transaction without storing the customer's payment details on file. You'll learn which gateways and payment methods support this behavior, how to structure the request, and what to expect in the response — so you can build guest checkout, gift-purchase, and one-off payment flows without disturbing a subscriber's saved payment method.</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-concepts"><span class="rp-toc-num">2</span>Key concepts</a>
+    <a class="rp-toc-pill" href="#integration-guide"><span class="rp-toc-num">3</span>Integration guide</a>
+    <a class="rp-toc-pill" href="#best-practices"><span class="rp-toc-num">4</span>Best practices</a>
+    <a class="rp-toc-pill" href="#error-handling-and-troubleshooting"><span class="rp-toc-num">5</span>Error handling</a>
+    <a class="rp-toc-pill" href="#webhooks"><span class="rp-toc-num">6</span>Webhooks</a>
+    <a class="rp-toc-pill" href="#testing-your-integration"><span class="rp-toc-num">7</span>Testing</a>
+    <a class="rp-toc-pill" href="#whats-next"><span class="rp-toc-num">8</span>What's next</a>
+  </div>
+</div>
 
-This guide shows you how to use the V3 <Anchor target="_blank" href="https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase">Purchases endpoint</Anchor> to create a transaction where Recurly \_does not store the payment details\_. This behavior is limited to specific payment methods presently, so ensure you are using the right gateway and payment method.
+### Prerequisites
 
-If you have a gateway payment method combo that is not listed below -- please submit a feature request.
+<ul class="rp-list">
+  <li>Familiarity with Recurly's API and basic REST concepts</li>
+  <li>Completed the <a href="https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/" target="_blank">Quickstart Guide</a></li>
+  <li>A gateway and payment method combination where Recurly supports eCommerce transactions</li>
+</ul>
 
-### Prerequisites & limitations
+### Limitations
 
-* Familiarity with Recurly’s API and basic REST concepts
-* [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
-* A gateway + payment method where Recurly supports ecommerce transactions
-* Supported Gateways and Payment Methods&#x20;
-  * GCash when using dLocal (requires non-storage)
-  * Credit Cards when using Adyen
-* For Credit Card payments on Adyen, all customer-initiated features are supported including Level 2 processing, Level 3 processing, dynamic descriptors, Adyen's fraud ID usage, Kount, 3DS, and more. For any specific questions, please reach out to Support.
-* Purchase and separate Authorize + Capture are supported for Cards only. GCash requires usage of the Purchases endpoint only.
+<ul class="rp-list">
+  <li>This behavior is currently limited to specific gateway and payment method combinations: GCash when using dLocal (requires non-storage), and credit cards when using Adyen</li>
+  <li>For credit card payments on Adyen, all customer-initiated features are supported, including Level 2 and Level 3 processing, dynamic descriptors, Adyen's fraud ID usage, Kount, and 3-D Secure. For specific questions, contact <a href="mailto:support@recurly.com">support@recurly.com</a> or your CSM</li>
+  <li>Purchase and separate authorize-and-capture are supported for cards only. GCash requires the Purchases endpoint only</li>
+  <li>If you have a gateway and payment method combination that isn't listed here, submit a feature request</li>
+</ul>
 
 # Definition
 
-**Creating Purchases** refers to the process of generating new customer accounts alongside a transaction in a single, consolidated call to the Recurly Purchase endpoint. This streamlines checkout experiences by bundling all required resources into one request.
+<div class="rp-definition">Creating a purchase means generating a new customer account alongside a transaction in a single, consolidated call to the Purchases endpoint — bundling everything a checkout needs into one request. By default, Recurly stores the billing details you provide so they're available for future transactions. Setting <code>store_billing_info</code> to <code>false</code> tells Recurly to process the transaction without keeping that payment method on file.</div>
 
-**eCommerce** **Transaction** refers to an online-based transaction, where the customer is in session in your Checkout flow, and wants to make a one-time purchase (for physical or digital items, as an example) rather than signing up for a subscription.
+# Key concepts
 
-**Billing Info and Payment Method Storage** refers to the ability and practice of storing a payment method instrument on file for future usage.&#x20;
+- **eCommerce transaction**: An online transaction where the customer is in session in your checkout flow, making a one-time purchase — for physical or digital items, for example — rather than signing up for a subscription.
+- **Billing info and payment method storage**: The ability and practice of storing a payment method instrument on file in Recurly for future use.
 
-## eCommerce Use Cases
+## Common use cases
 
-If you have specific need to allow customers to process transactions without storing their billing info, this page is for you. Example use cases:&#x20;
+<ul class="rp-list">
+  <li><strong>Guest checkout</strong> — a logged-in subscriber wants to buy a one-off item (merch, add-on, upsell) with a different card than the one on file, without disturbing the subscription's default payment method</li>
+  <li><strong>Time-based subscription models</strong> — a subscription model where customers make one-time purchases and must return to session after a period of time</li>
+  <li><strong>Single-use APMs by design</strong> — payment methods like GCash are inherently redirect- or voucher-based with no vaulting concept, so you still need a way to complete the purchase</li>
+  <li><strong>Gift subscriptions</strong> — a customer buys a subscription or one-time item for someone else and doesn't want their card to become the recipient's stored payment method. This appears as a line item via the API rather than a plan code with a set payment method</li>
+  <li><strong>Paying down an outstanding balance</strong> — an AP team pays down an invoice or past-due balance with a corporate card that isn't meant to become the account's recurring payment method</li>
+  <li><strong>Regional data residency rules</strong> — jurisdictions that restrict cross-border card storage, where one-time processing sidesteps the residency requirement entirely</li>
+  <li><strong>Short trials</strong> — a customer wants to test a purchase flow or make a small one-off buy without risking it silently becoming the subscription's payment method on the next renewal</li>
+  <li><strong>Separate authorization and capture</strong> — your business model matches any of the above use cases, but you want to authorize now and capture manually later</li>
+</ul>
 
-* Guest / Checkout - a logged-in subscriber wants to buy a one-off item (merch, add-on, upsell) and pay with a different card than the one on file, without disturbing the subscription's default payment method.
-* Time-based subscription models - a subscription-model where customers make one time purchases and must return to session after a period of time.&#x20;
-* Single-use APMs by design - payment methods like GCash that are inherently redirect/voucher-based and have no vaulting concept — you still need a way to complete the purchase.
-* Gift-Subscriptions: A customer buys a subscription or one-time item for someone else and doesn't want their card or payment method to become that recipient's stored payment method. Keep in mind, this would appear as a line item via API versus a plan code with no set payment method.
-* An AP team pays down an outstanding invoice or past-due balance with a corporate card that isn't meant to become the account's recurring payment method.
-* Regional data residency rules -- jurisdictions that restrict cross-border card storage, so one-time processing sidesteps the residency requirement entirely.
-* Short trials -- customer wants to test a purchase flow or make a small one-off buy without risk of it silently becoming the subscription's payment method on next renewal.
-* Separate Auth and Capture -- your business model matches any of the above use cases, but you wish to use separate authorization, and capture manually later.
+# Integration guide
 
-## Requirements&#x20;
+## Requirements
 
-* You must have the `Enable store_billing_info on purchase requests` feature flag enabled. Please speak to Support.
-* You must be using the Purchases or Purchases/Authorize endpoints
-  * Note: GCash only supports the Purchases endpoint, while Cards can use either.
-* You must pass the `store_billing_info` field set to `false`&#x20;
-* You must be using a supported gateway and payment method. See limitations and prerequisits.
+<ul class="rp-list">
+  <li>You must have the <code>Enable store_billing_info on purchase requests</code> feature flag enabled — contact <a href="mailto:support@recurly.com">support@recurly.com</a> to have it turned on</li>
+  <li>You must be using the Purchases or Purchases/Authorize endpoints. GCash only supports the Purchases endpoint, while cards can use either</li>
+  <li>You must pass the <code>billing_info.store_billing_info</code> field set to <code>false</code></li>
+  <li>You must be using a supported gateway and payment method — see Limitations above</li>
+</ul>
 
-| Parameter                         | Value                                | Description                                                                                                                                                                                                                                     |
-| :-------------------------------- | ------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `billing_info.store_billing_info` | **Boolean.&#x20;**&#x44;efault: true | **Boolean**. Child of billing_info. An identifier for the intent to store the provided payment method on the transaction. Certain payment methods require `true` or `false`. See your respective payment method integration guides for details. |
+<table class="rp-params">
+  <tr class="rp-thead-row"><td>Parameter</td><td>Type</td><td>Description</td></tr>
+  <tr><td><code>billing_info.store_billing_info</code></td><td>Boolean. Default: <code>true</code></td><td>An identifier for the intent to store the provided payment method on the transaction. Certain payment methods require <code>true</code> or <code>false</code> — see your respective payment method integration guides for details.</td></tr>
+</table>
 
-&#x20;
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Generate an eCommerce request</h4><p>Use a supported client library, or set <code>store_billing_info</code> to <code>false</code> directly in your code, to specify an eCommerce transaction where Recurly should not store the billing information provided.</p></div>
+  </div>
+</div>
 
-## Step 1: Generate an eCommerce Request
+Send a request to the create <a href="https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase" target="_blank">Purchases endpoint</a>, including:
 
-**Use** a supported client library or our  `store_billing_info`  field in your code. Our client libraries help you build out our APIs easily and process transactions faster. To specify an ecommerce transaction where your intent is to NOT store the billing information provided, set your `store_billing_info` boolean value to `false`. Your expectation should be that Recurly does _not_ store the payment method provided.
-
-**Send** a request to the create`purchase` endpoint on Recurly’s API, including:
-
-* **Customer account data** (e.g., code, name, billing info, phone number, email address, etc.)
-* **Line Items** (no plan codes)
-* **If applicable, the type** of payment method. This is unnecessary for Cards with Adyen, but GCash requires passing the type field as `gcash`.
-* **Store Billing Info indicator** set to `false`
-
-Below an example JSON payload:
+<ul class="rp-list">
+  <li>Customer account data (code, name, billing info, phone number, email address, and so on)</li>
+  <li>Line items (no plan codes)</li>
+  <li>If applicable, the payment method type — unnecessary for cards with Adyen, but GCash requires passing the type field as <code>gcash</code></li>
+  <li>The store billing info indicator set to <code>false</code></li>
+</ul>
 
 ```json
 {
@@ -121,35 +141,85 @@ Below an example JSON payload:
 }
 ```
 
-> **Tip:** Many more parameters are available. See the <Anchor target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>Many more parameters are available. See the <a href="https://developers.recurly.com/api/latest/#operation/create_purchase" target="_blank">Create Purchase</a> reference to learn more.</div>
+</div>
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Process the purchase response</h4><p>A successful purchase returns an <code>InvoiceCollection</code>, which contains any charge or credit invoices generated by the request.</p></div>
+  </div>
+</div>
+
+If the purchase fails, you'll receive an error response indicating what went wrong. Credit card purchases return an **Approved** transaction with a **Paid** invoice. If you're using separate authorization and capture, the transaction returns as **Approved** and the invoice remains **Pending**.
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Verify and finish</h4><p>After a successful purchase, confirm the details through the Recurly Admin UI or by calling Recurly's API to list details on the purchase, invoice, and account.</p></div>
+  </div>
+</div>
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The account won't have billing info if nothing was stored previously.</div>
+</div>
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Listen for webhooks</h4><p>After a successful purchase, several webhooks fire so you can enable access to features in your environment as needed.</p></div>
+  </div>
+</div>
+
+\[TODO: List the specific webhook events this integration should subscribe to]
+
+# Best practices
+
+<ul class="rp-list">
+  <li>Use separate authorization and capture when there's a genuine fulfillment delay — don't capture until goods ship, to avoid refund churn and reduce chargeback exposure</li>
+  <li>Respect authorization validity windows for your card scheme and gateway; don't let a stale authorization expire before capture. As a general rule this ranges from 7 to 30 days, but confirm specifics with your gateway</li>
+  <li>Use 3-D Secure wherever it's required, especially where Strong Customer Authentication (SCA) is mandated. eCommerce transactions on Recurly are customer-initiated, so the usual requirements for strong authorization rates — name, billing info, email, phone, and so on — still apply</li>
+  <li>eCommerce transactions aren't retried automatically on Recurly. Build your checkout so a customer can resubmit if they mistype their information</li>
+  <li>Keep PCI scope minimal where possible by using Recurly.js rather than handling card data on your server</li>
+  <li>Pass the full billing address and CVV wherever your acquirer or card scheme requires it — incomplete data lowers authorization rates</li>
+  <li>Confirm your address and CVV rejection rules are properly configured in Payment Settings</li>
+  <li>On Adyen, or when using Kount, set up a custom fraud rule to route these transactions to stricter checks and avoid common eCommerce fraud pitfalls. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank">Kount</a> and contact <a href="mailto:support@recurly.com">support@recurly.com</a> about <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#revenue-protect-and-protect-premium" target="_blank">Adyen's Revenue Protect custom risk profiles</a></li>
+</ul>
+
+# Error handling and troubleshooting
+
+\[TODO: Add API error codes and common troubleshooting guidance specific to this endpoint]
+
+# Webhooks
+
+## Configuring webhooks
+
+\[TODO: List the specific webhook events to subscribe to for this integration, and when each fires]
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Event</td><td>When it fires</td></tr>
+  <tr><td><code>[TODO: event_name]</code></td><td>[TODO: When it fires]</td></tr>
+</table>
+
+## Webhook verification
+
+\[TODO: Add a signature verification example]
+
+# Testing your integration
+
+\[TODO: Add sandbox environment and test card details for this endpoint]
+
+# What's next
+
+\[TODO: Add follow-on links — e.g. Full API reference, Recurly.js, Webhooks docs]
 
 ***
 
-## Step 2: Process the purchase response
+📋 TODO before publishing:
 
-A successful purchase returns an **InvoiceCollection**, which contains any charge or credit invoices generated by the request. If the purchase fails, you’ll receive an error response indicating what went wrong. **Credit Card** purchases will be in a **Approved&#x20;**&#x73;tate, and the invoice will be **Paid**. If you are processing using separate Auth and Capture, your transaction will be in a **Approved** state, and the Invoice will be **Pending**.
-
-***
-
-## Step 3: Verify and finish
-
-After a successful purchase, you can confirm the details via the Recurly Admin UI or by calling Recurly’s API to list details on the purchase, invoice, and account. Please note, the account won't have billing info if there hasn't been anything stored previously.
-
-***
-
-## Step 4: Listen for webhooks
-
-After a successful signup, there will be several webhooks you should listen to in order to ensure you are enabling access to features on in your environment if necessary.
-
-***
-
-# Recommendations and Best Practices
-
-* Use separate auth from capture when there's a genuine fulfillment delay — don't capture until goods ship, to avoid refund churn and reduce chargeback exposure.
-* Respect authorization validity windows per scheme/gateway (varies by card brand and MCC) — don't let stale auths expire before capture. The general rule is 7 to 30 days, but check with your gateway on specifics for your business.
-* Use 3DS as usual where required, especially where SCA is mandated. eCommerce transactions on Recurly are customer-initiated, so all the applicable requirements including name, billing info, email, phone, etc for ensuring auth rates are still good apply.
-* eComemrce transactions are not retried automatically on Recurly. Enable your checkout to allow a customer to click submit again if they mistype information.
-* Keep PCI scope minimal where possible via Recurly.js rather than handling card data server-side.
-* Pass full Billing Address and CVV where required by acquirer/scheme rules — incomplete data reduces auth rates.
-* Ensure your Address and CVV rejection rules are properly set up in Payments Settings.
-* On Adyen, or when using Kount, you can set up a custom fraud rule to route these transactions to stricter rules to avoid the typical fraud pitfalls of eCommerce. See our documentation on [Kount](https://docs.recurly.com/recurly-subscriptions/docs/kount) and Recurly support for [Adyen's Revenue Protect custom risk profiles](https://docs.recurly.com/recurly-subscriptions/docs/adyen#revenue-protect-and-protect-premium).
+- [ ] List the specific webhook events this integration should subscribe to, and when each fires
+- [ ] Add API error codes and common troubleshooting guidance specific to this endpoint
+- [ ] Add a webhook signature verification example
+- [ ] Add sandbox environment and test card details for this endpoint
+- [ ] Add "What's next" follow-on links (e.g. Full API reference, Recurly.js, Webhooks docs)
