@@ -164,7 +164,5 @@ Send a request to the `create_purchase` method on Recurly's API, including:
 
 📋 TODO before publishing:
 
-- [ ] Fix the malformed second JSON payload (missing closing `}`, extra trailing `]`) — flagged inline above the code block
-- [ ] Both JSON payloads contain `//` comments, which aren't valid JSON — flagged inline above each code block
 - [ ] Confirm `/docs/webhooks` is the correct link for "Recurly webhooks" — the source named this reference without a URL
 
