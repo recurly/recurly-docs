@@ -76,7 +76,7 @@ metadata:
 </ol>
 
 
-<Image src="https://files.readme.io/6c473d99f0f0f7f50fad57259059ba00ac561bc6f0086714a548fc6a14d8d692-Screenshot_2026-09-23_at_3.31.20_PM.png" align="center" width="75%" border={true} />
+<Image src="https://files.readme.io/ddf05a2bfadc9314c2876188a9753530ba1e3728abb7c38b5f1aa5dec583a8ff-dlocal-credentials.png" align="center" width="75%" border={true} />
 
 
 <div class="rp-steps">
