@@ -189,37 +189,76 @@ If the purchase fails, you'll receive an error response indicating what went wro
 
 # Error handling and troubleshooting
 
-\[TODO: Add API error codes and common troubleshooting guidance specific to this endpoint]
+If a payment method doesn't support one time e-commerce processing, or if your use case doesn't allow non-storage, you will recieve the following error:&#x20;
+
+**Subscription Endpoint** or attempting to set `false` on a purchase payload that contains a plan code.
+
+```json Error on Storage State
+{
+    "error": {
+        "type": "validation",
+        "message": "Billing info: Store billing info subscriptions require billing info to be stored.",
+        "params": [
+            {
+                "param": "billing_info.store_billing_info",
+                "message": "Subscriptions require Billing Info to be stored."
+            }
+        ]
+    }
+}
+```
+
+**Unsupported Response:&#x20;**
+
+```json Unsupported Gateway or Payment Method
+{
+    "error": {
+        "type": "validation",
+        "message": "Billing info: Store billing info unstored billing infos are not supported for this payment gateway.",
+        "params": [
+            {
+                "param": "billing_info.store_billing_info",
+                "message": "Unstored Billing Infos are not supported for this payment gateway."
+            }
+        ]
+    }
+}
+```
+
+**Feature not enabled on site:&#x20;**
+
+- Ask support to enable the feature if you see this error.
+
+```json Feature Not Enabled
+{
+    "error": {
+        "type": "validation",
+        "message": "The store_billing_info attribute is not enabled for this site.",
+        "params": [
+            {
+                "param": "store_billing_info",
+                "message": "The store_billing_info attribute is not enabled for this site."
+            }
+        ]
+    }
+}
+```
 
 # Webhooks
 
-## Configuring webhooks
-
-\[TODO: List the specific webhook events to subscribe to for this integration, and when each fires]
-
-<table class="rp-gw-table">
-  <tr class="rp-thead-row"><td>Event</td><td>When it fires</td></tr>
-  <tr><td><code>[TODO: event_name]</code></td><td>[TODO: When it fires]</td></tr>
-</table>
-
-## Webhook verification
-
-\[TODO: Add a signature verification example]
+* There are no specific webhook configuration steps for this use case. Please see standard webhook configuration, testing, and best practices in our dedicated guide.
+* Standard payment or authorized payment webhooks apply to these transactions.
 
 # Testing your integration
 
-\[TODO: Add sandbox environment and test card details for this endpoint]
+* Depending on your payment method and gateway, refer to that gateway's integration setup, testing guides on Recurly docs, or specific testing guides for payment methods for further instructions.
 
 # What's next
 
-\[TODO: Add follow-on links — e.g. Full API reference, Recurly.js, Webhooks docs]
+Now that you can create new  one time ecommerce payments, explore additional use cases on Recurly by visiting our [API reference](https://recurly.com/developers/api/v2021-02-25/).
 
 ***
 
-📋 TODO before publishing:
+<br />
 
-- [ ] List the specific webhook events this integration should subscribe to, and when each fires
-- [ ] Add API error codes and common troubleshooting guidance specific to this endpoint
-- [ ] Add a webhook signature verification example
-- [ ] Add sandbox environment and test card details for this endpoint
-- [ ] Add "What's next" follow-on links (e.g. Full API reference, Recurly.js, Webhooks docs)
+<br />
