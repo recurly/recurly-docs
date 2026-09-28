@@ -116,17 +116,13 @@ metadata:
 Refer to the individual payment method guides for implementation details:
 
 <ul class="rp-list">
-  <li>GCash integration guide — [TODO: add correct URL; the source linked this to the UPI Autopay guide]</li>
-  <li>One-time payments / ecommerce integration guide — [TODO: add correct URL; the source linked this to the Pix Automático guide]</li>
+  <li><a href="/docs/gcash-integration-guide">GCash integration guide</a></li>
+  <li><a href="/docs/e-commerce-purchase-guide">One-time payments / ecommerce</a> integration guide</li>
 </ul>
 
 ## Payment method specifics
 
 ### GCash Wallet
-
-<div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong>[TODO: Confirm this required-fields list is accurate for GCash/Philippines. As written it uses India/UPI conventions (PIN code, region/state, country code "IN") and may have been copied from the wrong source.]</div>
-</div>
 
 dLocal and the <a href="/docs/gcash-wallet" target="_blank">GCash method</a> require specific fields to authorize a payment successfully.
 
@@ -150,12 +146,6 @@ dLocal and the <a href="/docs/gcash-wallet" target="_blank">GCash method</a> req
   One-time, or more specifically, ecommerce transactions using GCash do not produce a storable token for future purchases. Customers must re-authenticate with their app for every purchase. You'll need to set the `store_billing_info` API parameter to `false` and set up your checkout flow to always prompt the user to select the payment method during checkout, rather than using a stored method.
 </Accordion>
 
-***
-
-📋 TODO before publishing:
-
 <br />
 
-- [ ] The "Supported payment types" table cell and the "Integration guides" links pointed to unrelated products (UPI Autopay, Pix Automático) — replace with the correct GCash guide URL(s)
-- [ ] Confirm the GCash Wallet required-fields list is accurate for the Philippines — as written it uses India/UPI-specific terms (PIN code, "IN" country code)
-- [ ] The original draft's TOC referenced "One-time Payments with GCash and dLocal" and "Subscription behavior" sections that don't exist anywhere in the source — removed from the TOC here; let me know if that content exists elsewhere and should be added back in
+<br />
