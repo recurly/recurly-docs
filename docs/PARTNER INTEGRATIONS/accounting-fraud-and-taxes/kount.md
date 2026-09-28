@@ -154,13 +154,15 @@ You may follow these same steps for your Sandbox or Production Kount credentials
 
 6. **API Key**: Enter your Kount 360 that you obtained in Step 1 in this field.
 
-7. **Set** your Fraud Monitoring Status to '**Enabled**'.
+## Step 3: APM Configuration
 
-8. **APM Configuration**: **Select** which Payment Methods, in addition to Cards, that you wish to use fraud checks on. You may select from any that are active on your site. See example below.
+1. **APM Configuration**: **Select** which Payment Methods, in addition to Cards, that you wish to use fraud checks on. You may select from any that are active on your site. See example below. Deselecting will keep these payment method transactions from being sent to Kount.
 
    ![](https://files.readme.io/8162d0afe0ed30e89d25698d015835f8f0c37e7b75ab4c7762ddb7ac4ecec7fe-Kount-APM-configuration.png)
 
-9. Click 'Save Changes'.
+## Step 4: Enable Kount Fraud Management
+
+1. **Set** your Fraud Monitoring Status to '**Enabled**' and save settings.
 
 ## Step 3: Webhook Configuration (Optional)
 
