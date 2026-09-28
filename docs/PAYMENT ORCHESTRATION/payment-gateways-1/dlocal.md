@@ -154,6 +154,7 @@ dLocal and the <a href="https://docs.recurly.com/recurly-subscriptions/v1.0_dloc
 
 📋 TODO before publishing:
 
+- [ ] Screenshot in Step 2 is chopped. Please, replace.
 - [ ] The "Supported payment types" table cell and the "Integration guides" links pointed to unrelated products (UPI Autopay, Pix Automático) — replace with the correct GCash guide URL(s)
 - [ ] Confirm the GCash Wallet required-fields list is accurate for the Philippines — as written it uses India/UPI-specific terms (PIN code, "IN" country code)
 - [ ] The original draft's TOC referenced "One-time Payments with GCash and dLocal" and "Subscription behavior" sections that don't exist anywhere in the source — removed from the TOC here; let me know if that content exists elsewhere and should be added back in
