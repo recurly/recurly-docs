@@ -164,7 +164,7 @@ Ebanx APMs (UPI, Mercado Pago, and Pix Automatico) use subscription-level mandat
 
 ## Step 3: Set your payment methods
 
-Under **Alternative Payment Methods**, enable **UPI AutoPay**, **Pix Automatico**, and/or **Mercado Pago** as applicable. No card options appear under Accepted Card Types — Ebanx supports regional alternative payment methods only.
+Under **Alternative Payment Methods**, enable **UPI AutoPay**, **Pix Automatico**, and/or **Mercado Pago** as applicable. For Card payments, choose your applicable brands you wish to support.
 
 ## Step 4: Enable currencies
 
