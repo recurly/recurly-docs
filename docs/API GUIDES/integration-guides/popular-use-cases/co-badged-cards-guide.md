@@ -12,7 +12,7 @@ metadata:
 
 ### Prerequisites & limitations
 
-* Supported on Adyen and Stripe
+* Supported on [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen) and [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe)
 * You must have a working **Recurly.js** card integration to use this guide effectively.
 * See [Recurly.js documentation](https://recurly.com/developers/reference/recurly-js/#getting-started) for setup details.
 * For more information on co-badged card compliance, refer to our [Recurly Docs](https://docs.recurly.com/recurly-subscriptions/credit-cards#dual--co-badged-card-support).
