@@ -11,7 +11,7 @@ metadata:
   robots: index
 ---
 <div class="rp-page">
-  <div class="rp-overview">The 3DS Authentication dashboard shows you when your customers' payments are being challenged for 3-D Secure (3DS) and how those challenges resolve. The dashboard lives in Payments Hub alongside the payments analytics you already use. Use it as a diagnostic tool — confirm 3DS is working where SCA requires it, find payments that should be authenticating but aren't, and catch challenges you didn't expect from a gateway misconfiguration — so you can see exactly where 3DS is working as expected, or where you may have an integration issue.</div>
+  <div class="rp-overview">The 3DS processing dashboard shows you when your customers' payments are being challenged for 3-D Secure (3DS) and how those challenges resolve. The dashboard lives in Payments Hub alongside the payments analytics you already use. Use it as a diagnostic tool — confirm 3DS is working where SCA requires it, find payments that should be authenticating but aren't, and catch challenges you didn't expect from a gateway misconfiguration — so you can see exactly where 3DS is working as expected, or where you may have an integration issue.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
@@ -24,13 +24,13 @@ metadata:
 ### Limitations
 
 <ul class="rp-list">
-  <li>The dashboard shows 3DS outcomes on individual transactions. It doesn't yet show how 3DS authentication on an initial signup affects the approval rate of future recurring charges — that comparison is planned for a future release.</li>
+  <li>The dashboard shows 3DS outcomes on individual transactions. It doesn't yet show how 3DS processing on an initial signup affects the approval rate of future recurring charges — that comparison is planned for a future release.</li>
   <li>A frictionless-versus-full-challenge breakdown isn't available yet, since not all gateways report that distinction consistently.</li>
 </ul>
 
 # Definition
 
-<div class="rp-definition">Every card payment that requires Strong Customer Authentication (SCA) resolves to one of three states: approved, declined, or rejected with a 3DS requirement. The 3DS Authentication dashboard tracks what happens from that point on — whether the customer completed the 3DS challenge, which of the several results categories the challenge landed in, and, separately, whether the bank ultimately approved or declined the transaction. Those are two different concepts: a payment can authenticate successfully through 3DS and still be declined by the issuing bank, and this dashboard keeps that distinction visible instead of collapsing it into a single pass/fail number.</div>
+<div class="rp-definition">Every card payment that requires Strong Customer Authentication (SCA) resolves to one of three states: approved, declined, or rejected with a 3DS requirement. The 3DS processing dashboard tracks what happens from that point on — whether the customer completed the 3DS challenge, which of the several results categories the challenge landed in, and, separately, whether the bank ultimately approved or declined the transaction. Those are two different concepts: a payment can authenticate successfully through 3DS and still be declined by the issuing bank, and this dashboard keeps that distinction visible instead of collapsing it into a single pass/fail number.</div>
 
 # Key benefits
 
@@ -61,7 +61,7 @@ metadata:
 
 ## Accessing the dashboard
 
-The 3DS Authentication dashboard is a new option under Analytics > Payments Hub in Recurly Admin. It requires no setup — if your account processes 3DS transactions, the dashboard is available to you automatically.
+The 3DS processing dashboard is a new option under Analytics > Payments Hub in Recurly Admin. It requires no setup — if your account processes 3DS transactions, the dashboard is available to you automatically.
 
 ## Filters
 
@@ -123,6 +123,8 @@ Two grids break performance down by where the payment ran — Gateway detail and
 <Image src="https://files.readme.io/617574a26567b6d5c9892667a19f0096cf9b854cf4b4a23f623dd364253ff394-image.png" align="center" width="75%" border={true} />
 
 
+<br />
+
 
 <Image src="https://files.readme.io/5e874c383fc1921552a67821340e50e98898ec24e89cc7f78cb13c422f59b4a3-image.png" align="center" width="75%" border={true} />
 
@@ -134,7 +136,7 @@ Two grids break performance down by where the payment ran — Gateway detail and
   <tr><td>Declined</td><td>Successfully authenticated transactions the bank declined.</td></tr>
   <tr><td>Voided</td><td>Successfully authenticated transactions the bank voided.</td></tr>
   <tr><td>Approval rate</td><td>Approved ÷ (approved + declined). Voided and pending transactions are excluded.</td></tr>
-  <tr><td>Authenticated but declined</td><td>Transactions that passed 3DS authentication but were still declined by the bank.</td></tr>
+  <tr><td>Authenticated but declined</td><td>Transactions that passed 3DS processing but were still declined by the bank.</td></tr>
   <tr><td>Authenticated decline rate</td><td>Authenticated-and-declined ÷ (authenticated and either approved or declined).</td></tr>
   <tr><td>Not completed</td><td>Challenges that never returned a 3DS result.</td></tr>
   <tr><td>Not completed rate</td><td>Not completed ÷ (completed + not completed).</td></tr>
@@ -146,7 +148,7 @@ Two grids break performance down by where the payment ran — Gateway detail and
 
 ### 3DS outcome versus bank decision
 
-These tables exist because 3DS authentication outcome and the bank's authorization outcome are two separate concepts. A consumer can authenticate successfully through 3DS and the transaction still be declined by the issuing bank for reasons that have nothing to do with authentication — insufficient funds, fraud rules, or card restrictions, for example. When you see a high authorization decline rate for a gateway or country, that's a bank-side issue to investigate with your acquirer or issuer, not a 3DS problem.
+These tables exist because 3DS processing outcome and the bank's authorization outcome are two separate concepts. A consumer can authenticate successfully through 3DS and the transaction still be declined by the issuing bank for reasons that have nothing to do with authentication — insufficient funds, fraud rules, or card restrictions, for example. When you see a high authorization decline rate for a gateway or country, that's a bank-side issue to investigate with your acquirer or issuer, not a 3DS problem.
 
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>If you process through Checkout.com or Nuvei, your 3DS challenge is delivered through Recurly.js via a stand-alone 3DS service rather than the gateway's native flow. Your checkout experience and compliance isn't affected, but this dashboard is your authoritative source for 3DS data on those gateways — the gateway's own reporting won't show it.</div>
