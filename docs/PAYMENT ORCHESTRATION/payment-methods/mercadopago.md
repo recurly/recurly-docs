@@ -32,7 +32,7 @@ metadata:
 <ul class="rp-list">
   <li>Supported currencies: BRL, ARS, CLP, MXN, and UYU only.</li>
   <li>One-time transactions and force collections are not supported — only subscription sign-ups and automatic renewals.</li>
-  <li>The following features are not supported: invoice/calendar aggregation, parent/child accounts, multiple subscriptions per account, proration during subscription upgrades or changes, and funds verification/wallet payment instrument visibility.</li>
+  <li>The following features are not supported: invoice/calendar aggregation, parent/child accounts, proration during subscription upgrades or changes, and funds verification/wallet payment instrument visibility.</li>
   <li>100% coupons during signup are not supported — e-mandate creation is required for this payment method. Use a free trial instead. Standard coupons are supported.</li>
 </ul>
 
@@ -89,5 +89,3 @@ Always send the following customer data with Mercado Pago transactions:
   - <a href="https://docs.recurly.com/recurly-subscriptions/docs/overview-recurlyjs#/" target="_blank">Recurly.js Overview</a>
   - <a href="https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide" target="_blank">Mercado Pago Integration Guide</a>
 </Accordion>
-
-<br />
