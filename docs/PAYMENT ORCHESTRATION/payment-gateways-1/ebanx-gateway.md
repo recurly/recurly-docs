@@ -166,6 +166,10 @@ Ebanx APMs (UPI, Mercado Pago, and Pix Automatico) use subscription-level mandat
 
 Under **Alternative Payment Methods**, enable **UPI AutoPay**, **Pix Automatico**, and/or **Mercado Pago** as applicable. For Card payments, choose your applicable brands you wish to support.
 
+![](https://files.readme.io/c93f891f762c9ee33bba73c2d1b59cb0c42ef6fb56927a617028cf69bf2c8f42-Screenshot_2026-09-29_at_4.43.50_PM.png)
+
+<br />
+
 ## Step 4: Enable currencies
 
 Enable the correct currencies for each payment method:
@@ -173,9 +177,10 @@ Enable the correct currencies for each payment method:
 - **UPI AutoPay** — INR only
 - **Pix Automatico** — BRL only
 - **Mercado Pago** — BRL, ARS, CLP, MXN, or UYU
+- **Cards&#x20;**— USD, BRL, ARS, EUR, COP, CLP, MXN, or UYU
 
 
-<Image src="https://files.readme.io/3f9244597eb44e08d661db8fe9d38eb57bf92389ffec985b8cac00fca8f713cf-Ebanx_PM_and_Currency_Selection.png" align="center" width="75%" border={true} />
+<Image src="https://files.readme.io/600a44b64c656f8fb619fb5a108bebe409720b3abd690b8b63a28a12d81e103c-Screenshot_2026-09-29_at_4.44.51_PM.png" align="center" width="75%" border={true} />
 
 
 ## Step 5: Select your settlement model
@@ -266,6 +271,8 @@ For EU-hosted Recurly sites, use:
 
 Retries are supported for UPI AutoPay, Pix Automatico, and Mercado Pago when your dunning settings are **not** configured to expire subscriptions immediately. See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/static-retries#/" target="_blank">Static Retries documentation</a> and each individual payment method's page for method-specific retry behavior.
 
+Card-based payment methods follow our normal retry behavior including Standard or Intelligent retries for merchants who use this enhanced feature.
+
 ## Transaction, invoice, and subscription status
 
 For <a href="https://docs.recurly.com/docs/upi-autopay#/" target="_blank">UPI AutoPay</a> and <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/" target="_blank">Pix Automatico</a>, subscriptions become active immediately, but transactions and invoices remain in a scheduled/processing state until the pre-renewal notification is received and payment is triggered. If a customer doesn't authorize enrollment or payment via their banking app, the transaction will fail and the subscription will be expired upon rejection.
@@ -278,18 +285,16 @@ For <a href="https://docs.recurly.com/docs/upi-autopay#/" target="_blank">UPI Au
 
 ## Features not supported with Ebanx
 
-The following are not supported across all Ebanx payment methods:
+The following are not supported across Ebanx APMs payment methods. These limitations do not include credit card processing.
 
-- Authorize and Capture and Void transaction types — Ebanx transactions must be refunded, not voided
-- Subscription upgrades — mandate amounts and frequency are controlled by the customer's banking app; changes in Recurly can cause declines
-- Trials without payment data on file
-- Trials using App deep links / intents
+- Certain payment methods do not support separate Verification, Auth and Capture. This behavior is limited to card-based payments only.
+- Subscription upgrades via APMs — mandate amounts and frequency are controlled by the customer's banking app; changes in Recurly can cause declines
+- Excluding credit cards, trials without payment data on file is not supported
 - Non-Net-0 terms — Ebanx APMs must be charged on the specific day noted in the mandate; terms above Net-0 can cause failures
 - One-time transactions — Ebanx payment methods support renewals only
 - Account hierarchy — mandates associated with a parent or child account won't apply to recurring subscriptions
 - Aggregated or calendar invoicing — combining existing subscriptions is against mandate regulations in India and LATAM banking institutions
 - Bundling subscriptions — same restriction as calendar aggregation
-- Multiple subscriptions on a single account — each subscription uses one mandate ID; only one mandate ID is permitted per account
 - Merchant admin-created subscriptions — MIT subscription enrollments are not permitted per NPCI regulations (India) and LATAM banking institutions, due to pre-debit notification and consumer authentication requirements
 
 **UPI / APAC specific:**
