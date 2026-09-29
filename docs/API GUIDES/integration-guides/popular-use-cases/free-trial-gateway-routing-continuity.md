@@ -1,5 +1,8 @@
 ---
 title: 'Free Trial Gateway Routing Continuity '
+excerpt: >-
+  Learn how to route renewals to the proper gateway if you are using
+  gateway_code parameters with a free trial.
 deprecated: false
 hidden: false
 metadata:
@@ -74,4 +77,4 @@ After a successful purchase, you can confirm the details via the Recurly Admin U
 
 ## Next steps
 
-Now that you can create new  <Anchor label="subscriptions" target="_blank" href="https://app.recurly.com/go/subscriptions">subscriptions</Anchor>, explore other payment method guides that may suite your needs including MOTO and Combining Subscriptions and One Time Payments.
+Now that you can create new  <Anchor target="_blank" href="https://app.recurly.com/go/subscriptions">subscriptions</Anchor>, explore other payment method guides that may suite your needs including MOTO and Combining Subscriptions and One Time Payments.
