@@ -2,4 +2,5 @@
 - payments-hub-payment-processing
 - payments-hub-account-updater
 - payments-hub-payment-retry-recovery
+- 3ds-authentication
 - payments-hub-fraud-prevention
