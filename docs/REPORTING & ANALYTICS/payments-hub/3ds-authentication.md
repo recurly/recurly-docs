@@ -178,9 +178,6 @@ If your account has no 3DS activity in the selected date range, the dashboard sh
   Not yet. Recurly stores the Network Transaction ID (NTID) and Transaction Link Id (TLID) from the original customer-initiated transaction and sents these values to later merchant-initiated renewals, which will make that comparison possible in a future release.
 </Accordion>
 
-***
+<br />
 
-📋 TODO before publishing:
-
-- [ ] Confirm the dashboard's official name. The source called it the "3DS Processing dashboard" once (in the overview) and the "3DS Authentication dashboard" elsewhere (Definition, Accessing the dashboard). Standardized to "3DS Authentication dashboard" throughout (2 of 3 mentions) — verify against the actual label in Recurly Admin.
-- [ ] The two images under "Gateway and country detail" (Gateway detail vs. Country detail) have no captions distinguishing them — consider adding a short label above each so readers know which grid they're looking at.
+<br />
