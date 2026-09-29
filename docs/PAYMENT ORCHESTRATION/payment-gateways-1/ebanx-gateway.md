@@ -65,7 +65,7 @@ next:
   <tr><td>Card on file supported</td><td>Yes</td></tr>
   <tr><td>Regions</td><td>UPI AutoCollect: India. Pix Automatico and Mercado Pago: Brazil. Mercado Pago: Mexico, Chile, Uruguay, and Argentina. Credit Cards: Argentina, Brazil (credit only), Chile, Colombia, Costa Rica, Dominican Republic, Ecuador, Dominican Republic, Guatemala, Mexico, Panama, Paraguay, Peru, and Uruguay.</td></tr>
   <tr><td>Currencies</td><td>INR (UPI only), BRL (Cards, Pix Automatico, and Mercado Pago), ARS, CLP, MXN, UYU (Cards and Mercado Pago only), EUR (cards only), PEN (cards only), and COP (cards only).</td></tr>
-  <tr><td>Additional feature support</td><td>Cross-border and local settlement, Cart network routing (for regional card brands), and specialized tax handling.</td></tr>
+  <tr><td>Additional feature support</td><td>Cross-border and local settlement, Card network routing (for regional card brands), and specialized tax handling.</td></tr>
 </table>
 
 ## Integration guides
