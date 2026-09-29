@@ -100,8 +100,8 @@ For subscriptions to be combined into one renewal invoice, they must:
 - **Use the same collection method** — all subscriptions must use either manual or automatic billing; mixed methods result in separate invoices
 - **Follow a supported billing cadence** — monthly (minimum 30 days), quarterly, or annual
 - **Have the same shipping address** — subscriptions with different shipping addresses result in separate invoices
-- **On-file mandates are identical** — subscriptions with different mandate IDs (related to regulated payment method behavior) result in separate invoices
-- **Payment method on file is not Pix Automatico&#x20;**— subscriptions specificaully using Pix Automatico will result in separate invoices.
+- **Share the same mandate ID** — subscriptions with different mandate IDs (related to regulated payment method behavior) result in separate invoices
+- **Not be powered by Pix Automatico&#x20;**— subscriptions specificaully using Pix Automatico will result in separate invoices.
 
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Subscriptions activated within 24 hours of an aggregate renewal date will be invoiced separately. Future-start-date subscriptions that activate on the same day as an aggregate renewal will activate simultaneously with other subscriptions and bill together.</div>
