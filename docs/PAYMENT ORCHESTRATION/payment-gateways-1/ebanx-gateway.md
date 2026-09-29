@@ -1,19 +1,29 @@
 ---
 title: Ebanx (APAC and LATAM)
 excerpt: >-
-  Connect Ebanx to Recurly to process UPI AutoPay, Pix Automatico, and Mercado
-  Pago subscription payments across India, Brazil, and Latin America.
+  Connect Ebanx to Recurly to process Credit Cards in LATAM, UPI AutoPay, Pix
+  Automatico, and Mercado Pago subscription payments across India, Brazil, and
+  Latin America.
 deprecated: false
 hidden: false
 metadata:
-  title: ''
+  title: Recurly | Ebanx Gateway Integration - APAC and LATAM processing
   description: ''
+  keywords:
+    - ebanx
+    - recurly
+    - latam subscriptions
+    - upi autopay subscriptions
+    - argentina
+    - colombia
+    - mexico
+    - card processing subscriptions in latin america
   robots: index
 next:
   description: ''
 ---
 <div class="rp-page">
-  <div class="rp-overview">Ebanx is a payment management platform focused on emerging markets in India and Latin America. Integrating it with Recurly lets you process recurring subscription payments via UPI AutoPay (India), Pix Automatico (Brazil), and Mercado Pago (Brazil, Mexico, Chile, Uruguay, and Argentina). An existing Ebanx relationship is required to enable this integration.</div>
+  <div class="rp-overview">Ebanx is a payment management platform focused on emerging markets in India and Latin America. Integrating it with Recurly lets you process recurring subscription payments via UPI AutoPay (India), Pix Automatico (Brazil), and Mercado Pago (Brazil, Mexico, Chile, Uruguay, and Argentina), and Credit Cards in supported Latin American countries. An existing Ebanx relationship is required to enable this integration.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
@@ -28,6 +38,7 @@ next:
 ### Limitations
 
 <ul class="rp-list">
+  <li>strong>Credit cards outside of LATAM not supported</strong> — card payments for customers outside of supported countries is not supported and will result in declines. If you require processing support for cards outside of supported countries, please reach out to your Recurly contacts.</li>
   <li><strong>UPI mandate migration not supported</strong> — Customer mandates on another platform cannot be migrated to Recurly. Customers must cancel existing mandates and resubscribe. Enrollments are tightly coupled with the acquiring partner, merchant, and consumer — when the acquiring partner changes during a migration, re-enrollment is required per RBI and NPCI rules.</li>
   <li><strong>UPI transaction limit</strong> — RBI mandates limit individual transactions to 15,000 INR without a consumer two-factor flow. This 2FA is handled by the customer's bank UPI app and is not customizable. Plans, or the combined amount of plans sent in the same purchase signup request, should be at or below 15,000 INR to avoid renewal rejections. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/" target="_blank">UPI AutoPay</a> documentation for details.</li>
   <li><strong>UPI billing info updates not supported</strong> — If a customer needs to update their VPA or bank account, they must cancel their existing mandate/subscription and re-subscribe.</li>
@@ -35,7 +46,6 @@ next:
   <li><strong>Recurly.js not supported</strong> — UPI AutoPay and Pix Automatico require direct API integration. Recurly.js is not supported for these payment methods.</li>
   <li><strong>Refunds must be full amount</strong> — Partial refunds are not supported through Ebanx.</li>
   <li><strong>Chargebacks not reflected</strong> — Chargebacks are not currently supported or reflected in Recurly.</li>
-  <li><strong>UPI App deep links do not support free trials</strong> — Free trial subscriptions are not available when using UPI App deep links.</li>
   <li>See individual payment method pages for additional limitations.</li>
 </ul>
 
@@ -51,24 +61,36 @@ next:
   <tr><td>Supported operations</td><td>Subscription mandate enrollment, recurring transactions, refunds</td></tr>
   <tr><td>Supported payment types</td><td><a href="https://docs.recurly.com/docs/upi-autopay#/" target="_blank">UPI AutoPay</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/" target="_blank">Pix Automatico</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/mercadopago#/" target="_blank">Mercado Pago</a></td></tr>
   <tr><td>Supported card brands</td><td>N/A</td></tr>
-  <tr><td>Gateway-specific 3DS2 supported</td><td>No</td></tr>
-  <tr><td>Card on file supported</td><td>No</td></tr>
-  <tr><td>Regions</td><td>UPI AutoCollect: India. Pix Automatico and Mercado Pago: Brazil. Mercado Pago: Mexico, Chile, Uruguay, and Argentina.</td></tr>
-  <tr><td>Currencies</td><td>INR (UPI only), BRL (Pix Automatico and Mercado Pago), ARS, CLP, MXN, UYU (Mercado Pago only)</td></tr>
-  <tr><td>Additional feature support</td><td>Cross-border and local settlement</td></tr>
+  <tr><td>Gateway-specific 3DS2 supported</td><td>Yes</td></tr>
+  <tr><td>Card on file supported</td><td>Yes</td></tr>
+  <tr><td>Regions</td><td>UPI AutoCollect: India. Pix Automatico and Mercado Pago: Brazil. Mercado Pago: Mexico, Chile, Uruguay, and Argentina. Credit Cards: Argentina, Brazil (credit only), Chile, Colombia, Costa Rica, Dominican Republic, Ecuador, Dominican Republic, Guatemala, Mexico, Panama, Paraguay, Peru, and Uruguay.</td></tr>
+  <tr><td>Currencies</td><td>INR (UPI only), BRL (Cards, Pix Automatico, and Mercado Pago), ARS, CLP, MXN, UYU (Cards and Mercado Pago only), EUR (cards only), PEN (cards only), and COP (cards only).</td></tr>
+  <tr><td>Additional feature support</td><td>Cross-border and local settlement, Cart network routing (for regional card brands), and specialized tax handling.</td></tr>
 </table>
 
 ## Integration guides
 
 Refer to the individual payment method guides for implementation details:
 
-- <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/" target="_blank">UPI AutoPay integration guide</a>
-- <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#" target="_blank">Pix Automatico integration guide</a>
-- <a href="https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide" target="_blank">Mercado Pago integration guide</a>
+- <a href="/docs/latam-credit-card-integration-guide" target="_blank">LATAM Card integration guide</a>
+- <a href="/docs/upi-autopay-integration-guide#/" target="_blank">UPI AutoPay integration guide</a>
+- <a href="/docs/pix-automatico-integration-guide#" target="_blank">Pix Automatico integration guide</a>
+- <a href="/docs/mercado-pago-integration-guide" target="_blank">Mercado Pago integration guide</a>
+
+**Please Note:&#x20;**&#x49;t is highly recommended to subscribe to [Ebanx's status page](https://status.ebanx.com/) for updates on scheduled maintenance alerts to avoid unexpected downtime for payment processing.
 
 ## Required fields
 
-Ebanx requires specific fields to create a mandate for a recurring subscription.
+Ebanx requires specific fields for proper subscription and transaction handling.
+
+### Credit Cards
+
+* Credit Card number, Expiry date, CVV (when customer is in session)
+* Customer Information: email address, first and last name, billing address, customer phone number
+* Tax ID and Tax ID type (conditional)
+* Customer date of birth (conditional) -- this is a new field in the Recurly V3 API that will need to be sent.
+
+***
 
 ### UPI AutoPay
 
@@ -83,6 +105,8 @@ Ebanx requires specific fields to create a mandate for a recurring subscription.
   - **Country** — Country code (e.g., IN)
 - Customer phone number
 
+***
+
 ### Pix Automatico and Mercado Pago
 
 - Customer name
@@ -95,9 +119,9 @@ Ebanx requires specific fields to create a mandate for a recurring subscription.
   <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Failing to send required fields — especially Tax IDs for Brazil — will cause signup and/or renewal failures.</div>
 </div>
 
-## Mandate preferences
+## APM Mandate preferences
 
-Ebanx payment methods use subscription-level mandate IDs assigned to a customer's subscription at signup. Customers can revoke or pause (UPI only) their mandate from their banking app, which affects the subscription in Recurly.
+Ebanx APMs (UPI, Mercado Pago, and Pix Automatico) use subscription-level mandate IDs assigned to a customer's subscription at signup. Customers can revoke or pause (UPI only) their mandate from their banking app, which affects the subscription in Recurly. This does not apply to credit card usage.
 
 - Customers cancelling or pausing mandates in their banking app are handled automatically.
 - Pausing and resuming subscriptions via a banking app is currently supported with UPI only.
@@ -293,5 +317,3 @@ The following are not supported across all Ebanx payment methods:
 <Accordion title="I'm getting an Authentication Failure, but my API key is correct. Why?">
   Check two things. First, verify your settlement model is correct — cross-border and local settlement accounts are on different gateway-level environments, so a valid API key sent to the wrong environment will return an Authentication error. Second, confirm whether your key is a sandbox or production key. Production keys in Recurly's sandbox or development mode sites will also trigger this error. Use sandbox keys for development mode, and production keys for sandbox or production sites.
 </Accordion>
-
-<br />
