@@ -173,7 +173,7 @@ Async payments require Stripe webhook support on your Recurly site. Contact Recu
 
 ### Mandate amounts
 
-Mandate amounts are calculated from your plan amount plus taxes, plus an 18% buffer to allow for plan amount changes over the subscription lifetime. Discounts are not factored in to avoid undervaluing the mandate.
+Mandate amounts are calculated from your plan amount plus taxes, plus an 18% buffer to allow for plan amount changes over the subscription lifetime. Discounts are not factored in to avoid undervaluing the mandate. If you would like to customize this, go to Payments Settings and customize the mandate buffer amount. This setting applies to all payment methods that use mandate buffer amounts -- be aware if you are also using Ebanx with Pix Automatico, Mercado Pago, or UPI AutoPay.
 
 ### Customer interaction indicator
 
