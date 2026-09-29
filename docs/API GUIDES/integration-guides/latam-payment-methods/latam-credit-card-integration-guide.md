@@ -5,7 +5,7 @@ excerpt: >-
   in the LATAM region, including the customer data and 3DS handling required for
   regional compliance.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
@@ -98,7 +98,7 @@ Fields to collect:&#x20;
             "month": "03",
             "year": "2030",
             "cvv": "123",
-            "tax_identifier_type":"tax-id-type", // conditional
+            "tax_identifier_type":"tax-id-type",
             "tax_identifier":"tax-identifier-value",
             "date_of_birth":"YYYY-MM-DD"
         }
