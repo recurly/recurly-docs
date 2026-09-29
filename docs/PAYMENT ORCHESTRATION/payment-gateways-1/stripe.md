@@ -147,10 +147,6 @@ All CIT/subscription signups for Indian customers require 3DS. Combine subscript
 
 India e-mandates are in Public Preview at Stripe. Unintended issues may arise before the implementation is fully stable. Contact Recurly Support to escalate any issues.
 
-### Single subscription per account
-
-E-mandates are stored at the Customer Account level in Recurly. Only one active subscription is permitted per account for Indian customers — adding multiple subscriptions risks invalidating older ones.
-
 ### Single plan per transaction
 
 To avoid renewal declines and mandate cancellations, use a single plan per invoice. Multiple subscriptions on a single transaction can result in renewal failures.
