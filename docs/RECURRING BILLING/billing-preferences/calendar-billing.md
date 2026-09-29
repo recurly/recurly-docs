@@ -43,7 +43,9 @@ next:
 - The account bill date is read-only and cannot be changed directly — adjustments must be made at the subscription level via API
 - Calendar billing and renewal alignment are not supported on annual plans with a one-year billing period. They are supported if a one-year plan has its billing period broken into 12 months
 - Subscription-level entity assignment is not available for purchase calls made through Recurly Checkout
-- Payment methods that are mandate-driven won't be calendar or invoice aligned if they don't share a mandate. Shared mandates only occur when the subscription was created in the same customer session (e.g., signing up for multiple subscriptions within a single invoice). Otherwise, these subscriptions are excluded. Applicable payment methods: all direct debit, India-based card payments on Stripe and Ebanx via UPI, and certain LATAM APMs such as Pix and Mercado Pago
+- Payment methods that are mandate-driven and/or billing-period-sensitive won't be calendar or invoice aligned if they don't share a mandate. Shared mandates only occur when the subscription was created in the same customer session (e.g., signing up for multiple subscriptions within a single invoice). Otherwise, these subscriptions are excluded.&#x20;
+  - Calendar Billing Restrictions: Pix Automatico.
+  - Invoice Aggregation Restrictions: Pix Automatico, UPI AutoPay, Mercado Pago, specific Regional Credit Cards (specific to India e-mandates on Stripe).
 
 </div>
 
@@ -316,5 +318,3 @@ Once activated, follow the steps below to complete setup.
     <div><h4>Monitor and review</h4><p>After enabling calendar billing, monitor your aggregated invoices and aligned renewals to confirm everything is working as expected. For any issues, contact <a href="mailto:support@recurly.com">support@recurly.com</a>.</p></div>
   </div>
 </div>
-
-<br />
