@@ -35,7 +35,7 @@ metadata:
   <li><strong>Renewal date must remain fixed</strong> — Flexible schedules, net terms, and renewal date modifications are not supported. PIX requires the renewal date to stay consistent with the original sign-up, with no more than one successful transaction per billing period. Changing renewal dates without a new sign-up will cause renewals to fail.</li>
   <li><strong>No manual or forced trial conversion</strong> — PIX requires a static start date for the first renewal based on plan data. Conversion attempts before this date will fail.</li>
   <li><strong>Supported billing frequencies</strong> — PIX subscriptions must use one of: Weekly, Monthly, Quarterly, Half-yearly, or Yearly — or their equivalent day-based values (7 days, 30 days, every 4 weeks, every 3 months, every 180 days, etc.). Schedules outside this pattern return a validation error and the sign-up will fail.</li>
-  <li>The following features are not supported: invoice/calendar aggregation, parent/child accounts, multiple subscriptions per account, proration during subscription upgrades or changes, and funds verification/wallet payment instrument visibility.</li>
+  <li>The following features are not supported: invoice/calendar aggregation, parent/child accounts, proration during subscription upgrades or changes, and funds verification/wallet payment instrument visibility.</li>
   <li>100% coupons during signup are not supported — e-mandate creation is required for this payment method. Use a free trial instead. Standard coupons are supported.</li>
 </ul>
 
@@ -103,5 +103,3 @@ Pix Automático retries are asynchronous and remain in a Scheduled state until R
 <Accordion title="How do I integrate Pix Automático into my checkout?">
   Pix Automático is supported via the V3 API. See the <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#/" target="_blank">Pix Automático Integration Guide</a> to get started.
 </Accordion>
-
-<br />
