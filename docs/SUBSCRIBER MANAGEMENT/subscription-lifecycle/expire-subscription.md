@@ -99,7 +99,10 @@ Recurly can automatically cancel a subscription when it receives a webhook signa
 **Supported gateways:**
 
 - <a href="https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete" target="_blank">PayPal Complete</a>
-- <a href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/" target="_blank">Ebanx</a> (using <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/" target="_blank">UPI AutoPay</a>)
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/" target="_blank">Ebanx</a> when using UPI AutoPay, Mercado Pago, or Pix Automatico.
+- Stripe when using e-mandates with Indian Credit Cards.
+
+Read more about mandate settings to configure auto-cancellation or auto-expiry in [Payment Settings](https://docs.recurly.com/recurly-subscriptions/docs/payment-settings#enabling-mandate-settings).
 
 # Reactivate a subscription
 
@@ -170,5 +173,3 @@ Within <a href="https://docs.recurly.com/docs/dunning-management" target="_blank
 <div class="rp-callout rp-callout-warning">
   <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Past-due invoices aren't auto-failed on expiry</strong>If a subscription expires outside of dunning — through cancellation, termination, or natural term end — any past-due invoices currently in dunning will not be automatically failed. They'll remain open and in dunning until paid or until the dunning cycle ends. If your dunning settings are configured to leave invoices past due at the end of the cycle, those invoices will never automatically fail. To stop collection, you'll need to manually mark them as failed.</div>
 </div>
-
-<br />
