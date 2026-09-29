@@ -12,7 +12,7 @@ metadata:
 
 ### Prerequisites & limitations
 
-* Supported on Adyen
+* Supported on Adyen and Stripe
 * You must have a working **Recurly.js** card integration to use this guide effectively.
 * See [Recurly.js documentation](https://recurly.com/developers/reference/recurly-js/#getting-started) for setup details.
 * For more information on co-badged card compliance, refer to our [Recurly Docs](https://docs.recurly.com/recurly-subscriptions/credit-cards#dual--co-badged-card-support).
@@ -25,7 +25,7 @@ This guide explains how to support co-badged cards in a Recurly.js environment, 
 
 ## Step 1: Listen for the `coBadge` Event
 
-Set up an event listener for **`coBadge`** on your Recurly.js `CardElement`. For more on handling events, see the [Recurly.js events documentation](https://recurly.com/developers/reference/recurly-js/#events).
+Set up an event listener for `coBadge` on your Recurly.js `CardElement`. For more on handling events, see the [Recurly.js events documentation](https://recurly.com/developers/reference/recurly-js/#events).
 
 ```js
 const elements = recurly.Elements();
@@ -79,8 +79,7 @@ Include the `data-recurly="card_network_preference"` attribute so Recurly.js can
 </div>
 ```
 
-> **Warning**  
-> Ensure the customer **chooses a brand** before you proceed to tokenize or submit the form.
+> **Warning**<br />Ensure the customer **chooses a brand** before you proceed to tokenize or submit the form.
 
 ***
 
