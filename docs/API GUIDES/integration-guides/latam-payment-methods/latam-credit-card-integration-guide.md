@@ -24,7 +24,7 @@ metadata:
 ---
 # Overview
 
-This guide shows you how to use the [Purchase endpoint](https://developers.recurly.com/api/latest/#tag/purchase) to create new subscriptions using a credit card on Ebanx or WorldPay in the LATAM region.&#x20;
+This guide shows you how to use the [Purchase endpoint](https://developers.recurly.com/api/latest/#tag/purchase) to create new subscriptions using a credit card on Ebanx or WorldPay in the LATAM region. This guide is not exhaustive and focuses on providing information on required fields for the region for basic processing. For additional information on credit card processing, please see our general API documentation, or other feature docs.
 
 ### Prerequisites & limitations
 
