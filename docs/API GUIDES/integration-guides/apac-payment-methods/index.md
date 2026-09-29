@@ -38,9 +38,6 @@ Most APAC payment methods are asynchronous — transactions and invoices stay in
 
 <a class="rp-btn-secondary" href="https://docs.recurly.com/recurly-subscriptions/docs/best-practices#/" target="_blank">Webhooks best practices →</a>
 
-***
+<br />
 
-📋 TODO before publishing:
-
-- [ ] Add the URL for "our dedicated Recurly.js guides" (3DS documentation) — the source named this reference but didn't provide a link
-- [ ] Confirm this page should have no plan-availability pill — treated it as a cross-gateway reference page rather than a single gated feature; let me know if that's wrong
+<br />
