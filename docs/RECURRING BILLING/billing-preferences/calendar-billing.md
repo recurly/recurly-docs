@@ -100,7 +100,7 @@ For subscriptions to be combined into one renewal invoice, they must:
 - **Use the same collection method** — all subscriptions must use either manual or automatic billing; mixed methods result in separate invoices
 - **Follow a supported billing cadence** — monthly (minimum 30 days), quarterly, or annual
 - **Have the same shipping address** — subscriptions with different shipping addresses result in separate invoices
-- **Share the same mandate ID** — subscriptions with different mandate IDs (related to regulated payment method behavior) result in separate invoices
+- **Share the same mandate ID** (exclusions apply, see Pix) — subscriptions with different mandate IDs (related to regulated payment method behavior) result in separate invoices. Relevant payment methods include: Direct Debit (ACH, SEPA, BACS, BECS, etc.), regional cards in India (Stripe / e-mandates), regional APMs such as UPI AutoPay, and Mercado Pago.
 - **Not be powered by Pix Automatico&#x20;**— subscriptions specificaully using Pix Automatico will result in separate invoices.
 
 <div class="rp-callout rp-callout-note">
