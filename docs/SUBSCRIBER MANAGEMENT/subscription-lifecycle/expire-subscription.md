@@ -137,6 +137,8 @@ If the cancellation option was provided to the customer, they'll see a reactivat
 
 Termination ends a subscription immediately, mid-cycle. Unlike cancellation, there's no pre-expiry window — the subscription moves directly to expired. Use termination when you need to end a subscription right away rather than at a future date.
 
+If you are using Ebanx or Stripe with a supported payment method, you may use auto-termination. See our documentation in [Payment Settings](https://docs.recurly.com/recurly-subscriptions/docs/payment-settings#enabling-mandate-settings) for additional details. This setting relates to e-mandates on India Credit Cards (Stripe) and APMs on Ebanx (UPI AutoPay, Mercado Pago, Pix Automatico).
+
 ## Admin Console
 
 <div class="rp-steps">
