@@ -27,6 +27,7 @@ metadata:
   <li><strong>No ad-hoc or one-time purchases using stored billing info</strong> — Customer-initiated one-time purchases using stored billing info and merchant-initiated force collections are not supported.</li>
   <li><strong>Chargebacks not reflected</strong> — Chargebacks are not currently supported or reflected in Recurly.</li>
   <li><strong>GCash one-time payments don't store billing info by design</strong> — Customers must reauthenticate via Recurly.js every time.</li>
+  <li><strong>Free trials</strong> — Free trials are not yet supported with this wallet.</li
 </ul>
 
 # Definition
