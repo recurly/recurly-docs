@@ -62,6 +62,7 @@ Recurly supports credit card processing through the following gateways. Visit ea
 - <a href="https://docs.recurly.com/docs/braintree" target="_blank">Braintree</a>
 - <a href="https://docs.recurly.com/docs/cardconnect" target="_blank">CardConnect</a>
 - <a href="https://docs.recurly.com/docs/chase-paymentech-orbital" target="_blank">Chase Paymentech Orbital</a>
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway">Ebanx</a>
 - <a href="https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub#/" target="_blank">Commerce Hub by Fiserv</a>
 - <a href="https://docs.recurly.com/docs/cybersource" target="_blank">CyberSource</a>
 - <a href="https://docs.recurly.com/recurly-subscriptions/docs/freedompay#/" target="_blank">FreedomPay</a>
