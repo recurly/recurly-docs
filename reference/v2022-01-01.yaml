@@ -7446,7 +7446,7 @@ paths:
       x-code-samples: []
     post:
       tags:
-        - dunning_campaigns
+        - Dunning Campaigns
       operationId: create_dunning_campaign
       summary: Create a new dunning campaign
       requestBody:
@@ -7537,7 +7537,7 @@ paths:
       x-code-samples: []
     put:
       tags:
-        - dunning_campaigns
+        - Dunning Campaigns
       operationId: update_dunning_campaign
       summary: Update a dunning campaign
       description: >-
@@ -7597,7 +7597,7 @@ paths:
       x-code-samples: []
     delete:
       tags:
-        - dunning_campaigns
+        - Dunning Campaigns
       operationId: deactivate_dunning_campaign
       summary: Deactivate a dunning campaign
       description: The default dunning campaign cannot be deactivated.
@@ -7636,7 +7636,7 @@ paths:
   /dunning_campaigns/email_templates:
     get:
       tags:
-        - dunning_campaigns
+        - Dunning Campaigns
       operationId: list_dunning_campaign_email_templates
       summary: >-
         List the custom email templates assignable to a dunning campaign
