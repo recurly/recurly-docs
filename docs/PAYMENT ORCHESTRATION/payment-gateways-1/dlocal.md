@@ -4,7 +4,7 @@ excerpt: >-
   Configure the dLocal payment gateway in Recurly to process one-time and
   recurring subscription payments with the GCash wallet in the Philippines.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
