@@ -40,7 +40,7 @@ next:
 <ul class="rp-list">
   <li><strong>Credit cards outside of LATAM not supported</strong> — card payments for customers outside of supported countries is not supported and will result in declines. If you require processing support for cards outside of supported countries, please reach out to your Recurly contacts.</li>
   <li><strong>UPI mandate migration not supported</strong> — Customer mandates on another platform cannot be migrated to Recurly. Customers must cancel existing mandates and resubscribe. Enrollments are tightly coupled with the acquiring partner, merchant, and consumer — when the acquiring partner changes during a migration, re-enrollment is required per RBI and NPCI rules.</li>
-  <li><strong>UPI transaction limit</strong> — RBI mandates limit individual transactions to 15,000 INR without a consumer two-factor flow. This 2FA is handled by the customer's bank UPI app and is not customizable. Plans, or the combined amount of plans sent in the same purchase signup request, should be at or below 15,000 INR to avoid renewal rejections. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/" target="_blank">UPI AutoPay</a> documentation for details.</li>
+  <li><strong>UPI transaction limit</strong> — RBI mandates limit individual transactions to 15,000 INR without a consumer two-factor flow. This 2FA is handled by the customer's bank UPI app and is not customizable. Plans, or the combined amount of plans sent in the same purchase signup request, should be at or below 15,000 INR to avoid renewal rejections. See <a href="/docs/upi-autopay#/" target="_blank">UPI AutoPay</a> documentation for details.</li>
   <li><strong>UPI billing info updates not supported</strong> — If a customer needs to update their VPA or bank account, they must cancel their existing mandate/subscription and re-subscribe.</li>
   <li><strong>No ad-hoc or one-time purchases</strong> — Customer-initiated one-time purchases and merchant-initiated force collections are not supported.</li>
   <li><strong>Recurly.js not supported for certain APMs</strong> — UPI AutoPay and Pix Automatico require direct API integration. Recurly.js is not supported for these payment methods.</li>
@@ -57,9 +57,9 @@ next:
 
 <table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
-  <tr><td>Services that work with Recurly</td><td>Payment processing, subscriptions, <a href="https://docs.recurly.com/recurly-subscriptions/docs/expire-subscription#/auto-cancellation-of-a-subscription" target="_blank">automatic subscription cancellation</a></td></tr>
+  <tr><td>Services that work with Recurly</td><td>Payment processing, subscriptions, <a href="/docs/expire-subscription#/auto-cancellation-of-a-subscription" target="_blank">automatic subscription cancellation</a></td></tr>
   <tr><td>Supported operations</td><td>Subscription mandate enrollment, recurring transactions, refunds</td></tr>
-  <tr><td>Supported payment types</td><td>Credit Cards, <a href="https://docs.recurly.com/docs/upi-autopay#/" target="_blank">UPI AutoPay</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/" target="_blank">Pix Automatico</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/mercadopago#/" target="_blank">Mercado Pago</a></td></tr>
+  <tr><td>Supported payment types</td><td><a href="/docs/credit-cards">Credit Cards</a>, <a href="/docs/upi-autopay#/" target="_blank">UPI AutoPay</a>, <a href="/docs/pix-automatico#/" target="_blank">Pix Automatico</a>, <a href="/docs/mercadopago#/" target="_blank">Mercado Pago</a></td></tr>
   <tr><td>Supported card brands</td><td>Visa, MasterCard, Discover, American Express, and Ebanx-supported regional brands.</td></tr>
   <tr><td>Gateway-specific 3DS2 supported</td><td>Yes</td></tr>
   <tr><td>Card on file supported</td><td>Yes</td></tr>
