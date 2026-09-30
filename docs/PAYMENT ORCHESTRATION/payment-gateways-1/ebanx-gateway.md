@@ -60,7 +60,7 @@ next:
   <tr><td>Services that work with Recurly</td><td>Payment processing, subscriptions, <a href="https://docs.recurly.com/recurly-subscriptions/docs/expire-subscription#/auto-cancellation-of-a-subscription" target="_blank">automatic subscription cancellation</a></td></tr>
   <tr><td>Supported operations</td><td>Subscription mandate enrollment, recurring transactions, refunds</td></tr>
   <tr><td>Supported payment types</td><td>Credit Cards, <a href="https://docs.recurly.com/docs/upi-autopay#/" target="_blank">UPI AutoPay</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/" target="_blank">Pix Automatico</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/mercadopago#/" target="_blank">Mercado Pago</a></td></tr>
-  <tr><td>Supported card brands</td><td>N/A</td></tr>
+  <tr><td>Supported card brands</td><td>Visa, MasterCard, Discover, American Express, and Ebanx-supported regional scenarios.</td></tr>
   <tr><td>Gateway-specific 3DS2 supported</td><td>Yes</td></tr>
   <tr><td>Card on file supported</td><td>Yes</td></tr>
   <tr><td>Regions</td><td>UPI AutoCollect: India. Pix Automatico and Mercado Pago: Brazil. Mercado Pago: Mexico, Chile, Uruguay, and Argentina. Credit Cards: Argentina, Brazil (credit only), Chile, Colombia, Costa Rica, Dominican Republic, Ecuador, Dominican Republic, Guatemala, Mexico, Panama, Paraguay, Peru, and Uruguay.</td></tr>
