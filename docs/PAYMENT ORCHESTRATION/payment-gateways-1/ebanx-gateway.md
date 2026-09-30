@@ -63,7 +63,7 @@ next:
   <tr><td>Supported card brands</td><td>Visa, MasterCard, Discover, American Express, and Ebanx-supported regional brands.</td></tr>
   <tr><td>Gateway-specific 3DS2 supported</td><td>Yes</td></tr>
   <tr><td>Card on file supported</td><td>Yes</td></tr>
-  <tr><td>Regions</td><td>UPI AutoCollect: India. Pix Automatico and Mercado Pago: Brazil. Mercado Pago: Mexico, Chile, Uruguay, and Argentina. Credit Cards: Argentina, Brazil (credit only), Chile, Colombia, Costa Rica, Dominican Republic, Ecuador, Dominican Republic, Guatemala, Mexico, Panama, Paraguay, Peru, and Uruguay.</td></tr>
+  <tr><td>Regions</td><td>UPI AutoPay: India. Pix Automatico and Mercado Pago: Brazil. Mercado Pago: Mexico, Chile, Uruguay, and Argentina. Credit Cards: Argentina, Brazil (credit only), Chile, Colombia, Costa Rica, Dominican Republic, Ecuador, Dominican Republic, Guatemala, Mexico, Panama, Paraguay, Peru, and Uruguay.</td></tr>
   <tr><td>Currencies</td><td>INR (UPI only), BRL (Cards, Pix Automatico, and Mercado Pago), ARS, CLP, MXN, UYU (Cards and Mercado Pago only), EUR (cards only), PEN (cards only), and COP (cards only).</td></tr>
   <tr><td>Additional feature support</td><td>Cross-border and local settlement, Card network routing (for regional card brands), and specialized tax handling.</td></tr>
 </table>
