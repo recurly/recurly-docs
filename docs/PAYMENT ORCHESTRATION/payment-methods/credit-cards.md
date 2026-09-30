@@ -57,21 +57,20 @@ next:
 
 Recurly supports credit card processing through the following gateways. Visit each gateway's documentation for setup details.
 
-- <a href="https://docs.recurly.com/docs/adyen" target="_blank">Adyen</a>
-- <a href="https://docs.recurly.com/docs/authorizenet" target="_blank">Authorize.Net</a>
-- <a href="https://docs.recurly.com/docs/braintree" target="_blank">Braintree</a>
-- <a href="https://docs.recurly.com/docs/cardconnect" target="_blank">CardConnect</a>
-- <a href="https://docs.recurly.com/docs/chase-paymentech-orbital" target="_blank">Chase Paymentech Orbital</a>
-- <a href="https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub#/" target="_blank">Commerce Hub by Fiserv</a>
-- <a href="https://docs.recurly.com/docs/cybersource" target="_blank">CyberSource</a>
-- <a href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway">Ebanx</a>
-- <a href="https://docs.recurly.com/recurly-subscriptions/docs/freedompay#/" target="_blank">FreedomPay</a>
-- <a href="https://docs.recurly.com/docs/additional" target="_blank">Merchant eSolutions</a>
-- <a href="https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/" target="_blank">PayPal Complete</a>
-- <a href="https://docs.recurly.com/docs/additional" target="_blank">Stripe</a>
-- <a href="https://docs.recurly.com/docs/tsys" target="_blank">TSYS</a>
-- <a href="https://docs.recurly.com/docs/additional" target="_blank">Vantiv</a>
-- <a href="https://docs.recurly.com/docs/worldpaydlocal-latam-support" target="_blank">Worldpay</a>
+- <a href="/docs/adyen" target="_blank">Adyen</a>
+- <a href="/docs/authorizenet" target="_blank">Authorize.Net</a>
+- <a href="h/docs/braintree" target="_blank">Braintree</a>
+- <a href="/docs/cardconnect" target="_blank">CardConnect</a>
+- <a href="/docs/chase-paymentech-orbital" target="_blank">Chase Paymentech Orbital</a>
+- <a href="/docs/commerce-hub#/" target="_blank">Commerce Hub by Fiserv</a>
+- <a href="/docs/cybersource" target="_blank">CyberSource</a>
+- <a href="/docs/ebanx-gateway">Ebanx</a>
+- <a href="/docs/freedompay#/" target="_blank">FreedomPay</a>
+- <a href="/docs/paypal-complete#/" target="_blank">PayPal Complete</a>
+- <a href="/docs/stripe" target="_blank">Stripe</a>
+- <a href="/docs/tsys" target="_blank">TSYS</a>
+- <a href="/docs/vantiv" target="_blank">Vantiv</a>
+- <a href="/docs/worldpaydlocal-latam-support" target="_blank">Worldpay</a>
 
 For a full list of gateways by country, visit <a href="http://recurly.com/gateways" target="_blank">recurly.com/gateways</a>.
 
