@@ -1,0 +1,18 @@
+---
+title: October 06, 2026 - Recurly Subscription Management
+author: Jenn Schnoes
+hidden: true
+published_at: '2026-10-02T21:16:40.445Z'
+---
+&#x20;October 6th brings meaningful improvements to card network compliance and checkout flexibility. Stripe merchants will now see Mastercard TLID support for recurring transactions automatically, and Cobadge card support (such as Cartes Bancaires) is now available in Recurly.js for Stripe, for merchants who wish to accept them. Adyen merchants will also benefit from a behind-the-scenes address handling improvement designed to boost authorization rates.
+
+On the fixes side, a reporting issue that was incorrectly combining Apple Pay and credit card data in Analytics has been resolved, giving merchants accurate payment method reporting going forward. Worldpay ACH merchants processing business bank accounts will now see company names correctly carried through NACHA verification, and CyberSource migrations continue — reach out to Support if you have questions about your migration timeline.
+
+| Release Date | Feature             | Type        | Potential Impact | Description / Overview                                                                                                                                                                                                               |
+| ------------ | ------------------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Oct 6        | Stripe Gateway      | Enhancement | Med              | The Stripe gateway will now support storing and sending MasterCard TLID for recurring transations. No changes to your integration is necessary with this change.                                                                     |
+| Oct 6        | Recurly.js          | Enhancement | Low              | Cobadge cards will have support in Recurly.js for the Stripe gateway. If you wish to accept Cobadge cards (example: Cartes Bancares) on Stripe, please see updated Recurly.js and integration guide documentation after the release. |
+| Oct 6        | Adyen Gateway       | Enhancement | Low              | We're making a small modification to address handling on the Adyen platform to improve auth rates. No integration changes are necessary to receive this update.                                                                      |
+| Oct 6        | Cybersource Gateway | Enhancement | Low              | We are continuing migration to enhance our processing on Cybersource. No integration changes are necessary at this time. If you have questions about your placement in migration, please reach out to Support.                       |
+| Oct 6        | Analytics           | Bug fix     | Med              | An issue with reporting affecting Apple Pay reporting is being released. The issue caused Apple Pay data to combine with Credit card data.                                                                                           |
+| Oct 6        | WorldPay Gateway    | Bug fix     | Low              | When processing with ACH, if your customer has a business bank account, NACHA verifications will now carry the company name to the gateway for verification.                                                                         |
