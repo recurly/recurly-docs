@@ -39,6 +39,7 @@ next:
 
 <ul class="rp-list">
   <li><strong>Credit cards outside of LATAM not supported</strong> — card payments for customers outside of supported countries is not supported and will result in declines. If you require processing support for cards outside of supported countries, please reach out to your Recurly contacts.</li>
+ <li><strong>If you are processing cards in Argentina</strong> -- You must have your own account with Avalara or Vertex to handle Argintinian tax management.
   <li><strong>UPI mandate migration not supported</strong> — Customer mandates on another platform cannot be migrated to Recurly. Customers must cancel existing mandates and resubscribe. Enrollments are tightly coupled with the acquiring partner, merchant, and consumer — when the acquiring partner changes during a migration, re-enrollment is required per RBI and NPCI rules.</li>
   <li><strong>UPI transaction limit</strong> — RBI mandates limit individual transactions to 15,000 INR without a consumer two-factor flow. This 2FA is handled by the customer's bank UPI app and is not customizable. Plans, or the combined amount of plans sent in the same purchase signup request, should be at or below 15,000 INR to avoid renewal rejections. See <a href="/docs/upi-autopay#/" target="_blank">UPI AutoPay</a> documentation for details.</li>
   <li><strong>UPI billing info updates not supported</strong> — If a customer needs to update their VPA or bank account, they must cancel their existing mandate/subscription and re-subscribe.</li>
