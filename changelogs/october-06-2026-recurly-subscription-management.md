@@ -4,7 +4,7 @@ author: Jenn Schnoes
 hidden: true
 published_at: '2026-10-02T21:16:40.445Z'
 ---
-&#x20;October 6th brings meaningful improvements to card network compliance and checkout flexibility. Stripe merchants will now see Mastercard TLID support for recurring transactions automatically, and Cobadge card support (such as Cartes Bancaires) is now available in Recurly.js for Stripe, for merchants who wish to accept them. Adyen merchants will also benefit from a behind-the-scenes address handling improvement designed to boost authorization rates.
+October 6th brings meaningful improvements to card network compliance and checkout flexibility. Stripe merchants will now see Mastercard TLID support for recurring transactions automatically, and Cobadge card support (such as Cartes Bancaires) is now available in Recurly.js for Stripe, for merchants who wish to accept them. Adyen merchants will also benefit from a behind-the-scenes address handling improvement designed to boost authorization rates.
 
 On the fixes side, a reporting issue that was incorrectly combining Apple Pay and credit card data in Analytics has been resolved, giving merchants accurate payment method reporting going forward. Worldpay ACH merchants processing business bank accounts will now see company names correctly carried through NACHA verification, and CyberSource migrations continue — reach out to Support if you have questions about your migration timeline.
 
