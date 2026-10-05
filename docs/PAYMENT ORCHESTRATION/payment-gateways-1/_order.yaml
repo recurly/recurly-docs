@@ -6,7 +6,6 @@
 - chase-paymentech-orbital
 - check-commerce
 - checkoutcom
-- revolv3-gateway
 - commerce-hub
 - cybersource
 - dlocal
@@ -16,6 +15,7 @@
 - jack-henry
 - nuvei
 - paypal-complete
+- revolv3-gateway
 - stripe
 - tsys
 - vantiv
