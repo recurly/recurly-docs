@@ -1,17 +1,17 @@
 ---
-title: Custom gateway routing (merchant-initiated)
+title: 'Custom gateway routing '
 excerpt: >-
   Use Recurly's Custom Gateway Routing to direct transactions to a specific
   payment gateway by passing a gateway_code — for fund segregation, acceptance
   rate optimization, and subscription routing control.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 <div class="rp-page">
   <div class="rp-overview">Custom Gateway Routing lets you direct transactions to a specific payment gateway by passing a <code>gateway_code</code> in your API requests. Use it to segregate funds, optimize acceptance rates through local processors, and control exactly which gateway handles each transaction or subscription renewal.</div>
@@ -83,7 +83,7 @@ next:
 - <a href="https://docs.recurly.com/docs/paypal-payments" target="_blank">PayPal</a> (excluding PayPal through Braintree)
 - Amazon Pay
 
-## gateway\_code behaviour
+## gateway_code behaviour
 
 - Passing `gateway_code` in an API request routes the transaction to the associated gateway. If the code is absent or doesn't match a configured gateway, the transaction routes to the default gateway — with certain mismatches causing a transaction failure.
 - The `gateway_code` persists for recurring transactions, routing all subsequent subscription renewals to the specified gateway unless updated.
@@ -128,5 +128,3 @@ If no `gateway_code` is passed, Recurly routes the transaction to the Default Ga
     <div><h4>Test the setup</h4><p>Run a few test transactions and monitor their routing to confirm they're directed to the specified gateway per the <code>gateway_code</code> in your requests.</p></div>
   </div>
 </div>
-
-<br />
