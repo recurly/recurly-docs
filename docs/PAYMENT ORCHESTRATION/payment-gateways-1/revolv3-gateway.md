@@ -122,7 +122,7 @@ For additional guidance, see Revolv3's direct documentation: <a href="https://do
 - Your Acquirer Merchant ID
 - Your Acquirer Country
 
-These are used in [Step 4](#step-4-enable-3d-secure). Gather them now so you have them ready.
+These are used in [Step 3](#step-4-enable-3d-secure). Gather them now so you have them ready.
 
 ## Step 2 — Enter your credentials in Recurly
 
