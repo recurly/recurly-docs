@@ -65,7 +65,7 @@ next:
 <tr><td>Gateway-specific 3DS2 supported</td><td>Yes</td></tr>
 <tr><td>Card on file supported</td><td>Yes</td></tr>
 <tr><td>Regions</td><td>Global</td></tr>
-<tr><td>Currencies</td><td><a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">All available</a>, with special behavior for ISK and CLP. IDR and CVE are not supported.</td></tr>
+<tr><td>Currencies</td><td><a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">All available</a>, with special behavior for ISK and CLP.</td></tr>
 <tr><td>Gateway features</td><td><a href="https://docs.recurly.com/recurly-subscriptions/docs/level-2-and-level-3-cedp-guide" target="_blank">Level 2 and Level 3 Data</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-network-tokens" target="_blank">Network Token usage awareness</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#revenue-protect-and-protect-premium" target="_blank">Revenue Protect / Protect Premium</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions" target="_blank">MOTO Processing</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-real-time-account-updater-rtau" target="_blank">Realtime Account Updater</a>, <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-intelligent-routing-" target="_blank">Adyen Intelligent Debit Routing</a></td></tr>
 </table>
 
