@@ -106,6 +106,9 @@ Offers seamless global processing with a focus on streamlining subscription rene
 <Card title="PayPal Complete" href="https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete" target="_blank">
 Integrates PayPal and credit card payments in a single gateway, giving customers flexible checkout options under one integration.
 </Card>
+<Card title="Revolv3" href="/docs/revolv3-gateway" target="_blank">
+Combines world-class orchestration, improved auth rates, and Recurly's powerful recurring engine.
+</Card>
 <Card title="Stripe" href="https://docs.recurly.com/recurly-subscriptions/docs/stripe" target="_blank">
 A developer-first payment platform known for its clean APIs, extensive documentation, and powerful toolset for building payment flows.
 </Card>
