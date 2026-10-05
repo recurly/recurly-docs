@@ -1,0 +1,35 @@
+---
+title: Getting Started
+deprecated: false
+hidden: true
+icon: fad fa-alicorn
+metadata:
+  robots: index
+---
+# Overview
+
+### Required
+
+This feature or setting is available to all customers on any Recurly subscription plan.
+
+### Prerequisites
+
+An account is required to be setup in Avalara ELR prior to setup in Recurly.
+
+# Definition
+
+<br />
+
+# Key benefits
+
+<br />
+
+# Key details
+
+<br />
+
+# Integration setup
+
+<br />
+
+# FAQs
