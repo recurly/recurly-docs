@@ -21,6 +21,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
   * [3D Secure for Stored billing IDs](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information#/)
 * A [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/) gateway account.
 * You must use Stripe test cards specifically for India testing. Please see their [documentation](https://docs.stripe.com/india-recurring-payments?integration=subscriptions#testing) for reference.
+* If you are attempting to speed up sign up / renewal in sandbox -- you must wait at least 5 minutes between signup and renewal for the e-mandate to be approved at Stripe.
 
 ***
 
