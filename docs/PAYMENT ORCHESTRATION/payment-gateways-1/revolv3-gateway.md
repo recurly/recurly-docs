@@ -17,7 +17,7 @@ metadata:
 
   <div class="rp-overview">
 
-Checkout.com is a global payment gateway that plugs into Recurly to handle recurring subscriptions, one-time payments, and 3D Secure authentication — across virtually any currency or region. Whether you're onboarding fresh or migrating from another gateway, setup follows a straightforward six-step process.
+Revolv3 is a global payment gateway that plugs into Recurly to handle recurring subscriptions, one-time payments, and 3D Secure authentication — across virtually any currency or region. Whether you're onboarding fresh or migrating from another gateway, setup follows a straightforward process.
 
   </div>
 
@@ -67,7 +67,7 @@ Revolv3 is a global payment gateway that integrates with Recurly to manage finan
   </tr>
   <tr>
     <td>Supported payment types</td>
-    <td>Credit card, Apple Pay, Google Pay</td>
+    <td>Credit card</td>
   </tr>
   <tr>
     <td>Supported card brands</td>
@@ -95,10 +95,10 @@ Revolv3 is a global payment gateway that integrates with Recurly to manage finan
   </tr>
 </table>
 
-# Set up Checkout.com with Recurly
+# Set up Revolv3 with Recurly
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Pricing and account setup</strong> For pricing and signup information for a new production Checkout.com account, contact your Checkout.com account representative directly.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Pricing and account setup</strong> For pricing and signup information for a new production Revolv3 account, contact your Revolv3 account representative directly.</div>
 </div>
 
 ## Step 1 — Obtain your Checkout.com credentials
@@ -106,17 +106,17 @@ Revolv3 is a global payment gateway that integrates with Recurly to manage finan
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">1</div>
-    <div><h4>Retrieve your API keys from Checkout.com</h4><p>Log in to your Checkout.com dashboard, go to <strong>Developers → Keys</strong>, and select <strong>Create a new key</strong>.</p></div>
+    <div><h4>Retrieve your credentials from Revolv3</h4><p>Log in to your Revolv3 dashboard, go to <strong>Settings → Integration Profile</strong>, and open <strong>Developer Static Tokens</strong>.</p></div>
   </div>
 </div>
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Scope your key carefully</strong> Avoid customizing key permissions unless you're certain no functionality will be blocked. If you do limit scopes, ensure at minimum that <strong>payments, gateway, disputes, search, and risk</strong> are enabled — even for features not yet in use, to avoid key changes later.</div>
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>Create your Token</strong>There are few steps easier than this -- simply create a static token and keep it somewhere safe for onboarding to Recurly.</div>
 </div>
 
-For additional guidance, see Checkout.com's documentation: <a href="https://support.checkout.com/hc/en-us/articles/14327309405842-Create-new-API-keys" target="_blank">Access and/or create API credentials</a> and the <a href="https://www.checkout.com/docs/business-operations/use-the-dashboard/developers#Manage_API_authentication" target="_blank">Dashboard documentation</a>.
+For additional guidance, see Revolv3's direct documentation: <a href="https://docs.revolv3.com/docs/getting-started/getting-started#step-1-obtain-a-sandbox-token" target="_blank">Access and/or create Static Tokens</a>.
 
-**If you plan to enable 3DS**, you'll also need the following from Checkout.com before proceeding:
+**If you plan to enable 3DS**, you'll also need the following from Revolv3 before proceeding:
 
 - Your Acquirer BIN (6 digits)
 - Your Acquirer Merchant ID
@@ -124,71 +124,26 @@ For additional guidance, see Checkout.com's documentation: <a href="https://supp
 
 These are used in [Step 4](#step-4-enable-3d-secure). Gather them now so you have them ready.
 
-## Step 2 — Configure webhooks in Checkout.com
-
-Recurly uses webhooks from Checkout.com to receive payment and dispute event notifications. You'll also generate a **Signature key** here, which you'll enter in Recurly in Step 3.
+## Step 2 — Enter your credentials in Recurly
 
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">1</div>
-    <div><h4>Open the webhook configuration page</h4><p>In your Checkout.com dashboard, go to <strong>Developers → Webhooks</strong> and select <strong>Create configuration</strong>.</p></div>
+    <div><h4>Open the payment gateway settings</h4><p>In Recurly, go to <strong>Configuration → Payment Gateways</strong> and select <strong>Revolv3</strong> from the available options.</p></div>
   </div>
   <div class="rp-step">
     <div class="rp-step-num">2</div>
-    <div><h4>Name the configuration</h4><p>Enter a descriptive name — for example, "Recurly production."</p></div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">3</div>
-    <div><h4>Enter the webhook destination URL</h4><p>In the URL field, enter the Recurly callback URL below, replacing <code>&lt;MERCHANT_SUBDOMAIN&gt;</code> with your Recurly site's actual subdomain. If you cannot find your merchant subdomain, please reach out to Recurly support.</p></div>
+    <div><h4>Enter your Revolv3 credentials</h4><p>Fill in the required fields using the values you collected in Steps 1 and 2.</p></div>
   </div>
 </div>
 
-```
-https://callbacks.recurly.com/checkout/<MERCHANT_SUBDOMAIN>
-```
+| Field         | Where to find it                                                  |
+| ------------- | ----------------------------------------------------------------- |
+| Developer Key | Revolv3 dashboard → Integration Profile → Developer Static Tokens |
+| Static Token  | Revolv3 dashboard → Integration Profile → Developer Static Tokens |
+| 3DS Details   | Your Revolv3 account manager                                      |
 
-For example, if your Recurly subdomain is `mywebsite`, enter:
-
-```
-https://callbacks.recurly.com/checkout/mywebsite
-```
-
-<div class="rp-callout rp-callout-tip">
-  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Finding your Recurly subdomain</strong> Your subdomain appears in the URL when you're logged in to Recurly — for example, <code>mywebsite.recurly.com</code>. It's also shown under <strong>Configuration → Site Settings</strong>.</div>
-</div>
-
-<div class="rp-steps">
-  <div class="rp-step">
-    <div class="rp-step-num">4</div>
-    <div><h4>Select event types</h4><p>To future-proof your setup, select all event types. At minimum, ensure <strong>payment events</strong> and <strong>dispute events</strong> are included. Within Checkout.com settings, payment events in the list of webhook events fall under the "Gateway" section, not either of the two "Payment" sections.</p></div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">5</div>
-    <div><h4>Save and copy your Signature key</h4><p>After saving, Checkout.com generates a <strong>Signature key</strong> (also called a Source Verification Key). Copy it — you'll enter it in Recurly in the next step.</p></div>
-  </div>
-</div>
-
-## Step 3 — Enter your credentials in Recurly
-
-<div class="rp-steps">
-  <div class="rp-step">
-    <div class="rp-step-num">1</div>
-    <div><h4>Open the payment gateway settings</h4><p>In Recurly, go to <strong>Configuration → Payment Gateways</strong> and select <strong>Checkout.com</strong> from the available options.</p></div>
-  </div>
-  <div class="rp-step">
-    <div class="rp-step-num">2</div>
-    <div><h4>Enter your Checkout.com credentials</h4><p>Fill in all four fields using the values you collected in Steps 1 and 2.</p></div>
-  </div>
-</div>
-
-| Field                   | Where to find it                           |
-| ----------------------- | ------------------------------------------ |
-| API Public Key          | Checkout.com dashboard → Developers → Keys |
-| Channel ID              | Checkout.com dashboard → Developers → Keys |
-| API Secret Key          | Checkout.com dashboard → Developers → Keys |
-| Source Verification Key | Generated in Step 2 (Signature key)        |
-
-## Step 4 — Enable 3D Secure
+## Step 3 — Enable 3D Secure
 
 Skip this step if you're not using 3DS.
 
@@ -199,17 +154,17 @@ Skip this step if you're not using 3DS.
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">1</div>
-    <div><h4>Enable 3D Secure</h4><p>In the Checkout.com gateway configuration screen in Recurly, select <strong>Enable 3D Secure</strong>.</p></div>
+    <div><h4>Enable 3D Secure</h4><p>In the Revolv3 gateway configuration screen in Recurly, select <strong>Enable 3D Secure</strong>.</p></div>
   </div>
   <div class="rp-step">
     <div class="rp-step-num">2</div>
-    <div><h4>Enter your 3DS credentials</h4><p>Fill in your <strong>Acquirer BIN</strong>, <strong>Acquirer Merchant ID (CAID)</strong>, and <strong>Acquirer Country</strong> — all obtained from Checkout.com directly.</p></div>
+    <div><h4>Enter your 3DS credentials</h4><p>Fill in your <strong>Acquirer BIN</strong>, <strong>Acquirer Merchant ID (CAID)</strong>, and <strong>Acquirer Country</strong> — all obtained from Revolv3 directly.</p></div>
   </div>
 </div>
 
 ## Step 5 — Enable currencies
 
-Select the currencies your Checkout.com gateway should accept. You can add or change currencies at any time — choose only from those you're approved to process.
+Select the currencies your Revolv3 gateway should accept. You can add or change currencies at any time — choose only from those you're approved to process.
 
 
 <Image src="https://files.readme.io/c4a227a-image.png" align="center" width="75%" border={true} />
@@ -223,7 +178,7 @@ Once you've configured everything, select **Add Payment Gateway**. If you're upd
 
 ## Address and card code verification
 
-You can configure Recurly to automatically reject transactions where the billing address or CVV doesn't match what the card issuer has on file. These settings apply across all gateways — they're not Checkout.com-specific.
+You can configure Recurly to automatically reject transactions where the billing address or CVV doesn't match what the card issuer has on file. These settings apply across all gateways — they're not Revolv3-specific.
 
 **Enable Address Verification (AVS)**
 
@@ -246,26 +201,29 @@ You can configure Recurly to automatically reject transactions where the billing
 ## Test your integration
 
 1. Go to **Configuration → Payment Gateways**.
-2. Find your Checkout.com configuration and select **Options → Test Configuration**.
+2. Find your Revolv3 configuration and select **Options → Test Configuration**.
 
 If your credentials are correct, Recurly will confirm a successful connection.
 
 ## Go live
 
-Once testing passes, your gateway is ready for real transactions. Monitor activity in both Recurly and your Checkout.com dashboard to confirm everything is processing as expected.
+Once testing passes, your gateway is ready for real transactions. Monitor activity in both Recurly and your Revolv3 dashboard to confirm everything is processing as expected.
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> PCI compliance</strong> Ensure you comply with PCI Data Security Standards (PCI DSS) when handling card data. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> or your Checkout.com representative with any compliance questions.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> PCI compliance</strong> Ensure you comply with PCI Data Security Standards (PCI DSS) when handling card data. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> or your Revolv3 representative with any compliance questions.</div>
 </div>
 
 # Production and sandbox behavior
 
-Production and sandbox environments in Checkout.com are entirely separate systems with distinct endpoints. Keep the following in mind when managing your environments:
+Production and sandbox environments in Revolv3 are entirely separate systems with distinct endpoints. Keep the following in mind when managing your environments:
 
-- If you create a Checkout.com gateway configuration while your Recurly site is in either Production or Sandbox mode, you can control which Checkout.com endpoint — production or sandbox — your transactions hit.
+- If you create a Revolv3 gateway configuration while your Recurly site is in either Production or Sandbox mode, you can control which Revolv3 endpoint — production or sandbox — your transactions hit.
 - **If you ever change your Recurly site's mode** (for example, from Sandbox to Production), your existing gateway tiles will stop working. You must create new gateway configurations for the new mode and disable the old ones.
 - **Best practice:** Keep your site in a consistent mode and use a dedicated development site for integration testing. Set that site to Development mode before adding gateway accounts, and keep it there for the duration of your testing.
+- When testing Revolv3, it is best to use their test cards for streamlined development and testing. You can find their test cards and sandbox limitations at the below two pages. Please note, Recurly does not control Revolv3 test card behavior or sandbox limitations.&#x20;
+  - [Revolv3 Test cards](https://docs.revolv3.com/docs/testing-sandbox/test-cards-for-sandbox)
+  - [Revolv3 Sandbox limitations](https://docs.revolv3.com/docs/testing-sandbox/sandbox-environment-limitations)
 
 <div class="rp-callout rp-callout-important">
-  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Going live from a copied configuration</strong> When going live, you cannot simply copy your sandbox gateway configuration. The copied gateway does not carry the correct site identifiers for the production environment — you must re-onboard Checkout.com from scratch in your production site.</div>
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Going live from a copied configuration</strong> When going live, you cannot simply copy your sandbox gateway configuration. The copied gateway does not carry the correct site identifiers for the production environment — you must re-onboard Revolv3 from scratch in your production site.</div>
 </div>
