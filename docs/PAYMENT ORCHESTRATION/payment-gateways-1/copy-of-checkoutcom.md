@@ -1,8 +1,8 @@
 ---
-title: Copy of Checkout.com
+title: Revolv3
 excerpt: >-
-  Configure Checkout.com as a payment gateway in Recurly to accept credit cards,
-  Apple Pay, and Google Pay across global markets.
+  Configure Revolv3 as a payment gateway in Recurly to accept Credit Cards
+  across global markets.
 deprecated: false
 hidden: true
 metadata:
@@ -10,11 +10,13 @@ metadata:
 ---
 <div class="rp-page">
   <div class="rp-callout rp-callout-tip">
-    <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Early access</strong> Checkout.com is currently available in early access. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> to request access.</div>
+    <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Early access</strong> Revolv3 is currently available in early access. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> to request access.</div>
   </div>
 
   <div class="rp-overview">
-    Checkout.com is a global payment gateway that plugs into Recurly to handle recurring subscriptions, one-time payments, and 3D Secure authentication — across virtually any currency or region. Whether you're onboarding fresh or migrating from another gateway, setup follows a straightforward six-step process.
+
+Checkout.com is a global payment gateway that plugs into Recurly to handle recurring subscriptions, one-time payments, and 3D Secure authentication — across virtually any currency or region. Whether you're onboarding fresh or migrating from another gateway, setup follows a straightforward six-step process.
+
   </div>
 
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
@@ -26,18 +28,21 @@ metadata:
     <a class="rp-toc-pill" href="#additional-configuration"><span class="rp-toc-num">4</span>Additional configuration</a>
     <a class="rp-toc-pill" href="#production-and-sandbox-behavior"><span class="rp-toc-num">5</span>Production and sandbox behavior</a>
   </div>
+
 </div>
 
 # Definition
 
 <div class="rp-definition">
-  Checkout.com is a global payment gateway that integrates with Recurly to manage financial transactions for recurring subscriptions and one-time payments. It supports a wide range of card brands, payment methods, and currencies worldwide, and includes built-in fraud detection that works together with Recurly.js to capture device and browser signals at the time of payment.
+
+Revolv3 is a global payment gateway that integrates with Recurly to manage financial transactions for recurring subscriptions and one-time payments. It supports a wide range of card brands and currencies worldwide, and employs best-in-class orchestration behind-the-scenes to improve auth rates.
+
 </div>
 
 <div class="rp-callout rp-callout-important">
   <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Best practices before you start</strong>
   <ul>
-    <li>Checkout.com's fraud detection requires <strong>Recurly.js</strong> to collect browser and device data. If you're using 3D Secure (3DS) Recurly.js is also required. Passing raw card numbers directly via the API is not supported. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information" target="_blank">Recurly.js with stored billing information</a> for guidance on tokenizing stored cards.</li>
+    <li>Using 3DS requires <strong>Recurly.js</strong> to collect browser and device data, and deliver the customer challenge.</li>
     <li>Ensure your Business Entity's Merchant Category Code (MCC) is filled in correctly before enabling 3DS.</li>
     <li>The CVV is required for all CIT card payments, including MOTO. Ensure you are capturing the CVV for return customer transactions including signups, and one-time transactions. Recurly will never store the CVV code on your behalf.</li>
   </ul></div>
@@ -262,5 +267,3 @@ Production and sandbox environments in Checkout.com are entirely separate system
 <div class="rp-callout rp-callout-important">
   <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Going live from a copied configuration</strong> When going live, you cannot simply copy your sandbox gateway configuration. The copied gateway does not carry the correct site identifiers for the production environment — you must re-onboard Checkout.com from scratch in your production site.</div>
 </div>
-
-<br />
