@@ -26,7 +26,7 @@ Revolv3 is a global payment gateway that plugs into Recurly to handle recurring 
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
     <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
-    <a class="rp-toc-pill" href="#set-up-checkoutcom-with-recurly"><span class="rp-toc-num">3</span>Setup</a>
+    <a class="rp-toc-pill" href="#set-up-revolv3-with-recurly"><span class="rp-toc-num">3</span>Setup</a>
     <a class="rp-toc-pill" href="#additional-configuration"><span class="rp-toc-num">4</span>Additional configuration</a>
     <a class="rp-toc-pill" href="#production-and-sandbox-behavior"><span class="rp-toc-num">5</span>Production and sandbox behavior</a>
   </div>
@@ -101,7 +101,7 @@ Revolv3 is a global payment gateway that integrates with Recurly to manage finan
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Pricing and account setup</strong> For pricing and signup information for a new production Revolv3 account, contact your Revolv3 account representative directly.</div>
 </div>
 
-## Step 1 — Obtain your Checkout.com credentials
+## Step 1 — Obtain your Revolv3 credentials
 
 <div class="rp-steps">
   <div class="rp-step">
