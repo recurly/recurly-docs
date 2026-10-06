@@ -69,8 +69,8 @@ next:
   </div>
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i></div>
-    <strong>Target failover gateways on signups</strong>
-    <span>Let Recurly choose which gateway to use if your targeted gateway is having an outage or target your preference via API.</span>
+    <strong>Keep signups flowing when your primary gateway is having an outage</strong>
+    <span>By using a backup_gateway_code, you can target which gateway to use if your primary gateway choice is having an temporary outage so that your customer can sign up regardless of downstream issues.</span>
   </div>
 </div>
 
