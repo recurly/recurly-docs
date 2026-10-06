@@ -33,12 +33,35 @@ card.on('change', changeHandler);
 card.off('change', changeHandler);
 ```
 
-| Common event | Fired when…                               | Payload highlights                          |
-| ------------ | ----------------------------------------- | ------------------------------------------- |
-| `change`     | Field value changes or validity updates   | `state.valid`, `state.brand`, `state.empty` |
-| `focus`      | Element gains focus                       | —                                           |
-| `blur`       | Element loses focus                       | —                                           |
-| `ready`      | Element is fully rendered and interactive | —                                           |
+| Common event | Fired when…                                                                  | Payload highlights                              |
+| ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------- |
+| `change`     | Field value changes or validity updates                                      | `state.valid`, `state.brand`, `state.empty`     |
+| `coBadge`    | A valid card number is entered and the networks it can run on are determined | `state.coBadgeSupport`, `state.supportedBrands` |
+| `focus`      | Element gains focus                                                          | —                                               |
+| `blur`       | Element loses focus                                                          | —                                               |
+| `ready`      | Element is fully rendered and interactive                                    | —                                               |
 
-> **Tip**\
-> Keep a reference to the exact handler you passed to `.on()`; you must supply the same function reference to `.off()` to successfully detach the listener.
+> **Tip**<br />Keep a reference to the exact handler you passed to `.on()`; you must supply the same function reference to `.off()` to successfully detach the listener.
+
+## Co-badged card state
+
+For cards that can run on more than one network, the `change` event state includes:
+
+| State field                                                                                                      | Type      | Description                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------- |
+| `state.coBadgeSupport`                                                                                           | `Boolean` | Whether the entered card supports more than one network.                                                 |
+| `state.supportedBrands`                                                                                          | `Array`   | Networks the card can run on, e.g. `["visa", "cartes_bancaires"]`. Empty when the card is not co-badged. |
+| `state.cardNetworkPreference`                                                                                    | `String`  | The selected network, e.g. `"cartes_bancaires"`. Present when the built-in network selector is enabled   |
+| (`coBadgeSelector: true`) and a co-badged card is detected; `null` once the card is removed or is not co-badged. |           |                                                                                                          |
+
+```javascript
+card.on('change', state => {
+  if (state.cardNetworkPreference) {
+    console.log('Processing on', state.cardNetworkPreference);
+  }
+});
+```
+
+> **Note**<br />The `coBadge` event fires whenever a valid card number is entered and reports
+> the detected networks regardless of whether you render your own selection UI. See the
+> <Anchor target="_blank" href="/docs/co-badged-cards-guide">Co-badged cards guide</Anchor> for the complete flow.
