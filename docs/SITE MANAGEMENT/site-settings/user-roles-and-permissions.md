@@ -79,7 +79,7 @@ Users with Analytics access can view and export all data in the Analytics sectio
 
 ### Configuration
 
-Users with Configuration access can view and edit: Site Settings, Business Entities, Email Templates, Payment Gateways, Custom Fields, Hosted Payment Pages, Dunning Management, Measured Units, Tax Settings, Currencies, Fraud Management, Shipping Information, Network Tokens, Apple Pay, Entitlements, Payment Settings, Gift Card Settings, and Analytics Settings. They can also create, edit, and view Plans, Items, and Coupons.
+A vast number of role combinations can be created within the Configuration category, allowing you to create and edit roles as your business needs shift and change.  No two permissions depend on one another to grant access to a single page.  However, a few permissions will grant access to multiple pages.
 
 ### App Management
 
@@ -98,14 +98,6 @@ These permissions are enabled through a feature flag.
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The Read-Only vs. Admin distinction within Revenue Recognition can only be set during initial role configuration. After a role is saved, granular access control within Revenue Recognition itself is the only way to change this. The Revenue Recognition section only appears on sites with the Revenue Recognition feature flag enabled.</div>
 </div>
-
-###
-
-
-<Image src="https://files.readme.io/56e2aa4-image.png" align="center" width="75%" border={true} />
-
-
-###
 
 ### Admin
 
