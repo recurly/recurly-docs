@@ -86,7 +86,7 @@ metadata:
 ## gateway_code behaviour
 
 - Passing `gateway_code` in an API request routes the transaction to the associated gateway. If the code is absent or doesn't match a configured gateway, the transaction routes to the default gateway — with certain mismatches causing a transaction failure.
-- The `gateway_code` persists for recurring transactions, routing all subsequent subscription renewals to the specified gateway unless updated.
+- The `gateway_code` does not persist for recurring transactions unless used appropriately via API, routing all subsequent subscription renewals to the default gateway unless updated or specified via API.
 - Update the `gateway_code` via a PUT request to `v2/subscriptions/:uuid/notes` or `v3 /subscriptions/{subscription_id}`. Clear it with an empty tag to revert to standard routing logic.
 - Retrieve the `gateway_code` for a subscription via GET requests to `/subscriptions`.
 - Modify the `gateway_code` at the invoice level using `v2/invoices/<uuid>` or `v3 /invoices/<invoice_id>`.
