@@ -61,7 +61,7 @@ next:
 
 # Key details
 
-## Permission areas
+## Permission Categories
 
 ### Customers
 
@@ -83,17 +83,25 @@ Users with Analytics access can view and export all data in the Analytics sectio
 <Image src="https://files.readme.io/270b250-image.png" align="center" width="75%" border={true} />
 
 
+### Configuration
+
+Users with Configuration access can view and edit: Site Settings, Business Entities, Email Templates, Payment Gateways, Custom Fields, Hosted Payment Pages, Dunning Management, Measured Units, Tax Settings, Currencies, Fraud Management, Shipping Information, Network Tokens, Apple Pay, Entitlements, Payment Settings, Gift Card Settings, and Analytics Settings. They can also create, edit, and view Plans, Items, and Coupons.
+
+### App Management
+
+tbd - These permissions are enabled through a feature flag.
+
 ### Revenue Recognition
 
-Users can be assigned Read-Only or Admin access to Recurly's Revenue Recognition platform. The **Allow Access** checkbox enables or disables general access to Revenue Recognition for the role.
+Users can be assigned Read-Only or Admin access to Recurly's Revenue Recognition platform. The **Allow Access** checkbox enables or disables general access to Revenue Recognition for the role. &#x20;
+
+These permissions are enabled through a feature flag.
 
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The Read-Only vs. Admin distinction within Revenue Recognition can only be set during initial role configuration. After a role is saved, granular access control within Revenue Recognition itself is the only way to change this. The Revenue Recognition section only appears on sites with the Revenue Recognition feature flag enabled.</div>
 </div>
 
-### Configuration
-
-Users with Configuration access can view and edit: Site Settings, Business Entities, Email Templates, Payment Gateways, Custom Fields, Hosted Payment Pages, Dunning Management, Measured Units, Tax Settings, Currencies, Fraud Management, Shipping Information, Network Tokens, Apple Pay, Entitlements, Payment Settings, Gift Card Settings, and Analytics Settings. They can also create, edit, and view Plans, Items, and Coupons.
+###
 
 
 <Image src="https://files.readme.io/56e2aa4-image.png" align="center" width="75%" border={true} />
@@ -246,5 +254,3 @@ If the user is the only active Site Admin on the site, assign another user to th
     <div><h4>Manage the new user</h4><p>Once accepted, you can view and manage the user's privileges under <strong>Admin → Users</strong>.</p></div>
   </div>
 </div>
-
-<br />
