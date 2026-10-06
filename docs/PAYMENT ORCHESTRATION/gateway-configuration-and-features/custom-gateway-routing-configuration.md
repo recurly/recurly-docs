@@ -112,7 +112,9 @@ next:
 
 ## Standard gateway routing
 
-If no `gateway_code` is passed, Recurly routes the transaction to the Default Gateway if it supports the combination of payment method, card type, and currency. If the Default Gateway doesn't support the transaction, Recurly looks for another configured gateway that matches. You may specify a `backup_gateway_code` to target failover, even if you don't specify a targeted `gateway_code` in your request.
+If no `gateway_code` is passed, Recurly routes the transaction to the Default Gateway if it supports the combination of payment method, card type, and currency. If the Default Gateway doesn't support the transaction, Recurly looks for another configured gateway that matches.&#x20;
+
+You may specify a `backup_gateway_code` to target failover, even if you don't specify a targeted `gateway_code` in your request. You will want to ensure the backup gateway can handle the payment method in use to avoid failures if the primary gateway, or gateway selected, is not available due to a downstream outage or technical issue.
 
 # Setup for custom gateway routing
 
