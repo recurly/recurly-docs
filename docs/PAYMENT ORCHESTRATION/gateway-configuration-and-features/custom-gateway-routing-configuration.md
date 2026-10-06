@@ -70,7 +70,7 @@ next:
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i></div>
     <strong>Keep signups flowing when your primary gateway is having an outage</strong>
-    <span>By using a backup_gateway_code, you can target which gateway to use if your primary gateway choice is having an temporary outage so that your customer can sign up regardless of downstream issues.</span>
+    <span>Choose your redundancy gateway for when your gateway choice is unavailable so that your customer can sign up regardless of downstream issues.</span>
   </div>
 </div>
 
