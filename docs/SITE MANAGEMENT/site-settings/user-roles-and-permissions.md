@@ -69,17 +69,13 @@ next:
 
 **Accounts, Subscriptions, Invoices, Transactions** — Selecting one or more of these permissions will inherit the **Customers** view access listed above, plus grant either edit or a destructive action (cancelling a subscription, closing an account) as its highest level of access.  In addition, the user will inherit the **Customers** view access to all of the customer objects (accounts, subscriptions, gift cards, invoices, and transactions). **Note that editing, deleting, or adding plans, transactions, coupons, items, or gift card redemptions from the Customers section also requires edit access to the Configuration section.**
 
-![](https://files.readme.io/3cefff296c30a1efa6395fc7273882640f737f00189e03dd03ec44a274ee0cd8-Screenshot_2026-10-06_at_3.44.55_PM.png)
 
-<br />
+<Image src="https://files.readme.io/3cefff296c30a1efa6395fc7273882640f737f00189e03dd03ec44a274ee0cd8-Screenshot_2026-10-06_at_3.44.55_PM.png" border={true} />
+
 
 ### Analytics
 
 Users with Analytics access can view and export all data in the Analytics section, with full visibility into analytics reporting.
-
-
-<Image src="https://files.readme.io/270b250-image.png" align="center" width="75%" border={true} />
-
 
 ### Configuration
 
