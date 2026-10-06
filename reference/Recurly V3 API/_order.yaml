@@ -28,6 +28,7 @@
 - shipping_method
 - automated_exports
 - dunning_campaigns
+- recover-retry-strategy
 - external_subscriptions
 - external_invoices
 - external_products
@@ -39,4 +40,5 @@
 - business_entities
 - general_ledger_account
 - performance_obligations
+- recover_retry_strategy
 - invoice_templates
