@@ -82,7 +82,7 @@ next:
 
 - One-time transactions
 - Initial subscription transactions
-- Recurring subscription renewals `gateway_code` only)
+- Recurring subscription renewals (`gateway_code` only)
 
 **Supported payment methods:**
 
