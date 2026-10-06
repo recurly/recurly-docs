@@ -83,7 +83,7 @@ metadata:
 - <a href="https://docs.recurly.com/docs/paypal-payments" target="_blank">PayPal</a> (excluding PayPal through Braintree)
 - Amazon Pay
 
-## gateway_code behaviour
+## Gateway code behaviour
 
 - Passing `gateway_code` in an API request routes the transaction to the associated gateway. If the code is absent or doesn't match a configured gateway, the transaction routes to the default gateway — with certain mismatches causing a transaction failure.
 - The `gateway_code` does not persist for recurring transactions unless used appropriately via API, routing all subsequent subscription renewals to the default gateway unless updated or specified via API.
