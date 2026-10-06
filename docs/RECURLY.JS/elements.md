@@ -16,8 +16,7 @@ Elements are secure, iframed inputs that keep you in PCI SAQ A while giving you 
 
 ## Elements
 
-> **Note – Using Hosted Fields?**\
-> Earlier Recurly.js versions rendered payment fields with *Hosted Fields*. That feature is now deprecated. We recommend [upgrading to Elements](#upgrading-from-hosted-fields-to-elements); however, v4 retains backward-compatibility. See the [v4.10.3 documentation](https://docs.recurly.com/v1.2/docs/overview-recurlyjs#/) for Hosted Fields details.
+> **Note – Using Hosted Fields?**<br />Earlier Recurly.js versions rendered payment fields with _Hosted Fields_. That feature is now deprecated. We recommend [upgrading to Elements](#upgrading-from-hosted-fields-to-elements); however, v4 retains backward-compatibility. See the [v4.10.3 documentation](https://docs.recurly.com/v1.2/docs/overview-recurlyjs#/) for Hosted Fields details.
 
 Elements allow sensitive customer payment information to be securely accepted via iframes. They are controlled in groups by an `Elements` instance.
 
@@ -90,11 +89,12 @@ const cardElement = elements.CardElement({
 
 ##### Arguments
 
-| Param               | Type   | Description                               |
-| ------------------- | ------ | ----------------------------------------- |
-| `options`           | Object |                                           |
-| `options.inputType` | String | See [Styling Elements](#styling-elements) |
-| `options.style`     | Object | See [Styling Elements](#styling-elements) |
+| Param                     | Type    | Description                                                                                                                                                                                                                   |
+| ------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `options`                 | Object  |                                                                                                                                                                                                                               |
+| `options.inputType`       | String  | See [Styling Elements](#styling-elements)                                                                                                                                                                                     |
+| `options.coBadgeSelector` | Boolean | When `true`, the card field displays a network chooser whenever a co-badged card is detected, letting the customer pick a network in the field. Defaults to `false`. See the [Co-badged cards guide](#co-badged-cards-guide). |
+| `options.style`           | Object  | See [Styling Elements](#styling-elements)                                                                                                                                                                                     |
 
 ##### Returns
 
@@ -113,6 +113,29 @@ See [Events](#events) for usage.
 | **attach**  | —                | The Element has completed attaching to the DOM.          |
 | **remove**  | —                | The Element has been removed from the DOM.               |
 | **coBadge** | `CoBadgeResults` | The user enters a valid card number.                     |
+
+***
+
+#### Co-badged card support
+
+For cards belonging to more than one network (e.g. Visa/Cartes Bancaires), you can let
+the customer choose their preferred network directly in the field:
+
+```js
+const cardElement = elements.CardElement({ coBadgeSelector: true });
+```
+
+When a co-badged card number is entered, the supported network marks appear in place of<br />the card brand icon. The network detected from the card's BIN is selected by default; the<br />customer can switch using a pointer, keyboard (<kbd>Tab</kbd> into the selector, then<br /><kbd>←</kbd>/<kbd>→</kbd>), or a screen reader.&#x20;
+
+The selection is included automatically in the token — no additional wiring is required. See the [Co-badged cards guide](#co-badged-cards-guide).
+
+The Element's `change` event state includes the current selection as
+`cardNetworkPreference` while a co-badged card is detected.
+
+**Legacy Hosted Fields note**
+
+The `coBadgeSelector` option is also available with legacy `recurly.hostedFields`
+(`fields: { number: { coBadgeSelector: true } }` or `fields: { card: … }`).
 
 ***
 
@@ -148,11 +171,12 @@ element.configure({
 
 ##### Arguments
 
-| Param               | Type   | Description                               |
-| ------------------- | ------ | ----------------------------------------- |
-| `options`           | Object |                                           |
-| `options.inputType` | String | See [Styling Elements](#styling-elements) |
-| `options.style`     | Object | See [Styling Elements](#styling-elements) |
+| Param                     | Type    | Description                                                                                                                                                                                         |
+| ------------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `options`                 | Object  |                                                                                                                                                                                                     |
+| `options.inputType`       | String  | See [Styling Elements](#styling-elements)                                                                                                                                                           |
+| `options.coBadgeSelector` | Boolean | When `true`, the card field displays a network chooser whenever a co-badged card is detected, letting the customer pick a network in the field. Defaults to `false`. See the Co-badged cards guide. |
+| `options.style`           | Object  | See [Styling Elements](#styling-elements)                                                                                                                                                           |
 
 ##### Returns
 
@@ -164,7 +188,7 @@ The **Element** instance.
 
 Moves the user's focus to the Element.
 
-*Safari allows programmatic focus only after prior user interaction.*
+_Safari allows programmatic focus only after prior user interaction._
 
 ##### Returns
 
