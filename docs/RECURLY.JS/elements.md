@@ -89,12 +89,12 @@ const cardElement = elements.CardElement({
 
 ##### Arguments
 
-| Param                     | Type    | Description                                                                                                                                                                                                                   |
-| ------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `options`                 | Object  |                                                                                                                                                                                                                               |
-| `options.inputType`       | String  | See [Styling Elements](#styling-elements)                                                                                                                                                                                     |
-| `options.coBadgeSelector` | Boolean | When `true`, the card field displays a network chooser whenever a co-badged card is detected, letting the customer pick a network in the field. Defaults to `false`. See the [Co-badged cards guide](#co-badged-cards-guide). |
-| `options.style`           | Object  | See [Styling Elements](#styling-elements)                                                                                                                                                                                     |
+| Param                     | Type    | Description                                                                                                                                                                                                                                                             |
+| ------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `options`                 | Object  |                                                                                                                                                                                                                                                                         |
+| `options.inputType`       | String  | See [Styling Elements](#styling-elements)                                                                                                                                                                                                                               |
+| `options.coBadgeSelector` | Boolean | When `true`, the card field displays a network chooser whenever a co-badged card is detected, letting the customer pick a network in the field. Defaults to `false`. See the <Anchor target="_blank" href="/docs/co-badged-cards-guide">Co-badged cards guide</Anchor>. |
+| `options.style`           | Object  | See [Styling Elements](#styling-elements)                                                                                                                                                                                                                               |
 
 ##### Returns
 
