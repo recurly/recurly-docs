@@ -90,11 +90,12 @@ next:
 - <a href="/docs/paypal-payments" target="_blank">PayPal</a> (excluding PayPal through Braintree)
 - Amazon Pay
 
-## Location Equates to Use Case&#x20;
+## Placement controls behavior&#x20;
 
 When using a custom gateway code, it's placement within your API request matters for the behavior you wish to see.&#x20;
 
-* Placement in the billing info will use that gateway code for the transaction in progress only. If the transaction is a subscription signup, the gateway code used in the signup does not persist to the renewal.&#x20;
+* Placement of the `gateway_code` in the billing info object will use that gateway code for the transaction in progress only. If the transaction is a subscription signup, the gateway code used in the signup does not persist to the renewal.&#x20;
+* Placement of the `gateway_code` as a top level ... **blahblahblah**.
 
 ## Gateway Code behaviour
 
