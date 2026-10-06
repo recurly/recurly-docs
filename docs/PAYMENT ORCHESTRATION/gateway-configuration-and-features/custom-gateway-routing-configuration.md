@@ -36,7 +36,7 @@ next:
 <ul class="rp-list">
   <li><strong>Card on File Mandates</strong> — Depending on the gateway, Card on File mandate data is packaged in different formats. In most cases the raw network transaction ID is accepted and recurring transactions process normally. In rare cases, the data is incompatible and failover will not occur.</li>
   <li><strong>Multiple subscriptions in a single request</strong> — When passing <code>gateway_code</code> for multiple subscriptions within a single request, routing to different gateways per subscription is not honoured.</li>
-  <li><strong>Custom failover routing</strong> — When using a <code>backup_gateway_code</code>, this applies only to the signup transaction. Backup gateways cannot be applied directly to a subscription.
+  <li><strong>Custom failover routing</strong> — When using a <code>backup_gateway_code</code>, this applies only to the signup transaction. Backup gateways cannot be applied directly to a subscription. Backup gateway code is only available via the V3 API.
   <li><strong>Stripe card brand awareness</strong> — Card brands for Stripe gateways are configured in the Stripe dashboard, not in Recurly. Recurly is not aware of which card brands your Stripe account supports. If certain card brands aren't supported by Stripe but are by other gateways, specify a <code>gateway_code</code> to route those transactions to the correct gateway. Review your Stripe configuration in the merchant portal to confirm your routing setup.</li>
 </ul>
 
@@ -125,7 +125,7 @@ You may specify a `backup_gateway_code` to target failover, even if you don't sp
   </div>
   <div class="rp-step">
     <div class="rp-step-num">2</div>
-    <div><h4>Identify your API endpoint</h4><p>Custom Gateway Routing is available via the <code>v2/purchases</code> and <code>v3/purchases</code> endpoints. Use the appropriate version for your integration.</p></div>
+    <div><h4>Identify your API endpoint</h4><p>Custom Gateway Routing is available via the <code>v2/purchases</code> and <code>v3/purchases</code> endpoints. Use the appropriate version for your integration. Please note that backup_gateway_code parameter is only available via the V3 api.</p></div>
   </div>
   <div class="rp-step">
     <div class="rp-step-num">3</div>
