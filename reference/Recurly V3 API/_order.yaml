@@ -40,5 +40,4 @@
 - business_entities
 - general_ledger_account
 - performance_obligations
-- recover_retry_strategy
 - invoice_templates

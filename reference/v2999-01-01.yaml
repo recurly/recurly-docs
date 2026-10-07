@@ -402,7 +402,6 @@ x-tagGroups:
       - Custom Field Definition
       - Shipping Method
       - Dunning Campaigns
-      - Recover Retry Strategy
       - Business Entities
       - Automated Exports
       - General Ledger Account
@@ -543,12 +542,6 @@ tags:
     description: >-
       Settings used when attempting to dun customers whose payments are
       declined.
-  - name: Recover Retry Strategy
-    x-displayName: Recover Retry Strategy
-    description: >-
-      Defines the payment-retry schedule a dunning campaign uses for Recurly
-      Recover — how many days the retry window spans and which retry model to
-      apply.
   - name: External Subscription
     description: >-
       A subscription from an external resource that is not managed by the
@@ -3866,166 +3859,6 @@ paths:
                 $ref: '#/components/schemas/MeasuredUnit'
         '422':
           description: Measured unit may already be inactive.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        default:
-          description: Unexpected error.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-      x-code-samples: []
-  /recover_retry_strategies:
-    get:
-      tags:
-        - Recover Retry Strategy
-      operationId: list_recover_retry_strategies
-      summary: List a site's recover retry strategies
-      description: >-
-        See the [Pagination Guide](/developers/guides/pagination.html) to learn
-        how to use pagination in the API and Client Libraries.
-      parameters:
-        - $ref: '#/components/parameters/ids'
-        - $ref: '#/components/parameters/limit'
-        - $ref: '#/components/parameters/order'
-        - $ref: '#/components/parameters/sort_dates'
-      responses:
-        '200':
-          description: A list of the site's recover retry strategies.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/RecoverRetryStrategyList'
-        '404':
-          description: Incorrect site ID.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        default:
-          description: Unexpected error.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-      x-code-samples: []
-    post:
-      tags:
-        - Recover Retry Strategy
-      operationId: create_recover_retry_strategy
-      summary: Create a new recover retry strategy
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/RecoverRetryStrategyCreate'
-        required: true
-      responses:
-        '201':
-          description: A new recover retry strategy.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/RecoverRetryStrategy'
-        '400':
-          description: Bad request, perhaps invalid JSON?
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '404':
-          description: Incorrect site ID.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '422':
-          description: Invalid request parameters.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        default:
-          description: Unexpected error.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-      x-code-samples: []
-  /recover_retry_strategies/{recover_retry_strategy_id}:
-    parameters:
-      - $ref: '#/components/parameters/recover_retry_strategy_id'
-    get:
-      tags:
-        - Recover Retry Strategy
-      operationId: get_recover_retry_strategy
-      summary: Fetch a recover retry strategy
-      responses:
-        '200':
-          description: A recover retry strategy.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/RecoverRetryStrategy'
-        '404':
-          description: Incorrect site or recover retry strategy ID.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        default:
-          description: Unexpected error.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-      x-code-samples: []
-    put:
-      tags:
-        - recover_retry_strategy
-      operationId: update_recover_retry_strategy
-      summary: Update a recover retry strategy
-      description: >-
-        Requires the strategy's current `current_version_id` in the request
-        body. A stale `current_version_id` returns a `409` and leaves the
-        strategy unchanged.
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/RecoverRetryStrategyUpdate'
-        required: true
-      responses:
-        '200':
-          description: The updated recover retry strategy.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/RecoverRetryStrategy'
-        '400':
-          description: Bad request, perhaps invalid JSON?
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '404':
-          description: Incorrect site or recover retry strategy ID.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '409':
-          description: >-
-            current_version_id is stale; refetch the strategy and retry with its
-            current current_version_id.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '422':
-          description: Invalid request parameters.
           content:
             application/json:
               schema:
@@ -8798,13 +8631,6 @@ components:
       required: true
       schema:
         type: string
-    recover_retry_strategy_id:
-      name: recover_retry_strategy_id
-      in: path
-      description: Recover Retry Strategy ID, e.g. `e28zov4fw0v2`.
-      required: true
-      schema:
-        type: string
     external_subscription_id_fetch:
       name: external_subscription_id
       in: path
@@ -9388,23 +9214,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/MeasuredUnit'
-    RecoverRetryStrategyList:
-      type: object
-      properties:
-        object:
-          type: string
-          title: Object type
-          description: Will always be List.
-        has_more:
-          type: boolean
-          description: Indicates there are more results on subsequent pages.
-        next:
-          type: string
-          description: Path to subsequent page of results.
-        data:
-          type: array
-          items:
-            $ref: '#/components/schemas/RecoverRetryStrategy'
     LineItemList:
       type: object
       properties:
@@ -14962,135 +14771,6 @@ components:
           type: string
           title: Description
           description: Optional internal description.
-    RecoverRetryStrategy:
-      type: object
-      title: Recover retry strategy
-      properties:
-        id:
-          type: string
-          title: Recover Retry Strategy ID
-          readOnly: true
-        object:
-          type: string
-          title: Object type
-          readOnly: true
-        name:
-          type: string
-          maxLength: 255
-          title: Name
-          description: Unique name of the strategy on your site.
-        model_type:
-          title: Model type
-          description: >-
-            The retry model this strategy applies. `legacy_default` reflects the
-            site's Recurly-managed default and `custom` strategies are
-            provisioned by Recurly; neither is creatable via this API.
-          type: string
-          enum:
-            - legacy_default
-            - conservative
-            - standard
-            - enhanced
-            - aggressive
-            - custom
-        window_length_in_days:
-          type: integer
-          title: Window length in days
-          description: The number of days the retry schedule spans.
-        model_settings:
-          type: object
-          title: Model settings
-          readOnly: true
-          description: >-
-            The resolved retry parameters (e.g. `max_attempts`, `max_retries`)
-            for `model_type`.
-        current_version_id:
-          type: string
-          title: Current version ID
-          description: Opaque version token.
-        affected_dunning_campaign_count:
-          type: integer
-          title: Affected dunning campaign count
-          readOnly: true
-          description: >-
-            The number of dunning campaigns on the site currently linked to this
-            strategy.
-        created_at:
-          type: string
-          format: date-time
-          title: Created at
-          readOnly: true
-        updated_at:
-          type: string
-          format: date-time
-          title: Last updated at
-          readOnly: true
-    RecoverRetryStrategyCreate:
-      type: object
-      properties:
-        name:
-          type: string
-          maxLength: 255
-          title: Name
-          description: >-
-            Unique name of the strategy on your site. The name `standard` is
-            reserved for the site's default strategy.
-        model_type:
-          title: Model type
-          description: >-
-            Must be one of: `conservative`, `standard`, `enhanced`,
-            `aggressive`.
-          type: string
-          enum:
-            - conservative
-            - standard
-            - enhanced
-            - aggressive
-        window_length_in_days:
-          type: integer
-          title: Window length in days
-          description: >-
-            The number of days the retry schedule spans. Must be between 1 and
-            60.
-      required:
-        - name
-        - model_type
-        - window_length_in_days
-    RecoverRetryStrategyUpdate:
-      type: object
-      properties:
-        name:
-          type: string
-          maxLength: 255
-          title: Name
-          description: >-
-            Unique name of the strategy on your site. The name `standard` is
-            reserved for the site's default strategy, and a strategy named
-            `standard` cannot be renamed.
-        model_type:
-          type: string
-          title: Model type
-          description: >-
-            Which retry model the strategy uses. A strategy using
-            `legacy_default` or `custom` cannot be updated — those are
-            provisioned and edited by Recurly.
-        window_length_in_days:
-          type: integer
-          title: Window length in days
-          description: >-
-            The number of days the retry schedule spans. Must be between 1 and
-            60.
-        current_version_id:
-          type: string
-          title: Current version ID
-          description: >-
-            The strategy's current `current_version_id`, from a prior read. A
-            stale value returns a `409`.
-      required:
-        - name
-        - model_type
-        - window_length_in_days
-        - current_version_id
     LineItem:
       type: object
       title: Line item
@@ -20528,15 +20208,6 @@ components:
           description: Dunning Cycle settings.
           items:
             $ref: '#/components/schemas/DunningCycle'
-        recover_retry_strategy_id:
-          type: string
-          nullable: true
-          title: Recover Retry Strategy ID
-          description: >-
-            The id of the `RecoverRetryStrategy` linked to this campaign, from
-            `GET /recover_retry_strategies`. `null` means the site's default
-            strategy is used. Write-once — only accepted on create; a `PUT` may
-            resend the current value as a no-op but cannot change it.
         created_at:
           type: string
           format: date-time
@@ -20670,14 +20341,6 @@ components:
             (`automatic`, `manual`, `trial`); each type may appear at most once.
           items:
             $ref: '#/components/schemas/DunningCycleCreate'
-        recover_retry_strategy_id:
-          type: string
-          nullable: true
-          title: Recover Retry Strategy ID
-          description: >-
-            The id of the `RecoverRetryStrategy` to link to this campaign, from
-            `GET /recover_retry_strategies`. Omit, or pass `null`, to use the
-            site's default strategy.
       required:
         - name
         - code
@@ -20716,14 +20379,6 @@ components:
             version.
           items:
             $ref: '#/components/schemas/DunningCycleCreate'
-        recover_retry_strategy_id:
-          type: string
-          nullable: true
-          title: Recover Retry Strategy ID
-          description: >-
-            Write-once — this may only resend the campaign's current value as a
-            no-op. Passing a different id, `null` on a campaign that has one, or
-            a value when the campaign has none, returns a `422`.
     DunningCycleCreate:
       type: object
       description: >-
