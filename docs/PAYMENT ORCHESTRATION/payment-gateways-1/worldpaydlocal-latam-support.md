@@ -204,7 +204,7 @@ Test the full setup rigorously — including regional payment methods, tax ID su
 </Accordion>
 
 <Accordion title="Why is my ACH transaction failing?">
-  ACH bank accounts go through a NACHA-required fraud and accuracy check before being added to Recurly. If a customer is updating a bank account on file or signing up for a subscription and the transaction fails, a fraud check at WorldPay likely didn't pass — contact WorldPay for details and have the customer provide a different payment method.
+  ACH bank accounts go through a NACHA-required fraud and accuracy check before being added to Recurly. If a customer is updating a bank account on file or signing up for a subscription and the transaction fails, a fraud check at WorldPay likely didn't pass — contact WorldPay for details and have the customer provide a different payment method. Ensure you're passing all required fields for the customer as well, as Echeck verifications typically require addiitonal identifying infomation such as name, business name (if corporate bank account), email address, address details, and phone numbers.
 
   ACH transactions that have been scheduled or approved can also fail later due to bank processing times. For failures due to insufficient funds or closed accounts, Recurly can retry automatically when you enable <a href="https://docs.recurly.com/recurly-subscriptions/docs/sepa-retries#/" target="_blank">Direct Debit retries in Payment Settings</a>. Recurly retries ACH and SEPA payments only when the failure reason is insufficient funds.
 </Accordion>
