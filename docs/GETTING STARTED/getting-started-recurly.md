@@ -16,19 +16,6 @@ metadata:
 next:
   description: ''
 ---
-Cristina ideas:
-
-<br />
-
-I want this page to have:
-
-1. this
-2. that
-3. those
-4. whatever
-
-<br />
-
 <div class="rp-page"> 
 
   <div class="rp-overview">Recurly is a subscription management platform built to help your business grow, retain subscribers, and recover revenue. From plan management and recurring billing to payments and smart dunning, Recurly gives you the tools to run a subscription business with confidence.</div>
