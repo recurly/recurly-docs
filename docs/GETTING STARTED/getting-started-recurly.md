@@ -18,20 +18,6 @@ next:
 ---
 <div class="rp-page">
 
-  <div class="rp-video" style={{paddingTop:"56.25%", marginBottom:"28px", borderRadius:"10px", overflow:"hidden"}}>
-    <iframe
-      src="https://fast.wistia.net/embed/iframe/7pxncbd7vd?videoFoam=true"
-      title="Recurly product tour"
-      allow="autoplay; fullscreen"
-      allowtransparency="true"
-      frameborder="0"
-      scrolling="no"
-      class="wistia_embed"
-      name="wistia_embed"
-      allowfullscreen
-      style={{position:"absolute", top:0, left:0, width:"100%", height:"100%", border:0}} />
-  </div>
-
   <div class="rp-overview">Recurly is a subscription management platform built to help your business grow, retain subscribers, and recover revenue. From plan management and recurring billing to payments and smart dunning, Recurly gives you the tools to run a subscription business with confidence.</div>
 
   <div class="rp-h1" id="key-benefits"><a class="rp-anchor" href="#key-benefits">Key benefits</a></div>
