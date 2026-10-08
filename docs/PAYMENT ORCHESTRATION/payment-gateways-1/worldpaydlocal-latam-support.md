@@ -199,6 +199,18 @@ Test the full setup rigorously — including regional payment methods, tax ID su
 
 # FAQs
 
+<Accordion title="How can I test 3DS in sandbox?">
+  WorldPay supports specific 3DS use cases in a sandbox environment, and you can pass a specific string as the customer "First Name" to trigger specific scenarios. Send any last name. You must be using Recurly.js and have 3DS credentials in your gateway configuration.
+
+  - Successful 3DS Challenge: `3DS_V2_CHALLENGE_IDENTIFIED`&#x20;
+    - Frictionless: `3DS_V2_FRICTIONLESS_IDENTIFIED`
+  - Failed 3DS Challenge: `3DS_V2_CHALLENGE_UNKNOWN_IDENTITY`&#x20;
+    - Frictionless: `3DS_V2_FRICTIONLESS_REJECTED`&#x20;
+  - Frictionless Attempted 3DS: `3DS_V2_FRICTIONLESS_NOT_IDENTIFIED` - there is no equivalent attempted with a 3DS Challenge.
+  - Bypass 3DS: `3DS_BYPASSED`
+  - 3DS Error: `3DS_V2_CHALLENGE_VALID_ERROR`
+</Accordion>
+
 <Accordion title="Why is my WorldPay refund failing?">
   WorldPay supports Online Refund Authorization, which allows banks to decline refund attempts in real time. This became standard across all WorldPay accounts in May 2025. A refund can be declined if the customer's account is closed or the bank doesn't approve the refund. If this happens, coordinate with your customer to return funds through another method.
 </Accordion>
