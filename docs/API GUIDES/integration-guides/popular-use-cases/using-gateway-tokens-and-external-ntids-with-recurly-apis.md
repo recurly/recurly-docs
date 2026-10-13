@@ -127,7 +127,7 @@ It’s recommended, at this point, to store the billing info ID for the next ste
 
 ```json
 "payment_gateway_references": [{
-	"token": "gateway-token-here",
+	"token": "gateway-token-here"
 }]
 ```
 
@@ -265,7 +265,7 @@ If you are using the `/purchases` endpoint, the logic is much the same, though t
 {
     "currency": "USD",
       "account": {
- 	    "code": "account-code",
+ 	    "code": "account-code"
       },
     "billing_info_id":"123456789", // Required Field
     "plan_code": "monthly",
