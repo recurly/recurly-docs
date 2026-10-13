@@ -297,8 +297,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-announce-bar rc-active">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
-        <strong>October 1:</strong> Join our product leaders for a customer-exclusive look at what we've recently launched and what's coming next. Bring your questions — live Q&A included! 
-        <a href="https://navigate.recurly.com/roadmap/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Learn more →</a>
+        <strong>December 10:</strong> Join Recurly and Justt to get practical steps you can take throughout the customer journey to prevent disputes, and strategies for recovering revenue when they do happen. 
+        <a href="https://navigate.recurly.com/renewal-dispute-2027/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Learn more →</a>
       </div>
     </div>
 
