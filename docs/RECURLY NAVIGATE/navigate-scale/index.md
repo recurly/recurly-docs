@@ -314,7 +314,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-        <div class="rc-announce-bar rc-active">
+        <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>This Thursday:</strong> Serious about scaling your business? Get to know Recurly's agentic AI — join us for demos, live best practices, and Q&A with the product experts on September 10.
