@@ -12477,6 +12477,23 @@ components:
           format: date-time
           description: Last updated at
           readOnly: true
+    ExternalProductMini:
+      type: object
+      title: External product mini details
+      description: Just the important parts.
+      properties:
+        id:
+          type: string
+          title: External product ID
+          readOnly: true
+        object:
+          type: string
+          title: Object type
+          readOnly: true
+        name:
+          type: string
+          title: Name
+          description: The merchant-facing name of the external product.
     ExternalProductReferenceMini:
       type: object
       title: External Product Reference details
@@ -20545,6 +20562,10 @@ components:
           $ref: '#/components/schemas/AccountMini'
         external_product_reference:
           $ref: '#/components/schemas/ExternalProductReferenceMini'
+        external_product:
+          $ref: '#/components/schemas/ExternalProductMini'
+        plan:
+          $ref: '#/components/schemas/PlanMini'
         external_payment_phases:
           type: array
           title: External payment phases
