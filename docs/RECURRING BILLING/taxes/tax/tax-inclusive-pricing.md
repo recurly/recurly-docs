@@ -15,7 +15,9 @@ next:
 ---
 <div class="rp-page">
   <div class="rp-overview">
-    Tax inclusive pricing lets you display prices that already account for any applicable taxes — so subscribers always see one clear, all-in number. You can set tax inclusivity at the subscription level, and it works seamlessly with Recurly's native tax solution, Avatax, and Vertex.
+
+Tax inclusive pricing lets you display prices that already account for any applicable taxes — so subscribers always see one clear, all-in number. You can set tax inclusivity at the subscription level, and it works seamlessly with Recurly's native tax solution, Avatax, and Vertex.
+
   </div>
 
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
@@ -28,6 +30,7 @@ next:
     <a class="rp-toc-pill" href="#invoicing"><span class="rp-toc-num">5</span>Invoicing</a>
     <a class="rp-toc-pill" href="#integration-with-recurlyjs"><span class="rp-toc-num">6</span>Recurly.js integration</a>
   </div>
+
 </div>
 
 # Definition
@@ -147,7 +150,7 @@ To configure: go to **Invoice templates** in your Recurly dashboard, create or e
 
 # Tax Inclusive Regions
 
-When tax-inclusive pricing is enabled, you can choose which regions use tax-inclusive pricing. To configure regions, go to **Taxes → Tax** Inclusive Regions.
+When tax-inclusive pricing is enabled, you can choose which regions use tax-inclusive pricing. To configure regions, go to **Taxes → Tax** **Inclusive Regions**.
 
 Once you save your selections, they'll stay in place even if you disable your tax integration. This makes it easy to switch from one tax integration to another without losing your configuration.
 
@@ -182,5 +185,3 @@ For accurate tax estimates in Recurly.js, follow this three-step sequence:
     </div>
   </div>
 </div>
-
-<br />
