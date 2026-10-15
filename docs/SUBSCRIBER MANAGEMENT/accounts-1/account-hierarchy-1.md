@@ -331,22 +331,16 @@ After removal, the account is no longer listed in the hierarchy overview page or
 By default, Recurly blocks a billing account change — removing a parent, assigning a new parent, or switching a child between billing itself and billing its parent — whenever the account's _current_ billing account has past-due invoices. This prevents a customer from moving away from an account mid-collection.
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Account Hierarchy — Billing Account Changes</strong
-> This control requires Account Hierarchy to already be active on your site, plus the <strong>Account Hierarchy Billing Accou
-nt Changes</strong> feature. Contact the <a href="https://support.recurly.com" target="_blank">Recurly support team</a> to en
-able it.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Account Hierarchy — Billing Account Changes</strong> This control requires Account Hierarchy to already be active on your site, plus the <strong>Account Hierarchy Billing Account Changes</strong> feature. Contact the <a href="https://support.recurly.com" target="_blank">Recurly support team</a> to enable it.</div>
 </div>
 
 Once enabled, a **Billing Account Changes** setting appears under **Configuration → Account Hierarchy**, letting you choose how strict this restriction is for your site:
 
 <table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Policy</td><td>Behavior</td></tr>
-  <tr><td>Only allow when in good standing <em>(default)</em></td><td>A billing account change is blocked while the current b
-illing account has past-due invoices. This matches Recurly's original, non-configurable behavior.</td></tr>
-  <tr><td>Allow regardless of standing</td><td>Billing account changes are always permitted, even if the current billing acco
-unt has past-due invoices.</td></tr>
-  <tr><td>Do not allow billing account changes</td><td>Billing account changes are disabled entirely for the site, regardless
- of invoice status.</td></tr>
+  <tr><td>Only allow when in good standing <em>(default)</em></td><td>A billing account change is blocked while the current billing account has past-due invoices. This matches Recurly's original, non-configurable behavior.</td></tr>
+  <tr><td>Allow regardless of standing</td><td>Billing account changes are always permitted, even if the current billing account has past-due invoices.</td></tr>
+  <tr><td>Do not allow billing account changes</td><td>Billing account changes are disabled entirely for the site, regardless of invoice status.</td></tr>
 </table>
 
 <div class="rp-callout rp-callout-note">
@@ -361,8 +355,7 @@ If a billing account change is attempted and blocked by this setting, the reques
   <li><strong>Billing account changes are disabled for this site.</strong> — the site's policy is set to "Do not allow billin
 g account changes."</li>
   <li><strong>Cannot change the billing account while the current billing account has invoices that are past due.</strong> —
-the site's policy is "Only allow when in good standing" and the current billing account has one or more past-due invoices.</l
-i>
+the site's policy is "Only allow when in good standing" and the current billing account has one or more past-due invoices.</li>
 </ul>
 
 ## Changing a parent
