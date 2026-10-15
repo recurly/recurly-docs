@@ -294,7 +294,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 <div class="rc-guide">
   <div class="rc-content-wrap">
 
-    <div class="rc-announce-bar rc-active">
+    <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>December 10:</strong> Learn practical steps you can take throughout the customer journey to prevent disputes, and strategies for recovering revenue when they do happen. 
