@@ -99,6 +99,8 @@ You can assign a parent during account creation or by editing an existing accoun
 <Image src="https://files.readme.io/e433c14-Screen_Shot_2018-10-09_at_3.29.46_PM.png" align="center" width="75%" border={true} />
 
 
+<br />
+
 
 <Image src="https://files.readme.io/6f00e24-Screen_Shot_2019-01-02_at_11.17.04_AM.png" align="center" width="75%" border={true} />
 
@@ -109,21 +111,22 @@ After saving, hierarchy information is visible from both the parent and child ac
 
 <Tabs>
   <Tab title="Child account">
+    **Child account view**
 
-**Child account view**
+    The Account Information section displays a "Child" tag, along with the parent account name and a link to the parent account. A "View Account Hierarchy" link is also available, providing an overview of all child accounts, subscriptions, and invoices under the parent.
 
-The Account Information section displays a "Child" tag, along with the parent account name and a link to the parent account. A "View Account Hierarchy" link is also available, providing an overview of all child accounts, subscriptions, and invoices under the parent.
 
-<Image src="https://files.readme.io/d6ab978-Screen_Shot_2019-01-02_at_11.20.40_AM.png" align="center" width="75%" border={true} />
+    <Image src="https://files.readme.io/d6ab978-Screen_Shot_2019-01-02_at_11.20.40_AM.png" align="center" width="75%" border={true} />
 
   </Tab>
+
   <Tab title="Parent account">
+    **Parent account view**
 
-**Parent account view**
+    The Account Information section displays a "Parent" tag, the count of child accounts associated with this parent, and a link to the Account Hierarchy overview page.
 
-The Account Information section displays a "Parent" tag, the count of child accounts associated with this parent, and a link to the Account Hierarchy overview page.
 
-<Image src="https://files.readme.io/980d06a-Screen_Shot_2019-01-02_at_11.21.34_AM.png" align="center" width="40%" border={true} />
+    <Image src="https://files.readme.io/980d06a-Screen_Shot_2019-01-02_at_11.21.34_AM.png" align="center" width="40%" border={true} />
 
   </Tab>
 </Tabs>
@@ -151,22 +154,21 @@ After assigning a parent, you choose where charges are billed. The behavior of i
 
 <Tabs>
   <Tab title="Child bills to itself">
+    **Child bills to itself**
 
-**Child bills to itself**
-
-The child account behaves like a standard Recurly account — it manages its own billing information and receives its own invoices. The only difference is its association with a parent, which is reflected in the UI and in exports.
-
+    The child account behaves like a standard Recurly account — it manages its own billing information and receives its own invoices. The only difference is its association with a parent, which is reflected in the UI and in exports.
   </Tab>
+
   <Tab title="Child bills to parent">
+    **Child bills to parent**
 
-**Child bills to parent**
+    All payment information, invoices, charges, and credits are owned by the parent account. The child account does not need billing information for subscriptions or charges to be created.
 
-All payment information, invoices, charges, and credits are owned by the parent account. The child account does not need billing information for subscriptions or charges to be created.
 
-<Image src="https://files.readme.io/23498e6-Screen_Shot_2019-01-02_at_11.17.42_AM.png" align="center" width="75%" border={true} />
+    <Image src="https://files.readme.io/23498e6-Screen_Shot_2019-01-02_at_11.17.42_AM.png" align="center" width="75%" border={true} />
 
-A child account that bills to a parent can still have its own billing information on file — though it won't be used for charges. This is useful if you plan to remove the parent later, so active subscriptions can continue renewing using the child's own payment method.
 
+    A child account that bills to a parent can still have its own billing information on file — though it won't be used for charges. This is useful if you plan to remove the parent later, so active subscriptions can continue renewing using the child's own payment method.
   </Tab>
 </Tabs>
 
@@ -184,29 +186,30 @@ Immediate subscription changes that result in an invoicing event also create the
 
 <Tabs>
   <Tab title="Invoice immediately">
+    **Invoice immediately**
 
-**Invoice immediately**
+    When a charge invoices immediately, the invoice is created on the parent account. The charge won't appear in the child's Charges & Credits table — access it from the parent's Invoices or Charges & Credits table.
 
-When a charge invoices immediately, the invoice is created on the parent account. The charge won't appear in the child's Charges & Credits table — access it from the parent's Invoices or Charges & Credits table.
+    Posting a custom credit from the child account creates a credit invoice immediately on the parent account.
 
-Posting a custom credit from the child account creates a credit invoice immediately on the parent account.
 
-<Image src="https://files.readme.io/d62db59-Screen_Shot_2018-10-11_at_12.37.22_PM.png" align="center" width="75%" border={true} />
+    <Image src="https://files.readme.io/d62db59-Screen_Shot_2018-10-11_at_12.37.22_PM.png" align="center" width="75%" border={true} />
 
-<div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> API limitation for immediate charges</strong> The transactions endpoint does not fully support Account Hierarchy for custom charges that invoice immediately. For one-time charges to a child account that bills to a parent, use the Admin UI or the <a href="https://developers.recurly.com/api/latest.html#operation/create_purchase" target="_blank">purchase endpoint</a> in the API instead.</div>
-</div>
 
+    <div class="rp-callout rp-callout-warning">
+      <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> API limitation for immediate charges</strong> The transactions endpoint does not fully support Account Hierarchy for custom charges that invoice immediately. For one-time charges to a child account that bills to a parent, use the Admin UI or the <a href="https://developers.recurly.com/api/latest.html#operation/create_purchase" target="_blank">purchase endpoint</a> in the API instead.</div>
+    </div>
   </Tab>
+
   <Tab title="Invoice at next bill date">
+    **Invoice at next bill date**
 
-**Invoice at next bill date**
+    Uninvoiced charges reside on the child account's Charges & Credits table until a billing event picks them up (adding a subscription, renewing, or posting a charge — but not immediate subscription changes). Once invoiced, the charge moves to the parent account's Charges & Credits table.
 
-Uninvoiced charges reside on the child account's Charges & Credits table until a billing event picks them up (adding a subscription, renewing, or posting a charge — but not immediate subscription changes). Once invoiced, the charge moves to the parent account's Charges & Credits table.
+    If the parent's payment method declines at the time the uninvoiced charge is invoiced, the charge invoice is still generated on the parent and marked as failed.
 
-If the parent's payment method declines at the time the uninvoiced charge is invoiced, the charge invoice is still generated on the parent and marked as failed.
 
-<Image src="https://files.readme.io/a3d4ac6-Screen_Shot_2018-10-11_at_12.51.49_PM.png" align="center" width="75%" border={true} />
+    <Image src="https://files.readme.io/a3d4ac6-Screen_Shot_2018-10-11_at_12.51.49_PM.png" align="center" width="75%" border={true} />
 
   </Tab>
 </Tabs>
@@ -323,6 +326,45 @@ Edit the child account and select Remove Parent before saving. Once removed, the
 
 After removal, the account is no longer listed in the hierarchy overview page or counted among the parent's children. The Accounts export is updated to reflect that the account no longer has a parent.
 
+## Controlling billing account changes
+
+By default, Recurly blocks a billing account change — removing a parent, assigning a new parent, or switching a child between billing itself and billing its parent — whenever the account's _current_ billing account has past-due invoices. This prevents a customer from moving away from an account mid-collection.
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Account Hierarchy — Billing Account Changes</strong
+> This control requires Account Hierarchy to already be active on your site, plus the <strong>Account Hierarchy Billing Accou
+nt Changes</strong> feature. Contact the <a href="https://support.recurly.com" target="_blank">Recurly support team</a> to en
+able it.</div>
+</div>
+
+Once enabled, a **Billing Account Changes** setting appears under **Configuration → Account Hierarchy**, letting you choose how strict this restriction is for your site:
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Policy</td><td>Behavior</td></tr>
+  <tr><td>Only allow when in good standing <em>(default)</em></td><td>A billing account change is blocked while the current b
+illing account has past-due invoices. This matches Recurly's original, non-configurable behavior.</td></tr>
+  <tr><td>Allow regardless of standing</td><td>Billing account changes are always permitted, even if the current billing acco
+unt has past-due invoices.</td></tr>
+  <tr><td>Do not allow billing account changes</td><td>Billing account changes are disabled entirely for the site, regardless
+ of invoice status.</td></tr>
+</table>
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Past-due invoices stay put</strong> Changing an account's billing target is never retroactive. Invoices that are already past due remain with the account that was originally billed, and collection attempts continue against that account even after the billing account changes.</div>
+</div>
+
+### API and Admin UI errors
+
+If a billing account change is attempted and blocked by this setting, the request fails with one of the following errors:
+
+<ul class="rp-list">
+  <li><strong>Billing account changes are disabled for this site.</strong> — the site's policy is set to "Do not allow billin
+g account changes."</li>
+  <li><strong>Cannot change the billing account while the current billing account has invoices that are past due.</strong> —
+the site's policy is "Only allow when in good standing" and the current billing account has one or more past-due invoices.</l
+i>
+</ul>
+
 ## Changing a parent
 
 Replacing a parent severs the child's association with the previous parent. The change cannot be made if there are outstanding invoices — resolve any open invoices before proceeding. After the change, the child appears in the new parent's hierarchy overview and child count, and the Accounts export is updated.
@@ -338,19 +380,19 @@ If the child bills to the parent, charge and credit invoices going forward are c
 When a parent is added, changed, or removed from an account with an active subscription, any immediate subscription change triggers a full prorated credit to the old bill-to account and a full prorated charge to the new bill-to account — not just the price difference.
 
 <Accordion title="Example: upgrade after parent change">
-A child is on a monthly Silver plan billed to Parent A. Mid-cycle, the parent is changed to Parent B. The subscription is then immediately upgraded to Gold. Parent A receives a credit for the remaining Silver time. Parent B receives a full prorated rebill to Gold for the remainder of the cycle.
+  A child is on a monthly Silver plan billed to Parent A. Mid-cycle, the parent is changed to Parent B. The subscription is then immediately upgraded to Gold. Parent A receives a credit for the remaining Silver time. Parent B receives a full prorated rebill to Gold for the remainder of the cycle.
 </Accordion>
 
 <Accordion title="Example: downgrade after parent change">
-A child is on a monthly Gold plan billed to Parent A. Mid-cycle, the parent is changed to Parent B. The subscription is then immediately downgraded to Silver. Parent A receives a credit for the remaining Gold time. Parent B receives a full prorated rebill to Silver.
+  A child is on a monthly Gold plan billed to Parent A. Mid-cycle, the parent is changed to Parent B. The subscription is then immediately downgraded to Silver. Parent A receives a credit for the remaining Gold time. Parent B receives a full prorated rebill to Silver.
 </Accordion>
 
 <Accordion title="Example: removing a parent with an active subscription">
-If a parent is removed from a child with active subscriptions, an immediate downgrade issues a credit invoice to the original parent. An immediate upgrade results in a charge invoice to the child account, provided valid billing information is available.
+  If a parent is removed from a child with active subscriptions, an immediate downgrade issues a credit invoice to the original parent. An immediate upgrade results in a charge invoice to the child account, provided valid billing information is available.
 </Accordion>
 
 <Accordion title="Refunding invoices after a billing account change">
-Invoices paid by a previous bill-to account are refunded to the account that originally paid them. For example, if Child A had invoices paid by Parent A and Parent A is later removed, those invoices can be refunded from Parent A's account — the refund goes to Parent A's payment method.
+  Invoices paid by a previous bill-to account are refunded to the account that originally paid them. For example, if Child A had invoices paid by Parent A and Parent A is later removed, those invoices can be refunded from Parent A's account — the refund goes to Parent A's payment method.
 </Accordion>
 
 # Closing accounts
@@ -388,5 +430,3 @@ The Accounts export (v3 and later) includes a `parent_account_code` column to id
   <tr class="rp-thead-row"><td>Column</td><td>Example value</td><td>Description</td></tr>
   <tr><td><code>parent_account_code</code></td><td><code>123456789</code></td><td>When an account has a parent (i.e., is a child), this column contains the account code of the parent. Empty for accounts without a parent.</td></tr>
 </table>
-
-<br />
