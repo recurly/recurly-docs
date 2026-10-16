@@ -576,7 +576,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-2" class="rc-advent-card">
           <div class="rc-advent-header">
             <span class="rc-badge-green"><i class="fa-regular fa-snowflake"></i> Day 2</span>
-            <span class="rc-advent-points">+1 point</span>
+            <span class="rc-advent-points">+2 points</span>
           </div>
           <div class="rc-advent-date">Friday, Dec 4</div>
           <h4>The dunning email makeover</h4>
@@ -588,7 +588,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-3" class="rc-advent-card">
           <div class="rc-advent-header">
             <span class="rc-badge-gold"><i class="fa-solid fa-gift"></i> Day 3</span>
-            <span class="rc-advent-points">+1 point</span>
+            <span class="rc-advent-points">+3 points</span>
           </div>
           <div class="rc-advent-date">Monday, Dec 7</div>
           <h4>The silent churn investigation</h4>
@@ -599,6 +599,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <!-- Day 4 (Unlocked - Ice Blue) -->
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-4" class="rc-advent-card">
           <div class="rc-badge-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</div>
+          <span class="rc-advent-points">+4 points</span>
           <div class="rc-advent-date">Tuesday, Dec 8</div>
           <h4>The gateway failover test run</h4>
           <p>Inspect your gateway routing settings and configure automatic failover rules to prevent card outages.</p>
@@ -609,7 +610,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-5" class="rc-advent-card">
           <div class="rc-advent-header">
             <span class="rc-badge-red"><i class="fa-solid fa-tree"></i> Day 5</span>
-            <span class="rc-advent-points">+1 point</span>
+            <span class="rc-advent-points">+5 points</span>
           </div>
           <div class="rc-advent-date">Wednesday, Dec 9</div>
           <h4>The wallet treasure hunt</h4>
@@ -621,7 +622,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-6" class="rc-advent-card">
           <div class="rc-advent-header">
             <span class="rc-badge-green"><i class="fa-regular fa-snowflake"></i> Day 6</span>
-            <span class="rc-advent-points">+1 point</span>
+            <span class="rc-advent-points">+6 points</span>
           </div>
           <div class="rc-advent-date">Thursday, Dec 10</div>
           <h4>The Account Updater mystery</h4>
@@ -633,7 +634,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
             <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 7</span>
-            <span class="rc-advent-points-locked">+1 point</span>
+            <span class="rc-advent-points-locked">+7 points</span>
           </div>
           <div class="rc-advent-date">Friday, Dec 11</div>
           <h4>The pause vs. cancel face-off</h4>
@@ -645,7 +646,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
             <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 8</span>
-            <span class="rc-advent-points-locked">+1 point</span>
+            <span class="rc-advent-points-locked">+8 points</span>
           </div>
           <div class="rc-advent-date">Monday, Dec 14</div>
           <h4>Compass retention sleuth</h4>
@@ -657,7 +658,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
             <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 9</span>
-            <span class="rc-advent-points-locked">+1 point</span>
+            <span class="rc-advent-points-locked">+9 points</span>
           </div>
           <div class="rc-advent-date">Tuesday, Dec 15</div>
           <h4>Dynamic statement detective</h4>
@@ -669,7 +670,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
             <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 10</span>
-            <span class="rc-advent-points-locked">+1 point</span>
+            <span class="rc-advent-points-locked">+10 points</span>
           </div>
           <div class="rc-advent-date">Wednesday, Dec 16</div>
           <h4>The plan add-on architect</h4>
@@ -681,7 +682,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
             <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 11</span>
-            <span class="rc-advent-points-locked">+1 point</span>
+            <span class="rc-advent-points-locked">+11 points</span>
           </div>
           <div class="rc-advent-date">Thursday, Dec 17</div>
           <h4>The coupon stacking sandbox</h4>
@@ -693,7 +694,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
             <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 12</span>
-            <span class="rc-advent-points-locked">+1 point</span>
+            <span class="rc-advent-points-locked">+12 points</span>
           </div>
           <div class="rc-advent-date">Friday, Dec 18</div>
           <h4>The grand optimization showcase</h4>
