@@ -108,18 +108,22 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
 
-/* ── HIGH-VISIBILITY CHRISTMAS HERO WITH CLEAR SNOWFLAKES ── */
+/* ── REFINED RICH-BLACK FESTIVE HERO WITH TEXT CLEARING ── */
 .rc-hero {
-  background-color: #0b1a12;
+  background-color: #0D0D0B;
   background-image:
-    radial-gradient(ellipse at 50% -10%, rgba(93, 197, 46, 0.35) 0%, transparent 65%),
-    radial-gradient(circle at 12% 85%, rgba(255, 81, 38, 0.18) 0%, transparent 45%),
-    radial-gradient(circle at 88% 25%, rgba(255, 215, 6, 0.20) 0%, transparent 50%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='20' cy='25' r='2.2' fill-opacity='0.85'/%3E%3Ccircle cx='75' cy='52' r='1.6' fill-opacity='0.70'/%3E%3Ccircle cx='140' cy='28' r='2.8' fill-opacity='0.90'/%3E%3Ccircle cx='165' cy='95' r='2.0' fill-opacity='0.80'/%3E%3Ccircle cx='45' cy='115' r='2.2' fill-opacity='0.85'/%3E%3Ccircle cx='110' cy='140' r='1.8' fill-opacity='0.75'/%3E%3Ccircle cx='85' cy='95' r='1.4' fill-opacity='0.65'/%3E%3Ccircle cx='15' cy='165' r='2.8' fill-opacity='0.90'/%3E%3Ccircle cx='155' cy='160' r='2.2' fill-opacity='0.80'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='1.4' stroke-linecap='round' stroke-opacity='0.80'%3E%3Cpath d='M30 40v16M22 48h16M24 42l12 12M24 54l12-12'/%3E%3Cpath d='M130 90v20M120 100h20M123 93l14 14M123 107l14-14'/%3E%3Cpath d='M80 15v10M75 20h10M76 16l8 8M76 24l8-8' stroke-width='1.1' stroke-opacity='0.70'/%3E%3Cpath d='M65 155v14M58 162h14M60 157l10 10M60 167l10-10' stroke-width='1.1' stroke-opacity='0.70'/%3E%3C/g%3E%3Cg stroke='%23FFD706' stroke-width='1.2' stroke-linecap='round' stroke-opacity='0.75'%3E%3Cpath d='M160 55v8M156 59h8'/%3E%3Cpath d='M95 65v8M91 69h8'/%3E%3Cpath d='M25 105v8M21 109h8'/%3E%3C/g%3E%3C/svg%3E");
+    /* Layer 1: Dark center vignette clears snowflakes completely away from text */
+    radial-gradient(ellipse at 50% 50%, rgba(13, 13, 11, 0.97) 0%, rgba(13, 13, 11, 0.91) 42%, rgba(13, 13, 11, 0.40) 100%),
+    /* Layer 2: Subtle, transparent evergreen glow at the top edge */
+    radial-gradient(ellipse at 50% -10%, rgba(93, 197, 46, 0.16) 0%, transparent 60%),
+    /* Layer 3: Faint warm holiday gold accent at top right */
+    radial-gradient(circle at 92% 15%, rgba(255, 215, 6, 0.10) 0%, transparent 45%),
+    /* Layer 4: Delicate background snowflakes (softened lines and opacity) */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='20' cy='25' r='1.8' fill-opacity='0.40'/%3E%3Ccircle cx='75' cy='52' r='1.2' fill-opacity='0.30'/%3E%3Ccircle cx='140' cy='28' r='2.0' fill-opacity='0.45'/%3E%3Ccircle cx='165' cy='95' r='1.5' fill-opacity='0.35'/%3E%3Ccircle cx='45' cy='115' r='1.6' fill-opacity='0.40'/%3E%3Ccircle cx='110' cy='140' r='1.4' fill-opacity='0.30'/%3E%3Ccircle cx='85' cy='95' r='1.1' fill-opacity='0.25'/%3E%3Ccircle cx='15' cy='165' r='2.0' fill-opacity='0.45'/%3E%3Ccircle cx='155' cy='160' r='1.6' fill-opacity='0.35'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='0.9' stroke-linecap='round' stroke-opacity='0.35'%3E%3Cpath d='M30 40v14M23 47h14M25 42l10 10M25 52l10-10'/%3E%3Cpath d='M130 92v16M122 100h16M124 94l12 12M124 106l12-12'/%3E%3Cpath d='M80 16v8M76 20h8M77 17l6 6M77 23l6-6' stroke-width='0.8' stroke-opacity='0.30'/%3E%3Cpath d='M65 156v12M59 162h12M61 158l8 8M61 166l8-8' stroke-width='0.8' stroke-opacity='0.30'/%3E%3C/g%3E%3Cg stroke='%23FFD706' stroke-width='0.9' stroke-linecap='round' stroke-opacity='0.35'%3E%3Cpath d='M160 55v6M157 58h6'/%3E%3Cpath d='M95 65v6M92 68h6'/%3E%3Cpath d='M25 105v6M22 108h6'/%3E%3C/g%3E%3C/svg%3E");
   background-size: cover, cover, cover, 180px 180px;
   color: #fff; padding: 48px 40px 46px; text-align: center; border-radius: 16px; margin-bottom: 0;
-  border: 2px solid rgba(255, 215, 6, 0.35);
-  box-shadow: 0 8px 32px rgba(11, 26, 18, 0.45);
+  border: 1px solid rgba(255, 215, 6, 0.28);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
 }
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; display: block; }
@@ -127,13 +131,19 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 /* ── GREEN PILL (WINTER CHALLENGE) ── */
 .rc-festive-hero-tag {
   display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(93, 197, 46, 0.18); border: 1.5px solid #5DC32E;
-  color: #5DC32E; font-size: .80rem; font-weight: 800;
+  background: rgba(93, 197, 46, 0.15); border: 1.5px solid rgba(93, 197, 46, 0.7);
+  color: #5DC32E; font-size: .78rem; font-weight: 800;
   letter-spacing: 1px; text-transform: uppercase;
-  padding: 6px 18px; border-radius: 20px; margin: 30px auto 18px;
+  padding: 6px 18px; border-radius: 20px; margin: 26px auto 18px;
 }
-.rc-home-title-block h1 { font-size: 2.5rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0 0 16px; }
-.rc-hero p { font-size: 1.02rem; opacity: .92; max-width: 740px; margin: 0 auto 12px; color: var(--lightgray); line-height: 1.6; }
+.rc-home-title-block h1 {
+  font-size: 2.5rem; font-weight: 800; line-height: 1.15; color: #FCFBF7;
+  margin: 0 0 16px; text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7);
+}
+.rc-hero p {
+  font-size: 1.02rem; opacity: .92; max-width: 740px; margin: 0 auto 12px;
+  color: #D1CFC4; line-height: 1.6; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
 
 /* ── STICKY NAV ── */
 details.rc-sticky-nav-wrap {
@@ -463,7 +473,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Festive Hero (Winter Sky & High-Contrast Snowflakes) -->
+    <!-- Festive Hero (Deep Offblack, Cleared Text Zone, Soft Edge Snowflakes) -->
     <div class="rc-hero">
       <div class="rc-brand-header">
         <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
