@@ -79,12 +79,12 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide a.rc-back-link:hover { color: #FF5126 !important; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-/* ── FESTIVE HERO WITH LIGHTS ── */
+/* ── HERO WITH DRAPED CHRISTMAS LIGHTS ── */
 .rc-hero {
   position: relative;
   background-color: #0D0D0B;
   color: #fff;
-  padding: 52px 40px 48px;
+  padding: 54px 40px 50px;
   text-align: center;
   border-radius: 16px;
   margin-bottom: 0;
@@ -151,13 +151,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 
-/* Active nav item */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 
-/* ── POINTS BANNER / STRIP ── */
+/* ── POINTS BANNER ── */
 .rc-points-banner {
   background: var(--offwhite);
   border: 1px solid var(--lightgray);
@@ -205,7 +204,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   text-decoration-color: #008CFF !important; text-underline-offset: 2px !important;
 }
 
-/* ── FEATURED VIDEO CARD (Component 12a) ── */
+/* ── FEATURED VIDEO CARD ── */
 .rc-video-card { border: 1px solid var(--lightgray); border-radius: 14px; overflow: hidden; margin: 0 0 36px; }
 .rc-video-header { background: var(--offblack); padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
 .rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: var(--yellow); margin: 0; }
@@ -235,7 +234,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   line-height: 1.45; font-style: italic; flex-grow: 1;
 }
 
-/* ── CALLOUT (SUMMARY) ── */
+/* ── SUMMARY CALLOUT ── */
 .rc-callout { border-radius: 12px; padding: 18px 24px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
 .rc-callout-icon { font-size: 1.3rem; line-height: 1.4; flex-shrink: 0; }
 .rc-callout-body { flex: 1; }
@@ -246,7 +245,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rc-callout-festive .rc-callout-body > strong { color: var(--offblack); }
 
-/* ── WRIKE FORM SUBMISSION CARD ── */
+/* ── RESPONSIVE STATIC FORM (NO SCROLLBAR) ── */
 .rc-form-card {
   border: 1px solid var(--lightgray); border-radius: 14px;
   overflow: hidden; margin: 24px 0 40px; background: #ffffff;
@@ -260,8 +259,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   letter-spacing: .7px; color: var(--yellow); margin: 0;
 }
 .rc-form-header span { font-size: .78rem; color: #5DC32E; margin-left: auto; font-weight: 700; }
-.rc-form-frame { width: 100%; background: #ffffff; min-height: 600px; }
-.rc-form-frame iframe { display: block; width: 100%; height: 600px; border: none; }
+
+.rc-form-frame { 
+  width: 100%; 
+  background: #ffffff; 
+  min-height: 750px; 
+}
+.rc-form-frame iframe { 
+  display: block; 
+  width: 100%; 
+  height: 750px; 
+  border: none; 
+}
 .rc-form-caption {
   padding: 12px 22px; font-size: .83rem; color: var(--gray);
   background: var(--brightgray); border-top: 1px solid var(--lightgray); line-height: 1.5;
@@ -331,7 +340,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
-/* ── RESPONSIVE ── */
+/* ── CONSOLIDATED RESPONSIVE BREAKPOINT ── */
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
@@ -341,6 +350,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-card-grid { grid-template-columns: 1fr; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
+
+  /* Mobile height expansion for wrapped form fields */
+  .rc-form-frame,
+  .rc-form-frame iframe {
+    height: 950px;
+    min-height: 950px;
+  }
 }
 </style>
 
@@ -384,7 +400,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-home" class="rc-sticky-link">
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> 12 Days Home
             </a>
-            <a href="[current-page-url]" class="rc-sticky-link rc-sticky-link-active">
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-1" class="rc-sticky-link rc-sticky-link-active">
               <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> 1. Compass video
             </a>
             <a href="#prompts" class="rc-sticky-link">2. Test a prompt</a>
@@ -413,7 +429,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Section 1: Video Walkthrough (Component 12a) -->
+    <!-- Section 1: Video Walkthrough -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-circle-play rc-fa-section"></i> Compass Knowledge Agent walkthrough</h2>
       <p>Watch this quick 2-minute overview showing how the Compass Knowledge Agent searches, synthesizes, and explains Recurly's entire technical library directly within your workflow.</p>
@@ -475,7 +491,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Section 4: Wrike Activity Completion Tracker Form -->
+    <!-- Section 4: Wrike Activity Completion Tracker Form (Static & Responsive) -->
     <div class="rc-lp-section" id="submit">
       <h2><i class="fa-solid fa-clipboard-check rc-fa-section"></i> Log your mission &amp; claim 25 points</h2>
       <p>Submit your task completion directly through the secure form below. Make sure to use the same account email for all 12 submissions so your leaderboard score accumulates correctly!</p>
@@ -486,7 +502,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <span>+25 points</span>
         </div>
         <div class="rc-form-frame">
-          <iframe src="https://www.wrike.com/forms/ABSCXHL7RH4EAC5A/12-Days-of-Optimization:-Day-1" title="12 Days of Optimization: Day 1 Form" loading="lazy"></iframe>
+          <iframe 
+            src="https://www.wrike.com/forms/ABSCXHL7RH4EAC5A/12-Days-of-Optimization:-Day-1" 
+            title="12 Days of Optimization: Day 1 Form" 
+            scrolling="no" 
+            loading="lazy">
+          </iframe>
         </div>
         <div class="rc-form-caption">
           Trouble viewing the form? You can also <a href="https://www.wrike.com/forms/ABSCXHL7RH4EAC5A/12-Days-of-Optimization:-Day-1" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">open the standalone submission form in a new tab →</a>
@@ -518,7 +539,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-footer-section">
           <span class="rc-footer-label">12 days of optimization</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-home" class="rc-footer-link">Calendar</a>
-          <a href="[current-page-url]" class="rc-footer-link">1. Compass video</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-1" class="rc-footer-link">1. Compass video</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-2" class="rc-footer-link">2. Dunning makeover</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-3" class="rc-footer-link">3. Churn investigation</a>
         </div>
