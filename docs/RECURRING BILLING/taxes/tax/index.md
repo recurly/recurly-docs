@@ -541,7 +541,6 @@ Follow these steps before enabling tax collection on your production site. Test 
 | Pakistan                     | PK         | 17%      | GST      |
 | Palestine Occupied Territory | PS         | 16%      | GST      |
 | Philippines                  | PH         | 12%      | GST      |
-| Singapore                    | SG         | 8%       | GST      |
 | Sri Lanka                    | LK         | 15%      | GST      |
 | Taiwan                       | TW         | 5%       | GST      |
 | Thailand                     | TH         | 7%       | GST      |
@@ -715,5 +714,3 @@ The minimum address requirement for US Sales Tax is postal code and country.
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Chile</strong>Recurly does not support RUT number validation, format validation, or IP address validation for Chile.</div>
 </div>
-
-<br />
