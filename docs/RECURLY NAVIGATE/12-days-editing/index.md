@@ -596,11 +596,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-advent-action">Start activity →</div>
         </a>
 
+
         <!-- Day 4 (Unlocked - Ice Blue) -->
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-4" class="rc-advent-card">
           <div class="rc-advent-header">
-<span> class="rc-badge-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</span>
-          <span class="rc-advent-points">+4 points</span>
+            <span class="rc-badge-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</span>
+            <span class="rc-advent-points">+5 points</span>
+          </div>
           <div class="rc-advent-date">Tuesday, Dec 8</div>
           <h4>The gateway failover test run</h4>
           <p>Inspect your gateway routing settings and configure automatic failover rules to prevent card outages.</p>
