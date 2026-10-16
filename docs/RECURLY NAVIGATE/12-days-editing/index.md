@@ -629,7 +629,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </div>
           <div class="rc-advent-date">Thursday, Dec 10</div>
           <h4>The Chargebacks webinar</h4>
-          <p>NOT A DESCRIPTION, an idea: We make the chargebacks webinar part of 12 days. We can link this out to the registration page. We'll unlock it at midnight the day of the webinar, and they can enter a secret tip we drop during the session into the form. 25 points for attending live, 25 points for knowing the tip.</p>
+          <p>NOT A DESCRIPTION, an idea: 25 points for joining live and 25 points for getting a "secret tip" shared in the webinar correct."</p>
           <div class="rc-advent-action">Start activity →</div>
         </a>
 
