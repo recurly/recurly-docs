@@ -88,7 +88,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide a.rc-back-link:hover { color: #FF5126 !important; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-/* ── ANNOUNCEMENT BAR (FESTIVE CANDY ACCENTS) ── */
+/* ── ANNOUNCEMENT BAR ── */
 .rc-announce-bar {
   display: none; background: #FFD706; color: #0D0D0B;
   align-items: center; justify-content: space-between;
@@ -108,36 +108,32 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
 
-/* ── CHRISTMAS HERO (SNOWFLAKES & TREE MOTIF) ── */
+/* ── HIGH-VISIBILITY CHRISTMAS HERO WITH CLEAR SNOWFLAKES ── */
 .rc-hero {
-  background-color: #0D0D0B;
-  background-image: 
-    linear-gradient(180deg, rgba(14, 34, 22, 0.90) 0%, rgba(13, 13, 11, 0.94) 100%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='%23ffffff' fill-opacity='0.22'%3E%3Ccircle cx='18' cy='22' r='2'/%3E%3Ccircle cx='68' cy='45' r='1.5'/%3E%3Ccircle cx='118' cy='82' r='2'/%3E%3Ccircle cx='42' cy='98' r='1.5'/%3E%3Ccircle cx='92' cy='18' r='2.5'/%3E%3Ccircle cx='130' cy='32' r='1'/%3E%3Cpath d='M22 12v18M13 21h18M15 14l14 14M15 28l14-14' stroke='%23ffffff' stroke-width='0.8' stroke-opacity='0.25'/%3E%3Cpath d='M98 64v16M90 72h16M92 66l12 12M92 78l12-12' stroke='%23ffffff' stroke-width='0.7' stroke-opacity='0.25'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #0b1a12;
+  background-image:
+    radial-gradient(ellipse at 50% -10%, rgba(93, 197, 46, 0.35) 0%, transparent 65%),
+    radial-gradient(circle at 12% 85%, rgba(255, 81, 38, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 88% 25%, rgba(255, 215, 6, 0.20) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='20' cy='25' r='2.2' fill-opacity='0.85'/%3E%3Ccircle cx='75' cy='52' r='1.6' fill-opacity='0.70'/%3E%3Ccircle cx='140' cy='28' r='2.8' fill-opacity='0.90'/%3E%3Ccircle cx='165' cy='95' r='2.0' fill-opacity='0.80'/%3E%3Ccircle cx='45' cy='115' r='2.2' fill-opacity='0.85'/%3E%3Ccircle cx='110' cy='140' r='1.8' fill-opacity='0.75'/%3E%3Ccircle cx='85' cy='95' r='1.4' fill-opacity='0.65'/%3E%3Ccircle cx='15' cy='165' r='2.8' fill-opacity='0.90'/%3E%3Ccircle cx='155' cy='160' r='2.2' fill-opacity='0.80'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='1.4' stroke-linecap='round' stroke-opacity='0.80'%3E%3Cpath d='M30 40v16M22 48h16M24 42l12 12M24 54l12-12'/%3E%3Cpath d='M130 90v20M120 100h20M123 93l14 14M123 107l14-14'/%3E%3Cpath d='M80 15v10M75 20h10M76 16l8 8M76 24l8-8' stroke-width='1.1' stroke-opacity='0.70'/%3E%3Cpath d='M65 155v14M58 162h14M60 157l10 10M60 167l10-10' stroke-width='1.1' stroke-opacity='0.70'/%3E%3C/g%3E%3Cg stroke='%23FFD706' stroke-width='1.2' stroke-linecap='round' stroke-opacity='0.75'%3E%3Cpath d='M160 55v8M156 59h8'/%3E%3Cpath d='M95 65v8M91 69h8'/%3E%3Cpath d='M25 105v8M21 109h8'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover, cover, cover, 180px 180px;
   color: #fff; padding: 48px 40px 46px; text-align: center; border-radius: 16px; margin-bottom: 0;
-  border: 2px solid rgba(255, 215, 6, 0.3);
-  box-shadow: 0 8px 32px rgba(14, 34, 22, 0.4);
+  border: 2px solid rgba(255, 215, 6, 0.35);
+  box-shadow: 0 8px 32px rgba(11, 26, 18, 0.45);
 }
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; display: block; }
 
-.rc-festive-hero-emblem {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 58px; height: 58px; border-radius: 50%;
-  background: rgba(93, 197, 46, 0.18);
-  border: 2px solid #5DC32E;
-  color: #5DC32E; font-size: 1.8rem;
-  margin: 32px auto 14px;
-}
+/* ── GREEN PILL (WINTER CHALLENGE) ── */
 .rc-festive-hero-tag {
   display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(255, 81, 38, 0.18); border: 1px solid rgba(255, 81, 38, 0.5);
-  color: #FF5126; font-size: .78rem; font-weight: 800;
-  letter-spacing: 1.2px; text-transform: uppercase;
-  padding: 6px 18px; border-radius: 20px; margin-bottom: 16px;
+  background: rgba(93, 197, 46, 0.18); border: 1.5px solid #5DC32E;
+  color: #5DC32E; font-size: .80rem; font-weight: 800;
+  letter-spacing: 1px; text-transform: uppercase;
+  padding: 6px 18px; border-radius: 20px; margin: 30px auto 18px;
 }
 .rc-home-title-block h1 { font-size: 2.5rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0 0 16px; }
-.rc-hero p { font-size: 1.02rem; opacity: .9; max-width: 740px; margin: 0 auto 12px; color: var(--lightgray); line-height: 1.6; }
+.rc-hero p { font-size: 1.02rem; opacity: .92; max-width: 740px; margin: 0 auto 12px; color: var(--lightgray); line-height: 1.6; }
 
 /* ── STICKY NAV ── */
 details.rc-sticky-nav-wrap {
@@ -467,15 +463,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Festive Hero (Winter Sky & Snowflake Pattern) -->
+    <!-- Festive Hero (Winter Sky & High-Contrast Snowflakes) -->
     <div class="rc-hero">
       <div class="rc-brand-header">
         <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
       </div>
-      <div class="rc-festive-hero-emblem">
-        <i class="fa-solid fa-tree"></i>
+      <div>
+        <span class="rc-festive-hero-tag">
+          <i class="fa-solid fa-tree"></i> Winter challenge
+        </span>
       </div>
-   
       <div class="rc-home-title-block">
         <h1>12 days of optimization</h1>
         <p>A 12-weekday scavenger hunt across your site settings, Compass prompts, and newest product release tools. Complete daily 3-minute missions, earn points, and compete to win our Recurly Holiday Gift Basket and a guest spotlight on our late Q1 2027 webinar.</p>
@@ -558,10 +555,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
         <!-- Day 4 (Unlocked - Ice Blue) -->
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-4" class="rc-advent-card">
-          <div class="rc-advent-header">
-            <span class="rc-badge-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</span>
-            <span class="rc-advent-points">+1 point</span>
-          </div>
+          <div class="rc-badge-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</div>
           <div class="rc-advent-date">Tuesday, Dec 8</div>
           <h4>The gateway failover test run</h4>
           <p>Inspect your gateway routing settings and configure automatic failover rules to prevent card outages.</p>
@@ -698,7 +692,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Section 3: End of Q1 2027 Webinar CTA (Pine & Gold) -->
+    <!-- Section 3: End of Q1 2027 Webinar CTA -->
     <div class="rc-webinar-cta" id="spotlight">
       <div class="rc-webinar-cta-icon"><i class="fa-solid fa-circle-play"></i></div>
       <div class="rc-webinar-cta-body">
