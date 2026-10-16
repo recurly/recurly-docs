@@ -1,776 +1,334 @@
 ---
-title: Editing Page
+title: 12 Days Editing Page
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Days of Subscriptions | Recurly Navigate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        recurly: {
+                            purple: '#4a2c82', // Approximated Recurly deep purple
+                            light: '#f8f9fc',
+                            accent: '#8b5cf6'
+                        },
+                        festive: {
+                            gold: '#fbbf24',
+                            silver: '#e2e8f0',
+                            glow: '#fef3c7'
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Subtle snow/sparkle background for the hero */
+        .festive-bg {
+            background-color: #311b5e; /* Deep purple */
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(251, 191, 36, 0.15) 0%, transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.2) 0%, transparent 25%);
+        }
+        
+        .snow-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='200' cy='150' r='1.5' fill='white' fill-opacity='0.2'/%3E%3Ccircle cx='350' cy='50' r='1' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='300' r='2' fill='white' fill-opacity='0.15'/%3E%3Ccircle cx='250' cy='350' r='1' fill='white' fill-opacity='0.1'/%3E%3C/svg%3E");
+            opacity: 0.6;
+            pointer-events: none;
+        }
 
-<style>
-body { background: #ffffff !important; }
-.rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
-.rc-guide [class^="fa-"],
-.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
-.rc-guide .fa-brands,
-.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
-.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a, .rc-guide a:link, .rc-guide a:visited, .rc-guide a:active {
-  color: #008CFF !important; text-decoration: none !important; text-decoration-line: none !important;
-  text-decoration-color: transparent !important; text-underline-offset: unset !important; border-bottom: 0 !important;
-}
-.rc-guide a:hover { color: #0067BE !important; text-decoration: underline !important; text-decoration-color: #008CFF !important; text-underline-offset: 2px !important; }
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-.rc-guide {
-  --yellow: #FFD706; --blue: #008CFF; --blue-tint1: #D5EAFF; --blue-tint2: #96C8FF;
-  --offblack: #0D0D0B; --darkgray: #32312D; --gray: #807D75; --lightgray: #D1CFC4;
-  --brightgray: #F2F1EA; --offwhite: #FCFBF7; --scale: #008CFF;
-  --warning-fg: #FFD706; --warning-bg: #FFFECB; --error-fg: #FF5126; --error-bg: #FFEEE9;
-  --success-fg: #5DC32E; --success-bg: #EFFAEA; --info-fg: #008CFF; --info-bg: #E5F3FF;
-  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #32312D !important; background: #ffffff;
-}
-.rc-guide * { box-sizing: border-box; }
-.rc-fa-section { color: #0D0D0B; font-size: 1rem; }
-.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
-.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D75 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #008CFF !important; }
-.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-.rc-announce-bar { display: none; background: #FFD706; color: #0D0D0B; align-items: center; justify-content: space-between; padding: 10px 20px; font-size: .88rem; font-weight: 600; border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4; }
-.rc-announce-bar.rc-active { display: flex; }
-.rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
-.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
-.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-announce-link { color: #0D0D0B !important; font-weight: 800; white-space: nowrap; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; transition: background 0.2s; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
-.rc-hero { background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)), url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center; background-color: var(--offblack); background-size: cover; color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0; }
-.rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(0,140,255,0.20); border: 1px solid rgba(0,140,255,0.45); color: #008CFF; font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
-.rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
-.rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
-.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: var(--lightgray); line-height: 1.6; }
-@media(max-width:768px){ .rc-hero { padding: 36px 20px 36px; } .rc-lp-hero-title h1 { font-size: 1.8rem; } }
-details.rc-sticky-nav-wrap { position: relative; z-index: 1; background-color: var(--scale); box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
-details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
-details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
-details.rc-sticky-nav-wrap > summary::marker { display: none; }
-.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: var(--offblack); }
-.rc-nav-chevron { font-size: .72rem; color: var(--offblack); opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
-details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
-.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
-details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
-.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
-.rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link { color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
-.rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
-.rc-lp-section { margin-bottom: 40px; }
-.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
-.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
-.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
-.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
-.rc-callout + .rc-callout { margin-top: 12px; }
-.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
-.rc-callout-body { flex: 1; }
-.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
-.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
-.rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
-.rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
-.rc-callout-caution { background: var(--warning-bg); border-left: 4px solid var(--warning-fg); }
-.rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
-.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
-.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--brightgray); }
-.rc-step:last-child { border-bottom: none; }
-.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
-.rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: var(--offblack); margin: 0 0 6px; line-height: 1.3; }
-.rc-step-content p { font-size: .92rem; color: var(--gray); line-height: 1.6; margin: 0; }
-.rc-step-content strong { color: var(--darkgray); }
-.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; flex-wrap: wrap; }
-.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; white-space: nowrap !important; flex-shrink: 0; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #D1CFC4 !important; border-bottom: 2px solid #D1CFC4 !important; transition: all .2s; white-space: nowrap !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; white-space: nowrap !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
-@media(max-width:1300px) { .rc-lp-nav { justify-content: center !important; gap: 12px; } .rc-lp-nav-indicator { width: 100% !important; text-align: center; } }
-@media(max-width:768px) {
-  .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-  .rc-guide a.rc-btn-prev,
-  .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-  .rc-guide a.rc-btn-path { padding: 10px 16px !important; font-size: 0.82rem !important; }
-}
-.rc-resources { background: var(--brightgray); border-left: 4px solid #008CFF; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
-.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
-.rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-resource-link { color: #807D75 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #D1CFC4 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #008CFF !important; }
-.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
-.rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
-.rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-footer-link { color: #807D75 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #008CFF !important; }
-.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
-.rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
+        /* Advent Door styling */
+        .advent-door {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        .advent-door:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: #fbbf24; /* Festive Gold */
+        }
+        
+        .door-unlocked {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fc 100%);
+            border: 2px solid #e2e8f0;
+        }
+        
+        .door-current {
+            background: linear-gradient(135deg, #ffffff 0%, #fef3c7 100%);
+            border: 2px solid #fbbf24;
+            box-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
+        }
+        
+        .door-locked {
+            background: #f1f5f9;
+            border: 2px dashed #cbd5e1;
+            opacity: 0.8;
+            cursor: not-allowed;
+        }
+        .door-locked:hover {
+            transform: none;
+            box-shadow: none;
+            border-color: #cbd5e1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-recurly-accent selection:text-white">
 
-/* EU comparison table wrapper */
-.rc-eu-table-wrap { 
-  overflow-x: auto; 
-  margin: 8px 0 24px; 
-  border: 1px solid var(--lightgray); 
-  border-radius: 10px; 
-}
-
-/* Force table expansion and remove bottom margin white space */
-.rm-Markdown.markdown-body .rc-guide table.rc-eu-table,
-.rc-eu-table { 
-  width: 100% !important; 
-  display: table !important; 
-  border-collapse: collapse; 
-  font-size: .84rem; 
-  margin: 0 !important; 
-  margin-bottom: 0 !important; 
-}
-
-.rc-eu-table thead tr { 
-  background: #0D0D0B !important; 
-}
-
-/* Header high-specificity font color & background fix */
-.rm-Markdown.markdown-body .rc-guide .rc-eu-table thead th,
-.rc-eu-table thead th { 
-  background-color: #0D0D0B !important; 
-  color: #ffffff !important; 
-  font-weight: 700; 
-  text-align: left; 
-  padding: 10px 12px; 
-  white-space: normal; 
-  vertical-align: bottom; 
-}
-
-/* Body rows & cell styles */
-.rc-eu-table tbody tr { 
-  background: var(--offwhite); 
-}
-
-.rc-eu-table tbody tr:nth-child(even) { 
-  background: #ffffff; 
-}
-
-.rc-eu-table tbody td { 
-  padding: 10px 12px; 
-  color: var(--darkgray); 
-  border-bottom: 1px solid var(--brightgray); 
-}
-
-.rc-eu-table tbody tr:last-child td { 
-  border-bottom: none; 
-}
-
-/* Accordion styling */
-.rc-country-accordion-header {
-  margin: 32px 0 12px;
-}
-.rc-country-accordion-header h3 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--offblack);
-  margin: 0 0 6px;
-}
-.rc-country-accordion-header p {
-  font-size: .92rem;
-  color: var(--darkgray);
-  margin: 0;
-  line-height: 1.5;
-}
-.rc-country-accordions {
-  margin: 16px 0 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-details.rc-accordion-item {
-  background: var(--offwhite);
-  border: 1px solid var(--lightgray);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: border-color 0.2s ease;
-}
-details.rc-accordion-item[open] {
-  border-color: var(--gray);
-}
-details.rc-accordion-item > summary {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 20px;
-  cursor: pointer;
-  user-select: none;
-  background: var(--brightgray);
-  font-weight: 700;
-  font-size: .95rem;
-  color: var(--offblack);
-}
-details.rc-accordion-item > summary::-webkit-details-marker { display: none; }
-details.rc-accordion-item > summary::marker { display: none; }
-.rc-accordion-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.rc-accordion-chevron {
-  font-size: .8rem;
-  color: var(--gray);
-  transition: transform 0.25s ease;
-}
-details.rc-accordion-item[open] .rc-accordion-chevron {
-  transform: rotate(180deg);
-}
-.rc-accordion-content {
-  padding: 20px 24px 24px;
-  border-top: 1px solid var(--lightgray);
-  background: #ffffff;
-}
-.rc-country-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-bottom: 20px;
-}
-@media (max-width: 860px) {
-  .rc-country-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.rc-country-col h4 {
-  font-size: .95rem;
-  font-weight: 800;
-  color: var(--offblack);
-  margin: 0 0 10px;
-}
-.rc-country-col ul {
-  margin: 0;
-  padding-left: 20px;
-  font-size: .88rem;
-  line-height: 1.6;
-  color: var(--darkgray);
-}
-.rc-country-col ul li {
-  margin-bottom: 6px;
-}
-.rc-country-col ul.checklist {
-  list-style-type: none;
-  padding-left: 0;
-}
-.rc-country-col ul.checklist li {
-  position: relative;
-  padding-left: 20px;
-}
-.rc-country-col ul.checklist li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: var(--offblack);
-  font-weight: 800;
-}
-
-@media(max-width:768px){ .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } }
-</style>
-
-<div class="rc-guide">
-  <div class="rc-top-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-back-link">← Back to Scale</a>
-  </div>
-
-  <div class="rc-content-wrap">
-
-    <div class="rc-announce-bar">
-      <div class="rc-announce-inner">
-        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
-        <strong>Upcoming:</strong> Join our CSMs for a live session.
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
-      </div>
-    </div>
-
-    <div class="rc-hero">
-      <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Payment methods by region
-      </div>
-      <div class="rc-lp-hero-title"><h1>EU</h1></div>
-      <p>Why Belgium, France, Germany, Denmark, and the Netherlands each favor a different local method.</p>
-    </div>
-
-    <details class="rc-sticky-nav-wrap" open>
-      <summary><span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span></summary>
-      <div class="rc-nav-drawer"><div class="rc-nav-drawer-inner"><div class="rc-nav-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
-          <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-sticky-link">Path overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-sticky-link"><span class="rc-step-badge">1</span> UK</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-sticky-link"><span class="rc-step-badge">2</span> North America</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> EU
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-sticky-link"><span class="rc-step-badge">5</span> LATAM</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
-       
-      </div></div></div>
-    </details>
-
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-euro-sign rc-fa-section"></i> Why it matters</h2>
-      <p>Shared currency and shared compliance rules mask sharp differences in how EU customers actually prefer to pay. Belgium looks to Bancontact, France to SEPA and Carte Bancaire, Germany to PayPal over cards, Denmark to Dankort, and the Netherlands to iDEAL. Treating "EU" as one payment strategy leaves conversion on the table in every one of these markets.</p>
-
-      <div class="rc-eu-table-wrap">
-        <table class="rc-eu-table">
-          <thead><tr><th>Country</th><th>Dominant local method</th><th>Why it matters</th></tr></thead>
-          <tbody>
-            <tr><td>Belgium</td><td>Bancontact</td><td>Used by ~60% of Belgian online shoppers; co-badged card mandate applies</td></tr>
-            <tr><td>France</td><td>SEPA Direct Debit / Carte Bancaire</td><td>Strong preference for SEPA and PayPal; Carte Bancaire required under co-badging rules</td></tr>
-            <tr><td>Germany</td><td>PayPal</td><td>47% conversion lift for digital goods merchants offering PayPal; #1 method in the country</td></tr>
-            <tr><td>Denmark</td><td>Dankort</td><td>Co-branded Visa card; effectively mandatory for Danish subscription conversion</td></tr>
-            <tr><td>Netherlands</td><td>iDEAL</td><td>Over 70% of Dutch online purchases; 39% conversion lift when offered</td></tr>
-          </tbody>
-      </table>
-      </div>
-
-      <div class="rc-country-accordion-header">
-        <h3>Country-Specific Performance &amp; Breakdown</h3>
-        <p>Select a country below to view detailed payment method sign-up and renewal conversion metrics, volume shares, market considerations, and expansion checklists.</p>
-      </div>
-
-      <div class="rc-country-accordions">
-
-        <!-- Belgium Accordion -->
-        <details class="rc-accordion-item">
-          <summary>
-            <span class="rc-accordion-title">🇧🇪 Belgium — Euro (EUR)</span>
-            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
-          </summary>
-          <div class="rc-accordion-content">
-            <div class="rc-country-grid">
-              <div class="rc-country-col">
-                <h4>Considerations</h4>
-                <ul>
-                  <li>Bancontact is the primary local card scheme, used by nearly 60% of Belgian consumers for online purchases — absence has a direct impact on conversion.</li>
-                  <li>SEPA Direct Debit increases conversion by 12% when used by EU customers.</li>
-                  <li>Payconiq is the companion mobile app to Bancontact, growing especially among younger consumers.</li>
-                  <li>Standard VAT rate is 21%. Register via EU OSS scheme once exceeding €10,000 cross-border digital services threshold.</li>
-                  <li>Companies must notify customers at least 15 days in advance of a renewal. A 14-day right of withdrawal applies to most digital subscriptions.</li>
-                  <li>Belgium has three official languages: French, Dutch (Flemish), and German.</li>
-                </ul>
-              </div>
-              <div class="rc-country-col">
-                <h4>Expansion Checklist</h4>
-                <ul class="checklist">
-                  <li>Enable EUR currency</li>
-                  <li>Enable 3DS (PSD2 compliance)</li>
-                  <li>Register for EU VAT via OSS scheme</li>
-                  <li>Enable SEPA Direct Debit</li>
-                  <li>Support Bancontact under Co-badged Card mandate</li>
-                  <li>Offer invoice translations in French, Dutch, and German</li>
-                </ul>
-              </div>
+    <!-- Navigation Bar (Mocking Readme/Navigate feel) -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <!-- Placeholder Recurly Logo -->
+                    <div class="w-8 h-8 bg-recurly-purple rounded flex items-center justify-center text-white font-bold text-xl">R</div>
+                    <span class="font-semibold text-lg text-slate-900 tracking-tight">Navigate</span>
+                    <span class="ml-2 px-2 py-0.5 rounded text-xs font-medium bg-indigo-100 text-indigo-800">Campaign</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#" class="hover:text-recurly-purple transition-colors">Launch</a>
+                    <a href="#" class="hover:text-recurly-purple transition-colors">Acquire</a>
+                    <a href="#" class="hover:text-recurly-purple transition-colors">Retain</a>
+                    <a href="#" class="hover:text-recurly-purple transition-colors">Scale</a>
+                </div>
             </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>68.86%</td><td>80.95%</td><td>6.1%</td></tr>
-                  <tr><td>Credit Card</td><td>73.43%</td><td>87.76%</td><td>53.96%</td></tr>
-                  <tr><td>Google Pay</td><td>54.59%</td><td>81.91%</td><td>1.7%</td></tr>
-                  <tr><td>PayPal</td><td>92.28%</td><td>94.86%</td><td>29.21%</td></tr>
-                  <tr><td>SEPA</td><td>99.40%</td><td>99.90%</td><td>46.92%</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </details>
-
-        <!-- France Accordion -->
-        <details class="rc-accordion-item">
-          <summary>
-            <span class="rc-accordion-title">🇫🇷 France — Euro (EUR)</span>
-            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
-          </summary>
-          <div class="rc-accordion-content">
-            <div class="rc-country-grid">
-              <div class="rc-country-col">
-                <h4>Considerations</h4>
-                <ul>
-                  <li>French law requires all commercial communications, contracts, and consumer-facing materials directed at French consumers be in French — this is a legal requirement.</li>
-                  <li>French law requires B2C businesses to provide access to a consumer mediation service for dispute resolution.</li>
-                  <li>Strong preference toward SEPA Direct Debit and PayPal.</li>
-                  <li>VAT rate is 20%. Register via EU OSS scheme once exceeding €10,000 threshold.</li>
-                  <li>Renewable contracts must notify consumers of their right to cancel between 1–3 months before renewal. Failure gives the consumer the right to cancel and receive a refund at any time.</li>
-                  <li>Consumers can cancel most subscription contracts at any time after the first 12 months with just 1 month's notice.</li>
-                </ul>
-              </div>
-              <div class="rc-country-col">
-                <h4>Expansion Checklist</h4>
-                <ul class="checklist">
-                  <li>Enable EUR currency</li>
-                  <li>Enable 3DS (PSD2 compliance)</li>
-                  <li>Register for EU VAT via OSS scheme (20% rate)</li>
-                  <li>Translate all customer-facing content into French</li>
-                  <li>Enable SEPA Direct Debit and PayPal</li>
-                  <li>Implement consumer mediation service reference in T&amp;Cs</li>
-                </ul>
-              </div>
-            </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>87.05%</td><td>82.72%</td><td>10.20%</td></tr>
-                  <tr><td>Credit Card</td><td>67.88%</td><td>89.34%</td><td>67.71%</td></tr>
-                  <tr><td>Google Pay</td><td>70.13%</td><td>79.48%</td><td>1.64%</td></tr>
-                  <tr><td>PayPal</td><td>92.29%</td><td>96.45%</td><td>27.41%</td></tr>
-                  <tr><td>SEPA</td><td>92.85%</td><td>92.60%</td><td>14.69%</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </details>
-
-        <!-- Germany Accordion -->
-        <details class="rc-accordion-item">
-          <summary>
-            <span class="rc-accordion-title">🇩🇪 Germany — Euro (EUR)</span>
-            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
-          </summary>
-          <div class="rc-accordion-content">
-            <div class="rc-country-grid">
-              <div class="rc-country-col">
-                <h4>Considerations</h4>
-                <ul>
-                  <li>PayPal is the #1 payment method in Germany — 64% increase in conversion when offered. Many consumers do not use or prefer credit cards.</li>
-                  <li>SEPA direct deposit and digital wallets are gaining popularity.</li>
-                  <li>Businesses offering Revolut Pay via Stripe saw an average 3% increase in conversion and 13% increase in revenue.</li>
-                  <li>B2C subscriptions must include a clearly labelled cancellation button: 'Jetzt kündigen' ('Cancel now').</li>
-                  <li>Auto-renewal periods for consumer contracts are capped at one month at a time after the initial term.</li>
-                  <li>VAT rate is 19%. Register via EU OSS scheme.</li>
-                </ul>
-              </div>
-              <div class="rc-country-col">
-                <h4>Expansion Checklist</h4>
-                <ul class="checklist">
-                  <li>Enable EUR currency</li>
-                  <li>Enable 3DS (PSD2 compliance)</li>
-                  <li>Register for EU VAT via OSS scheme (19% rate)</li>
-                  <li>Enable PayPal as priority payment method</li>
-                  <li>Enable SEPA Direct Debit</li>
-                  <li>Implement 'Jetzt kündigen' cancellation button (legal requirement)</li>
-                </ul>
-              </div>
-            </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>83.68%</td><td>87.95%</td><td>3.60%</td></tr>
-                  <tr><td>Credit Card</td><td>71.13%</td><td>88.90%</td><td>24.58%</td></tr>
-                  <tr><td>Google Pay</td><td>70.58%</td><td>84.32%</td><td>0.50%</td></tr>
-                  <tr><td>PayPal</td><td>88.77%</td><td>97.40%</td><td>63.79%</td></tr>
-                  <tr><td>SEPA</td><td>99.25%</td><td>99.89%</td><td>44.35%</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </details>
-
-        <!-- Italy Accordion -->
-        <details class="rc-accordion-item">
-          <summary>
-            <span class="rc-accordion-title">🇮🇹 Italy — Euro (EUR)</span>
-            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
-          </summary>
-          <div class="rc-accordion-content">
-            <div class="rc-country-grid">
-              <div class="rc-country-col">
-                <h4>Considerations</h4>
-                <ul>
-                  <li>PayPal is the #2 payment method in Italy — 40.64% increase in conversion when offered. Many consumers do not use or prefer credit cards.</li>
-                  <li>SEPA direct deposit and digital wallets are gaining popularity.</li>
-                  <li>Italy has one of the highest adoption rates of digital wallets.</li>
-                  <li>Italy requires e-invoicing using the government's Sistema di Interscambio.</li>
-                  <li>Article 54-bis goes into effect 19 June 2026 and requires an explicit, dedicated cancellation button on all websites offering subscription services.</li>
-                  <li>VAT rate is 22%. Register via EU OSS scheme.</li>
-                </ul>
-              </div>
-              <div class="rc-country-col">
-                <h4>Expansion Checklist</h4>
-                <ul class="checklist">
-                  <li>Enable EUR currency</li>
-                  <li>Enable 3DS (PSD2 compliance)</li>
-                  <li>Register for EU VAT via OSS scheme (22% rate)</li>
-                  <li>Enable PayPal as priority payment method</li>
-                  <li>Enable SEPA Direct Debit</li>
-                  <li>Implement e-invoicing and cancellation buttons (legal requirements)</li>
-                </ul>
-              </div>
-            </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>88.06%</td><td>72.91%</td><td>10.07%</td></tr>
-                  <tr><td>Credit Card</td><td>72.71%</td><td>80.52%</td><td>56.19%</td></tr>
-                  <tr><td>Google Pay</td><td>76.46%</td><td>74.24%</td><td>4.13%</td></tr>
-                  <tr><td>PayPal</td><td>85.44%</td><td>92.66%</td><td>40.64%</td></tr>
-                  <tr><td>SEPA</td><td>93.67%</td><td>93.96%</td><td>8.11%</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </details>
-
-        <!-- Denmark Accordion -->
-        <details class="rc-accordion-item">
-          <summary>
-            <span class="rc-accordion-title">🇩🇰 Denmark — Danish Krone (DKK)</span>
-            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
-          </summary>
-          <div class="rc-accordion-content">
-            <div class="rc-country-grid">
-              <div class="rc-country-col">
-                <h4>Considerations</h4>
-                <ul>
-                  <li>Offering Dankort (co-branded Visa) is effectively mandatory — absence will materially impact conversion.</li>
-                  <li>PayPal is an increasingly popular payment method, outperforming credit cards and Apple Pay.</li>
-                  <li>Denmark's VAT rate is 25% and applies broadly to all sales.</li>
-                  <li>Subscription auto-renewal terms must be clearly disclosed at the point of sign-up.</li>
-                  <li>Despite exceptionally high English proficiency, customer-facing subscription terms and cancellation flows should be available in Danish.</li>
-                  <li>Corporate income tax rate is 22%; 15% global minimum tax for large multinationals (Pillar Two).</li>
-                </ul>
-              </div>
-              <div class="rc-country-col">
-                <h4>Expansion Checklist</h4>
-                <ul class="checklist">
-                  <li>Enable DKK currency</li>
-                  <li>Enable 3DS (PSD2 compliance)</li>
-                  <li>Apply Danish VAT at 25%</li>
-                  <li>Enable Dankort (co-branded Visa) — required for conversion</li>
-                  <li>Enable PayPal</li>
-                  <li>Ensure Danish-language cancellation flows</li>
-                </ul>
-              </div>
-            </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>87.85%</td><td>79.25%</td><td>5.18%</td></tr>
-                  <tr><td>Credit Card</td><td>75.65%</td><td>89.57%</td><td>78.62%</td></tr>
-                  <tr><td>Google Pay</td><td>82.24%</td><td>83.21%</td><td>1.20%</td></tr>
-                  <tr><td>PayPal</td><td>82.64%</td><td>93.16%</td><td>20.49%</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </details>
-
-        <!-- Netherlands Accordion -->
-        <details class="rc-accordion-item">
-          <summary>
-            <span class="rc-accordion-title">🇳🇱 Netherlands — Euro (EUR)</span>
-            <i class="fa-solid fa-chevron-down rc-accordion-chevron"></i>
-          </summary>
-          <div class="rc-accordion-content">
-            <div class="rc-country-grid">
-              <div class="rc-country-col">
-                <h4>Considerations</h4>
-                <ul>
-                  <li>iDEAL is the go-to method for over 70% of online purchases in the Netherlands — offering it drives a 39% increase in conversion.</li>
-                  <li>PayPal outperforms credit cards and digital wallets, though Apple Pay and Google Pay are preferred by younger Dutch consumers.</li>
-                  <li>Standard Dutch VAT rate is 21%.</li>
-                  <li>Consumers must be able to cancel via the same channel they used to subscribe (e.g. if subscribed online, must be able to cancel online).</li>
-                  <li>Dutch law prohibits automatically converting expired subscriptions into new fixed-term contracts.</li>
-                  <li>Companies must clearly state when a free trial ends and send a reminder before paid billing begins.</li>
-                </ul>
-              </div>
-              <div class="rc-country-col">
-                <h4>Expansion Checklist</h4>
-                <ul class="checklist">
-                  <li>Enable EUR currency</li>
-                  <li>Enable 3DS (PSD2 compliance)</li>
-                  <li>Register for EU VAT via OSS scheme (21% rate)</li>
-                  <li>Enable iDEAL (critical for conversion)</li>
-                  <li>Enable SEPA Direct Debit and PayPal</li>
-                  <li>Implement same-channel cancellation mechanism</li>
-                </ul>
-              </div>
-            </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>84.21%</td><td>82.33%</td><td>6.37%</td></tr>
-                  <tr><td>Credit Card</td><td>72.73%</td><td>87.17%</td><td>51.84%</td></tr>
-                  <tr><td>Google Pay</td><td>75.19%</td><td>79.04%</td><td>2.09%</td></tr>
-                  <tr><td>PayPal</td><td>90.85%</td><td>96.39%</td><td>32.78%</td></tr>
-                  <tr><td>SEPA</td><td>99.32%</td><td>99.95%</td><td>60.60%</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </details>
-
-      </div>
-
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="rc-callout-body">
-          <strong>SEPA Direct Debit is the EU-wide constant</strong>
-          <p>Across Belgium, France, Germany, and the Netherlands, SEPA converts and renews above 91% — layer it in everywhere alongside whichever local method matters most in that specific market.</p>
         </div>
-      </div>
+    </nav>
 
-      <div class="rc-callout rc-callout-caution">
-        <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-      0 <div class="rc-callout-body">
-          <strong>Co-badged card compliance is an EU-wide requirement</strong>
-          <p>Under EU IFR Regulation 2015/751, when a customer's card carries two brands (e.g. a local scheme plus Visa or Mastercard) and your checkout supports both, the customer must be able to choose which brand to pay with.</p>
-        </div>
-      </div>
-    </div>
+    <!-- Hero Section -->
+    <header class="relative festive-bg text-white overflow-hidden py-20 lg:py-28">
+        <div class="snow-overlay"></div>
+        
+        <!-- Decorative background elements -->
+        <div class="absolute top-10 left-10 w-24 h-24 bg-festive-gold rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-float"></div>
+        <div class="absolute bottom-10 right-10 w-32 h-32 bg-purple-400 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-float" style="animation-delay: 2s;"></div>
 
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-gears rc-fa-section"></i> How to enable it</h2>
-      <div class="rc-steps">
-        <div class="rc-step">
-          <div class="rc-step-num">1</div>
-          <div class="rc-step-content">
-            <h4>Enable EUR and DKK as needed</h4>
-            <p>In <strong>Configuration → Currencies</strong>, add Euro for Belgium, France, Germany, and the Netherlands, and Danish Krone for Denmark. Set localized pricing per plan.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num">2</div>
-          <div class="rc-step-content">
-            <h4>Confirm local method support on your gateway</h4>
-            <p>iDEAL and SEPA are available through Adyen or Stripe. Bancontact and Dankort require Adyen specifically — confirm your configured gateway before enabling.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num">3</div>
-          <div class="rc-step-content">
-            <h4>Enable 3D Secure</h4>
-            <p>3DS is required across the EU under PSD2. Confirm it's active in <strong>Configuration → Payment gateways</strong> for every card transaction.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm text-sm font-medium text-festive-glow mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                Leading up to the Q1 2027 Strategy Webinar
+            </div>
+            
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 drop-shadow-md">
+                12 Days of <span class="text-transparent bg-clip-text bg-gradient-to-r from-festive-gold to-yellow-200">Subscriptions</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-indigo-100 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Unwrap a new strategy, tip, or mini-quiz every day. Master your subscription foundation and earn exclusive prizes as we gear up for our biggest webinar event of the year.
+            </p>
 
-    <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-btn-prev">← North America</a>
-      <span class="rc-lp-nav-indicator">3 of 6</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-btn-path">Next: APAC →</a>
-    </div>
-
-    <div class="rc-resources">
-      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
-      <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/ideal" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: iDEAL</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: SEPA</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/co-badged-cards-guide" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Co-badged cards guide</a>
-        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
-      </div>
-    </div>
-
-    <div class="rc-footer-nav">
-      <div class="rc-footer-links">
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Payment methods by region</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region" class="rc-footer-link">Path overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-UK" class="rc-footer-link">1. UK</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-footer-link">2. North America</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-footer-link">3. EU</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-footer-link">4. APAC</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-footer-link">5. LATAM</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-footer-link">6. Review &amp; resources</a>
+            <button class="bg-festive-gold text-slate-900 px-8 py-3.5 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition-colors shadow-lg shadow-yellow-500/20">
+                Start Today's Activity
+            </button>
         </div>
-        <div class="rc-footer-utility">
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
-            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
-          </a>
-          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
-        </div>
-      </div>
-    </div>
+    </header>
 
-  </div>
-</div>
+    <!-- Prizes & Motivation Banner -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-1">
+            <div class="bg-gradient-to-r from-slate-50 to-indigo-50/50 rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 border border-white">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">Participate & Win Big!</h3>
+                        <p class="text-slate-600">The most active participants who complete daily tasks will be entered to win exclusive Recurly swag and tech prizes during the Q1 2027 Webinar.</p>
+                    </div>
+                </div>
+                <div class="shrink-0 w-full md:w-auto">
+                    <a href="#tracking-form" class="block w-full md:w-auto text-center px-6 py-2.5 bg-white border-2 border-indigo-100 text-indigo-700 font-medium rounded-lg hover:bg-indigo-50 hover:border-indigo-200 transition-colors">
+                        Log Your Progress ↓
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advent Calendar Grid -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Your Daily Subscription Gifts</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">Click a door to unlock today's activity. Catch up on past days, but no peeking at the future!</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            
+            <!-- Day 1: Completed / Unlocked -->
+            <a href="#" class="advent-door door-unlocked rounded-xl p-6 relative group flex flex-col h-full min-h-[160px]">
+                <div class="absolute top-4 right-4 text-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span class="text-4xl font-black text-slate-200 group-hover:text-indigo-100 transition-colors absolute bottom-2 right-4 z-0">1</span>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2 flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2" ry="2"/></svg>
+                        Video
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-lg leading-tight mb-2">Foundation Launch</h4>
+                    <p class="text-sm text-slate-500 mt-auto">Completed</p>
+                </div>
+            </a>
+
+            <!-- Day 2: Completed / Unlocked -->
+            <a href="#" class="advent-door door-unlocked rounded-xl p-6 relative group flex flex-col h-full min-h-[160px]">
+                <div class="absolute top-4 right-4 text-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span class="text-4xl font-black text-slate-200 group-hover:text-indigo-100 transition-colors absolute bottom-2 right-4 z-0">2</span>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="text-xs font-bold uppercase tracking-wider text-amber-600 mb-2 flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                        Tip
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-lg leading-tight mb-2">Convert Customers Faster</h4>
+                    <p class="text-sm text-slate-500 mt-auto">Completed</p>
+                </div>
+            </a>
+
+            <!-- Day 3: Completed / Unlocked -->
+            <a href="#" class="advent-door door-unlocked rounded-xl p-6 relative group flex flex-col h-full min-h-[160px]">
+                 <div class="absolute top-4 right-4 text-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span class="text-4xl font-black text-slate-200 group-hover:text-indigo-100 transition-colors absolute bottom-2 right-4 z-0">3</span>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2 flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Quiz
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-lg leading-tight mb-2">Account Updater Knowledge</h4>
+                    <p class="text-sm text-slate-500 mt-auto">Completed</p>
+                </div>
+            </a>
+
+            <!-- Day 4: Current Day (Action Needed) -->
+            <a href="#" class="advent-door door-current rounded-xl p-6 relative group flex flex-col h-full min-h-[160px] cursor-pointer">
+                <div class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm animate-pulse-slow">
+                    New!
+                </div>
+                <span class="text-4xl font-black text-amber-200/50 group-hover:text-amber-200 transition-colors absolute bottom-2 right-4 z-0">4</span>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2 flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2" ry="2"/></svg>
+                        Video
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-lg leading-tight mb-2">Mastering Dunning & Retries</h4>
+                    <p class="text-sm text-amber-700 font-medium mt-auto flex items-center gap-1">
+                        Watch Now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </p>
+                </div>
+            </a>
+
+            <!-- Days 5 through 12: Locked -->
+            <div class="advent-door door-locked rounded-xl p-6 relative flex flex-col h-full min-h-[160px] justify-center items-center text-center">
+                <svg class="text-slate-400 mb-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span class="text-3xl font-bold text-slate-300">5</span>
+            </div>
+            
+            <div class="advent-door door-locked rounded-xl p-6 relative flex flex-col h-full min-h-[160px] justify-center items-center text-center">
+                <svg class="text-slate-400 mb-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span class="text-3xl font-bold text-slate-300">6</span>
+            </div>
+
+            <div class="advent-door door-locked rounded-xl p-6 relative flex flex-col h-full min-h-[160px] justify-center items-center text-center">
+                <svg class="text-slate-400 mb-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span class="text-3xl font-bold text-slate-300">7</span>
+            </div>
+
+            <div class="advent-door door-locked rounded-xl p-6 relative flex flex-col h-full min-h-[160px] justify-center items-center text-center">
+                <svg class="text-slate-400 mb-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span class="text-3xl font-bold text-slate-300">8</span>
+            </div>
+
+            <div class="advent-door door-locked rounded-xl p-6 relative flex flex-col h-full min-h-[160px] justify-center items-center text-center">
+                <svg class="text-slate-400 mb-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span class="text-3xl font-bold text-slate-300">9</span>
+            </div>
+
+            <div class="advent-door door-locked rounded-xl p-6 relative flex flex-col h-full min-h-[160px] justify-center items-center text-center">
+                <svg class="text-slate-400 mb-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span class="text-3xl font-bold text-slate-300">10</span>
+            </div>
+
+            <div class="advent-door door-locked rounded-xl p-6 relative flex flex-col h-full min-h-[160px] justify-center items-center text-center">
+                <svg class="text-slate-400 mb-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span class="text-3xl font-bold text-slate-300">11</span>
+            </div>
+
+            <div class="advent-door door-locked rounded-xl p-6 relative flex flex-col h-full min-h-[160px] justify-center items-center text-center">
+                <svg class="text-slate-400 mb-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span class="text-3xl font-bold text-slate-300">12</span>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Activity Tracker / Form Embed Section -->
+    <section id="tracking-form" class="bg-white border-t border-slate-200 py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <div class="inline-block bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold mb-3">Activity Tracker</div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Log Your Progress</h2>
+                <p class="text-slate-600">Finished today's video or quiz? Log it below to ensure you get credit towards the grand prizes drawn during the Q1 2027 Webinar.</p>
+            </div>
+
+            <!-- Form Placeholder Container -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl shadow-inner p-4 md:p-8">
+                <!-- Visual mock of where the iframe goes -->
+                <div class="border-2 border-dashed border-slate-300 rounded-xl bg-white flex flex-col items-center justify-center min-h-[400px] text-slate-400 p-8 text-center relative overflow-hidden">
+                    
+                    <!-- Faux form UI for visualization purposes -->
+                    <div class="absolute inset-0 opacity-20 pointer-events-none flex flex-col gap-4 p-8">
+                        <div class="h-8 bg-slate-300 rounded w-1/3 mx-auto mb-4"></div>
+                        <div class="h-10 bg-slate-200 rounded w-full"></div>
+                        <div class="h-10 bg-slate-200 rounded w-full"></div>
+                        <div class="h-24 bg-slate-200 rounded w-full"></div>
+                        <div class="h-10 bg-slate-400 rounded w-1/4 mt-4"></div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-4 z-10"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                    <p class="font-medium text-slate-600 z-10">Wrike Form Embed Placeholder</p>
+                    <p class="text-sm z-10 mt-2 max-w-xs">Insert your Wrike form iframe code here within the Readme platform editor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="mb-2">© 2026 Recurly, Inc. All rights reserved.</p>
+            <p>12 Days of Subscriptions Campaign · Leading to the Q1 2027 Webinar</p>
+        </div>
+    </footer>
+
+</body>
+</html>
 `}</HTMLBlock>
