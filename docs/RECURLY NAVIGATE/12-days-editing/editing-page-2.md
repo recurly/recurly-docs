@@ -1,5 +1,5 @@
 ---
-title: Editing Page 2
+title: 12 Days Day 1 Editing Page
 deprecated: false
 hidden: true
 metadata:
