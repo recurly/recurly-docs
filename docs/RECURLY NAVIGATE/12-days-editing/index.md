@@ -449,7 +449,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   <div class="rc-content-wrap">
 
     <!-- Active Announcement Bar -->
-    <div class="rc-announce-bar rc-active">
+    <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-snowflake rc-fa-announce"></i>
         <strong>Winter optimization challenge:</strong> Complete 12 weekday micro-tasks, rack up points, and compete for the Recurly Holiday Gift Basket.
