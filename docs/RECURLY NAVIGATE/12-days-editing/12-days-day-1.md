@@ -45,10 +45,10 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* ── DESIGN TOKENS ── */
 .rc-guide {
-  --yellow:      #FFD706;
-  --launch-red:  #FF5126;
-  --green:       #5DC32E;
-  --blue:        #008CFF;
+  --yellow:      #FFD706;  /* Recurly Gold / Acquire */
+  --launch-red:  #FF5126;  /* Recurly Poppy / Holiday Red */
+  --green:       #5DC32E;  /* Recurly Success / Evergreen */
+  --blue:        #008CFF;  /* Recurly Scale / Ice Blue */
   --offblack:    #0D0D0B;
   --darkgray:    #32312D;
   --gray:        #807D75;
@@ -245,35 +245,55 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rc-callout-festive .rc-callout-body > strong { color: var(--offblack); }
 
-/* ── RESPONSIVE STATIC FORM (NO SCROLLBAR) ── */
+/* ── WRIKE FORM CONTAINER ── */
 .rc-form-card {
-  border: 1px solid var(--lightgray); border-radius: 14px;
-  overflow: hidden; margin: 24px 0 40px; background: #ffffff;
+  border: 1px solid var(--lightgray);
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 24px 0 40px;
+  background: #ffffff;
 }
 .rc-form-header {
-  background: var(--offblack); padding: 16px 22px;
-  display: flex; align-items: center; gap: 10px;
+  background: var(--offblack);
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .rc-form-header h4 {
-  font-size: .88rem; font-weight: 700; text-transform: uppercase;
-  letter-spacing: .7px; color: var(--yellow); margin: 0;
+  font-size: .88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  color: var(--yellow);
+  margin: 0;
 }
-.rc-form-header span { font-size: .78rem; color: #5DC32E; margin-left: auto; font-weight: 700; }
-
-.rc-form-frame { 
-  width: 100%; 
-  background: #ffffff; 
-  min-height: 750px; 
+.rc-form-header span {
+  font-size: .78rem;
+  color: #5DC32E;
+  margin-left: auto;
+  font-weight: 700;
 }
-.rc-form-frame iframe { 
-  display: block; 
-  width: 100%; 
-  height: 750px; 
-  border: none; 
+.rc-form-frame {
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.rc-form-frame iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 768px;
+  border: none;
 }
 .rc-form-caption {
-  padding: 12px 22px; font-size: .83rem; color: var(--gray);
-  background: var(--brightgray); border-top: 1px solid var(--lightgray); line-height: 1.5;
+  padding: 12px 22px;
+  font-size: .83rem;
+  color: var(--gray);
+  background: var(--brightgray);
+  border-top: 1px solid var(--lightgray);
+  line-height: 1.5;
 }
 
 /* ── PATH NAVIGATION BUTTONS ── */
@@ -340,7 +360,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
-/* ── CONSOLIDATED RESPONSIVE BREAKPOINT ── */
+/* ── RESPONSIVE ── */
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
@@ -350,13 +370,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-card-grid { grid-template-columns: 1fr; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
-
-  /* Mobile height expansion for wrapped form fields */
-  .rc-form-frame,
-  .rc-form-frame iframe {
-    height: 950px;
-    min-height: 950px;
-  }
+  .rc-form-frame iframe { height: 950px; }
 }
 </style>
 
@@ -491,7 +505,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Section 4: Wrike Activity Completion Tracker Form (Static & Responsive) -->
+    <!-- Section 4: Wrike Form Section -->
     <div class="rc-lp-section" id="submit">
       <h2><i class="fa-solid fa-clipboard-check rc-fa-section"></i> Log your mission &amp; claim 25 points</h2>
       <p>Submit your task completion directly through the secure form below. Make sure to use the same account email for all 12 submissions so your leaderboard score accumulates correctly!</p>
@@ -504,8 +518,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-form-frame">
           <iframe 
             src="https://www.wrike.com/forms/ABSCXHL7RH4EAC5A/12-Days-of-Optimization:-Day-1" 
-            title="12 Days of Optimization: Day 1 Form" 
-            scrolling="no" 
+            height="768" 
+            style="border: none;" 
+            title="12 Days of Optimization: Day 1 Form"
             loading="lazy">
           </iframe>
         </div>
