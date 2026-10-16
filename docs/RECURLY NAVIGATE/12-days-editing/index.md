@@ -628,8 +628,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <span class="rc-advent-points">+6 points</span>
           </div>
           <div class="rc-advent-date">Thursday, Dec 10</div>
-          <h4>The Account Updater mystery</h4>
-          <p>Dive into Payments Hub to calculate how many expiring cards were automatically rescued last month.</p>
+          <h4>The Chargebacks webinar</h4>
+          <p>NOT A DESCRIPTION, an idea: We make the chargebacks webinar part of 12 days. We can link this out to the registration page. We'll unlock it at midnight the day of the webinar, and they can enter a secret tip we drop during the session into the form. 25 points for attending live, 25 points for knowing the tip.</p>
           <div class="rc-advent-action">Start activity →</div>
         </a>
 
