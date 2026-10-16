@@ -475,9 +475,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-festive-hero-emblem">
         <i class="fa-solid fa-tree"></i>
       </div>
-      <div class="rc-festive-hero-tag">
-        <i class="fa-regular fa-snowflake"></i> 12 days of optimization
-      </div>
+   
       <div class="rc-home-title-block">
         <h1>12 days of optimization</h1>
         <p>A 12-weekday scavenger hunt across your site settings, Compass prompts, and newest product release tools. Complete daily 3-minute missions, earn points, and compete to win our Recurly Holiday Gift Basket and a guest spotlight on our late Q1 2027 webinar.</p>
