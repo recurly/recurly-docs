@@ -45,32 +45,25 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* ── DESIGN TOKENS ── */
 .rc-guide {
-  --yellow:     #FFD706;
-  --blue:       #008CFF;
-  --blue-tint1: #D5EAFF;
-  --blue-tint2: #96C8FF;
-  --offblack:   #0D0D0B;
-  --darkgray:   #32312D;
-  --gray:       #807D75;
-  --lightgray:  #D1CFC4;
-  --brightgray: #F2F1EA;
-  --offwhite:   #FCFBF7;
+  --yellow:      #FFD706;  /* Recurly Gold / Acquire */
+  --launch-red:  #FF5126;  /* Recurly Poppy / Holiday Red */
+  --green:       #5DC32E;  /* Recurly Success / Evergreen */
+  --blue:        #008CFF;  /* Recurly Scale / Ice Blue */
+  --blue-tint1:  #D5EAFF;
+  --blue-tint2:  #96C8FF;
+  --offblack:    #0D0D0B;
+  --darkgray:    #32312D;
+  --gray:        #807D75;
+  --lightgray:   #D1CFC4;
+  --brightgray:  #F2F1EA;
+  --offwhite:    #FCFBF7;
 
-  --launch:      #FF5126;
-  --acquire:     #FFD706;
-  --retain:      #2DCECE;
-  --scale:       #008CFF;
-  --pillar:      #FFD706;
-  --pillar-rgb:  255, 215, 6;
-
-  --warning-fg: #FFD706;
-  --warning-bg: #FFFECB;
-  --error-fg:   #FF5126;
-  --error-bg:   #FFEEE9;
-  --success-fg: #5DC32E;
-  --success-bg: #EFFAEA;
-  --info-fg:    #008CFF;
-  --info-bg:    #E5F3FF;
+  --warning-fg:  #FFD706;
+  --warning-bg:  #FFFECB;
+  --error-fg:    #FF5126;
+  --error-bg:    #FFEEE9;
+  --success-fg:  #5DC32E;
+  --success-bg:  #EFFAEA;
 
   font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #32312D !important;
@@ -82,7 +75,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-section { color: #0D0D0B; font-size: 1.1rem; }
+.rc-fa-section { color: #FF5126; font-size: 1.15rem; }
 
 /* ── TOP NAV & CONTAINER ── */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
@@ -92,48 +85,59 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #008CFF !important; }
+.rc-guide a.rc-back-link:hover { color: #FF5126 !important; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-/* ── ANNOUNCEMENT BAR ── */
+/* ── ANNOUNCEMENT BAR (FESTIVE CANDY ACCENTS) ── */
 .rc-announce-bar {
   display: none; background: #FFD706; color: #0D0D0B;
   align-items: center; justify-content: space-between;
-  padding: 11px 22px; font-size: .88rem; font-weight: 600;
-  border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4;
-  border: 1px solid rgba(13,13,11,0.1);
+  padding: 12px 22px; font-size: .88rem; font-weight: 600;
+  border-radius: 12px; margin-bottom: 18px; gap: 12px; line-height: 1.4;
+  border: 1px solid rgba(13,13,11,0.12);
+  border-left: 6px solid #FF5126;
 }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-announce-link {
   color: #0D0D0B !important; font-weight: 800; white-space: nowrap;
-  padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px;
+  padding: 5px 14px; background: rgba(0,0,0,0.10); border-radius: 6px;
   transition: background 0.2s; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
 
-/* ── FESTIVE HERO ── */
+/* ── CHRISTMAS HERO (SNOWFLAKES & TREE MOTIF) ── */
 .rc-hero {
-  background: linear-gradient(rgba(13,13,11,0.85), rgba(13,13,11,0.88)),
-              url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
-  background-color: var(--offblack); background-size: cover;
-  color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0;
-  border: 1px solid rgba(255, 215, 6, 0.2);
+  background-color: #0D0D0B;
+  background-image: 
+    linear-gradient(180deg, rgba(14, 34, 22, 0.90) 0%, rgba(13, 13, 11, 0.94) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='%23ffffff' fill-opacity='0.22'%3E%3Ccircle cx='18' cy='22' r='2'/%3E%3Ccircle cx='68' cy='45' r='1.5'/%3E%3Ccircle cx='118' cy='82' r='2'/%3E%3Ccircle cx='42' cy='98' r='1.5'/%3E%3Ccircle cx='92' cy='18' r='2.5'/%3E%3Ccircle cx='130' cy='32' r='1'/%3E%3Cpath d='M22 12v18M13 21h18M15 14l14 14M15 28l14-14' stroke='%23ffffff' stroke-width='0.8' stroke-opacity='0.25'/%3E%3Cpath d='M98 64v16M90 72h16M92 66l12 12M92 78l12-12' stroke='%23ffffff' stroke-width='0.7' stroke-opacity='0.25'/%3E%3C/g%3E%3C/svg%3E");
+  color: #fff; padding: 48px 40px 46px; text-align: center; border-radius: 16px; margin-bottom: 0;
+  border: 2px solid rgba(255, 215, 6, 0.3);
+  box-shadow: 0 8px 32px rgba(14, 34, 22, 0.4);
 }
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; display: block; }
 
+.rc-festive-hero-emblem {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 58px; height: 58px; border-radius: 50%;
+  background: rgba(93, 197, 46, 0.18);
+  border: 2px solid #5DC32E;
+  color: #5DC32E; font-size: 1.8rem;
+  margin: 32px auto 14px;
+}
 .rc-festive-hero-tag {
   display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(255, 215, 6, 0.15); border: 1px solid rgba(255, 215, 6, 0.4);
-  color: var(--yellow); font-size: .75rem; font-weight: 800;
+  background: rgba(255, 81, 38, 0.18); border: 1px solid rgba(255, 81, 38, 0.5);
+  color: #FF5126; font-size: .78rem; font-weight: 800;
   letter-spacing: 1.2px; text-transform: uppercase;
-  padding: 6px 16px; border-radius: 20px; margin-top: 28px; margin-bottom: 16px;
+  padding: 6px 18px; border-radius: 20px; margin-bottom: 16px;
 }
 .rc-home-title-block h1 { font-size: 2.5rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0 0 16px; }
-.rc-hero p { font-size: 1rem; opacity: .88; max-width: 740px; margin: 0 auto 12px; color: var(--lightgray); line-height: 1.6; }
+.rc-hero p { font-size: 1.02rem; opacity: .9; max-width: 740px; margin: 0 auto 12px; color: var(--lightgray); line-height: 1.6; }
 
 /* ── STICKY NAV ── */
 details.rc-sticky-nav-wrap {
@@ -177,24 +181,26 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-/* ── CALLOUT ── */
-.rc-callout { border-radius: 10px; padding: 18px 22px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
-.rc-callout-icon { font-size: 1.2rem; line-height: 1.4; flex-shrink: 0; }
+/* ── FESTIVE CALLOUT ── */
+.rc-callout { border-radius: 12px; padding: 18px 24px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+.rc-callout-icon { font-size: 1.3rem; line-height: 1.4; flex-shrink: 0; }
 .rc-callout-body { flex: 1; }
-.rc-callout-body > strong { font-size: .9rem; font-weight: 800; display: block; margin-bottom: 4px; }
+.rc-callout-body > strong { font-size: .92rem; font-weight: 800; display: block; margin-bottom: 4px; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
-.rc-callout-festive { background: #FCFBF7; border: 1px solid var(--lightgray); border-left: 4px solid var(--yellow); }
+.rc-callout-festive {
+  background: #FCFBF7; border: 1px solid var(--lightgray); border-left: 5px solid #5DC32E;
+}
 .rc-callout-festive .rc-callout-body > strong { color: var(--offblack); }
 
-/* ── 12-DAY ADVENT GRID & CARD STATES ── */
+/* ── 12-DAY ADVENT GRID & MULTI-COLOR ACCENTS ── */
 .rc-advent-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 18px;
   margin: 24px 0 32px;
 }
 
-/* Base card styling */
+/* Base card */
 .rc-advent-card {
   background: var(--offwhite);
   border: 1px solid var(--lightgray);
@@ -207,7 +213,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   transition: all .2s ease;
 }
 
-/* UNLOCKED CARD (Interactive) */
+/* Unlocked cards */
 .rm-Markdown.markdown-body .rc-guide a.rc-advent-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-advent-card {
   text-decoration: none !important;
@@ -215,138 +221,142 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-advent-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-advent-card:hover {
-  border-color: var(--yellow) !important;
-  border-bottom: 1px solid var(--yellow) !important;
-  box-shadow: 0 6px 20px rgba(255, 215, 6, 0.24);
+  border-color: #FF5126 !important;
+  border-bottom: 1px solid #FF5126 !important;
+  box-shadow: 0 6px 22px rgba(255, 81, 38, 0.18);
   transform: translateY(-2px);
   text-decoration: none !important;
 }
 
-/* LOCKED CARD (Static/Teaser Container) */
+/* Locked cards (Frost theme) */
 .rc-advent-card.rc-advent-locked {
-  background: #F8F7F2;
-  border: 1px dashed var(--lightgray);
+  background: #F7F8F9;
+  border: 1px dashed #C8CCD0;
   user-select: none;
   cursor: default;
 }
 .rc-advent-card.rc-advent-locked h4 { color: #807D75 !important; }
 .rc-advent-card.rc-advent-locked p { color: #A09E96 !important; }
 
-/* Card components */
+/* Card Internals */
 .rc-advent-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.rc-advent-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #0D0D0B !important;
-  color: #FFD706 !important;
-  padding: 4px 11px;
-  border-radius: 16px;
-  font-size: .72rem;
-  font-weight: 800;
-  letter-spacing: .5px;
-  text-transform: uppercase;
+
+/* Brand Christmas Badges */
+.rc-badge-red {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #FF5126 !important; color: #ffffff !important;
+  padding: 4px 11px; border-radius: 16px; font-size: .72rem; font-weight: 800;
+  letter-spacing: .5px; text-transform: uppercase;
 }
-.rc-advent-badge-locked {
-  background: #E5E3D8 !important;
-  color: #807D75 !important;
+.rc-badge-green {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #5DC32E !important; color: #ffffff !important;
+  padding: 4px 11px; border-radius: 16px; font-size: .72rem; font-weight: 800;
+  letter-spacing: .5px; text-transform: uppercase;
 }
-.rc-advent-points {
-  font-size: .74rem;
-  font-weight: 800;
-  color: #008CFF !important;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
+.rc-badge-gold {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #FFD706 !important; color: #0D0D0B !important;
+  padding: 4px 11px; border-radius: 16px; font-size: .72rem; font-weight: 800;
+  letter-spacing: .5px; text-transform: uppercase;
 }
-.rc-advent-points-locked {
-  font-size: .74rem;
-  font-weight: 700;
-  color: #A09E96 !important;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
+.rc-badge-blue {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #008CFF !important; color: #ffffff !important;
+  padding: 4px 11px; border-radius: 16px; font-size: .72rem; font-weight: 800;
+  letter-spacing: .5px; text-transform: uppercase;
 }
-.rc-advent-date {
-  font-size: .72rem;
-  font-weight: 700;
-  color: #807D75;
-  text-transform: uppercase;
-  letter-spacing: .6px;
-}
-.rc-advent-card h4 {
-  font-size: 1.02rem;
-  font-weight: 800;
-  color: #0D0D0B !important;
-  margin: 0;
-  line-height: 1.35;
-}
-.rc-advent-card p {
-  font-size: .88rem;
-  color: #807D75 !important;
-  line-height: 1.55;
-  margin: 0;
-  flex-grow: 1;
-}
-.rc-advent-action {
-  font-size: .84rem;
-  font-weight: 700;
-  color: #008CFF !important;
-  margin-top: 4px;
-}
-.rc-advent-action-locked {
-  font-size: .82rem;
-  font-weight: 700;
-  color: #807D75 !important;
-  margin-top: 4px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+.rc-badge-locked {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #E5E4DE !important; color: #807D75 !important;
+  padding: 4px 11px; border-radius: 16px; font-size: .72rem; font-weight: 800;
+  letter-spacing: .5px; text-transform: uppercase;
 }
 
-/* ── PRIZE TIERS (3-COLUMN GRID) ── */
+.rc-advent-points {
+  font-size: .74rem; font-weight: 800; color: #FF5126 !important;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.rc-advent-points-locked {
+  font-size: .74rem; font-weight: 700; color: #A09E96 !important;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.rc-advent-date {
+  font-size: .72rem; font-weight: 700; color: #807D75;
+  text-transform: uppercase; letter-spacing: .6px;
+}
+.rc-advent-card h4 {
+  font-size: 1.02rem; font-weight: 800; color: #0D0D0B !important;
+  margin: 0; line-height: 1.35;
+}
+.rc-advent-card p {
+  font-size: .88rem; color: #807D75 !important; line-height: 1.55;
+  margin: 0; flex-grow: 1;
+}
+.rc-advent-action {
+  font-size: .84rem; font-weight: 700; color: #008CFF !important; margin-top: 4px;
+}
+.rc-advent-action-locked {
+  font-size: .82rem; font-weight: 700; color: #807D75 !important;
+  margin-top: 4px; display: inline-flex; align-items: center; gap: 6px;
+}
+
+/* ── PRIZE TIERS ── */
 .rc-card-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 0 0 32px; }
 .rc-feature-card {
   background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px;
   padding: 24px; display: flex; flex-direction: column; gap: 10px; transition: all .2s ease;
 }
 .rc-feature-card:hover {
-  border-color: var(--yellow); box-shadow: 0 4px 16px rgba(255,215,6,0.18); transform: translateY(-2px);
+  border-color: #5DC32E; box-shadow: 0 4px 18px rgba(93, 197, 46, 0.2); transform: translateY(-2px);
 }
-.rc-feature-icon { font-size: 1.5rem; line-height: 1; color: var(--offblack); }
+.rc-feature-icon-red { font-size: 1.5rem; line-height: 1; color: #FF5126; }
+.rc-feature-icon-green { font-size: 1.5rem; line-height: 1; color: #5DC32E; }
+.rc-feature-icon-gold { font-size: 1.5rem; line-height: 1; color: #FFD706; }
 .rc-feature-card h4 { font-size: 1rem; font-weight: 800; color: var(--offblack); margin: 0; }
 .rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
-.rc-feature-tag {
-  display: inline-block; margin-top: 4px; padding: 4px 11px; border-radius: 20px;
-  font-size: .7rem; font-weight: 700; letter-spacing: .5px; background: var(--offblack);
-  color: var(--yellow); width: fit-content;
+.rc-feature-tag-red {
+  display: inline-block; margin-top: 4px; padding: 4px 12px; border-radius: 20px;
+  font-size: .7rem; font-weight: 800; letter-spacing: .5px; background: #FF5126;
+  color: #ffffff; width: fit-content;
+}
+.rc-feature-tag-green {
+  display: inline-block; margin-top: 4px; padding: 4px 12px; border-radius: 20px;
+  font-size: .7rem; font-weight: 800; letter-spacing: .5px; background: #5DC32E;
+  color: #ffffff; width: fit-content;
+}
+.rc-feature-tag-gold {
+  display: inline-block; margin-top: 4px; padding: 4px 12px; border-radius: 20px;
+  font-size: .7rem; font-weight: 800; letter-spacing: .5px; background: #FFD706;
+  color: #0D0D0B; width: fit-content;
 }
 
-/* ── WEBINAR CTA BLOCK ── */
+/* ── WEBINAR CTA BLOCK (HOLIDAY NIGHT) ── */
 .rc-webinar-cta {
-  background: #0D0D0B !important;
-  border: 2px solid var(--yellow);
+  background: #0D140E !important;
+  border: 2px solid #5DC32E;
   border-radius: 14px;
   padding: 34px 38px;
   margin: 0 0 40px;
   display: flex;
   align-items: center;
   gap: 28px;
+  box-shadow: 0 6px 24px rgba(13, 20, 14, 0.4);
 }
-.rc-webinar-cta-icon { font-size: 2.2rem; flex-shrink: 0; line-height: 1; }
+.rc-webinar-cta-icon { font-size: 2.2rem; flex-shrink: 0; line-height: 1; color: #FFD706; }
 .rc-webinar-cta-body { flex: 1; }
 .rc-webinar-cta-body p {
   font-size: .95rem; color: #FCFBF7 !important; line-height: 1.6; margin: 0 0 18px;
 }
-.rc-webinar-cta-body p em { font-style: normal; font-weight: 700; color: #ffffff !important; }
+.rc-webinar-cta-body p em { font-style: normal; font-weight: 700; color: #5DC32E !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-webinar-btn {
-  background: var(--yellow) !important;
-  color: #0D0D0B !important;
+  background: #FF5126 !important;
+  color: #ffffff !important;
   text-decoration: none !important;
   padding: 12px 24px;
   border-radius: 10px;
@@ -356,21 +366,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   align-items: center;
   gap: 8px;
   transition: all .2s;
-  border: 2px solid var(--yellow) !important;
-  border-bottom: 2px solid var(--yellow) !important;
+  border: 2px solid #FF5126 !important;
+  border-bottom: 2px solid #FF5126 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-webinar-btn:hover {
   background: transparent !important;
-  color: var(--yellow) !important;
-  border: 2px solid var(--yellow) !important;
-  border-bottom: 2px solid var(--yellow) !important;
+  color: #FF5126 !important;
+  border: 2px solid #FF5126 !important;
+  border-bottom: 2px solid #FF5126 !important;
 }
 
 /* ── RESOURCES BLOCK ── */
 .rc-resources {
   background: var(--brightgray);
-  border-left: 4px solid var(--yellow);
+  border-left: 4px solid #5DC32E;
   border-radius: 10px;
   padding: 20px 24px;
   margin: 32px 0 0;
@@ -399,7 +409,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   color: #0D0D0B !important;
   text-decoration: underline !important;
   text-underline-offset: 3px;
-  text-decoration-color: #FFD706 !important;
+  text-decoration-color: #FF5126 !important;
 }
 
 /* ── FOOTER NAV ── */
@@ -413,7 +423,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .rc-footer-label {
   font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px;
-  color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px;
+  color: #ffffff; background: #FF5126; padding: 4px 10px; border-radius: 6px;
   margin-right: 4px;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
@@ -427,7 +437,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
-/* ── CONSOLIDATED RESPONSIVE BREAKPOINT ── */
+/* ── RESPONSIVE ── */
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
@@ -449,25 +459,28 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   <div class="rc-content-wrap">
 
     <!-- Active Announcement Bar -->
-    <div class="rc-announce-bar">
+    <div class="rc-announce-bar rc-active">
       <div class="rc-announce-inner">
-        <i class="fa-regular fa-snowflake rc-fa-announce"></i>
+        <i class="fa-regular fa-snowflake rc-fa-announce" style="color: #FF5126;"></i>
         <strong>Winter optimization challenge:</strong> Complete 12 weekday micro-tasks, rack up points, and compete for the Recurly Holiday Gift Basket.
         <a href="#calendar" class="rc-announce-link">View scavenger hunt →</a>
       </div>
     </div>
 
-    <!-- Festive Hero -->
+    <!-- Festive Hero (Winter Sky & Snowflake Pattern) -->
     <div class="rc-hero">
       <div class="rc-brand-header">
         <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
       </div>
+      <div class="rc-festive-hero-emblem">
+        <i class="fa-solid fa-tree"></i>
+      </div>
       <div class="rc-festive-hero-tag">
-        <i class="fa-solid fa-gift"></i> Winter optimization challenge
+        <i class="fa-regular fa-snowflake"></i> 12 days of optimization
       </div>
       <div class="rc-home-title-block">
         <h1>12 days of optimization</h1>
-        <p>A 12-weekday scavenger hunt across your site settings, Compass prompts, and newest product release tools. Complete 3-minute hands-on missions, collect points, and compete to win our exclusive Recurly Holiday Gift Basket plus a featured spot on our Q1 2027 customer results webinar.</p>
+        <p>A 12-weekday scavenger hunt across your site settings, Compass prompts, and newest product release tools. Complete daily 3-minute missions, earn points, and compete to win our Recurly Holiday Gift Basket and a guest spotlight on our late Q1 2027 webinar.</p>
       </div>
     </div>
 
@@ -495,24 +508,24 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Overview Callout -->
     <div class="rc-callout rc-callout-festive" id="rules">
-      <div class="rc-callout-icon"><i class="fa-solid fa-compass" style="color: var(--yellow);"></i></div>
+      <div class="rc-callout-icon"><i class="fa-solid fa-gift" style="color: #FF5126;"></i></div>
       <div class="rc-callout-body">
-        <strong>How the scavenger hunt works</strong>
-        <p>Each weekday leading up to the holidays unlocks a new 3-minute mission. Follow the guided activity, submit your completed task through the short form at the bottom of each activity page, and earn 1 point. The merchant with the most points takes home the holiday gift basket!</p>
+        <strong>How the holiday scavenger hunt works</strong>
+        <p>Each weekday leading up to the holidays unlocks a new 3-minute mission. Follow the guided activity, submit your completed task through the short form at the bottom of that specific activity page, and earn 1 point. The merchant with the most points takes home the holiday gift basket!</p>
       </div>
     </div>
 
     <!-- Section 1: The 12 Days Advent Grid -->
     <div class="rc-lp-section" id="calendar">
-      <h2><i class="fa-regular fa-calendar-days rc-fa-section"></i> Scavenger hunt calendar</h2>
+      <h2><i class="fa-solid fa-calendar-days rc-fa-section"></i> Scavenger hunt calendar</h2>
       <p>Tasks unlock each weekday at midnight. Complete open tasks anytime before the campaign wraps up on Friday, December 18.</p>
 
       <div class="rc-advent-grid">
 
-        <!-- Day 1 (Unlocked) -->
+        <!-- Day 1 (Unlocked - Poppy Red) -->
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-1" class="rc-advent-card">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge"><i class="fa-solid fa-gift"></i> Day 1</span>
+            <span class="rc-badge-red"><i class="fa-solid fa-tree"></i> Day 1</span>
             <span class="rc-advent-points">+1 point</span>
           </div>
           <div class="rc-advent-date">Thursday, Dec 3</div>
@@ -521,10 +534,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-advent-action">Start activity →</div>
         </a>
 
-        <!-- Day 2 (Unlocked) -->
+        <!-- Day 2 (Unlocked - Evergreen) -->
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-2" class="rc-advent-card">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge"><i class="fa-solid fa-gift"></i> Day 2</span>
+            <span class="rc-badge-green"><i class="fa-regular fa-snowflake"></i> Day 2</span>
             <span class="rc-advent-points">+1 point</span>
           </div>
           <div class="rc-advent-date">Friday, Dec 4</div>
@@ -533,10 +546,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-advent-action">Start activity →</div>
         </a>
 
-        <!-- Day 3 (Unlocked) -->
+        <!-- Day 3 (Unlocked - Gold) -->
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-3" class="rc-advent-card">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge"><i class="fa-solid fa-gift"></i> Day 3</span>
+            <span class="rc-badge-gold"><i class="fa-solid fa-gift"></i> Day 3</span>
             <span class="rc-advent-points">+1 point</span>
           </div>
           <div class="rc-advent-date">Monday, Dec 7</div>
@@ -545,10 +558,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-advent-action">Start activity →</div>
         </a>
 
-        <!-- Day 4 (Unlocked) -->
+        <!-- Day 4 (Unlocked - Ice Blue) -->
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-4" class="rc-advent-card">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge"><i class="fa-solid fa-gift"></i> Day 4</span>
+            <span class="rc-badge-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</span>
             <span class="rc-advent-points">+1 point</span>
           </div>
           <div class="rc-advent-date">Tuesday, Dec 8</div>
@@ -557,10 +570,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-advent-action">Start activity →</div>
         </a>
 
-        <!-- Day 5 (Unlocked) -->
+        <!-- Day 5 (Unlocked - Poppy Red) -->
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-5" class="rc-advent-card">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge"><i class="fa-solid fa-gift"></i> Day 5</span>
+            <span class="rc-badge-red"><i class="fa-solid fa-tree"></i> Day 5</span>
             <span class="rc-advent-points">+1 point</span>
           </div>
           <div class="rc-advent-date">Wednesday, Dec 9</div>
@@ -569,10 +582,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-advent-action">Start activity →</div>
         </a>
 
-        <!-- Day 6 (Unlocked) -->
+        <!-- Day 6 (Unlocked - Evergreen) -->
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-6" class="rc-advent-card">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge"><i class="fa-solid fa-gift"></i> Day 6</span>
+            <span class="rc-badge-green"><i class="fa-regular fa-snowflake"></i> Day 6</span>
             <span class="rc-advent-points">+1 point</span>
           </div>
           <div class="rc-advent-date">Thursday, Dec 10</div>
@@ -584,7 +597,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <!-- Day 7 (LOCKED) -->
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge rc-advent-badge-locked"><i class="fa-solid fa-lock"></i> Day 7</span>
+            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 7</span>
             <span class="rc-advent-points-locked">+1 point</span>
           </div>
           <div class="rc-advent-date">Friday, Dec 11</div>
@@ -596,7 +609,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <!-- Day 8 (LOCKED) -->
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge rc-advent-badge-locked"><i class="fa-solid fa-lock"></i> Day 8</span>
+            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 8</span>
             <span class="rc-advent-points-locked">+1 point</span>
           </div>
           <div class="rc-advent-date">Monday, Dec 14</div>
@@ -608,7 +621,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <!-- Day 9 (LOCKED) -->
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge rc-advent-badge-locked"><i class="fa-solid fa-lock"></i> Day 9</span>
+            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 9</span>
             <span class="rc-advent-points-locked">+1 point</span>
           </div>
           <div class="rc-advent-date">Tuesday, Dec 15</div>
@@ -620,7 +633,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <!-- Day 10 (LOCKED) -->
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge rc-advent-badge-locked"><i class="fa-solid fa-lock"></i> Day 10</span>
+            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 10</span>
             <span class="rc-advent-points-locked">+1 point</span>
           </div>
           <div class="rc-advent-date">Wednesday, Dec 16</div>
@@ -632,7 +645,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <!-- Day 11 (LOCKED) -->
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge rc-advent-badge-locked"><i class="fa-solid fa-lock"></i> Day 11</span>
+            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 11</span>
             <span class="rc-advent-points-locked">+1 point</span>
           </div>
           <div class="rc-advent-date">Thursday, Dec 17</div>
@@ -644,7 +657,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <!-- Day 12 (LOCKED) -->
         <div class="rc-advent-card rc-advent-locked">
           <div class="rc-advent-header">
-            <span class="rc-advent-badge rc-advent-badge-locked"><i class="fa-solid fa-lock"></i> Day 12</span>
+            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 12</span>
             <span class="rc-advent-points-locked">+1 point</span>
           </div>
           <div class="rc-advent-date">Friday, Dec 18</div>
@@ -656,7 +669,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Section 2: Prizes and Scoring -->
+    <!-- Section 2: Prizes and Scoring (Festive Card Tiers) -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-trophy rc-fa-section"></i> Competition rewards &amp; scoring</h2>
       <p>Log your completed missions directly on each activity page. Every verified submission earns 1 point toward the leaderboard.</p>
@@ -664,32 +677,32 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-card-grid">
 
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-basket-shopping"></i></div>
+          <div class="rc-feature-icon-red"><i class="fa-solid fa-basket-shopping"></i></div>
           <h4>The Recurly holiday gift basket</h4>
           <p>Awarded to the participant who logs the highest verified point total. Packed with curated artisan treats, luxury winter apparel, and Recurly team gifts.</p>
-          <span class="rc-feature-tag">Grand champion</span>
+          <span class="rc-feature-tag-red">Grand champion</span>
         </div>
 
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-microphone"></i></div>
-          <h4>Webinar co-host invitation</h4>
+          <div class="rc-feature-icon-green"><i class="fa-solid fa-microphone"></i></div>
+          <h4>Webinar guest speaker invite</h4>
           <p>Our Grand Champion will be invited to appear as a guest speaker on our late Q1 webinar to share their optimization tactics and results with the community.</p>
-          <span class="rc-feature-tag">Customer spotlight</span>
+          <span class="rc-feature-tag-green">Customer spotlight</span>
         </div>
 
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-ticket"></i></div>
+          <div class="rc-feature-icon-gold"><i class="fa-solid fa-ticket"></i></div>
           <h4>All-participant invitation</h4>
           <p>Every merchant who participates in at least one day will receive early access and guaranteed seating for our end-of-Q1 strategy and release webinar.</p>
-          <span class="rc-feature-tag">1+ activity</span>
+          <span class="rc-feature-tag-gold">1+ activity</span>
         </div>
 
       </div>
     </div>
 
-    <!-- Section 3: End of Q1 2027 Webinar CTA -->
+    <!-- Section 3: End of Q1 2027 Webinar CTA (Pine & Gold) -->
     <div class="rc-webinar-cta" id="spotlight">
-      <div class="rc-webinar-cta-icon"><i class="fa-solid fa-circle-play rc-fa-dark"></i></div>
+      <div class="rc-webinar-cta-icon"><i class="fa-solid fa-circle-play"></i></div>
       <div class="rc-webinar-cta-body">
         <p>Join us at the end of Q1 2027 for a community-wide <em>Subscriber Optimization &amp; Release Spotlight</em>. We will break down our newest features, examine benchmark shifts, and feature a live fireside chat with our 12 Days Champion to discuss real-world metric gains.</p>
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-webinar-btn">Join the notification list →</a>
@@ -698,7 +711,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Section 4: Standard Resources Block -->
     <div class="rc-resources">
-      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
+      <h3><i class="fa-solid fa-book-open" style="color: #5DC32E; font-size: 1rem;"></i> Resources</h3>
       <div class="rc-resource-links">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Navigate Home</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly product documentation</a>
