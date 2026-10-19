@@ -24,3 +24,37 @@ metadata:
 # Definition
 
 <div class="rp-definition">User roles in Recurly are defined sets of permissions that determine what actions and features a user can access within the platform. You can tailor roles to match your organization's structure — granting each team member access to exactly the sections and functions they need, and nothing more.</div>
+
+# Key benefits
+
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Tailored access</strong>
+    <span>Customize roles to grant granular permissions so users only access to functionality and data relevant to their work.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+    <strong>Enhanced security</strong>
+    <span>Limit access to sensitive data by assigning roles with restricted permissions -- read, write, delete -- keeping your account secure.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+    <strong>Optimized collaboration</strong>
+    <span>Ensure team members have the tools they need by matching roles to their actual responsibilities.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-table-list" aria-hidden="true"></i></div>
+    <strong>Streamlined management</strong>
+    <span>Manage and modify all roles from a centralized page, with a clear view of who has access to what.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-arrows-spin" aria-hidden="true"></i></div>
+    <strong>Flexibility</strong>
+    <span>Adapt roles as your organization grows or changes, keeping access aligned with evolving business needs.</span>
+  </div>
+</div>
+
+<br />
+
+<br />
