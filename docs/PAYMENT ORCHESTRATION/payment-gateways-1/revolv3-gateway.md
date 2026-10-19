@@ -44,7 +44,7 @@ Revolv3 is a global payment gateway that integrates with Recurly to manage finan
 <div class="rp-callout rp-callout-important">
   <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Best practices before you start</strong>
   <ul>
-    <li>Using 3DS requires <strong>Recurly.js</strong> to collect browser and device data, and deliver the customer challenge.</li>
+    <li>Using 3DS requires Recurly.js to collect browser and device data, and deliver the customer challenge.</li>
     <li>Ensure your Business Entity's Merchant Category Code (MCC) is filled in correctly before enabling 3DS.</li>
     <li>The CVV is required for all CIT card payments, including MOTO. Ensure you are capturing the CVV for return customer transactions including signups, and one-time transactions. Recurly will never store the CVV code on your behalf.</li>
   </ul></div>
@@ -59,7 +59,7 @@ Revolv3 is a global payment gateway that integrates with Recurly to manage finan
   </tr>
   <tr>
     <td>Services that work with Recurly</td>
-    <td>Recurring subscriptions, payments (ecommerce and <a href="https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/" target="_blank">MOTO</a>), 3D Secure</td>
+    <td>Recurring subscriptions, payments (ecommerce and <a href="/docs/moto-transactions#/" target="_blank">MOTO</a>), 3D Secure</td>
   </tr>
   <tr>
     <td>Supported operations</td>
@@ -83,7 +83,7 @@ Revolv3 is a global payment gateway that integrates with Recurly to manage finan
   </tr>
   <tr>
     <td>Regions</td>
-    <td>Worldwide</td>
+    <td>Worldwide except LATAM and India</td>
   </tr>
   <tr>
     <td>Currencies</td>
@@ -122,7 +122,7 @@ For additional guidance, see Revolv3's direct documentation: <a href="https://do
 - Your Acquirer Merchant ID
 - Your Acquirer Country
 
-These are used in [Step 3](#step-4-enable-3d-secure). Gather them now so you have them ready.
+These are used in [Step 3](#step-3-enable-3d-secure). Gather them now so you have them ready.
 
 ## Step 2 — Enter your credentials in Recurly
 
@@ -162,15 +162,14 @@ Skip this step if you're not using 3DS.
   </div>
 </div>
 
-## Step 5 — Enable currencies
+## Step 4 — Enable currencies
 
 Select the currencies your Revolv3 gateway should accept. You can add or change currencies at any time — choose only from those you're approved to process.
 
 
 <Image src="https://files.readme.io/c4a227a-image.png" align="center" width="75%" border={true} />
 
-
-## Step 6 — Save your gateway configuration
+## Step 5 — Save your gateway configuration
 
 Once you've configured everything, select **Add Payment Gateway**. If you're updating an existing configuration, the button reads **Update Payment Gateway** instead.
 
