@@ -31,12 +31,12 @@ metadata:
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
     <strong>Tailored access</strong>
-    <span>Customize roles to grant granular permissions so users only access to functionality and data relevant to their work.</span>
+    <span>Customize roles to grant permissions so users only access to functionality and data relevant to their work.</span>
   </div>
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
     <strong>Enhanced security</strong>
-    <span>Limit access to sensitive data by assigning roles with restricted permissions -- read, write, delete -- keeping your account secure.</span>
+    <span>Set read, write, and delete access levels for most permissions for precise control over what each user can view, change, or remove.</span>
   </div>
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
