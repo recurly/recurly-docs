@@ -20,3 +20,7 @@ metadata:
     <a class="rp-toc-pill" href="#invite-a-user"><span class="rp-toc-num">6</span>Invite a user</a>
   </div>
 </div>
+
+# Definition
+
+<div class="rp-definition">User roles in Recurly are defined sets of permissions that determine what actions and features a user can access within the platform. You can tailor roles to match your organization's structure — granting each team member access to exactly the sections and functions they need, and nothing more.</div>
