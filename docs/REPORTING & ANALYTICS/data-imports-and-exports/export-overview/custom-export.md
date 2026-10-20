@@ -177,7 +177,7 @@ Each row in the table represents a single export configuration.
     <td>The SFTP username used to authenticate with the server.</td>
   </tr>
   <tr>
-    <td>Known hosts *</td>
+    <td>Known hosts*</td>
     <td>The host key fingerprint for your SFTP server. Used to verify the server's identity and prevent man-in-the-middle attacks.</td>
   </tr>
   <tr>
@@ -185,7 +185,6 @@ Each row in the table represents a single export configuration.
     <td>The port your SFTP server listens on (commonly 22).</td>
   </tr>
   <tr>
-    
     <td>Private key *</td>
     <td>Your SSH private key. Shown only when Authentication Method is set to Private Key.</td>
   </tr>
