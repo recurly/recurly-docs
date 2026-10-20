@@ -59,6 +59,10 @@ metadata:
 
 ## Permission Categories
 
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Permissions in Recurly build on each other. If you give a role delete access, it also includes edit and read access. Likewise, a role with edit access also includes read access</div>
+</div>
+
 ### Customers
 
 **Customers** — Selecting this single view only permission will grant read access to accounts, subscriptions, gift cards, invoices, and transactions; allowing your user to have a complete view of a customer's account activity.  Users at this level can't access Hosted Account Management links or update billing information.
