@@ -63,8 +63,7 @@ metadata:
 
 **Customers** — Selecting this single view only permission will grant read access to accounts, subscriptions, gift cards, invoices, and transactions; allowing your user to have a complete view of a customer's account activity.  Users at this level can't access Hosted Account Management links or update billing information.
 
-**Accounts, Subscriptions, Invoices, Transactions** — Selecting one or more of these permissions will inherit the **Customers** view access listed above, plus grant either edit or a destructive action (cancelling a subscription, closing an account) as its highest level of access.  In addition, the user will inherit the **Customers** view access to all of the customer objects (accounts, subscriptions, gift cards, invoices, and transactions). **Note that editing, deleting, or adding plans, transactions, coupons, items, or gift card redemptions from the Customers section also requires edit access to the Configuration section.**
-
+**Accounts, Subscriptions, Invoices, Transactions** — Selecting one or more of these permissions will inherit the **Customers** view access listed above, plus grant either edit or a destructive action (cancelling a subscription, closing an account) as its highest level of access.
 
 <Image src="https://files.readme.io/3cefff296c30a1efa6395fc7273882640f737f00189e03dd03ec44a274ee0cd8-Screenshot_2026-10-06_at_3.44.55_PM.png" border={true} />
 
@@ -75,11 +74,11 @@ Users with Analytics access can view and export all data in the Analytics sectio
 
 ### Configuration
 
-A vast number of role combinations can be created within the Configuration category, allowing you to create and edit roles as your business needs shift and change.  No two permissions depend on one another to grant access to a single page.  However, a few permissions will grant access to multiple pages.
+A vast number of role combinations can be created within the Configuration category, allowing you to create and edit roles as your business needs shift and change.  No two permissions depend on one another to grant access to a single page.  However, a few select permissions will grant access to multiple pages.
 
 ### App Management
 
-tbd - These permissions are enabled through a feature flag.
+These permissions are enabled through a feature flag.
 
 ### Integrations
 
