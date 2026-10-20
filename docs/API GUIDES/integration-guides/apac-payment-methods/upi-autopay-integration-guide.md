@@ -75,7 +75,7 @@ Authentication method will have two options:&#x20;
 Param: `authentication_method`
 
 - QR Code: `qr-code`&#x20;
-- App Deep Links (Intent): `app-deep-links`
+- App Deep Links (Intent): `app-links`
 
 When selecting which mode to use, you will want to identify how your consumer is accessing your checkout page by looking at browser and OS data.&#x20;
 
@@ -131,7 +131,7 @@ purchase = {
       first_name: "Benjamin",
       last_name: "Du Monde",
       type: "upi-autopay", # Omit for VPA usage
-      authentication_method: "qr-code",  # qr-code or app-deep-links; omit for VPA usage
+      authentication_method: "qr-code",  # qr-code or app-deep-inks; omit for VPA usage
       address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
         city: "Bengaluru",
@@ -389,8 +389,6 @@ if err != nil {
 
 > **Tip:** Many more parameters are available. See the <Anchor target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
 
-***
-
 <br />
 
 # Processing the Responses
@@ -424,6 +422,10 @@ Using QR Code authentication mode will return the following JSON object, which y
 
 The `value` string will be a Base64 QR string. The `type` will display what the string represents -- for QR codes you will see `qr_code`.
 
+- **Sandbox** will return a raw URI
+
+- **Production** will return a Base64 Data URI PNG
+
 ```json
 "next_action": {
 	"type": "qr_code",
@@ -447,11 +449,13 @@ A successful purchase returns an **InvoiceCollection**, which contains any charg
 
 Using App Intent with Deep Links authentication mode will return a list of link types for the consumer to choose from. The `next_action` object returns an array of values -- see the following JSON example. You will need to render and create a method to click each link (whether by creating buttons, or selecting based on gateway recommendations (see below).
 
-The `value` string will be an array of app deep links to present to the user. The `type` will display what the string represents -- for App Intent you will see `app_deep_links`.
+The `value` string will be an array of app deep links to present to the user. The `type` will display what the string represents -- for App Intent you will see `app_links`.
+
+**Please note:&#x20;**&#x53;andbox and Production work differently.&#x20;
 
 ```json
 "next_action": {
-    "type": "app_deep_links",
+    "type": "app_links",
     "values": [
         "gpay://upi/mandate?pa=merchant%40pspbank&pn=M...INR&mc=621",
         "phonepe://mandate?pa=merchant%40pspbank&pn=M...INR&mc=621",
