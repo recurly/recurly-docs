@@ -55,7 +55,7 @@ next:
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
     <strong>Flexible capture timing</strong>
-    <span>Capture funds when it makes sense for your business — after confirming stock for physical goods, completing a fraud review, or at the end of a free trial period.</span>
+    <span>Capture funds when it makes sense for your business — after confirming stock for physical goods, completing a fraud review, or at the end of a paid trial period.</span>
   </div>
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
@@ -68,16 +68,18 @@ next:
 
 ## How authorization and capture works
 
-Authorization and Capture separates payment verification from fund collection into a two-step flow. An authorization confirms the card is valid and the funds are available, placing a hold on the subscriber's account without transferring money. Once you're ready, a capture completes the transaction and moves the funds. If you decide not to proceed, a cancel releases the hold.
+Authorization and Capture separates payment authorization from settlement confirmation into a two-step flow. An authorization confirms the card is valid and the funds are available, placing a hold on the subscriber's card account without initiating end of day settlement on your end. Once you're ready, a capture completes the transaction and marks the transactio for settlement with your gateway, where funding will follow per your specific setup.
+
+If you decide not to proceed with the transaction, a cancel (voiding) releases the hold.
 
 <table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Action</td><td>What it does</td></tr>
-  <tr><td>Authorize</td><td>Sends a preliminary check to the subscriber's bank to confirm the card is valid and sufficient funds exist. Places a hold on the funds without transferring them.</td></tr>
-  <tr><td>Capture</td><td>Collects the authorized funds from the subscriber's account, completing the transaction.</td></tr>
-  <tr><td>Cancel</td><td>Releases the hold on the subscriber's account without collecting any funds. Use this when you decide not to proceed with a capture.</td></tr>
+  <tr><td>Authorize</td><td>Sends a preliminary authorization request to the subscriber's bank to confirm the card is valid and sufficient funds are available. Places a hold on the funds without transferring them to a merchant.</td></tr>
+  <tr><td>Capture</td><td>Finalizes the transaction and marks the amount for settlement at the gateway, completing the transaction. This will remove the pending transaction on a consumer's bank account into finalized transactions. Please note -- capturing has a time limit dependent on network and your setup with the gateway, among other restrictions. Authorizations typically carry a 7-30 day window before capturing becomes impossible. Speak to your gateway for specifics.</td></tr>
+  <tr><td>Cancel (Void)</td><td>Releases the hold on the subscriber's account without collecting any funds. Use this when you decide not to proceed with a capture.</td></tr>
 </table>
 
-## Auth and capture flow
+## Auth and Capture flow
 
 ### Part 1: Initiate an authorization
 
@@ -133,5 +135,18 @@ Authorization and Capture separates payment verification from fund collection in
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> API reference</strong>See the <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/cancelpurchase" target="_blank">V3 Cancel</a> or <a href="https://docs.recurly.com/recurly-subscriptions/v2.29/reference/cancelpurchase" target="_blank">V2 Cancel</a> documentation for full endpoint details.</div>
 </div>
+
+## Special Uses
+
+If you want to use Authorize and Capture for paid trials, you will not set up your plans using the "Trial" functionality. Trials in Recurly use a zero dollar authorization, or verification, which only validates the card itself, and does not earmark specific funds.
+
+To use Auth and Capture for subscription signups, for paid trials (paid because an authorization does hold funds from a customer's bank balance), you'll want to be transparent in your offer to ensure customers are aware that funds will be held, but returned if they decide to cancel their paid trial.&#x20;
+
+Using a standard plan, simply use Recurly's API to send an Authorization request, and the end of the paid trial should have one of two outcomes:&#x20;
+
+* The customer decides to **keep** their subscription → Capture (you must capture for the full amount)
+* The customer decides to **cancel** their subscription → Void/Cancel&#x20;
+
+Cancel the subscription itself as well if they end up cancelling their paid trial to avoid future renewals from occurring automatically.&#x20;
 
 <br />
