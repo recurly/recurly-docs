@@ -177,20 +177,12 @@ Each row in the table represents a single export configuration.
     <td>The SFTP username used to authenticate with the server.</td>
   </tr>
   <tr>
-    <td>Known hosts *</td>
+    <td>Known hosts*</td>
     <td>The host key fingerprint for your SFTP server. Used to verify the server's identity and prevent man-in-the-middle attacks.</td>
   </tr>
   <tr>
     <td>Port *</td>
     <td>The port your SFTP server listens on (commonly 22).</td>
-  </tr>
-  <tr>
-    <td>Authentication method *</td>
-    <td>Select Password to authenticate with a username and password, or Private Key to use an SSH key pair.</td>
-  </tr>
-  <tr>
-    <td>Password *</td>
-    <td>Your SFTP password. Shown only when Authentication Method is set to Password. Click Show to reveal the field while entering.</td>
   </tr>
   <tr>
     <td>Private key *</td>
@@ -267,5 +259,3 @@ After updating credentials, or when an export prompts you to verify, use Verify 
 If verification succeeds, the export status updates and the export resumes on its next scheduled run. If verification fails, double-check that credentials were saved correctly via Update Secret, and that the destination path exists and is accessible. A successful verification does not immediately trigger a file delivery — it confirms the connection is healthy for the next scheduled run.
 
 </div>
-
-<br />
