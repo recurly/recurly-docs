@@ -73,7 +73,7 @@ For merchant-initiated payments such as renewals, force collections, or one-time
 Stripe and Klarna handle refunds for partially collected BNPL payments.
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Subscription recommendation</strong> Since all off-session transactions process as Pay Now, if you're using BNPL for annual plans, set the Plan End of Subscription Term behavior to <strong>Expire subscription</strong>. This brings the customer back in-session at renewal so they can select their preferred payment option (BNPL, Pay Later, etc.) for the next term.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Subscription recommendation</strong> Since all off-session transactions process as Pay Now or Pay Later, if you're using BNPL for annual plans, set the Plan End of Subscription Term behavior to <strong>Expire subscription</strong>. This brings the customer back in-session at renewal so they can select their preferred payment option (BNPL, Pay Later, etc.) for the next term.</div>
 </div>
 
 ## Customer locations and presentment currencies
