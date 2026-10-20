@@ -104,6 +104,10 @@ The Admin category breaks down site management roles into Users, Roles and Permi
 
 tbd
 
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>With granular permissions, nothing changes for site admins. They’re created and managed as before, and they keep the same access level. The Invite User function works as it did before.</div>
+</div>
+
 # Migration
 
 tbd
