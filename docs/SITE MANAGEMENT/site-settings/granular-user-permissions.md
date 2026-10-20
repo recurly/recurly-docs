@@ -100,4 +100,12 @@ These permissions are enabled through a feature flag.
 
 The Admin category breaks down site management roles into Users, Roles and Permissions, Admin Exports, SSO Settings, and Plan Management.  Note that sers with Plan Management access have full control over company billing information.
 
+# Create a role
+
+tbd
+
+# Migration
+
+tbd
+
 <br />
