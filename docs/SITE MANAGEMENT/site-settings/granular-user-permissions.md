@@ -81,11 +81,11 @@ A vast number of role combinations can be created within the Configuration categ
 
 ### App Management
 
-These permissions are enabled through a feature flag.
+Manage your app connectors and external products.  Note that these permissions are enabled through a feature flag.
 
 ### Integrations
 
-Users with Integrations access can view and edit Webhooks, API keys, and Recurly integrations with QuickBooks Online, Xero, Mailchimp, Salesforce, and Zendesk.
+Users with Integrations access can view and edit any integrations you set up. API Credentials access lets users manage API keys and webhooks.
 
 ### Revenue Recognition
 
@@ -99,6 +99,6 @@ These permissions are enabled through a feature flag.
 
 ### Admin
 
-Users with Admin access have full control over company billing information, account settings, Users, Roles, Admin Exports, and SSO Settings — the highest level of access in Recurly.
+The Admin category breaks down site management roles into Users, Roles and Permissions, Admin Exports, SSO Settings, and Plan Management.  Note that sers with Plan Management access have full control over company billing information.
 
 <br />
