@@ -59,7 +59,7 @@ metadata:
 
 ## Permission Categories
 
-<div class="rp-definition">Permissions in Recurly build on each other. If you give a role delete access, it also includes edit and read access. Likewise, a role with edit access also includes read access</div>
+<div class="rp-definition">Permissions in Recurly build on each other. If you give a role delete access, it also includes edit and read access. Likewise, a role with edit access also includes read access.
 </div>
 
 ### Customers
