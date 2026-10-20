@@ -55,6 +55,48 @@ metadata:
   </div>
 </div>
 
-<br />
+# Key details
+
+## Permission Categories
+
+### Customers
+
+**Customers** — Selecting this single view only permission will grant read access to accounts, subscriptions, gift cards, invoices, and transactions; allowing your user to have a complete view of a customer's account activity.  Users at this level can't access Hosted Account Management links or update billing information.
+
+**Accounts, Subscriptions, Invoices, Transactions** — Selecting one or more of these permissions will inherit the **Customers** view access listed above, plus grant either edit or a destructive action (cancelling a subscription, closing an account) as its highest level of access.  In addition, the user will inherit the **Customers** view access to all of the customer objects (accounts, subscriptions, gift cards, invoices, and transactions). **Note that editing, deleting, or adding plans, transactions, coupons, items, or gift card redemptions from the Customers section also requires edit access to the Configuration section.**
+
+
+<Image src="https://files.readme.io/3cefff296c30a1efa6395fc7273882640f737f00189e03dd03ec44a274ee0cd8-Screenshot_2026-10-06_at_3.44.55_PM.png" border={true} />
+
+
+### Analytics
+
+Users with Analytics access can view and export all data in the Analytics section, with full visibility into analytics reporting.
+
+### Configuration
+
+A vast number of role combinations can be created within the Configuration category, allowing you to create and edit roles as your business needs shift and change.  No two permissions depend on one another to grant access to a single page.  However, a few permissions will grant access to multiple pages.
+
+### App Management
+
+tbd - These permissions are enabled through a feature flag.
+
+### Integrations
+
+Users with Integrations access can view and edit Webhooks, API keys, and Recurly integrations with QuickBooks Online, Xero, Mailchimp, Salesforce, and Zendesk.
+
+### Revenue Recognition
+
+Users can be assigned Read-Only or Admin access to Recurly's Revenue Recognition platform. The **Allow Access** checkbox enables or disables general access to Revenue Recognition for the role. &#x20;
+
+These permissions are enabled through a feature flag.
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The Read-Only vs. Admin distinction within Revenue Recognition can only be set during initial role configuration. After a role is saved, granular access control within Revenue Recognition itself is the only way to change this. The Revenue Recognition section only appears on sites with the Revenue Recognition feature flag enabled.</div>
+</div>
+
+### Admin
+
+Users with Admin access have full control over company billing information, account settings, Users, Roles, Admin Exports, and SSO Settings — the highest level of access in Recurly.
 
 <br />
