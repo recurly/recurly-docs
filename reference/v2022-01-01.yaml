@@ -11491,6 +11491,11 @@ components:
             - vpa
             - qr-code
             - app-deep-links
+        store_billing_info:
+          type: boolean
+          description: >-
+            Whether to store this billing info onto its associated account.
+            Defaults to `true`.
     BillingInfoVerify:
       type: object
       properties:
