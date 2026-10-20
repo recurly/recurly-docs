@@ -63,7 +63,7 @@ Depending on subscription type and customer location, customers can be presented
 - **Pay in Installments (Pay in 3 or 4)** — Splits the purchase into 3 or 4 installments; merchants receive full funds upfront. Only available for subscriptions longer than 2 months (quarterly, annual, etc.).
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> BNPL and Pay Later options only appear on plans with billing intervals of at least 2–3 months. Shorter cycles display Pay Now only.</div>
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> BNPL and Pay Later options only appear on plans with billing intervals of at least 2–3 months. Shorter cycles display Pay Now, or Pay Later only, using Klarna as a Wallet. Which one displays is up to Klarna's discretion and is dependent on the individual customer's account.</div>
 </div>
 
 ### Merchant-initiated (off-session)
