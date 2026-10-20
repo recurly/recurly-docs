@@ -29,7 +29,7 @@ metadata:
 ### Limitations
 
 <ul class="rp-list">
-  <li>Klarna BNPL (Pay in Installments) is not available for monthly subscriptions — it's only supported for subscriptions longer than 2 months (quarterly, annual, etc.). See the payment options table below for availability by option and country.</li>
+  <li>Klarna BNPL (Pay in Installments) is not available for monthly subscriptions — it's only supported for subscriptions 2 months or longer (every 2 months, quarterly, bi-annual, annual, etc.). See the payment options table below for availability by option and country.</li>
   <li>Tokenized Klarna payment details cannot be used when paired with a Trial Plan and a separate add-on line item that is not associated with the plan itself.</li>
   <li>100% coupons during signup are not supported — credit checks are required for this payment method. Use a free trial instead. Standard coupons are supported.</li>
 </ul>
