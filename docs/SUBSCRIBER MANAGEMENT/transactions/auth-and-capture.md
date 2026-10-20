@@ -138,7 +138,7 @@ If you decide not to proceed with the transaction, a cancel (voiding) releases t
 
 ## Special Uses
 
-If you want to use Authorize and Capture for paid trials, you will not set up your plans using the "Trial" functionality. Trials in Recurly use a zero dollar authorization, or verification, which only validates the card itself, and does not earmark specific funds.
+If you want to use Authorize and Capture for **paid trials**, you will not set up your plans using the "Trial" functionality. Trials in Recurly use a zero dollar authorization, or verification, which only validates the card itself, and does not earmark specific funds.
 
 To use Auth and Capture for subscription signups, for paid trials (paid because an authorization does hold funds from a customer's bank balance), you'll want to be transparent in your offer to ensure customers are aware that funds will be held, but returned if they decide to cancel their paid trial.&#x20;
 
