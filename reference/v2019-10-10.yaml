@@ -26929,6 +26929,11 @@ components:
             set as a backup. An account can have a maximum of 1 backup, if a
             user sets a different payment method as a backup, the existing
             backup will no longer be marked as such.
+        store_billing_info:
+          type: boolean
+          description: >-
+            Whether to store this billing info onto its associated account.
+            Defaults to `true`.
     BillingInfoVerify:
       type: object
       properties:
