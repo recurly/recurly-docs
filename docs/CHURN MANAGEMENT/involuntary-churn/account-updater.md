@@ -151,7 +151,9 @@ If the customer has other active or past-due subscriptions, Recurly continues qu
 
 Recurly's Cardrefresher integration keeps Amex card details up to date automatically by connecting directly to the American Express® Account Updater service. This reduces payment failures caused by outdated card details.
 
-To use this service, you must have a direct American Express® merchant account and SE number. OptBlue (gateway-provided) SE numbers are not supported.
+To use this service, you must have a direct American Express® merchant account located in the United States and an Individual SE number. OptBlue (gateway-provided) SE numbers, and MAP/CAP SE numbers (upper levels in Amex heirarchy) are not supported.
+
+Customers located outside the US will not receive updates to their cards.
 
 ## Adyen Real Time Account Updater integration
 
