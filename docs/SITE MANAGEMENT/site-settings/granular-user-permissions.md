@@ -60,7 +60,7 @@ metadata:
 ## Permission Categories
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Permissions in Recurly build on each other. If you give a role delete access, it also includes edit and read access. Likewise, a role with edit access also includes read access</div>
+  <div>Permissions in Recurly build on each other. If you give a role delete access, it also includes edit and read access. Likewise, a role with edit access also includes read access</div>
 </div>
 
 ### Customers
