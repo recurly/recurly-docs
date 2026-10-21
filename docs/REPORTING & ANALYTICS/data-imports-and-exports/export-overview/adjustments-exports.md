@@ -10,11 +10,12 @@ metadata:
 next:
   description: ''
 ---
-# Contract grouping
+Overview
+Required plan
+This feature or setting is available to all customers on any Recurly subscription plan.
 
-Contract Grouping lets you define specific criteria for grouping transactions into contracts, so revenue recognition stays accurate and efficient. Set up grouping rules once, and Recurly RevRec applies them automatically as transactions come in.
-
-Available as part of Recurly RevRec
+Definition
+Recurly's Adjustments Exports allow you to closely monitor the invoiced and uninvoiced adjustments associated with your accounts. This export encompasses every invoiced charge and credit adjustment and even offers the option to include uninvoiced adjustments that are presently on the account. You can access the Adjustments export by visiting the Exports page found under the "Analytics" tab on your Recurly site.
 
 # Configuring a Contract Grouping rule
 
