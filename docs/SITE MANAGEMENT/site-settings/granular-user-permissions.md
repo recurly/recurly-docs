@@ -121,7 +121,7 @@ Selecting the highest level of access for a permission automatically selects the
 
 # Migration
 
-Migrating to the new granular permissions doesn’t affect your users or their roles. Each role’s permissions are mapped to the new granular permissions. For example, a role with the legacy Configuration permission is mapped to all 31 granular permissions in the Configuration category. Role names, descriptions, and assigned users stay the same.
+Migrating to the new granular permissions doesn’t affect your users or their roles. Each role’s permissions are mapped to the new granular permissions. For example, a role with the legacy Configuration permission is mapped to all 31 granular permissions in the Configuration category. Role names, role descriptions, and assigned users stay the same.
 
 <br />
 
