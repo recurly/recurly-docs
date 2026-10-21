@@ -1375,9 +1375,9 @@ To help you identify and organize information effectively, the export provides a
   </tbody>
 </Table>
 
-Column Name
-uuid
-*Is not populated when using Vertex tax service
+#### Column Name
+
+- **uuid** - Is not populated when using Vertex tax service
 
 # Changelog
 
