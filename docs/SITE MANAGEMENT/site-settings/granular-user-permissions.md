@@ -102,7 +102,18 @@ The Admin category breaks down site management roles into Users, Roles and Permi
 
 # Create a role
 
-tbd
+The steps to create a role haven’t changed, but the interface looks different. To create one, go to **Admin > Roles**, then click **Create New Role**.
+
+Permissions are grouped into an accordion with seven categories. Expand a category to see its permissions. In total, 58 permissions are available, so you can control exactly what each role can access.
+
+
+<Image src="https://files.readme.io/2f331005b2a2166c6071b68e58f129996fba131d1d1023cc5475ed8ac23df0bf-Screenshot_2026-10-21_at_9.58.14_AM.png" border={true} />
+
+
+Selecting the highest level of access for a permission automatically selects the lower levels. To reduce access, uncheck the level you no longer need. The next highest level is then selected. To select or deselect all permissions at once, use the top-level checkbox.
+
+
+<Image src="https://files.readme.io/528878e1df99d2f5bb356f46244aa0dedb755fcaaa24b41c9de898370fa1756a-Screenshot_2026-10-21_at_10.00.31_AM.png" border={true} />
 
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>With granular permissions, nothing changes for site admins. They’re created and managed as before, and they keep the same access level. The Invite User function works as it did before.</div>
