@@ -1267,7 +1267,43 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        adjustment_api_id
+        <span id="tax_inclusive">tax_inclusive</span>
+      </td>
+
+      <td>
+        true
+      </td>
+
+      <td>
+        Indicates whether the price includes tax.
+      </td>
+
+      <td>
+        boolea
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="business_entity_code">business_entity_code</span>
+      </td>
+
+      <td>
+        123456789
+      </td>
+
+      <td>
+        Indicates business entity code.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="adjustment_api_id">adjustment_api_id</span>
       </td>
 
       <td>
@@ -1282,8 +1318,63 @@ To help you identify and organize information effectively, the export provides a
         string
       </td>
     </tr>
+
+    <tr>
+      <td>
+        <span id ="price_segment_id">price_segment_id</span>
+      </td>
+
+      <td>
+        e30zov45fw0v2
+      </td>
+
+      <td>
+        Maps to product price segment id
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id ="price_segment_code">price_segment_code</span>
+      </td>
+
+      <td>
+        gold
+      </td>
+
+      <td>
+        Maps to product price segment code
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id ="custom_field">custom_field</span>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Appears only if a custom field is configured and enabled to be visible in the export. The column name in the export reflects the label defined in the custom field configuration.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
   </tbody>
 </Table>
+
 Column Name
 uuid
 *Is not populated when using Vertex tax service
