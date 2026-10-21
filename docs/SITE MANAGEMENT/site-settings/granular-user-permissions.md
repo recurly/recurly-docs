@@ -92,10 +92,6 @@ Users can be assigned Read-Only or Admin access to Recurly's Revenue Recognition
 
 These permissions are enabled through a feature flag.
 
-<div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The Read-Only vs. Admin distinction within Revenue Recognition can only be set during initial role configuration. After a role is saved, granular access control within Revenue Recognition itself is the only way to change this. The Revenue Recognition section only appears on sites with the Revenue Recognition feature flag enabled.</div>
-</div>
-
 ### Admin
 
 The Admin category breaks down site management roles into Users, Roles and Permissions, Admin Exports, SSO Settings, and Plan Management.  Note that users with access to Plan Management for your Recurly account also have full control over your company's billing information.
