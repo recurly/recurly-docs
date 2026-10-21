@@ -98,7 +98,7 @@ These permissions are enabled through a feature flag.
 
 ### Admin
 
-The Admin category breaks down site management roles into Users, Roles and Permissions, Admin Exports, SSO Settings, and Plan Management.  Note that sers with Plan Management access have full control over company billing information.
+The Admin category breaks down site management roles into Users, Roles and Permissions, Admin Exports, SSO Settings, and Plan Management.  Note that users with access to Plan Management for your Recurly account also have full control over your company's billing information.
 
 # Create a role
 
