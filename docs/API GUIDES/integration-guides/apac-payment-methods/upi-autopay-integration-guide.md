@@ -422,14 +422,16 @@ Using QR Code authentication mode will return the following JSON object, which y
 
 The `value` string will be a Base64 QR string. The `type` will display what the string represents -- for QR codes you will see `qr_code`.
 
-- **Sandbox** will return a raw URI
+- **Sandbox** will return a Base64 Data URI PNG and a redirect URL to simulate the QR code.
 
-- **Production** will return a Base64 Data URI PNG
+- **Production** will return a Base64 Data URI PNG and no redirect URL.
+
+Both QR payloads can be rendered via an `img` tag instead of passing them through a QR code generator.
 
 ```json
 "next_action": {
 	"type": "qr_code",
-	"value": "0004569821...*12345"
+	"value": "data:image/png;base64...0004569821...*12345"
 },
 ```
 
