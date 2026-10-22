@@ -2,7 +2,7 @@
 title: Getting Started
 deprecated: false
 hidden: true
-icon: fad fa-alicorn
+icon: far fa-page
 metadata:
   robots: index
 ---
