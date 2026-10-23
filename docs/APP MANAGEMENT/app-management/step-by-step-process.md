@@ -339,3 +339,37 @@ Once Recurly processes a real-time notification from Apple or Google and updates
 Due to limitations with the Apple and Google App Stores, Recurly can't automatically ingest historical data from the app stores on your behalf. This includes any app store subscriptions created before you started using Recurly App Management. To reflect that data in Recurly, you'll need to backfill our records with the subscription and customer information stored on your side.
 
 This backfill process can be performed using Recurly's API. If you'd like help, the Professional Services team can either guide you through using the API or perform the import on your behalf. Contact the <a href="https://support.recurly.com/" target="_blank">support team</a> to request a paid engagement with the Professional Services team.
+
+## Google Play
+
+### Paused subscriptions
+
+Import subscriptions in the `SUBSCRIPTION_STATE_PAUSED` state with `status=paused`. When the user resumes, Recurly processes the resume notification and reactivates the subscription on the matching account. This works only if you imported the account with a matching `obfuscatedExternalAccountId`.
+
+### Past-due subscriptions (`SUBSCRIPTION_STATE_ON_HOLD`)
+
+If you imported the account with a matching `obfuscatedExternalAccountId`, Recurly processes the recovery notification and updates the external subscription record on that account.
+
+### Subscriptions you didn't import
+
+If you didn't import a subscription, Recurly still receives its notifications, but it has no account or `external_id` to match them to. Recurly places these notifications in unprocessed notifications. Notifications that include an `obfuscatedExternalAccountId` are processed like new purchases.
+
+### Last purchase date
+
+Recurly maps the `last_purchase` field from the `lineItems[].subscriptionDetails.servicePeriodStartTime` value in Google Play notifications.
+
+## Apple App Store
+
+### Past-due subscriptions (`IN_BILLING_RETRY`)
+
+If you imported the account with a matching `appAccountToken`, Recurly processes the recovery notification and updates the external subscription record on that account.
+
+### Notifications without a matching account
+
+Notifications that include an `appAccountToken` are processed like new purchases. Without a matching `appAccountToken`, Recurly has no account to attach the notification to, so it places the notification in unprocessed notifications.
+
+<br />
+
+<br />
+
+<br />
