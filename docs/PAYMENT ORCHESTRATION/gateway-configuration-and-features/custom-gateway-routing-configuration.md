@@ -34,7 +34,7 @@ next:
 ### Limitations
 
 <ul class="rp-list">
-  <li><strong>Card on File Mandates</strong> — Depending on the gateway, Card on File mandate data is packaged in different formats. In most cases the raw network transaction ID is accepted and recurring transactions process normally. In rare cases, the data is incompatible and failover will not occur.</li>
+  <li><strong>Card on File NTIDs and TLIDs</strong> — Depending on the gateway, Card on File NTID and TLID data is packaged in different formats. In most cases the raw network transaction ID / transaction link ID is accepted and recurring transactions process normally. In rare cases, when incompatible gateways are used for failover, reverting to the original gateway is not possible.</li>
   <li><strong>Multiple subscriptions in a single request</strong> — When passing <code>gateway_code</code> for multiple subscriptions within a single request, routing to different gateways per subscription is not honoured.</li>
   <li><strong>Custom failover routing</strong> — When using a <code>backup_gateway_code</code>, this applies only to the signup transaction. Backup gateways cannot be applied directly to a subscription. Backup gateway code is only available via the V3 API.
   <li><strong>Stripe card brand awareness</strong> — Card brands for Stripe gateways are configured in the Stripe dashboard, not in Recurly. Recurly is not aware of which card brands your Stripe account supports. If certain card brands aren't supported by Stripe but are by other gateways, specify a <code>gateway_code</code> to route those transactions to the correct gateway. Review your Stripe configuration in the merchant portal to confirm your routing setup.</li>
