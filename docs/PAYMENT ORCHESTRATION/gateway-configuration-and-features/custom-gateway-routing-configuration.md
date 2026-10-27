@@ -95,9 +95,15 @@ next:
 When using a custom gateway code, it's placement within your API request matters for the behavior you wish to see.&#x20;
 
 * Placement of the `gateway_code` in the billing info object will use that gateway code for the transaction in progress only. If the transaction is a subscription signup, the gateway code used in the signup does not persist to the renewal.&#x20;
-* Placement of the `gateway_code` as a top level ... **blahblahblah**.
+* Placement of the `gateway_code` as a top level parameter controls Renewals only.
 
-## Gateway Code behaviour
+<Callout icon="far fa-circle-info" theme="info">
+  ### Integration Guides
+
+  Read more and see examples in our dedicated [Integration Guides for Custom gateway routing](https://docs.recurly.com/recurly-subscriptions/docs/custom-gateway-routing).
+</Callout>
+
+## Gateway Code behavior
 
 - Passing `gateway_code` in an API request routes the transaction to the associated gateway. If the code is absent or doesn't match a configured gateway, the transaction routes to the default gateway — with certain mismatches causing a transaction failure.
 - The `gateway_code` does not persist for recurring transactions unless used appropriately via API, routing all subsequent subscription renewals to the specified gateway unless updated.
