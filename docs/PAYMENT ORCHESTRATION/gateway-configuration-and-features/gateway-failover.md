@@ -37,7 +37,7 @@ next:
 ### Limitations
 
 <ul class="rp-list">
-  <li>Transactions tied to a specific gateway via a <code>gateway_code</code> can be routed to a failover gateway automatically or specified via API. Requires opt-in and additional integration; reach out to Technical Support for more details.</li>
+  <li>Transactions tied to a specific gateway via a <code>gateway_code</code> can be routed to a failover gateway automatically or specified via API using the <code>backup_gateway_code</code>. Requires opt-in and additional integration; reach out to Technical Support for more details.</li>
   <li>Captures are not compatible with Gateway Failover — captures must be completed on the same gateway as the original authorization. If you have an approved (and pending) Authorization that requires capture, wait until the gateway is no longer in failover and try again.</li>
   <li>If using Stripe with Gateway Failover, both gateways must support the same currency and card type.</li>
   <li>Gateway Failover cannot be tested in sandbox mode — it is functional in production mode only.</li>
