@@ -650,6 +650,7 @@ paths:
       tags:
         - Site
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -682,6 +683,7 @@ paths:
       tags:
         - Site
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/site_id'
       responses:
         '200':
@@ -708,11 +710,14 @@ paths:
       tags:
         - Account
       operationId: list_accounts
+      x-product:
+        - recover
       summary: List a site's accounts
       description: >-
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/invoice_state'
         - $ref: '#/components/parameters/limit'
@@ -754,6 +759,8 @@ paths:
         - Account
       operationId: create_account
       summary: Create an account
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -801,7 +808,11 @@ paths:
       tags:
         - Account
       operationId: get_account
+      x-product:
+        - recover
       summary: Fetch an account
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: An account.
@@ -821,6 +832,8 @@ paths:
         - Account
       operationId: update_account
       summary: Update an account
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -873,6 +886,7 @@ paths:
         recommend closing accounts only when all business is concluded with a
         customer.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - in: query
           name: redact
           schema:
@@ -909,6 +923,8 @@ paths:
       tags:
         - Account
       operationId: redact_account
+      x-product:
+        - recover
       summary: Redact an account (GDPR Right to Erasure)
       description: >-
         Permanently and irreversibly removes all personally identifiable
@@ -921,6 +937,8 @@ paths:
         account must have no active subscriptions, uninvoiced charges, or
         partially paid invoices before it can be redacted. Redaction is
         processed asynchronously and cannot be undone.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: >-
@@ -953,6 +971,8 @@ paths:
         - Account Acquisition Info
       operationId: get_account_acquisition
       summary: Fetch an account's acquisition data
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: An account's acquisition data.
@@ -972,6 +992,8 @@ paths:
         - Account Acquisition Info
       operationId: update_account_acquisition
       summary: Update an account's acquisition data
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -1009,6 +1031,8 @@ paths:
         - Account Acquisition Info
       operationId: remove_account_acquisition
       summary: Remove an account's acquisition data
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '204':
           description: Acquisition data was succesfully deleted.
@@ -1030,6 +1054,8 @@ paths:
       description: >-
         Reactivating an account will restore its history but the customer will
         need to provide new billing information to continue billing.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: An account.
@@ -1064,6 +1090,8 @@ paths:
         - Account
       operationId: get_account_balance
       summary: Fetch an account's balance and past due status
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: An account's balance.
@@ -1091,6 +1119,7 @@ paths:
       operationId: get_billing_info
       summary: Fetch an account's billing information
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       responses:
         '200':
@@ -1154,6 +1183,7 @@ paths:
 
         - gateway_code
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       requestBody:
         content:
@@ -1195,6 +1225,7 @@ paths:
       operationId: remove_billing_info
       summary: Remove an account's billing information
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       description: >-
         You may remove any stored billing information for an account. If the
@@ -1217,6 +1248,7 @@ paths:
       operationId: verify_billing_info
       summary: Verify an account's credit card billing information
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       requestBody:
         content:
@@ -1259,6 +1291,7 @@ paths:
       operationId: verify_billing_info_cvv
       summary: Verify an account's credit card billing cvv
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       requestBody:
         content:
@@ -1305,6 +1338,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/sort_dates'
@@ -1372,6 +1406,7 @@ paths:
 
         - gateway_code
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       requestBody:
         content:
@@ -1414,6 +1449,7 @@ paths:
       operationId: get_a_billing_info
       summary: Fetch a billing info
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/billing_info_id'
       responses:
@@ -1472,6 +1508,7 @@ paths:
 
         - gateway_code
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/billing_info_id'
       requestBody:
@@ -1514,6 +1551,7 @@ paths:
       operationId: remove_a_billing_info
       summary: Remove an account's billing information
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/billing_info_id'
       description: >-
@@ -1545,6 +1583,7 @@ paths:
       operationId: verify_billing_infos
       summary: Verify a billing information's credit card
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/billing_info_id'
       requestBody:
@@ -1588,6 +1627,7 @@ paths:
       operationId: verify_billing_infos_cvv
       summary: Verify a billing information's credit card cvv
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/billing_info_id'
       requestBody:
@@ -1639,6 +1679,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/sort_dates'
@@ -1675,6 +1716,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       responses:
         '200':
@@ -1702,6 +1744,7 @@ paths:
       operationId: create_coupon_redemption
       summary: Generate an active coupon redemption on an account or subscription
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       requestBody:
         content:
@@ -1741,6 +1784,7 @@ paths:
       operationId: remove_coupon_redemption
       summary: Delete the active coupon redemption from an account
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       responses:
         '200':
@@ -1769,6 +1813,7 @@ paths:
       operationId: get_coupon_redemption
       summary: Show the coupon redemption
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/coupon_redemption_id'
       responses:
@@ -1798,6 +1843,7 @@ paths:
       summary: Delete the coupon redemption
       description: Deactivate the coupon redemption on an account.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/coupon_redemption_id'
       responses:
@@ -1836,6 +1882,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -1876,6 +1923,8 @@ paths:
         - External Account
       operationId: list_account_external_account
       summary: List external accounts for an account
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: A list of external accounts on an account.
@@ -1913,6 +1962,8 @@ paths:
         - External Account
       operationId: create_account_external_account
       summary: Create an external account
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -1959,6 +2010,8 @@ paths:
         - External Account
       operationId: get_account_external_account
       summary: Get an external account for an account
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: A external account on an account.
@@ -1996,6 +2049,8 @@ paths:
         - External Account
       operationId: update_account_external_account
       summary: Update an external account
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -2038,6 +2093,8 @@ paths:
         - External Account
       operationId: delete_account_external_account
       summary: Delete an external account for an account
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Successful Delete
@@ -2082,6 +2139,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/sort_dates'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -2110,11 +2168,14 @@ paths:
       tags:
         - Invoice
       operationId: list_account_invoices
+      x-product:
+        - recover
       summary: List an account's invoices
       description: >-
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/invoice_state'
@@ -2156,6 +2217,7 @@ paths:
       operationId: create_invoice
       summary: Create an invoice for pending line items
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       requestBody:
         content:
@@ -2204,6 +2266,7 @@ paths:
       operationId: preview_invoice
       summary: Preview new invoice for pending line items
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       requestBody:
         content:
@@ -2253,6 +2316,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
@@ -2298,6 +2362,7 @@ paths:
         When using the Credit Invoices feature, utilize the purchases endpoint
         in order to immediately post credit to a credit invoice.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       requestBody:
         content:
@@ -2341,6 +2406,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/ids'
       responses:
@@ -2369,6 +2435,7 @@ paths:
       operationId: create_account_note
       summary: Create an account note
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       requestBody:
         content:
@@ -2415,6 +2482,7 @@ paths:
       operationId: get_account_note
       summary: Fetch an account note
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/account_note_id'
       responses:
@@ -2443,6 +2511,7 @@ paths:
       operationId: remove_account_note
       summary: Delete an account note
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/account_note_id'
       responses:
@@ -2471,6 +2540,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
@@ -2504,6 +2574,7 @@ paths:
       operationId: create_shipping_address
       summary: Create a new shipping address for the account
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
       requestBody:
         content:
@@ -2544,6 +2615,7 @@ paths:
       operationId: get_shipping_address
       summary: Fetch an account's shipping address
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/shipping_address_id'
       responses:
@@ -2572,6 +2644,7 @@ paths:
       operationId: update_shipping_address
       summary: Update an account's shipping address
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/shipping_address_id'
       requestBody:
@@ -2618,6 +2691,7 @@ paths:
       operationId: remove_shipping_address
       summary: Remove an account's shipping address
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/shipping_address_id'
       responses:
@@ -2640,6 +2714,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
@@ -2679,11 +2754,14 @@ paths:
       tags:
         - Transaction
       operationId: list_account_transactions
+      x-product:
+        - recover
       summary: List an account's transactions
       description: >-
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
@@ -2729,6 +2807,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/account_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
@@ -2775,6 +2854,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -2817,6 +2897,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -2854,6 +2935,8 @@ paths:
         - Coupon
       operationId: create_coupon
       summary: Create a new coupon
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -2902,6 +2985,7 @@ paths:
       operationId: get_coupon
       summary: Fetch a coupon
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/coupon_id'
       responses:
         '200':
@@ -2929,6 +3013,7 @@ paths:
       operationId: update_coupon
       summary: Update an active coupon
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/coupon_id'
       requestBody:
         content:
@@ -2977,6 +3062,7 @@ paths:
       operationId: deactivate_coupon
       summary: Expire a coupon
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/coupon_id'
       description: Mark an existing Coupon as expired
       responses:
@@ -3000,6 +3086,7 @@ paths:
       operationId: generate_unique_coupon_codes
       summary: Generate unique coupon codes
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/coupon_id'
       requestBody:
         content:
@@ -3048,6 +3135,7 @@ paths:
         them directly in the response. For larger batches, use the asynchronous
         generate endpoint instead.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/coupon_id'
       requestBody:
         content:
@@ -3097,6 +3185,7 @@ paths:
         Make an expired coupon redeemable again. You can change editable fields
         in this call.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/coupon_id'
       requestBody:
         content:
@@ -3146,6 +3235,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/coupon_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
@@ -3184,6 +3274,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
         - $ref: '#/components/parameters/sort_dates'
@@ -3222,6 +3313,7 @@ paths:
       operationId: get_credit_payment
       summary: Fetch a credit payment
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/credit_payment_id'
       responses:
         '200':
@@ -3253,6 +3345,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -3303,6 +3396,7 @@ paths:
       operationId: get_custom_field_definition
       summary: Fetch an custom field definition
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/custom_field_definition_id'
       responses:
         '200':
@@ -3330,6 +3424,8 @@ paths:
         - General Ledger Account
       operationId: create_general_ledger_account
       summary: Create a new general ledger account
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -3359,6 +3455,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -3385,6 +3482,7 @@ paths:
       operationId: get_general_ledger_account
       summary: Fetch a general ledger account
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/general_ledger_account_id'
       responses:
         '200':
@@ -3406,6 +3504,7 @@ paths:
       operationId: update_general_ledger_account
       summary: Update a general ledger account
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/general_ledger_account_id'
       requestBody:
         content:
@@ -3434,6 +3533,7 @@ paths:
       operationId: get_performance_obligation
       summary: Get a single Performance Obligation.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/performance_obligation_id'
       responses:
         '200':
@@ -3455,6 +3555,8 @@ paths:
         - Performance Obligations
       operationId: get_performance_obligations
       summary: Get a site's Performance Obligations
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: A list of Performance Obligations.
@@ -3479,6 +3581,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_template_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
@@ -3525,6 +3628,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -3563,6 +3667,8 @@ paths:
         - Item
       operationId: create_item
       summary: Create a new item
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -3608,6 +3714,7 @@ paths:
       operationId: get_item
       summary: Fetch an item
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/item_id'
       responses:
         '200':
@@ -3635,6 +3742,7 @@ paths:
       operationId: update_item
       summary: Update an active item
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/item_id'
       requestBody:
         content:
@@ -3680,6 +3788,7 @@ paths:
       operationId: deactivate_item
       summary: Deactivate an item
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/item_id'
       description: >-
         Deactivating an item makes it unavailable for new purchases. It will not
@@ -3715,6 +3824,8 @@ paths:
       description: >-
         Reactivating an item makes it available for new purchases. It will not
         affect existing line items.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: An item.
@@ -3751,6 +3862,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -3783,6 +3895,8 @@ paths:
         - Measured Unit
       operationId: create_measured_unit
       summary: Create a new measured unit
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -3828,6 +3942,7 @@ paths:
       operationId: get_measured_unit
       summary: Fetch a measured unit
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/measured_unit_id'
       responses:
         '200':
@@ -3855,6 +3970,7 @@ paths:
       operationId: update_measured_unit
       summary: Update a measured unit
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/measured_unit_id'
       requestBody:
         content:
@@ -3901,6 +4017,7 @@ paths:
       summary: Remove a measured unit
       description: A mesured unit cannot be deleted if it is used by an active plan.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/measured_unit_id'
       responses:
         '200':
@@ -3932,6 +4049,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/sort_dates'
       responses:
         '200':
@@ -3958,6 +4076,8 @@ paths:
         - External Product
       operationId: create_external_product
       summary: Create an external product
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -3998,6 +4118,8 @@ paths:
         - External Product
       operationId: get_external_product
       summary: Fetch an external product
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Settings for an external product.
@@ -4023,6 +4145,8 @@ paths:
         - External Product
       operationId: update_external_product
       summary: Update an external product
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -4055,6 +4179,8 @@ paths:
       operationId: deactivate_external_products
       summary: Deactivate an external product
       description: Deactivate an external product.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Deactivated external product.
@@ -4087,6 +4213,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/sort_dates'
       responses:
         '200':
@@ -4115,6 +4242,8 @@ paths:
         - External Product Reference
       operationId: create_external_product_external_product_reference
       summary: Create an external product reference on an external product
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -4150,6 +4279,8 @@ paths:
         - External Product Reference
       operationId: get_external_product_external_product_reference
       summary: Fetch an external product reference
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Details for an external product reference.
@@ -4175,6 +4306,8 @@ paths:
         - External Product Reference
       operationId: deactivate_external_product_external_product_reference
       summary: Deactivate an external product reference
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Details for an external product reference.
@@ -4201,6 +4334,8 @@ paths:
         - External Subscription
       operationId: create_external_subscription
       summary: Create an external subscription
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -4242,6 +4377,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/sort_dates'
       responses:
         '200':
@@ -4266,6 +4402,7 @@ paths:
   /external_subscriptions/{external_subscription_id}:
     get:
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/external_subscription_id_fetch'
       tags:
         - External Subscription
@@ -4299,6 +4436,7 @@ paths:
       x-code-samples: []
     put:
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/external_subscription_id'
       tags:
         - External Subscription
@@ -4354,6 +4492,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/sort_dates'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -4382,6 +4521,8 @@ paths:
         - External Invoice
       operationId: create_external_invoice
       summary: Create an external invoice
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -4419,11 +4560,14 @@ paths:
       tags:
         - Invoice
       operationId: list_invoices
+      x-product:
+        - recover
       summary: List a site's invoices
       description: >-
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -4462,8 +4606,11 @@ paths:
       tags:
         - Invoice
       operationId: get_invoice
+      x-product:
+        - recover
       summary: Fetch an invoice
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       responses:
         '200':
@@ -4491,6 +4638,7 @@ paths:
       operationId: update_invoice
       summary: Update an invoice
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       requestBody:
         content:
@@ -4525,6 +4673,7 @@ paths:
       operationId: get_invoice_pdf
       summary: Fetch an invoice as a PDF
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       responses:
         '200':
@@ -4557,6 +4706,7 @@ paths:
         invoice from an account’s available balance from existing credit
         invoices.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       responses:
         '200':
@@ -4597,6 +4747,7 @@ paths:
         Force a collection attempt using the stored billing information. This
         will trigger a transaction outside of Recurly's normal retry logic.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       requestBody:
         content:
@@ -4637,6 +4788,8 @@ paths:
       tags:
         - Invoice
       operationId: mark_invoice_failed
+      x-product:
+        - recover
       summary: Mark an open invoice as failed
       description: >
         Indicates that the invoice was not successfully paid for and that
@@ -4647,6 +4800,7 @@ paths:
         Only invoices with the `pending`, `processing` or `past_due` states can
         be marked as failed.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       responses:
         '200':
@@ -4679,6 +4833,8 @@ paths:
       tags:
         - Invoice
       operationId: mark_invoice_successful
+      x-product:
+        - recover
       summary: Mark an open invoice as successful
       description: >
         Indicates that the invoice was successfully paid for and that automated
@@ -4690,6 +4846,7 @@ paths:
         Only invoices with the `pending`, `processing`, `past_due` or `failed`
         states can be marked as paid.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       responses:
         '200':
@@ -4724,6 +4881,7 @@ paths:
       operationId: reopen_invoice
       summary: Reopen a closed, manual invoice
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       responses:
         '200':
@@ -4763,6 +4921,7 @@ paths:
         Invoice must be a credit invoice (`type=credit`) and cannot be closed
         (`state=closed`), processing (`state=processing`), or already voided.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       responses:
         '200':
@@ -4801,6 +4960,7 @@ paths:
         captured through your gateway. It will throw an error for an
         auto-collecting invoice.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       requestBody:
         content:
@@ -4844,6 +5004,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
@@ -4890,6 +5051,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/sort_dates'
@@ -4933,6 +5095,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       responses:
         '200':
@@ -4974,6 +5137,7 @@ paths:
         item you are aiming to refund.
           * Note: You must have the Credit Memos feature flag enabled on your site to utilize specific dollar/cent amount and percentage amount refunds on line items.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/invoice_id'
       requestBody:
         content:
@@ -5012,7 +5176,11 @@ paths:
       tags:
         - Revenue Recovery
       operationId: create_invoice_retry
+      x-product:
+        - recover
       summary: Create an invoice for revenue recovery
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -5063,6 +5231,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -5105,6 +5274,7 @@ paths:
       operationId: get_line_item
       summary: Fetch a line item
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/line_item_id'
       responses:
         '200':
@@ -5132,6 +5302,7 @@ paths:
       operationId: remove_line_item
       summary: Delete an uninvoiced line item
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/line_item_id'
       responses:
         '204':
@@ -5165,6 +5336,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -5203,6 +5375,8 @@ paths:
         - Plan
       operationId: create_plan
       summary: Create a plan
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -5242,6 +5416,7 @@ paths:
       operationId: get_plan
       summary: Fetch a plan
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/plan_id'
       responses:
         '200':
@@ -5269,6 +5444,7 @@ paths:
       operationId: update_plan
       summary: Update a plan
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/plan_id'
       requestBody:
         content:
@@ -5308,6 +5484,7 @@ paths:
       operationId: remove_plan
       summary: Remove a plan
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/plan_id'
       responses:
         '200':
@@ -5333,6 +5510,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/plan_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
@@ -5373,6 +5551,7 @@ paths:
       operationId: create_plan_add_on
       summary: Create an add-on
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/plan_id'
       requestBody:
         content:
@@ -5413,6 +5592,7 @@ paths:
       operationId: get_plan_add_on
       summary: Fetch a plan's add-on
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/plan_id'
         - $ref: '#/components/parameters/add_on_id'
       responses:
@@ -5441,6 +5621,7 @@ paths:
       operationId: update_plan_add_on
       summary: Update an add-on
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/plan_id'
         - $ref: '#/components/parameters/add_on_id'
       requestBody:
@@ -5481,6 +5662,7 @@ paths:
       operationId: remove_plan_add_on
       summary: Remove an add-on
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/plan_id'
         - $ref: '#/components/parameters/add_on_id'
       responses:
@@ -5507,6 +5689,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -5543,6 +5726,7 @@ paths:
       operationId: get_price_segment
       summary: Fetch a price segment
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/price_segment_id'
       responses:
         '200':
@@ -5574,6 +5758,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -5614,6 +5799,7 @@ paths:
       operationId: get_add_on
       summary: Fetch an add-on
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/add_on_id'
       responses:
         '200':
@@ -5645,6 +5831,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -5682,6 +5869,8 @@ paths:
         - Shipping Method
       operationId: create_shipping_method
       summary: Create a new shipping method
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -5727,6 +5916,7 @@ paths:
       operationId: get_shipping_method
       summary: Fetch a shipping method
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/shipping_method_id'
       responses:
         '200':
@@ -5754,6 +5944,7 @@ paths:
       operationId: update_shipping_method
       summary: Update an active Shipping Method
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/shipping_method_id'
       requestBody:
         content:
@@ -5799,6 +5990,7 @@ paths:
       operationId: deactivate_shipping_method
       summary: Deactivate a shipping method
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/shipping_method_id'
       description: >-
         Deactivating a shipping method makes it unavailable for new
@@ -5833,6 +6025,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -5871,6 +6064,8 @@ paths:
         - Subscription
       operationId: create_subscription
       summary: Create a new subscription
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -5912,6 +6107,7 @@ paths:
       operationId: get_subscription
       summary: Fetch a subscription
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       responses:
         '200':
@@ -5944,6 +6140,7 @@ paths:
         Change](#operation/create_subscription_change) endpoint to make those
         changes.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       requestBody:
         content:
@@ -5977,6 +6174,7 @@ paths:
         If the subscription has a paid invoice you may choose to refund all,
         part or none of last invoice's amount.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
         - name: refund
           in: query
@@ -6060,6 +6258,7 @@ paths:
         subscription (`state=future`) is canceled it becomes failed
         `state=failed` and cannot be reactivated.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       requestBody:
         content:
@@ -6109,6 +6308,7 @@ paths:
         Expired or failed subscriptions cannot be reactivated; instead a new
         subscription plan will need to be applied to the account.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       responses:
         '200':
@@ -6159,6 +6359,7 @@ paths:
 
         Expired, cancelled, or failed subscriptions cannot be paused.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       requestBody:
         content:
@@ -6209,6 +6410,7 @@ paths:
 
         or failed subscriptions cannot be resumed.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       responses:
         '200':
@@ -6250,6 +6452,7 @@ paths:
         Active, paused, expired, cancelled, or failed subscriptions cannot be
         converted.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       responses:
         '200':
@@ -6290,6 +6493,7 @@ paths:
         if they don't (for example, if the subscription is not set to renew), it
         will return an result with no invoices.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       responses:
         '200':
@@ -6324,6 +6528,7 @@ paths:
       operationId: get_subscription_change
       summary: Fetch a subscription's pending change
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       responses:
         '200':
@@ -6384,6 +6589,7 @@ paths:
 
         exists, a 422 Unprocessable Entity validation error will be returned.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       requestBody:
         content:
@@ -6427,6 +6633,7 @@ paths:
       operationId: remove_subscription_change
       summary: Delete the pending subscription change
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       description: >-
         Deleting the pending subscription change will cause the current
@@ -6457,6 +6664,7 @@ paths:
         Calling this will not save the subscription change or overwrite an
         existing change.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
       requestBody:
         content:
@@ -6502,6 +6710,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/invoice_state'
@@ -6547,6 +6756,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
@@ -6593,6 +6803,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/sort_dates'
@@ -6625,6 +6836,7 @@ paths:
       operationId: get_subscription_coupon_redemption
       summary: Show the coupon redemption for a subscription
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
         - $ref: '#/components/parameters/coupon_redemption_id'
       responses:
@@ -6654,6 +6866,7 @@ paths:
       summary: Delete the coupon redemption from a subscription
       description: Deactivate the coupon redemption on a subscription.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
         - $ref: '#/components/parameters/coupon_redemption_id'
       responses:
@@ -6689,6 +6902,7 @@ paths:
       operationId: list_usage
       summary: List a subscription add-on's usage records
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
         - $ref: '#/components/parameters/add_on_id'
         - $ref: '#/components/parameters/ids'
@@ -6730,6 +6944,7 @@ paths:
       operationId: create_usage
       summary: Log a usage record on this subscription add-on
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/subscription_id'
         - $ref: '#/components/parameters/add_on_id'
       requestBody:
@@ -6777,6 +6992,7 @@ paths:
       operationId: get_usage
       summary: Get a usage record
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/usage_id'
       responses:
         '200':
@@ -6810,6 +7026,7 @@ paths:
       operationId: update_usage
       summary: Update a usage record
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/usage_id'
       requestBody:
         content:
@@ -6855,6 +7072,7 @@ paths:
       operationId: remove_usage
       summary: Delete a usage record.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/usage_id'
       responses:
         '204':
@@ -6889,11 +7107,14 @@ paths:
       tags:
         - Transaction
       operationId: list_transactions
+      x-product:
+        - recover
       summary: List a site's transactions
       description: >-
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -6933,8 +7154,11 @@ paths:
       tags:
         - Transaction
       operationId: get_transaction
+      x-product:
+        - recover
       summary: Fetch a transaction
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/transaction_id'
       responses:
         '200':
@@ -6964,6 +7188,8 @@ paths:
         - Unique Coupon Code
       operationId: get_unique_coupon_code
       summary: Fetch a unique coupon code
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: A unique coupon code.
@@ -6992,6 +7218,8 @@ paths:
       description: >-
         Expire a unique code, making that specific code no longer redeemable.
         The parent bulk coupon will not be affected.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: A unique coupon code.
@@ -7026,6 +7254,8 @@ paths:
         - Unique Coupon Code
       operationId: reactivate_unique_coupon_code
       summary: Restore a unique coupon code
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: A unique coupon code.
@@ -7063,6 +7293,8 @@ paths:
         or one-time charges (line items) and supports both coupon and gift card
         redemptions. All items purchased will be on one invoice and paid for
         with one transaction.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -7106,6 +7338,8 @@ paths:
         or one-time charges (line items) and supports both coupon and gift card
         redemptions. All items purchased will be on one invoice and paid for
         with one transaction.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -7167,6 +7401,8 @@ paths:
 
         Note: an email address is required on the account for a Pending
         Purchase.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -7221,6 +7457,8 @@ paths:
 
         For additional information regarding shipping fees, please see
         https://docs.recurly.com/docs/shipping
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -7258,6 +7496,7 @@ paths:
       tags:
         - Purchase
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/transaction_id'
       operationId: create_capture_purchase
       summary: Capture a purchase
@@ -7315,6 +7554,8 @@ paths:
       tags:
         - Purchase
       operationId: cancelPurchase
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Returns the cancelled invoice
@@ -7350,6 +7591,8 @@ paths:
       description: >-
         Returns a list of dates for which export files are available for
         download.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Returns a list of dates.
@@ -7387,6 +7630,8 @@ paths:
       description: >-
         Returns a list of presigned URLs to download export files for the given
         date, with their MD5 sums.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Returns a list of export files to download.
@@ -7418,11 +7663,14 @@ paths:
       tags:
         - Dunning Campaigns
       operationId: list_dunning_campaigns
+      x-product:
+        - recover
       summary: List the dunning campaigns for a site
       description: >-
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/sort_dates'
       responses:
         '200':
@@ -7449,6 +7697,8 @@ paths:
         - Dunning Campaigns
       operationId: create_dunning_campaign
       summary: Create a new dunning campaign
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -7508,7 +7758,11 @@ paths:
       tags:
         - Dunning Campaigns
       operationId: get_dunning_campaign
+      x-product:
+        - recover
       summary: Fetch a dunning campaign
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Settings for a dunning campaign.
@@ -7543,6 +7797,8 @@ paths:
       description: >-
         Each cycle write is a full replacement of that cycle's settings; omitted
         scalars fall back to the model default rather than the prior version.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -7601,6 +7857,8 @@ paths:
       operationId: deactivate_dunning_campaign
       summary: Deactivate a dunning campaign
       description: The default dunning campaign cannot be deactivated.
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: The deactivated dunning campaign.
@@ -7641,6 +7899,8 @@ paths:
       summary: >-
         List the custom email templates assignable to a dunning campaign
         interval
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: A list of the site's assignable custom email templates.
@@ -7677,6 +7937,8 @@ paths:
         - Dunning Campaigns
       operationId: put_dunning_campaign_bulk_update
       summary: Assign a dunning campaign to multiple plans
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -7718,6 +7980,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/sort_dates'
       responses:
         '200':
@@ -7747,6 +8010,8 @@ paths:
         - invoice_templates
       operationId: get_invoice_template
       summary: Fetch an invoice template
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Settings for an invoice template.
@@ -7783,6 +8048,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/sort_dates'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -7814,6 +8080,8 @@ paths:
         - External Invoice
       operationId: show_external_invoice
       summary: Fetch an external invoice
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '201':
           description: Returns the external invoice
@@ -7852,6 +8120,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/sort_dates'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/order'
@@ -7884,6 +8153,8 @@ paths:
         - External Payment Phase
       operationId: get_external_subscription_external_payment_phase
       summary: Fetch an external payment phase
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Details for an external payment phase.
@@ -7913,6 +8184,8 @@ paths:
         - Account
       operationId: list_entitlements
       summary: List entitlements granted to an account
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: A list of the entitlements granted to an account.
@@ -7945,6 +8218,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/sort_dates'
       responses:
         '200':
@@ -7974,6 +8248,8 @@ paths:
         - Business Entities
       operationId: get_business_entity
       summary: Fetch a business entity
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Business entity details
@@ -8000,6 +8276,8 @@ paths:
         - Business Entities
       operationId: list_business_entities
       summary: List business entities
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: List of all business entities on your site.
@@ -8026,6 +8304,8 @@ paths:
         - Gift Cards
       operationId: list_gift_cards
       summary: List gift cards
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: List of all created gift cards on your site.
@@ -8051,6 +8331,8 @@ paths:
         - Gift Cards
       operationId: create_gift_card
       summary: Create gift card
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -8091,6 +8373,8 @@ paths:
         - Gift Cards
       operationId: get_gift_card
       summary: Fetch a gift card
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       responses:
         '200':
           description: Gift card details
@@ -8117,6 +8401,8 @@ paths:
         - Gift Cards
       operationId: preview_gift_card
       summary: Preview gift card
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -8157,6 +8443,8 @@ paths:
         - Gift Cards
       operationId: redeem_gift_card
       summary: Redeem gift card
+      parameters:
+        - $ref: '#/components/parameters/accept_header'
       requestBody:
         content:
           application/json:
@@ -8199,6 +8487,7 @@ paths:
         See the [Pagination Guide](/developers/guides/pagination.html) to learn
         how to use pagination in the API and Client Libraries.
       parameters:
+        - $ref: '#/components/parameters/accept_header'
         - $ref: '#/components/parameters/business_entity_id'
         - $ref: '#/components/parameters/ids'
         - $ref: '#/components/parameters/invoice_state'
@@ -8239,6 +8528,20 @@ servers:
   - url: https://v3.eu.recurly.com
 components:
   parameters:
+    accept_header:
+      name: Accept
+      in: header
+      description: >-
+        The API version to use for this request, e.g.
+        `application/vnd.recurly.v2022-01-01`. Requests without a versioned
+        `Accept` header return a 406 response.
+      required: true
+      schema:
+        default: application/vnd.recurly.v2022-01-01
+        type: string
+        enum:
+          - application/vnd.recurly.v2022-01-01
+          - application/vnd.recurly.v2022-01-01+json
     site_id:
       name: site_id
       in: path
@@ -11282,6 +11585,14 @@ components:
         gateway_code:
           type: string
           title: An identifier for a specific payment gateway.
+          maxLength: 12
+        backup_gateway_code:
+          type: string
+          title: >-
+            Identifies a backup gateway. Applies only when `gateway_code` is
+            provided and that gateway is in failover. Providing this code
+            overrides gateway exclusion configurations and restricts the backup
+            to this gateway.
           maxLength: 12
         payment_gateway_references:
           type: array
