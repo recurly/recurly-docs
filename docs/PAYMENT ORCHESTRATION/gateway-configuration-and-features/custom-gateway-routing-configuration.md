@@ -89,9 +89,14 @@ metadata:
 - <a href="/docs/paypal-payments" target="_blank">PayPal</a> (excluding PayPal through Braintree)
 - Amazon Pay
 
+**Supported API versions:&#x20;**
+
+* V2 and V3 endpoints support the `gateway_code` parameter.&#x20;
+* V3 endpoints support the `backup_gateway_code` parameter.
+
 ## Placement controls behavior&#x20;
 
-When using a custom gateway code, it's placement within your API request matters for the behavior you wish to see.&#x20;
+When using a custom gateway code, its placement within your API request matters for the behavior you wish to see.&#x20;
 
 * Placement of the `gateway_code` or `backup_gateway_code` in the billing info object will use that code for the transaction in progress only. If the transaction is a subscription signup, the gateway code / backup code used in the signup _does not persist_ to the renewal.&#x20;
 * Placement of the `gateway_code` as a top level parameter controls Renewals only.
