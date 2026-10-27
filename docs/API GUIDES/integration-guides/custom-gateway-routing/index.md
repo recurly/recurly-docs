@@ -27,7 +27,7 @@ Where you place your gateway_code matters. Depending on the effect you want, ens
 
 * [One time transaction routing](/recurly-subscriptions/docs/one-time-payments-gateway-routing)
 * [Trial and Subscription continuity](https://docs.recurly.com/recurly-subscriptions/docs/free-trial-gateway-routing-continuity)
-* Backup gateway routing
+* [Backup gateway routing](/recurly-subscriptions/docs/backup-failover-custom-routing)
 
 <br />
 
