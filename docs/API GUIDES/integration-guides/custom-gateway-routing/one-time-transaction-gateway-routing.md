@@ -2,7 +2,7 @@
 title: One time transaction gateway routing
 excerpt: Learn how to use custom gateway routing for one time purchases.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
