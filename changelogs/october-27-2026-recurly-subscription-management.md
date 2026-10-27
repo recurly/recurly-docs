@@ -1,7 +1,7 @@
 ---
 title: October 27, 2026 - Recurly Subscription Management
 author: Eric Ghazal
-hidden: true
+hidden: false
 published_at: '2026-10-23T14:40:15.031Z'
 ---
 October 27th introduces Revolv3 as a new payment gateway, bringing intelligent transaction routing and improved authorization rates to Recurly merchants — enablement is required, so reach out to get started. Merchants using Custom Gateway Routing can now also opt in to Gateway Failover, with the ability to designate a backup gateway per transaction via API, a long-awaited capability for merchants prioritizing transaction resilience and orchestrated routing. On the API side, Adyen token support via the `payment_gateway_references` array is now available, and Checkout.com and Nuvei merchants will see improved Mastercard TLID handling automatically.
