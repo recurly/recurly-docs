@@ -2,8 +2,9 @@
 title: 'Custom gateway routing '
 excerpt: >-
   Use Recurly's Custom Gateway Routing to direct transactions to a specific
-  payment gateway by passing a gateway_code — for fund segregation, acceptance
-  rate optimization, and subscription routing control.
+  payment gateway by passing a gateway_code and/or backup_gateway_code — for
+  fund segregation, acceptance rate optimization, and subscription routing
+  control.
 deprecated: false
 hidden: false
 link:
