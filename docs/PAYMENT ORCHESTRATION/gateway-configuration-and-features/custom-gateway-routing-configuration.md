@@ -107,10 +107,10 @@ When using a custom gateway code, its placement within your API request matters 
   Read more and see examples in our dedicated [Integration Guides for Custom gateway routing](https://docs.recurly.com/recurly-subscriptions/docs/custom-gateway-routing).
 </Callout>
 
-## Gateway Code behavior
+## Additional use cases
 
 - Passing `gateway_code` in an API request routes the transaction to the associated gateway. If the code is absent or doesn't match a configured gateway, the transaction routes to the default gateway — with certain mismatches causing a transaction failure.
-- The `gateway_code` does not persist for recurring transactions unless used appropriately via API, routing all subsequent subscription renewals to the specified gateway unless updated.
+- The `gateway_code` does not persist for recurring transactions unless used in the correct placement via API, routing all subsequent subscription renewals to the default gateway unless set via API.
 - Update the `gateway_code` via a PUT request to `v2/subscriptions/:uuid/notes` or `v3 /subscriptions/{subscription_id}`. Clear it with an empty tag to revert to standard routing logic.
 - Retrieve the `gateway_code` for a subscription via GET requests to `/subscriptions`.
 - Modify the `gateway_code` at the invoice level using `v2/invoices/<uuid>` or `v3 /invoices/<invoice_id>`.
@@ -120,12 +120,13 @@ When using a custom gateway code, its placement within your API request matters 
 - For aggregate invoices: if all subscriptions share the same `gateway_code`, that gateway is used. If codes differ or are unspecified, the default gateway is used.
 - The `gateway_code` is visible on the transaction detail page, included in the Transaction Export, and appears in webhooks.
 
-## Backup Gateway Code behaviour
+## Backup Gateway Code behavior
 
 - If the `backup_gateway_code` is incompatible with the payment method on a transaction, the transaction will fail.
 - Passing `backup_gateway_code` in an API request routes the transaction to the associated gateway if the gateway specified in `gateway_code` is in failover. If the code is absent or doesn't match a configured gateway, the transaction will fail.
-- Applying backup gateway codes to subscription(s) via API request is not supported.
+- Applying backup gateway codes to subscription(s) renewals via API request is not supported.
 - The `backup_gateway_code` does not persist for recurring transactions, routing all subsequent subscription renewals to the default gateway unless updated using the `gateway_code` parameter in a separate call (see "Update the `gateway_code` via a PUT request" for details.)
+- Backup gateway code usage is not supported in the V2 api.
 
 ## Standard gateway routing
 
