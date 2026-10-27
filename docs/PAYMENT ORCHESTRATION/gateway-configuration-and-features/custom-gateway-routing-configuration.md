@@ -2,9 +2,8 @@
 title: 'Custom gateway routing '
 excerpt: >-
   Use Recurly's Custom Gateway Routing to direct transactions to a specific
-  payment gateway by passing a gateway_code and optionally a backup_gateway_code
-  — for failover customization, fund segregation, acceptance rate optimization,
-  and subscription routing control.
+  payment gateway by passing a gateway_code — for fund segregation, acceptance
+  rate optimization, and subscription routing control.
 deprecated: false
 hidden: false
 link:
@@ -94,7 +93,7 @@ metadata:
 
 When using a custom gateway code, it's placement within your API request matters for the behavior you wish to see.&#x20;
 
-* Placement of the `gateway_code` in the billing info object will use that gateway code for the transaction in progress only. If the transaction is a subscription signup, the gateway code used in the signup does not persist to the renewal.&#x20;
+* Placement of the `gateway_code` or `backup_gateway_code` in the billing info object will use that code for the transaction in progress only. If the transaction is a subscription signup, the gateway code / backup code used in the signup _does not persist_ to the renewal.&#x20;
 * Placement of the `gateway_code` as a top level parameter controls Renewals only.
 
 <Callout icon="far fa-circle-info" theme="info">
