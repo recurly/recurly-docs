@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to use Custom gateway routing via our V3 and V2 APIs when performing
   orchestrated routing from your own platform.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
