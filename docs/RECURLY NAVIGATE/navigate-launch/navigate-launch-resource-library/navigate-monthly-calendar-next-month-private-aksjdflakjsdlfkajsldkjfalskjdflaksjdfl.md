@@ -289,7 +289,7 @@ metadata:
 
       <!-- Action -->
       <div style="flex-shrink: 0; align-self: flex-start;">
-        <a href="https://navigate.recurly.com/renewal-dispute-2027/?utm_campaign=client+success&amp;utm_medium=event+recurly&amp;utm_source=goldcast&amp;utm_content=event+link+in+navigate+home+november+monthly+calendar+page.&amp;utm_term=tactic-clientsuccess;offer-webinar" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 10px 18px; border-radius: 6px; display: inline-block;">Save your seat →</a>
+        <a href="https://navigate.recurly.com/renewal-dispute-2027/?utm_campaign=client+success&utm_medium=event+recurly&utm_source=goldcast&utm_content=calendar&utm_term=tactic-clientsuccess;offer-webinar" target="_blank" style="background-color: #008CFF; color: #FFFFFF !important; text-decoration: none !important; font-weight: 600; font-size: 13px; padding: 10px 18px; border-radius: 6px; display: inline-block;">Save your seat →</a>
       </div>
     </div>
   </div>
