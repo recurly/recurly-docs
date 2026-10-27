@@ -26802,6 +26802,14 @@ components:
           type: string
           title: An identifier for a specific payment gateway.
           maxLength: 12
+        backup_gateway_code:
+          type: string
+          title: >-
+            Identifies a backup gateway. Applies only when `gateway_code` is
+            provided and that gateway is in failover. Providing this code
+            overrides gateway exclusion configurations and restricts the backup
+            to this gateway.
+          maxLength: 12
         gateway_attributes:
           type: object
           description: Additional attributes to send to the gateway.
