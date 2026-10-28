@@ -119,9 +119,14 @@ To help you identify and organize information effectively, the export provides a
 
 # Version changelog
 
+#### Version 7 - 11/03/2026
+
+- Column added for test
+- Column added for imported
+
 #### Version 6 - 08/05/2025
 
-Addition of uuid.
+- Addition of uuid
 
 #### Version 5 - 2/5/2025
 
