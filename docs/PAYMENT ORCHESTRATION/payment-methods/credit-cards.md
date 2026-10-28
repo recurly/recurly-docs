@@ -68,6 +68,7 @@ Recurly supports credit card processing through the following gateways. Visit ea
 - <a href="/docs/freedompay#/" target="_blank">FreedomPay</a>
 - <a href="/docs/paypal-complete#/" target="_blank">PayPal Complete</a>
 - <a href="/docs/stripe" target="_blank">Stripe</a>
+- <a href="/docs/revolv3-gateway" target="_blank">Revolv3</a>
 - <a href="/docs/tsys" target="_blank">TSYS</a>
 - <a href="/docs/vantiv" target="_blank">Vantiv</a>
 - <a href="/docs/worldpaydlocal-latam-support" target="_blank">Worldpay</a>
