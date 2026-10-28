@@ -67,7 +67,7 @@ Revolv3 is a global payment gateway that integrates with Recurly to manage finan
   </tr>
   <tr>
     <td>Supported payment types</td>
-    <td>Credit card</td>
+    <td>Credit card, Google Pay</td>
   </tr>
   <tr>
     <td>Supported card brands</td>
