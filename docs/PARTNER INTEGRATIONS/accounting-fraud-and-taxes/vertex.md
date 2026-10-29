@@ -204,7 +204,7 @@ This section details the fields that Recurly sends to Vertex with each invoice t
 | Customer account code                                                      | Request/Customer/CustomerCode<br />_Must be 40 characters or less._                             |
 | Invoice taxable address (e.g. - Bill To or Ship To)                        | Request/Customer/Destination<br />Request/LineItem/Customer/Destination (for credit line items) |
 | VAT number for invoice taxable address                                     | Request/LineItem/Customer/TaxRegistration                                                       |
-| Line item product code (e.g. - plan code, add-on code)                     | Request/LineItem/Product                                                                        |
+| Line item product code (e.g. - plan code, add-on code)                     | Request/LineItem/Product<br />_Must be 40 characters or less._                                  |
 | Line item tax code                                                         | Request/LineItem/productClass                                                                   |
 | Line item subtotal after discounts                                         | Request/LineItem/ExtendedPrice                                                                  |
 | Line item's original invoice number (for credit line items / refunds)      | Request/LineItem/FlexibleFields                                                                 |
@@ -214,6 +214,7 @@ This section details the fields that Recurly sends to Vertex with each invoice t
 #### Notes
 
 - Vertex requires the Customer Code to be 40 characters or fewer. Recurly allows up to 50 characters for Account Code, so ensure that your Recurly Account Codes are within Vertex's character limit to avoid declined transactions.
+- Vertex requires the product code to be 40 characters or fewer.  Line item product code (e.g. - plan code, add-on code) would therefore need to be 40 characters or less.&#x20;
 - In order for a custom field to be sent to Vertex, it must be properly mapped to the Vertex Flexible Fields in your Vertex account and the Recurly custom field option "Allow this field to show up on Invoices" must be enabled.  Once these two tasks have been completed, custom fields will automatically be sent to Vertex when an invoice is created.
 
 # Disable Vertex
