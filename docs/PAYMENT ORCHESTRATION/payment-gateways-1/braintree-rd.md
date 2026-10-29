@@ -64,6 +64,16 @@ You can process PayPal transactions through your Braintree merchant account. Mak
 
 To initiate the PayPal one-touch checkout flow, use <a href="https://developers.recurly.com/reference/recurly-js/index.html#paypal" target="_blank">Recurly.js v4</a>. Note that PayPal payment details displayed in Recurly Admin may look slightly different from other payment methods — this is because Recurly stores Braintree's vault token rather than the actual PayPal Billing Agreement, and uses that token for all subsequent PayPal transactions.
 
+<Callout icon="far fa-circle-info" theme="info">
+  ### Saving PayPal Addresses
+
+  To request and store billing and/or shipping addresses for PayPal consumers, you must first ask Braintree to enable this feature on your account, and then ask Recurly to enable the appropriate setting on our end. Additionally, this will require you to check a setting in your specific Braintree configuration to fully enable it.
+
+  Not enabling this feature at Braintree first will result in errors for PayPal users.&#x20;
+
+  This feature does not work retroactively.
+</Callout>
+
 ## Processing Venmo through Braintree
 
 See the <a href="https://docs.recurly.com/docs/pay-with-venmo" target="_blank">Venmo payment method</a> documentation for details.
@@ -165,5 +175,3 @@ Confirm your Braintree merchant account is configured to accept PayPal transacti
 <div class="rp-callout rp-callout-tip">
   <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> After going live, monitor transactions regularly through the Recurly Admin interface or Braintree's Control Panel to keep your payment operations running smoothly.</div>
 </div>
-
-<br />
