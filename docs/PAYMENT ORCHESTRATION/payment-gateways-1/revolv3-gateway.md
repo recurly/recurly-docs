@@ -4,11 +4,11 @@ excerpt: >-
   Configure Revolv3 as a payment gateway in Recurly to accept Credit Cards
   across global markets.
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: false
 metadata:
-  robots: index
+  robots: noindex
 ---
 <div class="rp-page">
   <div class="rp-callout rp-callout-tip">
