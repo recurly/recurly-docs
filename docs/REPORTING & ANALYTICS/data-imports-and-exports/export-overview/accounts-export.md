@@ -137,8 +137,6 @@ To help you identify and organize information effectively, the export provides a
 
 # Version changelog
 
-####
-
 #### Version 9 - 11/03/2026
 
 Addition of bill_to
