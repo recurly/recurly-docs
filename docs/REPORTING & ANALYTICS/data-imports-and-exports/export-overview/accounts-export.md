@@ -133,8 +133,15 @@ To help you identify and organize information effectively, the export provides a
 | account_api_id                                                                    | e28zov4fw0v2                                                                                                 | Account API ID                                                                                                                                                                    | string               |
 | cc_emails                                                                         | [cc_email1@recurly.com](mailto:cc_email1@recurly.com) ,[cc_email2@recurly.com](mailto:cc_email2@recurly.com) | Additional email address that should receive account correspondence. These should be separated only by commas.                                                                    | string               |
 | user-defined custom field label                                                   | account custom field                                                                                         | Appears only if a custom field is configured and enabled to be visible in the export. The column name in the export reflects the label defined in the custom field configuration. | string               |
+| <span id="bill_to">bill_to</span>                                                 | parent, self                                                                                                 | Describes the billing behavior of the account, specifically whether the account is self-paying or will rely on the parent account to pay                                          | string               |
 
 # Version changelog
+
+####
+
+#### Version 9 - 11/03/2026
+
+Addition of bill_to
 
 #### Version 8 - 08/05/2025
 
