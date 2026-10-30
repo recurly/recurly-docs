@@ -132,9 +132,14 @@ To help you identify and organize information effectively, the export provides a
 | <span id="preferred_locale">preferred_locale</span>                               | en-US                                                                                                        | Identifies account's preferred locale.                                                                                                                                            | varchar(50)          |
 | account_api_id                                                                    | e28zov4fw0v2                                                                                                 | Account API ID                                                                                                                                                                    | string               |
 | cc_emails                                                                         | [cc_email1@recurly.com](mailto:cc_email1@recurly.com) ,[cc_email2@recurly.com](mailto:cc_email2@recurly.com) | Additional email address that should receive account correspondence. These should be separated only by commas.                                                                    | string               |
+| <span id="bill_to">bill_to</span>                                                 | parent                                                                                                       | Identifies whether the account bills to its parent or to itself (Account Hierarchy billing configuration). Values are self or parent; defaults to self.                           | string               |
 | user-defined custom field label                                                   | account custom field                                                                                         | Appears only if a custom field is configured and enabled to be visible in the export. The column name in the export reflects the label defined in the custom field configuration. | string               |
 
 # Version changelog
+
+#### Version 9 - 10/29/2026
+
+Addition of `bill_to`
 
 #### Version 8 - 08/05/2025
 
