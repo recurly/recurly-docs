@@ -1,7 +1,7 @@
 ---
 title: November 03, 2026 - Recurly Subscription Management
 author: Jenn Schnoes
-hidden: true
+hidden: false
 published_at: '2026-10-30T14:52:09.427Z'
 ---
 November 3rd brings automatic Network Token support to both Nuvei and Checkout.com for enrolled merchants with no integration changes required, just improved transaction security and auth rates out of the box. Recurly Checkout also receives a meaningful fix, with VAT/Tax ID data now correctly passed to supported gateways including Worldpay (WPG) and EBANX for card payments in Latin America — merchants who have the VAT/Tax ID field enabled in Checkout configuration will see this improvement automatically.
@@ -16,3 +16,4 @@ On the data side, the External Subscriptions Export gains two new fields: a `tes
 | Nov 3        | Commerce Hub Gateway           | Bug fix     | Low              | We've corrected an issue where partial approvals could occur at the gateway in certain cases. No configuration or integration changes are required for merchants using this platform.                                                                                                                  |
 | Nov 3        | Export: External Subscriptions | Enhancement | Low              | Two new fields will be added to this export including (1) test - flag to indicate that the external subscription was purchased in a sandbox or test environment and(2) imported - flag to indicate that the external subscription was created by a historical data import rather than a live purchase. |
 | Nov 3        | Export: Accounts               | Enhancement | Low              | A new field called bill_to will be added which describes the billing behavior of the account, specifically whether the account is self-paying or will rely on the parent account to pay.                                                                                                               |
+| Nov 3        | Recover: full PAN              | Enhancement | Low              | Accepting full PAN in Recover offers more options for customers.                                                                                                                                                                                                                                       |
