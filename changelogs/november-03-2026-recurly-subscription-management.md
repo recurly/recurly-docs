@@ -1,0 +1,16 @@
+---
+title: November 03, 2026 - Recurly Subscription Management
+author: Jenn Schnoes
+hidden: true
+published_at: '2026-10-30T14:52:09.427Z'
+---
+November 3rd brings automatic Network Token support to both Nuvei and Checkout.com for enrolled merchants with no integration changes required, just improved transaction security and auth rates out of the box. Recurly Checkout also receives a meaningful fix, with VAT/Tax ID data now correctly passed to supported gateways including Worldpay (WPG) and EBANX for card payments in Latin America — merchants who have the VAT/Tax ID field enabled in Checkout configuration will see this improvement automatically.
+
+On the data side, the External Subscriptions Export gains two new fields: a `test` flag to distinguish sandbox purchases from live ones, and an `imported` flag to identify subscriptions created via historical data import rather than live purchases — useful context for merchants reconciling App Store and Google Play subscription data. A Commerce Hub fix for partial approvals rounds out the release, resolving an edge case with no action required from merchants.
+
+| Release Date | Feature              | Type        | Potential Impact | Description / Overview                                                                                                                                                                                                                                     |
+| ------------ | -------------------- | ----------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nov 3        | Nuvei Gateway        | Enhancement | Low              | Nuvei will now support Network Tokens for enrolled merchants. No additional integration is necessary to enable this feature.                                                                                                                               |
+| Nov 3        | Checkout.com Gateway | Enhancement | Low              | Checkout.com will now support Network Tokens for enrolled merchants. No additional integration is necessary to enable this feature.                                                                                                                        |
+| Nov 3        | Recurly Checkout     | Bug fix     | Low              | We've updated the VAT/Tax ID field to properly pass data entered into this field to supported gateways including Stripe, Adyen, Worldpay, and Ebanx for card payments. Enablement in Checkout configuration is required to expose this field to consumers. |
+| Nov 3        | Commerce Hub Gateway | Bug fix     | Low              | We've corrected an issue where partial approvals could occur at the gateway in certain cases. No configuration or integration changes are required for merchants using this platform.                                                                      |
