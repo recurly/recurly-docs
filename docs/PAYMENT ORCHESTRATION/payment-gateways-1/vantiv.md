@@ -41,6 +41,7 @@ next:
   <li>You must contact WorldPay to authorize Recurly's access before the integration can be configured.</li>
   <li>Fraud filtering and automatic account updater features depend on your individual gateway settings and guidance from your WorldPay account manager.</li>
   <li>Check <a href="http://support.worldpay.com/support/kb/gg/billdesk/content/prohibitedmerchantcategories.htm" target="_blank">WorldPay's prohibited business types</a> to confirm your business qualifies.</li>
+<li>We do not support India e-mandates on WorldPay/Vantiv. For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
 </ul>
 
 # Definition
@@ -136,5 +137,3 @@ Contact your WorldPay account manager to discuss fraud filtering options and act
 <div class="rp-callout rp-callout-tip">
   <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> After going live, monitor your gateway's performance regularly and keep your WorldPay account settings in sync with your Recurly configuration to avoid disruptions.</div>
 </div>
-
-<br />
