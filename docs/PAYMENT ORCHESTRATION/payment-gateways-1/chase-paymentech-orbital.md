@@ -28,6 +28,7 @@ next:
 <ul class="rp-list">
   <li><strong>Salem/Stratus platform only</strong> — Recurly only supports Chase Paymentech Orbital on the Salem (Stratus) platform. Tampa merchant accounts are not supported.</li>
   <li><strong>No lifecycle or post-auth webhooks</strong> — Recurly does not support lifecycle or post-auth webhooks from Chase. If you're using gateway-level fraud review systems or making transaction actions directly at the gateway, Recurly and Chase can fall out of sync. Always capture, void, and process refunds from Recurly rather than directly in the gateway.</li>
+<li>We do not support India e-mandates on Chase Orbital. For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
   <li><strong>Ambiguous C5 response code</strong> — Chase's C5 / Over Frequency Limit code can mean two different things. Check the gateway message to determine the cause: for most card brands it indicates an over-frequency limit, but for Mastercard it may indicate that 3DS / SCA is required.</li>
 </ul>
 
@@ -145,5 +146,3 @@ After saving, run a series of test transactions to confirm the integration is wo
 <div class="rp-callout rp-callout-tip">
   <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Once live, check both the Recurly Admin interface and your Chase Paymentech Orbital dashboard regularly to confirm transactions are processing smoothly.</div>
 </div>
-
-<br />
