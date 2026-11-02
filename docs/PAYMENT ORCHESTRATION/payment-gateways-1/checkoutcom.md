@@ -47,7 +47,7 @@ metadata:
   <li><strong>Site mode switching not supported</strong> — Switching between production and development modes on a single site is not supported. Maintain separate Recurly sites for production and development testing.</li>
   <li><strong>CVV required for all CIT card payments</strong> — This includes MOTO. Collect the CVV for all return customer transactions, signups, and one-time transactions. Recurly does not store CVV codes.</li>
   <li><strong>Gateway tokens and chargeback notifications not supported</strong> — These features are not available for Checkout.com at this time.</li>
-  <li><strong>RBI e-mandates (India mandates) are not supported</strong> — These features are not available for Checkout.com at this time.</li>
+  <li><strong>RBI e-mandates (India mandates) are not supported</strong> — This feature is not available for Checkout.com at this time. For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
 </ul>
 
 # Key details
