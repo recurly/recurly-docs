@@ -30,6 +30,7 @@ metadata:
 
 <ul class="rp-list">
   <li><strong>No lifecycle or post-auth webhooks</strong> — Recurly does not support lifecycle or post-auth webhooks from Commerce Hub. If you're using gateway-level fraud review systems, gateway tokens, or processing transaction actions directly at the gateway, Recurly and Commerce Hub can fall out of sync. Always capture, void, and process refunds from Recurly rather than directly in the gateway.</li>
+<li>We do not support India e-mandates on Commerce Hub. For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
 </ul>
 
 # Definition
@@ -200,5 +201,3 @@ Once testing passes, you're ready to accept live payments through Commerce Hub.
 <div class="rp-callout rp-callout-tip">
   <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> Keep your Commerce Hub credentials secure and limit access to authorized personnel only. Consult your Commerce Hub account representative to confirm your account is in good standing and compliant with all relevant regulations.</div>
 </div>
-
-<br />
