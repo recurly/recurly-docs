@@ -36,6 +36,7 @@ next:
 
 <ul class="rp-list">
   <li><strong>Multi-currency requires multiple gateway instances</strong> — FreedomPay currencies are managed per credential set. To support multiple currencies, configure a separate FreedomPay gateway instance in Recurly for each currency.</li>
+<li>We do not support India e-mandates on FreedomPay. For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
 </ul>
 
 # Definition
@@ -362,5 +363,3 @@ Per FreedomPay's request, the following are examples of a standard payment reque
 <div class="rp-callout rp-callout-tip">
   <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> More Recurly resources</strong> For general Recurly troubleshooting and how-tos, search <a href="https://docs.recurly.com/" target="_blank">docs.recurly.com</a>. Helpful starting points: <a href="https://docs.recurly.com/docs/getting-started" target="_blank">Getting started</a>, <a href="https://docs.recurly.com/docs/subscription-lifecycle" target="_blank">Subscription lifecycle</a>, <a href="https://recurly.com/developers/" target="_blank">Developer Hub</a>, and <a href="https://docs.recurly.com/docs/auth-and-capture" target="_blank">Auth and Capture</a>.</div>
 </div>
-
-<br />
