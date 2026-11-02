@@ -28,6 +28,7 @@ next:
 <ul class="rp-list">
   <li><strong>Restricted business types</strong> — Braintree restricts its gateway to certain business models. If your business appears on Braintree's <a href="https://www.braintreepayments.com/legal/acceptable-use-policy" target="_blank">Acceptable Use Policy</a>, you won't be able to use the Braintree gateway.</li>
   <li><strong>No lifecycle or post-auth webhooks</strong> — Recurly does not support lifecycle or post-auth webhooks from Braintree. If you're using gateway-level fraud review systems, gateway tokens, or processing transaction actions directly at the gateway, Recurly and Braintree can fall out of sync. Always capture, void, and process refunds from Recurly rather than directly in the gateway.</li>
+<li>We do not support India e-mandates on Braintree. For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
   <li><strong>Dynamic descriptors — cards only</strong> — Dynamic descriptors are supported for Braintree, but only for card payments at this time.</li>
 </ul>
 
