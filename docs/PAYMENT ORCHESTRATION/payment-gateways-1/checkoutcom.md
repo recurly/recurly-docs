@@ -43,6 +43,13 @@ metadata:
   </ul></div>
 </div>
 
+<ul class="rp-list">
+  <li><strong>Site mode switching not supported</strong> — Switching between production and development modes on a single site is not supported. Maintain separate Recurly sites for production and development testing.</li>
+  <li><strong>CVV required for all CIT card payments</strong> — This includes MOTO. Collect the CVV for all return customer transactions, signups, and one-time transactions. Recurly does not store CVV codes.</li>
+  <li><strong>Gateway tokens and chargeback notifications not supported</strong> — These features are not available for Checkout.com at this time.</li>
+  <li><strong>RBI e-mandates (India mandates) are not supported</strong> — These features are not available for Checkout.com at this time.</li>
+</ul>
+
 # Key details
 
 <table class="rp-gw-table">
@@ -262,5 +269,3 @@ Production and sandbox environments in Checkout.com are entirely separate system
 <div class="rp-callout rp-callout-important">
   <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Going live from a copied configuration</strong> When going live, you cannot simply copy your sandbox gateway configuration. The copied gateway does not carry the correct site identifiers for the production environment — you must re-onboard Checkout.com from scratch in your production site.</div>
 </div>
-
-<br />
