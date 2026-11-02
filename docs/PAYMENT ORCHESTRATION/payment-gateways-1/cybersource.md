@@ -28,6 +28,7 @@ next:
 <ul class="rp-list">
   <li><strong>No gateway-level fraud management</strong> — Recurly does not support gateway-level fraud management behaviors for CyberSource.</li>
   <li><strong>No lifecycle or post-auth webhooks</strong> — Recurly does not support lifecycle or post-auth webhooks from CyberSource. If you're using gateway-level fraud review systems or making transaction actions directly at the gateway, Recurly and CyberSource can fall out of sync. Always capture, void, and process refunds from Recurly rather than directly in the gateway.</li>
+<li>We do not support India e-mandates on Cybersource. For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
 </ul>
 
 # Definition
