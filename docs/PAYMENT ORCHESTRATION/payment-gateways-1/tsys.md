@@ -36,6 +36,7 @@ next:
   <li>Supports transactions in US dollars only. To accept additional currencies, integrate with other gateways.</li>
   <li>Your merchant bank must share the required credentials with Recurly.</li>
   <li>TSYS Sierra (Terminal Settlement) Merchant IDs are not supported — only the Summit (Host Capture) platform is supported.</li>
+<li>We do not support India e-mandates on TSYS. For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
 </ul>
 
 # Definition
@@ -94,5 +95,3 @@ TSYS does not impose minimum address requirements and does not require Card Secu
 <div class="rp-callout rp-callout-tip">
   <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong> TSYS supports USD only. To accept additional currencies, pair it with other gateways in your Recurly configuration.</div>
 </div>
-
-<br />
