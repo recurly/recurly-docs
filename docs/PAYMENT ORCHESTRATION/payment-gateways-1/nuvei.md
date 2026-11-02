@@ -26,7 +26,8 @@ metadata:
 ### Limitations
 
 <div class="rp-callout rp-callout-important">
-  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Recurly.js required</strong> Nuvei requires browser information on all transactions. Use Recurly.js for all new signups and billing info updates — regardless of whether you're using 3DS. Browser details are collected automatically by Recurly.js. For 3DS on stored billing info, see <a href="https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information" target="_blank">Recurly.js with Stored Billing Information</a>.</div>
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Recurly.js required</strong> Nuvei requires browser information on all transactions. Use Recurly.js for all new signups and billing info updates — regardless of whether you're using 3DS. Browser details are collected automatically by Recurly.js. For 3DS on stored billing info, see <a href="https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information" target="_blank">Recurly.js with Stored Billing Information</a>.
+<li>We do not support India e-mandates on Nuvei. For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li></div>
 </div>
 
 <ul class="rp-list">
