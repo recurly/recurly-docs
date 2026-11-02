@@ -43,7 +43,7 @@ next:
 <li>Asynchronous payment methods may take 48 hours or more for confirmation, depending on the payment method</li>
 <li>Use Recurly.js or the Recurly API for credit and debit card transactions</li>
 <li>SEPA supports EUR payments only — ensure all SEPA transactions are denominated in EUR</li>
-<li>We do not support India e-mandates on Adyen. For information on support for RBI mandates, see our <href a="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
+<li>We do not support India e-mandates on Adyen. For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
 <li>Certain features are unavailable until your account is migrated to the latest version of Adyen — contact <a href="mailto:support@recurly.com">support@recurly.com</a> about enabling V71 or V72</li>
 </ul>
 
