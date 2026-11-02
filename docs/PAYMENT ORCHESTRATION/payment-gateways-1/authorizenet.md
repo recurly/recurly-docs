@@ -29,6 +29,7 @@ next:
 <ul class="rp-list">
   <li><strong>Limited decline detail</strong> — Authorize.net's API responses are generic on declines. While Recurly uses decline reasons, merchant-advice-code logic, and processor/issuer/network responses to inform retry decisions, Auth.net does not return this information typically. Following Auth.net best practices, Recurly does not retry renewal declines where Auth.net recommends treating the decline as "hard" — this includes expired cards and lost or stolen cards. See <a href="https://support.authorize.net/knowledgebase/Knowledgearticle/?code=000001111" target="_blank">Auth.net's gateway response knowledgebase article</a> for details.</li>
   <li><strong>Fraud review flow not supported</strong> — If you're using Authorize.net's fraud monitoring, be aware the gateway can void or invalidate transactions that were initially approved. Monitor those external systems independently, as any cancellations made outside Recurly won't be visible within the platform.</li>
+<li>We do not support India e-mandates on Auth.net. For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
   <li><strong>Gateway Specific NTIDs on File</strong> — Authorize.net does not return raw NTIDs, but instead, their own value that we store. If you need to migrate away from Authorize.net to another platform, even within Recurly, contact Recurly Tech Support to initiate an NTID migration conversation with our team and Auth.net directly.</li>
 </ul>
 
