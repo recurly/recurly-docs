@@ -47,6 +47,7 @@ next:
   <li><strong>Tax ID required for many LATAM transactions</strong> — Submit a tax ID (e.g., CUIT) with each transaction. If using CUIT, CPF, or CNPJ, specify the type via API using <code>tax_identifier_type</code>. For all other tax ID types, send the value without a type.</li>
   <li><strong>Sales tax may be required</strong> — Certain regions require sales tax on transactions. Confirm requirements with WorldPay and configure sales tax in your Recurly site. See <a href="https://docs.recurly.com/docs/tax#/" target="_blank">sales tax documentation</a>.</li>
   <li><strong>Prohibited businesses</strong> — Check <a href="http://support.worldpay.com/support/kb/gg/billdesk/content/prohibitedmerchantcategories.htm" target="_blank">WorldPay's prohibited business types</a> to confirm your business qualifies.</li>
+<li>We do not support India e-mandates on WorldPay (WPG). For information on support for RBI mandates, see our <a href="/recurly-subscriptions/docs/rbi-regulations-update">RBI documentation</a>.</li>
 </ul>
 
 # Definition
