@@ -333,6 +333,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
+    <div class="rc-callout rc-callout-tip">
+      <div class="rc-callout-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <div class="rc-callout-body">
+        <strong>Unpredictable renewal costs drive churn</strong>
+        <p>If you bill international customers in a single currency, foreign exchange rate fluctuations mean your subscribers see a different charge on their bank statement every billing cycle. Offering fixed local-currency pricing keeps renewal costs predictable and prevents billing-related cancellations.</p>
+      </div>
+    </div>
+
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-wallet rc-fa-section"></i> Local methods worth knowing</h2>
       <p>Card networks dominate in the US, but many markets lean on other rails entirely. A few examples of local methods that carry meaningful volume in their home markets:</p>
