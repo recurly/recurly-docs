@@ -356,7 +356,7 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-sticky-link"><span class="rc-step-badge">5</span> LATAM</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
-       
+        
       </div></div></div>
     </details>
 
@@ -415,7 +415,6 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                 </ul>
               </div>
             </div>
-            </div>
           </div>
         </details>
 
@@ -449,8 +448,6 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                   <li>Implement consumer mediation service reference in T&amp;Cs</li>
                 </ul>
               </div>
-            </div>
-        
             </div>
           </div>
         </details>
@@ -486,8 +483,6 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                 </ul>
               </div>
             </div>
-          
-            </div>
           </div>
         </details>
 
@@ -521,8 +516,6 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                   <li>Implement e-invoicing and cancellation buttons (legal requirements)</li>
                 </ul>
               </div>
-            </div>
-          
             </div>
           </div>
         </details>
@@ -558,8 +551,6 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                 </ul>
               </div>
             </div>
- 
-            </div>
           </div>
         </details>
 
@@ -593,8 +584,6 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                   <li>Implement same-channel cancellation mechanism</li>
                 </ul>
               </div>
-            </div>
-
             </div>
           </div>
         </details>
