@@ -254,17 +254,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-earth-americas rc-fa-section"></i> Why it matters</h2>
       <p>Brazil doesn't fit the credit-card-first model most merchants default to. Pix Automático is used by more than 75% of Brazilians, charges no fees to individuals, and settles near-instantly — but it's new enough that most merchants haven't adopted it yet. Meanwhile credit cards, the most commonly offered method, convert at just 58.45% sign-up.</p>
 
-      <div class="rc-latam-table-wrap">
-        <table class="rc-latam-table">
-          <thead><tr><th>Payment Type</th><th>Sign-up %</th><th>Renewal %</th><th>% of Volume when Merchant is Offering Payment Type</th></tr></thead>
-          <tbody>
-            <tr><td>Apple Pay</td><td>46.54%</td><td>68.02%</td><td>3.30%</td></tr>
-            <tr><td>Credit Card</td><td>42.82%</td><td>80.27%</td><td>93.56%</td></tr>
-            <tr><td>Google Pay</td><td>48.30%</td><td>68.19%</td><td>3.90%</td></tr>
-            <tr><td>PayPal</td><td>76.26%</td><td>86.55%</td><td>5.32%</td></tr>
-          </tbody>
-        </table>
-      </div>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
