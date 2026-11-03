@@ -132,7 +132,7 @@ These are used in [Step 4](#step-4-enable-3d-secure). Gather them now so you hav
   Recurly does not currently ingest any webhooks from Checkout.com, but you may configure them ahead of any future improvements to the gateway. You may see webhook errors on the gateway side due to lack of support. If you do not wish to see those alerts, do not configure webhooks.
 </Callout>
 
-Recurly uses webhooks from Checkout.com to receive payment and dispute event notifications. You'll also generate a **Signature key** here, which you'll enter in Recurly in Step 3.
+You'll need to generate a **Signature key** in Checkout.com, which you'll enter in Recurly in Step 3.
 
 <div class="rp-steps">
   <div class="rp-step">
