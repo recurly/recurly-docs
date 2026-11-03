@@ -263,19 +263,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-earth-asia rc-fa-section"></i> Why it matters</h2>
       <p>Australia and India both run on mandate-based direct debit systems, but the mandates themselves — and the customer behavior around them — look nothing alike. BECS in Australia is a mature, high-success rail. UPI Auto Pay in India is newer but already outperforms every other method in the market on sign-up success.</p>
 
-      <div class="rc-feature-card">
-        <div class="rc-feature-icon"><i class="fa-solid fa-building-columns"></i></div>
-        <h4>Australia</h4>
-        <p>BECS converts at 97.22% sign-up and 99.23% renewal, but only 0.65% of merchants offer it. PayPal is offered by 34% of merchants and converts strongly. Foreign businesses exceeding AUD $75,000 in Australian revenue must register for GST.</p>
+      <div class="rc-card-grid">
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <h4>Australia</h4>
+          <p>BECS converts at 97.22% sign-up and 99.23% renewal, but only 0.65% of merchants offer it. PayPal is offered by 34% of merchants and converts strongly. Foreign businesses exceeding AUD $75,000 in Australian revenue must register for GST.</p>
+        </div>
+
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+          <h4>India</h4>
+          <p>UPI Auto Pay leads sign-up success at 87.13%, well above credit cards at 36.18%. Apple Pay also performs strongly (85.85%). Free trials and low entry-price tiers resonate strongly with Indian consumers.</p>
+        </div>
       </div>
-
-
-      <div class="rc-feature-card">
-        <div class="rc-feature-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
-        <h4>India</h4>
-        <p>UPI Auto Pay leads sign-up success at 87.13%, well above credit cards at 36.18%. Apple Pay also performs strongly (85.85%). Free trials and low entry-price tiers resonate strongly with Indian consumers.</p>
-      </div>
-
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
