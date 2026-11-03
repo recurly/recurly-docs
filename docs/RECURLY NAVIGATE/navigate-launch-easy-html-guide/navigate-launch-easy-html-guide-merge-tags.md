@@ -412,7 +412,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
 <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-easy-html-guide-testing" class="rc-sticky-link"><span class="rc-step-badge">4</span> Testing &amp; previewing</a>
 <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-easy-html-guide-snippets" class="rc-sticky-link"><span class="rc-step-badge">5</span> Common snippets</a>
 <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-easy-html-guide-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
-<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link"><img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Launch</a>
+
 </div></div></div>
 </details>
 <div class="rc-lp-section">
