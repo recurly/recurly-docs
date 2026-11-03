@@ -415,7 +415,6 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                 </ul>
               </div>
             </div>
-        
             </div>
           </div>
         </details>
@@ -451,25 +450,7 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                 </ul>
               </div>
             </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>87.05%</td><td>82.72%</td><td>10.20%</td></tr>
-                  <tr><td>Credit Card</td><td>67.88%</td><td>89.34%</td><td>67.71%</td></tr>
-                  <tr><td>Google Pay</td><td>70.13%</td><td>79.48%</td><td>1.64%</td></tr>
-                  <tr><td>PayPal</td><td>92.29%</td><td>96.45%</td><td>27.41%</td></tr>
-                  <tr><td>SEPA</td><td>92.85%</td><td>92.60%</td><td>14.69%</td></tr>
-                </tbody>
-              </table>
+        
             </div>
           </div>
         </details>
@@ -505,25 +486,7 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                 </ul>
               </div>
             </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>83.68%</td><td>87.95%</td><td>3.60%</td></tr>
-                  <tr><td>Credit Card</td><td>71.13%</td><td>88.90%</td><td>24.58%</td></tr>
-                  <tr><td>Google Pay</td><td>70.58%</td><td>84.32%</td><td>0.50%</td></tr>
-                  <tr><td>PayPal</td><td>88.77%</td><td>97.40%</td><td>63.79%</td></tr>
-                  <tr><td>SEPA</td><td>99.25%</td><td>99.89%</td><td>44.35%</td></tr>
-                </tbody>
-              </table>
+          
             </div>
           </div>
         </details>
@@ -559,25 +522,7 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                 </ul>
               </div>
             </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>88.06%</td><td>72.91%</td><td>10.07%</td></tr>
-                  <tr><td>Credit Card</td><td>72.71%</td><td>80.52%</td><td>56.19%</td></tr>
-                  <tr><td>Google Pay</td><td>76.46%</td><td>74.24%</td><td>4.13%</td></tr>
-                  <tr><td>PayPal</td><td>85.44%</td><td>92.66%</td><td>40.64%</td></tr>
-                  <tr><td>SEPA</td><td>93.67%</td><td>93.96%</td><td>8.11%</td></tr>
-                </tbody>
-              </table>
+          
             </div>
           </div>
         </details>
@@ -613,24 +558,7 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                 </ul>
               </div>
             </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>87.85%</td><td>79.25%</td><td>5.18%</td></tr>
-                  <tr><td>Credit Card</td><td>75.65%</td><td>89.57%</td><td>78.62%</td></tr>
-                  <tr><td>Google Pay</td><td>82.24%</td><td>83.21%</td><td>1.20%</td></tr>
-                  <tr><td>PayPal</td><td>82.64%</td><td>93.16%</td><td>20.49%</td></tr>
-                </tbody>
-              </table>
+ 
             </div>
           </div>
         </details>
@@ -666,25 +594,7 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                 </ul>
               </div>
             </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>84.21%</td><td>82.33%</td><td>6.37%</td></tr>
-                  <tr><td>Credit Card</td><td>72.73%</td><td>87.17%</td><td>51.84%</td></tr>
-                  <tr><td>Google Pay</td><td>75.19%</td><td>79.04%</td><td>2.09%</td></tr>
-                  <tr><td>PayPal</td><td>90.85%</td><td>96.39%</td><td>32.78%</td></tr>
-                  <tr><td>SEPA</td><td>99.32%</td><td>99.95%</td><td>60.60%</td></tr>
-                </tbody>
-              </table>
+
             </div>
           </div>
         </details>
