@@ -334,7 +334,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
       <div class="rc-callout-body">
         <strong>How to decide</strong>
-        <p>Stay with local acquiring if you already have gateway relationships and the market's tax and compliance load is manageable in-house. Move to a merchant of record when that overhead outweighs the value of owning the customer relationship directly &mdash; a common trade in markets with unfamiliar VAT/GST rules or licensing requirements.</p>
+        <p>Stay with local acquiring if you already have gateway relationships and the market's tax and compliance load is manageable in-house. Move to a merchant of record when that overhead outweighs the value of owning the customer relationship directly &mdash; a common trade in markets with unfamiliar VAT/GST rules or licensing requirements.<br><strong>IMPORTANT:</strong> Some regions require merchants to have a local payment acquirer.</p>
       </div>
     </div>
 
