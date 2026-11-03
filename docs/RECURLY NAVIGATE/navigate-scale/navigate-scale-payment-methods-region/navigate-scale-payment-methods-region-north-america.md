@@ -259,7 +259,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-map rc-fa-section"></i> Why it matters</h2>
-      <p>The US and Canada share a currency family but not a payment culture. Canadian credit card renewals succeed at 89.8% versus 89.5% for the US, but sign-up success on cards is weak in both markets — 52% in Canada, 43% in the US — which is exactly where digital wallets and PayPal close the gap.</p>
+      <p>The US and Canada both deal in dollars, but local payment preferences dictate some variation in checkout strategy. Canadian credit card renewals succeed at 89.8% versus 89.5% for the US, but sign-up success on cards is weak in both markets — 52% in Canada, 43% in the US — which is exactly where digital wallets and PayPal close the gap in both countries.</p>
 
       <div class="rc-feature-card">
         <div class="rc-feature-icon"><i class="fa-solid fa-flag-usa"></i></div>
