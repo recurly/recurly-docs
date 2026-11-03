@@ -269,25 +269,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <p>BECS converts at 97.22% sign-up and 99.23% renewal, but only 0.65% of merchants offer it. PayPal is offered by 34% of merchants and converts strongly. Foreign businesses exceeding AUD $75,000 in Australian revenue must register for GST.</p>
       </div>
 
-      <div class="rc-apac-table-wrap">
-        <table class="rc-apac-table">
-          <thead>
-            <tr>
-              <th>Payment Type</th>
-              <th>Sign-up %</th>
-              <th>Renewal %</th>
-              <th>% of Volume when Merchant is Offering Payment Type</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Apple Pay</td><td>87.33%</td><td>76.49%</td><td>6.60%</td></tr>
-            <tr><td>BECS</td><td>99.05%</td><td>99.09%</td><td>8.14%</td></tr>
-            <tr><td>Credit Card</td><td>82.95%</td><td>83.19%</td><td>85.52%</td></tr>
-            <tr><td>Google Pay</td><td>84.85%</td><td>68.93%</td><td>1.72%</td></tr>
-            <tr><td>PayPal</td><td>93.51%</td><td>93.73%</td><td>13.97%</td></tr>
-          </tbody>
-        </table>
-      </div>
 
       <div class="rc-feature-card">
         <div class="rc-feature-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
@@ -295,25 +276,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <p>UPI Auto Pay leads sign-up success at 87.13%, well above credit cards at 36.18%. Apple Pay also performs strongly (85.85%). Free trials and low entry-price tiers resonate strongly with Indian consumers.</p>
       </div>
 
-      <div class="rc-apac-table-wrap">
-        <table class="rc-apac-table">
-          <thead>
-            <tr>
-              <th>Payment Type</th>
-              <th>Sign-up %</th>
-              <th>Renewal %</th>
-              <th>% of Volume when Merchant is Offering Payment Type</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Apple Pay</td><td>81.20%</td><td>68.78%</td><td>0.40%</td></tr>
-            <tr><td>Credit Card</td><td>12.16%</td><td>50.14%</td><td>92.70%</td></tr>
-            <tr><td>Google Pay</td><td>46.56%</td><td>49.56%</td><td>1.17%</td></tr>
-            <tr><td>PayPal</td><td>25.21%</td><td>79.60%</td><td>4.40%</td></tr>
-            <tr><td>UPI AutoPay</td><td>85.94%</td><td>82.55%</td><td>91.38%</td></tr>
-          </tbody>
-        </table>
-      </div>
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
