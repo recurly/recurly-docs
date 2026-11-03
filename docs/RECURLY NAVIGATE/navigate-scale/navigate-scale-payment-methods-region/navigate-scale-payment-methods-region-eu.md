@@ -415,25 +415,7 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
                 </ul>
               </div>
             </div>
-            <h4>Payment Method Performance</h4>
-            <div class="rc-eu-table-wrap">
-              <table class="rc-eu-table">
-                <thead>
-                  <tr>
-                    <th>Payment Type</th>
-                    <th>Sign-up %</th>
-                    <th>Renewal %</th>
-                    <th>% of Volume when Merchant is Offering Payment Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Apple Pay</td><td>68.86%</td><td>80.95%</td><td>6.1%</td></tr>
-                  <tr><td>Credit Card</td><td>73.43%</td><td>87.76%</td><td>53.96%</td></tr>
-                  <tr><td>Google Pay</td><td>54.59%</td><td>81.91%</td><td>1.7%</td></tr>
-                  <tr><td>PayPal</td><td>92.28%</td><td>94.86%</td><td>29.21%</td></tr>
-                  <tr><td>SEPA</td><td>99.40%</td><td>99.90%</td><td>46.92%</td></tr>
-                </tbody>
-              </table>
+        
             </div>
           </div>
         </details>
