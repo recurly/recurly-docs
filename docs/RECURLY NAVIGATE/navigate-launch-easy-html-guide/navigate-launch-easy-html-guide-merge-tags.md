@@ -1,5 +1,5 @@
 ---
-title: 'Easy HTML guide: '
+title: 'Easy HTML guide: Merge tags'
 deprecated: false
 hidden: true
 metadata:
@@ -398,7 +398,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
 <div class="rc-announce-bar"><div class="rc-announce-inner"><i class="fa-regular fa-calendar-days rc-fa-announce"></i> <strong>Upcoming:</strong> Join our CSMs for a live session. <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now &rarr;</a></div></div>
 <div class="rc-hero">
 <div class="rc-lp-pillar-tag"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch &middot; Easy HTML guide</div>
-<div class="rc-lp-hero-title"><h1>Easy HTML guide: Merge tags</h1></div>
+<div class="rc-lp-hero-title"><h1>Merge tags</h1></div>
 <p>Insert subscriber data that Recurly fills in at send time.</p>
 </div>
 <details class="rc-sticky-nav-wrap" open>
@@ -421,6 +421,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
 <span class="rc-c-tag">&#123;&#123;subscription_next_payment_date&#125;&#125;</span> for <span class="rc-c-tag">&#123;&#123;&#123;subscription_total_amount&#125;&#125;&#125;</span>.</code></pre></div><p>Leave every tag exactly as written. You replace placeholder values, never merge tags.</p>
 </div><div class="rc-lp-section">
 <h2><i class="fa-solid fa-table-list rc-fa-section"></i> Tags you will use most</h2>
+
 <div class="rc-table-wrap"><table class="rc-ref-table"><thead><tr><th>Tag</th><th>What it inserts</th></tr></thead><tbody>
 <tr><td><code class="rc-ic">&#123;&#123;account_first_name&#125;&#125;</code></td><td>The account's first name</td></tr>
 <tr><td><code class="rc-ic">&#123;&#123;account_email&#125;&#125;</code></td><td>The account's email address</td></tr>
@@ -430,6 +431,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
 <tr><td><code class="rc-ic">&#123;&#123;invoice_number&#125;&#125;</code></td><td>The invoice number, with prefix</td></tr>
 <tr><td><code class="rc-ic">&#123;&#123;invoice_total&#125;&#125;</code></td><td>The invoice total</td></tr>
 <tr><td><code class="rc-ic">&#123;&#123;company_name&#125;&#125;</code></td><td>Your business entity's legal name</td></tr>
+
 </tbody></table></div><p>See the full list in <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Recurly Docs: Email templates</a>.</p><div class="rc-callout rc-callout-tip"><div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div><div class="rc-callout-body"><strong>Use three braces for currency</strong><p>Tags such as <code class="rc-ic">&#123;&#123;&#123;subscription_total_amount&#125;&#125;&#125;</code> need three braces so non-US currency symbols display correctly.</p></div></div><div class="rc-callout rc-callout-caution"><div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div><div class="rc-callout-body"><strong>Keep sensitive data out</strong><p>Never put card numbers or protected health information in a template.</p></div></div>
 </div>
 <div class="rc-lp-nav">
