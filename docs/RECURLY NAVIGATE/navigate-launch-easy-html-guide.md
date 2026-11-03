@@ -1,5 +1,5 @@
 ---
-title: 'Editing Page: Learning Path'
+title: Easy HTML guide
 deprecated: false
 hidden: true
 metadata:
@@ -272,7 +272,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch &middot; Easy HTML guide
       </div>
-      <div class="rc-lp-hero-title"><h1>Easy HTML guide: Overview</h1></div>
+      <div class="rc-lp-hero-title"><h1>Overview</h1></div>
       <p>Brand every Recurly email with HTML, even if you have never edited a template.</p>
     </div>
 
