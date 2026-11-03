@@ -11893,6 +11893,31 @@ components:
             - subscription
         discount:
           $ref: '#/components/schemas/CouponDiscount'
+        discount_application_mode:
+          title: Discount application mode
+          description: >
+            How the coupon's discount applies over the life of a redemption.
+
+            - "full_amount": The discount reapplies each billing period for each
+            subscription for as long as the redemption is active.
+
+            - "draw_down": The discount amount acts as a budget drawn down
+            against the redemption; with a time-limited duration the budget
+            refills each discount period.
+          default: full_amount
+          type: string
+          enum:
+            - full_amount
+            - draw_down
+        discount_periods:
+          type: integer
+          title: Discount periods
+          description: >-
+            Number of discount periods for draw-down application mode with a
+            time-limited duration. Required when discount_application_mode is
+            draw_down and the duration is temporal. Minimum 1, maximum 9999.
+          minimum: 1
+          maximum: 9999
         coupon_type:
           title: 'Coupon type (TODO: implement coupon generation)'
           description: >-
@@ -11990,6 +12015,32 @@ components:
               type: array
               items:
                 $ref: '#/components/schemas/CouponPricing'
+            discount_application_mode:
+              title: Discount application mode
+              description: >
+                How the coupon's discount applies over the life of a redemption.
+
+                - "full_amount": The discount reapplies each billing period for
+                each subscription for as long as the redemption is active.
+
+                - "draw_down": The discount amount acts as a budget drawn down
+                against the redemption; with a time-limited duration the budget
+                refills each discount period.
+              default: full_amount
+              type: string
+              enum:
+                - full_amount
+                - draw_down
+            discount_periods:
+              type: integer
+              title: Discount periods
+              description: >-
+                Number of discount periods for draw-down application mode with a
+                time-limited duration. Required when discount_application_mode
+                is draw_down and the duration is temporal. Minimum 1, maximum
+                9999. Immutable after creation.
+              minimum: 1
+              maximum: 9999
             applies_to_non_plan_charges:
               type: boolean
               title: Applied to all non-plan charges?
@@ -12349,6 +12400,23 @@ components:
             The date and time the redemption was removed from the account
             (un-redeemed).
           format: date-time
+        remaining_discount:
+          type: number
+          format: float
+          title: Remaining discount
+          description: >-
+            The remaining discount budget of a draw_down application mode
+            coupon, formatted with the currency. Null when the coupon does not
+            use the draw_down application mode or its budget resets each billing
+            period.
+        discount_period_ends_at:
+          type: string
+          title: Discount period ends at
+          description: >-
+            The end of the current discount period for a draw_down application
+            mode coupon with a time-limited duration. Null when the coupon does
+            not use the draw_down application mode with a time-limited duration.
+          format: date-time
     CouponRedemptionRemainingDuration:
       type: object
       properties:
@@ -12445,6 +12513,23 @@ components:
           title: Created at
           format: date-time
           readOnly: true
+        remaining_discount:
+          type: number
+          format: float
+          title: Remaining discount
+          description: >-
+            The remaining discount budget of a draw_down application mode
+            coupon, formatted with the currency. Null when the coupon does not
+            use the draw_down application mode or its budget resets each billing
+            period.
+        discount_period_ends_at:
+          type: string
+          title: Discount period ends at
+          description: >-
+            The end of the current discount period for a draw_down application
+            mode coupon with a time-limited duration. Null when the coupon does
+            not use the draw_down application mode with a time-limited duration.
+          format: date-time
     CouponUpdate:
       type: object
       properties:
@@ -13957,7 +14042,41 @@ components:
         gateway_code:
           type: string
           title: An identifier for a specific payment gateway.
+          description: >
+            Required unless `number` is supplied — a full PAN is not constrained
+            to a
+
+            specific gateway, so `gateway_code` is optional in that case.
+            Depending on
+
+            dunning campaign configuration, `gateway_code` may be required even
+            when
+
+            `number` is supplied, since the recovery transaction is attributed
+            to a
+
+            specific gateway.
           maxLength: 12
+        number:
+          type: string
+          title: Credit card number
+          description: >
+            Full card number (PAN). Spaces and dashes are accepted. When
+            supplied,
+
+            `month`, `year` and `network_transaction_id` are required, and
+
+            `payment_method` is not accepted.
+        month:
+          type: string
+          title: Expiration month
+          description: Required when `number` is supplied.
+          maxLength: 2
+        year:
+          type: string
+          title: Expiration year
+          description: Required when `number` is supplied.
+          maxLength: 4
         primary_payment_method:
           type: boolean
           title: Primary Payment Method
@@ -13980,7 +14099,8 @@ components:
           type: array
           description: >-
             Array of Payment Gateway References, each a reference to a
-            third-party gateway object of varying types.
+            third-party gateway object of varying types. Cannot be combined with
+            `number`.
           items:
             $ref: '#/components/schemas/PaymentGatewayReferences'
         payment_method:
@@ -13989,13 +14109,15 @@ components:
             Merchant-supplied fallback payment method metadata. Recurly's own
             gateway-token lookup is authoritative and will override any of these
             fields it can determine itself; these fields are only used to fill
-            gaps when that lookup is unavailable.
+            gaps when that lookup is unavailable. Not accepted when `number` is
+            supplied.
         network_transaction_id:
           type: string
           title: Network Transaction ID
           description: >
             Network transaction ID from the previous customer-in-session
-            subscription signup or billing info storage.
+            subscription signup or billing info storage. Required when `number`
+            is supplied.
 
 
             - 10-15 alphanumeric characters for Mastercard
@@ -14017,9 +14139,6 @@ components:
             attempts entirely -- in that case at least one entry is required.
           items:
             $ref: '#/components/schemas/RecoveryTransactionCreate'
-      required:
-        - gateway_code
-        - payment_gateway_references
     RecoveryPaymentMethodCreate:
       type: object
       title: Recovery payment method
@@ -15911,6 +16030,8 @@ components:
             - upi_vpa
             - stripe_customer
             - stripe_payment_method
+            - adyen_shopper_reference
+            - adyen_payment_method
     PlanCode:
       type: string
       title: Plan code
