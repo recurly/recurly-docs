@@ -157,7 +157,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-roadmap-cta p { font-size: .95rem; color: #32312D; line-height: 1.6; margin: 0; }
 
 /* Footer */
-.rc-footer { border-top: 1px solid #D1CFC4; margin-top: 48px; padding-top: 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.rc-footer { background: #0D0D0B; border-radius: 14px; padding: 36px 40px; margin-top: 48px; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; }
 .rc-footer-copy { font-size: .8rem; color: #807D75; margin: 0; }
 
@@ -202,6 +202,15 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   .rc-roadmap-cta { padding: 22px 20px; }
   .rc-play-btn { width: 64px; height: 64px; font-size: 1.3rem; }
 }
+
+/* Learn-more links and reordered sections */
+.rc-link-row { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+.rc-link-row a { font-size: .9rem; }
+.rc-section.rc-protect { margin-top: 48px; }
+.rc-footer-links { font-size: 14px; line-height: 2; text-align: center; }
+.rc-footer-links a { color: #FFFFFF !important; text-decoration: underline !important; padding: 0 12px; }
+.rc-footer-links a:hover { color: #FFD706 !important; }
+.rc-footer-sep { color: #807D75; }
 </style>
 
 <div class="rc-guide">
@@ -222,41 +231,21 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   <div class="rc-section rc-intro">
     <p>Navigate is our digital customer success program, designed to make sure all of our customers are maximizing value. This is your quarterly update on what's new for Subscriptions.</p>
     <p>Failed payments, chargebacks and paused subscriptions quietly cost you subscribers. This quarter's updates help you catch them sooner and recover more of them. Each feature below lists what it needs before you turn it on, including feature flags and plan limits.</p>
-    <p class="rc-section" style="margin-top:12px;font-size:.85rem;color:#807D75;"><em>These features are part of Recurly Subscription Management (RSM).</em></p>
+    <p style="margin-top:12px;font-size:.85rem;color:#807D75;"><em>These features are part of Recurly Subscription Management (RSM).</em></p>
   </div>
 
-  <!-- Churn and recovery features -->
+  <!-- Payments hub (available now, video) -->
   <div class="rc-section">
-    <h2><i class="fa-solid fa-shield-halved rc-fa-section"></i> Protect revenue</h2>
+    <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> Payments hub</h2>
     <div class="rc-card-grid">
-
       <div class="rc-feature-card rc-span-2">
-        <span class="rc-feature-tag">Feature flagged</span>
-        <h3>Justt.ai chargeback integration</h3>
-        <p>Automate chargeback dispute management with AI-powered recovery. Keep subscription actions in sync as disputes are resolved. When a dispute is lost, choose a refund, expire the subscription or handle it manually.</p>
-        <div class="rc-callout">
-          <i class="fa-solid fa-circle-info"></i>
-          <p><strong>Before you start:</strong> an active Justt.ai account, a supported gateway (Stripe, Braintree, PayPal Complete or Adyen) and a Recurly API key. Recurly Support enables the Justt.ai and Chargeback Management feature flags. Available on all plans, with one chargeback system and one Justt.ai configuration per site.</p>
-        </div>
-      </div>
-
-      <div class="rc-feature-card">
-        <i class="fa-solid fa-credit-card rc-fa-section"></i>
-        <h3>Payments hub</h3>
         <p>Six dashboards cover processing, recovery and fraud in one place: Overview, Payment processing, Account updater, 3DS, Payment retry recovery and Fraud prevention (Kount).</p>
         <p><strong>Access:</strong> available on all plans. Users need the Analytics user role.</p>
+        <div class="rc-link-row"><a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Learn more about Payments hub &rarr;</a></div>
       </div>
-
-      <div class="rc-feature-card">
-        <i class="fa-solid fa-calendar-check rc-fa-section"></i>
-        <h3>Paused subscription resume date API</h3>
-        <p>Retrieve scheduled resume dates for paused subscriptions to power personalized portals, lifecycle messages and connected workflows. Subscription data includes <code>resume_at</code>, <code>paused_at</code> and <code>remaining_pause_cycles</code>.</p>
-      </div>
-
     </div>
   </div>
 
-  <!-- Video feature -->
   <div class="rc-section">
     <h2><i class="fa-solid fa-circle-play rc-fa-section"></i> Watch: Payments hub</h2>
     <div class="rc-video-card">
@@ -271,6 +260,35 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
     </div>
   </div>
 
+  <!-- Justt.ai -->
+  <div class="rc-section rc-protect">
+    <h2><i class="fa-solid fa-shield-halved rc-fa-section"></i> Protect revenue</h2>
+    <div class="rc-card-grid">
+      <div class="rc-feature-card rc-span-2">
+        <span class="rc-feature-tag">Feature flagged</span>
+        <h3>Justt.ai chargeback integration</h3>
+        <p>Automate chargeback dispute management with AI-powered recovery. Keep subscription actions in sync as disputes are resolved. When a dispute is lost, choose a refund, expire the subscription or handle it manually.</p>
+        <div class="rc-link-row"><a href="https://docs.recurly.com/recurly-subscriptions/docs/justtai" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Learn more about Justt.ai &rarr;</a></div>
+        <div class="rc-callout">
+          <i class="fa-solid fa-circle-info"></i>
+          <p><strong>Before you start:</strong> an active Justt.ai account, a supported gateway (Stripe, Braintree, PayPal Complete or Adyen) and a Recurly API key. Recurly Support enables the Justt.ai and Chargeback Management feature flags. Available on all plans, with one chargeback system and one Justt.ai configuration per site.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paused subscriptions -->
+  <div class="rc-section">
+    <h2><i class="fa-solid fa-calendar-check rc-fa-section"></i> Paused subscriptions</h2>
+    <div class="rc-card-grid">
+      <div class="rc-feature-card rc-span-2">
+        <h3>Paused subscription resume date API</h3>
+        <p>Retrieve scheduled resume dates for paused subscriptions to power personalized portals, lifecycle messages and connected workflows. Subscription data includes <code>resume_at</code>, <code>paused_at</code> and <code>remaining_pause_cycles</code>.</p>
+        <div class="rc-link-row"><a href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Learn more about paused subscription notifications &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Coupons -->
   <div class="rc-section">
     <h2><i class="fa-solid fa-tag rc-fa-section"></i> Coupons</h2>
@@ -279,7 +297,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
         <h3>Coupon enhancements and bulk unique coupons</h3>
         <p>Build promotions with billing-period coupons for an exact number of cycles, rolling expiration dates and multiple coupons per account. Billing-period coupons apply at the subscription level only.</p>
         <p>Generate single-use codes on demand with bulk unique coupons, then set redeem-by windows for each code.</p>
-        <p><a href="https://docs.recurly.com/recurly-subscriptions/docs/bulk-unique-coupons" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Learn more about bulk unique coupons &rarr;</a></p>
+        <div class="rc-link-row">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/bulk-unique-coupons" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Learn more about bulk unique coupons &rarr;</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/coupons#billing-period-coupons" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Learn more about billing-period coupons &rarr;</a>
+          <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/generate_unique_coupon_codes_sync" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Generate unique codes on demand with the API &rarr;</a>
+        </div>
       </div>
     </div>
   </div>
@@ -288,9 +310,12 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   <div class="rc-section">
     <h2><i class="fa-solid fa-plus rc-fa-section"></i> More for Subscriptions</h2>
     <ul class="rc-more-list">
-      <li><strong>Custom fields on invoices.</strong> Display custom account, subscription, plan and line-item data on invoices. Text only, up to 255 characters. Limits by plan: Pro up to 5, Elite up to 10, Sandbox and Developer up to 5. Starter isn't supported. Requires the Configuration permission.</li>
-      <li><strong>Tax-inclusive invoice display.</strong> Show customers a cleaner all-in invoice price while keeping tax accurate. Off by default and requires native tax, Avalara or Vertex. Once tax-inclusive pricing is enabled on a site, it can't be reversed.</li>
-      <li><strong>Data retention settings.</strong> Set retention windows from 1 to 10 years for payment method and PII data on inactive accounts. Requires the data retention feature flag from Recurly Support and the site admin permission.</li>
+      <li><strong>Custom fields on invoices.</strong> Display custom account, subscription, plan and line-item data on invoices. Text only, up to 255 characters. Limits by plan: Pro up to 5, Elite up to 10, Sandbox and Developer up to 5. Starter isn't supported. Requires the Configuration permission.
+        <div class="rc-link-row"><a href="https://docs.recurly.com/recurly-subscriptions/docs/custom-fields" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Learn more about custom fields &rarr;</a></div></li>
+      <li><strong>Tax-inclusive invoice display.</strong> Show customers a cleaner all-in invoice price while keeping tax accurate. Off by default and requires native tax, Avalara or Vertex. Once tax-inclusive pricing is enabled on a site, it can't be reversed.
+        <div class="rc-link-row"><a href="https://docs.recurly.com/recurly-subscriptions/docs/tax-inclusive-pricing#invoicing" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Learn more about tax-inclusive pricing &rarr;</a></div></li>
+      <li><strong>Data retention settings.</strong> Set retention windows from 1 to 10 years for payment method and PII data on inactive accounts. Requires the data retention feature flag from Recurly Support and the site admin permission.
+        <div class="rc-link-row"><a href="https://docs.recurly.com/recurly-subscriptions/docs/data-retention" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Learn more about data retention &rarr;</a></div></li>
       <li><strong>Granular user permissions.</strong> Give admins more precise control over user access with page- and resource-level permissions across Recurly Admin. <span class="rc-feature-tag rc-soon">Coming soon</span></li>
     </ul>
   </div>
@@ -310,15 +335,15 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
     <p>See where Subscriptions and the rest of the Recurly platform are headed, and what's next for your team.</p>
   </div>
 
-  <!-- Footer -->
+  <!-- Footer: links only -->
   <div class="rc-footer">
-    <div class="rc-footer-utility">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
-        <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
-      </a>
-      <a href="mailto:support@recurly.com" class="rc-footer-link"><i class="fa-solid fa-headset"></i> Contact Support</a>
+    <div class="rc-footer-links">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home">Navigate home</a>
+      <span class="rc-footer-sep">|</span>
+      <a href="https://recurly.com" target="_blank" rel="noopener noreferrer">Recurly home</a>
+      <span class="rc-footer-sep">|</span>
+      <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer">Office hours</a>
     </div>
-    <p class="rc-footer-copy">&copy; 2026 Recurly, Inc.</p>
   </div>
 
 </div>
