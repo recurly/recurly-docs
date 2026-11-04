@@ -110,3 +110,5 @@ metadata:
 ![](https://files.readme.io/d52011f25790f354c206f7e664769444d150bdad0c02a5d18a96aed8e6eafcdf-2026_LDBC_Evergreen_CRM_Dunning_CTA.jpg)
 
 ![](https://files.readme.io/d2c078ccfd66da964cbe69f443a51f0c22a7afddfab3acd1c3917f61a7fe4f23-Subscriptions_Icon.png)
+
+![](https://files.readme.io/677001cf51ba986f194ab19a302371a85cfc5deefdfa9d27a6311993b2e13737-logo-clean-whitebg.png)
