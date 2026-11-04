@@ -116,3 +116,5 @@ metadata:
 ![](https://files.readme.io/1569a4e331c7d104de93bf63ae26fb97348fed4b06bd7d0d619bc1b9d8aceeed-Payments_hub_thumbnail.png)
 
 ![](https://files.readme.io/c1dc8655e1737db3216a5ad60f282be912cc36c4aae646343943947cb8acc5a6-logo-clean-blackbg.png)
+
+![](https://files.readme.io/ba0927ba6f5c128a41113675ce9716cccea6e4ef896500615e1e323adeeab827-Square_site_icon_380_x_420_px.png)
