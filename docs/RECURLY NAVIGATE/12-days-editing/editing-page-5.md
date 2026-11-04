@@ -223,7 +223,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
     <div class="rc-home-title-block">
       <div class="rc-hero-tag"><i class="fa-solid fa-repeat"></i> Subscriptions · Q3 2026</div>
       <h1>Quarter connect</h1>
-      <p>2026 | July, August, September. What's new for Subscriptions, and how to put it to work.</p>
+      <p>What's new for Subscriptions, and how to put it to work.</p>
     </div>
   </div>
 
