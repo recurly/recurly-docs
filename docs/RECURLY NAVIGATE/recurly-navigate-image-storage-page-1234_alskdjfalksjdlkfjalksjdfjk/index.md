@@ -112,3 +112,5 @@ metadata:
 ![](https://files.readme.io/d2c078ccfd66da964cbe69f443a51f0c22a7afddfab3acd1c3917f61a7fe4f23-Subscriptions_Icon.png)
 
 ![](https://files.readme.io/677001cf51ba986f194ab19a302371a85cfc5deefdfa9d27a6311993b2e13737-logo-clean-whitebg.png)
+
+![](https://files.readme.io/1569a4e331c7d104de93bf63ae26fb97348fed4b06bd7d0d619bc1b9d8aceeed-Payments_hub_thumbnail.png)
