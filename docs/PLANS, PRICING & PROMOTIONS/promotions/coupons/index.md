@@ -249,7 +249,7 @@ Free trial coupons let you offer a custom trial length that differs from your pl
       <td>The discount applies indefinitely for as long as the subscription is active.</td>
     </tr>
     <tr>
-      <td>Draw-done</td>
+      <td>Draw-down</td>
       <td>The discount applies to one invoice only.</td>
     </tr>
       </tbody>
