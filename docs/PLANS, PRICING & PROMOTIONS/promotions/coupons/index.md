@@ -104,6 +104,10 @@ Before building a coupon, here's what each field in the creation form does.
       <td>Supports alphanumeric characters, dashes (-), underscores (_), and plus signs (+). A code can be reused only after the previous coupon using it has expired or reached its redemption limit.</td>
     </tr>
     <tr>
+      <td>Application Mode</td>
+      <td>Full amount or Draw-down</td>
+    </tr>
+    <tr>
       <td>Type of discount</td>
       <td>Fixed amount, percentage, or free trial. Fixed amount coupons support multi-currency — specify a different amount for each currency you accept.</td>
     </tr>
