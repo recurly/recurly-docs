@@ -1,9 +1,8 @@
 ---
 title: Unprocessed notifications - external - export
 excerpt: >-
-  Learn how the User export lets administrators download a full report of every
-  site user with access to their Recurly site, including permissions, roles, and
-  creation dates.  #
+  Use this export to find external subscriptions that need attention so future
+  notifications for them can be processed.
 deprecated: false
 hidden: true
 metadata:
