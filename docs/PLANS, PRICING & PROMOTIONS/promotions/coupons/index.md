@@ -238,9 +238,24 @@ Free trial coupons let you offer a custom trial length that differs from your pl
 
 # Application Mode
 
-**Full amount -&#x20;**
+<table class="rp-pm-table">
+  <tbody>
+    <tr class="rp-thead-row">
+      <td>Mode</td>
+      <td>Behavior</td>
+    </tr>
+    <tr>
+      <td>Full amount</td>
+      <td>The discount applies indefinitely for as long as the subscription is active.</td>
+    </tr>
+    <tr>
+      <td>Draw-done</td>
+      <td>The discount applies to one invoice only.</td>
+    </tr>
+      </tbody>
+</table>
 
-**Draw-down -&#x20;**
+**&#x20;**
 
 # Discount duration
 
