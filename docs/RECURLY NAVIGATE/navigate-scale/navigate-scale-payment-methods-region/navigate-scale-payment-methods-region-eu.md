@@ -600,7 +600,7 @@ details.rc-accordion-item[open] .rc-accordion-chevron {
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-      0 <div class="rc-callout-body">
+      <div class="rc-callout-body">
           <strong>Co-badged card compliance is an EU-wide requirement</strong>
           <p>Under EU IFR Regulation 2015/751, when a customer's card carries two brands (e.g. a local scheme plus Visa or Mastercard) and your checkout supports both, the customer must be able to choose which brand to pay with.</p>
         </div>
