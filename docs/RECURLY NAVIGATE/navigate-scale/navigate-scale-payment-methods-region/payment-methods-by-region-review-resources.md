@@ -171,7 +171,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-North-America" class="rc-sticky-link"><span class="rc-step-badge">2</span> North America</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-EU" class="rc-sticky-link"><span class="rc-step-badge">3</span> EU</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-APAC" class="rc-sticky-link"><span class="rc-step-badge">4</span> APAC</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-sticky-link"><span class="rc-step-badge">5</span> LATAM</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-LATAM" class="rc-sticky-link"><span class="rc-step-badge">5</span> Brazil</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payment-methods-region-review" class="rc-sticky-link rc-sticky-link-active">
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Review &amp; resources
         </a>
