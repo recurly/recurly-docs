@@ -1,6 +1,0 @@
----
-api:
-  file: v2021-02-25.yaml
-  operationId: get_subscription_coupon_redemption
-hidden: false
----
