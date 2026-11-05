@@ -121,7 +121,7 @@ To help you identify and organize information effectively, the export provides a
 
 # Version changelog
 
-#### Version 7 - 11/03/2026
+#### Version 7 - 11/05/2026
 
 - Column added for test
 - Column added for imported
