@@ -1,8 +1,8 @@
 ---
-title: Email language support (30)
+title: Email language support (31)
 excerpt: >-
   Learn how to configure Recurly's email language support to send customer
-  communications in 30 locales, set default languages, and customize email
+  communications in 31 locales, set default languages, and customize email
   templates by region.
 deprecated: false
 hidden: false
@@ -14,7 +14,7 @@ next:
   description: ''
 ---
 <div class="rp-page">
-  <div class="rp-overview">Recurly supports email communications in 30 locales, letting you reach subscribers in the language they know best. Configure a site-wide default language, set individual customer language preferences, and customize email templates by region — including PDF invoice attachments that automatically match the email language.</div>
+  <div class="rp-overview">Recurly supports email communications in 31 locales, letting you reach subscribers in the language they know best. Configure a site-wide default language, set individual customer language preferences, and customize email templates by region — including PDF invoice attachments that automatically match the email language.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
@@ -62,7 +62,7 @@ next:
 
 ## Supported languages and locales
 
-Recurly supports 30 locales. Each locale defines both the language and regional formatting conventions — for example, `en-US` uses `mm/dd/yyyy` for dates while `en-GB` uses `dd/mm/yyyy`.
+Recurly supports 31 locales. Each locale defines both the language and regional formatting conventions — for example, `en-US` uses `mm/dd/yyyy` for dates while `en-GB` uses `dd/mm/yyyy`.
 
 <table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Language</td><td>API value</td></tr>
