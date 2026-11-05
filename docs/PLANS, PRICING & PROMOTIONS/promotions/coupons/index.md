@@ -105,7 +105,7 @@ Before building a coupon, here's what each field in the creation form does.
     </tr>
     <tr>
       <td>Application Mode</td>
-      <td>Full amount or Draw-down</td>
+      <td>Full amount reapplies the discount each billing period to every subscription on an account. Draw-down applies one budgeted discount across all of the account’s subscriptions.</td>
     </tr>
     <tr>
       <td>Type of discount</td>
