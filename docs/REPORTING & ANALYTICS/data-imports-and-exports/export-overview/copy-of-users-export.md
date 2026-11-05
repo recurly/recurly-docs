@@ -1,5 +1,5 @@
 ---
-title: Copy of Users - export
+title: Unprocessed notifications - external - export
 excerpt: >-
   Learn how the User export lets administrators download a full report of every
   site user with access to their Recurly site, including permissions, roles, and
@@ -7,28 +7,34 @@ excerpt: >-
 deprecated: false
 hidden: true
 metadata:
+  title: Unprocessed notifications - external - export
   robots: index
 ---
 # Overview
 
-The User export lets administrators download a comprehensive report of every user with access to their Recurly site. The report includes each user's name, email address, access permissions, creation date, and assigned role — everything you need to audit and manage your team's access in one place.
-
 ### Required plan
 
-This feature is available to all merchants on an Elite Recurly plan with an Admin and Integrations role, or a role that includes Admin and Integrations permissions. To enable this feature on your Elite site, create a support request or contact your CSM. This export is also available as an optional add-on for customers on Recurly's Starter and Professional plans — reach out to Support or your CSM for more information.
+This feature or setting is available to all customers on any Recurly subscription plan.
 
 ### Prerequisites and limitations
 
-The User export only includes users who had and continue to have access during the selected date range. Deleted users are excluded from the report.
+You must have enabled connections to app stores to view this export. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) to have this feature activated in your account.
+
+# Definition
+
+The Unprocessed notifications export lists App Management external subscriptions with notifications from Apple and Google that Recurly was unable to process. Use it to find subscriptions that need attention so future notifications for them can be processed.
+
+- Notifications end up in this export when the subscriber purchased before a customer unique identifier was added to their app store purchase.
 
 ## Filters
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/324cd97bdefde1113752271d8329fedfee486dbdef5b62c9818068a4671665d7-image.png" className="border" />
+
+<Image src="https://files.readme.io/369c7a78d70f9e1b72fa84ba4cffad6ab484d84dbcb2977bf513a08513cc0751-image.png" align="center" width="70%" border={true} />
 
 Use these filters to narrow down the users displayed in your export:
 
 * **Versions**: Select the export version that best fits your needs. Versions are based on the changelog at the bottom of this page
-* **Export on**: Defaults to the creation date and time of each user
+* **Origin**: Defaults to All but Apple App Store or Google Play Store can be selected as well
 * **Time range**: Defaults to yesterday, capturing all users created on that day in your site's default time zone
 
 # Exports table
@@ -73,17 +79,12 @@ Use these filters to narrow down the users displayed in your export:
 </html>
 `}</HTMLBlock>
 
-| Id                                        | Example                                               | Description                                                                | Data type |
-| :---------------------------------------- | :---------------------------------------------------- | :------------------------------------------------------------------------- | :-------- |
-| <span id="email">email</span>             | [john_doe@recurly.com](mailto:john_doe@recurly.com)   | The email address of the user.                                             | string    |
-| <span id="first_name">first_name</span>   | John                                                  | The first name of the user.                                                | string    |
-| <span id="last_name">last_name</span>     | Doe                                                   | The last name of the user.                                                 | string    |
-| <span id="user_access">user_access</span> | customers,analytics,configurations,integrations,admin | A comma-delimited list of permissions assigned to the user.                | string    |
-| <span id="date_added">date_added</span>   | 2026-01-01 10:00:00 PST                               | The timestamp when the user accepted their invitation to the Recurly site. | timestamp |
-| <span id="user_role">user_role</span>     | Site Admin                                            | The role assigned to the user.                                             | string    |
+| Id                                      | Example                            | Description                                                                                                          | Data type |
+| :-------------------------------------- | :--------------------------------- | :------------------------------------------------------------------------------------------------------------------- | :-------- |
+| <span id="store_id">store_id</span>     | 9256vAC430                         | The external store identifier (e.g. Apple or Google subscriber ID)<br />associated with the unprocessed notification | string    |
+| <span id="origin">origin</span>         | Apple App Store, Google Play Store | The origin platform of the notification                                                                              | string    |
+| <span id="created_on">created_on</span> | 2026-11-13 10:00:00 PST            | The most recent timestamp at which this external subscription was  unprocessed                                       | timestamp |
 
 # Version changelog
 
-### Version 2
-
-* Addition of `user_role` column
+###
