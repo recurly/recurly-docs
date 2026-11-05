@@ -1,5 +1,5 @@
 ---
-title: 'Payment methods by region: Brazil'
+title: 'Payment methods by region: LATAM'
 excerpt: >-
   Configure local LATAM payment methods in Recurly—including Pix Automático,
   Mercado Pago, and BRL installment pricing—to boost Brazilian subscription
@@ -227,7 +227,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Payment methods by region
       </div>
-      <div class="rc-lp-hero-title"><h1>Brazil</h1></div>
+      <div class="rc-lp-hero-title"><h1>LATAM</h1></div>
       <p>Why Brazil's payment mix, led by Pix Automático, looks nothing like the rest of the world.</p>
     </div>
 
