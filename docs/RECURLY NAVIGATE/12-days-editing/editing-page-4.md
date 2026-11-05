@@ -1,5 +1,5 @@
 ---
-title: Editing page 4
+title: 'Editing page 4: Newsletter ideas'
 deprecated: false
 hidden: true
 metadata:
