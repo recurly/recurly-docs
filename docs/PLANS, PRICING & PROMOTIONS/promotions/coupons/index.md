@@ -236,6 +236,10 @@ To target only a setup fee: create a single-use coupon with a fixed amount equal
 
 Free trial coupons let you offer a custom trial length that differs from your plan's standard trial period. The trial starts on the day the subscription is created. Because free trial coupons don't provide a monetary discount, they don't appear on any invoices.
 
+# Application Mode
+
+sample text
+
 # Discount duration
 
 <table class="rp-pm-table">
