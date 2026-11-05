@@ -1,5 +1,5 @@
 ---
-title: Editing page 5
+title: 'Editing page 5: Quarter Connect Page'
 deprecated: false
 hidden: true
 metadata:
