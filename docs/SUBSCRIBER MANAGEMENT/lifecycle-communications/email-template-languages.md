@@ -67,6 +67,7 @@ Recurly supports 30 locales. Each locale defines both the language and regional 
 <table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Language</td><td>API value</td></tr>
   <tr><td>Chinese (China)</td><td><code>zh-CN</code></td></tr>
+  <tr><td>Chinese (Taiwan)</td><td><code>zh-TW</code></td></tr>
   <tr><td>Danish (Denmark)</td><td><code>da-DK</code></td></tr>
   <tr><td>Dutch (Belgium)</td><td><code>nl-BE</code></td></tr>
   <tr><td>Dutch (Netherlands)</td><td><code>nl-NL</code></td></tr>
@@ -146,5 +147,3 @@ When an email includes an attached PDF invoice, the invoice is generated in the 
     <div><h4>Review and maintain translations</h4><p>Periodically review your language-specific email templates to ensure content stays accurate and region-appropriate. Check how Recurly formats locale-specific parameters — such as currency and date formats — to avoid miscommunication.</p></div>
   </div>
 </div>
-
-<br />
