@@ -238,7 +238,9 @@ Free trial coupons let you offer a custom trial length that differs from your pl
 
 # Application Mode
 
-sample text
+**Full amount -&#x20;**
+
+**Draw-down -&#x20;**
 
 # Discount duration
 
