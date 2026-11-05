@@ -1,0 +1,6 @@
+- create_external_subscription
+- list_external_subscriptions
+- get_external_subscription
+- put_external_subscription
+- list_external_subscription_external_invoices
+- list_external_subscription_external_payment_phases

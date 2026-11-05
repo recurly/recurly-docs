@@ -1,0 +1,5 @@
+- list_shipping_methods
+- create_shipping_method
+- get_shipping_method
+- update_shipping_method
+- deactivate_shipping_method

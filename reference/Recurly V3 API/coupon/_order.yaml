@@ -1,0 +1,6 @@
+- list_coupons
+- create_coupon
+- get_coupon
+- update_coupon
+- deactivate_coupon
+- restore_coupon

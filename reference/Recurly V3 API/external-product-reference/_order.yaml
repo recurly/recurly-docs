@@ -1,0 +1,4 @@
+- list_external_product_external_product_references
+- create_external_product_external_product_reference
+- get_external_product_external_product_reference
+- deactivate_external_product_external_product_reference
