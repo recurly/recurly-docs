@@ -89,7 +89,7 @@ Utilize this feature to visualize charge and credit adjustments initiated in a s
 
 To help you identify and organize information effectively, the export provides a structured table that contains the following columns:
 
-<Table align={["left","left","left","left"]}>
+<Table align={[null,null,null,"left"]}>
   <thead>
     <tr>
       <th>
