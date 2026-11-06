@@ -92,15 +92,15 @@ To help you identify and organize information effectively, the export provides a
 <Table align={[null,null,null,"left"]}>
   <thead>
     <tr>
-      <th>
+       <th style={{ width: "45.1%" }}>
         Column Name
       </th>
 
-      <th>
+      <th style={{ width: "31.9%" }}>
         Example
       </th>
 
-      <th>
+      <th style={{ width: "27.2%" }}>
         Description
       </th>
 
