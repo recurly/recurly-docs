@@ -15,6 +15,24 @@ next:
     more about how to manage the subscription changes after the initial
     purchase.
 ---
+<HTMLBlock>{`
+<style>
+.rdmd-table:has(thead) table { table-layout: fixed !important; width: 100% !important; }
+.rdmd-table thead th:nth-child(1) { width: 36% !important; }
+.rdmd-table thead th:nth-child(2) { width: 27% !important; }
+.rdmd-table thead tr th,
+.rdmd-table tbody tr td {
+  padding: 10px 14px !important;
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+  vertical-align: top !important;
+}
+.rdmd-table th:nth-child(2) { text-align: left !important; }
+.rdmd-table td code { white-space: normal !important; overflow-wrap: anywhere !important; }
+.rdmd-table td:first-child code { font-size: 12.5px !important; }
+</style>
+`}</HTMLBlock>
+
 # Overview
 
 This guide is intended to walk you through the process of creating **future dated subscriptions** using a “reusable gateway token” or a reference to payment details from one of our supported gateway partners and an external NTID.
