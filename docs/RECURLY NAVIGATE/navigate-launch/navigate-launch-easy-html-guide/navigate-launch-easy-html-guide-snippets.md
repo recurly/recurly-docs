@@ -412,10 +412,12 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
 <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-easy-html-guide-testing" class="rc-sticky-link"><span class="rc-step-badge">4</span> Testing &amp; previewing</a>
 <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-easy-html-guide-snippets" class="rc-sticky-link rc-sticky-link-active"><img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Common snippets</a>
 <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-easy-html-guide-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+
 </div></div></div>
 </details>
 <div class="rc-lp-section">
 <h2><i class="fa-solid fa-scissors rc-fa-section"></i> Copy, replace, test</h2>
+
 <p>Paste each snippet where noted, replace the yellow values, and send a test.</p><div class="rc-steps">
 <div class="rc-step"><div class="rc-step-num">1</div><div class="rc-step-content"><h4>Add your logo</h4><p>Paste into your email header. Use a public URL for the image.</p><div class="rc-code-block"><div class="rc-code-head"><span class="rc-code-label">Email header: logo</span><span class="rc-code-legend"><span class="rc-lg-ph">Yellow</span> = replace &nbsp;&middot;&nbsp; <span class="rc-lg-tag">Blue</span> = leave as-is</span></div><pre class="rc-code-pre"><code>&lt;div style=&quot;border-bottom:1px solid #E8E8E8; margin:0px 14px;&quot;&gt;
   &lt;img src=&quot;<span class="rc-c-ph">LOGO_IMAGE_URL</span>&quot; width=&quot;<span class="rc-c-ph">LOGO_WIDTH</span>&quot; alt=&quot;<span class="rc-c-ph">COMPANY_NAME</span>&quot; style=&quot;padding:0px 0px 6px 0px;&quot; /&gt;
@@ -430,12 +432,20 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
     &lt;p&gt;<span class="rc-c-ph">ENTITY_NAME_1</span>, <span class="rc-c-ph">ADDRESS_LINE_1</span>&lt;/p&gt;
   &lt;/em&gt;
 &lt;/div&gt;</code></pre></div><div class="rc-callout rc-callout-warning"><div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div><div class="rc-callout-body"><strong>Check the year tag</strong><p><code class="rc-ic">&#123;&#123;current_year&#125;&#125;</code> comes from the CSM template guide and is not in the Docs parameter list. If it shows blank in Preview, type the year instead.</p></div></div></div></div>
-<div class="rc-step"><div class="rc-step-num">3</div><div class="rc-step-content"><h4>Show a message only when it applies</h4><p>Use <code class="rc-ic">&#123;&#123;#tag?&#125;&#125;</code> to show a block when a condition is true and <code class="rc-ic">&#123;&#123;^tag?&#125;&#125;</code> when it is false. Both blocks need a matching closing tag.</p><div class="rc-code-block"><div class="rc-code-head"><span class="rc-code-label">Email body: conditional message</span></div><pre class="rc-code-pre"><code><span class="rc-c-tag">&#123;&#123;#subscription_has_trial?&#125;&#125;</span>
-  Your trial ends on <span class="rc-c-tag">&#123;&#123;subscription_trial_ends_at&#125;&#125;</span>.
+<div class="rc-step"><div class="rc-step-num">3</div><div class="rc-step-content"><h4>Show a message only when it applies</h4><p>Booleans are true-or-false statements. Recurly shows one block when the statement is true and another when it is false, so a renewal reminder can change if the subscription has a trial, a coupon, or a pending change. Use <code class="rc-ic">&#123;&#123;#tag?&#125;&#125;</code> for true and <code class="rc-ic">&#123;&#123;^tag?&#125;&#125;</code> for false, and close each block with its matching tag. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates#using-boolean-sections-for-custom-messages" target="_blank" rel="noopener noreferrer" class="rc-inline-link rp-anchor">Boolean sections in Recurly Docs</a>.</p><div class="rc-code-block"><div class="rc-code-head"><span class="rc-code-label">Example: trial or no trial</span></div><pre class="rc-code-pre"><code><span class="rc-c-tag">&#123;&#123;#subscription_has_trial?&#125;&#125;</span>
+  Your account will be billed <span class="rc-c-tag">&#123;&#123;&#123;subscription_total_amount&#125;&#125;&#125;</span> in 10 days.
 <span class="rc-c-tag">&#123;&#123;/subscription_has_trial?&#125;&#125;</span>
+
 <span class="rc-c-tag">&#123;&#123;^subscription_has_trial?&#125;&#125;</span>
-  Your next payment is <span class="rc-c-tag">&#123;&#123;&#123;subscription_total_amount&#125;&#125;&#125;</span> on <span class="rc-c-tag">&#123;&#123;subscription_next_payment_date&#125;&#125;</span>.
-<span class="rc-c-tag">&#123;&#123;/subscription_has_trial?&#125;&#125;</span></code></pre></div></div></div>
+  Your mandate ID is: <span class="rc-c-tag">&#123;&#123;direct_debit_mandate_id&#125;&#125;</span>.
+<span class="rc-c-tag">&#123;&#123;/subscription_has_trial?&#125;&#125;</span></code></pre></div><div class="rc-code-block"><div class="rc-code-head"><span class="rc-code-label">Example: renewal reminder with a pending change</span></div><pre class="rc-code-pre"><code><span class="rc-c-tag">&#123;&#123;#change_at_renewal?&#125;&#125;</span>
+  Your subscription is changing. At renewal you will be billed - <span class="rc-c-tag">&#123;&#123;&#123;change_subscription_unit_amount&#125;&#125;&#125;</span>
+<span class="rc-c-tag">&#123;&#123;/change_at_renewal?&#125;&#125;</span>
+
+<span class="rc-c-tag">&#123;&#123;^change_at_renewal?&#125;&#125;</span>
+  Your subscription is due to renew. You will renew to the same plan/price - <span class="rc-c-tag">&#123;&#123;&#123;subscription_total_amount&#125;&#125;&#125;</span>
+<span class="rc-c-tag">&#123;&#123;/change_at_renewal?&#125;&#125;</span></code></pre></div></div></div>
+
 <div class="rc-step"><div class="rc-step-num">4</div><div class="rc-step-content"><h4>Add social links</h4><p>Paste above the legal block in your footer. Delete any network you do not use.</p><div class="rc-code-block"><div class="rc-code-head"><span class="rc-code-label">Email footer: social links</span></div><pre class="rc-code-pre"><code>&lt;p&gt;
   &lt;a href=&quot;<span class="rc-c-ph">FACEBOOK_URL</span>&quot;&gt;Facebook&lt;/a&gt; &amp;nbsp;|&amp;nbsp;
   &lt;a href=&quot;<span class="rc-c-ph">LINKEDIN_URL</span>&quot;&gt;LinkedIn&lt;/a&gt; &amp;nbsp;|&amp;nbsp;
@@ -452,6 +462,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
 <div class="rc-resources"><h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3><div class="rc-resource-links">
 <a href="https://docs.google.com/document/d/1gE2fRLSSm1gjcR5d5NuUFYHTxZYl4AWHgRPghOC52uQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Email HTML template guide</a>
 <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Email templates</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates#using-boolean-sections-for-custom-messages" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-code-branch"></i> Recurly Docs: Boolean sections</a>
 <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
 </div></div>
 <div class="rc-footer-nav"><div class="rc-footer-links">
