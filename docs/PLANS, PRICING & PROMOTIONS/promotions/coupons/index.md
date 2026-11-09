@@ -246,11 +246,11 @@ Free trial coupons let you offer a custom trial length that differs from your pl
     </tr>
     <tr>
       <td>Full amount</td>
-      <td>The discount applies indefinitely for as long as the subscription is active.</td>
+      <td>Reapplies the discount to each subscription on the account every billing period, for as long as the coupon is active. For example, say an account has two subscriptions and a $20 coupon set to expire after three billing periods. Each subscription receives up to $20 off each billing period, or up to $40 per period across both. Over the three billing periods, the subscriber saves up to $120 in total.</td>
     </tr>
     <tr>
       <td>Draw-down</td>
-      <td>The discount applies to one invoice only.</td>
+      <td>Grants a budget equal to the discount amount, which draws down across subscriptions as it’s used. For time-limited coupons, the budget refills each billing period. When the coupon’s billing periods run out, it expires. No-expiry coupons expire as soon as the budget reaches zero. For the same account with two subscriptions, the subscriber sees a maximum discount of $20 per billing period and a total discount of $60 across three billing periods.</td>
     </tr>
       </tbody>
 </table>
