@@ -459,6 +459,8 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
 </div></div>
 <div class="rc-resources"><h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3><div class="rc-resource-links">
 <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Email templates</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates#parameters" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-tags"></i> Recurly Docs: Email parameters</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates#using-boolean-sections-for-custom-messages" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-code-branch"></i> Recurly Docs: Boolean sections</a>
 <a href="https://docs.google.com/document/d/1gE2fRLSSm1gjcR5d5NuUFYHTxZYl4AWHgRPghOC52uQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Email HTML template guide</a>
 <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-branding" class="rc-resource-link"><i class="fa-solid fa-palette"></i> Dunning 101: Email branding</a>
 <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-email-configuration" class="rc-resource-link"><i class="fa-solid fa-gear"></i> Dunning 101: Email configuration</a>
