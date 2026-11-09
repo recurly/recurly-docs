@@ -1,5 +1,5 @@
 ---
-title: Email language support (31)
+title: Email language support
 excerpt: >-
   Learn how to configure Recurly's email language support to send customer
   communications in 31 locales, set default languages, and customize email
