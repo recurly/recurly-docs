@@ -1,8 +1,27 @@
 ---
 title: 'Easy HTML guide: Styling & layout'
+excerpt: >-
+  Learn how to style your Recurly email templates with brand colors, responsive
+  layouts, and custom fonts. Discover how to configure safe fallback fonts for
+  Gmail and Outlook, and customize button CSS for perfectly branded
+  transactional emails.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Learn how to style your Recurly email templates with brand colors,
+    responsive layouts, and custom fonts. Discover how to configure safe
+    fallback fonts for Gmail and Outlook, and customize button CSS for perfectly
+    branded transactional emails.
+  keywords:
+    - Recurly email styling
+    - HTML email custom fonts
+    - email client compatibility
+    - responsive email layout
+    - fallback fonts for Gmail
+    - Outlook email rendering
+    - Recurly template CSS
+    - custom email buttons
   robots: index
 ---
 <HTMLBlock>{`
