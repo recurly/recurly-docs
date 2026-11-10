@@ -4,7 +4,7 @@ excerpt: >-
   Use this export to find external subscriptions that need attention so future
   notifications for them can be processed.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: Unprocessed notifications - external - export
   robots: index
@@ -80,8 +80,8 @@ Use these filters to narrow down the users displayed in your export:
 
 | Id                                      | Example                            | Description                                                                                                          | Data type |
 | :-------------------------------------- | :--------------------------------- | :------------------------------------------------------------------------------------------------------------------- | :-------- |
-| <span id="store_id">store_id</span>     | 9256vAC430                         | The external store identifier (e.g. Apple or Google subscriber ID)<br />associated with the unprocessed notification | string    |
-| <span id="origin">origin</span>         | Apple App Store, Google Play Store | The origin platform of the notification                                                                              | string    |
+| <span id="store_id">store_id</span>     | 220002537522754                    | The external store identifier (e.g. Apple or Google subscriber ID)<br />associated with the unprocessed notification | numeric   |
+| <span id="origin">origin</span>         | apple_app_store, google_play_store | The origin platform of the notification                                                                              | string    |
 | <span id="created_on">created_on</span> | 2026-11-13 10:00:00 PST            | The most recent timestamp at which this external subscription was  unprocessed                                       | timestamp |
 
 # Version changelog
