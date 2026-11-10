@@ -14,8 +14,7 @@ metadata:
     Outlook/Gmail compatibility to perfectly customize your subscription billing
     emails without coding experience.
   keywords:
-    - To rank competitively across both traditional search engines and AI models
-    - you should target Recurly email templates
+    - Recurly email templates
     - transactional email HTML
     - subscription billing emails
     - Recurly merge tags
