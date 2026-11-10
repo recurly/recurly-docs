@@ -1,8 +1,24 @@
 ---
 title: 'Easy HTML guide: Common snippets'
+excerpt: >-
+  Access ready-to-use HTML snippets for Recurly email templates, including
+  custom headers, compliant legal footers, and conditional boolean logic to
+  dynamically personalize your subscription billing communications.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Access ready-to-use HTML snippets for Recurly email templates, including
+    custom headers, compliant legal footers, and conditional boolean logic to
+    dynamically personalize your subscription billing communications.
+  keywords:
+    - Recurly email HTML snippets
+    - conditional logic in email templates
+    - Recurly boolean sections
+    - dynamic email footers
+    - subscription billing HTML templates
+    - transactional email legal blocks
+    - Recurly template variables
   robots: index
 ---
 <HTMLBlock>{`
