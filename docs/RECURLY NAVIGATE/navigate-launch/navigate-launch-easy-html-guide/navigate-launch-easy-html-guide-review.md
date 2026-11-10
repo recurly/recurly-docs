@@ -1,8 +1,27 @@
 ---
 title: 'Easy HTML guide: Review'
+excerpt: >-
+  Review essential best practices for launching Recurly email templates with
+  this comprehensive QA checklist, covering merge tag rules, safe fallback
+  fonts, testing protocols, and next steps for your automated subscription
+  communications.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Review essential best practices for launching Recurly email templates with
+    this comprehensive QA checklist, covering merge tag rules, safe fallback
+    fonts, testing protocols, and next steps for your automated subscription
+    communications.
+  keywords:
+    - Recurly email template checklist
+    - HTML email best practices
+    - Recurly merge tag rules
+    - transactional email QA
+    - fallback fonts for Gmail
+    - deploying Recurly emails
+    - email branding review
+    - testing subscription emails
   robots: index
 ---
 <HTMLBlock>{`
