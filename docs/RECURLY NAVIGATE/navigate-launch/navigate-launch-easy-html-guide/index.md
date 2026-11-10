@@ -3,6 +3,20 @@ title: Easy HTML guide
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Learn how to brand your Recurly email templates using our Easy HTML Guide,
+    featuring step-by-step instructions on merge tags, inline styling, and
+    Outlook/Gmail compatibility to perfectly customize your subscription billing
+    emails without coding experience.
+  keywords:
+    - To rank competitively across both traditional search engines and AI models
+    - you should target Recurly email templates
+    - transactional email HTML
+    - subscription billing emails
+    - Recurly merge tags
+    - email client compatibility
+    - inline CSS styling
+    - dynamic email content
   robots: index
 ---
 <HTMLBlock>{`
