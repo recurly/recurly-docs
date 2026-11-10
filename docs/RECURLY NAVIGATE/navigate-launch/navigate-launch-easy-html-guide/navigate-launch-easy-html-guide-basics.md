@@ -1,8 +1,26 @@
 ---
 title: 'Easy HTML guide: HTML basics'
+excerpt: >-
+  Master the fundamentals of customizing Recurly email templates with this
+  beginner-friendly HTML guide. Learn how to locate header and footer settings,
+  understand essential HTML tags, and apply safe editing rules to brand your
+  transactional emails without breaking the code.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Master the fundamentals of customizing Recurly email templates with this
+    beginner-friendly HTML guide. Learn how to locate header and footer
+    settings, understand essential HTML tags, and apply safe editing rules to
+    brand your transactional emails without breaking the code.
+  keywords:
+    - Recurly email templates
+    - HTML basics for transactional emails
+    - email header and footer configuration
+    - Recurly template editing rules
+    - basic HTML tags for emails
+    - no-code subscription email customization
+    - Recurly email branding
   robots: index
 ---
 <HTMLBlock>{`
@@ -417,9 +435,11 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
 </details>
 <div class="rc-lp-section">
 <h2><i class="fa-solid fa-location-dot rc-fa-section"></i> Where your HTML lives</h2>
+
 <p>Recurly adds an optional header to the top of every email and an optional footer to the bottom. Edit them once to brand every email. Each email has a plain-text and an HTML version, and you edit them separately.</p><p>Go to <strong>Configuration &rarr; Email Templates</strong>, then open <strong>Email Header (Default Template)</strong> or <strong>Email Footer (Default Template)</strong>.</p><div class="rc-card-grid">
 <div class="rc-feature-card"><div class="rc-feature-icon"><i class="fa-solid fa-heading"></i></div><h4>Header</h4><p>Holds your global styles, logo, and content width. It sits above every email.</p></div>
 <div class="rc-feature-card"><div class="rc-feature-icon"><i class="fa-solid fa-grip-lines"></i></div><h4>Footer</h4><p>Holds your legal links, copyright line, and company address. It sits below every email.</p></div>
+
 </div><div class="rc-callout rc-callout-tip"><div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div><div class="rc-callout-body"><strong>Apply it once or selectively</strong><p>Paste into the default template to brand every email at once. Paste into individual templates to roll it out one email at a time.</p></div></div>
 </div><div class="rc-lp-section">
 <h2><i class="fa-solid fa-code rc-fa-section"></i> Tags you will see</h2>
@@ -453,5 +473,4 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: #
 </div></div>
 </div>
 </div>
-B
 `}</HTMLBlock>
