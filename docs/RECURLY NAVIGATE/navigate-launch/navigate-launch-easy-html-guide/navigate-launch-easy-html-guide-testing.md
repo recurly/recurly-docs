@@ -1,8 +1,27 @@
 ---
 title: 'Easy HTML guide: Testing & previewing'
+excerpt: >-
+  Learn how to effectively test and preview your Recurly email templates before
+  going live. Discover step-by-step instructions for cross-client QA,
+  troubleshooting broken HTML, fixing merge tag errors, and ensuring high
+  deliverability.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Learn how to effectively test and preview your Recurly email templates
+    before going live. Discover step-by-step instructions for cross-client QA,
+    troubleshooting broken HTML, fixing merge tag errors, and ensuring high
+    deliverability.
+  keywords:
+    - Testing Recurly email templates
+    - Recurly test email deliverability
+    - email rendering QA
+    - troubleshooting broken email HTML
+    - fixing missing logos in emails
+    - Recurly email preview
+    - reset Recurly email template
+    - cross-client email testing
   robots: index
 ---
 <HTMLBlock>{`
