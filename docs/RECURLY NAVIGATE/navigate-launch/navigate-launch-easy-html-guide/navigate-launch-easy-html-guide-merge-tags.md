@@ -1,8 +1,26 @@
 ---
 title: 'Easy HTML guide: Merge tags'
+excerpt: >-
+  Learn how to use Recurly merge tags to automatically insert dynamic subscriber
+  data into your billing emails. This guide covers essential template
+  parameters, currency formatting rules, and best practices for personalizing
+  automated subscription communications securely.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Learn how to use Recurly merge tags to automatically insert dynamic
+    subscriber data into your billing emails. This guide covers essential
+    template parameters, currency formatting rules, and best practices for
+    personalizing automated subscription communications securely.
+  keywords:
+    - Recurly merge tags
+    - dynamic email content
+    - subscription billing email variables
+    - email template parameters
+    - subscriber data placeholders
+    - Recurly email customization
+    - currency formatting tags
   robots: index
 ---
 <HTMLBlock>{`
