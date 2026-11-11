@@ -5,7 +5,7 @@ excerpt: >-
   America, the UK, EU, APAC, and LATAM — including ACH, BACS, UPI Auto Pay, and
   Pix Automático—to boost global subscription conversions and revenue.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
