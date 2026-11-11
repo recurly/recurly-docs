@@ -6,7 +6,7 @@ excerpt: >-
   Gmail and Outlook, and customize button CSS for perfectly branded
   transactional emails.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Learn how to style your Recurly email templates with brand colors,

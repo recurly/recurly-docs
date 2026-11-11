@@ -6,7 +6,7 @@ excerpt: >-
   fonts, testing protocols, and next steps for your automated subscription
   communications.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Review essential best practices for launching Recurly email templates with

@@ -6,7 +6,7 @@ excerpt: >-
   understand essential HTML tags, and apply safe editing rules to brand your
   transactional emails without breaking the code.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Master the fundamentals of customizing Recurly email templates with this

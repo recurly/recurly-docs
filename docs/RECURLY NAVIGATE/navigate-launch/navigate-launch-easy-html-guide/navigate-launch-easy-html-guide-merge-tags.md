@@ -6,7 +6,7 @@ excerpt: >-
   parameters, currency formatting rules, and best practices for personalizing
   automated subscription communications securely.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Learn how to use Recurly merge tags to automatically insert dynamic

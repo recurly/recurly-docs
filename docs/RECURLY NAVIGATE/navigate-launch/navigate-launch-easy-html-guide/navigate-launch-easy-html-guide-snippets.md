@@ -5,7 +5,7 @@ excerpt: >-
   custom headers, compliant legal footers, and conditional boolean logic to
   dynamically personalize your subscription billing communications.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Access ready-to-use HTML snippets for Recurly email templates, including

@@ -6,7 +6,7 @@ excerpt: >-
   troubleshooting broken HTML, fixing merge tag errors, and ensuring high
   deliverability.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Learn how to effectively test and preview your Recurly email templates
