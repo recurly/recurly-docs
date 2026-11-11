@@ -5,7 +5,7 @@ excerpt: >-
   subscription expansion, evaluating tax liabilities, chargebacks, compliance,
   and seller of record responsibilities.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

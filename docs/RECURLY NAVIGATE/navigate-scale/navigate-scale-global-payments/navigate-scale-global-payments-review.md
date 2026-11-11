@@ -5,7 +5,7 @@ excerpt: >-
   summary, interactive knowledge checks, documentation links, and expert
   resources for international scaling.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

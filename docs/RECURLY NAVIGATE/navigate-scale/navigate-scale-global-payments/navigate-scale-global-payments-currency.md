@@ -5,7 +5,7 @@ excerpt: >-
   pricing and popular regional payment methods like SEPA Direct Debit, iDEAL,
   Pix, and UPI AutoPay.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

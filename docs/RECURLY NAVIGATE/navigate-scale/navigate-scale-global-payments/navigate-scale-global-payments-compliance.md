@@ -5,7 +5,7 @@ excerpt: >-
   rules, payment provider licensing, data privacy laws, and localized language
   mandates for recurring billing.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
