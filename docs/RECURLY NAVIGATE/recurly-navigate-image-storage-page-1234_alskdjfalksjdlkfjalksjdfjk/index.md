@@ -122,3 +122,13 @@ metadata:
 ![](https://files.readme.io/8728e96ea9fcccffa28972364015e15b9fa830a0023e7fc60aac031618a227ea-Square_site_icon_380_x_420_px_2.png)
 
 ![Payments sync - RevRec](https://files.readme.io/0b0a6d0616b16bcd3385cf7a2dc40b30b75ec58b8884b79eb6a82bc8b2e456e8-Payments_Sync_Image.png)
+
+![](https://files.readme.io/3a6bc904e9b5976d2336665c92bd7feb7b679e6e40bb7fa2e31989789bb9108e-Subscriptions_Icon.png)
+
+![](https://files.readme.io/7daba0c654c0119fb5b802d7c81b7d68304e9de82cca066f4e1f3286934704f4-Commerce_Icon.png)
+
+![](https://files.readme.io/bbd7624e0d4f81efade2879e17f44cab443566e6acd7eb17fdca47f6aaba86f5-Engage_Icon.png)
+
+![](https://files.readme.io/673fd87694fc61825fe49dc38f0ecc016c5fd6650074d72f131bba00258fed46-RevRec_Icon.png)
+
+![](https://files.readme.io/95a71d072769893d1994fc9a72cf95681c4a25e2432c0d67dd8f7ad0edb61981-Recover_Icon.png)
