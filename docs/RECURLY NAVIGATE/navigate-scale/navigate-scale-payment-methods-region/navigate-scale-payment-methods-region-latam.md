@@ -5,7 +5,7 @@ excerpt: >-
   Mercado Pago, and BRL installment pricing—to boost subscription conversion and
   satisfy mandatory e-invoicing rules.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Configure local LATAM payment methods in Recurly—including Pix Automático,

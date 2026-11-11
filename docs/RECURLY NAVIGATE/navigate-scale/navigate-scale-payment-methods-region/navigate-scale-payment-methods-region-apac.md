@@ -5,7 +5,7 @@ excerpt: >-
   Australia and UPI Auto Pay in India—while remaining compliant with RBI 24-hour
   pre-notification rules and Australian GST requirements.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:

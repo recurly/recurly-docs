@@ -1,7 +1,7 @@
 ---
 title: 'Payment methods by region: Review & resources'
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---

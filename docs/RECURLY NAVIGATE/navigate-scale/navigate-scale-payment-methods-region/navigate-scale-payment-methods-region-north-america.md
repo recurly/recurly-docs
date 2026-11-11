@@ -5,7 +5,7 @@ excerpt: >-
   payments, PayPal, digital wallets, CAD localized pricing, and Quebec
   compliance rules to boost conversion.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Optimize North American subscription billing with Recurly by configuring ACH

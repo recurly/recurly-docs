@@ -5,7 +5,7 @@ excerpt: >-
   in Recurly to optimize UK subscription conversion rates while maintaining
   compliance with UK consumer disclosure laws.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Learn how to configure BACS Direct Debit, localized GBP pricing, and 3D

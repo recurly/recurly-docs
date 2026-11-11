@@ -5,7 +5,7 @@ excerpt: >-
   Debit, Bancontact, and Dankort—to maximize subscription conversion, meet IFR
   co-badged card rules, and comply with PSD2 3DS requirements.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
