@@ -121,4 +121,4 @@ metadata:
 
 ![](https://files.readme.io/8728e96ea9fcccffa28972364015e15b9fa830a0023e7fc60aac031618a227ea-Square_site_icon_380_x_420_px_2.png)
 
-![](https://files.readme.io/0b0a6d0616b16bcd3385cf7a2dc40b30b75ec58b8884b79eb6a82bc8b2e456e8-Payments_Sync_Image.png)
+![Payments sync - RevRec](https://files.readme.io/0b0a6d0616b16bcd3385cf7a2dc40b30b75ec58b8884b79eb6a82bc8b2e456e8-Payments_Sync_Image.png)
