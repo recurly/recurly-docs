@@ -6,7 +6,7 @@ excerpt: >-
   Outlook/Gmail compatibility to perfectly customize your subscription billing
   emails without coding experience.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   description: >-
     Learn how to brand your Recurly email templates using our Easy HTML Guide,
