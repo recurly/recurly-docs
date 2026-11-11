@@ -4,7 +4,7 @@ excerpt: >-
   What changes when you start billing customers in new markets, and the three
   decisions that matter most.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
