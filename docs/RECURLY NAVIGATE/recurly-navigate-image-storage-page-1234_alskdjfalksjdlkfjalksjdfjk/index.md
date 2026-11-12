@@ -134,3 +134,5 @@ metadata:
 ![](https://files.readme.io/95a71d072769893d1994fc9a72cf95681c4a25e2432c0d67dd8f7ad0edb61981-Recover_Icon.png)
 
 ![](https://files.readme.io/9eb4247b36a8fc521232281cd39a99c367e0acbfd3230ce5f551413ef4df580e-Advanced_Dunning_Image_NL_2.png)
+
+![](https://files.readme.io/4ad9a8621b8093749eff919239d635cfacff1f5224c9f226e111eff027813a52-Tax_Inclusive_Settings_2.png)
