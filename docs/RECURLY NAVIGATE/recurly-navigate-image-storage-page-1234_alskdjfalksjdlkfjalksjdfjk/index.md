@@ -136,3 +136,5 @@ metadata:
 ![](https://files.readme.io/9eb4247b36a8fc521232281cd39a99c367e0acbfd3230ce5f551413ef4df580e-Advanced_Dunning_Image_NL_2.png)
 
 ![](https://files.readme.io/4ad9a8621b8093749eff919239d635cfacff1f5224c9f226e111eff027813a52-Tax_Inclusive_Settings_2.png)
+
+![](https://files.readme.io/97398decf654f4ee0eef1986349088430d70f5ea7fc15562b968abe57986095d-logo-horizontal-blackbg.png)
