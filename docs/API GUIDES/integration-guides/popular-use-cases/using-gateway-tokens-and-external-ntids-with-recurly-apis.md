@@ -213,7 +213,7 @@ It’s recommended, at this point, to store the billing info ID for the next ste
 }
 ```
 
-### Examples of Each Gateway&#x20;
+### Token Format Examples of Each Gateway&#x20;
 
 ```json Adyen
 // When providing Adyen Tokens, set the account code as the shopper reference as well as the account_reference. This ensure we send the token properly to Adyen.
@@ -320,7 +320,7 @@ You can use the [Fetch Account endpoint](https://recurly.com/developers/api/v202
 
 Next, we’ll make a request to the subscription endpoint, passing in the customer account and billing information (using the gateway token from above), along with one or more subscription plan codes. In the example below, one subscription is generated using the plan code created in the Quickstart Guide.
 
-It’s recommended, at this point, to already have an account ready to pass in and billing information added, as you will need to provide the billing info ID to associate the NTID with.
+It’s recommended, at this point, to already have an account ready to pass in and billing information added, as you will need to provide the billing info ID to associate the NTID and TLID with.
 
 Updating an existing subscription is not supported at this time.
 
@@ -337,7 +337,8 @@ If you are using the `/purchases` endpoint, the logic is much the same, though t
     "billing_info_id":"123456789", // Required Field
     "plan_code": "monthly",
     "starts_at": "2026-12-30T14:15:22Z", // Must be a future date
-    "network_transaction_id": "320036244781105" // NTID from a Customer Initiated Transaction
+    "network_transaction_id": "320036244781105", // NTID from a Customer Initiated Transaction
+    "transaction_link_id": "e7R9d3L2-Q9vS6pP1_WzEh" // TLID from a Customer Initiated - MC Only 
 }
 ```
 
@@ -356,7 +357,8 @@ If you are using the `/purchases` endpoint, the logic is much the same, though t
     }
 	],
     "gateway_code":"gateway-code",
-    "network_transaction_id": "320036244781105" // NTID from a Customer Initiated Transaction
+    "network_transaction_id": "320036244781105", // NTID from a Customer Initiated Transaction
+    "transaction_link_id": "e7R9d3L2-Q9vS6pP1_WzEh" // TLID from a Customer Initiated - MC Only
 }
 ```
 
@@ -414,13 +416,14 @@ Use cases may include:&#x20;
 		}
 	],
     "gateway_code":"yp91xs9qxo0x",
-    "network_transaction_id": "123456789012345" // NTID from a Gateway
+    "network_transaction_id": "123456789012345", // NTID from a Gateway
+    "transaction_link_id": "e7R9d3L2-Q9vS6pP1_WzEh" // TLID from a Gateway (MC only)
 }
 ```
 
-**If you are using Stripe**, you must provide the `reference_type` object and there will be two objects in the `payment_gateway_references` array like so:&#x20;
+**If you are using Stripe or Adyen with the PGR array**, you must provide the `reference_type` object and there will be two objects in the `payment_gateway_references` array like so:&#x20;
 
-```json
+```json Stripe
 {
 "payment_gateway_references": [
         {
@@ -430,6 +433,20 @@ Use cases may include:&#x20;
         {
             "token": "cus_xxxxxxxxxx",
             "reference_type": "stripe_customer"
+        }
+    ]
+}
+```
+```json Adyen
+{
+"payment_gateway_references": [
+        {
+            "token": "stored-payment-method-id",
+            "reference_type": "adyen_payment_method"
+        },
+        {
+            "token": "shopper-reference",
+            "reference_type": "adyen_shopper_reference"
         }
     ]
 }
