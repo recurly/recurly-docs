@@ -36,7 +36,7 @@ next:
 
 # Overview
 
-This guide is intended to walk you through the process of creating **future dated subscriptions** using a “reusable gateway token” or a reference to payment details from one of our supported gateway partners and an external NTID.
+This guide is intended to walk you through the process of creating **future dated subscriptions** using a “reusable gateway token” or a reference to payment details from one of our supported gateway partners and an external NTID and TLID (mc only).
 
 <Callout icon="📘" theme="info">
   ### Feature Flag and API Requirement
@@ -44,16 +44,15 @@ This guide is intended to walk you through the process of creating **future date
   Please note, this only functions in our V3 API with a special feature flag. Reach out to support to enable this feature flag.
 </Callout>
 
-You may be reading this guide due to a recent migration from a different payment provider, or you have a third party integration where you generate payment tokens and customer-initiated transactions with your gateway and want to set up subscriptions or customer accounts on Recurly with those tokens and resulting NTIDs.
+You may be reading this guide due to a recent migration from a different payment provider, or you have a third party integration where you generate payment tokens and customer-initiated transactions with your gateway and want to set up subscriptions or customer accounts on Recurly with those tokens and resulting NTIDs and TLIDs (MC only).
 
-External payment implementations can capture customer data through a physical payment terminal or other means and then develop and integration to Recurly to send the resulting gateway token and Network Transaction ID via API for future dated renewals where Recurly is not involved in the initial signup process.
+External payment implementations can capture customer data through a physical payment terminal or other means and then develop and integration to Recurly to send the resulting gateway token and Network Transaction ID / Transaction Link ID via API for future dated renewals where Recurly is not involved in the initial signup process.
 
-Before continuing with this guide, it’s recommended that you have completed the Quickstart Guide first.
-In this guide, we’ll be using the Accounts and Subscription endpoints of Recurly API, powerful endpoints designed to back signup and onboarding experiences. With these endpoints, you have the flexibility to create accounts and subscriptions with an external NTID for a future dated renewal.
+Before continuing with this guide, it’s recommended that you have completed the Quickstart Guide first. In this guide, we’ll be using the Accounts and Subscription endpoints of Recurly API, powerful endpoints designed to back signup and onboarding experiences. With these endpoints, you have the flexibility to create accounts and subscriptions with an external NTID for a future dated renewal.
 
-A subscription request can contain several different resources, but we’ll focus on the account references, gateway_token (legacy), gateway_code and network_transaction_id  parameters in this guide.
+A subscription request can contain several different resources, but we’ll focus on the account references, `gateway_token` (legacy), `gateway_code` ,  `network_transaction_id` , and `transaction_link_id` parameters in this guide.
 
-Since `gateway_code` may be deprecated in the future, using `payment_gateway_references.token` is preferred.
+Since `gateway_token` may be deprecated in the future, using `payment_gateway_references.token` is preferred.
 
 ## Limitations
 
