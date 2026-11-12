@@ -6,7 +6,9 @@ metadata:
   robots: noindex
 published_at: '2026-11-06T17:15:45.098Z'
 ---
-<br />
+An early November 5th fix addressed a high-priority EBANX issue where real-time transaction status updates were not being reflected in reporting — resolved automatically with no integration changes required. The November 10th release follows up with two additional EBANX and Vantiv bug fixes: auth codes now display correctly for EBANX card transactions, and Vantiv will handle errors more gracefully when non-Vantiv gateway tokens are routed to the platform via custom gateway routing.
+
+On the new features side, Recurly now offers an Unprocessed Notifications export for App Management merchants, surfacing Apple and Google lifecycle notifications that couldn’t be processed along with the identifiers needed to resolve them — available exclusively to merchants with app store connections enabled. Revolv3 merchants will also see the target gateway used reflected in reporting, with no integration changes needed.
 
 | Release Date | Feature         | Type        | Potential Impact | Description / Overview                                                                                                                                                                                                                                                                                                                                 |
 | ------------ | --------------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
