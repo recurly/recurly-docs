@@ -26303,11 +26303,9 @@ components:
             - price
             - percentage
           title: Usage Type
-          description: >
+          description: |
             Type of usage, required if `add_on_type` is `usage`. See our
-
             [Guide](https://recurly.com/developers/guides/usage-based-billing-guide.html)
-
             for an overview of how to configure usage add-ons.
         usage_percentage:
           type: number
