@@ -1,5 +1,5 @@
 ---
-title: item
+title: Item
 excerpt: >-
   For merchants who sell the same things to many customers, documenting those
   offerings in a catalog allows for faster charge creation, easier management of
@@ -10,4 +10,6 @@ excerpt: >-
 
   Recurly's item catalog requires the Credit Invoices feature to be enabled.
 hidden: false
+link:
+  new_tab: false
 ---
