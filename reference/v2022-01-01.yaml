@@ -19585,8 +19585,7 @@ components:
                 initiator:
                   $ref: '#/components/schemas/Transaction/properties/initiator'
                 merchant_reason_code:
-                  $ref: >-
-                    #/components/schemas/Transaction/properties/merchant_reason_code
+                  $ref: '#/components/schemas/Transaction/properties/merchant_reason_code'
                 skip_gateway_fraud:
                   type: boolean
                   title: Skip Gateway Fraud
