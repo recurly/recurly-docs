@@ -4305,9 +4305,7 @@ paths:
   /invoices/{invoice_number}/mark_successful:
     put:
       summary: Mark an Invoice as Paid Successfully
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - invoices
       operationId: markAnInvoiceAsPaidSuccessfully
@@ -4391,9 +4389,7 @@ paths:
   /invoices/{invoice_number}/mark_failed:
     put:
       summary: Mark an Invoice as Failed Collection
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - invoices
       operationId: markAnInvoiceAsFailedCollection
@@ -7801,9 +7797,7 @@ paths:
   /transactions:
     get:
       summary: List Transactions
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - transactions
       operationId: listTransactions
@@ -8235,9 +8229,7 @@ paths:
   /accounts/{account_code}/transactions:
     get:
       summary: List Account's Transactions
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - transactions
       operationId: listAccountsTransactions
