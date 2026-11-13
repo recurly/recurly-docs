@@ -1,6 +1,5 @@
 - getting-started-v2021-02-25
 - client-libraries
-- coupon
 - account
 - account-note
 - account-acquisition-info
@@ -22,6 +21,7 @@
 - plan
 - add-on
 - measured-unit
+- coupon
 - unique-coupon-code
 - price-segment
 - site
