@@ -7580,9 +7580,7 @@ paths:
   /coupons/{coupon_code}/unique_coupon_codes:
     get:
       summary: List Unique Coupon Codes
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - coupons
       operationId: listUniqueCouponCodes
@@ -7710,9 +7708,7 @@ paths:
   /accounts/{account_code}/redemptions/{redemption_uuid}:
     get:
       summary: Lookup Coupon Redemption
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - coupon-redemptions
       operationId: lookupCouponRedemption
@@ -10876,9 +10872,7 @@ paths:
   /invoices/{invoice_number}/mark_successful:
     put:
       summary: Mark Invoice as Paid Successfully
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - invoices
       operationId: markInvoiceAsPaidSuccessfully
@@ -10972,9 +10966,7 @@ paths:
   /invoices/{invoice_number}/mark_failed:
     put:
       summary: Mark Invoice as Failed Collection
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - invoices
       operationId: markInvoiceAsFailedCollection
@@ -16136,9 +16128,7 @@ paths:
   /transactions:
     get:
       summary: List Transactions
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - transactions
       operationId: listTransactions
@@ -16699,9 +16689,7 @@ paths:
   /accounts/{account_code}/transactions:
     get:
       summary: List Account's Transactions
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - transactions
       operationId: listAccountsTransactions
