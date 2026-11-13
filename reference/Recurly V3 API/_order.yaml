@@ -1,6 +1,5 @@
 - getting-started-v2021-02-25
 - client-libraries
-- add-on
 - coupon
 - account
 - account-note
@@ -21,6 +20,7 @@
 - gift-cards
 - item
 - plan
+- add-on
 - measured-unit
 - unique-coupon-code
 - price-segment
