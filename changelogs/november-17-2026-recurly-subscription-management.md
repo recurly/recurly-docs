@@ -1,7 +1,7 @@
 ---
 title: November 17, 2026 - Recurly Subscription Management
 author: Jenn Schnoes
-hidden: true
+hidden: false
 published_at: '2026-11-13T21:27:19.374Z'
 ---
 **November 17th Release Highlights**
