@@ -1,7 +1,6 @@
 - getting-started-v2021-02-25
 - client-libraries
 - usage
-- transaction
 - item
 - plan
 - add-on
@@ -19,6 +18,7 @@
 - invoice
 - line-item
 - credit-payment
+- transaction
 - revenue-recovery
 - gift-cards
 - measured-unit
