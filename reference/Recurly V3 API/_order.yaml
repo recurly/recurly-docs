@@ -1,6 +1,5 @@
 - getting-started-v2021-02-25
 - client-libraries
-- subscription
 - usage
 - purchase
 - invoice
@@ -15,6 +14,7 @@
 - billing-info
 - billing-infos
 - coupon-redemption
+- subscription
 - subscription-change
 - shipping-address
 - line-item
