@@ -1,0 +1,22 @@
+---
+title: November 17, 2026 - Recurly Subscription Management
+author: Jenn Schnoes
+hidden: true
+published_at: '2026-11-13T21:27:19.374Z'
+---
+**November 17th Release Highlights**
+
+This is Recurly’s last release before the Thanksgiving and Black Friday holiday period. The next scheduled release will follow after the holiday break.
+
+November 17th is a gateway-focused release with meaningful improvements across Braintree, Stripe, CyberSource, and Adyen. Braintree merchants benefit from two updates: an SDK upgrade to version 3.41.0 with no expected impact, and Mastercard TLID support for recurring transactions — bringing Braintree in line with other gateways already supporting this compliance requirement. CyberSource receives improved error handling for specific API response codes that were surfacing too frequently, and Stripe’s Third Party Checkout adds a Klarna-specific preflight query to avoid conflicts with other gateway payment methods — no configuration required.&#x20;
+
+On the bug fix side, an Adyen iDEAL issue that could store invalid billing info during mid-transaction cancellations has been resolved, and a Braintree 3DS fix ensures fraud data is now correctly forwarded to the gateway across both verification flows.
+
+| Release Date | Feature             | Type        | Potential Impact | Description / Overview                                                                                                                                                                                                                                                        |
+| ------------ | ------------------- | ----------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nov 17       | Braintree Gateway   | Enhancement | Medium           | We have upgraded our Braintree implementation to use the latest and greatest SDK version for our implementation: 3.41.0 (Node). No impact is expected from this upgrade.                                                                                                      |
+| Nov 17       | Braintree Gateway   | Enhancement | Medium           | Braintree now supports Mastercard's TLID field and will store and send the value on recurring Mastercard transactions.                                                                                                                                                        |
+| Nov 17       | Stripe Gateway      | Enhancement | Low              | We've implemented a preflight query for Third Party Checkout, specifically for Klarna, to allow specialized processing and avoid issues with other payment methods supported on the gateway. No configuration is required for merchants using this payment method or gateway. |
+| Nov 17       | Cybersource Gateway | Enhancement | Medium           | We've enhanced error handling for specific API response error codes that were being returned too often.                                                                                                                                                                       |
+| Nov 17       | Adyen Gateway       | Bug fix     | Medium           | We've fixed an issue with the iDeal payment method that could cause invalid billing infos to be stored if the customer cancelled the flow mid-transaction.                                                                                                                    |
+| Nov 17       | Braintree Gateway   | Bug fix     | Medium           | We've fixed an issue with 3DS flows related to a specific verification (of which there are two) that was not forwarding fraud data to the gateway.                                                                                                                            |
