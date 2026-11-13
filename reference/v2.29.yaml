@@ -10724,9 +10724,7 @@ paths:
   /coupons/{coupon_code}/unique_coupon_codes:
     get:
       summary: List Unique Coupon Codes
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - coupons
       operationId: listUniqueCouponCodes
@@ -10879,9 +10877,7 @@ paths:
         description: Coupon Redemption's unique uuid.
     get:
       summary: Lookup Coupon Redemption
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - coupon-redemptions
       operationId: lookupCouponRedemption
@@ -14771,9 +14767,7 @@ paths:
   /invoices/{invoice_number}/mark_successful:
     put:
       summary: Mark Invoice as Paid Successfully
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - invoices
       operationId: markInvoiceAsPaidSuccessfully
@@ -14874,9 +14868,7 @@ paths:
   /invoices/{invoice_number}/mark_failed:
     put:
       summary: Mark Invoice as Failed Collection
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - invoices
       operationId: markInvoiceAsFailedCollection
@@ -19394,8 +19386,7 @@ paths:
               withNewBillingInfo:
                 $ref: '#/components/examples/SubscriptionWithBillingInfoNewRequest'
               withExistingBillingInfo:
-                $ref: >-
-                  #/components/examples/SubscriptionWithBillingInfoExistingRequest
+                $ref: '#/components/examples/SubscriptionWithBillingInfoExistingRequest'
               withShippingInfo:
                 $ref: '#/components/examples/SubscriptionWithShippingInfoRequest'
               rampPricing:
@@ -19872,8 +19863,7 @@ paths:
               withNewBillingInfo:
                 $ref: '#/components/examples/SubscriptionWithBillingInfoNewRequest'
               withExistingBillingInfo:
-                $ref: >-
-                  #/components/examples/SubscriptionWithBillingInfoExistingRequest
+                $ref: '#/components/examples/SubscriptionWithBillingInfoExistingRequest'
               withShippingInfo:
                 $ref: '#/components/examples/SubscriptionPreviewRequest'
               rampPricing:
@@ -21342,14 +21332,11 @@ paths:
                 $ref: '#/components/schemas/SubscriptionFixedPricingCreateResponse'
               examples:
                 fixedPricing:
-                  $ref: >-
-                    #/components/examples/SubscriptionUpdatePreviewFixedPricingResponse
+                  $ref: '#/components/examples/SubscriptionUpdatePreviewFixedPricingResponse'
                 rampPricing:
-                  $ref: >-
-                    #/components/examples/SubscriptionUpdatePreviewRampPricingResponse
+                  $ref: '#/components/examples/SubscriptionUpdatePreviewRampPricingResponse'
                 quantityBasedPercentage:
-                  $ref: >-
-                    #/components/examples/SubscriptionUpdatePreviewQuantityBasedPercentage
+                  $ref: '#/components/examples/SubscriptionUpdatePreviewQuantityBasedPercentage'
       x-codeSamples:
         - lang: PHP
           source: |-
@@ -21541,8 +21528,7 @@ paths:
                       <a name="reactivate" href="https://your-subdomain.recurly.com/v2/subscriptions/37bfef7a8e44cfc3817b7a43eba8a6e6/reactivate" method="put"/>
                     </subscription>
                 rampPricing:
-                  $ref: >-
-                    #/components/examples/SubscriptionRampPricingConvertTrialResponse
+                  $ref: '#/components/examples/SubscriptionRampPricingConvertTrialResponse'
       x-codeSamples:
         - lang: PHP
           source: |-
@@ -22846,9 +22832,7 @@ paths:
   /transactions:
     get:
       summary: List Transactions
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - transactions
       operationId: listTransactions
@@ -23419,9 +23403,7 @@ paths:
   /accounts/{account_code}/transactions:
     get:
       summary: List Account's Transactions
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - transactions
       operationId: listAccountsTransactions
@@ -29486,8 +29468,7 @@ components:
                 initiator:
                   $ref: '#/components/schemas/Transaction/properties/initiator'
                 merchant_reason_code:
-                  $ref: >-
-                    #/components/schemas/Transaction/properties/merchant_reason_code
+                  $ref: '#/components/schemas/Transaction/properties/merchant_reason_code'
         vat_reverse_charge_notes:
           $ref: '#/components/schemas/VatReverseChargeNotes'
         vertex_transaction_type:
