@@ -2,7 +2,6 @@
 - client-libraries
 - usage
 - purchase
-- invoice
 - transaction
 - item
 - plan
@@ -17,6 +16,7 @@
 - subscription
 - subscription-change
 - shipping-address
+- invoice
 - line-item
 - credit-payment
 - revenue-recovery
