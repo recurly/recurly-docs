@@ -1,6 +1,5 @@
 - getting-started-v2021-02-25
 - client-libraries
-- item
 - plan
 - add-on
 - coupon
@@ -21,6 +20,7 @@
 - transaction
 - revenue-recovery
 - gift-cards
+- item
 - measured-unit
 - unique-coupon-code
 - price-segment
