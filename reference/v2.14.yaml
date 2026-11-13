@@ -7191,9 +7191,7 @@ paths:
   /coupons/{coupon_code}/unique_coupon_codes:
     get:
       summary: List Unique Coupon Codes
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - coupons
       operationId: listUniqueCouponCodes
@@ -7314,9 +7312,7 @@ paths:
   /accounts/{account_code}/redemptions/{redemption_uuid}:
     get:
       summary: Lookup Coupon Redemption
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - coupon-redemptions
       operationId: lookupCouponRedemption
@@ -10411,9 +10407,7 @@ paths:
   /invoices/{invoice_number}/mark_successful:
     put:
       summary: Mark Invoice as Paid Successfully
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - invoices
       operationId: markInvoiceAsPaidSuccessfully
@@ -10507,9 +10501,7 @@ paths:
   /invoices/{invoice_number}/mark_failed:
     put:
       summary: Mark Invoice as Failed Collection
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - invoices
       operationId: markInvoiceAsFailedCollection
@@ -14758,8 +14750,7 @@ paths:
                 </error>
       x-codeSamples:
         - lang: xml
-          source: >-
-            https://your-subdomain.recurly.com/v2/subscriptions/374ae5e848adcfd332fdd3469d89c888/add_ons/video_streaming/usage?billing_status=unbilled
+          source: https://your-subdomain.recurly.com/v2/subscriptions/374ae5e848adcfd332fdd3469d89c888/add_ons/video_streaming/usage?billing_status=unbilled
         - lang: Ruby
           source: >-
             # You need a subscription_add_on that you want find usages for
@@ -15181,9 +15172,7 @@ paths:
   /transactions:
     get:
       summary: List Transactions
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - transactions
       operationId: listTransactions
@@ -15741,9 +15730,7 @@ paths:
   /accounts/{account_code}/transactions:
     get:
       summary: List Account's Transactions
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - transactions
       operationId: listAccountsTransactions
