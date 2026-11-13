@@ -1,7 +1,6 @@
 - getting-started-v2021-02-25
 - client-libraries
 - usage
-- purchase
 - transaction
 - item
 - plan
@@ -16,6 +15,7 @@
 - subscription
 - subscription-change
 - shipping-address
+- purchase
 - invoice
 - line-item
 - credit-payment
