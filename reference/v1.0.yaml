@@ -3544,9 +3544,7 @@ paths:
   /invoices/{invoice_number}/mark_successful:
     put:
       summary: Mark an Invoice as Paid Successfully
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - invoices
       operationId: markAnInvoiceAsPaidSuccessfully
@@ -3591,9 +3589,7 @@ paths:
   /invoices/{invoice_number}/mark_failed:
     put:
       summary: Mark an Invoice as Failed Collection
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - invoices
       operationId: markAnInvoiceAsFailedCollection
@@ -4939,9 +4935,7 @@ paths:
             </add_on>
     delete:
       summary: Delete an Add-On
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - plan-add-ons
       operationId: deleteAnAddOn
@@ -5467,9 +5461,7 @@ paths:
   /accounts/{account_code}/subscriptions:
     get:
       summary: List Account's Subscriptions
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - subscriptions
       operationId: listAccountsSubscriptions
@@ -5927,9 +5919,7 @@ paths:
   /subscriptions/preview:
     post:
       summary: Preview Subscription
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - subscriptions
       operationId: previewSubscription
@@ -6062,9 +6052,7 @@ paths:
   /subscriptions/{uuid}/notes:
     put:
       summary: Update Subscription Notes
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - subscriptions
       operationId: updateSubscriptionNotes
@@ -6203,9 +6191,7 @@ paths:
   /subscriptions/{uuid}/preview:
     post:
       summary: Preview Subscription Change
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - subscriptions
       operationId: previewSubscriptionChange
@@ -6645,9 +6631,7 @@ paths:
   /transactions:
     get:
       summary: List Transactions
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - transactions
       operationId: listTransactions
@@ -7144,9 +7128,7 @@ paths:
   /accounts/{account_code}/transactions:
     get:
       summary: List Account's Transactions
-      description: |+
-
-
+      description: "\n\n"
       tags:
         - transactions
       operationId: listAccountsTransactions
