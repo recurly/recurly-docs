@@ -842,7 +842,7 @@ For merchants using Multiple Business Entities, the company value merged into ea
   <tr><td><code>{{transaction_id}}</code></td><td>Transaction UUID: 32 characters, alphanumeric</td></tr>
   <tr><td><code>{{transaction_amount}}</code></td><td>Transaction dollar amount</td></tr>
   <tr><td><code>{{transaction_date}}</code></td><td>Transaction date</td></tr>
-  <tr><td><code>{{transaction_date_and_time}}</code></td><td>Transaction date and time (timezone-adjusted)</td></tr>
+  <tr><td><code>{{transaction_date_with_time}}</code></td><td>Transaction date and time (timezone-adjusted)</td></tr>
   <tr><td><code>{{transaction_declined?}}</code></td><td>Returns <code>true</code> if the transaction was declined</td></tr>
   <tr><td><code>{{transaction_success?}}</code></td><td>Returns <code>true</code> if the transaction was successful</td></tr>
   <tr><td><code>{{transaction_voided?}}</code></td><td>Returns <code>true</code> if the transaction was voided</td></tr>
