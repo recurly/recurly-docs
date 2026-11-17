@@ -62,8 +62,6 @@ Send a request to the `create_purchase` method on Recurly's API, including:
   <li>If you're processing an ecommerce transaction instead, the `store_billing_info` field set to `false`</li>
 </ul>
 
-\[TODO: Dev/PO review — possible issue: this JSON includes `//` comments (the commented-out `three_d_secure_action_result_token_id` line and the note on `tax_identifier`). JSON doesn't support comments — this will throw a parse error if copied verbatim. Consider moving these notes to prose instead.]
-
 ```json Signup Request
 {
   "currency": "PHP",
