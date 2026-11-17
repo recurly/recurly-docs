@@ -11469,6 +11469,32 @@ components:
             overrides gateway exclusion configurations and restricts the backup
             to this gateway.
           maxLength: 12
+        network_transaction_id:
+          type: string
+          title: Network Transaction ID
+          description: >
+            Network transaction ID from the previous customer-in-session
+            subscription signup or billing info storage.
+
+
+            - 10-15 alphanumeric characters for Mastercard
+
+            - 14-15 alphanumeric for Visa
+
+            - 15 digits for all other brands
+
+            - 16 alphanumeric characters for Cartes Bancaires, which are
+            processed as Visa or Mastercard
+          maxLength: 16
+        transaction_link_id:
+          type: string
+          title: Transaction Link ID
+          description: >-
+            Mastercard Transaction Link ID (TLID) issued alongside the Network
+            Transaction ID on the original customer-initiated transaction. Must
+            accompany `network_transaction_id`; rejected on determinably
+            non-Mastercard payment methods. Requires the `ntid_via_api` feature.
+          maxLength: 36
         payment_gateway_references:
           type: array
           description: >-
@@ -14129,6 +14155,15 @@ components:
             - 16 alphanumeric characters for Cartes Bancaires, which are
             processed as Visa or Mastercard
           maxLength: 16
+        transaction_link_id:
+          type: string
+          title: Transaction Link ID
+          description: >-
+            Mastercard Transaction Link ID (TLID) issued alongside the Network
+            Transaction ID on the original customer-initiated transaction. Must
+            accompany `network_transaction_id`; rejected on determinably
+            non-Mastercard payment methods. Requires the `ntid_via_api` feature.
+          maxLength: 36
         transactions:
           type: array
           title: Transactions
