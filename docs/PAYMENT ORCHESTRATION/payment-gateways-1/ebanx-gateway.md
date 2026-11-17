@@ -121,6 +121,18 @@ Ebanx requires specific fields for proper subscription and transaction handling.
   <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Failing to send required fields — especially Tax IDs for Brazil — will cause signup and/or renewal failures.</div>
 </div>
 
+## Taxation Guidelines
+
+Ebanx requires tax handling for certain countries including Colombia and Argentina. If you are processing credit cards in these regions, please follow the instructions below.
+
+### Argentina&#x20;
+
+Recurly's tax service doesn't support Argentinian VAT by default. You must have an Avalara account that supports returning the 21% Tax amount so that taxes are displayed and handled properly for this region. Taxes shown are estimates as Ebanx handles tax collection separately behind-the-scenes through their own processes.
+
+### Colombia&#x20;
+
+You should enable Colombian sales tax in either Recurly Tax handling, Vertex, or Avalara, and ensure that, if you are using a Local Settled account, you have the "Single Transaction and Parameter Taxes" enabled in Recurly. See Step 6 below.
+
 ## APM Mandate preferences
 
 Ebanx APMs (UPI, Mercado Pago, and Pix Automatico) use subscription-level mandate IDs assigned to a customer's subscription at signup. Customers can revoke or pause (UPI only) their mandate from their banking app, which affects the subscription in Recurly. This does not apply to credit card usage.
@@ -201,22 +213,36 @@ Selecting **Local Settlement** will display a warning. If you've confirmed with 
 
 <Image src="https://files.readme.io/15ffd815a4c79a8ff62316c89cee02a6a976f6329b5b3a4543dc16e57136f6a8-Screenshot_2026-07-06_at_9.22.46_AM.png" align="center" width="75%" border={true} />
 
+## Step 6: Enable Single Transaction and Parameter Taxes
 
-## Step 6: Save and enable the gateway
+If you are processing in Colombia, and have a Local Settlement Ebanx account, ask your Ebanx representative if this feature is enabled for your account and ensure the box is Checked appropriate whether it is enabled or not at Ebanx.
+
+- **Enabled**: When processing in Colombia via Local Settlement accounts, we will declare Colombian taxes per transaction for regulatory purposes.
+- **Disabled**: When processing in Colombia via Local Settlement accounts, we will NOT declare Colombian taxes per transaction.&#x20;
+
+<Callout icon="far fa-circle-info" theme="info">
+  ### Tax Regulation Note
+
+  Since this is a tax regulatory setting, be sure you have it properly enabled or disabled before processing production transactions.
+</Callout>
+
+Since this is a tax regulatory setting, be sure you have it properly enabled or disabled before processing production transactions.
+
+## Step 7: Save and enable the gateway
 
 Click **Add Payment Gateway**. Ebanx will appear in your Production Gateways list in Recurly with a status of **Enabled**.
 
-## Step 7: Test the configuration
+## Step 8: Test the configuration
 
 Run a test transaction in development mode on your Recurly sandbox site before going live. If your settlement model is set incorrectly, you'll receive an Authentication error.
 
-## Step 8: Adjust dunning settings
+## Step 9: Adjust dunning settings
 
 <div class="rp-callout rp-callout-important">
   <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong> Ensure your dunning settings do <strong>not</strong> immediately expire invoices. If invoices are set to expire a subscription immediately, retries will not occur. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/static-retries" target="_blank">Static Retries documentation</a> for details on retry behavior for Ebanx payment methods.</div>
 </div>
 
-## Step 9: Go live
+## Step 10: Go live
 
 <div class="rp-steps">
   <div class="rp-step">
