@@ -124,6 +124,10 @@ Alternatively, if you choose to enable AVS / CVV Checks on Recurly, set your cap
 
 If your `captureMethod` configuration is set to `automatic`, you must use the purchase endpoint and/or disable AVS/CVV checks.
 
+#### Past Due Invoices and Elements Mode
+
+Recurly uses incoming payment details on the transaction in progress to satisfy past due amounts across all payment methods. If you are using Stripe Elements, query the account prior to selecting a `mode` to avoid errors when updating payment information using Elements. If there is a past due amount, set the mode to `payment` rather than `setup` for billing info updates.
+
 ### Return URLs
 
 Certain APMs require return URLs to be passed to Stripe within the confirmation token. To ensure customers who are choosing to checkout with a Return URL-dependent APM, ensure you are providing Stripe this detail before submitting the confirmation token to Recurly.
