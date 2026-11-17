@@ -98,7 +98,6 @@ Set up a test account with dLocal and follow their sandbox instructions. You don
 
 ***
 
-📋 TODO before publishing:
+<br />
 
-- [ ] Confirm the correct URL/slug for the "GCash integration guide" — the source used inconsistent paths (`gcash-integration-guide` vs `/docs/gcash-integration-guide`) and I can't verify this page actually exists at either
-- [ ] The Definition previously stated GCash was "launched in 2018 as a joint venture between SoftBank and Yahoo Japan" — that's PayPay's history, not GCash's. Replaced with the verified facts (launched 2004 under Globe Telecom/Mynt, a JV with Ayala Corporation and Ant Group) — please confirm this is the framing you want, and supply a current user count if you'd like a specific figure back in
+<br />
