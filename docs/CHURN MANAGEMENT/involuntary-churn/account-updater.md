@@ -43,7 +43,7 @@ next:
 <ul class="rp-list">
   <li>Account Updater only applies to stored credit cards — it's not available for non-card payment methods</li>
   <li>One-time transactions are not submitted to the Account Updater service</li>
-  <li>Account Updater does not work for merchants using exclusively gateway tokens where Recurly doesn't have access to actual card data</li>
+  <li>Account Updater does not work for merchants using gateway tokens where Recurly doesn't have access to actual card data. Account Updater is for raw PAN only.</li>
   <li>OptBlue merchant accounts (gateway-provided SE numbers) are not supported for American Express® Cardrefresher</li>
   <li>Updates only occur when your Recurly site is in production mode</li>
   <li>If you disable Account Updater, it cannot be re-enabled for 10 business days</li>
