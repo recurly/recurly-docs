@@ -85,47 +85,42 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-gift-note { grid-column:1 / -1; font-size:.8rem; color:#D1CFC4 !important; margin-top:2px; }
 .rc-gift-note strong { color:#FFD706 !important; }
 
-/* ── CALENDAR ── */
-.rc-cal-month { font-size:.82rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:var(--gray) !important; margin:0 0 12px; }
-.rc-cal { border:1px solid var(--lightgray); border-radius:16px; overflow:hidden; background:var(--brightgray); }
-.rc-cal-head { display:grid; grid-template-columns:repeat(5,1fr); background:var(--offblack); }
-.rc-cal-head div { color:var(--yellow); font-size:.74rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; padding:12px 14px; }
-.rc-cal-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; padding:12px; }
-.rc-spacer { visibility:hidden; }
+/* ── CALENDAR CARDS (mockup style, 3 across) ── */
+.rc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:24px 0 32px; }
 
-a.rc-cell, .rc-cell {
-  aspect-ratio:1 / 1; display:flex; flex-direction:column; gap:4px; padding:14px;
-  background:var(--offwhite); border:1px solid var(--lightgray); border-top:5px solid transparent;
-  border-radius:14px; color:var(--darkgray) !important; transition:all .2s ease; overflow:hidden;
+a.rc-task, .rc-task {
+  display:flex; flex-direction:column; gap:8px; background:var(--offwhite);
+  border:1px solid var(--lightgray); border-radius:14px; padding:22px; color:var(--darkgray) !important;
+  transition:all .2s ease;
 }
-.rc-num { font-size:1.9rem; font-weight:900; line-height:1; color:var(--offblack); }
-.rc-meta { font-size:.66rem; font-weight:800; letter-spacing:.7px; text-transform:uppercase; color:var(--gray) !important; }
-.rc-cell h4 { font-size:.92rem; font-weight:800; color:var(--offblack) !important; margin:6px 0 0; line-height:1.25; }
-.rc-cell .rc-desc { font-size:.78rem; color:var(--gray) !important; line-height:1.35; margin:0; }
-.rc-foot { margin-top:auto; font-size:.74rem; font-weight:700; }
-.rc-when-active { display:none; }
-.rc-when-locked { display:inline-flex; align-items:center; gap:5px; color:var(--gray) !important; }
+.rc-task-top { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.rc-pill {
+  display:inline-flex; align-items:center; gap:6px; color:#fff; padding:4px 11px; border-radius:16px;
+  font-size:.72rem; font-weight:800; letter-spacing:.5px; text-transform:uppercase;
+}
+.rc-c-red { background:#FF5126; }
+.rc-c-green { background:#5DC32E; }
+.rc-c-blue { background:#008CFF; }
+.rc-c-gold { background:#FFD706; color:#0D0D0B !important; }
+.rc-pts { font-size:.76rem; font-weight:800; color:#FF5126 !important; white-space:nowrap; }
+.rc-date { font-size:.72rem; font-weight:700; color:var(--gray) !important; text-transform:uppercase; letter-spacing:.6px; }
+.rc-task h4 { font-size:1.05rem; font-weight:800; color:var(--offblack) !important; margin:0; line-height:1.3; }
+.rc-task p { font-size:.88rem; color:var(--gray) !important; line-height:1.55; margin:0; flex-grow:1; }
+.rc-foot { font-size:.84rem; font-weight:700; margin-top:4px; }
+.rc-when-active { display:none; color:#008CFF !important; }
+.rc-when-locked { display:inline-flex; align-items:center; gap:6px; color:#807D75 !important; }
 
 /* Active: full color, clickable */
-a.rc-cell.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgba(255,81,38,.18); transform:translateY(-2px); text-decoration:none !important; }
+a.rc-task.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgba(255,81,38,.18); transform:translateY(-2px); text-decoration:none !important; }
 .rc-active .rc-when-locked { display:none; }
-.rc-active .rc-when-active { display:inline; color:#008CFF !important; }
-.rc-active.rc-t-red { border-top-color:#FF5126; }
-.rc-active.rc-t-green { border-top-color:#5DC32E; }
-.rc-active.rc-t-blue { border-top-color:#008CFF; }
-.rc-active.rc-t-gold { border-top-color:#FFD706; }
-.rc-active.rc-t-red .rc-num { color:#FF5126; }
-.rc-active.rc-t-green .rc-num { color:#5DC32E; }
-.rc-active.rc-t-blue .rc-num { color:#008CFF; }
-.rc-active.rc-t-gold .rc-num { color:#D9A900; }
-.rc-active .rc-pts { color:#FF5126 !important; }
+.rc-active .rc-when-active { display:inline; }
 
-/* Locked: grayed, not clickable */
-.rc-locked { background:#F7F8F9 !important; border-style:dashed !important; border-color:#C8CCD0 !important; pointer-events:none; cursor:default; }
-.rc-locked .rc-num, .rc-locked h4, .rc-locked .rc-desc { color:#A09E96 !important; }
+/* Locked: grayed, dashed, not clickable */
+.rc-locked { background:#F7F8F9 !important; border:1px dashed #C8CCD0 !important; pointer-events:none; cursor:default; }
+.rc-locked h4 { color:#807D75 !important; }
+.rc-locked p { color:#A09E96 !important; }
+.rc-locked .rc-pill { background:#E5E4DE !important; color:#807D75 !important; }
 .rc-locked .rc-pts { color:#A09E96 !important; }
-
-.rc-pts { font-size:.74rem; font-weight:800; color:var(--poppy) !important; }
 
 /* ── RESOURCES ── */
 .rc-resources { background:var(--brightgray); border-left:4px solid var(--green); border-radius:10px; padding:20px 24px; margin:56px 0 48px; }
@@ -138,16 +133,13 @@ a.rc-cell.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgb
   .rc-how { flex-direction:column; }
   .rc-how div + div { border-left:0; border-top:1px solid var(--lightgray); }
   .rc-gift { grid-template-columns:1fr; }
-  .rc-cal-head { display:none; }
-  .rc-cal-grid { grid-template-columns:1fr 1fr; }
-  .rc-spacer { display:none; }
-  a.rc-cell, .rc-cell { aspect-ratio:auto; min-height:170px; }
+  .rc-grid { grid-template-columns:1fr 1fr; }
 }
 @media (max-width: 768px) {
   .rc-wrap, .rc-topnav { padding-left:20px; padding-right:20px; }
   .rc-hero { padding:44px 20px 46px; }
   .rc-hero h1 { font-size:1.9rem; }
-  .rc-cal-grid { grid-template-columns:1fr; }
+  .rc-grid { grid-template-columns:1fr; }
 }
 </style>
 
@@ -199,94 +191,105 @@ a.rc-cell.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgb
     </div>
 
     <!-- CALENDAR -->
-    <div class="rc-section-head"><i class="fa-solid fa-calendar-days"></i><h2>The calendar</h2></div>
-    <p class="rc-cal-month">December 2026</p>
-    <div class="rc-cal">
-      <div class="rc-cal-head">
-        <div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div>
-      </div>
-      <div class="rc-cal-grid">
+    <div class="rc-section-head"><i class="fa-solid fa-calendar-days"></i><h2>The 12 days</h2></div>
+    <div class="rc-grid">
 
-        <!-- Week 1 (Dec 3 is a Thursday) -->
-        <div class="rc-spacer"></div><div class="rc-spacer"></div><div class="rc-spacer"></div>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1" class="rc-cell rc-locked rc-t-red">
-          <span class="rc-num">3</span><span class="rc-meta">Day 1 · <span class="rc-pts">15 pts</span></span>
-          <h4>Defending your workshop</h4>
-          <p class="rc-desc">Chargeback webinar</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-2" class="rc-cell rc-locked rc-t-green">
-          <span class="rc-num">4</span><span class="rc-meta">Day 2 · <span class="rc-pts">25 pts</span></span>
-          <h4>The gift of feedback</h4>
-          <p class="rc-desc">G2 review</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-tree"></i> Day 1</span><span class="rc-pts">15 pts</span></div>
+        <div class="rc-date">Thursday, Dec 3</div>
+        <h4>Defending your workshop</h4>
+        <p>Register for the Chargeback webinar on Dec 10. Attend or watch on demand for 50 bonus points.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 3 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
 
-        <!-- Week 2 -->
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-3" class="rc-cell rc-locked rc-t-gold">
-          <span class="rc-num">7</span><span class="rc-meta">Day 3 · <span class="rc-pts">10 pts each</span></span>
-          <h4>Defrost failed payments</h4>
-          <p class="rc-desc">Dunning quiz</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-4" class="rc-cell rc-locked rc-t-blue">
-          <span class="rc-num">8</span><span class="rc-meta">Day 4 · <span class="rc-pts">20 pts</span></span>
-          <h4>Check your industry twice</h4>
-          <p class="rc-desc">Industry screenshot</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-5" class="rc-cell rc-locked rc-t-red">
-          <span class="rc-num">9</span><span class="rc-meta">Day 5 · <span class="rc-pts">30 pts</span></span>
-          <h4>Warm up your emails</h4>
-          <p class="rc-desc">Email template audit</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-6" class="rc-cell rc-locked rc-t-green">
-          <span class="rc-num">10</span><span class="rc-meta">Day 6 · <span class="rc-pts">15 pts</span></span>
-          <h4>The "snowed in" subscriber</h4>
-          <p class="rc-desc">Pause quiz</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-7" class="rc-cell rc-locked rc-t-blue">
-          <span class="rc-num">11</span><span class="rc-meta">Day 7 · <span class="rc-pts">20 pts</span></span>
-          <h4>Spread the joy</h4>
-          <p class="rc-desc">CSM shoutout</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-2" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-gift"></i> Day 2</span><span class="rc-pts">25 pts</span></div>
+        <div class="rc-date">Friday, Dec 4</div>
+        <h4>The gift of feedback</h4>
+        <p>Submit a G2 review of your experience with Recurly and upload a screenshot for a $25 Amazon gift card.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 4 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
 
-        <!-- Week 3 -->
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-8" class="rc-cell rc-locked rc-t-red">
-          <span class="rc-num">14</span><span class="rc-meta">Day 8 · <span class="rc-pts">15 pts</span></span>
-          <h4>Behind-the-scenes magic</h4>
-          <p class="rc-desc">Card updater quiz</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-9" class="rc-cell rc-locked rc-t-green">
-          <span class="rc-num">15</span><span class="rc-meta">Day 9 · <span class="rc-pts">25 pts</span></span>
-          <h4>A season of savings</h4>
-          <p class="rc-desc">Coupon rules</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-10" class="rc-cell rc-locked rc-t-blue">
-          <span class="rc-num">16</span><span class="rc-meta">Day 10 · <span class="rc-pts">25 pts</span></span>
-          <h4>The data snow globe</h4>
-          <p class="rc-desc">Benchmark goal</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-11" class="rc-cell rc-locked rc-t-red">
-          <span class="rc-num">17</span><span class="rc-meta">Day 11 · <span class="rc-pts">25 pts</span></span>
-          <h4>Global winter festivities</h4>
-          <p class="rc-desc">Payment methods</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-12" class="rc-cell rc-locked rc-t-green">
-          <span class="rc-num">18</span><span class="rc-meta">Day 12 · <span class="rc-pts">25 pts</span></span>
-          <h4>The star on top</h4>
-          <p class="rc-desc">Customer awards</p>
-          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens 12:00 AM</span><span class="rc-when-active">Start task →</span></div>
-        </a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-3" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-gold"><i class="fa-solid fa-snowflake"></i> Day 3</span><span class="rc-pts">10 pts each</span></div>
+        <div class="rc-date">Monday, Dec 7</div>
+        <h4>Defrost failed payments</h4>
+        <p>Test your dunning knowledge with two quick questions. Earn 10 points for each correct answer.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 7 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
 
-      </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-4" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</span><span class="rc-pts">20 pts</span></div>
+        <div class="rc-date">Tuesday, Dec 8</div>
+        <h4>Check your industry twice</h4>
+        <p>Make sure your industry setting is correct so your benchmark reporting is accurate. Submit a screenshot.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 8 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-5" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-mug-hot"></i> Day 5</span><span class="rc-pts">30 pts</span></div>
+        <div class="rc-date">Wednesday, Dec 9</div>
+        <h4>Warm up your emails</h4>
+        <p>Audit one customer email template and submit one update to improve brand consistency and customer trust.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 9 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-6" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-snowflake"></i> Day 6</span><span class="rc-pts">15 pts</span></div>
+        <div class="rc-date">Thursday, Dec 10</div>
+        <h4>The "snowed in" subscriber</h4>
+        <p>Choose the feature that keeps a subscriber from churning. Attend today's live webinar for 50 bonus points.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 10 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-7" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-heart"></i> Day 7</span><span class="rc-pts">20 pts</span></div>
+        <div class="rc-date">Friday, Dec 11</div>
+        <h4>Spread the joy</h4>
+        <p>Watch the CSM video and share what you value about working with your CSM. Submit a video for 50 bonus points.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 11 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-8" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-bolt"></i> Day 8</span><span class="rc-pts">15 pts</span></div>
+        <div class="rc-date">Monday, Dec 14</div>
+        <h4>Behind-the-scenes magic</h4>
+        <p>Find the feature that automatically updates expired cards, so you and your customers don't have to.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 14 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-9" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-tags"></i> Day 9</span><span class="rc-pts">25 pts</span></div>
+        <div class="rc-date">Tuesday, Dec 15</div>
+        <h4>A season of savings</h4>
+        <p>Check your coupon redemption rules so promo codes expire on time. Submit a creative promo code name for 5 bonus points.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 15 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-10" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-snowflake"></i> Day 10</span><span class="rc-pts">25 pts</span></div>
+        <div class="rc-date">Wednesday, Dec 16</div>
+        <h4>The data snow globe</h4>
+        <p>Pick one benchmark metric you want to improve in the new year, and explain why.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 16 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-11" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-globe"></i> Day 11</span><span class="rc-pts">25 pts</span></div>
+        <div class="rc-date">Thursday, Dec 17</div>
+        <h4>Global winter festivities</h4>
+        <p>Choose the right alternative payment method for a customer who wants to pay directly from their bank.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 17 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-12" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-star"></i> Day 12</span><span class="rc-pts">25 pts</span></div>
+        <div class="rc-date">Friday, Dec 18</div>
+        <h4>The star on top</h4>
+        <p>Nominate a team or customer for the Recurly Customer Awards.</p>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 18 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
     </div>
 
     <!-- RESOURCES -->
