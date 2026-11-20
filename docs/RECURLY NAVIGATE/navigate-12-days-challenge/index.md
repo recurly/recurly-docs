@@ -198,7 +198,7 @@ a.rc-task h4 { font-size:1.05rem; font-weight:800; color:var(--offblack) !import
     <div class="rc-week">
       <div class="rc-week-head"><h2>Week one</h2><span>Dec 3 – Dec 4</span></div>
       <div class="rc-row rc-w1">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1" class="rc-task rc-feature rc-locked">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1" class="rc-task rc-feature rc-active">
           <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-tree"></i> Day 1</span><span class="rc-pts">15 pts</span></div>
           <div class="rc-date">Thu, Dec 3</div>
           <h4>Defending your workshop</h4>
