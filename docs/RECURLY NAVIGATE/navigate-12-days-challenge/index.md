@@ -28,7 +28,7 @@ body { background: #ffffff !important; }
 a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
 a.rc-back:hover { color:var(--poppy) !important; }
 
-/* ── HERO (matches mockup: lights top and bottom, logo, pill, title) ── */
+/* ── HERO ── */
 .rc-hero {
   position:relative; background:#0D0D0B; color:#fff; text-align:center;
   padding:54px 40px 56px; border-radius:16px; border:1px solid rgba(255,215,6,.3);
@@ -52,7 +52,7 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-hero p { font-size:1.02rem; color:#D1CFC4 !important; max-width:720px; margin:0 auto; line-height:1.6; position:relative; z-index:3; }
 .rc-hero-meta { margin-top:20px; font-size:.9rem; font-weight:700; color:#FFD706 !important; position:relative; z-index:3; }
 
-/* ── HOW IT WORKS (inline strip, not cards) ── */
+/* ── HOW IT WORKS ── */
 .rc-how { display:flex; gap:0; margin:40px 0 8px; border-top:1px solid var(--lightgray); border-bottom:1px solid var(--lightgray); }
 .rc-how div { flex:1; padding:22px 24px; }
 .rc-how div + div { border-left:1px solid var(--lightgray); }
@@ -95,11 +95,10 @@ a.rc-task h4 { font-size:1.05rem; font-weight:800; color:var(--offblack) !import
 .rc-foot { font-size:.84rem; font-weight:700; margin-top:4px; }
 .rc-foot .rc-when-active { color:#008CFF !important; }
 .rc-foot .rc-when-locked { color:#807D75 !important; display:inline-flex; align-items:center; gap:6px; }
-.rc-state-tag { display:none; }
 
 /* Active state (full color) */
-.rc-active .rc-when-locked { display:none; }
 .rc-when-active { display:none; }
+.rc-active .rc-when-locked { display:none; }
 .rc-active .rc-when-active { display:inline; }
 
 /* Locked state (grayed, not clickable) */
@@ -111,14 +110,14 @@ a.rc-task h4 { font-size:1.05rem; font-weight:800; color:var(--offblack) !import
 .rc-locked:hover { transform:none; box-shadow:none; }
 .rc-locked .rc-when-locked { display:inline-flex; }
 
-/* Featured cards are taller with bigger type */
+/* Featured and compact sizes */
 .rc-feature h4 { font-size:1.4rem !important; }
 .rc-feature p { font-size:.95rem !important; }
 .rc-compact { padding:18px; gap:6px; }
 .rc-compact h4 { font-size:.98rem !important; }
 .rc-compact p { font-size:.84rem !important; }
 
-/* ── GIFTING (dramatic dark band) ── */
+/* ── GIFTING ── */
 .rc-gift {
   position:relative; margin:56px 0 0; border-radius:18px; overflow:hidden;
   background:
@@ -289,4 +288,60 @@ a.rc-task h4 { font-size:1.05rem; font-weight:800; color:var(--offblack) !import
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-11" class="rc-task rc-compact rc-locked">
           <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-globe"></i> Day 11</span><span class="rc-pts">25 pts</span></div>
+          <div class="rc-date">Thu, Dec 17</div>
+          <h4>Global winter festivities</h4>
+          <p>Choose the right alternative payment method for a customer who wants to pay from their bank.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Dec 17</span><span class="rc-when-active">Start task →</span></div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-12" class="rc-task rc-compact rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-star"></i> Day 12</span><span class="rc-pts">25 pts</span></div>
+          <div class="rc-date">Fri, Dec 18</div>
+          <h4>The star on top</h4>
+          <p>Nominate a team or customer for the Recurly Customer Awards.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Dec 18</span><span class="rc-when-active">Start task →</span></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- GIFTING -->
+    <div class="rc-gift">
+      <div class="rc-gift-eyebrow"><i class="fa-solid fa-trophy"></i> The prizes</div>
+      <h2>Finish on top and win big</h2>
+      <div class="rc-gift-grid">
+        <div class="rc-gift-main">
+          <div class="rc-gift-rank">1st place · Grand prize</div>
+          <h3>Your choice of reward</h3>
+          <p>An extended Engage trial with 10 hours of professional services.</p>
+          <div class="rc-gift-or">— OR —</div>
+          <p>A $250 gift card.</p>
+          <p style="margin-top:6px; font-size:.85rem;">The winner picks whichever they prefer.</p>
+        </div>
+        <div class="rc-gift-side">
+          <div class="rc-gift-small">
+            <div class="rc-gift-rank">2nd place</div>
+            <h4>Navigate gift basket</h4>
+            <p>A Navigate gift basket for our runner-up.</p>
+          </div>
+          <div class="rc-gift-small">
+            <div class="rc-gift-rank">3rd place</div>
+            <h4>Navigate gift basket</h4>
+            <p>A Navigate gift basket for third place.</p>
+          </div>
+        </div>
+      </div>
+      <div class="rc-gift-note"><strong>How you earn it:</strong> Every task lists its points on its page. Bonus points for the webinar and video are added after we verify them.</div>
+    </div>
+
+    <!-- RESOURCES -->
+    <div class="rc-resources">
+      <h3><i class="fa-solid fa-book-open" style="color:#5DC32E;"></i> Resources</h3>
+      <div class="rc-resource-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home">Recurly Navigate home</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1">Start Day 1</a>
+        <a href="mailto:support@recurly.com">Contact support</a>
+      </div>
+    </div>
+
+  </div>
+</div>
 `}</HTMLBlock>
