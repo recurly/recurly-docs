@@ -13,291 +13,280 @@ metadata:
 body { background: #ffffff !important; }
 .rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; box-sizing: border-box; }
 .rc-guide [class^="fa-"], .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
-.rc-guide h1, .rc-guide h2, .rc-guide h3, .rc-guide h4 { border-bottom: none !important; padding-bottom: 0 !important; }
+.rc-guide h1, .rc-guide h2, .rc-guide h3, .rc-guide h4 { border-bottom: none !important; padding-bottom: 0 !important; margin-top: 0; }
 .rc-guide {
-  --yellow: #FFD706; --poppy: #FF5126; --green: #5DC32E; --blue: #008CFF;
-  --offblack: #0D0D0B; --darkgray: #32312D; --gray: #807D75; --lightgray: #D1CFC4;
-  --brightgray: #F2F1EA; --offwhite: #FCFBF7;
-  color: var(--darkgray) !important; background: #ffffff;
+  --yellow:#FFD706; --poppy:#FF5126; --green:#5DC32E; --blue:#008CFF;
+  --offblack:#0D0D0B; --darkgray:#32312D; --gray:#807D75; --lightgray:#D1CFC4;
+  --brightgray:#F2F1EA; --offwhite:#FCFBF7;
+  color: var(--darkgray) !important; background:#fff;
 }
-.rc-guide a, .rc-guide a:link, .rc-guide a:visited { color: #008CFF !important; text-decoration: none !important; border-bottom: 0 !important; }
-.rc-guide a:hover { color: #0067BE !important; text-decoration: underline !important; }
+.rc-guide a, .rc-guide a:link, .rc-guide a:visited { color:#008CFF !important; text-decoration:none !important; border-bottom:0 !important; }
+.rc-guide a:hover { color:#0067BE !important; text-decoration:underline !important; }
 
-.rc-content-wrap { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
-.rc-top-nav { max-width: 1100px; margin: 0 auto; padding: 20px 32px 12px; }
-a.rc-back-link { color: var(--gray) !important; font-weight: 700; font-size: .9rem; display: inline-flex; gap: 6px; }
-a.rc-back-link:hover { color: var(--poppy) !important; }
+.rc-wrap { max-width:1120px; margin:0 auto; padding:0 32px; }
+.rc-topnav { max-width:1120px; margin:0 auto; padding:20px 32px 12px; }
+a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
+a.rc-back:hover { color:var(--poppy) !important; }
 
-/* HERO */
+/* ── HERO (matches mockup: lights top and bottom, logo, pill, title) ── */
 .rc-hero {
-  position: relative; background: var(--offblack); color: #fff; text-align: center;
-  padding: 56px 40px 52px; border-radius: 16px; border: 1px solid rgba(255,215,6,.3);
-  box-shadow: 0 8px 30px rgba(0,0,0,.45); overflow: hidden;
+  position:relative; background:#0D0D0B; color:#fff; text-align:center;
+  padding:54px 40px 56px; border-radius:16px; border:1px solid rgba(255,215,6,.3);
+  box-shadow:0 8px 30px rgba(0,0,0,.45); overflow:hidden;
 }
-.rc-hero::before, .rc-hero::after {
-  content: ""; position: absolute; left: 0; right: 0; height: 6px;
-  background: repeating-linear-gradient(90deg, #FFD706 0 22px, #FF5126 22px 44px, #5DC32E 44px 66px, #008CFF 66px 88px);
+.rc-lights-top, .rc-lights-bottom {
+  position:absolute; left:0; right:0; height:38px; pointer-events:none; z-index:2;
+  background-repeat:repeat-x; background-position:top center;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='38' viewBox='0 0 240 38'%3E%3Cpath d='M0,4 Q60,24 120,4 Q180,24 240,4' fill='none' stroke='%231b2e20' stroke-width='2' stroke-linecap='round'/%3E%3Cg%3E%3Ccircle cx='35' cy='22' r='9' fill='%23FFD706' fill-opacity='0.40'/%3E%3Crect x='33' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='35' cy='21' rx='4.5' ry='6.5' fill='%23FFD706'/%3E%3Ccircle cx='33.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='60' cy='27' r='9' fill='%23FF5126' fill-opacity='0.40'/%3E%3Crect x='58' y='17' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='60' cy='26' rx='4.5' ry='6.5' fill='%23FF5126'/%3E%3Ccircle cx='58.5' cy='24' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='85' cy='22' r='9' fill='%235DC32E' fill-opacity='0.40'/%3E%3Crect x='83' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='85' cy='21' rx='4.5' ry='6.5' fill='%235DC32E'/%3E%3Ccircle cx='83.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='155' cy='22' r='9' fill='%23008CFF' fill-opacity='0.40'/%3E%3Crect x='153' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='155' cy='21' rx='4.5' ry='6.5' fill='%23008CFF'/%3E%3Ccircle cx='153.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='180' cy='27' r='9' fill='%23FFD706' fill-opacity='0.40'/%3E%3Crect x='178' y='17' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='180' cy='26' rx='4.5' ry='6.5' fill='%23FFD706'/%3E%3Ccircle cx='178.5' cy='24' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='205' cy='22' r='9' fill='%23FF5126' fill-opacity='0.40'/%3E%3Crect x='203' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='205' cy='21' rx='4.5' ry='6.5' fill='%23FF5126'/%3E%3Ccircle cx='203.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3C/svg%3E");
 }
-.rc-hero::before { top: 0; } .rc-hero::after { bottom: 0; }
-.rc-logo { height: 28px; display: block; margin: 0 auto 4px; }
-.rc-day-pill {
-  display: inline-flex; align-items: center; gap: 8px; background: var(--poppy); color: #fff;
-  font-size: .78rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase;
-  padding: 6px 18px; border-radius: 20px; margin: 22px 0 14px;
+.rc-lights-top { top:0; }
+.rc-lights-bottom { bottom:0; transform:rotate(180deg); }
+.rc-logo { height:28px; display:block; margin:0 auto; position:relative; z-index:3; }
+.rc-hero-pill {
+  display:inline-flex; align-items:center; gap:8px; position:relative; z-index:3;
+  background:rgba(93,197,46,.16); border:1.5px solid #5DC32E; color:#5DC32E;
+  font-size:.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase;
+  padding:6px 18px; border-radius:20px; margin:26px auto 16px;
 }
-.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FCFBF7 !important; margin: 0 0 14px; }
-.rc-hero p { font-size: 1.02rem; color: #D1CFC4 !important; max-width: 720px; margin: 0 auto; line-height: 1.6; }
-.rc-hero-meta { margin-top: 22px; font-size: .9rem; font-weight: 700; color: var(--yellow) !important; letter-spacing: .4px; }
+.rc-hero h1 { font-size:2.6rem; font-weight:800; line-height:1.12; color:#FCFBF7 !important; margin:0 0 14px; position:relative; z-index:3; }
+.rc-hero p { font-size:1.02rem; color:#D1CFC4 !important; max-width:720px; margin:0 auto; line-height:1.6; position:relative; z-index:3; }
+.rc-hero-meta { margin-top:20px; font-size:.9rem; font-weight:700; color:#FFD706 !important; position:relative; z-index:3; }
 
-/* SECTIONS */
-.rc-section { margin: 40px 0; }
-.rc-section h2 {
-  font-size: 1.45rem; font-weight: 800; color: var(--offblack) !important; margin: 0 0 16px;
-  display: flex; align-items: center; gap: 12px;
-}
-.rc-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
-.rc-section > p { font-size: .95rem; line-height: 1.65; margin: 0 0 16px; }
-.rc-fa { color: var(--poppy); font-size: 1.1rem; }
+/* ── HOW IT WORKS (inline strip, not cards) ── */
+.rc-how { display:flex; gap:0; margin:40px 0 8px; border-top:1px solid var(--lightgray); border-bottom:1px solid var(--lightgray); }
+.rc-how div { flex:1; padding:22px 24px; }
+.rc-how div + div { border-left:1px solid var(--lightgray); }
+.rc-how strong { display:block; font-size:.95rem; color:var(--offblack) !important; margin-bottom:4px; }
+.rc-how span { font-size:.87rem; color:var(--gray) !important; line-height:1.5; }
+.rc-how b { color:var(--poppy); font-size:1.3rem; font-weight:900; display:block; margin-bottom:6px; }
 
-/* PRIZES + SCORING */
-.rc-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.rc-card {
-  background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px;
-}
-.rc-card h4 { font-size: 1rem; font-weight: 800; color: var(--offblack) !important; margin: 10px 0 6px; }
-.rc-card p { font-size: .88rem; color: var(--gray) !important; line-height: 1.55; margin: 0; }
-.rc-card-icon { font-size: 1.5rem; }
-.rc-tag {
-  display: inline-block; margin-top: 10px; padding: 4px 12px; border-radius: 20px;
-  font-size: .7rem; font-weight: 800; letter-spacing: .5px; text-transform: uppercase; color: #fff;
-}
+/* ── WEEKS ── */
+.rc-week { margin:44px 0 0; }
+.rc-week-head { display:flex; align-items:baseline; gap:14px; margin-bottom:18px; }
+.rc-week-head h2 { font-size:1.4rem; font-weight:800; color:var(--offblack) !important; margin:0; }
+.rc-week-head span { font-size:.82rem; font-weight:700; color:var(--gray) !important; letter-spacing:.6px; text-transform:uppercase; }
+.rc-week-head::after { content:""; flex:1; height:1px; background:var(--lightgray); align-self:center; }
+.rc-row { display:grid; gap:16px; margin-bottom:16px; }
+.rc-w1 { grid-template-columns: 1.6fr 1fr; }
+.rc-w2a { grid-template-columns: 2fr 1fr; }
+.rc-w2b { grid-template-columns: 1fr 1fr 1fr; }
+.rc-w3a { grid-template-columns: 1fr 2fr; }
 
-/* DAY CALENDAR */
-.rc-day-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-a.rc-day-card {
-  display: flex; flex-direction: column; gap: 8px; background: var(--offwhite);
-  border: 1px solid var(--lightgray); border-radius: 14px; padding: 20px; color: var(--darkgray) !important;
-  transition: all .2s ease;
+/* ── TASK CARDS (unlock by changing rc-locked to rc-active) ── */
+a.rc-task {
+  display:flex; flex-direction:column; gap:8px; background:var(--offwhite);
+  border:1px solid var(--lightgray); border-radius:14px; padding:22px; color:var(--darkgray) !important;
+  transition:all .2s ease; position:relative;
 }
-a.rc-day-card:hover { border-color: var(--poppy); box-shadow: 0 6px 22px rgba(255,81,38,.18); transform: translateY(-2px); text-decoration: none !important; }
-.rc-day-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-.rc-day-badge {
-  display: inline-flex; align-items: center; gap: 6px; color: #fff; padding: 4px 11px;
-  border-radius: 16px; font-size: .72rem; font-weight: 800; letter-spacing: .5px; text-transform: uppercase;
+a.rc-task:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgba(255,81,38,.18); transform:translateY(-2px); text-decoration:none !important; }
+.rc-task-top { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.rc-pill {
+  display:inline-flex; align-items:center; gap:6px; color:#fff; padding:4px 11px; border-radius:16px;
+  font-size:.72rem; font-weight:800; letter-spacing:.5px; text-transform:uppercase;
 }
-.rc-day-pts { font-size: .76rem; font-weight: 800; color: var(--poppy) !important; white-space: nowrap; }
-.rc-day-date { font-size: .72rem; font-weight: 700; color: var(--gray) !important; text-transform: uppercase; letter-spacing: .6px; }
-a.rc-day-card h4 { font-size: 1.02rem; font-weight: 800; color: var(--offblack) !important; margin: 0; line-height: 1.35; }
-.rc-day-theme { font-size: .84rem; color: var(--gray) !important; line-height: 1.5; margin: 0; flex-grow: 1; }
-.rc-day-cta { font-size: .84rem; font-weight: 700; color: var(--blue) !important; margin-top: 4px; }
+.rc-c-red { background:#FF5126; }
+.rc-c-green { background:#5DC32E; }
+.rc-c-blue { background:#008CFF; }
+.rc-c-gold { background:#FFD706; color:#0D0D0B !important; }
+.rc-pts { font-size:.76rem; font-weight:800; color:#FF5126 !important; white-space:nowrap; }
+.rc-date { font-size:.72rem; font-weight:700; color:var(--gray) !important; text-transform:uppercase; letter-spacing:.6px; }
+a.rc-task h4 { font-size:1.05rem; font-weight:800; color:var(--offblack) !important; margin:0; line-height:1.3; }
+.rc-task p { font-size:.88rem; color:var(--gray) !important; line-height:1.55; margin:0; flex-grow:1; }
+.rc-foot { font-size:.84rem; font-weight:700; margin-top:4px; }
+.rc-foot .rc-when-active { color:#008CFF !important; }
+.rc-foot .rc-when-locked { color:#807D75 !important; display:inline-flex; align-items:center; gap:6px; }
+.rc-state-tag { display:none; }
 
-/* HOW IT WORKS */
-.rc-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.rc-step { background: var(--brightgray); border-radius: 12px; padding: 20px; }
-.rc-step-num {
-  display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px;
-  border-radius: 50%; background: var(--green); color: #fff; font-weight: 800; margin-bottom: 10px;
+/* Active state (full color) */
+.rc-active .rc-when-locked { display:none; }
+.rc-when-active { display:none; }
+.rc-active .rc-when-active { display:inline; }
+
+/* Locked state (grayed, not clickable) */
+.rc-locked { background:#F7F8F9 !important; border:1px dashed #C8CCD0 !important; pointer-events:none; cursor:default; }
+.rc-locked h4 { color:#807D75 !important; }
+.rc-locked p { color:#A09E96 !important; }
+.rc-locked .rc-pill { background:#E5E4DE !important; color:#807D75 !important; }
+.rc-locked .rc-pts { color:#A09E96 !important; }
+.rc-locked:hover { transform:none; box-shadow:none; }
+.rc-locked .rc-when-locked { display:inline-flex; }
+
+/* Featured cards are taller with bigger type */
+.rc-feature h4 { font-size:1.4rem !important; }
+.rc-feature p { font-size:.95rem !important; }
+.rc-compact { padding:18px; gap:6px; }
+.rc-compact h4 { font-size:.98rem !important; }
+.rc-compact p { font-size:.84rem !important; }
+
+/* ── GIFTING (dramatic dark band) ── */
+.rc-gift {
+  position:relative; margin:56px 0 0; border-radius:18px; overflow:hidden;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,215,6,.22), transparent 45%),
+    radial-gradient(circle at 90% 90%, rgba(255,81,38,.25), transparent 45%),
+    #0D0D0B;
+  padding:48px 44px; color:#fff; border:1px solid rgba(255,215,6,.35);
 }
-.rc-step h4 { font-size: 1rem; font-weight: 800; color: var(--offblack) !important; margin: 0 0 6px; }
-.rc-step p { font-size: .88rem; color: var(--gray) !important; line-height: 1.5; margin: 0; }
+.rc-gift-eyebrow { font-size:.8rem; font-weight:800; letter-spacing:1.4px; text-transform:uppercase; color:#FFD706 !important; }
+.rc-gift h2 { font-size:2.4rem; font-weight:900; line-height:1.1; color:#FCFBF7 !important; margin:10px 0 28px; }
+.rc-gift-grid { display:grid; grid-template-columns:1.5fr 1fr; gap:20px; }
+.rc-gift-main {
+  background:linear-gradient(160deg,#FFD706 0%,#FFB300 100%); color:#0D0D0B; border-radius:16px; padding:34px 32px;
+  display:flex; flex-direction:column; gap:10px;
+}
+.rc-gift-main .rc-gift-rank { font-size:.8rem; font-weight:900; letter-spacing:1.2px; text-transform:uppercase; }
+.rc-gift-main h3 { font-size:2rem; font-weight:900; line-height:1.1; color:#0D0D0B !important; margin:0; }
+.rc-gift-main p { font-size:.95rem; line-height:1.55; margin:0; color:#32312D !important; }
+.rc-gift-main .rc-gift-or { font-weight:900; font-size:.9rem; margin-top:4px; }
+.rc-gift-side { display:flex; flex-direction:column; gap:16px; }
+.rc-gift-small {
+  background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); border-radius:14px; padding:22px 24px;
+}
+.rc-gift-small .rc-gift-rank { font-size:.76rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#5DC32E !important; }
+.rc-gift-small h4 { font-size:1.2rem; font-weight:800; color:#FCFBF7 !important; margin:6px 0 4px; }
+.rc-gift-small p { font-size:.88rem; color:#D1CFC4 !important; margin:0; line-height:1.5; }
+.rc-gift-note { margin-top:22px; font-size:.86rem; color:#D1CFC4 !important; }
+.rc-gift-note strong { color:#FFD706 !important; }
 
-/* RESOURCES */
-.rc-resources { background: var(--brightgray); border-left: 4px solid var(--green); border-radius: 10px; padding: 20px 24px; margin-top: 32px; }
-.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray) !important; margin: 0 0 12px; }
-.rc-resource-links { display: flex; flex-wrap: wrap; gap: 6px 20px; }
-.rc-resource-links a { color: var(--gray) !important; text-decoration: underline !important; font-size: .88rem; font-weight: 500; }
+/* ── RESOURCES ── */
+.rc-resources { background:var(--brightgray); border-left:4px solid var(--green); border-radius:10px; padding:20px 24px; margin:56px 0 48px; }
+.rc-resources h3 { font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.9px; color:var(--gray) !important; margin:0 0 12px; }
+.rc-resource-links { display:flex; flex-wrap:wrap; gap:6px 20px; }
+.rc-resource-links a { color:var(--gray) !important; text-decoration:underline !important; font-size:.88rem; font-weight:500; }
 
+/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  .rc-grid-3, .rc-day-grid, .rc-steps { grid-template-columns: 1fr 1fr; }
+  .rc-w1, .rc-w2a, .rc-w2b, .rc-w3a, .rc-gift-grid { grid-template-columns: 1fr; }
+  .rc-how { flex-direction:column; }
+  .rc-how div + div { border-left:0; border-top:1px solid var(--lightgray); }
+  .rc-gift { padding:34px 24px; }
+  .rc-gift h2 { font-size:1.9rem; }
 }
 @media (max-width: 768px) {
-  .rc-content-wrap, .rc-top-nav { padding-left: 20px; padding-right: 20px; }
-  .rc-hero { padding: 44px 20px 40px; }
-  .rc-hero h1 { font-size: 1.8rem; }
-  .rc-grid-3, .rc-day-grid, .rc-steps { grid-template-columns: 1fr; }
+  .rc-wrap, .rc-topnav { padding-left:20px; padding-right:20px; }
+  .rc-hero { padding:44px 20px 46px; }
+  .rc-hero h1 { font-size:1.9rem; }
 }
 </style>
 
 <div class="rc-guide">
 
-  <div class="rc-top-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back-link">← Back to Navigate home</a>
+  <div class="rc-topnav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back">← Back to Navigate home</a>
   </div>
 
-  <div class="rc-content-wrap">
+  <div class="rc-wrap">
 
     <!-- HERO -->
     <div class="rc-hero">
+      <div class="rc-lights-top"></div>
       <img class="rc-logo" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
-      <span class="rc-day-pill"><i class="fa-solid fa-snowflake"></i> 12 weekdays · Dec 3–18, 2026</span>
+      <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Winter challenge</span></div>
       <h1>Sleigh your success: Navigate 12-day challenge</h1>
-      <p>Complete one short task each weekday, earn points, and compete for the top prize. Each task opens at midnight on its date and stays open through December 18.</p>
-      <div class="rc-hero-meta">Start with Day 1 on Thursday, December 3</div>
+      <p>Twelve weekdays, twelve short tasks. Each task opens at midnight on its date and stays open through December 18. Earn points and compete for the top prize.</p>
+      <div class="rc-hero-meta">Thursday, December 3 – Friday, December 18, 2026</div>
+      <div class="rc-lights-bottom"></div>
     </div>
 
     <!-- HOW IT WORKS -->
-    <div class="rc-section">
-      <h2><i class="fa-solid fa-list-check rc-fa"></i> How it works</h2>
-      <div class="rc-steps">
-        <div class="rc-step">
-          <span class="rc-step-num">1</span>
-          <h4>Open today's task</h4>
-          <p>A new task opens at midnight Central on each weekday from Dec 3 to Dec 18.</p>
-        </div>
-        <div class="rc-step">
-          <span class="rc-step-num">2</span>
-          <h4>Complete the task</h4>
-          <p>Each task has a short activity, and some ask you to submit a form or screenshot.</p>
-        </div>
-        <div class="rc-step">
-          <span class="rc-step-num">3</span>
-          <h4>Earn your points</h4>
-          <p>Points are added to your challenge total. Some tasks include bonus points.</p>
-        </div>
-      </div>
+    <div class="rc-how">
+      <div><b>01</b><strong>Open today's task</strong><span>A new task unlocks at midnight Central on each weekday.</span></div>
+      <div><b>02</b><strong>Complete the activity</strong><span>Follow the steps on the page, then submit any form or screenshot it asks for.</span></div>
+      <div><b>03</b><strong>Earn your points</strong><span>Points go toward your total. Some tasks include bonus points.</span></div>
     </div>
 
-    <!-- PRIZES -->
-    <div class="rc-section">
-      <h2><i class="fa-solid fa-trophy rc-fa"></i> Prizes</h2>
-      <div class="rc-grid-3">
-        <div class="rc-card">
-          <i class="fa-solid fa-award card-icon rc-card-icon" style="color: var(--poppy);"></i>
-          <h4>1st place</h4>
-          <p>Your choice of an extended Engage trial with 10 hours of professional services, or a $250 gift card.</p>
-          <span class="rc-tag" style="background: var(--poppy);">Grand prize</span>
-        </div>
-        <div class="rc-card">
-          <i class="fa-solid fa-basket-shopping rc-card-icon" style="color: var(--green);"></i>
-          <h4>2nd and 3rd place</h4>
-          <p>A Navigate gift basket for each of the two runners-up.</p>
-          <span class="rc-tag" style="background: var(--green);">Runners-up</span>
-        </div>
-        <div class="rc-card">
-          <i class="fa-solid fa-star rc-card-icon" style="color: var(--yellow);"></i>
-          <h4>Scoring</h4>
-          <p>Each day lists its points on its card below. Bonus points are added to your total after the activity is verified.</p>
-          <span class="rc-tag" style="background: var(--offblack);">255+ base points</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- DAY CALENDAR -->
-    <div class="rc-section">
-      <h2><i class="fa-solid fa-calendar-days rc-fa"></i> The 12 days</h2>
-      <p>Select a day to open its task page. Tasks open at midnight Central on the date shown.</p>
-
-      <div class="rc-day-grid">
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--poppy);">Day 1</span><span class="rc-day-pts">15 pts</span></div>
-          <div class="rc-day-date">Thu, Dec 3</div>
+    <!-- WEEK 1 -->
+    <div class="rc-week">
+      <div class="rc-week-head"><h2>Week one</h2><span>Dec 3 – Dec 4</span></div>
+      <div class="rc-row rc-w1">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1" class="rc-task rc-feature rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-tree"></i> Day 1</span><span class="rc-pts">15 pts</span></div>
+          <div class="rc-date">Thu, Dec 3</div>
           <h4>Defending your workshop</h4>
-          <p class="rc-day-theme">Register for the Chargeback webinar on Dec 10.</p>
-          <span class="rc-day-cta">Open task →</span>
+          <p>Keep the Grinches at bay. Register for our Chargeback webinar on December 10, and earn 50 more points for attending or watching on demand.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Thu, Dec 3 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
         </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-2" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--green);">Day 2</span><span class="rc-day-pts">25 pts</span></div>
-          <div class="rc-day-date">Fri, Dec 4</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-2" class="rc-task rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-gift"></i> Day 2</span><span class="rc-pts">25 pts</span></div>
+          <div class="rc-date">Fri, Dec 4</div>
           <h4>The gift of feedback</h4>
-          <p class="rc-day-theme">Submit a G2 review and earn a $25 Amazon gift card.</p>
-          <span class="rc-day-cta">Open task →</span>
+          <p>Submit a G2 review of your experience with Recurly and earn a $25 Amazon gift card.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Fri, Dec 4 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
         </a>
+      </div>
+    </div>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-3" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--gold, #FFD706); color: var(--offblack);">Day 3</span><span class="rc-day-pts">10 pts each</span></div>
-          <div class="rc-day-date">Mon, Dec 7</div>
+    <!-- WEEK 2 -->
+    <div class="rc-week">
+      <div class="rc-week-head"><h2>Week two</h2><span>Dec 7 – Dec 11</span></div>
+      <div class="rc-row rc-w2a">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-3" class="rc-task rc-feature rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-gold"><i class="fa-solid fa-snowflake"></i> Day 3</span><span class="rc-pts">10 pts each</span></div>
+          <div class="rc-date">Mon, Dec 7</div>
           <h4>Defrost failed payments</h4>
-          <p class="rc-day-theme">Test your dunning knowledge with a short quiz.</p>
-          <span class="rc-day-cta">Open task →</span>
+          <p>A customer's card expired and the payment failed. Test your dunning knowledge with two quick questions, and earn 10 points for each correct answer.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Mon, Dec 7 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
         </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-4" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--blue);">Day 4</span><span class="rc-day-pts">20 pts</span></div>
-          <div class="rc-day-date">Tue, Dec 8</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-4" class="rc-task rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</span><span class="rc-pts">20 pts</span></div>
+          <div class="rc-date">Tue, Dec 8</div>
           <h4>Check your industry twice</h4>
-          <p class="rc-day-theme">Verify your industry setting and submit a screenshot.</p>
-          <span class="rc-day-cta">Open task →</span>
+          <p>Verify your industry setting so your benchmark reports are accurate. Submit a screenshot.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Tue, Dec 8 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
         </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-5" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--poppy);">Day 5</span><span class="rc-day-pts">30 pts</span></div>
-          <div class="rc-day-date">Wed, Dec 9</div>
+      </div>
+      <div class="rc-row rc-w2b">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-5" class="rc-task rc-compact rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-mug-hot"></i> Day 5</span><span class="rc-pts">30 pts</span></div>
+          <div class="rc-date">Wed, Dec 9</div>
           <h4>Warm up your emails</h4>
-          <p class="rc-day-theme">Audit one customer email template and submit an update.</p>
-          <span class="rc-day-cta">Open task →</span>
+          <p>Audit one customer email template and submit one update.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Dec 9</span><span class="rc-when-active">Start task →</span></div>
         </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-6" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--green);">Day 6</span><span class="rc-day-pts">15 pts</span></div>
-          <div class="rc-day-date">Thu, Dec 10</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-6" class="rc-task rc-compact rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-snowflake"></i> Day 6</span><span class="rc-pts">15 pts</span></div>
+          <div class="rc-date">Thu, Dec 10</div>
           <h4>The "snowed in" subscriber</h4>
-          <p class="rc-day-theme">Pick the right feature to keep a subscriber from churning.</p>
-          <span class="rc-day-cta">Open task →</span>
+          <p>Choose the feature that keeps a subscriber from churning. Attend today's webinar for 50 bonus points.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Dec 10</span><span class="rc-when-active">Start task →</span></div>
         </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-7" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--blue);">Day 7</span><span class="rc-day-pts">20 pts</span></div>
-          <div class="rc-day-date">Fri, Dec 11</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-7" class="rc-task rc-compact rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-heart"></i> Day 7</span><span class="rc-pts">20 pts</span></div>
+          <div class="rc-date">Fri, Dec 11</div>
           <h4>Spread the joy</h4>
-          <p class="rc-day-theme">Share what you value about working with your CSM. Optional video for bonus points.</p>
-          <span class="rc-day-cta">Open task →</span>
+          <p>Tell us what you value about working with your CSM. Submit a video for 50 bonus points.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Dec 11</span><span class="rc-when-active">Start task →</span></div>
         </a>
+      </div>
+    </div>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-8" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--poppy);">Day 8</span><span class="rc-day-pts">15 pts</span></div>
-          <div class="rc-day-date">Mon, Dec 14</div>
+    <!-- WEEK 3 -->
+    <div class="rc-week">
+      <div class="rc-week-head"><h2>Week three</h2><span>Dec 14 – Dec 18</span></div>
+      <div class="rc-row rc-w3a">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-8" class="rc-task rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-user-secret"></i> Day 8</span><span class="rc-pts">15 pts</span></div>
+          <div class="rc-date">Mon, Dec 14</div>
           <h4>Behind-the-scenes magic</h4>
-          <p class="rc-day-theme">Find the feature that updates expired cards automatically.</p>
-          <span class="rc-day-cta">Open task →</span>
+          <p>Find the feature that updates expired cards automatically, so your customers don't have to.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Mon, Dec 14 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
         </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-9" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--green);">Day 9</span><span class="rc-day-pts">25 pts</span></div>
-          <div class="rc-day-date">Tue, Dec 15</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-9" class="rc-task rc-feature rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-tags"></i> Day 9</span><span class="rc-pts">25 pts</span></div>
+          <div class="rc-date">Tue, Dec 15</div>
           <h4>A season of savings</h4>
-          <p class="rc-day-theme">Check your coupon redemption rules. Optional creative promo code for bonus points.</p>
-          <span class="rc-day-cta">Open task →</span>
+          <p>Check your coupon redemption rules so promo codes expire on time and can't be overused. Submit a creative promo code name for 5 bonus points.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Tue, Dec 15 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
         </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-10" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--blue);">Day 10</span><span class="rc-day-pts">25 pts</span></div>
-          <div class="rc-day-date">Wed, Dec 16</div>
+      </div>
+      <div class="rc-row rc-w2b">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-10" class="rc-task rc-compact rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-snowflake"></i> Day 10</span><span class="rc-pts">25 pts</span></div>
+          <div class="rc-date">Wed, Dec 16</div>
           <h4>The data snow globe</h4>
-          <p class="rc-day-theme">Pick one benchmark metric to improve in the new year.</p>
-          <span class="rc-day-cta">Open task →</span>
+          <p>Pick one benchmark metric to improve in the new year, and say why.</p>
+          <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Opens Dec 16</span><span class="rc-when-active">Start task →</span></div>
         </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-11" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--poppy);">Day 11</span><span class="rc-day-pts">25 pts</span></div>
-          <div class="rc-day-date">Thu, Dec 17</div>
-          <h4>Global winter festivities</h4>
-          <p class="rc-day-theme">Choose the right alternative payment method for international customers.</p>
-          <span class="rc-day-cta">Open task →</span>
-        </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-12" class="rc-day-card">
-          <div class="rc-day-head"><span class="rc-day-badge" style="background: var(--green);">Day 12</span><span class="rc-day-pts">25 pts</span></div>
-          <div class="rc-day-date">Fri, Dec 18</div>
-          <h4>The star on top</h4>
-          <p class="rc-day-theme">Nominate a team or customer for the Recurly Customer Awards.</p>
-          <span class="rc-day-cta">Open task →</span>
-        </a>
-
-      </div>
-    </div>
-
-    <!-- RESOURCES -->
-    <div class="rc-resources">
-      <h3><i class="fa-solid fa-book-open" style="color: var(--green);"></i> Resources</h3>
-      <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home">Recurly Navigate home</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1">Start Day 1</a>
-        <a href="mailto:support@recurly.com">Contact support</a>
-      </div>
-    </div>
-
-  </div>
-</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-11" class="rc-task rc-compact rc-locked">
+          <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-globe"></i> Day 11</span><span class="rc-pts">25 pts</span></div>
 `}</HTMLBlock>
