@@ -181,8 +181,8 @@ a.rc-task h4 { font-size:1.05rem; font-weight:800; color:var(--offblack) !import
     <div class="rc-hero">
       <div class="rc-lights-top"></div>
       <img class="rc-logo" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
-      <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Winter challenge</span></div>
-      <h1>Sleigh your success: Navigate 12-day challenge</h1>
+      <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Sleigh your success</span></div>
+      <h1>Navigate 12-day challenge</h1>
       <p>Twelve weekdays, twelve short tasks. Each task opens at midnight on its date and stays open through December 18. Earn points and compete for the top prize.</p>
       <div class="rc-hero-meta">Thursday, December 3 – Friday, December 18, 2026</div>
       <div class="rc-lights-bottom"></div>
