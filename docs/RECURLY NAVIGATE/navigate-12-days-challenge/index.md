@@ -212,15 +212,15 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
     </div>
 
     <!-- GOOD TO KNOW -->
-    <div class="rc-notice">
-      <div class="rc-notice-title"><i class="fa-solid fa-circle-info"></i> Good to know</div>
-      <ul>
-        <li><strong>Take your time.</strong> Finish tasks any time before the challenge closes at 11:59 PM CT on December 18.</li>
-        <li><strong>Watch the clock.</strong> Some tasks are time-sensitive.</li>
-        <li><strong>Check your inbox.</strong> Your daily email shows your personal point total. The highest score updates here every day.</li>
-        <li><strong>Winners</strong> will be announced on December 23.</li>
-      </ul>
-    </div>
+   <div class="rc-notice">
+  <div class="rc-notice-title"><i class="fa-solid fa-circle-info"></i> Good to know</div>
+  <ul>
+    <li><strong>Work at your own pace.</strong> Complete tasks any time while the challenge is open, through 11:59 PM CT on December 18. But beware! Some tasks are time-sensitive.</li>
+    <li><strong>Check your inbox.</strong> Your daily email includes a link to the new task and your personal point total.</li>
+    <li><strong>See who's leading.</strong> The highest points so far updates here every day.</li>
+    <li><strong>Winners</strong> will be announced on December 23.</li>
+  </ul>
+</div>
 
     <!-- PRIZES -->
     <div class="rc-section-head"><i class="fa-solid fa-trophy"></i><h2>The prizes</h2></div>
