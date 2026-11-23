@@ -128,6 +128,12 @@ a.rc-task, .rc-task {
 .rc-pts { font-size:.76rem; font-weight:800; color:#FF5126 !important; white-space:nowrap; }
 .rc-date { font-size:.72rem; font-weight:700; color:var(--gray) !important; text-transform:uppercase; letter-spacing:.6px; }
 .rc-task h4 { font-size:1.1rem; font-weight:800; color:var(--offblack) !important; margin:4px 0 0; line-height:1.3; }
+.rc-bonus {
+  display:inline-flex; align-items:center; gap:6px; width:fit-content; margin-top:4px;
+  background:#FFF3B0; color:#0D0D0B !important; font-size:.76rem; font-weight:800;
+  padding:4px 10px; border-radius:8px;
+}
+.rc-bonus i { color:#FF5126; }
 .rc-foot { font-size:.84rem; font-weight:700; margin-top:auto; padding-top:10px; }
 .rc-when-active { display:none; color:#008CFF !important; }
 .rc-when-locked { display:inline-flex; align-items:center; gap:6px; color:#807D75 !important; }
@@ -142,13 +148,13 @@ a.rc-task.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgb
 .rc-locked h4 { color:#807D75 !important; }
 .rc-locked .rc-pill { background:#E5E4DE !important; color:#807D75 !important; }
 .rc-locked .rc-pts { color:#A09E96 !important; }
+.rc-locked .rc-bonus { background:#E5E4DE !important; color:#807D75 !important; }
+.rc-locked .rc-bonus i { color:#A09E96 !important; }
 
 /* Restore card bottom borders (overrides the global link reset) */
 a.rc-task { border-bottom:1px solid var(--lightgray) !important; }
 a.rc-task.rc-locked { border-bottom:1px dashed #C8CCD0 !important; }
 a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
-
-/* ── RESOURCES (removed) ── */
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
@@ -198,7 +204,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <!-- UPDATE DAILY: change the 0 below before each new email goes out -->
         <div class="rc-stat-num rc-poppy"><span id="rc-high-score">0</span></div>
         <div>
-          <div class="rc-stat-label">Highest point total</div>
+          <div class="rc-stat-label">Highest points total</div>
           <div class="rc-stat-sub">Updated daily</div>
         </div>
       </div>
@@ -212,15 +218,15 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
     </div>
 
     <!-- GOOD TO KNOW -->
-   <div class="rc-notice">
-  <div class="rc-notice-title"><i class="fa-solid fa-circle-info"></i> Good to know</div>
-  <ul>
-    <li><strong>Work at your own pace.</strong> Complete tasks any time while the challenge is open, through 11:59 PM CT on December 18. But beware! Some tasks are time-sensitive.</li>
-    <li><strong>Check your inbox.</strong> Your daily email includes a link to the new task and your personal point total.</li>
-    <li><strong>See where you stand.</strong> The highest points earned by a single participant will be updated here every day.</li>
-    <li><strong>Winners</strong> will be announced on December 23.</li>
-  </ul>
-</div>
+    <div class="rc-notice">
+      <div class="rc-notice-title"><i class="fa-solid fa-circle-info"></i> Good to know</div>
+      <ul>
+        <li><strong>Work at your own pace.</strong> Complete tasks any time while the challenge is open, through 11:59 PM CT on December 18. But beware! Some tasks are time-sensitive.</li>
+        <li><strong>Check your inbox.</strong> Your daily email includes a link to the new task and your personal point total.</li>
+        <li><strong>See where you stand.</strong> The highest points earned by a single participant will be updated here every day.</li>
+        <li><strong>Winners will be announced on December 23.</strong></li>
+      </ul>
+    </div>
 
     <!-- PRIZES -->
     <div class="rc-section-head"><i class="fa-solid fa-trophy"></i><h2>The prizes</h2></div>
@@ -251,6 +257,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-tree"></i> Day 1</span><span class="rc-pts">15 pts</span></div>
         <div class="rc-date">Thursday, Dec 3</div>
         <h4>Defending your workshop</h4>
+        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus for attending the Dec 10 webinar</span>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 3 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -293,6 +300,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-heart"></i> Day 7</span><span class="rc-pts">20 pts</span></div>
         <div class="rc-date">Friday, Dec 11</div>
         <h4>Spread the joy</h4>
+        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus for a video</span>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 11 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -307,6 +315,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-tags"></i> Day 9</span><span class="rc-pts">25 pts</span></div>
         <div class="rc-date">Tuesday, Dec 15</div>
         <h4>A season of savings</h4>
+        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +5 bonus for a promo code name</span>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 15 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
