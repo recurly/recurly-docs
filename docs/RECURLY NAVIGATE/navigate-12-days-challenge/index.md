@@ -198,7 +198,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <!-- UPDATE DAILY: change the 0 below before each new email goes out -->
         <div class="rc-stat-num rc-poppy"><span id="rc-high-score">0</span></div>
         <div>
-          <div class="rc-stat-label">Highest earner total</div>
+          <div class="rc-stat-label">Highest point total</div>
           <div class="rc-stat-sub">Updated daily</div>
         </div>
       </div>
