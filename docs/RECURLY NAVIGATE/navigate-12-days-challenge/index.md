@@ -257,7 +257,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-tree"></i> Day 1</span><span class="rc-pts">15 pts</span></div>
         <div class="rc-date">Thursday, Dec 3</div>
         <h4>Defending your workshop</h4>
-        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus for attending the Dec 10 webinar</span>
+        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus points available</span>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 3 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -300,7 +300,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-heart"></i> Day 7</span><span class="rc-pts">20 pts</span></div>
         <div class="rc-date">Friday, Dec 11</div>
         <h4>Spread the joy</h4>
-        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus for a video</span>
+        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus points available</span>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 11 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -315,7 +315,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-tags"></i> Day 9</span><span class="rc-pts">25 pts</span></div>
         <div class="rc-date">Tuesday, Dec 15</div>
         <h4>A season of savings</h4>
-        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +5 bonus for a promo code name</span>
+        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +5 bonus points available</span>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 15 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
