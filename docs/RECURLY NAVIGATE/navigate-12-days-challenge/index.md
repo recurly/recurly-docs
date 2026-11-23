@@ -198,7 +198,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <!-- UPDATE DAILY: change the 0 below before each new email goes out -->
         <div class="rc-stat-num rc-poppy"><span id="rc-high-score">0</span></div>
         <div>
-          <div class="rc-stat-label">Highest points so far</div>
+          <div class="rc-stat-label">Highest earner total</div>
           <div class="rc-stat-sub">Updated daily</div>
         </div>
       </div>
@@ -217,7 +217,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
   <ul>
     <li><strong>Work at your own pace.</strong> Complete tasks any time while the challenge is open, through 11:59 PM CT on December 18. But beware! Some tasks are time-sensitive.</li>
     <li><strong>Check your inbox.</strong> Your daily email includes a link to the new task and your personal point total.</li>
-    <li><strong>See who's leading.</strong> The highest points so far updates here every day.</li>
+    <li><strong>See where you stand.</strong> The highest points earned by a single participant will be updated here every day.</li>
     <li><strong>Winners</strong> will be announced on December 23.</li>
   </ul>
 </div>
