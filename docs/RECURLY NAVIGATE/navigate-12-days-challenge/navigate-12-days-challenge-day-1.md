@@ -110,6 +110,11 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-form-header h3 { font-size:.9rem; font-weight:700; text-transform:uppercase; letter-spacing:.7px; color:#FFD706 !important; margin:0; }
 .rc-form-header span { font-size:.8rem; color:#5DC32E; font-weight:800; }
 .rc-form-body { padding:24px; min-height:420px; }
+.rc-form-fallback {
+  display:none; background:var(--brightgray); border-left:4px solid var(--yellow);
+  border-radius:10px; padding:16px 18px; font-size:.92rem; line-height:1.55; color:var(--darkgray) !important; margin:0;
+}
+.rc-form-fallback a { font-weight:700; }
 
 /* ── FUN FACT ── */
 .rc-fact {
@@ -232,22 +237,9 @@ a.rc-back:hover { color:var(--poppy) !important; }
         <span>+15 pts</span>
       </div>
       <div class="rc-form-body">
-        <script src="https://form-embed-sdk.goldcast.io/embed.js"></script>
         <div id="goldcast-registration-form"></div>
-        <script>
-          const url = new URL(window.location.href);
-          if (!url.searchParams.has('12_days')) {
-            url.searchParams.set('12_days', 'yes');
-            window.history.replaceState({}, '', url);
-          }
-          const widget = new window.GOLDCAST.RegistrationWidget({
-            event_id: 'fefc2076-a74f-4126-9ad4-e8e84411d1d3',
-            mode: 'embed',
-            containerSelector: '#goldcast-registration-form',
-            theme_obj: {},
-            backendUrl: 'https://backend.goldcast.io'
-          });
-        </script>
+        <p class="rc-form-fallback" id="rc-form-fallback">The registration form is taking longer than expected. Refresh the page, or email <a href="mailto:support@recurly.com">support@recurly.com</a> and we'll help you sign up.</p>
+        <script src="https://form-embed-sdk.goldcast.io/embed.js"></script>
       </div>
     </div>
 
@@ -272,4 +264,41 @@ a.rc-back:hover { color:var(--poppy) !important; }
 
   </div>
 </div>
+
+<script>
+(function () {
+  // Add the 12_days parameter so the hidden field fills in on registration
+  var url = new URL(window.location.href);
+  if (!url.searchParams.has('12_days')) {
+    url.searchParams.set('12_days', 'yes');
+    window.history.replaceState({}, '', url);
+  }
+
+  // Wait for the Goldcast script to load, then start the widget
+  var attempts = 0;
+  var timer = setInterval(function () {
+    attempts++;
+    if (window.GOLDCAST && window.GOLDCAST.RegistrationWidget) {
+      clearInterval(timer);
+      new window.GOLDCAST.RegistrationWidget({
+        event_id: 'fefc2076-a74f-4126-9ad4-e8e84411d1d3',
+        mode: 'embed',
+        containerSelector: '#goldcast-registration-form',
+        theme_obj: {},
+        backendUrl: 'https://backend.goldcast.io'
+      });
+    } else if (attempts > 40) {
+      clearInterval(timer);
+    }
+  }, 250);
+
+  // If the form still hasn't rendered after 10 seconds, show the fallback message
+  setTimeout(function () {
+    var container = document.getElementById('goldcast-registration-form');
+    if (container && container.children.length === 0) {
+      document.getElementById('rc-form-fallback').style.display = 'block';
+    }
+  }, 10000);
+})();
+</script>
 `}</HTMLBlock>
