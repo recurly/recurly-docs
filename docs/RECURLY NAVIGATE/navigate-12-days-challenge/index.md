@@ -52,7 +52,7 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-hero p { font-size:1.02rem; color:#D1CFC4 !important; max-width:720px; margin:0 auto; line-height:1.6; position:relative; z-index:3; }
 .rc-hero-meta { margin-top:20px; font-size:.9rem; font-weight:700; color:#FFD706 !important; position:relative; z-index:3; }
 
-/* ── STATS (total possible + highest so far) ── */
+/* ── STATS ── */
 .rc-stats { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:32px 0 0; }
 .rc-stat {
   background:var(--offwhite); border:1px solid var(--lightgray); border-radius:14px;
@@ -71,13 +71,26 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-how span { font-size:.87rem; color:var(--gray) !important; line-height:1.5; }
 .rc-how b { color:var(--poppy); font-size:1.3rem; font-weight:900; display:block; margin-bottom:6px; }
 
+/* ── TIMING NOTICE ── */
+.rc-notice {
+  margin:20px 0 0; background:var(--offwhite); border:1px solid var(--lightgray);
+  border-left:5px solid var(--yellow); border-radius:12px; padding:20px 24px;
+}
+.rc-notice-title { font-size:.95rem; font-weight:800; color:var(--offblack) !important; margin:0 0 10px; display:flex; align-items:center; gap:10px; }
+.rc-notice-title i { color:var(--poppy); }
+.rc-notice ul { margin:0; padding-left:20px; }
+.rc-notice li { font-size:.9rem; color:var(--darkgray) !important; line-height:1.6; margin-bottom:6px; }
+.rc-notice li:last-child { margin-bottom:0; }
+.rc-notice li strong { color:var(--offblack) !important; }
+.rc-notice .rc-flag { color:#FF5126 !important; font-weight:800; }
+
 /* ── SECTION HEADINGS ── */
 .rc-section-head { display:flex; align-items:center; gap:14px; margin:48px 0 18px; }
 .rc-section-head h2 { font-size:1.4rem; font-weight:800; color:var(--offblack) !important; margin:0; white-space:nowrap; }
 .rc-section-head::after { content:""; flex:1; height:1px; background:var(--lightgray); }
 .rc-section-head i { color:var(--poppy); font-size:1.1rem; }
 
-/* ── PRIZES (compact band) ── */
+/* ── PRIZES ── */
 .rc-gift {
   border-radius:14px; background:#0D0D0B; color:#fff; padding:22px 26px;
   border:1px solid rgba(255,215,6,.35); display:grid; grid-template-columns:1.4fr 1fr; gap:16px; align-items:stretch;
@@ -96,7 +109,7 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-gift-note { grid-column:1 / -1; font-size:.8rem; color:#D1CFC4 !important; margin-top:2px; }
 .rc-gift-note strong { color:#FFD706 !important; }
 
-/* ── CALENDAR CARDS (3 across) ── */
+/* ── TASK CARDS ── */
 .rc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:24px 0 32px; }
 
 a.rc-task, .rc-task {
@@ -138,12 +151,6 @@ a.rc-task { border-bottom:1px solid var(--lightgray) !important; }
 a.rc-task.rc-locked { border-bottom:1px dashed #C8CCD0 !important; }
 a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
 
-/* ── RESOURCES ── */
-.rc-resources { background:var(--brightgray); border-left:4px solid var(--green); border-radius:10px; padding:20px 24px; margin:56px 0 48px; }
-.rc-resources h3 { font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.9px; color:var(--gray) !important; margin:0 0 12px; }
-.rc-resource-links { display:flex; flex-wrap:wrap; gap:6px 20px; }
-.rc-resource-links a { color:var(--gray) !important; text-decoration:underline !important; font-size:.88rem; font-weight:500; }
-
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .rc-how { flex-direction:column; }
@@ -174,7 +181,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
       <img class="rc-logo" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
       <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Sleigh your success</span></div>
       <h1>Navigate 12-day challenge</h1>
-      <p>Twelve weekdays, twelve short tasks. Each task opens at midnight on its date. Earn points and compete for the top prize.</p>
+      <p>Twelve weekdays, twelve short tasks. Each task opens at 8:00 AM CT on its date. Earn points and compete for the top prize.</p>
       <div class="rc-hero-meta">Thursday, December 3 – Friday, December 18, 2026 · Closes 11:59 PM CT</div>
       <div class="rc-lights-bottom"></div>
     </div>
@@ -200,9 +207,20 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
 
     <!-- HOW IT WORKS -->
     <div class="rc-how">
-      <div><b>01</b><strong>Open today's task</strong><span>A new task unlocks at midnight Central on each weekday.</span></div>
+      <div><b>01</b><strong>Open today's task</strong><span>A new task opens at 8:00 AM CT on each weekday.</span></div>
       <div><b>02</b><strong>Complete the activity</strong><span>Follow the steps on the page, then submit any form or screenshot it asks for.</span></div>
       <div><b>03</b><strong>Earn your points</strong><span>Points go toward your total. Some tasks include bonus points.</span></div>
+    </div>
+
+    <!-- TIMING NOTICE -->
+    <div class="rc-notice">
+      <div class="rc-notice-title"><i class="fa-solid fa-clock"></i> Good to know</div>
+      <ul>
+        <li><strong>Work at your own pace.</strong> Complete tasks any time while the challenge is open, through 11:59 PM CT on December 18.</li>
+        <li><span class="rc-flag">Some tasks are time-sensitive.</span> The Day 1 and Day 6 bonus points require attending the Chargeback webinar on December 10 at 10:30 AM CT.</li>
+        <li><strong>Points are updated daily,</strong> so check the highest points number above.</li>
+        <li><strong>Winner announcements</strong> will be sent on December 23.</li>
+      </ul>
     </div>
 
     <!-- PRIZES -->
@@ -235,7 +253,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Thursday, Dec 3</div>
         <h4>Defending your workshop</h4>
         <p>Register for the Chargeback webinar on Dec 10. Attend or watch on demand for 50 bonus points.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 3 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 3 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-2" class="rc-task rc-locked">
@@ -243,7 +261,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Friday, Dec 4</div>
         <h4>The gift of feedback</h4>
         <p>Visit the G2 review page and confirm your visit for 25 points. Submit a screenshot of your review for a $25 Amazon gift card.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 4 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 4 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-3" class="rc-task rc-locked">
@@ -251,7 +269,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Monday, Dec 7</div>
         <h4>Defrost failed payments</h4>
         <p>Read a short story about a failed payment, then test your dunning knowledge. Earn 10 points for each correct answer.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 7 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 7 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-4" class="rc-task rc-locked">
@@ -259,7 +277,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Tuesday, Dec 8</div>
         <h4>Check your industry twice</h4>
         <p>Make sure your industry setting is correct so your benchmark reporting is accurate. Submit the industry you selected.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 8 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 8 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-5" class="rc-task rc-locked">
@@ -267,7 +285,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Wednesday, Dec 9</div>
         <h4>Warm up your emails</h4>
         <p>Audit one customer email template and submit one update to improve brand consistency and customer trust.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 9 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 9 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-6" class="rc-task rc-locked">
@@ -275,7 +293,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Thursday, Dec 10</div>
         <h4>The "snowed in" subscriber</h4>
         <p>Choose the feature that keeps a subscriber from churning. Attend today's live webinar for 50 bonus points.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 10 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 10 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-7" class="rc-task rc-locked">
@@ -283,7 +301,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Friday, Dec 11</div>
         <h4>Spread the joy</h4>
         <p>Watch the CSM video and share what you value about working with your CSM. Submit a video for 50 bonus points.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 11 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 11 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-8" class="rc-task rc-locked">
@@ -291,7 +309,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Monday, Dec 14</div>
         <h4>Behind-the-scenes magic</h4>
         <p>Find the feature that automatically updates expired cards, so you and your customers don't have to.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 14 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 14 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-9" class="rc-task rc-locked">
@@ -299,7 +317,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Tuesday, Dec 15</div>
         <h4>A season of savings</h4>
         <p>Check your coupon redemption rules so promo codes expire on time. Submit a creative promo code name for 5 bonus points.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 15 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 15 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-10" class="rc-task rc-locked">
@@ -307,7 +325,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Wednesday, Dec 16</div>
         <h4>The data snow globe</h4>
         <p>Pick one benchmark metric you want to improve in the new year, and explain why.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 16 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 16 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-11" class="rc-task rc-locked">
@@ -315,7 +333,7 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Thursday, Dec 17</div>
         <h4>Global winter festivities</h4>
         <p>Choose the right alternative payment method for a customer who wants to pay directly from their bank.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 17 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 17 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-12" class="rc-task rc-locked">
@@ -323,19 +341,9 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-date">Friday, Dec 18</div>
         <h4>The star on top</h4>
         <p>Nominate a team or customer for the Recurly Customer Awards.</p>
-        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 18 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 18 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
-    </div>
-
-    <!-- RESOURCES -->
-    <div class="rc-resources">
-      <h3><i class="fa-solid fa-book-open" style="color:#5DC32E;"></i> Resources</h3>
-      <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home">Recurly Navigate home</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1">Start Day 1</a>
-        <a href="mailto:support@recurly.com">Contact support</a>
-      </div>
     </div>
 
   </div>
