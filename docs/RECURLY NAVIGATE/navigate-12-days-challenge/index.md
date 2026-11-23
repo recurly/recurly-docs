@@ -71,7 +71,7 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-how span { font-size:.87rem; color:var(--gray) !important; line-height:1.5; }
 .rc-how b { color:var(--poppy); font-size:1.3rem; font-weight:900; display:block; margin-bottom:6px; }
 
-/* ── TIMING NOTICE ── */
+/* ── GOOD TO KNOW ── */
 .rc-notice {
   margin:20px 0 0; background:var(--offwhite); border:1px solid var(--lightgray);
   border-left:5px solid var(--yellow); border-radius:12px; padding:20px 24px;
@@ -82,7 +82,6 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-notice li { font-size:.9rem; color:var(--darkgray) !important; line-height:1.6; margin-bottom:6px; }
 .rc-notice li:last-child { margin-bottom:0; }
 .rc-notice li strong { color:var(--offblack) !important; }
-.rc-notice .rc-flag { color:#FF5126 !important; font-weight:800; }
 
 /* ── SECTION HEADINGS ── */
 .rc-section-head { display:flex; align-items:center; gap:14px; margin:48px 0 18px; }
@@ -128,9 +127,8 @@ a.rc-task, .rc-task {
 .rc-c-gold { background:#FFD706; color:#0D0D0B !important; }
 .rc-pts { font-size:.76rem; font-weight:800; color:#FF5126 !important; white-space:nowrap; }
 .rc-date { font-size:.72rem; font-weight:700; color:var(--gray) !important; text-transform:uppercase; letter-spacing:.6px; }
-.rc-task h4 { font-size:1.05rem; font-weight:800; color:var(--offblack) !important; margin:0; line-height:1.3; }
-.rc-task p { font-size:.88rem; color:var(--gray) !important; line-height:1.55; margin:0; flex-grow:1; }
-.rc-foot { font-size:.84rem; font-weight:700; margin-top:4px; }
+.rc-task h4 { font-size:1.1rem; font-weight:800; color:var(--offblack) !important; margin:4px 0 0; line-height:1.3; }
+.rc-foot { font-size:.84rem; font-weight:700; margin-top:auto; padding-top:10px; }
 .rc-when-active { display:none; color:#008CFF !important; }
 .rc-when-locked { display:inline-flex; align-items:center; gap:6px; color:#807D75 !important; }
 
@@ -142,7 +140,6 @@ a.rc-task.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgb
 /* Locked: grayed, dashed, not clickable */
 .rc-locked { background:#F7F8F9 !important; border:1px dashed #C8CCD0 !important; pointer-events:none; cursor:default; }
 .rc-locked h4 { color:#807D75 !important; }
-.rc-locked p { color:#A09E96 !important; }
 .rc-locked .rc-pill { background:#E5E4DE !important; color:#807D75 !important; }
 .rc-locked .rc-pts { color:#A09E96 !important; }
 
@@ -150,6 +147,8 @@ a.rc-task.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgb
 a.rc-task { border-bottom:1px solid var(--lightgray) !important; }
 a.rc-task.rc-locked { border-bottom:1px dashed #C8CCD0 !important; }
 a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
+
+/* ── RESOURCES (removed) ── */
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
@@ -212,14 +211,14 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
       <div><b>03</b><strong>Earn your points</strong><span>Points go toward your total. Some tasks include bonus points.</span></div>
     </div>
 
-    <!-- TIMING NOTICE -->
+    <!-- GOOD TO KNOW -->
     <div class="rc-notice">
-      <div class="rc-notice-title"><i class="fa-solid fa-clock"></i> Good to know</div>
+      <div class="rc-notice-title"><i class="fa-solid fa-circle-info"></i> Good to know</div>
       <ul>
-        <li><strong>Work at your own pace.</strong> Complete tasks any time while the challenge is open, through 11:59 PM CT on December 18.</li>
-        <li><span class="rc-flag">Some tasks are time-sensitive.</span> The Day 1 and Day 6 bonus points require attending the Chargeback webinar on December 10 at 10:30 AM CT.</li>
-        <li><strong>Points are updated daily,</strong> so check the highest points number above.</li>
-        <li><strong>Winner announcements</strong> will be sent on December 23.</li>
+        <li><strong>Take your time.</strong> Finish tasks any time before the challenge closes at 11:59 PM CT on December 18.</li>
+        <li><strong>Watch the clock.</strong> Some tasks are time-sensitive.</li>
+        <li><strong>Check your inbox.</strong> Your daily email shows your personal point total. The highest score updates here every day.</li>
+        <li><strong>Winners</strong> will be announced on December 23.</li>
       </ul>
     </div>
 
@@ -252,7 +251,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-tree"></i> Day 1</span><span class="rc-pts">15 pts</span></div>
         <div class="rc-date">Thursday, Dec 3</div>
         <h4>Defending your workshop</h4>
-        <p>Register for the Chargeback webinar on Dec 10. Attend or watch on demand for 50 bonus points.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 3 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -260,7 +258,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-gift"></i> Day 2</span><span class="rc-pts">25 pts</span></div>
         <div class="rc-date">Friday, Dec 4</div>
         <h4>The gift of feedback</h4>
-        <p>Visit the G2 review page and confirm your visit for 25 points. Submit a screenshot of your review for a $25 Amazon gift card.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 4 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -268,7 +265,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-gold"><i class="fa-solid fa-snowflake"></i> Day 3</span><span class="rc-pts">10 pts each</span></div>
         <div class="rc-date">Monday, Dec 7</div>
         <h4>Defrost failed payments</h4>
-        <p>Read a short story about a failed payment, then test your dunning knowledge. Earn 10 points for each correct answer.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 7 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -276,7 +272,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</span><span class="rc-pts">20 pts</span></div>
         <div class="rc-date">Tuesday, Dec 8</div>
         <h4>Check your industry twice</h4>
-        <p>Make sure your industry setting is correct so your benchmark reporting is accurate. Submit the industry you selected.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 8 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -284,7 +279,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-mug-hot"></i> Day 5</span><span class="rc-pts">30 pts</span></div>
         <div class="rc-date">Wednesday, Dec 9</div>
         <h4>Warm up your emails</h4>
-        <p>Audit one customer email template and submit one update to improve brand consistency and customer trust.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 9 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -292,7 +286,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-snowflake"></i> Day 6</span><span class="rc-pts">15 pts</span></div>
         <div class="rc-date">Thursday, Dec 10</div>
         <h4>The "snowed in" subscriber</h4>
-        <p>Choose the feature that keeps a subscriber from churning. Attend today's live webinar for 50 bonus points.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 10 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -300,7 +293,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-heart"></i> Day 7</span><span class="rc-pts">20 pts</span></div>
         <div class="rc-date">Friday, Dec 11</div>
         <h4>Spread the joy</h4>
-        <p>Watch the CSM video and share what you value about working with your CSM. Submit a video for 50 bonus points.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 11 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -308,7 +300,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-bolt"></i> Day 8</span><span class="rc-pts">15 pts</span></div>
         <div class="rc-date">Monday, Dec 14</div>
         <h4>Behind-the-scenes magic</h4>
-        <p>Find the feature that automatically updates expired cards, so you and your customers don't have to.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 14 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -316,7 +307,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-tags"></i> Day 9</span><span class="rc-pts">25 pts</span></div>
         <div class="rc-date">Tuesday, Dec 15</div>
         <h4>A season of savings</h4>
-        <p>Check your coupon redemption rules so promo codes expire on time. Submit a creative promo code name for 5 bonus points.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 15 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -324,7 +314,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-snowflake"></i> Day 10</span><span class="rc-pts">25 pts</span></div>
         <div class="rc-date">Wednesday, Dec 16</div>
         <h4>The data snow globe</h4>
-        <p>Pick one benchmark metric you want to improve in the new year, and explain why.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 16 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -332,7 +321,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-globe"></i> Day 11</span><span class="rc-pts">25 pts</span></div>
         <div class="rc-date">Thursday, Dec 17</div>
         <h4>Global winter festivities</h4>
-        <p>Choose the right alternative payment method for a customer who wants to pay directly from their bank.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 17 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -340,7 +328,6 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
         <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-star"></i> Day 12</span><span class="rc-pts">25 pts</span></div>
         <div class="rc-date">Friday, Dec 18</div>
         <h4>The star on top</h4>
-        <p>Nominate a team or customer for the Recurly Customer Awards.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 18 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
