@@ -52,6 +52,17 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-hero p { font-size:1.02rem; color:#D1CFC4 !important; max-width:720px; margin:0 auto; line-height:1.6; position:relative; z-index:3; }
 .rc-hero-meta { margin-top:20px; font-size:.9rem; font-weight:700; color:#FFD706 !important; position:relative; z-index:3; }
 
+/* ── STATS (total possible + highest so far) ── */
+.rc-stats { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:32px 0 0; }
+.rc-stat {
+  background:var(--offwhite); border:1px solid var(--lightgray); border-radius:14px;
+  padding:22px 26px; display:flex; align-items:center; gap:18px;
+}
+.rc-stat-num { font-size:2.6rem; font-weight:900; line-height:1; color:var(--offblack); min-width:90px; }
+.rc-stat-num.rc-poppy { color:#FF5126; }
+.rc-stat-label { font-size:.8rem; font-weight:800; text-transform:uppercase; letter-spacing:.8px; color:var(--gray) !important; }
+.rc-stat-sub { font-size:.85rem; color:var(--gray) !important; margin-top:3px; }
+
 /* ── HOW IT WORKS ── */
 .rc-how { display:flex; margin:40px 0 8px; border-top:1px solid var(--lightgray); border-bottom:1px solid var(--lightgray); }
 .rc-how div { flex:1; padding:22px 24px; }
@@ -85,7 +96,7 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-gift-note { grid-column:1 / -1; font-size:.8rem; color:#D1CFC4 !important; margin-top:2px; }
 .rc-gift-note strong { color:#FFD706 !important; }
 
-/* ── CALENDAR CARDS (mockup style, 3 across) ── */
+/* ── CALENDAR CARDS (3 across) ── */
 .rc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:24px 0 32px; }
 
 a.rc-task, .rc-task {
@@ -122,6 +133,11 @@ a.rc-task.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgb
 .rc-locked .rc-pill { background:#E5E4DE !important; color:#807D75 !important; }
 .rc-locked .rc-pts { color:#A09E96 !important; }
 
+/* Restore card bottom borders (overrides the global link reset) */
+a.rc-task { border-bottom:1px solid var(--lightgray) !important; }
+a.rc-task.rc-locked { border-bottom:1px dashed #C8CCD0 !important; }
+a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
+
 /* ── RESOURCES ── */
 .rc-resources { background:var(--brightgray); border-left:4px solid var(--green); border-radius:10px; padding:20px 24px; margin:56px 0 48px; }
 .rc-resources h3 { font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.9px; color:var(--gray) !important; margin:0 0 12px; }
@@ -134,6 +150,7 @@ a.rc-task.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgb
   .rc-how div + div { border-left:0; border-top:1px solid var(--lightgray); }
   .rc-gift { grid-template-columns:1fr; }
   .rc-grid { grid-template-columns:1fr 1fr; }
+  .rc-stats { grid-template-columns:1fr; }
 }
 @media (max-width: 768px) {
   .rc-wrap, .rc-topnav { padding-left:20px; padding-right:20px; }
@@ -157,9 +174,28 @@ a.rc-task.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgb
       <img class="rc-logo" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
       <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Sleigh your success</span></div>
       <h1>Navigate 12-day challenge</h1>
-      <p>Twelve weekdays, twelve short tasks. Each task opens at midnight on its date and stays open through December 18. Earn points and compete for the top prize.</p>
-      <div class="rc-hero-meta">Thursday, December 3 – Friday, December 18, 2026</div>
+      <p>Twelve weekdays, twelve short tasks. Each task opens at midnight on its date. Earn points and compete for the top prize.</p>
+      <div class="rc-hero-meta">Thursday, December 3 – Friday, December 18, 2026 · Closes 11:59 PM CT</div>
       <div class="rc-lights-bottom"></div>
+    </div>
+
+    <!-- STATS -->
+    <div class="rc-stats">
+      <div class="rc-stat">
+        <div class="rc-stat-num">365</div>
+        <div>
+          <div class="rc-stat-label">Total possible points</div>
+          <div class="rc-stat-sub">Base tasks plus bonus points</div>
+        </div>
+      </div>
+      <div class="rc-stat">
+        <!-- UPDATE DAILY: change the 0 below before each new email goes out -->
+        <div class="rc-stat-num rc-poppy"><span id="rc-high-score">0</span></div>
+        <div>
+          <div class="rc-stat-label">Highest points so far</div>
+          <div class="rc-stat-sub">Updated daily</div>
+        </div>
+      </div>
     </div>
 
     <!-- HOW IT WORKS -->
@@ -206,7 +242,7 @@ a.rc-task.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgb
         <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-gift"></i> Day 2</span><span class="rc-pts">25 pts</span></div>
         <div class="rc-date">Friday, Dec 4</div>
         <h4>The gift of feedback</h4>
-        <p>Submit a G2 review of your experience with Recurly and upload a screenshot for a $25 Amazon gift card.</p>
+        <p>Visit the G2 review page and confirm your visit for 25 points. Submit a screenshot of your review for a $25 Amazon gift card.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 4 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -214,7 +250,7 @@ a.rc-task.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgb
         <div class="rc-task-top"><span class="rc-pill rc-c-gold"><i class="fa-solid fa-snowflake"></i> Day 3</span><span class="rc-pts">10 pts each</span></div>
         <div class="rc-date">Monday, Dec 7</div>
         <h4>Defrost failed payments</h4>
-        <p>Test your dunning knowledge with two quick questions. Earn 10 points for each correct answer.</p>
+        <p>Read a short story about a failed payment, then test your dunning knowledge. Earn 10 points for each correct answer.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 7 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
@@ -222,7 +258,7 @@ a.rc-task.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgb
         <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</span><span class="rc-pts">20 pts</span></div>
         <div class="rc-date">Tuesday, Dec 8</div>
         <h4>Check your industry twice</h4>
-        <p>Make sure your industry setting is correct so your benchmark reporting is accurate. Submit a screenshot.</p>
+        <p>Make sure your industry setting is correct so your benchmark reporting is accurate. Submit the industry you selected.</p>
         <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 8 at 12:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
       </a>
 
