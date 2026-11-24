@@ -28,6 +28,15 @@ body { background: #ffffff !important; }
 .rc-guide a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
 .rc-guide a.rc-back:hover { color:var(--poppy) !important; text-decoration:none !important; }
 
+/* ── ANIMATIONS ── */
+@keyframes rc-fade-up { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+@keyframes rc-twinkle { 0%,100% { opacity:.25; transform:scale(.9); } 50% { opacity:1; transform:scale(1.15); } }
+.rc-rise { animation:rc-fade-up .7s ease both; }
+.rc-rise-2 { animation:rc-fade-up .7s .12s ease both; }
+@media (prefers-reduced-motion: reduce) {
+  .rc-rise, .rc-rise-2, .rc-spark { animation:none !important; }
+}
+
 /* HERO */
 .rc-hero {
   position:relative; background:#0D0D0B; color:#fff; text-align:center;
@@ -51,6 +60,11 @@ body { background: #ffffff !important; }
 .rc-hero h1 { font-size:2.6rem; font-weight:800; line-height:1.12; color:#FCFBF7 !important; margin:0 0 14px; position:relative; z-index:3; }
 .rc-hero p { font-size:1.02rem; color:#D1CFC4 !important; max-width:720px; margin:0 auto; line-height:1.6; position:relative; z-index:3; }
 .rc-hero-meta { margin-top:20px; font-size:.9rem; font-weight:700; color:#FFD706 !important; position:relative; z-index:3; }
+.rc-spark { position:absolute; color:#FFD706; font-size:14px; z-index:1; animation:rc-twinkle 2.8s ease-in-out infinite; }
+.rc-spark.s1 { top:22%; left:9%; }
+.rc-spark.s2 { top:30%; right:11%; color:#5DC32E; animation-delay:.9s; }
+.rc-spark.s3 { bottom:26%; left:16%; color:#FF5126; font-size:11px; animation-delay:1.6s; }
+.rc-spark.s4 { bottom:20%; right:14%; animation-delay:.4s; }
 
 /* POINTS / TASK BANNER */
 .rc-points {
@@ -100,7 +114,7 @@ body { background: #ffffff !important; }
 }
 .rc-guide a.rc-btn-path i { color:inherit; }
 
-/* WEBINAR DESCRIPTION */
+/* DESCRIPTION */
 .rc-desc h3 { font-size:1.3rem; font-weight:800; line-height:1.35; color:var(--offblack) !important; margin:0 0 14px; }
 .rc-desc p { font-size:1.02rem; line-height:1.7; color:var(--darkgray) !important; margin:0 0 16px; }
 .rc-desc p strong { color:var(--offblack) !important; }
@@ -114,7 +128,7 @@ body { background: #ffffff !important; }
 .rc-checks li strong { color:var(--offblack) !important; }
 .rc-note { font-size:.95rem !important; color:var(--gray) !important; }
 
-/* SPEAKERS (compact) */
+/* HOSTS (compact) */
 .rc-hosts { display:flex; flex-wrap:wrap; gap:12px; margin:0; }
 .rc-host {
   display:flex; align-items:center; gap:12px; background:var(--offwhite); border:1px solid var(--lightgray);
@@ -141,22 +155,26 @@ body { background: #ffffff !important; }
   <div class="rc-wrap">
 
     <!-- HERO -->
-    <div class="rc-hero">
+    <div class="rc-hero rc-rise">
       <div class="rc-lights-top"></div>
+      <span class="rc-spark s1"><i class="fa-solid fa-snowflake"></i></span>
+      <span class="rc-spark s2"><i class="fa-solid fa-star"></i></span>
+      <span class="rc-spark s3"><i class="fa-solid fa-snowflake"></i></span>
+      <span class="rc-spark s4"><i class="fa-solid fa-star"></i></span>
       <img class="rc-logo" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
       <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Sleigh your success</span></div>
       <h1>Day 1: Defending your workshop</h1>
-      <p>Chargebacks can sneak up on even the best subscription businesses. Get ahead of them this season by joining our live chargeback webinar, and start your 12 days with a win.</p>
+      <p>Chargebacks can sneak up on even the best subscription businesses. Get ahead of them this season by joining our Lunch + Learn on December 10, and start your 12 days with a win.</p>
       <div class="rc-hero-meta">Thursday, December 3, 2026</div>
       <div class="rc-lights-bottom"></div>
     </div>
 
     <!-- TASK -->
-    <div class="rc-points">
+    <div class="rc-points rc-rise-2">
       <div class="rc-points-main">
         <div class="rc-points-num">15 pts</div>
         <div class="rc-points-label">Register to earn</div>
-        <p class="rc-points-text">Register below to earn 15 points. If you attend, you'll earn an extra 50. If you registered previously and are participating in this challenge, no worries! We'll check attendance after the webinar and add your points to your total.</p>
+        <p class="rc-points-text">Register below to earn 15 points. If you attend, you'll earn an extra 50. If you registered previously and are participating in this challenge, no worries! We'll check attendance after the Lunch + Learn and add your points to your total.</p>
       </div>
       <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus points for attending</span>
     </div>
@@ -167,14 +185,14 @@ body { background: #ffffff !important; }
       <span class="rc-eyebrow">Lunch + Learn</span>
       <h2 class="rc-lnl-title">From renewal to dispute: Protecting subscription revenue in 2027</h2>
       <p class="rc-lnl-sub">Catch friction early, stop chargeback abuse, and fix broken customer journeys.</p>
-      <div class="rc-when"><i class="fa-regular fa-calendar"></i> December 10, 10:30 AM — 11:00 AM CST</div>
+      <div class="rc-when"><i class="fa-regular fa-calendar"></i> December 10, 10:30 AM to 11:00 AM CST</div>
 
       <div class="rc-cta-left"><a href="#register" class="rc-btn-path">Save your seat <i class="fa-solid fa-arrow-down"></i></a></div>
 
       <div class="rc-desc">
         <h3>Even with a great customer experience, illegitimate chargebacks will remain an unavoidable reality for subscription businesses heading into 2027.</h3>
         <p><strong>Join Recurly and Justt to get ahead of the curve with a pragmatic look at both sides of the equation</strong>: practical steps you can take throughout the customer journey to prevent disputes, and strategies for recovering revenue when they do happen.</p>
-        <p>We’ll cover how to spot emerging chargeback trends across payment methods and seasonal shifts, using your dispute data to uncover hidden operational breakdowns and keep more of the money you earn.</p>
+        <p>We'll cover how to spot emerging chargeback trends across payment methods and seasonal shifts, using your dispute data to uncover hidden operational breakdowns and keep more of the money you earn.</p>
 
         <h4>You'll learn how to:</h4>
         <ul class="rc-checks">
@@ -183,7 +201,7 @@ body { background: #ffffff !important; }
           <li><i class="fa-solid fa-circle-check"></i><span><strong>Catch customer friction</strong> before it turns into a chargeback</span></li>
         </ul>
 
-        <p class="rc-note">Reserve your spot now to lock in early registration — more session details will be added soon.</p>
+        <p class="rc-note">Reserve your spot now to lock in early registration. More session details will be added soon.</p>
       </div>
     </div>
 
