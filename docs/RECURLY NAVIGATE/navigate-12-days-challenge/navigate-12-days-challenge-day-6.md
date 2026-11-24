@@ -110,7 +110,7 @@ body { background: #ffffff !important; }
 /* REMINDER CARD (Lunch + Learn today) */
 .rc-reminder {
   display:flex; gap:16px; align-items:flex-start; flex-wrap:wrap;
-  background:#FFF3B0; border:1px solid #FFD706; border-radius:14px; padding:20px 24px; margin:24px 0 8px;
+  background:#FFF3B0; border:1px solid #FFD706; border-radius:14px; padding:20px 24px; margin:24px 0 0;
 }
 .rc-reminder-icon { font-size:1.4rem; color:#FF5126; flex-shrink:0; line-height:1.3; }
 .rc-reminder-body { flex:1; min-width:240px; }
@@ -279,16 +279,6 @@ body { background: #ffffff !important; }
       </div>
     </div>
 
-    <!-- REMINDER -->
-    <div class="rc-reminder rc-rise-3">
-      <i class="fa-solid fa-star rc-reminder-icon"></i>
-      <div class="rc-reminder-body">
-        <strong>Today is the live Lunch + Learn</strong>
-        <p>Chargebacks can sneak up on even the best subscription businesses. Attend live on December 10, 10:30 AM to 11:00 AM CST, or watch on demand before December 18 to claim 50 bonus points from Day 1.</p>
-      </div>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1" class="rc-btn-ghost">Not registered yet? Head back to Day 1</a>
-    </div>
-
     <!-- FORM -->
     <div class="rc-section-head rc-rise-4"><i class="fa-solid fa-cloud-showers-heavy"></i><h2>Save the subscription</h2></div>
     <p class="rc-form-intro rc-rise-4">Choose the feature that keeps your subscriber close through the storm, and answer the follow-up questions so we know what's live in your account.</p>
@@ -304,6 +294,16 @@ body { background: #ffffff !important; }
 
     <div class="rc-form-box rc-rise-4">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd95PaA15J_5K79z3-cDTPLqOTEwMosGXm7leYCkqIrc0W8tQ/viewform?embedded=true" width="100%" height="817" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+    <!-- REMINDER (moved under the form) -->
+    <div class="rc-reminder rc-rise-4">
+      <i class="fa-solid fa-star rc-reminder-icon"></i>
+      <div class="rc-reminder-body">
+        <strong>Today is the live Lunch + Learn</strong>
+        <p>Chargebacks can sneak up on even the best subscription businesses. Attend live on December 10, 10:30 AM to 11:00 AM CST, or watch on demand before December 18 to claim 50 bonus points from Day 1.</p>
+      </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1" class="rc-btn-ghost">Not registered yet? Head back to Day 1</a>
     </div>
 
     <!-- TEASER -->
