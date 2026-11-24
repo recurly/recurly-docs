@@ -190,11 +190,7 @@ body { background: #ffffff !important; }
 </div>
 `}</HTMLBlock>
 
-
-
-## Register here
-
-\<id="register">
+<br />
 
 <GoldcastWebinarForm />
 
