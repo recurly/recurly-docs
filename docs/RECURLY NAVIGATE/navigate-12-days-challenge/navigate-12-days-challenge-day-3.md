@@ -258,7 +258,7 @@ body { background: #ffffff !important; }
     <div class="rc-story rc-rise-3">
       <span class="rc-eyebrow">Feature Adoption</span>
       <h2 class="rc-story-title">The subscriber who almost missed the New Year</h2>
-      <p>All your customer wanted for Christmas was to renew their subscription. Then their card expired, and the payment failed. Now the clock is ticking. If your dunning window is too short, you could lose this subscriber before the New Year even arrives.</p>
+      <p>All your customer wanted for the holidays was to renew their subscription. Then their card expired, and the payment failed. Now the clock is ticking. If your dunning window is too short, you could lose this subscriber before the New Year even arrives.</p>
       <figure class="rc-story-figure">
         <img class="rc-story-img" src="https://files.readme.io/6acea427ee5b9674dcb80db321e256b01b0dd73eb89439b3b273c336959b5ca1-Gemini_Generated_Image_wwg9y3wwg9y3wwg9.jpeg" alt="Holiday illustration of a subscriber with a failed payment">
       </figure>
