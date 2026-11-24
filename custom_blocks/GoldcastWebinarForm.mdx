@@ -2,9 +2,72 @@
 name: GoldcastWebinarForm
 ---
 export const GoldcastWebinarForm = () => {
+  const EVENT_ID = "fefc2076-a74f-4126-9ad4-e8e84411d1d3";
+  const SCRIPT_SRC = "https://form-embed-sdk.goldcast.io/embed.js";
+
+  const setup = (node) => {
+    if (!node || node.dataset.started) return;
+    node.dataset.started = "yes";
+
+    const status = node.querySelector("#gc-status");
+    const say = (msg) => {
+      if (status) status.textContent = msg;
+    };
+
+    // Add 12_days=yes to the URL so the hidden field fills in
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has("12_days")) {
+      url.searchParams.set("12_days", "yes");
+      window.history.replaceState({}, "", url);
+    }
+
+    const start = () => {
+      try {
+        new window.GOLDCAST.RegistrationWidget({
+          event_id: EVENT_ID,
+          mode: "embed",
+          containerSelector: "#goldcast-registration-form",
+          theme_obj: {},
+          backendUrl: "https://backend.goldcast.io",
+        });
+        say("");
+      } catch (e) {
+        say("Widget error: " + e.message);
+      }
+    };
+
+    if (window.GOLDCAST) {
+      start();
+      return;
+    }
+
+    say("Loading form...");
+    const script = document.createElement("script");
+    script.src = SCRIPT_SRC;
+    script.async = true;
+    script.onload = () => {
+      say("Script loaded");
+      start();
+    };
+    script.onerror = () => say("Script failed to load. It may be blocked.");
+    document.head.appendChild(script);
+  };
+
   return (
-    <div style={{ minHeight: 420, padding: 24 }}>
-      <p>Test: if you can read this, custom components render.</p>
+    <div
+      ref={setup}
+      style={{
+        background: "#FCFBF7",
+        border: "1px solid #D1CFC4",
+        borderRadius: 14,
+        padding: 24,
+        minHeight: 420,
+      }}
+    >
+      <p id="gc-status" style={{ color: "#807D75", fontSize: ".9rem" }}>
+        Loading form...
+      </p>
+      <div id="goldcast-registration-form" />
     </div>
   );
 };
