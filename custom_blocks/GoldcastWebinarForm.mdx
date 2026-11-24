@@ -14,10 +14,10 @@ export const GoldcastWebinarForm = () => {
       if (status) status.textContent = msg;
     };
 
-    // Add 12_days=yes to the URL so the hidden field fills in
+    // Add twelve_days=yes to the URL so the hidden field fills in
     const url = new URL(window.location.href);
-    if (!url.searchParams.has("12_days")) {
-      url.searchParams.set("12_days", "yes");
+    if (!url.searchParams.has("twelve_days")) {
+      url.searchParams.set("twelve_days", "yes");
       window.history.replaceState({}, "", url);
     }
 
@@ -45,10 +45,7 @@ export const GoldcastWebinarForm = () => {
     const script = document.createElement("script");
     script.src = SCRIPT_SRC;
     script.async = true;
-    script.onload = () => {
-      say("Script loaded");
-      start();
-    };
+    script.onload = () => start();
     script.onerror = () => say("Script failed to load. It may be blocked.");
     document.head.appendChild(script);
   };
