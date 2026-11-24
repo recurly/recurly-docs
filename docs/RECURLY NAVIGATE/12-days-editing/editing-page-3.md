@@ -28,9 +28,6 @@ body { background: #ffffff !important; }
 .rc-guide a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
 .rc-guide a.rc-back:hover { color:var(--poppy) !important; text-decoration:none !important; }
 
-/* BANNER IMAGE */
-.rc-banner { display:block; width:100%; height:auto; max-height:420px; object-fit:cover; border-radius:16px; margin:0 0 20px; }
-
 /* BUTTONS: yellow with black text */
 .rc-cta-row { display:flex; justify-content:center; margin:0 0 8px; }
 .rc-guide a.rc-btn-path {
@@ -138,10 +135,6 @@ body { background: #ffffff !important; }
   </div>
 
   <div class="rc-wrap">
-
-    <!-- WEBINAR IMAGE -->
-    <img class="rc-banner" src="https://files.readme.io/862a611951d98903da5272b81dbb20bca7af514220ff607adbffe8d650b9f242-REcurly_navigate___Justt_Webinar_slide_1.png" alt="From renewal to dispute: Protecting subscription revenue in 2027">
-    <div class="rc-cta-row"><a href="#register" class="rc-btn-path">Save your seat <i class="fa-solid fa-arrow-down"></i></a></div>
 
     <!-- HERO -->
     <div class="rc-hero">
