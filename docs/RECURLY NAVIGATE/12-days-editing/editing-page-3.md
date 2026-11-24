@@ -190,11 +190,11 @@ body { background: #ffffff !important; }
 </div>
 `}</HTMLBlock>
 
-<GoldcastWebinarForm />
 
-<HTMLBlock>{`
-id="register"
-`}</HTMLBlock>
+
+## Register here
+
+\<id="register">
 
 <GoldcastWebinarForm />
 
