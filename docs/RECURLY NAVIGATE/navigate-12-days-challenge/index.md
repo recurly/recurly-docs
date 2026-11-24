@@ -25,8 +25,19 @@ body { background: #ffffff !important; }
 
 .rc-wrap { max-width:1120px; margin:0 auto; padding:0 32px; }
 .rc-topnav { max-width:1120px; margin:0 auto; padding:20px 32px 12px; }
-a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
-a.rc-back:hover { color:var(--poppy) !important; }
+.rc-guide a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
+.rc-guide a.rc-back:hover { color:var(--poppy) !important; text-decoration:none !important; }
+
+/* ── ANIMATIONS ── */
+@keyframes rc-fade-up { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+@keyframes rc-twinkle { 0%,100% { opacity:.25; transform:scale(.9); } 50% { opacity:1; transform:scale(1.15); } }
+.rc-rise { animation:rc-fade-up .7s ease both; }
+.rc-rise-2 { animation:rc-fade-up .7s .12s ease both; }
+.rc-rise-3 { animation:rc-fade-up .7s .24s ease both; }
+.rc-rise-4 { animation:rc-fade-up .7s .36s ease both; }
+@media (prefers-reduced-motion: reduce) {
+  .rc-rise, .rc-rise-2, .rc-rise-3, .rc-rise-4, .rc-spark { animation:none !important; }
+}
 
 /* ── HERO ── */
 .rc-hero {
@@ -51,6 +62,11 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-hero h1 { font-size:2.6rem; font-weight:800; line-height:1.12; color:#FCFBF7 !important; margin:0 0 14px; position:relative; z-index:3; }
 .rc-hero p { font-size:1.02rem; color:#D1CFC4 !important; max-width:720px; margin:0 auto; line-height:1.6; position:relative; z-index:3; }
 .rc-hero-meta { margin-top:20px; font-size:.9rem; font-weight:700; color:#FFD706 !important; position:relative; z-index:3; }
+.rc-spark { position:absolute; color:#FFD706; font-size:14px; z-index:1; animation:rc-twinkle 2.8s ease-in-out infinite; }
+.rc-spark.s1 { top:22%; left:9%; }
+.rc-spark.s2 { top:30%; right:11%; color:#5DC32E; animation-delay:.9s; }
+.rc-spark.s3 { bottom:26%; left:16%; color:#FF5126; font-size:11px; animation-delay:1.6s; }
+.rc-spark.s4 { bottom:20%; right:14%; animation-delay:.4s; }
 
 /* ── STATS ── */
 .rc-stats { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:32px 0 0; }
@@ -181,18 +197,22 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
   <div class="rc-wrap">
 
     <!-- HERO -->
-    <div class="rc-hero">
+    <div class="rc-hero rc-rise">
       <div class="rc-lights-top"></div>
+      <span class="rc-spark s1"><i class="fa-solid fa-snowflake"></i></span>
+      <span class="rc-spark s2"><i class="fa-solid fa-star"></i></span>
+      <span class="rc-spark s3"><i class="fa-solid fa-snowflake"></i></span>
+      <span class="rc-spark s4"><i class="fa-solid fa-star"></i></span>
       <img class="rc-logo" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
       <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Sleigh your success</span></div>
       <h1>Navigate 12-day challenge</h1>
       <p>Twelve weekdays, twelve short tasks. Each task opens at 8:00 AM CT on its date. Earn points and compete for the top prize.</p>
-      <div class="rc-hero-meta">Thursday, December 3 – Friday, December 18, 2026 · Closes 11:59 PM CT</div>
+      <div class="rc-hero-meta">Thursday, December 3 to Friday, December 18, 2026 · Closes 11:59 PM CT</div>
       <div class="rc-lights-bottom"></div>
     </div>
 
     <!-- STATS -->
-    <div class="rc-stats">
+    <div class="rc-stats rc-rise-2">
       <div class="rc-stat">
         <div class="rc-stat-num">365</div>
         <div>
@@ -211,14 +231,14 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
     </div>
 
     <!-- HOW IT WORKS -->
-    <div class="rc-how">
+    <div class="rc-how rc-rise-3">
       <div><b>01</b><strong>Open today's task</strong><span>A new task opens at 8:00 AM CT on each weekday.</span></div>
       <div><b>02</b><strong>Complete the activity</strong><span>Follow the steps on the page, then submit any form or screenshot it asks for.</span></div>
       <div><b>03</b><strong>Earn your points</strong><span>Points go toward your total. Some tasks include bonus points.</span></div>
     </div>
 
     <!-- GOOD TO KNOW -->
-    <div class="rc-notice">
+    <div class="rc-notice rc-rise-3">
       <div class="rc-notice-title"><i class="fa-solid fa-circle-info"></i> Good to know</div>
       <ul>
         <li><strong>Work at your own pace.</strong> Complete tasks any time while the challenge is open, through 11:59 PM CT on December 18. But beware! Some tasks are time-sensitive.</li>
@@ -229,8 +249,8 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
     </div>
 
     <!-- PRIZES -->
-    <div class="rc-section-head"><i class="fa-solid fa-trophy"></i><h2>The prizes</h2></div>
-    <div class="rc-gift">
+    <div class="rc-section-head rc-rise-3"><i class="fa-solid fa-trophy"></i><h2>The prizes</h2></div>
+    <div class="rc-gift rc-rise-3">
       <div class="rc-gift-main">
         <div class="rc-gift-rank">1st place · Grand prize</div>
         <h3>Your choice of reward</h3>
@@ -250,8 +270,8 @@ a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
     </div>
 
     <!-- CALENDAR -->
-    <div class="rc-section-head"><i class="fa-solid fa-calendar-days"></i><h2>The 12 days</h2></div>
-    <div class="rc-grid">
+    <div class="rc-section-head rc-rise-4"><i class="fa-solid fa-calendar-days"></i><h2>The 12 days</h2></div>
+    <div class="rc-grid rc-rise-4">
 
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1" class="rc-task rc-locked">
         <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-tree"></i> Day 1</span><span class="rc-pts">15 pts</span></div>
