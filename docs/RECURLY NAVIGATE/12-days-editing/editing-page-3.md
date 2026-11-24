@@ -190,7 +190,13 @@ body { background: #ffffff !important; }
 </div>
 `}</HTMLBlock>
 
-<GoldcastWebinarForm /> id="register"
+<GoldcastWebinarForm />
+
+<HTMLBlock>{`
+id="register"
+`}</HTMLBlock>
+
+<GoldcastWebinarForm />
 
 <HTMLBlock>{`
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
