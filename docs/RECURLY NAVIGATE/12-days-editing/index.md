@@ -10,771 +10,356 @@ metadata:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* ── HOST-THEME BACKGROUND OVERRIDE ── */
 body { background: #ffffff !important; }
-
-/* ── GLOBAL CSS IMMUNITY BLOCK ── */
-.rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
-.rc-guide [class^="fa-"],
-.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
-.rc-guide .fa-brands,
-.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
-
-/* ── NAVIGATE MASTER ARMOR ── */
-.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a,
-.rc-guide a:link,
-.rc-guide a:visited,
-.rc-guide a:active {
-  color: #008CFF !important;
-  text-decoration: none !important;
-  text-decoration-line: none !important;
-  text-decoration-color: transparent !important;
-  text-underline-offset: unset !important;
-  border-bottom: 0 !important;
-}
-.rc-guide a:hover {
-  color: #0067BE !important;
-  text-decoration: underline !important;
-  text-decoration-color: #008CFF !important;
-  text-underline-offset: 2px !important;
-}
-
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-
-/* ── DESIGN TOKENS ── */
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; box-sizing: border-box; }
+.rc-guide [class^="fa-"], .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide h1, .rc-guide h2, .rc-guide h3, .rc-guide h4 { border-bottom: none !important; padding-bottom: 0 !important; margin-top: 0; }
 .rc-guide {
-  --yellow:      #FFD706;  /* Recurly Gold / Acquire */
-  --launch-red:  #FF5126;  /* Recurly Poppy / Holiday Red */
-  --green:       #5DC32E;  /* Recurly Success / Evergreen */
-  --blue:        #008CFF;  /* Recurly Scale / Ice Blue */
-  --blue-tint1:  #D5EAFF;
-  --blue-tint2:  #96C8FF;
-  --offblack:    #0D0D0B;
-  --darkgray:    #32312D;
-  --gray:        #807D75;
-  --lightgray:   #D1CFC4;
-  --brightgray:  #F2F1EA;
-  --offwhite:    #FCFBF7;
-
-  --warning-fg:  #FFD706;
-  --warning-bg:  #FFFECB;
-  --error-fg:    #FF5126;
-  --error-bg:    #FFEEE9;
-  --success-fg:  #5DC32E;
-  --success-bg:  #EFFAEA;
-
-  font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: #32312D !important;
-  background: #ffffff;
+  --yellow:#FFD706; --poppy:#FF5126; --green:#5DC32E; --blue:#008CFF;
+  --offblack:#0D0D0B; --darkgray:#32312D; --gray:#807D75; --lightgray:#D1CFC4;
+  --brightgray:#F2F1EA; --offwhite:#FCFBF7;
+  color: var(--darkgray) !important; background:#fff;
 }
-.rc-guide * { box-sizing: border-box; }
+.rc-guide a, .rc-guide a:link, .rc-guide a:visited { color:#008CFF !important; text-decoration:none !important; border-bottom:0 !important; }
+.rc-guide a:hover { color:#0067BE !important; text-decoration:underline !important; }
 
-/* ── FONT AWESOME HELPERS ── */
-.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
-.rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-section { color: #FF5126; font-size: 1.15rem; }
+.rc-wrap { max-width:1120px; margin:0 auto; padding:0 32px; }
+.rc-topnav { max-width:1120px; margin:0 auto; padding:20px 32px 12px; }
+.rc-guide a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
+.rc-guide a.rc-back:hover { color:var(--poppy) !important; text-decoration:none !important; }
 
-/* ── TOP NAV & CONTAINER ── */
-.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
-.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link {
-  color: #807D75 !important; font-weight: 700; font-size: .9rem;
-  display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important;
+/* ── ANIMATIONS ── */
+@keyframes rc-fade-up { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+@keyframes rc-twinkle { 0%,100% { opacity:.25; transform:scale(.9); } 50% { opacity:1; transform:scale(1.15); } }
+.rc-rise { animation:rc-fade-up .7s ease both; }
+.rc-rise-2 { animation:rc-fade-up .7s .12s ease both; }
+.rc-rise-3 { animation:rc-fade-up .7s .24s ease both; }
+.rc-rise-4 { animation:rc-fade-up .7s .36s ease both; }
+@media (prefers-reduced-motion: reduce) {
+  .rc-rise, .rc-rise-2, .rc-rise-3, .rc-rise-4, .rc-spark { animation:none !important; }
 }
-.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF5126 !important; }
-.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-/* ── ANNOUNCEMENT BAR ── */
-.rc-announce-bar {
-  display: none; background: #FFD706; color: #0D0D0B;
-  align-items: center; justify-content: space-between;
-  padding: 12px 22px; font-size: .88rem; font-weight: 600;
-  border-radius: 12px; margin-bottom: 18px; gap: 12px; line-height: 1.4;
-  border: 1px solid rgba(13,13,11,0.12);
-  border-left: 6px solid #FF5126;
-}
-.rc-announce-bar.rc-active { display: flex; }
-.rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
-.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-announce-link {
-  color: #0D0D0B !important; font-weight: 800; white-space: nowrap;
-  padding: 5px 14px; background: rgba(0,0,0,0.10); border-radius: 6px;
-  transition: background 0.2s; border-bottom: 0 !important;
-}
-.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
-
-/* ── HERO WITH DRAPED CHRISTMAS LIGHTS ── */
+/* ── HERO ── */
 .rc-hero {
-  position: relative;
-  background-color: #0D0D0B;
-  color: #fff;
-  padding: 54px 40px 50px;
-  text-align: center;
-  border-radius: 16px;
-  margin-bottom: 0;
-  border: 1px solid rgba(255, 215, 6, 0.3);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
-  overflow: hidden;
+  position:relative; background:#0D0D0B; color:#fff; text-align:center;
+  padding:54px 40px 56px; border-radius:16px; border:1px solid rgba(255,215,6,.3);
+  box-shadow:0 8px 30px rgba(0,0,0,.45); overflow:hidden;
 }
+.rc-lights-top, .rc-lights-bottom {
+  position:absolute; left:0; right:0; height:38px; pointer-events:none; z-index:2;
+  background-repeat:repeat-x; background-position:top center;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='38' viewBox='0 0 240 38'%3E%3Cpath d='M0,4 Q60,24 120,4 Q180,24 240,4' fill='none' stroke='%231b2e20' stroke-width='2' stroke-linecap='round'/%3E%3Cg%3E%3Ccircle cx='35' cy='22' r='9' fill='%23FFD706' fill-opacity='0.40'/%3E%3Crect x='33' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='35' cy='21' rx='4.5' ry='6.5' fill='%23FFD706'/%3E%3Ccircle cx='33.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='60' cy='27' r='9' fill='%23FF5126' fill-opacity='0.40'/%3E%3Crect x='58' y='17' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='60' cy='26' rx='4.5' ry='6.5' fill='%23FF5126'/%3E%3Ccircle cx='58.5' cy='24' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='85' cy='22' r='9' fill='%235DC32E' fill-opacity='0.40'/%3E%3Crect x='83' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='85' cy='21' rx='4.5' ry='6.5' fill='%235DC32E'/%3E%3Ccircle cx='83.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='155' cy='22' r='9' fill='%23008CFF' fill-opacity='0.40'/%3E%3Crect x='153' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='155' cy='21' rx='4.5' ry='6.5' fill='%23008CFF'/%3E%3Ccircle cx='153.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='180' cy='27' r='9' fill='%23FFD706' fill-opacity='0.40'/%3E%3Crect x='178' y='17' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='180' cy='26' rx='4.5' ry='6.5' fill='%23FFD706'/%3E%3Ccircle cx='178.5' cy='24' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='205' cy='22' r='9' fill='%23FF5126' fill-opacity='0.40'/%3E%3Crect x='203' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='205' cy='21' rx='4.5' ry='6.5' fill='%23FF5126'/%3E%3Ccircle cx='203.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3C/svg%3E");
+}
+.rc-lights-top { top:0; }
+.rc-lights-bottom { bottom:0; transform:rotate(180deg); }
+.rc-logo { height:28px; display:block; margin:0 auto; position:relative; z-index:3; }
+.rc-hero-pill {
+  display:inline-flex; align-items:center; gap:8px; position:relative; z-index:3;
+  background:rgba(93,197,46,.16); border:1.5px solid #5DC32E; color:#5DC32E;
+  font-size:.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase;
+  padding:6px 18px; border-radius:20px; margin:26px auto 16px;
+}
+.rc-hero h1 { font-size:2.6rem; font-weight:800; line-height:1.12; color:#FCFBF7 !important; margin:0 0 14px; position:relative; z-index:3; }
+.rc-hero p { font-size:1.02rem; color:#D1CFC4 !important; max-width:720px; margin:0 auto; line-height:1.6; position:relative; z-index:3; }
+.rc-hero-meta { margin-top:20px; font-size:.9rem; font-weight:700; color:#FFD706 !important; position:relative; z-index:3; }
+.rc-spark { position:absolute; color:#FFD706; font-size:14px; z-index:1; animation:rc-twinkle 2.8s ease-in-out infinite; }
+.rc-spark.s1 { top:22%; left:9%; }
+.rc-spark.s2 { top:30%; right:11%; color:#5DC32E; animation-delay:.9s; }
+.rc-spark.s3 { bottom:26%; left:16%; color:#FF5126; font-size:11px; animation-delay:1.6s; }
+.rc-spark.s4 { bottom:20%; right:14%; animation-delay:.4s; }
 
-/* Christmas lights draped across the top */
-.rc-hero-lights-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 38px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='38' viewBox='0 0 240 38'%3E%3Cpath d='M0,4 Q60,24 120,4 Q180,24 240,4' fill='none' stroke='%231b2e20' stroke-width='2' stroke-linecap='round'/%3E%3Cg%3E%3Ccircle cx='35' cy='22' r='9' fill='%23FFD706' fill-opacity='0.40'/%3E%3Crect x='33' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='35' cy='21' rx='4.5' ry='6.5' fill='%23FFD706'/%3E%3Ccircle cx='33.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='60' cy='27' r='9' fill='%23FF5126' fill-opacity='0.40'/%3E%3Crect x='58' y='17' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='60' cy='26' rx='4.5' ry='6.5' fill='%23FF5126'/%3E%3Ccircle cx='58.5' cy='24' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='85' cy='22' r='9' fill='%235DC32E' fill-opacity='0.40'/%3E%3Crect x='83' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='85' cy='21' rx='4.5' ry='6.5' fill='%235DC32E'/%3E%3Ccircle cx='83.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='155' cy='22' r='9' fill='%23008CFF' fill-opacity='0.40'/%3E%3Crect x='153' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='155' cy='21' rx='4.5' ry='6.5' fill='%23008CFF'/%3E%3Ccircle cx='153.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='180' cy='27' r='9' fill='%23FFD706' fill-opacity='0.40'/%3E%3Crect x='178' y='17' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='180' cy='26' rx='4.5' ry='6.5' fill='%23FFD706'/%3E%3Ccircle cx='178.5' cy='24' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='205' cy='22' r='9' fill='%23FF5126' fill-opacity='0.40'/%3E%3Crect x='203' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='205' cy='21' rx='4.5' ry='6.5' fill='%23FF5126'/%3E%3Ccircle cx='203.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-position: top center;
-  z-index: 2;
-  pointer-events: none;
+/* ── STATS ── */
+.rc-stats { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:32px 0 0; }
+.rc-stat {
+  background:var(--offwhite); border:1px solid var(--lightgray); border-radius:14px;
+  padding:22px 26px; display:flex; align-items:center; gap:18px;
 }
+.rc-stat-num { font-size:2.6rem; font-weight:900; line-height:1; color:var(--offblack); min-width:90px; }
+.rc-stat-num.rc-poppy { color:#FF5126; }
+.rc-stat-label { font-size:.8rem; font-weight:800; text-transform:uppercase; letter-spacing:.8px; color:var(--gray) !important; }
+.rc-stat-sub { font-size:.85rem; color:var(--gray) !important; margin-top:3px; }
 
-/* Christmas lights draped across the bottom */
-.rc-hero-lights-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 38px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='38' viewBox='0 0 240 38'%3E%3Cpath d='M0,4 Q60,24 120,4 Q180,24 240,4' fill='none' stroke='%231b2e20' stroke-width='2' stroke-linecap='round'/%3E%3Cg%3E%3Ccircle cx='35' cy='22' r='9' fill='%235DC32E' fill-opacity='0.40'/%3E%3Crect x='33' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='35' cy='21' rx='4.5' ry='6.5' fill='%235DC32E'/%3E%3Ccircle cx='33.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='60' cy='27' r='9' fill='%23008CFF' fill-opacity='0.40'/%3E%3Crect x='58' y='17' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='60' cy='26' rx='4.5' ry='6.5' fill='%23008CFF'/%3E%3Ccircle cx='58.5' cy='24' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='85' cy='22' r='9' fill='%23FF5126' fill-opacity='0.40'/%3E%3Crect x='83' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='85' cy='21' rx='4.5' ry='6.5' fill='%23FF5126'/%3E%3Ccircle cx='83.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='155' cy='22' r='9' fill='%23FFD706' fill-opacity='0.40'/%3E%3Crect x='153' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='155' cy='21' rx='4.5' ry='6.5' fill='%23FFD706'/%3E%3Ccircle cx='153.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='180' cy='27' r='9' fill='%235DC32E' fill-opacity='0.40'/%3E%3Crect x='178' y='17' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='180' cy='26' rx='4.5' ry='6.5' fill='%235DC32E'/%3E%3Ccircle cx='178.5' cy='24' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='205' cy='22' r='9' fill='%23FF5126' fill-opacity='0.40'/%3E%3Crect x='203' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='205' cy='21' rx='4.5' ry='6.5' fill='%23FF5126'/%3E%3Ccircle cx='203.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-position: top center;
-  transform: rotate(180deg);
-  z-index: 2;
-  pointer-events: none;
-}
+/* ── HOW IT WORKS ── */
+.rc-how { display:flex; margin:40px 0 8px; border-top:1px solid var(--lightgray); border-bottom:1px solid var(--lightgray); }
+.rc-how div { flex:1; padding:22px 24px; }
+.rc-how div + div { border-left:1px solid var(--lightgray); }
+.rc-how strong { display:block; font-size:.95rem; color:var(--offblack) !important; margin-bottom:4px; }
+.rc-how span { font-size:.87rem; color:var(--gray) !important; line-height:1.5; }
+.rc-how b { color:var(--poppy); font-size:1.3rem; font-weight:900; display:block; margin-bottom:6px; }
 
-.rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; position: relative; z-index: 3; }
-.rc-logo-image { height: 28px; display: block; }
+/* ── GOOD TO KNOW ── */
+.rc-notice {
+  margin:20px 0 0; background:var(--offwhite); border:1px solid var(--lightgray);
+  border-left:5px solid var(--yellow); border-radius:12px; padding:20px 24px;
+}
+.rc-notice-title { font-size:.95rem; font-weight:800; color:var(--offblack) !important; margin:0 0 10px; display:flex; align-items:center; gap:10px; }
+.rc-notice-title i { color:var(--poppy); }
+.rc-notice ul { margin:0; padding-left:20px; }
+.rc-notice li { font-size:.9rem; color:var(--darkgray) !important; line-height:1.6; margin-bottom:6px; }
+.rc-notice li:last-child { margin-bottom:0; }
+.rc-notice li strong { color:var(--offblack) !important; }
 
-/* ── GREEN PILL (WINTER CHALLENGE) ── */
-.rc-festive-hero-tag {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(93, 197, 46, 0.16); border: 1.5px solid #5DC32E;
-  color: #5DC32E; font-size: .80rem; font-weight: 800;
-  letter-spacing: 1px; text-transform: uppercase;
-  padding: 6px 18px; border-radius: 20px; margin: 26px auto 16px;
-  position: relative; z-index: 3;
-}
-.rc-home-title-block { position: relative; z-index: 3; }
-.rc-home-title-block h1 {
-  font-size: 2.5rem; font-weight: 800; line-height: 1.15; color: #FCFBF7; margin: 0 0 16px;
-}
-.rc-hero p {
-  font-size: 1.02rem; opacity: .92; max-width: 740px; margin: 0 auto 12px;
-  color: #D1CFC4; line-height: 1.6;
-}
+/* ── SECTION HEADINGS ── */
+.rc-section-head { display:flex; align-items:center; gap:14px; margin:48px 0 18px; }
+.rc-section-head h2 { font-size:1.4rem; font-weight:800; color:var(--offblack) !important; margin:0; white-space:nowrap; }
+.rc-section-head::after { content:""; flex:1; height:1px; background:var(--lightgray); }
+.rc-section-head i { color:var(--poppy); font-size:1.1rem; }
 
-/* ── STICKY NAV ── */
-details.rc-sticky-nav-wrap {
-  position: sticky; top: 0; z-index: 100;
-  background-color: var(--brightgray);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  margin: 24px 0 40px 0; border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
+/* ── PRIZES ── */
+.rc-gift {
+  border-radius:14px; background:#0D0D0B; color:#fff; padding:22px 26px;
+  border:1px solid rgba(255,215,6,.35); display:grid; grid-template-columns:1.4fr 1fr; gap:16px; align-items:stretch;
 }
-details.rc-sticky-nav-wrap > summary {
-  list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none;
+.rc-gift-main {
+  background:linear-gradient(160deg,#FFD706 0%,#FFB300 100%); color:#0D0D0B; border-radius:12px; padding:18px 20px;
+  display:flex; flex-direction:column; justify-content:center; gap:4px;
 }
-details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
-details.rc-sticky-nav-wrap > summary::marker { display: none; }
-.rc-nav-toggle-label {
-  display: inline-flex; align-items: center; gap: 8px; font-weight: 800;
-  font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: var(--offblack);
-}
-.rc-nav-chevron { font-size: .72rem; color: var(--offblack); opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
-details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
-.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
-details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
-.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
-.rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-sticky-link {
-  color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px;
-  text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s;
-  white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
-}
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
-.rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
+.rc-gift-rank { font-size:.72rem; font-weight:900; letter-spacing:1.1px; text-transform:uppercase; }
+.rc-gift-main h3 { font-size:1.25rem; font-weight:900; color:#0D0D0B !important; margin:0; line-height:1.2; }
+.rc-gift-main p { font-size:.85rem; line-height:1.45; margin:0; color:#32312D !important; }
+.rc-gift-side { display:flex; flex-direction:column; justify-content:center; gap:10px; }
+.rc-gift-small { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); border-radius:10px; padding:12px 16px; }
+.rc-gift-small .rc-gift-rank { color:#5DC32E !important; }
+.rc-gift-small h4 { font-size:.98rem; font-weight:800; color:#FCFBF7 !important; margin:2px 0 0; }
+.rc-gift-note { grid-column:1 / -1; font-size:.8rem; color:#D1CFC4 !important; margin-top:2px; }
+.rc-gift-note strong { color:#FFD706 !important; }
 
-/* ── SECTIONS ── */
-.rc-lp-section { margin-bottom: 48px; }
-.rc-lp-section h2 {
-  font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack);
-  display: flex; align-items: center; gap: 12px;
-}
-.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
-.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
+/* ── TASK CARDS ── */
+.rc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:24px 0 32px; }
 
-/* ── FESTIVE CALLOUT ── */
-.rc-callout { border-radius: 12px; padding: 18px 24px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
-.rc-callout-icon { font-size: 1.3rem; line-height: 1.4; flex-shrink: 0; }
-.rc-callout-body { flex: 1; }
-.rc-callout-body > strong { font-size: .92rem; font-weight: 800; display: block; margin-bottom: 4px; }
-.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
-.rc-callout-festive {
-  background: #FCFBF7; border: 1px solid var(--lightgray); border-left: 5px solid #5DC32E;
+a.rc-task, .rc-task {
+  display:flex; flex-direction:column; gap:8px; background:var(--offwhite);
+  border:1px solid var(--lightgray); border-radius:14px; padding:22px; color:var(--darkgray) !important;
+  transition:all .2s ease;
 }
-.rc-callout-festive .rc-callout-body > strong { color: var(--offblack); }
+.rc-task-top { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.rc-pill {
+  display:inline-flex; align-items:center; gap:6px; color:#fff; padding:4px 11px; border-radius:16px;
+  font-size:.72rem; font-weight:800; letter-spacing:.5px; text-transform:uppercase;
+}
+.rc-c-red { background:#FF5126; }
+.rc-c-green { background:#5DC32E; }
+.rc-c-blue { background:#008CFF; }
+.rc-c-gold { background:#FFD706; color:#0D0D0B !important; }
+.rc-pts { font-size:.76rem; font-weight:800; color:#FF5126 !important; white-space:nowrap; }
+.rc-date { font-size:.72rem; font-weight:700; color:var(--gray) !important; text-transform:uppercase; letter-spacing:.6px; }
+.rc-task h4 { font-size:1.1rem; font-weight:800; color:var(--offblack) !important; margin:4px 0 0; line-height:1.3; }
+.rc-bonus {
+  display:inline-flex; align-items:center; gap:6px; width:fit-content; margin-top:4px;
+  background:#FFF3B0; color:#0D0D0B !important; font-size:.76rem; font-weight:800;
+  padding:4px 10px; border-radius:8px;
+}
+.rc-bonus i { color:#FF5126; }
+.rc-foot { font-size:.84rem; font-weight:700; margin-top:auto; padding-top:10px; }
+.rc-when-active { display:none; color:#008CFF !important; }
+.rc-when-locked { display:inline-flex; align-items:center; gap:6px; color:#807D75 !important; }
 
-/* ── 12-DAY ADVENT GRID ── */
-.rc-advent-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin: 24px 0 32px;
-}
+/* Active: full color, clickable */
+a.rc-task.rc-active:hover { border-color:var(--poppy); box-shadow:0 6px 22px rgba(255,81,38,.18); transform:translateY(-2px); text-decoration:none !important; }
+.rc-active .rc-when-locked { display:none; }
+.rc-active .rc-when-active { display:inline; }
 
-/* Base card */
-.rc-advent-card {
-  background: var(--offwhite);
-  border: 1px solid var(--lightgray);
-  border-radius: 14px;
-  padding: 22px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  position: relative;
-  transition: all .2s ease;
-}
+/* Locked: grayed, dashed, not clickable */
+.rc-locked { background:#F7F8F9 !important; border:1px dashed #C8CCD0 !important; pointer-events:none; cursor:default; }
+.rc-locked h4 { color:#807D75 !important; }
+.rc-locked .rc-pill { background:#E5E4DE !important; color:#807D75 !important; }
+.rc-locked .rc-pts { color:#A09E96 !important; }
+.rc-locked .rc-bonus { background:#E5E4DE !important; color:#807D75 !important; }
+.rc-locked .rc-bonus i { color:#A09E96 !important; }
 
-/* Unlocked cards */
-.rm-Markdown.markdown-body .rc-guide a.rc-advent-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-advent-card {
-  text-decoration: none !important;
-  border-bottom: 1px solid var(--lightgray) !important;
-}
-.rm-Markdown.markdown-body .rc-guide a.rc-advent-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-advent-card:hover {
-  border-color: #FF5126 !important;
-  border-bottom: 1px solid #FF5126 !important;
-  box-shadow: 0 6px 22px rgba(255, 81, 38, 0.18);
-  transform: translateY(-2px);
-  text-decoration: none !important;
-}
-
-/* Locked cards (Frost theme) */
-.rc-advent-card.rc-advent-locked {
-  background: #F7F8F9;
-  border: 1px dashed #C8CCD0;
-  user-select: none;
-  cursor: default;
-}
-.rc-advent-card.rc-advent-locked h4 { color: #807D75 !important; }
-.rc-advent-card.rc-advent-locked p { color: #A09E96 !important; }
-
-/* Card Internals */
-.rc-advent-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Brand Christmas Badges */
-.rc-badge-red {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: #FF5126 !important; color: #ffffff !important;
-  padding: 4px 11px; border-radius: 16px; font-size: .72rem; font-weight: 800;
-  letter-spacing: .5px; text-transform: uppercase;
-}
-.rc-badge-green {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: #5DC32E !important; color: #ffffff !important;
-  padding: 4px 11px; border-radius: 16px; font-size: .72rem; font-weight: 800;
-  letter-spacing: .5px; text-transform: uppercase;
-}
-.rc-badge-gold {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: #FFD706 !important; color: #0D0D0B !important;
-  padding: 4px 11px; border-radius: 16px; font-size: .72rem; font-weight: 800;
-  letter-spacing: .5px; text-transform: uppercase;
-}
-.rc-badge-blue {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: #008CFF !important; color: #ffffff !important;
-  padding: 4px 11px; border-radius: 16px; font-size: .72rem; font-weight: 800;
-  letter-spacing: .5px; text-transform: uppercase;
-}
-.rc-badge-locked {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: #E5E4DE !important; color: #807D75 !important;
-  padding: 4px 11px; border-radius: 16px; font-size: .72rem; font-weight: 800;
-  letter-spacing: .5px; text-transform: uppercase;
-}
-
-.rc-advent-points {
-  font-size: .74rem; font-weight: 800; color: #FF5126 !important;
-  display: inline-flex; align-items: center; gap: 4px;
-}
-.rc-advent-points-locked {
-  font-size: .74rem; font-weight: 700; color: #A09E96 !important;
-  display: inline-flex; align-items: center; gap: 4px;
-}
-.rc-advent-date {
-  font-size: .72rem; font-weight: 700; color: #807D75;
-  text-transform: uppercase; letter-spacing: .6px;
-}
-.rc-advent-card h4 {
-  font-size: 1.02rem; font-weight: 800; color: #0D0D0B !important;
-  margin: 0; line-height: 1.35;
-}
-.rc-advent-card p {
-  font-size: .88rem; color: #807D75 !important; line-height: 1.55;
-  margin: 0; flex-grow: 1;
-}
-.rc-advent-action {
-  font-size: .84rem; font-weight: 700; color: #008CFF !important; margin-top: 4px;
-}
-.rc-advent-action-locked {
-  font-size: .82rem; font-weight: 700; color: #807D75 !important;
-  margin-top: 4px; display: inline-flex; align-items: center; gap: 6px;
-}
-
-/* ── PRIZE TIERS ── */
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 0 0 32px; }
-.rc-feature-card {
-  background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px;
-  padding: 24px; display: flex; flex-direction: column; gap: 10px; transition: all .2s ease;
-}
-.rc-feature-card:hover {
-  border-color: #5DC32E; box-shadow: 0 4px 18px rgba(93, 197, 46, 0.2); transform: translateY(-2px);
-}
-.rc-feature-icon-red { font-size: 1.5rem; line-height: 1; color: #FF5126; }
-.rc-feature-icon-green { font-size: 1.5rem; line-height: 1; color: #5DC32E; }
-.rc-feature-icon-gold { font-size: 1.5rem; line-height: 1; color: #FFD706; }
-.rc-feature-card h4 { font-size: 1rem; font-weight: 800; color: var(--offblack); margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
-.rc-feature-tag-red {
-  display: inline-block; margin-top: 4px; padding: 4px 12px; border-radius: 20px;
-  font-size: .7rem; font-weight: 800; letter-spacing: .5px; background: #FF5126;
-  color: #ffffff; width: fit-content;
-}
-.rc-feature-tag-green {
-  display: inline-block; margin-top: 4px; padding: 4px 12px; border-radius: 20px;
-  font-size: .7rem; font-weight: 800; letter-spacing: .5px; background: #5DC32E;
-  color: #ffffff; width: fit-content;
-}
-.rc-feature-tag-gold {
-  display: inline-block; margin-top: 4px; padding: 4px 12px; border-radius: 20px;
-  font-size: .7rem; font-weight: 800; letter-spacing: .5px; background: #FFD706;
-  color: #0D0D0B; width: fit-content;
-}
-
-/* ── WEBINAR CTA BLOCK ── */
-.rc-webinar-cta {
-  background: #0D140E !important;
-  border: 2px solid #5DC32E;
-  border-radius: 14px;
-  padding: 34px 38px;
-  margin: 0 0 40px;
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  box-shadow: 0 6px 24px rgba(13, 20, 14, 0.4);
-}
-.rc-webinar-cta-icon { font-size: 2.2rem; flex-shrink: 0; line-height: 1; color: #FFD706; }
-.rc-webinar-cta-body { flex: 1; }
-.rc-webinar-cta-body p {
-  font-size: .95rem; color: #FCFBF7 !important; line-height: 1.6; margin: 0 0 18px;
-}
-.rc-webinar-cta-body p em { font-style: normal; font-weight: 700; color: #5DC32E !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-webinar-btn {
-  background: #FF5126 !important;
-  color: #ffffff !important;
-  text-decoration: none !important;
-  padding: 12px 24px;
-  border-radius: 10px;
-  font-weight: 800;
-  font-size: .9rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all .2s;
-  border: 2px solid #FF5126 !important;
-  border-bottom: 2px solid #FF5126 !important;
-}
-.rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-webinar-btn:hover {
-  background: transparent !important;
-  color: #FF5126 !important;
-  border: 2px solid #FF5126 !important;
-  border-bottom: 2px solid #FF5126 !important;
-}
-
-/* ── RESOURCES BLOCK ── */
-.rc-resources {
-  background: var(--brightgray);
-  border-left: 4px solid #5DC32E;
-  border-radius: 10px;
-  padding: 20px 24px;
-  margin: 32px 0 0;
-}
-.rc-resources h3 {
-  font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px;
-  color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px;
-}
-.rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-resource-link {
-  color: #807D75 !important;
-  text-decoration: underline !important;
-  text-underline-offset: 3px;
-  text-decoration-color: #D1CFC4 !important;
-  font-weight: 500;
-  font-size: .88rem;
-  transition: all .18s;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  border-bottom: 0 !important;
-}
-.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-resource-link:hover {
-  color: #0D0D0B !important;
-  text-decoration: underline !important;
-  text-underline-offset: 3px;
-  text-decoration-color: #FF5126 !important;
-}
-
-/* ── FOOTER NAV ── */
-.rc-footer-nav {
-  border-top: 1px solid var(--lightgray);
-  padding-top: 40px;
-  margin-top: 48px;
-  padding-bottom: 48px;
-}
-.rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
-.rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label {
-  font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px;
-  color: #ffffff; background: #FF5126; padding: 4px 10px; border-radius: 6px;
-  margin-right: 4px;
-}
-.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-footer-link {
-  color: #807D75 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem;
-  transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
-}
-.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-footer-link:hover { color: #008CFF !important; }
-.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
-.rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
+/* Restore card bottom borders (overrides the global link reset) */
+a.rc-task { border-bottom:1px solid var(--lightgray) !important; }
+a.rc-task.rc-locked { border-bottom:1px dashed #C8CCD0 !important; }
+a.rc-task.rc-active:hover { border-bottom-color:var(--poppy) !important; }
 
 /* ── RESPONSIVE ── */
-@media(max-width:768px){
-  .rc-content-wrap { padding: 0 20px; }
-  .rc-top-nav { padding: 16px 20px; }
-  .rc-hero { padding: 46px 20px 42px; }
-  .rc-home-title-block h1 { font-size: 1.8rem; }
-  .rc-advent-grid { grid-template-columns: 1fr; }
-  .rc-card-grid { grid-template-columns: 1fr; }
-  .rc-webinar-cta { flex-direction: column; gap: 16px; padding: 24px 22px; }
+@media (max-width: 900px) {
+  .rc-how { flex-direction:column; }
+  .rc-how div + div { border-left:0; border-top:1px solid var(--lightgray); }
+  .rc-gift { grid-template-columns:1fr; }
+  .rc-grid { grid-template-columns:1fr 1fr; }
+  .rc-stats { grid-template-columns:1fr; }
+}
+@media (max-width: 768px) {
+  .rc-wrap, .rc-topnav { padding-left:20px; padding-right:20px; }
+  .rc-hero { padding:44px 20px 46px; }
+  .rc-hero h1 { font-size:1.9rem; }
+  .rc-grid { grid-template-columns:1fr; }
 }
 </style>
 
 <div class="rc-guide">
 
-  <!-- Top back link -->
-  <div class="rc-top-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back-link">← Back to Home</a>
+  <div class="rc-topnav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back">← Back to Navigate home</a>
   </div>
 
-  <div class="rc-content-wrap">
+  <div class="rc-wrap">
 
-    <!-- Active Announcement Bar -->
-    <div class="rc-announce-bar rc-active">
-      <div class="rc-announce-inner">
-        <i class="fa-regular fa-snowflake rc-fa-announce" style="color: #FF5126;"></i>
-        <strong>Winter optimization challenge:</strong> Complete 12 weekday micro-tasks, rack up points, and compete for the Recurly Holiday Gift Basket.
-        <a href="#calendar" class="rc-announce-link">View scavenger hunt →</a>
+    <!-- HERO -->
+    <div class="rc-hero rc-rise">
+      <div class="rc-lights-top"></div>
+      <span class="rc-spark s1"><i class="fa-solid fa-snowflake"></i></span>
+      <span class="rc-spark s2"><i class="fa-solid fa-star"></i></span>
+      <span class="rc-spark s3"><i class="fa-solid fa-snowflake"></i></span>
+      <span class="rc-spark s4"><i class="fa-solid fa-star"></i></span>
+      <img class="rc-logo" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
+      <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Sleigh your success</span></div>
+      <h1>Navigate 12-day challenge</h1>
+      <p>Twelve weekdays, twelve short tasks. Each task opens at 8:00 AM CT on its date. Earn points and compete for the top prize.</p>
+      <div class="rc-hero-meta">Thursday, December 3 to Friday, December 18, 2026 · Closes 11:59 PM CT</div>
+      <div class="rc-lights-bottom"></div>
+    </div>
+
+    <!-- STATS -->
+    <div class="rc-stats rc-rise-2">
+      <div class="rc-stat">
+        <div class="rc-stat-num">365</div>
+        <div>
+          <div class="rc-stat-label">Total possible points</div>
+          <div class="rc-stat-sub">Base tasks plus bonus points</div>
+        </div>
+      </div>
+      <div class="rc-stat">
+        <!-- UPDATE DAILY: change the 0 below before each new email goes out -->
+        <div class="rc-stat-num rc-poppy"><span id="rc-high-score">0</span></div>
+        <div>
+          <div class="rc-stat-label">Highest points total</div>
+          <div class="rc-stat-sub">Updated daily</div>
+        </div>
       </div>
     </div>
 
-    <!-- Festive Hero (Solid Rich Offblack with Draped Christmas Lights) -->
-    <div class="rc-hero">
-      <!-- Top strand of Christmas lights -->
-      <div class="rc-hero-lights-top"></div>
-
-      <div class="rc-brand-header">
-        <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
-      </div>
-      <div>
-        <span class="rc-festive-hero-tag">
-          <i class="fa-solid fa-tree"></i> Winter challenge
-        </span>
-      </div>
-      <div class="rc-home-title-block">
-        <h1>12 days of optimization</h1>
-        <p>A 12-weekday scavenger hunt across your site settings, Compass prompts, and newest product release tools. Complete daily 3-minute missions, earn points, and compete to win our Recurly Holiday Gift Basket and a guest spotlight on our late Q1 2027 webinar.</p>
-      </div>
-
-      <!-- Bottom strand of Christmas lights -->
-      <div class="rc-hero-lights-bottom"></div>
+    <!-- HOW IT WORKS -->
+    <div class="rc-how rc-rise-3">
+      <div><b>01</b><strong>Open today's task</strong><span>A new task opens at 8:00 AM CT on each weekday.</span></div>
+      <div><b>02</b><strong>Complete the activity</strong><span>Follow the steps on the page, then submit any form or screenshot it asks for.</span></div>
+      <div><b>03</b><strong>Earn your points</strong><span>Points go toward your total. Some tasks include bonus points.</span></div>
     </div>
 
-    <!-- Sticky Navigation Menu -->
-    <details class="rc-sticky-nav-wrap">
-      <summary>
-        <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
-      </summary>
-      <div class="rc-nav-drawer">
-        <div class="rc-nav-drawer-inner">
-          <div class="rc-nav-links">
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
-              <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
-            </a>
-            <a href="#calendar" class="rc-sticky-link">Scavenger hunt calendar</a>
-            <a href="#rules" class="rc-sticky-link">Scoring &amp; gift basket</a>
-            <a href="#spotlight" class="rc-sticky-link">Customer spotlight webinar</a>
-            <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-sticky-link">
-              <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Office Hours
-            </a>
-          </div>
-        </div>
-      </div>
-    </details>
-
-    <!-- Overview Callout -->
-    <div class="rc-callout rc-callout-festive" id="rules">
-      <div class="rc-callout-icon"><i class="fa-solid fa-gift" style="color: #FF5126;"></i></div>
-      <div class="rc-callout-body">
-        <strong>How the holiday scavenger hunt works</strong>
-        <p>Each weekday leading up to the holidays unlocks a new 3-minute mission. Follow the guided activity, submit your completed task through the short form at the bottom of that specific activity page, and earn 1 point. The merchant with the most points takes home the holiday gift basket!</p>
-      </div>
+    <!-- GOOD TO KNOW -->
+    <div class="rc-notice rc-rise-3">
+      <div class="rc-notice-title"><i class="fa-solid fa-circle-info"></i> Good to know</div>
+      <ul>
+        <li><strong>Work at your own pace.</strong> Complete tasks any time while the challenge is open, through 11:59 PM CT on December 18. But beware! Some tasks are time-sensitive.</li>
+        <li><strong>Check your inbox.</strong> Your daily email includes a link to the new task and your personal point total.</li>
+        <li><strong>See where you stand.</strong> The highest points earned by a single participant will be updated here every day.</li>
+        <li><strong>Winners will be announced on December 23.</strong></li>
+      </ul>
     </div>
 
-    <!-- Section 1: The 12 Days Advent Grid -->
-    <div class="rc-lp-section" id="calendar">
-      <h2><i class="fa-solid fa-calendar-days rc-fa-section"></i> Scavenger hunt calendar</h2>
-      <p>Tasks unlock each weekday at midnight. Complete open tasks anytime before the campaign wraps up on Friday, December 18.</p>
-
-      <div class="rc-advent-grid">
-
-        <!-- Day 1 (Unlocked - Poppy Red) -->
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-1" class="rc-advent-card">
-          <div class="rc-advent-header">
-            <span class="rc-badge-red"><i class="fa-solid fa-tree"></i> Day 1</span>
-            <span class="rc-advent-points">+1 point</span>
-          </div>
-          <div class="rc-advent-date">Thursday, Dec 3</div>
-          <h4>The Compass prompt expedition</h4>
-          <p>Watch a 2-minute video on Compass AI, test an insightful churn prompt, and submit what you discover.</p>
-          <div class="rc-advent-action">Start activity →</div>
-        </a>
-
-        <!-- Day 2 (Unlocked - Evergreen) -->
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-2" class="rc-advent-card">
-          <div class="rc-advent-header">
-            <span class="rc-badge-green"><i class="fa-regular fa-snowflake"></i> Day 2</span>
-            <span class="rc-advent-points">+2 points</span>
-          </div>
-          <div class="rc-advent-date">Friday, Dec 4</div>
-          <h4>The dunning email makeover</h4>
-          <p>Audit your renewal recovery notices and draft a friendlier, high-converting notification template.</p>
-          <div class="rc-advent-action">Start activity →</div>
-        </a>
-
-        <!-- Day 3 (Unlocked - Gold) -->
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-3" class="rc-advent-card">
-          <div class="rc-advent-header">
-            <span class="rc-badge-gold"><i class="fa-solid fa-gift"></i> Day 3</span>
-            <span class="rc-advent-points">+3 points</span>
-          </div>
-          <div class="rc-advent-date">Monday, Dec 7</div>
-          <h4>The silent churn investigation</h4>
-          <p>Run your Signup Declines against your industry benchmark and spot your primary drop-off reason.</p>
-          <div class="rc-advent-action">Start activity →</div>
-        </a>
-
-
-        <!-- Day 4 (Unlocked - Ice Blue) -->
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-4" class="rc-advent-card">
-          <div class="rc-advent-header">
-            <span class="rc-badge-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</span>
-            <span class="rc-advent-points">+4 points</span>
-          </div>
-          <div class="rc-advent-date">Tuesday, Dec 8</div>
-          <h4>The gateway failover test run</h4>
-          <p>Inspect your gateway routing settings and configure automatic failover rules to prevent card outages.</p>
-          <div class="rc-advent-action">Start activity →</div>
-        </a>
-
-        <!-- Day 5 (Unlocked - Poppy Red) -->
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-5" class="rc-advent-card">
-          <div class="rc-advent-header">
-            <span class="rc-badge-red"><i class="fa-solid fa-tree"></i> Day 5</span>
-            <span class="rc-advent-points">+5 points</span>
-          </div>
-          <div class="rc-advent-date">Wednesday, Dec 9</div>
-          <h4>The wallet treasure hunt</h4>
-          <p>Explore the Subscriber Wallet feature and log how backup payment methods boost subscription longevity.</p>
-          <div class="rc-advent-action">Start activity →</div>
-        </a>
-
-        <!-- Day 6 (Unlocked - Evergreen) -->
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/12-days-day-6" class="rc-advent-card">
-          <div class="rc-advent-header">
-            <span class="rc-badge-green"><i class="fa-regular fa-snowflake"></i> Day 6</span>
-            <span class="rc-advent-points">+6 points</span>
-          </div>
-          <div class="rc-advent-date">Thursday, Dec 10</div>
-          <h4>The Chargebacks webinar</h4>
-          <p>NOT A DESCRIPTION, an idea: 25 points for joining live and 25 points for getting a "secret tip" shared in the webinar correct."</p>
-          <div class="rc-advent-action">Start activity →</div>
-        </a>
-
-        <!-- Day 7 (LOCKED) -->
-        <div class="rc-advent-card rc-advent-locked">
-          <div class="rc-advent-header">
-            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 7</span>
-            <span class="rc-advent-points-locked">+7 points</span>
-          </div>
-          <div class="rc-advent-date">Friday, Dec 11</div>
-          <h4>The pause vs. cancel face-off</h4>
-          <p>Examine how offering temporary pauses preserves loyal subscribers without forcing churn.</p>
-          <div class="rc-advent-action-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 11 at 12:00 AM</div>
-        </div>
-
-        <!-- Day 8 (LOCKED) -->
-        <div class="rc-advent-card rc-advent-locked">
-          <div class="rc-advent-header">
-            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 8</span>
-            <span class="rc-advent-points-locked">+8 points</span>
-          </div>
-          <div class="rc-advent-date">Monday, Dec 14</div>
-          <h4>Compass retention sleuth</h4>
-          <p>Prompt Compass to surface subscribers showing low engagement patterns before billing renews.</p>
-          <div class="rc-advent-action-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 14 at 12:00 AM</div>
-        </div>
-
-        <!-- Day 9 (LOCKED) -->
-        <div class="rc-advent-card rc-advent-locked">
-          <div class="rc-advent-header">
-            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 9</span>
-            <span class="rc-advent-points-locked">+9 points</span>
-          </div>
-          <div class="rc-advent-date">Tuesday, Dec 15</div>
-          <h4>Dynamic statement detective</h4>
-          <p>Fine-tune charge descriptors to clearly identify billing and prevent accidental chargebacks.</p>
-          <div class="rc-advent-action-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 15 at 12:00 AM</div>
-        </div>
-
-        <!-- Day 10 (LOCKED) -->
-        <div class="rc-advent-card rc-advent-locked">
-          <div class="rc-advent-header">
-            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 10</span>
-            <span class="rc-advent-points-locked">+10 points</span>
-          </div>
-          <div class="rc-advent-date">Wednesday, Dec 16</div>
-          <h4>The plan add-on architect</h4>
-          <p>Configure a mock recurring add-on to test how modular pricing expands customer lifetime value.</p>
-          <div class="rc-advent-action-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 16 at 12:00 AM</div>
-        </div>
-
-        <!-- Day 11 (LOCKED) -->
-        <div class="rc-advent-card rc-advent-locked">
-          <div class="rc-advent-header">
-            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 11</span>
-            <span class="rc-advent-points-locked">+11 points</span>
-          </div>
-          <div class="rc-advent-date">Thursday, Dec 17</div>
-          <h4>The coupon stacking sandbox</h4>
-          <p>Solve a tricky discount logic puzzle to ensure promo codes never unintentionally double-stack.</p>
-          <div class="rc-advent-action-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 17 at 12:00 AM</div>
-        </div>
-
-        <!-- Day 12 (LOCKED) -->
-        <div class="rc-advent-card rc-advent-locked">
-          <div class="rc-advent-header">
-            <span class="rc-badge-locked"><i class="fa-solid fa-lock"></i> Day 12</span>
-            <span class="rc-advent-points-locked">+12 points</span>
-          </div>
-          <div class="rc-advent-date">Friday, Dec 18</div>
-          <h4>The grand optimization showcase</h4>
-          <p>Submit your favorite optimization win or prompt insight to lock in your final leaderboard tally.</p>
-          <div class="rc-advent-action-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 18 at 12:00 AM</div>
-        </div>
-
+    <!-- PRIZES -->
+    <div class="rc-section-head rc-rise-3"><i class="fa-solid fa-trophy"></i><h2>The prizes</h2></div>
+    <div class="rc-gift rc-rise-3">
+      <div class="rc-gift-main">
+        <div class="rc-gift-rank">1st place · Grand prize</div>
+        <h3>Your choice of reward</h3>
+        <p>An extended Engage trial with 10 hours of professional services, or a $250 gift card.</p>
       </div>
+      <div class="rc-gift-side">
+        <div class="rc-gift-small">
+          <div class="rc-gift-rank">2nd place</div>
+          <h4>Navigate gift basket</h4>
+        </div>
+        <div class="rc-gift-small">
+          <div class="rc-gift-rank">3rd place</div>
+          <h4>Navigate gift basket</h4>
+        </div>
+      </div>
+      <div class="rc-gift-note"><strong>How you earn it:</strong> Every task lists its points on its page. Bonus points are added after we verify them.</div>
     </div>
 
-    <!-- Section 2: Prizes and Scoring (Festive Card Tiers) -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-trophy rc-fa-section"></i> Competition rewards &amp; scoring</h2>
-      <p>Log your completed missions directly on each activity page. Every verified submission earns 1 point toward the leaderboard.</p>
+    <!-- CALENDAR -->
+    <div class="rc-section-head rc-rise-4"><i class="fa-solid fa-calendar-days"></i><h2>The 12 days</h2></div>
+    <div class="rc-grid rc-rise-4">
 
-      <div class="rc-card-grid">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-1" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-tree"></i> Day 1</span><span class="rc-pts">15 pts</span></div>
+        <div class="rc-date">Thursday, Dec 3</div>
+        <h4>Defending your workshop</h4>
+        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus points available</span>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 3 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
 
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon-red"><i class="fa-solid fa-basket-shopping"></i></div>
-          <h4>The Recurly holiday gift basket</h4>
-          <p>Awarded to the participant who logs the highest verified point total. Packed with curated artisan treats, luxury winter apparel, and Recurly team gifts.</p>
-          <span class="rc-feature-tag-red">Grand champion</span>
-        </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-2" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-gift"></i> Day 2</span><span class="rc-pts">25 pts</span></div>
+        <div class="rc-date">Friday, Dec 4</div>
+        <h4>The gift of feedback</h4>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 4 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
 
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon-green"><i class="fa-solid fa-microphone"></i></div>
-          <h4>Webinar guest speaker invite</h4>
-          <p>Our Grand Champion will be invited to appear as a guest speaker on our late Q1 webinar to share their optimization tactics and results with the community.</p>
-          <span class="rc-feature-tag-green">Customer spotlight</span>
-        </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-3" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-gold"><i class="fa-solid fa-snowflake"></i> Day 3</span><span class="rc-pts">10 pts each</span></div>
+        <div class="rc-date">Monday, Dec 7</div>
+        <h4>Defrost failed payments</h4>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 7 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
 
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon-gold"><i class="fa-solid fa-ticket"></i></div>
-          <h4>All-participant invitation</h4>
-          <p>Every merchant who participates in at least one day will receive early access and guaranteed seating for our end-of-Q1 strategy and release webinar.</p>
-          <span class="rc-feature-tag-gold">1+ activity</span>
-        </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-4" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> Day 4</span><span class="rc-pts">20 pts</span></div>
+        <div class="rc-date">Tuesday, Dec 8</div>
+        <h4>Check your industry twice</h4>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 8 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
 
-      </div>
-    </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-5" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-mug-hot"></i> Day 5</span><span class="rc-pts">30 pts</span></div>
+        <div class="rc-date">Wednesday, Dec 9</div>
+        <h4>Warm up your emails</h4>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 9 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
 
-    <!-- Section 3: End of Q1 2027 Webinar CTA -->
-    <div class="rc-webinar-cta" id="spotlight">
-      <div class="rc-webinar-cta-icon"><i class="fa-solid fa-circle-play"></i></div>
-      <div class="rc-webinar-cta-body">
-        <p>Join us at the end of Q1 2027 for a community-wide <em>Subscriber Optimization &amp; Release Spotlight</em>. We will break down our newest features, examine benchmark shifts, and feature a live fireside chat with our 12 Days Champion to discuss real-world metric gains.</p>
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-webinar-btn">Join the notification list →</a>
-      </div>
-    </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-6" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-snowflake"></i> Day 6</span><span class="rc-pts">15 pts</span></div>
+        <div class="rc-date">Thursday, Dec 10</div>
+        <h4>The "snowed in" subscriber</h4>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 10 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
 
-    <!-- Section 4: Standard Resources Block -->
-    <div class="rc-resources">
-      <h3><i class="fa-solid fa-book-open" style="color: #5DC32E; font-size: 1rem;"></i> Resources</h3>
-      <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Navigate Home</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly product documentation</a>
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Customer Success Global Office Hours</a>
-        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-envelope"></i> Contact support</a>
-      </div>
-    </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-7" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-heart"></i> Day 7</span><span class="rc-pts">20 pts</span></div>
+        <div class="rc-date">Friday, Dec 11</div>
+        <h4>Spread the joy</h4>
+        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus points available</span>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 11 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
 
-    <!-- Standard Learning Path / Hub Footer Nav -->
-    <div class="rc-footer-nav">
-      <div class="rc-footer-links">
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">12 days of optimization</span>
-          <a href="#calendar" class="rc-footer-link">Scavenger hunt</a>
-          <a href="#rules" class="rc-footer-link">Scoring &amp; prizes</a>
-          <a href="#spotlight" class="rc-footer-link">Q1 2027 webinar</a>
-        </div>
-        <div class="rc-footer-utility">
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
-            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
-          </a>
-          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
-        </div>
-      </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-8" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-bolt"></i> Day 8</span><span class="rc-pts">15 pts</span></div>
+        <div class="rc-date">Monday, Dec 14</div>
+        <h4>Behind-the-scenes magic</h4>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 14 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-9" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-tags"></i> Day 9</span><span class="rc-pts">25 pts</span></div>
+        <div class="rc-date">Tuesday, Dec 15</div>
+        <h4>A season of savings</h4>
+        <span class="rc-bonus"><i class="fa-solid fa-star"></i> +5 bonus points available</span>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 15 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-10" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-blue"><i class="fa-solid fa-snowflake"></i> Day 10</span><span class="rc-pts">25 pts</span></div>
+        <div class="rc-date">Wednesday, Dec 16</div>
+        <h4>The data snow globe</h4>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 16 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-11" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-red"><i class="fa-solid fa-globe"></i> Day 11</span><span class="rc-pts">25 pts</span></div>
+        <div class="rc-date">Thursday, Dec 17</div>
+        <h4>Global winter festivities</h4>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 17 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-12" class="rc-task rc-locked">
+        <div class="rc-task-top"><span class="rc-pill rc-c-green"><i class="fa-solid fa-star"></i> Day 12</span><span class="rc-pts">25 pts</span></div>
+        <div class="rc-date">Friday, Dec 18</div>
+        <h4>The star on top</h4>
+        <div class="rc-foot"><span class="rc-when-locked"><i class="fa-solid fa-lock"></i> Unlocks Dec 18 at 8:00 AM CT</span><span class="rc-when-active">Start task →</span></div>
+      </a>
+
     </div>
 
   </div>
