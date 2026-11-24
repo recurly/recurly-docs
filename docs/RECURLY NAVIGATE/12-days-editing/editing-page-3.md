@@ -132,6 +132,76 @@ body { background: #ffffff !important; }
 </style>
 
 <div class="rc-guide">
+
+  <div class="rc-topnav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge" class="rc-back">← Back to challenge home</a>
+  </div>
+
+  <div class="rc-wrap">
+
+    <!-- WEBINAR IMAGE -->
+    <img class="rc-banner" src="https://files.readme.io/862a611951d98903da5272b81dbb20bca7af514220ff607adbffe8d650b9f242-REcurly_navigate___Justt_Webinar_slide_1.png" alt="From renewal to dispute: Protecting subscription revenue in 2027">
+    <div class="rc-cta-row"><a href="#register" class="rc-btn-path">Save your seat <i class="fa-solid fa-arrow-down"></i></a></div>
+
+    <!-- HERO -->
+    <div class="rc-hero">
+      <div class="rc-lights-top"></div>
+      <img class="rc-logo" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
+      <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Sleigh your success</span></div>
+      <h1>Day 1: Defending your workshop</h1>
+      <p>Chargebacks can sneak up on even the best subscription businesses. Get ahead of them this season by joining our live chargeback webinar, and start your 12 days with a win.</p>
+      <div class="rc-hero-meta">Thursday, December 3, 2026</div>
+      <div class="rc-lights-bottom"></div>
+    </div>
+
+    <!-- POINTS -->
+    <div class="rc-points">
+      <div>
+        <div class="rc-points-num">15 pts</div>
+        <div class="rc-points-label">Earn for registering</div>
+      </div>
+      <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus points available</span>
+    </div>
+
+    <!-- WEBINAR DESCRIPTION -->
+    <div class="rc-section-head"><i class="fa-solid fa-list-check"></i><h2>Your task</h2></div>
+    <div class="rc-intro">
+      <span class="rc-eyebrow">Live webinar · December 10 · 10:30 AM CT</span>
+      <h3>Even with a great customer experience, illegitimate chargebacks will remain an unavoidable reality for subscription businesses heading into 2027.</h3>
+      <p><strong>Join Recurly and Justt to get ahead of the curve with a pragmatic look at both sides of the equation</strong>: practical steps you can take throughout the customer journey to prevent disputes, and strategies for recovering revenue when they do happen.</p>
+      <p>We'll cover how to spot emerging chargeback trends across payment methods and seasonal shifts, using your dispute data to uncover hidden operational breakdowns and keep more of the money you earn.</p>
+
+      <h4>You'll learn how to:</h4>
+      <ul class="rc-checks">
+        <li><i class="fa-solid fa-circle-check"></i><span><strong>Uncover broken CX habits</strong> behind your chargeback trends</span></li>
+        <li><i class="fa-solid fa-circle-check"></i><span><strong>Find the root causes</strong> in your chargeback data</span></li>
+        <li><i class="fa-solid fa-circle-check"></i><span><strong>Catch customer friction</strong> before it turns into a chargeback</span></li>
+      </ul>
+
+      <p class="rc-note">Reserve your spot now to lock in early registration. More session details will be added soon.</p>
+      <div class="rc-cta-row"><a href="#register" class="rc-btn-path">Save your seat <i class="fa-solid fa-arrow-down"></i></a></div>
+    </div>
+
+    <!-- SPEAKERS -->
+    <div class="rc-section-head"><i class="fa-solid fa-microphone"></i><h2>Meet the experts</h2></div>
+    <p class="rc-speaker-intro"><strong>Hear directly from experts dedicated to safeguarding your subscription revenue.</strong> Drawing from real-world experience in SaaS customer success and dispute prevention, they'll share the strategic thinking behind full-lifecycle chargeback management, showing you how to turn dispute data into actionable improvements for your business.</p>
+    <div class="rc-speakers">
+      <div class="rc-speaker">
+        <div class="rc-avatar rc-avatar-justt">SB</div>
+        <h4>Sarah Boehmer</h4>
+        <p class="rc-role">Senior Director, Payments &amp; Chargebacks Strategy</p>
+        <div class="rc-org">Justt</div>
+      </div>
+      <div class="rc-speaker">
+        <div class="rc-avatar rc-avatar-recurly">CO</div>
+        <h4>Christian Oldroyd</h4>
+        <p class="rc-role">Customer Success Manager</p>
+        <div class="rc-org">Recurly</div>
+      </div>
+    </div>
+
+  </div>
+</div>
 `}</HTMLBlock>
 
 <br />
