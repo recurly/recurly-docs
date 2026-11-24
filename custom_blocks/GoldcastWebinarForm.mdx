@@ -14,10 +14,10 @@ export const GoldcastWebinarForm = () => {
       if (status) status.textContent = msg;
     };
 
-    // Add twelve_days=yes to the URL so the hidden field fills in
+    // Add _Days=yes to the URL so the hidden field fills in
     const url = new URL(window.location.href);
-    if (!url.searchParams.has("twelve_days")) {
-      url.searchParams.set("twelve_days", "yes");
+    if (!url.searchParams.has("_Days")) {
+      url.searchParams.set("_Days", "yes");
       window.history.replaceState({}, "", url);
     }
 
@@ -46,25 +46,39 @@ export const GoldcastWebinarForm = () => {
     script.src = SCRIPT_SRC;
     script.async = true;
     script.onload = () => start();
-    script.onerror = () => say("Script failed to load. It may be blocked.");
+    script.onerror = () => say("The form couldn't load. Refresh the page, or email support@recurly.com.");
     document.head.appendChild(script);
   };
 
   return (
-    <div
-      ref={setup}
-      style={{
-        background: "#FCFBF7",
-        border: "1px solid #D1CFC4",
-        borderRadius: 14,
-        padding: 24,
-        minHeight: 420,
-      }}
-    >
-      <p id="gc-status" style={{ color: "#807D75", fontSize: ".9rem" }}>
-        Loading form...
-      </p>
-      <div id="goldcast-registration-form" />
+    <div id="register" style={{ margin: "48px 0 0" }}>
+      <h2
+        style={{
+          fontSize: 22,
+          fontWeight: 800,
+          color: "#0D0D0B",
+          margin: "0 0 18px",
+          fontFamily: "Figtree, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        }}
+      >
+        Save your seat
+      </h2>
+      <div
+        ref={setup}
+        style={{
+          background: "#FCFBF7",
+          border: "1px solid #D1CFC4",
+          borderRadius: 14,
+          padding: 24,
+          minHeight: 420,
+          fontFamily: "Figtree, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        }}
+      >
+        <p id="gc-status" style={{ color: "#807D75", fontSize: 14, margin: "0 0 12px" }}>
+          Loading form...
+        </p>
+        <div id="goldcast-registration-form" />
+      </div>
     </div>
   );
 };
