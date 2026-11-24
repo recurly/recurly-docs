@@ -99,6 +99,7 @@ body { background: #ffffff !important; }
 .rc-story {
   display:grid; grid-template-columns:300px 1fr; gap:36px; align-items:center;
   background:var(--offwhite); border:1px solid var(--lightgray); border-radius:16px; padding:28px;
+  margin:44px 0 0;
 }
 .rc-story-figure { margin:0; }
 .rc-story-img {
@@ -251,7 +252,7 @@ body { background: #ffffff !important; }
       <div class="rc-points-main">
         <div class="rc-points-num">20 pts</div>
         <div class="rc-points-label">Total possible</div>
-        <p class="rc-points-text">Read the story, then answer both questions in the quiz below to earn the full 20 points.</p>
+        <p class="rc-points-text">Read the story, then help save the subscription by answering both questions. Every correct answer keeps it alive.</p>
       </div>
       <div class="rc-points-perks">
         <span class="rc-perk rc-perk-pts"><i class="fa-solid fa-circle-check"></i> 10 points per correct answer</span>
@@ -259,22 +260,21 @@ body { background: #ffffff !important; }
     </div>
 
     <!-- STORY -->
-    <div class="rc-section-head rc-rise-2"><i class="fa-solid fa-snowflake"></i><h2>A holiday story</h2></div>
-    <div class="rc-story rc-rise-3">
+    <div class="rc-story rc-rise-2">
       <figure class="rc-story-figure">
         <img class="rc-story-img" src="https://files.readme.io/6acea427ee5b9674dcb80db321e256b01b0dd73eb89439b3b273c336959b5ca1-Gemini_Generated_Image_wwg9y3wwg9y3wwg9.jpeg" alt="Holiday illustration of a subscriber with a failed payment">
       </figure>
       <div class="rc-story-body">
-        <span class="rc-eyebrow">Feature Adoption</span>
-        <h2 class="rc-story-title">The subscriber who almost missed the New Year</h2>
-        <p>All your customer wanted for Christmas was to renew their subscription. Then their card expired, and the payment failed. Now the clock is ticking. If your dunning window is too short, you could lose this subscriber before the New Year even arrives.</p>
+        <span class="rc-eyebrow">A festive tale</span>
+        <h2 class="rc-story-title">Brr, the card went cold!</h2>
+        <p>All your customer wanted this holiday season was to renew their subscription. Then their card expired, and the payment failed. Now the clock is ticking. If your dunning window is too short, you could lose this subscriber before the New Year even arrives.</p>
       </div>
     </div>
 
     <!-- QUIZ -->
-    <div class="rc-section-head rc-rise-3"><i class="fa-solid fa-circle-check"></i><h2>Test your dunning knowledge</h2></div>
+    <div class="rc-section-head rc-rise-3"><i class="fa-solid fa-life-ring"></i><h2>Help save the subscription</h2></div>
     <div class="rc-form-intro rc-rise-3">
-      <p>Answer both questions below to lock in your points.</p>
+      <p>Think you know how long a dunning window should be? Answer both questions below to rescue this customer and lock in your points.</p>
     </div>
 
     <!-- HINT -->
