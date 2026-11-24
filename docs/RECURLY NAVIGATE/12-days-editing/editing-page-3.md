@@ -5,11 +5,10 @@ hidden: true
 metadata:
   robots: index
 ---
-<HTMLBlock>{`
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-<style>{\`
+<style>{`
 body { background: #ffffff !important; }
 .rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; box-sizing: border-box; }
 .rc-guide [class^="fa-"], .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
@@ -141,7 +140,7 @@ body { background: #ffffff !important; }
   .rc-form-body { padding:16px; }
   .rc-lp-nav { justify-content:center; }
 }
-\`}</style>
+`}</style>
 
 <div className="rc-guide">
 
@@ -245,4 +244,3 @@ body { background: #ffffff !important; }
 
   </div>
 </div>
-`}</HTMLBlock>
