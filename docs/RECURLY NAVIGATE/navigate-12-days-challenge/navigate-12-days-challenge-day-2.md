@@ -288,25 +288,6 @@ body { background: #ffffff !important; }
       <p>Every great subscription business is built on the feedback of the people who use it. So before the holidays wrap up, we'd love to hear how Recurly is working for you. Your honest words help other teams find the right tools, and as a thank you, we'll send you a <strong>$25 Amazon gift card</strong>.</p>
     </div>
 
-    <!-- JOURNEY -->
-    <div class="rc-journey rc-rise-4">
-      <div class="rc-step">
-        <div class="rc-step-num">1</div>
-        <h4>Visit the G2 page <i class="fa-solid fa-sleigh rc-step-icon"></i></h4>
-        <p>Tap the button below to open our Recurly review page on G2.</p>
-      </div>
-      <div class="rc-step">
-        <div class="rc-step-num">2</div>
-        <h4>Confirm your visit <i class="fa-solid fa-tree rc-step-icon"></i></h4>
-        <p>Pop your details into the form below to lock in your 25 points.</p>
-      </div>
-      <div class="rc-step">
-        <div class="rc-step-num">3</div>
-        <h4>Leave your review <i class="fa-solid fa-star rc-step-icon"></i></h4>
-        <p>Share your experience on G2 to complete the survey and earn your $25 gift card.</p>
-      </div>
-    </div>
-
     <div class="rc-cta-wrap">
       <a href="https://www.g2.com/contributor/2026-navigate-12-day-challenge-e40fd4eb-de57-426b-ac8f-2eb70d93d844?secure%5Bpage_id%5D=2026-navigate-12-day-challenge-e40fd4eb-de57-426b-ac8f-2eb70d93d844&amp;secure%5Brewards%5D=true&amp;secure%5Btoken%5D=d90a52a0565d5c1639ccbc649d3a3dc9797b42fd4cc3b228b4462a05f3b4c44b" class="rc-btn-path" target="_blank" rel="noopener">Visit the G2 review page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
       <span class="rc-cta-note">Opens in a new tab</span>
