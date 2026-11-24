@@ -1,0 +1,86 @@
+---
+name: GoldcastWebinarForm
+---
+export const GoldcastRegistration = () => {
+  const EVENT_ID = "fefc2076-a74f-4126-9ad4-e8e84411d1d3";
+  const SCRIPT_SRC = "https://form-embed-sdk.goldcast.io/embed.js";
+
+  const startWidget = (container) => {
+    if (!window.GOLDCAST || !container) return;
+    new window.GOLDCAST.RegistrationWidget({
+      event_id: EVENT_ID,
+      mode: "embed",
+      containerSelector: "#goldcast-registration-form",
+      theme_obj: {},
+      backendUrl: "https://backend.goldcast.io",
+    });
+  };
+
+  const setup = (container) => {
+    if (!container) return;
+
+    // Add 12_days=yes to the URL so the hidden field fills in
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has("12_days")) {
+      url.searchParams.set("12_days", "yes");
+      window.history.replaceState({}, "", url);
+    }
+
+    if (window.GOLDCAST) {
+      startWidget(container);
+    } else {
+      let script = document.querySelector(`script[src="${SCRIPT_SRC}"]`);
+      if (!script) {
+        script = document.createElement("script");
+        script.src = SCRIPT_SRC;
+        script.async = true;
+        document.head.appendChild(script);
+      }
+      script.addEventListener("load", () => startWidget(container));
+    }
+
+    // If the form still hasn't rendered after 10 seconds, show the fallback message
+    setTimeout(() => {
+      if (container.children.length === 0) {
+        const fallback = document.getElementById("goldcast-fallback");
+        if (fallback) fallback.style.display = "block";
+      }
+    }, 10000);
+  };
+
+  return (
+    <div
+      style={{
+        background: "#FCFBF7",
+        border: "1px solid #D1CFC4",
+        borderRadius: 14,
+        padding: 24,
+        fontFamily: "Figtree, Helvetica Neue, Helvetica, arial, sans-serif",
+      }}
+    >
+      <div
+        id="goldcast-registration-form"
+        ref={setup}
+        style={{ minHeight: 420 }}
+      />
+      <p
+        id="goldcast-fallback"
+        style={{
+          display: "none",
+          background: "#F2F1EA",
+          borderLeft: "4px solid #FFD706",
+          borderRadius: 10,
+          padding: "16px 18px",
+          fontSize: ".92rem",
+          lineHeight: 1.55,
+          color: "#32312D",
+          margin: "16px 0 0",
+        }}
+      >
+        The registration form is taking longer than expected. Refresh the page, or email{" "}
+        <a href="mailto:support@recurly.com">support@recurly.com</a> and we'll help you sign up.
+      </p>
+    </div>
+  );
+};
+<ExampleComponent header="Getting Started with Custom Components" />
