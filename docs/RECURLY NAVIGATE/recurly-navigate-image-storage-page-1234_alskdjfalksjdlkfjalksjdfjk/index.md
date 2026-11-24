@@ -142,3 +142,5 @@ metadata:
 ![](https://files.readme.io/862a611951d98903da5272b81dbb20bca7af514220ff607adbffe8d650b9f242-REcurly_navigate___Justt_Webinar_slide_1.png)
 
 ![](https://files.readme.io/6acea427ee5b9674dcb80db321e256b01b0dd73eb89439b3b273c336959b5ca1-Gemini_Generated_Image_wwg9y3wwg9y3wwg9.jpeg)
+
+![](https://files.readme.io/b733aa28d20656659440adaf015bcd8d929763b57e01be38fe314466d4b5758c-Gemini_Generated_Image_qx0eh3qx0eh3qx0e.jpeg)
