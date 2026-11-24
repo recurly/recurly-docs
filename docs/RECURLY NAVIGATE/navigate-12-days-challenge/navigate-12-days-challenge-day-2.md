@@ -274,8 +274,9 @@ body { background: #ffffff !important; }
         <p class="rc-points-text">Visit the Recurly G2 review page, then confirm your visit with the form below to earn 25 points. Easy as trimming the tree!</p>
       </div>
       <div class="rc-points-perks">
-        <span class="rc-perk rc-perk-gift"><i class="fa-solid fa-gift"></i> + $25 gift card for completing the survey</span>
         <span class="rc-perk rc-perk-pts"><i class="fa-solid fa-circle-check"></i> 25 pts for confirming your visit</span>
+        <span class="rc-perk rc-perk-gift"><i class="fa-solid fa-gift"></i> + $25 gift card for completing the survey</span>
+
       </div>
     </div>
 
