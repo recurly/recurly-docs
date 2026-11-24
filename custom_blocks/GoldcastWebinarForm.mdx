@@ -5,36 +5,14 @@ export const GoldcastWebinarForm = () => {
   const EVENT_ID = "fefc2076-a74f-4126-9ad4-e8e84411d1d3";
   const SCRIPT_SRC = "https://form-embed-sdk.goldcast.io/embed.js";
 
-  const unlockHeight = (container) => {
-    if (!container) return;
-    const nodes = [container, ...container.querySelectorAll("*")];
-    nodes.forEach((el) => {
-      if (el.style) {
-        el.style.setProperty("height", "auto", "important");
-        el.style.setProperty("max-height", "none", "important");
-        el.style.setProperty("overflow", "visible", "important");
-      }
-      if (el.tagName === "IFRAME") {
-        el.setAttribute("scrolling", "no");
-        el.style.setProperty("height", "1000px", "important");
-        el.style.setProperty("width", "100%", "important");
-      }
-    });
-  };
-
   const setup = (node) => {
     if (!node || node.dataset.started) return;
     node.dataset.started = "yes";
 
-    const container = node.querySelector("#goldcast-registration-form");
     const status = node.querySelector("#gc-status");
     const say = (msg) => {
       if (status) status.textContent = msg;
     };
-
-    // Keep the form from scrolling as the widget renders
-    const observer = new MutationObserver(() => unlockHeight(container));
-    if (container) observer.observe(container, { childList: true, subtree: true, attributes: true, attributeFilter: ["style", "height"] });
 
     // Add _Days=yes to the URL so the hidden field fills in
     const url = new URL(window.location.href);
@@ -53,9 +31,6 @@ export const GoldcastWebinarForm = () => {
           backendUrl: "https://backend.goldcast.io",
         });
         say("");
-        unlockHeight(container);
-        setTimeout(() => unlockHeight(container), 1000);
-        setTimeout(() => unlockHeight(container), 3000);
       } catch (e) {
         say("Widget error: " + e.message);
       }
@@ -107,11 +82,9 @@ export const GoldcastWebinarForm = () => {
           border: 2px solid #0D0D0B;
           border-radius: 16px;
           padding: 30px 28px 28px;
+          min-height: 420px;
           box-sizing: border-box;
           box-shadow: 0 14px 36px rgba(13, 13, 11, 0.14);
-          height: auto;
-          max-height: none;
-          overflow: visible;
         }
         .rc-form-outer .rc-form-box::before {
           content: "";
@@ -122,11 +95,6 @@ export const GoldcastWebinarForm = () => {
           height: 8px;
           background: #FFD706;
           border-radius: 16px 16px 0 0;
-        }
-        .rc-form-outer #goldcast-registration-form {
-          height: auto;
-          max-height: none;
-          overflow: visible;
         }
         .rc-form-outer #gc-status {
           color: #807D75;
