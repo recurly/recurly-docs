@@ -281,7 +281,7 @@ body { background: #ffffff !important; }
 
     <!-- FORM -->
     <div class="rc-section-head rc-rise-4"><i class="fa-solid fa-cloud-showers-heavy"></i><h2>Save the subscription</h2></div>
-    <p class="rc-form-intro rc-rise-4">Choose the feature that keeps your subscriber close through the storm, and answer the follow-up questions so we know what's live in your account.</p>
+    <p class="rc-form-intro rc-rise-4">Choose the feature that keeps your subscriber close through the storm.</p>
 
     <div class="rc-hint rc-rise-4">
       <i class="fa-solid fa-wand-sparkles rc-hint-icon"></i>
