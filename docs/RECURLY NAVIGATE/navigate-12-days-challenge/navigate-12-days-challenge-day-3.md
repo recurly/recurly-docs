@@ -95,21 +95,24 @@ body { background: #ffffff !important; }
 .rc-section-head::after { content:""; flex:1; height:1px; background:var(--lightgray); }
 .rc-section-head i { color:var(--poppy); font-size:1.1rem; }
 
-/* ── STORY ── */
-.rc-story { max-width:860px; }
+/* ── STORY (side-by-side) ── */
+.rc-story {
+  display:grid; grid-template-columns:300px 1fr; gap:36px; align-items:center;
+  background:var(--offwhite); border:1px solid var(--lightgray); border-radius:16px; padding:28px;
+}
+.rc-story-figure { margin:0; }
+.rc-story-img {
+  display:block; width:100%; height:auto; border-radius:14px;
+  border:1px solid var(--lightgray); background:#fff;
+  box-shadow:0 10px 26px rgba(13,13,11,.12);
+}
+.rc-story-body { min-width:0; }
 .rc-eyebrow {
   display:inline-block; font-size:.75rem; font-weight:800; letter-spacing:1.2px; text-transform:uppercase;
   color:var(--poppy); margin:0 0 10px;
 }
-.rc-story-title { font-size:2rem; font-weight:800; line-height:1.2; color:var(--offblack) !important; margin:0 0 14px; }
-.rc-story p { font-size:1.05rem; line-height:1.7; color:var(--darkgray) !important; margin:0 0 16px; }
-.rc-story p strong { color:var(--offblack) !important; }
-.rc-story-figure { margin:28px auto 8px; text-align:center; }
-.rc-story-img {
-  display:block; width:100%; max-width:640px; height:auto; margin:0 auto;
-  border-radius:16px; border:1px solid var(--lightgray); background:var(--offwhite);
-  box-shadow:0 10px 30px rgba(13,13,11,.12);
-}
+.rc-story-title { font-size:1.8rem; font-weight:800; line-height:1.2; color:var(--offblack) !important; margin:0 0 14px; }
+.rc-story p { font-size:1.05rem; line-height:1.7; color:var(--darkgray) !important; margin:0; }
 
 /* ── FORM INTRO ── */
 .rc-form-intro { max-width:860px; margin:0 0 18px; }
@@ -207,6 +210,8 @@ body { background: #ffffff !important; }
   .rc-wrap, .rc-topnav { padding-left:20px; padding-right:20px; }
   .rc-hero { padding:44px 20px 46px; }
   .rc-hero h1 { font-size:1.9rem; }
+  .rc-story { grid-template-columns:1fr; gap:20px; padding:22px 18px; }
+  .rc-story-figure { max-width:280px; margin:0 auto; }
   .rc-story-title { font-size:1.5rem; }
   .rc-points { padding:20px 18px; }
   .rc-points-perks { width:100%; }
@@ -256,12 +261,14 @@ body { background: #ffffff !important; }
     <!-- STORY -->
     <div class="rc-section-head rc-rise-2"><i class="fa-solid fa-snowflake"></i><h2>A holiday story</h2></div>
     <div class="rc-story rc-rise-3">
-      <span class="rc-eyebrow">Feature Adoption</span>
-      <h2 class="rc-story-title">The subscriber who almost missed the New Year</h2>
-      <p>All your customer wanted for the holidays was to renew their subscription. Then their card expired, and the payment failed. Now the clock is ticking. If your dunning window is too short, you could lose this subscriber before the New Year even arrives.</p>
       <figure class="rc-story-figure">
         <img class="rc-story-img" src="https://files.readme.io/6acea427ee5b9674dcb80db321e256b01b0dd73eb89439b3b273c336959b5ca1-Gemini_Generated_Image_wwg9y3wwg9y3wwg9.jpeg" alt="Holiday illustration of a subscriber with a failed payment">
       </figure>
+      <div class="rc-story-body">
+        <span class="rc-eyebrow">Feature Adoption</span>
+        <h2 class="rc-story-title">The subscriber who almost missed the New Year</h2>
+        <p>All your customer wanted for Christmas was to renew their subscription. Then their card expired, and the payment failed. Now the clock is ticking. If your dunning window is too short, you could lose this subscriber before the New Year even arrives.</p>
+      </div>
     </div>
 
     <!-- QUIZ -->
