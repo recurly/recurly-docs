@@ -191,3 +191,88 @@ body { background: #ffffff !important; }
 `}</HTMLBlock>
 
 <GoldcastWebinarForm />
+
+<HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; box-sizing: border-box; }
+.rc-guide [class^="fa-"], .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide {
+  --yellow:#FFD706; --poppy:#FF5126; --green:#5DC32E; --blue:#008CFF;
+  --offblack:#0D0D0B; --darkgray:#32312D; --gray:#807D75; --lightgray:#D1CFC4;
+  --brightgray:#F2F1EA; --offwhite:#FCFBF7;
+  color: var(--darkgray) !important; background:#fff;
+}
+.rc-guide a, .rc-guide a:link, .rc-guide a:visited { color:#008CFF !important; text-decoration:none !important; border-bottom:0 !important; }
+.rc-guide a:hover { color:#0067BE !important; text-decoration:underline !important; }
+
+.rc-wrap { max-width:1120px; margin:0 auto; padding:0 32px 40px; }
+
+/* FUN FACT */
+.rc-fact {
+  display:flex; gap:16px; align-items:flex-start; margin:40px 0 0;
+  background:var(--offwhite); border:1px solid var(--lightgray); border-left:5px solid var(--green);
+  border-radius:14px; padding:22px 26px;
+}
+.rc-fact-icon { font-size:1.4rem; color:var(--green); flex-shrink:0; line-height:1.3; }
+.rc-fact strong { display:block; font-size:.95rem; font-weight:800; color:var(--offblack) !important; margin-bottom:4px; }
+.rc-fact p { font-size:.95rem; line-height:1.6; color:var(--darkgray) !important; margin:0; }
+
+/* NAVIGATION */
+.rc-lp-nav { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:40px 0 16px; flex-wrap:wrap; }
+.rc-lp-nav-indicator { font-size:.85rem; font-weight:700; color:var(--gray); letter-spacing:.5px; white-space:nowrap; }
+.rc-guide span.rc-btn-start {
+  background:var(--brightgray); color:var(--gray) !important; padding:13px 24px;
+  border-radius:10px; font-weight:700; font-size:.9rem; border:2px solid var(--lightgray);
+  cursor:default; display:inline-flex; align-items:center; white-space:nowrap;
+}
+.rc-guide a.rc-btn-path {
+  display:inline-flex; align-items:center; gap:8px;
+  background:#FFD706 !important; color:#0D0D0B !important;
+  padding:13px 28px; border-radius:10px; font-weight:800; font-size:.95rem;
+  border:2px solid #FFD706 !important; text-decoration:none !important;
+}
+.rc-guide a.rc-btn-path:hover {
+  background:#0D0D0B !important; color:#FFD706 !important;
+  border:2px solid #0D0D0B !important; text-decoration:none !important;
+}
+
+/* BACK LINK */
+.rc-back-center { text-align:center; margin:26px 0 0; }
+.rc-guide a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
+.rc-guide a.rc-back:hover { color:var(--poppy) !important; text-decoration:none !important; }
+
+@media (max-width: 768px) {
+  .rc-wrap { padding-left:20px; padding-right:20px; }
+  .rc-lp-nav { justify-content:center; }
+}
+</style>
+
+<div class="rc-guide">
+  <div class="rc-wrap">
+
+    <!-- FUN FACT -->
+    <div class="rc-fact">
+      <div class="rc-fact-icon"><i class="fa-solid fa-lightbulb"></i></div>
+      <div>
+        <strong>Did you know?</strong>
+        <p>Up to 75% of holiday chargebacks stem from "friendly fraud," where customers dispute legitimate subscription renewals simply because they didn't recognize the charge or forgot to pause their plan!</p>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="rc-lp-nav">
+      <span class="rc-btn-start">← Start</span>
+      <span class="rc-lp-nav-indicator">Day 1 of 12</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-2" class="rc-btn-path">Go to Day 2 →</a>
+    </div>
+
+    <div class="rc-back-center">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge" class="rc-back"><i class="fa-solid fa-house"></i> Back to challenge home</a>
+    </div>
+
+  </div>
+</div>
+`}</HTMLBlock>
