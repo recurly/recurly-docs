@@ -25,10 +25,10 @@ body { background: #ffffff !important; }
 
 .rc-wrap { max-width:1120px; margin:0 auto; padding:0 32px; }
 .rc-topnav { max-width:1120px; margin:0 auto; padding:20px 32px 12px; }
-a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
-a.rc-back:hover { color:var(--poppy) !important; }
+.rc-guide a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
+.rc-guide a.rc-back:hover { color:var(--poppy) !important; text-decoration:none !important; }
 
-/* ── HERO ── */
+/* HERO */
 .rc-hero {
   position:relative; background:#0D0D0B; color:#fff; text-align:center;
   padding:54px 40px 56px; border-radius:16px; border:1px solid rgba(255,215,6,.3);
@@ -52,15 +52,16 @@ a.rc-back:hover { color:var(--poppy) !important; }
 .rc-hero p { font-size:1.02rem; color:#D1CFC4 !important; max-width:720px; margin:0 auto; line-height:1.6; position:relative; z-index:3; }
 .rc-hero-meta { margin-top:20px; font-size:.9rem; font-weight:700; color:#FFD706 !important; position:relative; z-index:3; }
 
-/* ── POINTS BANNER ── */
+/* POINTS / TASK BANNER */
 .rc-points {
   display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
   margin:32px 0 0; background:var(--offwhite); border:1px solid var(--lightgray);
   border-left:5px solid var(--poppy); border-radius:14px; padding:20px 24px;
 }
-.rc-points-left { display:flex; align-items:center; gap:16px; }
+.rc-points-main { flex:1; min-width:260px; }
 .rc-points-num { font-size:2.2rem; font-weight:900; line-height:1; color:var(--poppy); }
-.rc-points-label { font-size:.8rem; font-weight:800; text-transform:uppercase; letter-spacing:.8px; color:var(--gray) !important; }
+.rc-points-label { font-size:.8rem; font-weight:800; text-transform:uppercase; letter-spacing:.8px; color:var(--gray) !important; margin-top:6px; }
+.rc-points-text { font-size:1rem; line-height:1.65; color:var(--darkgray) !important; margin:14px 0 0; }
 .rc-bonus {
   display:inline-flex; align-items:center; gap:6px;
   background:#FFF3B0; color:#0D0D0B !important; font-size:.8rem; font-weight:800;
@@ -68,97 +69,66 @@ a.rc-back:hover { color:var(--poppy) !important; }
 }
 .rc-bonus i { color:#FF5126; }
 
-/* ── SECTION HEADINGS ── */
-.rc-section-head { display:flex; align-items:center; gap:14px; margin:48px 0 18px; }
+/* SECTION HEADINGS */
+.rc-section-head { display:flex; align-items:center; gap:14px; margin:52px 0 18px; }
 .rc-section-head h2 { font-size:1.4rem; font-weight:800; color:var(--offblack) !important; margin:0; white-space:nowrap; }
 .rc-section-head::after { content:""; flex:1; height:1px; background:var(--lightgray); }
 .rc-section-head i { color:var(--poppy); font-size:1.1rem; }
 
-/* ── TASK / LANDING PAGE COPY ── */
-.rc-task-card {
-  background:var(--offwhite); border:1px solid var(--lightgray); border-radius:14px; padding:28px 30px;
+/* LUNCH + LEARN DETAILS */
+.rc-lnl { max-width:860px; }
+.rc-eyebrow {
+  display:inline-block; font-size:.75rem; font-weight:800; letter-spacing:1.2px; text-transform:uppercase;
+  color:var(--poppy); margin:0 0 10px;
 }
-.rc-task-card h3 { font-size:1.3rem; font-weight:800; line-height:1.35; color:var(--offblack) !important; margin:0 0 14px; }
-.rc-task-card p { font-size:1rem; line-height:1.65; color:var(--darkgray) !important; margin:0 0 16px; }
-.rc-task-card h4 { font-size:1.05rem; font-weight:800; color:var(--offblack) !important; margin:22px 0 10px; }
-.rc-task-card ul { margin:0 0 16px; padding-left:22px; }
-.rc-task-card li { font-size:1rem; line-height:1.6; color:var(--darkgray) !important; margin-bottom:8px; }
-.rc-task-card li strong { color:var(--offblack) !important; }
-.rc-webinar-img { display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--lightgray); margin:18px 0 0; }
-.rc-cta-wrap { margin-top:18px; }
+.rc-lnl-title { font-size:2rem; font-weight:800; line-height:1.2; color:var(--offblack) !important; margin:0 0 10px; }
+.rc-lnl-sub { font-size:1.15rem; line-height:1.5; color:var(--darkgray) !important; margin:0 0 18px; }
+.rc-when { display:flex; align-items:center; gap:10px; font-size:1rem; font-weight:800; color:var(--offblack) !important; margin:0 0 22px; }
+.rc-when i { color:var(--poppy); }
 
-/* ── SPEAKERS ── */
-.rc-speakers { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:8px; }
-.rc-speaker {
-  background:#fff; border:1px solid var(--lightgray); border-radius:14px; padding:26px 22px; text-align:center;
-}
-.rc-avatar {
-  width:84px; height:84px; border-radius:14px; margin:0 auto 14px;
-  display:flex; align-items:center; justify-content:center; font-size:1.4rem; font-weight:900;
-}
-.rc-avatar-justt { background:#5B3FD9; color:#fff; }
-.rc-avatar-recurly { background:#FFD706; color:#0D0D0B; }
-.rc-speaker h4 { font-size:1.05rem; font-weight:800; color:var(--offblack) !important; margin:0 0 4px; }
-.rc-speaker .rc-role { font-size:.9rem; color:var(--darkgray) !important; margin:0 0 10px; line-height:1.4; }
-.rc-speaker .rc-org { font-size:.85rem; font-weight:800; text-transform:uppercase; letter-spacing:.6px; color:var(--gray) !important; }
-
-/* ── FORM ── */
-.rc-form-card { border:1px solid var(--lightgray); border-radius:14px; overflow:hidden; background:#fff; }
-.rc-form-header {
-  background:var(--offblack); padding:16px 22px; display:flex; align-items:center; justify-content:space-between; gap:10px;
-}
-.rc-form-header h3 { font-size:.9rem; font-weight:700; text-transform:uppercase; letter-spacing:.7px; color:#FFD706 !important; margin:0; }
-.rc-form-header span { font-size:.8rem; color:#5DC32E; font-weight:800; }
-.rc-form-body { padding:24px; min-height:420px; }
-.rc-form-fallback {
-  display:none; background:var(--brightgray); border-left:4px solid var(--yellow);
-  border-radius:10px; padding:16px 18px; font-size:.92rem; line-height:1.55; color:var(--darkgray) !important; margin:0;
-}
-.rc-form-fallback a { font-weight:700; }
-
-/* ── FUN FACT ── */
-.rc-fact {
-  display:flex; gap:16px; align-items:flex-start; margin:40px 0 0;
-  background:var(--offwhite); border:1px solid var(--lightgray); border-left:5px solid var(--green);
-  border-radius:14px; padding:22px 26px;
-}
-.rc-fact-icon { font-size:1.4rem; color:var(--green); flex-shrink:0; line-height:1.3; }
-.rc-fact strong { display:block; font-size:.95rem; font-weight:800; color:var(--offblack) !important; margin-bottom:4px; }
-.rc-fact p { font-size:.95rem; line-height:1.6; color:var(--darkgray) !important; margin:0; }
-
-/* ── NAVIGATE DESIGN SYSTEM: PATH NAVIGATION ── */
-.rc-lp-nav { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:40px 0 16px; flex-wrap:wrap; }
-.rc-lp-nav-indicator { font-size:.85rem; font-weight:700; color:var(--gray); letter-spacing:.5px; white-space:nowrap !important; }
-.rc-btn-start {
-  background:var(--brightgray); color:var(--gray); padding:13px 24px;
-  border-radius:10px; font-weight:700; font-size:.9rem; border:2px solid var(--lightgray);
-  cursor:default; display:inline-flex; align-items:center; white-space:nowrap !important;
-}
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+/* BUTTON: left aligned, label centered */
+.rc-cta-left { display:flex; justify-content:flex-start; margin:0 0 30px; }
 .rc-guide a.rc-btn-path {
-  background:#FF5126; color:#ffffff !important; text-decoration:none !important;
-  padding:13px 28px; border-radius:10px; font-weight:800; font-size:.95rem;
-  display:inline-flex; align-items:center; gap:8px; transition:all .2s;
-  border:2px solid #FF5126 !important; border-bottom:2px solid #FF5126 !important;
-  white-space:nowrap !important;
+  display:inline-flex; align-items:center; justify-content:center; gap:10px; text-align:center;
+  background:#FFD706 !important; color:#0D0D0B !important;
+  padding:14px 32px; border-radius:10px; font-weight:800; font-size:1rem;
+  border:2px solid #FFD706 !important; text-decoration:none !important;
 }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-path:hover {
-  background:transparent !important; color:#FF5126 !important;
-  border:2px solid #FF5126 !important; border-bottom:2px solid #FF5126 !important;
+  background:#0D0D0B !important; color:#FFD706 !important;
+  border:2px solid #0D0D0B !important; text-decoration:none !important;
 }
-.rc-back-center { text-align:center; margin:26px 0 48px; }
-.rc-back-center a.rc-back { font-size:.9rem; }
+.rc-guide a.rc-btn-path i { color:inherit; }
 
-/* ── RESPONSIVE ── */
+/* WEBINAR DESCRIPTION */
+.rc-desc h3 { font-size:1.3rem; font-weight:800; line-height:1.35; color:var(--offblack) !important; margin:0 0 14px; }
+.rc-desc p { font-size:1.02rem; line-height:1.7; color:var(--darkgray) !important; margin:0 0 16px; }
+.rc-desc p strong { color:var(--offblack) !important; }
+.rc-desc h4 { font-size:1.1rem; font-weight:800; color:var(--offblack) !important; margin:26px 0 12px; }
+.rc-checks { list-style:none; margin:0 0 20px; padding:0; }
+.rc-checks li {
+  display:flex; align-items:flex-start; gap:12px; font-size:1.02rem; line-height:1.6;
+  color:var(--darkgray) !important; margin-bottom:12px;
+}
+.rc-checks li i { color:var(--green); font-size:1.15rem; margin-top:3px; flex-shrink:0; }
+.rc-checks li strong { color:var(--offblack) !important; }
+.rc-note { font-size:.95rem !important; color:var(--gray) !important; }
+
+/* SPEAKERS (compact) */
+.rc-hosts { display:flex; flex-wrap:wrap; gap:12px; margin:0; }
+.rc-host {
+  display:flex; align-items:center; gap:12px; background:var(--offwhite); border:1px solid var(--lightgray);
+  border-radius:12px; padding:12px 18px;
+}
+.rc-host strong { display:block; font-size:.98rem; font-weight:800; color:var(--offblack) !important; }
+.rc-host span { display:block; font-size:.85rem; color:var(--gray) !important; margin-top:2px; }
+
 @media (max-width: 768px) {
   .rc-wrap, .rc-topnav { padding-left:20px; padding-right:20px; }
   .rc-hero { padding:44px 20px 46px; }
   .rc-hero h1 { font-size:1.9rem; }
-  .rc-task-card { padding:22px 20px; }
-  .rc-form-body { padding:16px; }
-  .rc-speakers { grid-template-columns:1fr; }
-  .rc-lp-nav { justify-content:center; }
+  .rc-lnl-title { font-size:1.6rem; }
+  .rc-cta-left { justify-content:center; }
 }
 </style>
 
@@ -181,66 +151,139 @@ a.rc-back:hover { color:var(--poppy) !important; }
       <div class="rc-lights-bottom"></div>
     </div>
 
-    <!-- POINTS -->
+    <!-- TASK -->
     <div class="rc-points">
-      <div class="rc-points-left">
+      <div class="rc-points-main">
         <div class="rc-points-num">15 pts</div>
-        <div class="rc-points-label">Earn for registering</div>
+        <div class="rc-points-label">Register to earn</div>
+        <p class="rc-points-text">Register below to earn 15 points. If you attend, you'll earn an extra 50. If you registered previously and are participating in this challenge, no worries! We'll check attendance after the webinar and add your points to your total.</p>
       </div>
-      <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus points available</span>
+      <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus points for attending</span>
     </div>
 
-    <!-- TASK / LANDING PAGE COPY -->
-    <div class="rc-section-head"><i class="fa-solid fa-list-check"></i><h2>Your task</h2></div>
-    <div class="rc-task-card">
-      <h3>Even with a great customer experience, illegitimate chargebacks will remain an unavoidable reality for subscription businesses heading into 2027.</h3>
-      <p><strong>Join Recurly and Justt to get ahead of the curve with a pragmatic look at both sides of the equation</strong>: practical steps you can take throughout the customer journey to prevent disputes, and strategies for recovering revenue when they do happen.</p>
-      <p>We'll cover how to spot emerging chargeback trends across payment methods and seasonal shifts, using your dispute data to uncover hidden operational breakdowns and keep more of the money you earn.</p>
+    <!-- LUNCH + LEARN -->
+    <div class="rc-section-head"><i class="fa-solid fa-utensils"></i><h2>Lunch + Learn</h2></div>
+    <div class="rc-lnl">
+      <span class="rc-eyebrow">Lunch + Learn</span>
+      <h2 class="rc-lnl-title">From renewal to dispute: Protecting subscription revenue in 2027</h2>
+      <p class="rc-lnl-sub">Catch friction early, stop chargeback abuse, and fix broken customer journeys.</p>
+      <div class="rc-when"><i class="fa-regular fa-calendar"></i> December 10, 10:30 AM — 11:00 AM CST</div>
 
-      <h4>You'll learn how to:</h4>
-      <ul>
-        <li><strong>Uncover broken CX habits</strong> behind your chargeback trends</li>
-        <li><strong>Find the root causes</strong> in your chargeback data</li>
-        <li><strong>Catch customer friction</strong> before it turns into a chargeback</li>
-      </ul>
+      <div class="rc-cta-left"><a href="#register" class="rc-btn-path">Save your seat <i class="fa-solid fa-arrow-down"></i></a></div>
 
-      <p>Reserve your spot now to lock in early registration. More session details will be added soon.</p>
+      <div class="rc-desc">
+        <h3>Even with a great customer experience, illegitimate chargebacks will remain an unavoidable reality for subscription businesses heading into 2027.</h3>
+        <p><strong>Join Recurly and Justt to get ahead of the curve with a pragmatic look at both sides of the equation</strong>: practical steps you can take throughout the customer journey to prevent disputes, and strategies for recovering revenue when they do happen.</p>
+        <p>We’ll cover how to spot emerging chargeback trends across payment methods and seasonal shifts, using your dispute data to uncover hidden operational breakdowns and keep more of the money you earn.</p>
 
-      <div class="rc-cta-wrap"><a href="#register" class="rc-btn-path">Save your seat <i class="fa-solid fa-arrow-down"></i></a></div>
+        <h4>You'll learn how to:</h4>
+        <ul class="rc-checks">
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Uncover broken cx habits</strong> behind your chargeback trends</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Find the root causes</strong> in your chargeback data</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span><strong>Catch customer friction</strong> before it turns into a chargeback</span></li>
+        </ul>
 
-      <img class="rc-webinar-img" src="https://files.readme.io/862a611951d98903da5272b81dbb20bca7af514220ff607adbffe8d650b9f242-REcurly_navigate___Justt_Webinar_slide_1.png" alt="Recurly Navigate and Justt webinar slide">
-    </div>
-
-    <!-- SPEAKERS -->
-    <div class="rc-section-head"><i class="fa-solid fa-microphone"></i><h2>Meet the experts</h2></div>
-    <p style="font-size:.95rem; line-height:1.65; color:var(--darkgray) !important; margin:0 0 16px;"><strong>Hear directly from experts dedicated to safeguarding your subscription revenue.</strong> Drawing from real-world experience in SaaS customer success and dispute prevention, they'll share the strategic thinking behind full-lifecycle chargeback management, showing you how to turn dispute data into actionable improvements for your business.</p>
-    <div class="rc-speakers">
-      <div class="rc-speaker">
-        <div class="rc-avatar rc-avatar-justt">SB</div>
-        <h4>Sarah Boehmer</h4>
-        <p class="rc-role">Senior Director, Payments &amp; Chargebacks Strategy</p>
-        <div class="rc-org">Justt</div>
-      </div>
-      <div class="rc-speaker">
-        <div class="rc-avatar rc-avatar-recurly">CO</div>
-        <h4>Christian Oldroyd</h4>
-        <p class="rc-role">Customer Success Manager</p>
-        <div class="rc-org">Recurly</div>
+        <p class="rc-note">Reserve your spot now to lock in early registration — more session details will be added soon.</p>
       </div>
     </div>
 
-    <!-- FORM -->
-    <div class="rc-section-head" id="register"><i class="fa-solid fa-pen-to-square"></i><h2>Register here</h2></div>
-    <div class="rc-form-card">
-      <div class="rc-form-header">
-        <h3>Chargeback webinar registration</h3>
-        <span>+15 pts</span>
-      </div>
-      <div class="rc-form-body">
-        <div id="goldcast-registration-form"></div>
-        <p class="rc-form-fallback" id="rc-form-fallback">The registration form is taking longer than expected. Refresh the page, or email <a href="mailto:support@recurly.com">support@recurly.com</a> and we'll help you sign up.</p>
-        <script src="https://form-embed-sdk.goldcast.io/embed.js"></script>
-      </div>
+    <!-- HOSTS (compact) -->
+    <div class="rc-section-head"><i class="fa-solid fa-microphone"></i><h2>Your hosts</h2></div>
+    <div class="rc-hosts">
+      <div class="rc-host"><div><strong>Sarah Boehmer</strong><span>Senior Director, Payments &amp; Chargebacks Strategy, Justt</span></div></div>
+      <div class="rc-host"><div><strong>Christian Oldroyd</strong><span>Customer Success Manager, Recurly</span></div></div>
+    </div>
+
+  </div>
+</div>
+`}</HTMLBlock>
+
+<GoldcastWebinarForm />
+
+<HTMLBlock>{`
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+.rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; box-sizing: border-box; }
+.rc-guide [class^="fa-"], .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide {
+  --yellow:#FFD706; --poppy:#FF5126; --green:#5DC32E; --blue:#008CFF;
+  --offblack:#0D0D0B; --darkgray:#32312D; --gray:#807D75; --lightgray:#D1CFC4;
+  --brightgray:#F2F1EA; --offwhite:#FCFBF7;
+  color: var(--darkgray) !important; background:#fff;
+}
+.rc-guide a, .rc-guide a:link, .rc-guide a:visited { color:#008CFF !important; text-decoration:none !important; border-bottom:0 !important; }
+.rc-guide a:hover { color:#0067BE !important; text-decoration:underline !important; }
+
+.rc-wrap { max-width:1120px; margin:0 auto; padding:0 32px 40px; }
+
+/* TOMORROW TEASER */
+.rc-tease {
+  position:relative; overflow:hidden; margin:40px 0 0; border-radius:16px;
+  background:linear-gradient(135deg, #0D0D0B 0%, #1E2A1B 100%);
+  border:1px solid rgba(255,215,6,.35); padding:30px 32px; color:#FCFBF7;
+}
+.rc-tease-eyebrow { font-size:.75rem; font-weight:800; letter-spacing:1.4px; text-transform:uppercase; color:#FFD706; margin:0 0 8px; }
+.rc-tease h3 { font-size:1.6rem; font-weight:800; line-height:1.25; color:#FCFBF7 !important; margin:0 0 12px; }
+.rc-tease p { font-size:1rem; line-height:1.65; color:#D1CFC4 !important; margin:0 0 14px; max-width:720px; }
+.rc-tease-points {
+  display:inline-flex; align-items:center; gap:8px; background:rgba(93,197,46,.16); border:1.5px solid #5DC32E;
+  color:#5DC32E; font-size:.85rem; font-weight:800; padding:6px 16px; border-radius:20px;
+}
+.rc-tease-points i { color:#FFD706; }
+
+/* FUN FACT */
+.rc-fact {
+  display:flex; gap:16px; align-items:flex-start; margin:40px 0 0;
+  background:var(--offwhite); border:1px solid var(--lightgray); border-left:5px solid var(--green);
+  border-radius:14px; padding:22px 26px;
+}
+.rc-fact-icon { font-size:1.4rem; color:var(--green); flex-shrink:0; line-height:1.3; }
+.rc-fact strong { display:block; font-size:.95rem; font-weight:800; color:var(--offblack) !important; margin-bottom:4px; }
+.rc-fact p { font-size:.95rem; line-height:1.6; color:var(--darkgray) !important; margin:0; }
+
+/* NAVIGATION */
+.rc-lp-nav { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:40px 0 16px; flex-wrap:wrap; }
+.rc-lp-nav-indicator { font-size:.85rem; font-weight:700; color:var(--gray); letter-spacing:.5px; white-space:nowrap; }
+.rc-guide span.rc-btn-start {
+  background:var(--brightgray); color:var(--gray) !important; padding:13px 24px;
+  border-radius:10px; font-weight:700; font-size:.9rem; border:2px solid var(--lightgray);
+  cursor:default; display:inline-flex; align-items:center; white-space:nowrap;
+}
+.rc-guide a.rc-btn-path {
+  display:inline-flex; align-items:center; justify-content:center; gap:8px; text-align:center;
+  background:#FFD706 !important; color:#0D0D0B !important;
+  padding:13px 28px; border-radius:10px; font-weight:800; font-size:.95rem;
+  border:2px solid #FFD706 !important; text-decoration:none !important;
+}
+.rc-guide a.rc-btn-path:hover {
+  background:#0D0D0B !important; color:#FFD706 !important;
+  border:2px solid #0D0D0B !important; text-decoration:none !important;
+}
+.rc-guide a.rc-btn-path i { color:inherit; }
+
+.rc-back-center { text-align:center; margin:26px 0 0; }
+.rc-guide a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
+.rc-guide a.rc-back:hover { color:var(--poppy) !important; text-decoration:none !important; }
+
+@media (max-width: 768px) {
+  .rc-wrap { padding-left:20px; padding-right:20px; }
+  .rc-tease { padding:24px 22px; }
+  .rc-tease h3 { font-size:1.3rem; }
+  .rc-lp-nav { justify-content:center; }
+}
+</style>
+
+<div class="rc-guide">
+  <div class="rc-wrap">
+
+    <!-- TOMORROW TEASER -->
+    <div class="rc-tease">
+      <p class="rc-tease-eyebrow">Tomorrow</p>
+      <h3>Something new is coming your way.</h3>
+      <p>Keep an eye on your inbox tomorrow morning. Your next hint, your updated point total, and a chance to earn 25 more points on Day 2 will be waiting for you.</p>
+      <span class="rc-tease-points"><i class="fa-solid fa-gift"></i> Up to 25 points on Day 2</span>
     </div>
 
     <!-- FUN FACT -->
@@ -258,47 +301,11 @@ a.rc-back:hover { color:var(--poppy) !important; }
       <span class="rc-lp-nav-indicator">Day 1 of 12</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-2" class="rc-btn-path">Go to Day 2 →</a>
     </div>
+
     <div class="rc-back-center">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge" class="rc-back"><i class="fa-solid fa-house"></i> Back to challenge home</a>
     </div>
 
   </div>
 </div>
-
-<script>
-(function () {
-  // Add the 12_days parameter so the hidden field fills in on registration
-  var url = new URL(window.location.href);
-  if (!url.searchParams.has('12_days')) {
-    url.searchParams.set('12_days', 'yes');
-    window.history.replaceState({}, '', url);
-  }
-
-  // Wait for the Goldcast script to load, then start the widget
-  var attempts = 0;
-  var timer = setInterval(function () {
-    attempts++;
-    if (window.GOLDCAST && window.GOLDCAST.RegistrationWidget) {
-      clearInterval(timer);
-      new window.GOLDCAST.RegistrationWidget({
-        event_id: 'fefc2076-a74f-4126-9ad4-e8e84411d1d3',
-        mode: 'embed',
-        containerSelector: '#goldcast-registration-form',
-        theme_obj: {},
-        backendUrl: 'https://backend.goldcast.io'
-      });
-    } else if (attempts > 40) {
-      clearInterval(timer);
-    }
-  }, 250);
-
-  // If the form still hasn't rendered after 10 seconds, show the fallback message
-  setTimeout(function () {
-    var container = document.getElementById('goldcast-registration-form');
-    if (container && container.children.length === 0) {
-      document.getElementById('rc-form-fallback').style.display = 'block';
-    }
-  }, 10000);
-})();
-</script>
 `}</HTMLBlock>
