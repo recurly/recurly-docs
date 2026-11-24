@@ -111,8 +111,22 @@ body { background: #ffffff !important; }
   box-shadow:0 10px 30px rgba(13,13,11,.12);
 }
 
+/* ── FORM INTRO ── */
+.rc-form-intro { max-width:860px; margin:0 0 18px; }
+.rc-form-intro p { font-size:1rem; line-height:1.6; color:var(--darkgray) !important; margin:0; }
+
+/* ── HINT CARD ── */
+.rc-hint {
+  max-width:860px; margin:0 0 22px; background:var(--offwhite); border:1px solid var(--lightgray);
+  border-left:5px solid var(--blue); border-radius:14px; padding:22px 26px;
+  display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap;
+}
+.rc-hint-text { flex:1; min-width:240px; }
+.rc-hint-title { font-size:1.05rem; font-weight:800; color:var(--offblack) !important; margin:0 0 4px; display:flex; align-items:center; gap:10px; }
+.rc-hint-title i { color:var(--blue); }
+.rc-hint-text p { font-size:.95rem; line-height:1.6; color:var(--darkgray) !important; margin:0; }
+
 /* ── BUTTONS ── */
-.rc-cta-wrap { display:flex; flex-direction:column; align-items:flex-start; gap:10px; margin:24px 0 10px; }
 .rc-guide a.rc-btn-path {
   display:inline-flex; align-items:center; justify-content:center; gap:10px; text-align:center;
   background:#FFD706 !important; color:#0D0D0B !important;
@@ -128,8 +142,6 @@ body { background: #ffffff !important; }
 .rc-guide a.rc-btn-path i { color:inherit; }
 
 /* ── FORM CARD ── */
-.rc-form-intro { max-width:860px; margin:0 0 18px; }
-.rc-form-intro p { font-size:1rem; line-height:1.6; color:var(--darkgray) !important; margin:0; }
 .rc-form-outer { max-width:860px; }
 .rc-form-box {
   position:relative; background:#FFFFFF; border:2px solid #0D0D0B; border-radius:16px;
@@ -140,17 +152,6 @@ body { background: #ffffff !important; }
   background:#FFD706; border-radius:16px 16px 0 0;
 }
 .rc-form-box iframe { display:block; width:100%; border:0; }
-
-/* ── HINT CARD ── */
-.rc-hint {
-  max-width:860px; margin:32px 0 0; background:var(--offwhite); border:1px solid var(--lightgray);
-  border-left:5px solid var(--blue); border-radius:14px; padding:22px 26px;
-  display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap;
-}
-.rc-hint-text { flex:1; min-width:240px; }
-.rc-hint-title { font-size:1.05rem; font-weight:800; color:var(--offblack) !important; margin:0 0 4px; display:flex; align-items:center; gap:10px; }
-.rc-hint-title i { color:var(--blue); }
-.rc-hint-text p { font-size:.95rem; line-height:1.6; color:var(--darkgray) !important; margin:0; }
 
 /* ── TEASER ── */
 .rc-tease {
@@ -243,12 +244,12 @@ body { background: #ffffff !important; }
     <!-- POINTS -->
     <div class="rc-points rc-rise-2">
       <div class="rc-points-main">
-        <div class="rc-points-num">10 pts</div>
-        <div class="rc-points-label">Per correct answer</div>
-        <p class="rc-points-text">Read the story, then answer the two questions below. Each correct answer earns 10 points.</p>
+        <div class="rc-points-num">20 pts</div>
+        <div class="rc-points-label">Total possible</div>
+        <p class="rc-points-text">Read the story, then answer both questions in the quiz below to earn the full 20 points.</p>
       </div>
       <div class="rc-points-perks">
-        <span class="rc-perk rc-perk-pts"><i class="fa-solid fa-circle-check"></i> Up to 20 pts for the quiz</span>
+        <span class="rc-perk rc-perk-pts"><i class="fa-solid fa-circle-check"></i> 10 points per correct answer</span>
       </div>
     </div>
 
@@ -268,19 +269,20 @@ body { background: #ffffff !important; }
     <div class="rc-form-intro rc-rise-3">
       <p>Answer both questions below to lock in your points.</p>
     </div>
-    <div class="rc-form-outer rc-rise-3">
-      <div class="rc-form-box">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_jiQUKxBoIPGyZOjrBkel1GTLZLQFXpAlnOb50TaggC4xtw/viewform?embedded=true" width="100%" height="1171" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>
-    </div>
 
     <!-- HINT -->
-    <div class="rc-hint rc-rise-4">
+    <div class="rc-hint rc-rise-3">
       <div class="rc-hint-text">
         <p class="rc-hint-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Need a hint?</p>
         <p>You'll find the answers here.</p>
       </div>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101?utm_campaign=client+success&amp;utm_medium=event+recurly&amp;utm_source=recurly&amp;utm_content=navigate+12+days+challenge+day+3+page&amp;utm_term=tactic-clientsuccess;offer-content" class="rc-btn-path" target="_blank" rel="noopener">Explore the path <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+
+    <div class="rc-form-outer rc-rise-3">
+      <div class="rc-form-box">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_jiQUKxBoIPGyZOjrBkel1GTLZLQFXpAlnOb50TaggC4xtw/viewform?embedded=true" width="100%" height="1171" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
     </div>
 
     <!-- TEASER -->
