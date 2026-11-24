@@ -189,3 +189,5 @@ body { background: #ffffff !important; }
   </div>
 </div>
 `}</HTMLBlock>
+
+<GoldcastWebinarForm />
