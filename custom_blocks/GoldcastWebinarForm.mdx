@@ -60,21 +60,12 @@ export const GoldcastWebinarForm = () => {
           box-sizing: border-box;
           font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif;
         }
-        .rc-form-outer .rc-form-eyebrow {
-          display: inline-block;
-          font-size: 12px;
-          font-weight: 800;
-          letter-spacing: 1.4px;
-          text-transform: uppercase;
-          color: #FF5126;
-          margin: 56px 0 8px;
-        }
         .rc-form-outer .rc-form-title {
           font-size: 2rem;
           font-weight: 800;
           line-height: 1.2;
           color: #0D0D0B;
-          margin: 0 0 22px;
+          margin: 52px 0 22px;
         }
         .rc-form-outer .rc-form-box {
           position: relative;
@@ -82,9 +73,10 @@ export const GoldcastWebinarForm = () => {
           border: 2px solid #0D0D0B;
           border-radius: 16px;
           padding: 30px 28px 28px;
-          min-height: 420px;
           box-sizing: border-box;
           box-shadow: 0 14px 36px rgba(13, 13, 11, 0.14);
+          overflow: visible;
+          height: auto;
         }
         .rc-form-outer .rc-form-box::before {
           content: "";
@@ -95,6 +87,10 @@ export const GoldcastWebinarForm = () => {
           height: 8px;
           background: #FFD706;
           border-radius: 16px 16px 0 0;
+        }
+        .rc-form-outer #goldcast-registration-form {
+          height: auto;
+          overflow: visible;
         }
         .rc-form-outer #gc-status {
           color: #807D75;
@@ -108,7 +104,6 @@ export const GoldcastWebinarForm = () => {
         }
       `}</style>
 
-      <span className="rc-form-eyebrow">Step 1 · Register</span>
       <h2 className="rc-form-title">Save your seat</h2>
       <div ref={setup} className="rc-form-box">
         <p id="gc-status">Loading form...</p>
