@@ -80,19 +80,19 @@ body { background: #ffffff !important; }
 .rc-webinar-img { display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--lightgray); margin:18px 0 0; }
 .rc-cta-wrap { margin-top:18px; }
 
-/* BUTTONS: yellow with black text (higher specificity so the link rule can't override them) */
+/* BUTTONS: yellow with black text */
 .rc-guide a.rc-btn-path {
   display:inline-flex; align-items:center; gap:8px;
   background:#FFD706 !important; color:#0D0D0B !important;
   padding:13px 28px; border-radius:10px; font-weight:800; font-size:.95rem;
-  border:2px solid #FFD706 !important; text-decoration:none !important;
+  border:2px solid #FFD706 !important; border-bottom:2px solid #FFD706 !important; text-decoration:none !important;
+  transition:all .2s;
 }
 .rc-guide a.rc-btn-path:hover {
   background:#0D0D0B !important; color:#FFD706 !important;
-  border:2px solid #0D0D0B !important; text-decoration:none !important;
+  border:2px solid #0D0D0B !important; border-bottom:2px solid #0D0D0B !important; text-decoration:none !important;
 }
-.rc-guide a.rc-btn-path i { color:#0D0D0B; }
-.rc-guide a.rc-btn-path:hover i { color:#FFD706; }
+.rc-guide a.rc-btn-path i { color:inherit; }
 
 /* SPEAKERS */
 .rc-speaker-intro { font-size:1rem; line-height:1.65; color:var(--darkgray) !important; margin:0 0 16px; }
@@ -121,7 +121,11 @@ body { background: #ffffff !important; }
 /* NAVIGATION */
 .rc-lp-nav { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:40px 0 16px; flex-wrap:wrap; }
 .rc-lp-nav-indicator { font-size:.85rem; font-weight:700; color:var(--gray); letter-spacing:.5px; white-space:nowrap; }
-.rc-guide span.rc-btn-start { background:var(--brightgray); color:var(--gray) !important; padding:13px 24px; border-radius:10px; font-weight:700; font-size:.9rem; border:2px solid var(--lightgray); cursor:default; display:inline-flex; align-items:center; white-space:nowrap; }
+.rc-guide span.rc-btn-start {
+  background:var(--brightgray); color:var(--gray) !important; padding:13px 24px;
+  border-radius:10px; font-weight:700; font-size:.9rem; border:2px solid var(--lightgray);
+  cursor:default; display:inline-flex; align-items:center; white-space:nowrap;
+}
 .rc-back-center { text-align:center; margin:26px 0 48px; }
 
 /* RESPONSIVE */
