@@ -28,11 +28,28 @@ body { background: #ffffff !important; }
 .rc-guide a.rc-back { color:var(--gray) !important; font-weight:700; font-size:.9rem; }
 .rc-guide a.rc-back:hover { color:var(--poppy) !important; text-decoration:none !important; }
 
+/* BANNER IMAGE */
+.rc-banner { display:block; width:100%; height:auto; max-height:420px; object-fit:cover; border-radius:16px; margin:0 0 20px; }
+
+/* BUTTONS: yellow with black text */
+.rc-cta-row { display:flex; justify-content:center; margin:0 0 8px; }
+.rc-guide a.rc-btn-path {
+  display:inline-flex; align-items:center; gap:10px;
+  background:#FFD706 !important; color:#0D0D0B !important;
+  padding:14px 32px; border-radius:10px; font-weight:800; font-size:1rem;
+  border:2px solid #FFD706 !important; text-decoration:none !important;
+}
+.rc-guide a.rc-btn-path:hover {
+  background:#0D0D0B !important; color:#FFD706 !important;
+  border:2px solid #0D0D0B !important; text-decoration:none !important;
+}
+.rc-guide a.rc-btn-path i { color:inherit; }
+
 /* HERO */
 .rc-hero {
   position:relative; background:#0D0D0B; color:#fff; text-align:center;
   padding:54px 40px 56px; border-radius:16px; border:1px solid rgba(255,215,6,.3);
-  box-shadow:0 8px 30px rgba(0,0,0,.45); overflow:hidden;
+  box-shadow:0 8px 30px rgba(0,0,0,.45); overflow:hidden; margin-top:8px;
 }
 .rc-lights-top, .rc-lights-bottom {
   position:absolute; left:0; right:0; height:38px; pointer-events:none; z-index:2;
@@ -68,34 +85,29 @@ body { background: #ffffff !important; }
 .rc-bonus i { color:#FF5126; }
 
 /* SECTION HEADINGS */
-.rc-section-head { display:flex; align-items:center; gap:14px; margin:48px 0 18px; }
+.rc-section-head { display:flex; align-items:center; gap:14px; margin:52px 0 18px; }
 .rc-section-head h2 { font-size:1.4rem; font-weight:800; color:var(--offblack) !important; margin:0; white-space:nowrap; }
 .rc-section-head::after { content:""; flex:1; height:1px; background:var(--lightgray); }
 .rc-section-head i { color:var(--poppy); font-size:1.1rem; }
 
-/* TASK COPY */
-.rc-task-card { background:var(--offwhite); border:1px solid var(--lightgray); border-radius:14px; padding:28px 30px; }
-.rc-task-card h3 { font-size:1.3rem; font-weight:800; line-height:1.35; color:var(--offblack) !important; margin:0 0 14px; }
-.rc-task-card p { font-size:1rem; line-height:1.65; color:var(--darkgray) !important; margin:0 0 16px; }
-.rc-task-card h4 { font-size:1.05rem; font-weight:800; color:var(--offblack) !important; margin:22px 0 10px; }
-.rc-task-card ul { margin:0 0 16px; padding-left:22px; }
-.rc-task-card li { font-size:1rem; line-height:1.6; color:var(--darkgray) !important; margin-bottom:8px; }
-.rc-task-card li strong { color:var(--offblack) !important; }
-.rc-webinar-img { display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--lightgray); margin:18px 0 0; }
-.rc-cta-wrap { margin-top:18px; }
-
-/* BUTTONS: yellow with black text */
-.rc-guide a.rc-btn-path {
-  display:inline-flex; align-items:center; gap:8px;
-  background:#FFD706 !important; color:#0D0D0B !important;
-  padding:13px 28px; border-radius:10px; font-weight:800; font-size:.95rem;
-  border:2px solid #FFD706 !important; text-decoration:none !important;
+/* WEBINAR DESCRIPTION (clean, no box) */
+.rc-intro { max-width:820px; margin:0 auto; }
+.rc-intro .rc-eyebrow {
+  display:inline-block; font-size:.75rem; font-weight:800; letter-spacing:1.2px; text-transform:uppercase;
+  color:var(--poppy); margin:0 0 10px;
 }
-.rc-guide a.rc-btn-path:hover {
-  background:#0D0D0B !important; color:#FFD706 !important;
-  border:2px solid #0D0D0B !important; text-decoration:none !important;
+.rc-intro h3 { font-size:1.8rem; font-weight:800; line-height:1.3; color:var(--offblack) !important; margin:0 0 18px; }
+.rc-intro p { font-size:1.05rem; line-height:1.7; color:var(--darkgray) !important; margin:0 0 16px; }
+.rc-intro p strong { color:var(--offblack) !important; }
+.rc-intro h4 { font-size:1.1rem; font-weight:800; color:var(--offblack) !important; margin:28px 0 14px; }
+.rc-checks { list-style:none; margin:0 0 20px; padding:0; }
+.rc-checks li {
+  display:flex; align-items:flex-start; gap:12px; font-size:1.02rem; line-height:1.6;
+  color:var(--darkgray) !important; margin-bottom:12px;
 }
-.rc-guide a.rc-btn-path i { color:inherit; }
+.rc-checks li i { color:var(--green); font-size:1.15rem; margin-top:3px; flex-shrink:0; }
+.rc-checks li strong { color:var(--offblack) !important; }
+.rc-note { font-size:.95rem !important; color:var(--gray) !important; }
 
 /* SPEAKERS */
 .rc-speaker-intro { font-size:1rem; line-height:1.65; color:var(--darkgray) !important; margin:0 0 16px; }
@@ -115,79 +127,11 @@ body { background: #ffffff !important; }
   .rc-wrap, .rc-topnav { padding-left:20px; padding-right:20px; }
   .rc-hero { padding:44px 20px 46px; }
   .rc-hero h1 { font-size:1.9rem; }
-  .rc-task-card { padding:22px 20px; }
+  .rc-intro h3 { font-size:1.4rem; }
 }
 </style>
 
 <div class="rc-guide">
-
-  <div class="rc-topnav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge" class="rc-back">← Back to challenge home</a>
-  </div>
-
-  <div class="rc-wrap">
-
-    <!-- HERO -->
-    <div class="rc-hero">
-      <div class="rc-lights-top"></div>
-      <img class="rc-logo" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
-      <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Sleigh your success</span></div>
-      <h1>Day 1: Defending your workshop</h1>
-      <p>Chargebacks can sneak up on even the best subscription businesses. Get ahead of them this season by joining our live chargeback webinar, and start your 12 days with a win.</p>
-      <div class="rc-hero-meta">Thursday, December 3, 2026</div>
-      <div class="rc-lights-bottom"></div>
-    </div>
-
-    <!-- POINTS -->
-    <div class="rc-points">
-      <div>
-        <div class="rc-points-num">15 pts</div>
-        <div class="rc-points-label">Earn for registering</div>
-      </div>
-      <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus points available</span>
-    </div>
-
-    <!-- TASK COPY -->
-    <div class="rc-section-head"><i class="fa-solid fa-list-check"></i><h2>Your task</h2></div>
-    <div class="rc-task-card">
-      <h3>Even with a great customer experience, illegitimate chargebacks will remain an unavoidable reality for subscription businesses heading into 2027.</h3>
-      <p><strong>Join Recurly and Justt to get ahead of the curve with a pragmatic look at both sides of the equation</strong>: practical steps you can take throughout the customer journey to prevent disputes, and strategies for recovering revenue when they do happen.</p>
-      <p>We'll cover how to spot emerging chargeback trends across payment methods and seasonal shifts, using your dispute data to uncover hidden operational breakdowns and keep more of the money you earn.</p>
-
-      <h4>You'll learn how to:</h4>
-      <ul>
-        <li><strong>Uncover broken CX habits</strong> behind your chargeback trends</li>
-        <li><strong>Find the root causes</strong> in your chargeback data</li>
-        <li><strong>Catch customer friction</strong> before it turns into a chargeback</li>
-      </ul>
-
-      <p>Reserve your spot now to lock in early registration. More session details will be added soon.</p>
-
-      <div class="rc-cta-wrap"><a href="#register" class="rc-btn-path">Save your seat <i class="fa-solid fa-arrow-down"></i></a></div>
-
-      <img class="rc-webinar-img" src="https://files.readme.io/862a611951d98903da5272b81dbb20bca7af514220ff607adbffe8d650b9f242-REcurly_navigate___Justt_Webinar_slide_1.png" alt="Recurly Navigate and Justt webinar slide">
-    </div>
-
-    <!-- SPEAKERS -->
-    <div class="rc-section-head"><i class="fa-solid fa-microphone"></i><h2>Meet the experts</h2></div>
-    <p class="rc-speaker-intro"><strong>Hear directly from experts dedicated to safeguarding your subscription revenue.</strong> Drawing from real-world experience in SaaS customer success and dispute prevention, they'll share the strategic thinking behind full-lifecycle chargeback management, showing you how to turn dispute data into actionable improvements for your business.</p>
-    <div class="rc-speakers">
-      <div class="rc-speaker">
-        <div class="rc-avatar rc-avatar-justt">SB</div>
-        <h4>Sarah Boehmer</h4>
-        <p class="rc-role">Senior Director, Payments &amp; Chargebacks Strategy</p>
-        <div class="rc-org">Justt</div>
-      </div>
-      <div class="rc-speaker">
-        <div class="rc-avatar rc-avatar-recurly">CO</div>
-        <h4>Christian Oldroyd</h4>
-        <p class="rc-role">Customer Success Manager</p>
-        <div class="rc-org">Recurly</div>
-      </div>
-    </div>
-
-  </div>
-</div>
 `}</HTMLBlock>
 
 <br />
