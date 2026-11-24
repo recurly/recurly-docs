@@ -5,10 +5,11 @@ hidden: true
 metadata:
   robots: index
 ---
+<HTMLBlock>{`
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-<style>{`
+<style>{\`
 body { background: #ffffff !important; }
 .rc-guide, .rc-guide * { font-family: "Figtree", "Helvetica Neue", Helvetica, arial, sans-serif !important; box-sizing: border-box; }
 .rc-guide [class^="fa-"], .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
@@ -140,19 +141,18 @@ body { background: #ffffff !important; }
   .rc-form-body { padding:16px; }
   .rc-lp-nav { justify-content:center; }
 }
-`}</style>
+\`}</style>
 
 <div className="rc-guide">
 
-<div className="rc-topnav">
+  <div className="rc-topnav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge" className="rc-back">← Back to challenge home</a>
   </div>
 
-<div className="rc-wrap">
+  <div className="rc-wrap">
 
-{/* HERO */}
-
-<div className="rc-hero">
+    {/* HERO */}
+    <div className="rc-hero">
       <div className="rc-lights-top"></div>
       <img className="rc-logo" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" />
       <div><span className="rc-hero-pill"><i className="fa-solid fa-tree"></i> Sleigh your success</span></div>
@@ -162,9 +162,8 @@ body { background: #ffffff !important; }
       <div className="rc-lights-bottom"></div>
     </div>
 
-{/* POINTS */}
-
-<div className="rc-points">
+    {/* POINTS */}
+    <div className="rc-points">
       <div className="rc-points-left">
         <div>
           <div className="rc-points-num">15 pts</div>
@@ -174,11 +173,9 @@ body { background: #ffffff !important; }
       <span className="rc-bonus"><i className="fa-solid fa-star"></i> +50 bonus points available</span>
     </div>
 
-{/* TASK COPY */}
-
-<div className="rc-section-head"><i className="fa-solid fa-list-check"></i><h2>Your task</h2></div>
-
-<div className="rc-task-card">
+    {/* TASK COPY */}
+    <div className="rc-section-head"><i className="fa-solid fa-list-check"></i><h2>Your task</h2></div>
+    <div className="rc-task-card">
       <h3>Even with a great customer experience, illegitimate chargebacks will remain an unavoidable reality for subscription businesses heading into 2027.</h3>
       <p><strong>Join Recurly and Justt to get ahead of the curve with a pragmatic look at both sides of the equation</strong>: practical steps you can take throughout the customer journey to prevent disputes, and strategies for recovering revenue when they do happen.</p>
       <p>We'll cover how to spot emerging chargeback trends across payment methods and seasonal shifts, using your dispute data to uncover hidden operational breakdowns and keep more of the money you earn.</p>
@@ -197,13 +194,10 @@ body { background: #ffffff !important; }
       <img className="rc-webinar-img" src="https://files.readme.io/862a611951d98903da5272b81dbb20bca7af514220ff607adbffe8d650b9f242-REcurly_navigate___Justt_Webinar_slide_1.png" alt="Recurly Navigate and Justt webinar slide" />
     </div>
 
-{/* SPEAKERS */}
-
-<div className="rc-section-head"><i className="fa-solid fa-microphone"></i><h2>Meet the experts</h2></div>
-
-<p className="rc-speaker-intro"><strong>Hear directly from experts dedicated to safeguarding your subscription revenue.</strong> Drawing from real-world experience in SaaS customer success and dispute prevention, they'll share the strategic thinking behind full-lifecycle chargeback management, showing you how to turn dispute data into actionable improvements for your business.</p>
-
-<div className="rc-speakers">
+    {/* SPEAKERS */}
+    <div className="rc-section-head"><i className="fa-solid fa-microphone"></i><h2>Meet the experts</h2></div>
+    <p className="rc-speaker-intro"><strong>Hear directly from experts dedicated to safeguarding your subscription revenue.</strong> Drawing from real-world experience in SaaS customer success and dispute prevention, they'll share the strategic thinking behind full-lifecycle chargeback management, showing you how to turn dispute data into actionable improvements for your business.</p>
+    <div className="rc-speakers">
       <div className="rc-speaker">
         <div className="rc-avatar rc-avatar-justt">SB</div>
         <h4>Sarah Boehmer</h4>
@@ -218,11 +212,9 @@ body { background: #ffffff !important; }
       </div>
     </div>
 
-{/* REGISTRATION FORM */}
-
-<div className="rc-section-head" id="register"><i className="fa-solid fa-pen-to-square"></i><h2>Register here</h2></div>
-
-<div className="rc-form-card">
+    {/* REGISTRATION FORM */}
+    <div className="rc-section-head" id="register"><i className="fa-solid fa-pen-to-square"></i><h2>Register here</h2></div>
+    <div className="rc-form-card">
       <div className="rc-form-header">
         <h3>Chargeback webinar registration</h3>
         <span>+15 pts</span>
@@ -232,9 +224,8 @@ body { background: #ffffff !important; }
       </div>
     </div>
 
-{/* FUN FACT */}
-
-<div className="rc-fact">
+    {/* FUN FACT */}
+    <div className="rc-fact">
       <div className="rc-fact-icon"><i className="fa-solid fa-lightbulb"></i></div>
       <div>
         <strong>Did you know?</strong>
@@ -242,17 +233,16 @@ body { background: #ffffff !important; }
       </div>
     </div>
 
-{/* NAVIGATION */}
-
-<div className="rc-lp-nav">
+    {/* NAVIGATION */}
+    <div className="rc-lp-nav">
       <span className="rc-btn-start">← Start</span>
       <span className="rc-lp-nav-indicator">Day 1 of 12</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge-day-2" className="rc-btn-path">Go to Day 2 →</a>
     </div>
-
-<div className="rc-back-center">
+    <div className="rc-back-center">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge" className="rc-back"><i className="fa-solid fa-house"></i> Back to challenge home</a>
     </div>
 
+  </div>
 </div>
-</div>
+`}</HTMLBlock>
