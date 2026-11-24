@@ -66,7 +66,7 @@ body { background: #ffffff !important; }
 .rc-spark.s3 { bottom:26%; left:16%; color:#FF5126; font-size:11px; animation-delay:1.6s; }
 .rc-spark.s4 { bottom:20%; right:14%; animation-delay:.4s; }
 
-/* POINTS / TASK BANNER */
+/* POINTS BANNER */
 .rc-points {
   display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
   margin:32px 0 0; background:var(--offwhite); border:1px solid var(--lightgray);
@@ -76,12 +76,16 @@ body { background: #ffffff !important; }
 .rc-points-num { font-size:2.2rem; font-weight:900; line-height:1; color:var(--poppy); }
 .rc-points-label { font-size:.8rem; font-weight:800; text-transform:uppercase; letter-spacing:.8px; color:var(--gray) !important; margin-top:6px; }
 .rc-points-text { font-size:1rem; line-height:1.65; color:var(--darkgray) !important; margin:14px 0 0; }
-.rc-bonus {
-  display:inline-flex; align-items:center; gap:6px;
-  background:#FFF3B0; color:#0D0D0B !important; font-size:.8rem; font-weight:800;
-  padding:6px 12px; border-radius:8px;
+.rc-points-perks { display:flex; flex-direction:column; gap:10px; align-items:flex-start; }
+.rc-perk {
+  display:inline-flex; align-items:center; gap:8px; font-size:.82rem; font-weight:800;
+  padding:7px 14px; border-radius:10px; white-space:nowrap; transition:transform .2s ease;
 }
-.rc-bonus i { color:#FF5126; }
+.rc-perk:hover { transform:translateX(4px); }
+.rc-perk-gift { background:#FFF3B0; color:#0D0D0B !important; }
+.rc-perk-gift i { color:#FF5126; }
+.rc-perk-pts { background:rgba(93,197,46,.16); border:1.5px solid #5DC32E; color:#2f7a16 !important; }
+.rc-perk-pts i { color:#5DC32E; }
 
 /* SECTION HEADINGS */
 .rc-section-head { display:flex; align-items:center; gap:14px; margin:52px 0 18px; }
@@ -143,6 +147,8 @@ body { background: #ffffff !important; }
   .rc-hero h1 { font-size:1.9rem; }
   .rc-lnl-title { font-size:1.6rem; }
   .rc-cta-left { justify-content:center; }
+  .rc-points { padding:20px 18px; }
+  .rc-points-perks { width:100%; }
 }
 </style>
 
@@ -176,7 +182,10 @@ body { background: #ffffff !important; }
         <div class="rc-points-label">Register to earn</div>
         <p class="rc-points-text">Register below to earn 15 points. If you attend, you'll earn an extra 50. If you registered previously and are participating in this challenge, no worries! We'll check attendance after the Lunch + Learn and add your points to your total.</p>
       </div>
-      <span class="rc-bonus"><i class="fa-solid fa-star"></i> +50 bonus points for attending</span>
+      <div class="rc-points-perks">
+        <span class="rc-perk rc-perk-pts"><i class="fa-solid fa-circle-check"></i> 15 pts for registering</span>
+        <span class="rc-perk rc-perk-gift"><i class="fa-solid fa-star"></i> +50 bonus points for attending</span>
+      </div>
     </div>
 
     <!-- LUNCH + LEARN -->
