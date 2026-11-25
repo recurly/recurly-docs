@@ -292,7 +292,7 @@ body { background: #ffffff !important; }
       <div class="rc-fact-icon"><i class="fa-solid fa-lightbulb"></i></div>
       <div>
         <strong>Did you know?</strong>
-        <p>Account Updater works silently in the background, like holiday elves, automatically refreshing card details before payments ever fail. Recurly merchants see an average 77x return on investment, with Account Updater accounting for 18% of all recovered revenue across the Recurly network!</p>
+        <p>Recurly merchants see an average 77x return on investment, with this special helper accounting for 18% of all recovered revenue across the Recurly network!</p>
       </div>
     </div>
 
