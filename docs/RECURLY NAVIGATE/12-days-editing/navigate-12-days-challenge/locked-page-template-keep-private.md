@@ -44,13 +44,13 @@ body { background: #ffffff !important; }
   padding:54px 40px 56px; border-radius:16px; border:1px solid rgba(255,215,6,.3);
   box-shadow:0 8px 30px rgba(0,0,0,.45); overflow:hidden;
 }
-.rc-lights-top, .rc-lights-bottom {
+.rc-icicles-top, .rc-icicles-bottom {
   position:absolute; left:0; right:0; height:38px; pointer-events:none; z-index:2;
   background-repeat:repeat-x; background-position:top center;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='38' viewBox='0 0 240 38'%3E%3Cpath d='M0,4 Q60,24 120,4 Q180,24 240,4' fill='none' stroke='%231b2e20' stroke-width='2' stroke-linecap='round'/%3E%3Cg%3E%3Ccircle cx='35' cy='22' r='9' fill='%23FFD706' fill-opacity='0.40'/%3E%3Crect x='33' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='35' cy='21' rx='4.5' ry='6.5' fill='%23FFD706'/%3E%3Ccircle cx='33.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='60' cy='27' r='9' fill='%23FF5126' fill-opacity='0.40'/%3E%3Crect x='58' y='17' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='60' cy='26' rx='4.5' ry='6.5' fill='%23FF5126'/%3E%3Ccircle cx='58.5' cy='24' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='85' cy='22' r='9' fill='%235DC32E' fill-opacity='0.40'/%3E%3Crect x='83' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='85' cy='21' rx='4.5' ry='6.5' fill='%235DC32E'/%3E%3Ccircle cx='83.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='155' cy='22' r='9' fill='%23008CFF' fill-opacity='0.40'/%3E%3Crect x='153' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='155' cy='21' rx='4.5' ry='6.5' fill='%23008CFF'/%3E%3Ccircle cx='153.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='180' cy='27' r='9' fill='%23FFD706' fill-opacity='0.40'/%3E%3Crect x='178' y='17' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='180' cy='26' rx='4.5' ry='6.5' fill='%23FFD706'/%3E%3Ccircle cx='178.5' cy='24' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='205' cy='22' r='9' fill='%23FF5126' fill-opacity='0.40'/%3E%3Crect x='203' y='12' width='4' height='3.5' rx='1' fill='%23121d15'/%3E%3Cellipse cx='205' cy='21' rx='4.5' ry='6.5' fill='%23FF5126'/%3E%3Ccircle cx='203.5' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.9'/%3E%3C/g%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='38' viewBox='0 0 240 38'%3E%3Cpath d='M4,0 L16,0 L10,22 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M20,0 L32,0 L26,14 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M36,0 L48,0 L42,30 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M54,0 L66,0 L60,18 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M72,0 L84,0 L78,26 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M90,0 L102,0 L96,12 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M108,0 L120,0 L114,34 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M126,0 L138,0 L132,20 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M144,0 L156,0 L150,28 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M162,0 L174,0 L168,14 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M180,0 L192,0 L186,24 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M198,0 L210,0 L204,32 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M216,0 L228,0 L222,16 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M232,0 L240,0 L240,8 L236,22 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3C/svg%3E");
 }
-.rc-lights-top { top:0; }
-.rc-lights-bottom { bottom:0; transform:rotate(180deg); }
+.rc-icicles-top { top:0; }
+.rc-icicles-bottom { bottom:0; transform:rotate(180deg); }
 .rc-spark { position:absolute; z-index:3; font-size:.95rem; color:#FFD706; pointer-events:none; animation: rc-twinkle 2.4s ease-in-out infinite; }
 .rc-spark.s1 { top:22%; left:12%; }
 .rc-spark.s2 { top:30%; right:13%; color:#5DC32E; animation-delay:.6s; }
@@ -83,32 +83,21 @@ body { background: #ffffff !important; }
 }
 .rc-unlock-pill i { color:#2F8A12; }
 
-/* BUTTONS */
-.rc-guide a.rc-btn-next {
-  display:inline-flex; align-items:center; justify-content:center; gap:8px; white-space:nowrap;
+/* LARGE CTA */
+.rc-cta-large { display:flex; flex-direction:column; align-items:center; gap:10px; margin:44px 0 16px; }
+.rc-guide a.rc-btn-large {
+  display:inline-flex; align-items:center; justify-content:center; gap:12px; white-space:nowrap;
   background:#FFD706 !important; color:#0D0D0B !important;
-  padding:13px 28px; border-radius:10px; font-weight:800; font-size:.95rem;
+  padding:18px 44px; border-radius:12px; font-weight:800; font-size:1.1rem;
   border:2px solid #FFD706 !important; border-bottom:2px solid #FFD706 !important;
   text-decoration:none !important; transition:transform .2s ease, background .2s ease;
 }
-.rc-guide a.rc-btn-next:hover {
+.rc-guide a.rc-btn-large:hover {
   background:#0D0D0B !important; color:#FFD706 !important;
   border:2px solid #0D0D0B !important; border-bottom:2px solid #0D0D0B !important;
   text-decoration:none !important; transform:translateY(-2px);
 }
-.rc-guide a.rc-btn-prev {
-  display:inline-flex; align-items:center; gap:8px; white-space:nowrap;
-  background:transparent; color:#0D0D0B !important; padding:13px 24px;
-  border-radius:10px; font-weight:700; font-size:.9rem;
-  border:2px solid #D1CFC4 !important; border-bottom:2px solid #D1CFC4 !important;
-  text-decoration:none !important; transition:all .2s;
-}
-.rc-guide a.rc-btn-prev:hover { border:2px solid #0D0D0B !important; border-bottom:2px solid #0D0D0B !important; text-decoration:none !important; }
-
-/* NAVIGATION */
-.rc-lp-nav { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:40px 0 16px; flex-wrap:wrap; }
-.rc-lp-nav-indicator { font-size:.85rem; font-weight:700; color:var(--gray); letter-spacing:.5px; white-space:nowrap; }
-.rc-back-center { text-align:center; margin:26px 0 0; }
+.rc-back-center { text-align:center; margin:0; }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -117,9 +106,7 @@ body { background: #ffffff !important; }
   .rc-hero h1 { font-size:1.9rem; }
   .rc-locked-card { padding:28px 20px; }
   .rc-locked-card h2 { font-size:1.4rem; }
-  .rc-lp-nav { justify-content:center; }
-  .rc-lp-nav-indicator { width:100%; text-align:center; order:-1; }
-  .rc-guide a.rc-btn-prev, .rc-guide a.rc-btn-next { padding:10px 16px; font-size:.82rem; }
+  .rc-guide a.rc-btn-large { width:100%; padding:16px 24px; font-size:1rem; }
 }
 </style>
 
@@ -137,13 +124,13 @@ body { background: #ffffff !important; }
       <span class="rc-spark s2"><i class="fa-solid fa-star"></i></span>
       <span class="rc-spark s3"><i class="fa-solid fa-snowflake"></i></span>
       <span class="rc-spark s4"><i class="fa-solid fa-star"></i></span>
-      <div class="rc-lights-top"></div>
+      <div class="rc-icicles-top"></div>
 
       <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Sleigh your success</span></div>
       <h1>Oops! This task is still locked</h1>
       <p>Good things come to those who wait. Your next task isn't open yet, but it's on its way.</p>
       <div class="rc-hero-meta">Opens Friday, December 18, 2026 at 8:00 AM CT</div>
-      <div class="rc-lights-bottom"></div>
+      <div class="rc-icicles-bottom"></div>
     </div>
 
     <!-- LOCKED CARD -->
@@ -154,15 +141,9 @@ body { background: #ffffff !important; }
       <span class="rc-unlock-pill"><i class="fa-solid fa-envelope"></i> We'll email you when it opens</span>
     </div>
 
-    <!-- NAVIGATION -->
-    <div class="rc-lp-nav rc-rise-3">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge" class="rc-btn-prev">← Challenge home</a>
-      <span class="rc-lp-nav-indicator">Locked</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge" class="rc-btn-next">Back to challenge home →</a>
-    </div>
-
-    <div class="rc-back-center rc-rise-3">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge" class="rc-back"><i class="fa-solid fa-house"></i> Back to challenge home</a>
+    <!-- LARGE CTA -->
+    <div class="rc-cta-large rc-rise-3">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-12-days-challenge" class="rc-btn-large"><i class="fa-solid fa-house"></i> Return to challenge home</a>
     </div>
 
   </div>
