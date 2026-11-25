@@ -248,7 +248,7 @@ body { background: #ffffff !important; }
       <div class="rc-points-main">
         <div class="rc-points-num">Up to 70 pts</div>
         <div class="rc-points-label">Earn for this task</div>
-        <p class="rc-points-text">Choose one option or do both. A quote alone earns 20 points, a video alone earns 50 points, and a quote plus a video earns 70 points. You don't need to submit both.</p>
+        <p class="rc-points-text">Submit a quote, video, or both! A quote alone earns 20 points, a video alone earns 50 points, and a quote plus a video earns 70 points.</p>
       </div>
       <div class="rc-points-perks">
         <span class="rc-perk rc-perk-pts"><i class="fa-solid fa-circle-check"></i> Quote only: 20 pts</span>
@@ -293,7 +293,7 @@ body { background: #ffffff !important; }
 
     <!-- FORM -->
     <div class="rc-section-head rc-rise-4"><i class="fa-solid fa-pen-to-square"></i><h2>Share your joy</h2></div>
-    <p class="rc-form-intro rc-rise-4">Submit a quote, a video, or both. Each one is graded on its own, so you can stop after one.</p>
+    <p class="rc-form-intro rc-rise-4">Submit a quote, a video, or both.</p>
     <div class="rc-form-box rc-rise-4">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScD7v7LKjypOrNBZxDoSPmcW9spdYDFGEXnnp8065VT88HdRQ/viewform?embedded=true" width="100%" height="1069" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
