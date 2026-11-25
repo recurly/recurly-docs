@@ -88,6 +88,8 @@ body { background: #ffffff !important; }
 .rc-perk-pts i { color:#2F8A12; }
 .rc-perk-gift { background:#FFF3B0; }
 .rc-perk-gift i { color:#FF5126; }
+.rc-perk-both { background:#0D0D0B; border:1.5px solid #0D0D0B; color:#FFD706 !important; }
+.rc-perk-both i { color:#FFD706; }
 
 /* SECTION HEADINGS */
 .rc-section-head { display:flex; align-items:center; gap:14px; margin:52px 0 18px; }
@@ -244,13 +246,14 @@ body { background: #ffffff !important; }
     <!-- POINTS BANNER -->
     <div class="rc-points rc-rise-2">
       <div class="rc-points-main">
-        <div class="rc-points-num">70 pts</div>
+        <div class="rc-points-num">Up to 70 pts</div>
         <div class="rc-points-label">Earn for this task</div>
-        <p class="rc-points-text">Send a quote, a video, or both to earn points. Your words are a gift to the team that works with you every day.</p>
+        <p class="rc-points-text">Choose one option or do both. A quote alone earns 20 points, a video alone earns 50 points, and a quote plus a video earns 70 points. You don't need to submit both.</p>
       </div>
       <div class="rc-points-perks">
-        <span class="rc-perk rc-perk-pts"><i class="fa-solid fa-circle-check"></i> 20 pts for your quote</span>
-        <span class="rc-perk rc-perk-gift"><i class="fa-solid fa-star"></i> +50 bonus points for a video</span>
+        <span class="rc-perk rc-perk-pts"><i class="fa-solid fa-circle-check"></i> Quote only: 20 pts</span>
+        <span class="rc-perk rc-perk-gift"><i class="fa-solid fa-star"></i> Video only: 50 pts</span>
+        <span class="rc-perk rc-perk-both"><i class="fa-solid fa-trophy"></i> Quote and video: 70 pts</span>
       </div>
     </div>
 
@@ -282,14 +285,15 @@ body { background: #ffffff !important; }
       <h3>What brings you joy working with your CSM?</h3>
       <p>Your CSM is in your corner every step of the way. Let them know what that means to you.</p>
       <ul class="rc-checks">
-        <li><i class="fa-solid fa-circle-check"></i><span><strong>Complete the sentence:</strong> "One thing I love about my Recurly CSM or Navigate is ______."</span></li>
-        <li><i class="fa-solid fa-circle-check"></i><span><strong>Bonus:</strong> Record a short video answering "What I love most about my Recurly Customer Success Manager or Navigate is..." Your video is shared with our customer success team as a message from you.</span></li>
+        <li><i class="fa-solid fa-circle-check"></i><span><strong>Option 1, a quote (20 pts):</strong> Complete the sentence "One thing I love about my Recurly CSM or Navigate is ______."</span></li>
+        <li><i class="fa-solid fa-circle-check"></i><span><strong>Option 2, a video (50 pts):</strong> Record a short video answering "What I love most about my Recurly Customer Success Manager or Navigate is..." Your video is shared with our customer success team as a message from you.</span></li>
+        <li><i class="fa-solid fa-circle-check"></i><span><strong>Both (70 pts):</strong> Submit a quote and a video for the full amount.</span></li>
       </ul>
     </div>
 
     <!-- FORM -->
     <div class="rc-section-head rc-rise-4"><i class="fa-solid fa-pen-to-square"></i><h2>Share your joy</h2></div>
-    <p class="rc-form-intro rc-rise-4">Submit your quote, your video, or both, so your CSM and the Navigate team can hear from you.</p>
+    <p class="rc-form-intro rc-rise-4">Submit a quote, a video, or both. Each one is graded on its own, so you can stop after one.</p>
     <div class="rc-form-box rc-rise-4">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScD7v7LKjypOrNBZxDoSPmcW9spdYDFGEXnnp8065VT88HdRQ/viewform?embedded=true" width="100%" height="1069" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
