@@ -257,7 +257,7 @@ body { background: #ffffff !important; }
       <div>
         <span class="rc-eyebrow">A winter reflection</span>
         <h3>What would you change first?</h3>
-        <p>Your benchmark dashboard has a lot of flakes swirling around: churn, subscriber acquisition, goals, and KPIs. Once they settle, one of them usually stands out.</p>
+        <p>Your benchmark dashboard has a lot of flakes swirling around: churn, subscriber acquisition, payment metrics, and more. Once they settle, which one of them usually stands out?</p>
         <p>Open your benchmarks, check your Navigate Monthly Merchant Scorecard for inspiration, and decide which metric you want to move in the New Year.</p>
       </div>
     </div>
