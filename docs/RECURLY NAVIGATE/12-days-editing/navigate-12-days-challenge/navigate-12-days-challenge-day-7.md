@@ -95,15 +95,26 @@ body { background: #ffffff !important; }
 .rc-section-head::after { content:""; flex:1; height:1px; background:var(--lightgray); }
 .rc-section-head i { color:var(--poppy); font-size:1.1rem; }
 
-/* VIDEO CARD (CSM appreciation) */
-.rc-video-card { border:1px solid var(--lightgray); border-radius:14px; overflow:hidden; background:var(--offwhite); }
+/* VIDEO CARD (featured video, design system Component 12a) */
+.rc-video-card { border:1px solid var(--lightgray); border-radius:14px; overflow:hidden; background:var(--offwhite); margin:0 0 40px; }
 .rc-video-header { background:#0D0D0B; padding:16px 22px; display:flex; align-items:center; gap:10px; }
-.rc-video-header h3 { font-size:.88rem; font-weight:700; text-transform:uppercase; letter-spacing:.7px; color:#FFD706 !important; margin:0; }
+.rc-video-header h4 { font-size:.88rem; font-weight:700; text-transform:uppercase; letter-spacing:.7px; color:#FFD706 !important; margin:0; }
+.rc-video-header span { font-size:.78rem; color:#D1CFC4 !important; margin-left:auto; }
 .rc-video-embed { background:#0D0D0B; }
-.rc-video-embed iframe { display:block; width:100%; aspect-ratio:16/9; border:0; }
-.rc-video-caption { padding:12px 22px; font-size:.9rem; color:var(--gray) !important; background:var(--brightgray); border-top:1px solid var(--lightgray); line-height:1.5; }
+/* Placeholder: shows until the real embed URL is added */
+.rc-video-placeholder {
+  aspect-ratio:16/9; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:12px; padding:24px; text-align:center;
+  background:linear-gradient(135deg, #0D0D0B 0%, #1E2A1B 100%);
+}
+.rc-video-placeholder i { font-size:2.6rem; color:#FFD706; }
+.rc-video-placeholder strong { font-size:1rem; font-weight:800; color:#FCFBF7 !important; }
+.rc-video-placeholder span { font-size:.88rem; color:#D1CFC4 !important; }
+/* When the real embed is added, the iframe uses this rule */
+.rc-video-embed iframe { display:block; width:100%; aspect-ratio:16/9; height:auto; border:0; }
+.rc-video-caption { padding:12px 22px; font-size:.9rem; color:#807D75 !important; background:#F2F1EA; border-top:1px solid #D1CFC4; line-height:1.5; }
 
-/* STORY / TASK CARD */
+/* TASK CARD */
 .rc-story-card {
   background:var(--offwhite); border:1px solid var(--lightgray); border-radius:14px; padding:24px 26px; margin:0 0 4px;
 }
@@ -196,7 +207,7 @@ body { background: #ffffff !important; }
   .rc-points-perks { width:100%; }
   .rc-section-head h2 { font-size:1.2rem; }
   .rc-story-card h3 { font-size:1.2rem; }
-  .rc-video-embed iframe { aspect-ratio:16/9; }
+  .rc-video-placeholder { padding:18px; }
   .rc-form-box { padding:18px 14px 16px; }
   .rc-form-box iframe { height:1069px; }
   .rc-tease { padding:24px 22px; }
@@ -247,10 +258,19 @@ body { background: #ffffff !important; }
     <div class="rc-section-head rc-rise-3"><i class="fa-solid fa-heart"></i><h2>A thank-you from your CSMs</h2></div>
     <div class="rc-video-card rc-rise-3">
       <div class="rc-video-header">
-        <h3>A message from your CSMs</h3>
+        <h4>A message from your CSMs</h4>
+        <span>Watch first</span>
       </div>
       <div class="rc-video-embed">
-        <iframe src="CSM_APPRECIATION_VIDEO_EMBED_URL_HERE" loading="lazy" title="A thank-you message from Recurly CSMs" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+        <div class="rc-video-placeholder">
+          <i class="fa-solid fa-circle-play"></i>
+          <strong>CSM video coming soon</strong>
+          <span>The thank-you video will appear here.</span>
+        </div>
+        <!--
+          When the video is ready, replace the rc-video-placeholder div above with:
+          <iframe src="YOUR_VIDEO_EMBED_URL" loading="lazy" title="A thank-you message from Recurly CSMs" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+        -->
       </div>
       <div class="rc-video-caption">Thank you for being part of the Recurly community. Watch the full message, then share what you love.</div>
     </div>
