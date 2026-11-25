@@ -17,7 +17,7 @@ body { background: #ffffff !important; }
 .rc-guide {
   --yellow:#FFD706; --poppy:#FF5126; --green:#5DC32E; --blue:#008CFF;
   --offblack:#0D0D0B; --darkgray:#32312D; --gray:#807D75; --lightgray:#D1CFC4;
-  --brightgray:#F2F1EA; --offwhite:#FCFBF7;
+  --brightgray:#F2F1EA; --offwhite:#FCFBF7; --ice:#BFE3FF;
   color: #32312D !important; background:#fff;
 }
 .rc-guide a, .rc-guide a:link, .rc-guide a:visited { color:#008CFF !important; text-decoration:none !important; border-bottom:0 !important; }
@@ -41,21 +41,25 @@ body { background: #ffffff !important; }
 /* HERO */
 .rc-hero {
   position:relative; background:#0D0D0B; color:#fff; text-align:center;
-  padding:54px 40px 56px; border-radius:16px; border:1px solid rgba(255,215,6,.3);
-  box-shadow:0 8px 30px rgba(0,0,0,.45); overflow:hidden;
+  padding:54px 40px 56px; border-radius:16px; border:1px solid rgba(191,227,255,.35);
+  box-shadow:0 8px 30px rgba(0,0,0,.45), inset 0 0 40px rgba(191,227,255,.10); overflow:hidden;
 }
-.rc-icicles-top, .rc-icicles-bottom {
-  position:absolute; left:0; right:0; height:38px; pointer-events:none; z-index:2;
-  background-repeat:repeat-x; background-position:top center;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='38' viewBox='0 0 240 38'%3E%3Cpath d='M4,0 L16,0 L10,22 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M20,0 L32,0 L26,14 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M36,0 L48,0 L42,30 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M54,0 L66,0 L60,18 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M72,0 L84,0 L78,26 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M90,0 L102,0 L96,12 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M108,0 L120,0 L114,34 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M126,0 L138,0 L132,20 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M144,0 L156,0 L150,28 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M162,0 L174,0 L168,14 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M180,0 L192,0 L186,24 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M198,0 L210,0 L204,32 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3Cpath d='M216,0 L228,0 L222,16 Z' fill='%23BFE3FF' fill-opacity='0.9'/%3E%3Cpath d='M232,0 L240,0 L240,8 L236,22 Z' fill='%23E6F5FF' fill-opacity='0.85'/%3E%3C/svg%3E");
+/* Frost band: icy gradient with faint snowflake marks, top and bottom */
+.rc-frost {
+  position:absolute; left:0; right:0; height:64px; pointer-events:none; z-index:2;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='60' viewBox='0 0 90 60'%3E%3Cg stroke='%23BFE3FF' stroke-width='1.6' stroke-linecap='round' fill='none' opacity='0.55'%3E%3Cpath d='M20 8v16M12 16h16M14 10l12 12M26 10L14 22'/%3E%3Cpath d='M66 30v14M59 37h14M61 32l10 10M71 32L61 42'/%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(180deg, rgba(191,227,255,.30) 0%, rgba(191,227,255,0) 100%);
+  background-repeat:repeat-x, no-repeat;
+  background-position:top center, top center;
 }
-.rc-icicles-top { top:0; }
-.rc-icicles-bottom { bottom:0; transform:rotate(180deg); }
+.rc-frost-top { top:0; }
+.rc-frost-bottom { bottom:0; transform:rotate(180deg); }
 .rc-spark { position:absolute; z-index:3; font-size:.95rem; color:#FFD706; pointer-events:none; animation: rc-twinkle 2.4s ease-in-out infinite; }
 .rc-spark.s1 { top:22%; left:12%; }
-.rc-spark.s2 { top:30%; right:13%; color:#5DC32E; animation-delay:.6s; }
+.rc-spark.s2 { top:30%; right:13%; color:#BFE3FF; animation-delay:.6s; }
 .rc-spark.s3 { bottom:24%; left:20%; color:#FFFFFF; animation-delay:1.2s; }
-.rc-spark.s4 { bottom:20%; right:18%; animation-delay:1.8s; }
+.rc-spark.s4 { bottom:20%; right:18%; color:#BFE3FF; animation-delay:1.8s; }
 .rc-hero-pill {
   display:inline-flex; align-items:center; gap:8px; position:relative; z-index:3;
   background:rgba(93,197,46,.16); border:1.5px solid #5DC32E; color:#5DC32E;
@@ -72,8 +76,9 @@ body { background: #ffffff !important; }
   padding:40px 32px; margin:44px 0 0; text-align:center;
 }
 .rc-lock-icon {
-  width:72px; height:72px; border-radius:50%; background:#E5E4DE; color:#807D75;
+  width:72px; height:72px; border-radius:50%; background:#E3F2FD; color:#3A8FC7;
   display:flex; align-items:center; justify-content:center; font-size:1.8rem; margin:0 auto 18px;
+  border:1px solid #BFE3FF;
 }
 .rc-locked-card h2 { font-size:1.8rem; font-weight:800; line-height:1.2; color:var(--offblack) !important; margin:0 0 12px; }
 .rc-locked-card p { font-size:1.02rem; line-height:1.7; color:var(--darkgray) !important; max-width:620px; margin:0 auto 14px; }
@@ -97,7 +102,6 @@ body { background: #ffffff !important; }
   border:2px solid #0D0D0B !important; border-bottom:2px solid #0D0D0B !important;
   text-decoration:none !important; transform:translateY(-2px);
 }
-.rc-back-center { text-align:center; margin:0; }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -124,13 +128,13 @@ body { background: #ffffff !important; }
       <span class="rc-spark s2"><i class="fa-solid fa-star"></i></span>
       <span class="rc-spark s3"><i class="fa-solid fa-snowflake"></i></span>
       <span class="rc-spark s4"><i class="fa-solid fa-star"></i></span>
-      <div class="rc-icicles-top"></div>
+      <div class="rc-frost rc-frost-top"></div>
 
       <div><span class="rc-hero-pill"><i class="fa-solid fa-tree"></i> Sleigh your success</span></div>
       <h1>Oops! This task is still locked</h1>
       <p>Good things come to those who wait. Your next task isn't open yet, but it's on its way.</p>
       <div class="rc-hero-meta">Opens Friday, December 18, 2026 at 8:00 AM CT</div>
-      <div class="rc-icicles-bottom"></div>
+      <div class="rc-frost rc-frost-bottom"></div>
     </div>
 
     <!-- LOCKED CARD -->
